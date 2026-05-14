@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.key
+
+# Rekordbox DB / backups (personal, non-shareable)
+*.db.backup-*
+*.db.bak
+master.db
+master.db-shm
+master.db-wal
+master.db.lock
+masterPlaylists6.xml
+masterPlaylists6.xml.backup-*
+
+# Audio & video (copyright / large)
+*.mp3
+*.flac
+*.wav
+*.aiff
+*.aif
+*.mp4
+*.mov
+*.MOV
+*.avi
+*.mkv
+
+# Postproduction output (personal)
+postproduction/
+
+# Logs & state files
+logs/
+*.log
+outputs/
+/tmp/
+track_playlist_mapping.json
+*_state.json
+*_resolved.json
+
+# Personal Claude config
+.claude/

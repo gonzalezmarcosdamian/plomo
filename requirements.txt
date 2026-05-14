@@ -1,0 +1,12 @@
+librosa>=0.10.0
+numpy>=1.24
+scipy>=1.10
+pyrekordbox==0.4.4
+sqlcipher3-binary>=0.4.5
+mutagen>=1.46
+click>=8.1
+watchdog>=3.0
+python-dotenv>=1.0
+psutil>=5.9
+pytest>=7.4
+pytest-mock>=3.11

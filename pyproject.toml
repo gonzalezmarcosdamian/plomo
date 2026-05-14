@@ -1,0 +1,20 @@
+[project]
+name = "plomo"
+version = "0.1.0"
+description = "DJ IA Project - Rekordbox automation toolkit"
+requires-python = ">=3.11"
+authors = [{name = "Pocho", email = "ingonzalezdamian@gmail.com"}]
+
+[project.scripts]
+plomo = "plomo.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

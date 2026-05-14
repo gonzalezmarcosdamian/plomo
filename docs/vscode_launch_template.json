@@ -1,0 +1,45 @@
+{
+  "_comment": "Mover este archivo a .vscode/launch.json en la raíz del repo",
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Plomo CLI: stats",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "plomo.cli",
+      "args": ["stats"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"}
+    },
+    {
+      "name": "Plomo CLI: verify",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "plomo.cli",
+      "args": ["verify"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"}
+    },
+    {
+      "name": "Plomo CLI: analyze --dry-run",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "plomo.cli",
+      "args": ["analyze", "--dry-run"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": {"PYTHONPATH": "${workspaceFolder}/src"}
+    },
+    {
+      "name": "Pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-v"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
