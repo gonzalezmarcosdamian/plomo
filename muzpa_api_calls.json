@@ -1,0 +1,25 @@
+[
+  {
+    "method": "GET",
+    "url": "https://muzpa.com/api/app",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://muzpa.com/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "accept": "application/json, text/plain, */*",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Chromium\";v=\"148\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "method": "GET",
+    "url": "https://muzpa.com/api/image/ZSxHOb.png",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "referer": "https://muzpa.com/",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not/A)Brand\";v=\"99\", \"Chromium\";v=\"148\"",
+      "sec-ch-ua-mobile": "?0"
+    }
+  }
+]

@@ -1,0 +1,266 @@
+[
+  {
+    "id": 3755953,
+    "artist": "Cid Inc.",
+    "title": "Forgotten",
+    "bpm": 123,
+    "key": "Dm",
+    "fullname": "Cid Inc. - Forgotten"
+  },
+  {
+    "id": 3242572,
+    "artist": "Cid Inc.",
+    "title": "Abyss ",
+    "bpm": 123,
+    "key": "Abm",
+    "fullname": "Cid Inc. - Abyss "
+  },
+  {
+    "id": 5161630,
+    "artist": "Cid Inc., Dmitry Molosh",
+    "title": "Coalition",
+    "bpm": 122,
+    "key": "Dm",
+    "fullname": "Cid Inc., Dmitry Molosh - Coalition (Original Mix)"
+  },
+  {
+    "id": 4216627,
+    "artist": "Dmitry Molosh, Michael A",
+    "title": "Twelve Days",
+    "bpm": 122,
+    "key": "Em",
+    "fullname": "Dmitry Molosh, Michael A - Twelve Days (Original Mix)"
+  },
+  {
+    "id": 4216626,
+    "artist": "Dmitry Molosh, Michael A",
+    "title": "Integral",
+    "bpm": 122,
+    "key": "G",
+    "fullname": "Dmitry Molosh, Michael A - Integral (Original Mix)"
+  },
+  {
+    "id": 3630735,
+    "artist": "Dmitry Molosh",
+    "title": "Ambition",
+    "bpm": 121,
+    "key": "D#maj",
+    "fullname": "Dmitry Molosh - Ambition (Original Mix)"
+  },
+  {
+    "id": 3438991,
+    "artist": "Guy Gerber",
+    "title": "What To Do",
+    "bpm": 122,
+    "key": "Cm",
+    "fullname": "Guy Gerber - What To Do (&ME Remix)"
+  },
+  {
+    "id": 3438993,
+    "artist": "Guy Mantzur",
+    "title": "Tremolo Man",
+    "bpm": 120,
+    "key": "Dm",
+    "fullname": "Guy Mantzur - Tremolo Man (Original Mix)"
+  },
+  {
+    "id": 3438996,
+    "artist": "S\u00e9bastien L\u00e9ger",
+    "title": "Rocket To Lee's Little Cloud",
+    "bpm": 120,
+    "key": "Bbm",
+    "fullname": "S\u00e9bastien L\u00e9ger - Rocket To Lee's Little Cloud (Original Mix)"
+  },
+  {
+    "id": 3947792,
+    "artist": "Massano",
+    "title": "Function",
+    "bpm": 122,
+    "key": "Fm",
+    "fullname": "Massano - Function"
+  },
+  {
+    "id": 3947791,
+    "artist": "Massano",
+    "title": "Falling",
+    "bpm": 122,
+    "key": "Gm",
+    "fullname": "Massano - Falling"
+  },
+  {
+    "id": 8022201,
+    "artist": "Lali, Fur Coat, Eli & Fur",
+    "title": "Mom's Violin",
+    "bpm": 124,
+    "key": "Gbm",
+    "fullname": "Lali, Fur Coat, Eli & Fur - Mom's Violin (Fur Coat Extended Remix)"
+  },
+  {
+    "id": 4533295,
+    "artist": "BOg, GHEIST",
+    "title": "Venere",
+    "bpm": 122,
+    "key": "Em",
+    "fullname": "BOg, GHEIST - Venere (Fideles Remix)"
+  },
+  {
+    "id": 3723486,
+    "artist": "BOg, GHEIST",
+    "title": "Venere",
+    "bpm": 122,
+    "key": "Em",
+    "fullname": "BOg, GHEIST - Venere (Fideles Remix)"
+  },
+  {
+    "id": 3723487,
+    "artist": "BOg, GHEIST",
+    "title": "Venere",
+    "bpm": 123,
+    "key": "Am",
+    "fullname": "BOg, GHEIST - Venere (Glowal Remix)"
+  },
+  {
+    "id": 3755959,
+    "artist": "Hernan Cattaneo & Marcelo Vasami",
+    "title": "Scope",
+    "bpm": 122,
+    "key": "D",
+    "fullname": "Hernan Cattaneo & Marcelo Vasami - Scope"
+  },
+  {
+    "id": 7373366,
+    "artist": "Bog, 1926 & Diana Miro",
+    "title": "Underwater",
+    "bpm": 122,
+    "key": "Dm",
+    "fullname": "Bog, 1926 & Diana Miro - Underwater (Hernan Cattaneo & Marcelo Vasami Remix)"
+  },
+  {
+    "id": 5884381,
+    "artist": "Armen Miran, Felix Raphael",
+    "title": "Ghost",
+    "bpm": 120,
+    "key": "Dm",
+    "fullname": "Armen Miran, Felix Raphael - Ghost (Hernan Cattaneo & Marcelo Vasami Remix)"
+  },
+  {
+    "id": 7790839,
+    "artist": "Kamilo Sanclemente",
+    "title": "Orb",
+    "bpm": 122,
+    "key": "Dm",
+    "fullname": "Kamilo Sanclemente - Orb (HAFT Extended Remix)"
+  },
+  {
+    "id": 7790838,
+    "artist": "Kamilo Sanclemente",
+    "title": "Anagram",
+    "bpm": 123,
+    "key": "Am",
+    "fullname": "Kamilo Sanclemente - Anagram (Mayro Extended Remix)"
+  },
+  {
+    "id": 7790840,
+    "artist": "Kamilo Sanclemente",
+    "title": "Orb",
+    "bpm": 124,
+    "key": "Dm",
+    "fullname": "Kamilo Sanclemente - Orb (Ilias Katelanos & Plecta Extended Remix)"
+  },
+  {
+    "id": 6438237,
+    "artist": "Maze 28",
+    "title": "Mandala",
+    "bpm": 124,
+    "key": "E",
+    "fullname": "Maze 28 - Mandala"
+  },
+  {
+    "id": 6438238,
+    "artist": "SATURN",
+    "title": "Dilemma",
+    "bpm": 125,
+    "key": "F#m",
+    "fullname": "SATURN - Dilemma"
+  },
+  {
+    "id": 6438236,
+    "artist": "JDC",
+    "title": "Siren Call",
+    "bpm": 125,
+    "key": "Gm",
+    "fullname": "JDC - Siren Call"
+  },
+  {
+    "id": 5001545,
+    "artist": "ZGOOT & Mashbuk Music",
+    "title": "During the Rain",
+    "bpm": 126,
+    "key": "Gm",
+    "fullname": "ZGOOT & Mashbuk Music - During the Rain"
+  },
+  {
+    "id": 5001546,
+    "artist": "ZGOOT & Mashbuk Music",
+    "title": "Reference Point",
+    "bpm": 123,
+    "key": "Am",
+    "fullname": "ZGOOT & Mashbuk Music - Reference Point"
+  },
+  {
+    "id": 5346627,
+    "artist": "ZGOOT & Mashbuk Music",
+    "title": "During The Rain",
+    "bpm": 126,
+    "key": "Gm",
+    "fullname": "ZGOOT & Mashbuk Music - During The Rain (Original Mix)"
+  },
+  {
+    "id": 3644365,
+    "artist": "\u00c2me, Vulkano",
+    "title": "Den Ratta",
+    "bpm": 126,
+    "key": "Emaj",
+    "fullname": "\u00c2me, Vulkano - Den Ratta"
+  },
+  {
+    "id": 3644311,
+    "artist": "Eagles & Butterflies",
+    "title": "The Last Dance",
+    "bpm": 123,
+    "key": "Fmin",
+    "fullname": "Eagles & Butterflies - The Last Dance"
+  },
+  {
+    "id": 3644309,
+    "artist": "Dele Sosimi Afrobeat Orchestra, Laolu",
+    "title": "Too Much Information",
+    "bpm": 120,
+    "key": "D#min",
+    "fullname": "Dele Sosimi Afrobeat Orchestra, Laolu - Too Much Information (Laolu Remix)"
+  },
+  {
+    "id": 3747806,
+    "artist": "Nick Warren & Tripswitch",
+    "title": "Voight Kampff",
+    "bpm": 124,
+    "key": "Am",
+    "fullname": "Nick Warren & Tripswitch - Voight Kampff (Original Mix)"
+  },
+  {
+    "id": 8250561,
+    "artist": "Jamie Stevens",
+    "title": "Tidings",
+    "bpm": 124,
+    "key": "A",
+    "fullname": "Jamie Stevens - Tidings (Nick Warren & Nicolas Rada Remix)"
+  },
+  {
+    "id": 8250604,
+    "artist": "Mercurio, Nick Warren",
+    "title": "Turbulence",
+    "bpm": 126,
+    "key": "E",
+    "fullname": "Mercurio, Nick Warren - Turbulence (Boys' Shorts Remix)"
+  }
+]
