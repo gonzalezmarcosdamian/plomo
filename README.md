@@ -133,6 +133,40 @@ Calculado desde los timings de cues:
 
 El score se guarda en el campo `Comment` de cada track en Rekordbox (formato `E:7.5`).
 
+## Muzpa Downloader
+
+Descarga tracks desde Muzpa via API directa. El archivo va directo a `DOWNLOADS_FOLDER`.
+
+### Configuración de sesión
+
+El SESS cookie de Muzpa dura ~30 días. Si hay credenciales en `.env` (`MUZPA_USER` + `MUZPA_PASS`), el login es automático. Si falla o no tenés credenciales, renovar manualmente:
+
+1. Abrí [muzpa.com](https://muzpa.com) en Chrome (logueado)
+2. DevTools (F12) → Network → cualquier request → copiá el valor de la cookie `SESS`
+3. Pegalo en `.env`: `MUZPA_SESSION=<valor>`
+
+### Uso
+
+```bash
+# Descargar un track
+python scripts/muzpa_download.py "Guy J" "Sirens"
+
+# Explorar sin descargar (ver resultados con BPM y Key)
+python scripts/muzpa_download.py --search "Guy J"
+python scripts/muzpa_download.py --search "Massano Ten Minutes"
+
+# Batch desde archivo (formato: Artista — Titulo, una por línea)
+python scripts/muzpa_download.py --batch muzpa_batch_set3h.txt
+```
+
+### Variables .env requeridas
+
+```env
+MUZPA_USER=tu@email.com       # Credenciales Muzpa (login automático)
+MUZPA_PASS=tu_contraseña
+MUZPA_SESSION=abc123...       # Fallback si login falla (cookie manual)
+```
+
 ## Reglas críticas
 
 ```
