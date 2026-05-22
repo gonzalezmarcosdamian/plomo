@@ -47,11 +47,12 @@ La intersección de los tres: **progressive house oscuro y emotivo, con narrativ
 | Registro | Tracks confirmados | Carácter |
 |---|---|---|
 | **Oscuro / hypnótico** | Breakdown (Anderson), Moonflare (Cendryma), Telazar (George X), Shine (D-Nox), **655 (Around Us & Rikken)**, **Cryo (GMJ & Matter)** | Meseta, kick anclado, captura y retiene |
-| **Oscuro con alma** | Astrea (Benja Molina), Chelakhov — Insomnia | Dark pero con pianos/textura melódica |
+| **Oscuro con alma** | Astrea (Benja Molina), Chelakhov — Insomnia, **Big Bottom - Kebin Van Reeken (Gorkiz, Matt Oliver)** | Dark pero con pianos/textura melódica |
 | **Meseta bailable** | Glasgow (Nicolas Rada) | Dulce hypnótico, nicho, groovero |
 | **Constructor / respiro** | Undertow (djimboh) | Intro suave, capas progresivas, necesita energía previa alta |
-| **Emotivo / progresivo** | Sonoma (Simon Doty) | Alma del set, identitario |
+| **Emotivo / progresivo** | Sonoma (Simon Doty), **American Dream - PROFF Interpretation (Jakatta)**, **Reflections (Greta Meier, Rolasoul)**, **Mystery - Tale Of Us & Mathame Remix (Adriatique)** | Alma del set, identitario — melódico con peso |
 | **Heroico** | I'm Lighter With You (Boxer), Jumbo (Paul Thomas / Jamie Stevens) | Peak total, vocales, aplausos, captura a bailar |
+| **Peak firme** | **Cardamom FAERO Remix (Tom Pavicich)**, Phaxon (Sasha, Einmusik Remix) | Peak oscuro sin melodía que "ablande" — driving, anclado, no suelta |
 | **Cierre romántico** | Chelakhov — Haunted | Oscuro emotivo, cierra con alma |
 | **Mis temas (funcional)** | Trigger (Julian Nates), Lifeline (Cattaneo remix) | Construyen o conectan, no definen el sonido |
 
