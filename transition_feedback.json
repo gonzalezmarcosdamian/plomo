@@ -1,0 +1,51 @@
+{
+  "comment": "Feedback de transiciones en vivo. score: -2=choca fuerte, -1=inc\u00f3moda, 0=neutral, +1=buena, +2=perfecta",
+  "sessions": [
+    {
+      "date": "2026-05-16",
+      "set": "Cumple del 20 \u2014 Set v2"
+    }
+  ],
+  "93753672\u219257043826": {
+    "score": -1,
+    "note": "Lifeline\u2192Breakdown: color mel\u00f3dico\u2192oscuro",
+    "from": "93753672",
+    "to": "57043826"
+  },
+  "50268841\u219257043826": {
+    "score": -2,
+    "note": "Breakdown\u2192Undertow: groove\u2192silencio abrupto",
+    "from": "50268841",
+    "to": "57043826"
+  },
+  "139458182\u2192128016078": {
+    "score": -1,
+    "note": "Glasgow\u2192Im Lighter: dulce\u2192comprimido",
+    "from": "139458182",
+    "to": "128016078"
+  },
+  "128016078\u2192135496627": {
+    "score": -1,
+    "note": "Im Lighter\u2192Trigger: energ\u00eda cae bruscamente",
+    "from": "128016078",
+    "to": "135496627"
+  },
+  "50268841\u2192213870089": {
+    "score": 1,
+    "note": "Undertow\u2192Sonoma: constructor\u2192emotivo fluye",
+    "from": "50268841",
+    "to": "213870089"
+  },
+  "135496627\u2192253892170": {
+    "score": 1,
+    "note": "Trigger\u2192Astrea: oscuro contin\u00faa bien",
+    "from": "135496627",
+    "to": "253892170"
+  },
+  "253892170\u2192194246173": {
+    "score": 1,
+    "note": "Astrea\u2192Jumbo: oscuro\u2192heroico 1 hop",
+    "from": "253892170",
+    "to": "194246173"
+  }
+}

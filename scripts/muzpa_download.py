@@ -193,9 +193,10 @@ def download_track(s: requests.Session, track_id: int, filename: str) -> tuple[P
 
     # Nombre desde Content-Disposition o filename del track
     cd = r.headers.get("content-disposition", "")
-    fname_match = re.search(r"filename\*?=(?:UTF-8'')?([^;]+)", cd)
+    fname_match = re.search(r"filename\*?=(?:UTF-8'[^']*')?([^;]+)", cd)
     if fname_match:
         fname = urllib.parse.unquote(fname_match.group(1).strip().strip('"'))
+        fname = re.sub(r"^UTF-8''", "", fname)  # seguridad extra
     else:
         fname = re.sub(r'[<>:"/\\|?*]', '', filename.replace(".aiff", ".mp3").replace(".aif", ".mp3"))
         if not fname.endswith(".mp3"):
