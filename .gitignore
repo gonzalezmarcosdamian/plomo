@@ -53,9 +53,21 @@ logs/
 *.log
 outputs/
 /tmp/
-track_playlist_mapping.json
 *_state.json
 *_resolved.json
+
+# Data folder — JSONs de datos personales (no van al repo)
+data/muzpa_batch*.json
+data/muzpa_api_calls.json
+data/setlists_muzpa.json
+data/available_ids.json
+data/dj_sets_new.json
+data/sunset_*.json
+data/track_playlist_mapping.json
+
+# Archivos grandes sueltos en raíz
+*.MOV
+*.wav
 
 # Personal Claude config
 .claude/

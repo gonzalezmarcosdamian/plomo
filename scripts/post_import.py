@@ -17,7 +17,7 @@ from plomo.cue_engine import analyze_track, apply_cues_v8
 from plomo.energy import calculate_energy, energy_label
 import sqlcipher3
 
-MAPPING_FILE = Path(__file__).parent.parent / "track_playlist_mapping.json"
+MAPPING_FILE = Path(__file__).parent.parent / "data" / "track_playlist_mapping.json"
 PEN_SHARE = Path(r"C:\Users\gonza\AppData\Roaming\Pioneer\rekordbox\share")
 PEN_ROOT = Path("D:/")
 

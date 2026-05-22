@@ -46,7 +46,7 @@ La intersección de los tres: **progressive house oscuro y emotivo, con narrativ
 
 | Registro | Tracks confirmados | Carácter |
 |---|---|---|
-| **Oscuro / hypnótico** | Breakdown (Anderson), Moonflare (Cendryma), Telazar (George X), Shine (D-Nox) | Meseta, kick anclado, captura y retiene |
+| **Oscuro / hypnótico** | Breakdown (Anderson), Moonflare (Cendryma), Telazar (George X), Shine (D-Nox), **655 (Around Us & Rikken)**, **Cryo (GMJ & Matter)** | Meseta, kick anclado, captura y retiene |
 | **Oscuro con alma** | Astrea (Benja Molina), Chelakhov — Insomnia | Dark pero con pianos/textura melódica |
 | **Meseta bailable** | Glasgow (Nicolas Rada) | Dulce hypnótico, nicho, groovero |
 | **Constructor / respiro** | Undertow (djimboh) | Intro suave, capas progresivas, necesita energía previa alta |
@@ -144,6 +144,7 @@ CIERRE ROMÁNTICO → Haunted (despedida con alma)
 
 ## Implicaciones para el algoritmo
 
+0. **Rosalía — Reliquia (Simon Vuarambon Remix)** — edit no publicado, toca en sets en vivo. Buscar cuando salga oficialmente en Beatport/Traxsource. Instagram: https://www.instagram.com/reel/DSD1DOsiYUQ/
 1. **vibe_score** (pendiente v1.8): dimension oscuro→melódico para detectar choques como Lifeline→Breakdown
 2. **Ei/Ep split** (pendiente v1.6): Undertow y Lifeline necesitan "intro_energy" separada de "peak_energy"
 3. **Groove ratio** (implementado v1.3): diferencia Long Time (flotante) de Echosphere (anclado)
