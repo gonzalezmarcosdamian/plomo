@@ -203,10 +203,10 @@ def apply_cues_v8(db, content_id: str, cues: CueAnalysis) -> int:
         db.session.add(cue)
         new_objs.append(cue)
 
-    # Loops: intro INACTIVE, outro ACTIVE (v8 key change)
+    # Loops: ambos INACTIVE — se activan manualmente antes de tocar (regla CLAUDE.md)
     for ls, le, name, active in [
         (cues.bass_in, cues.loop_intro_end, 'Loop Intro 16b', 0),
-        (cues.loop_outro_start, cues.outro, 'Loop Outro 16b ACTIVE', 1),
+        (cues.loop_outro_start, cues.outro, 'Loop Outro 4b', 0),
     ]:
         loop = DjmdCue(
             ID=str(random.randint(100000000, 999999999)),
