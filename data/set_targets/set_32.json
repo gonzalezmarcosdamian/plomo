@@ -1,0 +1,38 @@
+{
+  "name": "32. Emi Style — 2h — 2026-06-01",
+  "duration_h": 2,
+  "bpm_range": [119, 124],
+  "max_per_artist": 4,
+  "style": "Colorido Emi/Kamilo — Emi Galvan, Kamilo nuevos, Mike Rish, Hraach, Dowden, Tantum",
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
+    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
+    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "Mike Rish", "title": "Shokl"},
+    {"artist": "Hraach", "title": "Promises"},
+    {"artist": "Hraach", "title": "Delirio"},
+    {"artist": "Hraach", "title": "Cosmic Drama"},
+    {"artist": "Mike Rish", "title": "Tunnel People"},
+    {"artist": "Mike Rish", "title": "Tornn"},
+    {"artist": "Mike Rish", "title": "Sunset on Mars"},
+    {"artist": "Emi Galvan", "title": "Timeless"},
+    {"artist": "Emi Galvan", "title": "Vibration"},
+    {"artist": "Emi Galvan", "title": "Trust"},
+    {"artist": "Nick Warren", "title": "Freebird"},
+    {"artist": "Hraach", "title": "Lonely Sun"},
+    {"artist": "Tantum", "title": "Another Day"},
+    {"artist": "Tantum", "title": "Bonsai"},
+    {"artist": "Kasper Koman", "title": "Loco Motif"},
+    {"artist": "Kamilo Sanclemente", "title": "Go Home"},
+    {"artist": "Kamilo Sanclemente", "title": "Theia"},
+    {"artist": "Kamilo Sanclemente", "title": "Divine Eternity"},
+    {"artist": "Kamilo Sanclemente", "title": "Lonely Pink Cloud"},
+    {"artist": "Kamilo Sanclemente Juan Pablo Torrez", "title": "Mantura"},
+    {"artist": "Mike Rish", "title": "Dope Riddim"},
+    {"artist": "Quivver", "title": "Another Storm"},
+    {"artist": "Kamilo Sanclemente", "title": "Distant Blips"},
+    {"artist": "Emi Galvan", "title": "Samsara"}
+  ]
+}

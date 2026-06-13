@@ -1,0 +1,38 @@
+{
+  "name": "30. Hobin & Cendryma — 2h — 2026-06-01",
+  "duration_h": 2,
+  "bpm_range": [119, 123],
+  "max_per_artist": 4,
+  "style": "Melodico colorido — Hobin Rude, Cendryma, Nicolas Rada, Ewan Rill",
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
+    {"name": "build",  "e_min": 4.0, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
+    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "Nicolas Rada", "title": "Prana"},
+    {"artist": "Hobin Rude", "title": "Nether"},
+    {"artist": "Hobin Rude", "title": "Dusk Petals"},
+    {"artist": "Hobin Rude", "title": "Prism"},
+    {"artist": "Hobin Rude", "title": "Shrouded Glint"},
+    {"artist": "Cendryma", "title": "Fracture"},
+    {"artist": "Cendryma", "title": "Mythica"},
+    {"artist": "Cendryma", "title": "Evasive"},
+    {"artist": "Cendryma", "title": "Orbitation"},
+    {"artist": "Ewan Rill Shayan Pasha", "title": "Hidden Path"},
+    {"artist": "Ewan Rill K Loveski", "title": "Jala"},
+    {"artist": "Ewan Rill", "title": "Omega Torra"},
+    {"artist": "Nicolas Rada Antrim", "title": "Daydream"},
+    {"artist": "Nicolas Rada", "title": "El Oro De Los Tigres"},
+    {"artist": "Nicolas Rada", "title": "Cascadia"},
+    {"artist": "Nicolas Rada", "title": "The Wind Phone"},
+    {"artist": "Armen Miran Nicolas Rada", "title": "Fall Away"},
+    {"artist": "Armen Miran Nicolas Rada", "title": "Pull"},
+    {"artist": "Chaum Hobin Rude", "title": "Cressida"},
+    {"artist": "Cendryma", "title": "Circles"},
+    {"artist": "Cendryma", "title": "Override"},
+    {"artist": "Cendryma", "title": "Opulence"},
+    {"artist": "Cendryma", "title": "Destination"},
+    {"artist": "Cendryma", "title": "Focus Bend"}
+  ]
+}

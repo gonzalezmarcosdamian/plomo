@@ -1,0 +1,36 @@
+{
+  "set_num": 20,
+  "name": "20. Emi Galvan Style",
+  "playlist_id": null,
+  "duration_h": 2.0,
+  "target_track_count": 18,
+  "bpm_range": [118, 124],
+  "genre": "progressive melodic emotional",
+  "replacement_query": "emi galvan progressive melodic mango alley",
+  "energy_arc": {"start": 2.0, "peak": 6.5, "end": 3.5},
+  "movements": [
+    {"name": "Entrada",  "e_min": 1.5, "e_max": 4.0, "e_center": 2.5, "fraction": 0.35},
+    {"name": "Cuerpo",   "e_min": 4.0, "e_max": 7.0, "e_center": 5.5, "fraction": 0.50},
+    {"name": "Cierre",   "e_min": 3.0, "e_max": 5.5, "e_center": 3.5, "fraction": 0.15}
+  ],
+  "tracks": [
+    {"artist": "Emi Galvan",        "title": "Flowing",                                    "energy": 3.5},
+    {"artist": "Emi Galvan",        "title": "Lies",                                       "energy": 3.8},
+    {"artist": "Hobin Rude",        "title": "Seraph",         "remix": "Liam Garcia Remix","energy": 2.2},
+    {"artist": "Of Norway",         "title": "I Miss You",     "remix": "Sentre Remix",   "energy": 3.0},
+    {"artist": "Antrim",            "title": "Hide and Seek",  "remix": "Ric Niels",      "energy": 1.8},
+    {"artist": "Maze 28",           "title": "This Is Just a Dream", "remix": "HC & Vasami","energy": 2.5},
+    {"artist": "Hermanez",          "title": "Eight Years",                                "energy": 2.5},
+    {"artist": "Jon Towell",        "title": "49 Miles",                                   "energy": 4.0},
+    {"artist": "WhoMadeWho",        "title": "Kiss Me Hard",   "remix": "Adam Ten Remix", "energy": 4.5},
+    {"artist": "Simon Vuarambon",   "title": "Diafana",                                    "energy": 4.5},
+    {"artist": "Simon Vuarambon",   "title": "Afrika",                                     "energy": 4.0},
+    {"artist": "Tantum",            "title": "Out Of Nowhere",                             "energy": 4.2},
+    {"artist": "J Lauda",           "title": "Lifeline",       "remix": "HC & Simply City","energy": 4.8},
+    {"artist": "D-Nox",             "title": "Six",                                        "energy": 4.9},
+    {"artist": "Kamilo Sanclemente","title": "Anagram",                                    "energy": 6.5},
+    {"artist": "Ezequiel Arias",    "title": "Passenger",                                  "energy": 7.0},
+    {"artist": "Kamilo Sanclemente","title": "Astronauts Nightmares",                      "energy": 7.1},
+    {"artist": "Guy Mantzur",       "title": "Tremolo Man",                                "energy": 4.0}
+  ]
+}

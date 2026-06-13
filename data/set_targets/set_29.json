@@ -1,0 +1,37 @@
+{
+  "name": "29. Mango Alley Deep — 2h — 2026-06-01",
+  "duration_h": 2,
+  "bpm_range": [120, 124],
+  "max_per_artist": 4,
+  "style": "Mango Alley — Maze 28, Rockka, Cary Crank, Dowden",
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
+    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
+    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "Maze 28", "title": "Stardust"},
+    {"artist": "Maze 28", "title": "C Moon"},
+    {"artist": "Maze 28", "title": "Nocte"},
+    {"artist": "Maze 28", "title": "Flux"},
+    {"artist": "Maze 28", "title": "Redux"},
+    {"artist": "Maze 28", "title": "Red Lights From Afar"},
+    {"artist": "Ruben Karapetyan Maze 28", "title": "Cosmic Dot"},
+    {"artist": "Maze 28", "title": "Cry of the Deserts"},
+    {"artist": "Rockka Maze 28", "title": "Chroma"},
+    {"artist": "Maze 28 Rockka", "title": "Inertia"},
+    {"artist": "Rockka", "title": "The Fade"},
+    {"artist": "Rockka", "title": "Decryptor"},
+    {"artist": "Rockka", "title": "Elevation"},
+    {"artist": "Rockka", "title": "Subversion"},
+    {"artist": "Cary Crank", "title": "Inner Atlas"},
+    {"artist": "Cary Crank", "title": "Deep Voltage"},
+    {"artist": "Cary Crank", "title": "Echoes From Below"},
+    {"artist": "Rauschhaus Cary Crank", "title": "Bright Things in Front of Us"},
+    {"artist": "Rauschhaus Cary Crank", "title": "Bekal"},
+    {"artist": "Dowden", "title": "Pacifist"},
+    {"artist": "Dowden", "title": "Urias"},
+    {"artist": "Dowden", "title": "Gavia"},
+    {"artist": "Dowden", "title": "Eternity"}
+  ]
+}

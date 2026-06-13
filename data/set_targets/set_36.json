@@ -1,0 +1,38 @@
+{
+  "name": "36. This Guy Ben Peak — 2026-06-04",
+  "duration_h": 2,
+  "bpm_range": [121, 126],
+  "max_per_artist": 4,
+  "movements": [
+    {"name": "warmup", "e_min": 3.0, "e_max": 5.5, "e_center": 4.5, "fraction": 0.20, "anchor_ids": []},
+    {"name": "build",  "e_min": 5.0, "e_max": 7.0, "e_center": 6.0, "fraction": 0.35, "anchor_ids": []},
+    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.30, "anchor_ids": []},
+    {"name": "cool",   "e_min": 5.0, "e_max": 6.5, "e_center": 5.5, "fraction": 0.15, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "This Guy Ben", "title": "Hey Sally"},
+    {"artist": "This Guy Ben", "title": "Kapalla"},
+    {"artist": "This Guy Ben", "title": "Neptuna"},
+    {"artist": "This Guy Ben", "title": "Five from Fargo"},
+    {"artist": "This Guy Ben", "title": "Condor"},
+    {"artist": "This Guy Ben", "title": "Pulente"},
+    {"artist": "This Guy Ben", "title": "Corbiere"},
+    {"artist": "This Guy Ben", "title": "Troubador"},
+    {"artist": "Fur Coat", "title": "Pandora's Dream"},
+    {"artist": "Fur Coat", "title": "Ethereal"},
+    {"artist": "Fur Coat", "title": "Doppler Effect"},
+    {"artist": "Fur Coat", "title": "Modular Theory"},
+    {"artist": "Fur Coat", "title": "Isolated Soundwaves"},
+    {"artist": "Sasha", "title": "Singularity"},
+    {"artist": "Massano", "title": "The Feeling"},
+    {"artist": "Massano", "title": "System"},
+    {"artist": "Massano", "title": "Odyssey"},
+    {"artist": "Massano", "title": "Solitude"},
+    {"artist": "Depeche Mode", "title": "Ghosts Again"},
+    {"artist": "Cristoph ADZ", "title": "Solpaz"},
+    {"artist": "Tinlicker", "title": "Compound"},
+    {"artist": "Tinlicker", "title": "All That I Lost"},
+    {"artist": "Oliver Schories", "title": "Lymn"},
+    {"artist": "Oliver Schories", "title": "Peron"}
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "190251324\u219248899177": {
+    "score": -2,
+    "note": "Aer8\u2192Deceptions: Aer8 es peak hipnotico, Deceptions es mas emocional, orden invertido",
+    "from": "190251324",
+    "to": "48899177"
+  },
+  "190251324->48899177": {
+    "score": -2,
+    "note": "Aer8->Deceptions: Aer8 es peak hipnotico, Deceptions es emocional, orden invertido",
+    "from": "190251324",
+    "to": "48899177"
+  },
+  "48899177->190251324": {
+    "score": 2,
+    "note": "Deceptions->Aer8: emocional->peak hipnotico metalico, fluye",
+    "from": "48899177",
+    "to": "190251324"
+  },
+  "57043826->48899177": {
+    "score": 1,
+    "note": "Breakdown->Deceptions: oscuro constructivo hacia emocional",
+    "from": "57043826",
+    "to": "48899177"
+  },
+  "124747526->57043826": {
+    "score": 1,
+    "note": "Abundance->Breakdown: Maze28 progressive->oscuro, constructivo",
+    "from": "124747526",
+    "to": "57043826"
+  },
+  "57043826->111302352": {
+    "score": 1,
+    "note": "Breakdown->Insomnia: oscuro->emocional, prepara el bloque final",
+    "from": "57043826",
+    "to": "111302352"
+  },
+  "111302352->48899177": {
+    "score": 2,
+    "note": "Insomnia->Deceptions: emocional->emocional metalico, flujo natural",
+    "from": "111302352",
+    "to": "48899177"
+  },
+  "57043826->246690426": {
+    "score": 1,
+    "note": "Breakdown->Leave the World Behind: baja tension, respiro tranqui",
+    "from": "57043826",
+    "to": "246690426"
+  },
+  "246690426->111302352": {
+    "score": 1,
+    "note": "Leave the World Behind->Insomnia: tranqui->emocional, construye",
+    "from": "246690426",
+    "to": "111302352"
+  }
+}

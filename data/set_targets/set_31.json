@@ -1,0 +1,36 @@
+{
+  "name": "31. Gai Barone Universe — 2h — 2026-06-01",
+  "duration_h": 2,
+  "bpm_range": [119, 124],
+  "max_per_artist": 4,
+  "style": "Progresivo oscuro colorido — Gai Barone, Chelakhov, Hermanez, Blake Jarrell",
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
+    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
+    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "Chelakhov", "title": "Crystal Fall"},
+    {"artist": "Chelakhov", "title": "Rami"},
+    {"artist": "Chelakhov Redspace", "title": "Cosmonauts"},
+    {"artist": "Chelakhov", "title": "Rawai"},
+    {"artist": "Hermanez", "title": "Areia"},
+    {"artist": "Hermanez", "title": "Ensina"},
+    {"artist": "Hermanez", "title": "Third Decade"},
+    {"artist": "Hermanez", "title": "Dust Town"},
+    {"artist": "Deftones", "title": "Digital Bath"},
+    {"artist": "Gai Barone", "title": "Hemels"},
+    {"artist": "Gai Barone", "title": "Weird Behaviours"},
+    {"artist": "Gai Barone", "title": "Shuttered"},
+    {"artist": "Gai Barone Dougal Fox", "title": "Ocean"},
+    {"artist": "Hermanez", "title": "Twenty Four"},
+    {"artist": "Blake Jarrell", "title": "In the End"},
+    {"artist": "Gai Barone", "title": "MoMa"},
+    {"artist": "Hermanez", "title": "Tale of the Unexpected"},
+    {"artist": "Hermanez Lost Desert", "title": "Other Side"},
+    {"artist": "Gai Barone Luke Brancaccio", "title": "Freelove"},
+    {"artist": "Analog Jungs", "title": "Futura"},
+    {"artist": "D-Nox Two Of A Kind Gai Barone", "title": "Vida"},
+    {"artist": "Hraach Armen Miran", "title": "Sarer Jan"}
+  ]
+}

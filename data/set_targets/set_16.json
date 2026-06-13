@@ -1,0 +1,36 @@
+{
+  "set_num": 16,
+  "name": "16. Eze Arias Style",
+  "playlist_id": null,
+  "duration_h": 2.0,
+  "target_track_count": 18,
+  "bpm_range": [118, 124],
+  "genre": "progressive melodic",
+  "replacement_query": "progressive melodic ezequiel arias",
+  "energy_arc": {"start": 2.0, "peak": 7.0, "end": 4.0},
+  "movements": [
+    {"name": "Entrada",  "e_min": 1.5, "e_max": 4.5, "e_center": 3.0, "fraction": 0.35},
+    {"name": "Cuerpo",   "e_min": 4.0, "e_max": 7.5, "e_center": 5.5, "fraction": 0.45},
+    {"name": "Cierre",   "e_min": 3.5, "e_max": 6.0, "e_center": 4.0, "fraction": 0.20}
+  ],
+  "tracks": [
+    {"artist": "Mazayr",                        "title": "Without Permission",         "energy": 2.5},
+    {"artist": "Mazayr",                        "title": "Falling",                    "energy": 2.5},
+    {"artist": "Anton Borin",                   "title": "May Spring Come",             "energy": 2.8},
+    {"artist": "Of Norway",                     "title": "I Miss You",  "remix": "Sentre Remix", "energy": 3.0},
+    {"artist": "Luke Santos",                   "title": "I Am Human",  "remix": "Kasper Koman Alex O'Rion Remix", "energy": 3.2},
+    {"artist": "Kyotto",                        "title": "Sorry I'm Late", "remix": "HAFT Remix", "energy": 3.5},
+    {"artist": "MoodFreak",                     "title": "Surge",       "remix": "Kebin Van Reeken Remix", "energy": 3.8},
+    {"artist": "Jon Towell",                    "title": "49 Miles",                   "energy": 4.0},
+    {"artist": "Blake Jarrell",                 "title": "Twenty Miami's Ago", "remix": "Cendryma Remix", "energy": 4.2},
+    {"artist": "WhoMadeWho",                    "title": "Kiss Me Hard", "remix": "Adam Ten Remix", "energy": 4.5},
+    {"artist": "Supacooks",                     "title": "Activator",                  "energy": 4.5},
+    {"artist": "Jody Wisternoff",               "title": "Mui", "remix": "Ezequiel Arias Extended Mix", "energy": 5.0},
+    {"artist": "Pedro Capelossi",               "title": "Topaz",                      "energy": 5.2},
+    {"artist": "Remcord",                       "title": "Out Of It",                  "energy": 5.5},
+    {"artist": "Kamilo Sanclemente",            "title": "Anagram",                    "energy": 6.5},
+    {"artist": "Guy J",                         "title": "Silver Lake",                "energy": 6.0},
+    {"artist": "Ezequiel Arias",                "title": "Passenger",                  "energy": 7.0},
+    {"artist": "Kamilo Sanclemente",            "title": "Astronauts Nightmares",      "energy": 7.1}
+  ]
+}

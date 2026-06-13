@@ -1,0 +1,36 @@
+{
+  "name": "35. Lee Burridge Deep — Organic — 2026-06-04",
+  "duration_h": 2,
+  "bpm_range": [118, 124],
+  "max_per_artist": 4,
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.0, "e_center": 3.0, "fraction": 0.25, "anchor_ids": []},
+    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.40, "anchor_ids": []},
+    {"name": "peak",   "e_min": 5.5, "e_max": 7.5, "e_center": 6.5, "fraction": 0.35, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "Lee Burridge Lost Desert", "title": "Forget"},
+    {"artist": "Lee Burridge Lost Desert", "title": "In the Dark"},
+    {"artist": "Lee Burridge Lost Desert", "title": "Chicago Drive"},
+    {"artist": "Lee Burridge Lost Desert", "title": "Moogami"},
+    {"artist": "Monkey Safari", "title": "Goodbye"},
+    {"artist": "Lost Desert Reigan", "title": "Open Form"},
+    {"artist": "Simon Vuarambon", "title": "Quimera"},
+    {"artist": "Simon Vuarambon", "title": "DEC"},
+    {"artist": "Simon Vuarambon", "title": "Alcyon"},
+    {"artist": "Simon Vuarambon", "title": "Lazos"},
+    {"artist": "PROFF", "title": "Reverie"},
+    {"artist": "PROFF Khen Volen Sentir", "title": "Mirage"},
+    {"artist": "PROFF Volen Sentir", "title": "Luna Amazonia"},
+    {"artist": "Jakatta", "title": "American Dream"},
+    {"artist": "Guy Mantzur Khen", "title": "Where Is Home"},
+    {"artist": "Guy Mantzur Tamir Regev", "title": "Stargazer"},
+    {"artist": "Guy Mantzur", "title": "My Wild Flower"},
+    {"artist": "Guy Mantzur Roy Rosenfeld", "title": "Epika"},
+    {"artist": "Jamie Stevens", "title": "Creature of Comfort"},
+    {"artist": "Jamie Stevens Zankee Gulati", "title": "Low Tide"},
+    {"artist": "Sudhaus", "title": "Spectron"},
+    {"artist": "Jamie Stevens", "title": "Cdx5"},
+    {"artist": "Hernan Cattaneo Gorje Hewek", "title": "Kaleidoscope"}
+  ]
+}

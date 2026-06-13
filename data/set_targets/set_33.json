@@ -1,0 +1,37 @@
+{
+  "name": "33. GMJ Universe — Hipnotico Oscuro — 2026-06-04",
+  "duration_h": 2,
+  "bpm_range": [119, 124],
+  "max_per_artist": 4,
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
+    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.35, "anchor_ids": []},
+    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.30, "anchor_ids": []},
+    {"name": "cool",   "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.15, "anchor_ids": []}
+  ],
+  "tracks": [
+    {"artist": "GMJ Matter", "title": "Soular"},
+    {"artist": "GMJ Matter", "title": "Arkeron"},
+    {"artist": "GMJ Matter", "title": "Nassaukade"},
+    {"artist": "GMJ Matter", "title": "Metanoia"},
+    {"artist": "Jamie Stevens GMJ", "title": "Force of Nature"},
+    {"artist": "Dmitry Molosh", "title": "Glide"},
+    {"artist": "Dmitry Molosh", "title": "Only U"},
+    {"artist": "Dmitry Molosh", "title": "Cascade"},
+    {"artist": "Dmitry Molosh", "title": "Step by Step"},
+    {"artist": "Cid Inc", "title": "Citadel"},
+    {"artist": "Cid Inc", "title": "Rescue Me"},
+    {"artist": "D-Nox Beckers", "title": "Bitter Rain"},
+    {"artist": "Kasper Koman", "title": "Hi"},
+    {"artist": "Ruben Karapetyan", "title": "Nostalgic Moments"},
+    {"artist": "Ruben Karapetyan", "title": "State of Progression"},
+    {"artist": "Rauschhaus", "title": "Mindworm"},
+    {"artist": "GMJ Matter", "title": "Cryo"},
+    {"artist": "GMJ Matter", "title": "Telomeres"},
+    {"artist": "Hernan Cattaneo Soundexile", "title": "Astron"},
+    {"artist": "Hernan Cattaneo Soundexile", "title": "Deneb"},
+    {"artist": "Hernan Cattaneo Soundexile", "title": "Pressure Drop"},
+    {"artist": "Marcelo Vasami", "title": "Shades Of Blue"},
+    {"artist": "Armen Miran Felix Raphael", "title": "Ghost"}
+  ]
+}
