@@ -1,6 +1,5 @@
 """Configuration loaded from .env file."""
 import os
-from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -17,9 +16,8 @@ SQLCIPHER_KEY = os.getenv("SQLCIPHER_KEY",
 # Music library
 MUSIC_LIBRARY_ROOT = Path(os.getenv("MUSIC_LIBRARY_ROOT",
     r"C:\Users\gonza\OneDrive\Documentos\Music"))
-_current_month = datetime.now().strftime("%Y-%m")
 MUSIC_NEW_FOLDER = Path(os.getenv("MUSIC_NEW_FOLDER",
-    rf"C:\Users\gonza\OneDrive\Documentos\Music\2026\Nuevos\{_current_month}"))
+    r"C:\Users\gonza\OneDrive\Documentos\Music\2026\Nuevos\Inbox"))
 DOWNLOADS_FOLDER = Path(os.getenv("DOWNLOADS_FOLDER",
     r"C:\Users\gonza\Downloads"))
 

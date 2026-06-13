@@ -105,15 +105,15 @@ def record_transition(from_id: str, to_id: str, score: int, note: str = "") -> N
     score: -2 choca fuerte, -1 incómoda, 0 neutral, +1 buena, +2 perfecta
     """
     feedback = load_feedback()
-    key = f"{from_id}→{to_id}"
+    key = f"{from_id}->{to_id}"
     feedback[key] = {"score": score, "note": note, "from": from_id, "to": to_id}
     save_feedback(feedback)
-    print(f"Feedback registrado: {key} = {score} ({note})")
+    print(f"Feedback registrado: {from_id} -> {to_id} = {score} ({note})")
 
 
 def transition_penalty(from_id: str, to_id: str, feedback: dict) -> float:
     """Penalización por transición conocida como problemática. 0=neutral, >0=malo."""
-    key = f"{from_id}→{to_id}"
+    key = f"{from_id}->{to_id}"
     if key in feedback:
         score = feedback[key]["score"]
         if score < 0:

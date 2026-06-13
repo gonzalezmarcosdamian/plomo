@@ -24,6 +24,9 @@ import urllib.parse
 import requests
 from pathlib import Path
 
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
@@ -201,6 +204,9 @@ def download_track(s: requests.Session, track_id: int, filename: str) -> tuple[P
         fname = re.sub(r'[<>:"/\\|?*]', '', filename.replace(".aiff", ".mp3").replace(".aif", ".mp3"))
         if not fname.endswith(".mp3"):
             fname += ".mp3"
+    # Limpiar caracteres invalidos en el nombre final
+    fname = fname.replace("\n", " ").replace("\r", " ").replace("\\", "-")
+    fname = re.sub(r'[<>:"/|?*]', '', fname).strip()
 
     dest = DOWNLOADS / fname
     with open(dest, "wb") as f:
@@ -263,7 +269,8 @@ def cmd_batch(path: str) -> None:
         return
 
     with open(path) as f:
-        lines = [l.strip() for l in f if " — " in l or " - " in l]
+        lines = [l.strip() for l in f
+                 if (" — " in l or " - " in l) and not l.strip().startswith("#")]
 
     print(f"Procesando {len(lines)} tracks...")
     ok = 0

@@ -21,6 +21,9 @@ import shutil
 from datetime import datetime
 from pathlib import Path
 
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from plomo import config
@@ -85,10 +88,10 @@ def main() -> None:
             # Archivo ya en destino — eliminar duplicado de Downloads
             if src.exists():
                 src.unlink()
-            print(f"  → Ya existía en destino, duplicado removido de Downloads")
+            print(f"  [dup] Ya existia en destino, removido de Downloads")
         else:
             shutil.move(str(src), str(dest_file))
-            print(f"  → Movido a {DEST.name}/")
+            print(f"  [ok] Movido a {DEST.name}/")
 
         moved.append(dest_file)
 
@@ -103,8 +106,17 @@ def main() -> None:
         print("  Rekordbox no debe estar corriendo — cerralo primero.")
 
     print("\n=== LISTO ===")
-    print("Abrí Rekordbox → va a detectar los nuevos, analizarlos (BPM + key + waveform).")
-    print("Cuando termine: cerrá RB (System Tray → Quit) y corré post_import.py.")
+    print(f"Tracks movidos a: {DEST}")
+    print("")
+    print("Si Rekordbox ya tiene 'Nuevos/Inbox' como carpeta vigilada:")
+    print("  -> Abri RB -> detecta los nuevos automaticamente -> cerra -> corre post_import.py")
+    print("")
+    print("Si es la PRIMERA VEZ (setup inicial):")
+    print("  1. Abri RB")
+    print("  2. File > Preferences > Library > Add Monitor Folder")
+    print(f"     Agrega: {DEST}")
+    print("  3. RB analiza (BPM + key + waveform) -> cerra -> corre post_import.py")
+    print("  (Solo necesitas hacer este setup UNA VEZ)")
 
 
 if __name__ == "__main__":

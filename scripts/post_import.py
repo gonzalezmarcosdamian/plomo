@@ -1,8 +1,10 @@
 """
 Post-import: aplica cues v8, energy score y restaura playlists
-para tracks recién importados por Rekordbox desde Nuevos/2026-05.
+para tracks recien importados por Rekordbox desde Nuevos/2026-05.
 """
 import sys
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 import json
 import random
 import uuid as uuid_lib
@@ -55,7 +57,7 @@ def main():
     new_tracks = con_read.execute("""
         SELECT c.ID, c.FileNameL, c.FolderPath, c.BPM
         FROM djmdContent c
-        WHERE c.FolderPath LIKE '%Nuevos%2026-05%'
+        WHERE (c.FolderPath LIKE '%Nuevos%' OR c.FolderPath LIKE '%Inbox%')
         AND c.rb_local_deleted=0
     """).fetchall()
     con_read.close()
@@ -64,17 +66,21 @@ def main():
 
     # FASE 1: cues v8 via pyrekordbox
     cues_map = {}
-    with RekordboxDB() as db:
-        for cid, fname, fpath, bpm_raw in new_tracks:
-            bpm = (bpm_raw or 12200) / 100
-            file_path = Path(fpath) if fpath else None
-            if file_path and file_path.exists():
-                cues = analyze_track(str(file_path), known_bpm=bpm)
-                if cues:
-                    n = apply_cues_v8(db.db, int(cid), cues)
-                    cues_map[str(cid)] = (cues, n, bpm)
-                    print(f"  cues [{cid}] {n} markers | {fname[:45]}")
-        db.db.session.commit()
+    try:
+        with RekordboxDB() as db:
+            for cid, fname, fpath, bpm_raw in new_tracks:
+                bpm = (bpm_raw or 12200) / 100
+                file_path = Path(fpath) if fpath else None
+                if file_path and file_path.exists():
+                    cues = analyze_track(str(file_path), known_bpm=bpm)
+                    if cues:
+                        n = apply_cues_v8(db.db, int(cid), cues)
+                        cues_map[str(cid)] = (cues, n, bpm)
+                        print(f"  cues [{cid}] {n} markers | {fname[:45]}")
+            db.db.session.commit()
+    except Exception as e:
+        print(f"\n[WARN] FASE 1 (pyrekordbox/cues) fallo: {e}")
+        print("[WARN] Saltando cues — se aplicaran energy y playlists igualmente.\n")
 
     # FASE 2: metadata + energy + playlists via sqlcipher3
     con = sqlcipher3.connect(str(config.REKORDBOX_DB_PATH))
@@ -129,7 +135,7 @@ def main():
                           str(uuid_lib.uuid4()), max_sp, ts, ts))
                     added += 1
             if added:
-                print(f"         → {added} playlists")
+                print(f"         -> {added} playlists")
 
     con.commit()
 
@@ -141,9 +147,12 @@ def main():
 
     con.close()
 
-    with RekordboxDB() as db2:
-        print(f"\nDB integrity: {db2.integrity_check()}")
-    print("\nListo. Abrí Rekordbox y hacé sync al pen.")
+    try:
+        with RekordboxDB() as db2:
+            print(f"\nDB integrity: {db2.integrity_check()}")
+    except Exception as e:
+        print(f"\n[WARN] No se pudo verificar integridad via pyrekordbox: {e}")
+    print("\nListo. Abri Rekordbox y hace sync al pen.")
 
 
 if __name__ == "__main__":

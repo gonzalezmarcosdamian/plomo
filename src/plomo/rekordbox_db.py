@@ -59,7 +59,7 @@ class RekordboxDB:
                     pass
                 self.db.close()
                 if self._backup_path and self._backup_path.exists():
-                    print(f"⚠️  Error during DB operation, restoring {self._backup_path.name}")
+                    print(f"WARN: Error during DB operation, restoring {self._backup_path.name}")
                     shutil.copy2(self._backup_path, self.db_path)
 
     def _preflight_check(self) -> None:
