@@ -1,0 +1,11 @@
+import os; from dotenv import load_dotenv; load_dotenv()
+import sqlcipher3
+KEY = os.environ.get('SQLCIPHER_KEY')
+con = sqlcipher3.connect(os.environ['REKORDBOX_DB_PATH'])
+con.execute(f"PRAGMA key='{KEY}'")
+con.execute("PRAGMA cipher_compatibility=4")
+cols = con.execute("PRAGMA table_info(djmdSongPlaylist)").fetchall()
+for c in cols: print(c)
+print()
+row = con.execute("SELECT * FROM djmdSongPlaylist LIMIT 1").fetchone()
+print("Ejemplo:", row)
