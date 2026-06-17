@@ -1,0 +1,40 @@
+{
+  "name": "46. Hernan Cattaneo — Warung Last Set Style — 2026-06-17",
+  "duration_h": 3,
+  "bpm_range": [114, 128],
+  "max_per_artist": 3,
+  "movements": [
+    {"name": "warmup",  "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.18},
+    {"name": "build",   "e_min": 4.5, "e_max": 6.0, "e_center": 5.0, "fraction": 0.25},
+    {"name": "mid",     "e_min": 5.5, "e_max": 6.8, "e_center": 6.0, "fraction": 0.30},
+    {"name": "peak",    "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.27}
+  ],
+  "tracks": [
+    {"artist": "Troels Abrahamsen Kolsch", "title": "All that Matters"},
+    {"artist": "David August", "title": "Epikur"},
+    {"artist": "Caribou", "title": "Your Love Will Set You Free"},
+    {"artist": "Seth Schwarz Be Svendsen", "title": "The Bar Tender"},
+    {"artist": "Makebo Amonita", "title": "Back To The Roots"},
+    {"artist": "Gorje Hewek Izhevski", "title": "Calinerie"},
+    {"artist": "Solomun", "title": "Never Sleep Again"},
+    {"artist": "Hot Tuneik Sarah Chilanti", "title": "Soul on Fire"},
+    {"artist": "Radio Slave", "title": "Strobe Queen"},
+    {"artist": "Nora En Pure", "title": "Spring Embers"},
+    {"artist": "K Loveski", "title": "Check-a-Change"},
+    {"artist": "Simos Tagias Tonaco", "title": "Alnilam"},
+    {"artist": "K3V Jayy Vibes", "title": "Kingdom of Dreams"},
+    {"artist": "Kostya Outta", "title": "Seguro"},
+    {"artist": "EdOne Weizman", "title": "Misery"},
+    {"artist": "Joe Goddard", "title": "Music Is The Answer"},
+    {"artist": "Ed Steele Anna Speedy", "title": "Don't Leave Me"},
+    {"artist": "Guy J", "title": "Dizzy Moments"},
+    {"artist": "Ezequiel Arias", "title": "Psychodelia"},
+    {"artist": "Pachanga Boys", "title": "Time"},
+    {"artist": "WhoMadeWho", "title": "Never Alone"},
+    {"artist": "Guy Gerber", "title": "Timing"},
+    {"artist": "Der Dritte Raum", "title": "Hale Bopp"},
+    {"artist": "Maceo Plex Chromatics", "title": "Shadow"},
+    {"artist": "Chemical Brothers", "title": "Out of control"},
+    {"artist": "Depeche Mode", "title": "I Feel Loved"}
+  ]
+}

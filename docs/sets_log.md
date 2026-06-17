@@ -926,3 +926,39 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 23 | Hana, Durante | Starglow (Extended Mix) | 124 | 6.4 |
 | 24 | Simon Vaurambon | Leman (Original Mix) | 120 | 5.0 |
 
+
+## Set 46. 46. Hernan Cattaneo — Warung Last Set Style — 2026-06-17
+**Armado:** 2026-06-17  
+**Duracion:** 3h  
+**Tracks:** 26  
+**BPM range:** 114-128  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | David August | Epikur (Original Mix) | 118 | 3.5 |
+| 2 | Seth Schwarz & Be Svendsen | The Bar Tender | 121 | 5.0 |
+| 3 | Troels Abrahamsen, Kolsch | All that Matters (Symphony of Unity - strings reimagined) | 125 | 6.0 |
+| 4 | Makebo & Amonita | Back To The Roots (Extended Mix) | 122 | 5.5 |
+| 5 | Caribou | Your Love Will Set You Free (C2's Set U Free Remix) | 120 | 5.0 |
+| 6 | Gorje Hewek & Izhevski | Calinerie | 120 | 5.0 |
+| 7 | Solomun | Never Sleep Again (Keinemusik Remix) | 120 | 5.0 |
+| 8 | Hot Tuneik, Sarah Chilanti | Soul on Fire (Original Mix) | 120 | 5.0 |
+| 9 | Nora En Pure | Spring Embers (Extended Mix)  | 122 | 5.5 |
+| 10 | K Loveski | Check-a-Change (Federico Monachesi Remix) | 122 | 5.6 |
+| 11 | Radio Slave | Strobe Queen | 120 | 5.0 |
+| 12 | Simos Tagias, Tonaco | Alnilam (Original Mix) | 122 | 5.5 |
+| 13 | Joe Goddard | Music Is The Answer (Hot Since 82 Remix) | 123 | 5.5 |
+| 14 | Ed Steele, Anna Speedy | Don't Leave Me (D-Nox & André Moret Extended Remix) | 123 | 5.5 |
+| 15 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 5.5 |
+| 16 | Guy J | Dizzy Moments | 125 | 6.0 |
+| 17 | Ezequiel Arias | Psychodelia (Extended Mix) | 125 | 6.0 |
+| 18 | EdOne, Weizman | Misery (Original Mix) | 123 | 5.5 |
+| 19 | K3V (SL) & Jayy Vibes | Kingdom of Dreams (Juan Ibanez Remix) | 122 | 5.5 |
+| 20 | Pachanga Boys | Time | 124 | 6.0 |
+| 21 | Depeche Mode | I Feel Loved (Danny Tenaglia's Labor Of Love Edit) | 128 | 6.5 |
+| 22 | Guy Gerber | Timing (Original) | 126 | 6.5 |
+| 23 | Maceo Plex, Chromatics | Shadow (Maceo Plex Remix) (Original Mix) | 126 | 6.5 |
+| 24 | Der Dritte Raum | Hale Bopp (Maceo Plex Edit) | 125 | 6.0 |
+| 25 | WhoMadeWho | Never Alone (Patrice Bäumel Remix)  | 124 | 6.0 |
+| 26 | Chemical Brothers | Out of control (Teiko Yume's Frequent Flyer remix)  | 125 | 6.0 |
+

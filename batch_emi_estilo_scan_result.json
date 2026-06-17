@@ -1,0 +1,119 @@
+{
+  "found": [
+    {
+      "artist": "Ben Bohmer",
+      "title": "Escalate",
+      "fullname": "Jonah, Ben Bohmer - Escalate feat. JONAH (Original Mix)",
+      "bpm": 124,
+      "key": "Ebmaj"
+    },
+    {
+      "artist": "Nto",
+      "title": "Alter Ego",
+      "fullname": "N'to - Alter Ego",
+      "bpm": 123,
+      "key": "Bbm"
+    },
+    {
+      "artist": "Worakls",
+      "title": "Orchestra",
+      "fullname": "Worakls - Le Trésor (Orchestral Version)",
+      "bpm": 95,
+      "key": "Gm"
+    },
+    {
+      "artist": "Nils Hoffmann",
+      "title": "Lost",
+      "fullname": "Sunlounger, Zara - Lost (Nils Hoffmann Extended Remix)",
+      "bpm": 123,
+      "key": "F#m"
+    },
+    {
+      "artist": "Nils Hoffmann",
+      "title": "Home",
+      "fullname": "Nils Hoffmann - Heading Home (Deeparture Remix)",
+      "bpm": 122,
+      "key": "Cm"
+    },
+    {
+      "artist": "FKJ",
+      "title": "Go Back Home",
+      "fullname": "FKJ - Go Back Home ",
+      "bpm": 96,
+      "key": "Ebm"
+    },
+    {
+      "artist": "FKJ",
+      "title": "Lying Together",
+      "fullname": "FKJ - Lying Together ",
+      "bpm": 102,
+      "key": "Ebm"
+    },
+    {
+      "artist": "Moderat",
+      "title": "Running",
+      "fullname": "Moderat - Running (Tale Of Us Remix)",
+      "bpm": "?",
+      "key": "?"
+    },
+    {
+      "artist": "Moderat",
+      "title": "Eating Hooks",
+      "fullname": "Moderat - Eating Hooks (Siriusmo Remix - Solomun Edit)",
+      "bpm": "?",
+      "key": "?"
+    },
+    {
+      "artist": "Bonobo",
+      "title": "Kerala",
+      "fullname": "Bonobo - Kerala (Original Mix)",
+      "bpm": "?",
+      "key": "Gmin"
+    },
+    {
+      "artist": "Bonobo",
+      "title": "Kong",
+      "fullname": "Bonobo - Kong",
+      "bpm": "?",
+      "key": "?"
+    },
+    {
+      "artist": "Bonobo",
+      "title": "Kiara",
+      "fullname": "Bonobo - Kiara",
+      "bpm": "?",
+      "key": "?"
+    }
+  ],
+  "not_found": [
+    "﻿# Organic nuevo para peluqueria - artistas distintos al set 37",
+    "Hermanez - Soul Crossing",
+    "Hermanez - Matador",
+    "Hermanez - Soft Landing",
+    "Hermanez - Horizons",
+    "Hermanez - Forever Young",
+    "Ben Bohmer - Head Above Water",
+    "Zuma Dionys - Floating",
+    "Zuma Dionys - Nuit Blanche",
+    "Zuma Dionys - Until Dawn",
+    "Zuma Dionys - Au Revoir",
+    "Nto - Trauma Worakls Remix",
+    "Nto - Parallel",
+    "Worakls - She",
+    "Worakls - Neon",
+    "Adam Port - Tell Me",
+    "Adam Port - Kelpie",
+    "Adam Port - More Or Less",
+    "Nils Hoffmann - Come Back to Me",
+    "Patrice Baumel - Kyo",
+    "Patrice Baumel - Drift",
+    "Stimming - Stevia",
+    "Stimming - Apricot",
+    "Stimming - Schmetterling",
+    "FKJ - Ylang Ylang"
+  ],
+  "already_have": [
+    "Ben Bohmer - Beyond Beliefs",
+    "Ben Bohmer - In Memoriam"
+  ]
+}

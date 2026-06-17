@@ -1,0 +1,59 @@
+{
+  "name": "47. Organic Dulce — Pelu Opener — 2026-06-17",
+  "duration_h": 2,
+  "bpm_range": [116, 124],
+  "max_per_artist": 3,
+  "movements": [
+    {"name": "warmup", "e_min": 2.0, "e_max": 4.2, "e_center": 3.0, "fraction": 0.25},
+    {"name": "build",  "e_min": 4.0, "e_max": 5.5, "e_center": 4.8, "fraction": 0.35},
+    {"name": "peak",   "e_min": 5.3, "e_max": 6.5, "e_center": 5.9, "fraction": 0.40}
+  ],
+  "tracks": [
+    {"artist": "Hermanez", "title": "Gamma Ray"},
+    {"artist": "Hermanez", "title": "Areia"},
+    {"artist": "Hermanez", "title": "Eight Years"},
+
+    {"artist": "Ben Böhmer", "title": "Blossoms"},
+    {"artist": "Ben Böhmer", "title": "Run Away"},
+    {"artist": "Ben Böhmer", "title": "Begin Again"},
+
+    {"artist": "Adriatique", "title": "Ray"},
+    {"artist": "Adriatique", "title": "Desire"},
+    {"artist": "Adriatique", "title": "Home"},
+
+    {"artist": "Rodriguez Jr.", "title": "Twilight Language"},
+    {"artist": "Rodriguez Jr.", "title": "Nairobi"},
+    {"artist": "Rodriguez Jr.", "title": "1PM Sunrise"},
+
+    {"artist": "Lane 8", "title": "Survive"},
+    {"artist": "Lane 8", "title": "Keep On"},
+    {"artist": "Lane 8", "title": "Diamonds"},
+
+    {"artist": "Lee Burridge, Lost Desert", "title": "In the Dark"},
+    {"artist": "Lee Burridge, Lost Desert", "title": "Chicago Drive"},
+    {"artist": "Lee Burridge, Lost Desert", "title": "Ash & Ember"},
+
+    {"artist": "Nils Hoffmann", "title": "Heading Home"},
+    {"artist": "Panama, Nils Hoffmann", "title": "Far Behind"},
+    {"artist": "Nils Hoffmann, Julia Church", "title": "9 Days"},
+
+    {"artist": "Monolink", "title": "Burning Sun"},
+    {"artist": "Monolink", "title": "Don't Hold Back"},
+
+    {"artist": "Bedouin", "title": "Flight of Birds"},
+    {"artist": "Bedouin", "title": "Straight To The Heart"},
+
+    {"artist": "HVOB", "title": "Tender Skin"},
+    {"artist": "Monkey Safari", "title": "Goodbye"},
+    {"artist": "Cosmonaut", "title": "Milky Way"},
+    {"artist": "Tale Of Us", "title": "Astral"},
+    {"artist": "Lost Desert", "title": "Open Form"},
+    {"artist": "Stephan Bodzin", "title": "River"},
+
+    {"artist": "N'to", "title": "Alter Ego"},
+    {"artist": "Ben Böhmer", "title": "Escalate"},
+    {"artist": "Sunlounger", "title": "Lost"},
+    {"artist": "Moderat", "title": "Running"},
+    {"artist": "Moderat", "title": "Eating Hooks"}
+  ]
+}
