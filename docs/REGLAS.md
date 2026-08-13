@@ -28,17 +28,79 @@
 
 ## Algoritmo de cues v8
 
-11 markers por track:
+9 markers por track:
 
-| # | Tipo | Color | Posición | Active Loop |
-|---|------|-------|----------|-------------|
-| Cue 1 / M1 | Mix-IN First Beat | Rojo | Primer onset absoluto | — |
-| Cue 2 / M2 | Bass IN | Verde | Primer kick sustained | — |
-| Cue 3 / M3 | Breakdown | Cyan | Longest kick-absent stretch | — |
-| Cue 4 / M4 | DROP | Azul | Kick re-entry post-breakdown | — |
-| Cue 5 | Mix-OUT | Amarillo | 16 bars antes del último kick | — |
-| Loop Intro | — | Naranja | 16 bars desde Bass IN | `0` (manual) |
-| Loop Outro | — | **Rojo** | 16 bars antes de Mix-OUT | **`1` (auto)** ⭐ |
+| # | Tipo | Color | Posición |
+|---|------|-------|----------|
+| Cue 1 / M1 | Mix-IN First Beat | Rojo | Primer onset absoluto |
+| Cue 2 / M2 | Bass IN | Verde | Primer kick sustained |
+| Cue 3 / M3 | Breakdown | Cyan | Longest kick-absent stretch |
+| Cue 4 / M4 | DROP | Azul | Kick re-entry post-breakdown |
+| Cue 5 | Mix-OUT | Amarillo | 16 bars antes del último kick |
+
+**Sin loops** (desde 2026-08-06). El engine no escribe ningún cue con `OutMsec`
+ni `BeatLoopSize`. El loop se arma a mano en el CDJ.
+
+## Reglas de curaduría de sets (2026-08-13)
+
+### Repetición: lo que escucha el que te vio dos veces
+
+La regla vieja era "un artista por set". Medida contra la biblioteca, no estaba
+midiendo lo que importa: había un track en **14 sets** distintos, otro en 13 y dos
+en 10 — y como eran de artistas distintos, la regla no los detectaba.
+
+Regla nueva:
+
+```
+dentro de un SET:
+  máx 2 tracks por artista        (separación mínima 5 tracks)
+  máx 3 tracks por remixer/mano   ← el remixer cuenta como artista
+  máx 4 tracks por sello
+
+entre SETS CONSECUTIVOS:
+  0 tracks repetidos
+  0 detonantes (E>=7.5) repetidos
+```
+
+El remixer se cuenta parseando `(X Remix|Mix|Edit|Version)` del título además
+del campo artista — ver `names()` en `scripts/select_set.py`. Cuidado con los
+sufijos: "Marsh's Extended Mix" tiene que normalizar a `marsh`, si no el solver
+mete dos temas del mismo productor sin darse cuenta.
+
+**Efecto lateral de la regla vieja:** con 31 tracks de Kamilo y techo de 1 por
+set, hacían falta 31 sets para usarlos. Por eso había 78 sets. La regla no
+limitaba la pereza dentro del set: la exportaba hacia afuera.
+
+### Restricciones duras de tocabilidad
+
+Sin estas, el optimizador produce sets que se ven bien en la planilla y son
+injugables. Están implementadas en `select_set.py` como condiciones duras:
+
+1. Escalón de energía **<= 1.3** entre tracks consecutivos
+2. El cierre baja **al menos 0.6** del pico — nunca terminar arriba
+3. Sin retroceso de energía durante la subida (tolerancia 0.4)
+4. Key a distancia **<= 1** en Camelot, BPM **±2**
+5. Penalizar quedarse en la misma key más de 2 tracks seguidos
+
+**Prioridad cuando compiten:** el arco de energía manda. Un salto de Camelot se
+tapa con una transición larga o un corte de bajos; un bache de energía en el
+medio del set no se tapa con nada.
+
+### Detonantes
+
+Los tracks de E>=7.5 (23 en la biblioteca) viven en `[POOL] Detonantes`.
+Todo set de 2h+ lleva **uno o dos**, ubicados entre el 70% y el 85% del set.
+Nunca al final, nunca dos seguidos, y no se repite el mismo en dos sets
+consecutivos.
+
+El peak de un set progressive no lo hace el track de peak: lo hacen las dos
+horas de contención anteriores.
+
+### Caja, no playlist
+
+Un set de 1h30 lleva **18-20 tracks**, no 12. Con 12 tracks a 7:30 cada uno no
+hay margen para estirar, saltar ni leer la pista — eso es una playlist para
+reproducir, no una caja para tocar. Se eligen los 12 arriba del escenario.
 
 ## Aprendizajes técnicos críticos
 

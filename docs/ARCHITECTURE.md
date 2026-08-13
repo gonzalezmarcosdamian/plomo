@@ -47,6 +47,10 @@ plomo/
 | `scripts/apply_energy_v2.py` | Aplicar energy score v2 | Aplica el algoritmo energy score v2 a la biblioteca. |
 | `scripts/build_setlist_sets.py` | Sets en orden de setlist real | Construye playlists en Rekordbox siguiendo el orden de un setlist histórico. |
 | `scripts/analyze_set.py` | Análisis y exploración | Analiza composición y métricas de un set. |
+| `scripts/backfill_energy.py` | Cuando hay tracks sin energía | Aplica cues + energía a lo que quedó fuera del pipeline. Elige por ESTADO (sin `E:`), no por carpeta como `post_import.py`. Idempotente y reanudable; preserva el comentario previo como `E:5.4 \| /* ... */`. |
+| `scripts/dump_pool.py` | Antes de armar sets | Exporta la biblioteca a `data/pool.json` para `select_set.py`. Marca qué tracks ya están en algún set numerado. |
+| `scripts/select_set.py` | Armar un set nuevo | Beam search que ELIGE los tracks respetando a la vez escalera Camelot, arco de energía, BPM y tope por artista/remixer. Config JSON en `data/set_configs/`. |
+| `scripts/audit_sets.py` | Después de armar o al revisar | Audita sets existentes: arco de energía, saltos de Camelot y de BPM. |
 | `scripts/watcher.py` | Daemon en background | Vigila la carpeta Downloads y procesa nuevos archivos automáticamente. |
 
 ### Flujo correcto del pipeline de importación
@@ -56,7 +60,22 @@ plomo/
 2. Abrir Rekordbox                       # RB detecta, analiza BPM/key/waveform
 3. Cerrar Rekordbox (System Tray → Quit)
 4. python scripts/post_import.py        # Cues v8 + energy + playlists
-5. Abrir Rekordbox → sync pen           # Export a USB
+5. python scripts/db_audit.py --dry     # Verificar duplicados post-import
+6. Abrir Rekordbox → sync pen           # Export a USB
+```
+
+### Flujo para armar un set
+
+Rekordbox tiene que estar CERRADO en los pasos 2 y 4.
+
+```
+1. python scripts/backfill_energy.py     # Solo si hay tracks sin energía
+2. python scripts/dump_pool.py           # Exporta la biblioteca a data/pool.json
+3. Editar data/set_configs/<nombre>.json # Concepto, BPM, banda de energía, N tracks
+4. python scripts/select_set.py data/set_configs/<nombre>.json   # Escribe el target
+5. python scripts/build_set.py <num> --dry   # Revisar antes de escribir
+6. python scripts/build_set.py <num>         # Escribe la playlist en la DB
+7. python scripts/audit_sets.py <num>        # Verificar arco y transiciones
 ```
 
 ---
