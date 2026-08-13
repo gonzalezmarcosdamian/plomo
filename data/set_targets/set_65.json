@@ -1,0 +1,57 @@
+{
+  "name": "65. Previa Colorida — Warmup — 1h — 2026-08-08",
+  "duration_h": 1.0,
+  "bpm_range": [
+    118,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mike Rish",
+      "title": "Sunset on Mars (Original Mix)",
+      "content_id": "235327692"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Loco Motif (Tantum Remix) ",
+      "content_id": "28929100"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Dopamine (Forniva Remix) ",
+      "content_id": "215701679"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Spectre (Extended Mix)",
+      "content_id": "10732368"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Stardust (Original Mix)",
+      "content_id": "66961608"
+    },
+    {
+      "artist": "D-Nox & Beckers",
+      "title": "Bitter Rain (Cid Inc. Remix)",
+      "content_id": "74777724"
+    },
+    {
+      "artist": "Kostya Outta, Greta Meier, Alisha (PL)",
+      "title": "Far Above (Original Mix)",
+      "content_id": "101403813"
+    },
+    {
+      "artist": "Tali Muss, Mayro",
+      "title": "Dimension Of Space (Original Mix) ",
+      "content_id": "207638313"
+    },
+    {
+      "artist": "Tonaco, Kebin Van Reeken",
+      "title": "Chroma (Original Mix)",
+      "content_id": "82977042"
+    }
+  ]
+}

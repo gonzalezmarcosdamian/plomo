@@ -1,0 +1,57 @@
+{
+  "name": "66. Previa Organica — Groove — 1h — 2026-08-08",
+  "duration_h": 1.0,
+  "bpm_range": [
+    118,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Gorje Hewek & Izhevski",
+      "title": "When I Was Young (Original Mix)",
+      "content_id": "147987231"
+    },
+    {
+      "artist": "Monolink",
+      "title": "Sirens (H3RMES Edit) ",
+      "content_id": "264026542"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Firefly (Original Mix) ",
+      "content_id": "38262851"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Promises (Original Mix) ",
+      "content_id": "46009275"
+    },
+    {
+      "artist": "Khen & Freedom Fighters",
+      "title": "Levantine",
+      "content_id": "267357654"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Gamma Ray",
+      "content_id": "39981663"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Forget (Original Mix) ",
+      "content_id": "250886425"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Pull (Original Mix) ",
+      "content_id": "137437468"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Nairobi (Original Mix) ",
+      "content_id": "193525568"
+    }
+  ]
+}

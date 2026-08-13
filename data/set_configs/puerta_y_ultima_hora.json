@@ -1,0 +1,85 @@
+{
+  "_comentario": "Los dos sets que faltaban: apertura real y cierre euforico. Ver docs/REGLAS.md",
+  "pool": "data/pool.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "sets": [
+    {
+      "num": 74,
+      "name": "74. Puerta — Apertura — 2h — 2026-08-13",
+      "_identidad": "El set que no promete nada. Textura y aire, sin melodia obvia ni vocal. El objetivo no es que bailen: es que no se den cuenta de cuando empezo. Techo duro en 5.5.",
+      "duration_h": 2.0,
+      "n": 16,
+      "bpm": [
+        117,
+        124
+      ],
+      "e_pool": [
+        1.0,
+        5.8
+      ],
+      "e_lo": 1.5,
+      "e_hi": 5.5,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Melodic House & Techno",
+        "Organic House",
+        "Organic House / Downtempo",
+        "Deep House"
+      ],
+      "solo_sin_usar": true
+    },
+    {
+      "num": 75,
+      "name": "75. La Ultima Hora — Cierre Euforico — 1h30 — 2026-08-13",
+      "_identidad": "Catarsis, no peak time. La energia es emocional, no fisica: melodia grande sin verguenza, cosas que la gente canta sin saber la letra. El permiso para soltar. Clímax: The Whiteroom (E8.6).",
+      "duration_h": 1.5,
+      "n": 12,
+      "bpm": [
+        122,
+        127
+      ],
+      "e_pool": [
+        6.2,
+        9.0
+      ],
+      "e_lo": 6.8,
+      "e_hi": 8.6,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "_nota_genero": "Sin este filtro el selector mete bootlegs y techno de fiesta que aparecieron con el backfill (Freed From Desire, ATB, UMEK). No son el estilo.",
+      "genres": [
+        "Progressive House",
+        "Melodic House & Techno",
+        "Organic House",
+        "Organic House / Downtempo"
+      ],
+      "prefer_ids": [
+        "162072169"
+      ],
+      "keys": [
+        "2A",
+        "3A",
+        "4A",
+        "5A",
+        "6A",
+        "7A",
+        "3B",
+        "4B",
+        "5B",
+        "6B"
+      ],
+      "_nota_keys": "Acotado al vecindario de 5A para que The Whiteroom (E8.6) sea alcanzable.",
+      "prefer_bonus": 40.0,
+      "beam": 6000
+    }
+  ]
+}

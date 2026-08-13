@@ -1,0 +1,74 @@
+{
+  "name": "59. Cocina II — Ritual — 50min — 2026-08-06",
+  "duration_h": 1,
+  "bpm_range": [
+    118,
+    123
+  ],
+  "max_per_artist": 3,
+  "movements": [
+    {
+      "name": "apertura",
+      "e_min": 1.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.35
+    },
+    {
+      "name": "cuerpo",
+      "e_min": 4.5,
+      "e_max": 5.8,
+      "e_center": 5.2,
+      "fraction": 0.4
+    },
+    {
+      "name": "cierre alto",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.2,
+      "fraction": 0.25
+    }
+  ],
+  "tracks": [
+    {
+      "artist": "Hraach",
+      "title": "Apricot Tree (Original Mix) ",
+      "content_id": "135524860"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Third Decade ",
+      "content_id": "221169193"
+    },
+    {
+      "artist": "Armen Miran, Felix Raphael",
+      "title": "Ghost (Hernan Cattaneo & Marcelo Vasami Remix) ",
+      "content_id": "207191527"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Actrice (Original Mix)",
+      "content_id": "6939383"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Flight of Birds",
+      "content_id": "219630125"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Moogami (Original Mix) ",
+      "content_id": "251360492"
+    },
+    {
+      "artist": "Seth Schwarz & Be Svendsen",
+      "title": "The Bar Tender",
+      "content_id": "194116762"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Forget (Original Mix) ",
+      "content_id": "250886425"
+    }
+  ]
+}

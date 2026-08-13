@@ -1,0 +1,791 @@
+# Nuevos lanzamientos en Muzpa desde 2026-05-03
+# Revisar y borrar las lineas que no quieras antes de descargar
+
+# BPM=122 Key=Em 2026-08-02 [Songspire Records]
+Dabeat, Kamilo Sanclemente - Magnetic Fields (Original Mix)
+# BPM=122 Key=Em 2026-08-02 [Transensations Records]
+Gai Barone, Tiefstone - Boundaries (Callecat Remix)
+# BPM=120 Key=E 2026-08-02 [Transensations Records]
+Gai Barone, Tiefstone - Boundaries (Cortona Remix)
+# BPM=122 Key=Cm 2026-08-02 [UV]
+Das Pharaoh, SHERRNX - Astral Abyss (Extended Mix)
+# BPM=122 Key=Em 2026-08-02 [UV]
+Das Pharaoh, SHERRNX - Void Between Us (Extended Mix)
+# BPM=123 Key=Fm 2026-08-01 [Polyptych Bundles]
+Matias Carafa - Complex Mode (Kamilo Sanclemente Extended Remix)
+# BPM=122 Key=Gm 2026-08-01 [Clubsonica Records]
+Redspace, Diego Riga - Tibet (EMPHI & Maze 28 Extended Mix)
+# BPM=122 Key=Fm 2026-08-01 [Polyptych Bundles]
+QuiQui, Thom Rich - Victorious (Gai Barone Extended Remix)
+# BPM=121 Key=F 2026-08-01 [Polyptych Bundles]
+Brann (AR) - Evolution (Hobin Rude Extended Remix)
+# BPM=122 Key=Ebm 2026-08-01 [Sunexplosion Records]
+Rauschhaus, Cary Crank - Apogee (Byhon Remix)
+# BPM=120 Key=Ebm 2026-08-01 [Sunexplosion Records]
+Rauschhaus, Cary Crank - Apogee (Extended Mix)
+# BPM=122 Key=Ebm 2026-08-01 [Sunexplosion Records]
+Rauschhaus, Cary Crank - Apogee (RuKha Remix)
+# BPM=126 Key=Abm 2026-08-01 [Tomorrowland Music]
+Massano - Beyond Today (Original Mix)
+# BPM=123 Key=Ab 2026-08-01 [Univack]
+Solis [US] - Ascendant (Extended Mix)
+# BPM=121 Key=F# 2026-08-01 [Univack]
+Solis [US] - Avva (Extended Mix)
+# BPM=124 Key=Cm 2026-08-01 [Clubsonica Records]
+Redspace, Diego Riga - Phantom Sun (Extended Mix)
+# BPM=124 Key=Cm 2026-08-01 [Clubsonica Records]
+Redspace, Diego Riga - Phantom Sun (Sebastian Valencia Extended Mix)
+# BPM=122 Key=Am 2026-08-01 [Clubsonica Records]
+Redspace, Diego Riga - Tibet (Extended Mix)
+# BPM=123 Key=Gm 2026-07-30 [Voltaire Music]
+Kakura - Vermillion (Kamilo Sanclemente & Jossem Remix)
+# BPM=123 Key=Gm 2026-07-30 [Voltaire Music]
+Kamilo Sanclemente, Mauro Aguirre - Smoke Machine (Original Mix)
+# BPM=123 Key=B 2026-07-30 [Early Morning]
+Anthony Pappa, Fauxplay - Forever Seeking (Simon Vuarambon Remix)
+# BPM=126 Key=Fm 2026-07-30 [X]
+Adriatique, Rhys from the Sticks - Coming Home (Extended Mix)
+# BPM=120 Key=A 2026-07-30 [Voltaire Music]
+Facundo Borras - Whispers From Dawn (Ruben Karapetyan Remix)
+# BPM=122 Key=Ab 2026-07-30 [Mango Alley]
+Ignacio Tuzio, SHERRNX - Beyond (Original Mix)
+# BPM=122 Key=Eb 2026-07-30 [Mango Alley]
+Ignacio Tuzio, SHERRNX - Category Five (Original Mix)
+# BPM=120 Key=G 2026-07-30 [Mango Alley]
+TEO (SL), SHERRNX - Avalanche (Original Mix)
+# BPM=120 Key=Db 2026-07-30 [meanwhile]
+Alex O'Rion - Flow (Original Mix)
+# BPM=122 Key=Gm 2026-07-27 [Zenebona]
+Nick Newman - Rituals (Hobin Rude Remix)
+# BPM=123 Key=Fm 2026-07-26 [The Soundgarden]
+Cassiamusik - Echoes of the Memory (Original Mix)
+# BPM=122 Key=Fm 2026-07-26 [The Soundgarden]
+STEREO MUNK, Lucas Zárate - Searching The Pieces (Original Mix)
+# BPM=122 Key=E 2026-07-26 [The Soundgarden]
+Aliakim - Sekhmet (Original Mix)
+# BPM=121 Key=Gm 2026-07-26 [The Soundgarden]
+AOVA - Apex (Original Mix)
+# BPM=125 Key=Cm 2026-07-26 [The Soundgarden]
+Camilo Verna - Spring Flowers (Original Mix)
+# BPM=123 Key=Dbm 2026-07-26 [The Soundgarden]
+Fran Baigo - Levitate (Original Mix)
+# BPM=123 Key=F 2026-07-26 [The Soundgarden]
+KAZKO - Other Side of the World (Original Mix)
+# BPM=122 Key=F 2026-07-26 [The Soundgarden]
+Kostya Outta, ECHO DAFT - Guiding Light (Original Mix)
+# BPM=124 Key=A 2026-07-26 [The Soundgarden]
+Mai Lawson, Raiann - Bimba Loca (Original Mix)
+# BPM=122 Key=C 2026-07-26 [The Soundgarden]
+Manuel Ventresca - Lydian Sun (Original Mix)
+# BPM=122 Key=C 2026-07-26 [The Soundgarden]
+MDSOUND - Open Your Soul (Original Mix)
+# BPM=120 Key=Gm 2026-07-26 [The Soundgarden]
+Oliver Harper - Antioch (Original Mix)
+# BPM=122 Key=Dm 2026-07-26 [The Soundgarden]
+Patricio Mucchielli, Augusto Landucci - The Path In Between (Original Mix)
+# BPM=120 Key=F 2026-07-25 [tornn]
+Mike Rish - The Likes of You (Original Mix)
+# BPM=118 Key=G 2026-07-25 [tornn]
+Mike Rish - Wait for Me (Original Mix)
+# BPM=125 Key=Gm 2026-07-25 [Feathers & Bones]
+Rodriguez Jr. - Off Gerlach (Original Mix)
+# BPM=125 Key=F#m 2026-07-25 [Forevermore]
+Rauschhaus, Peer Kusiv - Breathe (Original Mix)
+# BPM=124 Key=F#m 2026-07-25 [Univack]
+Nicolas Viana - Kalira (Molac Extended Remix)
+# BPM=122 Key=Bm 2026-07-25 [Univack]
+Nicolas Viana - Dusk (Not Demure Extended Remix)
+# BPM=122 Key=Bm 2026-07-24 [Sudbeat Music]
+Beckers, D-Nox, Andre Moret - Gaxyda (D-Nox & Beckers Remix)
+# BPM=123 Key=Fm 2026-07-23 [Mango Alley]
+Christian Smith - Mileage Run (Dmitry Molosh Remix)
+# BPM=123 Key=Fm 2026-07-23 [Mango Alley]
+Christian Smith - Mileage Run (Original Mix)
+# BPM=123 Key=Fm 2026-07-23 [Mango Alley]
+Christian Smith - Mileage Run (Dowden Remix)
+# BPM=126 Key=Gm 2026-07-23 [This Never Happened]
+Teho - Fireline (Original Mix)
+# BPM=125 Key=Em 2026-07-23 [This Never Happened]
+Teho - Ashes (Original Mix)
+# BPM=122 Key=Bb 2026-07-18 [UV]
+Paul Thomas, Ruben Karapetyan - Resurrection (Extended Mix)
+# BPM=123 Key=Em 2026-07-17 [Univack]
+Artic White - Once We Were (Extended Mix)
+# BPM=123 Key=Abm 2026-07-17 [Univack]
+Artic White - Summer 98 (Extended Mix)
+# BPM=120 Key=Fm 2026-07-17 [meanwhile]
+Fran Garay - A Ruined World (Original Mix)
+# BPM=120 Key=F#m 2026-07-17 [meanwhile]
+Diego R, Fran Garay - Closed Feelings (Original Mix)
+# BPM=122 Key=Abm 2026-07-17 [Transensations Records]
+Juani Bria, Juani Ramirez - Reloading (Extended Mix)
+# BPM=123 Key=Am 2026-07-17 [Transensations Records]
+Juani Bria, Juani Ramirez - Kryptonita (Extended Mix)
+# BPM=122 Key=Ab 2026-07-17 [Transensations Records]
+Juani Bria, Juani Ramirez - Reloading (Andre Moret Remix)
+# BPM=123 Key=Fm 2026-07-17 [Clubsonica Records]
+Dabeat - Naural (Extended Mix)
+# BPM=123 Key=Fm 2026-07-17 [Clubsonica Records]
+Dabeat, Mauro Aguirre - Your Face (Extended Mix)
+# BPM=123 Key=Dm 2026-07-17 [Clubsonica Records]
+Dabeat - Parallel Particles (Extended Mix)
+# BPM=126 Key=F#m 2026-07-16 [Fall From Grace Records]
+Glenn Morrison, Gai Barone - Starlight (Du more Remix)
+# BPM=123 Key=F 2026-07-16 [Mango Alley]
+Digital Mess, Bondarev - Unifo (Original Mix)
+# BPM=123 Key=F 2026-07-16 [Mango Alley]
+Digital Mess, Bondarev - Unifo (Casnik & Redspace Remix)
+# BPM=119 Key=Cm 2026-07-16 [Mango Alley]
+Digital Mess, Bondarev - Unifo (Sam Scheme Remix)
+# BPM=120 Key=Fm 2026-07-16 [Mango Alley]
+Digital Mess - Mind Fluctuation (Original Mix)
+# BPM=120 Key=Bb 2026-07-12 [Songspire Records]
+Mike Rish - Patenz (Original Mix)
+# BPM=121 Key=A 2026-07-12 [The Soundgarden]
+Zankee Gulati - Kerring (Original Mix)
+# BPM=122 Key=A 2026-07-12 [The Soundgarden]
+Zankee Gulati - Vertigo (Original Mix)
+# BPM=124 Key=Gm 2026-07-11 [Anjunadeep]
+Durante, Mayro - Mantra (Extended Mix)
+# BPM=124 Key=F 2026-07-11 [Univack]
+Matan Caspi, Aaron Suiss - Purple Tooth (Extended Mix)
+# BPM=126 Key=Gm 2026-07-11 [Univack]
+Matan Caspi, Aaron Suiss - Linear Chains (Extended Mix)
+# BPM=122 Key=D 2026-07-11 [All Day I Dream]
+Lee Burridge - Fading Out (Original Mix)
+# BPM=122 Key=D 2026-07-11 [All Day I Dream]
+Lee Burridge - Fading Out (Extended Mix)
+# BPM=120 Key=Fm 2026-07-11 [Hoomidaas]
+Evegrem - Anomaly (Original MIx)
+# BPM=122 Key=A 2026-07-11 [Hoomidaas]
+Taleman, Aler - Sooperflow (Original Mix)
+# BPM=122 Key=Gm 2026-07-11 [Hoomidaas]
+Civa - Do You Believe (Original Mix)
+# BPM=120 Key=Em 2026-07-11 [Hoomidaas]
+DP-6 - Forest Spirit (Original Mix)
+# BPM=118 Key=F#m 2026-07-11 [Hoomidaas]
+Facu Navas - Groovy Friends (Original Mix)
+# BPM=124 Key=Em 2026-07-11 [Hoomidaas]
+Konstantin Kobra - Work That Acid (Original Mix)
+# BPM=120 Key=Cm 2026-07-11 [Hoomidaas]
+Martin Fredes, Unai Garcia - The Artefact (Original Mix)
+# BPM=123 Key=Dm 2026-07-11 [Hoomidaas]
+M.E.T.A.N.O.I.A. - Smaragd (Original Mix)
+# BPM=120 Key=Gm 2026-07-11 [Hoomidaas]
+Nicolas Giordano - Fine China (Original Mix)
+# BPM=123 Key=Gm 2026-07-11 [Hoomidaas]
+Nikoow - Blvck (Original Mix)
+# BPM=120 Key=Fm 2026-07-11 [Hoomidaas]
+Santiago - Untethered (Original Mix)
+# BPM=122 Key=Em 2026-07-11 [onedotsixtwo]
+Mattim - Razor (Original Mix)
+# BPM=122 Key=C 2026-07-11 [onedotsixtwo]
+Mattim - Inner Chaos (Chris Cargo Remix)
+# BPM=122 Key=C 2026-07-11 [onedotsixtwo]
+Mattim - Inner Chaos (Original Mix)
+# BPM=125 Key=Fm 2026-07-10 [Sudbeat Music]
+Dilby - Drift Through Space (Original Mix)
+# BPM=124 Key=Dm 2026-07-10 [Sudbeat Music]
+Dilby - Body Talk (Original Mix)
+# BPM=126 Key=Dbm 2026-07-10 [Embassy One]
+Galestian, Claxy - Before the Sun (Galestian Remix)
+# BPM=122 Key=C 2026-07-09 [Mango Alley]
+Makebo - Storm (Original Mix)
+# BPM=122 Key=Gm 2026-07-05 [Balance Music]
+Kamilo Sanclemente, Pablo Arbelaez - Croton (Original Mix)
+# BPM=122 Key=D 2026-07-05 [Transensations Records]
+Cendryma - Bending Speed (Rabiee Ahmad Remix)
+# BPM=120 Key=Dm 2026-07-05 [Transensations Records]
+Cendryma - Pure Junction (Original Mix)
+# BPM=125 Key=Em 2026-07-05 [Embassy One]
+Monolink - Mesmerized (Henrik Schwarz Remix)
+# BPM=120 Key=Em 2026-07-05 [Transensations Records]
+Gai Barone, Tiefstone - Boundaries (Original Mix)
+# BPM=120 Key=Db 2026-07-05 [Balance Music]
+Mike Rish - R33 (Original Mix)
+# BPM=122 Key=Bb 2026-07-05 [Balance Music]
+Cid Inc., Dmitry Molosh - Aquamarine (Original Mix)
+# BPM=122 Key=F 2026-07-05 [Balance Music]
+Amonita - Scorpion (Original Mix)
+# BPM=125 Key=Am 2026-07-05 [Balance Music]
+Anthony Pappa, Aubrey Fry - Itajai (Original Mix)
+# BPM=126 Key=Gm 2026-07-05 [Balance Music]
+Carina Lawrence - Celestial (Extended Mix)
+# BPM=122 Key=F 2026-07-05 [Balance Music]
+Chicola - Access (Original Mix)
+# BPM=120 Key=G 2026-07-05 [Balance Music]
+Cristina Tosio - Landing (Original Mix)
+# BPM=122 Key=Dbm 2026-07-05 [Balance Music]
+D-Nox, Andre Moret - Breath (Original Mix)
+# BPM=122 Key=Ebm 2026-07-05 [Balance Music]
+Elliot Moriarty - One World (Original Mix)
+# BPM=122 Key=Gm 2026-07-05 [Balance Music]
+FJL, Eichenbaum - Adriatica (Original Mix)
+# BPM=126 Key=C 2026-07-05 [Balance Music]
+Graziano Raffa - Sturm Und Drang (Original Mix)
+# BPM=123 Key=Am 2026-07-05 [Balance Music]
+Hicky & Kalo, Sinca - Breathe Again (Original Mix)
+# BPM=124 Key=Bm 2026-07-05 [Balance Music]
+Kabi (AR), Ric Niels - Crossed Paths (Original Mix)
+# BPM=123 Key=Abm 2026-07-05 [Balance Music]
+Lloyd Barwood - The Quest (Original Mix)
+# BPM=120 Key=Db 2026-07-05 [Balance Music]
+Mai Lawson - Dance with Me Emma (Original Mix)
+# BPM=124 Key=G 2026-07-05 [Balance Music]
+Matthew Sona - Elektricity (Original Mix)
+# BPM=124 Key=Gbm 2026-07-05 [Balance Music]
+Nick Stoynoff - Famous Last Words (Original Mix)
+# BPM=124 Key=G 2026-07-05 [Balance Music]
+Nick Varon, PAAX (Tulum) - Yutori (Original Mix)
+# BPM=122 Key=Gb 2026-07-05 [Balance Music]
+Peter Makto - Tisno Sunrise (Original Mix)
+# BPM=125 Key=Ebm 2026-07-05 [Balance Music]
+Powel - Entropy of Contact (Original Mix)
+# BPM=122 Key=E 2026-07-05 [Balance Music]
+ROCÍO PORTILLO, Unusual Soul - Microfreak (Original Mix)
+# BPM=123 Key=E 2026-07-05 [Balance Music]
+Simply City, Juan Ibanez - Auralis (Original Mix)
+# BPM=123 Key=A 2026-07-05 [Balance Music]
+Stereo Underground - La Cumbre  (Extended Edit)
+# BPM=121 Key=Em 2026-07-05 [Balance Music]
+Tonaco, Kebin Van Reeken - Chroma (Original Mix)
+# BPM=124 Key=G 2026-07-05 [Balance Music]
+Various Artists - This Is Balance Croatia 2026 (Original Mix)
+# BPM=122 Key=C 2026-07-05 [Balance Music]
+Zankee Gulati - Plonker (Original Mix)
+# BPM=124 Key=D 2026-07-05 [Transensations Records]
+Anhauser, Nicolas Leonelli - Analog Collapse (Original Mix)
+# BPM=124 Key=Cm 2026-07-05 [Transensations Records]
+Brann (AR) - Deleted Scene (Extended Mix)
+# BPM=122 Key=E 2026-07-05 [Transensations Records]
+Brisboys - In the Beginning (Extended Mix)
+# BPM=123 Key=C 2026-07-05 [Transensations Records]
+DJ Ruby - Goldrake (Luciano Scheffer Remix)
+# BPM=122 Key=E 2026-07-05 [Transensations Records]
+FAERO, Gonzalo Cotroneo - Void Pulse (Original Mix)
+# BPM=123 Key=C 2026-07-05 [Transensations Records]
+Gorkiz, Kaito Aman - From Above (Chris Cargo Remix)
+# BPM=122 Key=D 2026-07-05 [Transensations Records]
+Ignacio Lo - Conga Void (Original Mix)
+# BPM=122 Key=D 2026-07-05 [Transensations Records]
+Juan Vazquez, Maximo Gambini, Martin Di Sciascio - Galaga (Original Mix)
+# BPM=120 Key=G 2026-07-05 [Transensations Records]
+Luciano Scheffer - Seti (Original Mix)
+# BPM=121 Key=C 2026-07-05 [Transensations Records]
+Matt Oliver - Arrhythmia (Gonzalo Cotroneo Remix)
+# BPM=122 Key=G 2026-07-05 [Transensations Records]
+Ramiro Alvarez - Kaab (Original Mix)
+# BPM=126 Key=E 2026-07-05 [Transensations Records]
+Tavaresgui - Bipolar Aura (Original Mix)
+# BPM=122 Key=Gbm 2026-07-05 [Transensations Records]
+Tonaco, Noronha - Konvergence (Original Mix)
+# BPM=123 Key=Gm 2026-07-05 [Transensations Records]
+Yudz - Vibrate (Original Mix)
+# BPM=122 Key=Em 2026-07-04 [Sunexplosion Records]
+Tali Muss, 84 Avenue - Vortex (Extended Mix)
+# BPM=123 Key=D 2026-07-04 [Sunexplosion Records]
+Tali Muss, 84 Avenue - Nebula (Extended Mix)
+# BPM=123 Key=Em 2026-07-04 [UV]
+Paul Arcane - Altas Cumbres (Extended Mix)
+# BPM=123 Key=Dm 2026-07-04 [UV]
+Paul Arcane - Vortice (Extended Mix)
+# BPM=123 Key=Am 2026-07-03 [Univack]
+NUFECTS - Are You Ready (Extended Mix)
+# BPM=123 Key=Gm 2026-07-03 [Univack]
+NUFECTS - Inferno (Extended Mix)
+# BPM=121 Key=Gm 2026-07-03 [Univack]
+NUFECTS - Obscurial (Extended Mix)
+# BPM=126 Key=Am 2026-07-02 [Embassy One]
+Monolink - Perfect World (Colyn Remix)
+# BPM=124 Key=Eb 2026-07-02 [Mango Alley]
+Das Pharaoh - Fragments (Original Mix)
+# BPM=122 Key=Eb 2026-07-02 [Mango Alley]
+Das Pharaoh - Fragments (Lavie Au Soleil & Oreiente Remix)
+# BPM=122 Key=Eb 2026-07-02 [Mango Alley]
+Das Pharaoh - Fragments (Max Wexem Remix)
+# BPM=121 Key=Ebm 2026-07-02 [Mango Alley]
+Das Pharaoh - Fragments (The Wash 'Temperament' Remix)
+# BPM=126 Key=D 2026-07-02 [This Never Happened]
+OLING [SE] - Spacer (Original Mix)
+# BPM=123 Key=D 2026-07-02 [This Never Happened]
+Robby East - Do Not Disturb (Extended Mix)
+# BPM=125 Key=Bbm 2026-06-30 [Lost & Found]
+Halo Varga - Future (Guy J Remix)
+# BPM=126 Key=Em 2026-06-30 [This Never Happened]
+Township Rebellion - Birds Fly First Class (Original Mix)
+# BPM=123 Key=G 2026-06-28 [Clubsonica Records]
+Ruben Karapetyan - The Ways (Kamilo Sanclemente Extended Mix)
+# BPM=123 Key=Gb 2026-06-28 [Early Morning]
+Anthony Pappa, Fauxplay - Forever Seeking (Simon Vuarambon Dub Mix)
+# BPM=124 Key=Ebm 2026-06-28 [Watergate Records]
+Gorje Hewek - My Heart (Original Mix)
+# BPM=121 Key=F 2026-06-28 [Clubsonica Records]
+Ruben Karapetyan - 1982 (Extended Mix)
+# BPM=121 Key=F 2026-06-28 [Clubsonica Records]
+Ruben Karapetyan - 1982 (Matthew Sona Extended Mix)
+# BPM=123 Key=G 2026-06-28 [Clubsonica Records]
+Ruben Karapetyan - The Ways (Extended Mix)
+# BPM=123 Key=F 2026-06-28 [Spiritual Enhancer]
+Gorkiz, Mind Echoes - Without Your Noose (Ruben Karapetyan Remix)
+# BPM=122 Key=Dm 2026-06-28 [Dreaming Awake]
+Amir Telem - Love Waterloo (Rauschhaus Remix)
+# BPM=123 Key=Fm 2026-06-28 [The Soundgarden]
+Nick Warren, Martin Fredes - Wanderlust (Original Mix)
+# BPM=120 Key=C 2026-06-28 [The Soundgarden]
+Nick Warren, Martin Fredes - Kairos (Original Mix)
+# BPM=120 Key=Abm 2026-06-28 [meanwhile]
+Alex O'Rion - Hartseer (Original Mix)
+# BPM=126 Key=Cm 2026-06-28 [Embassy One]
+GHEIST - Side by Side (Original Mix)
+# BPM=124 Key=Dbm 2026-06-27 [Univack]
+Rokazer - Mantra (Extended Mix)
+# BPM=125 Key=Db 2026-06-27 [Univack]
+Rokazer - Ritual (Extended Mix)
+# BPM=122 Key=F 2026-06-27 [Univack]
+Rokazer - Split (Extended Mix)
+# BPM=122 Key=Gm 2026-06-26 [Elebated Records]
+Kamilo Sanclemente, Sebastian Valencia (COL) - Glow (Gai Barone Remix)
+# BPM=122 Key=Gm 2026-06-26 [Elebated Records]
+Kamilo Sanclemente, Sebastian Valencia (COL) - Glow (Original Mix)
+# BPM=124 Key=Am 2026-06-26 [All Day I Dream]
+Lost Desert, Aiola - Drift A Little Longer (Extended Mix)
+# BPM=124 Key=Dm 2026-06-26 [All Day I Dream]
+Lost Desert - Aalam Waahid (Original Mix)
+# BPM=123 Key=Em 2026-06-26 [All Day I Dream]
+Paul Ross, Lost Desert - Shooting Stars (Extended Mix)
+# BPM=125 Key=Abm 2026-06-26 [UV]
+GRAZZE - Following the Truth (Extended Mix)
+# BPM=122 Key=Abm 2026-06-26 [UV]
+GRAZZE - Following the Truth (Das Pharaoh Extended Remix)
+# BPM=123 Key=Dm 2026-06-26 [UV]
+GRAZZE - Miami (Extended Mix)
+# BPM=124 Key=Am 2026-06-26 [UV]
+GRAZZE - Miami (FJL Extended Mix)
+# BPM=122 Key=Em 2026-06-25 [Mango Alley]
+Ignacio Hernández, Marcos Vidou - All Around Us (Original Mix)
+# BPM=123 Key=Em 2026-06-25 [Mango Alley]
+Ignacio Hernández, Marcos Vidou - All Around Us (Amháin Remix)
+# BPM=119 Key=Bm 2026-06-25 [Mango Alley]
+Ignacio Hernández, Tato Seco - Sleepwalker (Manu Pavez Remix)
+# BPM=122 Key=Bm 2026-06-25 [Mango Alley]
+Ignacio Hernández, Tato Seco - Sleepwalker (Original Mix)
+# BPM=122 Key=Am 2026-06-23 [RKP]
+Sinan Arsan, Savrun Brothers - Shrug (Maze 28 Reform)
+# BPM=122 Key=Am 2026-06-23 [Forward Label]
+Rockka - Noah's Ark (Original Mix)
+# BPM=122 Key=Gm 2026-06-23 [Forward Label]
+Secretly Famous - Joo (Rockka Remix)
+# BPM=122 Key=E 2026-06-23 [Embassy One]
+Claxy - Before the Sun (Death on the Balcony Remix)
+# BPM=121 Key=D 2026-06-21 [Timeless Moment]
+Hobin Rude, N-TCHBL - Shared Silence (Extended Mix)
+# BPM=122 Key=C 2026-06-21 [Timeless Moment]
+Hobin Rude, N-TCHBL - Common Ground (Extended Mix)
+# BPM=120 Key=F 2026-06-21 [Transensations Records]
+Carlos Bacchus, Sebas Ramos - Waves of Dexterity (Original Mix)
+# BPM=122 Key=Am 2026-06-20 [Suza Records]
+E.F.G., Sound Fusion - Sonic Passage (Hobin Rude Remix)
+# BPM=121 Key=F#m 2026-06-19 [Sunexplosion Records]
+Rauschhaus, Cary Crank - Perihelion (Extended Mix)
+# BPM=123 Key=F#m 2026-06-19 [Sunexplosion Records]
+Rauschhaus, Cary Crank - Perihelion (Hernan Cattaneo & Mercurio Remix)
+# BPM=120 Key=Em 2026-06-18 [Mango Alley]
+MXV, GYS (TT) - Haunter (Original Mix)
+# BPM=121 Key=Em 2026-06-18 [Mango Alley]
+MXV, GYS (TT) - Haunter (Taleman Remix)
+# BPM=122 Key=Gm 2026-06-18 [Mango Alley]
+MXV - Witch King (Anton Borin Remix)
+# BPM=120 Key=Gm 2026-06-18 [Mango Alley]
+MXV - Witch King (Original Mix)
+# BPM=122 Key=B 2026-06-18 [This Never Happened]
+MYRNE, ALLKNIGHT - Let Me In (Extended Mix)
+# BPM=126 Key=Fm 2026-06-18 [This Never Happened]
+MYRNE - Eventide (Original Mix)
+# BPM=122 Key=E 2026-06-18 [This Never Happened]
+MYRNE, Syence, Artemis Orion - Superstition (Extended Mix)
+# BPM=124 Key=Ab 2026-06-14 [Tronic]
+Christian Smith - L'Amour Toujours (Kamilo Sanclemente Remix)
+# BPM=123 Key=Ab 2026-06-14 [Tronic]
+Christian Smith - L'Amour Toujours (Gai Barone Remix)
+# BPM=123 Key=F 2026-06-14 [Cranking Sounds]
+Cary Crank, OBL - Back for More (Tali Muss Remix)
+# BPM=124 Key=C 2026-06-14 [JOOF Recordings]
+Whoriskey - Save Yourself (Ruben Karapetyan Remix)
+# BPM=121 Key=Gm 2026-06-14 [Sudbeat Music]
+Zankee Gulati - Goofball (Original Mix)
+# BPM=124 Key=E 2026-06-14 [Sudbeat Music]
+Mike Griego, Zankee Gulati - Arakeen (Mike Griego Remix)
+# BPM=122 Key=Am 2026-06-14 [Lost Miracle]
+Sébastien Léger, Lost Miracle - Dodonpachi (Original Mix)
+# BPM=122 Key=Gm 2026-06-14 [Lost Miracle]
+Sébastien Léger, Lost Miracle - Uncloaked (Original Mix)
+# BPM=125 Key=G 2026-06-13 [Diynamic]
+Blackloud - And Then What (Original Mix)
+# BPM=124 Key=Am 2026-06-13 [This Never Happened]
+Lane 8, Grigoré - Maglia Rosa (Original Mix)
+# BPM=124 Key=Bb 2026-06-13 [This Never Happened]
+Lane 8, MYRNE - Adelie (Original Mix)
+# BPM=125 Key=Ab 2026-06-13 [This Never Happened]
+Paris, Lane 8 - Purple Pepper (Original Mix)
+# BPM=125 Key=D 2026-06-13 [This Never Happened]
+Robby East, Lane 8 - Penguin Parade (Original Mix)
+# BPM=125 Key=Cm 2026-06-12 [Univack]
+Florian Gasperini - Celestial (Extended Mix)
+# BPM=123 Key=F#m 2026-06-12 [Univack]
+Florian Gasperini - LEcho Des Rives Eternelles (Extended Mix)
+# BPM=123 Key=Am 2026-06-12 [Univack]
+Florian Gasperini - The Final Doors (Extended Mix)
+# BPM=123 Key=Am 2026-06-12 [Univack]
+Florian Gasperini - Third Eye Awakening (Extended Mix)
+# BPM=123 Key=Am 2026-06-12 [The Soundgarden]
+Lean Robotti - Shake It (Extended Mix)
+# BPM=122 Key=Dm 2026-06-12 [The Soundgarden]
+Lean Robotti - Haven (Extended Mix)
+# BPM=123 Key=Bm 2026-06-12 [The Soundgarden]
+Lean Robotti - Poplar (Extended Mix)
+# BPM=122 Key=Fm 2026-06-11 [Futurescope]
+Dee Montero - Maya (Rodriguez Jr. Remix)
+# BPM=125 Key=Ebm 2026-06-09 [Chuvstvo Ritma]
+Samir Kuliev - Dibiasky Comet (Tribute to Jeremy Olander)
+# BPM=122 Key=G 2026-06-09 [Lost Miracle]
+Sébastien Léger, Lost Miracle - Dodonpachi 
+# BPM=122 Key=Gm 2026-06-09 [Lost Miracle]
+Sébastien Léger, Lost Miracle - Uncloaked 
+# BPM=125 Key=G 2026-06-09 [This Never Happened]
+Sultan + Shepard, Shallou - Twilight (Extended Mix)
+# BPM=122 Key=D 2026-06-07 [Protagonist Recordings]
+Dmitry Molosh - Dilemma (Original Mix)
+# BPM=123 Key=E 2026-06-07 [Routine Espresso Recordings]
+Hobin Rude - Fractured Time (Original Mix)
+# BPM=122 Key=D 2026-06-07 [Inspired By Trees Records]
+Hobin Rude - Then and Now (Original Mix)
+# BPM=123 Key=Em 2026-06-07 [Routine Espresso Recordings]
+Hobin Rude - Fractured Time (Allan McLoud Remix)
+# BPM=123 Key=D 2026-06-07 [Inspired By Trees Records]
+Hobin Rude - Then and Now (Paege Remix)
+# BPM=123 Key=Gm 2026-06-07 [Univack]
+Gux Jimenez, Kurt Caesar - High Frequency (Original Mix)
+# BPM=122 Key=D 2026-06-07 [Univack]
+EKIS EKIS, Juani Ramirez - Panic (Original Mix)
+# BPM=122 Key=Fm 2026-06-07 [Univack]
+Mike Kohl - Bubble Gum (Original Mix)
+# BPM=125 Key=A 2026-06-07 [Univack]
+Foletto, Edu Schwartz - Heartbeat (Original Mix)
+# BPM=120 Key=Gm 2026-06-07 [Univack]
+Katzen - What's Beyond (Original Mix)
+# BPM=122 Key=Dm 2026-06-07 [Univack]
+KAZKO - Fading Control (Original Mix)
+# BPM=123 Key=F 2026-06-07 [meanwhile]
+Stereo Underground - Souls from the Past (Original Mix)
+# BPM=122 Key=Cm 2026-06-07 [meanwhile]
+Stereo Underground - In the Middle of Everything (Original Mix)
+# BPM=120 Key=D 2026-06-07 [Transensations Records]
+goodkidd - Devil May Cry (Original Mix)
+# BPM=118 Key=G 2026-06-07 [Transensations Records]
+goodkidd - Krysolis (Original Mix)
+# BPM=125 Key=Cm 2026-06-07 [Hoomidaas]
+Daniel Meister - Luminary (Original Mix)
+# BPM=125 Key=Db 2026-06-07 [Hoomidaas]
+Daniel Meister - Dots (Original Mix)
+# BPM=126 Key=B 2026-06-07 [Hoomidaas]
+Daniel Meister - Moonlight (Original Mix)
+# BPM=122 Key=Cm 2026-06-07 [Clubsonica Records]
+J Doppler - Marco Zero (Greg Ochman Extended Mix)
+# BPM=123 Key=Cm 2026-06-07 [Clubsonica Records]
+J Doppler - Marco Zero (Extended Mix)
+# BPM=122 Key=Gm 2026-06-07 [Clubsonica Records]
+J Doppler, Mateo Tapia - Perspectives (Alfonso Muchacho Extended Mix)
+# BPM=122 Key=Gm 2026-06-07 [Clubsonica Records]
+J Doppler, Mateo Tapia - Perspectives (Extended Mix)
+# BPM=122 Key=Bm 2026-06-06 [Renaissance Music]
+Rauschhaus, Shayan Pasha - Groove Ambassador (Extended Version)
+# BPM=122 Key=Cm 2026-06-06 [Renaissance Music]
+Rauschhaus, Shayan Pasha - Inner Horizon (Extended Version)
+# BPM=122 Key=Dm 2026-06-06 [Higher States]
+Roger Martinez - Downriver (Nicolas Rada Remix)
+# BPM=122 Key=Gm 2026-06-04 [Mango Alley]
+Dmitry Molosh - The Moon Lights the Way (Original Mix)
+# BPM=125 Key=Em 2026-06-04 [Mango Alley]
+Quivver, Dave Seaman - Speak Da Language (Original Mix)
+# BPM=122 Key=Fm 2026-06-04 [Mango Alley]
+HAFT, Eichenbaum - Flourish (Original Mix)
+# BPM=122 Key=Gm 2026-06-04 [Mango Alley]
+Peter Makto, Matthew Sona - Clouds Below (Original Mix)
+# BPM=124 Key=Em 2026-06-04 [Mango Alley]
+Andy Newland, Twilo, EMERGE Events - Convergence 002 Emerge (Continuous DJ Mix)
+# BPM=122 Key=Fm 2026-06-04 [Mango Alley]
+Andy Newland, Twilo, EMERGE Events - Convergence 002 Skyline Memoirs (Continuous DJ Mix)
+# BPM=123 Key=Gm 2026-06-04 [Mango Alley]
+Gowzer - After the Red Sky (Original Mix)
+# BPM=125 Key=Em 2026-06-04 [Mango Alley]
+Graziano Raffa - Carbonia (Original Mix)
+# BPM=120 Key=Ebm 2026-06-04 [Mango Alley]
+Hicky & Kalo - Future Is Clear (Original Mix)
+# BPM=122 Key=Bm 2026-06-04 [Mango Alley]
+Kasey Taylor - Emerging From the Skyline (Original Mix)
+# BPM=124 Key=Gm 2026-06-04 [Mango Alley]
+Kit Lawson - Ruff (Original Mix)
+# BPM=122 Key=Fm 2026-06-04 [Mango Alley]
+Mai Lawson - Why Are U Doing This (Original Mix)
+# BPM=122 Key=Fm 2026-06-04 [Mango Alley]
+Mariano Mellino - Mong Kok (Original Mix)
+# BPM=122 Key=Eb 2026-06-04 [Mango Alley]
+Martin Fredes - Fear Lords (Original Mix)
+# BPM=124 Key=E 2026-06-04 [Mango Alley]
+Miss Melera - Coral (Original Mix)
+# BPM=124 Key=Abm 2026-06-04 [Mango Alley]
+Olivier Weiter, Forniva - Room 821 (Original Mix)
+# BPM=122 Key=Gm 2026-06-04 [Mango Alley]
+ROCÍO PORTILLO - Mandl Castle (Original Mix)
+# BPM=122 Key=Am 2026-06-04 [Mango Alley]
+Steven McCreery - Shadows (Original Mix)
+# BPM=124 Key=C 2026-06-04 [This Never Happened]
+Dirty South - Lost To Be Found (Extended Mix)
+# BPM=123 Key=A 2026-06-04 [This Never Happened]
+Le Youth, Robertson, Forester - alone feat. Robertson (Original Mix)
+# BPM=125 Key=Db 2026-06-04 [This Never Happened]
+Le Youth - i'm breaking down (Original Mix)
+# BPM=124 Key=Dbm 2026-06-04 [This Never Happened]
+Le Youth - i'm broken (Original Mix)
+# BPM=123 Key=Em 2026-06-03 [Routine Espresso Recordings]
+Hobin Rude - Fractured Time 
+# BPM=123 Key=G 2026-05-31 [Kling Klong Music]
+Kamilo Sanclemente, Sebastian Valencia (COL) - Test Flight (Original Mix)
+# BPM=121 Key=G 2026-05-31 [Movement Recordings]
+HAFT - Kaleidoscope (Maze 28 & EMPHI Remix)
+# BPM=122 Key=A 2026-05-31 [Vapour Recordings]
+Kasey Taylor, Gai Barone - Light Deliberations (Original Mix)
+# BPM=123 Key=Eb 2026-05-31 [My Secret Agenda]
+Aman Anand, Frankie Vertigo - No Requests (Gai Barone Extended Remix 2026 Remaster)
+# BPM=122 Key=Db 2026-05-31 [My Secret Agenda]
+Frankie Vertigo - Almost Heaven (Gai Barone Extended Remix 2026 Remaster)
+# BPM=123 Key=F 2026-05-31 [Friday Island]
+Hobin Rude - Slow Escape (Four Candles Remix)
+# BPM=121 Key=F 2026-05-31 [Friday Island]
+Hobin Rude - Slow Escape (Original)
+# BPM=124 Key=F 2026-05-31 [Friday Island]
+Hobin Rude - Slow Escape (Rolasoul Remix)
+# BPM=121 Key=D 2026-05-31 [Protagonist Recordings]
+Hobin Rude - The Underground (Original Mix)
+# BPM=124 Key=C 2026-05-31 [Simulate]
+Massano - Abraza (Original Mix)
+# BPM=123 Key=Gm 2026-05-31 [Univack]
+Fernando Olaya, arbey gonzalez - Shalom (Extended Mix)
+# BPM=122 Key=G 2026-05-31 [Univack]
+Fernando Olaya, Zoeken - The Great Silence (Extended Mix)
+# BPM=122 Key=Dbm 2026-05-31 [Univack]
+Fernando Olaya, Giovanny Aparicio - Gypsy Essence (Extended Mix)
+# BPM=121 Key=Db 2026-05-31 [Univack]
+Fernando Olaya, Zoeken - Destiny (Extended Mix)
+# BPM=122 Key=Em 2026-05-31 [The Soundgarden]
+Artic White - Futuro Infinito (Extended Mix)
+# BPM=122 Key=F 2026-05-31 [The Soundgarden]
+Artic White - Spazio 77 (Extended Mix)
+# BPM=125 Key=Em 2026-05-30 [Feathers & Bones]
+Rodriguez Jr. - Higher (Original Mix)
+# BPM=120 Key=Fm 2026-05-28 [Mango Alley]
+Max Wexem - Confined (Original Mix)
+# BPM=122 Key=Dm 2026-05-28 [Mango Alley]
+Max Wexem - Fatalism (Original Mix)
+# BPM=122 Key=Dm 2026-05-28 [Mango Alley]
+Max Wexem - Override (Enzo Vood & ShemoW Remix)
+# BPM=121 Key=Dm 2026-05-28 [Mango Alley]
+Max Wexem - Override (Original Mix)
+# BPM=124 Key=Dm 2026-05-28 [This Never Happened]
+Rinzen - You're All I Need (Extended Mix)
+# BPM=126 Key=A 2026-05-28 [This Never Happened]
+Rinzen, Aether - Pangea (Extended Mix)
+# BPM=123 Key=E 2026-05-28 [This Never Happened]
+Emil Toledo, Rinzen - Morning Star (Extended Mix)
+# BPM=123 Key=Gm 2026-05-28 [This Never Happened]
+Emil Toledo, Rinzen - The Shape of Memory (Extended Mix)
+# BPM=126 Key=D 2026-05-28 [This Never Happened]
+Koppo, Rinzen, Extra Special - For A Day feat. Extra Special (Extended Mix)
+# BPM=123 Key=Abm 2026-05-28 [This Never Happened]
+MYRNE, Rinzen - Attacker (Extended Mix)
+# BPM=125 Key=Bm 2026-05-28 [This Never Happened]
+Qrion, Rinzen - Rapid Eye Movement (Original Mix)
+# BPM=126 Key=Gm 2026-05-28 [This Never Happened]
+Rinzen - Life As It Is (Extended Mix)
+# BPM=123 Key=F#m 2026-05-28 [This Never Happened]
+Rinzen - Reality Beckons (Extended Mix)
+# BPM=125 Key=Fm 2026-05-28 [This Never Happened]
+Massane - Cheshire Cat (Extended Mix)
+# BPM=125 Key=Em 2026-05-28 [This Never Happened]
+Massane, Otherwish - Nothing To Lose (Original Mix)
+# BPM=125 Key=Cm 2026-05-28 [This Never Happened]
+MYRNE, Massane - In Motion (Original Mix)
+# BPM=125 Key=Em 2026-05-28 [This Never Happened]
+Paraleven, Massane - Epoch (Original Mix)
+# BPM=125 Key=F 2026-05-28 [This Never Happened]
+Qrion, Massane - Go On (Extended Mix)
+# BPM=124 Key=Dbm 2026-05-28 [This Never Happened]
+Tailor, Massane - Don't Look Down (Original Mix)
+# BPM=124 Key=Dm 2026-05-25 [Warung Recordings]
+Ilias Katelanos, Plecta, Anonimat - Coaster (Durante Remix)
+# BPM=123 Key=Eb 2026-05-25 [ASTIR Recordings]
+Ben Summers - It Ain't Right (Gai Barone Closing Times Remix)
+# BPM=122 Key=F 2026-05-25 [Timeless Moment]
+Revival Agents - Cosmic Spirals (Dmitry Molosh Dub Mix)
+# BPM=124 Key=Fm 2026-05-25 [UV]
+Paul Thomas - Jumbo (Jamie Stevens Remix)
+# BPM=119 Key=Gm 2026-05-24 [Music To Die For Recordings]
+Gai Barone, Luke Brancaccio, Kiki Cave - All I Need (Deep Mix)
+# BPM=119 Key=Gm 2026-05-24 [Music To Die For Recordings]
+Gai Barone, Luke Brancaccio, Kiki Cave - All I Need (Hernan Cattaneo & Mercurio dub mix)
+# BPM=119 Key=Gm 2026-05-24 [Music To Die For Recordings]
+Gai Barone, Luke Brancaccio, Kiki Cave - All I Need (Hernan Cattaneo & Mercurio remix)
+# BPM=123 Key=Gm 2026-05-24 [Music To Die For Recordings]
+Gai Barone, Luke Brancaccio, Kiki Cave - All I Need (Luke Brancaccio & Fauxplay remix)
+# BPM=124 Key=Am 2026-05-24 [UV]
+Miro - Paradise (Quivver Extended Remix)
+# BPM=123 Key=A 2026-05-24 [UV]
+Chris Hover, Jon Towell - Orbit (Simos Tagias Extended Remix)
+# BPM=123 Key=A 2026-05-24 [UV]
+Chris Hover, Jon Towell - Orbit (Extended Mix)
+# BPM=122 Key=Dm 2026-05-24 [Transensations Records]
+Brisboys - End of Time (Extended Mix)
+# BPM=122 Key=D 2026-05-24 [Transensations Records]
+Brisboys - Between Worlds (Extended Mix)
+# BPM=123 Key=Dm 2026-05-24 [Transensations Records]
+Brisboys - End of Time (Fabian Argomedo Remix)
+# BPM=122 Key=Em 2026-05-23 [Theory X]
+Sezer Uysal - Yutori (Ruben Karapetyan Remix)
+# BPM=121 Key=Em 2026-05-23 [Tipping Point]
+Rauschhaus, Peer Kusiv - Friction (UREM Remix)
+# BPM=122 Key=F#m 2026-05-23 [Sudbeat Music]
+Paul Deep (AR) - The Return (Original Mix)
+# BPM=122 Key=Bbm 2026-05-23 [Univack]
+Serious Dancers - Pulse Rush (Extended Mix)
+# BPM=124 Key=F#m 2026-05-23 [Univack]
+Serious Dancers - Canopus (Extended Mix)
+# BPM=123 Key=Abm 2026-05-22 [Dreaming Awake]
+Greg Matthew - Interwoven (Gai Barone Remix)
+# BPM=120 Key=Em 2026-05-21 [Mango Alley]
+Alex O'Rion, Maze 28 - Glowing Tide (Original Mix)
+# BPM=120 Key=Em 2026-05-21 [Mango Alley]
+Alex O'Rion, Maze 28 - Glowing Tide (Kebin Van Reeken Remix)
+# BPM=122 Key=E 2026-05-21 [Mango Alley]
+Alex O'Rion, Maze 28 - Glowing Tide (Roger Martinez 'High Tide' Remix)
+# BPM=125 Key=Gm 2026-05-21 [This Never Happened]
+Robby East - Incomplete Me (Extended Mix)
+# BPM=125 Key=Bbm 2026-05-21 [This Never Happened]
+Robby East - From The Core To The Sky (Extended Mix)
+# BPM=123 Key=Gm 2026-05-21 [This Never Happened]
+Robby East - Gravity Isn't Real (Extended Mix)
+# BPM=123 Key=Dm 2026-05-21 [This Never Happened]
+Robby East - Offline Friends (Extended Mix)
+# BPM=122 Key=Dm 2026-05-19 [Human By Default]
+Bedouin, Karl Williams, LUCH - The Only One (Original Mix)
+# BPM=123 Key=Dm 2026-05-17 [UV Noir]
+Cendryma, THMS (US) - Ruby Red (Extended Mix)
+# BPM=122 Key=E 2026-05-17 [UV Noir]
+Cendryma, THMS (US) - Perihelion Blur (Extended Mix)
+# BPM=122 Key=C 2026-05-17 [Traful]
+Brian Creao - Hieforante (Rockka Remix)
+# BPM=122 Key=B 2026-05-17 [Pro B Tech Music]
+Pilch - Mental Elf (Hobin Rude Remix)
+# BPM=125 Key=C 2026-05-17 [X]
+Adriatique, Emmit Fenn - Closer (Extended Mix)
+# BPM=120 Key=Ebm 2026-05-17 [X Recordings (back cat)]
+Adriatique, JAiMES, Samm (BE) - Back To Life (Extended Mix)
+# BPM=121 Key=E 2026-05-17 [meanwhile]
+Ruben Karapetyan - Midnight Current (Original Mix)
+# BPM=122 Key=Gb 2026-05-17 [meanwhile]
+Ruben Karapetyan - Between the Lines (Original Mix)
+# BPM=124 Key=D 2026-05-17 [Sudbeat Music]
+Anthony Pappa, Fauxplay - Plasm (Original Mix)
+# BPM=122 Key=Gbm 2026-05-17 [Univack]
+Poli-Poli - Orbita (Extended Mix)
+# BPM=123 Key=B 2026-05-17 [Univack]
+Poli-Poli - Drift (Extended Mix)
+# BPM=122 Key=Cm 2026-05-17 [Univack]
+Poli-Poli - Serendipity Machine (Extended Mix)
+# BPM=122 Key=Fm 2026-05-17 [All Day I Dream]
+Raw Main - Theory of Love (Extended Mix)
+# BPM=124 Key=Abm 2026-05-17 [All Day I Dream]
+Raw Main - Acrobat Dreamer (Extended Mix)
+# BPM=124 Key=Fm 2026-05-17 [All Day I Dream]
+Raw Main - Kashmir (Extended Mix)
+# BPM=123 Key=Em 2026-05-17 [All Day I Dream]
+Raw Main - Right Side (Extended Mix)
+# BPM=120 Key=Fm 2026-05-17 [meanwhile]
+Roger Martinez, Simos Tagias - Inner Light (Original Mix)
+# BPM=120 Key=G 2026-05-17 [onedotsixtwo]
+Togni, Mind Echoes - Questions (Original Mix)
+# BPM=120 Key=Gm 2026-05-17 [onedotsixtwo]
+Mind Echoes - Answers (Original Mix)
+# BPM=123 Key=Dm 2026-05-15 [Forensic Records]
+Dave Walker - Kamino (Gai Barone Remix)
+# BPM=120 Key=E 2026-05-15 [The Soundgarden]
+GEØVHÄN - Harmonia (Original Mix)
+# BPM=122 Key=Cm 2026-05-15 [The Soundgarden]
+GEØVHÄN - Khaos (Original Mix)
+# BPM=121 Key=Cm 2026-05-14 [Mango Alley]
+Hobin Rude - The Quiet Between Us (Original Mix)
+# BPM=121 Key=Em 2026-05-14 [Mango Alley]
+Hobin Rude - Dreams That Sink (Original Mix)
+# BPM=121 Key=F#m 2026-05-14 [Mango Alley]
+Hobin Rude - Low Light Memory (Original Mix)
+# BPM=126 Key=Em 2026-05-14 [This Never Happened]
+Ashibah - Golden (Extended Mix)
+# BPM=123 Key=Dm 2026-05-14 [This Never Happened]
+Mees Salomé, Thysma - Nova (Extended Mix)
+# BPM=124 Key=Gb 2026-05-11 [trueColors]
+Umami, Monolink - Terra Mount (Inámo Dub)
+# BPM=123 Key=Bb 2026-05-10 [Iboga Records]
+Antix - The Duck Walk (Gai Barone B- Side remix)
+# BPM=122 Key=C 2026-05-10 [UV]
+Das Pharaoh - Tempus Fugit (Hobin Rude Remix)
+# BPM=123 Key=Fm 2026-05-09 [Polyptych Noir]
+QuiQui, Thom Rich - Victorious (Gai Barone Dark Extended Remix)
+# BPM=122 Key=F#m 2026-05-09 [Univack]
+Rauschhaus, Shayan Pasha - Ahimsa (Extended Mix)
+# BPM=121 Key=Abm 2026-05-09 [Univack]
+Shayan Pasha, Different Ray - Green Waves (Extended Mix)
+# BPM=122 Key=Cm 2026-05-09 [Univack]
+Shayan Pasha - Homo Sapiens (Extended Mix)
+# BPM=120 Key=Cm 2026-05-09 [Univack]
+Shayan Pasha - Phobos (Extended Mix)
+# BPM=122 Key=Bbm 2026-05-09 [Transensations Records]
+Mind Echoes - Angel (Original Mix)
+# BPM=125 Key=G 2026-05-08 [Sudbeat Music]
+Christian Smith - Illusion (Ezequiel Arias Remix)
+# BPM=124 Key=F 2026-05-08 [Barra Uno]
+Gai Barone, ETNE - Juste Un De Plus (ETNE & Melaniya Remix)
+# BPM=124 Key=C 2026-05-08 [Superordinate Music]
+RaMuco - Eclipse (This Guy Ben Rmx)
+# BPM=123 Key=Fm 2026-05-08 [Dreaming Awake]
+Hobin Rude - Oblique (HAFT Remix)
+# BPM=124 Key=Dbm 2026-05-08 [Sudbeat Music]
+D-SHIFT - To Be Continued (Original Mix)
+# BPM=124 Key=C 2026-05-08 [Sudbeat Music]
+Anthony Pappa, Fauxplay - Voltaire (Original Mix)
+# BPM=124 Key=Ebm 2026-05-08 [Sudbeat Music]
+D-SHIFT - Far Out (Original Mix)
+# BPM=124 Key=Gm 2026-05-08 [Diynamic]
+Johannes Brecht - Chords In The Shadows (Original Mix)
+# BPM=122 Key=Abm 2026-05-08 [Embassy One]
+Claxy - Permeia (Original Mix)
+# BPM=122 Key=G 2026-05-08 [Clubsonica Records]
+Franco Camiolo - We Come (Matthew Sona Extended Mix)
+# BPM=121 Key=Dm 2026-05-08 [onedotsixtwo]
+Juan Lagisquet, Felipe Garcia (UY) - Hokkaido (Claudio Cornejo AR Remix)
+# BPM=124 Key=Em 2026-05-07 [Mango Alley]
+Julian Nates - A Better Place (Original Mix)
+# BPM=123 Key=Em 2026-05-07 [Mango Alley]
+Julian Nates - A Better Place (ANUQRAM Remix)
+# BPM=122 Key=A 2026-05-07 [Mango Alley]
+Julian Nates - A Better Place (Peter Makto & Matthew Sona Remix)
+# BPM=124 Key=Abm 2026-05-05 [SkyTop]
+Cosmonaut - Milky Way (Kamilo Sanclemente Extended Remix)
+# BPM=122 Key=Gm 2026-05-05 [SkyTop]
+DJ Ruby, Alexey Sonar - Connection (Tali Muss Extended Remix)
+# BPM=122 Key=Am 2026-05-04 [Barra Uno]
+Gai Barone - Clutchy (Original Mix)
+# BPM=124 Key=Ebm 2026-05-04 [Human By Default]
+Iveta Mukuchyan, Bedouin - Make Me Feel (Notre Dame Remix)
+# BPM=124 Key=G 2026-05-04 [Sudbeat Music]
+Christian Smith - Illusion (Original Mix)
+# BPM=126 Key=Bm 2026-05-03 [Embassy One]
+GHEIST - Good Life (Original Mix)

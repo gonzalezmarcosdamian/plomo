@@ -1,0 +1,72 @@
+{
+  "name": "68. Superficie — Groove Directo — 1h30 — 2026-08-11",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mita Gami",
+      "title": "San Pedro ",
+      "content_id": "78604348"
+    },
+    {
+      "artist": "Pavel Petrov, Rafael Cerato",
+      "title": "Reflections (Original mix)",
+      "content_id": "250940736"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Panorama (Original Mix)",
+      "content_id": "91056575"
+    },
+    {
+      "artist": "Dowden, Mazayr",
+      "title": "Deflator (Original Mix)",
+      "content_id": "5161822"
+    },
+    {
+      "artist": "Ric Niels & Juan Buitrago",
+      "title": "Glide ",
+      "content_id": "232948515"
+    },
+    {
+      "artist": "Danny Serrano",
+      "title": "The Haven (Dilby Extended Remix)",
+      "content_id": "54905004"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Soul Vision (Original Mix)",
+      "content_id": "38264685"
+    },
+    {
+      "artist": "Durante, Enamour",
+      "title": "Taos Hum",
+      "content_id": "26197501"
+    },
+    {
+      "artist": "Redspace, Diego Riga",
+      "title": "Phantom Sun (Extended Mix)",
+      "content_id": "227739486"
+    },
+    {
+      "artist": "Dosem",
+      "title": "Chosen",
+      "content_id": "93960449"
+    },
+    {
+      "artist": "Nox Vahn",
+      "title": "Brainwasher (Warung Extended Mix) ",
+      "content_id": "61522600"
+    },
+    {
+      "artist": "Kit Lawson",
+      "title": "Ruff (Original Mix)",
+      "content_id": "29068811"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "64. Presion Constante — Peak — 1h30 — 2026-08-06",
+  "duration_h": 1.5,
+  "bpm_range": [
+    118,
+    127
+  ],
+  "max_per_artist": 12,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "QuiQui, Thom Rich",
+      "title": "Victorious (Gai Barone Dark Extended Remix)",
+      "content_id": "20688664"
+    },
+    {
+      "artist": "Das Pharaoh, SHERRNX",
+      "title": "Astral Abyss (Extended Mix)",
+      "content_id": "89107972"
+    },
+    {
+      "artist": "Redspace, Diego Riga",
+      "title": "Phantom Sun (Extended Mix)",
+      "content_id": "227739486"
+    },
+    {
+      "artist": "Kit Lawson",
+      "title": "Ruff (Original Mix)",
+      "content_id": "29068811"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Off Gerlach (Original Mix)",
+      "content_id": "111800107"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Body Talk (Original Mix)",
+      "content_id": "63139094"
+    },
+    {
+      "artist": "Anthony Pappa, Aubrey Fry",
+      "title": "Itajai (Original Mix)",
+      "content_id": "12158345"
+    },
+    {
+      "artist": "Graziano Raffa",
+      "title": "Carbonia (Original Mix)",
+      "content_id": "193083808"
+    },
+    {
+      "artist": "Township Rebellion",
+      "title": "Birds Fly First Class (Original Mix)",
+      "content_id": "81980952"
+    },
+    {
+      "artist": "Kabi (AR), Ric Niels",
+      "title": "Crossed Paths (Original Mix)",
+      "content_id": "84283182"
+    },
+    {
+      "artist": "Serious Dancers",
+      "title": "Canopus (Extended Mix)",
+      "content_id": "202092683"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Breath (Original Mix)",
+      "content_id": "38628920"
+    }
+  ]
+}

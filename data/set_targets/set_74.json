@@ -1,0 +1,92 @@
+{
+  "name": "74. Puerta — Apertura — 2h — 2026-08-13",
+  "duration_h": 2.0,
+  "bpm_range": [
+    117,
+    124
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Yohai Mor",
+      "title": "Keep It Dark (Dowden Reformat)",
+      "content_id": "61091531"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Surge (Original Mix)",
+      "content_id": "220195272"
+    },
+    {
+      "artist": "Sudhaus & The Wash",
+      "title": "Spectron (Jamie Stevens Remix)",
+      "content_id": "98507814"
+    },
+    {
+      "artist": "Nox Vahn & Marsh",
+      "title": "Come Together (Extended Mix)",
+      "content_id": "38732868"
+    },
+    {
+      "artist": "Sebastien Leger, Roy Rosenfeld, Lost Miracle",
+      "title": "Closer To You (Extended Mix)",
+      "content_id": "94750243"
+    },
+    {
+      "artist": "Adam Ten, Mita Gami",
+      "title": "Lego ",
+      "content_id": "71044711"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Alfa Zeta (Original Mix)",
+      "content_id": "87227118"
+    },
+    {
+      "artist": "16BL, Nour",
+      "title": "Sharks (Extended Mix)",
+      "content_id": "139826013"
+    },
+    {
+      "artist": "Jody Wisternoff & James Grant",
+      "title": "Blue Space (feat. Jinadu)",
+      "content_id": "10116936"
+    },
+    {
+      "artist": "Sebastian Sellares, Greta Meier",
+      "title": "Benevolence (Paul Thomas Extended Remix)",
+      "content_id": "54698899"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Homecoming (Original Mix)",
+      "content_id": "156692210"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Dope Riddim (Original Mix)",
+      "content_id": "224504691"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bustle (Original Mix)",
+      "content_id": "5972317"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Juan Ibanez Extended Mix)",
+      "content_id": "205855457"
+    },
+    {
+      "artist": "Paul Hazendonk, Return To Saturn",
+      "title": "You Can Have It All  (Peter Makto & Matthew Sona Remix)",
+      "content_id": "211548822"
+    },
+    {
+      "artist": "Ben Böhmer & Tinlicker",
+      "title": "Run Away (feat. Felix Raphael) [Extended Mix]",
+      "content_id": "30810382"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "55. Radar Oscuro — Hipnotico — 2h — 2026-08-03",
+  "duration_h": 2,
+  "bpm_range": [118, 126],
+  "max_per_artist": 6,
+  "movements": [
+    {"name": "apertura",     "e_min": 2.5, "e_max": 4.5, "e_center": 3.4, "fraction": 0.30},
+    {"name": "profundidad",  "e_min": 4.2, "e_max": 6.0, "e_center": 5.0, "fraction": 0.40},
+    {"name": "peak oscuro",  "e_min": 5.8, "e_max": 7.5, "e_center": 6.6, "fraction": 0.30}
+  ],
+  "tracks": [
+    {"artist": "Cendryma", "title": "Crow's Cradle"},
+    {"artist": "Cendryma", "title": "Meridian Isle"},
+    {"artist": "Cendryma", "title": "Stasis Drive"},
+    {"artist": "Cendryma", "title": "Dividing Parts"},
+    {"artist": "Cendryma", "title": "Point Capricorn"},
+    {"artist": "Cendryma", "title": "Fortress"},
+
+    {"artist": "Maze 28", "title": "Mindloop"},
+    {"artist": "Maze 28", "title": "Tell Me Again"},
+    {"artist": "Maze 28", "title": "Personal Space"},
+
+    {"artist": "Simon Vuarambon", "title": "Stamina"},
+    {"artist": "Simon Vuarambon", "title": "Estigia"},
+    {"artist": "Anthony Pappa, Fauxplay", "title": "Forever Seeking"},
+
+    {"artist": "Guy J", "title": "Rise"},
+    {"artist": "Guy J", "title": "Piece of Cake"},
+    {"artist": "Halo Varga", "title": "Future"},
+
+    {"artist": "Dowden", "title": "Night Emeralds"},
+    {"artist": "Danny Howells, Lloyd Barwood", "title": "One More Sky"},
+    {"artist": "Lost Desert", "title": "Black Panther"},
+    {"artist": "Monolink", "title": "Perfect World"}
+  ]
+}

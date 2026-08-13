@@ -1,0 +1,57 @@
+{
+  "name": "67. Previa Brillante — Vocal — 1h — 2026-08-08",
+  "duration_h": 1.0,
+  "bpm_range": [
+    118,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Jody Wisternoff & James Grant",
+      "title": "Blue Space (feat. Jinadu) [Extended Mix]",
+      "content_id": "87407852"
+    },
+    {
+      "artist": "Muuk', Cendryma",
+      "title": "G-Force (Original Mix)",
+      "content_id": "16579793"
+    },
+    {
+      "artist": "Panama, Nils Hoffmann",
+      "title": "Far Behind (Jeremy Olander Extended Mix)",
+      "content_id": "151470040"
+    },
+    {
+      "artist": "Spencer Brown",
+      "title": "Comeback Kids (Original Mix)",
+      "content_id": "155709073"
+    },
+    {
+      "artist": "Hana, Durante",
+      "title": "Celestia (Extended Mix) ",
+      "content_id": "21013875"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "Compound (Extended Mix) ",
+      "content_id": "163262590"
+    },
+    {
+      "artist": "Ben Bohmer",
+      "title": "In Memoriam",
+      "content_id": "120058756"
+    },
+    {
+      "artist": "Tom Pavicich, Analog Sense",
+      "title": "Cardamom (Original Mix)",
+      "content_id": "259438685"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Keep On (Extended Mix) ",
+      "content_id": "16127516"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "70. Superficie — Colorize Vocal — 1h30 — 2026-08-11",
+  "duration_h": 1.5,
+  "bpm_range": [
+    120,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "GMJ, Matter, Zankee Gulati",
+      "title": "Emerge (Original Mix)",
+      "content_id": "71592299"
+    },
+    {
+      "artist": "Le Youth",
+      "title": "About Us (Extended Mix) ",
+      "content_id": "6550532"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Rebit (Original Mix)",
+      "content_id": "59269008"
+    },
+    {
+      "artist": "Ruben Karapetyan",
+      "title": "Neurotransmitter (Extended Mix)",
+      "content_id": "126363"
+    },
+    {
+      "artist": "Braxton",
+      "title": "Torn (feat. Danni Wells) [Extended Mix]",
+      "content_id": "116966407"
+    },
+    {
+      "artist": "GRAZZE",
+      "title": "Miami (Extended Mix)",
+      "content_id": "62887748"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "content_id": "112359333"
+    },
+    {
+      "artist": "Ursula Rucker, Simon Doty",
+      "title": "Hometown feat. Ursula Rucker (Extended Mix) ",
+      "content_id": "153066855"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Shrouded Glint (Original Mix)",
+      "content_id": "68561043"
+    },
+    {
+      "artist": "Bondarev, Max Wexem",
+      "title": "The Lotus (Original Mix)",
+      "content_id": "182558236"
+    },
+    {
+      "artist": "Orbital, Yotto",
+      "title": "Belfast - Yotto Remix",
+      "content_id": "264378478"
+    },
+    {
+      "artist": "Rauschhaus",
+      "title": "If I Had Wings ",
+      "content_id": "190615690"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "name": "[POOL] Nuevos Agosto 2026 — Dilby / D-Nox / Moret / Durante",
+  "duration_h": 1.5,
+  "bpm_range": [
+    118,
+    127
+  ],
+  "max_per_artist": 12,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Dilby",
+      "title": "Remember Me (Extended Mix) ",
+      "content_id": "93560439"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Young Movements ",
+      "content_id": "102708934"
+    },
+    {
+      "artist": "Durante & Altieri, James, Ron Carroll",
+      "title": "I Like The Way (Ron Carroll Chicago Disko Mix)",
+      "content_id": "88642867"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Sensei (Original Mix)",
+      "content_id": "198201852"
+    },
+    {
+      "artist": "D-Nox, Stereo Underground",
+      "title": "Salt & Pepper (Original Mix) ",
+      "content_id": "20406985"
+    },
+    {
+      "artist": "Danny Serrano",
+      "title": "The Haven (Dilby Extended Remix)",
+      "content_id": "54905004"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Addicted",
+      "content_id": "194055638"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Last Word (Original Mix)",
+      "content_id": "16467566"
+    },
+    {
+      "artist": "DJ Paul (AR), Andre Moret & Nahs",
+      "title": "Spiritual Balance",
+      "content_id": "37968036"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Soul Vision (Original Mix)",
+      "content_id": "38264685"
+    },
+    {
+      "artist": "Hernan Cattaneo, Audio Junkies",
+      "title": "A Major Minor (D-Nox & Beckers Remix) ",
+      "content_id": "100261206"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Connect the Dots (Oliver Schories & Gorge Remix) ",
+      "content_id": "6707410"
+    },
+    {
+      "artist": "DJ Paul (AR), Andre Moret & Nahs",
+      "title": "Experience",
+      "content_id": "156310442"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Pranayama ",
+      "content_id": "160831995"
+    },
+    {
+      "artist": "D-Nox",
+      "title": "Full Moon (Original Mix) ",
+      "content_id": "55003861"
+    },
+    {
+      "artist": "Stereo Underground feat. Sealine",
+      "title": "Flashes (D-Nox & Beckers Remix) ",
+      "content_id": "242713042"
+    }
+  ]
+}

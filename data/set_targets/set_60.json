@@ -1,0 +1,74 @@
+{
+  "name": "60. Cocina III — Mediodia — 50min — 2026-08-06",
+  "duration_h": 1,
+  "bpm_range": [
+    119,
+    123
+  ],
+  "max_per_artist": 3,
+  "movements": [
+    {
+      "name": "apertura",
+      "e_min": 4.0,
+      "e_max": 5.3,
+      "e_center": 4.7,
+      "fraction": 0.35
+    },
+    {
+      "name": "cuerpo",
+      "e_min": 5.0,
+      "e_max": 6.2,
+      "e_center": 5.6,
+      "fraction": 0.4
+    },
+    {
+      "name": "cierre alto",
+      "e_min": 6.0,
+      "e_max": 7.5,
+      "e_center": 6.7,
+      "fraction": 0.25
+    }
+  ],
+  "tracks": [
+    {
+      "artist": "Khen",
+      "title": "Out Of A Dream (Original Mix) ",
+      "content_id": "26535182"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Skyhook (Original Mix) ",
+      "content_id": "268265765"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "The Observer",
+      "content_id": "156983367"
+    },
+    {
+      "artist": "Chicola",
+      "title": "Blueberries (Extended)",
+      "content_id": "96922234"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Firefly (Original Mix) ",
+      "content_id": "38262851"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Stevie (Original Mix) ",
+      "content_id": "49087473"
+    },
+    {
+      "artist": "Sébastien Léger",
+      "title": "Forbidden Garden (Tim Green Remix) ",
+      "content_id": "130441327"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
+    }
+  ]
+}

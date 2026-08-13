@@ -1,0 +1,74 @@
+{
+  "name": "58. Cocina I — Amanecer — 50min — 2026-08-06",
+  "duration_h": 1,
+  "bpm_range": [
+    118,
+    123
+  ],
+  "max_per_artist": 3,
+  "movements": [
+    {
+      "name": "apertura",
+      "e_min": 3.5,
+      "e_max": 5.0,
+      "e_center": 4.2,
+      "fraction": 0.35
+    },
+    {
+      "name": "cuerpo",
+      "e_min": 4.8,
+      "e_max": 6.3,
+      "e_center": 5.5,
+      "fraction": 0.4
+    },
+    {
+      "name": "cierre alto",
+      "e_min": 6.0,
+      "e_max": 7.5,
+      "e_center": 6.7,
+      "fraction": 0.25
+    }
+  ],
+  "tracks": [
+    {
+      "artist": "Jody Wisternoff & James Grant",
+      "title": "Blue Space (feat. Jinadu) [Extended Mix]",
+      "content_id": "87407852"
+    },
+    {
+      "artist": "Lane 8 ft. Solomon Grey",
+      "title": "Diamonds (Original Mix)",
+      "content_id": "43416483"
+    },
+    {
+      "artist": "Nils Hoffmann, Julia Church",
+      "title": "9 Days (Extended Mix) ",
+      "content_id": "183236640"
+    },
+    {
+      "artist": "Braxton",
+      "title": "Torn (feat. Danni Wells) [Extended Mix]",
+      "content_id": "116966407"
+    },
+    {
+      "artist": "Ben Bohmer & Neils Hoffmann feat. Malou",
+      "title": "Breathing ",
+      "content_id": "84605287"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Modern Memory (Extended Mix)",
+      "content_id": "23002335"
+    },
+    {
+      "artist": "Sebastian Sellares",
+      "title": "Timeless Era (Extended Mix)",
+      "content_id": "80771436"
+    },
+    {
+      "artist": "Jakatta",
+      "title": "American Dream (PROFF Extended Interpretation)",
+      "content_id": "264823102"
+    }
+  ]
+}

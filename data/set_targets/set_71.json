@@ -1,0 +1,72 @@
+{
+  "name": "71. Presion — Peak Groove — 1h30 — 2026-08-11",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    127
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Khen",
+      "title": "Out Of A Dream (Original Mix) ",
+      "content_id": "26535182"
+    },
+    {
+      "artist": "D-Nox, Stereo Underground",
+      "title": "Salt & Pepper (Original Mix) ",
+      "content_id": "20406985"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Sensei (Original Mix)",
+      "content_id": "198201852"
+    },
+    {
+      "artist": "DJ Paul (AR), Andre Moret & Nahs",
+      "title": "Spiritual Balance",
+      "content_id": "37968036"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Cry of the Deserts (Molac & Nicolas Viana Remix)",
+      "content_id": "21130044"
+    },
+    {
+      "artist": "Dmitry Molosh, Michael A",
+      "title": "Integral (Original Mix) ",
+      "content_id": "41067932"
+    },
+    {
+      "artist": "Roy RosenfelD",
+      "title": "Hypnosa De La Rosa ",
+      "content_id": "38612710"
+    },
+    {
+      "artist": "Spencer Brown",
+      "title": "Blue Magic (feat. Danny Shamoun)",
+      "content_id": "190819323"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Fragma (GORKIZ Remix)",
+      "content_id": "104234166"
+    },
+    {
+      "artist": "Massano",
+      "title": "The Feeling (2022 Remaster)",
+      "content_id": "34902668"
+    },
+    {
+      "artist": "Tali Muss",
+      "title": "Azal (Original Mix)",
+      "content_id": "100584240"
+    },
+    {
+      "artist": "Durante & Altieri, James, Ron Carroll",
+      "title": "I Like The Way (Ron Carroll Chicago Disko Mix)",
+      "content_id": "88642867"
+    }
+  ]
+}

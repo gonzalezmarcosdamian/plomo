@@ -1,0 +1,132 @@
+{
+  "name": "[POOL] Detonantes — E>=7.5 — uno o dos por set, al 70-85%",
+  "duration_h": 1.5,
+  "bpm_range": [
+    118,
+    128
+  ],
+  "max_per_artist": 12,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Adriatique",
+      "title": "Mystery (Tale Of Us & Mathame Remix) ",
+      "content_id": "62626440"
+    },
+    {
+      "artist": "Andy Moor & Adam White",
+      "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
+      "content_id": "162072169"
+    },
+    {
+      "artist": "CamelPhat, Jem Cooke, Cristoph",
+      "title": "Breathe (Original Mix) ",
+      "content_id": "117179206"
+    },
+    {
+      "artist": "Fuscarini",
+      "title": "Le Souffle (Kevin Di Serna & Santor Remix)",
+      "content_id": "253481888"
+    },
+    {
+      "artist": "Ferry Corsten, Marsh",
+      "title": "Attraction (Marsh's Extended Mix)",
+      "content_id": "220272481"
+    },
+    {
+      "artist": "Carlita & Calussa",
+      "title": "Fell In Luv (Black Circle Extended Remix) ",
+      "content_id": "189111149"
+    },
+    {
+      "artist": "Mrak, Braev",
+      "title": "The World Is Yours (Extended Mix)",
+      "content_id": "33070729"
+    },
+    {
+      "artist": "ECHO DAFT, Kebin Van Reeken",
+      "title": "Years of Ascent (Original Mix)",
+      "content_id": "237266719"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Once We Were (Extended Mix)",
+      "content_id": "39391280"
+    },
+    {
+      "artist": "Graziano Raffa",
+      "title": "Carbonia (Original Mix)",
+      "content_id": "193083808"
+    },
+    {
+      "artist": "Jamie Stevens, Zankee Gulati",
+      "title": "Low Tide (Ezequiel Arias Remix)",
+      "content_id": "16768158"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Forest Song in the Night (Original Mix)",
+      "content_id": "128337578"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Cinimatic (Original Mix)",
+      "content_id": "14020757"
+    },
+    {
+      "artist": "Lost Desert",
+      "title": "Aalam Waahid (Original Mix)",
+      "content_id": "127040310"
+    },
+    {
+      "artist": "After Sunrise",
+      "title": "Tequila Sunrise (Original Mix)",
+      "content_id": "30589035"
+    },
+    {
+      "artist": "D-Nox, Stereo Underground",
+      "title": "Shooting Stars (Extended Version) ",
+      "content_id": "140482190"
+    },
+    {
+      "artist": "Colyn",
+      "title": "The Future Is the Past",
+      "content_id": "109636107"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Great Attractor (Ruben Karapetyan Remix)",
+      "content_id": "106041324"
+    },
+    {
+      "artist": "Ben Bohmer",
+      "title": "Beyond Beliefs (Original Mix)",
+      "content_id": "261366438"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Free Your Mind",
+      "content_id": "85827128"
+    },
+    {
+      "artist": "Cid Inc., Dmitry Molosh",
+      "title": "Impending Storm (Navar Remix)",
+      "content_id": "265138142"
+    },
+    {
+      "artist": "Ferry Corsten, Dirty South",
+      "title": "Carte Blanche (Extended Mix)",
+      "content_id": "160052137"
+    },
+    {
+      "artist": "Rauschhaus",
+      "title": "Galapagos (Original Mix)",
+      "content_id": "142958195"
+    },
+    {
+      "artist": "Lost Desert",
+      "title": "Black Panther (Original Mix)",
+      "content_id": "102110839"
+    }
+  ]
+}
