@@ -65,6 +65,10 @@ data/dj_sets_new.json
 data/sunset_*.json
 data/track_playlist_mapping.json
 
+# Artefactos generados — se reconstruyen con dump_pool.py / muzpa_*_scan.py
+data/pool.json
+data/*_scan_result.json
+
 # Archivos grandes sueltos en raíz
 *.MOV
 *.wav
