@@ -1,0 +1,151 @@
+# Artistas para el pool de apertura organica (112-121 BPM)
+# La biblioteca tiene solo 9 tracks por debajo de 118 — este es el hueco real.
+# Criterio: organico/downtempo con groove, sin drop, que sirva para abrir.
+
+# --- All Day I Dream y orbita ---
+Lee Burridge
+Lost Desert
+Gorje Hewek
+Izhevski
+Volen Sentir
+Amonita
+Makebo
+Sebastien Leger
+Matthew Dekay
+Behrouz
+Adham Zahran
+Chaim
+Andrey Pushkarev
+YokoO
+Rodrigo Gallardo
+
+# --- Armenio / oriental ---
+Hraach
+Armen Miran
+Felix Raphael
+Zone+
+Sahar Z
+Ruben Karapetyan
+
+# --- Crosstown Rebels / Damian Lazarus ---
+Damian Lazarus
+Bedouin
+Acid Pauli
+Bahramji
+
+# --- Downtempo / latinoamericano ---
+Nicola Cruz
+El Buho
+Barda
+Kermesse
+Sabo
+Goldcap
+Xique-Xique
+Iorie
+Mira
+Nu
+
+# --- Deep / hipnotico para abrir ---
+Yubik
+Budakid
+Peter Pardeike
+Dee Montero
+Tim Green
+Jos and Eli
+Kolonie
+Ivan Masa
+Anton MAKe
+Marcus Meinhardt
+Ale Russo
+Nicolas Rada
+Simon Vuarambon
+Khen
+Roy Rosenfeld
+Guy Mantzur
+Blond-ish
+Monkey Safari
+Oliver Koletzki
+Township Rebellion
+Innellea
+Mathias Schober
+
+# --- Ampliacion: mas orbita organica / deep para abrir ---
+Jody Wisternoff
+James Grant
+Marsh
+Cubicolor
+Dosem
+Fideles
+Mind Against
+Adriatique
+Recondite
+Trikk
+Rampa
+Adam Port
+Keinemusik
+Frank Wiedemann
+Howling
+Stimming
+Christian Loffler
+Max Cooper
+Rival Consoles
+Jan Blomqvist
+Parra for Cuva
+Moderat
+Weval
+Bicep
+Massive Attack
+Bonobo
+Maribou State
+Fort Romeau
+Rufus Du Sol
+Cassian
+Elderbrook
+Totally Enormous Extinct Dinosaurs
+Kiasmos
+Olafur Arnalds
+Ben Bohmer
+Nils Hoffmann
+Lane 8
+Yotto
+Tinlicker
+Le Youth
+Kasper Koman
+Cid Inc
+Dmitry Molosh
+Hobin Rude
+Cendryma
+Tom Pavicich
+Durante
+Emi Galvan
+Kamilo Sanclemente
+Maze 28
+Melodiam
+Rockka
+Mike Rish
+Kebin Van Reeken
+Tali Muss
+Gai Barone
+Rauschhaus
+Alex ORion
+Matias Chilano
+Paul Deep
+Kevin Di Serna
+Mariano Mellino
+Nick Warren
+Hernan Cattaneo
+Marcelo Vasami
+Soundexile
+Ezequiel Arias
+Antrim
+Analog Sense
+Ric Niels
+Dowden
+Jonas Saalbach
+Einmusik
+Nox Vahn
+Enamour
+Mita Gami
+Adam Ten
+Nandu
+Tripolism
