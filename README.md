@@ -4,7 +4,7 @@ Automation toolkit para Rekordbox 6. Importa música nueva, aplica cues automát
 
 ## Qué hace
 
-- **Cues automáticos (v8)**: detecta first beat, bass in, breakdown, drop, outro y escribe 11 markers en Rekordbox
+- **Cues automáticos (v8)**: detecta first beat, bass in, breakdown, drop, outro y escribe 9 markers en Rekordbox
 - **Energy score (0-10)**: calcula la energía de cada track desde los timings de cues (intro length, breakdown duration, drop presence)
 - **Orden Camelot**: ordena sets minimizando saltos armónicos entre tracks
 - **Pipeline completo**: mueve archivos de Downloads → Music, Rekordbox importa, luego aplica todo lo anterior
@@ -100,7 +100,7 @@ src/plomo/
 
 ## Algoritmo de cues v8
 
-11 markers por track:
+9 markers por track:
 
 | # | Nombre | Descripción |
 |---|--------|-------------|
@@ -109,8 +109,8 @@ src/plomo/
 | 3 | Breakdown | Inicio del breakdown más largo |
 | 4 | DROP | Re-entrada del kick post-breakdown |
 | 5 | Mix-OUT | 16 bars antes del último kick |
-| — | Loop Intro 16b | Inactivo (configuración manual) |
-| — | Loop Outro 16b | **ACTIVE** — auto-loop al final ⭐ |
+
+Sin loops: el engine no genera cues con `OutMsec` ni `BeatLoopSize`.
 
 ## Energy Score (0–10)
 

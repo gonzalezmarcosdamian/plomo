@@ -184,8 +184,13 @@ def _assign_tracks_to_movement(
 
         ordered = ordered_pre + anchors + ordered_post
     else:
-        # Sin anclas: ordenar por energía objetivo + camelot
-        ordered = _greedy_energy_camelot(remaining[:n_tracks], target_energies, feedback)
+        # Elegir los tracks cuya energía cae en la banda del movimiento.
+        # Antes se hacia remaining[:n_tracks], que corta por el orden de entrada
+        # del target JSON: el warmup se quedaba con lo que estuviera primero en el
+        # archivo, no con lo mas suave. Con pools chicos eso destruye el arco.
+        band_center = (movement.energy_start + movement.energy_peak + movement.energy_end) / 3
+        candidates = sorted(remaining, key=lambda t: abs(t["energy"] - band_center))[:n_tracks]
+        ordered = _greedy_energy_camelot(candidates, target_energies, feedback)
 
     return ordered[:n_tracks]
 

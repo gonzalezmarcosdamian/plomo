@@ -15,6 +15,10 @@ Uso:
 """
 import sys
 import os
+import re
+import shutil
+import unicodedata
+from datetime import date
 from pathlib import Path
 from collections import defaultdict
 
@@ -34,6 +38,55 @@ def db_connect():
     return con
 
 
+def norm_field(text: str) -> str:
+    """
+    Normaliza artista/titulo para comparar duplicados.
+
+    El match exacto en minusculas dejaba pasar duplicados reales:
+      - acentos:            'Simon Vuarambon'  vs 'Simon Vuarambón'
+      - separador:          'GMJ & Matter'     vs 'GMJ, Matter'
+      - sufijo de mix:      'Forgotten'        vs 'Forgotten (Original Mix)'
+      - espacios de sobra:  'Running  (Original Mix)'
+
+    Los remixes con nombre propio se conservan distintos: solo se quitan los
+    parentesis de 'Original'/'Extended', nunca '(Cid Inc. Remix)'.
+    """
+    s = unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode()
+    s = s.lower()
+    s = re.sub(r"\((original|extended)[^)]*\)", "", s)
+    s = re.sub(r"\s*-\s*(original|extended)\s+mix\b", "", s)
+    return re.sub(r"[^a-z0-9]", "", s)
+
+
+def archive_duplicate_file(folder_path: str) -> bool:
+    """
+    Mueve el archivo de un duplicado eliminado fuera de las carpetas que
+    Rekordbox monitorea. Devuelve True si lo movio.
+
+    Solo toca archivos bajo MUSIC_NEW_FOLDER (el Inbox): el resto de la
+    biblioteca esta organizada y no se reescanea.
+    """
+    if not folder_path:
+        return False
+
+    src = Path(folder_path.replace("/", os.sep))
+    inbox = Path(config.MUSIC_NEW_FOLDER)
+    try:
+        src.relative_to(inbox)
+    except ValueError:
+        return False  # no esta en el Inbox, no hace falta moverlo
+    if not src.exists():
+        return False
+
+    dest_dir = inbox.parent / f"_dups_removidos_{date.today().isoformat()}"
+    dest_dir.mkdir(exist_ok=True)
+    dest = dest_dir / src.name
+    if dest.exists():
+        dest = dest_dir / f"{src.stem}_{src.stat().st_size}{src.suffix}"
+    shutil.move(str(src), str(dest))
+    return True
+
+
 def check_duplicates(con):
     """Detecta tracks con mismo titulo + artista. Conserva el que esta en mas playlists."""
     print("\n=== DUPLICADOS ===")
@@ -51,7 +104,7 @@ def check_duplicates(con):
     for cid, artist, title, bpm, fpath, deleted in rows:
         if not title:
             continue
-        key = (title.strip().lower(), (artist or "").strip().lower())
+        key = (norm_field(title), norm_field(artist))
         groups[key].append((cid, artist, title, bpm, fpath))
 
     duplicates = {k: v for k, v in groups.items() if len(v) > 1}
@@ -86,14 +139,37 @@ def check_duplicates(con):
             print(f"         KEEP  [{keep_id}] (playlists={playlist_counts[keep_id]})")
 
             if not DRY:
+                # Reasignar playlist entries al KEEP antes de borrar el duplicado.
+                # Sin esto, los sets que usaban el track REMOVE pierden el track.
+                playlists_of_remove = con.execute(
+                    "SELECT ID, PlaylistID, TrackNo FROM djmdSongPlaylist WHERE ContentID=? AND rb_local_deleted=0",
+                    (str(cid),)
+                ).fetchall()
+                for sp_id, pl_id, track_no in playlists_of_remove:
+                    already_in_keep = con.execute(
+                        "SELECT COUNT(*) FROM djmdSongPlaylist WHERE ContentID=? AND PlaylistID=? AND rb_local_deleted=0",
+                        (str(keep_id), str(pl_id))
+                    ).fetchone()[0]
+                    if already_in_keep:
+                        # KEEP ya está en ese playlist: solo borrar la entrada duplicada
+                        con.execute(
+                            "UPDATE djmdSongPlaylist SET rb_local_deleted=1 WHERE ID=?",
+                            (str(sp_id),)
+                        )
+                    else:
+                        # KEEP no está en ese playlist: reasignar la entrada al KEEP
+                        con.execute(
+                            "UPDATE djmdSongPlaylist SET ContentID=? WHERE ID=?",
+                            (str(keep_id), str(sp_id))
+                        )
                 # Soft delete: marcar como borrado
                 con.execute(
                     "UPDATE djmdContent SET rb_local_deleted=1 WHERE ID=?",
                     (str(cid),)
                 )
-                # Remover de playlists
+                # Borrar entradas de playlist que no fueron reasignadas
                 con.execute(
-                    "UPDATE djmdSongPlaylist SET rb_local_deleted=1 WHERE ContentID=?",
+                    "UPDATE djmdSongPlaylist SET rb_local_deleted=1 WHERE ContentID=? AND rb_local_deleted=0",
                     (str(cid),)
                 )
                 # Remover cues
@@ -101,6 +177,12 @@ def check_duplicates(con):
                     "UPDATE djmdCue SET rb_local_deleted=1 WHERE ContentID=?",
                     (str(cid),)
                 )
+                # Y sacar el archivo de las carpetas monitoreadas. Sin esto el
+                # borrado no es definitivo: Rekordbox reescanea la carpeta, ve
+                # un archivo sin fila, y lo vuelve a importar como track nuevo.
+                # Asi reaparecian los mismos duplicados en cada apertura.
+                if archive_duplicate_file(fpath):
+                    print("         archivo movido fuera del Inbox")
             total_removed += 1
 
     print(f"\n  Total a eliminar: {total_removed} tracks duplicados")

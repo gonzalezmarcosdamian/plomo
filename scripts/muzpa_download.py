@@ -126,7 +126,9 @@ def search(s: requests.Session, query: str) -> list[dict]:
 
     Returns list of result dicts with keys: id, filename, fullname, bpm, key.
     """
-    encoded = query.replace(" ", "+")
+    # quote_plus, no replace(" ","+"): un "&" en el nombre del artista
+    # (ej "Kamilo Sanclemente & Jossem") cortaba el parametro text.
+    encoded = urllib.parse.quote_plus(query)
     url = f"{MUZPA_API}/a/ms/media/search?format=mp3&matchonly=true&page=0&popularorder=true&text={encoded}"
     try:
         r = s.get(url, timeout=15)
@@ -232,6 +234,14 @@ def process(artist: str, title: str, s: requests.Session | None = None) -> bool:
         return False
 
     track = results[0]
+
+    # search_artist_title cae a resultados sin filtrar si no hay match exacto.
+    # Sin este chequeo se descarga un track equivocado en silencio.
+    bare_title = title.split(" (")[0].strip().lower()
+    if bare_title and bare_title not in track["fullname"].lower():
+        print(f"  No encontrado (el mejor match fue: {track['fullname']})")
+        return False
+
     print(f"  Encontrado: {track['fullname']} (BPM={track['bpm']}, Key={track['key']})")
 
     result = download_track(s, track["id"], track["filename"])
@@ -268,7 +278,10 @@ def cmd_batch(path: str) -> None:
     if s is None:
         return
 
-    with open(path) as f:
+    # encoding explicito: sin esto Windows abre en cp1252 y los nombres con
+    # acento llegan mangleados ("Sebastien Leger" -> "SÃ©bastien LÃ©ger"),
+    # asi que la busqueda en Muzpa no encuentra nada.
+    with open(path, encoding="utf-8") as f:
         lines = [l.strip() for l in f
                  if (" — " in l or " - " in l) and not l.strip().startswith("#")]
 
