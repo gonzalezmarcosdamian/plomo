@@ -34,7 +34,7 @@ def get_tracks_from_playlist(con: sqlcipher3.Connection, pl_id: str) -> list[dic
         FROM djmdSongPlaylist sp JOIN djmdContent c ON c.ID=sp.ContentID
         LEFT JOIN djmdArtist a ON a.ID=c.ArtistID
         LEFT JOIN djmdKey k ON k.ID=c.KeyID
-        WHERE sp.PlaylistID=? AND c.rb_local_deleted=0
+        WHERE sp.PlaylistID=? AND c.rb_local_deleted=0 AND sp.rb_local_deleted=0
         ORDER BY sp.TrackNo
     """, (pl_id,)).fetchall()
     result = []

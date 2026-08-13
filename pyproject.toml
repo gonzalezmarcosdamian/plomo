@@ -18,3 +18,7 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+markers = [
+    "unit: tests unitarios de funciones puras (sin DB ni audio)",
+    "integration: tests que tocan la DB de Rekordbox",
+]

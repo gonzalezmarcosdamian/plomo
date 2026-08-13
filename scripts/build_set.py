@@ -48,12 +48,27 @@ def db_connect():
     return con
 
 
+class AmbiguousPlaylistError(Exception):
+    """Mas de una playlist comparte el mismo numero de set."""
+
+
 def find_playlist(con, set_num: int) -> tuple[str, str] | None:
     rows = con.execute(
-        "SELECT ID, Name FROM djmdPlaylist WHERE Name LIKE ? AND rb_local_deleted=0",
+        "SELECT ID, Name FROM djmdPlaylist WHERE Name LIKE ? AND rb_local_deleted=0"
+        " ORDER BY Name",
         (f"{set_num}.%",)
     ).fetchall()
-    return (rows[0][0], rows[0][1]) if rows else None
+    if not rows:
+        return None
+    if len(rows) > 1:
+        # Antes devolvia rows[0] sin ORDER BY: con numeros duplicados podia
+        # reconstruir —y borrar— el set equivocado.
+        nombres = "\n".join(f"    - {r[1]}" for r in rows)
+        raise AmbiguousPlaylistError(
+            f"El numero {set_num} corresponde a {len(rows)} playlists:\n{nombres}\n"
+            f"  Renombra las que sobren para que el numero sea unico."
+        )
+    return (rows[0][0], rows[0][1])
 
 
 def create_playlist(con, name: str) -> str:
@@ -170,8 +185,20 @@ def resolve_tracks(con, target: dict) -> list[dict]:
 
 
 def rebuild_playlist(con, playlist_id: str, tracks: list[dict], ts: str) -> int:
-    con.execute("DELETE FROM djmdSongPlaylist WHERE PlaylistID=?", (playlist_id,))
     max_usn = con.execute("SELECT MAX(rb_local_usn) FROM djmdSongPlaylist").fetchone()[0] or 0
+    # Soft delete, no DELETE fisico: el sync por USN del pen necesita el
+    # tombstone para enterarse de que la fila se fue. Sin esto el pen acumula
+    # las entradas viejas y aparecen duplicados en las playlists exportadas.
+    for (row_id,) in con.execute(
+        "SELECT ID FROM djmdSongPlaylist WHERE PlaylistID=? AND rb_local_deleted=0",
+        (playlist_id,),
+    ).fetchall():
+        max_usn += 1
+        con.execute(
+            "UPDATE djmdSongPlaylist SET rb_local_deleted=1, rb_local_synced=0,"
+            " rb_local_usn=?, updated_at=? WHERE ID=?",
+            (max_usn, ts, row_id),
+        )
     for i, t in enumerate(tracks, 1):
         max_usn += 1
         con.execute("""
@@ -286,7 +313,12 @@ def build_one(set_num: int, dry: bool = False) -> None:
 
     # Ordenar con el algoritmo de movimientos si hay config
     movements_cfg = target.get("movements")
-    if movements_cfg:
+    if target.get("keep_order"):
+        # El orden del JSON es curaduria humana: se respeta tal cual.
+        # El algoritmo optimiza energia + Camelot, pero no ve las razones
+        # de un bajon deliberado de BPM o de sostener una key tres tracks.
+        print("  [keep_order] Se respeta el orden del target, sin reordenar")
+    elif movements_cfg:
         movements = [
             Movement(
                 m["name"],
