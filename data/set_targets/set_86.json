@@ -1,0 +1,103 @@
+{
+  "name": "86. Simon Vuarambon Style — Hipnotico",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    118,
+    124
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mike Rish",
+      "title": "Tú Attair (Original Mix)",
+      "content_id": "71858967"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Crow's Cradle (Original Mix)",
+      "content_id": "185986807"
+    },
+    {
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Tapestry of Perception (Extended Mix)",
+      "content_id": "223519313"
+    },
+    {
+      "artist": "Kebin Van Reeken",
+      "title": "Endurance (Original Mix)",
+      "content_id": "130697914"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Alfa Zeta (Original Mix)",
+      "content_id": "87227118"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "U & Eyeye",
+      "content_id": "250993586"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Loco Motif (Tantum Remix) ",
+      "content_id": "28929100"
+    },
+    {
+      "artist": "Gorkiz, Andre Moret",
+      "title": "H Feelings (Original Mix)",
+      "content_id": "219339516"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Effective Loss (Original Mix)",
+      "content_id": "168103371"
+    },
+    {
+      "artist": "Quivver, Dave Seaman",
+      "title": "The Water's Edge (Original Mix)",
+      "content_id": "134832567"
+    },
+    {
+      "artist": "Sebastian Sellares, Greta Meier",
+      "title": "Benevolence (Extended Mix)",
+      "content_id": "114907652"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Josefina (Casnik Remix)",
+      "content_id": "210569428"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Heat Above - Original Mix",
+      "content_id": "130309928"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Mauro Aguirre",
+      "title": "Looking For You (Extended Mix)",
+      "content_id": "89039390"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "The Wind Phone",
+      "content_id": "252961879"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Strange Days (Original Mix)",
+      "content_id": "17752485"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Solovey (Original Mix)",
+      "content_id": "22064301"
+    }
+  ]
+}

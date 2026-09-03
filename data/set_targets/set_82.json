@@ -1,0 +1,103 @@
+{
+  "name": "82. Emi Galvan Style — Progresivo Colorido",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "content_id": "212560040"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Wilder (Extended Mix) ",
+      "content_id": "177329531"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "El Oro De Los Tigres",
+      "content_id": "162910837"
+    },
+    {
+      "artist": "Durante",
+      "title": "Reaching (Weird Sounding Dude Extended Mix)",
+      "content_id": "161831530"
+    },
+    {
+      "artist": "Gorje Hewek, Molac, Dulus",
+      "title": "Astro World (Original Mix)",
+      "content_id": "7864421"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Nether (Original Mix)",
+      "content_id": "105409768"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bustle (Original Mix)",
+      "content_id": "5972317"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Rauschhaus, GRAZZE",
+      "title": "Canacona (Original Mix)",
+      "content_id": "247966122"
+    },
+    {
+      "artist": "Dmitry Molosh, Michael A",
+      "title": "Integral (Original Mix) ",
+      "content_id": "41067932"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Evasive (Extended Mix)",
+      "content_id": "246569089"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Subversion",
+      "content_id": "78510636"
+    },
+    {
+      "artist": "Marcelo Vasami",
+      "title": "Shades Of Blue (Original Mix) ",
+      "content_id": "241228611"
+    },
+    {
+      "artist": "Cid Inc.",
+      "title": "Citadel (Original Mix) ",
+      "content_id": "66290210"
+    },
+    {
+      "artist": "Rauschhaus",
+      "title": "Waiting For The Birds ",
+      "content_id": "5512663"
+    },
+    {
+      "artist": "Guy Mantzur, Kamilo Sanclemente",
+      "title": "The Future is in the Past (Original Mix)",
+      "content_id": "35383160"
+    },
+    {
+      "artist": "Cid Inc.",
+      "title": "Forgotten",
+      "content_id": "72351175"
+    },
+    {
+      "artist": "Simon Vuarambon & Tantum",
+      "title": "Lake Of Fire",
+      "content_id": "71085652"
+    }
+  ]
+}

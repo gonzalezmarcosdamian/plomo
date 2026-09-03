@@ -1,0 +1,103 @@
+{
+  "name": "81. Ezequiel Arias Style — Peak Vocal",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    120,
+    126
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Kasper Koman",
+      "title": "Wilder (Extended Mix) ",
+      "content_id": "177329531"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Primah (Original Mix)",
+      "content_id": "235124646"
+    },
+    {
+      "artist": "Khen",
+      "title": "Out Of A Dream (Original Mix) ",
+      "content_id": "26535182"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Six (Extended Mix)",
+      "content_id": "8056828"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Dope Riddim (Original Mix)",
+      "content_id": "224504691"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Sugar Rush (Original Mix) ",
+      "content_id": "265949686"
+    },
+    {
+      "artist": "Roy Rosenfeld, Gorje Hewek, Dulus",
+      "title": "Vida (Original Mix)",
+      "content_id": "37598389"
+    },
+    {
+      "artist": "Quivver, Dave Seaman",
+      "title": "The Water's Edge (Original Mix)",
+      "content_id": "134832567"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "No Regrets (Extended Mix)",
+      "content_id": "59350179"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Evasive (Extended Mix)",
+      "content_id": "246569089"
+    },
+    {
+      "artist": "Gorkiz, Luca Abayan",
+      "title": "Drowner (Extended Mix)",
+      "content_id": "175740225"
+    },
+    {
+      "artist": "Marcelo Vasami",
+      "title": "Shades Of Blue (Original Mix) ",
+      "content_id": "241228611"
+    },
+    {
+      "artist": "Guy Mantzur, Kamilo Sanclemente",
+      "title": "The Future is in the Past (Original Mix)",
+      "content_id": "35383160"
+    },
+    {
+      "artist": "Rauschhaus",
+      "title": "Waiting For The Birds ",
+      "content_id": "5512663"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Shine (Extended Mix)",
+      "content_id": "112900288"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Wakefeld (Original Mix)",
+      "content_id": "75106655"
+    },
+    {
+      "artist": "Armen Miran & Lost Desert",
+      "title": "Don't Worry",
+      "content_id": "109445246"
+    }
+  ]
+}

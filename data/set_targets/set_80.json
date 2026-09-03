@@ -1,0 +1,103 @@
+{
+  "name": "80. Hernan Cattaneo Style — Progressive Argentino",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mike Rish",
+      "title": "The Likes of You (Original Mix)",
+      "content_id": "216114282"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "content_id": "212560040"
+    },
+    {
+      "artist": "Kebin Van Reeken",
+      "title": "Endurance (Original Mix)",
+      "content_id": "130697914"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Primah (Original Mix)",
+      "content_id": "235124646"
+    },
+    {
+      "artist": "Durante",
+      "title": "Reaching (Weird Sounding Dude Extended Mix)",
+      "content_id": "161831530"
+    },
+    {
+      "artist": "Melodiam (AR)",
+      "title": "Juno",
+      "content_id": "11763732"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Fall Away (Original Mix) ",
+      "content_id": "172422541"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Stay High",
+      "content_id": "63653796"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Julian Nates, Julieta Kühnle",
+      "title": "Fever (Extended Mix)",
+      "content_id": "253434682"
+    },
+    {
+      "artist": "Khen",
+      "title": "Closing Doors (Original Mix)",
+      "content_id": "199550938"
+    },
+    {
+      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
+      "title": "Perception (Original Mix)",
+      "content_id": "264835495"
+    },
+    {
+      "artist": "Cid Inc.",
+      "title": "Forgotten",
+      "content_id": "72351175"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Wakefeld (Original Mix)",
+      "content_id": "75106655"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
+    },
+    {
+      "artist": "Paul Deep (AR)",
+      "title": "Tique (Original Mix)",
+      "content_id": "62105956"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Brisa (Extended Mix)",
+      "content_id": "19065039"
+    },
+    {
+      "artist": "Durante, ALLKNIGHT",
+      "title": "How Does It Feel (Extended Mix)",
+      "content_id": "232530446"
+    }
+  ]
+}

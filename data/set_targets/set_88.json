@@ -1,0 +1,103 @@
+{
+  "name": "88. Cordoba Progressive — Gai Barone Style",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mike Rish",
+      "title": "The Likes of You (Original Mix)",
+      "content_id": "216114282"
+    },
+    {
+      "artist": "Antrim, Kamilo Sanclemente",
+      "title": "Once and Again feat. Paula OS (Extended Mix)",
+      "content_id": "214570182"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "El Oro De Los Tigres",
+      "content_id": "162910837"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Kala ",
+      "content_id": "52738760"
+    },
+    {
+      "artist": "Melodiam (AR)",
+      "title": "Juno",
+      "content_id": "11763732"
+    },
+    {
+      "artist": "Alex O'Rion",
+      "title": "Tunnel (Original Mix)",
+      "content_id": "7078508"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Everyday (Original Mix)",
+      "content_id": "173241243"
+    },
+    {
+      "artist": "Hana, Durante",
+      "title": "Celestia (Extended Mix) ",
+      "content_id": "21013875"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Feather (Original Mix)",
+      "content_id": "158196635"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Airwave (Original Mix)",
+      "content_id": "70926419"
+    },
+    {
+      "artist": "Kostya Outta",
+      "title": "Seguro (Paul James Nolan Remix)",
+      "content_id": "243274326"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Illusion (Original Mix) ",
+      "content_id": "240528466"
+    },
+    {
+      "artist": "Tali Muss",
+      "title": "Azal (Original Mix)",
+      "content_id": "100584240"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Fragma (GORKIZ Remix)",
+      "content_id": "104234166"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Leave the World Behind (Original Mix)",
+      "content_id": "114182110"
+    },
+    {
+      "artist": "Paul Deep (AR)",
+      "title": "Tique (Original Mix)",
+      "content_id": "62105956"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Override (Original Mix)",
+      "content_id": "244252789"
+    }
+  ]
+}

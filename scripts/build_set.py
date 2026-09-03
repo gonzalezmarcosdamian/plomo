@@ -71,7 +71,7 @@ def find_playlist(con, set_num: int) -> tuple[str, str] | None:
     return (rows[0][0], rows[0][1])
 
 
-def create_playlist(con, name: str) -> str:
+def create_playlist(con, name: str, parent_id: str = SETS_ARMADOS_PARENT) -> str:
     pl_id = safe_id()
     max_usn = con.execute("SELECT MAX(rb_local_usn) FROM djmdPlaylist").fetchone()[0] or 0
     ts = now_str()
@@ -80,8 +80,24 @@ def create_playlist(con, name: str) -> str:
          rb_data_status, rb_local_data_status, rb_local_deleted, rb_local_synced,
          usn, rb_local_usn, created_at, updated_at)
         VALUES (?,0,?,NULL,0,?,NULL,?,0,0,0,0,NULL,?,?,?)""",
-        (pl_id, name, SETS_ARMADOS_PARENT, str(uuid_lib.uuid4()), max_usn + 1, ts, ts))
+        (pl_id, name, parent_id, str(uuid_lib.uuid4()), max_usn + 1, ts, ts))
     return pl_id
+
+
+def resolve_parent(con, nombre: str | None) -> str:
+    """Carpeta destino de la playlist. El target puede pedir una por nombre."""
+    if not nombre:
+        return SETS_ARMADOS_PARENT
+    row = con.execute(
+        "SELECT ID FROM djmdPlaylist WHERE Name=? AND Attribute=1 AND rb_local_deleted=0",
+        (nombre,),
+    ).fetchone()
+    if not row:
+        raise SystemExit(
+            f"No existe la carpeta '{nombre}'. Creala con:\n"
+            f'  python scripts/create_folder.py "{nombre}" --parent "Sets Armados"'
+        )
+    return row[0]
 
 
 def load_target(set_num: int) -> dict | None:
@@ -278,11 +294,13 @@ def build_one(set_num: int, dry: bool = False) -> None:
 
     if not playlist:
         pl_name = target.get("name", f"{set_num}. Set")
-        print(f"  [info] Playlist no encontrada — creando: {pl_name}")
+        parent_id = resolve_parent(con, target.get("carpeta"))
+        destino = target.get("carpeta") or "Sets Armados"
+        print(f"  [info] Playlist no encontrada — creando: {pl_name}  [en {destino}]")
         with RekordboxDB() as db:
-            pl_id = create_playlist(con, pl_name)
+            pl_id = create_playlist(con, pl_name, parent_id)
             con.commit()
-            db.add_node_to_xml(int(pl_id), int(SETS_ARMADOS_PARENT))
+            db.add_node_to_xml(int(pl_id), int(parent_id))
         new_playlist = True
     else:
         pl_id, pl_name = playlist

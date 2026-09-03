@@ -1,0 +1,103 @@
+{
+  "name": "85. Mango Alley — Deep Progressive",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Simon Vuarambon & Tantum",
+      "title": "Zenith",
+      "content_id": "86187693"
+    },
+    {
+      "artist": "Kebin Van Reeken",
+      "title": "Dreaming (Original Mix)",
+      "content_id": "60537618"
+    },
+    {
+      "artist": "Tom Pavicich, Gonzalo Cotroneo",
+      "title": "Radiance (Original Mix)",
+      "content_id": "139490665"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Lose to Win ",
+      "content_id": "216412952"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Pacifist (Original Mix)",
+      "content_id": "249390073"
+    },
+    {
+      "artist": "Dmitry Molosh, Michael A",
+      "title": "Twelve Days (Original Mix) ",
+      "content_id": "69716644"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Stay High",
+      "content_id": "63653796"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Worlds Apart (Original Mix)",
+      "content_id": "194919017"
+    },
+    {
+      "artist": "Julian Nates, Julieta Kühnle",
+      "title": "Fever (Extended Mix)",
+      "content_id": "253434682"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Airwave (Original Mix)",
+      "content_id": "70926419"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Mauro Aguirre",
+      "title": "Goldes Eyes (Original Mix)",
+      "content_id": "100368572"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "The Wind Phone",
+      "content_id": "252961879"
+    },
+    {
+      "artist": "Nick Warren",
+      "title": "Freebird (Emi Galvan Remix) ",
+      "content_id": "112295588"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Invasion ",
+      "content_id": "87620719"
+    },
+    {
+      "artist": "D-Nox, Baya, LENN V",
+      "title": "Silence (Extended Mix) ",
+      "content_id": "100091235"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Perfect Dream (Extended Mix)",
+      "content_id": "254804732"
+    },
+    {
+      "artist": "Navar & Dmitry Molosh",
+      "title": "Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "content_id": "4138919"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Strange Days (Original Mix)",
+      "content_id": "17752485"
+    }
+  ]
+}

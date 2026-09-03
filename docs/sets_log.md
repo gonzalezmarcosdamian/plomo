@@ -1491,3 +1491,283 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 23 | Rauschhaus | Galapagos (Original Mix) | 124 | 7.5 |
 | 24 | Lost Desert | Black Panther (Original Mix) | 124 | 7.5 |
 
+
+## Set 80. 80. Hernan Cattaneo Style — Progressive Argentino
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Mike Rish | The Likes of You (Original Mix) | 120 | 3.9 |
+| 2 | Guy Mantzur | Tremolo Man (Original Mix) | 120 | 4.0 |
+| 3 | Kebin Van Reeken | Endurance (Original Mix) | 121 | 4.3 |
+| 4 | Mike Rish | Primah (Original Mix) | 120 | 4.4 |
+| 5 | Durante | Reaching (Weird Sounding Dude Extended Mix) | 120 | 4.7 |
+| 6 | Melodiam (AR) | Juno | 120 | 4.9 |
+| 7 | Armen Miran & Nicolas Rada | Fall Away (Original Mix)  | 120 | 5.2 |
+| 8 | Emi Galvan & Albuquerque | Stay High | 122 | 5.4 |
+| 9 | Cendryma | Orbitation (Extended Mix) | 122 | 5.6 |
+| 10 | Julian Nates, Julieta Kühnle | Fever (Extended Mix) | 123 | 5.9 |
+| 11 | Khen | Closing Doors (Original Mix) | 124 | 6.1 |
+| 12 | Kamilo Sanclemente, M.O.S., Andre Moret | Perception (Original Mix) | 122 | 6.3 |
+| 13 | Cid Inc. | Forgotten | 123 | 6.6 |
+| 14 | Cendryma | Wakefeld (Original Mix) | 122 | 6.8 |
+| 15 | Cary Crank | Deep Forest (Extended Mix) | 122 | 7.0 |
+| 16 | Paul Deep (AR) | Tique (Original Mix) | 123 | 6.7 |
+| 17 | D-Nox, Andre Moret | Brisa (Extended Mix) | 123 | 6.4 |
+| 18 | Durante, ALLKNIGHT | How Does It Feel (Extended Mix) | 125 | 6.0 |
+
+
+## Set 81. 81. Ezequiel Arias Style — Peak Vocal
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 120-126  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Kasper Koman | Wilder (Extended Mix)  | 120 | 4.2 |
+| 2 | Mike Rish | Primah (Original Mix) | 120 | 4.4 |
+| 3 | Khen | Out Of A Dream (Original Mix)  | 121 | 4.7 |
+| 4 | D-Nox, Andre Moret | Six (Extended Mix) | 122 | 4.9 |
+| 5 | Mike Rish | Dope Riddim (Original Mix) | 122 | 5.1 |
+| 6 | Tom Pavicich | Sugar Rush (Original Mix)  | 123 | 5.3 |
+| 7 | Roy Rosenfeld, Gorje Hewek, Dulus | Vida (Original Mix) | 122 | 5.6 |
+| 8 | Quivver, Dave Seaman | The Water's Edge (Original Mix) | 122 | 5.8 |
+| 9 | Kamilo Sanclemente | No Regrets (Extended Mix) | 123 | 6.0 |
+| 10 | Cendryma | Evasive (Extended Mix) | 121 | 6.3 |
+| 11 | Gorkiz, Luca Abayan | Drowner (Extended Mix) | 122 | 6.5 |
+| 12 | Marcelo Vasami | Shades Of Blue (Original Mix)  | 122 | 6.7 |
+| 13 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.9 |
+| 14 | Rauschhaus | Waiting For The Birds  | 123 | 7.2 |
+| 15 | D-Nox, Andre Moret | Shine (Extended Mix) | 124 | 7.4 |
+| 16 | Rockka | Amnesia (Fuenka Remix) | 123 | 6.9 |
+| 17 | Cendryma | Wakefeld (Original Mix) | 122 | 6.8 |
+| 18 | Armen Miran & Lost Desert | Don't Worry | 124 | 6.4 |
+
+
+## Set 82. 82. Emi Galvan Style — Progresivo Colorido
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Guy Mantzur | Tremolo Man (Original Mix) | 120 | 4.0 |
+| 2 | Kasper Koman | Wilder (Extended Mix)  | 120 | 4.2 |
+| 3 | Nicolas Rada | El Oro De Los Tigres | 122 | 4.5 |
+| 4 | Durante | Reaching (Weird Sounding Dude Extended Mix) | 120 | 4.7 |
+| 5 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 4.9 |
+| 6 | Hobin Rude | Nether (Original Mix) | 120 | 5.1 |
+| 7 | Dmitry Molosh | Bustle (Original Mix) | 120 | 5.4 |
+| 8 | Cendryma | Orbitation (Extended Mix) | 122 | 5.6 |
+| 9 | Rauschhaus, GRAZZE | Canacona (Original Mix) | 121 | 5.8 |
+| 10 | Dmitry Molosh, Michael A | Integral (Original Mix)  | 122 | 6.1 |
+| 11 | Cendryma | Evasive (Extended Mix) | 121 | 6.3 |
+| 12 | Rockka | Subversion | 123 | 6.5 |
+| 13 | Marcelo Vasami | Shades Of Blue (Original Mix)  | 122 | 6.7 |
+| 14 | Cid Inc. | Citadel (Original Mix)  | 123 | 7.0 |
+| 15 | Rauschhaus | Waiting For The Birds  | 123 | 7.2 |
+| 16 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.9 |
+| 17 | Cid Inc. | Forgotten | 123 | 6.6 |
+| 18 | Simon Vuarambon & Tantum | Lake Of Fire | 122 | 6.2 |
+
+
+## Set 83. 83. Kamilo Sanclemente Style — Colombia Progresiva
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Simon Vuarambon & Tantum | Zenith | 119 | 4.0 |
+| 2 | Kebin Van Reeken | Dreaming (Original Mix) | 120 | 4.3 |
+| 3 | Tom Pavicich, Gonzalo Cotroneo | Radiance (Original Mix) | 121 | 4.5 |
+| 4 | Ric Niels | Lose to Win  | 121 | 4.7 |
+| 5 | Dowden | Pacifist (Original Mix) | 121 | 4.8 |
+| 6 | Dmitry Molosh | Butterfly (Analog Jungs Remix) | 121 | 5.1 |
+| 7 | Ric Niels | Osmio (Original Mix) | 120 | 5.4 |
+| 8 | Maze 28 | Aer8 | 122 | 5.6 |
+| 9 | Sebastian Sellares | Abaddon (Extended Mix) | 121 | 5.8 |
+| 10 | Tali Muss | Garip (Original Mix)  | 122 | 6.1 |
+| 11 | Emi Galvan | Boomera (Original Mix) | 123 | 6.3 |
+| 12 | Nicolas Rada | Cascadia | 122 | 6.5 |
+| 13 | Hobin Rude | Shrouded Glint (Original Mix) | 122 | 6.7 |
+| 14 | Tali Muss | Azal (Original Mix) | 123 | 6.9 |
+| 15 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.1 |
+| 16 | Cid Inc. | Citadel (Original Mix)  | 123 | 7.0 |
+| 17 | Ruben Karapetyan | Pantheon (Emi Galvan Remix) | 124 | 6.6 |
+| 18 | Christopher Erre, Greta Meier | Osiris (Mayro Remix) | 123 | 6.2 |
+
+
+## Set 84. 84. Sudbeat Sessions — Driving Progressive
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 120-126  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Mike Rish | Tornn (Original Mix) | 120 | 4.2 |
+| 2 | Dmitry Molosh | Bird Flight (Original Mix) | 120 | 4.5 |
+| 3 | Sebastian Sellares, Greta Meier | Benevolence (Paul Thomas Extended Remix) | 122 | 4.7 |
+| 4 | D-Nox, Andre Moret | Six (Extended Mix) | 122 | 4.9 |
+| 5 | Mike Rish | Dope Riddim (Original Mix) | 122 | 5.1 |
+| 6 | Dmitry Molosh | Bustle (Original Mix) | 120 | 5.4 |
+| 7 | Roy Rosenfeld, Gorje Hewek, Dulus | Vida (Original Mix) | 122 | 5.6 |
+| 8 | Maze 28 | Cry of the Deserts (Aman Anand Remix) | 121 | 5.9 |
+| 9 | Cendryma | Focus Bend (Tiefstone Remix) | 123 | 6.1 |
+| 10 | Tom Pavicich | Josefina (Casnik Remix) | 123 | 6.3 |
+| 11 | Madloch & Antti Rasi | Salty Roads (Cid Inc Remix) | 123 | 6.6 |
+| 12 | Nick Warren | Freebird (Emi Galvan Remix)  | 123 | 6.9 |
+| 13 | Kamilo Sanclemente | Parallel Moon (Original Mix) | 123 | 7.0 |
+| 14 | D-Nox, Baya, LENN V | Silence (Extended Mix)  | 124 | 7.3 |
+| 15 | Durante & Maz (BR) | Ivory | 126 | 7.4 |
+| 16 | Kamilo Sanclemente, Zalvador | Elyseum (Weird Sounding Dude Extended Remix) | 124 | 7.0 |
+| 17 | Rockka, Maze 28 | Mirage (Extended Mix) | 123 | 6.8 |
+| 18 | Gorkiz, Luca Abayan | Drowner (Extended Mix) | 122 | 6.5 |
+
+
+## Set 85. 85. Mango Alley — Deep Progressive
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Simon Vuarambon & Tantum | Zenith | 119 | 4.0 |
+| 2 | Kebin Van Reeken | Dreaming (Original Mix) | 120 | 4.3 |
+| 3 | Tom Pavicich, Gonzalo Cotroneo | Radiance (Original Mix) | 121 | 4.5 |
+| 4 | Ric Niels | Lose to Win  | 121 | 4.7 |
+| 5 | Dowden | Pacifist (Original Mix) | 121 | 4.8 |
+| 6 | Dmitry Molosh, Michael A | Twelve Days (Original Mix)  | 122 | 5.2 |
+| 7 | Emi Galvan & Albuquerque | Stay High | 122 | 5.4 |
+| 8 | Guy J | Worlds Apart (Original Mix) | 122 | 5.7 |
+| 9 | Julian Nates, Julieta Kühnle | Fever (Extended Mix) | 123 | 5.9 |
+| 10 | Ezequiel Arias | Airwave (Original Mix) | 123 | 6.1 |
+| 11 | Kamilo Sanclemente, Mauro Aguirre | Goldes Eyes (Original Mix) | 123 | 6.4 |
+| 12 | Nicolas Rada | The Wind Phone | 123 | 6.6 |
+| 13 | Nick Warren | Freebird (Emi Galvan Remix)  | 123 | 6.9 |
+| 14 | Ric Niels | Invasion  | 123 | 7.1 |
+| 15 | D-Nox, Baya, LENN V | Silence (Extended Mix)  | 124 | 7.3 |
+| 16 | Ezequiel Arias | Perfect Dream (Extended Mix) | 124 | 7.0 |
+| 17 | Navar & Dmitry Molosh | Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 6.6 |
+| 18 | Kamilo Sanclemente | Strange Days (Original Mix) | 121 | 6.3 |
+
+
+## Set 86. 86. Simon Vuarambon Style — Hipnotico
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 118-124  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Mike Rish | Tú Attair (Original Mix) | 119 | 3.5 |
+| 2 | Cendryma | Crow's Cradle (Original Mix) | 118 | 3.7 |
+| 3 | Rauschhaus, Cary Crank | Tapestry of Perception (Extended Mix) | 120 | 4.0 |
+| 4 | Kebin Van Reeken | Endurance (Original Mix) | 121 | 4.3 |
+| 5 | Emi Galvan | Alfa Zeta (Original Mix) | 120 | 4.4 |
+| 6 | Gorje Hewek | U & Eyeye | 122 | 4.7 |
+| 7 | Kasper Koman | Loco Motif (Tantum Remix)  | 121 | 5.0 |
+| 8 | Gorkiz, Andre Moret | H Feelings (Original Mix) | 122 | 5.3 |
+| 9 | Cendryma | Effective Loss (Original Mix) | 121 | 5.5 |
+| 10 | Quivver, Dave Seaman | The Water's Edge (Original Mix) | 122 | 5.8 |
+| 11 | Sebastian Sellares, Greta Meier | Benevolence (Extended Mix) | 121 | 6.0 |
+| 12 | Tom Pavicich | Josefina (Casnik Remix) | 123 | 6.3 |
+| 13 | Ezequiel Arias | Heat Above - Original Mix | 124 | 6.5 |
+| 14 | Kamilo Sanclemente, Mauro Aguirre | Looking For You (Extended Mix) | 123 | 6.7 |
+| 15 | Cary Crank | Deep Forest (Extended Mix) | 122 | 7.0 |
+| 16 | Nicolas Rada | The Wind Phone | 123 | 6.6 |
+| 17 | Kamilo Sanclemente | Strange Days (Original Mix) | 121 | 6.3 |
+| 18 | Gorje Hewek | Solovey (Original Mix) | 122 | 5.9 |
+
+
+## Set 87. 87. Nick Warren Style — The Soundgarden
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Mike Rish | Tornn (Original Mix) | 120 | 4.2 |
+| 2 | Ric Niels | Morning Dew (Original Mix) | 120 | 4.2 |
+| 3 | Dmitry Molosh | Bird Flight (Original Mix) | 120 | 4.5 |
+| 4 | Sebastian Sellares, Greta Meier | Benevolence (Paul Thomas Extended Remix) | 122 | 4.7 |
+| 5 | Chicola, Guy Mantzur | Galactica (Original Mix) | 122 | 4.9 |
+| 6 | Cendryma | Dividing Parts (Original Mix) | 121 | 5.1 |
+| 7 | Cary Crank | Open Sea (Ric Niels Remix) | 121 | 5.4 |
+| 8 | Kamilo Sanclemente | Honest (Leandro Murua Remix) | 122 | 5.6 |
+| 9 | Maze 28 | Cry of the Deserts (Molac & Nicolas Viana Remix) | 122 | 5.8 |
+| 10 | Cendryma | Focus Bend (Tiefstone Remix) | 123 | 6.1 |
+| 11 | Cid Inc. | Rescue Me (Original Mix)  | 123 | 6.2 |
+| 12 | Guy J | Rise (Original Mix) | 122 | 6.5 |
+| 13 | Kamilo Sanclemente, Mauro Aguirre | Looking For You (Extended Mix) | 123 | 6.7 |
+| 14 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 7.0 |
+| 15 | NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens | Remember Me - Hernan Cattaneo & Jamie Stevens Remix | 122 | 7.3 |
+| 16 | Rockka | Amnesia (Fuenka Remix) | 123 | 6.9 |
+| 17 | Khen | The Lighthouse (Original Mix) | 124 | 6.5 |
+| 18 | Simon Vuarambon & Tantum | Lake Of Fire | 122 | 6.2 |
+
+
+## Set 88. 88. Cordoba Progressive — Gai Barone Style
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Mike Rish | The Likes of You (Original Mix) | 120 | 3.9 |
+| 2 | Antrim, Kamilo Sanclemente | Once and Again feat. Paula OS (Extended Mix) | 120 | 4.3 |
+| 3 | Nicolas Rada | El Oro De Los Tigres | 122 | 4.5 |
+| 4 | Roy Rosenfeld | Kala  | 120 | 4.8 |
+| 5 | Melodiam (AR) | Juno | 120 | 4.9 |
+| 6 | Alex O'Rion | Tunnel (Original Mix) | 122 | 5.2 |
+| 7 | Guy J | Everyday (Original Mix) | 122 | 5.4 |
+| 8 | Hana, Durante | Celestia (Extended Mix)  | 124 | 5.7 |
+| 9 | Dowden | Feather (Original Mix) | 122 | 5.9 |
+| 10 | Ezequiel Arias | Airwave (Original Mix) | 123 | 6.1 |
+| 11 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 6.4 |
+| 12 | Guy J | Illusion (Original Mix)  | 122 | 6.6 |
+| 13 | Tali Muss | Azal (Original Mix) | 123 | 6.9 |
+| 14 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.1 |
+| 15 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.4 |
+| 16 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 7.0 |
+| 17 | Paul Deep (AR) | Tique (Original Mix) | 123 | 6.7 |
+| 18 | Cendryma | Override (Original Mix) | 122 | 6.3 |
+
+
+## Set 89. 89. Argentina Peak Time
+**Armado:** 2026-09-03  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 121-127  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Guy Mantzur, Khen | Shine Tomorrow (Original Mix) | 123 | 5.0 |
+| 2 | Kamilo Sanclemente, Sebastian Valencia (COL) | Anomaly  (Original Mix) | 123 | 5.2 |
+| 3 | Melodiam (AR) | Cosmic  | 122 | 5.5 |
+| 4 | Gorkiz, K Loveski | Echos Of Eons (Greenage Remix)  | 122 | 5.7 |
+| 5 | Stephan Bodzin, Jem Cooke, Massano | Healing (Extended Mix) | 124 | 5.9 |
+| 6 | Khen | Closing Doors (Original Mix) | 124 | 6.1 |
+| 7 | Cendryma | Focus Bend (Extended Mix) | 122 | 6.4 |
+| 8 | Navar & Dmitry Molosh | Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 6.6 |
+| 9 | Rockka, Maze 28 | Mirage (Extended Mix) | 123 | 6.8 |
+| 10 | Emi Galvan | Everlong (Original Mix) | 124 | 7.1 |
+| 11 | Tali Muss, Vakabular | Uniqueness (D-Nox & Ed Steele Remix) | 125 | 7.3 |
+| 12 | Maze 28 | Great Attractor (Ruben Karapetyan Remix) | 124 | 7.5 |
+| 13 | Jamie Stevens, Zankee Gulati | Low Tide (Ezequiel Arias Remix) | 125 | 7.8 |
+| 14 | Durante & Maz (BR) | Ivory | 126 | 7.4 |
+| 15 | D-Nox, Stereo Underground | Shooting Stars (Extended Version)  | 125 | 7.6 |
+| 16 | Guy J | Catfish (Jonas Saalbach Remix) | 124 | 7.4 |
+| 17 | NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens | Remember Me - Hernan Cattaneo & Jamie Stevens Remix | 122 | 7.3 |
+| 18 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 7.1 |
+

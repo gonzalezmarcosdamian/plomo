@@ -1,0 +1,103 @@
+{
+  "name": "87. Nick Warren Style — The Soundgarden",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mike Rish",
+      "title": "Tornn (Original Mix)",
+      "content_id": "152960737"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Morning Dew (Original Mix)",
+      "content_id": "96351317"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bird Flight (Original Mix)",
+      "content_id": "240140989"
+    },
+    {
+      "artist": "Sebastian Sellares, Greta Meier",
+      "title": "Benevolence (Paul Thomas Extended Remix)",
+      "content_id": "54698899"
+    },
+    {
+      "artist": "Chicola, Guy Mantzur",
+      "title": "Galactica (Original Mix)",
+      "content_id": "81477561"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Dividing Parts (Original Mix)",
+      "content_id": "105480800"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Open Sea (Ric Niels Remix)",
+      "content_id": "214849857"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Honest (Leandro Murua Remix)",
+      "content_id": "50362353"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Cry of the Deserts (Molac & Nicolas Viana Remix)",
+      "content_id": "21130044"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Focus Bend (Tiefstone Remix)",
+      "content_id": "159659944"
+    },
+    {
+      "artist": "Cid Inc.",
+      "title": "Rescue Me (Original Mix) ",
+      "content_id": "186075540"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Rise (Original Mix)",
+      "content_id": "123555344"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Mauro Aguirre",
+      "title": "Looking For You (Extended Mix)",
+      "content_id": "89039390"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Leave the World Behind (Original Mix)",
+      "content_id": "114182110"
+    },
+    {
+      "artist": "NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens",
+      "title": "Remember Me - Hernan Cattaneo & Jamie Stevens Remix",
+      "content_id": "53721787"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
+    },
+    {
+      "artist": "Khen",
+      "title": "The Lighthouse (Original Mix)",
+      "content_id": "264581959"
+    },
+    {
+      "artist": "Simon Vuarambon & Tantum",
+      "title": "Lake Of Fire",
+      "content_id": "71085652"
+    }
+  ]
+}

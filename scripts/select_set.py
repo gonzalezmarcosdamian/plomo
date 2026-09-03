@@ -97,6 +97,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     estrene material nuevo sin romper las restricciones duras.
     """
     prefer = set(prefer)
+    # names() y camelot() dependen solo del track: calcularlos una vez evita
+    # millones de regex dentro del doble loop (beam x candidatos x posiciones).
+    for t in pool:
+        if "_names" not in t:
+            t["_names"] = names(t["artist"], t["title"])
+            t["_cam"] = camelot(t["key"])
     beams = [(0.0, [], set(), {})]  # (costo, tracks, ids, {artista: [posiciones]})
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
@@ -106,7 +112,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
             for t in pool:
                 if t["id"] in ids:
                     continue
-                na = names(t["artist"], t["title"])
+                na = t["_names"]
                 # tope por productor + separacion minima: un showcase se banca
                 # repetir artista, pero no dos seguidos ni tres en cinco tracks
                 if any(len(arts.get(a, ())) >= max_per_artist for a in na):
@@ -132,7 +138,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     # tercera repeticion en adelante, premiar el movimiento
                     same = 0
                     for prv in reversed(seq):
-                        if camelot(prv["key"])[0] == camelot(t["key"])[0]:
+                        if prv["_cam"][0] == t["_cam"][0]:
                             same += 1
                         else:
                             break
@@ -180,11 +186,18 @@ if __name__ == "__main__":
     pool_all = json.loads(ruta(cfg["pool"]).read_text(encoding="utf-8"))
     # artistas ya comprometidos en otros sets — cada set mantiene identidad propia
     taken = {a.lower() for a in cfg.get("exclude_artists", [])}
+    # Cuantas veces puede aparecer un mismo track en toda la tanda. Sin tope, con
+    # paletas parecidas el optimizador converge al mismo optimo y salen sets
+    # identicos con nombres distintos.
+    tope = cfg.get("max_apariciones_por_track", 0)
+    usos: dict[str, int] = {}
     for spec in cfg["sets"]:
         artistas = spec.get("artists") or ["*"]
         e_pool = spec.get("e_pool")  # [min, max] — acota el pool por energia
         generos = [g.lower() for g in spec.get("genres", [])]
         excluidos = set(spec.get("exclude_ids", []))
+        if tope:
+            excluidos |= {i for i, c in usos.items() if c >= tope}
         pool = [
             t for t in pool_all
             if (artistas == ["*"]
@@ -213,6 +226,8 @@ if __name__ == "__main__":
         show(best[1], spec.get("prefer_ids", []))
         target = {
             "name": spec["name"],
+            # carpeta destino en Rekordbox; build_set la resuelve por nombre
+            **({"carpeta": spec["carpeta"]} if spec.get("carpeta") else {}),
             "duration_h": spec["duration_h"],
             "bpm_range": spec["bpm"],
             "max_per_artist": spec.get("max_per_artist", 1),
@@ -225,5 +240,11 @@ if __name__ == "__main__":
         out = ruta(cfg["targets_dir"]) / f"set_{spec['num']}.json"
         out.write_text(json.dumps(target, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"  -> {out.name}")
+        # Por defecto cada set del config estrena artistas: se acumulan para que
+        # el siguiente no los repita. Una serie de videos independientes puede
+        # querer lo contrario — cada uno lleva lo mejor de su concepto.
         for t in best[1]:
-            taken |= names(t["artist"], t["title"])
+            usos[t["id"]] = usos.get(t["id"], 0) + 1
+        if not cfg.get("permitir_repetir_entre_sets"):
+            for t in best[1]:
+                taken |= names(t["artist"], t["title"])

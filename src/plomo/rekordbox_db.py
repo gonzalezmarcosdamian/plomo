@@ -111,10 +111,12 @@ class RekordboxDB:
         con.close()
         return result or 0
 
-    def add_node_to_xml(self, playlist_id_int: int, parent_id_int: int) -> None:
+    def add_node_to_xml(self, playlist_id_int: int, parent_id_int: int,
+                        attribute: int = 0) -> None:
         """Append <NODE> entry to masterPlaylists6.xml.
 
         Required so Rekordbox UI loads the playlist tracks.
+        `attribute`: 0 = playlist, 1 = carpeta.
         """
         if not self.xml_path.exists():
             return
@@ -123,7 +125,7 @@ class RekordboxDB:
         ts_ms = int(time.time() * 1000)
         new_node = (
             f'    <NODE Id="{new_pl_hex}" ParentId="{parent_hex}" '
-            f'Attribute="0" Timestamp="{ts_ms}" Lib_Type="0" CheckType="0"/>\n'
+            f'Attribute="{attribute}" Timestamp="{ts_ms}" Lib_Type="0" CheckType="0"/>\n'
         )
         xml = self.xml_path.read_text()
         xml = xml.replace("  </PLAYLISTS>", new_node + "  </PLAYLISTS>")

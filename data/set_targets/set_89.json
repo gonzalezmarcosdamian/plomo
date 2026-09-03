@@ -1,0 +1,103 @@
+{
+  "name": "89. Argentina Peak Time",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    121,
+    127
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Guy Mantzur, Khen",
+      "title": "Shine Tomorrow (Original Mix)",
+      "content_id": "48194102"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+      "title": "Anomaly  (Original Mix)",
+      "content_id": "106173077"
+    },
+    {
+      "artist": "Melodiam (AR)",
+      "title": "Cosmic ",
+      "content_id": "190754727"
+    },
+    {
+      "artist": "Gorkiz, K Loveski",
+      "title": "Echos Of Eons (Greenage Remix) ",
+      "content_id": "86837486"
+    },
+    {
+      "artist": "Stephan Bodzin, Jem Cooke, Massano",
+      "title": "Healing (Extended Mix)",
+      "content_id": "140845309"
+    },
+    {
+      "artist": "Khen",
+      "title": "Closing Doors (Original Mix)",
+      "content_id": "199550938"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Focus Bend (Extended Mix)",
+      "content_id": "60597750"
+    },
+    {
+      "artist": "Navar & Dmitry Molosh",
+      "title": "Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "content_id": "4138919"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Extended Mix)",
+      "content_id": "248235294"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Everlong (Original Mix)",
+      "content_id": "219733407"
+    },
+    {
+      "artist": "Tali Muss, Vakabular",
+      "title": "Uniqueness (D-Nox & Ed Steele Remix)",
+      "content_id": "186298122"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Great Attractor (Ruben Karapetyan Remix)",
+      "content_id": "106041324"
+    },
+    {
+      "artist": "Jamie Stevens, Zankee Gulati",
+      "title": "Low Tide (Ezequiel Arias Remix)",
+      "content_id": "16768158"
+    },
+    {
+      "artist": "Durante & Maz (BR)",
+      "title": "Ivory",
+      "content_id": "66454957"
+    },
+    {
+      "artist": "D-Nox, Stereo Underground",
+      "title": "Shooting Stars (Extended Version) ",
+      "content_id": "140482190"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Catfish (Jonas Saalbach Remix)",
+      "content_id": "255916500"
+    },
+    {
+      "artist": "NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens",
+      "title": "Remember Me - Hernan Cattaneo & Jamie Stevens Remix",
+      "content_id": "53721787"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
+      "content_id": "117129270"
+    }
+  ]
+}

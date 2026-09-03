@@ -1,0 +1,103 @@
+{
+  "name": "84. Sudbeat Sessions — Driving Progressive",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    120,
+    126
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Mike Rish",
+      "title": "Tornn (Original Mix)",
+      "content_id": "152960737"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bird Flight (Original Mix)",
+      "content_id": "240140989"
+    },
+    {
+      "artist": "Sebastian Sellares, Greta Meier",
+      "title": "Benevolence (Paul Thomas Extended Remix)",
+      "content_id": "54698899"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Six (Extended Mix)",
+      "content_id": "8056828"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Dope Riddim (Original Mix)",
+      "content_id": "224504691"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bustle (Original Mix)",
+      "content_id": "5972317"
+    },
+    {
+      "artist": "Roy Rosenfeld, Gorje Hewek, Dulus",
+      "title": "Vida (Original Mix)",
+      "content_id": "37598389"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Cry of the Deserts (Aman Anand Remix)",
+      "content_id": "77073459"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Focus Bend (Tiefstone Remix)",
+      "content_id": "159659944"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Josefina (Casnik Remix)",
+      "content_id": "210569428"
+    },
+    {
+      "artist": "Madloch & Antti Rasi",
+      "title": "Salty Roads (Cid Inc Remix)",
+      "content_id": "171857586"
+    },
+    {
+      "artist": "Nick Warren",
+      "title": "Freebird (Emi Galvan Remix) ",
+      "content_id": "112295588"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Parallel Moon (Original Mix)",
+      "content_id": "262755587"
+    },
+    {
+      "artist": "D-Nox, Baya, LENN V",
+      "title": "Silence (Extended Mix) ",
+      "content_id": "100091235"
+    },
+    {
+      "artist": "Durante & Maz (BR)",
+      "title": "Ivory",
+      "content_id": "66454957"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Zalvador",
+      "title": "Elyseum (Weird Sounding Dude Extended Remix)",
+      "content_id": "107307995"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Extended Mix)",
+      "content_id": "248235294"
+    },
+    {
+      "artist": "Gorkiz, Luca Abayan",
+      "title": "Drowner (Extended Mix)",
+      "content_id": "175740225"
+    }
+  ]
+}
