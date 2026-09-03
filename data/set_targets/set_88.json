@@ -10,59 +10,59 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Simon Vuarambon & Tantum",
+      "title": "Zenith",
+      "content_id": "86187693"
+    },
+    {
+      "artist": "Kebin Van Reeken",
+      "title": "Dreaming (Original Mix)",
+      "content_id": "60537618"
+    },
+    {
+      "artist": "Tom Pavicich, Gonzalo Cotroneo",
+      "title": "Radiance (Original Mix)",
+      "content_id": "139490665"
+    },
+    {
       "artist": "Mike Rish",
-      "title": "The Likes of You (Original Mix)",
-      "content_id": "216114282"
-    },
-    {
-      "artist": "Antrim, Kamilo Sanclemente",
-      "title": "Once and Again feat. Paula OS (Extended Mix)",
-      "content_id": "214570182"
-    },
-    {
-      "artist": "Nicolas Rada",
-      "title": "El Oro De Los Tigres",
-      "content_id": "162910837"
-    },
-    {
-      "artist": "Roy Rosenfeld",
-      "title": "Kala ",
-      "content_id": "52738760"
+      "title": "Election Day (Original Mix)",
+      "content_id": "6816223"
     },
     {
       "artist": "Melodiam (AR)",
-      "title": "Juno",
-      "content_id": "11763732"
+      "title": "Flying Sequences (Original Mix) ",
+      "content_id": "14112759"
     },
     {
-      "artist": "Alex O'Rion",
-      "title": "Tunnel (Original Mix)",
-      "content_id": "7078508"
+      "artist": "Guy Mantzur",
+      "title": "Requiem for Us",
+      "content_id": "30819333"
     },
     {
-      "artist": "Guy J",
-      "title": "Everyday (Original Mix)",
-      "content_id": "173241243"
+      "artist": "Gai Barone",
+      "title": "In the Blink of an Eye (Original Mix)",
+      "content_id": "131359684"
     },
     {
-      "artist": "Hana, Durante",
-      "title": "Celestia (Extended Mix) ",
-      "content_id": "21013875"
+      "artist": "Khen",
+      "title": "Yellow (Original Mix)",
+      "content_id": "125153100"
     },
     {
-      "artist": "Dowden",
-      "title": "Feather (Original Mix)",
-      "content_id": "158196635"
+      "artist": "Jamie Stevens, Kasey Taylor",
+      "title": "Verlaine (Original Mix)",
+      "content_id": "62514110"
     },
     {
-      "artist": "Ezequiel Arias",
-      "title": "Airwave (Original Mix)",
-      "content_id": "70926419"
+      "artist": "Dmitry Molosh",
+      "title": "Glide ",
+      "content_id": "267544751"
     },
     {
-      "artist": "Kostya Outta",
-      "title": "Seguro (Paul James Nolan Remix)",
-      "content_id": "243274326"
+      "artist": "Kasper Koman",
+      "title": "Sinking Sky",
+      "content_id": "77712466"
     },
     {
       "artist": "Guy J",
@@ -70,9 +70,19 @@
       "content_id": "240528466"
     },
     {
+      "artist": "Kamilo Sanclemente",
+      "title": "Amethyst (Lucas Zarate Remix) ",
+      "content_id": "175034690"
+    },
+    {
       "artist": "Tali Muss",
       "title": "Azal (Original Mix)",
       "content_id": "100584240"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Shine (Extended Mix)",
+      "content_id": "112900288"
     },
     {
       "artist": "Kamilo Sanclemente",
@@ -80,24 +90,14 @@
       "content_id": "104234166"
     },
     {
-      "artist": "Tom Pavicich",
-      "title": "Olimpo (Ignacio Berardi Remix)",
-      "content_id": "34012266"
+      "artist": "Ruben Karapetyan",
+      "title": "Pantheon (Emi Galvan Remix)",
+      "content_id": "39943002"
     },
     {
-      "artist": "Maze 28",
-      "title": "Leave the World Behind (Original Mix)",
-      "content_id": "114182110"
-    },
-    {
-      "artist": "Paul Deep (AR)",
-      "title": "Tique (Original Mix)",
-      "content_id": "62105956"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Override (Original Mix)",
-      "content_id": "244252789"
+      "artist": "Gai Barone",
+      "title": "Kromaky (Original Mix)",
+      "content_id": "75860698"
     }
   ]
 }

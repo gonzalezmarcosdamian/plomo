@@ -100,7 +100,12 @@
         "Tiefstone",
         "Tom Pavicich"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "173790116",
+        "161660872"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 81,
@@ -200,7 +205,16 @@
         "Tiefstone",
         "Tom Pavicich"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "243361136",
+        "104948479",
+        "266443766",
+        "104119598",
+        "92905250",
+        "147555802"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 82,
@@ -297,7 +311,9 @@
         "Tiefstone",
         "Tom Pavicich"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [],
+      "prefer_bonus": 5.0
     },
     {
       "num": 83,
@@ -394,7 +410,16 @@
         "Tom Pavicich",
         "Zalvador"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "231387448",
+        "164269056",
+        "208917745",
+        "250153001",
+        "22034915",
+        "30509667"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 84,
@@ -490,7 +515,11 @@
         "Tiefstone",
         "Tom Pavicich"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "223982143"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 85,
@@ -585,7 +614,16 @@
         "Tom Pavicich",
         "Zankee Gulati"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "93584251",
+        "90136304",
+        "103541754",
+        "204225656",
+        "186751022",
+        "134778545"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 86,
@@ -682,7 +720,17 @@
         "Tom Pavicich",
         "Volen Sentir"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "263165508",
+        "142579003",
+        "122489881",
+        "218750662",
+        "75591601",
+        "199216888",
+        "53922043"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 87,
@@ -779,7 +827,19 @@
         "Tom Pavicich",
         "Unai Garcia"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "220612989",
+        "151109647",
+        "258842628",
+        "204283090",
+        "236712792",
+        "27652637",
+        "227598362",
+        "37141460",
+        "38809884"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 88,
@@ -876,7 +936,16 @@
         "Tom Pavicich",
         "Tonaco"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "131359684",
+        "100304329",
+        "159661610",
+        "117179206",
+        "214664804",
+        "39363922"
+      ],
+      "prefer_bonus": 5.0
     },
     {
       "num": 89,
@@ -973,8 +1042,16 @@
         "Tom Pavicich",
         "Township Rebellion"
       ],
-      "beam": 600
+      "beam": 600,
+      "prefer_ids": [
+        "209033347",
+        "14005975",
+        "134157388",
+        "100722935",
+        "130702700"
+      ],
+      "prefer_bonus": 5.0
     }
   ],
-  "max_apariciones_por_track": 2
+  "max_apariciones_por_track": 1
 }
