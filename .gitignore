@@ -77,3 +77,7 @@ data/pool_apertura_sel.json
 
 # Personal Claude config
 .claude/
+
+# Salida del radar de novedades (se regenera con muzpa_new_releases.py)
+data/nuevos_*.json
+data/batch_nuevos_*.txt
