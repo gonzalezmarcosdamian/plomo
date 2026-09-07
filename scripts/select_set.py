@@ -12,11 +12,30 @@ import sys
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-BEAM = 400
-MIN_GAP = 3      # tracks minimos entre dos temas del mismo productor
-MAX_E_STEP = 1.3 # escalon maximo de energia entre tracks consecutivos
+from plomo.rules import R  # noqa: E402
+
+# Los numeros no viven aca: viven en rules/curaduria.json con su porque y su
+# evidencia, para que el agente analista pueda medirlos y discutirlos.
+BEAM = R.get("solver.beam")
+MIN_GAP = R.get("repeticion.separacion_minima_codigo", 3)  # separacion entre temas del mismo productor
+MAX_E_STEP = R.get("energia.max_escalon")
+MAX_CAM = R.get("armonia.max_camelot_dist")
+MAX_RETROCESO = R.get("energia.max_retroceso_en_subida")
+PICO_PCT = R.get("energia.pico_en_pct")
+CAIDA_PCT = R.get("energia.caida_post_pico_pct")
+BAJA_CIERRE = R.get("energia.baja_minima_al_cierre")
+PESO_ARCO = R.get("energia.peso_desvio_arco")
+PESO_CAM = R.get("armonia.peso_salto_camelot")
+PENAL_MISMA_KEY_DESDE = R.get("armonia.penal_misma_key_desde")
+PESO_MISMA_KEY = R.get("armonia.penal_misma_key_desde_peso", 1.2)
 SPLIT = (",", "&", " feat", " ft", " vs", " x ")
+# Margen para las comparaciones contra los topes. abs(7.0 - 8.3) da
+# 1.3000000000000007 en punto flotante, asi que un escalon que es exactamente
+# el limite se rechazaba: se perdian vecinos musicalmente legales y el solver
+# terminaba pidiendo relajar una regla que no hacia falta tocar.
+EPS = 1e-9
 
 
 REMIX_RE = re.compile(
@@ -29,11 +48,16 @@ NOISE = {"original", "extended", "club", "dub", "instrumental", "radio", "vocal"
 # matcheaban con "marsh", asi que el solver metia dos temas del mismo productor.
 QUALIFIERS = ("extended", "original", "club", "radio", "vocal", "instrumental",
               "dub", "long", "short", "re-shape", "reshape", "12\"", "'s")
+# Apodo entre comillas dentro del nombre del remixer: "Jonathan Kaspar
+# 'Midnight' Remix" y "... 'Sunrise' Remix" son la misma mano, y sin sacarlo el
+# dedup los tomaba por dos productores distintos y metia las dos versiones del
+# mismo tema en el mismo set.
+APODO_RE = re.compile(r"\s*['‘’\"][^'‘’\"]{2,}['‘’\"]\s*")
 
 
 def _clean(name: str) -> str:
     """Normaliza un nombre de productor quitando sufijos de version."""
-    n = name.strip().lower()
+    n = APODO_RE.sub(" ", name).strip().lower()
     changed = True
     while changed:
         changed = False
@@ -82,11 +106,11 @@ def cam_dist(a, b):
     return ring if ca[1] == cb[1] else (0 if ring == 0 else ring + 1)
 
 
-def arc_target(i, n, lo, hi, hi_at=0.82):
+def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
     t = i / (n - 1)
     if t <= hi_at:
         return lo + (hi - lo) * (t / hi_at)
-    return hi - (hi - lo) * 0.30 * ((t - hi_at) / (1 - hi_at))
+    return hi - (hi - lo) * CAIDA_PCT * ((t - hi_at) / (1 - hi_at))
 
 
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
@@ -121,18 +145,19 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     continue
                 if prev:
                     d = cam_dist(prev["key"], t["key"])
-                    if d > 1:
+                    if d > MAX_CAM:
                         continue
-                    if abs(t["bpm"] - prev["bpm"]) > max_bpm_jump:
+                    if abs(t["bpm"] - prev["bpm"]) > max_bpm_jump + EPS:
                         continue
                     # no retroceder energia durante la subida
-                    if i / (n - 1) <= 0.82 and t["energy"] < prev["energy"] - 0.4:
+                    if (i / (n - 1) <= PICO_PCT
+                            and t["energy"] < prev["energy"] - MAX_RETROCESO - EPS):
                         continue
                     # ningun escalon brusco: el crowd tiene que no notar el cambio
-                    if abs(t["energy"] - prev["energy"]) > MAX_E_STEP:
+                    if abs(t["energy"] - prev["energy"]) > MAX_E_STEP + EPS:
                         continue
                     # el cierre siempre baja del pico — nunca terminar arriba
-                    if i == n - 1 and t["energy"] > max(x["energy"] for x in seq) - 0.6:
+                    if i == n - 1 and t["energy"] > max(x["energy"] for x in seq) - BAJA_CIERRE:
                         continue
                     # quedarse clavado en la misma key aburre: penalizar la
                     # tercera repeticion en adelante, premiar el movimiento
@@ -142,10 +167,10 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                             same += 1
                         else:
                             break
-                    step = d * 0.5 + max(0, same - 1) * 1.2
+                    step = d * PESO_CAM + max(0, same - PENAL_MISMA_KEY_DESDE + 1) * PESO_MISMA_KEY
                 else:
                     step = 0.0
-                c = cost + abs(t["energy"] - tgt) * 3.0 + step
+                c = cost + abs(t["energy"] - tgt) * PESO_ARCO + step
                 if t["id"] in prefer:
                     c -= bonus
                 na_pos = {a: arts.get(a, ()) + (i,) for a in na}

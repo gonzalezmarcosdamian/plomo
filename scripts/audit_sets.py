@@ -8,6 +8,15 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import sqlcipher3
 
 from plomo import config
+from plomo.rules import R
+
+# Los umbrales salen de rules/curaduria.json, no de numeros sueltos aca. Antes
+# esta herramienta usaba 1.2 para el escalon de energia y 0.55 para la posicion
+# del pico, mientras la regla decia 1.3 y 0.82: auditar un set daba resultados
+# distintos que medirlo, y las dos cosas se hacen en el mismo proyecto.
+MAX_ESCALON = R.get("energia.max_escalon")
+PICO_PCT = R.get("energia.pico_en_pct")
+EPS = 1e-9
 
 SETS = [int(a) for a in sys.argv[1:]] or [65, 66, 67, 68, 69, 70]
 
@@ -68,9 +77,9 @@ for num in SETS:
                 flags.append(f"CAMELOT {pkey}->{key} (salto {d})")
             if pbpm and bpm and abs(bpm - pbpm) > 2:
                 flags.append(f"BPM {pbpm:.0f}->{bpm:.0f} (+{abs(bpm-pbpm):.0f})")
-            if pe and e and e - pe > 1.2:
+            if pe and e and e - pe > MAX_ESCALON + EPS:
                 flags.append(f"ENERGIA salto +{e-pe:.1f}")
-            if pe and e and pe - e > 1.2 and i < len(tracks) - 1:
+            if pe and e and pe - e > MAX_ESCALON + EPS and i < len(tracks) - 1:
                 flags.append(f"ENERGIA bajon -{pe-e:.1f}")
         mark = "  <-- " + " | ".join(flags) if flags else ""
         if flags:
@@ -90,7 +99,7 @@ for num in SETS:
         print(
             f"  >> arco: {energies[0]:.1f} -> pico {max(energies):.1f} (#{peak_at}, {pct:.0%}) -> {energies[-1]:.1f}"
         )
-        if pct < 0.55:
+        if pct < PICO_PCT - 0.27:
             print("  >> AVISO: el pico llega temprano (<55% del set)")
     print(f"  >> {len(issues)} transiciones flojas")
 

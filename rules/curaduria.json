@@ -1,0 +1,177 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "creado": "2026-09-07",
+    "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
+    "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia."
+  },
+  "armonia": {
+    "max_camelot_dist": {
+      "valor": 1,
+      "duro": true,
+      "porque": "Un salto de rueda mayor a 1 se escucha como choque tonal salvo que la transicion sea larga o con corte de bajos.",
+      "evidencia": "PENDIENTE - backtest contra setlists reales de Digweed/Cattaneo/Vuarambon",
+      "sospecha": "Es la regla mas probable de estar de mas. Los DJs de referencia saltan de rueda cuando el track entrante entra por breakdown. Si el backtest muestra >15% de saltos >=2 en sets reales, la regla tiene que pasar de dura a penalizada."
+    },
+    "penal_misma_key_desde": {
+      "valor": 2,
+      "duro": false,
+      "peso": 1.2,
+      "porque": "Quedarse mas de 2 tracks en la misma tonalidad aplana el set. Se penaliza desde la tercera repeticion.",
+      "evidencia": "Criterio propio, sin medir."
+    },
+    "peso_salto_camelot": {
+      "valor": 0.5,
+      "porque": "Costo por hop de rueda dentro de lo permitido. Bajo a proposito: el arco de energia manda sobre Camelot."
+    },
+    "penal_misma_key_desde_peso": {
+      "valor": 1.2,
+      "porque": "Costo por cada repeticion de key mas alla del umbral. Comparado con peso_desvio_arco (3.0), quedarse en la misma key cuesta menos de la mitad que desviarse del arco."
+    }
+  },
+  "energia": {
+    "max_escalon": {
+      "valor": 1.3,
+      "duro": true,
+      "porque": "Un escalon mayor lo nota el publico como corte. La continuidad la sostiene la energia, no la key.",
+      "evidencia": "PENDIENTE"
+    },
+    "max_retroceso_en_subida": {
+      "valor": 0.4,
+      "duro": true,
+      "hasta_pct": 0.82,
+      "porque": "Antes del pico no se retrocede: el set pierde la promesa que venia construyendo."
+    },
+    "baja_minima_al_cierre": {
+      "valor": 0.6,
+      "duro": true,
+      "porque": "Nunca terminar arriba. El ultimo track tiene que estar al menos 0.6 por debajo del pico del set.",
+      "evidencia": "Validado en sesion 2026-05-16: Haunted como cierre funciono."
+    },
+    "pico_en_pct": {
+      "valor": 0.82,
+      "porque": "El pico cae al 82% del set. Despues baja el 30% del rango.",
+      "sospecha": "Digweed pone el pico mas tarde en sets de 4h+. Puede necesitar depender de duration_h."
+    },
+    "caida_post_pico_pct": {
+      "valor": 0.3,
+      "porque": "Cuanto del rango de energia se baja despues del pico."
+    },
+    "peso_desvio_arco": {
+      "valor": 3.0,
+      "porque": "El desvio del arco pesa 6x mas que un hop de Camelot (3.0 vs 0.5). Es la jerarquia declarada en docs/REGLAS.md: el arco manda."
+    }
+  },
+  "bpm": {
+    "max_salto": {
+      "valor": 2.0,
+      "duro": true,
+      "porque": "Mas de 2 BPM entre consecutivos obliga a forzar el pitch fuera del rango comodo."
+    }
+  },
+  "repeticion": {
+    "max_por_artista_en_set": {
+      "valor": 2,
+      "porque": "docs/REGLAS.md 2026-08-13. El remixer cuenta como artista.",
+      "CONFLICTO": "El codigo usa max_per_artist=1 por defecto en select_set.py y los set_configs existentes tambien pasan 1. La regla escrita dice 2. Uno de los dos esta mal. Resolver antes de tocar nada mas."
+    },
+    "max_por_remixer_en_set": {
+      "valor": 3,
+      "porque": "El remixer es la mano que se escucha. Tres veces la misma mano en un set ya es un showcase."
+    },
+    "max_por_sello_en_set": {
+      "valor": 4,
+      "porque": "Cuatro tracks del mismo sello ya es una compilacion, no un set."
+    },
+    "separacion_minima": {
+      "valor": 5,
+      "porque": "docs/REGLAS.md dice 5 tracks minimos entre dos temas del mismo productor.",
+      "CONFLICTO": "El codigo usa MIN_GAP=3 en select_set.py. La regla escrita dice 5."
+    },
+    "repetidos_entre_sets_consecutivos": {
+      "valor": 0,
+      "porque": "Lo que escucha el que te vio dos veces. La regla vieja de 1 artista por set no medía esto: habia un track en 14 sets."
+    },
+    "detonantes_repetidos_entre_sets": {
+      "valor": 0,
+      "porque": "Un detonante repetido gasta la carta."
+    },
+    "separacion_minima_codigo": {
+      "valor": 3,
+      "porque": "Lo que el solver aplica HOY (MIN_GAP). Se deja explicito para no esconder el conflicto con separacion_minima=5 detras de un default. Cuando se resuelva el conflicto, este campo desaparece.",
+      "CONFLICTO": "Duplica separacion_minima con otro valor a proposito: el codigo usa 3, la regla escrita dice 5. Existe solo hasta que el analista decida cual gana."
+    }
+  },
+  "detonantes": {
+    "umbral_energia": {
+      "valor": 7.5,
+      "porque": "E>=7.5 son los 23 tracks que rompen. Viven en [POOL] Detonantes."
+    },
+    "ventana_pct": {
+      "valor": [
+        0.7,
+        0.85
+      ],
+      "porque": "Nunca al final, nunca dos seguidos. El peak lo hacen las dos horas de contencion previas, no el track."
+    },
+    "cantidad_por_set_2h": {
+      "valor": [
+        1,
+        2
+      ]
+    }
+  },
+  "densidad": {
+    "tracks_por_hora": {
+      "valor": 12,
+      "porque": "Un set de 1h30 son 18-20 tracks, no 12. Con 12 no hay margen para estirar, saltar ni leer la pista: eso es una playlist, no una caja. Los 12 se eligen arriba del escenario."
+    }
+  },
+  "solver": {
+    "beam": {
+      "valor": 400,
+      "porque": "Ancho del beam search. 6000 se usa cuando hay un track ancla obligatorio (prefer_ids con bonus alto)."
+    }
+  },
+  "historial": [],
+  "sonido_propio": {
+    "_que_es": "El sonido medido, no el declarado. Sale de scripts/mi_sonido.py sobre las 1004 reproducciones registradas. PROPUESTO el 2026-09-07, sin aplicar todavia: lo tiene que medir el analista antes de que select_set lo lea.",
+    "bpm_banda": {
+      "valor": [
+        120,
+        124
+      ],
+      "porque": "Mediana 122 sobre lo tocado, ponderado por veces. Coincide con lo escrito en MI_SONIDO.md.",
+      "evidencia": "1004 reproducciones, p10-p90 = 120-124"
+    },
+    "energia_banda": {
+      "valor": [
+        4.0,
+        7.0
+      ],
+      "porque": "Piso y pico MEDIANOS por sesion sobre las 19 sesiones con pulso real de reproduccion. Es lo que select_set consume como e_lo/e_hi.",
+      "evidencia": "n=356 reproducciones. Medido POR SESION: pico mediano 7.0, maximo 8.8, 11 de 19 sesiones pasan 6.8, rango interno mediano 3.0.",
+      "CORREGIDO": "Antes decia [4.3, 6.8] y afirmaba que CONTRADICE docs/MI_SONIDO.md porque 'lo que realmente suena es meseta'. Era FALSO y peligroso: alguien podia poner e_hi=6.8 en un config y decapitarle el peak a todos los sets. La banda 4.3-6.8 es el p10-p90 de reproducciones AGRUPADAS, y una muestra al azar de la biblioteca da 4.0/5.7/6.9 — indistinguible. No medida preferencia: medida inventario. Un percentil agrupado no puede mostrar un arco."
+    },
+    "pct_zona_menor": {
+      "valor": 86,
+      "porque": "86% de lo tocado esta en zona A. Confirma lo escrito.",
+      "evidencia": "1004 reproducciones"
+    },
+    "bonus_por_lift_de_artista": {
+      "valor": 0.0,
+      "duro": false,
+      "porque": "PROPUESTO. El lift de artista y sello (FAERO 10.3, Analog Sense 7.9, Cendryma 3.8, Cydana Sounds 6.4) es preferencia real corregida por tamaño de biblioteca. Como bonus de seleccion tiene sentido: es la mano que te gusta.",
+      "evidencia": "Simulacion de 80 corridas (scripts/sim_sonido_propio.py): con w=0.2 el lift medio del set sube 1.93 -> 3.60, las 80 siguen teniendo solucion y el pico de energia no se mueve. Validacion fuera de muestra: los artistas con lift>=2.5 medidos antes del 2026-08-15 (8.6% de la biblioteca) se llevaron el 41.9% de las reproducciones de septiembre = lift OOS 4.89 contra 1.70 del control. SOLO vale junto con la penalizacion: con el bonus solo, los estrenos caen de 11.6/18 a 7.0/18."
+    },
+    "penalizacion_por_reproducciones": {
+      "valor": 0.0,
+      "duro": false,
+      "porque": "PROPUESTO, y va con signo NEGATIVO a proposito. Premiar el track que mas sono cierra un bucle: sube de score, se elige mas, sube mas. Ese bucle ya produjo el estado actual — 81% de la biblioteca sin tocar nunca y 163 tracks sin sonar de los artistas que MAS elegis. La mano se repite; el track no.",
+      "evidencia": "El bucle existe y esta medido: un track tocado 3 veces antes del 2026-08-15 tuvo 0.27 reproducciones por track en septiembre contra 0.031 de uno nunca tocado = 8.7x, con escalera monotona. Con w=0.3 el set estrena 15.9/18 contra 11.6/18 sin la regla. Costo: 0.031 puntos de desvio del arco, imperceptible contra un escalon maximo de 1.3.",
+      "CONFLICTO": "Relacion obligatoria: w_rep / w_lift >= 1.5. Por debajo de eso el bonus gana y los estrenos vuelven al nivel base. Y ojo: el bonus estrecha tambien ENTRE sets de una misma tanda (85/180 tracks distintos -> 59/180), cosa que la penalizacion no cubre porque mira historico, no la tanda. Si se enciende, hay que poner max_apariciones_por_track: 1 en el config."
+    },
+    "_no_aplica_backtest": "Esta familia es por definicion una restriccion autoimpuesta: ningun setlist de otro DJ puede refutarla. Mandarla a backtest_rules.py esperando un veredicto es un error de categoria, no una medicion.",
+    "_estado": "PROPUESTO con evidencia, sin aplicar. Los dos valores en 0.0. Ademas: ningun modulo lee sonido_propio todavia — encenderlo no es cambiar un numero, es agregar el termino de costo en select()."
+  }
+}
