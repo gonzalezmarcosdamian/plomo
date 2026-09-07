@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"C:\\Users\\gonza\\Documents\\plomo\\.venv\\Scripts\\python.exe\" \"C:\\Users\\gonza\\Documents\\plomo\\scripts\\hooks\\guard_rekordbox.py\"",
+            "timeout": 10,
+            "statusMessage": "Verificando que Rekordbox este cerrado"
+          }
+        ]
+      }
+    ]
+  }
+}
