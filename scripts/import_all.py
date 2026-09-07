@@ -103,6 +103,7 @@ def archive_imported(con_path: Path) -> None:
     ts = now_str()
     moved = 0
     pending = 0
+    fallidos = 0
     for src in files:
         current = str(src).replace("\\", "/")
         if current.lower() not in known:
@@ -117,18 +118,27 @@ def archive_imported(con_path: Path) -> None:
             pending += 1
             continue
 
-        shutil.move(str(src), str(dest_file))
-        # La fila apunta a la ruta vieja: hay que actualizarla o el track
-        # queda como "archivo faltante" en Rekordbox.
-        con.execute(
-            "UPDATE djmdContent SET FolderPath=?, updated_at=? WHERE ID=?",
-            (str(dest_file).replace("\\", "/"), ts, known[current.lower()]),
-        )
-        moved += 1
+        # La fila se actualiza PRIMERO y se confirma solo si el archivo llego.
+        # Al reves —mover y despues escribir, con un unico commit al final— un
+        # corte a mitad de la tanda deja los archivos movidos y ninguna fila
+        # actualizada: todos los tracks pasan a "archivo faltante" de una vez.
+        # Commit por track, como manda la regla del proyecto.
+        try:
+            con.execute(
+                "UPDATE djmdContent SET FolderPath=?, updated_at=? WHERE ID=?",
+                (str(dest_file).replace("\\", "/"), ts, known[current.lower()]),
+            )
+            shutil.move(str(src), str(dest_file))
+            con.commit()
+            moved += 1
+        except Exception as e:  # noqa: BLE001 — un fallo no aborta la tanda
+            con.rollback()
+            fallidos += 1
+            print(f"  [ERROR] {src.name}: {e}")
 
-    con.commit()
     con.close()
-    print(f"\n  Inbox archivado: {moved} movidos a Nuevos/YYYY-MM, {pending} siguen en Inbox")
+    print(f"\n  Inbox archivado: {moved} movidos a Nuevos/YYYY-MM, "
+          f"{pending} siguen en Inbox, {fallidos} fallidos")
 
 
 def main() -> None:

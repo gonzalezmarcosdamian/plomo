@@ -52,7 +52,7 @@ def main() -> None:
     rows = con.execute(
         """
         SELECT c.ID, a.Name, c.Title, c.BPM, k.ScaleName, c.Commnt, l.Name,
-               g.Name, c.FolderPath
+               g.Name, c.FolderPath, c.Length
         FROM djmdContent c
         LEFT JOIN djmdArtist a ON a.ID = c.ArtistID
         LEFT JOIN djmdKey   k ON k.ID = c.KeyID
@@ -64,7 +64,7 @@ def main() -> None:
     con.close()
 
     pool, vistos = [], set()
-    for cid, artist, title, bpm_raw, key, commnt, label, genre, folder in rows:
+    for cid, artist, title, bpm_raw, key, commnt, label, genre, folder, largo in rows:
         m = ENERGY_RE.match(commnt or "")
         if not m:
             continue
@@ -86,6 +86,9 @@ def main() -> None:
                 "label": label or "",
                 "genre": genre or "",
                 "carpeta": Path(folder).parent.name if folder else "",
+                # Duracion en segundos. Sin esto no se puede proyectar cuanto
+                # dura un set y hay que estimarlo con un promedio inventado.
+                "dur_seg": int(largo or 0),
                 "usado": str(cid) in usados,
             }
         )

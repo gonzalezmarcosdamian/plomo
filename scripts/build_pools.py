@@ -144,6 +144,9 @@ def main():
         LEFT JOIN djmdArtist a ON a.ID = c.ArtistID
         LEFT JOIN djmdKey k ON k.ID = c.KeyID
         WHERE c.rb_local_deleted = 0
+          -- Los demos y one-shots de Pioneer no son musica y sin este
+          -- filtro terminan en los pools de armado con datos inventados.
+          AND c.FolderPath NOT LIKE '%/PioneerDJ/%'
     """).fetchall()
 
     print(f"Total tracks: {len(rows)}")
@@ -163,15 +166,22 @@ def main():
 
     for cid, artist, title, bpm_raw, commnt, key_name in rows:
         energy = parse_energy(commnt)
-        bpm = (bpm_raw or 12200) / 100
+        # Sin inventar: `bpm_raw or 12200` le ponia 122 BPM a lo que no tiene
+        # BPM, y `energy or 5.0` le ponia E:5.0 a lo que no tiene energia. Con
+        # eso, cuatro one-shots del sampler de Pioneer entraban al pool [MID]
+        # como si fueran tracks de 122 BPM y energia media. Un dato inventado
+        # que se ve igual que uno medido es peor que un dato faltante.
         t = {
             "id": str(cid),
             "artist": artist or "?",
             "title": title or "?",
-            "bpm": bpm,
-            "energy": energy or 5.0,
+            "bpm": (bpm_raw / 100) if bpm_raw else None,
+            "energy": energy,
             "key": key_name,
         }
+        if not t["bpm"]:
+            no_energy.append(t)
+            continue
         if energy is None:
             no_energy.append(t)
             continue
