@@ -152,3 +152,90 @@ CIERRE ROMÁNTICO → Haunted (despedida con alma)
 4. **Transiciones validadas**: el sistema debe conocer los pares que funcionan y los que no
 
 La misión del algoritmo es la misma que la misión del DJ: **que el set suene como Eze Arias / Vuarambon / Digweed.**
+
+---
+
+## El sonido MEDIDO (2026-09-07)
+
+Todo lo de arriba se escribió a mano en mayo, a partir de **una** sesión con
+feedback. Vale — de ahí salió la taxonomía entera. Pero es una foto y una sola
+muestra. Esto sale de `scripts/mi_sonido.py`, que mide las 1004 reproducciones
+registradas (`DJPlayCount` + `djmdHistory`) sobre 343 tracks.
+
+### El perfil, ponderado por cuántas veces sonó cada track
+
+```
+BPM       mediana 122   banda 120-124
+Energía   mediana 5.7   banda 4.3-6.8
+Keys      86% en menor (zona A).  6A, 7A, 8A, 4A, 5A son el centro
+```
+
+El BPM y la zona A confirman lo escrito. **La energía no**: el documento
+describe un arco que llega a heroico y peak, pero lo que realmente suena vive
+entre 4.3 y 6.8 — meseta, no pico. El registro que más se toca es el que menos
+protagonismo tiene en el texto.
+
+### Lo que más suena
+
+| veces | E | BPM | key | track | sello |
+|---|---|---|---|---|---|
+| 10 | 6.7 | 122 | 7A | Marcelo Vasami — Shades Of Blue | Sudbeat |
+| 10 | 5.5 | 121 | 5A | Cendryma — Effective Loss | HIGHER STATES |
+| 10 | 5.2 | 121 | 8A | Cendryma — Typical Use | PURRFECTION |
+| 10 | 4.9 | 120 | 6A | Dimas Mixon, Cendryma — Minicube | Cydana Sounds |
+| 10 | 6.6 | 124 | 1A | HANA, Ezequiel Arias — Go | Anjunadeep |
+| 8 | 6.7 | 121 | 5A | GMJ, Matter — Cryo | Meanwhile |
+| 8 | 5.3 | 122 | 10B | Maze 28 — Flux | Mango Alley |
+| 8 | 6.3 | 123 | 10B | Emi Galvan — Boomera | Sudbeat |
+
+**Cendryma no está en el documento escrito y es el artista más tocado del
+proyecto: 68 reproducciones sobre 35 tracks.** Marcelo Vasami tampoco, y tiene
+26 sobre 13.
+
+### Preferencia real, corregida por tamaño
+
+El track más sonado no es el más querido: un sello del que hay 109 tracks va a
+aparecer más que uno del que hay 5. El *lift* corrige eso — cuánto suena algo
+dividido por lo que su presencia en la biblioteca justifica.
+
+| lift | suena | tenés | artista |
+|---|---|---|---|
+| 10.3 | 26 | 5 | FAERO |
+| 7.9 | 32 | 8 | Analog Sense |
+| 5.9 | 12 | 4 | HANA |
+| 4.6 | 14 | 6 | Soundexile |
+| 4.0 | 26 | 13 | Marcelo Vasami |
+| 4.0 | 22 | 11 | Matter |
+| 3.8 | 68 | 35 | Cendryma |
+| 3.7 | 28 | 15 | GMJ |
+
+| lift | suena | tenés | sello |
+|---|---|---|---|
+| 6.4 | 18 | 5 | Cydana Sounds |
+| 6.2 | 14 | 4 | PURRFECTION |
+| 5.1 | 20 | 7 | Balkan Connection |
+| 3.6 | 18 | 9 | UV Noir |
+| 3.6 | 24 | 12 | Hoomidaas |
+| 3.0 | 22 | 13 | Replug |
+| 2.4 | 66 | 49 | Sudbeat |
+
+Dos advertencias sobre cómo leer esto. El lift necesita piso: sin exigir un
+mínimo de presencia, el ranking lo ganan artistas con **un** track que sonó
+mucho, y eso es una muestra de tamaño uno, no una preferencia. Y el campo
+artista viene combinado ("Dimas Mixon, Cendryma"), así que hay que partirlo con
+`names()` o el mismo productor cuenta como tres.
+
+### El hueco
+
+**163 tracks sin tocar nunca de esos mismos artistas y sellos.** Material ya
+comprado, del sonido que efectivamente elegís, que no sonó una vez. Entre ellos
+seis de Ezequiel Arias en Sudbeat, dos versiones de *Everlong* de Emi Galván, y
+*Impending Storm* (Navar Remix) en E7.5.
+
+Se listan con `python scripts/mi_sonido.py --batch`.
+
+### Qué hacer con esto
+
+No reemplaza al documento escrito: lo contrasta. Lo escrito dice qué querés
+sonar; esto dice qué sonás. Donde no coinciden hay una decisión, no un error —
+pero la decisión hay que tomarla sabiendo que existe.

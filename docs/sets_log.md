@@ -1771,3 +1771,87 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 17 | Massano | The Feeling (2022 Remaster) | 124 | 7.0 |
 | 18 | Gai Barone | MoMa | 123 | 7.0 |
 
+
+## Set 96. 96. Luminoso — 1h20 — 2026-09-07
+**Armado:** 2026-09-07  
+**Duracion:** 1.25h  
+**Tracks:** 18  
+**BPM range:** 120-126  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Emi Galvan | Synchronicity  | 121 | 2.1 |
+| 2 | Durante & Nathan Nicholson | Holding On (Extended Mix) | 122 | 2.5 |
+| 3 | Guy Mantzur, Kamila, Khen | Children With No Name Feat. Kamila (Original Mix) | 120 | 3.6 |
+| 4 | Dee Montero | Sapphire ft. Shahin Badar (DSF Remix)  | 120 | 4.2 |
+| 5 | Emi Galvan, NOIYSE PROJECT | Eramnesia  | 120 | 5.2 |
+| 6 | Mike Rish | Drifter (Original Mix) | 120 | 4.9 |
+| 7 | Chicola, Guy Mantzur | Galactica (Original Mix) | 122 | 4.9 |
+| 8 | Enamour, Nox Vahn | Sleep Paralysis (Extended Mix) | 121 | 5.0 |
+| 9 | Durante | Leonid (Extended Mix) | 122 | 5.2 |
+| 10 | Gorje Hewek | Unite feat. Volen Sentir, Makebo & Amonita | 123 | 5.5 |
+| 11 | Khen | Closing Doors (Original Mix) | 124 | 6.1 |
+| 12 | Tinlicker | Blackbirds (Extended Mix) | 123 | 6.1 |
+| 13 | Monolink | Return to Oz (Artbat Remix) | 124 | 6.7 |
+| 14 | Alex Metric, DJ Tennis, Carlita | Cinecitta (Original Version) | 125 | 7.0 |
+| 15 | Ferry Corsten, Marsh | Attraction (Marsh's Extended Mix) | 126 | 8.3 |
+| 16 | Monolink, Stephan Jolk | The Silence (Original Mix)  | 124 | 7.0 |
+| 17 | Blake.08 | The Change Of Love (Extended Mix) | 126 | 6.8 |
+| 18 | Dosem | What If (Extended Mix) | 124 | 5.9 |
+
+
+## Set 95. 95. Terraza Atardecer — 3h — 2026-09-07
+**Armado:** 2026-09-07  
+**Duracion:** 3h  
+**Tracks:** 46  
+**BPM range:** 105-121  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | El Buho | Anglo-Colombian Expedition (Sun Sone Detour) | 112 | 3.4 |
+| 2 | Sabo, Tooker | Quieres Sol (Original Mix) | 111 | 3.6 |
+| 3 | Kermesse, Pedro Perelman, Yuvi Gerstein | Pinto (Original Mix) | 112 | 3.5 |
+| 4 | Chris Zippel & Bahramji | Sands (Original Instrumental Mix) | 113 | 3.1 |
+| 5 | Rodrigo Gallardo, Claudio Arditti, Cafe De Anatolia | Yin Yang (Original Mix) | 114 | 3.7 |
+| 6 | Betelgeize | Luz Clara (Kermesse Remix) | 116 | 3.4 |
+| 7 | Mike Rish | Wait for Me (Original Mix) | 118 | 3.6 |
+| 8 | Jamie Stevens, Guy J | Tassolem (Don't Worry 'bout Me) (Guy J Remix) | 120 | 3.2 |
+| 9 | Cubicolor | Got This Feeling (Original Mix) | 118 | 4.0 |
+| 10 | Mike Rish | Patenz (Original Mix) | 120 | 4.3 |
+| 11 | Sao Paulo Deep | Fragmented Scene (Original Mix) | 120 | 4.1 |
+| 12 | Santi & Tuğçe | Nana (Rodrigo Gallardo Remix) | 118 | 4.2 |
+| 13 | Durante | Remedy (Mixed) | 120 | 4.0 |
+| 14 | Nandu, Radeckt, Tripolism | Dope Dance (Extended Mix)  | 120 | 3.6 |
+| 15 | Gorje Hewek, Izhevski, Lost Desert | Yurta (Original Mix) | 119 | 4.1 |
+| 16 | Solomun | The Way Back (Original Mix) | 120 | 3.9 |
+| 17 | Goldcap, Budajevo, Munaylayt | East Route (Ohxala Remix) | 118 | 4.4 |
+| 18 | GMJ | Silver Sky (Original Mix) | 120 | 4.7 |
+| 19 | Tali Muss | Zafer (Original Mix) | 120 | 4.6 |
+| 20 | DAVI | Deepest Mind  | 119 | 4.3 |
+| 21 | Boys Noize, &ME, Rampa, Adam Port, Keinemusik, Vinson | Crazy For It (feat. Vinson) | 120 | 4.5 |
+| 22 | Kiasmos | Bound (Original Mix) | 121 | 4.8 |
+| 23 | Michael A | Look Closer (Original Mix) | 121 | 4.9 |
+| 24 | Dowden, Ciro Riveiro | Northern (Original Mix) | 120 | 4.5 |
+| 25 | Seyah | Dope (Maze 28 & Kyotto Remix) | 121 | 4.5 |
+| 26 | Brann (AR) | Evolution (Hobin Rude Extended Remix) | 121 | 4.8 |
+| 27 | Nandu | Your Heart Stole My Life (Original Mix) | 121 | 4.5 |
+| 28 | Jody Wisternoff, James Grant | Dapple (Extended Mix) | 120 | 4.4 |
+| 29 | Izhevski, Talemates | AfrikaBurn (Extended Mix) | 121 | 4.7 |
+| 30 | Guy Mantzur | Moongazer  | 120 | 4.9 |
+| 31 | Kebin Van Reeken | Enjoy the Present (Original Mix) | 120 | 4.8 |
+| 32 | Sound Quelle | Fofan (Extended Mix) | 120 | 4.9 |
+| 33 | Juliane Wolf, Callecat | Journey of Species (Mashk Remix) | 120 | 4.9 |
+| 34 | Max Cooper, Rob Clouth | Candeleda (Original Mix) | 120 | 5.1 |
+| 35 | Fideksen | Unbreakable Promise (Hobin Rude Remix) | 121 | 5.0 |
+| 36 | Anton Make | Warppiness (Original Mix) | 121 | 5.1 |
+| 37 | Nick Warren, Martin Fredes | Kairos (Original Mix) | 120 | 5.1 |
+| 38 | Namito, Robbie Akbal | Feraq (Armen Miran Remix)  | 119 | 5.2 |
+| 39 | CHIRUKA | Ashes Don't Fade (Anton Make Remix) | 121 | 5.1 |
+| 40 | Shayan Pasha, Redspace | Pantheon (Original Mix) | 121 | 5.2 |
+| 41 | Adriatique, Delhia De France, Marino Canal | Home (Original Mix) | 120 | 5.2 |
+| 42 | Davi | The Bay 6 (Pt.2) | 121 | 4.8 |
+| 43 | ODAX | Soundexile (Original Mix) | 121 | 5.0 |
+| 44 | Messier | Kevlar (Hernan Cattaneo, Marcelo Vasami Remix) | 120 | 4.8 |
+| 45 | Fabri Lopez & Callecat | Mutual Horizons (Original Mix) | 121 | 5.1 |
+| 46 | Hot Oasis | Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix)  | 120 | 4.6 |
+

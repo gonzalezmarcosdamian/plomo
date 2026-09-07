@@ -1,0 +1,242 @@
+{
+  "name": "95. Terraza Atardecer — 3h — 2026-09-07",
+  "duration_h": 3,
+  "bpm_range": [
+    105,
+    121
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "El Buho",
+      "title": "Anglo-Colombian Expedition (Sun Sone Detour)",
+      "content_id": "177068088"
+    },
+    {
+      "artist": "Sabo, Tooker",
+      "title": "Quieres Sol (Original Mix)",
+      "content_id": "167407883"
+    },
+    {
+      "artist": "Kermesse, Pedro Perelman, Yuvi Gerstein",
+      "title": "Pinto (Original Mix)",
+      "content_id": "93016875"
+    },
+    {
+      "artist": "Chris Zippel & Bahramji",
+      "title": "Sands (Original Instrumental Mix)",
+      "content_id": "85442047"
+    },
+    {
+      "artist": "Rodrigo Gallardo, Claudio Arditti, Cafe De Anatolia",
+      "title": "Yin Yang (Original Mix)",
+      "content_id": "168340939"
+    },
+    {
+      "artist": "Betelgeize",
+      "title": "Luz Clara (Kermesse Remix)",
+      "content_id": "232461005"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Wait for Me (Original Mix)",
+      "content_id": "10604688"
+    },
+    {
+      "artist": "Jamie Stevens, Guy J",
+      "title": "Tassolem (Don't Worry 'bout Me) (Guy J Remix)",
+      "content_id": "228436659"
+    },
+    {
+      "artist": "Cubicolor",
+      "title": "Got This Feeling (Original Mix)",
+      "content_id": "3723866"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Patenz (Original Mix)",
+      "content_id": "104227319"
+    },
+    {
+      "artist": "Sao Paulo Deep",
+      "title": "Fragmented Scene (Original Mix)",
+      "content_id": "67160449"
+    },
+    {
+      "artist": "Santi & Tuğçe",
+      "title": "Nana (Rodrigo Gallardo Remix)",
+      "content_id": "188104525"
+    },
+    {
+      "artist": "Durante",
+      "title": "Remedy (Mixed)",
+      "content_id": "139390946"
+    },
+    {
+      "artist": "Nandu, Radeckt, Tripolism",
+      "title": "Dope Dance (Extended Mix) ",
+      "content_id": "57674103"
+    },
+    {
+      "artist": "Gorje Hewek, Izhevski, Lost Desert",
+      "title": "Yurta (Original Mix)",
+      "content_id": "147548341"
+    },
+    {
+      "artist": "Solomun",
+      "title": "The Way Back (Original Mix)",
+      "content_id": "195274889"
+    },
+    {
+      "artist": "Goldcap, Budajevo, Munaylayt",
+      "title": "East Route (Ohxala Remix)",
+      "content_id": "147263657"
+    },
+    {
+      "artist": "GMJ",
+      "title": "Silver Sky (Original Mix)",
+      "content_id": "13692692"
+    },
+    {
+      "artist": "Tali Muss",
+      "title": "Zafer (Original Mix)",
+      "content_id": "57612557"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Deepest Mind ",
+      "content_id": "250707143"
+    },
+    {
+      "artist": "Boys Noize, &ME, Rampa, Adam Port, Keinemusik, Vinson",
+      "title": "Crazy For It (feat. Vinson)",
+      "content_id": "141278843"
+    },
+    {
+      "artist": "Kiasmos",
+      "title": "Bound (Original Mix)",
+      "content_id": "1975068"
+    },
+    {
+      "artist": "Michael A",
+      "title": "Look Closer (Original Mix)",
+      "content_id": "118911104"
+    },
+    {
+      "artist": "Dowden, Ciro Riveiro",
+      "title": "Northern (Original Mix)",
+      "content_id": "240229409"
+    },
+    {
+      "artist": "Seyah",
+      "title": "Dope (Maze 28 & Kyotto Remix)",
+      "content_id": "212484518"
+    },
+    {
+      "artist": "Brann (AR)",
+      "title": "Evolution (Hobin Rude Extended Remix)",
+      "content_id": "230060325"
+    },
+    {
+      "artist": "Nandu",
+      "title": "Your Heart Stole My Life (Original Mix)",
+      "content_id": "67706913"
+    },
+    {
+      "artist": "Jody Wisternoff, James Grant",
+      "title": "Dapple (Extended Mix)",
+      "content_id": "117426075"
+    },
+    {
+      "artist": "Izhevski, Talemates",
+      "title": "AfrikaBurn (Extended Mix)",
+      "content_id": "20837835"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Moongazer ",
+      "content_id": "98274423"
+    },
+    {
+      "artist": "Kebin Van Reeken",
+      "title": "Enjoy the Present (Original Mix)",
+      "content_id": "114675353"
+    },
+    {
+      "artist": "Sound Quelle",
+      "title": "Fofan (Extended Mix)",
+      "content_id": "14671453"
+    },
+    {
+      "artist": "Juliane Wolf, Callecat",
+      "title": "Journey of Species (Mashk Remix)",
+      "content_id": "51903673"
+    },
+    {
+      "artist": "Max Cooper, Rob Clouth",
+      "title": "Candeleda (Original Mix)",
+      "content_id": "250705906"
+    },
+    {
+      "artist": "Fideksen",
+      "title": "Unbreakable Promise (Hobin Rude Remix)",
+      "content_id": "225584384"
+    },
+    {
+      "artist": "Anton Make",
+      "title": "Warppiness (Original Mix)",
+      "content_id": "102098253"
+    },
+    {
+      "artist": "Nick Warren, Martin Fredes",
+      "title": "Kairos (Original Mix)",
+      "content_id": "128348541"
+    },
+    {
+      "artist": "Namito, Robbie Akbal",
+      "title": "Feraq (Armen Miran Remix) ",
+      "content_id": "186511067"
+    },
+    {
+      "artist": "CHIRUKA",
+      "title": "Ashes Don't Fade (Anton Make Remix)",
+      "content_id": "100304329"
+    },
+    {
+      "artist": "Shayan Pasha, Redspace",
+      "title": "Pantheon (Original Mix)",
+      "content_id": "252930393"
+    },
+    {
+      "artist": "Adriatique, Delhia De France, Marino Canal",
+      "title": "Home (Original Mix)",
+      "content_id": "254888760"
+    },
+    {
+      "artist": "Davi",
+      "title": "The Bay 6 (Pt.2)",
+      "content_id": "145072917"
+    },
+    {
+      "artist": "ODAX",
+      "title": "Soundexile (Original Mix)",
+      "content_id": "25418820"
+    },
+    {
+      "artist": "Messier",
+      "title": "Kevlar (Hernan Cattaneo, Marcelo Vasami Remix)",
+      "content_id": "84600230"
+    },
+    {
+      "artist": "Fabri Lopez & Callecat",
+      "title": "Mutual Horizons (Original Mix)",
+      "content_id": "234718802"
+    },
+    {
+      "artist": "Hot Oasis",
+      "title": "Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix) ",
+      "content_id": "139352087"
+    }
+  ]
+}

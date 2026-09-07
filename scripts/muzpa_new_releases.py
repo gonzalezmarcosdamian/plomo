@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+from urllib.parse import quote_plus
 import sys
 from dataclasses import dataclass, field
 from datetime import date, timedelta
@@ -83,9 +84,13 @@ class Candidate:
     matched_terms: tuple[str, ...] = field(default=())
 
     @property
+    def titulo_completo(self) -> str:
+        """Titulo tal como se va a pedir, con el remix incluido."""
+        return f"{self.title} ({self.subtitle})" if self.subtitle else self.title
+
+    @property
     def batch_line(self) -> str:
-        title = f"{self.title} ({self.subtitle})" if self.subtitle else self.title
-        return f"{self.artist} - {title}"
+        return f"{self.artist} - {self.titulo_completo}"
 
 
 # ---------------------------------------------------------------- biblioteca
@@ -154,7 +159,10 @@ def search_page(session, term: str, page: int) -> dict:
     """Busqueda ordenada por fecha (sin popularorder)."""
     url = (
         f"{MUZPA_API}/a/ms/media/search"
-        f"?format=mp3&matchonly=true&page={page}&text={term.replace(' ', '+')}"
+        # quote_plus y no replace(' ', '+'): un termino con "&" ("Lost & Found")
+        # cortaba el querystring y la busqueda se volvia text=Lost+, devolviendo
+        # cero. Es el mismo bug que ya se habia arreglado en muzpa_download.py.
+        f"?format=mp3&matchonly=true&page={page}&text={quote_plus(term)}"
     )
     try:
         response = session.get(url, timeout=25)
@@ -372,7 +380,12 @@ def main() -> None:
         raw.extend(found)
 
     candidates = dedupe(raw)
-    fresh = [c for c in candidates if norm_key(c.artist, c.title) not in known]
+    # El dedup tiene que usar el MISMO string que se va a proponer. Con
+    # `c.title` pelado, "Gaxyda" no matcheaba "Gaxyda (D-Nox & Beckers Remix)"
+    # de la biblioteca, asi que todo remix se re-proponia: 24 de 270 en la
+    # ultima corrida ya estaban descargados.
+    fresh = [c for c in candidates
+             if norm_key(c.artist, c.titulo_completo) not in known]
     in_library = len(candidates) - len(fresh)
 
     if not args.include_charts:

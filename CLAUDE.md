@@ -64,6 +64,40 @@ Resumen:
 - `src/plomo/` → módulos core únicamente
 - `scripts/` → scripts de pipeline activos
 - `scripts/archive/` → one-offs ya ejecutados
+- `scripts/hooks/` → hooks de Claude Code (guardarrailes)
+- `rules/` → reglas de curaduría como dato versionado
 - `data/` → JSONs de datos personales (en .gitignore)
 - `docs/` → documentación técnica y artística
+- `.claude/agents/` → los agentes del proyecto
+- `.claude/skills/` → los flujos invocables (`/sesion`, `/set`, `/reglas`, …)
 - Raíz → solo config files
+
+---
+
+## Agentes y orquestación (2026-09-07)
+
+Ver `docs/AGENTES.md`. Resumen de lo que cambia el modo de trabajo:
+
+**Los agentes** viven en `.claude/agents/`: `master` orquesta, y reparte entre
+`curador` (sets), `analista` (medir y discutir reglas), `research` (buscar
+música y setlists), `tecnico` (pipeline y DB), `archivista` (carpetas),
+`productor` (ingeniería inversa de tracks), `video` y `redes`.
+
+**Las skills** en `.claude/skills/`: `/sesion` para arrancar, `/set` para armar,
+`/reglas` para desafiar el criterio, `/vistas` para regenerar carpetas,
+`/receta` para analizar un track.
+
+**Las reglas ya no están hardcodeadas.** `scripts/select_set.py` lee sus números
+de `rules/curaduria.json` vía `src/plomo/rules.py`. Cada regla lleva su valor, su
+porqué y su evidencia. No se cambia una regla sin pasar por
+`scripts/backtest_rules.py` y sin aprobación humana.
+
+**Ojo con la circularidad:** medir las reglas contra los sets propios no prueba
+nada — el solver las impone. Solo refuta una regla un setlist real de otro DJ que
+la viole y funcione igual. Por eso `data/setlists/` (cargado con
+`scripts/ingest_setlist.py`) es el trabajo pendiente más valioso.
+
+**Carpetas: depósito y vistas.** El disco guarda, no organiza. Los archivos no se
+mueven (así no se rompe ningún path de Rekordbox); la forma de navegar la
+colección vive en `C:\Users\gonza\Music\Vistas`, un árbol de hardlinks que genera
+`scripts/build_views.py` y que se borra y regenera sin consecuencias.

@@ -1,0 +1,1026 @@
+{
+  "n_biblioteca": 1816,
+  "n_tocados": 343,
+  "reproducciones": 1004,
+  "perfil": {
+    "bpm_mediana": 122.0,
+    "bpm_p10_p90": [
+      120.0,
+      124.0
+    ],
+    "energia_mediana": 5.7,
+    "energia_p10_p90": [
+      4.3,
+      6.8
+    ],
+    "keys_top": [
+      [
+        "6A",
+        154
+      ],
+      [
+        "7A",
+        142
+      ],
+      [
+        "8A",
+        136
+      ],
+      [
+        "4A",
+        94
+      ],
+      [
+        "5A",
+        84
+      ],
+      [
+        "9A",
+        54
+      ],
+      [
+        "10B",
+        48
+      ],
+      [
+        "1A",
+        48
+      ]
+    ],
+    "pct_menor": 86
+  },
+  "artistas": [
+    {
+      "valor": "faero",
+      "veces": 26,
+      "en_biblioteca": 5,
+      "lift": 10.26
+    },
+    {
+      "valor": "analog sense",
+      "veces": 32,
+      "en_biblioteca": 8,
+      "lift": 7.89
+    },
+    {
+      "valor": "ferry corsten",
+      "veces": 18,
+      "en_biblioteca": 5,
+      "lift": 7.1
+    },
+    {
+      "valor": "hana",
+      "veces": 12,
+      "en_biblioteca": 4,
+      "lift": 5.92
+    },
+    {
+      "valor": "soundexile",
+      "veces": 14,
+      "en_biblioteca": 6,
+      "lift": 4.6
+    },
+    {
+      "valor": "marcelo vasami",
+      "veces": 26,
+      "en_biblioteca": 13,
+      "lift": 3.95
+    },
+    {
+      "valor": "matter",
+      "veces": 22,
+      "en_biblioteca": 11,
+      "lift": 3.95
+    },
+    {
+      "valor": "mazayr",
+      "veces": 8,
+      "en_biblioteca": 4,
+      "lift": 3.95
+    },
+    {
+      "valor": "fur coat",
+      "veces": 14,
+      "en_biblioteca": 7,
+      "lift": 3.95
+    },
+    {
+      "valor": "lee burridge",
+      "veces": 14,
+      "en_biblioteca": 7,
+      "lift": 3.95
+    },
+    {
+      "valor": "cendryma",
+      "veces": 68,
+      "en_biblioteca": 35,
+      "lift": 3.83
+    },
+    {
+      "valor": "gmj",
+      "veces": 28,
+      "en_biblioteca": 15,
+      "lift": 3.68
+    },
+    {
+      "valor": "marsh",
+      "veces": 22,
+      "en_biblioteca": 12,
+      "lift": 3.62
+    },
+    {
+      "valor": "tom pavicich",
+      "veces": 48,
+      "en_biblioteca": 27,
+      "lift": 3.51
+    },
+    {
+      "valor": "emi galvan",
+      "veces": 72,
+      "en_biblioteca": 43,
+      "lift": 3.3
+    },
+    {
+      "valor": "dmitry molosh",
+      "veces": 36,
+      "en_biblioteca": 22,
+      "lift": 3.23
+    },
+    {
+      "valor": "lost desert",
+      "veces": 20,
+      "en_biblioteca": 13,
+      "lift": 3.04
+    },
+    {
+      "valor": "proff",
+      "veces": 6,
+      "en_biblioteca": 4,
+      "lift": 2.96
+    },
+    {
+      "valor": "analog trip",
+      "veces": 6,
+      "en_biblioteca": 4,
+      "lift": 2.96
+    },
+    {
+      "valor": "rockka",
+      "veces": 26,
+      "en_biblioteca": 20,
+      "lift": 2.57
+    },
+    {
+      "valor": "dowden",
+      "veces": 26,
+      "en_biblioteca": 20,
+      "lift": 2.57
+    },
+    {
+      "valor": "kyotto",
+      "veces": 6,
+      "en_biblioteca": 5,
+      "lift": 2.37
+    },
+    {
+      "valor": "chelakhov",
+      "veces": 8,
+      "en_biblioteca": 7,
+      "lift": 2.26
+    },
+    {
+      "valor": "hermanez",
+      "veces": 10,
+      "en_biblioteca": 9,
+      "lift": 2.19
+    },
+    {
+      "valor": "hraach",
+      "veces": 14,
+      "en_biblioteca": 13,
+      "lift": 2.13
+    },
+    {
+      "valor": "ezequiel arias",
+      "veces": 34,
+      "en_biblioteca": 32,
+      "lift": 2.1
+    },
+    {
+      "valor": "nicolas rada",
+      "veces": 22,
+      "en_biblioteca": 21,
+      "lift": 2.07
+    },
+    {
+      "valor": "rauschhaus",
+      "veces": 22,
+      "en_biblioteca": 21,
+      "lift": 2.07
+    },
+    {
+      "valor": "hernan cattaneo",
+      "veces": 38,
+      "en_biblioteca": 37,
+      "lift": 2.03
+    },
+    {
+      "valor": "weird sounding dude",
+      "veces": 4,
+      "en_biblioteca": 4,
+      "lift": 1.97
+    }
+  ],
+  "sellos": [
+    {
+      "valor": "Cydana Sounds",
+      "veces": 18,
+      "en_biblioteca": 5,
+      "lift": 6.43
+    },
+    {
+      "valor": "PURRFECTION",
+      "veces": 14,
+      "en_biblioteca": 4,
+      "lift": 6.25
+    },
+    {
+      "valor": "Balkan Connection",
+      "veces": 20,
+      "en_biblioteca": 7,
+      "lift": 5.1
+    },
+    {
+      "valor": "UV Noir",
+      "veces": 18,
+      "en_biblioteca": 9,
+      "lift": 3.57
+    },
+    {
+      "valor": "Hoomidaas",
+      "veces": 24,
+      "en_biblioteca": 12,
+      "lift": 3.57
+    },
+    {
+      "valor": "TRYBESof",
+      "veces": 14,
+      "en_biblioteca": 8,
+      "lift": 3.12
+    },
+    {
+      "valor": "Replug",
+      "veces": 22,
+      "en_biblioteca": 13,
+      "lift": 3.02
+    },
+    {
+      "valor": "Colorize (Enhanced)",
+      "veces": 6,
+      "en_biblioteca": 4,
+      "lift": 2.68
+    },
+    {
+      "valor": "Sudbeat Music",
+      "veces": 66,
+      "en_biblioteca": 49,
+      "lift": 2.41
+    },
+    {
+      "valor": "Melody Of the Soul",
+      "veces": 12,
+      "en_biblioteca": 9,
+      "lift": 2.38
+    },
+    {
+      "valor": "All Day I Dream",
+      "veces": 42,
+      "en_biblioteca": 33,
+      "lift": 2.27
+    },
+    {
+      "valor": "Last Night On Earth",
+      "veces": 10,
+      "en_biblioteca": 8,
+      "lift": 2.23
+    },
+    {
+      "valor": "tornn",
+      "veces": 6,
+      "en_biblioteca": 5,
+      "lift": 2.14
+    },
+    {
+      "valor": "Mango Alley",
+      "veces": 90,
+      "en_biblioteca": 81,
+      "lift": 1.98
+    },
+    {
+      "valor": "Sprout",
+      "veces": 10,
+      "en_biblioteca": 10,
+      "lift": 1.79
+    },
+    {
+      "valor": "Freegrant Music",
+      "veces": 8,
+      "en_biblioteca": 8,
+      "lift": 1.79
+    },
+    {
+      "valor": "Plastic Fantastic Records",
+      "veces": 4,
+      "en_biblioteca": 4,
+      "lift": 1.79
+    },
+    {
+      "valor": "Systematic Recordings",
+      "veces": 6,
+      "en_biblioteca": 6,
+      "lift": 1.79
+    },
+    {
+      "valor": "SkyTop",
+      "veces": 4,
+      "en_biblioteca": 4,
+      "lift": 1.79
+    },
+    {
+      "valor": "Polyptych Noir",
+      "veces": 4,
+      "en_biblioteca": 4,
+      "lift": 1.79
+    }
+  ],
+  "generos": [
+    {
+      "valor": "Prog-House",
+      "veces": 8,
+      "en_biblioteca": 7,
+      "lift": 2.06
+    },
+    {
+      "valor": "Dance / Pop",
+      "veces": 4,
+      "en_biblioteca": 5,
+      "lift": 1.44
+    },
+    {
+      "valor": "Progressive House",
+      "veces": 592,
+      "en_biblioteca": 757,
+      "lift": 1.41
+    },
+    {
+      "valor": "Organic House",
+      "veces": 66,
+      "en_biblioteca": 94,
+      "lift": 1.27
+    },
+    {
+      "valor": "Organic House / Downtempo",
+      "veces": 26,
+      "en_biblioteca": 40,
+      "lift": 1.17
+    },
+    {
+      "valor": "Electronic",
+      "veces": 20,
+      "en_biblioteca": 34,
+      "lift": 1.06
+    },
+    {
+      "valor": "Deep House",
+      "veces": 38,
+      "en_biblioteca": 74,
+      "lift": 0.93
+    },
+    {
+      "valor": "Melodic House & Techno",
+      "veces": 144,
+      "en_biblioteca": 286,
+      "lift": 0.91
+    },
+    {
+      "valor": "House",
+      "veces": 76,
+      "en_biblioteca": 154,
+      "lift": 0.89
+    },
+    {
+      "valor": "Techno",
+      "veces": 10,
+      "en_biblioteca": 42,
+      "lift": 0.43
+    },
+    {
+      "valor": "Afro House",
+      "veces": 6,
+      "en_biblioteca": 90,
+      "lift": 0.12
+    }
+  ],
+  "mas_sonados": [
+    {
+      "id": "241228611",
+      "artist": "Marcelo Vasami",
+      "title": "Shades Of Blue (Original Mix) ",
+      "bpm": 122.0,
+      "key": "7A",
+      "energy": 6.7,
+      "label": "Sudbeat Music",
+      "genre": "Progressive House",
+      "dur_min": 9.3,
+      "veces": 10
+    },
+    {
+      "id": "168103371",
+      "artist": "Cendryma",
+      "title": "Effective Loss (Original Mix)",
+      "bpm": 121.0,
+      "key": "5A",
+      "energy": 5.5,
+      "label": "HIGHER STATES",
+      "genre": "Progressive House",
+      "dur_min": 7.5,
+      "veces": 10
+    },
+    {
+      "id": "225695184",
+      "artist": "Cendryma",
+      "title": "Typical Use (Original Mix)",
+      "bpm": 121.0,
+      "key": "8A",
+      "energy": 5.2,
+      "label": "PURRFECTION",
+      "genre": "Progressive House",
+      "dur_min": 7.5,
+      "veces": 10
+    },
+    {
+      "id": "160319896",
+      "artist": "Dimas Mixon, Cendryma",
+      "title": "Minicube (Original Mix)",
+      "bpm": 120.0,
+      "key": "6A",
+      "energy": 4.9,
+      "label": "Cydana Sounds",
+      "genre": "Progressive House",
+      "dur_min": 8.1,
+      "veces": 10
+    },
+    {
+      "id": "114323706",
+      "artist": "HANA, Ezequiel Arias",
+      "title": "Go (Extended Mix)",
+      "bpm": 124.0,
+      "key": "1A",
+      "energy": 6.6,
+      "label": "Anjunadeep",
+      "genre": "Melodic House & Techno",
+      "dur_min": 7.2,
+      "veces": 10
+    },
+    {
+      "id": "112197003",
+      "artist": "GMJ, Matter",
+      "title": "Cryo (Original Mix)",
+      "bpm": 121.0,
+      "key": "5A",
+      "energy": 6.7,
+      "label": "Meanwhile",
+      "genre": "Progressive House",
+      "dur_min": 7.5,
+      "veces": 8
+    },
+    {
+      "id": "172055969",
+      "artist": "Cendryma",
+      "title": "Mythica (Extended Mix)",
+      "bpm": 121.0,
+      "key": "1A",
+      "energy": 6.2,
+      "label": "UV Noir",
+      "genre": "Progressive House",
+      "dur_min": 8.0,
+      "veces": 8
+    },
+    {
+      "id": "249390073",
+      "artist": "Dowden",
+      "title": "Pacifist (Original Mix)",
+      "bpm": 121.0,
+      "key": "9B",
+      "energy": 4.8,
+      "label": "Mango Alley",
+      "genre": "Progressive House",
+      "dur_min": 6.9,
+      "veces": 8
+    },
+    {
+      "id": "172301228",
+      "artist": "Maze 28",
+      "title": "Flux",
+      "bpm": 122.0,
+      "key": "10B",
+      "energy": 5.3,
+      "label": "Mango Alley",
+      "genre": "House",
+      "dur_min": 7.9,
+      "veces": 8
+    },
+    {
+      "id": "216749089",
+      "artist": "Cendryma",
+      "title": "Repressure (Extended Mix)",
+      "bpm": 121.0,
+      "key": "2A",
+      "energy": 5.7,
+      "label": "UV",
+      "genre": "Progressive House",
+      "dur_min": 8.0,
+      "veces": 8
+    },
+    {
+      "id": "16579793",
+      "artist": "Muuk', Cendryma",
+      "title": "G-Force (Original Mix)",
+      "bpm": 120.0,
+      "key": "4A",
+      "energy": 5.0,
+      "label": "Cydana Sounds",
+      "genre": "Progressive House",
+      "dur_min": 6.9,
+      "veces": 8
+    },
+    {
+      "id": "192614193",
+      "artist": "Emi Galvan",
+      "title": "Boomera (Original Mix)",
+      "bpm": 123.0,
+      "key": "10B",
+      "energy": 6.3,
+      "label": "Sudbeat Music",
+      "genre": "Progressive House",
+      "dur_min": 8.1,
+      "veces": 8
+    },
+    {
+      "id": "142983857",
+      "artist": "Ezequiel Arias",
+      "title": "Sin Control (Extended Mix)",
+      "bpm": 124.0,
+      "key": "10B",
+      "energy": 5.3,
+      "label": "Anjunadeep",
+      "genre": "Progressive House",
+      "dur_min": 6.3,
+      "veces": 8
+    },
+    {
+      "id": "193106499",
+      "artist": "Anderson vs Ivan Aliaga",
+      "title": "Breakdown (Original Mix)",
+      "bpm": 123.0,
+      "key": "8A",
+      "energy": 6.7,
+      "label": "Freegrant Music",
+      "genre": "House",
+      "dur_min": 7.9,
+      "veces": 6
+    },
+    {
+      "id": "84753971",
+      "artist": "Tom Pavicich, Analog Sense",
+      "title": "Cardamom (FAERO Remix)",
+      "bpm": 121.0,
+      "key": "8A",
+      "energy": 4.9,
+      "label": "Transensations Records",
+      "genre": "Progressive House",
+      "dur_min": 6.9,
+      "veces": 6
+    },
+    {
+      "id": "108226592",
+      "artist": "Dmitry Molosh",
+      "title": "Step by Step feat. Sasha Bartashevich (Original Dub Mix) ",
+      "bpm": 121.0,
+      "key": "3A",
+      "energy": 5.1,
+      "label": "Replug",
+      "genre": "Progressive House",
+      "dur_min": 7.4,
+      "veces": 6
+    },
+    {
+      "id": "206841769",
+      "artist": "Emi Galvan",
+      "title": "Supernova (Original Mix)",
+      "bpm": 123.0,
+      "key": "12B",
+      "energy": 7.3,
+      "label": "Melody Of the Soul",
+      "genre": "Organic House",
+      "dur_min": 8.0,
+      "veces": 6
+    },
+    {
+      "id": "126025011",
+      "artist": "FAERO, Tom Pavicich, Analog Sense",
+      "title": "No Warm (Original Mix)",
+      "bpm": 118.0,
+      "key": "6A",
+      "energy": 3.1,
+      "label": "Balkan Connection",
+      "genre": "Progressive House",
+      "dur_min": 6.0,
+      "veces": 6
+    },
+    {
+      "id": "32664654",
+      "artist": "Nicolas Rada",
+      "title": "Prana ",
+      "bpm": 119.0,
+      "key": "4A",
+      "energy": 4.6,
+      "label": "Hoomidaas",
+      "genre": "Melodic House & Techno",
+      "dur_min": 9.3,
+      "veces": 6
+    },
+    {
+      "id": "41309264",
+      "artist": "Rockka",
+      "title": "Initiation",
+      "bpm": 123.0,
+      "key": "7A",
+      "energy": 5.9,
+      "label": "Mango Alley",
+      "genre": "Progressive House",
+      "dur_min": 7.5,
+      "veces": 6
+    },
+    {
+      "id": "133677574",
+      "artist": "Rockka",
+      "title": "Synthesis ",
+      "bpm": 123.0,
+      "key": "10B",
+      "energy": 5.9,
+      "label": "Mango Alley",
+      "genre": "Progressive House",
+      "dur_min": 8.3,
+      "veces": 6
+    },
+    {
+      "id": "188863500",
+      "artist": "Sasha",
+      "title": "Singularity (Fur Coat Remix) ",
+      "bpm": 125.0,
+      "key": "8A",
+      "energy": 6.8,
+      "label": "Last Night On Earth",
+      "genre": "Melodic House & Techno",
+      "dur_min": 7.8,
+      "veces": 6
+    },
+    {
+      "id": "74328881",
+      "artist": "Dmitry Molosh",
+      "title": "With Me (Original Mix)",
+      "bpm": 119.0,
+      "key": "8A",
+      "energy": 6.1,
+      "label": "Sudbeat Music",
+      "genre": "House",
+      "dur_min": 7.6,
+      "veces": 6
+    },
+    {
+      "id": "5161822",
+      "artist": "Dowden, Mazayr",
+      "title": "Deflator (Original Mix)",
+      "bpm": 121.0,
+      "key": "4A",
+      "energy": 5.3,
+      "label": "Mango Alley",
+      "genre": "Progressive House",
+      "dur_min": 7.2,
+      "veces": 6
+    },
+    {
+      "id": "93586756",
+      "artist": "FAERO, Tom Pavicich, Analog Sense",
+      "title": "The Landing (Original Mix)",
+      "bpm": 118.0,
+      "key": "4A",
+      "energy": 4.1,
+      "label": "Balkan Connection",
+      "genre": "Progressive House",
+      "dur_min": 6.8,
+      "veces": 6
+    },
+    {
+      "id": "4138919",
+      "artist": "Navar & Dmitry Molosh",
+      "title": "Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "bpm": 122.0,
+      "key": "5A",
+      "energy": 6.6,
+      "label": "Proportion",
+      "genre": "Progressive House",
+      "dur_min": 9.4,
+      "veces": 6
+    },
+    {
+      "id": "52738760",
+      "artist": "Roy Rosenfeld",
+      "title": "Kala ",
+      "bpm": 120.0,
+      "key": "8A",
+      "energy": 4.8,
+      "label": "VOD",
+      "genre": "Organic House",
+      "dur_min": 8.6,
+      "veces": 6
+    },
+    {
+      "id": "259438685",
+      "artist": "Tom Pavicich, Analog Sense",
+      "title": "Cardamom (Original Mix)",
+      "bpm": 122.0,
+      "key": "8A",
+      "energy": 5.7,
+      "label": "Transensations Records",
+      "genre": "Progressive House",
+      "dur_min": 7.1,
+      "veces": 6
+    },
+    {
+      "id": "204313298",
+      "artist": "Guy J",
+      "title": "Dizzy Moments",
+      "bpm": 125.0,
+      "key": "10A",
+      "energy": 6.8,
+      "label": "Lost & Found",
+      "genre": "House",
+      "dur_min": 8.8,
+      "veces": 6
+    },
+    {
+      "id": "29273403",
+      "artist": "Makebo & Amonita",
+      "title": "Back To The Roots (Extended Mix)",
+      "bpm": 122.0,
+      "key": "9A",
+      "energy": 7.4,
+      "label": "Anjunadeep",
+      "genre": "Electronic",
+      "dur_min": 9.7,
+      "veces": 6
+    },
+    {
+      "id": "194116762",
+      "artist": "Seth Schwarz & Be Svendsen",
+      "title": "The Bar Tender",
+      "bpm": 121.0,
+      "key": "6A",
+      "energy": 6.1,
+      "label": "All Day I Dream",
+      "genre": "Deep House",
+      "dur_min": 9.6,
+      "veces": 6
+    },
+    {
+      "id": "162072169",
+      "artist": "Andy Moor & Adam White",
+      "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
+      "bpm": 125.0,
+      "key": "5A",
+      "energy": 8.6,
+      "label": "Anjunadeep",
+      "genre": "Melodic House & Techno",
+      "dur_min": 7.0,
+      "veces": 6
+    },
+    {
+      "id": "132623275",
+      "artist": "Ferry Corsten",
+      "title": "Reborn (Jonas Saalbach Extended Remix)",
+      "bpm": 125.0,
+      "key": "11A",
+      "energy": 7.1,
+      "label": "Flashover Recordings",
+      "genre": "Melodic House & Techno",
+      "dur_min": 6.2,
+      "veces": 6
+    },
+    {
+      "id": "69857507",
+      "artist": "Ferry Corsten, Marsh",
+      "title": "Attraction (Ferry's Extended Mix)",
+      "bpm": 128.0,
+      "key": "7A",
+      "energy": 7.4,
+      "label": "Anjunadeep",
+      "genre": "Progressive House",
+      "dur_min": 7.0,
+      "veces": 6
+    },
+    {
+      "id": "74712366",
+      "artist": "Durante, Emi Galvan",
+      "title": "Lunar Circuit (Extended Mix)",
+      "bpm": 124.0,
+      "key": "1A",
+      "energy": 5.7,
+      "label": "Anjunadeep",
+      "genre": "Progressive House",
+      "dur_min": 6.5,
+      "veces": 6
+    },
+    {
+      "id": "211760669",
+      "artist": "Emi Galvan",
+      "title": "Reborn (Original Mix)",
+      "bpm": 124.0,
+      "key": "8A",
+      "energy": 5.9,
+      "label": "Balance Music",
+      "genre": "Progressive House",
+      "dur_min": 7.1,
+      "veces": 6
+    },
+    {
+      "id": "141311579",
+      "artist": "Makebo",
+      "title": "Balance (Original Mix)",
+      "bpm": 122.0,
+      "key": "7A",
+      "energy": 5.6,
+      "label": "Mango Alley",
+      "genre": "Progressive House",
+      "dur_min": 7.9,
+      "veces": 6
+    },
+    {
+      "id": "234858019",
+      "artist": "Solis [US]",
+      "title": "Symbiosis (Extended Mix)",
+      "bpm": 122.0,
+      "key": "2A",
+      "energy": 6.3,
+      "label": "Univack",
+      "genre": "Progressive House",
+      "dur_min": 7.4,
+      "veces": 6
+    },
+    {
+      "id": "139846182",
+      "artist": "Solis [US]",
+      "title": "Una Volta (Extended Mix)",
+      "bpm": 123.0,
+      "key": "6A",
+      "energy": 6.6,
+      "label": "Univack",
+      "genre": "Organic House",
+      "dur_min": 8.4,
+      "veces": 6
+    },
+    {
+      "id": "141998672",
+      "artist": "Guy J",
+      "title": "Nirvana",
+      "bpm": 120.0,
+      "key": "1A",
+      "energy": 5.6,
+      "label": "Bedrock",
+      "genre": "House",
+      "dur_min": 10.3,
+      "veces": 4
+    },
+    {
+      "id": "212560040",
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "bpm": 120.0,
+      "key": "7A",
+      "energy": 4.0,
+      "label": "Lost & Found",
+      "genre": "Progressive House",
+      "dur_min": 8.6,
+      "veces": 4
+    },
+    {
+      "id": "106173077",
+      "artist": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+      "title": "Anomaly  (Original Mix)",
+      "bpm": 123.0,
+      "key": "8A",
+      "energy": 5.2,
+      "label": "Melody Of the Soul",
+      "genre": "Progressive House",
+      "dur_min": 7.4,
+      "veces": 4
+    },
+    {
+      "id": "43960039",
+      "artist": "Tantum, Hyunji-A",
+      "title": "Keep My Letters (Simon Vuarambon Remix)",
+      "bpm": 122.0,
+      "key": "6A",
+      "energy": 5.1,
+      "label": "keep my letters",
+      "genre": "Progressive House",
+      "dur_min": 7.4,
+      "veces": 4
+    },
+    {
+      "id": "77712466",
+      "artist": "Kasper Koman",
+      "title": "Sinking Sky",
+      "bpm": 122.0,
+      "key": "9A",
+      "energy": 6.4,
+      "label": "Meanwhile",
+      "genre": "Progressive House",
+      "dur_min": 8.1,
+      "veces": 4
+    },
+    {
+      "id": "179697811",
+      "artist": "Kaz James, Nick Morgan",
+      "title": "Dazed (Extended Mix) ",
+      "bpm": 122.0,
+      "key": "10A",
+      "energy": 5.2,
+      "label": "Saved Records",
+      "genre": "Melodic House & Techno",
+      "dur_min": 7.5,
+      "veces": 4
+    },
+    {
+      "id": "189060818",
+      "artist": "Kamilo Sanclemente",
+      "title": "Delusion (Original Mix) ",
+      "bpm": 122.0,
+      "key": "6A",
+      "energy": 6.9,
+      "label": "Univack",
+      "genre": "Progressive House",
+      "dur_min": 9.7,
+      "veces": 4
+    },
+    {
+      "id": "130441327",
+      "artist": "Sébastien Léger",
+      "title": "Forbidden Garden (Tim Green Remix) ",
+      "bpm": 122.0,
+      "key": "8B",
+      "energy": 6.7,
+      "label": "Lost Miracle",
+      "genre": "Melodic House & Techno",
+      "dur_min": 9.0,
+      "veces": 4
+    },
+    {
+      "id": "207191527",
+      "artist": "Armen Miran, Felix Raphael",
+      "title": "Ghost (Hernan Cattaneo & Marcelo Vasami Remix) ",
+      "bpm": 120.0,
+      "key": "7A",
+      "energy": 5.2,
+      "label": "Hoomidaas",
+      "genre": "Progressive House",
+      "dur_min": 7.6,
+      "veces": 4
+    },
+    {
+      "id": "112359333",
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "bpm": 122.0,
+      "key": "7A",
+      "energy": 6.2,
+      "label": "Sunexplosion",
+      "genre": "Progressive House",
+      "dur_min": 7.9,
+      "veces": 4
+    },
+    {
+      "id": "37090778",
+      "artist": "Chelakhov",
+      "title": "Searching (Gero Pellizzon Remix)",
+      "bpm": 122.0,
+      "key": "4A",
+      "energy": 5.8,
+      "label": "Massive Harmony Records",
+      "genre": "Progressive House",
+      "dur_min": 7.7,
+      "veces": 4
+    }
+  ]
+}

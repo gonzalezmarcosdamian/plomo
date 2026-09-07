@@ -1,6 +1,7 @@
 # Serie "Sonido Argentino" — 10 videos para YouTube
 
 Plan de producción de la primera ronda. Revisado 2026-09-03.
+Tamaño corregido a ~85 min el 2026-09-07, con los diez sets ya armados y medidos.
 
 ## La apuesta
 
@@ -22,8 +23,8 @@ los sellos del palo son chicos y miran quién los toca.
 - **La retención en contenido de DJ es baja y eso es normal.** Un canal de gaming
   llega a 50% en 30 min sin esfuerzo; uno de DJ pelea para lograr 50% en 15 min.
   No hay que corregirlo: hay que dejar de mirarlo.
-- **La métrica real es watch time total, no % de retención.** Un video de 75 min
-  al 25% da 19 minutos por espectador. Uno de 10 min al 60% da 6. El algoritmo
+- **La métrica real es watch time total, no % de retención.** Un video de 85 min
+  al 25% da 21 minutos por espectador. Uno de 10 min al 60% da 6. El algoritmo
   cuenta minutos.
 - **El mix se consume en segundo plano.** Duración larga es un activo, no un
   riesgo: la gente lo pone y sigue con lo suyo.
@@ -32,23 +33,33 @@ los sellos del palo son chicos y miran quién los toca.
 
 ---
 
-## Tamaño: 75 minutos, 18 tracks
+## Tamaño: ~85 minutos, 18 tracks
 
-Calculado con la duración real de tus tracks (promedio 6,9 min) y blends de 3 min:
+**Corregido 2026-09-07, con los diez sets ya armados.** La cuenta original decía
+75 min y estaba hecha con el promedio de la biblioteca (6,9 min por track). Pero
+los tracks que efectivamente entran a estos sets promedian **7,6 min**: el
+criterio de selección premia el progressive largo, y eso se paga en duración.
+Los diez, medidos uno por uno con blends de 3 min, dan **78:48 a 91:03**
+(promedio 85:43).
 
-| Video | Tracks |
+| Video | Tracks (a 7,6 min y blend de 3 min) |
 |-------|--------|
-| 45 min | ~11 |
-| **75 min** | **~18** |
-| 90 min | ~22 |
-| 120 min | ~30 |
+| 45 min | ~10 |
+| 75 min | ~17 |
+| **85 min** | **~18** |
+| 120 min | ~26 |
 
-Tus sets actuales quedan cortos para esto: el 73 (12 tracks) da 55 min, el 75
+La ventana pasa a ser **~85 minutos**. No se recortan los sets a 75 por dos
+razones: se graba en casa y sin pista, así que la restricción de aguantar 85 min
+tocando en vivo no existe, y en un formato que se mide por watch time total,
+diez minutos más por visita son diez minutos más.
+
+Tus sets viejos quedan cortos para esto: el 73 (12 tracks) da 55 min, el 75
 (10 tracks) da 43 min. **Los sets de la serie se arman a 18 tracks.**
 
-75 minutos es el punto: suficiente watch time por visita, un arco completo que
-se sostiene, y una sesión de escucha entera. Los de 2 h suman minutos pero el
-arco se diluye y cuesta el triple grabarlos bien.
+Los de 2 h suman minutos pero el arco se diluye y cuesta el triple grabarlos
+bien. 85 es el punto: un arco completo que se sostiene y una sesión de escucha
+entera.
 
 ---
 
@@ -74,18 +85,28 @@ corresponde a los dos.
 
 Numeración interna: **sets 80-89** (no chocan con 74-76 ni con la serie 90+).
 
+Hay un **video 11** en camino: el set 96 "Luminoso", armado con los 45 tracks de
+Anjunadeep que la biblioteca tenía sin usar. El paquete de publicación ya tiene
+su lugar reservado y se genera solo cuando el set exista.
+
+Los paquetes de publicación de los diez (título, descripción, tracklist con
+timestamps, tags, portada y momentos para shorts) están en `data/youtube/`, uno
+por archivo. Se regeneran con `python data/youtube/_generar_paquetes.py`.
+
 ---
 
 ## Qué sale de cada grabación
 
 Una sola sesión de grabación produce cuatro piezas:
 
-1. **El video largo** — 75 min, cámara fija. Es el activo.
+1. **El video largo** — ~85 min (79-91 según el set), cámara fija. Es el activo.
 2. **6 Shorts** — 40-60 s cada uno, sacados de los mejores momentos del mismo
    set. Este es el motor de descubrimiento y sale gratis del material ya grabado.
    Uno por semana entre lanzamiento y lanzamiento mantiene el canal vivo.
 3. **El tracklist** — va completo en la descripción, con remixers y sellos. Los
-   artistas del nicho lo miran; un tracklist mal escrito quema.
+   artistas del nicho lo miran; un tracklist mal escrito quema. Los timestamps
+   de `data/youtube/` son proyecciones calculadas con blend fijo: hay que
+   verificarlos contra el audio antes de publicar.
 4. **La playlist de la serie** — los 10 en auto-play. Sube el watch time de
    sesión y le enseña al algoritmo de qué es el canal.
 
@@ -96,6 +117,7 @@ Una sola sesión de grabación produce cuatro piezas:
 - **Audio:** grabar la salida de la mezcladora, no el micrófono. 320 kbps o WAV.
 - **Título:** `Hernan Cattaneo Style | Progressive Argentino 2026 | Sonido Argentino #01`
   El formato `DJ + Style + Género + Año` es lo que manda las búsquedas del nicho.
+  Los diez títulos ya están escritos en `data/youtube/_editorial.json`.
 - **Miniatura:** misma plantilla los 10, cambiando color y número. La serie se
   tiene que reconocer de un vistazo en la grilla.
 
@@ -139,5 +161,6 @@ tocando, que es la única ventaja competitiva real en un nicho chico.
 4. python scripts/build_set.py <num> --dry
 5. python scripts/build_set.py <num>
 6. python scripts/audit_sets.py <num>               (0 transiciones flojas)
-7. grabar 75 min → cortar 6 shorts → subir con tracklist
+7. python data/youtube/_generar_paquetes.py <num>   (paquete de publicación)
+8. grabar ~85 min → cortar 6 shorts → subir con tracklist
 ```

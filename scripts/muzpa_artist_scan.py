@@ -18,15 +18,36 @@ from plomo import config
 import sqlcipher3
 
 sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 from muzpa_download import get_session, search
+from plomo.matching import clave
 
 
-def in_library(con, title: str, fullname: str) -> bool:
-    rows = con.execute(
-        "SELECT COUNT(*) FROM djmdContent WHERE rb_local_deleted=0 AND LOWER(Title) LIKE LOWER(?)",
-        (f"%{title[:20]}%",)
-    ).fetchone()
-    return rows[0] > 0
+def indice_biblioteca(con) -> set[str]:
+    """Claves artista+titulo de todo lo que ya esta en la biblioteca.
+
+    Antes esto era un LIKE de los primeros 20 caracteres del `filename` de
+    Muzpa contra `djmdContent.Title`. El filename trae "Artista - Titulo" y el
+    Title guarda solo el titulo, asi que "Cendryma - Typical U" no matcheaba
+    nunca con "Typical Use (Original Mix)": el scan reportaba como nuevos
+    tracks con 10 reproducciones. Ahora se cruza con la misma clave que usa el
+    resto del proyecto, que ademas conserva el remixer.
+    """
+    return {
+        clave(a or "", t or "")
+        for a, t in con.execute(
+            """SELECT COALESCE(ar.Name, ''), COALESCE(c.Title, '')
+               FROM djmdContent c LEFT JOIN djmdArtist ar ON ar.ID = c.ArtistID
+               WHERE c.rb_local_deleted = 0""")
+    }
+
+
+def _partes(fullname: str) -> tuple[str, str]:
+    """Separa 'Artista - Titulo' como lo entrega Muzpa."""
+    if " - " in fullname:
+        a, t = fullname.split(" - ", 1)
+        return a.strip(), t.strip()
+    return "", fullname.strip()
 
 
 def main():
@@ -42,6 +63,7 @@ def main():
     if not s:
         return
 
+    biblioteca = indice_biblioteca(con)
     all_available = []
 
     for artist in artists:
@@ -60,7 +82,8 @@ def main():
             if artist.lower() not in fname.lower():
                 continue
 
-            if in_library(con, title[:20], fname):
+            ar, ti = _partes(fname or title)
+            if clave(ar, ti) in biblioteca:
                 continue
 
             new_tracks.append(t)

@@ -1,0 +1,1831 @@
+{
+  "nombre": "Eze Arias",
+  "n_tracks": 32,
+  "bpm": 123.0,
+  "duracion_min": 6.79,
+  "compases": 208.0,
+  "lufs": -9.05,
+  "rango_dinamico_db": 4.65,
+  "balance": {
+    "sub": 42.6,
+    "bajo": 40.2,
+    "medio": 11.55,
+    "aire": 4.7
+  },
+  "ancho": {
+    "sub": 1.0,
+    "bajo": 0.97,
+    "medio": 0.49,
+    "aire": 0.53
+  },
+  "confiables": 30,
+  "secciones": {
+    "intro": {
+      "aparece_en": "11/32",
+      "compases_mediana": 15.0,
+      "compases_rango": [
+        7,
+        32
+      ],
+      "arranca_en_pct": 0.0
+    },
+    "groove": {
+      "aparece_en": "32/32",
+      "compases_mediana": 49.0,
+      "compases_rango": [
+        7,
+        136
+      ],
+      "arranca_en_pct": 7.69
+    },
+    "respiro": {
+      "aparece_en": "27/32",
+      "compases_mediana": 7.0,
+      "compases_rango": [
+        4,
+        15
+      ],
+      "arranca_en_pct": 31.89
+    },
+    "breakdown": {
+      "aparece_en": "32/32",
+      "compases_mediana": 18.0,
+      "compases_rango": [
+        7,
+        51
+      ],
+      "arranca_en_pct": 53.0
+    },
+    "drop": {
+      "aparece_en": "32/32",
+      "compases_mediana": 41.5,
+      "compases_rango": [
+        10,
+        97
+      ],
+      "arranca_en_pct": 65.79
+    },
+    "salida": {
+      "aparece_en": "15/32",
+      "compases_mediana": 30.0,
+      "compases_rango": [
+        9,
+        57
+      ],
+      "arranca_en_pct": 83.16
+    },
+    "outro": {
+      "aparece_en": "11/32",
+      "compases_mediana": 7.0,
+      "compases_rango": [
+        5,
+        14
+      ],
+      "arranca_en_pct": 96.67
+    }
+  },
+  "linea_tiempo": [
+    {
+      "tipo": "groove",
+      "desde_pct": 0,
+      "hasta_pct": 53,
+      "acuerdo_pct": 84
+    },
+    {
+      "tipo": "breakdown",
+      "desde_pct": 53,
+      "hasta_pct": 63,
+      "acuerdo_pct": 50
+    },
+    {
+      "tipo": "drop",
+      "desde_pct": 63,
+      "hasta_pct": 96,
+      "acuerdo_pct": 65
+    },
+    {
+      "tipo": "salida",
+      "desde_pct": 96,
+      "hasta_pct": 100,
+      "acuerdo_pct": 39
+    }
+  ],
+  "tracks": [
+    {
+      "archivo": "Ezequiel Arias - Perfect Dream (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 212,
+      "duracion_seg": 413.4,
+      "lufs": -9.1,
+      "rango_dinamico_db": 2.7,
+      "balance": {
+        "sub": 54.0,
+        "bajo": 32.5,
+        "medio": 8.8,
+        "aire": 4.7
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.926,
+        "medio": 0.373,
+        "aire": 0.204
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          16
+        ],
+        [
+          "groove",
+          17,
+          80
+        ],
+        [
+          "breakdown",
+          97,
+          31
+        ],
+        [
+          "drop",
+          128,
+          42
+        ],
+        [
+          "respiro",
+          170,
+          6
+        ],
+        [
+          "salida",
+          176,
+          37
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Heat Above - Original Mix [Sudbeat Music].mp3",
+      "bpm": 123.0,
+      "compases": 211,
+      "duracion_seg": 417.8,
+      "lufs": -11.0,
+      "rango_dinamico_db": 5.7,
+      "balance": {
+        "sub": 35.5,
+        "bajo": 56.5,
+        "medio": 4.6,
+        "aire": 3.5
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.986,
+        "medio": 0.244,
+        "aire": -0.082
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          8
+        ],
+        [
+          "groove",
+          9,
+          44
+        ],
+        [
+          "respiro",
+          53,
+          12
+        ],
+        [
+          "groove",
+          65,
+          58
+        ],
+        [
+          "breakdown",
+          123,
+          13
+        ],
+        [
+          "drop",
+          136,
+          76
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias, Sebastian Sellares - Alba (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 195,
+      "duracion_seg": 379.3,
+      "lufs": -9.5,
+      "rango_dinamico_db": 3.6,
+      "balance": {
+        "sub": 38.5,
+        "bajo": 36.6,
+        "medio": 22.6,
+        "aire": 2.2
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.987,
+        "medio": 0.551,
+        "aire": 0.768
+      },
+      "confiable": false,
+      "secciones": [
+        [
+          "groove",
+          1,
+          128
+        ],
+        [
+          "breakdown",
+          129,
+          10
+        ],
+        [
+          "drop",
+          139,
+          52
+        ],
+        [
+          "outro",
+          191,
+          5
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias, Sebastian Sellares - Infinity (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 209,
+      "duracion_seg": 408.3,
+      "lufs": -9.9,
+      "rango_dinamico_db": 4.1,
+      "balance": {
+        "sub": 51.0,
+        "bajo": 39.2,
+        "medio": 7.8,
+        "aire": 2.0
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.983,
+        "medio": 0.423,
+        "aire": 0.726
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          56
+        ],
+        [
+          "respiro",
+          57,
+          8
+        ],
+        [
+          "groove",
+          65,
+          48
+        ],
+        [
+          "breakdown",
+          113,
+          16
+        ],
+        [
+          "drop",
+          129,
+          76
+        ],
+        [
+          "outro",
+          205,
+          5
+        ]
+      ]
+    },
+    {
+      "archivo": "Durante, Ezequiel Arias - Dream Controller (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 216,
+      "duracion_seg": 421.9,
+      "lufs": -6.9,
+      "rango_dinamico_db": 2.7,
+      "balance": {
+        "sub": 46.7,
+        "bajo": 34.3,
+        "medio": 14.1,
+        "aire": 4.4
+      },
+      "ancho": {
+        "sub": 0.984,
+        "bajo": 0.847,
+        "medio": 0.298,
+        "aire": 0.51
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          48
+        ],
+        [
+          "respiro",
+          49,
+          15
+        ],
+        [
+          "groove",
+          64,
+          49
+        ],
+        [
+          "breakdown",
+          113,
+          31
+        ],
+        [
+          "drop",
+          144,
+          10
+        ],
+        [
+          "respiro",
+          154,
+          6
+        ],
+        [
+          "salida",
+          160,
+          57
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias & Folgar ft Paula Os - Dreamlike feat. Paula Os [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 120,
+      "duracion_seg": 238.1,
+      "lufs": -11.3,
+      "rango_dinamico_db": 5.1,
+      "balance": {
+        "sub": 40.1,
+        "bajo": 43.7,
+        "medio": 11.5,
+        "aire": 4.7
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.964,
+        "medio": 0.305,
+        "aire": 0.267
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          71
+        ],
+        [
+          "breakdown",
+          72,
+          9
+        ],
+        [
+          "drop",
+          81,
+          40
+        ]
+      ]
+    },
+    {
+      "archivo": "Luttrell, Molly Moonwater - Something Right feat. Molly Moonwater (Ezequiel Arias Extended Mix) [Anjunadeep].mp3",
+      "bpm": 126.0,
+      "compases": 128,
+      "duracion_seg": 284.2,
+      "lufs": -9.6,
+      "rango_dinamico_db": 9.1,
+      "balance": {
+        "sub": 38.4,
+        "bajo": 36.5,
+        "medio": 19.3,
+        "aire": 5.7
+      },
+      "ancho": {
+        "sub": 0.997,
+        "bajo": 0.896,
+        "medio": 0.463,
+        "aire": 0.653
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          32
+        ],
+        [
+          "breakdown",
+          33,
+          19
+        ],
+        [
+          "drop",
+          52,
+          44
+        ],
+        [
+          "respiro",
+          96,
+          8
+        ],
+        [
+          "salida",
+          104,
+          25
+        ]
+      ]
+    },
+    {
+      "archivo": "Spencer Brown & Ezequiel Arias - SF to Córdoba [diviine].mp3",
+      "bpm": 123.0,
+      "compases": 144,
+      "duracion_seg": 342.3,
+      "lufs": -11.1,
+      "rango_dinamico_db": 8.9,
+      "balance": {
+        "sub": 43.3,
+        "bajo": 40.5,
+        "medio": 13.6,
+        "aire": 2.6
+      },
+      "ancho": {
+        "sub": 0.97,
+        "bajo": 0.922,
+        "medio": 0.764,
+        "aire": 0.826
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          73
+        ],
+        [
+          "breakdown",
+          74,
+          9
+        ],
+        [
+          "drop",
+          83,
+          27
+        ],
+        [
+          "respiro",
+          110,
+          6
+        ],
+        [
+          "salida",
+          116,
+          29
+        ]
+      ]
+    },
+    {
+      "archivo": "Durante, Ezequiel Arias - Prisma (Original Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 116,
+      "duracion_seg": 251.6,
+      "lufs": -7.0,
+      "rango_dinamico_db": 3.7,
+      "balance": {
+        "sub": 38.4,
+        "bajo": 33.3,
+        "medio": 21.9,
+        "aire": 6.3
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.972,
+        "medio": 0.565,
+        "aire": 0.438
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          7
+        ],
+        [
+          "respiro",
+          8,
+          4
+        ],
+        [
+          "groove",
+          12,
+          33
+        ],
+        [
+          "breakdown",
+          45,
+          15
+        ],
+        [
+          "drop",
+          60,
+          34
+        ],
+        [
+          "outro",
+          94,
+          14
+        ],
+        [
+          "salida",
+          108,
+          9
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Airwave (Original Mix) [Suara].mp3",
+      "bpm": 123.0,
+      "compases": 232,
+      "duracion_seg": 458.4,
+      "lufs": -8.1,
+      "rango_dinamico_db": 3.9,
+      "balance": {
+        "sub": 42.7,
+        "bajo": 51.4,
+        "medio": 4.4,
+        "aire": 1.5
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.985,
+        "medio": -0.089,
+        "aire": 0.372
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          40
+        ],
+        [
+          "respiro",
+          41,
+          7
+        ],
+        [
+          "groove",
+          48,
+          81
+        ],
+        [
+          "breakdown",
+          129,
+          31
+        ],
+        [
+          "drop",
+          160,
+          73
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Control Is an Illusion (Original Mix) [Sudbeat Music].mp3",
+      "bpm": 123.0,
+      "compases": 240,
+      "duracion_seg": 490.0,
+      "lufs": -9.8,
+      "rango_dinamico_db": 7.3,
+      "balance": {
+        "sub": 51.7,
+        "bajo": 40.5,
+        "medio": 6.2,
+        "aire": 1.6
+      },
+      "ancho": {
+        "sub": 0.996,
+        "bajo": 0.812,
+        "medio": 0.263,
+        "aire": 0.678
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          40
+        ],
+        [
+          "respiro",
+          41,
+          8
+        ],
+        [
+          "groove",
+          49,
+          72
+        ],
+        [
+          "breakdown",
+          121,
+          40
+        ],
+        [
+          "drop",
+          161,
+          80
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Esperanza (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 240,
+      "duracion_seg": 468.6,
+      "lufs": -10.3,
+      "rango_dinamico_db": 6.3,
+      "balance": {
+        "sub": 47.2,
+        "bajo": 34.0,
+        "medio": 9.3,
+        "aire": 9.4
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.987,
+        "medio": 0.485,
+        "aire": 0.707
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          16
+        ],
+        [
+          "groove",
+          17,
+          24
+        ],
+        [
+          "respiro",
+          41,
+          8
+        ],
+        [
+          "groove",
+          49,
+          60
+        ],
+        [
+          "breakdown",
+          109,
+          51
+        ],
+        [
+          "drop",
+          160,
+          32
+        ],
+        [
+          "respiro",
+          192,
+          8
+        ],
+        [
+          "salida",
+          200,
+          33
+        ],
+        [
+          "outro",
+          233,
+          8
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Inertia (Original Mix) [Sudbeat Music].mp3",
+      "bpm": 120.2,
+      "compases": 246,
+      "duracion_seg": 490.0,
+      "lufs": -10.2,
+      "rango_dinamico_db": 3.5,
+      "balance": {
+        "sub": 52.3,
+        "bajo": 37.0,
+        "medio": 8.3,
+        "aire": 2.5
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.984,
+        "medio": 0.376,
+        "aire": 0.856
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          32
+        ],
+        [
+          "respiro",
+          33,
+          7
+        ],
+        [
+          "groove",
+          40,
+          42
+        ],
+        [
+          "respiro",
+          82,
+          6
+        ],
+        [
+          "groove",
+          88,
+          49
+        ],
+        [
+          "breakdown",
+          137,
+          39
+        ],
+        [
+          "drop",
+          176,
+          71
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Modern Memory (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 225,
+      "duracion_seg": 447.5,
+      "lufs": -9.0,
+      "rango_dinamico_db": 6.7,
+      "balance": {
+        "sub": 29.2,
+        "bajo": 50.7,
+        "medio": 15.4,
+        "aire": 4.6
+      },
+      "ancho": {
+        "sub": 0.999,
+        "bajo": 0.998,
+        "medio": 0.55,
+        "aire": 0.352
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          32
+        ],
+        [
+          "groove",
+          33,
+          74
+        ],
+        [
+          "breakdown",
+          107,
+          30
+        ],
+        [
+          "drop",
+          137,
+          51
+        ],
+        [
+          "respiro",
+          188,
+          5
+        ],
+        [
+          "salida",
+          193,
+          33
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Once a Day [Sudbeat Music].mp3",
+      "bpm": 123.0,
+      "compases": 196,
+      "duracion_seg": 384.0,
+      "lufs": -8.9,
+      "rango_dinamico_db": 3.4,
+      "balance": {
+        "sub": 18.5,
+        "bajo": 62.4,
+        "medio": 13.0,
+        "aire": 6.1
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.994,
+        "medio": 0.143,
+        "aire": 0.249
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          7
+        ],
+        [
+          "groove",
+          8,
+          86
+        ],
+        [
+          "breakdown",
+          94,
+          18
+        ],
+        [
+          "drop",
+          112,
+          39
+        ],
+        [
+          "respiro",
+          151,
+          13
+        ],
+        [
+          "salida",
+          164,
+          33
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Passenger (Original Mix) [Sudbeat Music].mp3",
+      "bpm": 123.0,
+      "compases": 240,
+      "duracion_seg": 490.0,
+      "lufs": -9.6,
+      "rango_dinamico_db": 4.5,
+      "balance": {
+        "sub": 45.4,
+        "bajo": 43.4,
+        "medio": 8.3,
+        "aire": 2.8
+      },
+      "ancho": {
+        "sub": 0.999,
+        "bajo": 0.782,
+        "medio": 0.479,
+        "aire": 0.668
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          28
+        ],
+        [
+          "respiro",
+          29,
+          4
+        ],
+        [
+          "groove",
+          33,
+          85
+        ],
+        [
+          "breakdown",
+          118,
+          35
+        ],
+        [
+          "drop",
+          153,
+          80
+        ],
+        [
+          "outro",
+          233,
+          8
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Púrpura [Balance Music].mp3",
+      "bpm": 123.0,
+      "compases": 232,
+      "duracion_seg": 472.0,
+      "lufs": -7.0,
+      "rango_dinamico_db": 1.6,
+      "balance": {
+        "sub": 42.5,
+        "bajo": 44.8,
+        "medio": 9.6,
+        "aire": 3.0
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.788,
+        "medio": 0.285,
+        "aire": 0.475
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          121
+        ],
+        [
+          "breakdown",
+          122,
+          22
+        ],
+        [
+          "drop",
+          144,
+          81
+        ],
+        [
+          "outro",
+          225,
+          8
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Serenade Of (Original Mix) [Melorama Música].mp3",
+      "bpm": 123.0,
+      "compases": 238,
+      "duracion_seg": 472.3,
+      "lufs": -8.7,
+      "rango_dinamico_db": 4.9,
+      "balance": {
+        "sub": 33.8,
+        "bajo": 46.7,
+        "medio": 14.7,
+        "aire": 4.8
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.987,
+        "medio": 0.629,
+        "aire": 0.381
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          24
+        ],
+        [
+          "respiro",
+          25,
+          7
+        ],
+        [
+          "groove",
+          32,
+          80
+        ],
+        [
+          "respiro",
+          112,
+          8
+        ],
+        [
+          "groove",
+          120,
+          20
+        ],
+        [
+          "breakdown",
+          140,
+          12
+        ],
+        [
+          "drop",
+          152,
+          77
+        ],
+        [
+          "outro",
+          229,
+          10
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Solar (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 263,
+      "duracion_seg": 520.0,
+      "lufs": -10.3,
+      "rango_dinamico_db": 8.3,
+      "balance": {
+        "sub": 44.7,
+        "bajo": 44.5,
+        "medio": 7.9,
+        "aire": 2.9
+      },
+      "ancho": {
+        "sub": 0.999,
+        "bajo": 0.955,
+        "medio": 0.669,
+        "aire": 0.875
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          15
+        ],
+        [
+          "groove",
+          16,
+          76
+        ],
+        [
+          "respiro",
+          92,
+          4
+        ],
+        [
+          "groove",
+          96,
+          27
+        ],
+        [
+          "breakdown",
+          123,
+          37
+        ],
+        [
+          "drop",
+          160,
+          97
+        ],
+        [
+          "outro",
+          257,
+          7
+        ]
+      ]
+    },
+    {
+      "archivo": "Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa - Mui (Ezequiel Arias Extended Mix) [Anjunadeep].mp3",
+      "bpm": 126.0,
+      "compases": 193,
+      "duracion_seg": 378.3,
+      "lufs": -9.6,
+      "rango_dinamico_db": 4.3,
+      "balance": {
+        "sub": 41.9,
+        "bajo": 38.7,
+        "medio": 14.9,
+        "aire": 4.5
+      },
+      "ancho": {
+        "sub": 0.994,
+        "bajo": 0.964,
+        "medio": 0.548,
+        "aire": 0.579
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          24
+        ],
+        [
+          "respiro",
+          25,
+          8
+        ],
+        [
+          "groove",
+          33,
+          27
+        ],
+        [
+          "respiro",
+          60,
+          5
+        ],
+        [
+          "groove",
+          65,
+          54
+        ],
+        [
+          "breakdown",
+          119,
+          10
+        ],
+        [
+          "drop",
+          129,
+          34
+        ],
+        [
+          "respiro",
+          163,
+          6
+        ],
+        [
+          "salida",
+          169,
+          25
+        ]
+      ]
+    },
+    {
+      "archivo": "BTYW, Jody Wisternoff & James Grant - Spacetime (Ezequiel Arias Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 208,
+      "duracion_seg": 419.1,
+      "lufs": -9.5,
+      "rango_dinamico_db": 6.8,
+      "balance": {
+        "sub": 44.9,
+        "bajo": 40.8,
+        "medio": 9.7,
+        "aire": 4.5
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.986,
+        "medio": 0.123,
+        "aire": 0.516
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          16
+        ],
+        [
+          "groove",
+          17,
+          42
+        ],
+        [
+          "respiro",
+          59,
+          5
+        ],
+        [
+          "groove",
+          64,
+          45
+        ],
+        [
+          "breakdown",
+          109,
+          19
+        ],
+        [
+          "drop",
+          128,
+          33
+        ],
+        [
+          "respiro",
+          161,
+          12
+        ],
+        [
+          "salida",
+          173,
+          30
+        ],
+        [
+          "outro",
+          203,
+          6
+        ]
+      ]
+    },
+    {
+      "archivo": "Durante, Ezequiel Arias - Logical (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 126.0,
+      "compases": 200,
+      "duracion_seg": 386.0,
+      "lufs": -9.0,
+      "rango_dinamico_db": 4.1,
+      "balance": {
+        "sub": 48.0,
+        "bajo": 35.8,
+        "medio": 11.1,
+        "aire": 5.1
+      },
+      "ancho": {
+        "sub": 0.997,
+        "bajo": 0.988,
+        "medio": 0.804,
+        "aire": 0.425
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          26
+        ],
+        [
+          "respiro",
+          27,
+          5
+        ],
+        [
+          "groove",
+          32,
+          68
+        ],
+        [
+          "respiro",
+          100,
+          12
+        ],
+        [
+          "groove",
+          112,
+          42
+        ],
+        [
+          "breakdown",
+          154,
+          14
+        ],
+        [
+          "drop",
+          168,
+          33
+        ]
+      ]
+    },
+    {
+      "archivo": "Jamie Stevens, Zankee Gulati - Low Tide (Ezequiel Arias Remix) [Bedrock Records].mp3",
+      "bpm": 126.0,
+      "compases": 208,
+      "duracion_seg": 406.5,
+      "lufs": -9.1,
+      "rango_dinamico_db": 4.0,
+      "balance": {
+        "sub": 47.0,
+        "bajo": 38.4,
+        "medio": 9.9,
+        "aire": 4.8
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.976,
+        "medio": 0.081,
+        "aire": 0.486
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          7
+        ],
+        [
+          "groove",
+          8,
+          53
+        ],
+        [
+          "respiro",
+          61,
+          4
+        ],
+        [
+          "groove",
+          65,
+          32
+        ],
+        [
+          "breakdown",
+          97,
+          40
+        ],
+        [
+          "drop",
+          137,
+          33
+        ],
+        [
+          "respiro",
+          170,
+          7
+        ],
+        [
+          "salida",
+          177,
+          32
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Psychodelia (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 126.0,
+      "compases": 196,
+      "duracion_seg": 388.3,
+      "lufs": -7.3,
+      "rango_dinamico_db": 4.1,
+      "balance": {
+        "sub": 25.8,
+        "bajo": 55.9,
+        "medio": 11.6,
+        "aire": 6.6
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.977,
+        "medio": 0.588,
+        "aire": 0.441
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          16
+        ],
+        [
+          "respiro",
+          17,
+          15
+        ],
+        [
+          "groove",
+          32,
+          81
+        ],
+        [
+          "breakdown",
+          113,
+          19
+        ],
+        [
+          "drop",
+          132,
+          65
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias & Spencer Brown - SF to Cordoba (Extended Mix) [diviine].mp3",
+      "bpm": 123.0,
+      "compases": 144,
+      "duracion_seg": 342.3,
+      "lufs": -11.1,
+      "rango_dinamico_db": 8.9,
+      "balance": {
+        "sub": 43.3,
+        "bajo": 40.4,
+        "medio": 13.6,
+        "aire": 2.7
+      },
+      "ancho": {
+        "sub": 0.97,
+        "bajo": 0.922,
+        "medio": 0.763,
+        "aire": 0.822
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          73
+        ],
+        [
+          "breakdown",
+          74,
+          9
+        ],
+        [
+          "drop",
+          83,
+          27
+        ],
+        [
+          "respiro",
+          110,
+          6
+        ],
+        [
+          "salida",
+          116,
+          29
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Sin Control (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 191,
+      "duracion_seg": 378.1,
+      "lufs": -6.7,
+      "rango_dinamico_db": 3.0,
+      "balance": {
+        "sub": 36.7,
+        "bajo": 47.6,
+        "medio": 10.6,
+        "aire": 5.0
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.958,
+        "medio": 0.631,
+        "aire": 0.42
+      },
+      "confiable": false,
+      "secciones": [
+        [
+          "groove",
+          1,
+          24
+        ],
+        [
+          "respiro",
+          25,
+          7
+        ],
+        [
+          "groove",
+          32,
+          89
+        ],
+        [
+          "breakdown",
+          121,
+          7
+        ],
+        [
+          "drop",
+          128,
+          64
+        ]
+      ]
+    },
+    {
+      "archivo": "HANA, Ezequiel Arias - Go (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 220,
+      "duracion_seg": 429.7,
+      "lufs": -8.1,
+      "rango_dinamico_db": 6.4,
+      "balance": {
+        "sub": 46.2,
+        "bajo": 34.6,
+        "medio": 14.1,
+        "aire": 5.0
+      },
+      "ancho": {
+        "sub": 0.998,
+        "bajo": 0.97,
+        "medio": 0.548,
+        "aire": 0.575
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          15
+        ],
+        [
+          "groove",
+          16,
+          112
+        ],
+        [
+          "breakdown",
+          128,
+          16
+        ],
+        [
+          "drop",
+          144,
+          32
+        ],
+        [
+          "respiro",
+          176,
+          8
+        ],
+        [
+          "salida",
+          184,
+          37
+        ]
+      ]
+    },
+    {
+      "archivo": "Christian Smith - Illusion (Ezequiel Arias Remix) [Sudbeat Music].mp3",
+      "bpm": 126.0,
+      "compases": 209,
+      "duracion_seg": 414.7,
+      "lufs": -8.4,
+      "rango_dinamico_db": 6.8,
+      "balance": {
+        "sub": 56.2,
+        "bajo": 25.9,
+        "medio": 12.1,
+        "aire": 5.7
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.985,
+        "medio": 0.642,
+        "aire": 0.544
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          31
+        ],
+        [
+          "groove",
+          32,
+          68
+        ],
+        [
+          "respiro",
+          100,
+          5
+        ],
+        [
+          "groove",
+          105,
+          57
+        ],
+        [
+          "breakdown",
+          162,
+          15
+        ],
+        [
+          "drop",
+          177,
+          33
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Estimulo (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 126.0,
+      "compases": 176,
+      "duracion_seg": 345.1,
+      "lufs": -8.4,
+      "rango_dinamico_db": 5.0,
+      "balance": {
+        "sub": 40.5,
+        "bajo": 38.9,
+        "medio": 12.9,
+        "aire": 7.5
+      },
+      "ancho": {
+        "sub": 0.996,
+        "bajo": 0.904,
+        "medio": 0.641,
+        "aire": 0.57
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "intro",
+          1,
+          15
+        ],
+        [
+          "groove",
+          16,
+          69
+        ],
+        [
+          "respiro",
+          85,
+          4
+        ],
+        [
+          "groove",
+          89,
+          24
+        ],
+        [
+          "breakdown",
+          113,
+          9
+        ],
+        [
+          "drop",
+          122,
+          55
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - Eterno (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 188,
+      "duracion_seg": 371.7,
+      "lufs": -7.0,
+      "rango_dinamico_db": 4.8,
+      "balance": {
+        "sub": 39.6,
+        "bajo": 40.2,
+        "medio": 11.5,
+        "aire": 8.7
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.901,
+        "medio": 0.504,
+        "aire": 0.631
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          16
+        ],
+        [
+          "respiro",
+          17,
+          15
+        ],
+        [
+          "groove",
+          32,
+          27
+        ],
+        [
+          "respiro",
+          59,
+          5
+        ],
+        [
+          "groove",
+          64,
+          54
+        ],
+        [
+          "breakdown",
+          118,
+          18
+        ],
+        [
+          "drop",
+          136,
+          28
+        ],
+        [
+          "respiro",
+          164,
+          4
+        ],
+        [
+          "salida",
+          168,
+          16
+        ],
+        [
+          "outro",
+          184,
+          5
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias - So Many Stars (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 124,
+      "duracion_seg": 317.4,
+      "lufs": -7.2,
+      "rango_dinamico_db": 6.2,
+      "balance": {
+        "sub": 41.3,
+        "bajo": 40.2,
+        "medio": 12.1,
+        "aire": 6.4
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.977,
+        "medio": 0.449,
+        "aire": 0.567
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          65
+        ],
+        [
+          "breakdown",
+          66,
+          18
+        ],
+        [
+          "drop",
+          84,
+          41
+        ]
+      ]
+    },
+    {
+      "archivo": "Ezequiel Arias, FJL - Color Divino (Extended Mix) [Anjunadeep].mp3",
+      "bpm": 123.0,
+      "compases": 200,
+      "duracion_seg": 401.8,
+      "lufs": -7.2,
+      "rango_dinamico_db": 2.4,
+      "balance": {
+        "sub": 39.8,
+        "bajo": 36.1,
+        "medio": 19.3,
+        "aire": 4.8
+      },
+      "ancho": {
+        "sub": 1.0,
+        "bajo": 0.982,
+        "medio": 0.742,
+        "aire": 0.481
+      },
+      "confiable": true,
+      "secciones": [
+        [
+          "groove",
+          1,
+          136
+        ],
+        [
+          "breakdown",
+          137,
+          15
+        ],
+        [
+          "drop",
+          152,
+          29
+        ],
+        [
+          "outro",
+          181,
+          5
+        ],
+        [
+          "salida",
+          186,
+          15
+        ]
+      ]
+    }
+  ]
+}

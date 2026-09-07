@@ -1,0 +1,103 @@
+{
+  "name": "96. Luminoso — 1h20 — 2026-09-07",
+  "carpeta": "SERIE YOUTUBE — Sonido Argentino",
+  "duration_h": 1.25,
+  "bpm_range": [
+    120,
+    126
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Emi Galvan",
+      "title": "Synchronicity ",
+      "content_id": "85768917"
+    },
+    {
+      "artist": "Durante & Nathan Nicholson",
+      "title": "Holding On (Extended Mix)",
+      "content_id": "99232845"
+    },
+    {
+      "artist": "Guy Mantzur, Kamila, Khen",
+      "title": "Children With No Name Feat. Kamila (Original Mix)",
+      "content_id": "262498576"
+    },
+    {
+      "artist": "Dee Montero",
+      "title": "Sapphire ft. Shahin Badar (DSF Remix) ",
+      "content_id": "243410249"
+    },
+    {
+      "artist": "Emi Galvan, NOIYSE PROJECT",
+      "title": "Eramnesia ",
+      "content_id": "21125314"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Drifter (Original Mix)",
+      "content_id": "118999373"
+    },
+    {
+      "artist": "Chicola, Guy Mantzur",
+      "title": "Galactica (Original Mix)",
+      "content_id": "81477561"
+    },
+    {
+      "artist": "Enamour, Nox Vahn",
+      "title": "Sleep Paralysis (Extended Mix)",
+      "content_id": "137806519"
+    },
+    {
+      "artist": "Durante",
+      "title": "Leonid (Extended Mix)",
+      "content_id": "71826457"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Unite feat. Volen Sentir, Makebo & Amonita",
+      "content_id": "19531505"
+    },
+    {
+      "artist": "Khen",
+      "title": "Closing Doors (Original Mix)",
+      "content_id": "199550938"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "Blackbirds (Extended Mix)",
+      "content_id": "15302506"
+    },
+    {
+      "artist": "Monolink",
+      "title": "Return to Oz (Artbat Remix)",
+      "content_id": "218406880"
+    },
+    {
+      "artist": "Alex Metric, DJ Tennis, Carlita",
+      "title": "Cinecitta (Original Version)",
+      "content_id": "18581287"
+    },
+    {
+      "artist": "Ferry Corsten, Marsh",
+      "title": "Attraction (Marsh's Extended Mix)",
+      "content_id": "220272481"
+    },
+    {
+      "artist": "Monolink, Stephan Jolk",
+      "title": "The Silence (Original Mix) ",
+      "content_id": "19819937"
+    },
+    {
+      "artist": "Blake.08",
+      "title": "The Change Of Love (Extended Mix)",
+      "content_id": "157570799"
+    },
+    {
+      "artist": "Dosem",
+      "title": "What If (Extended Mix)",
+      "content_id": "150756740"
+    }
+  ]
+}

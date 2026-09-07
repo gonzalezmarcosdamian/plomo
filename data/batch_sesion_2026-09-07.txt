@@ -1,0 +1,49 @@
+# Batch sesion 2026-09-07 — progressive oscuro y emotivo (docs/MI_SONIDO.md)
+# Filtro aplicado: BPM 120-124 + key menor (zona A Camelot) + sello del palo
+# Fuentes: radar default (--since 2026-07-01), radar de sellos fijos, artist scan
+# NO DESCARGADO. Revisar y borrar lineas antes de correr:
+#   ./.venv/Scripts/python.exe scripts/muzpa_download.py --batch data/batch_sesion_2026-09-07.txt
+
+# --- Anclas: artistas ya validados en MI_SONIDO ---
+Quivver — Visitor
+Cendryma — Pure Junction
+Julian Nates — Echoes of Another Life
+Maze 28 — Cobra
+Maze 28 — Komodo
+Redspace, Diego Riga — Tibet (EMPHI & Maze 28 Extended Mix)
+Kamilo Sanclemente, Pablo Arbelaez — Croton
+Dabeat — Parallel Particles
+Dabeat — Naural
+
+# --- Sudbeat / The Soundgarden: meseta oscura ---
+Kostya Outta — Perseus
+Kostya Outta — Liberty
+Cassiamusik — Echoes of the Memory
+Patricio Mucchielli, Augusto Landucci — The Path In Between
+AOVA — Apex
+Oliver Harper — Antioch
+Andy Woldman — Whispers In The Sand
+
+# --- UV Noir: peak firme oscuro ---
+Ramiro Alvarez, Ignacio Hernandez — Dark Swell
+Tiefstone — Neo
+Agustin Pietrocola — Shift
+
+# --- meanwhile / onedotsixtwo / Univack: hypnotico anclado ---
+Fran Garay — A Ruined World
+Juan Deminicis, Casnik — Inner Glow
+Facundo Sval, Dion Paola (AUS) — Atlas
+NUFECTS — Obscurial
+Digital Mess, Astral Base — Updrafts
+
+# --- Transensations / Sound Avenue / Mango Alley ---
+Zeleon — Etiolum
+Madloch, Subnode — A Fading Dream
+FJL — Uplifter (Rodrigo Lapena Remix)
+EANP — Gipsy Danger
+
+# --- Hueco de artista: Facundo Mohrr (0 tracks en biblioteca) ---
+Facundo Mohrr — The Blue Bird
+Facundo Mohrr — The Snake Poetry
+Facundo Mohrr — Mandancer
+Facundo Mohrr, Valdovinos — Camel

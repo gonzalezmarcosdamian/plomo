@@ -65,6 +65,17 @@ data/dj_sets_new.json
 data/sunset_*.json
 data/track_playlist_mapping.json
 
+# Golpes extraidos de tracks ajenos (extraer_golpes.py).
+# MATERIAL CON DERECHOS DE TERCEROS. Son fragmentos de grabaciones comerciales,
+# referencia de timbre para produccion propia. No van al repo ni a ningun lado:
+# ni los .wav ni el indice que dice de que track salio cada uno.
+# El README si va: es donde estan escritos los limites de uso, y un limite que
+# vive solo en la maquina de uno no es un limite.
+# Se ignora `data/samples/*` y no `data/samples/`: con el patron de carpeta git
+# no entra al directorio y el `!` de abajo no tendria efecto.
+data/samples/*
+!data/samples/README.md
+
 # Artefactos generados — se reconstruyen con dump_pool.py / muzpa_*_scan.py
 data/pool.json
 data/*_scan_result.json
@@ -75,9 +86,14 @@ data/pool_apertura_sel.json
 *.MOV
 *.wav
 
-# Personal Claude config
-.claude/
+# Config de Claude: los agentes y las skills SON el proyecto y van al repo.
+# Lo que queda afuera es lo personal de cada maquina.
+.claude/settings.local.json
+.claude/*.local.json
 
 # Salida del radar de novedades (se regenera con muzpa_new_releases.py)
 data/nuevos_*.json
 data/batch_nuevos_*.txt
+
+# Historial de reproduccion — dato personal, se regenera con ingest_history.py
+data/tocados/

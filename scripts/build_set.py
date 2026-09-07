@@ -53,10 +53,15 @@ class AmbiguousPlaylistError(Exception):
 
 
 def find_playlist(con, set_num: int) -> tuple[str, str] | None:
+    # Los nombres llevan el numero con dos digitos ("09. Progressive Dark"),
+    # asi que buscar "9.%" no matchea nada: find_playlist devolvia None y
+    # build_one creaba una playlist NUEVA en vez de reconstruir la existente.
+    # Se prueban las dos formas porque conviven "09." y "74.".
     rows = con.execute(
-        "SELECT ID, Name FROM djmdPlaylist WHERE Name LIKE ? AND rb_local_deleted=0"
+        "SELECT ID, Name FROM djmdPlaylist"
+        " WHERE (Name LIKE ? OR Name LIKE ?) AND rb_local_deleted=0"
         " ORDER BY Name",
-        (f"{set_num}.%",)
+        (f"{set_num:02d}.%", f"{set_num}.%")
     ).fetchall()
     if not rows:
         return None

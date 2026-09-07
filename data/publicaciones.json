@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "creado": "2026-09-07",
+  "proposito": "Registro de lo publicado. Sin esto, seis cortes publicados son seis anecdotas. Con esto, el rendimiento de un corte es informacion sobre el track y vuelve al analista.",
+  "reglas": [
+    "Una entrada por publicacion. Se agrega el dia que se publica, con metricas en null.",
+    "Las metricas se completan a los 7 dias exactos. Antes de eso no se mira nada.",
+    "content_id es la llave contra djmdContent y contra data/pool.json. Sin content_id la entrada no cierra el circuito.",
+    "No se borran entradas. Un corte que no anduvo es el dato mas util del archivo.",
+    "Nada entra aca hasta que Gonzalo publico. Este archivo registra hechos, no planes."
+  ],
+  "campos": {
+    "id": "string — identificador de la publicacion, formato AAAA-MM-DD-plataforma-N",
+    "fecha": "string AAAA-MM-DD — fecha de publicacion real",
+    "plataforma": "string — youtube_shorts | instagram_reels | tiktok | youtube_largo",
+    "formato": "string — corte_vertical | video_largo",
+    "set_origen": "int — numero de set en Rekordbox (80-89 = serie Sonido Argentino)",
+    "set_nombre": "string — nombre completo de la playlist",
+    "corte_rank": "int|null — ranking del corte dentro del guion del set (1-6). null para video largo",
+    "track": {
+      "content_id": "string — djmdContent.ID. Llave contra pool.json y mi_sonido.json",
+      "artist": "string",
+      "title": "string",
+      "label": "string",
+      "bpm": "float",
+      "key": "string camelot",
+      "energy": "float — energia calculada, escala del proyecto"
+    },
+    "posicion_en_set": {
+      "orden": "int — posicion del track en la playlist (1-18)",
+      "minuto_set": "float — minuto del set donde arranca el corte",
+      "segundo_en_track": "float — segundo dentro del track donde arranca el corte",
+      "porcentaje_set": "float 0-1 — donde cae en el arco"
+    },
+    "tipo_momento": "string — pico del set | kick tras breakdown largo | track identitario | entrada de kick",
+    "ventana": {
+      "inicio_seg": "float — inicio dentro del track",
+      "largo_seg": "float — duracion del corte",
+      "gap_breakdown_drop_seg": "float — tension disponible antes del DROP",
+      "anticipo_seg": "float — cuanto arranca antes del DROP"
+    },
+    "texto_publicado": "string — la linea seca que acompano el post, tal cual salio",
+    "metricas_7d": {
+      "medido_el": "string AAAA-MM-DD|null",
+      "views": "int|null",
+      "watch_time_min": "int|null — minutos totales vistos, no porcentaje",
+      "retencion_pct": "float|null — se anota pero no se optimiza (docs/YOUTUBE_SERIE.md)",
+      "avg_view_seg": "float|null — segundos promedio vistos. En un corte de 30s es la metrica fina",
+      "likes": "int|null",
+      "comentarios": "int|null",
+      "compartidos": "int|null",
+      "guardados": "int|null",
+      "seguidores_nuevos": "int|null",
+      "clics_al_largo": "int|null — el corte es la puerta, el largo es el destino"
+    },
+    "notas": "string — que se vio a mano que la metrica no dice"
+  },
+  "plantilla": {
+    "id": "AAAA-MM-DD-youtube_shorts-1",
+    "fecha": "AAAA-MM-DD",
+    "plataforma": "youtube_shorts",
+    "formato": "corte_vertical",
+    "set_origen": 0,
+    "set_nombre": "",
+    "corte_rank": 1,
+    "track": {
+      "content_id": "",
+      "artist": "",
+      "title": "",
+      "label": "",
+      "bpm": 0,
+      "key": "",
+      "energy": 0
+    },
+    "posicion_en_set": {
+      "orden": 0,
+      "minuto_set": 0,
+      "segundo_en_track": 0,
+      "porcentaje_set": 0
+    },
+    "tipo_momento": "",
+    "ventana": {
+      "inicio_seg": 0,
+      "largo_seg": 30,
+      "gap_breakdown_drop_seg": 0,
+      "anticipo_seg": 0
+    },
+    "texto_publicado": "",
+    "metricas_7d": {
+      "medido_el": null,
+      "views": null,
+      "watch_time_min": null,
+      "retencion_pct": null,
+      "avg_view_seg": null,
+      "likes": null,
+      "comentarios": null,
+      "compartidos": null,
+      "guardados": null,
+      "seguidores_nuevos": null,
+      "clics_al_largo": null
+    },
+    "notas": ""
+  },
+  "publicaciones": []
+}
