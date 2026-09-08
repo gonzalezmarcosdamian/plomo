@@ -1,22 +1,27 @@
 """Genera un boceto de track: clips MIDI + plano de arreglo, listos para Ableton.
 
-No compone: arma el esqueleto. Progresion, bajo rodante, arpegio, bateria y una
-linea de melodia en la tonalidad y el BPM que se le pidan, mas un plano de
-arreglo con los compases reales derivados de un corpus medido
-(`scripts/derive_template.py`).
+No compone: arma el esqueleto. Armonia, bajo rodante, bateria y un gancho corto
+en la tonalidad y el BPM que se le pidan, mas un plano de arreglo con los
+compases reales derivados de un corpus medido (`scripts/derive_template.py`).
 
 La musica la hace uno; esto ahorra los cuarenta minutos de poner la grilla,
 elegir la tonalidad y decidir en que compas va el breakdown.
 
-Los clips son loops de 8 compases pero NO son ocho compases iguales: el bajo
-cambia cada cuatro, el arpegio se abre en la segunda mitad, la bateria tiene
-fills, y todo lleva swing y variacion de velocidad. Ocho compases identicos
-suenan a maquina; ese es el defecto que mas rapido delata a un boceto.
+La densidad no es una opinion: sale de `scripts/medir_arreglos.py`, que separa
+en stems y transcribe los temas mas tocados de la propia historia de Rekordbox.
+La mediana de esos temas es 17.7 notas por compas. La version anterior de este
+script escribia 44 repartidas en cinco capas que sonaban las ocho compases
+enteras — un arpegio de semicorcheas que no paraba nunca, un pad con septima
+sostenido, una melodia y stabs, todo a la vez. Eso no se escucha como una idea
+musical: se escucha como una maquina, y no era el timing sino la falta de aire.
+
+Cuatro capas, y no todas suenan todo el tiempo. Al final imprime la densidad
+generada al lado de la medida, que es el numero que costo dos iteraciones ver.
 
 Uso:
     python scripts/make_sketch.py --camelot 4A --bpm 123
     python scripts/make_sketch.py --camelot 8A --registro oscuro
-    python scripts/make_sketch.py --camelot 4A --registro heroico --swing 0.10
+    python scripts/make_sketch.py --camelot 4A --registro heroico
 """
 from __future__ import annotations
 
@@ -37,7 +42,8 @@ RAIZ = Path(__file__).resolve().parent.parent
 COMPASES_LOOP = 8
 
 # Progresiones por registro, en grados de la escala (0 = tonica).
-# Dos compases por acorde: ocho compases de loop.
+# Se usan los tres primeros grados: 4 compases el primero, 2 y 2 los otros. Son
+# dos cambios cada ocho compases, que es la mediana medida.
 PROGRESIONES = {
     "luminoso": ([0, 5, 2, 6], "i - VI - III - VII. La progresion del progressive "
                                "melodico: melancolica pero que empuja hacia arriba."),
@@ -51,10 +57,13 @@ PROGRESIONES = {
 }
 
 # Notas del drum rack de Ableton.
-KICK, CLAP, CHH, OHH, RIDE, SHAKER = 36, 39, 42, 46, 51, 70
+KICK, CLAP, CHH, OHH, RIDE, SHAKER, RIM = 36, 39, 42, 46, 51, 70, 37
 
-# Cuanto se corre la contratiempo de semicorchea. 0 = cuantizado duro.
-SWING = 0.07
+# Cuanto se corre la contratiempo de semicorchea. 0 = cuantizado duro, y es el
+# default: el swing nunca fue el problema —el jitter maximo son 6 ms— pero
+# tampoco hay nada medido que lo justifique, y todo lo que no esta medido y no
+# se escucha no deberia estar prendido.
+SWING = 0.0
 # Variacion de velocidad y de microtiming. Sin esto ocho compases suenan iguales
 # porque LO SON.
 JITTER_VEL = 9
@@ -82,162 +91,248 @@ class Humano:
         return max(1, min(127, v + self.rng.randint(-JITTER_VEL, JITTER_VEL)))
 
 
+def _objetivos() -> dict | None:
+    """Las medianas medidas sobre los temas mas tocados, si existen."""
+    ruta = RAIZ / "data" / "arreglos_medidos.json"
+    if not ruta.exists():
+        return None
+    return json.loads(ruta.read_text(encoding="utf-8")).get("mediana")
+
+
 def _acordes(bpm: float, tonica: int, escala: list[int], grados: list[int],
              h: Humano) -> Pista:
-    """Pad sostenido + stabs en contratiempo + una voz superior que se mueve.
+    """Tres acordes en ocho compases —4 + 2 + 2— pero pulsando, no sostenidos.
 
-    El pad solo, plano dos compases, es lo que hace que un boceto suene a
-    plantilla. Los stabs y la voz que camina le dan direccion adentro del acorde.
+    La armonia sigue siendo la misma; lo que cambia es que no se mantiene. Una
+    triada sostenida cuatro compases con reverb larga suena a organo de iglesia,
+    y no es la septima ni el registro: es la duracion. El mismo acorde en golpes
+    cortos suena a progressive.
+
+    Queda una nota larga por acorde —la fundamental sola, abajo— para que el
+    fondo no se corte entre golpe y golpe. Una nota no arma un acorde, asi que
+    no reconstruye el problema.
     """
     p = Pista("Acordes", bpm, canal=0)
-    for i, g in enumerate(grados):
-        # Triada sin novena y con la septima solo en el primer compas. La
-        # septima MAS la novena sostenidas ocho tiempos con ataque lento y
-        # reverb larga es literalmente un organo de iglesia: el apilado suena
-        # a himno antes de que entre nada mas.
-        base = triada(tonica, escala, g, octava=3, septima=False)
-        color = triada(tonica, escala, g, octava=3, septima=True)
-        c0 = i * 2
-        # el colchon deja un hueco al final de cada compas en vez de tapar todo
-        p.acorde(compas=c0, pulso=0, alturas=base, duracion=3.4, velocidad=62)
-        p.acorde(compas=c0 + 1, pulso=0, alturas=color, duracion=3.4, velocidad=58)
-        # stabs en el contratiempo: es donde el pad respira contra el kick
-        for c in (c0, c0 + 1):
+    for compas, largo, g in ((0, 4, grados[0]), (4, 2, grados[1]), (6, 2, grados[2])):
+        notas = triada(tonica, escala, g, octava=3, septima=False)
+        p.nota(compas, 0, notas[0], duracion=largo * 4 - 0.5, velocidad=44)
+        # golpes en el contratiempo, solo tercera y quinta: la fundamental ya
+        # esta sonando abajo y repetirla engorda el golpe sin sumar nada
+        for c in range(compas, compas + largo):
             for pulso in (1.5, 3.5):
-                p.acorde(c, h.pulso(pulso), base[1:], duracion=0.30,
-                         velocidad=h.vel(78 if pulso == 1.5 else 66))
+                p.acorde(c, pulso, notas[1:], duracion=0.30,
+                         velocidad=h.vel(66 if pulso == 1.5 else 58))
     return p
+
+
+# Celula de bajo de 2 compases: (pulso absoluto sobre 8, offset de altura).
+#
+# Las posiciones salen de la medicion, no del gusto. Sobre los seis temas
+# medidos con bajo audible: 10% de las notas cae en el pulso, 35% en el
+# contratiempo de corchea y el 55% restante en semicorcheas. Esta celula da
+# 14 / 29 / 57, que es lo mas cerca que se llega con siete notas.
+#
+# La version anterior ponia las cuatro notas en el contratiempo y nada mas:
+# 0% en el pulso y 100% en contratiempo. Sonaba a marcha porque lo era — el
+# bajo real rueda, no marca.
+CELULA_BAJO = [
+    (0.00, 0), (0.75, 0), (1.50, 0), (2.75, 7),
+    (4.75, 0), (5.50, 0), (7.25, 12),
+]
 
 
 def _bajo(bpm: float, tonica: int, escala: list[int], grados: list[int],
           h: Humano) -> Pista:
-    """Bajo rodante: nada en el pulso, todo en el contratiempo.
+    """Bajo rodante, 3.5 notas por compas.
 
-    Es lo que hace que un progressive respire en vez de marchar. El kick ocupa
-    el pulso, el bajo ocupa el hueco. Cada cuatro compases cambia el patron:
-    ocho compases del mismo bajo es la definicion de rigido.
+    Tres alturas distintas: fundamental, quinta y octava. La mediana medida es
+    3.5 alturas distintas — un bajo hipnotico ancla, pero no repite una sola
+    nota durante ocho compases.
     """
     p = Pista("Bajo", bpm, canal=0)
-    for i, g in enumerate(grados):
+    for repeticion, g in enumerate((grados[0], grados[0], grados[1], grados[2])):
         raiz = grado(tonica, escala, g, octava=1)
-        quinta = grado(tonica, escala, g + 4, octava=1)
-        for c in (i * 2, i * 2 + 1):
-            segunda_mitad = c >= 4
-            roll = c == 7   # solo al cerrar el loop, no cada cuatro
-            for pulso in (0.5, 1.5, 2.5, 3.5):
-                # Casi siempre la fundamental. Un bajo hipnotico no cuenta una
-                # melodia: ancla. La quinta aparece una vez cada ocho compases,
-                # no una vez por compas.
-                alt = raiz
-                if segunda_mitad and c == 6 and pulso == 2.5:
-                    alt = quinta
-                # si viene el roll, esta nota se acorta para no pisarlo: dos
-                # notas del mismo tono superpuestas se pierden al leer el MIDI
-                dur = 0.16 if (roll and pulso == 3.5) else 0.30
-                p.nota(c, h.pulso(pulso), alt, duracion=dur,
-                       velocidad=h.vel(106 if pulso == 0.5 else 88))
-            if roll:
-                p.nota(c, h.pulso(3.75), raiz, 0.18, h.vel(98))
-    return p
-
-
-def _arpegio(bpm: float, tonica: int, escala: list[int], grados: list[int],
-             h: Humano) -> Pista:
-    """Semicorcheas sobre las notas del acorde, con swing.
-
-    Primera mitad cerrada, segunda mitad una octava arriba y con otro contorno:
-    el arpegio es el que mas rapido cansa si no se mueve.
-    """
-    p = Pista("Arpegio", bpm, canal=0)
-    for i, g in enumerate(grados):
-        n = triada(tonica, escala, g, octava=4, septima=True)
-        cerrado = [n[0], n[1], n[2], n[3], n[2], n[1], n[2], n[0] + 12]
-        abierto = [n[0], n[2], n[3], n[2] + 12, n[3], n[2], n[1], n[0] + 12]
-        for c in (i * 2, i * 2 + 1):
-            patron = abierto if c >= 4 else cerrado
-            desplazamiento = 12 if c >= 4 else 0
-            for k in range(16):
-                if c >= 4 and k % 8 == 7:
-                    continue             # un hueco por compas: deja respirar
-                p.nota(c, h.pulso(k * 0.25), patron[k % len(patron)] + desplazamiento,
-                       duracion=0.22,
-                       velocidad=h.vel(92 if k % 4 == 0 else (74 if k % 2 == 0 else 60)))
+        for k, (pulso_abs, offset) in enumerate(CELULA_BAJO):
+            c, pulso = divmod(repeticion * 8 + pulso_abs, 4)
+            # La duracion sale del hueco hasta la nota siguiente, no de una
+            # constante. Con 0.30 fijo el bajo cubria el 28% del tiempo y los
+            # temas de referencia cubren el 71% (medido con
+            # `scripts/continuidad.py` sobre los stems): eso es lo que se
+            # escuchaba como cortado. Con el 78% del hueco las notas casi se
+            # tocan sin llegar a pisarse, y el bajo pasa a ser una linea en vez
+            # de una serie de golpes.
+            siguiente = (CELULA_BAJO[k + 1][0] if k + 1 < len(CELULA_BAJO)
+                         else CELULA_BAJO[0][0] + 8)
+            dur = max(0.25, (siguiente - pulso_abs) * 0.66)
+            vel = 104 if pulso == 0 else (86 if pulso % 1 == 0.5 else 78)
+            p.nota(int(c), pulso, raiz + offset, duracion=dur, velocidad=h.vel(vel))
     return p
 
 
 def _bateria(bpm: float, h: Humano) -> Pista:
-    """Kick en negras, clap en 2 y 4, hats con acentos, y fills cada 4 compases.
+    """Cuatro por cuatro, con unas diez notas agudas por compas.
 
-    Los fills y el kick que falta antes del compas 1 son lo que convierte ocho
-    compases en una frase de ocho compases.
+    La mediana medida de elementos arriba de 6 kHz —hats, shaker, ride juntos—
+    es 10.1 por compas. Ni cuatro ni dieciseis: el hat cerrado en semicorcheas
+    constantes da 16 y es lo que se escucha como arena.
+
+    El bombo NO lleva jitter. La variacion va por ausencia: el ultimo bombo del
+    loop no suena, y ese hueco es lo que anuncia la vuelta.
     """
     p = Pista("Bateria", bpm, canal=9)
     for c in range(COMPASES_LOOP):
         for pulso in range(4):
-            # el ultimo kick del loop no suena: el hueco anticipa la vuelta
             if c == COMPASES_LOOP - 1 and pulso == 3:
                 continue
-            p.nota(c, pulso, KICK, 0.25, h.vel(110))
+            p.nota(c, pulso, KICK, 0.25, 108)
         for pulso in (1, 3):
-            p.nota(c, h.pulso(pulso), CLAP, 0.25, h.vel(96))
-        # Hat abierto en dos contratiempos, no en cuatro: cuatro por compas
-        # satura y es lo que hace sonar arenoso al conjunto.
+            p.nota(c, pulso, CLAP, 0.25, h.vel(92))
+        # El abierto SOLO en dos contratiempos, no en cuatro. Es el elemento mas
+        # brillante de la bateria: cuatro por compas es lo que empuja la energia
+        # arriba de 6 kHz, y medido sobre los stems de Ezequiel Arias ahi vive
+        # apenas el 3.8% de su energia. Con dos se mantiene el contratiempo y se
+        # baja el brillo a la mitad.
         for pulso in (0.5, 2.5):
-            p.nota(c, h.pulso(pulso), OHH, 0.3, h.vel(70))
-        # El movimiento de semicorcheas lo lleva el shaker, no el hat cerrado.
-        # Es lo que hace la percusion del palo Cattaneo / Vuarambon: se siente
-        # antes de escucharse.
-        for k in range(16):
-            if k % 4 == 0:
-                continue                 # el pulso es del kick
-            p.nota(c, h.pulso(k * 0.25), SHAKER, 0.10,
-                   h.vel(52 if k % 2 == 0 else 42))
-        # el hat cerrado queda como detalle, no como base
-        for pulso in (1.75, 3.75):
-            p.nota(c, h.pulso(pulso), CHH, 0.10, h.vel(52))
-        # ride en la segunda mitad: sube la sensacion sin sumar volumen
-        if c >= 4:
-            for k in range(4):
-                p.nota(c, h.pulso(k + 0.5), RIDE, 0.2, h.vel(52))
-        # fills: chico en el compas 4, grande en el 8
-        if c == 3:
-            for k in (3.5, 3.75):
-                p.nota(c, h.pulso(k), CLAP, 0.15, h.vel(80))
-        if c == COMPASES_LOOP - 1:
-            for k in (3.0, 3.25, 3.5, 3.75):
-                p.nota(c, h.pulso(k), CLAP, 0.15, h.vel(70 + int((k - 3) * 60)))
-            p.nota(c, 3.5, OHH, 0.4, h.vel(100))
+            p.nota(c, h.pulso(pulso), OHH, 0.20, h.vel(58))
+        # El cerrado lleva el movimiento, que es lo que el abierto dejo de hacer.
+        # Total: 8 agudos por compas, que es la mediana medida de Eze Arias
+        # (8.05 sobre tres temas). La mediana general del repertorio es 10.12 —
+        # se va a la de el a proposito, porque es el sonido que se pidio.
+        cerrados = [0.25, 0.75, 1.75, 2.25, 2.75, 3.75]
+        for pulso in cerrados:
+            p.nota(c, h.pulso(pulso), CHH, 0.10, h.vel(48 if c < 4 else 54))
     return p
 
 
-# Celula ritmica de 2 compases (8 pulsos): (pulso, offset de grado, duracion).
-# Notas cortas y sincopadas en vez de notas largas sostenidas. Una linea de
-# blancas apiladas sobre acordes con septima y novena suena a himno; lo que hace
-# moderno a un gancho de progressive es el ritmo, no la nota.
-CELULA = [
-    (0.0, 0, 0.45), (0.75, 0, 0.20), (1.5, -2, 0.45), (2.5, 0, 0.70),
-    (4.0, 1, 0.45), (4.75, 0, 0.20), (6.0, -2, 1.10),
+# Motivo corto: (pulso absoluto sobre 8, grado relativo, duracion).
+# Siete notas en cuatro compases. Reemplaza al arpegio de semicorcheas, que
+# metia 15 notas por compas sin un hueco y era la mayor fuente de ruido del
+# boceto: un arpegio de septima que no para nunca no es un gancho, es un zumbido.
+MOTIVO = [
+    (0.0, 4, 0.70), (1.5, 2, 0.35), (2.5, 4, 0.90),
+    (4.0, 5, 0.70), (5.5, 4, 0.35), (6.5, 2, 1.20),
 ]
-# Grado base de cada repeticion de 2 compases. La tercera sube a la tonica una
-# octava arriba: ahi cae el pico, sin sostenerla cuatro tiempos.
-BASES = [4, 5, 7, 4]
 
 
-def _melodia(bpm: float, tonica: int, escala: list[int], h: Humano) -> Pista:
-    """Gancho de 8 compases: una celula ritmica que se repite y transpone.
+def _detalle(bpm: float, tonica: int, escala: list[int], h: Humano) -> Pista:
+    """Gancho de dos notas por compas, y solo en la segunda mitad del loop.
 
-    Sin doblaje de octava: el doblaje es lo que engorda la linea y la vuelve
-    coral. El ancho lo pone el delay en la mezcla, no una segunda voz.
+    Entra en el compas 5. Que aparezca un elemento a mitad de camino es lo que
+    convierte ocho compases en una frase; ocho compases con los mismos cinco
+    elementos sonando es lo que se escucha como una maquina.
     """
-    p = Pista("Melodia", bpm, canal=0)
-    for r, base in enumerate(BASES):
-        for pulso_abs, offset, dur in CELULA:
-            c, pulso = divmod(r * 8 + pulso_abs, 4)
-            alt = grado(tonica, escala, base + offset, octava=5)
-            # la nota larga de cada celula acentua; las cortas empujan
-            p.nota(int(c), h.pulso(pulso), alt, dur,
-                   h.vel(96 if dur > 0.6 else 78))
+    p = Pista("Detalle", bpm, canal=0)
+    for repeticion in range(2):
+        for pulso_abs, g, dur in MOTIVO:
+            # Cada nota del motivo abre un gesto de tres, separadas por corchea
+            # con puntillo (0.75 de pulso = 3/16). Las alturas de la melodia son
+            # las mismas —lo que gustaba se conserva— pero suenan arpegiadas en
+            # vez de sostenidas: una nota larga se percibe como atmosfera, tres
+            # cortas como melodia.
+            #
+            # El 3/16 no es arbitrario: es la misma division del delay del
+            # gancho, asi que el arpegio y sus repeticiones se entrelazan en vez
+            # de embarrarse.
+            for k, salto in enumerate((0, 2, 4) if dur > 0.6 else (0, 2)):
+                # 16 y no 4: `pulso_abs` viene en PULSOS, asi que sumar 4
+                # corria el motivo un compas en vez de cuatro. El gancho decia
+                # entrar en el compas 5 y entraba en el 2, reventaba en el 3 y
+                # callaba en 6-7-8 — justo al reves de lo que dice el docstring,
+                # y con las dos repeticiones pisandose entre si.
+                arranque = 16 + repeticion * 16 + pulso_abs + k * 0.75
+                c, pulso = divmod(arranque, 4)
+                if c >= COMPASES_LOOP:
+                    continue
+                # 0.34 y no 0.18: a 123 BPM una nota de 0.18 pulsos dura 88 ms
+                # y eso es un click, no una nota. Con 0.34 las tres del gesto se
+                # encadenan y suena a arpegio en vez de a tres golpes sueltos.
+                p.nota(int(c), h.pulso(pulso),
+                       grado(tonica, escala, g + salto, octava=4),
+                       0.34, h.vel(86 - k * 12))
     return p
+
+
+def _atmosfera(bpm: float, tonica: int, escala: list[int],
+               grados: list[int], h: Humano) -> Pista:
+    """Pedal grave sostenido: raiz y quinta, sin tercera.
+
+    Es la capa que hace que un tema no tenga huecos. En progressive casi siempre
+    hay algo sonando abajo aunque no se lo escuche como un instrumento — se nota
+    cuando falta, no cuando esta. Sin tercera a proposito: la tercera define el
+    acorde y pelearia con el pad; la quinta no dice nada armonico y solo llena.
+
+    Velocidad baja: esto no se escucha, se apoya.
+    """
+    p = Pista("Atmosfera", bpm, canal=0)
+    for compas, largo, g in ((0, 4, grados[0]), (4, 2, grados[1]), (6, 2, grados[2])):
+        raiz = grado(tonica, escala, g, octava=2)
+        p.acorde(compas=compas, pulso=0, alturas=[raiz, raiz + 7],
+                 duracion=largo * 4 - 0.25, velocidad=42)
+    return p
+
+
+def _percusion(bpm: float, h: Humano) -> Pista:
+    """Shaker y madera, corriendo casi siempre.
+
+    Es lo que separa organic house de progressive a secas, y ademas es lo que
+    permite que una seccion se quede sin bateria sin quedarse sin nada: la
+    percusion puede seguir cuando el bombo se va.
+
+    Va en un kit aparte para no pisar la base.
+    """
+    p = Pista("Percusion", bpm, canal=9)
+    for c in range(COMPASES_LOOP):
+        # shaker en las semicorcheas de atras de cada pulso: empuja sin marcar
+        for k in (0.75, 1.75, 2.75, 3.75):
+            p.nota(c, k, SHAKER, 0.08, h.vel(40 if c % 2 else 46))
+        # Click cada dos compases, corrido: es el detalle que hace que ocho
+        # compases no suenen a uno repetido ocho veces. Va en 37 (rim) y no en
+        # 51 (ride): el 51 cae en un tom o en un platillo segun el kit, y en un
+        # kit acustico eso suena a timbal contra material electronico.
+        if c % 2 == 1:
+            p.nota(c, 1.25, RIM, 0.08, h.vel(50))
+            p.nota(c, 3.5, RIM, 0.08, h.vel(42))
+    return p
+
+
+def _densidad(pistas: list[tuple[str, Pista]], objetivos: dict | None) -> str:
+    """Compara lo generado contra lo medido, comparando lo mismo contra lo mismo.
+
+    Existe porque el defecto que costo dos iteraciones encontrar no se veia
+    escuchando ni leyendo el codigo: eran 44 notas por compas contra las 17.7 de
+    los temas que se tocan. Un numero al lado del otro lo habria mostrado solo.
+
+    La comparacion es sobre bombo + agudos + bajo, y nada mas. La mediana medida
+    no incluye armonia —el stem `other` mezcla pad, arpegio y lead, y de ahi solo
+    se saca el acorde, no la densidad— ni claps, porque esa metrica salio rota
+    (daba 5 a 14 por compas donde un clap en house son 2). Comparar el total
+    generado contra ese numero seria hacer ver bien el resultado sumando de un
+    lado lo que del otro no se conto.
+    """
+    filas, comparable = [], 0.0
+    for archivo, pista in pistas:
+        encendidas = [e for e in pista._eventos if e.datos[0] & 0xF0 == 0x90]
+        n = len(encendidas)
+        detalle = ""
+        if pista.nombre == "Bateria":
+            c_kick = sum(1 for e in encendidas if e.datos[1] == KICK)
+            c_clap = sum(1 for e in encendidas if e.datos[1] == CLAP)
+            c_agudos = n - c_kick - c_clap
+            detalle = (f"  (bombo {c_kick / COMPASES_LOOP:.1f}, "
+                       f"clap {c_clap / COMPASES_LOOP:.1f}, "
+                       f"agudos {c_agudos / COMPASES_LOOP:.1f})")
+            comparable += (c_kick + c_agudos) / COMPASES_LOOP
+        elif pista.nombre == "Bajo":
+            comparable += n / COMPASES_LOOP
+        filas.append(f"  {pista.nombre:9} {n / COMPASES_LOOP:5.1f} por compas{detalle}")
+
+    filas.append("")
+    filas.append(f"  comparable: bombo + agudos + bajo   {comparable:5.1f} por compas")
+    if objetivos:
+        medido = (objetivos["kick_x_compas"] + objetivos["hat_x_compas"]
+                  + objetivos["bajo_x_compas"])
+        filas.append(f"  lo mismo en los temas mas tocados   {medido:5.1f} por compas")
+    return chr(10).join(filas)
 
 
 def _plano(plantilla: dict | None, camelot: str, bpm: float, registro: str,
@@ -343,6 +438,7 @@ def main() -> None:
     grados, texto = PROGRESIONES[args.registro]
     h = Humano(args.semilla, args.swing)
 
+    objetivos = _objetivos()
     plantilla = None
     if args.plantilla and args.plantilla.exists():
         plantilla = json.loads(args.plantilla.read_text(encoding="utf-8"))
@@ -354,9 +450,10 @@ def main() -> None:
     pistas = [
         ("01_acordes.mid", _acordes(args.bpm, tonica, escala, grados, h)),
         ("02_bajo.mid", _bajo(args.bpm, tonica, escala, grados, h)),
-        ("03_arpegio.mid", _arpegio(args.bpm, tonica, escala, grados, h)),
-        ("04_bateria.mid", _bateria(args.bpm, h)),
-        ("05_melodia.mid", _melodia(args.bpm, tonica, escala, h)),
+        ("03_bateria.mid", _bateria(args.bpm, h)),
+        ("04_detalle.mid", _detalle(args.bpm, tonica, escala, h)),
+        ("05_atmosfera.mid", _atmosfera(args.bpm, tonica, escala, grados, h)),
+        ("06_percusion.mid", _percusion(args.bpm, h)),
     ]
     for archivo, pista in pistas:
         pista.guardar(destino / archivo)
@@ -371,6 +468,8 @@ def main() -> None:
     for archivo, _ in pistas:
         print(f"  {archivo}")
     print("  ARREGLO.md")
+    print()
+    print(_densidad(pistas, objetivos))
     print(f"\n-> {destino}")
     if not plantilla:
         print("\nSin plantilla medida: el plano usa valores por defecto. "

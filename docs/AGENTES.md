@@ -39,6 +39,7 @@ que ya costaron caro, y lo que tiene prohibido hacer.
 | `research` | descubrir musica y setlists | proponer sin decir por que entra |
 | `tecnico` | pipeline, Rekordbox, DB | tocar la DB con Rekordbox abierto |
 | `archivista` | carpetas, deposito, vistas | mover un archivo sin relink |
+| `musico` | Melodia, armonia, forma y tension. Escribe y critica ideas musicales, no mide senal. |
 | `productor` | analisis de produccion | opinar de oido en vez de medir |
 | `video` | YouTube | publicar por su cuenta |
 | `redes` | IG/TikTok, marca, metricas | publicar por su cuenta |

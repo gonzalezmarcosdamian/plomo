@@ -1,7 +1,7 @@
 {
   "n_biblioteca": 1816,
-  "n_tocados": 343,
-  "reproducciones": 1004,
+  "n_tocados": 348,
+  "reproducciones": 510,
   "perfil": {
     "bpm_mediana": 122.0,
     "bpm_p10_p90": [
@@ -10,41 +10,41 @@
     ],
     "energia_mediana": 5.7,
     "energia_p10_p90": [
-      4.3,
+      4.2,
       6.8
     ],
     "keys_top": [
       [
         "6A",
-        154
+        77
       ],
       [
         "7A",
-        142
+        72
       ],
       [
         "8A",
-        136
+        70
       ],
       [
         "4A",
-        94
+        47
       ],
       [
         "5A",
-        84
+        42
       ],
       [
         "9A",
-        54
-      ],
-      [
-        "10B",
-        48
+        27
       ],
       [
         "1A",
-        48
+        25
+      ],
+      [
+        "10B",
+        24
       ]
     ],
     "pct_menor": 86
@@ -52,371 +52,365 @@
   "artistas": [
     {
       "valor": "faero",
-      "veces": 26,
+      "veces": 13,
       "en_biblioteca": 5,
-      "lift": 10.26
+      "lift": 10.12
     },
     {
       "valor": "analog sense",
-      "veces": 32,
+      "veces": 16,
       "en_biblioteca": 8,
-      "lift": 7.89
+      "lift": 7.79
     },
     {
       "valor": "ferry corsten",
-      "veces": 18,
+      "veces": 9,
       "en_biblioteca": 5,
-      "lift": 7.1
+      "lift": 7.01
     },
     {
       "valor": "hana",
-      "veces": 12,
+      "veces": 6,
       "en_biblioteca": 4,
-      "lift": 5.92
+      "lift": 5.84
     },
     {
       "valor": "soundexile",
-      "veces": 14,
+      "veces": 7,
       "en_biblioteca": 6,
-      "lift": 4.6
-    },
-    {
-      "valor": "marcelo vasami",
-      "veces": 26,
-      "en_biblioteca": 13,
-      "lift": 3.95
-    },
-    {
-      "valor": "matter",
-      "veces": 22,
-      "en_biblioteca": 11,
-      "lift": 3.95
-    },
-    {
-      "valor": "mazayr",
-      "veces": 8,
-      "en_biblioteca": 4,
-      "lift": 3.95
-    },
-    {
-      "valor": "fur coat",
-      "veces": 14,
-      "en_biblioteca": 7,
-      "lift": 3.95
-    },
-    {
-      "valor": "lee burridge",
-      "veces": 14,
-      "en_biblioteca": 7,
-      "lift": 3.95
+      "lift": 4.54
     },
     {
       "valor": "cendryma",
-      "veces": 68,
+      "veces": 35,
       "en_biblioteca": 35,
-      "lift": 3.83
+      "lift": 3.89
+    },
+    {
+      "valor": "marcelo vasami",
+      "veces": 13,
+      "en_biblioteca": 13,
+      "lift": 3.89
+    },
+    {
+      "valor": "matter",
+      "veces": 11,
+      "en_biblioteca": 11,
+      "lift": 3.89
+    },
+    {
+      "valor": "mazayr",
+      "veces": 4,
+      "en_biblioteca": 4,
+      "lift": 3.89
+    },
+    {
+      "valor": "fur coat",
+      "veces": 7,
+      "en_biblioteca": 7,
+      "lift": 3.89
+    },
+    {
+      "valor": "lee burridge",
+      "veces": 7,
+      "en_biblioteca": 7,
+      "lift": 3.89
     },
     {
       "valor": "gmj",
-      "veces": 28,
+      "veces": 14,
       "en_biblioteca": 15,
-      "lift": 3.68
-    },
-    {
-      "valor": "marsh",
-      "veces": 22,
-      "en_biblioteca": 12,
-      "lift": 3.62
+      "lift": 3.63
     },
     {
       "valor": "tom pavicich",
-      "veces": 48,
+      "veces": 25,
       "en_biblioteca": 27,
-      "lift": 3.51
+      "lift": 3.6
+    },
+    {
+      "valor": "marsh",
+      "veces": 11,
+      "en_biblioteca": 12,
+      "lift": 3.57
     },
     {
       "valor": "emi galvan",
-      "veces": 72,
+      "veces": 36,
       "en_biblioteca": 43,
-      "lift": 3.3
+      "lift": 3.26
     },
     {
       "valor": "dmitry molosh",
-      "veces": 36,
+      "veces": 18,
       "en_biblioteca": 22,
-      "lift": 3.23
+      "lift": 3.19
     },
     {
       "valor": "lost desert",
-      "veces": 20,
+      "veces": 10,
       "en_biblioteca": 13,
-      "lift": 3.04
+      "lift": 2.99
     },
     {
       "valor": "proff",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 4,
-      "lift": 2.96
+      "lift": 2.92
     },
     {
       "valor": "analog trip",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 4,
-      "lift": 2.96
+      "lift": 2.92
     },
     {
       "valor": "rockka",
-      "veces": 26,
+      "veces": 13,
       "en_biblioteca": 20,
-      "lift": 2.57
+      "lift": 2.53
     },
     {
       "valor": "dowden",
-      "veces": 26,
+      "veces": 13,
       "en_biblioteca": 20,
-      "lift": 2.57
+      "lift": 2.53
     },
     {
       "valor": "kyotto",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 5,
-      "lift": 2.37
+      "lift": 2.34
     },
     {
       "valor": "chelakhov",
-      "veces": 8,
+      "veces": 4,
       "en_biblioteca": 7,
-      "lift": 2.26
+      "lift": 2.22
     },
     {
       "valor": "hermanez",
-      "veces": 10,
+      "veces": 5,
       "en_biblioteca": 9,
-      "lift": 2.19
+      "lift": 2.16
     },
     {
       "valor": "hraach",
-      "veces": 14,
+      "veces": 7,
       "en_biblioteca": 13,
-      "lift": 2.13
-    },
-    {
-      "valor": "ezequiel arias",
-      "veces": 34,
-      "en_biblioteca": 32,
       "lift": 2.1
     },
     {
-      "valor": "nicolas rada",
-      "veces": 22,
-      "en_biblioteca": 21,
+      "valor": "ezequiel arias",
+      "veces": 17,
+      "en_biblioteca": 32,
       "lift": 2.07
+    },
+    {
+      "valor": "nicolas rada",
+      "veces": 11,
+      "en_biblioteca": 21,
+      "lift": 2.04
     },
     {
       "valor": "rauschhaus",
-      "veces": 22,
+      "veces": 11,
       "en_biblioteca": 21,
-      "lift": 2.07
+      "lift": 2.04
     },
     {
       "valor": "hernan cattaneo",
-      "veces": 38,
+      "veces": 19,
       "en_biblioteca": 37,
-      "lift": 2.03
+      "lift": 2.0
     },
     {
-      "valor": "weird sounding dude",
-      "veces": 4,
-      "en_biblioteca": 4,
-      "lift": 1.97
+      "valor": "greta meier",
+      "veces": 8,
+      "en_biblioteca": 16,
+      "lift": 1.95
     }
   ],
   "sellos": [
     {
       "valor": "Cydana Sounds",
-      "veces": 18,
+      "veces": 9,
       "en_biblioteca": 5,
-      "lift": 6.43
+      "lift": 6.33
     },
     {
       "valor": "PURRFECTION",
-      "veces": 14,
+      "veces": 7,
       "en_biblioteca": 4,
-      "lift": 6.25
+      "lift": 6.15
     },
     {
       "valor": "Balkan Connection",
-      "veces": 20,
+      "veces": 10,
       "en_biblioteca": 7,
-      "lift": 5.1
+      "lift": 5.02
     },
     {
       "valor": "UV Noir",
-      "veces": 18,
+      "veces": 9,
       "en_biblioteca": 9,
-      "lift": 3.57
+      "lift": 3.51
     },
     {
       "valor": "Hoomidaas",
-      "veces": 24,
+      "veces": 12,
       "en_biblioteca": 12,
-      "lift": 3.57
+      "lift": 3.51
     },
     {
       "valor": "TRYBESof",
-      "veces": 14,
+      "veces": 7,
       "en_biblioteca": 8,
-      "lift": 3.12
+      "lift": 3.07
     },
     {
       "valor": "Replug",
-      "veces": 22,
+      "veces": 11,
       "en_biblioteca": 13,
-      "lift": 3.02
+      "lift": 2.97
     },
     {
       "valor": "Colorize (Enhanced)",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 4,
-      "lift": 2.68
+      "lift": 2.64
     },
     {
       "valor": "Sudbeat Music",
-      "veces": 66,
+      "veces": 35,
       "en_biblioteca": 49,
-      "lift": 2.41
+      "lift": 2.51
     },
     {
       "valor": "Melody Of the Soul",
-      "veces": 12,
+      "veces": 6,
       "en_biblioteca": 9,
-      "lift": 2.38
-    },
-    {
-      "valor": "All Day I Dream",
-      "veces": 42,
-      "en_biblioteca": 33,
-      "lift": 2.27
+      "lift": 2.34
     },
     {
       "valor": "Last Night On Earth",
-      "veces": 10,
-      "en_biblioteca": 8,
-      "lift": 2.23
+      "veces": 6,
+      "en_biblioteca": 9,
+      "lift": 2.34
+    },
+    {
+      "valor": "All Day I Dream",
+      "veces": 21,
+      "en_biblioteca": 35,
+      "lift": 2.11
     },
     {
       "valor": "tornn",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 5,
-      "lift": 2.14
+      "lift": 2.11
+    },
+    {
+      "valor": "Balkan Connection South America",
+      "veces": 3,
+      "en_biblioteca": 5,
+      "lift": 2.11
     },
     {
       "valor": "Mango Alley",
-      "veces": 90,
+      "veces": 45,
       "en_biblioteca": 81,
-      "lift": 1.98
+      "lift": 1.95
     },
     {
       "valor": "Sprout",
-      "veces": 10,
+      "veces": 5,
       "en_biblioteca": 10,
-      "lift": 1.79
+      "lift": 1.76
     },
     {
       "valor": "Freegrant Music",
-      "veces": 8,
-      "en_biblioteca": 8,
-      "lift": 1.79
-    },
-    {
-      "valor": "Plastic Fantastic Records",
       "veces": 4,
-      "en_biblioteca": 4,
-      "lift": 1.79
+      "en_biblioteca": 8,
+      "lift": 1.76
     },
     {
       "valor": "Systematic Recordings",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 6,
-      "lift": 1.79
+      "lift": 1.76
     },
     {
-      "valor": "SkyTop",
-      "veces": 4,
-      "en_biblioteca": 4,
-      "lift": 1.79
+      "valor": "Anjunadeep Explorations",
+      "veces": 3,
+      "en_biblioteca": 6,
+      "lift": 1.76
     },
     {
-      "valor": "Polyptych Noir",
-      "veces": 4,
-      "en_biblioteca": 4,
-      "lift": 1.79
+      "valor": "Moments",
+      "veces": 5,
+      "en_biblioteca": 11,
+      "lift": 1.6
     }
   ],
   "generos": [
     {
       "valor": "Prog-House",
-      "veces": 8,
-      "en_biblioteca": 7,
-      "lift": 2.06
-    },
-    {
-      "valor": "Dance / Pop",
       "veces": 4,
-      "en_biblioteca": 5,
-      "lift": 1.44
+      "en_biblioteca": 7,
+      "lift": 2.03
     },
     {
       "valor": "Progressive House",
-      "veces": 592,
+      "veces": 304,
       "en_biblioteca": 757,
-      "lift": 1.41
+      "lift": 1.43
     },
     {
       "valor": "Organic House",
-      "veces": 66,
+      "veces": 33,
       "en_biblioteca": 94,
-      "lift": 1.27
+      "lift": 1.25
     },
     {
       "valor": "Organic House / Downtempo",
-      "veces": 26,
-      "en_biblioteca": 40,
-      "lift": 1.17
+      "veces": 13,
+      "en_biblioteca": 43,
+      "lift": 1.07
     },
     {
       "valor": "Electronic",
-      "veces": 20,
+      "veces": 10,
       "en_biblioteca": 34,
-      "lift": 1.06
+      "lift": 1.04
     },
     {
       "valor": "Deep House",
-      "veces": 38,
+      "veces": 19,
       "en_biblioteca": 74,
-      "lift": 0.93
-    },
-    {
-      "valor": "Melodic House & Techno",
-      "veces": 144,
-      "en_biblioteca": 286,
       "lift": 0.91
     },
     {
-      "valor": "House",
-      "veces": 76,
-      "en_biblioteca": 154,
+      "valor": "Melodic House & Techno",
+      "veces": 72,
+      "en_biblioteca": 287,
       "lift": 0.89
     },
     {
+      "valor": "House",
+      "veces": 38,
+      "en_biblioteca": 154,
+      "lift": 0.88
+    },
+    {
       "valor": "Techno",
-      "veces": 10,
+      "veces": 5,
       "en_biblioteca": 42,
-      "lift": 0.43
+      "lift": 0.42
     },
     {
       "valor": "Afro House",
-      "veces": 6,
+      "veces": 3,
       "en_biblioteca": 90,
       "lift": 0.12
     }
@@ -425,14 +419,14 @@
     {
       "id": "241228611",
       "artist": "Marcelo Vasami",
-      "title": "Shades Of Blue (Original Mix) ",
+      "title": "Shades Of Blue (Original Mix)",
       "bpm": 122.0,
       "key": "7A",
       "energy": 6.7,
       "label": "Sudbeat Music",
       "genre": "Progressive House",
       "dur_min": 9.3,
-      "veces": 10
+      "veces": 5
     },
     {
       "id": "168103371",
@@ -444,7 +438,7 @@
       "label": "HIGHER STATES",
       "genre": "Progressive House",
       "dur_min": 7.5,
-      "veces": 10
+      "veces": 5
     },
     {
       "id": "225695184",
@@ -456,7 +450,7 @@
       "label": "PURRFECTION",
       "genre": "Progressive House",
       "dur_min": 7.5,
-      "veces": 10
+      "veces": 5
     },
     {
       "id": "160319896",
@@ -468,7 +462,7 @@
       "label": "Cydana Sounds",
       "genre": "Progressive House",
       "dur_min": 8.1,
-      "veces": 10
+      "veces": 5
     },
     {
       "id": "114323706",
@@ -480,7 +474,7 @@
       "label": "Anjunadeep",
       "genre": "Melodic House & Techno",
       "dur_min": 7.2,
-      "veces": 10
+      "veces": 5
     },
     {
       "id": "112197003",
@@ -492,7 +486,7 @@
       "label": "Meanwhile",
       "genre": "Progressive House",
       "dur_min": 7.5,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "172055969",
@@ -504,7 +498,7 @@
       "label": "UV Noir",
       "genre": "Progressive House",
       "dur_min": 8.0,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "249390073",
@@ -516,7 +510,7 @@
       "label": "Mango Alley",
       "genre": "Progressive House",
       "dur_min": 6.9,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "172301228",
@@ -528,7 +522,7 @@
       "label": "Mango Alley",
       "genre": "House",
       "dur_min": 7.9,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "216749089",
@@ -540,7 +534,7 @@
       "label": "UV",
       "genre": "Progressive House",
       "dur_min": 8.0,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "16579793",
@@ -552,7 +546,7 @@
       "label": "Cydana Sounds",
       "genre": "Progressive House",
       "dur_min": 6.9,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "192614193",
@@ -564,7 +558,7 @@
       "label": "Sudbeat Music",
       "genre": "Progressive House",
       "dur_min": 8.1,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "142983857",
@@ -576,7 +570,7 @@
       "label": "Anjunadeep",
       "genre": "Progressive House",
       "dur_min": 6.3,
-      "veces": 8
+      "veces": 4
     },
     {
       "id": "193106499",
@@ -588,7 +582,7 @@
       "label": "Freegrant Music",
       "genre": "House",
       "dur_min": 7.9,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "84753971",
@@ -600,19 +594,19 @@
       "label": "Transensations Records",
       "genre": "Progressive House",
       "dur_min": 6.9,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "108226592",
       "artist": "Dmitry Molosh",
-      "title": "Step by Step feat. Sasha Bartashevich (Original Dub Mix) ",
+      "title": "Step by Step feat. Sasha Bartashevich (Original Dub Mix)",
       "bpm": 121.0,
       "key": "3A",
       "energy": 5.1,
       "label": "Replug",
       "genre": "Progressive House",
       "dur_min": 7.4,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "206841769",
@@ -624,7 +618,7 @@
       "label": "Melody Of the Soul",
       "genre": "Organic House",
       "dur_min": 8.0,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "126025011",
@@ -636,19 +630,19 @@
       "label": "Balkan Connection",
       "genre": "Progressive House",
       "dur_min": 6.0,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "32664654",
       "artist": "Nicolas Rada",
-      "title": "Prana ",
+      "title": "Prana",
       "bpm": 119.0,
       "key": "4A",
       "energy": 4.6,
       "label": "Hoomidaas",
       "genre": "Melodic House & Techno",
       "dur_min": 9.3,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "41309264",
@@ -660,31 +654,31 @@
       "label": "Mango Alley",
       "genre": "Progressive House",
       "dur_min": 7.5,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "133677574",
       "artist": "Rockka",
-      "title": "Synthesis ",
+      "title": "Synthesis",
       "bpm": 123.0,
       "key": "10B",
       "energy": 5.9,
       "label": "Mango Alley",
       "genre": "Progressive House",
       "dur_min": 8.3,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "188863500",
       "artist": "Sasha",
-      "title": "Singularity (Fur Coat Remix) ",
+      "title": "Singularity (Fur Coat Remix)",
       "bpm": 125.0,
       "key": "8A",
       "energy": 6.8,
       "label": "Last Night On Earth",
       "genre": "Melodic House & Techno",
       "dur_min": 7.8,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "74328881",
@@ -696,7 +690,7 @@
       "label": "Sudbeat Music",
       "genre": "House",
       "dur_min": 7.6,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "5161822",
@@ -708,7 +702,7 @@
       "label": "Mango Alley",
       "genre": "Progressive House",
       "dur_min": 7.2,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "93586756",
@@ -720,7 +714,7 @@
       "label": "Balkan Connection",
       "genre": "Progressive House",
       "dur_min": 6.8,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "4138919",
@@ -732,19 +726,19 @@
       "label": "Proportion",
       "genre": "Progressive House",
       "dur_min": 9.4,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "52738760",
       "artist": "Roy Rosenfeld",
-      "title": "Kala ",
+      "title": "Kala",
       "bpm": 120.0,
       "key": "8A",
       "energy": 4.8,
       "label": "VOD",
       "genre": "Organic House",
       "dur_min": 8.6,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "259438685",
@@ -756,7 +750,7 @@
       "label": "Transensations Records",
       "genre": "Progressive House",
       "dur_min": 7.1,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "204313298",
@@ -768,7 +762,7 @@
       "label": "Lost & Found",
       "genre": "House",
       "dur_min": 8.8,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "29273403",
@@ -780,7 +774,7 @@
       "label": "Anjunadeep",
       "genre": "Electronic",
       "dur_min": 9.7,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "194116762",
@@ -792,7 +786,7 @@
       "label": "All Day I Dream",
       "genre": "Deep House",
       "dur_min": 9.6,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "162072169",
@@ -804,7 +798,7 @@
       "label": "Anjunadeep",
       "genre": "Melodic House & Techno",
       "dur_min": 7.0,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "132623275",
@@ -816,7 +810,7 @@
       "label": "Flashover Recordings",
       "genre": "Melodic House & Techno",
       "dur_min": 6.2,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "69857507",
@@ -828,7 +822,7 @@
       "label": "Anjunadeep",
       "genre": "Progressive House",
       "dur_min": 7.0,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "74712366",
@@ -840,7 +834,7 @@
       "label": "Anjunadeep",
       "genre": "Progressive House",
       "dur_min": 6.5,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "211760669",
@@ -852,7 +846,7 @@
       "label": "Balance Music",
       "genre": "Progressive House",
       "dur_min": 7.1,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "141311579",
@@ -864,7 +858,7 @@
       "label": "Mango Alley",
       "genre": "Progressive House",
       "dur_min": 7.9,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "234858019",
@@ -876,7 +870,7 @@
       "label": "Univack",
       "genre": "Progressive House",
       "dur_min": 7.4,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "139846182",
@@ -888,7 +882,7 @@
       "label": "Univack",
       "genre": "Organic House",
       "dur_min": 8.4,
-      "veces": 6
+      "veces": 3
     },
     {
       "id": "141998672",
@@ -900,7 +894,7 @@
       "label": "Bedrock",
       "genre": "House",
       "dur_min": 10.3,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "212560040",
@@ -912,19 +906,19 @@
       "label": "Lost & Found",
       "genre": "Progressive House",
       "dur_min": 8.6,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "106173077",
       "artist": "Kamilo Sanclemente, Sebastian Valencia (COL)",
-      "title": "Anomaly  (Original Mix)",
+      "title": "Anomaly (Original Mix)",
       "bpm": 123.0,
       "key": "8A",
       "energy": 5.2,
       "label": "Melody Of the Soul",
       "genre": "Progressive House",
       "dur_min": 7.4,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "43960039",
@@ -936,7 +930,7 @@
       "label": "keep my letters",
       "genre": "Progressive House",
       "dur_min": 7.4,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "77712466",
@@ -948,55 +942,55 @@
       "label": "Meanwhile",
       "genre": "Progressive House",
       "dur_min": 8.1,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "179697811",
       "artist": "Kaz James, Nick Morgan",
-      "title": "Dazed (Extended Mix) ",
+      "title": "Dazed (Extended Mix)",
       "bpm": 122.0,
       "key": "10A",
       "energy": 5.2,
       "label": "Saved Records",
       "genre": "Melodic House & Techno",
       "dur_min": 7.5,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "189060818",
       "artist": "Kamilo Sanclemente",
-      "title": "Delusion (Original Mix) ",
+      "title": "Delusion (Original Mix)",
       "bpm": 122.0,
       "key": "6A",
       "energy": 6.9,
       "label": "Univack",
       "genre": "Progressive House",
       "dur_min": 9.7,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "130441327",
       "artist": "Sébastien Léger",
-      "title": "Forbidden Garden (Tim Green Remix) ",
+      "title": "Forbidden Garden (Tim Green Remix)",
       "bpm": 122.0,
       "key": "8B",
       "energy": 6.7,
       "label": "Lost Miracle",
       "genre": "Melodic House & Techno",
       "dur_min": 9.0,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "207191527",
       "artist": "Armen Miran, Felix Raphael",
-      "title": "Ghost (Hernan Cattaneo & Marcelo Vasami Remix) ",
+      "title": "Ghost (Hernan Cattaneo & Marcelo Vasami Remix)",
       "bpm": 120.0,
       "key": "7A",
       "energy": 5.2,
       "label": "Hoomidaas",
       "genre": "Progressive House",
       "dur_min": 7.6,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "112359333",
@@ -1008,7 +1002,7 @@
       "label": "Sunexplosion",
       "genre": "Progressive House",
       "dur_min": 7.9,
-      "veces": 4
+      "veces": 2
     },
     {
       "id": "37090778",
@@ -1020,7 +1014,7 @@
       "label": "Massive Harmony Records",
       "genre": "Progressive House",
       "dur_min": 7.7,
-      "veces": 4
+      "veces": 2
     }
   ]
 }

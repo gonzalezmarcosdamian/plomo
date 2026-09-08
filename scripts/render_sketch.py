@@ -86,19 +86,19 @@ AIRE_SAMPLES_DB = 0.0
 # y el drop llega hasta el final, no hay seccion de salida. Los bloques fijos
 # obligaban a inventar una meseta y una salida que el corpus no tiene.
 ARREGLO = [
-    {"nombre": "aire",      "hasta": 0.14, "corte": (420, 700),   "duck": 0.40,
+    {"nombre": "aire",      "hasta": 0.14, "corte": (420, 700),   "duck": 0.32,
      "g": {"bateria": 0.45, "bajo": 0.0, "acordes": 0.25, "arpegio": 0.0, "melodia": 0.0}},
-    {"nombre": "pulso",     "hasta": 0.30, "corte": (700, 1150),   "duck": 0.60,
+    {"nombre": "pulso",     "hasta": 0.30, "corte": (700, 1150),   "duck": 0.46,
      "g": {"bateria": 0.70, "bajo": 0.65, "acordes": 0.40, "arpegio": 0.0, "melodia": 0.0}},
-    {"nombre": "groove",    "hasta": 0.44, "corte": (1150, 1900),  "duck": 0.72,
+    {"nombre": "groove",    "hasta": 0.44, "corte": (1150, 1900),  "duck": 0.55,
      "g": {"bateria": 0.88, "bajo": 0.90, "acordes": 0.68, "arpegio": 0.34, "melodia": 0.0}},
-    {"nombre": "build",     "hasta": 0.52, "corte": (1900, 3400), "duck": 0.78,
+    {"nombre": "build",     "hasta": 0.52, "corte": (1900, 3400), "duck": 0.60,
      "g": {"bateria": 0.95, "bajo": 0.98, "acordes": 0.92, "arpegio": 0.95, "melodia": 0.39}},
     {"nombre": "breakdown", "hasta": 0.63, "corte": (3000, 1900), "duck": 0.0,
      "g": {"bateria": 0.0, "bajo": 0.0, "acordes": 1.0, "arpegio": 0.27, "melodia": 1.34}},
-    {"nombre": "drop",      "hasta": 0.82, "corte": (2400, 3200), "duck": 0.82,
+    {"nombre": "drop",      "hasta": 0.82, "corte": (2400, 3200), "duck": 0.64,
      "g": {"bateria": 1.20, "bajo": 1.18, "acordes": 1.05, "arpegio": 1.22, "melodia": 1.48}},
-    {"nombre": "drop pleno", "hasta": 1.00, "corte": (3200, 2600), "duck": 0.80,
+    {"nombre": "drop pleno", "hasta": 1.00, "corte": (3200, 2600), "duck": 0.62,
      "g": {"bateria": 1.15, "bajo": 1.12, "acordes": 1.0, "arpegio": 1.16, "melodia": 1.2}},
 ]
 
@@ -143,7 +143,7 @@ def _aditivo(f: float, n: int, armonicos: int, caida: float) -> np.ndarray:
 def voz_pad(f: float, dur: float, vel: int) -> np.ndarray:
     n = int(dur * SR)
     y = sum(_aditivo(f * c, n, 10, 1.1) for c in (0.9965, 1.0, 1.0035)) / 3
-    return y * _env(n, 0.35, 0.6, 0.75, 0.9) * (vel / 127) * 0.17
+    return y * _env(n, 0.30, 0.7, 0.80, 1.6) * (vel / 127) * 0.17
 
 
 def voz_bajo(f: float, dur: float, vel: int) -> np.ndarray:
@@ -155,7 +155,7 @@ def voz_bajo(f: float, dur: float, vel: int) -> np.ndarray:
     y = (np.sin(2 * np.pi * f * t)
          + 0.62 * np.sin(2 * np.pi * f * 2 * t)
          + 0.18 * np.sin(2 * np.pi * f * 3 * t))
-    return y * np.exp(-t / 0.105) * _env(n, 0.003, 0.015, 1.0, 0.025) * (vel / 127) * 0.80
+    return y * np.exp(-t / 0.165) * _env(n, 0.004, 0.02, 1.0, 0.05) * (vel / 127) * 0.80
 
 
 def voz_pluck(f: float, dur: float, vel: int) -> np.ndarray:
@@ -224,12 +224,12 @@ def golpe_hat(abierto: bool) -> np.ndarray:
     tau = 0.065 if abierto else 0.014
     n = int((0.28 if abierto else 0.07) * SR)
     t = np.arange(n) / SR
-    banda = _ruido_banda(n, 5000 if abierto else 6800, 16000)
+    banda = _ruido_banda(n, 5000 if abierto else 6800, 12500)
     metal = sum(np.sin(2 * np.pi * f * t) for f in (6100, 8400, 10900)) / 3
     y = (banda * 0.82 + metal * 0.18) * np.exp(-t / tau)
     entrada = int(0.0015 * SR)
     y[:entrada] *= np.linspace(0, 1, entrada)
-    return y * (0.125 if abierto else 0.082)
+    return y * (0.070 if abierto else 0.042)
 
 
 def golpe_shaker() -> np.ndarray:
@@ -240,10 +240,10 @@ def golpe_shaker() -> np.ndarray:
     """
     n = int(0.05 * SR)
     t = np.arange(n) / SR
-    y = _ruido_banda(n, 6000, 16000, 17) * np.exp(-t / 0.010)
+    y = _ruido_banda(n, 6000, 12500, 17) * np.exp(-t / 0.010)
     entrada = int(0.002 * SR)
     y[:entrada] *= np.linspace(0, 1, entrada)
-    return y * 0.068
+    return y * 0.030
 
 
 def golpe_ride() -> np.ndarray:
@@ -252,7 +252,7 @@ def golpe_ride() -> np.ndarray:
     n = int(0.5 * SR)
     t = np.arange(n) / SR
     metal = sum(np.sin(2 * np.pi * f * t) for f in (3100, 4300, 5700, 7300)) / 4
-    return (metal * 0.4 + _ruido(n, 11) * 0.6) * np.exp(-t / 0.13) * 0.13
+    return (metal * 0.4 + _ruido(n, 11) * 0.6) * np.exp(-t / 0.13) * 0.075
 
 
 # -- automatizacion ---------------------------------------------------------
@@ -430,7 +430,12 @@ def capa_aire(largo: int, seg_por_pulso: float) -> np.ndarray:
     retrasado = np.roll(base, int(0.006 * SR))
     izq = base * resp
     der = (0.55 * base + 0.45 * retrasado) * resp
-    return np.vstack([izq, der]) * 0.055
+    # 0.012 y no 0.055. La habia subido para que la banda de aire llegara al
+    # 4.4% de la referencia; el resultado medía bien y sonaba a ruido. La
+    # referencia tiene aire de colas de reverb y de platillos, no de una cama de
+    # ruido constante: llenar la banda correcta con el material equivocado da el
+    # numero y no da el sonido.
+    return np.vstack([izq, der]) * 0.012
 
 
 def _riser(largo: int, fin_muestra: int, dur_seg: float) -> np.ndarray:
@@ -443,7 +448,7 @@ def _riser(largo: int, fin_muestra: int, dur_seg: float) -> np.ndarray:
     t = np.linspace(0, 1, n)
     crudo = _ruido(n, 23)
     filtrado = _lowpass_variable(np.vstack([crudo, crudo]), 400 + 6000 * t ** 2)
-    filtrado *= (t ** 2.2) * 0.16
+    filtrado *= (t ** 2.2) * 0.085
     buf = np.zeros((2, largo))
     buf[:, i:i + n] = filtrado
     return buf
@@ -557,7 +562,7 @@ def _render_bateria(notas, largo: int, seg_por_pulso: float,
     return buf, kicks
 
 
-def _sidechain(largo: int, kicks: list[int], tau: float = 0.13) -> np.ndarray:
+def _sidechain(largo: int, kicks: list[int], tau: float = 0.21) -> np.ndarray:
     """Ducking contra el kick a profundidad 1. Se escala despues por tramo.
 
     Es lo que hace respirar a un progressive: sin esto el pad tapa el bombo y
@@ -711,8 +716,8 @@ def main() -> None:
 
     cadenas = {
         "acordes": Pedalboard([Chorus(rate_hz=0.35, depth=0.6, mix=0.6),
-                               Reverb(room_size=0.78, damping=0.55, wet_level=0.26,
-                                      dry_level=0.84, width=1.0)]),
+                               Reverb(room_size=0.86, damping=0.42, wet_level=0.34,
+                                      dry_level=0.80, width=1.0)]),
         "bajo": Pedalboard([LowpassFilter(420)]),
         "arpegio": Pedalboard([HighpassFilter(320),
                                Delay(delay_seconds=seg_por_pulso * 0.75,
@@ -745,7 +750,7 @@ def main() -> None:
         if nombre != "bateria":
             audio *= duck
         mezcla += audio * _curva(largo, [t["g"][nombre] for t in tramos], bordes,
-                                 rampa_seg=0.7)
+                                 rampa_seg=1.6)
 
     # la cama de aire sigue el arreglo: entra con el groove y abre en el drop
     aire = capa_aire(largo, seg_por_pulso) * duck
@@ -770,6 +775,8 @@ def main() -> None:
     # falta. Cuando cambia la fuente del sonido hay que revisar los parches que
     # se le habian hecho a la fuente vieja.
     realce_aire = AIRE_SINTESIS_DB if args.samples is None else AIRE_SAMPLES_DB
+    # El shelf de aire tambien salio: existia para tapar el mismo agujero y lo
+    # unico que hacia era levantar el ruido que ya sobraba.
     mezcla = Pedalboard([HighShelfFilter(cutoff_frequency_hz=8500,
                                          gain_db=realce_aire),
                          Compressor(threshold_db=-3, ratio=1.15,

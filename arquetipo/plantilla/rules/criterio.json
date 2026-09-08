@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "_formato": "Cada regla lleva valor, porque y evidencia. El codigo lee de aca; nadie hardcodea un numero. Una regla sin evidencia se marca PENDIENTE y se sabe que esta sin medir.",
+  "ejemplo": {
+    "umbral_algo": {
+      "valor": 0.75,
+      "porque": "Por debajo de esto el resultado deja de ser util para X.",
+      "evidencia": "PENDIENTE: medir sobre el corpus de control.",
+      "dura": false
+    }
+  }
+}

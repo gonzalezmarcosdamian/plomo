@@ -101,3 +101,20 @@ la viole y funcione igual. Por eso `data/setlists/` (cargado con
 mueven (así no se rompe ningún path de Rekordbox); la forma de navegar la
 colección vive en `C:\Users\gonza\Music\Vistas`, un árbol de hardlinks que genera
 `scripts/build_views.py` y que se borra y regenera sin consecuencias.
+
+---
+
+## Bitacora y aprendizajes (2026-09-08)
+
+Dos archivos distintos, y confundirlos los arruina a los dos:
+
+- `docs/BITACORA.md` — que se hizo, por fecha, lo nuevo arriba. No se edita lo
+  viejo: si algo resulto estar mal, se corrige en una entrada nueva.
+- `docs/APRENDIZAJES.md` — la leccion durable, sin la anecdota, con que paso,
+  por que y como se aplica.
+
+Para saber en cual va: si dentro de seis meses, en otro proyecto, la seguirias
+aplicando, es aprendizaje. Si solo explica una fecha, es bitacora.
+
+`arquetipo/` tiene el metodo empaquetado para arrancar otro proyecto con esta
+forma de trabajo: `python arquetipo/nuevo_proyecto.py <destino> --nombre X`.
