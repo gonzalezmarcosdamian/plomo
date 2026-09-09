@@ -272,3 +272,58 @@ describe. Si ese mundo quedó atrás, la confianza es el problema.
 mencionan. Y que cada definición declare tres cosas: sus herramientas con el
 comando exacto, sus reglas de operación **con el error que las originó**, y sus
 límites — qué no puede hacer y qué no prueba lo que mide.
+
+## El contraste no se hace restando
+
+**Que paso.** El cierre eran dieciseis compases con una unica pista tocando. Se
+probo con guitarra, sono mal; se cambio el instrumento, siguio sonando mal. La
+primera correccion fue hacer que el final soltara una capa cada cuatro compases
+en vez de todas juntas — y tambien estaba mal, por el mismo motivo de fondo.
+
+Medido el arreglo entero compas por compas aparecio el cuadro real: del 17 al 60
+el tema tenia SIEMPRE cuatro capas y un peso entre 1800 y 2500. Cuarenta y
+cuatro compases sin que entre ni salga nada. El climax abria en 2328 cuando el
+compas 16 ya estaba en 2065, o sea que el drop era 1.7 veces la intro. Y habia
+un pozo de 218 en los compases 61-62 —una sola capa— puesto ahi a proposito
+"para que el drop pegue".
+
+**Por que.** Tres errores que son el mismo. El pozo antes del drop: vaciar
+funciona cuando lo que se vacia estaba lleno, y en una planicie un agujero no se
+escucha como tension sino como que se corto la luz. El cambio de capa en el
+peak: se callaba el gancho para que entrara el arpegio, y el oido no escucha
+"entro algo", escucha "se fue la melodia". Y el final que suelta: dedicar
+dieciseis compases a desarmar lo que costo treinta y dos construir.
+
+Un tema no crece porque las capas que ya estan toquen mas fuerte. Crece porque
+ENTRA algo que antes no estaba.
+
+**Como se aplica.** Contar capas activas por compas de punta a punta antes de
+tocar cualquier otra cosa. La cuenta tiene que subir y no bajar nunca: 3, 5, 6,
+6, 9, 9, 10. Si una seccion "nueva" tiene la misma cuenta que la anterior, no es
+una seccion. Si algo entra y otra cosa se va en el mismo compas, eso es un
+cambio de capa y no una suma, y en el drop es el error mas caro que hay.
+
+Ojo tambien con el peso medido como suma de velocidades: un redoble de veinte
+golpes flojos infla el numero sin sonar mas fuerte. Pesar la velocidad al
+cuadrado, que castiga el adorno y premia el golpe, ordena distinto y ordena
+mejor.
+
+## Una capa sola no es una seccion
+
+**Que paso.** El cierre eran dieciseis compases con una unica pista tocando. Se
+probo con guitarra y sono mal, se cambio el instrumento y siguio sonando mal. El
+problema nunca fue el timbre: era que despues de tres minutos con seis capas,
+sacar cinco de golpe no se escucha como un final sino como que se corto algo. El
+mismo error, invertido, estaba en el climax: se callaba el gancho cuando entraba
+el arpegio, dejando la capa nueva sola justo en el peak.
+
+**Por que.** Una seccion se define por su DENSIDAD RELATIVA a la anterior, no
+por su material. Cambiar el instrumento de una capa solitaria no cambia que este
+sola. Y un drop no es una capa nueva: es que este todo.
+
+**Como se aplica.** Antes de cambiar el sonido de algo que no gusta, contar
+cuantas capas suenan ahi. Si es una, el sonido no es el problema.
+
+(Corregido: la primera version de esta entrada terminaba diciendo que un final
+baja soltando una capa cada cuatro compases. Es falso, y esta desarrollado en
+"El contraste no se hace restando", arriba.)

@@ -62,6 +62,76 @@ class Pista:
         for a in alturas:
             self.nota(compas, pulso, a, duracion, velocidad)
 
+    # -- pitch bend --------------------------------------------------------
+    # Sin bend una guitarra no es una guitarra. El bend, el vibrato y el slide
+    # son tres cosas distintas y las tres son lo mismo por abajo: la altura se
+    # mueve de forma continua mientras la nota suena. Un MIDI sin eso da notas
+    # correctas que suenan a teclado, por bien tocadas que esten.
+    #
+    # El rango por defecto de un sintetizador es +-2 semitonos, y el mensaje va
+    # de 0 a 16383 con 8192 en el centro.
+    RANGO_BEND = 2.0
+
+    def _bend_crudo(self, tick: int, semitonos: float) -> None:
+        v = int(round(8192 + 8191 * max(-1.0, min(1.0, semitonos / self.RANGO_BEND))))
+        v = max(0, min(16383, v))
+        self._eventos.append(_Evento(tick, 2, bytes([0xE0 | self.canal,
+                                                     v & 0x7F, (v >> 7) & 0x7F])))
+
+    def bend(self, compas: float, pulso: float, duracion: float,
+             desde: float, hasta: float, pasos: int = 24,
+             curva: float = 1.0) -> None:
+        """Mueve la altura de `desde` a `hasta` semitonos a lo largo de `duracion`.
+
+        `curva` mayor que 1 hace que el bend llegue tarde, que es como se toca de
+        verdad: la mano empuja la cuerda y la altura sube despacio al principio y
+        rapido al final. Un bend lineal suena a pitch shifter.
+
+        Al terminar vuelve a cero, si no la nota siguiente sale desafinada.
+        """
+        ini = self._tick(compas, pulso)
+        largo = max(int(duracion * TICKS_POR_NEGRA), 1)
+        for k in range(pasos + 1):
+            avance = (k / pasos) ** curva
+            self._bend_crudo(ini + int(largo * k / pasos),
+                             desde + (hasta - desde) * avance)
+        self._bend_crudo(ini + largo, 0.0)
+
+    def vibrato(self, compas: float, pulso: float, duracion: float,
+                ancho: float = 0.35, hz: float = 5.5, retraso: float = 0.4,
+                desvanece: float = 0.0) -> None:
+        """Vibrato sobre una nota sostenida.
+
+        `retraso` es la fraccion de la nota que suena recta antes de que empiece.
+        Un vibrato desde el ataque suena a organo; el de una guitarra entra
+        cuando la nota ya se planto, y ademas crece.
+
+        `desvanece` es la fraccion final en la que el ancho vuelve a cero. Con 0
+        el vibrato crece hasta el ultimo tick, que es lo que se quiere en una
+        nota que se corta arriba. Una nota que se APAGA hace lo otro: la mano
+        afloja antes de que la cuerda termine, y el vibrato se cierra solo. Sin
+        esto una nota de doce pulsos vibra igual de fuerte al final que al
+        principio, que es de sintetizador y no de amplificador.
+        """
+        ini = self._tick(compas, pulso)
+        largo = max(int(duracion * TICKS_POR_NEGRA), 1)
+        segundos = duracion * 60.0 / self.bpm
+        pasos = max(8, int(segundos * hz * 8))
+        pico = 1.0 - max(0.0, min(0.95, desvanece))
+        import math
+        for k in range(pasos + 1):
+            f = k / pasos
+            if f < retraso:
+                self._bend_crudo(ini + int(largo * f), 0.0)
+                continue
+            if f <= pico:
+                sobre = (f - retraso) / max(1e-6, pico - retraso)
+            else:
+                sobre = (1.0 - f) / max(1e-6, 1.0 - pico)
+            self._bend_crudo(ini + int(largo * f),
+                             ancho * sobre * math.sin(2 * math.pi * hz * segundos * f))
+        self._bend_crudo(ini + largo, 0.0)
+
     def _cuerpo(self) -> bytes:
         meta = b""
         nombre = self.nombre.encode("utf-8")[:127]

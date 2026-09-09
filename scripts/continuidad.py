@@ -67,6 +67,38 @@ def continuidad_midi(archivo: Path, resolucion: int = 16) -> tuple[float, float,
     return float(ocupado.mean()), statistics.median(n[1] for n in notas), len(notas)
 
 
+def solapes_y_huecos(archivo: Path) -> tuple[int, int]:
+    """Cuantas veces una altura se re-ataca sonando, y cuantos huecos deja.
+
+    Existe porque la herramienta TENIA el dato y no avisaba. Reportaba 6% de
+    cobertura y 0.90 pulsos de duracion mediana en una capa sostenida desde
+    hacia rato, y la unica alarma miraba si la duracion bajaba de 0.25 — 0.90
+    pasaba el filtro.
+
+    Lo que fallaba era invisible para esa alarma: escribir la misma altura
+    solapada NO la sostiene. En MIDI el stream queda `on, on, off, off` y el
+    primer note-off apaga la nota; el resto quedan huerfanos. Una capa que se
+    creia sostenida sonaba el 41% del tiempo.
+    """
+    _, _, notas = leer(archivo)
+    por_altura: dict[int, list[tuple[float, float]]] = {}
+    for inicio, dur, altura, _ in notas:
+        por_altura.setdefault(altura, []).append((inicio, inicio + dur))
+    solapes = 0
+    for tramos in por_altura.values():
+        tramos.sort()
+        solapes += sum(1 for a, b in zip(tramos, tramos[1:]) if b[0] < a[1] - 1e-6)
+    if not notas:
+        return solapes, 0
+    tramos = sorted((n[0], n[0] + n[1]) for n in notas)
+    huecos, fin = 0, tramos[0][1]
+    for a, b in tramos[1:]:
+        if a > fin + 1e-6:
+            huecos += 1
+        fin = max(fin, b)
+    return solapes, huecos
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--midi", type=Path, help="carpeta con los .mid propios")
@@ -111,8 +143,17 @@ def main() -> None:
             # y da 13% sin estar cortado— asi que marcarla avisaba mal. Lo que
             # se escucha como staccato es la nota corta, y eso no depende de en
             # cuantas secciones toque la capa.
-            aviso = ("   (percusiva: el largo no cambia nada)" if capa in PERCUSIVAS
-                     else "   <- staccato" if dur < 0.25 else "")
+            solapes, huecos = solapes_y_huecos(f)
+            if capa in PERCUSIVAS:
+                aviso = "   (percusiva: el largo no cambia nada)"
+            elif solapes:
+                aviso = f"   <- {solapes} RE-ATAQUES sobre nota sonando"
+            elif dur < 0.25:
+                aviso = "   <- staccato"
+            elif cobertura > 0.9 and huecos:
+                aviso = f"   <- {huecos} huecos"
+            else:
+                aviso = ""
             print(f"  {capa:<12} {cobertura:8.0%} {dur:11.2f}p {n:7d}{aviso}")
         print("\n  (una nota de 0.25 pulsos es una semicorchea: por debajo de eso"
               "\n   todo suena a staccato por mas que las notas esten bien puestas)")

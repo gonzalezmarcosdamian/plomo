@@ -9,6 +9,111 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-09 — version 1 del tema, de 112 a 240 compases
+
+**Que se hizo**
+
+Se paso de un loop largo a un tema con forma. El disparador fueron dos frases
+del DJ: *"hace que explote, que sumen cosas, no restes"* y despues *"dale
+continuidad al tema con estructura que corresponda para un tema terminado"*.
+
+Medido compas por compas, el arreglo de 112 compases tenia tres problemas y los
+tres eran el mismo: del 17 al 60 habia SIEMPRE cuatro capas y el mismo peso —un
+tercio del tema sin que entrara ni saliera nada—; en el 61-62 habia un pozo de
+218 puesto a proposito "para que el drop pegue"; y en el climax el gancho se
+callaba para dejarle lugar al arpegio, que no es sumar una capa sino cambiarla.
+El drop era 1.7 veces la intro.
+
+Se sumaron seis capas que no existian: `Sub` (fundamental sostenida), `Anchos`
+(golpes de acorde dos octavas arriba, en las corcheas que los acordes dejan
+libres), `Repiques` (segunda mano de percusion), `Splash` (cimbal 808 en pista
+propia — el crash del 909 es una muestra de bronce y en un tema sintetico se
+escucha como que entro un baterista), `Reversa` (el barrido que desemboca en el
+golpe) y `Lead` (la figura dulce arriba de todo, solo en el segundo drop).
+
+El pozo del 61-64 paso a ser un redoble que ACUMULA: sigue sonando todo y encima
+entran golpes cada vez mas juntos, con el shaker cerrandose a semicorcheas.
+
+**La forma, y de donde salieron los numeros**
+
+Se escribio `scripts/estructura.py`, que faltaba: el proyecto sabia medir groove
+sobre ocho compases y no sabia medir la FORMA de un tema entero. Clasifica cada
+compas en BAJADA / GROOVE / TEMA / DROP con tres bandas y umbrales sacados del
+propio tema, no absolutos.
+
+Medidos Minicube, Go (HANA + Eze Arias) y Cryo: 7.2, 7.5 y 8.1 minutos; intro de
+DJ de 16 a 32 compases; una bajada grande de 28 a 56 pasada la mitad; salida de
+DJ de 24 a 32. De ahi salieron los 240 compases (7:48) y las nueve partes de
+`FORMA` en `idea.py`.
+
+`scripts/montar.py` pone las nueve carpetas en el arreglo. Lo primero que hace
+es borrar el arreglo de cada pista con un clip vacio del largo del tema, porque
+`duplicate_clip_to_arrangement` reemplaza lo que pisa pero no lo que no pisa: un
+clip de la version anterior en un compas que la nueva no usa sobrevive y suena.
+
+**Como quedo**
+
+    compases    parte        impacto  capas
+       1-32     intro            378    3
+      33-64     tema             899    6
+      65-80     subida1         1084  6-7
+      81-112    drop1           1816  9-10
+     113-144    bajada           246    6
+     145-160    subida2         1233  6-7
+     161-192    drop2           2147  10-11
+     193-208    salida          2126  10-11
+     209-240    salida_dj        577    4
+
+El pico cae en el compas 168, adentro del segundo drop. El segundo drop mide
+1.18 veces el primero: antes median 2097 y 2099, identicos al 0.1%, y dos drops
+iguales no son dos drops.
+
+**La auditoria, y los tres arreglos que salio**
+
+`escuchar.py` sobre las nueve partes encontro un ALTO y dos MEDIO reales:
+
+*El filtro de peine en las dos subidas.* Trece racimos de clap y shaker a menos
+de 10 ms por seccion — el defecto que ya habia causado la queja "arenoso y a
+destiempo". La causa: el redoble escribia un SEGUNDO shaker de dieciseis
+semicorcheas encima del que el patron base ya tocaba, con otro perfil de
+humanizacion. Dos capas en la misma grilla con distinto perfil es una capa
+peleandose consigo misma. Se borro el duplicado y el shaker que ya estaba
+aprieta subiendo de velocidad; los golpes del redoble pasaron al perfil
+"percusion" para caer exactamente encima del shaker en vez de a unos ms.
+
+*Los golpes anchos cubrian el 22% del tiempo* contra el 71-84% de las
+referencias. Se estiraron a 1.30 pulsos y en el climax pasaron a los cuatro
+contratiempos en vez de dos, que es lo que significa que un acorde se abra.
+
+*Y ahi el instrumento encontro un bug que la medicion sola no veia:* con cuatro
+golpes por compas y 1.05 de duracion, cada acorde se solapaba con el siguiente
+en la MISMA altura. En MIDI eso no sostiene, apaga — la nota real duraba 0.05
+pulsos. Es la tercera vez que aparece este error en el proyecto, y la primera
+que lo encuentra una herramienta en vez de un oido. Se bajo a 0.92, que es menos
+que el hueco de 1.0 entre ataque y ataque.
+
+Tambien se corrigio el instrumento: avisaba "puede sonar cortado" del platillo y
+del barrido, que suenan una vez cada ocho compases POR DISENIO. Un instrumento
+que avisa de lo que esta bien entrena a ignorarlo. Ahora exime a las capas de
+menos de un golpe cada dos compases, por forma y no por una lista de nombres.
+
+Quedan seis partes limpias de nueve. Las tres restantes —los dos drops y la
+salida— avisan "en el limite de lo denso": 25.9 notas por compas contra 17.7
+medido. Se deja como esta y anotado: la bateria da 18.8 por compas contra ~14 de
+la referencia y el bajo 8.1 contra ~4, pero es material medido de Vuarambon y
+del propio arreglo, y bajarlo es una decision del DJ y no del que mide.
+
+**Lo que quedo pendiente**
+
+No se exporto audio. El tema vive en el set de Live y en
+`postproduction/bocetos/v1/`; para tener un archivo hay que renderizar a mano,
+porque no hay handler de export en AbletonOSC.
+
+La mezcla no se toco: los volumenes de las diecisiete pistas son los que
+quedaron de cargarlas una por una, no una mezcla hecha.
+
+---
+
 ## 2026-09-08 (tarde) — de medir a componer
 
 **Qué se hizo**

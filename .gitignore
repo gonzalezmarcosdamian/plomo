@@ -47,7 +47,28 @@ masterPlaylists6.xml.backup-*
 *.mkv
 
 # Postproduction output (personal)
-postproduction/
+postproduction/*
+# ...menos el MIDI de las VERSIONES terminadas. `postproduction/` se ignora por
+# el audio renderizado, que pesa; el MIDI de un tema entero son 258 KB y ES el
+# tema. Sin esto lo unico que queda en el repo es el generador, y un generador
+# sin su salida no permite volver atras: cualquier cambio en `idea.py` reescribe
+# el tema y la version anterior no existe en ningun lado.
+#
+# La excepcion es SOLO `v1`, `v2`, ... y no `bocetos/` entero, y el motivo no es
+# el peso. Las carpetas `repiques_*` y `comparacion_*` son transcripciones a MIDI
+# de temas comerciales concretos: material de referencia para producir, igual que
+# los samples de `data/samples/`, y no cosa que se versiona ni se publica.
+#
+# Ojo con la primera linea: dice `postproduction/*` y no `postproduction/`, y la
+# diferencia no es cosmetica. Git no vuelve a entrar en una carpeta excluida, asi
+# que con `postproduction/` los `!` de abajo no se leen nunca — el sintoma es un
+# .gitignore que parece correcto y no hace nada. Excluyendo el CONTENIDO la
+# carpeta sigue visible y las excepciones funcionan. Y hay que des-excluir cada
+# nivel antes que los archivos: por eso son cuatro lineas y no una.
+!postproduction/bocetos/
+postproduction/bocetos/*
+!postproduction/bocetos/v[0-9]*/
+!postproduction/bocetos/v[0-9]*/**
 
 # Logs & state files
 logs/

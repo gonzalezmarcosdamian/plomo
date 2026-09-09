@@ -1,0 +1,311 @@
+[
+  {
+    "archivo": "Guy Mantzur & Sahar Z - Small Heart Attack (Guy J mix) [Lost & Found]",
+    "descartado": "bombo 7.1/compas, enganche 44%"
+  },
+  {
+    "archivo": "Brian Cid - Habitat [Lost&Found]",
+    "descartado": "bombo 4.4/compas, enganche 36%"
+  },
+  {
+    "archivo": "Khen & Freedom Fighters - Levantine [Lost & Found]",
+    "descartado": "bombo 5.0/compas, enganche 47%"
+  },
+  {
+    "archivo": "Eitan Reiter - Fade Away (Guy J Remix) [Lost & Found]",
+    "bpm": 124.9,
+    "desde_s": 127,
+    "tonica": "G",
+    "grados": [
+      "i",
+      "i",
+      "i",
+      "i",
+      "i",
+      "i",
+      "i",
+      "i"
+    ],
+    "progresion": "i",
+    "bajo_compases": [
+      [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        14,
+        15
+      ],
+      [
+        2,
+        4,
+        6,
+        10,
+        15
+      ],
+      [
+        2,
+        4,
+        5,
+        6,
+        8,
+        10,
+        14
+      ],
+      [
+        2,
+        4,
+        6,
+        10,
+        15
+      ],
+      [
+        2,
+        4,
+        6,
+        8,
+        10,
+        14
+      ],
+      [
+        2,
+        4,
+        6,
+        10,
+        15
+      ],
+      [
+        2,
+        4,
+        6,
+        8,
+        10,
+        15
+      ],
+      [
+        2,
+        4,
+        6,
+        10,
+        15
+      ]
+    ],
+    "bajo_anclas": [
+      2,
+      4,
+      6,
+      10
+    ],
+    "bajo_variables": [
+      0,
+      5,
+      8,
+      14,
+      15
+    ],
+    "bajo_notas_x_compas": 5.88,
+    "bajo_sobre_bombo": 0.28,
+    "centroide": 2366,
+    "rolloff85": 5179,
+    "planitud": 0.0104,
+    "cont_armonia": 1.0,
+    "cont_bajo": 0.97
+  },
+  {
+    "archivo": "Guy J - Airborne (Original Mix) [Lost & Found]",
+    "bpm": 122.9,
+    "desde_s": 267,
+    "tonica": "F#",
+    "grados": [
+      "i",
+      "i",
+      "VI",
+      "III",
+      "i",
+      "i",
+      "i",
+      "VI"
+    ],
+    "progresion": "i VI III",
+    "bajo_compases": [
+      [
+        0,
+        2,
+        4,
+        7,
+        8,
+        10,
+        12,
+        15
+      ],
+      [
+        0,
+        1,
+        4,
+        10,
+        12,
+        15
+      ],
+      [
+        0,
+        1,
+        4,
+        7,
+        8,
+        10,
+        12,
+        15
+      ],
+      [
+        2,
+        4,
+        7,
+        8,
+        10,
+        12,
+        15
+      ],
+      [
+        0,
+        1,
+        4,
+        7,
+        8,
+        10,
+        12,
+        15
+      ],
+      [
+        0,
+        2,
+        4,
+        7,
+        8,
+        10,
+        12,
+        13,
+        15
+      ],
+      [
+        0,
+        2,
+        4,
+        7,
+        8,
+        10,
+        12,
+        15
+      ],
+      [
+        0,
+        1,
+        4,
+        7,
+        8,
+        10,
+        12,
+        15
+      ]
+    ],
+    "bajo_anclas": [
+      0,
+      4,
+      7,
+      8,
+      10,
+      12,
+      15
+    ],
+    "bajo_variables": [
+      1,
+      2,
+      13
+    ],
+    "bajo_notas_x_compas": 7.75,
+    "bajo_sobre_bombo": 0.48,
+    "centroide": 1184,
+    "rolloff85": 2239,
+    "planitud": 0.0013,
+    "cont_armonia": 1.0,
+    "cont_bajo": 0.73
+  },
+  {
+    "archivo": "Guy J - Catfish (Jonas Saalbach Remix) [Lost & Found]",
+    "bpm": 124.1,
+    "desde_s": 106,
+    "tonica": "C",
+    "grados": [
+      "i",
+      "i",
+      "i",
+      "i",
+      "v",
+      "i",
+      "i",
+      "i"
+    ],
+    "progresion": "i v",
+    "bajo_compases": [
+      [
+        0,
+        10
+      ],
+      [],
+      [
+        13
+      ],
+      [
+        5,
+        6,
+        8,
+        9
+      ],
+      [
+        0,
+        3,
+        4,
+        5,
+        14
+      ],
+      [
+        8,
+        11,
+        12,
+        13
+      ],
+      [
+        8
+      ],
+      [
+        0,
+        1,
+        3
+      ]
+    ],
+    "bajo_anclas": [],
+    "bajo_variables": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "bajo_notas_x_compas": 2.5,
+    "bajo_sobre_bombo": 0.4,
+    "centroide": 1265,
+    "rolloff85": 2137,
+    "planitud": 0.0014,
+    "cont_armonia": 1.0,
+    "cont_bajo": 0.63
+  }
+]

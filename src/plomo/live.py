@@ -45,6 +45,7 @@ TIMEOUT = 3.0
 
 
 _HZ = re.compile(r"([-\d.]+)\s*(k?)Hz", re.I)
+_NUM = re.compile(r"(-?[\d.]+)")
 
 
 def _a_hz(texto: str) -> float | None:
@@ -53,6 +54,22 @@ def _a_hz(texto: str) -> float | None:
     if not m:
         return None
     return float(m.group(1)) * (1000.0 if m.group(2) else 1.0)
+
+
+def _a_numero(texto: str) -> float | None:
+    """El primer numero del texto, con su multiplicador si es kHz.
+
+    Sirve para dB, porcentajes, ms y cualquier cosa que Live muestre con
+    unidad. La curva que va del valor normalizado al que se muestra no esta
+    documentada y no es la misma en cada parametro —el Output del Saturator en
+    0.5 muestra -18 dB—, asi que la unica forma confiable de pegarle a un valor
+    es buscarlo contra lo que dice la pantalla.
+    """
+    hz = _a_hz(texto)
+    if hz is not None:
+        return hz
+    m = _NUM.search(texto)
+    return float(m.group(1)) if m else None
 
 
 class LiveNoResponde(RuntimeError):
@@ -170,6 +187,36 @@ class Live:
     def valor_mostrado(self, pista: int, disp: int, idx: int) -> str:
         return str(self.preguntar("/live/device/get/parameter/value_string",
                                   pista, disp, idx)[3])
+
+    def ajustar_a(self, pista: int, disp: int, idx: int, objetivo: float) -> float:
+        """Deja un parametro en el valor que muestra la pantalla, sea cual sea
+        su unidad. Es `ajustar_a_hz` generalizado a dB, %, ms y demas."""
+        lo, hi = self.rango_parametro(pista, disp, idx)
+        creciente = None
+        for _ in range(26):
+            medio = (lo + hi) / 2
+            self.set_parametro(pista, disp, idx, medio)
+            time.sleep(0.02)
+            actual = _a_numero(self.valor_mostrado(pista, disp, idx))
+            if actual is None:
+                break
+            if creciente is None:
+                # se descubre de que lado crece en vez de suponerlo
+                self.set_parametro(pista, disp, idx, hi)
+                time.sleep(0.02)
+                arriba = _a_numero(self.valor_mostrado(pista, disp, idx)) or 0.0
+                self.set_parametro(pista, disp, idx, lo)
+                time.sleep(0.02)
+                abajo = _a_numero(self.valor_mostrado(pista, disp, idx)) or 0.0
+                creciente = arriba >= abajo
+                self.set_parametro(pista, disp, idx, medio)
+                time.sleep(0.02)
+                continue
+            if (actual < objetivo) == creciente:
+                lo = medio
+            else:
+                hi = medio
+        return _a_numero(self.valor_mostrado(pista, disp, idx)) or 0.0
 
     def ajustar_a_hz(self, pista: int, disp: int, idx: int, hz: float) -> float:
         """Deja un parametro de frecuencia en los Hz pedidos.
@@ -357,6 +404,19 @@ INSTRUMENTOS: dict[str, tuple[str, list[str]]] = {
     "voz":      ("user_library", ["voz_ava_cantada", "voz_ava"]),
     # el gancho del concepto corto: mismo criterio que "detalle"
     "gancho":   ("instruments", ["Deep Pluck", "Snappy Pluck", "Wavetable"]),
+    # El solo: modelado fisico de cuerda, no un sintetizador. Tension es lo mas
+    # cerca de una guitarra que trae Live sin packs.
+    # Tension y no el rack de guitarra: es modelado fisico de cuerda, y sobre
+    # todo EXPONE `PB Range`, que viene en 2 semitonos — el mismo rango para el
+    # que estan escritos los bends. El rack `Guitar Electric Clean` no lo expone
+    # y AbletonOSC no entra a las cadenas de un Rack, asi que ahi los bends
+    # salen con la amplitud que el preset tenga y el solo entero desafina.
+    "solo":     ("instruments", ["Tension", "Guitar Electric Clean"]),
+    # El cierre NO va con guitarra. Se probo y el veredicto fue que suena mal,
+    # y ademas su material —notas de 4 a 12 pulsos— es de pad: una cuerda
+    # sostenida doce pulsos sin bend es una nota quieta, un pad sostenido doce
+    # pulsos es lo que el genero hace para cerrar.
+    "cierre":   ("instruments", ["Sandman Pad", "Warm Analog Pad", "Wavetable"]),
     "riser":    ("user_library", ["riser_aire", "riser_sutil", "riser"]),
     # pedal grave sostenido: pad ancho y oscuro, sin ataque
     "atmosfera": ("instruments", ["Warm Analog Pad", "Sandman Pad", "Wavetable"]),
