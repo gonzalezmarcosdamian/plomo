@@ -311,6 +311,47 @@ lleva su lista de alternativas y la ultima es siempre un motor y no un preset,
 cambiar de edicion de Live —donde muchos presets no existen— pasa a ser cambiar
 un nombre en un JSON.
 
+## Grabar no es exportar: el lazo se cierra sin licencia
+
+**Qué pasó.** Todo lo que el proyecto medía era MIDI propio o audio ajeno. Del
+audio del propio tema no había nada: Live no exporta por OSC y con la Trial no
+exporta ni a mano. Eso dejaba ciego justo lo que el DJ describía —"suena a
+ringtone" es timbre, capas, ancho: propiedades del audio— y hacía imposible
+iterar solo: un bucle habría optimizado lo medible y se habría alejado de lo
+que importa, con la confianza de estar mejorando.
+
+**Por qué.** La restricción era "no se puede exportar", y se leyó como "no se
+puede obtener audio". Son dos cosas distintas. Una pista de audio con entrada
+Resampling recibe el master, y lo que Live graba lo escribe a disco como WAV
+aunque el set no se pueda guardar. Deshacer la toma saca el clip del set, Live
+suelta el archivo, y el WAV queda.
+
+**Cómo se aplica.** Cuando una función está bloqueada, buscar qué otra función
+produce el mismo artefacto por otro camino antes de aceptar el bloqueo. Y las
+tres cosas que costaron encontrar: el transporte se arranca ANTES de mover el
+cabezal, la grabación se prende recién con el cabezal en su lugar (moverlo
+durante la toma la corta), y el archivo nuevo se identifica por diferencia de
+conjunto y no por fecha, porque OneDrive mueve las fechas mientras Live cierra.
+
+## Lo que se mide de uno mismo tiene que medirse igual que lo ajeno
+
+**Qué pasó.** La primera medición simétrica —render propio y referencia por el
+mismo `traducir.py`— encontró en diez segundos lo que tres tardes de escuchar
+no habían nombrado: la mezcla era mono (ancho 0.01 contra 0.90 en la
+referencia), el pump del bajo no llegaba (-2 dB contra -14) y las capas
+melódicas sonaban el 100% del tiempo cuando la referencia respira al 77%.
+
+Y también encontró un error de medición propio: el render de 8 compases se
+midió como si fueran 16 y todas las densidades salieron a la mitad — "bombo
+1.94 por compás" se leía como un bombo enterrado cuando era un divisor.
+
+**Por qué.** Comparar dos cosas medidas con instrumentos distintos no compara
+las cosas: compara los instrumentos. Y una medición sobre uno mismo tiene que
+pasar por los MISMOS supuestos (largo, fragmento, separación) que la ajena.
+
+**Cómo se aplica.** Un solo instrumento para los dos lados, siempre. Y cuando
+un número propio sale absurdo, primero sospechar del divisor.
+
 ## La tensión es una rampa, no un evento
 
 **Qué pasó.** Las dos subidas del tema eran dieciséis compases de los cuales

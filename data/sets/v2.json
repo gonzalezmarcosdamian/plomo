@@ -311,6 +311,48 @@
               "valor": 0.55
             }
           }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.181101
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
         }
       ]
     },
@@ -582,6 +624,48 @@
               "valor": 0.0
             },
             "Vintage": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.093161
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
               "valor": 0.0
             }
           }
@@ -1114,7 +1198,7 @@
     {
       "indice": 7,
       "nombre": "Bateria",
-      "volumen": 0.85,
+      "volumen": 0.92,
       "dispositivos": [
         {
           "nombre": "909 Core Kit",
@@ -1530,6 +1614,48 @@
               "valor": 0.0
             },
             "Vintage": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.137981
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
               "valor": 0.0
             }
           }
@@ -2015,13 +2141,55 @@
               "valor": 1.0
             }
           }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.339776
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
         }
       ]
     },
     {
       "indice": 11,
       "nombre": "Subkick",
-      "volumen": 0.58,
+      "volumen": 0.4,
       "dispositivos": [
         {
           "nombre": "Super Sub Drone Bass",
@@ -2996,6 +3164,48 @@
               "valor": 126.007812
             }
           }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.222702
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
         }
       ]
     },
@@ -3813,6 +4023,48 @@
             },
             "Macro 16": {
               "valor": 126.007812
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.222702
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
             }
           }
         }

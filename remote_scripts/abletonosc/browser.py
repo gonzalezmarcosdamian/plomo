@@ -135,6 +135,29 @@ class BrowserHandler(AbletonOSCHandler):
             track.duplicate_clip_to_arrangement(clip, compas * 4.0)
             return (pista, "ok", compas)
 
+        # -- master: salida --------------------------------------------------
+        # AbletonOSC no tiene handler del master. Hizo falta el dia que los
+        # renders por Resampling salieron con L y R identicos: Resampling graba
+        # lo que el master manda a su salida, y si esa salida es un canal mono
+        # todo se suma antes de grabarse. Leerlo y fijarlo por codigo evita
+        # descubrirlo de nuevo midiendo ancho cero en una mezcla paneada.
+        def master_salida(params):
+            m = self.song.master_track
+            return (m.output_routing_type.display_name,
+                    m.output_routing_channel.display_name,
+                    "|".join(c.display_name for c in m.available_output_routing_channels))
+
+        def master_poner_salida(params):
+            m = self.song.master_track
+            nombre = str(params[0])
+            for c in m.available_output_routing_channels:
+                if c.display_name == nombre:
+                    m.output_routing_channel = c
+                    return ("ok", nombre)
+            return ("no existe", nombre)
+
+        self.osc_server.add_handler("/live/master/get/output", master_salida)
+        self.osc_server.add_handler("/live/master/set/output_channel", master_poner_salida)
         self.osc_server.add_handler("/live/arrangement/duplicate", a_arrangement)
         self.osc_server.add_handler("/live/browser/list", listar)
         self.osc_server.add_handler("/live/browser/load", cargar)

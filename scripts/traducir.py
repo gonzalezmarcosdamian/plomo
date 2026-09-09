@@ -261,15 +261,21 @@ def traducir(archivo: Path, desde: float | None = None) -> dict:
     bpm = _afinar_bpm(mono["drums"], SR, crudo)
     grilla = _grilla(mono["drums"], SR, bpm)
     cero = float(grilla[0]) if len(grilla) else 0.0
+    # Los compases se cuentan sobre el audio que HAY, no sobre los que se
+    # pidieron. Un render propio de ocho compases medido como si fueran
+    # dieciseis daba "bombo 1.94 por compas" — la mitad de los 4 reales— y eso
+    # se leia como un bombo enterrado cuando era un divisor equivocado.
+    compases = max(1, min(COMPASES, int(len(mono["drums"]) / SR / (4 * 60.0 / bpm))))
 
     fuera: dict = {"archivo": archivo.stem, "bpm": bpm, "desde": desde,
+                   "compases": compases,
                    "piezas": {}, "efectos": {}}
     for pieza, (stem, lo, hi) in PIEZAS.items():
         if stem not in mono:
             continue
         env = _envolvente(mono[stem], SR, lo, hi)
         tiempos = _golpes(env, SR)
-        anclas, var, x_compas = _patron(tiempos, grilla, COMPASES)
+        anclas, var, x_compas = _patron(tiempos, grilla, compases)
         desvio, disp = _feel(tiempos, grilla, bpm)
         picos = np.array([env[min(len(env) - 1,
                                   int(t * SR / HOP))] for t in tiempos])
@@ -288,7 +294,7 @@ def traducir(archivo: Path, desde: float | None = None) -> dict:
         lo, hi = (35, 260) if stem == "bass" else (300, 6000)
         prof, rec = _sidechain(mono[stem], SR, lo, hi, cero, bpm)
         div, fuerza = _delay(mono[stem], SR, lo, hi, bpm)
-        c0, c1 = _filtro(mono[stem], SR, COMPASES, bpm)
+        c0, c1 = _filtro(mono[stem], SR, compases, bpm)
         fuera["efectos"][stem] = {
             "sidechain_db": prof, "recupera_ms": rec,
             "cola_s": _cola(mono[stem], SR, lo, hi),
