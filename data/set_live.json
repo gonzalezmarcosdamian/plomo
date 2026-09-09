@@ -262,6 +262,30 @@
           "parametros": {}
         }
       ]
+    },
+    {
+      "indice": 17,
+      "nombre": "Riser",
+      "volumen": 0.34,
+      "dispositivos": [
+        {
+          "nombre": "Riser White Noise",
+          "clase": "OriginalSimpler",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "6.49 kHz"
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
     }
   ]
 }

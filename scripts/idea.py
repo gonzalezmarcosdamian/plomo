@@ -120,7 +120,20 @@ ULTIMO = COMPASES - 1
 # 31, ocho en el 32. Es un redoble que se cierra, y las posiciones salen de la
 # subida de Moonflare — pero SUMADAS al patron, no reemplazandolo.
 VACIO: set[int] = set()
-SUBIDA = {28: [4, 12],
+#
+# Empieza en el compas 24 y no en el 28. Medida compas a compas, la subida vieja
+# tenia DOCE compases planos y cuatro de redoble: del 65 al 76 el impacto se
+# quedaba entre 850 y 1000, y recien en el 77 arrancaba a moverse. Eso no es una
+# subida, es una espera con un susto al final.
+#
+# Ocho compases de acumulacion, de un golpe extra a ocho. El oido tiene que
+# poder seguir la cuenta: si los golpes aparecen todos juntos en el ultimo
+# compas, no hubo tension, hubo un anuncio.
+SUBIDA = {24: [8],
+          25: [8],
+          26: [4, 12],
+          27: [4, 12],
+          28: [4, 8, 12],
           29: [4, 10, 14],
           30: [2, 6, 10, 12, 14],
           31: [0, 2, 4, 6, 8, 10, 12, 14]}
@@ -521,7 +534,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
             # seccion. La capa que ya suena tocando mas fuerte hace lo mismo
             # sin agregar un solo transiente nuevo.
             if tension and c in SUBIDA:
-                base = int(base * (1.35 + (c - 28) * 0.14))
+                base = int(base * (1.10 + (c - 24) * 0.09))
             if calla(c, k * 0.25):
                 continue
             p.nota(c, h.pulso("percusion", c, k * 0.25), SHAKER, 0.07,
@@ -568,7 +581,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
                 # exactamente juntos, que es un golpe apilado y suena a uno solo.
                 p.nota(c, h.pulso("percusion", c, k * 0.25), CLAP, 0.10,
                        h.vel("percusion", c, k * 0.25,
-                             min(98, 52 + i * 7 + (c - 28) * 10)))
+                             min(98, 44 + i * 6 + (c - 24) * 6)))
         # El rim marca el uno mientras no hay bombo — y en pleno y climax el
         # bombo entra en el compas 1, asi que ahi el rim era un flam pegado a su
         # ataque: 8 racimos de bombo y rim a menos de 7 ms.
@@ -1231,6 +1244,62 @@ def _repiques(bpm: float, h: Humano) -> Pista:
     return p
 
 
+def _correr(pista: Pista, compases: int) -> Pista:
+    """Corre una pista `compases` hacia adelante. Para las entradas escalonadas."""
+    fuera = Pista(pista.nombre, pista.bpm, pista.canal)
+    for ev in pista._eventos:
+        fuera._eventos.append(
+            _Evento(ev.tick + compases * TICKS_COMPAS, ev.orden, ev.datos))
+    return fuera
+
+
+# La rampa: una seccion que crece de punta a punta en vez de por bloques.
+#
+# `_empuje` ya hace crecer los ultimos compases de cada frase de ocho, pero eso
+# es una figura DENTRO de la frase y se reinicia cada vez. Lo que faltaba es lo
+# otro: que la seccion entera este mas fuerte al final que al principio.
+#
+# Sin esto una subida de dieciseis compases tiene la misma fuerza en el primero
+# que en el ultimo, y toda la tension queda a cargo del redoble. Con esto el
+# redoble deja de ser la unica cosa que sube y pasa a ser la ultima.
+#
+# Se aplica sobre los eventos ya escritos y no sobre los generadores, por la
+# misma razon que `_podar`: la seccion tiene que ser EL MISMO material, y
+# regenerarlo con otros parametros abre la puerta a que no lo sea.
+def _rampa(pista: Pista, desde: float, hasta: float,
+           compases: int = COMPASES) -> Pista:
+    """Escala la velocidad linealmente de `desde` a `hasta` a lo largo de la seccion."""
+    fuera = Pista(pista.nombre, pista.bpm, pista.canal)
+    for ev in pista._eventos:
+        datos = ev.datos
+        if ev.orden == 1 and len(datos) > 2:
+            c = min(compases - 1, ev.tick // TICKS_COMPAS)
+            k = desde + (hasta - desde) * c / max(1, compases - 1)
+            datos = bytes([datos[0], datos[1],
+                           max(1, min(127, int(round(datos[2] * k))))])
+        fuera._eventos.append(_Evento(ev.tick, ev.orden, datos))
+    return fuera
+
+
+# El riser: lo unico del tema que dura mas de un compas y no tiene ritmo.
+#
+# Se dispara CUATRO veces antes de cada drop, encimadas y cada vez mas fuerte,
+# en vez de una sola vez larga. El motivo es practico: un sample de riser dura
+# lo que dura y no se puede estirar desde el MIDI, asi que una sola nota da un
+# barrido de dos compases seguido de silencio justo donde hace falta lo
+# contrario. Cuatro disparos escalonados arman una escalera que llega arriba
+# cualquiera sea el largo del sample.
+RISER = [(24, 78), (28, 92), (30, 106), (31, 120)]
+
+
+def _riser(bpm: float) -> Pista:
+    """Los cuatro disparos que desembocan en el drop."""
+    p = Pista("Riser", bpm, canal=0)
+    for compas, vel in RISER:
+        p.nota(compas, 0.0, SPLASH, 4.0, vel)
+    return p
+
+
 # El platillo del drop y el barrido que lo anuncia.
 #
 # Van en sus propias pistas por dos motivos y los dos importan. Uno: dentro del
@@ -1531,7 +1600,7 @@ FORMA = [
 # cada golpe: se escucha como que el segundo pega mas, no como que el
 # primero esta flojo.
 INTENSIDAD = {"intro": 0.70, "tema": 0.86, "subida1": 0.90, "drop1": 0.93,
-              "bajada": 0.74, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
+              "bajada": 0.88, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
               "salida_dj": 0.78}
 
 
@@ -1555,13 +1624,38 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         # gancho arriba. La atmosfera y el sub sostienen el piso: sin ellos esto
         # es una melodia colgada en el aire, que es la version mal hecha de un
         # breakdown — no se escucha como que bajo, se escucha como que se rompio.
+        # Los treinta y dos compases de la bajada estaban PLANOS: entre 250 y
+        # 470 de impacto de punta a punta, con las seis capas sonando desde el
+        # compas 1. Una bajada que no crece no prepara nada; es un hueco largo.
+        #
+        # Ahora entra por capas y crece. Cada cosa aparece donde le toca y
+        # ninguna se va: al final de la bajada suena todo lo que sonaba antes,
+        # mas fuerte, y de ahi arranca la subida.
         base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
                 ("02_acordes", _acordes(bpm, tonica, escala, h, True, False)),
-                ("04_bateria", _bateria(bpm, h, True, False, False, sin_bombo=True)),
+                ("09_sub", _sub(bpm, tonica, escala)),
                 ("05_gancho", _gancho(bpm, tonica, escala, h, True, False, False)),
                 ("08_anchos", _anchos(bpm, tonica, escala, h, False)),
-                ("09_sub", _sub(bpm, tonica, escala))]
-        return [(n + ".mid", pi) for n, pi in base]
+                ("04_bateria", _bateria(bpm, h, True, False, False, sin_bombo=True))]
+        # (capa, compas en que entra) — la percusion ultima, que es lo que
+        # avisa que el bombo esta por volver
+        ENTRADAS = {"01_atmosfera": 0, "02_acordes": 0, "09_sub": 0,
+                    "05_gancho": 8, "08_anchos": 16, "04_bateria": 20}
+        # El piso NO entra en la rampa. La atmosfera, los acordes y el sub son
+        # lo que sostiene el espacio cuando se cae el bombo, y hacerlos crecer
+        # junto con el resto dejaba el primer compas de la bajada en el 7% de la
+        # energia del compas anterior: eso no se escucha como que bajo, se
+        # escucha como que se corto. Lo que crece es lo que ENTRA, no lo que
+        # aguanta.
+        PISO = {"01_atmosfera", "02_acordes", "09_sub"}
+        fuera = []
+        for n, pi in base:
+            desde = ENTRADAS[n]
+            pi = _podar(pi, 0, COMPASES - desde)
+            if n not in PISO:
+                pi = _rampa(pi, 0.70, 1.0, COMPASES - desde)
+            fuera.append((n + ".mid", _correr(pi, desde)))
+        return fuera
 
     if nombre in ("intro", "salida_dj"):
         # Groove de DJ: la zona por donde se mezcla. Bajo, bateria y el piso, y
@@ -1589,6 +1683,14 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         base.append(("13_lead", _lead(bpm, tonica, escala, h)))
     if tension:
         base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
+        base.append(("14_riser", _riser(bpm)))
+        # La subida entera crece: al empezar suena al 72% y llega al 100%.
+        # 0.82 y no 0.72: con 0.72 la subida arrancaba MAS BAJO que la
+        # seccion anterior —la bajada terminaba en 12.4 de energia sostenida y
+        # la subida empezaba en 10.6—, o sea que el compas donde vuelve el bombo
+        # era un bajon. Una subida puede aflojar un poco para tomar carrera,
+        # pero no puede empezar abajo de donde venia.
+        base = [(n, _rampa(pi, 0.82, 1.0)) for n, pi in base]
     elif grande:
         base.append(("12_reversa", _reversa(bpm, [COMPASES // 2 - 1])))
     if nombre == "salida":

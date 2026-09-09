@@ -44,7 +44,7 @@ PISTAS = {
     "04_bateria.mid": 7,    "05_gancho.mid": 8,    "06_arpegio.mid": 9,
     "07_cierre.mid": 10,    "08_anchos.mid": 11,   "09_sub.mid": 12,
     "10_repiques.mid": 13,  "11_splash.mid": 14,   "12_reversa.mid": 15,
-    "13_lead.mid": 16,
+    "13_lead.mid": 16,   "14_riser.mid": 17,
 }
 
 # El gancho se escribe en la octava 4 y suena una octava mas abajo. Es del

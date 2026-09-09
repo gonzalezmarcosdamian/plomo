@@ -9,6 +9,57 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-09 (tarde) — la tension como rampa
+
+Pedido del DJ: *"prefiero que iteremos la tension en los momentos que
+corresponda"*. Medido compas a compas, la tension estaba mal repartida en los
+tres lugares donde vive:
+
+- **Las subidas eran doce compases planos y cuatro de redoble.** Del 65 al 76 el
+  impacto se quedaba entre 850 y 1000; recien en el 77 arrancaba a moverse.
+- **La bajada era una meseta**: 250 a 470 durante treinta y dos compases, con las
+  seis capas sonando desde el primero.
+- **La subida 2 empezaba mas abajo que donde terminaba la bajada** (10.6 contra
+  12.4 de energia sostenida), o sea que el compas donde vuelve el bombo era un
+  bajon.
+
+Tres herramientas nuevas en `idea.py`:
+
+`_rampa()` escala la velocidad linealmente a lo largo de una seccion. `_empuje`
+ya hacia crecer el final de cada frase de ocho, pero eso se reinicia cada frase;
+faltaba que la seccion entera estuviera mas fuerte al final que al principio.
+
+`_riser()` mas la pista `Riser` (Riser White Noise en Simpler). Cuatro disparos
+encimados y cada vez mas fuertes en vez de uno largo: un sample de riser dura lo
+que dura y no se estira desde el MIDI, asi que una sola nota da dos compases de
+barrido y despues silencio justo donde hace falta lo contrario.
+
+`_correr()` para las entradas escalonadas de la bajada, que ahora entra por
+capas —atmosfera y acordes y sub desde el 1, gancho en el 9, anchos en el 17,
+percusion en el 21— y crece de 3 a 6 capas.
+
+El redoble de `SUBIDA` arranca en el compas 24 y no en el 28: ocho compases de
+acumulacion, de un golpe extra a ocho.
+
+**Una correccion sobre la marcha.** La primera version de la rampa aplicaba
+tambien al piso, y el primer compas de la bajada quedaba en el 7% de la energia
+del anterior — eso no se escucha como que bajo sino como que se corto. La
+atmosfera, los acordes y el sub quedaron exentos: lo que crece es lo que ENTRA,
+no lo que aguanta. Con eso la caida quedo en -77%, que es una bajada.
+
+Ahora las nueve secciones suben por dentro:
+
+    intro       122 -> 443       drop1      1738 -> 2214
+    tema        762 -> 1041      bajada       82 -> 315
+    subida1     751 -> 1366      subida2     856 -> 1545
+    drop2      2036 -> 2617      salida     2096 -> 2617
+
+Tambien se bajo la pista `Anchos` de 0.52 a 0.36. Al pasar de dos a cuatro
+golpes por compas y de 0.45 a 0.92 pulsos, la capa quedo cuatro veces mas
+presente sin que nadie tocara su nivel: *"quedo un poco fuerte el pianito"*.
+
+---
+
 ## 2026-09-09 — version 1 del tema, de 112 a 240 compases
 
 **Que se hizo**
