@@ -254,9 +254,20 @@ que lo hizo funcionar fueron los compases sin batería que vienen antes.
 **Por qué.** La percepción de intensidad es relativa a lo inmediatamente
 anterior, no absoluta.
 
-**Cómo se aplica.** Antes de agregar, sacar. Y donde algo tenga que sentirse
-grande, dejar que lo anterior sea chico. Vale para un arreglo musical y para un
-set: la forma se hace con lo que no está.
+**Cómo se aplica.** Donde algo tenga que sentirse grande, dejar que lo anterior
+sea chico. Vale para un arreglo musical y para un set.
+
+**Corrección (2026-09-09).** Este aprendizaje decía además "antes de agregar,
+sacar", y esa frase suelta es la que hizo perder una tarde entera. Es verdadera
+solo cuando hay algo que sacar. Aplicada sobre un arreglo que ya venía plano
+produjo un pozo de una capa antes del drop, un final que soltaba capas hasta
+quedar en el 5% del pico, y un gancho que se callaba para dejarle lugar al
+arpegio en el momento más grande del tema. El DJ lo resumió mejor que la
+medición: *"hacé que explote, que sumen cosas, no restes"*.
+
+El contraste no se hace restando donde no sobra. Se hace acumulando y después
+soltando, en ese orden. Está desarrollado en [El contraste no se hace
+restando](#el-contraste-no-se-hace-restando).
 
 ## Un agente cuya definición quedó vieja es peor que no tenerlo
 
@@ -299,6 +310,67 @@ El efecto de costado resulto valer mas que el objetivo: como cada instrumento
 lleva su lista de alternativas y la ultima es siempre un motor y no un preset,
 cambiar de edicion de Live —donde muchos presets no existen— pasa a ser cambiar
 un nombre en un JSON.
+
+## La tensión es una rampa, no un evento
+
+**Qué pasó.** Las dos subidas del tema eran dieciséis compases de los cuales
+doce estaban planos: el impacto se quedaba entre 850 y 1000 del compás 65 al 76
+y recién en el 77 arrancaba a moverse. La bajada era peor — treinta y dos
+compases entre 250 y 470, con las seis capas sonando desde el primero. Escrito
+parecía bien: había un redoble, había un breakdown, estaban los elementos.
+
+**Por qué.** Tener el elemento no es tener la función. Un redoble en los últimos
+cuatro compases no genera tensión, la *anuncia*: cuando aparece ya no hay tiempo
+de que crezca nada, y lo que el oído registra es un susto. La tensión es la
+sensación de que algo viene creciendo, y crecer lleva compases.
+
+Y hay un caso peor que el plano, que es el que iba en contra: la segunda subida
+empezaba más abajo de donde terminaba la bajada. El compás donde vuelve el bombo
+—el momento más prometedor del tema— medía menos que el anterior.
+
+**Cómo se aplica.** Medir cada sección por su primer cuarto contra su último
+cuarto, no por su promedio. Toda sección tiene que terminar más fuerte de lo que
+empieza, y ninguna puede empezar abajo de donde terminó la anterior salvo que
+sea un breakdown declarado.
+
+La herramienta es una rampa de velocidad a lo largo de la sección entera
+(`_rampa` en `idea.py`), y es distinta del crescendo de fin de frase que ya
+existía: ese se reinicia cada ocho compases, así que hace textura y no arco.
+
+## La rampa no se le aplica al piso
+
+**Qué pasó.** La primera versión de la rampa de la bajada la aplicaba a todas
+las capas, incluida la atmósfera. El primer compás del breakdown quedó en el 7%
+de la energía del compás anterior. Medido parecía un contraste enorme; lo que se
+escucha con esos números no es que bajó, es que se cortó.
+
+**Por qué.** En una sección hay dos clases de capa y hacen trabajos opuestos. Lo
+que ENTRA es lo que construye la sensación de que algo crece, y ahí la rampa es
+exactamente lo que se quiere. Lo que AGUANTA —el pad, los acordes, el sub— es lo
+que sostiene el espacio para que la caída se lea como una caída y no como un
+corte de señal. Bajarlo saca el piso justo cuando es lo único que queda.
+
+**Cómo se aplica.** Marcar explícitamente qué capas son piso y eximirlas de
+cualquier rampa. Lo que crece es lo que entra, no lo que aguanta. Con la
+atmósfera, los acordes y el sub exentos, la misma bajada pasó de -93% a -77%: la
+misma forma, y ahora se sostiene.
+
+## Un sample no se estira desde el MIDI
+
+**Qué pasó.** El riser antes del drop se escribió como una nota larga, con la
+idea de que durara los cuatro compases que dura la subida. Un sample dura lo que
+dura: la nota larga daba dos compases de barrido y después silencio, justo en
+los dos compases donde más falta hacía.
+
+**Por qué.** Un sintetizador sostiene mientras la nota esté abierta; un sampler
+reproduce un archivo y termina. Son dos cosas distintas que se escriben igual en
+MIDI, y por eso el error no se ve leyendo la partitura.
+
+**Cómo se aplica.** Para cualquier elemento de un solo disparo cuya duración no
+se controla —risers, barridos, reversas, impactos— se apilan varios disparos
+escalonados y crecientes en vez de uno largo. Cuatro disparos arman una escalera
+que llega arriba cualquiera sea el largo del archivo, y además funcionan si
+mañana se cambia el sample por otro.
 
 ## El contraste no se hace restando
 
