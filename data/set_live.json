@@ -116,7 +116,7 @@
           "nombre": "Auto Filter",
           "clase": "AutoFilter2",
           "parametros": {
-            "Frequency": "1.34 kHz"
+            "Frequency": "1.33 kHz"
           }
         },
         {
@@ -145,7 +145,7 @@
           "nombre": "Auto Filter",
           "clase": "AutoFilter2",
           "parametros": {
-            "Frequency": "1.34 kHz"
+            "Frequency": "1.33 kHz"
           }
         },
         {
@@ -158,7 +158,7 @@
     {
       "indice": 11,
       "nombre": "Anchos",
-      "volumen": 0.52,
+      "volumen": 0.36,
       "dispositivos": [
         {
           "nombre": "Snappy Pluck",
@@ -181,7 +181,7 @@
           "nombre": "Auto Filter",
           "clase": "AutoFilter2",
           "parametros": {
-            "Frequency": "179 Hz"
+            "Frequency": "178 Hz"
           }
         }
       ]
