@@ -40,7 +40,20 @@ sys.path.insert(0, str(RAIZ / "src"))
 
 from plomo.live import Live  # noqa: E402
 
-RECETA = RAIZ / "data" / "set_live.json"
+RECETAS = RAIZ / "data" / "sets"
+RECETA = RAIZ / "data" / "set_live.json"      # la de v1, por compatibilidad
+
+
+def _receta(version: str | None) -> Path:
+    """La receta de una version, o la general si no se pide ninguna.
+
+    Existe porque cada version del tema tiene su propio set: la v2 es techno y
+    no lleva arpegio, anchos, lead ni cierre, asi que armarle el set de la v1
+    deja cuatro pistas con instrumento y sin una sola nota.
+    """
+    if version:
+        return RECETAS / f"{version}.json"
+    return RECETA
 
 # El tempo del tema. Vive aca y no solo en `idea.py --bpm` porque las dos cosas
 # tienen que coincidir y no coincidian: el MIDI se escribio a 123 y el set estaba
@@ -59,6 +72,7 @@ BPM = 123.0
 CATEGORIA = {
     "909 Core Kit": "drums", "707 Core Kit": "drums",
     "Cymbal 808 Full": "drums", "Cymbal Crash Reverse Gnirob": "drums",
+    "Riser White Noise": "drums",
 }
 ALTERNATIVAS = {
     "Warm Analog Pad": ["Warm Analog Pad", "Thick Chord Pad", "Drift"],
@@ -72,6 +86,8 @@ ALTERNATIVAS = {
     "Cymbal 808 Full": ["Cymbal 808 Full", "Cymbal 808 Hard", "Cymbal Acid House"],
     "Cymbal Crash Reverse Gnirob": ["Cymbal Crash Reverse Gnirob", "FX Reverse",
                                     "Sweep White Noise Fall"],
+    "Riser White Noise": ["Riser White Noise", "Riser Synth", "Riser Sine",
+                          "Sweep White Noise Fall"],
 }
 
 
@@ -102,9 +118,27 @@ def capturar(live: Live, destino: Path = RECETA) -> dict:
         for d in range(live.n_dispositivos(t)):
             nombre = str(live.preguntar("/live/device/get/name", t, d)[-1])
             clase = str(live.preguntar("/live/device/get/class_name", t, d)[-1])
-            par = {}
-            if clase == "AutoFilter2":
-                par["Frequency"] = live.valor_mostrado(t, d, 1)
+            # TODOS los parametros, no solo la frecuencia del filtro.
+            #
+            # La primera version guardaba unicamente `Frequency` de los Auto
+            # Filter, asi que la receta reconstruia la cadena y perdia todo lo
+            # demas: el Auto Pan que hace el pump volvia en Panning a 1 Hz en vez
+            # de Tremolo sincronizado a la negra, y el sintoma es un tema que se
+            # rearma "bien" y no suena igual.
+            #
+            # Se guarda el valor CRUDO y ademas el que se muestra. El crudo es lo
+            # que se escribe de vuelta —es exacto y reproduce enums sin
+            # interpretar— y el mostrado esta para que un humano pueda leer la
+            # receta y para poder buscar por Hz si algun dia cambia el
+            # dispositivo.
+            # De a UNO tardaba minutos. Cada parametro eran dos idas y vueltas
+            # OSC —valor y texto— y una cadena de catorce pistas son unas mil
+            # seiscientas: la captura quedaba corriendo tanto que habia que
+            # matarla. `parameters/value` los trae todos en una sola respuesta.
+            nombres = live.parametros(t, d)
+            crudos = live.preguntar("/live/device/get/parameters/value", t, d)[2:]
+            par = {n: {"valor": round(float(v), 6)}
+                   for n, v in zip(nombres, crudos)}
             disp.append({"nombre": nombre, "clase": clase, "parametros": par})
         fuera["pistas"].append({
             "indice": t,
@@ -136,18 +170,49 @@ def armar(live: Live, receta: dict) -> None:
             continue
         inst = p["dispositivos"][0]["nombre"]
         cand = ALTERNATIVAS.get(inst, [inst])
-        cargado = live.cambiar_instrumento(t, cand, CATEGORIA.get(inst, "instruments"))
-        time.sleep(0.8)
+        # Se prueban las tres ramas del browser y no solo la declarada.
+        #
+        # La primera version buscaba en `CATEGORIA.get(inst, "instruments")`, o
+        # sea que cualquier instrumento que no estuviera en esa tabla se buscaba
+        # entre los instrumentos — y "Riser White Noise" es un sample, vive en
+        # drums, asi que la pista quedo vacia. El sintoma es peor que el error:
+        # el script dice "no encontre" y sigue, y el tema suena sin esa capa.
+        #
+        # Mantener una tabla a mano de en que rama vive cada cosa es una fuente
+        # permanente de este bug. Probar las tres cuesta dos segundos y no se
+        # olvida nunca.
+        ramas = [CATEGORIA.get(inst, "instruments")]
+        ramas += [r for r in ("instruments", "drums", "sounds") if r not in ramas]
+        cargado = None
+        for rama in ramas:
+            cargado = live.cambiar_instrumento(t, cand, rama)
+            time.sleep(0.8)
+            if cargado:
+                break
         if not cargado:
-            print(f"    ! {p['nombre']}: no encontre ninguno de {cand}")
+            print(f"    ! {p['nombre']}: no encontre {cand} en ninguna rama")
 
         for d in p["dispositivos"][1:]:
             live.cargar_instrumento(t, [d["nombre"]], "audio_effects")
             time.sleep(0.6)
-            hz = _hz(d["parametros"].get("Frequency", ""))
-            if hz is not None:
-                real = live.ajustar_a_hz(t, live.n_dispositivos(t) - 1, 1, hz)
-                print(f"      filtro {real:.0f} Hz (pedido {hz:.0f})")
+            idx = live.n_dispositivos(t) - 1
+            nombres = live.parametros(t, idx)
+            for i, nom_par in enumerate(nombres):
+                guardado = d["parametros"].get(nom_par)
+                if guardado is None:
+                    continue
+                # `Device On` no se toca: si el dispositivo quedo apagado en el
+                # set del que se capturo, apagarlo aca esconde la cadena entera
+                # y despues nadie entiende por que falta una capa.
+                if nom_par == "Device On":
+                    continue
+                if isinstance(guardado, dict):
+                    live.set_parametro(t, idx, i, guardado["valor"])
+                elif nom_par == "Frequency":       # recetas viejas: texto en Hz
+                    hz = _hz(guardado)
+                    if hz is not None:
+                        live.ajustar_a_hz(t, idx, 1, hz)
+                time.sleep(0.05)
 
         live.volumen(t, p["volumen"])
         print(f"  {t:>2} {p['nombre']:<10} {cargado or '?':<30} "
@@ -159,18 +224,22 @@ def armar(live: Live, receta: dict) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
+    ap.add_argument("version", nargs="?",
+                    help="que receta usar: data/sets/<version>.json")
     ap.add_argument("--capturar", action="store_true",
                     help="al reves: lee el set abierto y reescribe la receta")
     args = ap.parse_args()
 
     with Live(timeout=45.0) as live:
+        destino = _receta(args.version)
         if args.capturar:
-            d = capturar(live)
-            print(f"  {RECETA.relative_to(RAIZ)} · {len(d['pistas'])} pistas")
+            destino.parent.mkdir(parents=True, exist_ok=True)
+            d = capturar(live, destino)
+            print(f"  {destino.relative_to(RAIZ)} · {len(d['pistas'])} pistas")
             return
-        if not RECETA.exists():
-            sys.exit(f"no existe {RECETA}; corre con --capturar primero")
-        receta = json.loads(RECETA.read_text(encoding="utf-8"))
+        if not destino.exists():
+            sys.exit(f"no existe {destino}; corre con --capturar primero")
+        receta = json.loads(destino.read_text(encoding="utf-8"))
         print(f"  armando {len(receta['pistas'])} pistas a {BPM:.0f} BPM\n")
         armar(live, receta)
         print("\n  ahora: python scripts/montar.py v1")

@@ -57,6 +57,58 @@ from plomo.midi import (  # noqa: E402
     triada,
 )
 
+# ---------------------------------------------------------------------------
+# El modo techno.
+#
+# Medido con `scripts/traducir.py` sobre "Tali Muss - Interlocutor (Kebin Van
+# Reeken Extended Remix)" [Univack, 122 BPM] contra el original del mismo tema,
+# que hace de control: la diferencia entre los dos ES lo que hace al remix
+# techno, y no lo que hace a ese tema ese tema.
+#
+#                       remix        el boceto v1
+#     bombo             4.00         4.0
+#     clap              6.69         2.9
+#     percusion         8.69         2.0
+#     hat               9.19         6.0
+#     bajo              2.62 ataques / 76% sonando      8.1 ataques
+#     melodia           0.81 ataques / 77% sonando      arpegio de 13.6
+#     sidechain bajo   -14.3 dB                          ninguno
+#     graves            0.09 (casi mono)
+#
+# Lo importante no es que sea "mas" o "menos": es que la relacion se INVIERTE.
+# La bateria se pone MAS densa —24.6 golpes por compas entre clap, percusion y
+# hat contra los 10.9 del boceto— y lo melodico MUCHO menos. Un arpegio de
+# catorce ataques por compas es lo contrario de techno por bien escrito que
+# este: en techno lo de arriba se sostiene y lo que se mueve es la percusion.
+#
+# Por eso el modo techno saca cuatro pistas —arpegio, anchos, lead y cierre— y
+# no las reemplaza. El pedido fue "baja instrumentos y pistas que necesites".
+TECNO = False           # lo prende `--tecno`; lo leen los generadores
+
+# La celula del bajo en techno: pocos ataques y notas largas.
+#
+# 2.62 ataques por compas con 76% de cobertura significa dos o tres notas que
+# duran casi todo lo que hay entre una y la siguiente. No es la celula de
+# Vuarambon con menos notas: es otra manera de tocar. La de Vuarambon empuja
+# contra el bombo desde los huecos; esta se planta y deja que el sidechain le
+# haga el ritmo.
+FRASE_BAJO_TECNO = [
+    # (semicorchea, largo en semicorcheas)
+    [(0, 6), (6, 4), (10, 6)],
+    [(0, 6), (6, 4), (10, 6)],
+    [(0, 6), (6, 4), (10, 3), (13, 3)],
+    [(0, 10), (10, 6)],
+]
+
+# El gancho en techno no es una melodia con figura: es una nota que se queda.
+# 0.81 ataques por compas son cuatro notas cada cinco compases.
+GANCHO_TECNO = [
+    # (compas del grupo de 4, pulso, grado, duracion en pulsos)
+    (0, 0.0, 0, 7.5),
+    (2, 0.0, 4, 5.5),
+    (3, 2.0, 2, 2.0),
+]
+
 COMPASES = 32
 KICK, CLAP, CHH, OHH, SHAKER, RIM = 36, 39, 42, 46, 70, 37
 CRASH = 49
@@ -272,6 +324,32 @@ def _empuje(compas: int) -> float:
     return 0.0 if posicion < 6 else (posicion - 5) / 2.0
 
 
+def _bajo_tecno(bpm: float, tonica: int, escala: list[int], h: Humano,
+                climax: bool = False) -> Pista:
+    """Bajo sostenido: dos o tres notas por compas que llenan el compas.
+
+    La altura sigue la progresion y casi no se mueve adentro del compas — el
+    movimiento de un bajo de techno es de TIMBRE y de nivel, no de notas, y eso
+    lo hacen el sidechain y el filtro, que no se escriben en el MIDI.
+    """
+    p = Pista("Bajo", bpm, canal=0)
+    for c in range(COMPASES):
+        g = PROGRESION[c // 4]
+        celda = FRASE_BAJO_TECNO[c % len(FRASE_BAJO_TECNO)]
+        for i, (k, largo) in enumerate(celda):
+            # la quinta arriba en la ultima nota de la celda de cuatro compases
+            grado_rel = g + (4 if climax and c % 4 == 3 and i == len(celda) - 1
+                             else 0)
+            alt = grado(tonica, escala, grado_rel, octava=1)
+            pulso = k * 0.25
+            vel = 104 if k == 0 else 92
+            # 0.92 y no 1.0 del largo: si la nota llega justo al ataque de la
+            # siguiente y es la misma altura, el note-off de una apaga la otra.
+            p.nota(c, h.pulso("bajo", c, pulso), alt, largo * 0.25 * 0.92,
+                   h.vel("bajo", c, pulso, vel))
+    return p
+
+
 def _bajo(bpm: float, tonica: int, escala: list[int], h: Humano,
           pleno: bool = False, climax: bool = False, tension: bool = False) -> Pista:
     p = Pista("Bajo", bpm, canal=0)
@@ -441,6 +519,15 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
                     continue
                 p.nota(c, h.pulso("clap", c, pulso), CLAP, 0.25,
                        h.vel("clap", c, pulso, 110 if climax else 90))
+            # 6.69 claps por compas en el remix contra 2.9 en el boceto. Los
+            # de mas son fantasmas flojos entre los dos golpes principales: no
+            # cambian donde esta el contratiempo, lo llenan.
+            if TECNO:
+                for pulso in (0.75, 1.5, 2.75, 3.5):
+                    if calla(c, pulso):
+                        continue
+                    p.nota(c, h.pulso("clap", c, pulso), CLAP, 0.12,
+                           h.vel("clap", c, pulso, 52 if pulso % 1 else 46))
             if climax and not calla(c, 3.875):
                 # El eco del clap antes de la vuelta al uno, en 3.875 y no en
                 # 3.75: en 3.75 caia encima del shaker —26 veces a menos de
@@ -457,7 +544,9 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # El contratiempo de corchea es donde vive el hat en house: abierto en el
         # 1 y el 3, cerrado en el 2 y el 4. Alternar los dos es lo que arma el
         # vaiven, y ademas evita que los dos caigan encima como pasaba antes.
-        for pulso in ((0.5, 1.5, 2.5, 3.5) if climax else (0.5, 2.5)):
+        abiertos = ((0.5, 1.5, 2.5, 3.5) if (climax or TECNO)
+                    else (0.5, 2.5))
+        for pulso in abiertos:
             # El abierto entra en el compas 3 y las congas en el 5. Escrito
             # como estaba —`c % 8 >= 4 or c >= 8`— era literalmente `c >= 4`, y
             # ocultaba que dos capas entraban en el mismo compas: el salto del 4
@@ -555,7 +644,14 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # En 1.75 la conga era el TERCER transitorio de esa semicorchea, junto
         # al shaker y al fantasma. Es el mismo error que motivo sacar los
         # tresillos, mudado de tres grillas a una sola posicion.
-        for pulso, alt in ((1.25, CONGA_BAJA), (3.25, CONGA_ALTA)):
+        # En techno la percusion es lo que se mueve, y por eso es lo unico
+        # que SUBE al pasar de house a techno: el remix mide 8.69 golpes por
+        # compas de percusion contra los 2.0 del boceto. Seis posiciones en vez
+        # de dos, todas en la grilla de semicorcheas.
+        posiciones = (((0.25, CONGA_ALTA), (1.25, CONGA_BAJA), (1.75, CONGA_ALTA),
+                       (2.25, CONGA_BAJA), (3.25, CONGA_ALTA), (3.75, CONGA_BAJA))
+                      if TECNO else ((1.25, CONGA_BAJA), (3.25, CONGA_ALTA)))
+        for pulso, alt in posiciones:
             if c < 4 and not pleno:
                 continue                 # en la intro solo shaker y rim
             if calla(c, pulso):
@@ -1435,6 +1531,23 @@ def _salida(bpm: float, tonica: int, escala: list[int], h: Humano,
     return fuera
 
 
+def _gancho_tecno(bpm: float, tonica: int, escala: list[int], h: Humano,
+                  climax: bool = False) -> Pista:
+    """La melodia sostenida. Tres notas cada cuatro compases, largas."""
+    p = Pista("Gancho", bpm, canal=0)
+    for bloque in range(COMPASES // 4):
+        g = PROGRESION[bloque]
+        for compas, pulso, grado_rel, dur in GANCHO_TECNO:
+            c = bloque * 4 + compas
+            if c >= COMPASES:
+                continue
+            octava = 4 if climax else 3
+            p.nota(c, h.pulso("gancho", c, pulso),
+                   grado(tonica, escala, g + grado_rel, octava=octava), dur,
+                   h.vel("gancho", c, pulso, 78 if climax else 68))
+    return p
+
+
 def _gancho(bpm: float, tonica: int, escala: list[int], h: Humano,
             pleno: bool = False, climax: bool = False, tension: bool = False) -> Pista:
     """La melodia. Entra sola en el 17 y se abre en dos pasos, no en uno.
@@ -1559,6 +1672,94 @@ def _lead(bpm: float, tonica: int, escala: list[int], h: Humano) -> Pista:
     return p
 
 
+# Las cuatro capas que espesan.
+#
+# El diagnostico fue "sigue pareciendo un ringtone por momentos" y "le faltan
+# pistas". Las dos frases dicen lo mismo desde dos lados: un ringtone es una
+# melodia correcta tocada por UN sonido fino, sin nada abajo ni alrededor. La
+# diferencia con una produccion no esta en las notas —las notas ya salen de
+# medir referencias— sino en que cada rol lo tocan dos o tres cosas a la vez y en
+# que siempre hay algo sonando que no es una nota.
+#
+# Ninguna de estas cuatro agrega una idea musical nueva. Todas espesan algo que
+# ya estaba, que es exactamente el punto: una capa que trae una idea nueva
+# compite, una que dobla suma cuerpo.
+
+
+def _bajo_medio(bpm: float, tonica: int, escala: list[int], h: Humano,
+                climax: bool = False) -> Pista:
+    """El bajo doblado una octava arriba, corto y con ataque.
+
+    Es la capa que hace que un bajo se ESCUCHE en un parlante chico. El grave
+    solo se siente en el cuerpo y desaparece en un telefono o en un monitor de
+    cinco pulgadas; el doblaje en la octava de arriba lleva la misma linea a
+    donde si se oye. En techno esta siempre, y es la mitad de por que un bajo
+    suena grande.
+    """
+    p = Pista("Bajo medio", bpm, canal=0)
+    for c in range(COMPASES):
+        g = PROGRESION[c // 4]
+        for k, largo in FRASE_BAJO_TECNO[c % len(FRASE_BAJO_TECNO)]:
+            pulso = k * 0.25
+            # corto, no sostenido: si dura lo mismo que el grave se suman en
+            # fase y lo unico que hace es subir el nivel
+            p.nota(c, h.pulso("bajo", c, pulso),
+                   grado(tonica, escala, g, octava=2), min(largo * 0.25, 0.45),
+                   h.vel("bajo", c, pulso, 74 if climax else 62))
+    return p
+
+
+def _textura(bpm: float) -> Pista:
+    """Una nota que no se corta nunca. Es el piso de ruido del tema.
+
+    Lo que mas delata a un boceto es el SILENCIO entre eventos: en una grabacion
+    siempre hay aire, cinta, sala, algo. Aca eso se escribe como una nota atada
+    que dura la seccion entera y que del otro lado tiene un sonido sin altura
+    definida.
+
+    Va atada y no re-atacada, por la razon de siempre: reescribir la misma
+    altura solapada no sostiene en MIDI, apaga.
+    """
+    p = Pista("Textura", bpm, canal=0)
+    p.nota(0, 0.0, 48, COMPASES * 4 - 0.05, 54)
+    return p
+
+
+def _subkick(bpm: float, h: Humano) -> Pista:
+    """Un seno corto abajo de cada bombo.
+
+    El bombo del 909 tiene ataque y poco cuerpo abajo de 60 Hz. En un club eso
+    se escucha flaco por mas que en auriculares parezca bien. El sub-kick no se
+    escucha como un sonido aparte: se escucha como que el bombo pesa mas.
+    """
+    p = Pista("Subkick", bpm, canal=0)
+    for c in range(COMPASES):
+        for pulso in range(4):
+            p.nota(c, h.pulso("kick", c, pulso),
+                   grado(0, MENOR, 0, octava=0) + 5, 0.22,
+                   h.vel("kick", c, pulso, 96))
+    return p
+
+
+# Los metales: la capa aguda que se mueve y no es un hat.
+#
+# El hat marca el tiempo y por eso es regular; esto es lo contrario, y por eso
+# hace falta. Cae en semicorcheas que el hat no usa y cambia cada dos compases,
+# asi que el oido nunca termina de aprenderselo — que es la definicion practica
+# de "no suena a loop".
+METALES = ((2.75, 3.25, 3.75), (0.75, 2.25, 3.75), (1.75, 2.75, 3.25),
+           (0.75, 1.75, 3.75))
+
+
+def _metales(bpm: float, h: Humano) -> Pista:
+    p = Pista("Metales", bpm, canal=9)
+    for c in range(COMPASES):
+        for i, pulso in enumerate(METALES[(c // 2) % len(METALES)]):
+            p.nota(c, h.pulso("percusion", c, pulso), CHH, 0.08,
+                   h.vel("percusion", c, pulso, 44 + i * 6))
+    return p
+
+
 # ---------------------------------------------------------------------------
 # La forma del tema entero.
 #
@@ -1614,6 +1815,8 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
     Generarla aparte la desincronizaria del material que viene sonando.
     """
     h = Humano(semilla, INTENSIDAD[nombre])
+    bajo = _bajo_tecno if TECNO else _bajo
+    gancho = _gancho_tecno if TECNO else _gancho
     pleno = nombre != "intro"
     climax = nombre in ("drop1", "drop2", "salida")
     tension = nombre in ("subida1", "subida2")
@@ -1634,13 +1837,18 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
                 ("02_acordes", _acordes(bpm, tonica, escala, h, True, False)),
                 ("09_sub", _sub(bpm, tonica, escala)),
-                ("05_gancho", _gancho(bpm, tonica, escala, h, True, False, False)),
+                ("05_gancho", gancho(bpm, tonica, escala, h, True, False, False)
+                 if not TECNO else gancho(bpm, tonica, escala, h, False)),
                 ("08_anchos", _anchos(bpm, tonica, escala, h, False)),
                 ("04_bateria", _bateria(bpm, h, True, False, False, sin_bombo=True))]
         # (capa, compas en que entra) — la percusion ultima, que es lo que
         # avisa que el bombo esta por volver
         ENTRADAS = {"01_atmosfera": 0, "02_acordes": 0, "09_sub": 0,
                     "05_gancho": 8, "08_anchos": 16, "04_bateria": 20}
+        if TECNO:
+            base = [(n, pi) for n, pi in base if n != "08_anchos"]
+            base.append(("16_textura", _textura(bpm)))
+            ENTRADAS["16_textura"] = 0
         # El piso NO entra en la rampa. La atmosfera, los acordes y el sub son
         # lo que sostiene el espacio cuando se cae el bombo, y hacerlos crecer
         # junto con el resto dejaba el primer compas de la bajada en el 7% de la
@@ -1662,24 +1870,48 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         # nada arriba. La salida lleva ademas los repiques, porque a esa altura
         # la percusion ya es parte del tema y sacarla suena a otra cancion.
         base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
-                ("03_bajo", _bajo(bpm, tonica, escala, h, pleno, False, False)),
+                ("03_bajo", bajo(bpm, tonica, escala, h, pleno, False, False)
+                 if not TECNO else bajo(bpm, tonica, escala, h, False)),
                 ("04_bateria", _bateria(bpm, h, pleno, False, False))]
         if nombre == "salida_dj":
             base.append(("10_repiques", _repiques(bpm, h)))
+        if TECNO:
+            base.append(("16_textura", _textura(bpm)))
+            base.append(("15_bajo2", _bajo_medio(bpm, tonica, escala, h)))
+            if nombre == "salida_dj":
+                base += [("17_subkick", _subkick(bpm, h)),
+                         ("18_metales", _metales(bpm, h))]
         return [(n + ".mid", pi) for n, pi in base]
 
     base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
             ("02_acordes", _acordes(bpm, tonica, escala, h, pleno, tension)),
-            ("03_bajo", _bajo(bpm, tonica, escala, h, pleno, climax, tension)),
+            ("03_bajo", bajo(bpm, tonica, escala, h, pleno, climax, tension)
+             if not TECNO else bajo(bpm, tonica, escala, h, climax)),
             ("04_bateria", _bateria(bpm, h, pleno, climax, tension)),
-            ("05_gancho", _gancho(bpm, tonica, escala, h, pleno, climax, tension)),
-            ("08_anchos", _anchos(bpm, tonica, escala, h, climax))]
+            ("05_gancho", gancho(bpm, tonica, escala, h, pleno, climax, tension)
+             if not TECNO else gancho(bpm, tonica, escala, h, climax))]
+    if not TECNO:
+        # Los golpes anchos son de piano y el piano no es de este genero. En
+        # techno lo de arriba se sostiene; los acordes golpeados en la octava 5
+        # son justo lo contrario.
+        base.append(("08_anchos", _anchos(bpm, tonica, escala, h, climax)))
+    if TECNO:
+        # La textura esta SIEMPRE. Es lo unico del tema que no depende de la
+        # seccion, porque el aire de una sala tampoco.
+        base.append(("16_textura", _textura(bpm)))
+        base.append(("15_bajo2", _bajo_medio(bpm, tonica, escala, h, climax)))
+        if pleno:
+            base += [("17_subkick", _subkick(bpm, h)),
+                     ("18_metales", _metales(bpm, h))]
     if climax:
-        base += [("06_arpegio", _arpegio(bpm, tonica, escala, h)),
-                 ("09_sub", _sub(bpm, tonica, escala)),
+        base += [("09_sub", _sub(bpm, tonica, escala)),
                  ("10_repiques", _repiques(bpm, h)),
                  ("11_splash", _splash(bpm, h))]
-    if grande:
+        if not TECNO:
+            # Un arpegio de 13.6 ataques por compas es lo contrario de techno
+            # por bien escrito que este. La referencia mide 0.81.
+            base.append(("06_arpegio", _arpegio(bpm, tonica, escala, h)))
+    if grande and not TECNO:
         base.append(("13_lead", _lead(bpm, tonica, escala, h)))
     if tension:
         base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
@@ -1693,7 +1925,7 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         base = [(n, _rampa(pi, 0.82, 1.0)) for n, pi in base]
     elif grande:
         base.append(("12_reversa", _reversa(bpm, [COMPASES // 2 - 1])))
-    if nombre == "salida":
+    if nombre == "salida" and not TECNO:
         base.append(("07_cierre", _cierre(bpm, tonica, h)))
 
     largo = {n: l for n, _, l in FORMA}[nombre]
@@ -1746,11 +1978,16 @@ def main() -> None:
                          "1.0 climax. Es como se dibuja el arco entre secciones")
     ap.add_argument("--semilla", type=int, default=7,
                     help="misma semilla, mismo archivo: sirve para comparar versiones")
+    ap.add_argument("--tecno", action="store_true",
+                    help="modo techno: bajo sostenido, melodia tenida, mas "
+                         "percusion, y sin arpegio, anchos, lead ni cierre")
     ap.add_argument("--tema", action="store_true",
                     help="escribe el TEMA ENTERO: las nueve partes de FORMA, "
                          "240 compases = 7:48 a 123 BPM")
     args = ap.parse_args()
 
+    global TECNO
+    TECNO = args.tecno
     tonica, menor = tonica_de_camelot(args.camelot)
     escala = MENOR if menor else MAYOR
     if args.tema:

@@ -45,6 +45,11 @@ PISTAS = {
     "07_cierre.mid": 10,    "08_anchos.mid": 11,   "09_sub.mid": 12,
     "10_repiques.mid": 13,  "11_splash.mid": 14,   "12_reversa.mid": 15,
     "13_lead.mid": 16,   "14_riser.mid": 17,
+    # Las capas de espesor van a las pistas que la v2 dejaba vacias. No hay
+    # conflicto con la v1 porque cada version usa su propia receta de set y
+    # ninguna de las dos usa los dos juegos a la vez.
+    "15_bajo2.mid": 9,   "16_textura.mid": 10,
+    "17_subkick.mid": 11, "18_metales.mid": 16,
 }
 
 # El gancho se escribe en la octava 4 y suena una octava mas abajo. Es del

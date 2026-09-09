@@ -1,0 +1,291 @@
+{
+  "tempo": 123.0,
+  "pistas": [
+    {
+      "indice": 4,
+      "nombre": "Atmosfera",
+      "volumen": 0.62,
+      "dispositivos": [
+        {
+          "nombre": "Warm Analog Pad",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "1.30 kHz"
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 5,
+      "nombre": "Acordes",
+      "volumen": 0.85,
+      "dispositivos": [
+        {
+          "nombre": "Sandman Pad",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "2.10 kHz"
+          }
+        }
+      ]
+    },
+    {
+      "indice": 6,
+      "nombre": "Bajo",
+      "volumen": 0.68,
+      "dispositivos": [
+        {
+          "nombre": "Deep Bass",
+          "clase": "Drift",
+          "parametros": {}
+        },
+        {
+          "nombre": "Saturator",
+          "clase": "Saturator",
+          "parametros": {}
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 7,
+      "nombre": "Bateria",
+      "volumen": 0.85,
+      "dispositivos": [
+        {
+          "nombre": "909 Core Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 8,
+      "nombre": "Gancho",
+      "volumen": 0.85,
+      "dispositivos": [
+        {
+          "nombre": "Deep Pluck",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "1.90 kHz"
+          }
+        },
+        {
+          "nombre": "Delay",
+          "clase": "Delay",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 9,
+      "nombre": "Arpegio",
+      "volumen": 0.7,
+      "dispositivos": [
+        {
+          "nombre": "Deep Pluck",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "1.33 kHz"
+          }
+        },
+        {
+          "nombre": "Delay",
+          "clase": "Delay",
+          "parametros": {}
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 10,
+      "nombre": "Cierre",
+      "volumen": 0.66,
+      "dispositivos": [
+        {
+          "nombre": "Sandman Pad",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "1.33 kHz"
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 11,
+      "nombre": "Anchos",
+      "volumen": 0.36,
+      "dispositivos": [
+        {
+          "nombre": "Snappy Pluck",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 12,
+      "nombre": "Sub",
+      "volumen": 0.6,
+      "dispositivos": [
+        {
+          "nombre": "Deep Bass",
+          "clase": "Drift",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "178 Hz"
+          }
+        }
+      ]
+    },
+    {
+      "indice": 13,
+      "nombre": "Repiques",
+      "volumen": 0.55,
+      "dispositivos": [
+        {
+          "nombre": "707 Core Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 14,
+      "nombre": "Splash",
+      "volumen": 0.5,
+      "dispositivos": [
+        {
+          "nombre": "Cymbal 808 Full",
+          "clase": "OriginalSimpler",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "9.00 kHz"
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 15,
+      "nombre": "Reversa",
+      "volumen": 0.42,
+      "dispositivos": [
+        {
+          "nombre": "Cymbal Crash Reverse Gnirob",
+          "clase": "OriginalSimpler",
+          "parametros": {}
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 16,
+      "nombre": "Lead",
+      "volumen": 0.55,
+      "dispositivos": [
+        {
+          "nombre": "Tube Lead Pluck",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "4.20 kHz"
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    },
+    {
+      "indice": 17,
+      "nombre": "Riser",
+      "volumen": 0.34,
+      "dispositivos": [
+        {
+          "nombre": "Riser White Noise",
+          "clase": "OriginalSimpler",
+          "parametros": {}
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Frequency": "6.49 kHz"
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {}
+        }
+      ]
+    }
+  ]
+}
