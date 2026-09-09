@@ -118,3 +118,35 @@ aplicando, es aprendizaje. Si solo explica una fecha, es bitacora.
 
 `arquetipo/` tiene el metodo empaquetado para arrancar otro proyecto con esta
 forma de trabajo: `python arquetipo/nuevo_proyecto.py <destino> --nombre X`.
+
+---
+
+## El set de Live no se guarda: se reconstruye (2026-09-09)
+
+Live no le expone `save` a los Remote Scripts, asi que el `.als` no se puede
+escribir por codigo. En vez de tratarlo como un original que hay que cuidar, el
+set se trata como el RESULTADO de una receta versionada:
+
+```
+python scripts/armar_set.py          # 13 pistas, instrumentos, efectos, niveles
+python scripts/idea.py --nombre v1 --tema
+python scripts/montar.py v1 --desde 161
+```
+
+Tres comandos, cinco minutos, y el tema entero vuelve a estar. Perder el set es
+perder tiempo de maquina, no trabajo.
+
+- `data/set_live.json` — la receta. Se regenera desde Live con
+  `python scripts/armar_set.py --capturar`, y hay que hacerlo cada vez que se
+  cambie algo a mano en Live, o deja de coincidir con la realidad.
+- Cada instrumento lleva alternativas en `ALTERNATIVAS`, y la ultima de cada
+  lista es siempre un MOTOR (Drift, Drum Rack, Simpler), no un preset. Esos tres
+  estan en las tres ediciones de Live, asi que la receta sigue funcionando en
+  Intro aunque falte el preset lindo.
+- El MIDI de las versiones (`postproduction/bocetos/v1/`) SI se versiona. Las
+  carpetas `repiques_*` y `comparacion_*` no: son transcripciones de temas
+  comerciales, material de referencia como los samples.
+
+**El tempo esta en dos lados y tienen que coincidir**: `BPM` en `armar_set.py` y
+`--bpm` en `idea.py`. Estuvieron en 121 y 123 sin que nadie lo notara.
+

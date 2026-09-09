@@ -273,6 +273,33 @@ mencionan. Y que cada definición declare tres cosas: sus herramientas con el
 comando exacto, sus reglas de operación **con el error que las originó**, y sus
 límites — qué no puede hacer y qué no prueba lo que mide.
 
+## Guardar el resultado no siempre es guardar el archivo
+
+**Que paso.** Todo el armado del set de Live —trece pistas con instrumentos,
+cadenas de efectos, filtros calibrados y niveles— vivia solo en la RAM de Live.
+El `.als` en disco tenia cuatro meses. Live no le expone `save` a los Remote
+Scripts (probado: no hay handler, y es deliberado), y la licencia Trial tampoco
+deja guardar a mano.
+
+**Por que.** El set no es un original: es el RESULTADO de una receta. Trece
+pistas, cada una con un instrumento buscado por nombre en el browser, unos
+efectos y unos numeros. Eso entra en un JSON de cuatro kilobytes.
+
+**Como se aplica.** Cuando no se puede guardar el artefacto, se guarda lo que lo
+produce y se verifica que lo produzca. `data/set_live.json` + `armar_set.py` +
+`idea.py` + `montar.py` reconstruyen el tema entero en cinco minutos de maquina.
+El script tiene los dos sentidos —`--capturar` lee el set y reescribe la
+receta— porque una receta que hay que mantener a mano deja de coincidir con la
+realidad en la primera sesion.
+
+Y hay que CORRERLO antes de decir que sirve. Un script de reconstruccion sin
+probar es peor que no tenerlo: da por resuelto un riesgo que sigue abierto.
+
+El efecto de costado resulto valer mas que el objetivo: como cada instrumento
+lleva su lista de alternativas y la ultima es siempre un motor y no un preset,
+cambiar de edicion de Live —donde muchos presets no existen— pasa a ser cambiar
+un nombre en un JSON.
+
 ## El contraste no se hace restando
 
 **Que paso.** El cierre eran dieciseis compases con una unica pista tocando. Se

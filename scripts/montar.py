@@ -108,12 +108,26 @@ def main() -> None:
         live.enviar("/live/song/set/loop_start", 0.0)
         live.enviar("/live/song/set/loop_length", float(total * 4))
         live.enviar("/live/song/set/loop", 1)
-        live.enviar("/live/song/stop_playing")
-        time.sleep(0.5)
+        # Primero se arranca el transporte y DESPUES se mueve el cabezal.
+        #
+        # El orden importa y es al reves de lo que parece. Medido sobre el set:
+        #
+        #     posicion -> start_playing       queda en el compas 2
+        #     posicion -> continue_playing    a veces anda, a veces no
+        #     start_playing -> posicion       anda siempre
+        #
+        # `start_playing` arranca desde el marcador de inicio y pisa cualquier
+        # posicion escrita antes; `continue_playing` retoma desde donde se paro,
+        # que tampoco es donde uno la puso. Con el transporte ya andando, escribir
+        # `current_song_time` es un salto y se respeta.
+        #
+        # El sintoma de tenerlo al reves es "no suena": suena, pero en el compas 2
+        # de una intro que son treinta y dos compases de groove, asi que durante
+        # un minuto no pasa nada de lo que se queria escuchar.
+        live.enviar("/live/song/start_playing")
+        time.sleep(0.6)
         live.enviar("/live/song/set/current_song_time", float((args.desde - 1) * 4))
-        time.sleep(0.4)
-        live.enviar("/live/song/continue_playing")
-        time.sleep(1.5)
+        time.sleep(1.2)
         print(f"\n  {total} compases · sonando desde el {args.desde}")
 
 
