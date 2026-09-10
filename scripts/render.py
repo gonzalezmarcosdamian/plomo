@@ -161,6 +161,23 @@ def grabar(live: Live, desde: int, compases: int,
     # libre. Si no se puede, se aborta con un mensaje claro y no con una toma
     # que parece buena y no lo es.
     _vaciar_region(live, (desde - 1) * 4.0, (desde + compases + 2) * 4.0)
+    # Volver al arreglo antes de tocar. Cualquier accion de sesion —disparar
+    # o parar un clip, incluso borrar uno de un slot— saca a esa pista del
+    # arreglo, y entonces sus clips del arreglo no suenan aunque esten ahi:
+    # una pista entera midio -240 dBFS con 251 notas cargadas. Es un estado de
+    # Live, no un error del MIDI, y se apaga con back_to_arranger.
+    live.enviar("/live/song/set/back_to_arranger", 0); time.sleep(0.2)
+    # Desarmar TODAS las demas pistas. Live arma sola la ultima pista creada,
+    # y con la grabacion prendida graba en todas las armadas: esa pista entra
+    # en grabacion, reproduce su entrada (nada) en vez de sus clips, y encima
+    # los pisa. La pista Hats midio -240 dBFS con 251 notas cargadas por eso.
+    for t in range(live.n_pistas()):
+        if t != PISTA_RENDER:
+            try:
+                if live.preguntar("/live/track/get/can_be_armed", t)[-1]:
+                    live.enviar("/live/track/set/arm", t, 0)
+            except Exception:
+                pass
     live.enviar("/live/track/set/arm", PISTA_RENDER, 1); time.sleep(0.3)
     live.enviar("/live/song/start_playing"); time.sleep(0.5)
     live.enviar("/live/song/set/current_song_time", float((desde - 1) * 4)); time.sleep(0.8)

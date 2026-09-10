@@ -352,6 +352,26 @@ lleva su lista de alternativas y la ultima es siempre un motor y no un preset,
 cambiar de edicion de Live —donde muchos presets no existen— pasa a ser cambiar
 un nombre en un JSON.
 
+## Una pista armada graba, no reproduce
+
+**Qué pasó.** La pista Hats, recién creada, con sus clips en el arreglo y su
+cadena sonando cuando se le disparaba una nota desde sesión, daba −240 dBFS
+al grabar el master. Se revisó enrutado, dispositivos, "Back to Arrangement",
+el contenido de los clips, y se reconstruyó la pista entera: seguía muda. El
+dato estaba impreso desde el principio y se pasó por encima: `arm: True`.
+
+**Por qué.** Live arma sola la última pista creada. Y cuando el render prende
+la grabación, Live graba en TODAS las pistas armadas: esa pista entra en
+grabación, reproduce su entrada (nada) en vez de sus clips, y encima los pisa
+—de ahí los clips partidos en 145/147—. No es un error de la pista: es Live
+haciendo exactamente lo que se le pidió.
+
+**Cómo se aplica.** Antes de cualquier toma, desarmar todas las pistas menos
+la de render; `render.py` lo hace solo. Y una regla más general que ya se
+pagó dos veces hoy: cuando un estado se imprime y se lee "irrelevante", volver
+a mirarlo antes de reconstruir nada. Reconstruir es caro y no cambia el
+estado que causó el problema.
+
 ## Un pad vacío no suena flojo: no suena
 
 **Qué pasó.** Durante dos días la batería escribió shaker en la nota 70 y

@@ -9,6 +9,44 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-10 (madrugada) — mas Vuarambon, mas peak, y la pista armada
+
+Pedido del DJ: *"siento a destiempo los claps, quiero algo mas Simon
+Vuarambon y mas de peak; la idea esta pero falta el estilo. Hace los 5 pasos.
+El drop es larguisimo y muy silencioso, tiene que ser para juntar tension."*
+
+**Referencia nueva.** Se midio Lake Of Fire (Vuarambon & Tantum, Bedrock,
+E6.2) con `traducir.py`: bajo de 7.06 ataques por compas y 96% de cobertura
+—la celula saltarina, no la nota tenida del techno—, claps 7.8 por compas con
+7.7 ms de dispersion, cresta de bateria 9.1 dB, delay a 1/8 en lo melodico.
+
+**Cambios de escritura.** Bajada de 32 a 16 compases, con piso mas alto y las
+capas entrando al doble de rapido ("larguisima y muy silenciosa" era eso). Lo
+que se saca se lo lleva el drop 2, que pasa a 48. El bajo vuelve a la celula
+de Vuarambon. Los claps fantasma en la semicorchea antes del pulso se van:
+"a destiempo" era eso —anticipan el golpe—. Los hats a su propia pista.
+
+**Los cinco pasos en Live.** Repiques abajo y Metales arriba; Glue Compressor
+en las cuatro pistas de bateria (umbral -22 dB, ratio 4, +3 dB de salida);
+pump de los pads al 75%; reverb en gancho y acordes; delay del gancho a 1/8;
+pista Hats con Utility 150% y Haas.
+
+**Dos bugs propios que costaron una hora.** Las partes mas largas que 32
+compases (el drop 2 de 48) se recortaban con una ventana negativa y quedaban
+con los primeros dieciseis vacios: el render midio trece compases de silencio
+digital y se busco el error en Live. Y la pista Hats estaba ARMADA —Live arma
+sola la ultima creada— asi que cada toma la ponia en grabacion en vez de
+reproduccion: muda, y con los clips pisados. Se reviso todo lo demas y se
+reconstruyo la pista antes de leer el `arm: True` que estaba impreso desde el
+principio. `render.py` ahora desarma todo antes de grabar, y verifica que el
+transporte avanza y que el render tiene audio.
+
+**Vuelta 6, contra Lake Of Fire** (drop 2, compases 147-162): la tabla de
+abajo. El pump del bajo quedo clavado (-6.7 contra -6.0); las densidades
+quedan un poco por debajo; el ancho de bateria y la cresta son lo que sigue.
+
+---
+
 ## 2026-09-10 — dos capas mudas desde el primer dia, y el lazo que las encontro
 
 Live se actualizo solo a 12.4.2 en el medio (el dialogo "automatic update in

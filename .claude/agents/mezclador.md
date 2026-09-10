@@ -94,3 +94,14 @@ tocar nada: ahi esta por que existe esto y el plan en orden.
   -1.0). Si el ancho da 0.01 en un stem, es que ese stem es mono de verdad:
   hats y percusion en un Drum Rack salen al centro. Ensanchar por Utility no
   hace nada sobre una fuente mono; hace falta Haas, paneo o pistas separadas.
+
+- **Ninguna pista armada salvo la de render.** Live arma sola la ultima
+  pista creada, y con record_mode prendido graba en todas las armadas: esa
+  pista reproduce su entrada (nada) y pisa sus clips. Una pista que suena
+  desde sesion y no desde el arreglo casi siempre es esto. `render.py`
+  desarma todo antes de cada toma.
+- **La referencia para "mas Vuarambon y mas peak" es Lake Of Fire** (Bedrock,
+  122 BPM, E6.2): bajo de 7.06 ataques por compas y 96% de cobertura, claps
+  7.8 con 7.7 ms de dispersion, cresta de bateria 9.1 dB, delay a 1/8 en lo
+  melodico, pump de -6 dB en bajo y melodico. Distinta del remix de Van
+  Reeken en el bajo (saltarin, no tenido) y en lo melodico (continuo).
