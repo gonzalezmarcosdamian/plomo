@@ -9,6 +9,29 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-10 — la seccion despues del drop 1 es tension, no bajada
+
+Cuatro versiones en una tarde, cada una con su queja: 32 compases sin bombo
+("larguisimo y silencioso"), 16 con percusion entrando despues ("re brusco,
+viene de una conga linda"), 8 con medios y agudos planos ("sigue muy brusco"),
+bombo y bajo desvaneciendose en cuatro compases con la pendiente de Estigia
+("mucho silencio"). Y la definicion del DJ: "el ambiente no lo sacaria, el
+groove lo mantendria, haria tension, y luego liberaria todo".
+
+Ahora en 113-120 se queda todo —bombo, percusion, hats, metales, textura,
+armonia, gancho— y se retira el grupo de bajo. El riser crece los ocho
+compases; la subida 2 trae el redoble; el drop 2 (56 compases) libera. Sin
+platillo ni reversa en la entrada.
+
+Medido en el render propio: total -16 -> -20 dB (referencias: -5), graves
+-18.5 -> -21 (solo el bajo), medios -1.5, agudos planos y subiendo. La version
+anterior caia a -27.
+
+Aprendizaje nuevo: "La tension no es silencio: se retira una sola cosa y el
+resto pide que vuelva".
+
+---
+
 ## 2026-09-10 — "otra vez se muere el drop": el bajon de Vuarambon, y menos conga
 
 **"Busca mas referencias."** `transicion.py` ahora mira 16 compases despues de

@@ -377,6 +377,33 @@ mismo instrumento en los dos lados antes de tocar la grilla. Y leer los
 números **relativos** al bombo: el absoluto depende de dónde el detector
 puso el cero.
 
+## La tensión no es silencio: se retira una sola cosa y el resto pide que vuelva
+
+**Qué pasó.** Cuatro versiones de la misma sección en una tarde. Bajada de 32
+compases sin bombo: "es larguísimo y muy silencioso". De 16, con la percusión
+entrando después: "es re brusco, es silencio, y viene de una conga linda". De
+8, con medios y agudos planos como en las referencias: "sigue muy brusco". Con
+el bombo y el bajo desvaneciéndose en cuatro compases, pendiente idéntica a
+Estigia: "mucho silencio". Y entonces la definición del DJ, que valía más que
+las cuatro mediciones: *"el ambiente no lo sacaría, el groove lo mantendría,
+haría tensión, y luego liberaría todo"*.
+
+**Por qué.** Se estaba midiendo bien la forma equivocada. Las referencias de
+Vuarambón peak —Stamina, Zenith, Prodiga— no tienen bajada después del drop;
+Estigia hace un bajón de tres compases y vuelve. La sección que faltaba no era
+una bajada bien hecha: era **tensión**. Y la tensión se hace reteniendo UNA
+cosa que el cuerpo espera —el bajo— con todo lo demás sonando. Cuando se van
+varias capas el oído no espera nada: no hay a qué volver, y eso se escucha
+como silencio aunque los medidores digan que los agudos van planos.
+
+**Cómo se aplica.** Después de un drop, antes de otro, no se vacía: se retira
+el grupo de bajo con el bombo puesto, se suma el riser, y el redoble libera.
+Medido en el render: total −4 dB (las referencias −5), graves −2.5, medios
+−1.5, agudos planos y subiendo. Antes: −11 dB. Y una regla más general: cuando
+el DJ describe lo que HARÍA con verbos —"mantendría", "haría", "liberaría"—
+eso es la especificación; las mediciones son para verificarla, no para
+reemplazarla.
+
 ## En la bajada se van los graves, no el tema
 
 **Qué pasó.** "Es re brusco, es silencio, y viene de una conga linda". La
