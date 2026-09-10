@@ -78,11 +78,52 @@ def _wav_nuevo(antes: set[Path]) -> Path | None:
     return None
 
 
+def _clips(live: Live) -> list[tuple[float, float]]:
+    ini = live.preguntar("/live/track/get/arrangement_clips/start_time", PISTA_RENDER)[1:]
+    lar = live.preguntar("/live/track/get/arrangement_clips/length", PISTA_RENDER)[1:]
+    return [(float(a), float(b)) for a, b in zip(ini, lar)]
+
+
+def _tiene_borrado(live: Live) -> bool:
+    """Si el handler propio /live/arrangement/delete_clip esta cargado.
+
+    Se prueba con un timeout corto: preguntarle a un handler que no existe
+    espera el timeout entero (45 s) y eso paso adentro del render sin que nada
+    lo dijera.
+    """
+    viejo = live.timeout
+    live.timeout = 3.0
+    try:
+        live.preguntar("/live/arrangement/delete_clip", PISTA_RENDER, 9999)
+        return True
+    except Exception:
+        return False
+    finally:
+        live.timeout = viejo
+
+
+def _vaciar_region(live: Live, a: float, b: float) -> None:
+    """Saca de la pista de render todo clip que toque [a, b) pulsos."""
+    borrar = _tiene_borrado(live)
+    for _ in range(8):
+        toca = [i for i, (ini, lar) in enumerate(_clips(live)) if ini < b and ini + lar > a]
+        if not toca:
+            return
+        if borrar:
+            live.preguntar("/live/arrangement/delete_clip", PISTA_RENDER, toca[-1])
+        else:
+            live.enviar("/live/song/undo")
+        time.sleep(0.8)
+    quedan = [c for c in _clips(live) if c[0] < b and c[0] + c[1] > a]
+    if quedan:
+        sys.exit(f"  la pista de render tiene clips en la region y no los pude sacar: "
+                 f"{quedan}. Recargar el Control Surface (handler de borrado) o "
+                 f"borrarlos a mano.")
+
+
 def grabar(live: Live, desde: int, compases: int,
            solo: list[int] | None = None) -> tuple[Path, float]:
     antes = _wavs()
-    clips_antes = {round(float(x), 3) for x in
-                   live.preguntar("/live/track/get/arrangement_clips/start_time", PISTA_RENDER)[1:]}
     tipos = [str(x) for x in
              live.preguntar("/live/track/get/available_input_routing_types", PISTA_RENDER)[1:]]
     if not any("Resampl" in x for x in tipos):
@@ -98,6 +139,21 @@ def grabar(live: Live, desde: int, compases: int,
 
     live.enviar("/live/song/stop_playing"); time.sleep(0.5)
     live.enviar("/live/song/set/record_mode", 0)
+    # El loop de la cancion se apaga durante la toma. Las tomas que se fugaban
+    # terminaban TODAS en el pulso 960 —el compas 240, el fin del loop— sin
+    # importar cuando se mandara el stop. Con el loop apagado la toma termina
+    # donde se la para. Se restaura despues, porque montar.py lo deja puesto
+    # para que el cabezal no se vaya mas alla del final.
+    loop_habia = bool(live.preguntar("/live/song/get/loop")[-1])
+    live.enviar("/live/song/set/loop", 0); time.sleep(0.2)
+    # La region de la toma tiene que estar VACIA en la pista de render. Si hay
+    # un clip viejo ahi, grabar encima lo parte en dos y despues no se sabe
+    # cual es la toma: se leia el largo del viejo (398 pulsos) como si fuera la
+    # nueva, y el undo sacaba lo que no era. Se limpia con el handler propio
+    # de borrado si esta cargado, y si no con undo hasta que la region quede
+    # libre. Si no se puede, se aborta con un mensaje claro y no con una toma
+    # que parece buena y no lo es.
+    _vaciar_region(live, (desde - 1) * 4.0, (desde + compases + 2) * 4.0)
     live.enviar("/live/track/set/arm", PISTA_RENDER, 1); time.sleep(0.3)
     live.enviar("/live/song/start_playing"); time.sleep(0.5)
     live.enviar("/live/song/set/current_song_time", float((desde - 1) * 4)); time.sleep(0.8)
@@ -113,9 +169,17 @@ def grabar(live: Live, desde: int, compases: int,
 
     live.enviar("/live/song/set/record_mode", 1)
     # un compas de mas: lo que se pierde al recortar al compas pedido
-    time.sleep((compases + 1) * 4 * 60.0 / BPM + 0.3)
-    live.enviar("/live/song/set/record_mode", 0); time.sleep(0.3)
-    live.enviar("/live/song/stop_playing"); time.sleep(0.5)
+    time.sleep((compases + 2) * 4 * 60.0 / BPM + 0.3)   # dos de margen: la toma arranca hasta un compas tarde
+    # Parar y VERIFICAR que paro. Las tomas salian de 58, 69 y 150 segundos
+    # para pedidos de 10 a 33: Live seguia grabando despues del stop, y el undo
+    # de una grabacion en curso no la deshace, asi que el archivo quedaba
+    # trabado. No se supone que paro: se pregunta hasta que diga que si.
+    for _ in range(20):
+        live.enviar("/live/song/set/record_mode", 0)
+        live.enviar("/live/song/stop_playing")
+        time.sleep(0.5)
+        if not live.preguntar("/live/song/get/is_playing")[-1]:
+            break
     live.enviar("/live/track/set/arm", PISTA_RENDER, 0)
     if solo:
         for t in range(4, live.n_pistas()):
@@ -123,21 +187,29 @@ def grabar(live: Live, desde: int, compases: int,
 
     largos = [float(x) for x in
               live.preguntar("/live/track/get/arrangement_clips/length", PISTA_RENDER)[1:]]
-    inicios = [round(float(x), 3) for x in
-               live.preguntar("/live/track/get/arrangement_clips/start_time", PISTA_RENDER)[1:]]
-    # La toma nueva es el clip que NO estaba antes — por diferencia, no "el de
-    # mayor inicio". Un clip viejo que sobrevivio a los undo (uno en el pulso
-    # 832) ganaba siempre, y el recorte salia de otro lugar del tema.
-    nuevos = [i for i in inicios if i not in clips_antes]
-    inicio = (min(nuevos, key=lambda i: abs(i - (desde - 1) * 4)) if nuevos
-              else float((desde - 1) * 4))
-    # el undo saca el clip y Live suelta el archivo; el WAV queda en disco
-    live.enviar("/live/song/undo"); time.sleep(1.0)
+    a, b = (desde - 1) * 4.0, (desde + compases + 2) * 4.0
+    en_region = [c for c in _clips(live) if c[0] < b and c[0] + c[1] > a]
+    if len(en_region) != 1:
+        sys.exit(f"  esperaba UN clip nuevo en la region y hay {len(en_region)}: {en_region}")
+    inicio, largo_toma = en_region[0]
+    largos = [largo_toma]
+    # El undo saca el clip y Live suelta el archivo; el WAV queda en disco.
+    # Tambien verificado: se cuenta los clips antes y despues, y se reintenta
+    # porque el primer undo a veces deshace otra cosa (el arm, el nombre).
+    # Primero se intenta borrar el clip nuevo por indice (handler propio del
+    # Remote Script); si ese handler no esta cargado, se cae al undo. En los dos
+    # casos se verifica contra el conteo de ANTES de armar, no contra el de
+    # despues de grabar: el undo a veces deshace otra cosa primero.
+    _vaciar_region(live, (desde - 1) * 4.0, (desde + compases + 2) * 4.0)
+    if loop_habia:
+        live.enviar("/live/song/set/loop", 1)
     wav = _wav_nuevo(antes)
     if wav is None:
         sys.exit("  Live no escribio ningun WAV")
-    print(f"  toma de {max(largos) if largos else 0:.1f} pulsos desde el pulso "
-          f"{inicio:.2f} · {wav.name}")
+    # El largo que reporta Live para un clip recien grabado es el del sample
+    # pre-asignado (unos 400 pulsos), no el de lo grabado: no se muestra como
+    # si fuera la duracion de la toma.
+    print(f"  toma desde el pulso {inicio:.2f} · {wav.name}")
     return wav, inicio
 
 
@@ -198,6 +270,11 @@ def main() -> None:
         nuevo = destino.with_name(destino.name.replace(
             f"{args.desde}-{args.desde + args.compases - 1}",
             f"{real}-{real + args.compases - 1}"))
+        # el render mas nuevo de una region pisa al anterior: iterar.py toma el
+        # mas reciente por fecha, y guardar diez tomas del mismo tramo no
+        # ayuda a nadie
+        if nuevo.exists():
+            nuevo.unlink()
         destino.rename(nuevo); destino = nuevo
         print(f"  (arranco en el compas {real}, no en el {args.desde})")
     print(f"  {destino.relative_to(RAIZ)} · {destino.stat().st_size / 1e6:.1f} MB")

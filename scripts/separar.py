@@ -59,7 +59,13 @@ def separar(archivo: Path, desde: float, duracion: float,
     if not PYTHON_DEMUCS.exists():
         raise SystemExit(FALTA)
 
-    nombre = f"{archivo.stem[:40].strip()}_{int(desde)}_{int(duracion)}"
+    # La fecha del archivo va en la clave. Sin eso un render que pisa al
+    # anterior con el mismo nombre reusa los stems viejos, y una vuelta del
+    # bucle "mide" exactamente los mismos dieciocho numeros que la anterior sin
+    # que nada avise. Una referencia no cambia nunca, asi que para ella la
+    # clave sigue siendo estable.
+    nombre = (f"{archivo.stem[:40].strip()}_{int(desde)}_{int(duracion)}"
+              f"_{int(archivo.stat().st_mtime)}")
     nombre = "".join(c if c.isalnum() or c in "-_" else "_" for c in nombre)
     salida = CACHE / MODELO / nombre
     stems = {n: salida / f"{n}.wav" for n in ("drums", "bass", "other")}

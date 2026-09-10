@@ -156,6 +156,22 @@ class BrowserHandler(AbletonOSCHandler):
                     return ("ok", nombre)
             return ("no existe", nombre)
 
+        # -- borrar un clip del arreglo -------------------------------------
+        # AbletonOSC borra clips de sesion (`/live/track/delete_clip` es por
+        # slot) pero no del arreglo. Hizo falta para el render: la toma grabada
+        # por Resampling queda como clip en el arreglo y mientras exista Live
+        # tiene el WAV abierto. Deshacer con undo funciona casi siempre, y "casi"
+        # es lo que deja archivos trabados. Borrar por indice es determinista.
+        def a_borrar_clip(params):
+            pista, idx = int(params[0]), int(params[1])
+            track = self.song.tracks[pista]
+            clips = list(track.arrangement_clips)
+            if not 0 <= idx < len(clips):
+                return (pista, "sin clip", idx)
+            track.delete_clip(clips[idx])
+            return (pista, "ok", idx)
+
+        self.osc_server.add_handler("/live/arrangement/delete_clip", a_borrar_clip)
         self.osc_server.add_handler("/live/master/get/output", master_salida)
         self.osc_server.add_handler("/live/master/set/output_channel", master_poner_salida)
         self.osc_server.add_handler("/live/arrangement/duplicate", a_arrangement)

@@ -687,7 +687,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.0
+              "valor": 0.75
             },
             "Stereo Mode": {
               "valor": 0.0
@@ -1252,7 +1252,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.0
+              "valor": 0.75
             },
             "Stereo Mode": {
               "valor": 0.0
@@ -1677,7 +1677,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.0
+              "valor": 0.75
             },
             "Stereo Mode": {
               "valor": 0.0
@@ -1993,7 +1993,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.0
+              "valor": 0.75
             },
             "Stereo Mode": {
               "valor": 0.0
@@ -2096,7 +2096,7 @@
               "valor": 1.0
             },
             "Frequency": {
-              "valor": 0.773901
+              "valor": 0.7839
             },
             "Resonance": {
               "valor": 0.0
@@ -2105,7 +2105,7 @@
               "valor": 0.0
             },
             "Filter Type": {
-              "valor": 0.0
+              "valor": 1.0
             },
             "Filter Slope": {
               "valor": 1.0
@@ -2829,7 +2829,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.0
+              "valor": 0.75
             },
             "Stereo Mode": {
               "valor": 0.0
@@ -3247,7 +3247,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.0
+              "valor": 0.75
             },
             "Stereo Mode": {
               "valor": 0.0

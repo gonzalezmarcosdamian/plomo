@@ -9,6 +9,68 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-09 (noche) — el lazo cerrado y las primeras cuatro vueltas
+
+Pedido: *"necesito un plan para que evoluciones"* y despues *"todo el esfuerzo
+en iterar los agentes y la logica para hacer temas mas parecidos a las
+referencias"*. El plan esta en `docs/BUCLE.md`; esto es lo que paso al
+ejecutar las primeras vueltas.
+
+**Lo que se destrabo.** Grabar no es exportar: `render.py` toma el master por
+Resampling y Live lo escribe a disco aunque la Trial no exporte. Costo cinco
+correcciones encontrar el protocolo que no falla: transporte antes que
+cabezal, grabar recien con el cabezal en su lugar, loop de la cancion apagado
+durante la toma, region de la pista de render VACIA antes y despues (un clip
+viejo se parte en dos al grabar encima y ya no se sabe cual es la toma), y el
+WAV nuevo por diferencia de conjunto porque OneDrive mueve las fechas. El
+largo que Live reporta para un clip recien grabado es el del sample
+pre-asignado (~400 pulsos), no el de la toma: se ignora.
+
+**Vuelta 1 — melodia suena 100% → 77%.** Gancho techno con dos huecos por
+bloque: cobertura escrita de 96% a 72%. Medido: sigue 100%. La banda
+1200-5000 Hz del stem melodico no la llena el gancho, la llena la Textura
+(ruido con pasa-bajos a 4.2 kHz). Se queda el cambio de MIDI (es lo que la
+referencia hace) y se anota que la dimension esta dominada por otra capa.
+
+**Vuelta 2 — Textura a pasa-altos 4.5 kHz.** Los dieciocho numeros salieron
+IDENTICOS a la vuelta 1: Demucs cacheaba los stems por nombre de archivo y el
+render nuevo piso al viejo con el mismo nombre. La vuelta no se habia medido.
+Corregido (la clave del cache incluye la fecha), medido de nuevo: sigue 100%.
+Quedan la atmosfera, los acordes y el bajo medio en esa banda; el cambio se
+queda porque es correcto (la referencia tiene aire continuo, pero arriba de
+5 kHz) y la dimension pasa a "estructural: menos capas continuas en 1.2-5 k".
+
+**Vuelta 3 — sidechain bajo: silenciar el subkick.** Hipotesis: el seno del
+subkick cae en el stem "bass" y rellena el pozo. Medido: -2.5 → -2.2 dB. No se
+movio. Revertido. El grupo de bajo grabado solo (sin bombo) tambien dio -2.2,
+asi que no era atribucion de Demucs.
+
+**Vuelta 4 — la fase del pump.** Midiendo DONDE cae el minimo dentro del
+pulso: al 73%, 360 ms despues del bombo. El pozo existia (-11 dB) pero en otra
+fase; el medidor busca en el primer tercio y el oido tampoco lo lee como pump.
+Calibrado con `Offset` del Auto Pan en las seis pistas con pump: 0° → 71%,
+90° → 47%, 180° → 22%, 270° → 98%. Lineal, 25% por cada 90°. Queda 270°: el
+pozo diez milisegundos ANTES del bombo, como un compresor con lookahead, y
+-16 dB en el grupo de bajo solo contra -14.3 de la referencia. En la mezcla
+completa por Demucs: -2.2 → -4.4 dB. La diferencia con el stem solo es el
+bombo colandose en el stem "bass"; la comparacion justa para esta dimension es
+stem propio contra stem Demucs de la referencia (plan, punto 2).
+
+**Bloqueante que es del DJ.** El master de este Live sale en mono: con paneo
+-0.30 y Haas en la percusion, el render dio L y R identicos. Resampling graba
+lo que el master manda a su salida. Se agrego `/live/master/get/output` y
+`/live/arrangement/delete_clip` al Remote Script (toman efecto al recargar el
+Control Surface); la primera vez es a mano en Master > I/O.
+
+**Estado despues de cuatro vueltas** (v2, drop 2, contra el remix de Van
+Reeken): 10 de 18 fuera de tolerancia. Densidad de bateria y bajo: todo ok.
+Pendientes con causa conocida: pump (atribucion), ancho (master mono),
+melodia suena (capas continuas), cresta de bateria 17 contra 11.5 (falta
+compresion en la bateria), cola melodica 0.06 contra 0.16 (falta reverb en lo
+melodico).
+
+---
+
 ## 2026-09-09 (tarde) — la tension como rampa
 
 Pedido del DJ: *"prefiero que iteremos la tension en los momentos que
