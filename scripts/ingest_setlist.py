@@ -39,7 +39,11 @@ LINEA = re.compile(
     r"(?:\d{1,3}[.)]\s*)?"                              # numeracion opcional
     r"(?P<artist>.+?)\s+[-–—]\s+(?P<title>.+?)\s*$"
 )
-RUIDO = re.compile(r"^(tracklist|setlist|id\s*-\s*id|w/|\s*$)", re.I)
+RUIDO = re.compile(r"^(tracklist|setlist|w/|\s*$)", re.I)
+# Timestamp al FINAL del titulo: "Artista - Titulo (1:23:45)". Si no se saca,
+# el titulo nunca matchea contra el pool.
+COLA_TS = re.compile(r"\s*[(\[]\d{1,2}[:.]\d{2}(?::\d{2})?[)\]]\s*$")
+ES_ID = re.compile(r"^id$", re.I)
 
 
 def slug(s: str) -> str:
@@ -62,10 +66,16 @@ def parsear(lineas: list[str]) -> list[dict]:
         m = LINEA.match(ln.strip())
         if not m:
             continue
+        artist = m.group("artist").strip()
+        title = COLA_TS.sub("", m.group("title").strip()).strip()
+        # Los "ID - ID" NO se descartan: se guardan como hueco. Si se borraran,
+        # dos tracks que estaban a cinco minutos uno del otro quedarian
+        # consecutivos y el backtest mediria una transicion que nunca existio.
         out.append({
             "pos": len(out) + 1,
-            "artist": m.group("artist").strip(),
-            "title": m.group("title").strip(),
+            "artist": artist,
+            "title": title,
+            "es_id": bool(ES_ID.match(artist) and ES_ID.match(title)),
         })
     return out
 
@@ -73,7 +83,7 @@ def parsear(lineas: list[str]) -> list[dict]:
 def enriquecer(tracks: list[dict], indice: dict[str, dict]) -> tuple[list[dict], int]:
     hits = 0
     for t in tracks:
-        m = indice.get(clave(t["artist"], t["title"]))
+        m = None if t.get("es_id") else indice.get(clave(t["artist"], t["title"]))
         if m:
             hits += 1
             t.update(key=m["key"], bpm=m["bpm"], energy=m["energy"],
@@ -104,6 +114,8 @@ def main() -> None:
         sys.exit("no se parseo ningun track — revisa el formato 'Artista - Titulo'")
 
     tracks, hits = enriquecer(tracks, cargar_indice())
+    ids = sum(1 for t in tracks if t.get("es_id"))
+    nombrados = len(tracks) - ids
     doc = {
         "dj": args.dj,
         "evento": args.evento,
@@ -111,17 +123,20 @@ def main() -> None:
         "fuente": args.fuente,
         "orden_confiable": not args.orden_dudoso,
         "n": len(tracks),
-        "cobertura_datos": round(hits / len(tracks), 3),
+        "n_identificados": nombrados,
+        "n_huecos_id": ids,
+        "cobertura_datos": round(hits / nombrados, 3) if nombrados else 0.0,
         "tracks": tracks,
     }
     DEST.mkdir(parents=True, exist_ok=True)
     nombre = "_".join(x for x in [slug(args.dj), slug(args.evento or ""), args.fecha] if x)
     out = DEST / f"{nombre}.json"
     out.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"{len(tracks)} tracks -> {out.relative_to(RAIZ)}")
-    print(f"con key/BPM/energia desde la biblioteca: {hits}/{len(tracks)} "
+    print(f"{len(tracks)} posiciones ({nombrados} con nombre, {ids} huecos ID) "
+          f"-> {out.relative_to(RAIZ)}")
+    print(f"con key/BPM/energia desde la biblioteca: {hits}/{nombrados} "
           f"({doc['cobertura_datos']:.0%})")
-    if hits < len(tracks):
+    if hits < nombrados:
         print("Los que no matchearon quedan con key/bpm en null: el backtest "
               "los saltea. Para medir transiciones hace falta completar key y BPM.")
 

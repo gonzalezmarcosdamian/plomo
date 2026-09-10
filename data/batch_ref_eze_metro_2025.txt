@@ -1,0 +1,26 @@
+# Metropolitano Rosario 2025 — Ezequiel Arias (youtu.be/-engjCFawKQ)
+# Confirmados en Muzpa y ausentes de la biblioteca: 14
+# Setlist completo en data/setlists/ezequiel-arias_metropolitano-rosario_2025-06-28.json
+
+Bondarev & Supacooks - Activator   # 123.0 BPM Gm
+Anton Borin - May Spring Come   # 123.0 BPM Gm
+Niko Ava - Freedom   # 122.0 BPM Dm
+Melodiam - Peak   # 122.0 BPM Amin
+Jody Wisternoff & James Grant - Mui (Ezequiel Arias Remix)   # 125.0 BPM Cm
+Luis Damora - Illuminate   # 123.0 BPM Cm
+FJL - Rider   # 124.0 BPM G
+Claudio Cornejo - Alnitak   # 122.0 BPM Am
+Lonya - Sadness (Ziger Remix)   # 122.0 BPM Em
+Ezequiel Arias - ReAnimation   # 125.0 BPM D
+Santi Mossman - Exitz   # 123.0 BPM D
+Ezequiel Arias & Durante - Dream Controller   # 124.0 BPM Db
+Ezequiel Arias - Delirio   # 125.0 BPM Db
+Antrim - Morning Changes   # 123.0 BPM Em
+
+# NO estan en Muzpa (6) — edits propios del DJ o inéditos:
+#   Rezident - It's All On You (Ezequiel Arias Remix)
+#   Sasha - Bring On The Night-Time (Ezequiel Arias Edit)
+#   Deadmau5 - Re_Jaded (Santi Mossman Remix)
+#   Sasha & Police - Out Of Time (Antrim Edit)
+#   Royksopp - Never Ever (COQUEIT Edit)
+#   The Do - Dust It Off (Kevin Di Serna & Sebastian Teillagorry Edit)

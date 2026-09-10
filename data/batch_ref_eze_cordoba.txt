@@ -1,0 +1,39 @@
+# Dahaus x Fruta, Cordoba — Ezequiel Arias (youtu.be/4SDpmTztWk8)
+# Confirmados en Muzpa y ausentes de la biblioteca: 26
+# Setlist completo en data/setlists/ezequiel-arias_dahaus-x-fruta-cordoba_2026-04-12.json
+
+Simos Tagias - Vortex   # 122.0 BPM D
+Simos Tagias - Epos   # 122.0 BPM Dm
+Weird Sounding Dude - Step Up   # 121.0 BPM Ebm
+Montw - Lost on the Road (Arnas D Remix)   # 121.0 BPM Gm
+Simos Tagias - Reality   # 122.0 BPM G
+Mike Griego - Antidote   # 123.0 BPM Gm
+Dark Soul Project & Replicanth - Zicatela   # 122.0 BPM D
+EMPHI - Dust (John Cosani Remix)   # 122.0 BPM D
+Fabricio Gutierrez - Reedmov (Kebin van Reeken Remix)   # 120.0 BPM F#
+Kabi & Augustin Ficarra - The Return   # 123.0 BPM F#m
+Dabeat - Etna (Ivan Aliaga Remix)   # 121.0 BPM Gm
+Juan Sapia & Eric Lune - Tension Release   # 123.0 BPM Dm
+Martin Fredes & GEOVHAN - Deep Story (Ruben Karapetyan Remix)   # 123.0 BPM Gm
+Simos Tagias - Plexus   # 122.0 BPM Dm
+Andre Moret - Generator   # 121.0 BPM Bbm
+Paul (AR) & EANP - Insane (Lexicon Avenue Remix)   # 122.0 BPM Gm
+Spencer Brown & Qrion - 20ms   # 125.0 BPM Fm
+Ezequiel Arias - Mad Man   # 123.0 BPM Gm
+Estiva & Cosmosky - Ecstasy   # 124.0 BPM Abm
+Estiva - What is Love   # 124.0 BPM Gm
+RNX - Molecules   # 124.0 BPM E
+Estiva & Julia Church - On The Line (Estiva Club Mix)   # 124.0 BPM Em
+JESSIN - Babylon (North Echo Remix)   # 125.0 BPM Bm
+Because of Art & Antony Szmierek - Circle of Light (Incandescent Mix)   # 126.0 BPM Fm
+Adriatique & WhoMadeWho - Miracle   # 123.0 BPM C
+Nox Vahn - When I'm With You   # 123.0 BPM Fm
+
+# NO estan en Muzpa (7) — edits propios del DJ o inéditos:
+#   David Bowie - Time (Ezequiel Arias Edit)
+#   Chemical Brothers - Escape Velocity (Ezequiel Arias Remix)
+#   Mind Against & Sideral - Criseide
+#   Qtier - Set Me On (Ezequiel Arias Edit)
+#   The Future Sound Of London - Papua New Guinea (Yotto Remix)
+#   Ben Bohmer - Erase (Ezequiel Arias Remix)
+#   Arcade Fire - Age of Anxiety I (Ezequiel Arias Remix)

@@ -1,0 +1,41 @@
+# Dahaus, Palacio Alsina Cordoba — Simon Vuarambon (youtu.be/oJkXaWOEPAw)
+# Confirmados en Muzpa y ausentes de la biblioteca: 27
+# Setlist completo en data/setlists/simon-vuarambon_dahaus-palacio-alsina-cordoba_2026-03-01.json
+
+Aman Anand - Disastro (Thomas Ferell Remix)   # 120.0 BPM Cm
+Puresine - Chanalex (Enertia-Sound Remix)   # 125.0 BPM Cm
+Doki - Luminus (Cedren & Manu-L Remix)   # 123.0 BPM Cm
+Juan Buitrago - Anja   # 121.0 BPM Cm
+Neuralis - Ethereum   # 120.0 BPM Cm
+ALPHA21 & JUNIOR (SL) - Breaking The Reality (Not Demure Remix)   # 122.0 BPM C
+Ciro Riveiro - Asia   # 121.0 BPM Cm
+Simon Vuarambon - Yield   # 119.0 BPM Dbm
+Agustin Pengov - Trumpert   # 120.0 BPM C
+DAVI - Self ASCND   # 124.0 BPM Dm
+Tobi Amuchastegui - Night Loop   # 121.0 BPM Dm
+Essco - Vacant   # 127.0 BPM Gm
+Tobi Amuchastegui - You Are Not Alone   # 121.0 BPM Dm
+Markus Homm & Nici Faerber - Basement Room   # 124.0 BPM Gm
+Mind Echoes - Unsafe Numbers (Tonaco & Tomas Garcia Remix)   # 123.0 BPM Fm
+Ness - Sector M39   # 99.0 BPM Fm
+Dr. Mirzoyan - Destruction (Ruben Karapetyan Remix)   # 122.0 BPM Fm
+Alan Dixon & Mystery Affair - NRGY (More Acid Mix)   # 125.0 BPM Gm
+Stallings - Lapse   # 126.0 BPM F
+Cafius - Je Veux Danser   # 128.0 BPM Abm
+Jel Ford - Overcast   # 126.0 BPM Amin
+Julian Jeweil - Mars   # 125.0 BPM F#m
+Nick Curly & Jansons - Chip Butty (Alex Kennon Remix)   # 124.0 BPM Bm
+Dosem - Comeback   # 125.0 BPM Bm
+Wehbba - Basic Pleasure   # 128.0 BPM Gm
+Miss Kittin - Life Is My Teacher (Simon Vuarambon Remix)   # 122.0 BPM F#m
+Krystal Klear - Tokyo Flower   # 130.0 BPM Ebm
+
+# NO estan en Muzpa (8) — edits propios del DJ o inéditos:
+#   Tantum & Hyunji-A - Twisted (Simon Vuarambon Remix)
+#   Ramiro Alvarez & Ignacio Hernandez - Two Generetions
+#   Pryda - Rebel XX (Simon Vuarambon Edit)
+#   Guy J - Middlemen
+#   The Chemical Brothers - Eve Of Destruction (Simon Vuarambon Remix)
+#   Sultan & The Greek - Rezin (ID Remix)
+#   Danny Tenaglia presents George Vidal - Out From Obscurity (Simon Vuarambon Remix)
+#   ROSALIA - Reliquia (Simon Vuarambon Remix)
