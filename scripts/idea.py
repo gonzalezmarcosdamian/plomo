@@ -102,11 +102,17 @@ FRASE_BAJO_TECNO = [
 
 # El gancho en techno no es una melodia con figura: es una nota que se queda.
 # 0.81 ataques por compas son cuatro notas cada cinco compases.
+# Vuelta 1 del bucle (docs/BUCLE.md): "melodia suena" daba 100% contra 77% en
+# la referencia. Las tres notas cubrian los dieciseis pulsos del bloque sin un
+# solo hueco: 7.5 + 5.5 + 2.0 = 15 pulsos sonando de 16, y con la cola del pad
+# el resto. La referencia respira: un cuarto del tiempo no hay nada arriba.
+# Dos huecos por bloque —el pulso 4 al 5 y el 12 al 14— y la ultima nota mas
+# corta. Cobertura escrita: 11.5 de 16 = 72%.
 GANCHO_TECNO = [
     # (compas del grupo de 4, pulso, grado, duracion en pulsos)
-    (0, 0.0, 0, 7.5),
-    (2, 0.0, 4, 5.5),
-    (3, 2.0, 2, 2.0),
+    (0, 0.0, 0, 5.5),
+    (1, 2.0, 4, 4.5),
+    (3, 0.0, 2, 1.5),
 ]
 
 COMPASES = 32
