@@ -116,9 +116,21 @@ GANCHO_TECNO = [
 ]
 
 COMPASES = 32
-KICK, CLAP, CHH, OHH, SHAKER, RIM = 36, 39, 42, 46, 70, 37
+KICK, CLAP, CHH, OHH, RIM = 36, 39, 42, 46, 37
 CRASH = 49
-CONGA_ALTA, CONGA_BAJA = 63, 64
+# El shaker y las congas NO son 70, 63 y 64. Esas son las notas del General
+# MIDI, y los kits que usa el proyecto —909 Core Kit y 707 Core Kit— no tienen
+# pad ahi: leidos por nombre desde Live, el 909 trae bombo, hats, clap, toms,
+# rim, snare, crash y ride, y el 707 lo mismo mas tamb y cowbell. Durante dos
+# dias todo lo escrito en 70/63/64 —el shaker en semicorcheas, las congas, el
+# "filtro de peine" entre clap y shaker— fue MIDI a un pad vacio: silencio. Se
+# descubrio grabando la pista sola y midiendo pico 0.000.
+#
+# Rim para el rol del shaker (un tick agudo a baja velocidad, que en techno es
+# ademas lo idiomatico) y los toms alto y medio para las congas. Los tres pads
+# existen en los dos kits, asi que el mismo MIDI suena en Bateria y en Repiques.
+SHAKER = 37
+CONGA_ALTA, CONGA_BAJA = 50, 47
 
 # Los dos ultimos compases sueltan. El 32 era el mas lleno de todo el loop (peso
 # 3706) y volvia al 1, que es el mas vacio (690): un salto de -81% cada vez que

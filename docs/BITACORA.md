@@ -9,6 +9,37 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-10 — dos capas mudas desde el primer dia, y el lazo que las encontro
+
+Live se actualizo solo a 12.4.2 en el medio (el dialogo "automatic update in
+progress" era el swapper borrando la instalacion vieja durante ocho minutos;
+no estaba roto). Reiniciado, los handlers nuevos del Remote Script cargaron:
+AbletonOSC importa sus modulos una vez y reseleccionar el Control Surface no
+alcanza — se agrego `importlib.reload` para la proxima.
+
+**El master ya salia por 1/2.** La suma a mono no era del master: la captura
+por Resampling es estereo (Metales paneada a -1.0 dio L 0.013 / R 0.000). Lo
+que daba L = R era que las capas que probaba **no sonaban**.
+
+**Repiques y la percusion de la Bateria estuvieron mudas desde la v1.** Los
+kits 909 y 707 no tienen congas (63/64) ni shaker (70); se leyo la lista de
+pads por nombre desde el enrutado de Live. Remapeado a rim 37 y toms 50/47.
+Todos los numeros de percusion anteriores a hoy estaban medidos con esas capas
+en silencio.
+
+**Primera medicion con todo sonando** (v2, drop 2, contra Van Reeken): 14 de
+18 fuera de tolerancia. Clap 9.5 contra 6.7, percusion 11.7 contra 8.7, hat
+7.1 contra 9.2, bajo suena 33% (a revisar), sidechain bajo -7.4 contra -14.3
+(mejor que -2.2), ancho de bateria 0.02, cresta de bateria 17 contra 11.5. Es
+la primera tabla en la que se puede confiar; las anteriores median un tema con
+dos capas menos.
+
+Los aprendizajes fueron a `bateria.md`, `productor.md`, `mezclador.md` y a
+APRENDIZAJES ("Un pad vacio no suena flojo: no suena", "Sondar por tiempo es
+fragil").
+
+---
+
 ## 2026-09-09 — el corpus de referencia dejó de estar vacío
 
 Pedido: *"revisá los nuevos videos de Eze Arias y Simon en el metro, son 3, fijate

@@ -272,3 +272,31 @@ y dice "suena mal", eso no informa nada sobre la pregunta real.
 2. **Handler de return y master tracks.** Todo `track.py` itera `song.tracks`.
 3. **Ampliar `escuchar.py`** a audio: hoy lee MIDI. Los mismos umbrales sobre un
    render dirian tambien lo que la mezcla va a provocar, no solo el arreglo.
+
+
+## El lazo cerrado (2026-09-09): medir lo propio con el mismo instrumento
+
+Desde hoy el audio propio existe: `scripts/render.py` graba el master de Live
+por Resampling (grabar no es exportar, y la Trial lo permite), y
+`scripts/traducir.py` lo mide igual que a una referencia. `scripts/iterar.py`
+devuelve dieciocho dimensiones con veredicto. Ver `docs/BUCLE.md` y el agente
+`mezclador`, que corre el bucle.
+
+Tres reglas que salieron de pagar el error:
+
+1. **Verificar que una capa suena antes de medirla o razonar sobre ella.**
+   `render.py --solo <pista>`, pico > 0. Dos dias de analisis se fueron en
+   capas escritas a pads que no existen (congas 63/64 y shaker 70 en kits que
+   no los tienen).
+2. **Lo propio y lo ajeno por el mismo camino.** Un render de 8 compases
+   medido como si fueran 16 dio todas las densidades a la mitad y se leyo como
+   un bombo enterrado. `traducir.py` ahora cuenta los compases que hay.
+3. **Sospechar del divisor y del cache.** Un numero propio absurdo es primero
+   un error de medicion. Demucs cacheaba los stems por nombre y una vuelta
+   midio identicos los dieciocho numeros de la anterior sin avisar; la clave
+   lleva la fecha del archivo ahora.
+
+Lo que el bucle ya encontro y ningun oido habia nombrado: mezcla sin ancho en
+bateria y bajo, pump del bajo en la fase equivocada (el pozo caia al 73% del
+pulso; calibrado a 270 grados de Offset), pads que suenan el 100% del tiempo
+contra 77% de la referencia, bateria con 17 dB de cresta contra 11.5.

@@ -69,3 +69,28 @@ tocar nada: ahi esta por que existe esto y el plan en orden.
     despues: <valor>
     otras dimensiones que se movieron: <lista o "ninguna">
     veredicto: se queda / se revierte, y por que
+
+
+## Anadido 2026-09-10: lo que costo aprender del render
+
+- **Region vacia.** La pista de render (2) tiene que estar vacia en la region
+  antes de la toma: un clip viejo se parte en dos al grabar encima y ya no se
+  sabe cual es la toma. `render.py` lo hace solo; si aborta con "esperaba UN
+  clip nuevo", borrar a mano los clips de esa pista.
+- **Undo para la toma nueva, borrado para lo viejo.** Borrar la toma por indice
+  la deja viva en el historial y Live no suelta el WAV. Deshacerla lo libera.
+- **La copia se verifica abriendola.** Copiar mientras Live escribe da un WAV a
+  medias que no abre. `copiar_liberado()`.
+- **El largo que Live reporta de un clip recien grabado es el del sample
+  pre-asignado** (~400 pulsos), no el de la toma. Ignorarlo.
+- **La toma arranca hasta un compas tarde** y el nombre del archivo dice el
+  compas real (`v2_164-179.wav` para un pedido desde el 161). Comparar tramos
+  por el nombre, no por el pedido.
+- **Demucs cachea por nombre + fecha.** Si dos vueltas dan los dieciocho
+  numeros identicos, la segunda no se midio.
+- **Antes de la primera vuelta sobre una capa, `--solo` y pico > 0.** Una capa
+  muda tiene MIDI perfecto.
+- **La captura por Resampling es estereo** (verificado con Metales paneada a
+  -1.0). Si el ancho da 0.01 en un stem, es que ese stem es mono de verdad:
+  hats y percusion en un Drum Rack salen al centro. Ensanchar por Utility no
+  hace nada sobre una fuente mono; hace falta Haas, paneo o pistas separadas.

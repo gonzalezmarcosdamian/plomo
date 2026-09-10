@@ -352,6 +352,45 @@ lleva su lista de alternativas y la ultima es siempre un motor y no un preset,
 cambiar de edicion de Live —donde muchos presets no existen— pasa a ser cambiar
 un nombre en un JSON.
 
+## Un pad vacío no suena flojo: no suena
+
+**Qué pasó.** Durante dos días la batería escribió shaker en la nota 70 y
+congas en 63/64 —las del General MIDI— y los kits del proyecto (909 Core Kit,
+707 Core Kit) no tienen pad ahí. Sobre ese silencio se razonó horas: el
+"filtro de peine entre clap y shaker", la densidad de percusión, el redoble que
+"acumula", la capa Repiques entera. Todo eso era MIDI a un pad vacío. Se
+descubrió grabando la pista sola y midiendo pico 0.000.
+
+**Por qué.** El MIDI en disco estaba perfecto, y todo lo que se medía era el
+MIDI. Una capa muda no da ninguna señal de alarma en ese mundo: tiene sus
+notas, su patrón, su humanización. La ausencia solo existe en el audio.
+
+**Cómo se aplica.** Antes de razonar sobre una capa, verificar que suena:
+`render.py --solo <pista>` y pico > 0. Y los pads de un kit se leen por
+**nombre**, no se suponen: la lista de canales de enrutado de una pista
+(`available_input_routing_channels` con la entrada puesta en esa pista) nombra
+cada cadena del Drum Rack. El 909 Core Kit trae bombo, hats, clap, toms, rim,
+snare, crash y ride; el 707 lo mismo más tamb y cowbell. Ninguno tiene congas
+ni shaker.
+
+## Sondar por tiempo es frágil; sondar por nombre o por contenido no
+
+**Qué pasó.** Para saber qué notas responde un kit se grabó un clip con una
+nota por corchea y se midió la energía por ranura. Dio mapas contradictorios
+tres veces: la toma arranca en un lugar distinto cada vez y el clip de prueba
+caía fuera de la ventana recortada o corrido una ranura. Se leyó que el clap
+del 909 no sonaba, con el clap sonando.
+
+**Por qué.** Una medición que depende de una alineación que no se controla
+hereda todo el error de esa alineación, y lo hereda en silencio: el resultado
+tiene la misma forma que uno correcto.
+
+**Cómo se aplica.** Si existe una fuente determinista —un nombre, una lista,
+un estado que Live reporta— se usa esa antes que cualquier medición por
+tiempo. Y cuando la medición por tiempo es inevitable, poner una ancla
+conocida al principio y al final de la prueba para medir el corrimiento
+antes de leer el resto.
+
 ## Grabar no es exportar: el lazo se cierra sin licencia
 
 **Qué pasó.** Todo lo que el proyecto medía era MIDI propio o audio ajeno. Del

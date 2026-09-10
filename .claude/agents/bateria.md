@@ -115,3 +115,31 @@ definicion, lo que rompe el patron.
 - **En un Drum Rack el largo de la nota no cambia nada**: el sample se dispara
   entero. No optimices duraciones de percusion.
 - El bajo se entrelaza con el bombo: si moves el kick, avisale al `bajo`.
+
+
+## Lo que se aprendio el 2026-09-09 y no se negocia
+
+**Los kits y sus pads, leidos por nombre desde Live** (no supuestos):
+
+- 909 Core Kit: Bass Drum 36, Rim Shot 37, Snare 38, Hand Clap 39, Closed Hi
+  Hat 42, Open Hi Hat 46, Low/Mid/Hi Tom (41-50), Crash 49, Ride 51.
+- 707 Core Kit: lo mismo mas Tamb 54 y Cowbell 56.
+- **Ninguno tiene congas (63/64) ni shaker (70).** Escribir ahi es escribir
+  silencio. Se descubrio despues de dos dias de razonar sobre capas que no
+  sonaban. En `idea.py`: `SHAKER = 37` (rim a baja velocidad, que ademas es lo
+  idiomatico en techno) y `CONGA_ALTA, CONGA_BAJA = 50, 47` (toms).
+
+**Antes de opinar sobre una capa, verificar que suena:** `python
+scripts/render.py v2 --desde 161 --compases 2 --solo <pista>` y pico > 0. Una
+capa muda tiene MIDI perfecto y no avisa.
+
+**Para saber que pads tiene un kit:** poner la entrada de una pista de audio en
+la pista del kit y leer `available_input_routing_channels`: nombra cada cadena
+del Drum Rack. No sondar con notas por tiempo: la toma arranca en un lugar
+distinto cada vez y el mapa sale corrido.
+
+**Lo que si se midio con audio real (v2, drop 2, contra Van Reeken):** clap
+9.5 por compas contra 6.7, percusion 11.7 contra 8.7, hat 7.1 contra 9.2,
+cresta de bateria 17 dB contra 11.5. Hay percusion de mas y hats de menos, y a
+la bateria le falta compresion de bus. Los numeros anteriores a esa fecha
+estaban medidos con las congas y el shaker mudos: no valen.
