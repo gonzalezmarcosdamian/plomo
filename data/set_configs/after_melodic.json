@@ -1,0 +1,109 @@
+{
+  "_comentario": "Tres afters de 1h, melodic techno HORIZONTAL. El recorrido de energia (e_hi - e_lo) es 1.2 en los tres: la mediana de lo que se toco de verdad es 2.7 y la de lo que arma el solver normalmente es 4.6 (scripts/medir_horizontalidad.py). No es un set flojo, es un set que no promete una bajada.",
+  "pool": "data/pool.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "sets": [
+    {
+      "num": 97,
+      "name": "97. After Hipnotico — 1h — 2026-09-10",
+      "_identidad": "El after que no se anuncia. Un mismo pulso durante una hora, con la variacion adentro del track y no entre tracks: nadie tiene que poder decir donde empezo ni donde termina una idea. Sin drop y sin vocal grande.",
+      "duration_h": 1.0,
+      "n": 12,
+      "bpm": [
+        121,
+        126
+      ],
+      "e_pool": [
+        5.0,
+        7.0
+      ],
+      "e_lo": 5.4,
+      "e_hi": 6.6,
+      "max_per_artist": 1,
+      "max_bpm_jump": 1.5,
+      "artists": [
+        "*"
+      ],
+      "_nota_genero": "Sin el filtro entra el techno de fiesta que trajo el backfill. Se deja afuera Peak Time / Driving y todo lo Hard.",
+      "genres": [
+        "Melodic House & Techno",
+        "Melodic Techno",
+        "Melodic House",
+        "Melodic House / Techno",
+        "Melodic House & Techno |",
+        "Techno",
+        "Techno (Raw / Deep / Hypnotic)"
+      ],
+      "beam": 800
+    },
+    {
+      "num": 98,
+      "name": "98. After Oscuro — 1h — 2026-09-10",
+      "_identidad": "El mismo plano que el 97 pero un escalon mas arriba y sin luz: rodante, grave, con la melodia apenas insinuada. Es la hora en que ya no entra nadie nuevo a la pista.",
+      "duration_h": 1.0,
+      "n": 12,
+      "bpm": [
+        123,
+        128
+      ],
+      "e_pool": [
+        5.6,
+        7.4
+      ],
+      "e_lo": 6.0,
+      "e_hi": 7.2,
+      "max_per_artist": 1,
+      "max_bpm_jump": 1.5,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Melodic House & Techno",
+        "Melodic Techno",
+        "Melodic House",
+        "Melodic House / Techno",
+        "Melodic House & Techno |",
+        "Techno",
+        "Techno (Raw / Deep / Hypnotic)"
+      ],
+      "beam": 800,
+      "exclude_ids": [
+        "256567493"
+      ],
+      "_nota_exclude": "David Guetta & MORTEN - The Future is Now: Beatport lo tagea Melodic House & Techno pero el sello es Future Rave. El filtro de genero no lo agarra y en un after horizontal es exactamente lo que no va."
+    },
+    {
+      "num": 99,
+      "name": "99. After Luminoso — 1h — 2026-09-10",
+      "_identidad": "El after de las siete de la manana, cuando ya entra luz por algun lado. Misma horizontalidad, pero en mayor: armonia abierta y aire arriba, sin que eso lo convierta en un cierre eufórico.",
+      "duration_h": 1.0,
+      "n": 12,
+      "bpm": [
+        120,
+        125
+      ],
+      "e_pool": [
+        4.8,
+        6.8
+      ],
+      "e_lo": 5.2,
+      "e_hi": 6.4,
+      "max_per_artist": 1,
+      "max_bpm_jump": 1.5,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Melodic House & Techno",
+        "Melodic Techno",
+        "Melodic House",
+        "Melodic House / Techno",
+        "Melodic House & Techno |",
+        "Techno",
+        "Techno (Raw / Deep / Hypnotic)"
+      ],
+      "beam": 800
+    }
+  ]
+}

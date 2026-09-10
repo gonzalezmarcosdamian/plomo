@@ -1,0 +1,72 @@
+{
+  "name": "99. After Luminoso — 1h — 2026-09-10",
+  "duration_h": 1.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "WhoMadeWho & Blue Hawaii",
+      "title": "Kiss Me Hard (Adam Ten Remix)",
+      "content_id": "25650242"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Sensei (Original Mix)",
+      "content_id": "198201852"
+    },
+    {
+      "artist": "Final Request, ant art",
+      "title": "Driven by the Stars (Olivier Giacomotto Remix)",
+      "content_id": "42460677"
+    },
+    {
+      "artist": "Eelke Kleijn",
+      "title": "Transmission (Joris Voorn Extended Remix)",
+      "content_id": "102522218"
+    },
+    {
+      "artist": "Hana, Durante",
+      "title": "Celestia (Extended Mix)",
+      "content_id": "21013875"
+    },
+    {
+      "artist": "Massano",
+      "title": "Solitude",
+      "content_id": "43440493"
+    },
+    {
+      "artist": "Budakid, Rromarin",
+      "title": "Better O'be New (Roy Rosenfeld Extended Remix)",
+      "content_id": "82112174"
+    },
+    {
+      "artist": "Melarmony",
+      "title": "Aurora (Extended Mix)",
+      "content_id": "180136435"
+    },
+    {
+      "artist": "Lexer",
+      "title": "Glowing",
+      "content_id": "202887068"
+    },
+    {
+      "artist": "Gorje Hewek, Lost Desert, Volen Sentir",
+      "title": "Fluminnese (Dub)",
+      "content_id": "224734723"
+    },
+    {
+      "artist": "Malou, Ben Bohmer",
+      "title": "Lost In Mind (Volen Sentir Extended Vision)",
+      "content_id": "30365545"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Make Me Feel (feat. Iveta Mukuchyan) (Extended)",
+      "content_id": "168181490"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "98. After Oscuro — 1h — 2026-09-10",
+  "duration_h": 1.0,
+  "bpm_range": [
+    123,
+    128
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Christian Smith & Wehbba",
+      "title": "Mutate",
+      "content_id": "251544439"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Rubicks",
+      "content_id": "59649771"
+    },
+    {
+      "artist": "Nils Hoffmann, Julia Church",
+      "title": "9 Days (Dosem Extended Mix)",
+      "content_id": "29688568"
+    },
+    {
+      "artist": "Spencer Brown",
+      "title": "Thanks, Guy (Original Mix)",
+      "content_id": "265293861"
+    },
+    {
+      "artist": "Boxer, Jody Wisternoff & James Grant",
+      "title": "Sun Kissed (Extended Mix)",
+      "content_id": "55738818"
+    },
+    {
+      "artist": "R.Hz",
+      "title": "Gleam (Giuliano Rodrigues Rmx)",
+      "content_id": "23092740"
+    },
+    {
+      "artist": "ANMA",
+      "title": "Adya",
+      "content_id": "227305284"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Off Gerlach (Original Mix)",
+      "content_id": "111800107"
+    },
+    {
+      "artist": "Sahar Z & Guy Mantzur",
+      "title": "Survivors Guilt",
+      "content_id": "74039529"
+    },
+    {
+      "artist": "Jan Blomqvist, Mahri",
+      "title": "Deeper Grounds feat. Mahri (Extended Mix)",
+      "content_id": "266761929"
+    },
+    {
+      "artist": "Marsh, Simon Doty",
+      "title": "Touch The Sky (Extended Mix)",
+      "content_id": "175806155"
+    },
+    {
+      "artist": "Adriatique",
+      "title": "Nude (Rampa Remix)",
+      "content_id": "81147728"
+    }
+  ]
+}
