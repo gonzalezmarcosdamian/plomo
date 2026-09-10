@@ -570,7 +570,11 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
                         continue
                     p.nota(c, h.pulso("clap", c, pulso), CLAP, 0.12,
                            h.vel("clap", c, pulso, 52 if pulso % 1 else 46))
-            if climax and not calla(c, 3.875):
+            # El eco del clap en 3.875 se fue: era una fusa antes del uno,
+            # puesto para esquivar un shaker que resulto no sonar nunca. Con
+            # la percusion real alrededor era un flam contra el bombo — "el
+            # clap sigue a destiempo".
+            if False and climax and not calla(c, 3.875):
                 # El eco del clap antes de la vuelta al uno, en 3.875 y no en
                 # 3.75: en 3.75 caia encima del shaker —26 veces a menos de
                 # 10 ms— y dos transientes agudos tan cerca dan filtro de peine.
@@ -1854,7 +1858,7 @@ FORMA = [
 # cada golpe: se escucha como que el segundo pega mas, no como que el
 # primero esta flojo.
 INTENSIDAD = {"intro": 0.70, "tema": 0.86, "subida1": 0.90, "drop1": 0.93,
-              "bajada": 0.95, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
+              "bajada": 1.0, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
               "salida_dj": 0.78}
 
 
@@ -1907,24 +1911,41 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         # Ahora entra por capas y crece. Cada cosa aparece donde le toca y
         # ninguna se va: al final de la bajada suena todo lo que sonaba antes,
         # mas fuerte, y de ahi arranca la subida.
+        # Medido con transicion.py en Minicube, Cryo, Go y Typical Use: en la
+        # entrada a la bajada los GRAVES caen 20 dB y los medios y agudos
+        # siguen planos, a +-1 dB. Se va el bombo y el grupo de bajo. Nada
+        # mas: la percusion, los metales, la textura y la armonia siguen
+        # exactamente como en el drop. Lo que junta tension es la ausencia del
+        # bombo sobre un groove que no paro, no el silencio.
         base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
                 ("02_acordes", _acordes(bpm, tonica, escala, h, True, False)),
-                ("09_sub", _sub(bpm, tonica, escala)),
                 ("05_gancho", gancho(bpm, tonica, escala, h, True, False, False)
                  if not TECNO else gancho(bpm, tonica, escala, h, False)),
                 ("08_anchos", _anchos(bpm, tonica, escala, h, False)),
-                ("04_bateria", _bateria(bpm, h, True, False, False, sin_bombo=True))]
+                ("04_bateria", _bateria(bpm, h, True, True, False, sin_bombo=True)),
+                ("10_repiques", _repiques(bpm, h)),
+                ("18_metales", _metales(bpm, h)),
+                ("16_textura", _textura(bpm))]
         # (capa, compas en que entra) — la percusion ultima, que es lo que
         # avisa que el bombo esta por volver
         # Dieciseis compases: todo entra al doble de rapido que antes, y la
         # percusion sin bombo desde el 9, para que la bajada junte tension en
         # vez de vaciarse.
-        ENTRADAS = {"01_atmosfera": 0, "02_acordes": 0, "09_sub": 0,
-                    "05_gancho": 4, "08_anchos": 8, "04_bateria": 8}
+        # La percusion sin bombo desde el compas 1, no desde el 9. El DJ: "es
+        # re brusco, es silencio y viene de una conga linda". Con las congas
+        # sonando de verdad, pasar de eso a nada en un compas era un corte de
+        # cinta. En la bajada se va el BOMBO, no el groove: la conga sigue, y
+        # lo que se siente es que se abrio el piso, no que se apago la luz.
+        ENTRADAS = {"01_atmosfera": 0, "02_acordes": 0, "05_gancho": 0,
+                    "08_anchos": 0, "04_bateria": 0, "10_repiques": 0,
+                    "18_metales": 0, "16_textura": 0}
         if TECNO:
             base = [(n, pi) for n, pi in base if n != "08_anchos"]
-            base.append(("16_textura", _textura(bpm)))
-            ENTRADAS["16_textura"] = 0
+        # Un platillo en el uno de la bajada: marca que ALGO empezo, no que
+        # algo termino. Sin el, el oido lee el compas 113 como que se cayo el
+        # tema.
+        base.append(("11_splash", _splash(bpm, h, cada=COMPASES)))
+        ENTRADAS["11_splash"] = 0
         # El piso NO entra en la rampa. La atmosfera, los acordes y el sub son
         # lo que sostiene el espacio cuando se cae el bombo, y hacerlos crecer
         # junto con el resto dejaba el primer compas de la bajada en el 7% de la
@@ -1936,8 +1957,8 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         for n, pi in base:
             desde = ENTRADAS[n]
             pi = _podar(pi, 0, COMPASES - desde)
-            if n not in PISO:
-                pi = _rampa(pi, 0.85, 1.0, COMPASES - desde)
+            # sin rampa: las referencias mantienen medios y agudos planos
+            # durante toda la bajada; lo que crece despues es la subida
             fuera.append((n + ".mid", _correr(pi, desde)))
         return _hats_ya_hechos(fuera, bpm)
 
@@ -1989,6 +2010,10 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
             base.append(("06_arpegio", _arpegio(bpm, tonica, escala, h)))
     if grande and not TECNO:
         base.append(("13_lead", _lead(bpm, tonica, escala, h)))
+    if nombre == "drop1":
+        # El drop 1 no cae en la bajada: la anuncia. La reversa en su ultimo
+        # compas convierte el corte en una puerta.
+        base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
     if tension:
         base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
         base.append(("14_riser", _riser(bpm)))
