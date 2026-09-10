@@ -597,7 +597,9 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
             # como estaba —`c % 8 >= 4 or c >= 8`— era literalmente `c >= 4`, y
             # ocultaba que dos capas entraban en el mismo compas: el salto del 4
             # al 5 era de +96%, el mas grande del boceto.
-            if (pleno or c >= 2) and not sin_bombo:
+            # los hats abiertos se QUEDAN en la bajada: medido en las
+            # referencias, los agudos van planos cuando se cae el bombo
+            if pleno or c >= 2:
                 if calla(c, pulso):
                     continue
                 # Rampa en sus primeros compases. Entrando de golpe daba el
@@ -1367,7 +1369,12 @@ def _anchos(bpm: float, tonica: int, escala: list[int], h: Humano,
 # en la segunda las dos.
 # Los repiques van al 808 Core Kit, que es sintetico de punta a punta: claves
 # (75) y rim (37). Nada de congas ni toms: "mas electronico y menos conga".
-CLAVES, RIM_808 = 75, 37
+# Rim (37) y ride (51) del 909 Core Kit: los dos son sinteticos, ninguno es una
+# conga, y el 909 es el unico kit verificado nota por nota en tres pistas. El
+# 808 Core Kit cargado por OSC despues de un reinicio de Live no disparo ni
+# una nota (-70.7 dBFS en cinco sondas): pendiente, no se usa hasta entender
+# por que.
+CLAVES, RIM_808 = 51, 37
 REPIQUE = ((1.25, CLAVES, 1.375, RIM_808),
            (3.25, RIM_808, 3.375, CLAVES))
 

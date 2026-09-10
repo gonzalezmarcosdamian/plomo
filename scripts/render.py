@@ -314,7 +314,9 @@ def main() -> None:
     destino = SALIDA / f"{args.version}_{args.desde}-{args.desde + args.compases - 1}{suf}.wav"
     with Live(timeout=45.0) as live:
         wav, inicio = grabar(live, args.desde, args.compases, args.solo)
-    crudo = destino.with_suffix(".crudo.wav")
+    # .crudo.tmp y no .crudo.wav: un glob de *.wav agarraba el intermedio sin
+    # recortar, y una tabla entera salio con los compases corridos dos lugares
+    crudo = destino.with_suffix(".crudo.tmp")
     copiar_liberado(wav, crudo)
     real = recortar(crudo, destino, inicio, args.desde, args.compases)
     crudo.unlink()

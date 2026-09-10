@@ -3550,7 +3550,7 @@
       "volumen": 0.5,
       "dispositivos": [
         {
-          "nombre": "707 Core Kit",
+          "nombre": "909 Core Kit",
           "clase": "DrumGroupDevice",
           "parametros": {
             "Device On": {
@@ -3566,7 +3566,7 @@
               "valor": 63.352802
             },
             "Gain": {
-              "valor": 42.405998
+              "valor": 23.948336
             },
             "Drive Amount": {
               "valor": 0.0
@@ -3603,192 +3603,6 @@
             },
             "Macro 16": {
               "valor": 126.007812
-            }
-          }
-        },
-        {
-          "nombre": "Utility",
-          "clase": "StereoGain",
-          "parametros": {
-            "Device On": {
-              "valor": 1.0
-            },
-            "Left Inv": {
-              "valor": 0.0
-            },
-            "Right Inv": {
-              "valor": 0.0
-            },
-            "Channel Mode": {
-              "valor": 1.0
-            },
-            "Stereo Width": {
-              "valor": 1.222702
-            },
-            "Mono": {
-              "valor": 0.0
-            },
-            "Bass Mono": {
-              "valor": 0.0
-            },
-            "Bass Freq": {
-              "valor": 0.380211
-            },
-            "Balance": {
-              "valor": 0.0
-            },
-            "Output": {
-              "valor": 0.0
-            },
-            "Mute": {
-              "valor": 0.0
-            },
-            "DC Filter": {
-              "valor": 0.0
-            }
-          }
-        },
-        {
-          "nombre": "Delay",
-          "clase": "Delay",
-          "parametros": {
-            "Device On": {
-              "valor": 1.0
-            },
-            "Smoothing": {
-              "valor": 0.0
-            },
-            "Link": {
-              "valor": 0.0
-            },
-            "Ping Pong": {
-              "valor": 0.0
-            },
-            "L Sync": {
-              "valor": 0.0
-            },
-            "R Sync": {
-              "valor": 0.0
-            },
-            "L Time": {
-              "valor": 0.0
-            },
-            "R Time": {
-              "valor": 0.26865
-            },
-            "L 16th": {
-              "valor": 2.0
-            },
-            "R 16th": {
-              "valor": 3.0
-            },
-            "L Offset": {
-              "valor": 0.5
-            },
-            "R Offset": {
-              "valor": 0.5
-            },
-            "Feedback": {
-              "valor": 0.0
-            },
-            "Freeze": {
-              "valor": 0.0
-            },
-            "Filter On": {
-              "valor": 1.0
-            },
-            "Filter Freq": {
-              "valor": 0.50895
-            },
-            "Filter Width": {
-              "valor": 0.882353
-            },
-            "LFO Mode": {
-              "valor": 0.0
-            },
-            "LFO Freq": {
-              "valor": 0.471666
-            },
-            "LFO Time": {
-              "valor": 0.19739
-            },
-            "LFO Synced": {
-              "valor": 4.0
-            },
-            "LFO 16th": {
-              "valor": 16.0
-            },
-            "LFO Wave": {
-              "valor": 1.0
-            },
-            "LFO Morph": {
-              "valor": 0.5
-            },
-            "LFO > Delay": {
-              "valor": 0.0
-            },
-            "LFO > Filter": {
-              "valor": 0.0
-            },
-            "Dry/Wet": {
-              "valor": 0.25
-            }
-          }
-        },
-        {
-          "nombre": "Glue Compressor",
-          "clase": "GlueCompressor",
-          "parametros": {
-            "Device On": {
-              "valor": 1.0
-            },
-            "Threshold": {
-              "valor": -22.0
-            },
-            "Range": {
-              "valor": 70.0
-            },
-            "Output": {
-              "valor": 2.995
-            },
-            "Attack": {
-              "valor": 1.0
-            },
-            "Ratio": {
-              "valor": 1.0
-            },
-            "Release": {
-              "valor": 1.0
-            },
-            "Dry/Wet": {
-              "valor": 1.0
-            },
-            "Peak Clip In": {
-              "valor": 0.0
-            },
-            "S/C On": {
-              "valor": 0.0
-            },
-            "S/C Gain": {
-              "valor": 0.4
-            },
-            "S/C Mix": {
-              "valor": 1.0
-            },
-            "S/C EQ Type": {
-              "valor": 5.0
-            },
-            "S/C EQ On": {
-              "valor": 0.0
-            },
-            "S/C EQ Freq": {
-              "valor": 0.305268
-            },
-            "S/C EQ Gain": {
-              "valor": 0.0
-            },
-            "S/C EQ Q": {
-              "valor": 0.408567
             }
           }
         }
