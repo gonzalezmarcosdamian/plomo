@@ -352,6 +352,47 @@ lleva su lista de alternativas y la ultima es siempre un motor y no un preset,
 cambiar de edicion de Live —donde muchos presets no existen— pasa a ser cambiar
 un nombre en un JSON.
 
+## "A destiempo" casi nunca es fuera de grilla: es adelante o atrás
+
+**Qué pasó.** El DJ dijo tres veces "el clap está a destiempo". Se sacaron
+golpes que anticipaban, se revisó la humanización, se buscaron flams. Cuando
+por fin se midió el render propio contra Lake Of Fire con el mismo detector,
+el dato fue simple: el clap propio caía **+13 ms después** del bombo y el de
+Vuarambón **−7.6 ms antes**. Veinte milisegundos, todos los golpes en su
+lugar de la grilla. Los hats +19 contra −5.5.
+
+**Por qué.** El oído no escucha posiciones, escucha relaciones: un clap que
+llega después del bombo "arrastra", uno que llega antes "empuja". Ninguno de
+los dos suena fuera de tiempo mirando la grilla, y los dos suenan a destiempo
+respecto del estilo que se tiene en la cabeza. Los perfiles de humanización
+venían de Moonflare, que toca atrás; el pedido era Vuarambón, que empuja.
+
+Y una trampa de calibración: entre lo que se escribe en el MIDI y lo que mide
+el detector hay un arrastre de unos 9 ms —el ataque del sample del clap es
+más lento que el del bombo, y un Haas ensancha el ataque—. Para medir −7 hay
+que escribir −14. Se calibra en dos pasos, midiendo, no por fórmula.
+
+**Cómo se aplica.** Ante "a destiempo", medir el feel relativo al bombo con el
+mismo instrumento en los dos lados antes de tocar la grilla. Y leer los
+números **relativos** al bombo: el absoluto depende de dónde el detector
+puso el cero.
+
+## En la bajada se van los graves, no el tema
+
+**Qué pasó.** "Es re brusco, es silencio, y viene de una conga linda". La
+bajada apagaba todo salvo el pad: de doce capas a cuatro en un compás,
+−92% de impacto. Medido en cuatro de los temas más tocados con
+`transicion.py`: en la entrada a la bajada los **graves caen 20 dB y los
+medios y agudos siguen planos a ±1 dB**. Minicube tarda dos compases.
+
+**Por qué.** Lo que junta tensión no es el silencio: es un groove al que le
+falta el bombo. Si se va todo, el oído no espera nada — no hay a qué volver.
+
+**Cómo se aplica.** En una bajada se van el bombo y el grupo de bajo. La
+percusión, los metales, la textura y la armonía siguen exactamente como en el
+drop, sin rampa. Medido después en el render propio: medios −2 dB, agudos
+−2.5, graves −9.
+
 ## Una pista armada graba, no reproduce
 
 **Qué pasó.** La pista Hats, recién creada, con sus clips en el arreglo y su

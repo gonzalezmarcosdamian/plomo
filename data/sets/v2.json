@@ -3674,7 +3674,7 @@
               "valor": 0.0
             },
             "R Time": {
-              "valor": 0.30386
+              "valor": 0.26865
             },
             "L 16th": {
               "valor": 2.0
@@ -3731,7 +3731,7 @@
               "valor": 0.0
             },
             "Dry/Wet": {
-              "valor": 0.45
+              "valor": 0.25
             }
           }
         },
@@ -4552,7 +4552,7 @@
     {
       "indice": 16,
       "nombre": "Metales",
-      "volumen": 0.6,
+      "volumen": 0.72,
       "dispositivos": [
         {
           "nombre": "909 Core Kit",
@@ -4679,7 +4679,7 @@
               "valor": 0.0
             },
             "R Time": {
-              "valor": 0.288265
+              "valor": 0.260487
             },
             "L 16th": {
               "valor": 2.0
@@ -4736,7 +4736,7 @@
               "valor": 0.0
             },
             "Dry/Wet": {
-              "valor": 0.45
+              "valor": 0.25
             }
           }
         },
@@ -5250,7 +5250,7 @@
     {
       "indice": 18,
       "nombre": "Hats",
-      "volumen": 0.8,
+      "volumen": 0.9,
       "dispositivos": [
         {
           "nombre": "909 Core Kit",
@@ -5377,7 +5377,7 @@
               "valor": 0.0
             },
             "R Time": {
-              "valor": 0.293835
+              "valor": 0.251148
             },
             "L 16th": {
               "valor": 2.0
@@ -5434,7 +5434,7 @@
               "valor": 0.0
             },
             "Dry/Wet": {
-              "valor": 0.4
+              "valor": 0.25
             }
           }
         },

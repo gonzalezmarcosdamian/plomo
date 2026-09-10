@@ -143,3 +143,15 @@ distinto cada vez y el mapa sale corrido.
 cresta de bateria 17 dB contra 11.5. Hay percusion de mas y hats de menos, y a
 la bateria le falta compresion de bus. Los numeros anteriores a esa fecha
 estaban medidos con las congas y el shaker mudos: no valen.
+
+**El feel se mide, y se lee relativo al bombo (2026-09-10).** Contra Lake Of
+Fire el clap propio caia +13 ms y el de Vuarambon -7.6; los hats +19 contra
+-5.5. "A destiempo" era eso, no la grilla. Perfiles ahora: clap -14 ms, hats
+-12, percusion -10 escritos, que miden -3 a 0 relativos al bombo (hay ~9 ms
+de arrastre entre lo escrito y lo medido: ataque del sample y Haas). Para
+Moonflare se toca atras (+2); para Vuarambon adelante. El estilo esta en ese
+signo.
+
+**Lo que se va en una bajada son los graves.** Medido en cuatro temas con
+`transicion.py`: bombo y bajo -20 dB, medios y agudos planos. La percusion,
+los metales y la textura NO se apagan.

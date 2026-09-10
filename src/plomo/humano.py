@@ -70,12 +70,21 @@ class Perfil:
 # tiempo de ataque del sonido y no se separan.
 PERFILES: dict[str, Perfil] = {
     "kick":     Perfil(0.0, 0.0, 0.0, dinamica=2),
-    "clap":     Perfil(2 * MS, 3 * MS, 0.0, dinamica=7),
-    "hat":      Perfil(2 * MS, 3 * MS, swing=0.018, dinamica=9, arco=7),
-    "hat_abierto": Perfil(2 * MS, 2 * MS, swing=0.018, dinamica=7),
+    # ADELANTE, no atras. Medido en el render propio contra Lake Of Fire
+    # (Vuarambon & Tantum): el clap propio caia +13 ms DESPUES del bombo y el
+    # de la referencia -7.6 ms ANTES; los hats +19 ms contra -5.5. Veinte
+    # milisegundos de diferencia sin que ningun golpe este fuera de grilla:
+    # eso es "el clap sigue a destiempo". Los +2 ms anteriores venian de
+    # Moonflare, que toca atras; el pedido es Vuarambon, que empuja.
+    # Segundo paso, calibrado: -8 ms escritos dieron -10 medidos, y queda un
+    # arrastre de ~9 ms entre lo escrito y lo medido (el ataque del sample del
+    # clap es mas lento que el del bombo). Para medir -7 hay que escribir -14.
+    "clap":     Perfil(-14 * MS, 3 * MS, 0.0, dinamica=7),
+    "hat":      Perfil(-12 * MS, 3 * MS, swing=0.018, dinamica=9, arco=7),
+    "hat_abierto": Perfil(-12 * MS, 2 * MS, swing=0.018, dinamica=7),
     # menos dispersion y menos swing: con tres capas de percusion el desvio
-# se acumulaba y lo que se escuchaba no era groove sino desprolijidad
-"percusion": Perfil(1 * MS, 3 * MS, swing=0.018, dinamica=10, arco=9),
+    # se acumulaba y lo que se escuchaba no era groove sino desprolijidad
+    "percusion": Perfil(-10 * MS, 3 * MS, swing=0.018, dinamica=10, arco=9),
     # el bajo empuja: entra apenas antes y por eso el groove tira hacia adelante
     "bajo":     Perfil(-4 * MS, 3 * MS, 0.0, dinamica=6, arco=6),
     "acordes":  Perfil(12 * MS, 6 * MS, 0.0, dinamica=8, arco=9),

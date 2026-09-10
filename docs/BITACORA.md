@@ -9,6 +9,37 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-10 — la frontera, el clap y los hats, cada uno con su número
+
+**"Es re brusco el drop, es silencio y viene de una conga linda."** Medido:
+del 112 al 113 el impacto iba de 1933 a 154 y de doce capas a cuatro. Se
+escribió `transicion.py` y se midió cómo cruzan Minicube, Cryo, Go y Typical
+Use: los graves caen 20 dB, los medios y agudos siguen planos a ±1 dB. La
+bajada ahora saca solo el bombo y el grupo de bajo; percusión, metales,
+textura y armonía siguen como en el drop, sin rampa. En el render propio:
+medios −2 dB, agudos −2.5, graves −9. Reversa al cerrar el drop 1 y platillo
+al abrir la bajada: puerta, no corte.
+
+**"El clap sigue a destiempo."** Primero se sacó el eco en 3.875 (una fusa
+antes del uno, puesto para esquivar un shaker que nunca sonó). Después se
+midió: clap propio +13 ms después del bombo, Lake Of Fire −7.6 antes; hats
++19 contra −5.5. Perfiles de humanización adelante, calibrados en dos pasos
+por render (hay ~9 ms de arrastre entre lo escrito y lo medido): clap −14,
+hats −12, percusión −10. Miden ahora −3.4 / +0.2 / −2.0 relativos al bombo.
+
+**Los agudos.** En la tabla de la frontera se vio que los agudos propios iban
+14 dB por debajo de las referencias (−38 contra −24 dBFS): Hats a 0.90 y
+Metales a 0.72; Haas de la percusión acortado a 7-8 ms y 25% (a 14 ms también
+duplicaba cada golpe).
+
+**Vueltas del bucle contra Lake Of Fire, con todo sonando:** 9 de 20 dentro.
+Densidades de bombo, clap y percusión ok; pump del bajo ok; ancho de batería
+de 0.06 a 0.29. Siguen afuera: pump melódico (la atmósfera no bombea),
+crestas (el Glue no aprieta lo suficiente), balance (bajo +3 dB, melódico
++4), ancho.
+
+---
+
 ## 2026-09-10 (madrugada) — mas Vuarambon, mas peak, y la pista armada
 
 Pedido del DJ: *"siento a destiempo los claps, quiero algo mas Simon
