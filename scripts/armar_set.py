@@ -70,7 +70,7 @@ BPM = 123.0
 # Instrument Rack, Drum Rack y Simpler estan en las tres ediciones), y lo ultimo
 # de cada lista es siempre un motor, no un preset.
 CATEGORIA = {
-    "909 Core Kit": "drums", "707 Core Kit": "drums",
+    "909 Core Kit": "drums", "707 Core Kit": "drums", "AG Techno Kit": "drums",
     "Cymbal 808 Full": "drums", "Cymbal Crash Reverse Gnirob": "drums",
     "Riser White Noise": "drums",
 }
@@ -79,6 +79,7 @@ ALTERNATIVAS = {
     "Sandman Pad": ["Sandman Pad", "Warm Analog Pad", "Drift"],
     "Deep Bass": ["Deep Bass", "Analog Bass", "Drift"],
     "909 Core Kit": ["909 Core Kit", "808 Core Kit", "Drum Rack"],
+    "AG Techno Kit": ["AG Techno Kit", "909 Core Kit", "Drum Rack"],
     "707 Core Kit": ["707 Core Kit", "909 Core Kit", "Drum Rack"],
     "Deep Pluck": ["Deep Pluck", "Snappy Pluck", "Drift"],
     "Snappy Pluck": ["Snappy Pluck", "Deep Pluck", "Drift"],

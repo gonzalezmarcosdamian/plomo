@@ -58,6 +58,18 @@ PISTAS = {
 # MIDI en disco siga siendo el que escribio el generador.
 TRANSPONE = {"05_gancho.mid": -12}
 
+# Remapeo de notas por archivo, para kits que no siguen el mapa del 909.
+#
+# El AG Techno Kit (Suite) pone sus pads en orden de cadena desde C1: 36 Kick
+# Dump, 37 Kick XYXY, 38 Snare Biz, 39 Clap Crunch, 40 Tom Graded, 41 Kick
+# Victor, 42 Hihat Closed Gun, 43 Kick SW Tom, 44 Hihat Closed Mid Noise, 45 Tom
+# Powered, 46 Hihat Closed Echo, 47 Bongo EDM, 48 Cymbal 808 Full, 49 E-Perc
+# Noise Charred, 50 FX Dist Streamed, 51 Ride RKTD1. Sondeado nota por nota con
+# un clip de sesion (render.py, sesion=True). Sin remapear, el tick del rim (37)
+# disparaba un SEGUNDO bombo y los toms (47/50) un bongo y un ruido.
+AG = {37: 44, 47: 40, 50: 45, 49: 48, 46: 46, 42: 42, 39: 39, 36: 36, 51: 51}
+REMAPA = {"04_bateria.mid": AG, "19_hats.mid": AG, "18_metales.mid": AG}
+
 
 def montar(carpeta: Path, live: Live) -> int:
     total = max(c + l for _, c, l in FORMA)
@@ -84,6 +96,9 @@ def montar(carpeta: Path, live: Live) -> int:
             salto = TRANSPONE.get(f.name, 0)
             if salto:
                 notas = [(i, du, a + salto, v) for i, du, a, v in notas]
+            mapa = REMAPA.get(f.name)
+            if mapa:
+                notas = [(i, du, mapa.get(a, a), v) for i, du, a, v in notas]
             live.cargar_midi(PISTAS[f.name], 0, notas, largo_compases=largo)
             time.sleep(0.28)
             live.preguntar("/live/arrangement/duplicate",

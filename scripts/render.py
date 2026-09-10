@@ -129,7 +129,7 @@ def _vaciar_region(live: Live, a: float, b: float, recien_grabado: bool = False)
 
 
 def grabar(live: Live, desde: int, compases: int,
-           solo: list[int] | None = None) -> tuple[Path, float]:
+           solo: list[int] | None = None, sesion: bool = False) -> tuple[Path, float]:
     antes = _wavs()
     tipos = [str(x) for x in
              live.preguntar("/live/track/get/available_input_routing_types", PISTA_RENDER)[1:]]
@@ -166,7 +166,11 @@ def grabar(live: Live, desde: int, compases: int,
     # arreglo, y entonces sus clips del arreglo no suenan aunque esten ahi:
     # una pista entera midio -240 dBFS con 251 notas cargadas. Es un estado de
     # Live, no un error del MIDI, y se apaga con back_to_arranger.
-    live.enviar("/live/song/set/back_to_arranger", 0); time.sleep(0.2)
+    # ...salvo cuando la toma es de un clip de sesion disparado a proposito
+    # (sondas de pads): Back to Arrangement PARA los clips de sesion, y todas
+    # las sondas del 808 y del AG Techno Kit dieron silencio por esto.
+    if not sesion:
+        live.enviar("/live/song/set/back_to_arranger", 0); time.sleep(0.2)
     # Desarmar TODAS las demas pistas. Live arma sola la ultima pista creada,
     # y con la grabacion prendida graba en todas las armadas: esa pista entra
     # en grabacion, reproduce su entrada (nada) en vez de sus clips, y encima
