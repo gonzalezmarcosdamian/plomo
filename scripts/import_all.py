@@ -12,7 +12,9 @@ Qué NO hace:
 
 Flujo correcto:
   1. python scripts/import_all.py     ← este script
-  2. Abrir Rekordbox → detecta y analiza nuevos (BPM + key + waveform)
+  2. Rekordbox: File → Import → Add Folder → el Inbox. RB6 NO auto-importa,
+     ni con la carpeta agregada como Monitor Folder. Despues analiza (BPM +
+     key + waveform) y hay que esperar a que termine.
   3. Cerrar Rekordbox (System Tray → Quit)
   4. python scripts/post_import.py            ← cues v8 + energy + playlists
   5. python scripts/import_all.py --archive   ← vacia el Inbox
@@ -187,15 +189,17 @@ def main() -> None:
     print("\n=== LISTO ===")
     print(f"Tracks movidos a: {DEST}")
     print("")
-    print("Si Rekordbox ya tiene 'Nuevos/Inbox' como carpeta vigilada:")
-    print("  -> Abri RB -> detecta los nuevos automaticamente -> cerra -> corre post_import.py")
-    print("")
-    print("Si es la PRIMERA VEZ (setup inicial):")
-    print("  1. Abri RB")
-    print("  2. File > Preferences > Library > Add Monitor Folder")
-    print(f"     Agrega: {DEST}")
-    print("  3. RB analiza (BPM + key + waveform) -> cerra -> corre post_import.py")
-    print("  (Solo necesitas hacer este setup UNA VEZ)")
+    # Rekordbox 6 NO importa solo. El "Add Monitor Folder" de Preferences hace
+    # que RB vea la carpeta, no que meta los archivos en la biblioteca: el
+    # import es manual siempre. Este mensaje decia lo contrario y costo una
+    # sesion entera esperando un analisis que nunca iba a arrancar.
+    print("Rekordbox 6 NO auto-importa. El import es SIEMPRE manual:")
+    print("  1. Abri Rekordbox")
+    print("  2. File > Import > Add Folder")
+    print(f"     Elegi: {DEST}")
+    print("  3. Espera a que termine de analizar (BPM + key + waveform)")
+    print("  4. Cerra RB (System Tray > Quit) -> corre post_import.py")
+    print("  5. Corre import_all.py --archive para vaciar el Inbox")
 
 
 if __name__ == "__main__":
