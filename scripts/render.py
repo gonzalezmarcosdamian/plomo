@@ -102,9 +102,16 @@ def _tiene_borrado(live: Live) -> bool:
         live.timeout = viejo
 
 
-def _vaciar_region(live: Live, a: float, b: float) -> None:
-    """Saca de la pista de render todo clip que toque [a, b) pulsos."""
-    borrar = _tiene_borrado(live)
+def _vaciar_region(live: Live, a: float, b: float, recien_grabado: bool = False) -> None:
+    """Saca de la pista de render todo clip que toque [a, b) pulsos.
+
+    Dos politicas segun el momento. ANTES de grabar, un clip viejo se borra
+    por indice (handler propio), que es determinista. DESPUES de grabar, la
+    toma se DESHACE: borrarla la deja viva en el historial de undo y Live
+    mantiene el WAV abierto —"no solto el archivo en 25 s"—; deshacerla la
+    desengancha y el archivo se libera en un segundo.
+    """
+    borrar = _tiene_borrado(live) and not recien_grabado
     for _ in range(8):
         toca = [i for i, (ini, lar) in enumerate(_clips(live)) if ini < b and ini + lar > a]
         if not toca:
@@ -200,7 +207,7 @@ def grabar(live: Live, desde: int, compases: int,
     # Remote Script); si ese handler no esta cargado, se cae al undo. En los dos
     # casos se verifica contra el conteo de ANTES de armar, no contra el de
     # despues de grabar: el undo a veces deshace otra cosa primero.
-    _vaciar_region(live, (desde - 1) * 4.0, (desde + compases + 2) * 4.0)
+    _vaciar_region(live, (desde - 1) * 4.0, (desde + compases + 2) * 4.0, recien_grabado=True)
     if loop_habia:
         live.enviar("/live/song/set/loop", 1)
     wav = _wav_nuevo(antes)
@@ -211,6 +218,26 @@ def grabar(live: Live, desde: int, compases: int,
     # si fuera la duracion de la toma.
     print(f"  toma desde el pulso {inicio:.2f} · {wav.name}")
     return wav, inicio
+
+
+def copiar_liberado(origen: Path, destino: Path, espera_s: float = 25.0) -> None:
+    """Copia el WAV recien grabado cuando Live ya lo cerro, y VERIFICA la copia.
+
+    Copiar mientras Live todavia tiene el archivo abierto no siempre falla:
+    a veces copia un WAV a medias, con la cabecera sin escribir, que despues no
+    abre ("System error"). Que la copia exista no prueba nada; que abra si.
+    """
+    import soundfile as sf
+    fin = time.time() + espera_s
+    while True:
+        try:
+            shutil.copy(origen, destino)
+            sf.info(destino)
+            return
+        except Exception:
+            if time.time() > fin:
+                sys.exit(f"  Live no solto {origen} en {espera_s:.0f}s")
+            time.sleep(1.0)
 
 
 def recortar(origen: Path, destino: Path, inicio_pulsos: float,
@@ -256,14 +283,7 @@ def main() -> None:
     with Live(timeout=45.0) as live:
         wav, inicio = grabar(live, args.desde, args.compases, args.solo)
     crudo = destino.with_suffix(".crudo.wav")
-    for _ in range(10):
-        try:
-            shutil.copy(wav, crudo)
-            break
-        except PermissionError:
-            time.sleep(1.0)
-    else:
-        sys.exit(f"  Live no solto {wav}")
+    copiar_liberado(wav, crudo)
     real = recortar(crudo, destino, inicio, args.desde, args.compases)
     crudo.unlink()
     if real != args.desde:
