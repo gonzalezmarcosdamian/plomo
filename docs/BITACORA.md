@@ -9,6 +9,38 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-10 — "no podes bajarte mejores instrumentos?": el AG Techno Kit
+
+**Lo que hay.** La Trial trae el contenido de Suite: 143 kits instalados y
+cientos de presets. Entre los kits, uno de techno de verdad: AG Techno Kit
+(Kick Dump, Clap Crunch, Hihat Closed Gun, Ride RKTD1...). Sondeado nota por
+nota: sus pads van en orden de cadena desde C1 y NO siguen el mapa del 909 —
+el 37 es otro bombo, el 47 un bongo, el 49 un ruido—. `montar.py` remapea
+notas por archivo (REMAPA) y va en Bateria, Hats y Metales.
+
+**Medido contra Lake Of Fire en el drop 2:** cresta de bateria 18.2 -> 12.9
+dB (objetivo 9.1), ancho de bateria 0.14 -> 0.54 (objetivo 0.74), balance
+bajo -2.7 y melodico -7.6 dB (dentro de tolerancia). El clap del AG es mas
+quieto y la cuenta de claps cayo de 11 a 3.9: siguiente vuelta.
+
+**El misterio del 808, resuelto.** Todas las sondas de sesion daban silencio
+desde que `render.py` manda Back to Arrangement antes de grabar: eso PARA
+los clips de sesion disparados. El 808 nunca estuvo mudo; lo apagaba la
+sonda. `grabar(..., sesion=True)` no vuelve al arreglo, y con eso el AG
+respondio en todas las notas. El 808 vuelve a ser candidato para repiques.
+
+**Packs de afuera.** Legowelt (Drumnibus, Drum Wizardry: gratis, uso libre en
+producciones, donacion sugerida) esta en WeTransfer; 99Sounds en Gumroad con
+mail. Ninguno se baja por codigo: los baja el DJ en dos minutos y los deja en
+la User Library de Ableton, y de ahi se cargan por nombre como cualquier
+preset.
+
+**Glue mas duro** en las cuatro pistas de bateria: umbral -28, ratio 10,
+ataque .01, salida +6. Repiques habia perdido su cadena al cambiarle el kit;
+restaurada desde la receta.
+
+---
+
 ## 2026-09-10 — la seccion despues del drop 1 es tension, no bajada
 
 Cuatro versiones en una tarde, cada una con su queja: 32 compases sin bombo
