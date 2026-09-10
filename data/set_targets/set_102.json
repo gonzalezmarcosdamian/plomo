@@ -1,28 +1,19 @@
 {
-  "name": "102. Eze Arias — Dahaus x Fruta Cordoba — 2026",
-  "_identidad": "Reconstruccion del set real de Ezequiel Arias en Dahaus x Fruta Cordoba (2026-04-12), en el orden que lo toco. Fuente: https://www.youtube.com/watch?v=4SDpmTztWk8",
-  "duration_h": 2.4,
+  "name": "102. Con el material de Ezequiel Arias - Dahaus x Fruta Cordoba - 2026-04-12",
+  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Dahaus x Fruta Cordoba (2026-04-12) como anclas: 13 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_fuente": "https://www.youtube.com/watch?v=4SDpmTztWk8",
+  "duration_h": 1.8,
   "bpm_range": [
-    120,
+    121,
     125
   ],
   "max_per_artist": 99,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Simos Tagias",
-      "title": "Vortex ",
-      "content_id": "263394530"
-    },
-    {
-      "artist": "Simos Tagias",
-      "title": "Epos",
-      "content_id": "177636127"
-    },
-    {
-      "artist": "Weird Sounding Dude",
-      "title": "Step Up",
-      "content_id": "227873392"
+      "artist": "Nox Vahn",
+      "title": "When I'm With You (Extended Mix) ",
+      "content_id": "62186271"
     },
     {
       "artist": "Montw",
@@ -30,54 +21,9 @@
       "content_id": "192909298"
     },
     {
-      "artist": "Simos Tagias",
-      "title": "Reality",
-      "content_id": "229380236"
-    },
-    {
-      "artist": "Mike Griego",
-      "title": "Antidote",
-      "content_id": "22525767"
-    },
-    {
-      "artist": "Dark Soul Project & Replicanth",
-      "title": "Zicatela (Original Mix)",
-      "content_id": "188993251"
-    },
-    {
-      "artist": "Emphi",
-      "title": "Dust (John Cosani Remix)",
-      "content_id": "198354998"
-    },
-    {
-      "artist": "Fabricio Gutierrez",
-      "title": "Reedmov (Kebin van Reeken Remix)",
-      "content_id": "230581616"
-    },
-    {
-      "artist": "Kabi (AR) & Agustin Ficarra",
-      "title": "The Return (Original Mix)",
-      "content_id": "256941427"
-    },
-    {
-      "artist": "Ruben Karapetyan",
-      "title": "Mindful Harmony (Dowden Remix)",
-      "content_id": "67092768"
-    },
-    {
       "artist": "Dabeat",
       "title": "Etna (Ivan Aliaga Remix)",
       "content_id": "149327915"
-    },
-    {
-      "artist": "Eric Lune & Juan Sapia",
-      "title": "Tension Release (Original Mix) ",
-      "content_id": "198323890"
-    },
-    {
-      "artist": "Martin Fredes & GEØVHÄN",
-      "title": "Deep Story (Ruben Karapetyan Remix)",
-      "content_id": "148022663"
     },
     {
       "artist": "Simos Tagias",
@@ -85,29 +31,9 @@
       "content_id": "137429640"
     },
     {
-      "artist": "Andre Moret",
-      "title": "Generator (Extended Mix)",
-      "content_id": "243768609"
-    },
-    {
-      "artist": "Emi Galvan & Albuquerque",
-      "title": "Don't Kill the Messenger",
-      "content_id": "182281408"
-    },
-    {
       "artist": "Paul (AR) & EANP",
       "title": "Insane (Lexicon Avenue Remix)",
       "content_id": "181220116"
-    },
-    {
-      "artist": "Spencer Brown & Qrion",
-      "title": "20ms (Extended Mix)",
-      "content_id": "256356905"
-    },
-    {
-      "artist": "Estiva, Cosmosky",
-      "title": "Ecstasy (Extended Mix)",
-      "content_id": "231293887"
     },
     {
       "artist": "Estiva",
@@ -115,9 +41,19 @@
       "content_id": "212446117"
     },
     {
-      "artist": "RNX",
-      "title": "Molecules (Extended Mix)",
-      "content_id": "218051489"
+      "artist": "Simos Tagias",
+      "title": "Epos",
+      "content_id": "177636127"
+    },
+    {
+      "artist": "Tali Muss, Mayro",
+      "title": "Dimension Of Space (Original Mix)",
+      "content_id": "207638313"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Don't Kill the Messenger",
+      "content_id": "182281408"
     },
     {
       "artist": "Estiva & Julia Church",
@@ -125,19 +61,54 @@
       "content_id": "259474067"
     },
     {
+      "artist": "Monolink",
+      "title": "Father Ocean (Ben Böhmer Remix)",
+      "content_id": "177647765"
+    },
+    {
+      "artist": "Eric Lune & Juan Sapia",
+      "title": "Tension Release (Original Mix) ",
+      "content_id": "198323890"
+    },
+    {
       "artist": "JESSIN",
       "title": "Babylon (North Echo Remix)",
       "content_id": "61185373"
     },
     {
-      "artist": "Adriatique & WhoMadeWho",
-      "title": "Miracle (Original Mix)",
-      "content_id": "188639449"
+      "artist": "Anatolie",
+      "title": "Release Yourself",
+      "content_id": "103480758"
     },
     {
-      "artist": "Nox Vahn",
-      "title": "When I'm With You (Extended Mix) ",
-      "content_id": "62186271"
+      "artist": "Paul Thomas, Maze 28",
+      "title": "Abundance (Original Mix)",
+      "content_id": "142322723"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Dabeat",
+      "title": "Vekants",
+      "content_id": "4009725"
+    },
+    {
+      "artist": "Kabi (AR) & Agustin Ficarra",
+      "title": "The Return (Original Mix)",
+      "content_id": "256941427"
+    },
+    {
+      "artist": "Mind Against",
+      "title": "Bloom",
+      "content_id": "200699081"
+    },
+    {
+      "artist": "Gai Barone, Aman Anand",
+      "title": "Low Era (Kebin Van Reeken Remix)",
+      "content_id": "121401439"
+    },
+    {
+      "artist": "Weird Sounding Dude",
+      "title": "Step Up",
+      "content_id": "227873392"
     }
   ]
 }

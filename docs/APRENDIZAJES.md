@@ -8,6 +8,48 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un setlist al que le falta la mitad no es ese setlist
+
+**Que paso.** Se reconstruyo el set de Simon Vuarambon conservando los 32 tracks
+que estaban en la biblioteca de las 59 posiciones reales, en el orden original, y
+se entrego como set. Sonaba mal. Al medirlo: 29 transiciones flojas de 31, con
+saltos de media rueda de Camelot y de 11 BPM. El DJ que lo escucho lo dijo antes
+que la herramienta: "el de Simon horrible estaba, y no fue asi".
+
+**Por que.** Conservar el orden no conserva las transiciones. De cada dos tracks
+seguidos en la reconstruccion, trece de treinta y uno no eran seguidos en la
+noche: entre ellos habia un tema que faltaba, y ese tema era justamente el puente
+que hacia funcionar el salto. Sacar los eslabones y dejar las puntas pegadas
+produce una secuencia que ningun DJ toco nunca.
+
+**Como se aplica.** Cuando falta una porcion grande de una secuencia, hay dos
+productos posibles y ninguno es "la secuencia": o se entrega FIEL —con los huecos
+marcados y la advertencia de que no se mezcla, sirve para estudiar el orden— o se
+entrega TOCABLE, usando lo que hay como anclas y dejando que el solver ponga los
+puentes con el resto de la biblioteca. Lo segundo ya no es el set de ese DJ y el
+nombre tiene que decirlo: "Con el material de X", no "X en tal lado".
+
+---
+
+## Lo que valida no sirve si no se corre
+
+**Que paso.** `audit_sets.py` existia, marca cada transicion floja con su motivo,
+y se corrio sobre los tres sets nuevos —dieron cero— pero no sobre los cuatro
+reconstruidos, que se entregaron sin auditar. Uno tenia 29 transiciones flojas de
+31. La herramienta habria mostrado el problema en dos segundos.
+
+**Por que.** El paso de validacion se salteo justo donde el resultado parecia no
+necesitarlo: "es el orden real de un DJ profesional, que puede fallar". Esa
+confianza era el error, no el codigo.
+
+**Como se aplica.** El validador se corre sobre TODO lo que se entrega, sobre todo
+cuando el material viene de una fuente que se presume buena. Y si un generador
+produce algo entregable, que imprima el comando de validacion en su propia salida
+—`set_desde_setlist.py` ahora termina diciendo "ahora: build_set.py N &&
+audit_sets.py N"— para que saltearlo requiera ignorar una instruccion explicita.
+
+---
+
 ## Un hueco borrado en un setlist fabrica una transición que nunca existió
 
 **Qué pasó.** El parser de setlists de referencia descartaba las líneas

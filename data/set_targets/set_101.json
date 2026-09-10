@@ -1,88 +1,19 @@
 {
-  "name": "101. Eze Arias — Metropolitano Rosario — 2025",
-  "_identidad": "Reconstruccion del set real de Ezequiel Arias en Metropolitano Rosario (2025-06-28), en el orden que lo toco. Fuente: https://www.youtube.com/watch?v=-engjCFawKQ",
-  "duration_h": 1.9,
+  "name": "101. Con el material de Ezequiel Arias - Metropolitano Rosario - 2025-06-28",
+  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Metropolitano Rosario (2025-06-28) como anclas: 15 de 19 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_fuente": "https://www.youtube.com/watch?v=-engjCFawKQ",
+  "duration_h": 1.7,
   "bpm_range": [
-    120,
+    122,
     125
   ],
   "max_per_artist": 99,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Ezequiel Arias",
-      "title": "So Many Stars (Extended Mix)",
-      "content_id": "243361136"
-    },
-    {
-      "artist": "Supacooks, Bondarev",
-      "title": "Activator (Original Mix)",
-      "content_id": "266167666"
-    },
-    {
-      "artist": "Anton Borin (RU)",
-      "title": "May Spring Come (Original Mix)",
-      "content_id": "78450926"
-    },
-    {
-      "artist": "Niko Ava",
-      "title": "Freedom (Original Mix)",
-      "content_id": "162617230"
-    },
-    {
-      "artist": "Kyotto",
-      "title": "Sorry I'm Late (HAFT Remix)",
-      "content_id": "9587394"
-    },
-    {
-      "artist": "Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa",
-      "title": "Mui (Ezequiel Arias Extended Mix)",
-      "content_id": "183545081"
-    },
-    {
-      "artist": "Luis Damora",
-      "title": "Illuminate (Original Mix)",
-      "content_id": "38239187"
-    },
-    {
-      "artist": "FJL",
-      "title": "Rider (Original Mix)",
-      "content_id": "250977018"
-    },
-    {
-      "artist": "Blake Jarrell",
-      "title": "Twenty Miami's Ago (Cendryma Extended Mix)",
-      "content_id": "96926709"
-    },
-    {
       "artist": "Claudio Cornejo (AR)",
       "title": "Alnitak (Original Mix)",
       "content_id": "33815411"
-    },
-    {
-      "artist": "Lonya",
-      "title": "Sadness (Ziger Remix)",
-      "content_id": "219649438"
-    },
-    {
-      "artist": "Ezequiel Arias",
-      "title": "Sin Control (Extended Mix)",
-      "content_id": "142983857"
-    },
-    {
-      "artist": "Ezequiel Arias",
-      "title": "ReAnimation (Extended Mix)",
-      "content_id": "121077036"
-    },
-    {
-      "artist": "Guy J",
-      "title": "Silver Lake (Original Mix)",
-      "content_id": "135098098"
-    },
-    {
-      "artist": "Santi Mossman",
-      "title": "Exitz (Original Mix)",
-      "content_id": "44247639"
     },
     {
       "artist": "Kamilo Sanclemente",
@@ -90,29 +21,89 @@
       "content_id": "56511668"
     },
     {
-      "artist": "Durante, Ezequiel Arias",
-      "title": "Dream Controller (Extended Mix)",
-      "content_id": "7798318"
-    },
-    {
-      "artist": "Hraach",
-      "title": "Delirio (Original Mix)",
-      "content_id": "7928123"
-    },
-    {
-      "artist": "Ezequiel Arias",
-      "title": "Eterno (Extended Mix)",
-      "content_id": "266443766"
-    },
-    {
       "artist": "Antrim",
       "title": "Morning Changes (Original Mix)",
       "content_id": "130040480"
     },
     {
-      "artist": "Jamie Stevens, Zankee Gulati",
-      "title": "Low Tide (Ezequiel Arias Remix)",
-      "content_id": "16768158"
+      "artist": "Kasper Koman",
+      "title": "⁠⁠Different Plain (Extended Mix)",
+      "content_id": "68248678"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Silver Lake (Original Mix)",
+      "content_id": "135098098"
+    },
+    {
+      "artist": "Blake Jarrell",
+      "title": "Twenty Miami's Ago (Cendryma Extended Mix)",
+      "content_id": "96926709"
+    },
+    {
+      "artist": "FJL",
+      "title": "Rider (Original Mix)",
+      "content_id": "250977018"
+    },
+    {
+      "artist": "Luis Damora",
+      "title": "Illuminate (Original Mix)",
+      "content_id": "38239187"
+    },
+    {
+      "artist": "Supacooks, Bondarev",
+      "title": "Activator (Original Mix)",
+      "content_id": "266167666"
+    },
+    {
+      "artist": "Santi Mossman",
+      "title": "Exitz (Original Mix)",
+      "content_id": "44247639"
+    },
+    {
+      "artist": "Niko Ava",
+      "title": "Freedom (Original Mix)",
+      "content_id": "162617230"
+    },
+    {
+      "artist": "Simon Vuarambon & Tantum",
+      "title": "Lake Of Fire",
+      "content_id": "71085652"
+    },
+    {
+      "artist": "Lonya",
+      "title": "Sadness (Ziger Remix)",
+      "content_id": "219649438"
+    },
+    {
+      "artist": "Anton Borin (RU)",
+      "title": "May Spring Come (Original Mix)",
+      "content_id": "78450926"
+    },
+    {
+      "artist": "Kyotto",
+      "title": "Sorry I'm Late (HAFT Remix)",
+      "content_id": "9587394"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "ReAnimation (Extended Mix)",
+      "content_id": "121077036"
+    },
+    {
+      "artist": "D-Nox",
+      "title": "Full Moon (Original Mix)",
+      "content_id": "55003861"
+    },
+    {
+      "artist": "Jonas Saalbach",
+      "title": "Keep Spirit High (Original Mix)",
+      "content_id": "260623666"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Eterno (Extended Mix)",
+      "content_id": "266443766"
     }
   ]
 }
