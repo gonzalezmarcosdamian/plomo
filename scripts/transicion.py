@@ -35,7 +35,7 @@ from copiar_tema import _banda  # noqa: E402
 from estructura import SR, medir  # noqa: E402
 
 BANDAS = {"graves": (30, 200), "medios": (200, 3000), "agudos": (3000, 11000)}
-ANTES, DESPUES = 4, 8
+ANTES, DESPUES = 4, 16
 
 
 def _db(y: np.ndarray) -> float:
@@ -57,6 +57,13 @@ def transicion(archivo: Path) -> None:
     y, _ = librosa.load(archivo, sr=SR)
     x_compas = int(round(SR * 4 * 60.0 / d["bpm"]))
     bandas = {n: _banda(y, SR, lo, hi) for n, (lo, hi) in BANDAS.items()}
+    # el bombo aparte: cuantos golpes por compas hay en 30-120 Hz. Es la
+    # pregunta que la banda de graves no contesta — el bajo tambien vive ahi.
+    from copiar_tema import _envolvente, _golpes
+    kicks = _golpes(_envolvente(y, SR, 30, 120), SR)
+    x_seg = x_compas / SR
+    def bombos(c):
+        return int(((kicks >= c * x_seg) & (kicks < (c + 1) * x_seg)).sum())
     print(f"\n  {archivo.stem[:66]}")
     fr = fronteras(d)
     if not fr:
@@ -64,14 +71,14 @@ def transicion(archivo: Path) -> None:
         return
     for f in fr[:2]:
         print(f"  frontera en el compas {f + 1}   (nivel en dBFS; 0 = el compas de la caida)")
-        print(f"   {'compas':>7} {'total':>7} {'graves':>7} {'medios':>7} {'agudos':>7}")
+        print(f"   {'compas':>7} {'total':>7} {'graves':>7} {'medios':>7} {'agudos':>7} {'bombos':>7}")
         for c in range(f - ANTES, f + DESPUES):
             if c < 0 or (c + 1) * x_compas > len(y):
                 continue
             seg = slice(c * x_compas, (c + 1) * x_compas)
             fila = [_db(y[seg])] + [_db(bandas[n][seg]) for n in BANDAS]
             marca = "<-" if c == f else "  "
-            print(f"   {c + 1:>5}{marca} " + " ".join(f"{v:7.1f}" for v in fila))
+            print(f"   {c + 1:>5}{marca} " + " ".join(f"{v:7.1f}" for v in fila) + f" {bombos(c):>7}")
         # la caida, resumida: cuanto baja cada banda del compas anterior al de
         # la frontera, y cuantos compases tarda en bajar 6 dB desde el drop
         ant = slice((f - 1) * x_compas, f * x_compas)
@@ -87,10 +94,13 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("archivo", type=Path, nargs="?")
     ap.add_argument("--tocados", type=int)
+    ap.add_argument("--lista", type=Path, help="archivo con un mp3 por linea")
     args = ap.parse_args()
     objetivos: list[Path] = []
     if args.archivo:
         objetivos = [args.archivo]
+    elif args.lista:
+        objetivos = [Path(l.strip()) for l in args.lista.read_text(encoding="utf-8").splitlines() if l.strip()]
     elif args.tocados:
         from medir_arreglos import DEPOSITO, _buscar, _partir
         from plomo.matching import clave

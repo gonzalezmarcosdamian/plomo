@@ -694,9 +694,10 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # que SUBE al pasar de house a techno: el remix mide 8.69 golpes por
         # compas de percusion contra los 2.0 del boceto. Seis posiciones en vez
         # de dos, todas en la grilla de semicorcheas.
-        posiciones = (((0.25, CONGA_ALTA), (1.25, CONGA_BAJA), (1.75, CONGA_ALTA),
-                       (2.25, CONGA_BAJA), (3.25, CONGA_ALTA), (3.75, CONGA_BAJA))
-                      if TECNO else ((1.25, CONGA_BAJA), (3.25, CONGA_ALTA)))
+        # "Mas electronico y menos conga": los toms en dos posiciones, no en
+        # seis. La densidad de percusion de la referencia (9.4 por compas) la
+        # ponen los repiques electronicos del 808, no los toms.
+        posiciones = ((1.25, CONGA_BAJA), (3.25, CONGA_ALTA))
         for pulso, alt in posiciones:
             if c < 4 and not pleno:
                 continue                 # en la intro solo shaker y rim
@@ -1364,8 +1365,11 @@ def _anchos(bpm: float, tonica: int, escala: list[int], h: Humano,
 #
 # Solo en el climax, y creciendo: en la primera mitad repica una vez por compas,
 # en la segunda las dos.
-REPIQUE = ((1.25, CONGA_BAJA, 1.375, CONGA_ALTA),
-           (3.25, CONGA_ALTA, 3.375, CONGA_BAJA))
+# Los repiques van al 808 Core Kit, que es sintetico de punta a punta: claves
+# (75) y rim (37). Nada de congas ni toms: "mas electronico y menos conga".
+CLAVES, RIM_808 = 75, 37
+REPIQUE = ((1.25, CLAVES, 1.375, RIM_808),
+           (3.25, RIM_808, 3.375, CLAVES))
 
 
 def _repiques(bpm: float, h: Humano) -> Pista:
@@ -1381,7 +1385,7 @@ def _repiques(bpm: float, h: Humano) -> Pista:
         if c % 8 == 7:
             for i, k in enumerate((3.5, 3.625, 3.75, 3.875)):
                 p.nota(c, h.pulso("percusion", c, k),
-                       CONGA_ALTA if i % 2 else CONGA_BAJA, 0.09,
+                       CLAVES if i % 2 else RIM_808, 0.09,
                        h.vel("percusion", c, k, 48 + i * 8))
     return p
 
@@ -1844,9 +1848,14 @@ FORMA = [
     # La bajada era de 32 y el DJ la escucho como "larguisima y muy
     # silenciosa": dieciseis, y lo que se le saca se lo lleva el segundo drop,
     # que pasa a 48. Es literalmente "mas de peak". El total sigue en 240.
-    ("bajada",        112,  16),   # se cae el bombo: el breakdown, corto
-    ("subida2",       128,  16),   # el redoble otra vez, mas fuerte
-    ("drop2",         144,  48),   # el mas grande del tema, y el mas largo
+    # Medido en Vuarambon con transicion.py: Estigia hace un bajon de 3-4
+    # compases y vuelve a pleno; Lake Of Fire baja gradual sin llegar nunca a
+    # silencio; Stamina, Zenith y Prodiga NO tienen bajada despues del drop.
+    # Para "mas de peak" la bajada es un bajon de ocho, con el groove intacto,
+    # y el drop 2 se lleva el resto: 56 compases.
+    ("bajada",        112,   8),   # se cae el bombo: un bajon, no un breakdown
+    ("subida2",       120,  16),   # el redoble otra vez, mas fuerte
+    ("drop2",         136,  56),   # el mas grande del tema, y el mas largo
     ("salida",        192,  16),   # todo mas la linea larga
     ("salida_dj",     208,  32),   # groove para mezclar de salida
 ]
