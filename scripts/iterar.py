@@ -63,6 +63,14 @@ DIMENSIONES = [
     ("ancho bat agudos",   ("efectos", "drums", "ancho", "agudos"),  0.15, ""),
     ("cresta bajo",        ("efectos", "bass", "cresta_db"),         2.0,  "dB"),
     ("cresta bateria",     ("efectos", "drums", "cresta_db"),        2.0,  "dB"),
+    # Balance entre grupos, en dB respecto de la bateria. Es la dimension que
+    # explicaba "flaco": el bajo propio iba 12.7 dB abajo de la bateria y la
+    # referencia lo lleva a -4.5. Sale de los stems de Demucs en los dos lados
+    # (mismo instrumento), con la salvedad de que Demucs a veces manda un bajo
+    # sintetico a "other": si el numero del bajo sale absurdo, grabar el grupo
+    # solo con render.py --solo y comparar contra el stem de la referencia.
+    ("nivel bajo vs bat",  ("niveles", "bass"),                      2.0,  "dB"),
+    ("nivel melod vs bat", ("niveles", "other"),                     2.0,  "dB"),
 ]
 
 

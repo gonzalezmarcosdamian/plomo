@@ -267,8 +267,12 @@ def traducir(archivo: Path, desde: float | None = None) -> dict:
     # se leia como un bombo enterrado cuando era un divisor equivocado.
     compases = max(1, min(COMPASES, int(len(mono["drums"]) / SR / (4 * 60.0 / bpm))))
 
+    def _dbfs(y):
+        return float(20 * np.log10(np.sqrt((y ** 2).mean()) + 1e-9))
+    ref_drums = _dbfs(mono["drums"]) if "drums" in mono else 0.0
+    niveles = {n: _dbfs(mono[n]) - ref_drums for n in ("bass", "other") if n in mono}
     fuera: dict = {"archivo": archivo.stem, "bpm": bpm, "desde": desde,
-                   "compases": compases,
+                   "compases": compases, "niveles": niveles,
                    "piezas": {}, "efectos": {}}
     for pieza, (stem, lo, hi) in PIEZAS.items():
         if stem not in mono:

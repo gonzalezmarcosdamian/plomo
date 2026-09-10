@@ -4,7 +4,7 @@
     {
       "indice": 4,
       "nombre": "Atmosfera",
-      "volumen": 0.52,
+      "volumen": 0.701,
       "dispositivos": [
         {
           "nombre": "Warm Analog Pad",
@@ -446,7 +446,7 @@
     {
       "indice": 5,
       "nombre": "Acordes",
-      "volumen": 0.62,
+      "volumen": 0.801,
       "dispositivos": [
         {
           "nombre": "Sandman Pad",
@@ -762,7 +762,7 @@
     {
       "indice": 6,
       "nombre": "Bajo",
-      "volumen": 0.72,
+      "volumen": 0.9328,
       "dispositivos": [
         {
           "nombre": "Deep Bass",
@@ -1349,7 +1349,7 @@
     {
       "indice": 8,
       "nombre": "Gancho",
-      "volumen": 0.5,
+      "volumen": 0.681,
       "dispositivos": [
         {
           "nombre": "Sandman Pad",
@@ -1752,7 +1752,7 @@
     {
       "indice": 9,
       "nombre": "Bajo medio",
-      "volumen": 0.46,
+      "volumen": 0.6728,
       "dispositivos": [
         {
           "nombre": "Noise Bass",
@@ -2026,7 +2026,7 @@
     {
       "indice": 10,
       "nombre": "Textura",
-      "volumen": 0.3,
+      "volumen": 0.481,
       "dispositivos": [
         {
           "nombre": "Broadcast Noise",
@@ -2363,7 +2363,7 @@
     {
       "indice": 11,
       "nombre": "Subkick",
-      "volumen": 0.4,
+      "volumen": 0.6128,
       "dispositivos": [
         {
           "nombre": "Super Sub Drone Bass",
@@ -2862,7 +2862,7 @@
     {
       "indice": 12,
       "nombre": "Sub",
-      "volumen": 0.6,
+      "volumen": 0.8128,
       "dispositivos": [
         {
           "nombre": "Deep Bass",
