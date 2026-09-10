@@ -660,7 +660,7 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.58
+              "valor": 0.75
             },
             "Waveform": {
               "valor": 3.0
@@ -754,6 +754,111 @@
             },
             "DC Filter": {
               "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Predelay": {
+              "valor": 0.258977
+            },
+            "In Lo Cut On": {
+              "valor": 0.0
+            },
+            "In Hi Cut On": {
+              "valor": 1.0
+            },
+            "Input Freq": {
+              "valor": 0.477294
+            },
+            "Input Width": {
+              "valor": 0.629412
+            },
+            "ER Spin On": {
+              "valor": 1.0
+            },
+            "ER Spin Rate": {
+              "valor": 0.485693
+            },
+            "ER Spin Amount": {
+              "valor": 0.654476
+            },
+            "ER Shape": {
+              "valor": 0.5
+            },
+            "Diff. Hi On": {
+              "valor": 1.0
+            },
+            "Diff. Hi Type": {
+              "valor": 0.0
+            },
+            "Diff. Hi Freq": {
+              "valor": 0.810234
+            },
+            "HiShelf Gain": {
+              "valor": 0.625
+            },
+            "Diff. Lo On": {
+              "valor": 0.0
+            },
+            "Diff. Lo Freq": {
+              "valor": 0.2272
+            },
+            "LowShelf Gain": {
+              "valor": 0.6875
+            },
+            "Chorus On": {
+              "valor": 1.0
+            },
+            "Chorus Rate": {
+              "valor": 0.103693
+            },
+            "Chorus Amount": {
+              "valor": 0.002506
+            },
+            "Decay Time": {
+              "valor": 0.314135
+            },
+            "Diffusion": {
+              "valor": 0.624609
+            },
+            "Scale": {
+              "valor": 0.368421
+            },
+            "Freeze On": {
+              "valor": 0.0
+            },
+            "Flat On": {
+              "valor": 1.0
+            },
+            "Cut On": {
+              "valor": 1.0
+            },
+            "Room Size": {
+              "valor": 0.791515
+            },
+            "Size Smoothing": {
+              "valor": 2.0
+            },
+            "Stereo Image": {
+              "valor": 0.833333
+            },
+            "Density": {
+              "valor": 1.0
+            },
+            "Reflect Level": {
+              "valor": 0.493563
+            },
+            "Diffuse Level": {
+              "valor": 0.493563
+            },
+            "Dry/Wet": {
+              "valor": 0.28
             }
           }
         }
@@ -1343,6 +1448,63 @@
               "valor": 126.007812
             }
           }
+        },
+        {
+          "nombre": "Glue Compressor",
+          "clase": "GlueCompressor",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Threshold": {
+              "valor": -22.0
+            },
+            "Range": {
+              "valor": 70.0
+            },
+            "Output": {
+              "valor": 2.995
+            },
+            "Attack": {
+              "valor": 1.0
+            },
+            "Ratio": {
+              "valor": 1.0
+            },
+            "Release": {
+              "valor": 1.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "Peak Clip In": {
+              "valor": 0.0
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Gain": {
+              "valor": 0.0
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            }
+          }
         }
       ]
     },
@@ -1581,7 +1743,7 @@
               "valor": 0.595385
             },
             "L 16th": {
-              "valor": 2.0
+              "valor": 1.0
             },
             "R 16th": {
               "valor": 3.0
@@ -1593,7 +1755,7 @@
               "valor": 0.5
             },
             "Feedback": {
-              "valor": 0.526316
+              "valor": 0.3
             },
             "Freeze": {
               "valor": 0.0
@@ -1635,7 +1797,7 @@
               "valor": 0.0
             },
             "Dry/Wet": {
-              "valor": 0.5
+              "valor": 0.25
             }
           }
         },
@@ -1650,7 +1812,7 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.58
+              "valor": 0.75
             },
             "Waveform": {
               "valor": 3.0
@@ -1744,6 +1906,111 @@
             },
             "DC Filter": {
               "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Predelay": {
+              "valor": 0.258977
+            },
+            "In Lo Cut On": {
+              "valor": 0.0
+            },
+            "In Hi Cut On": {
+              "valor": 1.0
+            },
+            "Input Freq": {
+              "valor": 0.477294
+            },
+            "Input Width": {
+              "valor": 0.629412
+            },
+            "ER Spin On": {
+              "valor": 1.0
+            },
+            "ER Spin Rate": {
+              "valor": 0.485693
+            },
+            "ER Spin Amount": {
+              "valor": 0.654476
+            },
+            "ER Shape": {
+              "valor": 0.5
+            },
+            "Diff. Hi On": {
+              "valor": 1.0
+            },
+            "Diff. Hi Type": {
+              "valor": 0.0
+            },
+            "Diff. Hi Freq": {
+              "valor": 0.810234
+            },
+            "HiShelf Gain": {
+              "valor": 0.625
+            },
+            "Diff. Lo On": {
+              "valor": 0.0
+            },
+            "Diff. Lo Freq": {
+              "valor": 0.2272
+            },
+            "LowShelf Gain": {
+              "valor": 0.6875
+            },
+            "Chorus On": {
+              "valor": 1.0
+            },
+            "Chorus Rate": {
+              "valor": 0.103693
+            },
+            "Chorus Amount": {
+              "valor": 0.002506
+            },
+            "Decay Time": {
+              "valor": 0.314135
+            },
+            "Diffusion": {
+              "valor": 0.624609
+            },
+            "Scale": {
+              "valor": 0.368421
+            },
+            "Freeze On": {
+              "valor": 0.0
+            },
+            "Flat On": {
+              "valor": 1.0
+            },
+            "Cut On": {
+              "valor": 1.0
+            },
+            "Room Size": {
+              "valor": 0.791515
+            },
+            "Size Smoothing": {
+              "valor": 2.0
+            },
+            "Stereo Image": {
+              "valor": 0.833333
+            },
+            "Density": {
+              "valor": 1.0
+            },
+            "Reflect Level": {
+              "valor": 0.493563
+            },
+            "Diffuse Level": {
+              "valor": 0.493563
+            },
+            "Dry/Wet": {
+              "valor": 0.28
             }
           }
         }
@@ -3280,7 +3547,7 @@
     {
       "indice": 13,
       "nombre": "Repiques",
-      "volumen": 0.62,
+      "volumen": 0.5,
       "dispositivos": [
         {
           "nombre": "707 Core Kit",
@@ -3465,6 +3732,63 @@
             },
             "Dry/Wet": {
               "valor": 0.45
+            }
+          }
+        },
+        {
+          "nombre": "Glue Compressor",
+          "clase": "GlueCompressor",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Threshold": {
+              "valor": -22.0
+            },
+            "Range": {
+              "valor": 70.0
+            },
+            "Output": {
+              "valor": 2.995
+            },
+            "Attack": {
+              "valor": 1.0
+            },
+            "Ratio": {
+              "valor": 1.0
+            },
+            "Release": {
+              "valor": 1.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "Peak Clip In": {
+              "valor": 0.0
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Gain": {
+              "valor": 0.0
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
             }
           }
         }
@@ -4228,7 +4552,7 @@
     {
       "indice": 16,
       "nombre": "Metales",
-      "volumen": 0.44,
+      "volumen": 0.6,
       "dispositivos": [
         {
           "nombre": "909 Core Kit",
@@ -4413,6 +4737,63 @@
             },
             "Dry/Wet": {
               "valor": 0.45
+            }
+          }
+        },
+        {
+          "nombre": "Glue Compressor",
+          "clase": "GlueCompressor",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Threshold": {
+              "valor": -22.0
+            },
+            "Range": {
+              "valor": 70.0
+            },
+            "Output": {
+              "valor": 2.995
+            },
+            "Attack": {
+              "valor": 1.0
+            },
+            "Ratio": {
+              "valor": 1.0
+            },
+            "Release": {
+              "valor": 1.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "Peak Clip In": {
+              "valor": 0.0
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Gain": {
+              "valor": 0.0
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
             }
           }
         }
@@ -4861,6 +5242,256 @@
             },
             "Dry/Wet": {
               "valor": 0.55
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 18,
+      "nombre": "Hats",
+      "volumen": 0.8,
+      "dispositivos": [
+        {
+          "nombre": "909 Core Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Low Gain  ": {
+              "valor": 63.352802
+            },
+            "Mid Gain": {
+              "valor": 63.5
+            },
+            "High Gain": {
+              "valor": 63.352802
+            },
+            "Gain": {
+              "valor": 23.948336
+            },
+            "Drive Amount": {
+              "valor": 0.0
+            },
+            "Drive Tone": {
+              "valor": 0.0
+            },
+            "Glue": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 126.007812
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.222702
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Delay",
+          "clase": "Delay",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Smoothing": {
+              "valor": 0.0
+            },
+            "Link": {
+              "valor": 0.0
+            },
+            "Ping Pong": {
+              "valor": 0.0
+            },
+            "L Sync": {
+              "valor": 0.0
+            },
+            "R Sync": {
+              "valor": 0.0
+            },
+            "L Time": {
+              "valor": 0.0
+            },
+            "R Time": {
+              "valor": 0.293835
+            },
+            "L 16th": {
+              "valor": 2.0
+            },
+            "R 16th": {
+              "valor": 3.0
+            },
+            "L Offset": {
+              "valor": 0.5
+            },
+            "R Offset": {
+              "valor": 0.5
+            },
+            "Feedback": {
+              "valor": 0.0
+            },
+            "Freeze": {
+              "valor": 0.0
+            },
+            "Filter On": {
+              "valor": 1.0
+            },
+            "Filter Freq": {
+              "valor": 0.50895
+            },
+            "Filter Width": {
+              "valor": 0.882353
+            },
+            "LFO Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.471666
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Synced": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Wave": {
+              "valor": 1.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO > Delay": {
+              "valor": 0.0
+            },
+            "LFO > Filter": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 0.4
+            }
+          }
+        },
+        {
+          "nombre": "Glue Compressor",
+          "clase": "GlueCompressor",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Threshold": {
+              "valor": -22.0
+            },
+            "Range": {
+              "valor": 70.0
+            },
+            "Output": {
+              "valor": 2.995
+            },
+            "Attack": {
+              "valor": 1.0
+            },
+            "Ratio": {
+              "valor": 1.0
+            },
+            "Release": {
+              "valor": 1.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "Peak Clip In": {
+              "valor": 0.0
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Gain": {
+              "valor": 0.0
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
             }
           }
         }

@@ -174,6 +174,21 @@ def grabar(live: Live, desde: int, compases: int,
         live.enviar("/live/song/stop_playing")
         sys.exit(f"  el cabezal quedo en el compas {int(pos // 4) + 1}, no en el {desde}")
 
+    # Verificar que el transporte AVANZA antes de punchear. Una toma salio con
+    # catorce compases de silencio digital y audio recien al final: Live estaba
+    # todavia ocupado despues de montar cien clips, el start_playing se aplico
+    # tarde, y la grabacion registro silencio mientras tanto. Preguntar dos
+    # veces la posicion y exigir que suba es lo unico que distingue "andando"
+    # de "todavia no".
+    p1 = live.preguntar("/live/song/get/current_song_time")[0]
+    time.sleep(1.0)
+    p2 = live.preguntar("/live/song/get/current_song_time")[0]
+    if p2 <= p1 + 0.5:
+        live.enviar("/live/song/start_playing"); time.sleep(1.5)
+        p3 = live.preguntar("/live/song/get/current_song_time")[0]
+        if p3 <= p2 + 0.5:
+            live.enviar("/live/song/stop_playing")
+            sys.exit("  el transporte no avanza: Live esta ocupado o el set no suena")
     live.enviar("/live/song/set/record_mode", 1)
     # un compas de mas: lo que se pierde al recortar al compas pedido
     time.sleep((compases + 2) * 4 * 60.0 / BPM + 0.3)   # dos de margen: la toma arranca hasta un compas tarde
@@ -286,6 +301,14 @@ def main() -> None:
     copiar_liberado(wav, crudo)
     real = recortar(crudo, destino, inicio, args.desde, args.compases)
     crudo.unlink()
+    # Y que el render tenga audio. Un WAV de silencio digital mide como un tema
+    # vacio y la tabla del bucle lo compara igual, con cara de dato.
+    import soundfile as sf
+    y, _ = sf.read(destino, always_2d=True)
+    import numpy as np
+    rms = 20 * np.log10(np.sqrt((y ** 2).mean()) + 1e-12)
+    if rms < -60:
+        sys.exit(f"  el render es silencio ({rms:.0f} dBFS): el transporte no andaba o el set esta mudo")
     if real != args.desde:
         nuevo = destino.with_name(destino.name.replace(
             f"{args.desde}-{args.desde + args.compases - 1}",

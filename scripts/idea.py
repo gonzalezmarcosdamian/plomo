@@ -472,6 +472,24 @@ def _bajo(bpm: float, tonica: int, escala: list[int], h: Humano,
     return p
 
 
+HATS = {CHH, OHH}
+
+
+def _hats(bateria: Pista, bpm: float) -> Pista:
+    """Los hats separados de la bateria, para su propia pista de Live.
+
+    Los hats en el Drum Rack salen al centro con el bombo, y por eso el ancho
+    de la bateria medía 0.03 contra 0.74-0.90 de las referencias. En su pista
+    se les puede poner Haas y ancho sin tocar al bombo, que tiene que quedar
+    mono. Se escriben en la bateria como siempre y se separan despues, asi la
+    humanizacion y las vueltas no cambian.
+    """
+    p = Pista("Hats", bpm, canal=9)
+    p._eventos = [ev for ev in bateria._eventos if len(ev.datos) > 2 and ev.datos[1] in HATS]
+    bateria._eventos = [ev for ev in bateria._eventos if not (len(ev.datos) > 2 and ev.datos[1] in HATS)]
+    return p
+
+
 def _bateria(bpm: float, h: Humano, pleno: bool = False,
              climax: bool = False, tension: bool = False,
              sin_bombo: bool = False) -> Pista:
@@ -540,8 +558,14 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
             # 6.69 claps por compas en el remix contra 2.9 en el boceto. Los
             # de mas son fantasmas flojos entre los dos golpes principales: no
             # cambian donde esta el contratiempo, lo llenan.
+            # Solo 1.5 y 3.5. Los fantasmas en 0.75 y 2.75 —la semicorchea
+            # justo antes del pulso— se escuchan como un adelanto del golpe
+            # que viene, casi un flam contra el bombo: "siento los claps a
+            # destiempo". Lake Of Fire mide 7.8 claps por compas pero con 7.7
+            # ms de dispersion; lo que da el numero es la regularidad, no
+            # golpes que anticipan.
             if TECNO:
-                for pulso in (0.75, 1.5, 2.75, 3.5):
+                for pulso in (1.5, 3.5):
                     if calla(c, pulso):
                         continue
                     p.nota(c, h.pulso("clap", c, pulso), CLAP, 0.12,
@@ -1714,16 +1738,24 @@ def _bajo_medio(bpm: float, tonica: int, escala: list[int], h: Humano,
     donde si se oye. En techno esta siempre, y es la mitad de por que un bajo
     suena grande.
     """
+    # Dobla EXACTAMENTE lo que toca el grave: se genera el bajo y se
+    # transponen sus eventos una octava, con las notas recortadas. Escribirlo
+    # aparte, con otra celula, es la forma segura de que un dia dejen de
+    # coincidir.
+    grave = _bajo(bpm, tonica, escala, h, True, climax, False)
     p = Pista("Bajo medio", bpm, canal=0)
-    for c in range(COMPASES):
-        g = PROGRESION[c // 4]
-        for k, largo in FRASE_BAJO_TECNO[c % len(FRASE_BAJO_TECNO)]:
-            pulso = k * 0.25
-            # corto, no sostenido: si dura lo mismo que el grave se suman en
-            # fase y lo unico que hace es subir el nivel
-            p.nota(c, h.pulso("bajo", c, pulso),
-                   grado(tonica, escala, g, octava=2), min(largo * 0.25, 0.45),
-                   h.vel("bajo", c, pulso, 74 if climax else 62))
+    abiertas: dict[int, int] = {}
+    for ev in sorted(grave._eventos):
+        if len(ev.datos) < 3:
+            continue
+        alt = min(127, ev.datos[1] + 12)
+        if ev.orden == 1:
+            abiertas[alt] = ev.tick
+            p._eventos.append(_Evento(ev.tick, 1, bytes([ev.datos[0], alt, int(ev.datos[2] * 0.8)])))
+        else:
+            ini = abiertas.pop(alt, ev.tick)
+            fin = min(ev.tick, ini + int(0.45 * 480))
+            p._eventos.append(_Evento(max(fin, ini + 1), 0, bytes([ev.datos[0], alt, 0])))
     return p
 
 
@@ -1805,9 +1837,12 @@ FORMA = [
     ("tema",           32,  32),   # entra la armonia y el gancho
     ("subida1",        64,  16),   # el redoble
     ("drop1",          80,  32),   # todo
-    ("bajada",        112,  32),   # se cae el bombo: el breakdown
-    ("subida2",       144,  16),   # el redoble otra vez, mas fuerte
-    ("drop2",         160,  32),   # el mas grande del tema
+    # La bajada era de 32 y el DJ la escucho como "larguisima y muy
+    # silenciosa": dieciseis, y lo que se le saca se lo lleva el segundo drop,
+    # que pasa a 48. Es literalmente "mas de peak". El total sigue en 240.
+    ("bajada",        112,  16),   # se cae el bombo: el breakdown, corto
+    ("subida2",       128,  16),   # el redoble otra vez, mas fuerte
+    ("drop2",         144,  48),   # el mas grande del tema, y el mas largo
     ("salida",        192,  16),   # todo mas la linea larga
     ("salida_dj",     208,  32),   # groove para mezclar de salida
 ]
@@ -1819,8 +1854,24 @@ FORMA = [
 # cada golpe: se escucha como que el segundo pega mas, no como que el
 # primero esta flojo.
 INTENSIDAD = {"intro": 0.70, "tema": 0.86, "subida1": 0.90, "drop1": 0.93,
-              "bajada": 0.88, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
+              "bajada": 0.95, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
               "salida_dj": 0.78}
+
+
+def _hats_ya_hechos(fuera: list, bpm: float) -> list:
+    """Lo mismo que _separar_hats para una lista ya con ".mid" y corrida."""
+    for n, pi in fuera:
+        if n == "04_bateria.mid":
+            return fuera + [("19_hats.mid", _hats(pi, bpm))]
+    return fuera
+
+
+def _separar_hats(base: list, bpm: float) -> list:
+    """Si hay bateria en la parte, sus hats pasan a "19_hats"."""
+    for n, pi in base:
+        if n == "04_bateria":
+            return base + [("19_hats", _hats(pi, bpm))]
+    return base
 
 
 def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
@@ -1833,7 +1884,11 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
     Generarla aparte la desincronizaria del material que viene sonando.
     """
     h = Humano(semilla, INTENSIDAD[nombre])
-    bajo = _bajo_tecno if TECNO else _bajo
+    # El bajo sostenido del techno se fue: el pedido paso a "mas Vuarambon y
+    # mas de peak", y Lake Of Fire mide 7.06 ataques por compas con 96% de
+    # cobertura — la celula saltarina de siempre, no una nota tenida. Se
+    # mantiene lo que si es de peak: la bateria densa, el pump, las capas.
+    bajo = _bajo
     gancho = _gancho_tecno if TECNO else _gancho
     pleno = nombre != "intro"
     climax = nombre in ("drop1", "drop2", "salida")
@@ -1861,8 +1916,11 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
                 ("04_bateria", _bateria(bpm, h, True, False, False, sin_bombo=True))]
         # (capa, compas en que entra) — la percusion ultima, que es lo que
         # avisa que el bombo esta por volver
+        # Dieciseis compases: todo entra al doble de rapido que antes, y la
+        # percusion sin bombo desde el 9, para que la bajada junte tension en
+        # vez de vaciarse.
         ENTRADAS = {"01_atmosfera": 0, "02_acordes": 0, "09_sub": 0,
-                    "05_gancho": 8, "08_anchos": 16, "04_bateria": 20}
+                    "05_gancho": 4, "08_anchos": 8, "04_bateria": 8}
         if TECNO:
             base = [(n, pi) for n, pi in base if n != "08_anchos"]
             base.append(("16_textura", _textura(bpm)))
@@ -1879,9 +1937,9 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
             desde = ENTRADAS[n]
             pi = _podar(pi, 0, COMPASES - desde)
             if n not in PISO:
-                pi = _rampa(pi, 0.70, 1.0, COMPASES - desde)
+                pi = _rampa(pi, 0.85, 1.0, COMPASES - desde)
             fuera.append((n + ".mid", _correr(pi, desde)))
-        return fuera
+        return _hats_ya_hechos(fuera, bpm)
 
     if nombre in ("intro", "salida_dj"):
         # Groove de DJ: la zona por donde se mezcla. Bajo, bateria y el piso, y
@@ -1899,7 +1957,7 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
             if nombre == "salida_dj":
                 base += [("17_subkick", _subkick(bpm, h)),
                          ("18_metales", _metales(bpm, h))]
-        return [(n + ".mid", pi) for n, pi in base]
+        return [(n + ".mid", pi) for n, pi in _separar_hats(base, bpm)]
 
     base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
             ("02_acordes", _acordes(bpm, tonica, escala, h, pleno, tension)),
@@ -1946,9 +2004,23 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
     if nombre == "salida" and not TECNO:
         base.append(("07_cierre", _cierre(bpm, tonica, h)))
 
+    base = _separar_hats(base, bpm)
     largo = {n: l for n, _, l in FORMA}[nombre]
     if largo == COMPASES:
         return [(n + ".mid", pi) for n, pi in base]
+    if largo > COMPASES:
+        # Una parte mas larga que lo que escriben los generadores (el drop 2
+        # de 48) se extiende repitiendo su SEGUNDA mitad, que es la mas llena.
+        # Recortar "los ultimos 48 de 32" daba una ventana negativa que corria
+        # todo dieciseis compases y dejaba los primeros dieciseis vacios: el
+        # render del drop medio 13 compases de silencio digital y se busco el
+        # error en Live durante media hora.
+        fuera = []
+        for n, pi in base:
+            cola = _correr(_podar(pi, COMPASES - (largo - COMPASES), COMPASES), COMPASES)
+            pi._eventos = pi._eventos + cola._eventos
+            fuera.append((n + ".mid", pi))
+        return fuera
     # Las de dieciseis compases se quedan con la SEGUNDA mitad: en una subida es
     # donde esta el redoble, y en la salida es la mitad mas pesada del climax.
     return [(n + ".mid", _podar(pi, COMPASES - largo, COMPASES)) for n, pi in base]

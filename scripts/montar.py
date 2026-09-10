@@ -50,6 +50,7 @@ PISTAS = {
     # ninguna de las dos usa los dos juegos a la vez.
     "15_bajo2.mid": 9,   "16_textura.mid": 10,
     "17_subkick.mid": 11, "18_metales.mid": 16,
+    "19_hats.mid": 18,
 }
 
 # El gancho se escribe en la octava 4 y suena una octava mas abajo. Es del
