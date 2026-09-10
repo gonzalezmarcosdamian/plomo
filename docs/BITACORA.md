@@ -9,6 +9,47 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-10 — "otra vez se muere el drop": el bajon de Vuarambon, y menos conga
+
+**"Busca mas referencias."** `transicion.py` ahora mira 16 compases despues de
+la frontera y acepta una lista. Sobre cinco temas de Vuarambon: Estigia hace
+un bajon de 3-4 compases (graves -7 dB) y vuelve a pleno; Lake Of Fire baja
+gradual a lo largo de 16 sin llegar nunca a silencio; Stamina, Zenith y
+Prodiga NO tienen bajada despues del drop. Para "mas de peak", la bajada es
+un bajon de ocho compases con el groove intacto, y el drop 2 se lleva el
+resto: 56 compases (137-192).
+
+Medido despues en el render propio: 112 -> 113 total -10 dB, graves -11,
+medios -1 a -3, agudos planos; vuelta a pleno en el 121. Los agudos caian 7.6
+dB hasta que se encontro una condicion de hace dos dias que sacaba los hats
+abiertos junto con el bombo. Los hats se quedan.
+
+**"Mas electronico y menos conga."** Los toms de la bateria en dos posiciones
+en vez de seis. Los repiques iban a pasar al 808 Core Kit (claves, rim,
+maracas — sintetico de punta a punta), pero el 808 cargado por OSC despues
+del reinicio de Live no disparo ni una nota: -70.7 dBFS en cinco sondas de
+una sola nota repetida, incluida la 63 que antes sonaba. Pendiente. Repiques
+queda en rim y ride del 909, que esta verificado nota por nota en tres pistas.
+
+**Live se actualizo solo por segunda vez** en medio de un montaje
+(`GlobalExit(): End (0)` y otro Swapper). Se espero el lock, se relanzo, y el
+set se rearmo desde la receta en dos comandos. La receta de Repiques era de
+antes del cambio de kit porque la captura se corto con la actualizacion:
+capturar SIEMPRE al final de cada cambio en Live, no al final de la sesion.
+
+**Dos trampas de medicion mas.** El archivo intermedio del render se llamaba
+`.crudo.wav` y un glob de `*.wav` lo agarraba: una tabla entera salio con los
+compases corridos dos lugares (ahora es `.crudo.tmp`). Y el orden de las
+cadenas de un Drum Rack NO es el orden de las notas: el 909 lista el Closed
+Hi Hat en la posicion 40 y responde en 42. Los pads se leen por nombre; la
+nota se verifica con una sola nota repetida, grabada sola.
+
+**Pendientes con causa conocida:** pump melodico (la atmosfera no bombea),
+crestas (Glue no aprieta), balance (bajo +3, melodico +4 dB), ancho de
+bateria (0.29 de 0.74), el 808.
+
+---
+
 ## 2026-09-10 — la frontera, el clap y los hats, cada uno con su número
 
 **"Es re brusco el drop, es silencio y viene de una conga linda."** Medido:
