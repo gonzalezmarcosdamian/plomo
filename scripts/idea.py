@@ -1916,67 +1916,35 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
     grande = nombre in ("drop2", "salida")
 
     if nombre == "bajada":
-        # El breakdown. Sin bombo y sin clap, con lo melodico sostenido y el
-        # gancho arriba. La atmosfera y el sub sostienen el piso: sin ellos esto
-        # es una melodia colgada en el aire, que es la version mal hecha de un
-        # breakdown — no se escucha como que bajo, se escucha como que se rompio.
-        # Los treinta y dos compases de la bajada estaban PLANOS: entre 250 y
-        # 470 de impacto de punta a punta, con las seis capas sonando desde el
-        # compas 1. Una bajada que no crece no prepara nada; es un hueco largo.
+        # No es una bajada: es TENSION. El DJ, escuchando el bajon: "mucho
+        # silencio"; y despues la definicion entera: "el ambiente no lo sacaria,
+        # el groove lo mantendria, haria tension, y luego liberaria todo". Eso
+        # es exactamente lo que hacen Stamina, Zenith y Prodiga (Vuarambon), que
+        # no tienen bajada despues del drop.
         #
-        # Ahora entra por capas y crece. Cada cosa aparece donde le toca y
-        # ninguna se va: al final de la bajada suena todo lo que sonaba antes,
-        # mas fuerte, y de ahi arranca la subida.
-        # Medido con transicion.py en Minicube, Cryo, Go y Typical Use: en la
-        # entrada a la bajada los GRAVES caen 20 dB y los medios y agudos
-        # siguen planos, a +-1 dB. Se va el bombo y el grupo de bajo. Nada
-        # mas: la percusion, los metales, la textura y la armonia siguen
-        # exactamente como en el drop. Lo que junta tension es la ausencia del
-        # bombo sobre un groove que no paro, no el silencio.
+        # Se queda TODO —bombo, percusion, hats, metales, textura, armonia,
+        # gancho— y se retira una sola cosa: el grupo de bajo. Sin graves el
+        # groove sigue pero el cuerpo pide que vuelva, y ese pedido es la
+        # tension. Encima, el riser creciendo los ocho compases. La subida 2
+        # trae el redoble y el drop 2 libera todo junto.
         base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
                 ("02_acordes", _acordes(bpm, tonica, escala, h, True, False)),
                 ("05_gancho", gancho(bpm, tonica, escala, h, True, False, False)
                  if not TECNO else gancho(bpm, tonica, escala, h, False)),
-                ("08_anchos", _anchos(bpm, tonica, escala, h, False)),
-                ("04_bateria", _bateria(bpm, h, True, True, False, sin_bombo=True)),
+                ("04_bateria", _bateria(bpm, h, True, True, False)),
                 ("10_repiques", _repiques(bpm, h)),
                 ("18_metales", _metales(bpm, h)),
                 ("16_textura", _textura(bpm))]
-        # (capa, compas en que entra) — la percusion ultima, que es lo que
-        # avisa que el bombo esta por volver
-        # Dieciseis compases: todo entra al doble de rapido que antes, y la
-        # percusion sin bombo desde el 9, para que la bajada junte tension en
-        # vez de vaciarse.
-        # La percusion sin bombo desde el compas 1, no desde el 9. El DJ: "es
-        # re brusco, es silencio y viene de una conga linda". Con las congas
-        # sonando de verdad, pasar de eso a nada en un compas era un corte de
-        # cinta. En la bajada se va el BOMBO, no el groove: la conga sigue, y
-        # lo que se siente es que se abrio el piso, no que se apago la luz.
-        ENTRADAS = {"01_atmosfera": 0, "02_acordes": 0, "05_gancho": 0,
-                    "08_anchos": 0, "04_bateria": 0, "10_repiques": 0,
-                    "18_metales": 0, "16_textura": 0}
-        if TECNO:
-            base = [(n, pi) for n, pi in base if n != "08_anchos"]
-        # Un platillo en el uno de la bajada: marca que ALGO empezo, no que
-        # algo termino. Sin el, el oido lee el compas 113 como que se cayo el
-        # tema.
-        base.append(("11_splash", _splash(bpm, h, cada=COMPASES)))
-        ENTRADAS["11_splash"] = 0
-        # El piso NO entra en la rampa. La atmosfera, los acordes y el sub son
-        # lo que sostiene el espacio cuando se cae el bombo, y hacerlos crecer
-        # junto con el resto dejaba el primer compas de la bajada en el 7% de la
-        # energia del compas anterior: eso no se escucha como que bajo, se
-        # escucha como que se corto. Lo que crece es lo que ENTRA, no lo que
-        # aguanta.
-        PISO = {"01_atmosfera", "02_acordes", "09_sub"}
-        fuera = []
-        for n, pi in base:
-            desde = ENTRADAS[n]
-            pi = _podar(pi, 0, COMPASES - desde)
-            # sin rampa: las referencias mantienen medios y agudos planos
-            # durante toda la bajada; lo que crece despues es la subida
-            fuera.append((n + ".mid", _correr(pi, desde)))
-        return _hats_ya_hechos(fuera, bpm)
+        if not TECNO:
+            base.append(("08_anchos", _anchos(bpm, tonica, escala, h, False)))
+        # el riser sobre los ocho compases de la parte, no sobre los 32
+        largo_parte = {n: l for n, _, l in FORMA}[nombre]
+        riser = Pista("Riser", bpm, canal=0)
+        for compas, vel in ((0, 70), (largo_parte // 2, 86), (largo_parte - 2, 100), (largo_parte - 1, 116)):
+            riser.nota(compas, 0.0, SPLASH, 4.0, vel)
+        base.append(("14_riser", riser))
+        base = _separar_hats(base, bpm)
+        return [(n + ".mid", pi) for n, pi in base]
 
     if nombre in ("intro", "salida_dj"):
         # Groove de DJ: la zona por donde se mezcla. Bajo, bateria y el piso, y
@@ -2026,10 +1994,6 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
             base.append(("06_arpegio", _arpegio(bpm, tonica, escala, h)))
     if grande and not TECNO:
         base.append(("13_lead", _lead(bpm, tonica, escala, h)))
-    if nombre == "drop1":
-        # El drop 1 no cae en la bajada: la anuncia. La reversa en su ultimo
-        # compas convierte el corte en una puerta.
-        base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
     if tension:
         base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
         base.append(("14_riser", _riser(bpm)))
