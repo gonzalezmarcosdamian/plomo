@@ -210,10 +210,20 @@ def download_track(s: requests.Session, track_id: int, filename: str) -> tuple[P
     fname = fname.replace("\n", " ").replace("\r", " ").replace("\\", "-")
     fname = re.sub(r'[<>:"/|?*]', '', fname).strip()
 
+    # Se baja a .part y recien al terminar se renombra. Si el server corta
+    # la conexion a la mitad -pasa- el archivo incompleto no queda con
+    # nombre de mp3 valido, listo para que Rekordbox lo importe truncado.
     dest = DOWNLOADS / fname
-    with open(dest, "wb") as f:
-        for chunk in r.iter_content(8192):
-            f.write(chunk)
+    parcial = dest.with_suffix(dest.suffix + ".part")
+    try:
+        with open(parcial, "wb") as f:
+            for chunk in r.iter_content(8192):
+                f.write(chunk)
+    except requests.RequestException as e:
+        parcial.unlink(missing_ok=True)
+        print(f"  Descarga cortada: {e}")
+        return None
+    parcial.replace(dest)
 
     size_mb = dest.stat().st_size / 1024 / 1024
     return dest, size_mb
@@ -281,19 +291,36 @@ def cmd_batch(path: str) -> None:
     # encoding explicito: sin esto Windows abre en cp1252 y los nombres con
     # acento llegan mangleados ("Sebastien Leger" -> "SÃ©bastien LÃ©ger"),
     # asi que la busqueda en Muzpa no encuentra nada.
+    # El comentario al final de la linea ("Artista - Titulo   # 122 BPM Dm") se
+    # corta antes de buscar: si no, el BPM viaja adentro del titulo y Muzpa no
+    # encuentra nada. Se exigen dos espacios antes del # para no partir un
+    # titulo que lo lleve adentro ("Track #1").
     with open(path, encoding="utf-8") as f:
-        lines = [l.strip() for l in f
+        lines = [re.split(r"\s{2,}#", l.strip())[0].strip() for l in f
                  if (" — " in l or " - " in l) and not l.strip().startswith("#")]
 
     print(f"Procesando {len(lines)} tracks...")
     ok = 0
+    fallados = []
     for line in lines:
         sep = " — " if " — " in line else " - "
         parts = line.split(sep, 1)
-        if len(parts) == 2:
+        if len(parts) != 2:
+            continue
+        # Un timeout en un track no puede matar el batch: se anota y sigue.
+        try:
             if process(parts[0].strip(), parts[1].strip(), s):
                 ok += 1
+            else:
+                fallados.append(line)
+        except Exception as e:
+            print(f"  ERROR en '{line}': {type(e).__name__}: {e}")
+            fallados.append(line)
     print(f"\nDescargados: {ok}/{len(lines)}")
+    if fallados:
+        print(f"No se bajaron {len(fallados)}:")
+        for l in fallados:
+            print(f"  {l}")
 
 
 def main() -> None:
