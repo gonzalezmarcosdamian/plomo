@@ -1,26 +1,42 @@
 # Metropolitano Rosario 2025 — Ezequiel Arias (youtu.be/-engjCFawKQ)
-# Confirmados en Muzpa y ausentes de la biblioteca: 14
-# Setlist completo en data/setlists/ezequiel-arias_metropolitano-rosario_2025-06-28.json
+# 9 para bajar | 13 ya en biblioteca | 4 con sustituto | 2 sin nada en Muzpa
+# Setlist completo: data/setlists/ezequiel-arias_metropolitano-rosario_2025-06-28.json
 
-Bondarev & Supacooks - Activator   # 123.0 BPM Gm
-Anton Borin - May Spring Come   # 123.0 BPM Gm
 Niko Ava - Freedom   # 122.0 BPM Dm
 Melodiam - Peak   # 122.0 BPM Amin
-Jody Wisternoff & James Grant - Mui (Ezequiel Arias Remix)   # 125.0 BPM Cm
 Luis Damora - Illuminate   # 123.0 BPM Cm
 FJL - Rider   # 124.0 BPM G
 Claudio Cornejo - Alnitak   # 122.0 BPM Am
 Lonya - Sadness (Ziger Remix)   # 122.0 BPM Em
 Ezequiel Arias - ReAnimation   # 125.0 BPM D
 Santi Mossman - Exitz   # 123.0 BPM D
-Ezequiel Arias & Durante - Dream Controller   # 124.0 BPM Db
-Ezequiel Arias - Delirio   # 125.0 BPM Db
 Antrim - Morning Changes   # 123.0 BPM Em
 
-# NO estan en Muzpa (6) — edits propios del DJ o inéditos:
+# YA LOS TENEMOS (13):
+#   Ezequiel Arias - So Many Stars   [Ezequiel Arias - So Many Stars (Extended Mix)]
+#   Bondarev & Supacooks - Activator   [Supacooks, Bondarev - Activator (Original Mix)]
+#   Anton Borin - May Spring Come   [Anton Borin (RU) - May Spring Come (Original Mix)]
+#   Kyotto - Sorry I'm Late (HAFT Remix)
+#   Jody Wisternoff & James Grant - Mui (Ezequiel Arias Remix)   [Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa - Mui (Ezequiel Arias Extended Mix)]
+#   Blake Jarrell - Twenty Miamis Ago (Cendryma Remix)   [Blake Jarrell - Twenty Miami's Ago (Cendryma Extended Mix)]
+#   Ezequiel Arias - Sin Control   [Ezequiel Arias - Sin Control (Extended Mix)]
+#   Guy J - Silver Lake   [Guy J - Silver Lake (Original Mix)]
+#   Kamilo Sanclemente - Anagram (Mayro Remix)   [Kamilo Sanclemente - Anagram (Mayro Extended Remix)]
+#   Ezequiel Arias & Durante - Dream Controller   [Durante, Ezequiel Arias - Dream Controller (Extended Mix)]
+#   Ezequiel Arias - Delirio   [Hraach - Delirio (Original Mix)]
+#   Ezequiel Arias - Eterno   [Ezequiel Arias - Eterno (Extended Mix)]
+#   Jamie Stevens & Zankee Gulati - Low Tide (Ezequiel Arias Remix)   [Jamie Stevens, Zankee Gulati - Low Tide (Ezequiel Arias Remix)]
+
+# El remix del DJ no esta, pero hay version (4):
 #   Rezident - It's All On You (Ezequiel Arias Remix)
+#       -> Malou, Rezident - It's All On You (Extended) 123 Dm
 #   Sasha - Bring On The Night-Time (Ezequiel Arias Edit)
+#       -> Sasha - Bring On The Night-Time (Laura Bettinson) 119 Em
 #   Deadmau5 - Re_Jaded (Santi Mossman Remix)
-#   Sasha & Police - Out Of Time (Antrim Edit)
+#       -> deadmau5 - Re Jaded 128 Bbm
 #   Royksopp - Never Ever (COQUEIT Edit)
+#       -> Royksopp - Never Ever (Yotto Remix) 121 Ab
+
+# Nada en Muzpa (2) — edits/inéditos:
+#   Sasha & Police - Out Of Time (Antrim Edit)
 #   The Do - Dust It Off (Kevin Di Serna & Sebastian Teillagorry Edit)

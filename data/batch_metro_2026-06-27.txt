@@ -1,21 +1,45 @@
 # Metropolitano Rosario 27-06-2026 — Ezequiel Arias (youtu.be/RxZQ9XOvSh8)
-# Confirmados en Muzpa y ausentes de la biblioteca: 5
-# Setlist completo en data/setlists/ezequiel-arias_metropolitano-rosario_2026-06-27.json
+# 5 para bajar | 8 ya en biblioteca | 6 con sustituto | 3 sin nada en Muzpa
+# Setlist completo: data/setlists/ezequiel-arias_metropolitano-rosario_2026-06-27.json
 
 Kebin van Reeken - The Unknown   # 122.0 BPM Dm
 TPS - Control (Kostya Outta Remix)   # 123.0 BPM Gm
 D-Shift & Drunken Kong - Where You Need to Be   # 121.0 BPM Gm
-Ezequiel Arias - Go   # 124.0 BPM Abm
+Jark Prongo - Movin' Thru Your System (Brigado Crew & Hernan Cattaneo Remix)   # None BPM None
 Deestopia - Humanity (Jerome Isma-Ae Remix)   # 124.0 BPM Ebm
 
-# NO estan en Muzpa (10) — edits propios del DJ o inéditos:
+# YA LOS TENEMOS (8):
+#   Durante & Mayro - Mantra   [Durante, Mayro - Mantra (Extended Mix)]
+#   Andre Moret - Kryon   [Andre Moret - Kryon (Original Mix)]
+#   Ezequiel Arias - Sin Control   [Ezequiel Arias - Sin Control (Extended Mix)]
+#   Maze 28 - C Moon   [Maze 28 - C Moon (Original Mix)]
+#   Guy J - Nirvana (Dub)   [Guy J - Nirvana]
+#   Ezequiel Arias - Eterno   [Ezequiel Arias - Eterno (Extended Mix)]
+#   Ezequiel Arias - Go   [HANA, Ezequiel Arias - Go (Extended Mix)]
+#   Ezequiel Arias - Estimulo   [Ezequiel Arias - Estimulo (Extended Mix)]
+
+# El remix del DJ no esta, pero hay version (6):
 #   Secret Knowledge - Sugar Daddy (Ezequiel Arias & COQUEIT Remix)
+#       -> Secret Knowledge - Sugar Daddy (Digweed & Nick Muir Remix)
 #   The Chemical Brothers - Do It Again (COQUEIT Remix)
-#   Jark Prongo - Movin' Thru Your System (Brigado Crew & Hernan Cattaneo Remix)
-#   Ezequiel Arias - Out of Mind
+#       -> YA LO TENEMOS en Massano Extended Remix 126 Em
 #   Rufus Du Sol - Always (Ezequiel Arias Remix)
+#       -> RUFUS DU SOL - Always (Monkey Safari Remix) 124 Abm
 #   Binary Finary - 1998 (COQUEIT Remix)
+#       -> Binary Finary - 1998 (Dosem Extended Remix) 124 Cm
+#   Slam - Eterna (Ezequiel Arias Remix)
+#       -> Slam - Eterna (Original Mix) 123 Am
+#   CHVRCHES - Leave a Trace (Ezequiel Arias Edit)
+#       -> Chvrches - Leave A Trace (Four Tet Remix)
+
+# Nada en Muzpa (3) — edits/inéditos:
+#   Ezequiel Arias - Out of Mind
 #   Marco Bailey & Tom Hades - Stars & Shines (Kevin Di Serna & Cruz Vittor Remix)
 #   Fairmont - The Last Dance (Tomi Couto Edit)
-#   Slam - Eterna (Ezequiel Arias Remix)
-#   CHVRCHES - Leave a Trace (Ezequiel Arias Edit)
+
+# --- Los otros dos sets de la misma noche ---
+# Nacho Lopez, opening (youtu.be/9d8EZFHFULo) — sin tracklist publica, 1 track identificado
+Rei Calero - Conscience Of Self   # 127.0 BPM Gm
+# Simon Vuarambon (youtu.be/M701CkZLefY) — 3hs sin tracklist publica, 2 tracks identificados
+error.func - Himmelskoerper   # 121.0 BPM Abm
+#   Ezequiel Perini - Don't Push Me  -> NO esta en Muzpa

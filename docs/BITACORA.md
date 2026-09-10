@@ -9,6 +9,54 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-09 — el corpus de referencia dejó de estar vacío
+
+Pedido: *"revisá los nuevos videos de Eze Arias y Simon en el metro, son 3, fijate
+los temas si están en Muzpa y si los tenemos"*. El metro es el Metropolitano de
+Rosario; los tres videos son el line-up completo del 27-06-2026 (Nacho López
+abriendo, Ezequiel Arias, Simon Vuarambon), producción Lado B.
+
+**Los tracklists no están donde se los busca.** Ninguno de los tres videos tiene
+tracklist en la descripción ni capítulos, y la página del evento en
+1001tracklists está detrás de un Turnstile de Cloudflare. Estaban en los
+comentarios de YouTube: se bajaron 520 comentarios por la API interna
+(`youtubei/v1/next`) y ahí apareció el tracklist completo del set de Eze, con
+timestamps y sellos. El mismo barrido sobre el resto del canal de los dos DJs dio
+tres tracklists más.
+
+**`data/setlists/` pasó de 0 a 4 setlists** — 159 posiciones, 125 con nombre:
+Eze en el Metro 2026 y 2025, Eze en Dahaus x Fruta Córdoba, y Simon en Palacio
+Alsina Córdoba (60 posiciones). Es el corpus que
+[APRENDIZAJES.md](APRENDIZAJES.md) venía pidiendo para salir de la circularidad.
+
+**Dos arreglos en `ingest_setlist.py`.** Descartaba las líneas `ID - ID`, con lo
+cual dos tracks separados por un tema desconocido quedaban consecutivos y el
+backtest medía una transición que nunca existió; ahora se guardan como hueco y
+bloquean el par. Y no limpiaba el timestamp al final del título
+(`Titulo (2:56:50)`), así que esos nunca matcheaban contra el pool.
+
+**`scripts/enrich_setlist.py` es nuevo.** Cruzar contra la biblioteca propia daba
+6-29% de cobertura, muy abajo del 80% que el backtest exige. Muzpa tiene key y
+BPM de casi todo: con eso tres de los cuatro setlists quedaron en 78-80%. El
+cruce es por título + remixer, sin el artista, porque cada fuente lo escribe
+distinto. La energía sigue sin evidencia externa: la calcula el pipeline propio
+sobre el archivo.
+
+**Primer veredicto no circular.** `armonia.max_camelot_dist = 1` se viola en el
+73% de las transiciones de referencia (n=63, media 2.9 hops) y `bpm.max_salto =
+2.0` en el 22%. Las dos quedan REFUTADAS. Los veredictos de energía y forma que
+imprimió el backtest en la misma corrida NO valen: salen de n=3. No se cambió
+ninguna regla — eso lo aprueba el humano.
+
+**Listas de adquisición**: `data/batch_metro_2026-06-27.txt` y los tres
+`batch_ref_*.txt`, 66 tracks confirmados en Muzpa que no están en la biblioteca.
+
+**Ojo con el commit `0bc8b84`.** Otra sesión corriendo en paralelo commiteó todo
+el árbol y se llevó estos archivos adentro de un commit cuyo mensaje habla de
+`browser.py`. No se reescribió la historia porque esa sesión seguía escribiendo.
+
+---
+
 ## 2026-09-09 (noche) — el lazo cerrado y las primeras cuatro vueltas
 
 Pedido: *"necesito un plan para que evoluciones"* y despues *"todo el esfuerzo

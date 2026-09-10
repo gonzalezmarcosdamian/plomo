@@ -8,6 +8,47 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un hueco borrado en un setlist fabrica una transición que nunca existió
+
+**Qué pasó.** El parser de setlists de referencia descartaba las líneas
+`ID - ID` por considerarlas ruido. En un set de tres horas eso es la mitad de las
+posiciones: dos tracks que estaban a diez minutos uno del otro quedaban
+consecutivos en el JSON, y el backtest medía el salto de Camelot entre ellos como
+si el DJ los hubiera mezclado.
+
+**Por qué.** Un tracklist no es una lista de tracks, es una secuencia. El valor
+está en la adyacencia, y un `ID` no es la ausencia de un dato: es la presencia de
+un track cuyo nombre no se sabe. Borrarlo no deja un agujero, junta los bordes.
+
+**Cómo se aplica.** En cualquier corpus donde se mida la relación entre elementos
+vecinos, lo desconocido se guarda como hueco explícito que rompe el par, nunca se
+omite. Vale igual para transiciones de un set, para huecos en una serie temporal
+y para pasos salteados en un log.
+
+---
+
+## Si el dato propio no alcanza para medir, traelo de donde esté
+
+**Qué pasó.** El corpus de setlists de otros DJs existía para refutar las reglas
+propias, pero se enriquecía cruzando contra la biblioteca propia: 6-29% de
+cobertura contra el 80% que el backtest exige. El corpus estaba cargado y no
+medía nada. Muzpa tenía key y BPM de casi todos esos tracks, incluso de los que
+no se tienen; con eso la cobertura pasó a 78-80% y el backtest dio su primer
+veredicto no circular.
+
+**Por qué.** El solapamiento entre la colección propia y el repertorio de otro es
+justo lo que el corpus vino a medir: usarlo también como fuente de datos hace que
+solo se pueda medir lo que uno ya tiene, que es la circularidad de nuevo, un piso
+más abajo. La fuente de los metadatos tiene que ser independiente de la hipótesis.
+
+**Cómo se aplica.** Antes de dar por inviable una medición por falta de datos,
+preguntarse si el dato existe en un catálogo externo. Y al cruzar entre fuentes,
+no usar como clave el campo que cada fuente escribe distinto — acá el artista
+("D-Shift & Drunken Kong" vs "Drunken Kong, D-SHIFT"): se cruza por título más
+remixer, y el artista se usa después como confirmación.
+
+---
+
 ## Una restricción es una forma de no estar equivocado, no es una idea
 
 **Qué pasó.** Se midió todo lo medible —densidad de arreglo, colocación del bajo,

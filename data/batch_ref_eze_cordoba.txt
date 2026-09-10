@@ -1,6 +1,6 @@
 # Dahaus x Fruta, Cordoba — Ezequiel Arias (youtu.be/4SDpmTztWk8)
-# Confirmados en Muzpa y ausentes de la biblioteca: 26
-# Setlist completo en data/setlists/ezequiel-arias_dahaus-x-fruta-cordoba_2026-04-12.json
+# 26 para bajar | 2 ya en biblioteca | 2 con sustituto | 5 sin nada en Muzpa
+# Setlist completo: data/setlists/ezequiel-arias_dahaus-x-fruta-cordoba_2026-04-12.json
 
 Simos Tagias - Vortex   # 122.0 BPM D
 Simos Tagias - Epos   # 122.0 BPM Dm
@@ -29,11 +29,19 @@ Because of Art & Antony Szmierek - Circle of Light (Incandescent Mix)   # 126.0 
 Adriatique & WhoMadeWho - Miracle   # 123.0 BPM C
 Nox Vahn - When I'm With You   # 123.0 BPM Fm
 
-# NO estan en Muzpa (7) — edits propios del DJ o inéditos:
+# YA LOS TENEMOS (2):
+#   Ruben Karapetyan - Mindful Harmony (Dowden Remix)
+#   Emi Galvan & Albuquerque - Don't Kill The Messenger   [Emi Galvan & Albuquerque - Don't Kill the Messenger]
+
+# El remix del DJ no esta, pero hay version (2):
+#   The Future Sound Of London - Papua New Guinea (Yotto Remix)
+#       -> FSOL - Papua New Guinea (Soul Central Remix) 126 Eb
+#   Ben Bohmer - Erase (Ezequiel Arias Remix)
+#       -> Ben Bohmer - Erase (Rezident Extended Mix) 124 Bbm
+
+# Nada en Muzpa (5) — edits/inéditos:
 #   David Bowie - Time (Ezequiel Arias Edit)
 #   Chemical Brothers - Escape Velocity (Ezequiel Arias Remix)
 #   Mind Against & Sideral - Criseide
 #   Qtier - Set Me On (Ezequiel Arias Edit)
-#   The Future Sound Of London - Papua New Guinea (Yotto Remix)
-#   Ben Bohmer - Erase (Ezequiel Arias Remix)
 #   Arcade Fire - Age of Anxiety I (Ezequiel Arias Remix)

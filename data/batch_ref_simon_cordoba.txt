@@ -1,6 +1,6 @@
 # Dahaus, Palacio Alsina Cordoba — Simon Vuarambon (youtu.be/oJkXaWOEPAw)
-# Confirmados en Muzpa y ausentes de la biblioteca: 27
-# Setlist completo en data/setlists/simon-vuarambon_dahaus-palacio-alsina-cordoba_2026-03-01.json
+# 26 para bajar | 6 ya en biblioteca | 3 con sustituto | 5 sin nada en Muzpa
+# Setlist completo: data/setlists/simon-vuarambon_dahaus-palacio-alsina-cordoba_2026-03-01.json
 
 Aman Anand - Disastro (Thomas Ferell Remix)   # 120.0 BPM Cm
 Puresine - Chanalex (Enertia-Sound Remix)   # 125.0 BPM Cm
@@ -23,19 +23,31 @@ Alan Dixon & Mystery Affair - NRGY (More Acid Mix)   # 125.0 BPM Gm
 Stallings - Lapse   # 126.0 BPM F
 Cafius - Je Veux Danser   # 128.0 BPM Abm
 Jel Ford - Overcast   # 126.0 BPM Amin
-Julian Jeweil - Mars   # 125.0 BPM F#m
 Nick Curly & Jansons - Chip Butty (Alex Kennon Remix)   # 124.0 BPM Bm
 Dosem - Comeback   # 125.0 BPM Bm
 Wehbba - Basic Pleasure   # 128.0 BPM Gm
 Miss Kittin - Life Is My Teacher (Simon Vuarambon Remix)   # 122.0 BPM F#m
 Krystal Klear - Tokyo Flower   # 130.0 BPM Ebm
 
-# NO estan en Muzpa (8) — edits propios del DJ o inéditos:
+# YA LOS TENEMOS (6):
+#   Cendryma - Enter   [Cendryma - Enter (Extended Mix)]
+#   Simon Vuarambon - Stamina   [Simon Vuarambon - Stamina (Extended Mix)]
+#   Julian Jeweil - Mars   [Simon Vuarambon - Mars (Original Mix)]
+#   Tantum & Hyunji-A - Keep My Letters (Simon Vuarambon Remix)   [Tantum, Hyunji-A - Keep My Letters (Simon Vuarambon Remix)]
+#   Simon Vuarambon - Diafana   [Simon Vuarambon - Diafana (Original Mix)]
+#   New Jackson - The Night Mail (Simon Vuarambon Remix)
+
+# El remix del DJ no esta, pero hay version (3):
+#   Pryda - Rebel XX (Simon Vuarambon Edit)
+#       -> Pryda - Rebel XX (Original Mix)
+#   The Chemical Brothers - Eve Of Destruction (Simon Vuarambon Remix)
+#       -> The Chemical Brothers - Eve Of Destruction 126 Bm
+#   ROSALIA - Reliquia (Simon Vuarambon Remix)
+#       -> Rosalia - Reliquia (STBAN Dub Remix) 126 Am
+
+# Nada en Muzpa (5) — edits/inéditos:
 #   Tantum & Hyunji-A - Twisted (Simon Vuarambon Remix)
 #   Ramiro Alvarez & Ignacio Hernandez - Two Generetions
-#   Pryda - Rebel XX (Simon Vuarambon Edit)
 #   Guy J - Middlemen
-#   The Chemical Brothers - Eve Of Destruction (Simon Vuarambon Remix)
 #   Sultan & The Greek - Rezin (ID Remix)
 #   Danny Tenaglia presents George Vidal - Out From Obscurity (Simon Vuarambon Remix)
-#   ROSALIA - Reliquia (Simon Vuarambon Remix)
