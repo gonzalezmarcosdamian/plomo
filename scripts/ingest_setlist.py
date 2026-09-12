@@ -36,7 +36,7 @@ POOL = RAIZ / "data" / "pool.json"
 
 LINEA = re.compile(
     r"^\s*(?:\[?\d{1,2}[:.]\d{2}(?::\d{2})?\]?)?\s*"   # timestamp opcional
-    r"(?:\d{1,3}[.)]\s*)?"                              # numeracion opcional
+    r"(?:\d{1,3}[.)]?\s+)?"                             # numeracion opcional, con punto o sin el
     r"(?P<artist>.+?)\s+[-–—]\s+(?P<title>.+?)\s*$"
 )
 RUIDO = re.compile(r"^(tracklist|setlist|w/|\s*$)", re.I)

@@ -1,0 +1,102 @@
+{
+  "name": "104. Previa Mellino — 1h30 — 2026-09-12",
+  "duration_h": 1.5,
+  "bpm_range": [
+    118,
+    124
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Ed Ed, JJ Dawson",
+      "title": "Higher Than Me (Stimming Remix)",
+      "content_id": "103399728"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Dharma (Original Mix)",
+      "content_id": "96780807"
+    },
+    {
+      "artist": "Hot Oasis",
+      "title": "Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix)",
+      "content_id": "139352087"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Pacifist (Original Mix)",
+      "content_id": "249390073"
+    },
+    {
+      "artist": "Greg Ochman",
+      "title": "In Between Dreams",
+      "content_id": "129731006"
+    },
+    {
+      "artist": "Hernan Cattaneo & Marcelo Vasami",
+      "title": "Scope",
+      "content_id": "158022171"
+    },
+    {
+      "artist": "Khen",
+      "title": "Some Little Secrets",
+      "content_id": "16097109"
+    },
+    {
+      "artist": "GMJ, Matter",
+      "title": "Telomeres (Original Mix)",
+      "content_id": "175052176"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Stranger In A Strange World (Original Mix)",
+      "content_id": "80902774"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Synthesis",
+      "content_id": "133677574"
+    },
+    {
+      "artist": "NUFECTS",
+      "title": "Inferno (Extended Mix)",
+      "content_id": "12342979"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Canon (Original Mix)",
+      "content_id": "250153001"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Aer8 (Juan Pablo Torrez Remix)",
+      "content_id": "231052947"
+    },
+    {
+      "artist": "Kabi (AR), Ric Niels",
+      "title": "Kimica",
+      "content_id": "231885986"
+    },
+    {
+      "artist": "Amine K (Moroko Loko), WAHM (FR)",
+      "title": "Kill the Anger (Rodriguez Jr. Remix)",
+      "content_id": "16167647"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Insight (Original Mix)",
+      "content_id": "83418763"
+    },
+    {
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bekal (Extended Mix)",
+      "content_id": "108617487"
+    },
+    {
+      "artist": "Leandro Murua, Martin Fredes",
+      "title": "Interference (Original Mix)",
+      "content_id": "236712792"
+    }
+  ]
+}

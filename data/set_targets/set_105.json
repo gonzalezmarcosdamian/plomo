@@ -1,0 +1,102 @@
+{
+  "name": "105. After Mellino — 1h30 — 2026-09-12",
+  "duration_h": 1.5,
+  "bpm_range": [
+    122,
+    128
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Kyotto",
+      "title": "District (Original Mix)",
+      "content_id": "57011885"
+    },
+    {
+      "artist": "M.O.S., Leonid Sivelkin, Krasa Rosa",
+      "title": "On The Strings Of Love (Original Mix)",
+      "content_id": "157561207"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Lava (Original Mix)",
+      "content_id": "241869933"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Fog Machine (Extended Mix)",
+      "content_id": "252350736"
+    },
+    {
+      "artist": "Gorje Hewek, Moya (US) & Dulus",
+      "title": "Margaret (Extended Mix)",
+      "content_id": "89193557"
+    },
+    {
+      "artist": "WELKER (BR)",
+      "title": "Batucada (Original Mix)",
+      "content_id": "91682528"
+    },
+    {
+      "artist": "K3V (SL) & Jayy Vibes",
+      "title": "Kingdom of Dreams (Juan Ibanez Remix)",
+      "content_id": "198748289"
+    },
+    {
+      "artist": "Nox Vahn",
+      "title": "Brainwasher (Warung Extended Mix)",
+      "content_id": "61522600"
+    },
+    {
+      "artist": "Reflekt, Delline Bass",
+      "title": "Need To Feel Loved (Cristoph Remix)",
+      "content_id": "12544084"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Paradigm (Extended Mix)",
+      "content_id": "171619083"
+    },
+    {
+      "artist": "Anyma, Rebūke",
+      "title": "Syren",
+      "content_id": "9845076"
+    },
+    {
+      "artist": "Fluke",
+      "title": "Bullet (Nick Warren & Nicolas Rada Remix)",
+      "content_id": "23142478"
+    },
+    {
+      "artist": "D-Nox, Stereo Underground",
+      "title": "Shooting Stars (Extended Version)",
+      "content_id": "140482190"
+    },
+    {
+      "artist": "Jamie Stevens, Zankee Gulati",
+      "title": "Low Tide (Ezequiel Arias Remix)",
+      "content_id": "16768158"
+    },
+    {
+      "artist": "Carlita & Calussa",
+      "title": "Fell In Luv (Black Circle Extended Remix)",
+      "content_id": "189111149"
+    },
+    {
+      "artist": "Colyn",
+      "title": "The Future Is the Past",
+      "content_id": "109636107"
+    },
+    {
+      "artist": "Marsh",
+      "title": "Free (Extended Mix)",
+      "content_id": "161840112"
+    },
+    {
+      "artist": "Serious Dancers",
+      "title": "Echo (Kebin van Reeken Extended Remix)",
+      "content_id": "51380269"
+    }
+  ]
+}

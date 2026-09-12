@@ -1,0 +1,156 @@
+{
+  "dj": "Maze 28",
+  "evento": "Proton Curator Mix Summer 2025",
+  "fecha": "2025-08-01",
+  "fuente": "https://www.youtube.com/watch?v=sEi0SmquhY4",
+  "orden_confiable": true,
+  "n": 13,
+  "n_identificados": 13,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "DP-6, rcnetlark",
+      "title": "Nebula",
+      "es_id": false,
+      "key": "Bm",
+      "bpm": 130.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "DP-6 & rcnetlark - Nebula"
+    },
+    {
+      "pos": 2,
+      "artist": "Marcan Liav",
+      "title": "Bob Light (Luis Leon Late Night Dub)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Marcan Liav - Bob Light (Luis Leon Late Night Dub)"
+    },
+    {
+      "pos": 3,
+      "artist": "Kastis Torrau",
+      "title": "Clock",
+      "es_id": false,
+      "key": "Bmin",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Kastis Torrau - Clock (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "DP-6",
+      "title": "Torsion",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Freedo Mosho, Gaspar Carrenio",
+      "title": "Downloop",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Paul Deep (AR)",
+      "title": "Milo",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Paul Deep AR - Milo"
+    },
+    {
+      "pos": 7,
+      "artist": "Scippo",
+      "title": "Dub Mood",
+      "es_id": false,
+      "key": "Bm",
+      "bpm": 119.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Scippo - Dub Mood (Original Mix)"
+    },
+    {
+      "pos": 8,
+      "artist": "Mango, Gorkiz",
+      "title": "Ipanema Twilight",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gorkiz & Mango - Ipanema Twilight "
+    },
+    {
+      "pos": 9,
+      "artist": "Max Dumont",
+      "title": "Maht Hild (Stereo Munk & Dublew Remix)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Max Dumont - Maht Hild (Stereo Munk & Dublew Remix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Michael A",
+      "title": "Conviction (Aman Anand Remix)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Michael A - Conviction (Aman Anand Remix)"
+    },
+    {
+      "pos": 11,
+      "artist": "COQUEIT",
+      "title": "Dock",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "COQUEIT - Dock (Original Mix)"
+    },
+    {
+      "pos": 12,
+      "artist": "Freedo Mosho, Futura City",
+      "title": "Blue Tribe (Futura City Rework)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 117.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Freedo Mosho, Futura City - Blue Tribe (Futura City Rework)"
+    },
+    {
+      "pos": 13,
+      "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
+      "title": "Fading Away (Aman Anand & Futura City Rework)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 118.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Freedo Mosho, JUNIOR (SL), Futura City - Fading Away (Aman Anand & Futura City Rework)"
+    }
+  ],
+  "cobertura_key": 0.846,
+  "cobertura_bpm": 0.846
+}

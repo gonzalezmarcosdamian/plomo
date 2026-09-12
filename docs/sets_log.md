@@ -2033,3 +2033,59 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 19 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.5 |
 | 20 | Cendryma | Enter (Extended Mix) | 122 | 6.5 |
 
+
+## Set 104. 104. Previa Mellino — 1h30 — 2026-09-12
+**Armado:** 2026-09-12  
+**Duracion:** 1.5h  
+**Tracks:** 18  
+**BPM range:** 118-124  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Ed Ed, JJ Dawson | Higher Than Me (Stimming Remix) | 121 | 4.1 |
+| 2 | Emi Galvan | Dharma (Original Mix) | 120 | 4.4 |
+| 3 | Hot Oasis | Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix) | 120 | 4.6 |
+| 4 | Dowden | Pacifist (Original Mix) | 121 | 4.8 |
+| 5 | Greg Ochman | In Between Dreams | 120 | 4.9 |
+| 6 | Hernan Cattaneo & Marcelo Vasami | Scope | 122 | 5.1 |
+| 7 | Khen | Some Little Secrets | 122 | 5.3 |
+| 8 | GMJ, Matter | Telomeres (Original Mix) | 121 | 5.5 |
+| 9 | Guy J | Stranger In A Strange World (Original Mix) | 122 | 5.7 |
+| 10 | Rockka | Synthesis | 123 | 5.9 |
+| 11 | NUFECTS | Inferno (Extended Mix) | 123 | 6.0 |
+| 12 | Kamilo Sanclemente | Canon (Original Mix) | 123 | 6.3 |
+| 13 | Maze 28 | Aer8 (Juan Pablo Torrez Remix) | 122 | 6.4 |
+| 14 | Kabi (AR), Ric Niels | Kimica | 122 | 6.6 |
+| 15 | Amine K (Moroko Loko), WAHM (FR) | Kill the Anger (Rodriguez Jr. Remix) | 124 | 6.8 |
+| 16 | Tom Pavicich | Insight (Original Mix) | 122 | 6.5 |
+| 17 | Rauschhaus, Cary Crank | Bekal (Extended Mix) | 120 | 6.3 |
+| 18 | Leandro Murua, Martin Fredes | Interference (Original Mix) | 122 | 6.0 |
+
+
+## Set 105. 105. After Mellino — 1h30 — 2026-09-12
+**Armado:** 2026-09-12  
+**Duracion:** 1.5h  
+**Tracks:** 18  
+**BPM range:** 122-128  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Kyotto | District (Original Mix) | 122 | 5.6 |
+| 2 | M.O.S., Leonid Sivelkin, Krasa Rosa | On The Strings Of Love (Original Mix) | 123 | 5.8 |
+| 3 | Sebastien Leger | Lava (Original Mix) | 122 | 5.9 |
+| 4 | Nicolas Viana | Fog Machine (Extended Mix) | 124 | 6.3 |
+| 5 | Gorje Hewek, Moya (US) & Dulus | Margaret (Extended Mix) | 122 | 6.3 |
+| 6 | WELKER (BR) | Batucada (Original Mix) | 124 | 6.4 |
+| 7 | K3V (SL) & Jayy Vibes | Kingdom of Dreams (Juan Ibanez Remix) | 122 | 6.6 |
+| 8 | Nox Vahn | Brainwasher (Warung Extended Mix) | 123 | 6.8 |
+| 9 | Reflekt, Delline Bass | Need To Feel Loved (Cristoph Remix) | 125 | 7.0 |
+| 10 | Artic White | Paradigm (Extended Mix) | 123 | 7.1 |
+| 11 | Anyma, Rebūke | Syren | 125 | 6.9 |
+| 12 | Fluke | Bullet (Nick Warren & Nicolas Rada Remix) | 125 | 7.7 |
+| 13 | D-Nox, Stereo Underground | Shooting Stars (Extended Version) | 125 | 7.6 |
+| 14 | Jamie Stevens, Zankee Gulati | Low Tide (Ezequiel Arias Remix) | 125 | 7.8 |
+| 15 | Carlita & Calussa | Fell In Luv (Black Circle Extended Remix) | 126 | 8.1 |
+| 16 | Colyn | The Future Is the Past | 126 | 7.6 |
+| 17 | Marsh | Free (Extended Mix) | 124 | 7.3 |
+| 18 | Serious Dancers | Echo (Kebin van Reeken Extended Remix) | 122 | 6.6 |
+
