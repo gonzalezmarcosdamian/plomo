@@ -14,11 +14,12 @@
       "artist": "Marten Lou & Colyn",
       "title": "Need You",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Colyn, Marten Lou - Need You (Extended)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Colyn, Marten Lou - Need You (Extended)",
+      "label": "Warner Music Central Europe"
     },
     {
       "pos": 2,
@@ -46,22 +47,24 @@
       "artist": "Colyn & Read The News",
       "title": "See The Light",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Colyn, Read the News - See the Light (Original Mix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Colyn, Read the News - See the Light (Original Mix)",
+      "label": "belonging"
     },
     {
       "pos": 5,
       "artist": "Adam Ten & Volkoder",
       "title": "Got Me Crazy",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Volkoder, Adam Ten - Got Me Crazy (Extended Mix)"
+      "energy": 4.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Volkoder, Adam Ten - Got Me Crazy (Extended Mix)",
+      "label": "Maccabi House"
     },
     {
       "pos": 6,
@@ -98,11 +101,12 @@
       "artist": "Beswerda",
       "title": "All For Me",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Beswerda - All for Me (Original Mix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Beswerda - All for Me (Original Mix)",
+      "label": "Siamese"
     },
     {
       "pos": 10,
@@ -119,22 +123,24 @@
       "artist": "Colyn & Read The News",
       "title": "Funk",
       "es_id": false,
-      "key": "Bbm",
+      "key": "3A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Colyn, Read the News - Funk (Original Mix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Colyn, Read the News - Funk (Original Mix)",
+      "label": "belonging"
     },
     {
       "pos": 12,
       "artist": "Son Of Son",
       "title": "Succession",
       "es_id": false,
-      "key": "Eb",
+      "key": "2A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Son of Son - Succession (Extended Mix)"
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Son of Son - Succession (Extended Mix)",
+      "label": "Great Blondino"
     },
     {
       "pos": 13,
@@ -151,11 +157,12 @@
       "artist": "Romain Dary",
       "title": "Trust Me",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Romain Dary - Trust Me (Extended Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Romain Dary - Trust Me (Extended Mix)",
+      "label": "Tipping Point"
     },
     {
       "pos": 15,
@@ -182,11 +189,12 @@
       "artist": "Pleasurekraft",
       "title": "Tarantula (Max Styler Remix)",
       "es_id": false,
-      "key": "Dmaj",
+      "key": "10B",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Pleasurekraft - Tarantula (Max Styler Remix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Pleasurekraft - Tarantula (Max Styler Remix)",
+      "label": "Kraftek"
     },
     {
       "pos": 18,
@@ -263,11 +271,12 @@
       "artist": "Enrico Sangiuliano",
       "title": "Moon Rocks",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Enrico Sangiuliano - Moon Rocks (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Enrico Sangiuliano - Moon Rocks (Original Mix)",
+      "label": "Drumcode"
     },
     {
       "pos": 26,
@@ -337,11 +346,12 @@
       "artist": "Colyn",
       "title": "Resolve",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Colyn - Resolve (Original Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Colyn - Resolve (Original Mix)",
+      "label": "Afterlife Records"
     },
     {
       "pos": 33,
@@ -358,11 +368,12 @@
       "artist": "Colyn",
       "title": "My Journey",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Colyn - My Journey (Extended Mix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Colyn - My Journey (Extended Mix)",
+      "label": "This Never Happened"
     },
     {
       "pos": 35,
@@ -389,11 +400,12 @@
       "artist": "Chromatics",
       "title": "Shadow (Maceo Plex Remix)",
       "es_id": false,
-      "key": "Dmaj",
+      "key": "11A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Maceo Plex, Chromatics - Shadow (Maceo Plex Remix Original Mix)"
+      "energy": 4.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Maceo Plex, Chromatics - Shadow (Maceo Plex Remix Original Mix)",
+      "label": "Italians Do It Better"
     },
     {
       "pos": 38,
@@ -421,11 +433,12 @@
       "artist": "Colyn",
       "title": "Dancing On My Own",
       "es_id": false,
-      "key": "Gbm",
+      "key": "10A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Colyn - Dancing On My Own (Extended Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Colyn - Dancing On My Own (Extended Mix)",
+      "label": "This Never Happened"
     },
     {
       "pos": 41,

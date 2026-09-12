@@ -25,11 +25,12 @@
       "artist": "Franky Wah",
       "title": "desert dance",
       "es_id": false,
-      "key": "C",
+      "key": "8B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Franky Wah - Desert Dance (Original Mix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Franky Wah - Desert Dance (Original Mix)",
+      "label": "Crosstown Rebels"
     },
     {
       "pos": 3,
@@ -46,143 +47,156 @@
       "artist": "Acid Pauli & Nico Stojan",
       "title": "Tensione",
       "es_id": false,
-      "key": "Bbm",
+      "key": "1A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Acid Pauli, Nico Stojan - Tensione (Original Mix)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Acid Pauli, Nico Stojan - Tensione (Original Mix)",
+      "label": "Ouie"
     },
     {
       "pos": 5,
       "artist": "Twiins",
       "title": "Don't Waste My Time",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "TWIINS (GR) - Don't Waste My Time (Original Mix)"
+      "energy": 4.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "TWIINS (GR) - Don't Waste My Time (Original Mix)",
+      "label": "ISOLATE"
     },
     {
       "pos": 6,
       "artist": "Robag Wruhme",
       "title": "Ratibor Numida",
       "es_id": false,
-      "key": "Am",
+      "key": "6A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Robag Wruhme - Ratibor Numida (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Robag Wruhme - Ratibor Numida (Original Mix)",
+      "label": "Cocoon Recordings"
     },
     {
       "pos": 7,
       "artist": "Redfreya",
       "title": "Reverse The Process (Aera Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Aera, Redfreya - Reverse The Process (Aera Remix)"
+      "energy": 3.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Aera, Redfreya - Reverse The Process (Aera Remix)",
+      "label": "Chorus Records"
     },
     {
       "pos": 8,
       "artist": "Trikk",
       "title": "Sagrado (Original Mix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Trikk - Sagrado (Original Mix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Trikk - Sagrado (Original Mix)",
+      "label": "Innervisions"
     },
     {
       "pos": 9,
       "artist": "Qess & Ursula Rucker",
       "title": "Spaces In Between (Rodriguez Jr. remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ursula Rucker, Qess - Spaces In Between (Rodriguez Jr. Remix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ursula Rucker, Qess - Spaces In Between (Rodriguez Jr. Remix)",
+      "label": "Mobilee Records"
     },
     {
       "pos": 10,
       "artist": "Argia",
       "title": "Tulips",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Argia - Tulips (Original Mix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Argia - Tulips (Original Mix)",
+      "label": "Rebellion"
     },
     {
       "pos": 11,
       "artist": "Jonathan Kaspar",
       "title": "Yah",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Jonathan Kaspar - Yah (Original Mix)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Jonathan Kaspar - Yah (Original Mix)",
+      "label": "Cocoon Recordings"
     },
     {
       "pos": 12,
       "artist": "Kadosh & Magit Cacoon",
       "title": "L.O.V.E (Nico Stojan Remix)",
       "es_id": false,
-      "key": "C",
+      "key": "9A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Magit Cacoon, Kadosh (ofc) - L.O.V.E (Nico Stojan Remix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Magit Cacoon, Kadosh (ofc) - L.O.V.E (Nico Stojan Remix)",
+      "label": "Frau Blau"
     },
     {
       "pos": 13,
       "artist": "Steve Parry",
       "title": "Be Happy",
       "es_id": false,
-      "key": "B",
+      "key": "10A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Steve Parry - Be Happy (Original Mix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Steve Parry - Be Happy (Original Mix)",
+      "label": "Selador"
     },
     {
       "pos": 14,
       "artist": "Works Of Intent",
       "title": "Erase It",
       "es_id": false,
-      "key": "Gbm",
+      "key": "11A",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Works of Intent - Erase It (Original Mix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Works of Intent - Erase It (Original Mix)",
+      "label": "COD3 QR"
     },
     {
       "pos": 15,
       "artist": "Remcord",
       "title": "GG",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Remcord - GG (Original Mix)"
+      "energy": 4.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Remcord - GG (Original Mix)",
+      "label": "REBA"
     },
     {
       "pos": 16,
       "artist": "Hunter Game, ALIAGA",
       "title": "Shapeless (Frankey & Sandrino Remix)",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Hunter/Game, ALIAGA (ofc) - Shapeless (Frankey & Sandrino Remix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Hunter/Game, ALIAGA (ofc) - Shapeless (Frankey & Sandrino Remix)",
+      "label": "Just This"
     },
     {
       "pos": 17,
@@ -210,11 +224,12 @@
       "artist": "Francesca Lombardo",
       "title": "Inside Out",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Francesca Lombardo - Inside Out (Original)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Francesca Lombardo - Inside Out (Original)",
+      "label": "Echolette Records"
     },
     {
       "pos": 20,
@@ -241,22 +256,24 @@
       "artist": "Argia",
       "title": "Come With Me",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Argia - Come With Me (Original Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Argia - Come With Me (Original Mix)",
+      "label": "Volt Recordings"
     },
     {
       "pos": 23,
       "artist": "Denney & D.Ramirez",
       "title": "In The Dark",
       "es_id": false,
-      "key": "Abm",
+      "key": "3B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "D.Ramirez, Denney - In The Dark (Original Mix)"
+      "energy": 4.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "D.Ramirez, Denney - In The Dark (Original Mix)",
+      "label": "Rebellion"
     },
     {
       "pos": 24,
@@ -274,11 +291,12 @@
       "artist": "Culoe De Song",
       "title": "Mount Zion (Jonathan Kaspar Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Culoe De Song - Mount Zion (Jonathan Kaspar Remix)"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Culoe De Song - Mount Zion (Jonathan Kaspar Remix)",
+      "label": "Madorasindahouse Records"
     },
     {
       "pos": 26,
@@ -295,13 +313,15 @@
       "artist": "Frank Hopkins & Logomyx",
       "title": "Asymptote (Steven Weston Remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Frank Hopkins, Løgømyx - Asymptote (Steven Weston Remix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Frank Hopkins, Løgømyx - Asymptote (Steven Weston Remix)",
+      "label": "Blank Dust"
     }
   ],
   "cobertura_key": 0.815,
-  "cobertura_bpm": 0.815
+  "cobertura_bpm": 0.815,
+  "orden_campos_revisado": true
 }

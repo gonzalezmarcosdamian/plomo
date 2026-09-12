@@ -24,11 +24,12 @@
       "artist": "Spencer Brown",
       "title": "Storm Chasing",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Spencer Brown - Storm Chasing (Original Mix)"
+      "energy": 0.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Spencer Brown - Storm Chasing (Original Mix)",
+      "label": "Global Underground"
     },
     {
       "pos": 3,
@@ -46,11 +47,12 @@
       "artist": "Chelu Garcia",
       "title": "Guy On Fire (Timo Maas and Francesco Mami Remix)",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Chelu Garcia, Franco Botto - Guy On Fire (Timo Maas and Francesco Mami Remix)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Chelu Garcia, Franco Botto - Guy On Fire (Timo Maas and Francesco Mami Remix)",
+      "label": "Bedrock Records"
     },
     {
       "pos": 5,
@@ -88,22 +90,24 @@
       "artist": "Paul Ursin",
       "title": "Resonance",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Paul Ursin - Resonance (Original Mix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Paul Ursin - Resonance (Original Mix)",
+      "label": "Essential Part"
     },
     {
       "pos": 9,
       "artist": "Timo Maas",
       "title": "Ubik (Timo Maas 2026 Mix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 129.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Timo Maas - Ubik (Timo Maas 2026 Extended Mix)"
+      "energy": 7.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Timo Maas - Ubik (Timo Maas 2026 Extended Mix)",
+      "label": "Perfecto Fluoro (Armada Music)"
     },
     {
       "pos": 10,
@@ -128,5 +132,6 @@
     }
   ],
   "cobertura_key": 0.636,
-  "cobertura_bpm": 0.636
+  "cobertura_bpm": 0.636,
+  "orden_campos_revisado": true
 }

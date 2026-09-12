@@ -14,33 +14,36 @@
       "artist": "Mike Isai",
       "title": "Chrysalis (GMJ & Matter Remix)",
       "es_id": false,
-      "key": "Ebmin",
+      "key": "2A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mike Isai - Chrysalis (Gmj & Matter Remix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mike Isai - Chrysalis (Gmj & Matter Remix)",
+      "label": "onedotsixtwo"
     },
     {
       "pos": 2,
       "artist": "Shayan Pasha",
       "title": "After All (Christian Monique Remix)",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Shayan Pasha - After All (Christian Monique Remix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Shayan Pasha - After All (Christian Monique Remix)",
+      "label": "BC2"
     },
     {
       "pos": 3,
       "artist": "Mindlancholic",
       "title": "Mirages In Space",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mindlancholic - Mirages in Space"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mindlancholic - Mirages in Space",
+      "label": "Droid9"
     },
     {
       "pos": 4,
@@ -89,11 +92,12 @@
       "artist": "Maze 28",
       "title": "Fogbows",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Maze 28 - Fogbows"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Maze 28 - Fogbows",
+      "label": "Balkan Connection"
     },
     {
       "pos": 9,
@@ -111,13 +115,15 @@
       "artist": "Chris Cargo",
       "title": "Wide Eyed (Subandrio Remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "12B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Chris Cargo - Wide Eyed (Subandrio Remix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Chris Cargo - Wide Eyed (Subandrio Remix)",
+      "label": "Particles"
     }
   ],
   "cobertura_key": 0.8,
-  "cobertura_bpm": 0.8
+  "cobertura_bpm": 0.8,
+  "orden_campos_revisado": true
 }

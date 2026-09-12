@@ -35,11 +35,12 @@
       "artist": "Anton Borin",
       "title": "May Spring Come",
       "es_id": false,
-      "key": "Gm",
+      "key": "9B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Anton Borin (RU) - May Spring Come (Original Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Anton Borin (RU) - May Spring Come (Original Mix)",
+      "label": "Wuzz!"
     },
     {
       "pos": 4,
@@ -219,22 +220,24 @@
       "artist": "Ezequiel Arias & Durante",
       "title": "Dream Controller",
       "es_id": false,
-      "key": "Db",
+      "key": "3B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 22,
       "artist": "Ezequiel Arias",
       "title": "Delirio",
       "es_id": false,
-      "key": "Db",
+      "key": "1A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ezequiel Arias - Delirio (Extended Mix)"
+      "energy": 4.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ezequiel Arias - Delirio (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 23,

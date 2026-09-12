@@ -14,22 +14,24 @@
       "artist": "Ezequiel Arias, Durante",
       "title": "Dream Controller",
       "es_id": false,
-      "key": "Db",
+      "key": "3B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 2,
       "artist": "DRUNKEN KONG, D-Shift",
       "title": "Future Heights (Mariano Mellino Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Drunken Kong, D-SHIFT - Future Heights (Mariano Mellino Remix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Drunken Kong, D-SHIFT - Future Heights (Mariano Mellino Remix)",
+      "label": "Tronic"
     },
     {
       "pos": 3,
@@ -67,11 +69,12 @@
       "artist": "Lean Robotti",
       "title": "Mercurio",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Lean Robotti - Mercurio (Extended Mix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Lean Robotti - Mercurio (Extended Mix)",
+      "label": "Sprout"
     },
     {
       "pos": 7,
@@ -136,5 +139,6 @@
     }
   ],
   "cobertura_key": 0.417,
-  "cobertura_bpm": 0.417
+  "cobertura_bpm": 0.417,
+  "orden_campos_revisado": true
 }

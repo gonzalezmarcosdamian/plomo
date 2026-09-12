@@ -1,11 +1,11 @@
 {
   "name": "103. Con el material de Simon Vuarambon - Dahaus Palacio Alsina Cordoba - 2026-03-01",
-  "_identidad": "Set propio armado con el material que Simon Vuarambon toco en Dahaus Palacio Alsina Cordoba (2026-03-01) como anclas: 13 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_identidad": "Set propio armado con el material que Simon Vuarambon toco en Dahaus Palacio Alsina Cordoba (2026-03-01) como anclas: 14 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
   "_fuente": "https://www.youtube.com/watch?v=oJkXaWOEPAw",
   "duration_h": 1.8,
   "bpm_range": [
     120,
-    125
+    128
   ],
   "max_per_artist": 99,
   "keep_order": true,
@@ -71,9 +71,9 @@
       "content_id": "176214600"
     },
     {
-      "artist": "Anton Borin (RU), Bondarev",
-      "title": "Samadhi (Kasper Koman Remix)",
-      "content_id": "126926843"
+      "artist": "Brian Cid",
+      "title": "Habitat",
+      "content_id": "226167908"
     },
     {
       "artist": "Tobi Amuchastegui",
@@ -96,19 +96,19 @@
       "content_id": "6900209"
     },
     {
-      "artist": "Paul Thomas & Christian Burns",
-      "title": "Enjoy the Silence (Extended Mix)",
-      "content_id": "58788950"
+      "artist": "Cristoph",
+      "title": "Signal (Original Mix)",
+      "content_id": "41934954"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "A Lonely Pink Cloud (Original Mix)",
-      "content_id": "58183652"
+      "artist": "Jel Ford",
+      "title": "Overcast (Original Mix)",
+      "content_id": "241160400"
     },
     {
-      "artist": "Ezequiel Arias",
-      "title": "Heat Above - Original Mix",
-      "content_id": "130309928"
+      "artist": "N'to",
+      "title": "Trauma (Worakls Remix)",
+      "content_id": "7092958"
     }
   ]
 }

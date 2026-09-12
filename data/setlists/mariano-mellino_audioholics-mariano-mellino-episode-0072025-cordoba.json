@@ -14,11 +14,12 @@
       "artist": "Paul Hazendonk",
       "title": "You Can Have It All (Peter Makto & Matthew Sona Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Paul Hazendonk, Return To Saturn - You Can Have It All (Peter Makto & Matthew Sona Remix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Paul Hazendonk, Return To Saturn - You Can Have It All (Peter Makto & Matthew Sona Remix)",
+      "label": "Zenebona"
     },
     {
       "pos": 2,
@@ -36,11 +37,12 @@
       "artist": "Enclips",
       "title": "Astronomy",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Enclips - Astronomy (Original)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Enclips - Astronomy (Original)",
+      "label": "Pro B Tech Music"
     },
     {
       "pos": 4,
@@ -57,22 +59,24 @@
       "artist": "Death On The Balcony",
       "title": "Quiet Storm (Martin Fredes & Matthew Sona Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Death on the Balcony - Quiet Storm (Martin Fredes & Matthew Sona Remix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Death on the Balcony - Quiet Storm (Martin Fredes & Matthew Sona Remix)",
+      "label": "The Soundgarden"
     },
     {
       "pos": 6,
       "artist": "Fernando Olaya",
       "title": "Breath of Eternity",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Fernando Olaya - Breath Of Eternity (Original Mix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Fernando Olaya - Breath Of Eternity (Original Mix)",
+      "label": "Melody Of the Soul"
     },
     {
       "pos": 7,
@@ -89,22 +93,24 @@
       "artist": "Monuloku",
       "title": "Floor Control (Yohai Mor Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Monuloku - Floor Control (Yohai Mor Remix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Monuloku - Floor Control (Yohai Mor Remix)",
+      "label": "Progressive House Argentina"
     },
     {
       "pos": 9,
       "artist": "Neuralis",
       "title": "Event Horizon (Cendryma Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Neuralis - Event Horizon (Cendryma Remix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Neuralis - Event Horizon (Cendryma Remix)",
+      "label": "onedotsixtwo"
     },
     {
       "pos": 10,
@@ -122,22 +128,24 @@
       "artist": "Rabiee Ahmad, Hassan Tariq Khan",
       "title": "Terminator",
       "es_id": false,
-      "key": "Bbm",
+      "key": "3A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Rabiee Ahmad, Hassan Tariq Khan - Terminator (Original Mix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Rabiee Ahmad, Hassan Tariq Khan - Terminator (Original Mix)",
+      "label": "Fractal Noise Records"
     },
     {
       "pos": 12,
       "artist": "Ignacio Hernández, FAERO",
       "title": "Symmetry",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "FAERO, Ignacio Hernández - Symmetry (Original Mix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "FAERO, Ignacio Hernández - Symmetry (Original Mix)",
+      "label": "Or Two Strangers"
     },
     {
       "pos": 13,
@@ -185,88 +193,96 @@
       "artist": "Dave Walker, Fordal",
       "title": "Hyperlight",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dave Walker, Fordal - Hyperlight (Original Mix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dave Walker, Fordal - Hyperlight (Original Mix)",
+      "label": "Forensic Records"
     },
     {
       "pos": 18,
       "artist": "Pluto",
       "title": "World Behind (Eddy Tango Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Pluto - World Behind (Eddy Tango Remix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Pluto - World Behind (Eddy Tango Remix)",
+      "label": "Schallmauer"
     },
     {
       "pos": 19,
       "artist": "Federico Monachesi",
       "title": "Nile",
       "es_id": false,
-      "key": "Eb",
+      "key": "5B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Federico Monachesi - Nile (Original Mix)"
+      "energy": 2.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Federico Monachesi - Nile (Original Mix)",
+      "label": "Or Two Strangers"
     },
     {
       "pos": 20,
       "artist": "HAFT",
       "title": "Ascendance",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "HAFT - Ascendance (Original Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "HAFT - Ascendance (Original Mix)",
+      "label": "UV Noir"
     },
     {
       "pos": 21,
       "artist": "Praise (BR)",
       "title": "Eclipse",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Praise (BR) - Eclipse (Extended Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Praise (BR) - Eclipse (Extended Mix)",
+      "label": "Univack"
     },
     {
       "pos": 22,
       "artist": "Seyah",
       "title": "Nebula (Tomas Garcia & Tonaco Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Seyah - Nebula (Tomas Garcia & Tonaco Remix)"
+      "energy": 7.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Seyah - Nebula (Tomas Garcia & Tonaco Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 23,
       "artist": "ALPHA21",
       "title": "Resonance",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "ALPHA21, Cendryma - Resonance (Extended Mix)"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "ALPHA21, Cendryma - Resonance (Extended Mix)",
+      "label": "Pattern"
     },
     {
       "pos": 24,
       "artist": "Dion Paola (AUS)",
       "title": "Galaxy (Facundo Sval Remix)",
       "es_id": false,
-      "key": "C",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dion Paola (AUS) - Galaxy (Facundo Sval Remix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dion Paola (AUS) - Galaxy (Facundo Sval Remix)",
+      "label": "Kodai"
     },
     {
       "pos": 25,
@@ -294,11 +310,12 @@
       "artist": "Gero Pellizzon",
       "title": "Echoes Beyond",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Gero Pellizzon - Echoes Beyond (Original Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Gero Pellizzon - Echoes Beyond (Original Mix)",
+      "label": "Late Night Music"
     },
     {
       "pos": 28,
@@ -316,11 +333,12 @@
       "artist": "Erich LH",
       "title": "Pulse",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Erich LH - Pulse (Original Mix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Erich LH - Pulse (Original Mix)",
+      "label": "Droid9"
     },
     {
       "pos": 30,
@@ -337,33 +355,36 @@
       "artist": "Lean Robotti",
       "title": "Reload",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Lean Robotti - Reload (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Lean Robotti - Reload (Original Mix)",
+      "label": "Movement Recordings"
     },
     {
       "pos": 32,
       "artist": "Cristian Hidalgo",
       "title": "Entrophee",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Rodrigo Pochelu, Cristian Hidalgo - Entrophee (Original Mix)"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Rodrigo Pochelu, Cristian Hidalgo - Entrophee (Original Mix)",
+      "label": "Sonica Label"
     },
     {
       "pos": 33,
       "artist": "Guy J",
       "title": "Alive Again",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Alive Again (Original Mix)"
+      "energy": 4.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Alive Again (Original Mix)",
+      "label": "Cocoon Recordings"
     },
     {
       "pos": 34,
@@ -381,44 +402,48 @@
       "artist": "Movement Machina",
       "title": "Adaptation (Donny Carr Remix)",
       "es_id": false,
-      "key": "C",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Movement Machina - Adaptation (Donny Carr Remix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Movement Machina - Adaptation (Donny Carr Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 36,
       "artist": "Luis Damora",
       "title": "Safe From Harm",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Nila & Luis Damora - Safe From Harm (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Nila & Luis Damora - Safe From Harm (Original Mix)",
+      "label": "onedotsixtwo"
     },
     {
       "pos": 37,
       "artist": "Manu",
       "title": "Miles Apart",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Manu (NL) - Miles Apart (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Manu (NL) - Miles Apart (Original Mix)",
+      "label": "MNL"
     },
     {
       "pos": 38,
       "artist": "Cloaked",
       "title": "Cascade (Dave Walker Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Cloaked - Cascade (Dave Walker Extended Remix)"
+      "energy": 7.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Cloaked - Cascade (Dave Walker Extended Remix)",
+      "label": "Univack"
     },
     {
       "pos": 39,
@@ -456,33 +481,36 @@
       "artist": "Rabiee Ahmad",
       "title": "In Another Time",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Rabiee Ahmad, Hassan Tariq Khan - In Another Time (Original Mix)"
+      "energy": 7.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Rabiee Ahmad, Hassan Tariq Khan - In Another Time (Original Mix)",
+      "label": "Fractal Noise Records"
     },
     {
       "pos": 43,
       "artist": "Berni Turletti",
       "title": "Obsidian Bloom",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Berni Turletti - Obsidian Bloom (Original Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Berni Turletti - Obsidian Bloom (Original Mix)",
+      "label": "Proportion"
     },
     {
       "pos": 44,
       "artist": "Tonaco",
       "title": "Avalon",
       "es_id": false,
-      "key": "Dbm",
+      "key": "3B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tonaco - Avalon (Original Mix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tonaco - Avalon (Original Mix)",
+      "label": "Meanwhile"
     },
     {
       "pos": 45,

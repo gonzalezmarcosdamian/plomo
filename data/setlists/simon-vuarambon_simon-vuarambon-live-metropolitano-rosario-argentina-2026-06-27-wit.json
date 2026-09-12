@@ -54,11 +54,12 @@
       "artist": "Robert Babicz",
       "title": "Cream",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Robert Babicz - Cream "
+      "energy": 4.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Robert Babicz - Cream ",
+      "label": "Kelch"
     },
     {
       "pos": 6,
@@ -85,11 +86,12 @@
       "artist": "Gorge",
       "title": "Nayuma",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Gorge - Nayuma (Original Mix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Gorge - Nayuma (Original Mix)",
+      "label": ""
     },
     {
       "pos": 9,
@@ -136,11 +138,12 @@
       "artist": "sc00ps",
       "title": "Play Right",
       "es_id": false,
-      "key": "E",
+      "key": "9A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "sc00ps - Play Right (Original Mix)"
+      "energy": 7.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "sc00ps - Play Right (Original Mix)",
+      "label": "Keep Thinking"
     },
     {
       "pos": 14,
@@ -379,5 +382,6 @@
     }
   ],
   "cobertura_key": 0.25,
-  "cobertura_bpm": 0.25
+  "cobertura_bpm": 0.25,
+  "orden_campos_revisado": true
 }

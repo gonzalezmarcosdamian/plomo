@@ -24,11 +24,12 @@
       "artist": "Aman Anand",
       "title": "Disastro (Thomas Ferell Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Aman Anand - Disastro (Thomas Ferell Remix)"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Aman Anand - Disastro (Thomas Ferell Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 3,
@@ -45,11 +46,12 @@
       "artist": "Puresine",
       "title": "Chanalex (Enertia-Sound Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Puresine - Chanalex (Enertia-Sound Remix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Puresine - Chanalex (Enertia-Sound Remix)",
+      "label": ""
     },
     {
       "pos": 5,
@@ -66,55 +68,60 @@
       "artist": "Doki",
       "title": "Luminus (Cedren & Manu-L Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Doki - Luminus (Cedren & Manu-l Remix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Doki - Luminus (Cedren & Manu-l Remix)",
+      "label": ""
     },
     {
       "pos": 7,
       "artist": "Juan Buitrago",
       "title": "Anja",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Juan Buitrago - Anja"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Juan Buitrago - Anja",
+      "label": "Juicebox Music"
     },
     {
       "pos": 8,
       "artist": "Neuralis",
       "title": "Ethereum",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Neuralis - Ethereum (Original Mix)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Neuralis - Ethereum (Original Mix)",
+      "label": "3rd Avenue"
     },
     {
       "pos": 9,
       "artist": "ALPHA21 & JUNIOR (SL)",
       "title": "Breaking The Reality (Not Demure Remix)",
       "es_id": false,
-      "key": "C",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "ALPHA21, JUNIOR (SL) - Breaking the Reality (Not Demure Remix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "ALPHA21, JUNIOR (SL) - Breaking the Reality (Not Demure Remix)",
+      "label": "Kitchen Recordings"
     },
     {
       "pos": 10,
       "artist": "Ciro Riveiro",
       "title": "Asia",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ciro Riveiro - Asia"
+      "energy": 7.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ciro Riveiro - Asia",
+      "label": "AH Digital"
     },
     {
       "pos": 11,
@@ -131,33 +138,36 @@
       "artist": "Simon Vuarambon",
       "title": "Yield",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 119.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simon Vuarambon - Yield (Original Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simon Vuarambon - Yield (Original Mix)",
+      "label": "Moments"
     },
     {
       "pos": 13,
       "artist": "Agustin Pengov",
       "title": "Trumpert",
       "es_id": false,
-      "key": "C",
+      "key": "6A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Agustin Pengov - Trumpert (Original Mix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Agustin Pengov - Trumpert (Original Mix)",
+      "label": "Balkan Connection"
     },
     {
       "pos": 14,
       "artist": "DAVI",
       "title": "Self ASCND",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "DAVI - Self ASCND (Original Mix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "DAVI - Self ASCND (Original Mix)",
+      "label": "8Bit"
     },
     {
       "pos": 15,
@@ -175,11 +185,12 @@
       "artist": "Tobi Amuchastegui",
       "title": "Night Loop",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tobi Amuchastegui - Night Loop (Original Mix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tobi Amuchastegui - Night Loop (Original Mix)",
+      "label": "YOMO Records"
     },
     {
       "pos": 17,
@@ -196,22 +207,24 @@
       "artist": "Essco",
       "title": "Vacant",
       "es_id": false,
-      "key": "Gm",
+      "key": "5B",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Essco - Vacant (Original Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Essco - Vacant (Original Mix)",
+      "label": "Strictly Essco"
     },
     {
       "pos": 19,
       "artist": "Tobi Amuchastegui",
       "title": "You Are Not Alone",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tobi Amuchastegui - You Are Not Alone (Original Mix)"
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tobi Amuchastegui - You Are Not Alone (Original Mix)",
+      "label": "YOMO Records"
     },
     {
       "pos": 20,
@@ -249,11 +262,12 @@
       "artist": "Mind Echoes",
       "title": "Unsafe Numbers (Tonaco & Tomas Garcia Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mind Echoes - Unsafe Numbers (Tonaco & Tomas Garcia Remix)"
+      "energy": 6.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mind Echoes - Unsafe Numbers (Tonaco & Tomas Garcia Remix)",
+      "label": "onedotsixtwo"
     },
     {
       "pos": 24,
@@ -270,11 +284,12 @@
       "artist": "Ness",
       "title": "Sector M39",
       "es_id": false,
-      "key": "Fm",
-      "bpm": 99.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ness - Sector M39 (Original Mix)"
+      "key": "4A",
+      "bpm": 132.0,
+      "energy": 3.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ness - Sector M39 (Original Mix)",
+      "label": "The Gods Planet"
     },
     {
       "pos": 26,
@@ -302,33 +317,36 @@
       "artist": "Dr. Mirzoyan",
       "title": "Destruction (Ruben Karapetyan Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dr. Mirzoyan - Destruction (Ruben Karapetyan Remix)"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dr. Mirzoyan - Destruction (Ruben Karapetyan Remix)",
+      "label": "RKP"
     },
     {
       "pos": 29,
       "artist": "Alan Dixon & Mystery Affair",
       "title": "NRGY (More Acid Mix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "9B",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Alan Dixon, Mystery Affair - NRGY (More Acid Mix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Alan Dixon, Mystery Affair - NRGY (More Acid Mix)",
+      "label": "Correspondant"
     },
     {
       "pos": 30,
       "artist": "Stallings",
       "title": "Lapse",
       "es_id": false,
-      "key": "F",
+      "key": "4A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Stallings - Lapse (Original Mix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Stallings - Lapse (Original Mix)",
+      "label": "Houstrike"
     },
     {
       "pos": 31,
@@ -395,11 +413,12 @@
       "artist": "Cafius",
       "title": "Je Veux Danser",
       "es_id": false,
-      "key": "Abm",
+      "key": "1A",
       "bpm": 128.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Cafius - Je veux danser"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Cafius - Je veux danser",
+      "label": "Diynamic"
     },
     {
       "pos": 38,
@@ -436,11 +455,12 @@
       "artist": "Jel Ford",
       "title": "Overcast",
       "es_id": false,
-      "key": "Amin",
+      "key": "8A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Jel Ford - Overcast (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Jel Ford - Overcast (Original Mix)",
+      "label": "Drumcode"
     },
     {
       "pos": 42,
@@ -487,11 +507,12 @@
       "artist": "Julian Jeweil",
       "title": "Mars",
       "es_id": false,
-      "key": "F#m",
+      "key": "1A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Julian Jeweil - Mars "
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Julian Jeweil - Mars ",
+      "label": "Drumcode"
     },
     {
       "pos": 47,
@@ -539,11 +560,12 @@
       "artist": "Nick Curly & Jansons",
       "title": "Chip Butty (Alex Kennon Remix)",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Nick Curly & Jansons - Chip Butty (Alex Kennon Remix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Nick Curly & Jansons - Chip Butty (Alex Kennon Remix)",
+      "label": "Knee Deep In Sound"
     },
     {
       "pos": 52,
@@ -571,44 +593,48 @@
       "artist": "Dosem",
       "title": "Comeback",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dosem - Comeback"
+      "energy": 4.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dosem - Comeback",
+      "label": "High Resistance"
     },
     {
       "pos": 55,
       "artist": "Wehbba",
       "title": "Basic Pleasure",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 128.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Wehbba - Basic Pleasure (Original Mix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Wehbba - Basic Pleasure (Original Mix)",
+      "label": "Drumcode"
     },
     {
       "pos": 56,
       "artist": "Miss Kittin",
       "title": "Life Is My Teacher (Simon Vuarambon Remix)",
       "es_id": false,
-      "key": "F#m",
+      "key": "2B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Miss Kittin - Life Is My Teacher (Simon Vuarambon Remix)"
+      "energy": 4.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Miss Kittin - Life Is My Teacher (Simon Vuarambon Remix)",
+      "label": "SCI+TEC"
     },
     {
       "pos": 57,
       "artist": "Krystal Klear",
       "title": "Tokyo Flower",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 130.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Krystal Klear - Tokyo Flower"
+      "energy": 4.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Krystal Klear - Tokyo Flower",
+      "label": "Running Back"
     },
     {
       "pos": 58,
@@ -633,5 +659,6 @@
     }
   ],
   "cobertura_key": 0.78,
-  "cobertura_bpm": 0.78
+  "cobertura_bpm": 0.78,
+  "orden_campos_revisado": true
 }

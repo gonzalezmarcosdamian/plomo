@@ -24,110 +24,120 @@
       "artist": "Simos Tagias",
       "title": "Vortex",
       "es_id": false,
-      "key": "D",
+      "key": "10B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simos Tagias - Vortex "
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simos Tagias - Vortex ",
+      "label": "Suza Records"
     },
     {
       "pos": 3,
       "artist": "Simos Tagias",
       "title": "Epos",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simos Tagias - Epos"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simos Tagias - Epos",
+      "label": "Solis Records"
     },
     {
       "pos": 4,
       "artist": "Weird Sounding Dude",
       "title": "Step Up",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Weird Sounding Dude - Step Up"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Weird Sounding Dude - Step Up",
+      "label": "Sudbeat Music"
     },
     {
       "pos": 5,
       "artist": "Montw",
       "title": "Lost on the Road (Arnas D Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Montw - Lost on the Road (Arnas D Remix)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Montw - Lost on the Road (Arnas D Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 6,
       "artist": "Simos Tagias",
       "title": "Reality",
       "es_id": false,
-      "key": "G",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simos Tagias - Reality"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simos Tagias - Reality",
+      "label": "Meanwhile"
     },
     {
       "pos": 7,
       "artist": "Mike Griego",
       "title": "Antidote",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mike Griego - Antidote"
+      "energy": 7.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mike Griego - Antidote",
+      "label": "A Line In The Sand"
     },
     {
       "pos": 8,
       "artist": "Dark Soul Project & Replicanth",
       "title": "Zicatela",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dark Soul Project & Replicanth - Zicatela (Original Mix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dark Soul Project & Replicanth - Zicatela (Original Mix)",
+      "label": "aboriginal"
     },
     {
       "pos": 9,
       "artist": "EMPHI",
       "title": "Dust (John Cosani Remix)",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Emphi - Dust (John Cosani Remix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Emphi - Dust (John Cosani Remix)",
+      "label": "Plaisirs Sonores Records"
     },
     {
       "pos": 10,
       "artist": "Fabricio Gutierrez",
       "title": "Reedmov (Kebin van Reeken Remix)",
       "es_id": false,
-      "key": "F#",
+      "key": "2B",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Fabricio Gutièrrez - Reedmov (Kebin van Reeken Remix)"
+      "energy": 6.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Fabricio Gutièrrez - Reedmov (Kebin van Reeken Remix)",
+      "label": "MNL"
     },
     {
       "pos": 11,
       "artist": "Kabi & Augustin Ficarra",
       "title": "The Return",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kabi (AR) - The Return"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kabi (AR) - The Return",
+      "label": "Plaisirs Sonores Records"
     },
     {
       "pos": 12,
@@ -155,55 +165,60 @@
       "artist": "Dabeat",
       "title": "Etna (Ivan Aliaga Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dabeat - Etna (Ivan Aliaga Remix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dabeat - Etna (Ivan Aliaga Remix)",
+      "label": "Solis Records"
     },
     {
       "pos": 15,
       "artist": "Juan Sapia & Eric Lune",
       "title": "Tension Release",
       "es_id": false,
-      "key": "Dm",
+      "key": "10B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Eric Lune & Juan Sapia - Tension Release (Original Mix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Eric Lune & Juan Sapia - Tension Release (Original Mix)",
+      "label": "Proportion"
     },
     {
       "pos": 16,
       "artist": "Martin Fredes & GEOVHAN",
       "title": "Deep Story (Ruben Karapetyan Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Martin Fredes & GEØVHÄN - Deep Story (Ruben Karapetyan Remix)"
+      "energy": 7.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Martin Fredes & GEØVHÄN - Deep Story (Ruben Karapetyan Remix)",
+      "label": "onedotsixtwo"
     },
     {
       "pos": 17,
       "artist": "Simos Tagias",
       "title": "Plexus",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simos Tagias - Plexus"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simos Tagias - Plexus",
+      "label": "Solis Records"
     },
     {
       "pos": 18,
       "artist": "Andre Moret",
       "title": "Generator",
       "es_id": false,
-      "key": "Bbm",
+      "key": "3A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Andre Moret - Generator (Extended Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Andre Moret - Generator (Extended Mix)",
+      "label": "The Soundgarden"
     },
     {
       "pos": 19,
@@ -221,22 +236,24 @@
       "artist": "Paul (AR) & EANP",
       "title": "Insane (Lexicon Avenue Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Paul (AR) & EANP - Insane (Lexicon Avenue Remix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Paul (AR) & EANP - Insane (Lexicon Avenue Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 21,
       "artist": "Spencer Brown & Qrion",
       "title": "20ms",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Spencer Brown, Qrion - 20ms (Extended Mix)"
+      "energy": 4.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Spencer Brown, Qrion - 20ms (Extended Mix)",
+      "label": "diviine"
     },
     {
       "pos": 22,
@@ -254,22 +271,24 @@
       "artist": "Estiva & Cosmosky",
       "title": "Ecstasy",
       "es_id": false,
-      "key": "Abm",
+      "key": "1A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Estiva, Cosmosky - Ecstasy (Extended Mix)"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Estiva, Cosmosky - Ecstasy (Extended Mix)",
+      "label": "Colorize (Enhanced)"
     },
     {
       "pos": 24,
       "artist": "Estiva",
       "title": "What is Love",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Estiva - What Is Love (Extended Mix)"
+      "energy": 3.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Estiva - What Is Love (Extended Mix)",
+      "label": "Anjunabeats"
     },
     {
       "pos": 25,
@@ -286,11 +305,12 @@
       "artist": "RNX",
       "title": "Molecules",
       "es_id": false,
-      "key": "E",
+      "key": "12B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "RNX - Molecules (Extended Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "RNX - Molecules (Extended Mix)",
+      "label": "Pure Trance"
     },
     {
       "pos": 27,
@@ -318,11 +338,12 @@
       "artist": "JESSIN",
       "title": "Babylon (North Echo Remix)",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "JESSIN - Babylon (North Echo Remix)"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "JESSIN - Babylon (North Echo Remix)",
+      "label": "MelodicLab Records"
     },
     {
       "pos": 30,
@@ -360,11 +381,12 @@
       "artist": "Adriatique & WhoMadeWho",
       "title": "Miracle",
       "es_id": false,
-      "key": "C",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "WhoMadeWho & Adriatique - Miracle"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "WhoMadeWho & Adriatique - Miracle",
+      "label": "Rose Avenue"
     },
     {
       "pos": 34,
@@ -381,11 +403,12 @@
       "artist": "Nox Vahn",
       "title": "When I'm With You",
       "es_id": false,
-      "key": "Fm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Nox Vahn - When I'm With You (Extended Mix)"
+      "energy": 4.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Nox Vahn - When I'm With You (Extended Mix)",
+      "label": "Anjunadeep"
     }
   ],
   "cobertura_key": 0.8,

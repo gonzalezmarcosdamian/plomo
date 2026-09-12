@@ -84,11 +84,12 @@
       "artist": "Volen Sentir",
       "title": "The Great Escape (Cornucopia Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "7A",
       "bpm": 118.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Volen Sentir - The Great Escape (Cornucopia Remix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Volen Sentir - The Great Escape (Cornucopia Remix)",
+      "label": "Lost & Found"
     },
     {
       "pos": 9,
@@ -188,22 +189,24 @@
       "artist": "Guy J",
       "title": "Anonymous",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Anonymous"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Anonymous",
+      "label": "Lost & Found"
     },
     {
       "pos": 19,
       "artist": "Guy J",
       "title": "Cosmos",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Cosmos"
+      "energy": 4.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Cosmos",
+      "label": "Dantze"
     },
     {
       "pos": 20,
@@ -301,11 +304,12 @@
       "artist": "Karol XVII & MB Valence",
       "title": "Waterfall Drops (Guy J Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Karol XVII & MB Valence - Waterfall Drops (Guy J Remix)"
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Karol XVII & MB Valence - Waterfall Drops (Guy J Remix)",
+      "label": "Get Physical Music"
     },
     {
       "pos": 30,
@@ -364,11 +368,12 @@
       "artist": "Marsh",
       "title": "Healer (Guy J Extended Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Marsh - Healer (Guy J Extended Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Marsh - Healer (Guy J Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 36,
@@ -415,13 +420,15 @@
       "artist": "Omid 16B",
       "title": "Escape (Driving to Heaven) (Guy J Remix)",
       "es_id": false,
-      "key": "Bbmin",
+      "key": "3A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Omid 16B - Escape (Driving To Heaven Guy J Remix)"
+      "energy": 3.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Omid 16B - Escape (Driving To Heaven Guy J Remix)",
+      "label": "Alola Records"
     }
   ],
   "cobertura_key": 0.275,
-  "cobertura_bpm": 0.3
+  "cobertura_bpm": 0.3,
+  "orden_campos_revisado": true
 }

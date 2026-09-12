@@ -34,22 +34,24 @@
       "artist": "Jonathan Kaspar",
       "title": "Play With Me",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Jonathan Kaspar - Play With Me (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Jonathan Kaspar - Play With Me (Original Mix)",
+      "label": "Crosstown Rebels"
     },
     {
       "pos": 4,
       "artist": "Budakid",
       "title": "Hearts (Argia Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Budakid - Hearts (Argia Remix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Budakid - Hearts (Argia Remix)",
+      "label": "Flores"
     },
     {
       "pos": 5,
@@ -67,22 +69,24 @@
       "artist": "Chelu Garcia",
       "title": "Guy On Fire (Timo Maas and Francesco Mami Remix)",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Chelu Garcia, Franco Botto - Guy On Fire (Timo Maas and Francesco Mami Remix)"
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Chelu Garcia, Franco Botto - Guy On Fire (Timo Maas and Francesco Mami Remix)",
+      "label": "Bedrock Records"
     },
     {
       "pos": 7,
       "artist": "Culoe De Song",
       "title": "The Spiker (Manoo Club Remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Culoe De Song - The Spiker (Manoo Club Remix)"
+      "energy": 6.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Culoe De Song - The Spiker (Manoo Club Remix)",
+      "label": "Crosstown Rebels"
     },
     {
       "pos": 8,
@@ -100,11 +104,12 @@
       "artist": "Zuccasam",
       "title": "Feel Happy",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Zuccasam - Feel Happy (Original Mix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Zuccasam - Feel Happy (Original Mix)",
+      "label": "Plastic Fantastic Records"
     },
     {
       "pos": 10,
@@ -118,5 +123,6 @@
     }
   ],
   "cobertura_key": 0.7,
-  "cobertura_bpm": 0.7
+  "cobertura_bpm": 0.7,
+  "orden_campos_revisado": true
 }

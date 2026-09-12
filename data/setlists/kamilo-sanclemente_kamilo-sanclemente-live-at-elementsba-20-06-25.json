@@ -56,11 +56,12 @@
       "artist": "Antrim",
       "title": "Hoffnung (Rauschhaus Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Antrim - Hoffnung (Rauschhaus Remix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Antrim - Hoffnung (Rauschhaus Remix)",
+      "label": "Clubsonica Records"
     },
     {
       "pos": 6,
@@ -88,33 +89,36 @@
       "artist": "Dabeat",
       "title": "Red Sky Night",
       "es_id": false,
-      "key": "Cm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dabeat - Red Sky Night (Original Mix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dabeat - Red Sky Night (Original Mix)",
+      "label": "B4U Records"
     },
     {
       "pos": 9,
       "artist": "Yulia Niko, Yotam Avni",
       "title": "Higher (Emanuel Satie Remix)",
       "es_id": false,
-      "key": "Fm",
-      "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Yotam Avni, Yulia Niko - Higher (Emanuel Satie Extended Remix)"
+      "key": "4A",
+      "bpm": 123.92,
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Yotam Avni, Yulia Niko - Higher (Emanuel Satie Extended Remix)",
+      "label": "Armada Music"
     },
     {
       "pos": 10,
       "artist": "Julian Millan",
       "title": "Stellar Venue (Dilby Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Julian Millan - Stellar Venue (Dilby Remix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Julian Millan - Stellar Venue (Dilby Remix)",
+      "label": "Kling Klong Music"
     },
     {
       "pos": 11,
@@ -182,11 +186,12 @@
       "artist": "Kamilo Sanclemente, Dabeat",
       "title": "Seriously",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dabeat, Kamilo Sanclemente - Seriously (Original Mix)"
+      "energy": 7.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dabeat, Kamilo Sanclemente - Seriously (Original Mix)",
+      "label": "Plattenbank"
     },
     {
       "pos": 18,
@@ -214,11 +219,12 @@
       "artist": "Maezbi, Nicolas Viana",
       "title": "Smooth",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Maezbi, Nicolas Viana - Smooth (Original Mix)"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Maezbi, Nicolas Viana - Smooth (Original Mix)",
+      "label": "Plattenbank"
     },
     {
       "pos": 21,
@@ -235,11 +241,12 @@
       "artist": "ZAC, Tiefstone, CAMILA",
       "title": "To Shape",
       "es_id": false,
-      "key": "C",
+      "key": "8B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "ZAC, Tiefstone & CAMILA - To Shape"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "ZAC, Tiefstone & CAMILA - To Shape",
+      "label": "Visceral"
     },
     {
       "pos": 23,
@@ -256,11 +263,12 @@
       "artist": "Marsh",
       "title": "Warrior",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Marsh - Warrior (Extended Mix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Marsh - Warrior (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 25,
@@ -357,5 +365,6 @@
     }
   ],
   "cobertura_key": 0.615,
-  "cobertura_bpm": 0.615
+  "cobertura_bpm": 0.615,
+  "orden_campos_revisado": true
 }

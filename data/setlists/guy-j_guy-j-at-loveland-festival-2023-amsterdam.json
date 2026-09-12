@@ -24,11 +24,12 @@
       "artist": "Fran Garay",
       "title": "Illusion",
       "es_id": false,
-      "key": "Gm",
+      "key": "9B",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Fran Garay - Illusion "
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Fran Garay - Illusion ",
+      "label": "Mango Alley"
     },
     {
       "pos": 3,
@@ -45,11 +46,12 @@
       "artist": "Sudhaus feat. the Wash",
       "title": "Spectron (Jamie Stevens Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Sudhaus & The Wash - Spectron (Jamie Stevens Remix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Sudhaus & The Wash - Spectron (Jamie Stevens Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 5,
@@ -66,11 +68,12 @@
       "artist": "Andrés Moris & Rocio Portillo",
       "title": "Evolver",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Andrés Moris & Rocio Portillo - Evolver"
+      "energy": 2.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Andrés Moris & Rocio Portillo - Evolver",
+      "label": "Sudbeat Music"
     },
     {
       "pos": 7,
@@ -168,11 +171,12 @@
       "artist": "Guy J",
       "title": "lost & found (Original Mix)",
       "es_id": false,
-      "key": "Abm",
+      "key": "12A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Lost & Found (Original Mix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Lost & Found (Original Mix)",
+      "label": "Lost & Found"
     }
   ],
   "cobertura_key": 0.312,

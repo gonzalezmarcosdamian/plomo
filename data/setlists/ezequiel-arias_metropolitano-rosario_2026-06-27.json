@@ -14,33 +14,36 @@
       "artist": "Kebin van Reeken",
       "title": "The Unknown",
       "es_id": false,
-      "key": "Dm",
+      "key": "10B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kebin Van Reeken - The Unknown (Original Mix)"
+      "energy": 8.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kebin Van Reeken - The Unknown (Original Mix)",
+      "label": "Melorama Música"
     },
     {
       "pos": 2,
       "artist": "TPS",
       "title": "Control (Kostya Outta Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "TPS - Control (Kostya Outta Remix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "TPS - Control (Kostya Outta Remix)",
+      "label": "RKP"
     },
     {
       "pos": 3,
       "artist": "D-Shift & Drunken Kong",
       "title": "Where You Need to Be",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Drunken Kong, D-SHIFT - Where You Need To Be (Original Mix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Drunken Kong, D-SHIFT - Where You Need To Be (Original Mix)",
+      "label": "Tronic"
     },
     {
       "pos": 4,
@@ -213,11 +216,12 @@
       "artist": "Ezequiel Arias",
       "title": "Go",
       "es_id": false,
-      "key": "Abm",
+      "key": "1A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "HANA, Ezequiel Arias - Go (Extended Mix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "HANA, Ezequiel Arias - Go (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 21,
@@ -274,11 +278,12 @@
       "artist": "Deestopia",
       "title": "Humanity (Jerome Isma-Ae Remix)",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Deestopia - Humanity (Jerome Isma-Ae Extended Remix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Deestopia - Humanity (Jerome Isma-Ae Extended Remix)",
+      "label": "Magical Comps"
     },
     {
       "pos": 27,

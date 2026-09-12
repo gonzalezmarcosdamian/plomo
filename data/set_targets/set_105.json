@@ -9,79 +9,39 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Santos (AR), Jussto",
-      "title": "This Is Rocking It (Original Mix)",
-      "content_id": "245723733"
+      "artist": "Greg Ochman",
+      "title": "Blinking Stars (Luka Sambe Remix)",
+      "content_id": "98257969"
     },
     {
-      "artist": "Rauschhaus",
-      "title": "Faunus (Original Mix)",
-      "content_id": "148342248"
+      "artist": "Nicolas Viana",
+      "title": "Fog Machine (Extended Mix)",
+      "content_id": "252350736"
     },
     {
-      "artist": "Kyotto",
-      "title": "District (Original Mix)",
-      "content_id": "57011885"
+      "artist": "WELKER (BR)",
+      "title": "Batucada (Original Mix)",
+      "content_id": "91682528"
     },
     {
-      "artist": "Guy J",
-      "title": "Stranger In A Strange World (Original Mix)",
-      "content_id": "80902774"
+      "artist": "Anyma, Rebūke",
+      "title": "Syren",
+      "content_id": "9845076"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Canon (Original Mix)",
-      "content_id": "250153001"
+      "artist": "Reflekt, Delline Bass",
+      "title": "Need To Feel Loved (Cristoph Remix)",
+      "content_id": "12544084"
     },
     {
-      "artist": "Leandro Murua, Martin Fredes",
-      "title": "Interference (Original Mix)",
-      "content_id": "236712792"
+      "artist": "Budakid",
+      "title": "The Curse",
+      "content_id": "80884960"
     },
     {
-      "artist": "Amine K (Moroko Loko), WAHM (FR)",
-      "title": "Kill the Anger (Rodriguez Jr. Remix)",
-      "content_id": "16167647"
-    },
-    {
-      "artist": "Antrim",
-      "title": "Curved (Original Mix)",
-      "content_id": "61230103"
-    },
-    {
-      "artist": "Jamie Stevens, Kasey Taylor",
-      "title": "Verlaine (Original Mix)",
-      "content_id": "62514110"
-    },
-    {
-      "artist": "Kabi (AR), Ric Niels",
-      "title": "Kimica",
-      "content_id": "231885986"
-    },
-    {
-      "artist": "Bondarev, Max Wexem",
-      "title": "The Lotus (Original Mix)",
-      "content_id": "182558236"
-    },
-    {
-      "artist": "Sébastien Léger",
-      "title": "Forbidden Garden (Tim Green Remix)",
-      "content_id": "130441327"
-    },
-    {
-      "artist": "Carlo Whale, Th;en",
-      "title": "Say It",
-      "content_id": "208913720"
-    },
-    {
-      "artist": "Lost Desert",
-      "title": "Aalam Waahid (Original Mix)",
-      "content_id": "127040310"
-    },
-    {
-      "artist": "Cary Crank",
-      "title": "Deep Forest (Extended Mix)",
-      "content_id": "243440478"
+      "artist": "Gorje Hewek, Moya (US) & Dulus",
+      "title": "Margaret (Extended Mix)",
+      "content_id": "89193557"
     },
     {
       "artist": "Nox Vahn",
@@ -89,14 +49,54 @@
       "content_id": "61522600"
     },
     {
+      "artist": "Fluke",
+      "title": "Bullet (Nick Warren & Nicolas Rada Remix)",
+      "content_id": "23142478"
+    },
+    {
       "artist": "Artic White",
-      "title": "Paradigm (Extended Mix)",
-      "content_id": "171619083"
+      "title": "Linea Zero (Extended Mix)",
+      "content_id": "100834281"
+    },
+    {
+      "artist": "Serious Dancers",
+      "title": "Echo (Kebin van Reeken Extended Remix)",
+      "content_id": "51380269"
     },
     {
       "artist": "K3V (SL) & Jayy Vibes",
       "title": "Kingdom of Dreams (Juan Ibanez Remix)",
       "content_id": "198748289"
+    },
+    {
+      "artist": "Blancah, NeoClassic",
+      "title": "Travessia (Hicky & Kalo Remix)",
+      "content_id": "22351229"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
+    },
+    {
+      "artist": "Lost Desert",
+      "title": "Aalam Waahid (Original Mix)",
+      "content_id": "127040310"
+    },
+    {
+      "artist": "Sounom & Sagou",
+      "title": "Everyday Moments (Kamilo Sanclemente Remix)",
+      "content_id": "92834938"
+    },
+    {
+      "artist": "Sébastien Léger",
+      "title": "Forbidden Garden (Tim Green Remix)",
+      "content_id": "130441327"
+    },
+    {
+      "artist": "Kabi (AR), Ric Niels",
+      "title": "Kimica",
+      "content_id": "231885986"
     }
   ]
 }

@@ -4,7 +4,7 @@
   "_fuente": "https://www.youtube.com/watch?v=RxZQ9XOvSh8",
   "duration_h": 1.2,
   "bpm_range": [
-    121,
+    120,
     125
   ],
   "max_per_artist": 99,
@@ -41,19 +41,19 @@
       "content_id": "147555802"
     },
     {
-      "artist": "Rockka",
-      "title": "Initiation",
-      "content_id": "41309264"
-    },
-    {
-      "artist": "Paul Arcane",
-      "title": "Vortice (Extended Mix)",
-      "content_id": "232297180"
-    },
-    {
       "artist": "Kamilo Sanclemente",
-      "title": "Horizons (Original Mix)",
-      "content_id": "108192280"
+      "title": "Distant Blips (Dowden Remix)",
+      "content_id": "234709728"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Fall Away (Original Mix)",
+      "content_id": "172422541"
+    },
+    {
+      "artist": "Rodrigo Pochelu, Cristian Hidalgo",
+      "title": "Entrophee (Original Mix)",
+      "content_id": "148775389"
     },
     {
       "artist": "Rauschhaus",

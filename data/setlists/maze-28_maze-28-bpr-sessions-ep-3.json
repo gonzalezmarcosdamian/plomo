@@ -35,11 +35,12 @@
       "artist": "Moonwalk",
       "title": "Labyrinth (Original Mix)",
       "es_id": false,
-      "key": "Abm",
+      "key": "1A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Moonwalk - Labyrinth "
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Moonwalk - Labyrinth ",
+      "label": "Stil Vor Talent"
     },
     {
       "pos": 4,
@@ -57,11 +58,12 @@
       "artist": "Cherry (UA)",
       "title": "Giza (Original Mix)",
       "es_id": false,
-      "key": "Bmaj",
+      "key": "10A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Cherry (UA) - Giza (Original Mix)"
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Cherry (UA) - Giza (Original Mix)",
+      "label": "SVET"
     },
     {
       "pos": 6,
@@ -78,22 +80,24 @@
       "artist": "Redspace",
       "title": "Day Dream (Maze 28 Remix)",
       "es_id": false,
-      "key": "Dbm",
+      "key": "3B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Redspace - Day Dream (Maze 28 Remix)"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Redspace - Day Dream (Maze 28 Remix)",
+      "label": "UNCLES MUSIC"
     },
     {
       "pos": 8,
       "artist": "Silver Panda & Maze 28 ft. Goda Brother",
       "title": "Mosaic (SparroX Remix)",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Goda Brother, Maze 28, Silver Panda - Mosaic (SparroX Remix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Goda Brother, Maze 28, Silver Panda - Mosaic (SparroX Remix)",
+      "label": "Panda Lab Records"
     },
     {
       "pos": 9,
@@ -111,24 +115,27 @@
       "artist": "Cherry (UA)",
       "title": "Infinity",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Cherry (UA) - Infinity (Extended Mix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Cherry (UA) - Infinity (Extended Mix)",
+      "label": ""
     },
     {
       "pos": 11,
       "artist": "Bigfett",
       "title": "Reflection (Extended Mix)",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Bigfett - Reflection (Extended Mix)"
+      "energy": 6.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Bigfett - Reflection (Extended Mix)",
+      "label": "Odd One Out"
     }
   ],
   "cobertura_key": 0.818,
-  "cobertura_bpm": 0.818
+  "cobertura_bpm": 0.818,
+  "orden_campos_revisado": true
 }

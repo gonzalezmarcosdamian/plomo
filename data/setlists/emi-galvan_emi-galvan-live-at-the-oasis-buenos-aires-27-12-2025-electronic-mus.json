@@ -14,11 +14,12 @@
       "artist": "Amand & Capoon",
       "title": "Ouverture (Khen Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Capoon, Amand - Ouverture (Khen Remix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Capoon, Amand - Ouverture (Khen Remix)",
+      "label": "All Day I Dream "
     },
     {
       "pos": 2,
@@ -35,11 +36,12 @@
       "artist": "Lipa Tazzioli",
       "title": "Complex Society",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Lipa Tazzioli - Complex Society (Original Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Lipa Tazzioli - Complex Society (Original Mix)",
+      "label": "Traful"
     },
     {
       "pos": 4,
@@ -68,22 +70,24 @@
       "artist": "Brian Creao & Juan Ibanez",
       "title": "Temperance (Juan Ibañez Remix)",
       "es_id": false,
-      "key": "C",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Brian Creao - Temperance (Juan Ibañez Remix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Brian Creao - Temperance (Juan Ibañez Remix)",
+      "label": "Traful"
     },
     {
       "pos": 7,
       "artist": "ANix JAy & Juan Ibanez",
       "title": "Crazy (Juan Ibanez Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "ANix JAy - Crazy (Juan Ibanez Remix)"
+      "energy": 4.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "ANix JAy - Crazy (Juan Ibanez Remix)",
+      "label": "RKP"
     },
     {
       "pos": 8,
@@ -101,33 +105,36 @@
       "artist": "Doma",
       "title": "Kaleidoscope",
       "es_id": false,
-      "key": "G",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "DOMA - Kaleidoscope (Original Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "DOMA - Kaleidoscope (Original Mix)",
+      "label": "Plattenbank"
     },
     {
       "pos": 10,
       "artist": "Digital Mess",
       "title": "Raspberry Porridge (Cosmonaut Extended Remix)",
       "es_id": false,
-      "key": "G",
+      "key": "9B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Digital Mess - Raspberry Porridge (Cosmonaut Extended Remix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Digital Mess - Raspberry Porridge (Cosmonaut Extended Remix)",
+      "label": "Univack"
     },
     {
       "pos": 11,
       "artist": "Lucas Zarate",
       "title": "Cromo (Stae Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Lucas Zárate - Cromo (Stae Remix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Lucas Zárate - Cromo (Stae Remix)",
+      "label": "Luum Records"
     },
     {
       "pos": 12,
@@ -145,11 +152,12 @@
       "artist": "Guy Mantzur & Chicola",
       "title": "Galactica",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Chicola, Guy Mantzur - Galactica (Original Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Chicola, Guy Mantzur - Galactica (Original Mix)",
+      "label": "Last Night On Earth"
     },
     {
       "pos": 14,
@@ -167,11 +175,12 @@
       "artist": "PASINDU",
       "title": "Elevate",
       "es_id": false,
-      "key": "Cm",
+      "key": "8B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "PASINDU - Elevate (Original Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "PASINDU - Elevate (Original Mix)",
+      "label": "Suza Records"
     },
     {
       "pos": 16,
@@ -221,33 +230,36 @@
       "artist": "Paul Hazendonk",
       "title": "One Plus One (Jack Lazarus Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Paul Hazendonk - One Plus One (Jack Lazarus Club Mix)"
+      "energy": 6.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Paul Hazendonk - One Plus One (Jack Lazarus Club Mix)",
+      "label": "Blue Magenta"
     },
     {
       "pos": 21,
       "artist": "Dave Seaman",
       "title": "Two By Two (Audio Junkies Remix)",
       "es_id": false,
-      "key": "A",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dave Seaman - Two By Two (Audio Junkies Remix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dave Seaman - Two By Two (Audio Junkies Remix)",
+      "label": "Selador"
     },
     {
       "pos": 22,
       "artist": "Notre Dame",
       "title": "Nobody Told Me",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Notre Dame - Nobody Told Me (Original Mix)"
+      "energy": 4.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Notre Dame - Nobody Told Me (Original Mix)",
+      "label": "Diynamic"
     },
     {
       "pos": 23,
@@ -265,21 +277,23 @@
       "artist": "Mayro",
       "title": "Frame",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mayro - Frame (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mayro - Frame (Original Mix)",
+      "label": "Tronic"
     },
     {
       "pos": 25,
       "artist": "Maze28 & Rockka",
       "title": "Chroma",
       "es_id": false,
-      "key": null,
-      "bpm": null,
-      "energy": null,
-      "fuente_datos": null
+      "key": "9B",
+      "bpm": 122.0,
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "label": "Mango Alley"
     },
     {
       "pos": 26,
@@ -318,22 +332,24 @@
       "artist": "YOTTO",
       "title": "Aero",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "YOTTO - Aero (Original Mix)"
+      "energy": 7.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "YOTTO - Aero (Original Mix)",
+      "label": "Odd One Out"
     },
     {
       "pos": 30,
       "artist": "Viviana Casanova",
       "title": "Out of Space (Dosem Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 128.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Viviana Casanova - Out of Space (Dosem Remix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Viviana Casanova - Out of Space (Dosem Remix)",
+      "label": "Vassnova"
     },
     {
       "pos": 31,
@@ -360,22 +376,24 @@
       "artist": "Slavak",
       "title": "My Own Vision (Cosmonaut Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Slavak - My Own Vision (Cosmonaut Remix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Slavak - My Own Vision (Cosmonaut Remix)",
+      "label": "Massive Harmony Records"
     },
     {
       "pos": 34,
       "artist": "Davi",
       "title": "Self CNTRL",
       "es_id": false,
-      "key": "Bb",
+      "key": "1A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "DAVI - Self CNTRL (Original Mix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "DAVI - Self CNTRL (Original Mix)",
+      "label": "Variety Music"
     },
     {
       "pos": 35,
@@ -393,14 +411,15 @@
       "artist": "CamelPhat & Josh Gigante",
       "title": "The One",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "CamelPhat, Josh Gigante - The One (Extended Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "CamelPhat, Josh Gigante - The One (Extended Mix)",
+      "label": "When Stars Align"
     }
   ],
-  "cobertura_key": 0.833,
-  "cobertura_bpm": 0.833,
+  "cobertura_key": 0.861,
+  "cobertura_bpm": 0.861,
   "orden_campos_revisado": true
 }

@@ -199,11 +199,12 @@
       "artist": "Julian Millan",
       "title": "Stellar Venue (Dilby Remix) (Dilby Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Julian Millan - Stellar Venue (Dilby Remix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Julian Millan - Stellar Venue (Dilby Remix)",
+      "label": "Kling Klong Music"
     },
     {
       "pos": 19,
@@ -253,11 +254,12 @@
       "artist": "Maze 28",
       "title": "Red Lights From Afar (Nacres Remix)",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Maze 28 - Red Lights From Afar (Nacres Remix)"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Maze 28 - Red Lights From Afar (Nacres Remix)",
+      "label": "RKP"
     },
     {
       "pos": 24,
@@ -275,10 +277,11 @@
       "artist": "Guy J",
       "title": "Karma (Radio Version)",
       "es_id": false,
-      "key": null,
-      "bpm": null,
-      "energy": null,
-      "fuente_datos": null
+      "key": "6A",
+      "bpm": 122.0,
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "label": "No Drama"
     },
     {
       "pos": 26,
@@ -383,11 +386,12 @@
       "artist": "Dowden",
       "title": "Feather",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dowden - Feather (Original Mix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dowden - Feather (Original Mix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 36,
@@ -416,11 +420,12 @@
       "artist": "Nicolas Viana, Anonimat",
       "title": "Endgame",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Nicolas Viana, Anonimat - Endgame (Original Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Nicolas Viana, Anonimat - Endgame (Original Mix)",
+      "label": "Plaisirs Sonores Records"
     },
     {
       "pos": 39,
@@ -471,11 +476,12 @@
       "artist": "Guy J",
       "title": "Surreal",
       "es_id": false,
-      "key": "Dm",
+      "key": "8A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Surreal (Original Mix)"
+      "energy": 6.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Surreal (Original Mix)",
+      "label": "Early Morning"
     },
     {
       "pos": 44,
@@ -492,11 +498,12 @@
       "artist": "Guy J",
       "title": "Worlds Apart",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Worlds Apart (Original Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Worlds Apart (Original Mix)",
+      "label": "Early Morning"
     },
     {
       "pos": 46,
@@ -553,8 +560,8 @@
       "muzpa_fullname": "Gabriel Robella - Music Is the Answer (Original Mix)"
     }
   ],
-  "cobertura_key": 0.86,
-  "cobertura_bpm": 0.84,
+  "cobertura_key": 0.88,
+  "cobertura_bpm": 0.86,
   "orden_invertido_corregido": true,
   "orden_campos_revisado": true
 }

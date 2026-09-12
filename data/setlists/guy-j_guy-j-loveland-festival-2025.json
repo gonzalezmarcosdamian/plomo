@@ -14,11 +14,12 @@
       "artist": "Berni Turletti",
       "title": "Onix",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Berni Turletti - Onix (Original Mix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Berni Turletti - Onix (Original Mix)",
+      "label": "Solis Records"
     },
     {
       "pos": 2,
@@ -35,11 +36,12 @@
       "artist": "Guy J",
       "title": "No Drama",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - No Drama (Original Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - No Drama (Original Mix)",
+      "label": "Global Underground"
     },
     {
       "pos": 4,
@@ -98,11 +100,12 @@
       "artist": "Kasper Koman",
       "title": "Biome (Mike Rish Remix)",
       "es_id": false,
-      "key": "Gb",
+      "key": "2A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kasper Koman - Biome (Mike Rish Remix)"
+      "energy": 4.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kasper Koman - Biome (Mike Rish Remix)",
+      "label": "Meanwhile"
     },
     {
       "pos": 10,
@@ -152,13 +155,15 @@
       "artist": "Guy J",
       "title": "Selector",
       "es_id": false,
-      "key": "Gm",
+      "key": "7A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Guy J - Selector (Original Mix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Guy J - Selector (Original Mix)",
+      "label": "Early Morning"
     }
   ],
   "cobertura_key": 0.643,
-  "cobertura_bpm": 0.643
+  "cobertura_bpm": 0.643,
+  "orden_campos_revisado": true
 }

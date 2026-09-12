@@ -14,22 +14,24 @@
       "artist": "Gaston Perez",
       "title": "Angelic voice",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Gaston Perez - Angelic Voice (Original Mix)"
+      "energy": 7.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Gaston Perez - Angelic Voice (Original Mix)",
+      "label": "Luum Records"
     },
     {
       "pos": 2,
       "artist": "Gaston Perez",
       "title": "Time tunnel",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Gaston Perez - Time Tunnel (Original Mix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Gaston Perez - Time Tunnel (Original Mix)",
+      "label": "Luum Records"
     },
     {
       "pos": 3,
@@ -57,44 +59,48 @@
       "artist": "EMPHI",
       "title": "Cosmic Arrival",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "EMPHI - Cosmic Arrival (Original Mix)"
+      "energy": 4.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "EMPHI - Cosmic Arrival (Original Mix)",
+      "label": "Melorama Música"
     },
     {
       "pos": 6,
       "artist": "Harith",
       "title": "Frozen Flame",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Harith - Frozen Flame (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Harith - Frozen Flame (Original Mix)",
+      "label": "Balkan Connection"
     },
     {
       "pos": 7,
       "artist": "Samuel",
       "title": "Pulse (Casnik Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Samuel (LK) - Pulse (Casnik Remix)"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Samuel (LK) - Pulse (Casnik Remix)",
+      "label": "Droid9"
     },
     {
       "pos": 8,
       "artist": "HAFT",
       "title": "Traverse",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "HAFT - Traverse (Original Mix)"
+      "energy": 4.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "HAFT - Traverse (Original Mix)",
+      "label": "Vapour Recordings"
     },
     {
       "pos": 9,
@@ -118,5 +124,6 @@
     }
   ],
   "cobertura_key": 0.7,
-  "cobertura_bpm": 0.7
+  "cobertura_bpm": 0.7,
+  "orden_campos_revisado": true
 }

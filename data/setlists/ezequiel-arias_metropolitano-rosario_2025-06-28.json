@@ -25,33 +25,36 @@
       "artist": "Bondarev & Supacooks",
       "title": "Activator",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Supacooks, Bondarev - Activator (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Supacooks, Bondarev - Activator (Original Mix)",
+      "label": "WARPP"
     },
     {
       "pos": 3,
       "artist": "Anton Borin",
       "title": "May Spring Come",
       "es_id": false,
-      "key": "Gm",
+      "key": "9B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Anton Borin (RU) - May Spring Come (Original Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Anton Borin (RU) - May Spring Come (Original Mix)",
+      "label": "Wuzz!"
     },
     {
       "pos": 4,
       "artist": "Niko Ava",
       "title": "Freedom",
       "es_id": false,
-      "key": "Dm",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Niko Ava - Freedom (Original Mix)"
+      "energy": 7.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Niko Ava - Freedom (Original Mix)",
+      "label": "Kitchen Recordings"
     },
     {
       "pos": 5,
@@ -90,33 +93,36 @@
       "artist": "Jody Wisternoff & James Grant",
       "title": "Mui (Ezequiel Arias Remix)",
       "es_id": false,
-      "key": "Cm",
+      "key": "4A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa - Mui (Ezequiel Arias Extended Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa - Mui (Ezequiel Arias Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 9,
       "artist": "Luis Damora",
       "title": "Illuminate",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Luis Damora - Illuminate (Original Mix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Luis Damora - Illuminate (Original Mix)",
+      "label": "Vapour Recordings"
     },
     {
       "pos": 10,
       "artist": "FJL",
       "title": "Rider",
       "es_id": false,
-      "key": "G",
+      "key": "6A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "FJL - Rider (Original Mix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "FJL - Rider (Original Mix)",
+      "label": "Melorama Música"
     },
     {
       "pos": 11,
@@ -134,11 +140,12 @@
       "artist": "Claudio Cornejo",
       "title": "Alnitak",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Claudio Cornejo (AR) - Alnitak (Original Mix)"
+      "energy": 4.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Claudio Cornejo (AR) - Alnitak (Original Mix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 13,
@@ -155,11 +162,12 @@
       "artist": "Lonya",
       "title": "Sadness (Ziger Remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Lonya - Sadness (Ziger Remix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Lonya - Sadness (Ziger Remix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 15,
@@ -177,11 +185,12 @@
       "artist": "Ezequiel Arias",
       "title": "ReAnimation",
       "es_id": false,
-      "key": "D",
+      "key": "10B",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ezequiel Arias - ReAnimation (Extended Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ezequiel Arias - ReAnimation (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 17,
@@ -199,11 +208,12 @@
       "artist": "Santi Mossman",
       "title": "Exitz",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Santi Mossman - Exitz (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Santi Mossman - Exitz (Original Mix)",
+      "label": "Melorama Música"
     },
     {
       "pos": 19,
@@ -231,22 +241,24 @@
       "artist": "Ezequiel Arias & Durante",
       "title": "Dream Controller",
       "es_id": false,
-      "key": "Db",
+      "key": "3B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 22,
       "artist": "Ezequiel Arias",
       "title": "Delirio",
       "es_id": false,
-      "key": "Db",
+      "key": "1A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ezequiel Arias - Delirio (Extended Mix)"
+      "energy": 4.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ezequiel Arias - Delirio (Extended Mix)",
+      "label": "Anjunadeep"
     },
     {
       "pos": 23,
@@ -304,11 +316,12 @@
       "artist": "Antrim",
       "title": "Morning Changes",
       "es_id": false,
-      "key": "Em",
+      "key": "8B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Antrim - Morning Changes (Original Mix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Antrim - Morning Changes (Original Mix)",
+      "label": "Moments"
     },
     {
       "pos": 29,

@@ -9,6 +9,61 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-12 — la energía dejó de ser BPM disfrazado
+
+Pedido: *"mejorar el orden de los sets armados, se hizo mucho lío"*, *"mucha
+energía sin que los BPM se vayan para arriba siempre"*, *"Maze lo hace muy
+bien"*, *"que todo esto dé un salto de calidad"*. El plan está en
+[PLAN_ORDEN.md](PLAN_ORDEN.md), v2 con lo ejecutado.
+
+**El hallazgo que ordenó todo lo demás.** `src/plomo/energy.py` sumaba
+`(bpm - 118) / 8 * 3` sobre 10: el 30% de la "energía" era el tempo. Un tema de
+118 BPM tenía techo E7.0 por construcción, y de los 180 tracks con E≥7 solo 16
+estaban en 122 BPM o menos. Lo que el DJ pedía era imposible por definición de
+la métrica, no por criterio. Sacado el componente y reescalados los otros
+cuatro: **9% → 60%**, y con la biblioteca ampliada, 140 de 229.
+
+Los 1883 tracks se recalcularon **desde los cues ya guardados**, sin re-analizar
+un solo audio: los markers v8 en `djmdCue` tienen Bass IN, Breakdown, DROP y
+Mix-OUT, que es exactamente lo que la fórmula necesita. Los rangos de los
+configs se tradujeron por percentil, no por delta.
+
+**Los sets no caminaban.** El 38% de las transiciones del solver no movía la
+tonalidad, contra el 23% de lo tocado y el 14% de los sets de referencia.
+Ninguna transición sonaba mal y el set entero sonaba igual de punta a punta —
+eso era el "lío". Dos reglas nuevas en `curaduria.json` v1.1.0 y baja al 27%.
+
+**Reordenar no es rearmar.** Los sets curados a mano no se pueden rearmar sin
+perder la curaduría. `scripts/reordenar_set.py` cambia solo el orden. No reusa
+el solver de selección a propósito: aquel filtra por restricciones duras y con
+la lista fija casi nunca existe una permutación que las cumpla todas. Las
+transiciones flojas pasaron de **488 a 211**.
+
+**El corpus de referencia pasó de 6 a 40 setlists** (`buscar_setlists.py` barre
+YouTube y se queda con lo que trae tracklist). Dos cosas que estaban rompiendo el
+corpus en silencio: varios canales publican el tracklist como "Título - Artista"
+—cargado así entra con 0% de cobertura— y los setlists cargados antes de cada
+arreglo del parser tenían basura pegada al nombre del artista.
+
+**Las descargas.** 238 de 276 temas del corpus bajados e importados; la
+biblioteca pasa de 1883 a **2103**. Apareció de paso que el Inbox tenía 69
+archivos del lote anterior sin archivar, que habrían entrado como duplicados.
+
+**Y por fin, medición de energía no circular.** Con los temas nuevos adentro, el
+corpus de referencia pasó de 9 transiciones con energía a **182**. Las tres
+reglas duras quedan REFUTADAS con muestra válida: Camelot >1 en el 56% (n=297),
+BPM >2 en el 28% (n=296), escalón de energía >1.3 en el 37% (n=182). Y el pico
+real cae a la mediana del **57%** del set, no al 82% que dice la regla.
+**Ninguna regla se cambió**: eso lo aprueba el humano.
+
+**Lo que quedó sin hacer**: la Fase 3 (BPM como regla blanda) espera, porque
+cambiar dos reglas en la misma vuelta hace imposible saber cuál mejoró qué.
+`data/batch_artistas_2026-09-12.txt` tiene 154 temas de artistas que los DJs de
+referencia tocan y que la biblioteca casi no tiene (Rezident y Slam siguen en
+cero); no se bajaron para no obligar a otro import manual.
+
+---
+
 ## 2026-09-10 — "no podes bajarte mejores instrumentos?": el AG Techno Kit
 
 **Lo que hay.** La Trial trae el contenido de Suite: 143 kits instalados y

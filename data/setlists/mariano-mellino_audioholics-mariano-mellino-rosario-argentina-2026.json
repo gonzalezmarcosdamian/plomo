@@ -24,33 +24,36 @@
       "artist": "Cendryma",
       "title": "Possible Interlude",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Cendryma - Possible Interlude (Extended Mix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Cendryma - Possible Interlude (Extended Mix)",
+      "label": "Clubsonica Records"
     },
     {
       "pos": 3,
       "artist": "Wailey",
       "title": "Droplets (Taylan Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Wailey - Droplets (Taylan Remix)"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Wailey - Droplets (Taylan Remix)",
+      "label": "Rezongar Music"
     },
     {
       "pos": 4,
       "artist": "Greg Ochman",
       "title": "The Silver Lily",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Greg Ochman - The Silver Lily (Original Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Greg Ochman - The Silver Lily (Original Mix)",
+      "label": "Sketches"
     },
     {
       "pos": 5,
@@ -67,33 +70,36 @@
       "artist": "Praise",
       "title": "Kiwi",
       "es_id": false,
-      "key": "Eb",
+      "key": "5B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Praise (BR) - Kiwi (Extended Mix)"
+      "energy": 7.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Praise (BR) - Kiwi (Extended Mix)",
+      "label": "UV Noir"
     },
     {
       "pos": 7,
       "artist": "Matt Oliver, Togni",
       "title": "Brainspin",
       "es_id": false,
-      "key": "Bbm",
+      "key": "3A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Matt Oliver, Togni - Brainspin (Original Mix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Matt Oliver, Togni - Brainspin (Original Mix)",
+      "label": "Movement Recordings"
     },
     {
       "pos": 8,
       "artist": "Tom Bryder",
       "title": "Vector",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tom Bryder - Vector (Original Mix)"
+      "energy": 7.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tom Bryder - Vector (Original Mix)",
+      "label": "Balkan Connection"
     },
     {
       "pos": 9,
@@ -110,11 +116,12 @@
       "artist": "Soulmade (AR)",
       "title": "Thunderdome",
       "es_id": false,
-      "key": "Dm",
+      "key": "10B",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Soulmade (AR) - Thunderdome (Original Mix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Soulmade (AR) - Thunderdome (Original Mix)",
+      "label": "YOMO Records"
     },
     {
       "pos": 11,
@@ -141,11 +148,12 @@
       "artist": "Anton Golubev, Sofia Deren",
       "title": "Gathering (Sofia Deren Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Anton Golubev - Gathering (Sofia Deren Remix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Anton Golubev - Gathering (Sofia Deren Remix)",
+      "label": "Rezongar Music"
     },
     {
       "pos": 14,
@@ -162,11 +170,12 @@
       "artist": "Joel Lee",
       "title": "The Call",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Joel Lee - The Call (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Joel Lee - The Call (Original Mix)",
+      "label": "AH Digital"
     },
     {
       "pos": 16,
@@ -213,22 +222,24 @@
       "artist": "M.O.S, Kamilo Sanclemente",
       "title": "Perception",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kamilo Sanclemente, M.O.S., Andre Moret - Perception (Original Mix)"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kamilo Sanclemente, M.O.S., Andre Moret - Perception (Original Mix)",
+      "label": "Melody Of the Soul"
     },
     {
       "pos": 21,
       "artist": "D-Shift",
       "title": "Control Me",
       "es_id": false,
-      "key": "D",
+      "key": "10B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "D-SHIFT - Control Me (Extended Mix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "D-SHIFT - Control Me (Extended Mix)",
+      "label": "Sprout"
     },
     {
       "pos": 22,
@@ -255,44 +266,48 @@
       "artist": "Serge Canteros",
       "title": "Delusions",
       "es_id": false,
-      "key": "D",
+      "key": "10B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Serge Canteros - Delusions (Original Mix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Serge Canteros - Delusions (Original Mix)",
+      "label": "Protagonist Dark"
     },
     {
       "pos": 25,
       "artist": "Serge Canteros",
       "title": "Heart Lifter",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Serge Canteros - Heart Lifter (Original Mix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Serge Canteros - Heart Lifter (Original Mix)",
+      "label": "Protagonist Dark"
     },
     {
       "pos": 26,
       "artist": "Joel Lee",
       "title": "Sun Goes Down",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Joel Lee - Sun Goes Down (Original Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Joel Lee - Sun Goes Down (Original Mix)",
+      "label": "AH Digital"
     },
     {
       "pos": 27,
       "artist": "Kostya Outta, Paul James Nolan",
       "title": "Seguro (Paul James Nolan Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kostya Outta - Seguro (Paul James Nolan Remix)"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kostya Outta - Seguro (Paul James Nolan Remix)",
+      "label": "inU"
     },
     {
       "pos": 28,
@@ -350,11 +365,12 @@
       "artist": "Hot Tuneik, Amber Long",
       "title": "Peace Within",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Amber Long, Hot Tuneik - Peace Within (Original Mix)"
+      "energy": 7.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Amber Long, Hot Tuneik - Peace Within (Original Mix)",
+      "label": "Mango Alley"
     },
     {
       "pos": 34,
@@ -381,11 +397,12 @@
       "artist": "Frankie M, Luke Hunter",
       "title": "Dive On (Jerome Isma-Ae Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Luke Hunter, Frankie M - Dive On (Jerome Isma-Ae Extended Remix)"
+      "energy": 4.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Luke Hunter, Frankie M - Dive On (Jerome Isma-Ae Extended Remix)",
+      "label": "JEE Productions"
     },
     {
       "pos": 37,
@@ -422,11 +439,12 @@
       "artist": "Stas Underhill",
       "title": "Avalanche",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Stas Underhill - Avalanche (Extended Mix)"
+      "energy": 4.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Stas Underhill - Avalanche (Extended Mix)",
+      "label": "Avanti"
     },
     {
       "pos": 41,
@@ -444,66 +462,72 @@
       "artist": "SHERRNX & Influence",
       "title": "Solar Vein",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Influence (IN), SHERRNX - Solar Vein (Original Mix)"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Influence (IN), SHERRNX - Solar Vein (Original Mix)",
+      "label": "Movement Recordings"
     },
     {
       "pos": 43,
       "artist": "Lars Horton",
       "title": "Silent Protocol",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Lars Horton - Silent Protocol (Extended Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Lars Horton - Silent Protocol (Extended Mix)",
+      "label": "Xibaba Deep"
     },
     {
       "pos": 44,
       "artist": "Kamilo Sanclemente",
       "title": "Iceberg (HAFT Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kamilo Sanclemente - Iceberg (HAFT Extended Remix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kamilo Sanclemente - Iceberg (HAFT Extended Remix)",
+      "label": "Univack"
     },
     {
       "pos": 45,
       "artist": "Nick Stoynoff",
       "title": "Changement (Pig&Dan Remix)",
       "es_id": false,
-      "key": "Fm",
+      "key": "5B",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Pig&Dan, Nick Stoynoff - Changement (Pig&Dan Remix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Pig&Dan, Nick Stoynoff - Changement (Pig&Dan Remix)",
+      "label": "Audioholics Records"
     },
     {
       "pos": 46,
       "artist": "HAUMS",
       "title": "The Hermit",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "HAUMS - The Hermit (Extended Mix)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "HAUMS - The Hermit (Extended Mix)",
+      "label": "Quantum Feels"
     },
     {
       "pos": 47,
       "artist": "Kamilo Sanclemente",
       "title": "Our Last Day",
       "es_id": false,
-      "key": "Cm",
+      "key": "6A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kamilo Sanclemente - Our Last Day (Original Mix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kamilo Sanclemente - Our Last Day (Original Mix)",
+      "label": "Sudbeat Music"
     },
     {
       "pos": 48,
@@ -531,13 +555,15 @@
       "artist": "Mariano Mellino, Folgar, Gio Santi",
       "title": "Never Enough",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mariano Mellino with FOLGAR & Gio Santi - Never Enough (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mariano Mellino with FOLGAR & Gio Santi - Never Enough (Original Mix)",
+      "label": "ATLANT"
     }
   ],
   "cobertura_key": 0.636,
-  "cobertura_bpm": 0.636
+  "cobertura_bpm": 0.636,
+  "orden_campos_revisado": true
 }

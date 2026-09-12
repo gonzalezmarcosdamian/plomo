@@ -24,11 +24,12 @@
       "artist": "Amrita, David Hasert, Minoas Cirillo",
       "title": "Birdhouse (Extended Mix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "David Hasert, Minoas Cirillo, Amrita (FR) - Birdhouse (Extended Mix)"
+      "energy": 4.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "David Hasert, Minoas Cirillo, Amrita (FR) - Birdhouse (Extended Mix)",
+      "label": "House Music With Love"
     },
     {
       "pos": 3,
@@ -46,11 +47,12 @@
       "artist": "Quivver",
       "title": "Deception",
       "es_id": false,
-      "key": "Dm",
+      "key": "10B",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Quivver - Deception (Original Mix)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Quivver - Deception (Original Mix)",
+      "label": "Bedrock Records"
     },
     {
       "pos": 5,
@@ -67,11 +69,12 @@
       "artist": "Four Candles & Feemarx",
       "title": "Eudaimonia 303",
       "es_id": false,
-      "key": "G",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Four Candles, Feemarx - Eudaimonia 303 (Original Mix)"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Four Candles, Feemarx - Eudaimonia 303 (Original Mix)",
+      "label": "Bedrock Records"
     },
     {
       "pos": 7,
@@ -88,22 +91,24 @@
       "artist": "Jonathan Kaspar",
       "title": "I Love Your Voice",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 117.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Jonathan Kaspar - I Love Your Voice (Original Mix)"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Jonathan Kaspar - I Love Your Voice (Original Mix)",
+      "label": "Crosstown Rebels"
     },
     {
       "pos": 9,
       "artist": "Elliot Moriarty",
       "title": "only time",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Elliot Moriarty - Only Time (Original Mix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Elliot Moriarty - Only Time (Original Mix)",
+      "label": "Bedrock Records"
     },
     {
       "pos": 10,
@@ -227,5 +232,6 @@
     }
   ],
   "cobertura_key": 0.286,
-  "cobertura_bpm": 0.286
+  "cobertura_bpm": 0.286,
+  "orden_campos_revisado": true
 }

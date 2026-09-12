@@ -45,33 +45,36 @@
       "artist": "Tibi Dabo",
       "title": "Isla",
       "es_id": false,
-      "key": "F#m",
-      "bpm": 128.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tibi Dabo - Isla "
+      "key": "11A",
+      "bpm": 127.96,
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tibi Dabo - Isla ",
+      "label": "Crosstown Rebels"
     },
     {
       "pos": 5,
       "artist": "Andrey Loud",
       "title": "Cave",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Andrey Loud - Cave (Extended Remix)"
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Andrey Loud - Cave (Extended Remix)",
+      "label": "Innocent Music"
     },
     {
       "pos": 6,
       "artist": "Jinger & Traumer",
       "title": "Apoplex",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Traumer, Jinger - Apoplex (Original Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Traumer, Jinger - Apoplex (Original Mix)",
+      "label": "Jinger"
     },
     {
       "pos": 7,
@@ -99,11 +102,12 @@
       "artist": "Carl Jurgens & Niso",
       "title": "Skyscrapers (Alex O'Rion Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Carl Jurgens & Niso - Skyscrapers (Alex O'Rion Remix)"
+      "energy": 8.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Carl Jurgens & Niso - Skyscrapers (Alex O'Rion Remix)",
+      "label": "Stripped Recordings"
     },
     {
       "pos": 10,
@@ -151,11 +155,12 @@
       "artist": "Tonaco",
       "title": "Setentrional",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tonaco - Setentrional (Original Mix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tonaco - Setentrional (Original Mix)",
+      "label": "Meanwhile"
     },
     {
       "pos": 15,
@@ -245,13 +250,15 @@
       "artist": "Simon Vuarambon",
       "title": "Mature Simplicity",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simon Vuarambón - Mature Simplicity "
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simon Vuarambón - Mature Simplicity ",
+      "label": "Lost Miracle"
     }
   ],
   "cobertura_key": 0.8,
-  "cobertura_bpm": 0.8
+  "cobertura_bpm": 0.8,
+  "orden_campos_revisado": true
 }

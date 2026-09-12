@@ -228,11 +228,12 @@
       "artist": "Sam Collins & ESSED",
       "title": "Going Up",
       "es_id": false,
-      "key": "Bmin",
-      "bpm": 128.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Eddy M - Going Up (Original Mix)"
+      "key": "8A",
+      "bpm": 130.0,
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Eddy M - Going Up (Original Mix)",
+      "label": "Diynamic"
     },
     {
       "pos": 23,
@@ -269,11 +270,12 @@
       "artist": "Zuccasam",
       "title": "Away Loss",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Zuccasam - Away Loss (Original Mix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Zuccasam - Away Loss (Original Mix)",
+      "label": "Selador"
     },
     {
       "pos": 27,
@@ -290,11 +292,12 @@
       "artist": "Christian Smith",
       "title": "Feel Me",
       "es_id": false,
-      "key": "C",
-      "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Goom Gum - Feel Me"
+      "key": "10A",
+      "bpm": 123.94,
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Goom Gum - Feel Me",
+      "label": "Tronic"
     },
     {
       "pos": 29,
@@ -352,11 +355,12 @@
       "artist": "Rolasoul",
       "title": "Crystal Skies",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Rolasoul - Crystal Skies (Original Mix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Rolasoul - Crystal Skies (Original Mix)",
+      "label": "District Rec"
     },
     {
       "pos": 35,

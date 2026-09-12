@@ -55,11 +55,12 @@
       "artist": "Pete Lazonby & Fort Romeau",
       "title": "Sacred Cycles (Fort Romeau Remix)",
       "es_id": false,
-      "key": "Ebm",
+      "key": "2A",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Pete Lazonby - Sacred Cycles (Fort Romeau Dub)"
+      "energy": 5.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Pete Lazonby - Sacred Cycles (Fort Romeau Dub)",
+      "label": "Hooj Choons"
     },
     {
       "pos": 6,
@@ -156,11 +157,12 @@
       "artist": "BAILE",
       "title": "Siren",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Baile - Siren"
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Baile - Siren",
+      "label": "Course Records"
     },
     {
       "pos": 16,
@@ -405,5 +407,6 @@
     }
   ],
   "cobertura_key": 0.111,
-  "cobertura_bpm": 0.111
+  "cobertura_bpm": 0.111,
+  "orden_campos_revisado": true
 }

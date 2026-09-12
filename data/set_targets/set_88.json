@@ -10,14 +10,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Maze 28, Rockka",
-      "title": "Corrosive",
-      "content_id": "68359216"
-    },
-    {
-      "artist": "Ezequiel Arias",
-      "title": "Sin Control (Extended Mix)",
-      "content_id": "142983857"
+      "artist": "Durante, Ezequiel Arias",
+      "title": "Logical (Extended Mix)",
+      "content_id": "234497219"
     },
     {
       "artist": "Kasey Taylor, Karl Pilbrow",
@@ -30,14 +25,19 @@
       "content_id": "12158345"
     },
     {
-      "artist": "Emi Galvan",
-      "title": "Reborn (Original Mix)",
-      "content_id": "211760669"
+      "artist": "Guy Mantzur, Khen",
+      "title": "Where Is Home (Matthias Meyer Remix)",
+      "content_id": "187186336"
     },
     {
-      "artist": "Dmitry Molosh, Michael A",
-      "title": "Twelve Days (Original Mix)",
-      "content_id": "69716644"
+      "artist": "Julian Nates",
+      "title": "A Better Place (Original Mix)",
+      "content_id": "210398572"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Last Glimpse",
+      "content_id": "189440160"
     },
     {
       "artist": "Gai Barone",
@@ -60,14 +60,14 @@
       "content_id": "53854227"
     },
     {
-      "artist": "Rockka",
-      "title": "Subversion",
-      "content_id": "78510636"
+      "artist": "Kamilo Sanclemente",
+      "title": "Show Me the Stars (Original Mix)",
+      "content_id": "134028327"
     },
     {
-      "artist": "Kamilo Sanclemente, Giovanny Aparicio",
-      "title": "Redemtion (Original Mix)",
-      "content_id": "175484827"
+      "artist": "Guy J",
+      "title": "Surreal (Original Mix)",
+      "content_id": "192478729"
     },
     {
       "artist": "Emi Galvan",
@@ -80,24 +80,24 @@
       "content_id": "35998917"
     },
     {
-      "artist": "Sebastian Sellares",
-      "title": "Timeless Era (Extended Mix)",
-      "content_id": "80771436"
+      "artist": "Ruben Karapetyan",
+      "title": "Nostalgic Moments (Original Mix)",
+      "content_id": "97666808"
     },
     {
-      "artist": "Nicolas Rada",
-      "title": "Cascadia",
-      "content_id": "50865819"
+      "artist": "Kostya Outta",
+      "title": "Seguro (Paul James Nolan Remix)",
+      "content_id": "243274326"
     },
     {
-      "artist": "Ruben Karapetyan, Maze 28",
-      "title": "Cosmic Dot",
-      "content_id": "97553620"
+      "artist": "Kamilo Sanclemente",
+      "title": "Just Come Back (Extended Mix)",
+      "content_id": "129720546"
     },
     {
-      "artist": "Andre Moret",
-      "title": "Drift Whispers (Original Mix)",
-      "content_id": "550467"
+      "artist": "Guy Mantzur, Tamir Regev",
+      "title": "Mystica (Original Mix)",
+      "content_id": "48847382"
     }
   ]
 }

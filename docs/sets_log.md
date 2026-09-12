@@ -140,17 +140,17 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 5 | MoodFreak & Campaner (BR) | Surge (Kebin Van Reeken Remix) | 121 | 5.0 |
 | 6 | Anton Borin (RU) | May Spring Come (Original Mix) | 123 | 5.5 |
 | 7 | Kyotto | Sorry I'm Late (HAFT Remix) | 123 | 5.5 |
-| 8 | Kamilo Sanclemente | Anagram (Mayro Extended Remix) | 123 | 5.5 |
-| 9 | Jon Towell | 49 Miles (Original Mix) | 123 | 5.5 |
-| 10 | WhoMadeWho & Blue Hawaii | Kiss Me Hard (Adam Ten Remix) | 123 | 5.5 |
-| 11 | Supacooks, Bondarev | Activator (Original Mix) | 123 | 5.5 |
-| 12 | Blake Jarrell | Twenty Miami's Ago (Cendryma Extended Mix) | 122 | 5.5 |
+| 8 | Jon Towell | 49 Miles (Original Mix) | 123 | 5.5 |
+| 9 | WhoMadeWho & Blue Hawaii | Kiss Me Hard (Adam Ten Remix) | 123 | 5.5 |
+| 10 | Supacooks, Bondarev | Activator (Original Mix) | 123 | 5.5 |
+| 11 | Blake Jarrell | Twenty Miami's Ago (Cendryma Extended Mix) | 122 | 5.5 |
+| 12 | Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa | Mui (Ezequiel Arias Extended Mix) | 125 | 5.5 |
 | 13 | Pedro Capelossi, Aeikus | Topaz (Original Mix) | 123 | 5.5 |
 | 14 | Remcord | Out Of It (Original Mix) | 123 | 5.5 |
-| 15 | Guy J | Silver Lake (Original Mix) | 122 | 5.5 |
-| 16 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
-| 17 | Ezequiel Arias | Passenger (Original Mix) | 122 | 5.5 |
-| 18 | Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa | Mui (Ezequiel Arias Extended Mix) | 125 | 6.0 |
+| 15 | Kamilo Sanclemente | Anagram (Mayro Extended Remix) | 123 | 5.5 |
+| 16 | Guy J | Silver Lake (Original Mix) | 122 | 5.5 |
+| 17 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
+| 18 | Ezequiel Arias | Passenger (Original Mix) | 122 | 5.5 |
 
 
 ## Set 17. 17. Eze Arias — Lollapalooza / Rosario — 2025
@@ -174,37 +174,28 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 18. 18. Digweed — Transitions 2025 Selection
 **Armado:** 2026-09-12  
 **Duracion:** 3.0h  
-**Tracks:** 26  
+**Tracks:** 17  
 **BPM range:** 118-127  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Gai Barone, Luke Brancaccio, Kiki Cave | All I Need (Hernan Cattaneo & Mercurio remix) | 119 | 3.5 |
-| 2 | Panorama Channel | Kinly Estellar | 120 | 5.0 |
-| 3 | Cornucopia | Early Morning (Original Mix) | 118 | 3.5 |
-| 4 | Chris Isaak | Wicked Game (Mass Digital Remix) | 119 | 3.5 |
-| 5 | Cid Inc & Dmitry Molosh | Impending Storm | 120 | 5.0 |
-| 6 | Antrim & Juan Fernandez | Hide and Seek (Ric Niels Remix) | 120 | 5.0 |
-| 7 | Juan Deminicis | Under Control (Original Mix) | 121 | 5.0 |
-| 8 | Tantum | Out Of Nowhere (Original Mix) | 121 | 5.0 |
-| 9 | Guy Mantzur | Tremolo Man (Original Mix) | 120 | 5.0 |
-| 10 | Hermanez | Eight Years (Original Mix) | 122 | 5.5 |
-| 11 | Hobin Rude | Seraph (Liam Garcia Remix) | 120 | 5.0 |
+| 1 | Panorama Channel | Kinly Estellar | 120 | 5.0 |
+| 2 | Jon Towell | 49 Miles (Original Mix) | 123 | 5.5 |
+| 3 | Benja Molina | Aura (Original Mix) | 123 | 5.5 |
+| 4 | Hermanez | Eight Years (Original Mix) | 122 | 5.5 |
+| 5 | Cubicolor | Hardly A Day, Hardly A Night | 120 | 5.0 |
+| 6 | Juan Deminicis | Under Control (Original Mix) | 121 | 5.0 |
+| 7 | Michael A | Hunting Flowers (Radio Edit) | 120 | 5.0 |
+| 8 | Nicolas Rada | Glasgow (Original Mix) | 122 | 5.5 |
+| 9 | Tantum | Out Of Nowhere (Original Mix) | 121 | 5.0 |
+| 10 | Mike Rish | Tú Attair (Original Mix) | 119 | 3.5 |
+| 11 | Guy Mantzur | Tremolo Man (Original Mix) | 120 | 5.0 |
 | 12 | Fer Torti | Star Trip | 120 | 5.0 |
-| 13 | Jon Towell | 49 Miles (Original Mix) | 123 | 5.5 |
-| 14 | Of Norway | I Miss You (Sentre Remix) | 123 | 5.5 |
-| 15 | Dmitry Molosh | Bird Flight (Original Mix) | 120 | 5.0 |
+| 13 | Cornucopia | Early Morning (Original Mix) | 118 | 3.5 |
+| 14 | Dmitry Molosh | Bird Flight (Original Mix) | 120 | 5.0 |
+| 15 | Remcord | Out Of It (Original Mix) | 123 | 5.5 |
 | 16 | Sebastian Sellares | Limbo (Extended Mix) | 120 | 5.0 |
-| 17 | Nicolas Rada | Glasgow (Original Mix) | 122 | 5.5 |
-| 18 | Michael A | Hunting Flowers (Radio Edit) | 120 | 5.0 |
-| 19 | Pedro Capelossi, Aeikus | Topaz (Original Mix) | 123 | 5.5 |
-| 20 | Remcord | Out Of It (Original Mix) | 123 | 5.5 |
-| 21 | WhoMadeWho & Blue Hawaii | Kiss Me Hard (Adam Ten Remix) | 123 | 5.5 |
-| 22 | Einmusik, Dirty Doering | Centaurio | 125 | 6.0 |
-| 23 | D-Nox, Stereo Underground | Dolby (Original Mix) | 125 | 6.0 |
-| 24 | Supacooks, Bondarev | Activator (Original Mix) | 123 | 5.5 |
-| 25 | Benja Molina | Aura (Original Mix) | 123 | 5.5 |
-| 26 | John Cosani | Snano (Original Mix) | 123 | 5.5 |
+| 17 | John Cosani | Snano (Original Mix) | 123 | 5.5 |
 
 
 ## Set 19. 19. Vuarambon — We Are Lost / Forja 2025
@@ -1216,8 +1207,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Estiva | What Is Love (Extended Mix)  | 124 | 6.0 |
-| 2 | Nox Vahn | When I'm With You (Extended Mix)  | 123 | 5.5 |
+| 1 | Estiva | What Is Love (Extended Mix)  | 124 | 3.6 |
+| 2 | Nox Vahn | When I'm With You (Extended Mix)  | 123 | 4.1 |
 | 3 | Ezequiel Arias, Sebastian Sellares | Alba (Extended Mix) | 124 | 6.0 |
 | 4 | This Guy Ben | Corbiere (Extended Mix) | 124 | 6.0 |
 | 5 | Kamilo Sanclemente, Andre Moret, Mariusso | Atenea (HAFT Remix) | 122 | 5.5 |
@@ -1242,18 +1233,18 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Solis [US] | Una Volta (Extended Mix) | 123 | 5.5 |
-| 2 | Hernan Cattaneo & Soundexile | Astron (Davi Remix) | 122 | 5.5 |
-| 3 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
-| 4 | Marcelo Vasami | Shades Of Blue (Original Mix) | 122 | 5.5 |
-| 5 | Greta Meier | Enlightenment (Poli Siufi Remix) | 122 | 5.5 |
-| 6 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 7 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
-| 8 | Jakatta | American Dream (PROFF Extended Interpretation) | 122 | 5.5 |
-| 9 | Mike Griego | Antidote | 123 | 5.5 |
+| 1 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 5.5 |
+| 2 | Greta Meier | Enlightenment (Gaston Sosa Remix) | 122 | 5.5 |
+| 3 | Nick Warren | Freebird (Emi Galvan Remix) | 123 | 5.5 |
+| 4 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
+| 5 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
+| 6 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 7 | Jakatta | American Dream (PROFF Extended Interpretation) | 122 | 5.5 |
+| 8 | NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens | Remember Me - Hernan Cattaneo & Jamie Stevens Remix | 122 | 5.5 |
+| 9 | Blancah, NeoClassic | Travessia (Hicky & Kalo Remix) | 123 | 7.9 |
 | 10 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
-| 11 | Ric Niels | Invasion | 123 | 5.5 |
-| 12 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 11 | Mike Griego | Antidote | 123 | 7.9 |
+| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
 
 
 ## Set 76. [POOL] Detonantes — E>=7.5 — uno o dos por set, al 70-85%
@@ -1355,8 +1346,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Guy Mantzur | Homecoming (Original Mix) | 123 | 5.5 |
-| 2 | Kebin Van Reeken | Endurance (Original Mix) | 121 | 5.0 |
-| 3 | Rauschhaus, Cary Crank | Tapestry of Perception (Extended Mix) | 120 | 5.0 |
+| 2 | Guy J | A Moment Of Clarity (Original Mix) | 123 | 4.4 |
+| 3 | Kebin Van Reeken | Endurance (Original Mix) | 121 | 5.0 |
 | 4 | Chicola, Guy Mantzur | Galactica (Original Mix) | 122 | 5.5 |
 | 5 | Kamilo Sanclemente, Andre Moret, Mariusso | Atenea (HAFT Remix) | 122 | 5.5 |
 | 6 | Emi Galvan | Alfa Zeta (Original Mix) | 120 | 5.0 |
@@ -1364,7 +1355,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 8 | Cendryma | Dividing Parts (Original Mix) | 121 | 5.0 |
 | 9 | Emi Galvan | Mily (Original Mix) | 122 | 5.5 |
 | 10 | Quivver, Dave Seaman | The Water's Edge (Original Mix) | 122 | 5.5 |
-| 11 | Ezequiel Arias | Mad Man - Original Mix | 123 | 5.5 |
+| 11 | Ezequiel Arias | Mad Man - Original Mix | 123 | 6.4 |
 | 12 | Cendryma | Opulence (Original Mix) | 122 | 5.5 |
 | 13 | Paul Deep (AR) | Tique (Original Mix) | 123 | 5.5 |
 | 14 | Kamilo Sanclemente | Horizons (Original Mix) | 121 | 5.0 |
@@ -1383,9 +1374,9 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Nicolas Rada | El Oro De Los Tigres | 122 | 5.5 |
-| 2 | Mike Rish | Election Day (Original Mix) | 122 | 5.5 |
-| 3 | Guy Mantzur, Khen | Shine Tomorrow (Original Mix) | 123 | 5.5 |
-| 4 | Roy Rosenfeld | Toco | 124 | 6.0 |
+| 2 | Guy J | Alive Again (Original Mix) | 122 | 4.5 |
+| 3 | Rauschhaus, Cary Crank | Tapestry of Perception (Extended Mix) | 120 | 5.0 |
+| 4 | Paul Deep (AR) | Melodramatic (Original Mix) | 122 | 5.5 |
 | 5 | Kamilo Sanclemente | Jupiter Code (Original Mix) | 123 | 5.5 |
 | 6 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.5 |
 | 7 | Chicola, Guy Mantzur | Neon Bible (Original Mix) | 122 | 5.5 |
@@ -1410,23 +1401,23 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Ezequiel Arias, Sebastian Sellares | Alba (Extended Mix) | 124 | 6.0 |
-| 2 | Emi Galvan | Dopamine (Forniva Remix) | 123 | 5.5 |
-| 3 | Hernan Cattaneo & Soundexile | Pick Up | 122 | 5.5 |
-| 4 | Kamilo Sanclemente, Andre Moret | Mirage (Original Mix) | 122 | 5.5 |
-| 5 | Durante, PaulWetz | Evaporate ft. PaulWetz (Original Mix) | 120 | 5.0 |
-| 6 | Cid Inc., Dmitry Molosh | Aquamarine (Original Mix) | 122 | 5.5 |
-| 7 | Mike Rish | Drifter (Original Mix) | 120 | 5.0 |
-| 8 | Durante, Amtrac | Gather (Original Mix) | 122 | 5.5 |
-| 9 | Kamilo Sanclemente, Phillipe Lois | Acid Dreams (Original Mix) | 124 | 6.0 |
-| 10 | D-Nox, Andre Moret | Brisa (Extended Mix) | 123 | 5.5 |
-| 11 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
-| 12 | Hernan Cattaneo & Soundexile | Astron (Davi Remix) | 122 | 5.5 |
-| 13 | Rockka | Operator (Maze 28 Remix) | 122 | 5.5 |
-| 14 | Gorkiz & Matt Oliver | Big Bottom (Kebin Van Reeken Reinterpretation) | 121 | 5.0 |
-| 15 | Ric Niels | Invasion | 123 | 5.5 |
-| 16 | Cendryma | Evasive (Extended Mix) | 121 | 5.0 |
-| 17 | Greta Meier | Enlightenment (Gaston Sosa Remix) | 122 | 5.5 |
+| 1 | Ezequiel Arias | Delirio (Extended Mix) | 125 | 4.2 |
+| 2 | Simon Vuarambon | Mars (Original Mix) | 123 | 5.5 |
+| 3 | Durante | Orca (Original Mix) | 124 | 6.0 |
+| 4 | Khen | April Storm | 122 | 5.5 |
+| 5 | Melodiam (AR) | Jupiter (Extended Mix) | 121 | 5.0 |
+| 6 | Andre Moret | Generator (Extended Mix) | 121 | 5.5 |
+| 7 | Cid Inc., Dmitry Molosh | Aquamarine (Original Mix) | 122 | 5.5 |
+| 8 | Kamilo Sanclemente | Whale Voices (Original Mix) | 122 | 5.5 |
+| 9 | Cendryma | Possible Interlude (Extended Mix) | 121 | 6.3 |
+| 10 | Nick Warren, Martin Fredes | Wanderlust (Original Mix) | 123 | 5.5 |
+| 11 | Maze 28 | Cry of the Deserts (Aman Anand Remix) | 121 | 5.0 |
+| 12 | Greta Meier | Enlightenment (Gaston Sosa Remix) | 122 | 5.5 |
+| 13 | Nick Warren | Freebird (Emi Galvan Remix) | 123 | 5.5 |
+| 14 | Cendryma | Evasive (Extended Mix) | 121 | 5.0 |
+| 15 | Kamilo Sanclemente | Delusion (Original Mix) | 122 | 5.5 |
+| 16 | Marcelo Vasami | Shades Of Blue (Original Mix) | 122 | 5.5 |
+| 17 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
 | 18 | Cid Inc. | Forgotten | 123 | 5.5 |
 
 
@@ -1440,22 +1431,22 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 |---|--------|-------|-----|---|
 | 1 | Guy Mantzur, Kamila, Khen | Children With No Name Feat. Kamila (Original Mix) | 120 | 5.0 |
 | 2 | Sebastian Sellares, Greta Meier | Benevolence (Paul Thomas Extended Remix) | 122 | 5.5 |
-| 3 | Emi Galvan | I Wish (Original Mix) | 123 | 5.5 |
-| 4 | Guy J | Karma (Original Mix) | 122 | 5.5 |
+| 3 | Emi Galvan | Dopamine (Forniva Remix) | 123 | 5.5 |
+| 4 | Hernan Cattaneo & Soundexile | Pick Up | 122 | 5.5 |
 | 5 | Mike Rish | Dope Riddim (Original Mix) | 122 | 5.5 |
-| 6 | GMJ, Matter, Zankee Gulati | Emerge (Original Mix) | 120 | 5.0 |
-| 7 | Hobin Rude | Opposite (Original Mix) | 122 | 5.5 |
-| 8 | Jamie Stevens, Kasey Taylor | Hocu Pocu (Original Mix) | 123 | 5.5 |
-| 9 | Cendryma | Focus Bend (Tiefstone Remix) | 123 | 5.5 |
-| 10 | Simon Vuarambon | Kaskazi | 122 | 5.5 |
+| 6 | Hobin Rude | Opposite (Original Mix) | 122 | 5.5 |
+| 7 | Jamie Stevens, Kasey Taylor | Hocu Pocu (Original Mix) | 123 | 5.5 |
+| 8 | Kamilo Sanclemente | Theia | 122 | 5.5 |
+| 9 | Dimas Mixon, Cendryma | Minicube (Original Mix) | 120 | 5.0 |
+| 10 | Maze 28 | Cry of the Deserts (Molac & Nicolas Viana Remix) | 122 | 5.5 |
 | 11 | Tom Pavicich | About Her (Martin Fredes Remix) | 122 | 5.5 |
 | 12 | Rauschhaus, GRAZZE | Canacona (Original Mix) | 121 | 5.0 |
-| 13 | Kamilo Sanclemente | Orb (Original Mix) | 121 | 5.0 |
-| 14 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
-| 15 | D-Nox, Andre Moret | Shine (Extended Mix) | 124 | 6.0 |
-| 16 | Kasper Koman | Sinking Sky | 122 | 5.5 |
-| 17 | Guy J | Surreal (Original Mix) | 121 | 5.0 |
-| 18 | Emi Galvan | Trust (Original Mix) | 122 | 5.5 |
+| 13 | Guy J | Placebo (Original Mix) | 122 | 5.5 |
+| 14 | Rockka | Operator (Maze 28 Remix) | 122 | 5.5 |
+| 15 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
+| 16 | Hernan Cattaneo & Soundexile | Astron (Davi Remix) | 122 | 5.5 |
+| 17 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
+| 18 | D-Nox, Andre Moret | Brisa (Extended Mix) | 123 | 5.5 |
 
 
 ## Set 86. 86. Simon Vuarambon Style — Hipnotico
@@ -1466,24 +1457,24 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Hernan Cattaneo & Soundexile | Wind Down (Outro Mix) | 122 | 5.5 |
-| 2 | Tali Muss | Istanbul (Original Mix) | 122 | 5.5 |
-| 3 | Guy Mantzur, Roy Rosenfeld | Epika (Original Mix) | 120 | 5.0 |
-| 4 | Mike Rish | Tú Attair (Original Mix) | 119 | 3.5 |
-| 5 | Hraach | Cosmic Drama (Original Mix) | 120 | 5.0 |
-| 6 | Guy Mantzur | Tremolo Man (Original Mix) | 120 | 5.0 |
-| 7 | Sebastien Leger, Roy Rosenfeld, Lost Miracle | Closer To You (Extended Mix) | 120 | 5.0 |
-| 8 | Tom Pavicich | About Her (Unai Garcia Remix) | 121 | 5.0 |
-| 9 | Ric Niels & Juan Buitrago | Glide | 123 | 5.5 |
-| 10 | Melodiam (AR) | Dizzy (Extended Mix) | 122 | 5.5 |
-| 11 | Kamilo Sanclemente | Theia | 122 | 5.5 |
+| 1 | Hraach, Armen Miran | Sarer Jan feat. Iveta Mukuchyan (Original Mix) | 122 | 5.5 |
+| 2 | Hernan Cattaneo & Soundexile | Wind Down (Outro Mix) | 122 | 5.5 |
+| 3 | Michael A | Hunting Flowers (Radio Edit) | 120 | 5.0 |
+| 4 | Maze 28, Rockka | Corrosive | 122 | 5.5 |
+| 5 | Mike Rish | Election Day (Original Mix) | 122 | 5.5 |
+| 6 | Hraach | Cosmic Drama (Original Mix) | 120 | 5.0 |
+| 7 | Guy Mantzur | Tremolo Man (Original Mix) | 120 | 5.0 |
+| 8 | Cendryma | Buildup Trap (Simos Tagias Remix) | 121 | 5.0 |
+| 9 | Tom Pavicich | You (Original Mix) | 123 | 5.5 |
+| 10 | Melodiam (AR) | Molicocha (Extended Mix) | 123 | 5.5 |
+| 11 | Kamilo Sanclemente | Distant Blips (Dowden Remix) | 122 | 5.5 |
 | 12 | Hobin Rude | Nothing's Gonna Hurt You | 122 | 5.5 |
-| 13 | Guy J | Placebo (Original Mix) | 122 | 5.5 |
-| 14 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
-| 15 | Melodiam (AR) | Molicocha (Extended Mix) | 123 | 5.5 |
-| 16 | Greta Meier, Maze 28 | Acceptance (Original Mix) | 122 | 5.5 |
-| 17 | Kasper Koman | Hi (Cid Inc. Remix) | 122 | 5.5 |
-| 18 | Julian Nates, Julieta Kühnle | Fever (Extended Mix) | 123 | 5.5 |
+| 13 | Emi Galvan | Trust (Original Mix) | 122 | 5.5 |
+| 14 | Kebin Van Reeken | Muse (Original Mix) | 120 | 5.0 |
+| 15 | Cendryma | Override (Original Mix) | 122 | 5.5 |
+| 16 | Gai Barone, Cary Crank | You Are Becoming (Extended Mix) | 122 | 5.5 |
+| 17 | Ezequiel Arias | Heat Above - Original Mix | 124 | 6.0 |
+| 18 | Melodiam (AR) | Dizzy (Extended Mix) | 122 | 5.5 |
 
 
 ## Set 87. 87. Nick Warren Style — The Soundgarden
@@ -1494,24 +1485,24 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Cendryma | Buildup Trap (Simos Tagias Remix) | 121 | 5.0 |
-| 2 | Paul Deep (AR) | Melodramatic (Original Mix) | 122 | 5.5 |
+| 1 | Ezequiel Arias, Sebastian Sellares | Alba (Extended Mix) | 124 | 6.0 |
+| 2 | Emi Galvan | I Wish (Original Mix) | 123 | 5.5 |
 | 3 | Leandro Murua, Martin Fredes | Mistakes (Original Mix) | 122 | 5.5 |
-| 4 | Facundo Borras | Whispers from Dawn | 123 | 5.5 |
-| 5 | Khen | Out Of A Dream (Original Mix) | 121 | 5.0 |
+| 4 | Rockka | Rebit (Original Mix) | 122 | 5.5 |
+| 5 | Kamilo Sanclemente, Andre Moret | Mirage (Original Mix) | 122 | 5.5 |
 | 6 | Martin Fredes, Unai Garcia | The Artefact (Original Mix) | 120 | 5.0 |
 | 7 | Rockka, Maze 28 | Mirage (Juan Ibanez Extended Mix) | 122 | 5.5 |
 | 8 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
-| 9 | Gorkiz, K Loveski | Echos Of Eons (Greenage Remix) | 122 | 5.5 |
-| 10 | Hobin Rude | Nether (Original Mix) | 120 | 5.0 |
-| 11 | Guy J | Silver Lake (Original Mix) | 122 | 5.5 |
-| 12 | Dmitry Molosh | Bustle (Original Mix) | 120 | 5.0 |
-| 13 | Melodiam (AR) | Martian | 120 | 5.0 |
-| 14 | Rauschhaus | Morning Walks | 121 | 5.0 |
-| 15 | Nick Warren | Freebird (Emi Galvan Remix) | 123 | 5.5 |
-| 16 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
-| 17 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.0 |
-| 18 | Rockka | The Fade (Dave Walker Remix) | 122 | 5.5 |
+| 9 | Guy J | Anonymous | 122 | 5.9 |
+| 10 | Antrim, Kamilo Sanclemente, Paula OS | Once and Again (Bluum Extended Mix) | 120 | 5.0 |
+| 11 | Simon Vuarambon | Lazos (Original Mix) | 120 | 5.0 |
+| 12 | Greta Meier, Maze 28 | Acceptance (Original Mix) | 122 | 5.5 |
+| 13 | Rauschhaus | If I Had Wings | 121 | 5.0 |
+| 14 | Paul Deep AR | Milo | 123 | 7.1 |
+| 15 | Guy J | Illusion (Original Mix) | 122 | 5.5 |
+| 16 | Kasper Koman | Sinking Sky | 122 | 5.5 |
+| 17 | Ric Niels | Osmio (Original Mix) | 120 | 5.0 |
+| 18 | Cendryma | Bending Speed (Rabiee Ahmad Remix) | 122 | 5.5 |
 
 
 ## Set 88. 88. Cordoba Progressive — Gai Barone Style
@@ -1522,24 +1513,24 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Maze 28, Rockka | Corrosive | 122 | 5.5 |
-| 2 | Ezequiel Arias | Sin Control (Extended Mix) | 124 | 6.0 |
-| 3 | Kasey Taylor, Karl Pilbrow | Mount Epicon (Original Mix) | 125 | 6.0 |
-| 4 | Anthony Pappa, Aubrey Fry | Itajai (Original Mix) | 125 | 6.0 |
-| 5 | Emi Galvan | Reborn (Original Mix) | 124 | 6.0 |
-| 6 | Dmitry Molosh, Michael A | Twelve Days (Original Mix) | 122 | 5.5 |
+| 1 | Durante, Ezequiel Arias | Logical (Extended Mix) | 125 | 6.0 |
+| 2 | Kasey Taylor, Karl Pilbrow | Mount Epicon (Original Mix) | 125 | 6.0 |
+| 3 | Anthony Pappa, Aubrey Fry | Itajai (Original Mix) | 125 | 6.0 |
+| 4 | Guy Mantzur, Khen | Where Is Home (Matthias Meyer Remix) | 124 | 6.0 |
+| 5 | Julian Nates | A Better Place (Original Mix) | 124 | 6.0 |
+| 6 | Hobin Rude | Last Glimpse | 123 | 5.5 |
 | 7 | Gai Barone | In the Blink of an Eye (Original Mix) | 122 | 5.5 |
 | 8 | Antrim | Rescue | 122 | 5.5 |
 | 9 | Michael A | Zero Dawn (Kebin Van Reeken Remix) | 121 | 5.0 |
 | 10 | Melodiam (AR) | Repro Days (Original Mix) | 122 | 5.5 |
-| 11 | Rockka | Subversion | 123 | 5.5 |
-| 12 | Kamilo Sanclemente, Giovanny Aparicio | Redemtion (Original Mix) | 121 | 5.0 |
+| 11 | Kamilo Sanclemente | Show Me the Stars (Original Mix) | 121 | 5.0 |
+| 12 | Guy J | Surreal (Original Mix) | 121 | 5.0 |
 | 13 | Emi Galvan | Samsara | 122 | 5.5 |
 | 14 | Paul Deep (AR) | Aeras (Original Mix) | 121 | 5.0 |
-| 15 | Sebastian Sellares | Timeless Era (Extended Mix) | 122 | 5.5 |
-| 16 | Nicolas Rada | Cascadia | 122 | 5.5 |
-| 17 | Ruben Karapetyan, Maze 28 | Cosmic Dot | 123 | 5.5 |
-| 18 | Andre Moret | Drift Whispers (Original Mix) | 123 | 5.5 |
+| 15 | Ruben Karapetyan | Nostalgic Moments (Original Mix) | 121 | 5.0 |
+| 16 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 5.5 |
+| 17 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
+| 18 | Guy Mantzur, Tamir Regev | Mystica (Original Mix) | 122 | 5.5 |
 
 
 ## Set 89. 89. Argentina Peak Time
@@ -1550,24 +1541,24 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Andre Moret | Gaxyda (Original Mix) | 122 | 5.5 |
-| 2 | Kasey Taylor | Emerging From the Skyline (Original Mix) | 122 | 5.5 |
-| 3 | Durante, Ezequiel Arias | Prisma (Original Mix) | 124 | 6.0 |
-| 4 | Tiefstone, Das Pharaoh | Endless Summer (Extended Mix) | 122 | 5.5 |
-| 5 | Ruben Karapetyan, Maze 28 | Cosmic Dot (The Wash Remix) | 121 | 5.0 |
-| 6 | D-Nox & Beckers | Serenade (Doctor Dru Remix) | 122 | 5.5 |
-| 7 | Kamilo Sanclemente | Show Me the Stars (Original Mix) | 121 | 5.0 |
-| 8 | Simon Vuarambon & Tantum | Lake Of Fire | 122 | 5.5 |
-| 9 | Cendryma | Override (Original Mix) | 122 | 5.5 |
-| 10 | Guy J | Illusion (Original Mix) | 122 | 5.5 |
-| 11 | Marcelo Vasami | Shades Of Blue (Original Mix) | 122 | 5.5 |
-| 12 | Kamilo Sanclemente | Delusion (Original Mix) | 122 | 5.5 |
-| 13 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 14 | NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens | Remember Me - Hernan Cattaneo & Jamie Stevens Remix | 122 | 5.5 |
-| 15 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
-| 16 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
-| 17 | Greta Meier | Enlightenment (Poli Siufi Remix) | 122 | 5.5 |
-| 18 | Guy J | Catfish (Jonas Saalbach Remix) | 124 | 6.0 |
+| 1 | Facundo Borras | Whispers from Dawn | 123 | 5.5 |
+| 2 | Stephan Bodzin, Jem Cooke, Massano | Healing (Extended Mix) | 124 | 6.0 |
+| 3 | Graziano Raffa | Sturm Und Drang (Original Mix) | 126 | 6.5 |
+| 4 | Kit Lawson | Ruff (Original Mix) | 124 | 6.0 |
+| 5 | Durante, Amtrac | Gather (Original Mix) | 122 | 5.5 |
+| 6 | Kamilo Sanclemente, Phillipe Lois | Acid Dreams (Original Mix) | 124 | 6.0 |
+| 7 | ALPHA21, Cendryma | Resonance (Extended Mix) | 122 | 6.5 |
+| 8 | Madloch & Antti Rasi | Salty Roads (Cid Inc Remix) | 123 | 5.5 |
+| 9 | Will DeKeizer, Maze 28 | Cornerstone (Kostya Outta & Alisha Remix) | 121 | 7.0 |
+| 10 | Massano | Function | 122 | 5.5 |
+| 11 | Ric Niels | Invasion | 123 | 5.5 |
+| 12 | Greta Meier | Enlightenment (Poli Siufi Remix) | 122 | 5.5 |
+| 13 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
+| 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 15 | NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens | Remember Me - Hernan Cattaneo & Jamie Stevens Remix | 122 | 5.5 |
+| 16 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 17 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
+| 18 | D-Nox, Andre Moret | Shine (Extended Mix) | 124 | 6.0 |
 
 
 ## Set 96. 96. Luminoso — 1h20 — 2026-09-07
@@ -1578,24 +1569,24 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Kasper Koman | Gertrude (Extended Mix) | 122 | 5.5 |
-| 2 | Dosem | On Board | 123 | 5.5 |
-| 3 | Khen | April Storm | 122 | 5.5 |
-| 4 | Durante | Orca (Original Mix) | 124 | 6.0 |
-| 5 | Emi Galvan | Hunter (Original Mix) | 125 | 6.0 |
-| 6 | Ezequiel Arias, FJL | Color Divino (Extended Mix) | 124 | 6.0 |
-| 7 | Nox Vahn | When I'm With You (Extended Mix)  | 123 | 5.5 |
-| 8 | Emi Galvan | Distorsion (Original Mix) | 124 | 6.0 |
-| 9 | Marsh & Leo Wood | Fall To Pieces | 126 | 6.5 |
-| 10 | FJL | Rider (Original Mix) | 124 | 6.0 |
-| 11 | Monolink | Don't Hold Back (Yotto Remix) | 122 | 5.5 |
-| 12 | Durante, Amtrac | Gather (Original Mix) | 122 | 5.5 |
-| 13 | Tinlicker, Ben Böhmer | Voodoo (Extended Mix) | 124 | 6.0 |
-| 14 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.0 |
-| 15 | Fur Coat, Running Pine | Hurricane (Tim Green Remix) | 123 | 5.5 |
-| 16 | Jody Wisternoff | Paramour (Original Mix) | 123 | 5.5 |
-| 17 | Luttrell, Molly Moonwater | Something Right feat. Molly Moonwater (Ezequiel Arias Extended Mix) | 125 | 6.0 |
-| 18 | Robert Miles, Tinlicker | Children (Extended Mix) | 124 | 6.0 |
+| 1 | Durante, Ezequiel Arias | Logical (Extended Mix) | 125 | 6.0 |
+| 2 | Monolink | Laura (ARGY & Omnya Remix) | 125 | 6.0 |
+| 3 | Dosem | Not Leaving | 124 | 6.0 |
+| 4 | Mariano Mellino with FOLGAR & Gio Santi | Never Enough (Original Mix) | 122 | 5.2 |
+| 5 | Khen | Ango (Club Mix) | 123 | 5.5 |
+| 6 | Marsh | Calling (Extended Mix) | 124 | 6.0 |
+| 7 | Dosem | What If (Extended Mix) | 124 | 6.0 |
+| 8 | Guy Mantzur, Khen | Where Is Home (Matthias Meyer Remix) | 124 | 6.0 |
+| 9 | Durante | Maia | 124 | 6.0 |
+| 10 | Mike Rish | Leaving Brixton (Extended Mix) | 122 | 5.5 |
+| 11 | Emi Galvan & Albuquerque | Stay High | 122 | 5.5 |
+| 12 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
+| 13 | Lost Desert, Reigan, Amand | Open Form feat. Reigan (Original Mix) | 123 | 5.5 |
+| 14 | Monolink | Otherside (Fideles Remix) | 123 | 5.5 |
+| 15 | YOTTO | Aero (Original Mix) | 125 | 7.5 |
+| 16 | Marsh | Warrior (Extended Mix) | 126 | 6.9 |
+| 17 | D-Nox, Emi Galvan | Dualidad (Guy Mantzur Edit) | 124 | 6.0 |
+| 18 | Ric Niels | Desire (Original Mix)  | 122 | 5.5 |
 
 
 ## Set 95. 95. Terraza Atardecer — 3h — 2026-09-07
@@ -1662,18 +1653,18 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Fur Coat | Modular Theory | 124 | 6.0 |
+| 1 | Blake.08 | The Change Of Love (Extended Mix) | 126 | 6.5 |
 | 2 | Hernan Cattaneo, Audio Junkies | A Major Minor (D-Nox & Beckers Remix) | 125 | 6.0 |
 | 3 | Kit Lawson | Ruff (Original Mix) | 124 | 6.0 |
-| 4 | Massano | Solitude | 123 | 5.5 |
-| 5 | Gorkiz, K Loveski | Echos Of Eons (Greenage Remix) | 122 | 5.5 |
-| 6 | Bedrock | Heaven Scent (Eagles & Butterflies Remix) | 123 | 5.5 |
-| 7 | Jonas Saalbach | Second Surface (Original Mix) | 123 | 5.5 |
-| 8 | Simon Vuarambon | Kaskazi | 122 | 5.5 |
-| 9 | Melarmony | Aurora (Extended Mix) | 122 | 5.5 |
-| 10 | Gorje Hewek, Lost Desert, Volen Sentir | Fluminnese (Dub) | 123 | 5.5 |
-| 11 | ANMA | Adya | 124 | 6.0 |
-| 12 | Cristoph, ADZ | Solpaz | 123 | 5.5 |
+| 4 | Budakid | Hearts (Argia Remix) | 123 | 5.8 |
+| 5 | Habitatt | Fly With Me (Extended Mix) | 122 | 5.5 |
+| 6 | Colyn, Read the News | See the Light (Original Mix) | 123 | 6.1 |
+| 7 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
+| 8 | Che Jose | THE VOID (Extended) | 124 | 6.0 |
+| 9 | Tinlicker, Ben Böhmer | Voodoo (Extended Mix) | 124 | 6.0 |
+| 10 | David Guetta, MORTEN | The Future is Now | 125 | 6.0 |
+| 11 | Monolink | Return to Oz (Artbat Remix) | 124 | 6.0 |
+| 12 | Sasha | Singularity (Fur Coat Remix) | 125 | 6.0 |
 
 
 ## Set 98. 98. After Oscuro — 1h — 2026-09-10
@@ -1686,16 +1677,16 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 |---|--------|-------|-----|---|
 | 1 | Coeus | Paramount (Original Mix) | 126 | 6.5 |
 | 2 | Rodriguez Jr. | Off Gerlach (Original Mix) | 125 | 6.0 |
-| 3 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
-| 4 | Monolink | Return to Oz (Artbat Remix) | 124 | 6.0 |
-| 5 | Tinlicker, Ben Böhmer | Voodoo (Extended Mix) | 124 | 6.0 |
-| 6 | InfeXus & ANZA | Africa (Extended Mix) | 124 | 6.0 |
+| 3 | Sahar Z & Guy Mantzur | Survivors Guilt | 125 | 6.0 |
+| 4 | ANMA | Adya | 124 | 6.0 |
+| 5 | Adam Ten, Mita Gami | High On | 123 | 5.5 |
+| 6 | Jonas Saalbach, Luna Semara | Midnight Sky (Carlo Whale Remix) | 123 | 5.5 |
 | 7 | R.Hz | Gleam (Giuliano Rodrigues Rmx) | 123 | 5.5 |
 | 8 | Mauro Picotto, CRW, Kamilo Sanclemente | I Feel Love (Extended Mix) | 123 | 5.5 |
 | 9 | Nick Warren | Freebird (Emi Galvan Remix) | 123 | 5.5 |
 | 10 | Marsh | Free (Extended Mix) | 124 | 6.0 |
 | 11 | Jan Blomqvist, Mahri | Deeper Grounds feat. Mahri (Extended Mix) | 124 | 6.0 |
-| 12 | Colyn | It's All Over | 125 | 6.0 |
+| 12 | InfeXus & ANZA | Africa (Extended Mix) | 124 | 6.0 |
 
 
 ## Set 99. 99. After Luminoso — 1h — 2026-09-10
@@ -1706,15 +1697,15 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Sahar Z & Guy Mantzur | Our Foggy Trips | 123 | 5.5 |
-| 2 | WhoMadeWho | Never Alone (Patrice Bäumel Remix) | 124 | 6.0 |
-| 3 | Lexer | Obscurity | 123 | 5.5 |
-| 4 | Lane 8 | No Captain feat. Polica (Dirty South Remix) | 122 | 5.5 |
-| 5 | Iveta, Bedouin | Better Than This ft. IVETA (Original Mix) | 123 | 5.5 |
-| 6 | àmou | I WISH I COULD FLY (Extended) | 124 | 6.0 |
-| 7 | Anatolie | Release Yourself | 125 | 6.0 |
-| 8 | Guy J & Astrix | River | 124 | 6.0 |
-| 9 | Simon Doty | Solstice (Extended Mix) | 124 | 6.0 |
+| 1 | Adriatique | Ray | 123 | 5.5 |
+| 2 | Lane 8 | Keep On (Extended Mix) | 122 | 5.5 |
+| 3 | Enamour, Nox Vahn | Sleep Paralysis (Extended Mix) | 121 | 5.0 |
+| 4 | Hraach | Promises (Original Mix) | 121 | 5.0 |
+| 5 | Kasper Koman | The Blind Navigator (Extended Mix) | 122 | 5.5 |
+| 6 | Gorkiz, K Loveski | Echos Of Eons (Greenage Remix) | 122 | 5.5 |
+| 7 | Bedrock | Heaven Scent (Eagles & Butterflies Remix) | 123 | 5.5 |
+| 8 | Dubfire & Oliver Huntemann | Terra (Joseph Capriati Remix) | 124 | 6.1 |
+| 9 | Andrew Bayer | Immortal Lover (8kays Extended Mix) | 125 | 6.0 |
 | 10 | Teho | Ashes (Original Mix) | 125 | 6.0 |
 | 11 | Korolova & Monophase (IT) | Reactive (Extended Mix) | 125 | 6.0 |
 | 12 | Innēr Sense (ofc) | Older (Extended Mix) | 125 | 6.0 |
@@ -1724,19 +1715,19 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 **Armado:** 2026-09-12  
 **Duracion:** 1.2h  
 **Tracks:** 13  
-**BPM range:** 121-125  
+**BPM range:** 120-125  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Christian Smith | Illusion (Ezequiel Arias Remix) | 125 | 6.0 |
-| 2 | TPS | Control (Kostya Outta Remix) | 123 | 5.5 |
+| 2 | TPS | Control (Kostya Outta Remix) | 123 | 5.4 |
 | 3 | Andre Moret | Kryon (Original Mix) | 123 | 5.5 |
-| 4 | Drunken Kong, D-SHIFT | Where You Need To Be (Original Mix) | 121 | 5.0 |
+| 4 | Drunken Kong, D-SHIFT | Where You Need To Be (Original Mix) | 121 | 5.6 |
 | 5 | Cendryma | Parabolic (Original Mix) | 122 | 5.5 |
 | 6 | Durante, Mayro | Mantra (Extended Mix) | 124 | 6.0 |
-| 7 | Rockka | Initiation | 123 | 5.5 |
-| 8 | Paul Arcane | Vortice (Extended Mix) | 123 | 5.5 |
-| 9 | Kamilo Sanclemente | Horizons (Original Mix) | 121 | 5.0 |
+| 7 | Kamilo Sanclemente | Distant Blips (Dowden Remix) | 122 | 5.5 |
+| 8 | Armen Miran & Nicolas Rada | Fall Away (Original Mix) | 120 | 5.0 |
+| 9 | Rodrigo Pochelu, Cristian Hidalgo | Entrophee (Original Mix) | 122 | 7.0 |
 | 10 | Rauschhaus | Waiting For The Birds | 123 | 5.5 |
 | 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
 | 12 | Gorkiz, Luca Abayan | Drowner (Extended Mix) | 122 | 5.5 |
@@ -1745,31 +1736,32 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 ## Set 101. 101. Con el material de Ezequiel Arias - Metropolitano Rosario - 2025-06-28
 **Armado:** 2026-09-12  
-**Duracion:** 1.7h  
-**Tracks:** 19  
-**BPM range:** 121-124  
+**Duracion:** 1.8h  
+**Tracks:** 20  
+**BPM range:** 122-125  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Kamilo Sanclemente | Anagram (Mayro Extended Remix) | 123 | 5.5 |
-| 2 | Claudio Cornejo (AR) | Alnitak (Original Mix) | 122 | 5.5 |
-| 3 | Tinlicker, Helsloot | Because You Move Me (Jan Oberlaender Extended Remix) | 122 | 5.5 |
-| 4 | FJL | Rider (Original Mix) | 124 | 6.0 |
-| 5 | Blake Jarrell | Twenty Miami's Ago (Cendryma Extended Mix) | 122 | 5.5 |
-| 6 | Luis Damora | Illuminate (Original Mix) | 123 | 5.5 |
+| 2 | Claudio Cornejo (AR) | Alnitak (Original Mix) | 122 | 4.7 |
+| 3 | Santi Mossman | Exitz (Original Mix) | 123 | 6.0 |
+| 4 | Blake Jarrell | Twenty Miami's Ago (Cendryma Extended Mix) | 122 | 5.5 |
+| 5 | FJL | Rider (Original Mix) | 124 | 5.3 |
+| 6 | Luis Damora | Illuminate (Original Mix) | 123 | 6.1 |
 | 7 | Supacooks, Bondarev | Activator (Original Mix) | 123 | 5.5 |
-| 8 | Santi Mossman | Exitz (Original Mix) | 123 | 5.5 |
-| 9 | Guy J | Silver Lake (Original Mix) | 122 | 5.5 |
-| 10 | Melodiam (AR) | Repro Days (Original Mix) | 122 | 5.5 |
-| 11 | Lonya | Sadness (Ziger Remix) | 122 | 5.5 |
-| 12 | Guy J | Surreal (Original Mix) | 121 | 5.0 |
-| 13 | Niko Ava | Freedom (Original Mix) | 122 | 5.5 |
-| 14 | Roger Martinez | Cosmic Drum (Paul Deep Remix) | 123 | 5.5 |
-| 15 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
-| 16 | Ruben Karapetyan | Nostalgic Moments (Original Mix) | 121 | 5.0 |
-| 17 | Soma Soul | Symphony Lake (Brian Cid Remix) | 121 | 5.0 |
-| 18 | Emi Galvan | Samsara | 122 | 5.5 |
-| 19 | Anton Borin (RU) | May Spring Come (Original Mix) | 123 | 5.5 |
+| 8 | Guy J | Silver Lake (Original Mix) | 122 | 5.5 |
+| 9 | Gai Barone | Fractals (HAFT Extended Remix) | 122 | 5.5 |
+| 10 | Lonya | Sadness (Ziger Remix) | 122 | 6.2 |
+| 11 | Tiefstone, Das Pharaoh | Endless Summer (Extended Mix) | 122 | 5.5 |
+| 12 | Antrim | Morning Changes (Original Mix) | 123 | 5.4 |
+| 13 | Anton Borin (RU) | May Spring Come (Original Mix) | 123 | 5.5 |
+| 14 | Ezequiel Arias | ReAnimation (Extended Mix) | 125 | 5.7 |
+| 15 | Kyotto | Sorry I'm Late (HAFT Remix) | 123 | 5.5 |
+| 16 | Antrim | Curved (Original Mix) | 123 | 5.5 |
+| 17 | Tali Muss | Azal (Original Mix) | 123 | 5.5 |
+| 18 | Niko Ava | Freedom (Original Mix) | 122 | 7.3 |
+| 19 | Cid Inc. | Forgotten | 123 | 5.5 |
+| 20 | Paul Arcane | Vortice (Extended Mix) | 123 | 5.5 |
 
 
 ## Set 102. 102. Con el material de Ezequiel Arias - Dahaus x Fruta Cordoba - 2026-04-12
@@ -1780,56 +1772,56 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Nox Vahn | When I'm With You (Extended Mix)  | 123 | 5.5 |
+| 1 | Nox Vahn | When I'm With You (Extended Mix)  | 123 | 4.1 |
 | 2 | Montw | Lost on the Road (Arnas D Remix) | 121 | 5.0 |
-| 3 | Simos Tagias | Plexus | 122 | 5.5 |
-| 4 | Paul (AR) & EANP | Insane (Lexicon Avenue Remix) | 122 | 5.5 |
-| 5 | Dabeat | Etna (Ivan Aliaga Remix) | 121 | 5.0 |
-| 6 | Simos Tagias | Epos | 122 | 5.5 |
-| 7 | Melodiam (AR) | Molicocha (Extended Mix) | 123 | 5.5 |
-| 8 | Estiva & Julia Church | On the Line | 124 | 6.0 |
-| 9 | JESSIN | Babylon (North Echo Remix) | 125 | 6.0 |
-| 10 | Emi Galvan & Albuquerque | Don't Kill the Messenger | 123 | 5.5 |
-| 11 | Maze 28 | Red Lights From Afar | 122 | 5.5 |
-| 12 | Kabi (AR) & Agustin Ficarra | The Return (Original Mix) | 123 | 5.5 |
-| 13 | Melodiam (AR) | Words Are Weapons (Original Mix) | 122 | 5.5 |
-| 14 | Estiva, Cosmosky | Ecstasy (Extended Mix) | 124 | 6.0 |
-| 15 | Melodiam | Old Garden | 122 | 5.5 |
-| 16 | Fabricio Gutierrez | Reedmov (Kebin van Reeken Remix) | 120 | 5.0 |
-| 17 | Kamilo Sanclemente | Urania (Alex O'Rion Remix) | 120 | 5.0 |
-| 18 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
-| 19 | Weird Sounding Dude | Step Up | 121 | 5.0 |
-| 20 | Andre Moret | Generator (Extended Mix) | 121 | 5.0 |
+| 3 | Simos Tagias | Plexus | 122 | 5.1 |
+| 4 | Paul (AR) & EANP | Insane (Lexicon Avenue Remix) | 122 | 5.1 |
+| 5 | Dabeat | Etna (Ivan Aliaga Remix) | 121 | 5.7 |
+| 6 | Hobin Rude | Dusk Petals (Original Mix) | 121 | 5.0 |
+| 7 | Simos Tagias | Reality | 122 | 5.8 |
+| 8 | Martin Fredes & GEØVHÄN | Deep Story (Ruben Karapetyan Remix) | 123 | 7.1 |
+| 9 | Cid Inc. | Forgotten | 123 | 5.5 |
+| 10 | Andrew Bayer | Immortal Lover (8kays Extended Mix) | 125 | 6.0 |
+| 11 | Emi Galvan & Albuquerque | Don't Kill the Messenger | 123 | 5.5 |
+| 12 | Estiva & Julia Church | On the Line | 124 | 6.9 |
+| 13 | JESSIN | Babylon (North Echo Remix) | 125 | 6.5 |
+| 14 | Eric Lune & Juan Sapia | Tension Release (Original Mix)  | 123 | 6.9 |
+| 15 | Rodriguez Jr. & Liset Alea | What Is Real (Deep in the Playa Mix) | 123 | 5.5 |
+| 16 | Maze 28 | Aer8 (Juan Pablo Torrez Remix) | 122 | 5.5 |
+| 17 | Fran Garay | Illusion  | 120 | 7.0 |
+| 18 | Tali Muss | Interlocutor (Kebin Van Reeken Extended Remix) | 122 | 5.5 |
+| 19 | Sebastian Sellares | Abaddon (Extended Mix) | 121 | 5.0 |
+| 20 | Kabi (AR) & Agustin Ficarra | The Return (Original Mix) | 123 | 5.7 |
 
 
 ## Set 103. 103. Con el material de Simon Vuarambon - Dahaus Palacio Alsina Cordoba - 2026-03-01
 **Armado:** 2026-09-12  
 **Duracion:** 1.8h  
 **Tracks:** 20  
-**BPM range:** 120-125  
+**BPM range:** 120-128  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Markus Homm & Nici Faerber | Basement Room (Dilby Remix) | 125 | 6.0 |
-| 2 | DAVI | Self ASCND (Original Mix)  | 124 | 6.0 |
+| 1 | Markus Homm & Nici Faerber | Basement Room (Dilby Remix) | 125 | 5.2 |
+| 2 | DAVI | Self ASCND (Original Mix)  | 124 | 5.8 |
 | 3 | Rockka, Maze 28 | Mirage (Juan Ibanez Extended Mix) | 122 | 5.5 |
 | 4 | Neuralis | Ethereum (Original Mix) | 120 | 5.0 |
 | 5 | Tantum, Hyunji-A | Keep My Letters (Simon Vuarambon Remix) | 122 | 5.5 |
-| 6 | Tobi Amuchastegui | Night Loop (Original Mix) | 121 | 5.0 |
-| 7 | Agustin Pengov | Trumpert (Original Mix) | 120 | 5.0 |
-| 8 | Aman Anand | Disastro (Thomas Ferell Remix) | 120 | 5.0 |
-| 9 | Dr. Mirzoyan | Destruction (Ruben Karapetyan Remix) | 122 | 5.5 |
-| 10 | Juan Buitrago | Anja | 121 | 5.0 |
-| 11 | Mind Echoes | Unsafe Numbers (Tonaco & Tomas Garcia Remix) | 123 | 5.5 |
-| 12 | Doki | Luminus (Cedren & Manu-l Remix) | 123 | 5.5 |
-| 13 | Anton Borin (RU), Bondarev | Samadhi (Kasper Koman Remix) | 122 | 5.5 |
-| 14 | Tobi Amuchastegui | You Are Not Alone (Original Mix) | 121 | 5.0 |
+| 6 | Tobi Amuchastegui | Night Loop (Original Mix) | 121 | 6.2 |
+| 7 | Agustin Pengov | Trumpert (Original Mix) | 120 | 6.1 |
+| 8 | Aman Anand | Disastro (Thomas Ferell Remix) | 120 | 6.8 |
+| 9 | Dr. Mirzoyan | Destruction (Ruben Karapetyan Remix) | 122 | 7.0 |
+| 10 | Juan Buitrago | Anja | 121 | 6.9 |
+| 11 | Mind Echoes | Unsafe Numbers (Tonaco & Tomas Garcia Remix) | 123 | 6.7 |
+| 12 | Doki | Luminus (Cedren & Manu-l Remix) | 123 | 6.6 |
+| 13 | Brian Cid | Habitat | 121 | 5.0 |
+| 14 | Tobi Amuchastegui | You Are Not Alone (Original Mix) | 121 | 6.4 |
 | 15 | Taylan | Earthbound (Andre Moret Remix) | 120 | 5.0 |
-| 16 | Ciro Riveiro | Asia | 121 | 5.0 |
+| 16 | Ciro Riveiro | Asia | 121 | 7.1 |
 | 17 | Jody Wisternoff | Paramour (Original Mix) | 123 | 5.5 |
-| 18 | Paul Thomas & Christian Burns | Enjoy the Silence (Extended Mix) | 122 | 5.5 |
-| 19 | Kamilo Sanclemente | A Lonely Pink Cloud (Original Mix) | 122 | 5.5 |
-| 20 | Ezequiel Arias | Heat Above - Original Mix | 124 | 6.0 |
+| 18 | Cristoph | Signal (Original Mix) | 125 | 6.0 |
+| 19 | Jel Ford | Overcast (Original Mix) | 126 | 6.0 |
+| 20 | N'to | Trauma (Worakls Remix) | 128 | 6.5 |
 
 
 ## Set 104. 104. Previa Mellino — 1h30 — 2026-09-12
@@ -1868,24 +1860,24 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Santos (AR), Jussto | This Is Rocking It (Original Mix) | 124 | 6.0 |
-| 2 | Rauschhaus | Faunus (Original Mix) | 123 | 5.5 |
-| 3 | Kyotto | District (Original Mix) | 122 | 5.5 |
-| 4 | Guy J | Stranger In A Strange World (Original Mix) | 122 | 5.5 |
-| 5 | Kamilo Sanclemente | Canon (Original Mix) | 123 | 5.5 |
-| 6 | Leandro Murua, Martin Fredes | Interference (Original Mix) | 122 | 5.5 |
-| 7 | Amine K (Moroko Loko), WAHM (FR) | Kill the Anger (Rodriguez Jr. Remix) | 124 | 6.0 |
-| 8 | Antrim | Curved (Original Mix) | 123 | 5.5 |
-| 9 | Jamie Stevens, Kasey Taylor | Verlaine (Original Mix) | 122 | 5.5 |
-| 10 | Kabi (AR), Ric Niels | Kimica | 122 | 5.5 |
-| 11 | Bondarev, Max Wexem | The Lotus (Original Mix) | 123 | 5.5 |
-| 12 | Sébastien Léger | Forbidden Garden (Tim Green Remix) | 122 | 5.5 |
-| 13 | Carlo Whale, Th;en | Say It | 124 | 6.0 |
-| 14 | Lost Desert | Aalam Waahid (Original Mix) | 124 | 6.0 |
-| 15 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
-| 16 | Nox Vahn | Brainwasher (Warung Extended Mix) | 123 | 5.5 |
-| 17 | Artic White | Paradigm (Extended Mix) | 123 | 5.5 |
-| 18 | K3V (SL) & Jayy Vibes | Kingdom of Dreams (Juan Ibanez Remix) | 122 | 5.5 |
+| 1 | Greg Ochman | Blinking Stars (Luka Sambe Remix) | 123 | 5.5 |
+| 2 | Nicolas Viana | Fog Machine (Extended Mix) | 124 | 6.0 |
+| 3 | WELKER (BR) | Batucada (Original Mix) | 124 | 6.0 |
+| 4 | Anyma, Rebūke | Syren | 125 | 6.0 |
+| 5 | Reflekt, Delline Bass | Need To Feel Loved (Cristoph Remix) | 125 | 6.0 |
+| 6 | Budakid | The Curse | 124 | 6.0 |
+| 7 | Gorje Hewek, Moya (US) & Dulus | Margaret (Extended Mix) | 122 | 5.5 |
+| 8 | Nox Vahn | Brainwasher (Warung Extended Mix) | 123 | 5.5 |
+| 9 | Fluke | Bullet (Nick Warren & Nicolas Rada Remix) | 125 | 6.0 |
+| 10 | Artic White | Linea Zero (Extended Mix) | 123 | 5.5 |
+| 11 | Serious Dancers | Echo (Kebin van Reeken Extended Remix) | 122 | 5.5 |
+| 12 | K3V (SL) & Jayy Vibes | Kingdom of Dreams (Juan Ibanez Remix) | 122 | 5.5 |
+| 13 | Blancah, NeoClassic | Travessia (Hicky & Kalo Remix) | 123 | 7.9 |
+| 14 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
+| 15 | Lost Desert | Aalam Waahid (Original Mix) | 124 | 6.0 |
+| 16 | Sounom & Sagou | Everyday Moments (Kamilo Sanclemente Remix) | 122 | 5.5 |
+| 17 | Sébastien Léger | Forbidden Garden (Tim Green Remix) | 122 | 5.5 |
+| 18 | Kabi (AR), Ric Niels | Kimica | 122 | 5.5 |
 
 
 ## Set 47. 47. Colyn x Mind Against — Afterlife Dark — Viaje 2026

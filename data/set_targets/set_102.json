@@ -1,6 +1,6 @@
 {
   "name": "102. Con el material de Ezequiel Arias - Dahaus x Fruta Cordoba - 2026-04-12",
-  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Dahaus x Fruta Cordoba (2026-04-12) como anclas: 15 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Dahaus x Fruta Cordoba (2026-04-12) como anclas: 12 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
   "_fuente": "https://www.youtube.com/watch?v=4SDpmTztWk8",
   "duration_h": 1.8,
   "bpm_range": [
@@ -36,14 +36,34 @@
       "content_id": "149327915"
     },
     {
-      "artist": "Simos Tagias",
-      "title": "Epos",
-      "content_id": "177636127"
+      "artist": "Hobin Rude",
+      "title": "Dusk Petals (Original Mix)",
+      "content_id": "219235985"
     },
     {
-      "artist": "Melodiam (AR)",
-      "title": "Molicocha (Extended Mix)",
-      "content_id": "263165508"
+      "artist": "Simos Tagias",
+      "title": "Reality",
+      "content_id": "229380236"
+    },
+    {
+      "artist": "Martin Fredes & GEØVHÄN",
+      "title": "Deep Story (Ruben Karapetyan Remix)",
+      "content_id": "148022663"
+    },
+    {
+      "artist": "Cid Inc.",
+      "title": "Forgotten",
+      "content_id": "72351175"
+    },
+    {
+      "artist": "Andrew Bayer",
+      "title": "Immortal Lover (8kays Extended Mix)",
+      "content_id": "51076195"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Don't Kill the Messenger",
+      "content_id": "182281408"
     },
     {
       "artist": "Estiva & Julia Church",
@@ -56,59 +76,39 @@
       "content_id": "61185373"
     },
     {
-      "artist": "Emi Galvan & Albuquerque",
-      "title": "Don't Kill the Messenger",
-      "content_id": "182281408"
+      "artist": "Eric Lune & Juan Sapia",
+      "title": "Tension Release (Original Mix) ",
+      "content_id": "198323890"
+    },
+    {
+      "artist": "Rodriguez Jr. & Liset Alea",
+      "title": "What Is Real (Deep in the Playa Mix)",
+      "content_id": "263315442"
     },
     {
       "artist": "Maze 28",
-      "title": "Red Lights From Afar",
-      "content_id": "20894273"
+      "title": "Aer8 (Juan Pablo Torrez Remix)",
+      "content_id": "231052947"
+    },
+    {
+      "artist": "Fran Garay",
+      "title": "Illusion ",
+      "content_id": "220388613"
+    },
+    {
+      "artist": "Tali Muss",
+      "title": "Interlocutor (Kebin Van Reeken Extended Remix)",
+      "content_id": "70531094"
+    },
+    {
+      "artist": "Sebastian Sellares",
+      "title": "Abaddon (Extended Mix)",
+      "content_id": "40168032"
     },
     {
       "artist": "Kabi (AR) & Agustin Ficarra",
       "title": "The Return (Original Mix)",
       "content_id": "256941427"
-    },
-    {
-      "artist": "Melodiam (AR)",
-      "title": "Words Are Weapons (Original Mix)",
-      "content_id": "131114728"
-    },
-    {
-      "artist": "Estiva, Cosmosky",
-      "title": "Ecstasy (Extended Mix)",
-      "content_id": "231293887"
-    },
-    {
-      "artist": "Melodiam",
-      "title": "Old Garden",
-      "content_id": "72587871"
-    },
-    {
-      "artist": "Fabricio Gutierrez",
-      "title": "Reedmov (Kebin van Reeken Remix)",
-      "content_id": "230581616"
-    },
-    {
-      "artist": "Kamilo Sanclemente",
-      "title": "Urania (Alex O'Rion Remix)",
-      "content_id": "252821912"
-    },
-    {
-      "artist": "Ruben Karapetyan",
-      "title": "Mindful Harmony (Dowden Remix)",
-      "content_id": "67092768"
-    },
-    {
-      "artist": "Weird Sounding Dude",
-      "title": "Step Up",
-      "content_id": "227873392"
-    },
-    {
-      "artist": "Andre Moret",
-      "title": "Generator (Extended Mix)",
-      "content_id": "243768609"
     }
   ]
 }

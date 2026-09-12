@@ -1,0 +1,160 @@
+# Escaneo POR ARTISTA en Muzpa — artistas que los DJs de referencia tocan
+# y de los que la biblioteca tiene poco o nada.
+# Filtrado a 117-129 BPM: el escaneo trae el catalogo entero del artista,
+# 154 temas en rango, 14 descartados por BPM
+# y varios tienen techno de 133-140 que no es el estilo.
+
+Ekko, Rezident - Only For A Moment feat. Ekko (andhim Extended Mix)   # 122 Dm
+Rezident, Kate Morgan - Muse feat. Kate Morgan (Roman Extended Mix)   # 125 Am
+Malou, Rezident - It's All On You feat. Malou (Ezequiel Arias Extended   # 125 D
+Tantum, Rezident - Grauzone   # 124 Amin
+Rezident - Pure (Extended Mix)   # 118 Fm
+Rezident, Kate Morgan - Muse feat. Kate Morgan (L.GU. Extended Mix)   # 125 Am
+Rezident - In Our Dreams (Extended Mix)   # 122 Fm
+Rezident - All My Friends (Extended Mix)   # 128 Bb
+Rezident - Hunter (Enamour Remix)   # 124 C
+Malou, Rezident - It's All On You feat. Malou (Extended Mix)   # 123 Dm
+SLAMM, Dan Molinari - P!NK (Original Mix)   # 128 Gm
+Gavin Russom, Delia Donzalez - Relevee (Carl Craig Remix / Slam Rework   # 127 Ebm
+SLAMM - Numb To The Flash (Extended Mix)   # 128 Db
+Tuccillo - Summer Slam   # 123 Gm
+Mirco Caruso - Slam (Original Mix)   # 124 Fm
+T.Markakis, Slamtwisted - Jazz Stories (Slamtwisted Remix)   # 124 D#maj
+Unclubbed, Kim Wayman, Deestopia - We Are The People (Deestopia Re-Clu   # 120 Ebmaj
+Deestopia - Humanity (Extended Mix)   # 124 Bbm
+Deestopia - Venom (Extended Mix)   # 120 E
+Deestopia - Monospace (Extended Mix)   # 124 Gm
+Diego Hernan, Milton Bo, Deestopia - Lost Thoughts (Extended Mix)   # 122 Bm
+COQUEIT - Scylla (Original Mix)   # 122 D
+COQUEIT - Promise (Original Mix)   # 122 C
+Casnik & COQUEIT - The Danger   # 121 F#m
+COQUEIT - Sona (Extended Mix)   # 122 Gm
+COQUEIT - Fox River (Extended Mix)   # 122 Dm
+COQUEIT - Warning (Extended Mix)   # 123 Bm
+COQUEIT - Bioweapons (Original Mix)   # 120 A
+COQUEIT - Promise (Antrim Remix)   # 123 C
+COQUEIT - Static (Original Mix)   # 122 Dm
+COQUEIT - Stronghold   # 120 Dm
+Faero, COQUEIT - Endless Circuit (Extended Mix)   # 122 Bbm
+Fran Garay - Alsina   # 120 Am
+Fran Garay - Echoes   # 120 Am
+Fran Garay - Parental Control (Original Mix)   # 120 E
+Fran Garay - Remembering Old Times (Original Mix)   # 120 Am
+Fran Garay - Relumb (HAFT Remix)   # 122 C
+Fran Garay - Aligned Planets (Original Mix)   # 120 Cm
+Fran Garay - Relumb (Original Mix)   # 121 Cm
+Fran Garay - Relumb (Michael A Remix)   # 121 Cm
+Fran Garay - Relumb (The Wash Remix)   # 123 Cm
+Fran Garay - Docker (Original Mix)   # 120 Fm
+Fran Garay - Cavernas (Original Mix)   # 120 Gm
+Fran Garay - Red Planet (Original Mix)   # 121 Fm
+Fran Garay - Weird Asf (Original Mix)   # 120 Em
+Juan Buitrago, Enzo Paradiso - First Time (Fran Garay Remix)   # 121 F#m
+Fran Garay - Lazhar (Original Mix)   # 120 Bm
+Fran Garay - Kuentzmann (Original Mix)   # 120 Dbm
+Fran Garay - Phase Sync (Original Mix)   # 120 Ebm
+Fran Garay - Restored (Original Mix)   # 120 F
+Fran Garay - Do What You Can (Original Mix)   # 120 Gm
+Fran Garay - Dark Cities Silent My Tears (Original Mix)   # 117 Ebm
+Fran Garay - Gero's Melody (Original Mix)   # 120 Bbm
+Fran Garay - Amplitude (Original Mix)   # 120 D
+Fran Garay - Modularity (Original Mix)   # 120 G
+KAZKO - Sun Dance   # 119 Bm
+KAZKO - Sun Dance (Original Mix)   # 119 Bm
+KAZKO - Last Runner (HAFT Remix)   # 122 Em
+KAZKO - Last Runner   # 121 Em
+KAZKO - Last Runner (Weird Sounding Dude Remix)   # 123 Bm
+KAZKO - Last Runner (YANIQ Remix)   # 121 Em
+KAZKO - Father Ocean   # 117 Fm
+KAZKO - Other Side of the World (Original Mix)   # 123 F
+Pepe Rubino - Close Your Eyes (Kazko Remix)   # 122 Fm
+KAZKO - 3 Lines (Original Mix)   # 123 Em
+Ruh (SE), Kazko - The Great Migration - Kazko Remix   # 118 Am
+Lavie Au Soleil - Proganic (KAZKO Remix)   # 122 Fm
+Drunken Kong - You Would   # 126 Abm
+Victor Ruiz, Drunken Kong - Inside Out (Reinier Zonneveld Remix)   # 126 Dm
+Richie Santana - Low Frequencies (Drunken Kong Extended Remix)   # 127 Dm
+Drunken Kong - Repeat   # 125 Abm
+Drunken Kong - Only Way (Original Mix)   # 126 F#m
+Drunken Kong - Don't See Me (Original Mix)   # 125 Abm
+Victor Ruiz, Drunken Kong - Inside Out (Original Mix)   # 126 Dm
+Hidden Empire - Black Beauty (Drunken Kong Remix)   # 126 Abm
+Luis Damora & Dave Walker - Luna (HAFT Remix)   # 121 Dm
+Luis Damora & Dave Walker - Callisto (Original Mix)   # 123 Ebm
+Luis Damora & Dave Walker - Callisto (Paul Hamilton Remix)   # 123 Ebm
+Luis Damora & Dave Walker - Luna (Original Mix)   # 123 D
+Luis Damora - How Can I Believe (Original Mix)   # 122 Dm
+Luis Damora - Echoes from Love (Original Mix)   # 121 Cm
+Luis Damora - A Better Way (Forty Cats Remix)   # 122 Am
+Luis Damora - A Better Way (Original Mix)   # 122 Dm
+Luis Damora - I Surrender (EANP Remix)   # 122 Em
+Luis Damora - All Is Heaven (Agustin Pietrocola Remix)   # 122 Fm
+Luis Damora - All Is Heaven (Ric Niels & Juan Buitrago Remix)   # 121 Fm
+Luis Damora - All Is Heaven   # 122 Fm
+Luis Damora, Nila - Lose Kontrol (Original Mix)   # 122 Cm
+Fordal - Alleviate (Luis Damora Remix)   # 123 F#m
+Artfaq, Berni Turletti - Hy Macrophylla (Original Mix)   # 122 Bmaj
+Berni Turletti - Stone of Will (Original Mix)   # 121 Cm
+Forerunners, Berni Turletti - Mediators (Original Mix)   # 123 Bmaj
+Berni Turletti - Prana Vayu   # 123 Em
+Berni Turletti - Everything Is Here and Now   # 123 Ebm
+Berni Turletti - Samana   # 123 F#m
+Berni Turletti, Dimuth K - Sunburst (Original Mix)   # 122 D
+Paul Thomas - Jumbo (Berni Turletti Remix)   # 123 Bbm
+Tobi Amuchastegui - Rish (Original Mix)   # 122 Em
+Tobi Amuchastegui - Astral Dust (Original Mix)   # 123 Gm
+Tobi Amuchastegui - Spectral (Original Mix)   # 123 Dm
+Tobi Amuchastegui - Voices (4T6 Remix)   # 123 G
+Tobi Amuchastegui - Voices (Original Mix)   # 123 Gm
+Tobi Amuchastegui - Voices (Gonzalo Cotroneo Remix)   # 123 Gm
+Tobi Amuchastegui - Voices (Chris Doppler Remix)   # 121 Gm
+Tobi Amuchastegui - Zynthora (Original Mix)   # 123 Dm
+Dowden, Essco - Middle Earth (Original Mix)   # 123 D
+Dowden, Essco - Submerge (Original Mix)   # 122 Dm
+Dowden, Essco - Confined (Original Mix)   # 122 Bm
+Essco - Diva (Original Mix)   # 124 Cm
+Essco - Defiance (Original Mix)   # 123 Dm
+Essco - The Prophecy (Original Mix)   # 124 Dm
+Essco - The Other Side (Original Mix)   # 126 Cm
+Essco - Headspace (Ewan Rill Remix)   # 119 F#m
+Essco - Sync   # 124 Dm
+Essco - Headspace (TEELCO Remix)   # 123 F#m
+Essco - Headspace (Cut Knob Remix)   # 126 F#m
+Essco - Rabbit Hole (Ivanshee Remix)   # 123 Am
+Essco - Rabbit Hole   # 122 Am
+Essco - Rabbit Hole (Sam Scheme Remix)   # 121 Am
+Essco - Flick the Switch (Luca Abayan Remix)   # 122 Abm
+Essco - Flick the Switch (Ranj Kaler's Deep State Remix)   # 125 Em
+Essco - Flick the Switch (Ranj Kaler's Beatless Deep State Remix)   # 125 Em
+Essco - Flick the Switch (Original Mix)   # 125 Bm
+Zehv & Essco - Nightcrawler   # 124 Abm
+Zehv, Four Candles & Essco - Nightcrawler (Four Candles Remix)   # 124 Bm
+Essco - Jah (Forty Cats Remix)   # 122 D
+Essco - Jah   # 123 Dm
+Essco - Master Exploder   # 124 Cm
+Essco - Jah (Audioglider Remix)   # 125 D
+Essco - Trans (Original Mix)   # 122 Gm
+Nacres - Naturalize (Mayro Remix)   # 120 Cm
+Mayro - Colorful World   # 123 Gm
+Mayro - Tactical (Extended Mix)   # 122 Am
+Mayro - Enchanted Forest (Extended Mix)   # 123 Em
+Forty Cats - A Barrel of Tar (Rodrigo Lapena & Mayro Remix)   # 121 Cm
+Bondarev - Manshivaan (Mayro Remix)   # 123 F#m
+Indigo Man - Similarity (Mayro Remix)   # 122 D
+Mayro - The Search (Extended Mix)   # 123 A
+Mayro - Tuki (Extended Mix)   # 124 G
+Mayro - Pizzicato (Original Mix)   # 123 Am
+ECHO DAFT, Kebin Van Reeken - Mysterious Drag (Original Mix)   # 122 Bb
+Topo Larocca - La Nave (Kebin van Reeken Remix)   # 122 Cm
+Kostya Outta - On Waves (Original Mix)   # 123 Bbm
+Kostya Outta - Space (Original Mix)   # 123 Am
+foglight - Feel Again (Anton Borin & Kostya Outta Remix)   # 122 Dm
+Kostya Outta - Falcon   # 123 Gm
+Sinan Arsan - Dispersal (Kostya Outta Rmx)   # 122 Bm
+Rich Curtis - Don't Throw That Away, I'll Eat It (Kostya Outta Remix)   # 122 Gm
+Ruben de Ronde & That Girl - Lose Yourself (Kostya Outta Extended Mix)   # 123 Dbm
+chriss v & Olart - Distance Echoes (Kostya Outta Remix)   # 122 Gm
+Kostya Outta - Awakening (Ruben Karapetyan & Supacooks Remix)   # 122 Am
+Kostya Outta - Awakening (Hernan Cattaneo & Marcelo Vasami Remix)   # 123 Am
+Kostya Outta - Awakening (Original Mix)   # 123 Am
+Jelly For The Babies - Pure Pleasure (Kostya Outta Remix)   # 120 Dbm

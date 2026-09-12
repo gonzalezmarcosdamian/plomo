@@ -9,39 +9,34 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Solis [US]",
-      "title": "Una Volta (Extended Mix)",
-      "content_id": "139846182"
-    },
-    {
-      "artist": "Hernan Cattaneo & Soundexile",
-      "title": "Astron (Davi Remix)",
-      "content_id": "65609882"
-    },
-    {
-      "artist": "Francisco Manrique",
-      "title": "The Fine Universe (Mike Kohl Remix)",
-      "content_id": "226932772"
-    },
-    {
-      "artist": "Marcelo Vasami",
-      "title": "Shades Of Blue (Original Mix)",
-      "content_id": "241228611"
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "content_id": "112359333"
     },
     {
       "artist": "Greta Meier",
-      "title": "Enlightenment (Poli Siufi Remix)",
-      "content_id": "93055948"
+      "title": "Enlightenment (Gaston Sosa Remix)",
+      "content_id": "215594455"
     },
     {
-      "artist": "Tom Pavicich",
-      "title": "Olimpo (Ignacio Berardi Remix)",
-      "content_id": "34012266"
+      "artist": "Nick Warren",
+      "title": "Freebird (Emi Galvan Remix)",
+      "content_id": "112295588"
     },
     {
-      "artist": "Cary Crank",
-      "title": "Deep Forest (Extended Mix)",
-      "content_id": "243440478"
+      "artist": "Kamilo Sanclemente",
+      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
+      "content_id": "117129270"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Wakefeld (Original Mix)",
+      "content_id": "75106655"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Leave the World Behind (Original Mix)",
+      "content_id": "114182110"
     },
     {
       "artist": "Jakatta",
@@ -49,9 +44,14 @@
       "content_id": "264823102"
     },
     {
-      "artist": "Mike Griego",
-      "title": "Antidote",
-      "content_id": "22525767"
+      "artist": "NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens",
+      "title": "Remember Me - Hernan Cattaneo & Jamie Stevens Remix",
+      "content_id": "53721787"
+    },
+    {
+      "artist": "Blancah, NeoClassic",
+      "title": "Travessia (Hicky & Kalo Remix)",
+      "content_id": "22351229"
     },
     {
       "artist": "Andy Moor & Adam White",
@@ -59,14 +59,14 @@
       "content_id": "162072169"
     },
     {
-      "artist": "Ric Niels",
-      "title": "Invasion",
-      "content_id": "87620719"
+      "artist": "Mike Griego",
+      "title": "Antidote",
+      "content_id": "22525767"
     },
     {
-      "artist": "Maze 28",
-      "title": "Leave the World Behind (Original Mix)",
-      "content_id": "114182110"
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
     }
   ]
 }

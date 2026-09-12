@@ -25,22 +25,24 @@
       "artist": "Marcan Liav",
       "title": "Bob Light (Luis Leon Late Night Dub)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Marcan Liav - Bob Light (Luis Leon Late Night Dub)"
+      "energy": 5.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Marcan Liav - Bob Light (Luis Leon Late Night Dub)",
+      "label": ""
     },
     {
       "pos": 3,
       "artist": "Kastis Torrau",
       "title": "Clock",
       "es_id": false,
-      "key": "Bmin",
-      "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kastis Torrau - Clock (Original Mix)"
+      "key": "9A",
+      "bpm": 120.98,
+      "energy": 3.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kastis Torrau - Clock (Original Mix)",
+      "label": "Click Records"
     },
     {
       "pos": 4,
@@ -67,22 +69,24 @@
       "artist": "Paul Deep (AR)",
       "title": "Milo",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Paul Deep AR - Milo"
+      "energy": 7.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Paul Deep AR - Milo",
+      "label": "Meanwhile"
     },
     {
       "pos": 7,
       "artist": "Scippo",
       "title": "Dub Mood",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 119.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Scippo - Dub Mood (Original Mix)"
+      "energy": 4.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Scippo - Dub Mood (Original Mix)",
+      "label": "Flown Records"
     },
     {
       "pos": 8,
@@ -100,57 +104,63 @@
       "artist": "Max Dumont",
       "title": "Maht Hild (Stereo Munk & Dublew Remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Max Dumont - Maht Hild (Stereo Munk & Dublew Remix)"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Max Dumont - Maht Hild (Stereo Munk & Dublew Remix)",
+      "label": "RKP"
     },
     {
       "pos": 10,
       "artist": "Michael A",
       "title": "Conviction (Aman Anand Remix)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Michael A - Conviction (Aman Anand Remix)"
+      "energy": 6.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Michael A - Conviction (Aman Anand Remix)",
+      "label": "Kitchen Recordings"
     },
     {
       "pos": 11,
       "artist": "COQUEIT",
       "title": "Dock",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "COQUEIT - Dock (Original Mix)"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "COQUEIT - Dock (Original Mix)",
+      "label": "Sunexplosion"
     },
     {
       "pos": 12,
       "artist": "Freedo Mosho, Futura City",
       "title": "Blue Tribe (Futura City Rework)",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 117.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Freedo Mosho, Futura City - Blue Tribe (Futura City Rework)"
+      "energy": 6.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Freedo Mosho, Futura City - Blue Tribe (Futura City Rework)",
+      "label": "Electronic Groove Records"
     },
     {
       "pos": 13,
       "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
       "title": "Fading Away (Aman Anand & Futura City Rework)",
       "es_id": false,
-      "key": "Em",
-      "bpm": 118.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Freedo Mosho, JUNIOR (SL), Futura City - Fading Away (Aman Anand & Futura City Rework)"
+      "key": "9A",
+      "bpm": 118.02,
+      "energy": 4.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Freedo Mosho, JUNIOR (SL), Futura City - Fading Away (Aman Anand & Futura City Rework)",
+      "label": "Electronic Groove Records"
     }
   ],
   "cobertura_key": 0.846,
-  "cobertura_bpm": 0.846
+  "cobertura_bpm": 0.846,
+  "orden_campos_revisado": true
 }

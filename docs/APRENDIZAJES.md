@@ -8,6 +8,50 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Cuidado con la metrica que ya contiene la respuesta
+
+**Que paso.** El DJ pidio sets "de mucha energia sin que los BPM se vayan para
+arriba". El solver no podia: el score de energia sumaba el BPM como uno de sus
+cinco componentes, el 30% del total. Un tema lento tenia un techo de energia que
+no podia superar aunque tuviera el drop mas grande del mundo. De 180 tracks con
+energia alta, solo 16 eran de tempo bajo.
+
+**Por que.** La metrica no estaba midiendo la cosa: estaba midiendo la cosa MAS
+una de sus causas. Cualquier pedido de la forma "quiero mas A sin mas B" es
+irrealizable si B esta adentro de la definicion de A, y el sintoma es que el
+optimizador siempre devuelve lo mismo por mas que se cambien los pesos.
+
+**Como se aplica.** Antes de tocar las reglas de un optimizador que no da lo que
+se le pide, abrir la funcion que calcula la variable objetivo y ver de que esta
+hecha. Si contiene una de las variables que se quieren controlar por separado,
+ese es el bug y no hay peso que lo arregle. Y al sacar el componente, reescalar
+los que quedan para que los umbrales viejos sigan queriendo decir lo mismo.
+
+---
+
+## Reordenar y rearmar son dos problemas distintos
+
+**Que paso.** Habia sets curados a mano en sesiones viejas que con la metrica
+nueva quedaron con el arco roto. Rearmarlos desde cero perdia la curaduria, asi
+que habia que reordenarlos. El primer intento reuso el solver de seleccion
+pasandole como pool los tracks del propio set: devolvio "sin solucion" para
+todos. Escrito como busqueda que PENALIZA en vez de filtrar, mejoro 37 sets, el
+peor de 25 a 8 violaciones.
+
+**Por que.** Elegir y ordenar se parecen pero tienen factibilidad opuesta. Al
+elegir, las restricciones duras son baratas: si un candidato no sirve hay
+quinientos mas. Al ordenar, el conjunto esta fijo y lo mas probable es que
+NINGUNA permutacion cumpla todo — la respuesta correcta no es "no existe" sino
+"esta es la menos mala".
+
+**Como se aplica.** Cuando un solver que filtra se usa sobre un dominio cerrado,
+convertir las restricciones duras en costos altos. Se pierde la garantia de
+cumplimiento y se gana que siempre devuelva algo, mas la medida de cuanto hubo
+que ceder — que suele ser la informacion mas util: un set que necesita saltar
+media rueda esta diciendo que el problema es la seleccion, no el orden.
+
+---
+
 ## Un setlist al que le falta la mitad no es ese setlist
 
 **Que paso.** Se reconstruyo el set de Simon Vuarambon conservando los 32 tracks

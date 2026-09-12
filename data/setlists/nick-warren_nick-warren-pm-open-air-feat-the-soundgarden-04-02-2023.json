@@ -36,11 +36,12 @@
       "artist": "Mindlancholic",
       "title": "Amaranth",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Mindlancholic - Amaranth (Original Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Mindlancholic - Amaranth (Original Mix)",
+      "label": "Nova Mova"
     },
     {
       "pos": 4,
@@ -79,11 +80,12 @@
       "artist": "Julieta Kühnle",
       "title": "Blazer (?)",
       "es_id": false,
-      "key": "Bm",
+      "key": "10A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Julieta Kühnle - Blazer"
+      "energy": 7.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Julieta Kühnle - Blazer",
+      "label": "Clubsonica Records"
     },
     {
       "pos": 8,
@@ -140,33 +142,36 @@
       "artist": "Luciano Scheffer 🇧🇷",
       "title": "Tudo Passa (Original Mix)",
       "es_id": false,
-      "key": "D",
+      "key": "7A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Luciano Scheffer - Tudo Passa"
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Luciano Scheffer - Tudo Passa",
+      "label": "SONIDO PROFUNDO"
     },
     {
       "pos": 14,
       "artist": "TOLEDO",
       "title": "Galatari (Dave Walker Remix)",
       "es_id": false,
-      "key": "F",
+      "key": "4A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "TOLEDO - Galatari (Dave Walker Remix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "TOLEDO - Galatari (Dave Walker Remix)",
+      "label": "Forensic Records"
     },
     {
       "pos": 15,
       "artist": "VITE",
       "title": "Soul Strings",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Vite - Soul Strings"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Vite - Soul Strings",
+      "label": "Akbal Music"
     },
     {
       "pos": 16,
@@ -183,22 +188,24 @@
       "artist": "Optometry, John Tejada & March Adstrum",
       "title": "Chameleon",
       "es_id": false,
-      "key": "C",
-      "bpm": 125.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Optometry, John Tejada & March Adstrum - Chameleon"
+      "key": "8B",
+      "bpm": 124.99,
+      "energy": 1.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Optometry, John Tejada & March Adstrum - Chameleon",
+      "label": ""
     },
     {
       "pos": 18,
       "artist": "Zalvador",
       "title": "Love",
       "es_id": false,
-      "key": "Eb",
+      "key": "5B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Zalvador - Love "
+      "energy": 5.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Zalvador - Love ",
+      "label": "Clubsonica Records"
     },
     {
       "pos": 19,
@@ -215,11 +222,12 @@
       "artist": "Gab Rhome",
       "title": "Alter He-Go (Moscoman & OMRI. Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Gab Rhome - Alter He-Go (Moscoman & OMRI. Remix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Gab Rhome - Alter He-Go (Moscoman & OMRI. Remix)",
+      "label": "Disco Halal"
     },
     {
       "pos": 21,

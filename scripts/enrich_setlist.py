@@ -133,6 +133,47 @@ def _orientacion_invertida(doc: dict, s, muestra: int = 10) -> bool:
     return invertido >= 3 and invertido >= derecho * 2
 
 
+def _pasada_biblioteca(doc: dict) -> int:
+    """Rellena desde la biblioteca propia lo que ahora SI esta.
+
+    Corre antes que Muzpa por dos razones. La primera es que la biblioteca es
+    mejor fuente: su key y su BPM los analizo Rekordbox sobre el archivo, no un
+    tagger de catalogo. La segunda es que la ENERGIA solo existe aca — la calcula
+    el pipeline propio sobre el audio — y sin ella las reglas de energia no
+    tienen evidencia externa que las mida.
+
+    Por eso conviene volver a correrlo despues de cada tanda de descargas: cada
+    track nuevo que estaba en un setlist de referencia le da al backtest una
+    transicion mas para medir.
+    """
+    f = RAIZ / "data" / "pool.json"
+    if not f.exists():
+        return 0
+    pool = json.loads(f.read_text(encoding="utf-8"))
+    por_titulo: dict[str, list[dict]] = {}
+    for t in pool:
+        por_titulo.setdefault(clave_titulo(t["title"]), []).append(t)
+    n = 0
+    for t in doc["tracks"]:
+        if t.get("es_id") or t.get("energy") is not None:
+            continue
+        k = clave_titulo(t.get("title", ""))
+        if not k or k == "id":
+            continue
+        obj = tokens(t.get("artist", "")) | tokens(t.get("title", ""))
+        for c in por_titulo.get(k, []):
+            if not (tokens(c["artist"]) & obj):
+                continue
+            t["key"] = c["key"]
+            t["bpm"] = c["bpm"]
+            t["energy"] = c["energy"]
+            t["label"] = c.get("label", "")
+            t["fuente_datos"] = "biblioteca"
+            n += 1
+            break
+    return n
+
+
 def enriquecer(doc: dict, s) -> tuple[int, int, list[str]]:
     faltan = [t for t in doc["tracks"]
               if not t.get("es_id") and (t.get("key") is None or t.get("bpm") is None)]
@@ -179,6 +220,7 @@ def main() -> None:
                 doc["orden_invertido_corregido"] = True
                 print(f"  {f.name}: venia como 'Titulo - Artista', se dio vuelta")
             doc["orden_campos_revisado"] = True
+        desde_lib = _pasada_biblioteca(doc)
         ok, total, log = enriquecer(doc, s)
         nombrados = doc.get("n_identificados") or sum(
             1 for t in doc["tracks"] if not t.get("es_id"))
@@ -187,6 +229,8 @@ def main() -> None:
         print(f"\n{f.name}")
         for l in log:
             print(l)
+        if desde_lib:
+            print(f"  {desde_lib} resueltos desde la biblioteca (con energia)")
         print(f"  resueltos {ok}/{total} | key {con_key}/{nombrados} "
               f"({con_key/nombrados:.0%}) | bpm {con_bpm}/{nombrados} "
               f"({con_bpm/nombrados:.0%})")

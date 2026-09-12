@@ -1,11 +1,11 @@
 {
   "name": "101. Con el material de Ezequiel Arias - Metropolitano Rosario - 2025-06-28",
-  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Metropolitano Rosario (2025-06-28) como anclas: 11 de 19 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Metropolitano Rosario (2025-06-28) como anclas: 14 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
   "_fuente": "https://www.youtube.com/watch?v=-engjCFawKQ",
-  "duration_h": 1.7,
+  "duration_h": 1.8,
   "bpm_range": [
-    121,
-    124
+    122,
+    125
   ],
   "max_per_artist": 99,
   "keep_order": true,
@@ -21,19 +21,19 @@
       "content_id": "33815411"
     },
     {
-      "artist": "Tinlicker, Helsloot",
-      "title": "Because You Move Me (Jan Oberlaender Extended Remix)",
-      "content_id": "59528095"
-    },
-    {
-      "artist": "FJL",
-      "title": "Rider (Original Mix)",
-      "content_id": "250977018"
+      "artist": "Santi Mossman",
+      "title": "Exitz (Original Mix)",
+      "content_id": "44247639"
     },
     {
       "artist": "Blake Jarrell",
       "title": "Twenty Miami's Ago (Cendryma Extended Mix)",
       "content_id": "96926709"
+    },
+    {
+      "artist": "FJL",
+      "title": "Rider (Original Mix)",
+      "content_id": "250977018"
     },
     {
       "artist": "Luis Damora",
@@ -46,19 +46,14 @@
       "content_id": "266167666"
     },
     {
-      "artist": "Santi Mossman",
-      "title": "Exitz (Original Mix)",
-      "content_id": "44247639"
-    },
-    {
       "artist": "Guy J",
       "title": "Silver Lake (Original Mix)",
       "content_id": "135098098"
     },
     {
-      "artist": "Melodiam (AR)",
-      "title": "Repro Days (Original Mix)",
-      "content_id": "53854227"
+      "artist": "Gai Barone",
+      "title": "Fractals (HAFT Extended Remix)",
+      "content_id": "126065018"
     },
     {
       "artist": "Lonya",
@@ -66,9 +61,39 @@
       "content_id": "219649438"
     },
     {
-      "artist": "Guy J",
-      "title": "Surreal (Original Mix)",
-      "content_id": "192478729"
+      "artist": "Tiefstone, Das Pharaoh",
+      "title": "Endless Summer (Extended Mix)",
+      "content_id": "27766590"
+    },
+    {
+      "artist": "Antrim",
+      "title": "Morning Changes (Original Mix)",
+      "content_id": "130040480"
+    },
+    {
+      "artist": "Anton Borin (RU)",
+      "title": "May Spring Come (Original Mix)",
+      "content_id": "78450926"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "ReAnimation (Extended Mix)",
+      "content_id": "121077036"
+    },
+    {
+      "artist": "Kyotto",
+      "title": "Sorry I'm Late (HAFT Remix)",
+      "content_id": "9587394"
+    },
+    {
+      "artist": "Antrim",
+      "title": "Curved (Original Mix)",
+      "content_id": "61230103"
+    },
+    {
+      "artist": "Tali Muss",
+      "title": "Azal (Original Mix)",
+      "content_id": "100584240"
     },
     {
       "artist": "Niko Ava",
@@ -76,34 +101,14 @@
       "content_id": "162617230"
     },
     {
-      "artist": "Roger Martinez",
-      "title": "Cosmic Drum (Paul Deep Remix)",
-      "content_id": "118862859"
-    },
-    {
       "artist": "Cid Inc.",
-      "title": "Citadel (Original Mix)",
-      "content_id": "66290210"
+      "title": "Forgotten",
+      "content_id": "72351175"
     },
     {
-      "artist": "Ruben Karapetyan",
-      "title": "Nostalgic Moments (Original Mix)",
-      "content_id": "97666808"
-    },
-    {
-      "artist": "Soma Soul",
-      "title": "Symphony Lake (Brian Cid Remix)",
-      "content_id": "215777513"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Samsara",
-      "content_id": "139671166"
-    },
-    {
-      "artist": "Anton Borin (RU)",
-      "title": "May Spring Come (Original Mix)",
-      "content_id": "78450926"
+      "artist": "Paul Arcane",
+      "title": "Vortice (Extended Mix)",
+      "content_id": "232297180"
     }
   ]
 }

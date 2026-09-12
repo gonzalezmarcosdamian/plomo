@@ -24,33 +24,36 @@
       "artist": "Ignacio Salgado",
       "title": "Zuma",
       "es_id": false,
-      "key": null,
+      "key": "8A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ignacio Salgado - Zuma"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ignacio Salgado - Zuma",
+      "label": "Strangers Beats"
     },
     {
       "pos": 3,
       "artist": "Ewan Rill",
       "title": "Snow Echoes",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ewan Rill - Snow Echoes (Original Mix)"
+      "energy": 5.7,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ewan Rill - Snow Echoes (Original Mix)",
+      "label": "Deepwibe Underground"
     },
     {
       "pos": 4,
       "artist": "K Lovesky & Gorkiz",
       "title": "Echos of Eons (Greenage Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Gorkiz, K Loveski - Echos Of Eons (Greenage Remix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Gorkiz, K Loveski - Echos Of Eons (Greenage Remix)",
+      "label": "Transensations Records"
     },
     {
       "pos": 5,
@@ -79,11 +82,12 @@
       "artist": "Zankee Gulati",
       "title": "Who Are You (GMJ & Matter Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "6A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Zankee Gulati - Who Are You (Gmj & Matter Remix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Zankee Gulati - Who Are You (Gmj & Matter Remix)",
+      "label": "Onedotsixtwo"
     },
     {
       "pos": 8,
@@ -142,22 +146,24 @@
       "artist": "Tali Muss",
       "title": "Zafer",
       "es_id": false,
-      "key": "Db",
+      "key": "12A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tali Muss - Zafer (Original Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tali Muss - Zafer (Original Mix)",
+      "label": ""
     },
     {
       "pos": 14,
       "artist": "Andrea Cassino, Lio Q, Niceshot",
       "title": "Wind Of Change (Extended Mix)",
       "es_id": false,
-      "key": "A",
+      "key": "11B",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Andrea Cassino, Lio Q & Niceshot - Wind of Change (Extended Mix)"
+      "energy": 6.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Andrea Cassino, Lio Q & Niceshot - Wind of Change (Extended Mix)",
+      "label": "UV"
     },
     {
       "pos": 15,
@@ -175,11 +181,12 @@
       "artist": "Niceshot",
       "title": "Earthrise",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Niceshot - Earthrise (Original Mix)"
+      "energy": 7.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Niceshot - Earthrise (Original Mix)",
+      "label": "Beat Boutique"
     },
     {
       "pos": 17,
@@ -230,25 +237,27 @@
       "artist": "Ric Niels",
       "title": "Desire",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ric Niels - Desire (Original Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ric Niels - Desire (Original Mix)",
+      "label": "Clubsonica Records"
     },
     {
       "pos": 22,
       "artist": "Radiohead",
       "title": "Street Spirit (Fran Bux Unofficial Remix)",
       "es_id": false,
-      "key": "Am",
+      "key": "8A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Radiohead - Street Spirit (Fran Bux Unofficial Remix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Radiohead - Street Spirit (Fran Bux Unofficial Remix)",
+      "label": "White Label"
     }
   ],
-  "cobertura_key": 0.773,
+  "cobertura_key": 0.818,
   "cobertura_bpm": 0.818,
   "orden_invertido_corregido": true,
   "orden_campos_revisado": true

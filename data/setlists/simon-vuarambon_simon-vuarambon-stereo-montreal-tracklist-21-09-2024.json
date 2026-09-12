@@ -55,11 +55,12 @@
       "artist": "Federico Campero",
       "title": "Absolu",
       "es_id": false,
-      "key": "Em",
+      "key": "9A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Federico Campero - Absolu"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Federico Campero - Absolu",
+      "label": "YOMO Records"
     },
     {
       "pos": 6,
@@ -110,33 +111,36 @@
       "artist": "Redspace & Shell Robinson",
       "title": "Cold Atmosphere",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 121.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Redspace & Shell Robinson - Cold Atmosphere (Original Mix)"
+      "energy": 6.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Redspace & Shell Robinson - Cold Atmosphere (Original Mix)",
+      "label": "inU"
     },
     {
       "pos": 11,
       "artist": "Fran Garay",
       "title": "Magnetic (Andrés Moris Remix)",
       "es_id": false,
-      "key": "Gm",
+      "key": "4A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Fran Garay - Magnetic (Andrés Moris Remix)"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Fran Garay - Magnetic (Andrés Moris Remix)",
+      "label": "Nightcolours"
     },
     {
       "pos": 12,
       "artist": "Augusto Dassano",
       "title": "Agorim",
       "es_id": false,
-      "key": "Fm",
+      "key": "4A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Augusto Dassano - Agorim"
+      "energy": 7.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Augusto Dassano - Agorim",
+      "label": "Traful"
     },
     {
       "pos": 13,
@@ -154,11 +158,12 @@
       "artist": "DJ Bird",
       "title": "In Space",
       "es_id": false,
-      "key": "Gm",
+      "key": "6A",
       "bpm": 119.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "DJ Bird - In Space"
+      "energy": 5.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "DJ Bird - In Space",
+      "label": "Consapevole Recordings"
     },
     {
       "pos": 15,
@@ -175,11 +180,12 @@
       "artist": "Audio Junkies",
       "title": "Aspects Of Rhythm",
       "es_id": false,
-      "key": "G",
+      "key": "6A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Audio Junkies - Aspects of Rhythm "
+      "energy": 4.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Audio Junkies - Aspects of Rhythm ",
+      "label": "Maccabi House"
     },
     {
       "pos": 17,
@@ -196,11 +202,12 @@
       "artist": "Cezar Nica",
       "title": "Standard Model",
       "es_id": false,
-      "key": "Gm",
+      "key": "8B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Cezar Nica - Standard Model"
+      "energy": 6.8,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Cezar Nica - Standard Model",
+      "label": "Dopamine White"
     },
     {
       "pos": 19,
@@ -238,11 +245,12 @@
       "artist": "Chiruka",
       "title": "Digital Dystopia (DJ Bird Remix)",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "CHIRUKA - Digital Dystopia (DJ Bird Remix)"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "CHIRUKA - Digital Dystopia (DJ Bird Remix)",
+      "label": "AH Digital"
     },
     {
       "pos": 23,
@@ -259,22 +267,24 @@
       "artist": "Second Sine",
       "title": "The Dream",
       "es_id": false,
-      "key": "Em",
+      "key": "1B",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Second Sine - The Dream (Original Mix)"
+      "energy": 4.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Second Sine - The Dream (Original Mix)",
+      "label": "Phenomena"
     },
     {
       "pos": 25,
       "artist": "Essco",
       "title": "Headspace",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Essco - Headspace "
+      "energy": 6.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Essco - Headspace ",
+      "label": "Consapevole Recordings"
     },
     {
       "pos": 26,
@@ -301,11 +311,12 @@
       "artist": "Diego Schiller",
       "title": "Archway",
       "es_id": false,
-      "key": "Fm",
+      "key": "7B",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Diego Schiller - Archway (Original Mix)"
+      "energy": 5.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Diego Schiller - Archway (Original Mix)",
+      "label": "Droid9"
     },
     {
       "pos": 29,
@@ -322,11 +333,12 @@
       "artist": "Forty Cats & Bondarev",
       "title": "Collider (Da Luka Remix)",
       "es_id": false,
-      "key": "F#m",
+      "key": "11A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Bondarev & Forty Cats - Collider (Da Luka Remix)"
+      "energy": 6.6,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Bondarev & Forty Cats - Collider (Da Luka Remix)",
+      "label": "WARPP"
     },
     {
       "pos": 31,
@@ -353,11 +365,12 @@
       "artist": "Second Sine",
       "title": "Motor City (Sebastian Haas Remix)",
       "es_id": false,
-      "key": "Dbm",
+      "key": "12A",
       "bpm": 123.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Second Sine - Motor City (Sebastian Haas Remix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Second Sine - Motor City (Sebastian Haas Remix)",
+      "label": "YOMO Records"
     },
     {
       "pos": 34,
@@ -374,11 +387,12 @@
       "artist": "K Loveski & Sinan Arsan",
       "title": "Iddicted (Tonaco & Matt Oliver Remix)",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "K Loveski & Sinan Arsan - IDdicted (TONACO & Matt Oliver Remix)"
+      "energy": 7.2,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "K Loveski & Sinan Arsan - IDdicted (TONACO & Matt Oliver Remix)",
+      "label": "Transensations Records"
     },
     {
       "pos": 36,
@@ -395,11 +409,12 @@
       "artist": "Essco",
       "title": "Chromatic",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 126.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Essco - Chromatic"
+      "energy": 6.0,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Essco - Chromatic",
+      "label": "Strictly Essco"
     },
     {
       "pos": 38,
@@ -436,33 +451,36 @@
       "artist": "Simon Vuarambon",
       "title": "Quiral",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Simon Vuarambón - Quiral"
+      "energy": 5.9,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Simon Vuarambón - Quiral",
+      "label": "Moments"
     },
     {
       "pos": 42,
       "artist": "Dubfire & Oliver Huntemann",
       "title": "Terra (Joseph Capriati Remix)",
       "es_id": false,
-      "key": "G#min",
+      "key": "7A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Dubfire, Oliver Huntemann, Joseph Capriati - Terra (Joseph Capriati Remix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Dubfire, Oliver Huntemann, Joseph Capriati - Terra (Joseph Capriati Remix)",
+      "label": "Senso Sounds"
     },
     {
       "pos": 43,
       "artist": "Ness",
       "title": "A Darkly Sunset In Barcelona",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 127.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Ness - A Darkly Sunset In Barcelona (Original Mix)"
+      "energy": 5.5,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Ness - A Darkly Sunset In Barcelona (Original Mix)",
+      "label": "TGP"
     },
     {
       "pos": 44,
@@ -500,11 +518,12 @@
       "artist": "Kaiserdisco",
       "title": "Black Mamba",
       "es_id": false,
-      "key": "Amin",
+      "key": "7B",
       "bpm": 128.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Kaiserdisco - Black Mamba (Original Mix)"
+      "energy": 6.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Kaiserdisco - Black Mamba (Original Mix)",
+      "label": "100% Pure"
     },
     {
       "pos": 48,
@@ -532,11 +551,12 @@
       "artist": "Tonaco",
       "title": "Hausdorff Dimension (Cid Inc Remix)",
       "es_id": false,
-      "key": "D",
+      "key": "10B",
       "bpm": 122.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Tonaco - Hausdorff Dimension (Cid Inc. Remix)"
+      "energy": 5.4,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Tonaco - Hausdorff Dimension (Cid Inc. Remix)",
+      "label": "Digital Emotions"
     },
     {
       "pos": 51,
@@ -553,11 +573,12 @@
       "artist": "Etzu Mahkayah",
       "title": "Subjel",
       "es_id": false,
-      "key": "Cm",
+      "key": "5A",
       "bpm": 124.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Etzu Mahkayah - Subjel"
+      "energy": 5.3,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Etzu Mahkayah - Subjel",
+      "label": "Amaylia Records"
     },
     {
       "pos": 53,
@@ -574,13 +595,15 @@
       "artist": "Fabri Lopez",
       "title": "Of The Group",
       "es_id": false,
-      "key": "Dm",
+      "key": "7A",
       "bpm": 120.0,
-      "energy": null,
-      "fuente_datos": "muzpa",
-      "muzpa_fullname": "Fabri Lopez - Of The Group (Original Mix)"
+      "energy": 7.1,
+      "fuente_datos": "biblioteca",
+      "muzpa_fullname": "Fabri Lopez - Of The Group (Original Mix)",
+      "label": "Freegrant Music"
     }
   ],
   "cobertura_key": 0.939,
-  "cobertura_bpm": 0.939
+  "cobertura_bpm": 0.939,
+  "orden_campos_revisado": true
 }
