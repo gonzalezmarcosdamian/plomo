@@ -300,3 +300,34 @@ Lo que el bucle ya encontro y ningun oido habia nombrado: mezcla sin ancho en
 bateria y bajo, pump del bajo en la fase equivocada (el pozo caia al 73% del
 pulso; calibrado a 270 grados de Offset), pads que suenan el 100% del tiempo
 contra 77% de la referencia, bateria con 17 dB de cresta contra 11.5.
+
+
+## La forma se copia por bandas, no por clasificador (2026-09-12)
+
+`estructura.py` clasifica por umbrales relativos y se EQUIVOCA en las partes
+fuertes: el detector de bombo se satura y marca "BAJADA" donde hay drop. La
+forma real se lee con el nivel de GRAVES compas por compas — en Interlocutor
+-9.6 dBFS es pleno y -17 a -29 es sin bombo, y la frontera es inequivoca.
+
+La forma medida de "Tali Muss - Interlocutor (Kebin Van Reeken Remix)", que es
+la que usa `FORMA` en idea.py:
+
+     1-32    32  intro, graves -17.7   (bombo sin bajo)
+    33-44    12  pleno
+    45-48     4  BAJON de cuatro compases (se va el bajo, el bombo queda)
+    49-64    16  pleno
+    65-80    16  bajada (se van los dos)
+    81-96    16  pleno
+    97-136   40  BREAKDOWN: graves -23.8 y MEDIOS -19.7
+   137-184   48  DROP: graves -9.6 y medios -20.9
+   185-192    8  bajon
+   193-200    8  bajada
+   201-228   28  salida con groove
+
+Dos cosas que ninguna version anterior tenia: los bajones de CUATRO compases
+adentro del pleno (rompen sin vaciar) y un breakdown donde los medios estan
+MAS FUERTES que en el drop.
+
+Y una trampa: el fragmento de referencia lo elige `_mejor_momento` por pico de
+energia, y en este tema el pico cae en un GROOVE, no en el drop. Verificar
+siempre en que seccion cae el fragmento antes de usar sus numeros.

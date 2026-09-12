@@ -9,6 +9,52 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-12 — la forma de Interlocutor, medida por bandas y copiada entera
+
+Pedido: *"esta a destiempo y parece un ringtone, no tiene sentido el tema —
+fijate Interlocutor de Kevin Van Reeken y saca instrumentos, formas y
+estructura"*.
+
+**Primero, una correccion que invalida dos dias de numeros.** Los valores de
+referencia de Interlocutor salian del segundo 283 = compas 146, que medida la
+estructura cae en un GROOVE, no en el drop (137-184). `_mejor_momento` elige
+por pico de energia y en este tema el groove pega tanto como el drop. Todas
+las comparaciones de densidad, sidechain y ancho estaban contra la seccion
+equivocada.
+
+**La forma real, leida por nivel de graves compas por compas** (el clasificador
+se equivoca en las partes fuertes porque el detector de bombo se satura):
+intro de 32 sin bajo, pleno, un BAJON DE CUATRO COMPASES adentro del pleno,
+pleno, bajada de 16, pleno, BREAKDOWN de 40, DROP de 48, bajon, bajada, salida
+de 28. Escrita en `FORMA` con once partes y un `_parte` que arma por TIPO
+(groove / pleno / bajon / bajada / breakdown / drop / salida_dj) en vez de
+tener el armado copiado a mano en cada parte.
+
+**El hallazgo que explica cinco quejas seguidas.** En el breakdown de
+Interlocutor los MEDIOS estan mas fuertes que en el drop: -19.7 contra -20.9
+dBFS. En el boceto bajaban 4.4 dB. Un breakdown no es "lo mismo con menos": se
+va el grave y la armonia ocupa su lugar. Se escribio `_acordes_abiertos` —la
+triada sostenida una octava arriba, atada, que suena el 100% del tiempo contra
+el 28% de los golpes cortos— y vive solo en el breakdown. Medido despues:
+medios-graves paso de -2.5 a +6.6 (referencia +4.1).
+
+**Los agudos iban 7.5 dB abajo** respecto del grave (-22.4 contra -14.9). Hats,
+metales y splash con +15 dB de Utility: quedo en -17.9.
+
+**Dos bugs propios.** `08_anchos.mid` y `17_subkick.mid` mapeaban los dos a la
+pista 11: los acordes abiertos le cambiaron el instrumento al subkick y en los
+plenos el subkick sonaba a pad. Los acordes abiertos tienen pista propia (19).
+Y `cargar_instrumento` sobre una pista cuyo rack tiene algo seleccionado adentro
+carga el efecto DENTRO del rack: no aparece en `dispositivos()` y no suena. Se
+resuelve borrando la cadena y cargando instrumento primero, efectos despues.
+
+**Tabla contra el drop real de Interlocutor:** 9 de 20 dentro. Quedan afuera
+melodia ataques (8.7 contra 2.1 — la atmosfera ataca 4.25 veces por compas sin
+pump, es el LFO del propio preset), sidechain del bajo (-10.9 contra -16.7),
+ancho del bajo (0.02 contra 0.27) y el clap.
+
+---
+
 ## 2026-09-12 — la energía dejó de ser BPM disfrazado
 
 Pedido: *"mejorar el orden de los sets armados, se hizo mucho lío"*, *"mucha

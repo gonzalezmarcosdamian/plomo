@@ -1847,35 +1847,53 @@ def _metales(bpm: float, h: Humano) -> Pista:
 # la zona por donde se mezcla. Un tema que arranca con la melodia puesta no se
 # puede pinchar arriba de otro.
 FORMA = [
-    # (parte,      compas de entrada, largo)
-    ("intro",           0,  32),   # groove de DJ: bajo, bateria y piso
-    ("tema",           32,  32),   # entra la armonia y el gancho
-    ("subida1",        64,  16),   # el redoble
-    ("drop1",          80,  32),   # todo
-    # La bajada era de 32 y el DJ la escucho como "larguisima y muy
-    # silenciosa": dieciseis, y lo que se le saca se lo lleva el segundo drop,
-    # que pasa a 48. Es literalmente "mas de peak". El total sigue en 240.
-    # Medido en Vuarambon con transicion.py: Estigia hace un bajon de 3-4
-    # compases y vuelve a pleno; Lake Of Fire baja gradual sin llegar nunca a
-    # silencio; Stamina, Zenith y Prodiga NO tienen bajada despues del drop.
-    # Para "mas de peak" la bajada es un bajon de ocho, con el groove intacto,
-    # y el drop 2 se lleva el resto: 56 compases.
-    ("bajada",        112,   8),   # se cae el bombo: un bajon, no un breakdown
-    ("subida2",       120,  16),   # el redoble otra vez, mas fuerte
-    ("drop2",         136,  56),   # el mas grande del tema, y el mas largo
-    ("salida",        192,  16),   # todo mas la linea larga
-    ("salida_dj",     208,  32),   # groove para mezclar de salida
+    # (parte, compas de entrada, largo, tipo)
+    #
+    # Copiada de "Tali Muss - Interlocutor (Kebin Van Reeken Extended Remix)",
+    # medida compas por compas por nivel de graves (no por el clasificador, que
+    # se equivoca en las partes fuertes porque el detector de bombo se satura):
+    #
+    #     1-32    32  intro, graves -17.7   (bombo sin bajo)
+    #    33-44    12  pleno,  graves  -9.8
+    #    45-48     4  BAJON,  graves -16.6  (se va el bajo, el bombo queda)
+    #    49-64    16  pleno
+    #    65-80    16  bajada, graves -25.5  (se van los dos)
+    #    81-96    16  pleno
+    #    97-136   40  BREAKDOWN, graves -23.8 y MEDIOS -19.7
+    #   137-184   48  DROP,   graves  -9.6  y medios -20.9
+    #   185-192    8  bajon
+    #   193-200    8  bajada
+    #   201-228   28  salida con groove
+    #
+    # Lo que cambia todo: en el breakdown los MEDIOS estan MAS FUERTES que en
+    # el drop (-19.7 contra -20.9). No es un vaciado — se va el grave y lo
+    # melodico crece y se lleva el tema. Todas las versiones anteriores hacian
+    # lo contrario y por eso cada una sono "silenciosa", "brusca" o "se muere".
+    #
+    # Y los bajones de CUATRO compases adentro del pleno: rompen la monotonia
+    # sin vaciar nada. Es lo que le faltaba a los treinta y dos compases planos.
+    ("intro",       0,  32, "groove"),
+    ("pleno1",     32,  16, "pleno"),
+    ("bajon1",     48,   4, "bajon"),
+    ("pleno2",     52,  12, "pleno"),
+    ("bajada",     64,  16, "bajada"),
+    ("pleno3",     80,  16, "pleno"),
+    ("breakdown",  96,  40, "breakdown"),
+    ("drop",      136,  48, "drop"),
+    ("bajon2",    184,   8, "bajon"),
+    ("salida",    192,  16, "pleno"),
+    ("salida_dj", 208,  32, "salida_dj"),
 ]
+TIPO = {n: t for n, _, _, t in FORMA}
 
-# Cuanto pega cada parte. Es el arco del tema en una sola tabla, y por eso esta
-# separado de las capas: se puede discutir el arco sin tocar el arreglo.
-# El primer drop no llega al techo. Es la unica forma de que el segundo
-# tenga a donde llegar, y 0.93 contra 1.0 son ocho puntos de velocidad en
-# cada golpe: se escucha como que el segundo pega mas, no como que el
-# primero esta flojo.
-INTENSIDAD = {"intro": 0.70, "tema": 0.86, "subida1": 0.90, "drop1": 0.93,
-              "bajada": 1.0, "subida2": 0.96, "drop2": 1.0, "salida": 1.0,
-              "salida_dj": 0.78}
+# Cuanto pega cada parte. El breakdown va a 1.0 a proposito: su material es
+# menos, pero lo que queda suena FUERTE — es la unica forma de que los medios
+# terminen por encima de los del drop, como en la referencia.
+INTENSIDAD = {"intro": 0.72, "pleno1": 0.88, "bajon1": 0.88, "pleno2": 0.92,
+              "bajada": 0.90, "pleno3": 0.95, "breakdown": 1.0, "drop": 1.0,
+              "bajon2": 0.95, "salida": 0.98, "salida_dj": 0.80}
+
+
 
 
 def _hats_ya_hechos(fuera: list, bpm: float) -> list:
@@ -1894,148 +1912,150 @@ def _separar_hats(base: list, bpm: float) -> list:
     return base
 
 
+def _acordes_abiertos(bpm: float, tonica: int, escala: list[int],
+                      h: Humano) -> Pista:
+    """La triada SOSTENIDA y una octava arriba. Solo para el breakdown.
+
+    Medido en Interlocutor: en el breakdown los MEDIOS estan mas fuertes que en
+    el drop (-19.7 contra -20.9 dBFS), y en el boceto estaban 4.4 dB mas abajo.
+    Esos 5.6 dB de diferencia son "se muere el drop" y "mucho silencio".
+
+    No se arregla subiendo un fader: en el breakdown se va el bombo, que es lo
+    que llena los medios en el drop, asi que hace falta material melodico que
+    ocupe ese lugar. Los golpes cortos de `_acordes` no lo hacen —suenan el 28%
+    del tiempo—; una triada sostenida si, porque suena el 100%.
+
+    Es tambien lo que un breakdown ES: el momento en que la armonia se abre y
+    se lleva el tema. Aparece aca y en ningun otro lado, asi que ademas marca
+    la seccion.
+    """
+    p = Pista("Acordes abiertos", bpm, canal=0)
+    bloques = COMPASES // 4
+    acordes = []
+    for b in range(bloques):
+        acordes.append(_voces(tonica, escala, PROGRESION[b],
+                              acordes[-1] if acordes else None))
+    # atadas, como la atmosfera: re-atacar la misma altura solapada la APAGA
+    sonando: dict[int, float] = {}
+    for b, notas in enumerate(acordes):
+        for alt in [a + 12 for a in notas]:
+            if alt not in sonando:
+                sonando[alt] = b * 4.0
+        for alt in list(sonando):
+            if alt not in [a + 12 for a in notas]:
+                ini = sonando.pop(alt)
+                p.nota(0, ini * 4, alt, (b * 4 - ini) * 4 - 0.05,
+                       h.vel("acordes", int(ini), 0.0, 72))
+    for alt, ini in sonando.items():
+        p.nota(0, ini * 4, alt, (COMPASES - ini) * 4 - 0.05,
+               h.vel("acordes", int(ini), 0.0, 72))
+    return p
+
+
 def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
            semilla: int) -> list[tuple[str, Pista]]:
-    """Las pistas de una parte, ya recortadas a su largo.
+    """Las pistas de una parte, segun su TIPO, ya recortadas a su largo.
 
-    Las partes de dieciseis compases se generan de treinta y dos y se recortan.
-    Es a proposito: una subida son los ultimos dieciseis compases de una seccion
-    con redoble, no una seccion distinta que casualmente tiene un redoble.
-    Generarla aparte la desincronizaria del material que viene sonando.
+    Cinco tipos, y lo unico que cambia entre ellos es que grupos suenan:
+
+        groove     bombo y percusion, sin bajo ni melodia   (la intro de DJ)
+        pleno      todo
+        bajon      se va el BAJO, el bombo queda            (4 u 8 compases)
+        bajada     se van el bombo y el bajo
+        breakdown  igual que bajada, pero lo melodico CRECE
+        drop       todo, al maximo
+        salida_dj  todo menos la melodia
+
+    El tipo decide los grupos; la parte decide el largo y la intensidad. Antes
+    cada parte tenia su propio armado copiado a mano y por eso una condicion
+    vieja podia dejar una capa muda en una sola seccion sin que se notara.
     """
+    tipo = TIPO[nombre]
     h = Humano(semilla, INTENSIDAD[nombre])
-    # El bajo sostenido del techno se fue: el pedido paso a "mas Vuarambon y
-    # mas de peak", y Lake Of Fire mide 7.06 ataques por compas con 96% de
-    # cobertura — la celula saltarina de siempre, no una nota tenida. Se
-    # mantiene lo que si es de peak: la bateria densa, el pump, las capas.
-    bajo = _bajo
+    bajo = _bajo_tecno if TECNO else _bajo
     gancho = _gancho_tecno if TECNO else _gancho
-    pleno = nombre != "intro"
-    climax = nombre in ("drop1", "drop2", "salida")
-    tension = nombre in ("subida1", "subida2")
-    grande = nombre in ("drop2", "salida")
+    largo = {n: l for n, _, l, _ in FORMA}[nombre]
 
-    if nombre == "bajada":
-        # No es una bajada: es TENSION. El DJ, escuchando el bajon: "mucho
-        # silencio"; y despues la definicion entera: "el ambiente no lo sacaria,
-        # el groove lo mantendria, haria tension, y luego liberaria todo". Eso
-        # es exactamente lo que hacen Stamina, Zenith y Prodiga (Vuarambon), que
-        # no tienen bajada despues del drop.
-        #
-        # Se queda TODO —bombo, percusion, hats, metales, textura, armonia,
-        # gancho— y se retira una sola cosa: el grupo de bajo. Sin graves el
-        # groove sigue pero el cuerpo pide que vuelva, y ese pedido es la
-        # tension. Encima, el riser creciendo los ocho compases. La subida 2
-        # trae el redoble y el drop 2 libera todo junto.
-        base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
-                ("02_acordes", _acordes(bpm, tonica, escala, h, True, False)),
-                ("05_gancho", gancho(bpm, tonica, escala, h, True, False, False)
-                 if not TECNO else gancho(bpm, tonica, escala, h, False)),
-                ("04_bateria", _bateria(bpm, h, True, True, False)),
-                ("10_repiques", _repiques(bpm, h)),
-                ("18_metales", _metales(bpm, h)),
-                ("16_textura", _textura(bpm))]
-        if not TECNO:
-            base.append(("08_anchos", _anchos(bpm, tonica, escala, h, False)))
-        # el riser sobre los ocho compases de la parte, no sobre los 32
-        largo_parte = {n: l for n, _, l in FORMA}[nombre]
-        riser = Pista("Riser", bpm, canal=0)
-        for compas, vel in ((0, 70), (largo_parte // 2, 86), (largo_parte - 2, 100), (largo_parte - 1, 116)):
-            riser.nota(compas, 0.0, SPLASH, 4.0, vel)
-        base.append(("14_riser", riser))
-        base = _separar_hats(base, bpm)
-        return [(n + ".mid", pi) for n, pi in base]
-
-    if nombre in ("intro", "salida_dj"):
-        # Groove de DJ: la zona por donde se mezcla. Bajo, bateria y el piso, y
-        # nada arriba. La salida lleva ademas los repiques, porque a esa altura
-        # la percusion ya es parte del tema y sacarla suena a otra cancion.
-        base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
-                ("03_bajo", bajo(bpm, tonica, escala, h, pleno, False, False)
-                 if not TECNO else bajo(bpm, tonica, escala, h, False)),
-                ("04_bateria", _bateria(bpm, h, pleno, False, False))]
-        if nombre == "salida_dj":
-            base.append(("10_repiques", _repiques(bpm, h)))
-        if TECNO:
-            base.append(("16_textura", _textura(bpm)))
-            base.append(("15_bajo2", _bajo_medio(bpm, tonica, escala, h)))
-            if nombre == "salida_dj":
-                base += [("17_subkick", _subkick(bpm, h)),
-                         ("18_metales", _metales(bpm, h))]
-        return [(n + ".mid", pi) for n, pi in _separar_hats(base, bpm)]
+    hay_bombo = tipo in ("groove", "pleno", "bajon", "drop", "salida_dj")
+    hay_bajo = tipo in ("pleno", "drop", "salida_dj")
+    # En el bajon los MEDIOS de la referencia estan igual que en el pleno
+    # (-23.0 contra -22.7): se va el bajo y nada mas. La melodia sigue.
+    hay_melodia = tipo in ("pleno", "bajon", "bajada", "breakdown", "drop")
+    grande = tipo in ("drop", "breakdown")
 
     base = [("01_atmosfera", _atmosfera(bpm, tonica, escala)),
-            ("02_acordes", _acordes(bpm, tonica, escala, h, pleno, tension)),
-            ("03_bajo", bajo(bpm, tonica, escala, h, pleno, climax, tension)
-             if not TECNO else bajo(bpm, tonica, escala, h, climax)),
-            ("04_bateria", _bateria(bpm, h, pleno, climax, tension)),
-            ("05_gancho", gancho(bpm, tonica, escala, h, pleno, climax, tension)
-             if not TECNO else gancho(bpm, tonica, escala, h, climax))]
-    if not TECNO:
-        # Los golpes anchos son de piano y el piano no es de este genero. En
-        # techno lo de arriba se sostiene; los acordes golpeados en la octava 5
-        # son justo lo contrario.
-        base.append(("08_anchos", _anchos(bpm, tonica, escala, h, climax)))
-    if TECNO:
-        # La textura esta SIEMPRE. Es lo unico del tema que no depende de la
-        # seccion, porque el aire de una sala tampoco.
-        base.append(("16_textura", _textura(bpm)))
-        base.append(("15_bajo2", _bajo_medio(bpm, tonica, escala, h, climax)))
-        if pleno:
-            base += [("17_subkick", _subkick(bpm, h)),
-                     ("18_metales", _metales(bpm, h))]
-    if climax:
-        base += [("09_sub", _sub(bpm, tonica, escala)),
-                 ("10_repiques", _repiques(bpm, h)),
-                 ("11_splash", _splash(bpm, h))]
+            ("16_textura", _textura(bpm))]
+
+    # --- la bateria y su percusion: en todas las partes salvo que no haya bombo
+    bat = _bateria(bpm, h, True, tipo == "drop", False, sin_bombo=not hay_bombo)
+    base.append(("04_bateria", bat))
+    base.append(("10_repiques", _repiques(bpm, h)))
+    base.append(("18_metales", _metales(bpm, h)))
+    if hay_bombo:
+        base.append(("17_subkick", _subkick(bpm, h)))
+
+    # --- el grupo de bajo
+    if hay_bajo:
+        g = bajo(bpm, tonica, escala, h, True, tipo == "drop", False) \
+            if not TECNO else bajo(bpm, tonica, escala, h, tipo == "drop")
+        base.append(("03_bajo", g))
+        base.append(("15_bajo2", _bajo_medio(bpm, tonica, escala, h, tipo == "drop")))
+        base.append(("09_sub", _sub(bpm, tonica, escala)))
+
+    # --- lo melodico
+    if hay_melodia:
+        base.append(("02_acordes", _acordes(bpm, tonica, escala, h, True, False)))
+        gm = gancho(bpm, tonica, escala, h, True, grande, False) \
+            if not TECNO else gancho(bpm, tonica, escala, h, grande)
+        base.append(("05_gancho", gm))
         if not TECNO:
-            # Un arpegio de 13.6 ataques por compas es lo contrario de techno
-            # por bien escrito que este. La referencia mide 0.81.
-            base.append(("06_arpegio", _arpegio(bpm, tonica, escala, h)))
-    if grande and not TECNO:
-        base.append(("13_lead", _lead(bpm, tonica, escala, h)))
-    if tension:
+            base.append(("08_anchos", _anchos(bpm, tonica, escala, h, grande)))
+    elif tipo == "salida_dj":
+        base.append(("02_acordes", _acordes(bpm, tonica, escala, h, True, False)))
+
+    # --- los golpes
+    if tipo == "drop":
+        base.append(("11_splash", _splash(bpm, h)))
+    if tipo == "breakdown":
+        base.append(("08_anchos", _acordes_abiertos(bpm, tonica, escala, h)))
+        # el riser crece los ultimos ocho compases del breakdown y desemboca
+        # en el drop: es lo unico que anuncia el cambio
+        riser = Pista("Riser", bpm, canal=0)
+        for k, vel in ((largo - 8, 66), (largo - 4, 84), (largo - 2, 100), (largo - 1, 118)):
+            riser.nota(k % COMPASES, 0.0, SPLASH, 4.0, vel)
+        base.append(("14_riser", _podar(riser, 0, COMPASES)))
         base.append(("12_reversa", _reversa(bpm, [COMPASES - 1])))
-        base.append(("14_riser", _riser(bpm)))
-        # La subida entera crece: al empezar suena al 72% y llega al 100%.
-        # 0.82 y no 0.72: con 0.72 la subida arrancaba MAS BAJO que la
-        # seccion anterior —la bajada terminaba en 12.4 de energia sostenida y
-        # la subida empezaba en 10.6—, o sea que el compas donde vuelve el bombo
-        # era un bajon. Una subida puede aflojar un poco para tomar carrera,
-        # pero no puede empezar abajo de donde venia.
-        base = [(n, _rampa(pi, 0.82, 1.0)) for n, pi in base]
-    elif grande:
-        base.append(("12_reversa", _reversa(bpm, [COMPASES // 2 - 1])))
-    if nombre == "salida" and not TECNO:
-        base.append(("07_cierre", _cierre(bpm, tonica, h)))
 
     base = _separar_hats(base, bpm)
-    largo = {n: l for n, _, l in FORMA}[nombre]
+
+    # --- el largo
     if largo == COMPASES:
         return [(n + ".mid", pi) for n, pi in base]
-    if largo > COMPASES:
-        # Una parte mas larga que lo que escriben los generadores (el drop 2
-        # de 48) se extiende repitiendo su SEGUNDA mitad, que es la mas llena.
-        # Recortar "los ultimos 48 de 32" daba una ventana negativa que corria
-        # todo dieciseis compases y dejaba los primeros dieciseis vacios: el
-        # render del drop medio 13 compases de silencio digital y se busco el
-        # error en Live durante media hora.
-        fuera = []
-        for n, pi in base:
-            cola = _correr(_podar(pi, COMPASES - (largo - COMPASES), COMPASES), COMPASES)
-            pi._eventos = pi._eventos + cola._eventos
-            fuera.append((n + ".mid", pi))
-        return fuera
-    # Las de dieciseis compases se quedan con la SEGUNDA mitad: en una subida es
-    # donde esta el redoble, y en la salida es la mitad mas pesada del climax.
-    return [(n + ".mid", _podar(pi, COMPASES - largo, COMPASES)) for n, pi in base]
+    if largo < COMPASES:
+        return [(n + ".mid", _podar(pi, COMPASES - largo, COMPASES)) for n, pi in base]
+    # Mas larga que lo que escriben los generadores: se extiende repitiendo su
+    # segunda mitad tantas veces como haga falta.
+    fuera = []
+    for n, pi in base:
+        falta = largo - COMPASES
+        eventos = list(pi._eventos)
+        k = 0
+        while falta > 0:
+            trozo = min(falta, COMPASES)
+            cola = _correr(_podar(pi, COMPASES - trozo, COMPASES), COMPASES + k)
+            eventos += cola._eventos
+            falta -= trozo
+            k += trozo
+        pi._eventos = eventos
+        fuera.append((n + ".mid", pi))
+    return fuera
 
 
 def escribir_tema(bpm: float, tonica: int, escala: list[int], semilla: int,
                   destino: Path) -> list[tuple[str, int, int, int]]:
     """Escribe las nueve partes, cada una en su carpeta."""
     mapa = []
-    for nombre, compas, largo in FORMA:
+    for nombre, compas, largo, _ in FORMA:
         d = destino / nombre
         d.mkdir(parents=True, exist_ok=True)
         for viejo in d.glob("*.mid"):

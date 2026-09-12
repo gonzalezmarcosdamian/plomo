@@ -463,6 +463,48 @@ mismo instrumento en los dos lados antes de tocar la grilla. Y leer los
 números **relativos** al bombo: el absoluto depende de dónde el detector
 puso el cero.
 
+## En un breakdown los medios SUBEN; el que baja es el grave
+
+**Qué pasó.** Cinco versiones de la misma sección, cada una rechazada:
+"larguísimo y muy silencioso", "re brusco", "sigue muy brusco", "mucho
+silencio", "se muere el drop". Cada vez se midió, cada vez se corrigió la
+pendiente o el largo, y cada vez estuvo mal — porque se estaba midiendo la
+variable equivocada.
+
+Al medir Interlocutor compás por compás por **bandas** apareció el dato: en su
+breakdown los graves caen 14 dB respecto del drop, y los medios **suben 1.2
+dB** (−19.7 contra −20.9 dBFS). El breakdown es la sección con MÁS medios de
+todo el tema. En el boceto los medios bajaban 4.4 dB. Esos 5.6 dB de
+diferencia eran las cinco quejas.
+
+**Por qué.** Un breakdown no es "lo mismo con menos". Es un cambio de
+registro: se va el grave —que es lo que en el drop llena los medios, porque el
+bombo tiene cuerpo— y la armonía tiene que ocupar ese lugar. Si no lo ocupa
+nadie, el oído registra un agujero, y da igual cuántos compases dure o cuán
+suave sea la pendiente.
+
+**Cómo se aplica.** Medir las tres bandas por sección, no el nivel total, y
+comparar cada sección contra el DROP del mismo tema (no contra el compás
+anterior). En un breakdown: graves −14 dB, medios **+1**, agudos ±1. Y para
+que los medios suban hace falta material nuevo que suene el 100% del tiempo —
+golpes cortos de acorde cubren el 28% y no alcanzan; una tríada sostenida sí.
+
+## Comparar contra la sección equivocada invalida todas las cifras
+
+**Qué pasó.** Durante dos días los "números de referencia" de Interlocutor
+salieron del segundo 283, que es el compás 146. Medida la estructura, el
+compás 146 cae en un **groove**, no en el drop — el drop es 137-184 en la
+medición por bandas, y 153-192 según el clasificador. Todas las comparaciones
+de densidad, sidechain y ancho estaban contra la sección equivocada.
+
+**Por qué.** El fragmento lo elegía `_mejor_momento`, que busca el pico de
+energía. En un tema donde el groove está tan fuerte como el drop, ese pico no
+distingue. Nadie lo verificó porque el número salía plausible.
+
+**Cómo se aplica.** Antes de usar un fragmento como referencia, mirar en qué
+sección cae: `estructura.py` o el mapa por bandas. Y anotar el compás junto al
+segundo, que es lo que permite darse cuenta.
+
 ## La tensión no es silencio: se retira una sola cosa y el resto pide que vuelva
 
 **Qué pasó.** Cuatro versiones de la misma sección en una tarde. Bajada de 32

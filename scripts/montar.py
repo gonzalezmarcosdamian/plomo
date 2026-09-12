@@ -42,7 +42,7 @@ from plomo.midi import leer  # noqa: E402
 PISTAS = {
     "01_atmosfera.mid": 4,  "02_acordes.mid": 5,   "03_bajo.mid": 6,
     "04_bateria.mid": 7,    "05_gancho.mid": 8,    "06_arpegio.mid": 9,
-    "07_cierre.mid": 10,    "08_anchos.mid": 11,   "09_sub.mid": 12,
+    "07_cierre.mid": 10,    "09_sub.mid": 12,
     "10_repiques.mid": 13,  "11_splash.mid": 14,   "12_reversa.mid": 15,
     "13_lead.mid": 16,   "14_riser.mid": 17,
     # Las capas de espesor van a las pistas que la v2 dejaba vacias. No hay
@@ -51,6 +51,12 @@ PISTAS = {
     "15_bajo2.mid": 9,   "16_textura.mid": 10,
     "17_subkick.mid": 11, "18_metales.mid": 16,
     "19_hats.mid": 18,
+    # Los acordes abiertos del breakdown tienen pista PROPIA. Compartian la 11
+    # con el subkick —los numeros del nombre son el orden de la capa, no la
+    # pista— y como en el breakdown no hay subkick el choque no se veia: lo que
+    # se veia era que el subkick de los plenos sonaba a pad, porque los acordes
+    # le habian cambiado el instrumento a su pista.
+    "08_anchos.mid": 19,
 }
 
 # El gancho se escribe en la octava 4 y suena una octava mas abajo. Es del
@@ -67,15 +73,15 @@ TRANSPONE = {"05_gancho.mid": -12}
 # Noise Charred, 50 FX Dist Streamed, 51 Ride RKTD1. Sondeado nota por nota con
 # un clip de sesion (render.py, sesion=True). Sin remapear, el tick del rim (37)
 # disparaba un SEGUNDO bombo y los toms (47/50) un bongo y un ruido.
-AG = {37: 44, 47: 40, 50: 45, 49: 48, 46: 46, 42: 42, 39: 39, 36: 36, 51: 51}
+AG = {37: 44, 47: 40, 50: 45, 49: 48, 46: 44, 42: 42, 39: 39, 36: 36, 51: 51}   # 46 -> 44: el 46 del AG es un hat con ECO adentro del sample, y se sentia a destiempo
 REMAPA = {"04_bateria.mid": AG, "19_hats.mid": AG, "18_metales.mid": AG}
 
 
 def montar(carpeta: Path, live: Live) -> int:
-    total = max(c + l for _, c, l in FORMA)
+    total = max(c + l for _, c, l, _ in FORMA)
 
     usadas = sorted({PISTAS[f.name]
-                     for nom, _, _ in FORMA
+                     for nom, _, _, _ in FORMA
                      for f in (carpeta / nom).glob("*.mid")
                      if f.name in PISTAS})
     print(f"  borrando el arreglo de {len(usadas)} pistas")
@@ -85,7 +91,7 @@ def montar(carpeta: Path, live: Live) -> int:
         live.preguntar("/live/arrangement/duplicate", t, 0, 0.0)
         time.sleep(0.25)
 
-    for nombre, compas, largo in FORMA:
+    for nombre, compas, largo, _ in FORMA:
         d = carpeta / nombre
         capas = []
         for f in sorted(d.glob("*.mid")):

@@ -344,7 +344,7 @@
               "valor": 0.0
             },
             "Output": {
-              "valor": 0.0
+              "valor": -0.085857
             },
             "Mute": {
               "valor": 0.0
@@ -660,10 +660,10 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.75
+              "valor": 0.8
             },
             "Waveform": {
-              "valor": 3.0
+              "valor": 0.0
             },
             "Invert": {
               "valor": 0.0
@@ -747,7 +747,7 @@
               "valor": 0.0
             },
             "Output": {
-              "valor": 0.0
+              "valor": 0.028429
             },
             "Mute": {
               "valor": 0.0
@@ -1330,7 +1330,7 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.78
+              "valor": 0.95
             },
             "Waveform": {
               "valor": 3.0
@@ -1511,7 +1511,7 @@
     {
       "indice": 8,
       "nombre": "Gancho",
-      "volumen": 0.681,
+      "volumen": 0.82,
       "dispositivos": [
         {
           "nombre": "Sandman Pad",
@@ -1812,10 +1812,10 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.75
+              "valor": 0.8
             },
             "Waveform": {
-              "valor": 3.0
+              "valor": 0.0
             },
             "Invert": {
               "valor": 0.0
@@ -1899,7 +1899,7 @@
               "valor": 0.0
             },
             "Output": {
-              "valor": 0.0
+              "valor": 0.057
             },
             "Mute": {
               "valor": 0.0
@@ -2233,7 +2233,7 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.7
+              "valor": 0.95
             },
             "Waveform": {
               "valor": 3.0
@@ -2630,7 +2630,7 @@
     {
       "indice": 11,
       "nombre": "Subkick",
-      "volumen": 0.6128,
+      "volumen": 0.61,
       "dispositivos": [
         {
           "nombre": "Super Sub Drone Bass",
@@ -3069,7 +3069,7 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.62
+              "valor": 0.95
             },
             "Waveform": {
               "valor": 3.0
@@ -3096,7 +3096,7 @@
               "valor": 0.0
             },
             "Offset": {
-              "valor": 0.75
+              "valor": 0.0
             },
             "Stereo Mode": {
               "valor": 0.0
@@ -3487,7 +3487,7 @@
               "valor": 1.0
             },
             "Amount": {
-              "valor": 0.78
+              "valor": 0.95
             },
             "Waveform": {
               "valor": 3.0
@@ -3797,7 +3797,7 @@
     {
       "indice": 14,
       "nombre": "Splash",
-      "volumen": 0.5,
+      "volumen": 0.62,
       "dispositivos": [
         {
           "nombre": "Cymbal 808 Full",
@@ -4239,6 +4239,48 @@
               "valor": 0.55
             }
           }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.0
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.427143
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
         }
       ]
     },
@@ -4643,7 +4685,7 @@
               "valor": 0.0
             },
             "Output": {
-              "valor": 0.0
+              "valor": 0.427143
             },
             "Mute": {
               "valor": 0.0
@@ -5341,7 +5383,7 @@
               "valor": 0.0
             },
             "Output": {
-              "valor": 0.0
+              "valor": 0.427143
             },
             "Mute": {
               "valor": 0.0
@@ -5492,6 +5534,370 @@
             },
             "S/C EQ Q": {
               "valor": 0.408567
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.0
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.0
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.0
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 19,
+      "nombre": "Acordes abiertos",
+      "volumen": 0.85,
+      "dispositivos": [
+        {
+          "nombre": "Sandman Pad",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Bright": {
+              "valor": 0.0
+            },
+            "Tone": {
+              "valor": 75.0
+            },
+            "Color": {
+              "valor": 60.476189
+            },
+            "Drop": {
+              "valor": 0.0
+            },
+            "Attack": {
+              "valor": 0.0
+            },
+            "Release": {
+              "valor": 0.0
+            },
+            "Reverb": {
+              "valor": 59.0
+            },
+            "Volume": {
+              "valor": 107.950005
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            },
+            "Chain Selector": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Utility",
+          "clase": "StereoGain",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Left Inv": {
+              "valor": 0.0
+            },
+            "Right Inv": {
+              "valor": 0.0
+            },
+            "Channel Mode": {
+              "valor": 1.0
+            },
+            "Stereo Width": {
+              "valor": 1.0
+            },
+            "Mono": {
+              "valor": 0.0
+            },
+            "Bass Mono": {
+              "valor": 0.0
+            },
+            "Bass Freq": {
+              "valor": 0.380211
+            },
+            "Balance": {
+              "valor": 0.0
+            },
+            "Output": {
+              "valor": 0.341429
+            },
+            "Mute": {
+              "valor": 0.0
+            },
+            "DC Filter": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Reverb",
+          "clase": "Reverb",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Predelay": {
+              "valor": 0.258977
+            },
+            "In Lo Cut On": {
+              "valor": 0.0
+            },
+            "In Hi Cut On": {
+              "valor": 1.0
+            },
+            "Input Freq": {
+              "valor": 0.477294
+            },
+            "Input Width": {
+              "valor": 0.629412
+            },
+            "ER Spin On": {
+              "valor": 1.0
+            },
+            "ER Spin Rate": {
+              "valor": 0.485693
+            },
+            "ER Spin Amount": {
+              "valor": 0.654476
+            },
+            "ER Shape": {
+              "valor": 0.5
+            },
+            "Diff. Hi On": {
+              "valor": 1.0
+            },
+            "Diff. Hi Type": {
+              "valor": 0.0
+            },
+            "Diff. Hi Freq": {
+              "valor": 0.810234
+            },
+            "HiShelf Gain": {
+              "valor": 0.625
+            },
+            "Diff. Lo On": {
+              "valor": 0.0
+            },
+            "Diff. Lo Freq": {
+              "valor": 0.2272
+            },
+            "LowShelf Gain": {
+              "valor": 0.6875
+            },
+            "Chorus On": {
+              "valor": 1.0
+            },
+            "Chorus Rate": {
+              "valor": 0.103693
+            },
+            "Chorus Amount": {
+              "valor": 0.002506
+            },
+            "Decay Time": {
+              "valor": 0.314135
+            },
+            "Diffusion": {
+              "valor": 0.624609
+            },
+            "Scale": {
+              "valor": 0.368421
+            },
+            "Freeze On": {
+              "valor": 0.0
+            },
+            "Flat On": {
+              "valor": 1.0
+            },
+            "Cut On": {
+              "valor": 1.0
+            },
+            "Room Size": {
+              "valor": 0.791515
+            },
+            "Size Smoothing": {
+              "valor": 2.0
+            },
+            "Stereo Image": {
+              "valor": 0.833333
+            },
+            "Density": {
+              "valor": 1.0
+            },
+            "Reflect Level": {
+              "valor": 0.493563
+            },
+            "Diffuse Level": {
+              "valor": 0.493563
+            },
+            "Dry/Wet": {
+              "valor": 0.55
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.8
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 5.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
             }
           }
         }
