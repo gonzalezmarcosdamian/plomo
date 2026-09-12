@@ -2,8 +2,15 @@
 
 La doctrina: el disco guarda, no organiza. Los archivos viven en su carpeta por
 fecha de ingreso y no se mueven nunca — asi ningun path de Rekordbox se rompe.
-La organizacion vive aca: un arbol descartable por rol de set, energia, genero,
-key, BPM y sello, hecho con hardlinks que no ocupan espacio ni duplican nada.
+La organizacion vive aca: un arbol descartable hecho con hardlinks que no ocupan
+espacio ni duplican nada. Ocho vistas — rol de set, energia, genero, key, BPM,
+sello, mas dos que no salen de ningun tag:
+
+  Lo que tocan los de referencia — cruza la coleccion contra los 40 setlists de
+      data/setlists/ y agrupa por DJ. Contesta "de lo que tengo, que toca
+      Cattaneo" sin depender de la memoria.
+  Sin usar en ningun set — los que nunca entraron a un set, agrupados por rol,
+      que es lo que hace falta para decidir donde meterlos.
 
 Se puede borrar entero y regenerar sin consecuencias. Eso es lo que lo hace util:
 cambiar de opinion sobre como ver la coleccion no cuesta nada.
@@ -20,6 +27,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import shutil
@@ -33,6 +41,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 import sqlcipher3  # noqa: E402
 
 from plomo import config  # noqa: E402
+from plomo.matching import clave  # noqa: E402
 
 RAIZ_VISTAS = Path(os.getenv("VIEWS_ROOT", r"C:\Users\gonza\Music\Vistas"))
 MARCA = ".plomo-vistas"  # sin este archivo el script se niega a borrar la raiz
@@ -48,6 +57,36 @@ ROLES = [
     (6.5, 7.5, "4 Peak"),
     (7.5, 99.0, "5 Detonante"),
 ]
+
+
+# Los generos vienen del tag de Beatport y son 47 cadenas distintas para unas
+# nueve cosas reales: "Melodic House", "Melodic House & Techno", "Melodic House /
+# Techno" y "Melodic House & Techno |" son lo mismo, y hay un "Deep Hose" con el
+# typo incluido. Navegar 47 carpetas no es navegar. Se mapea a familias; lo que
+# no matchea cae en "9 Otros" y aparece en el reporte para poder sumarlo.
+FAMILIAS = [
+    ("1 Progressive House", ("progressive house", "progressive")),
+    ("2 Melodic House & Techno", ("melodic house", "melodic techno", "melodic")),
+    ("3 Organic & Downtempo", ("organic", "downtempo", "ambient", "electronica",
+                               "chill", "balearic")),
+    ("4 Afro House", ("afro",)),
+    ("5 Deep & House", ("deep house", "deep hose", "house", "tech house",
+                        "future house", "bass house", "electro house")),
+    ("6 Techno", ("techno",)),
+    ("7 Indie Dance & Nu Disco", ("indie dance", "nu disco", "disco")),
+    ("8 Trance & Breaks", ("trance", "breaks", "breakbeat", "uk bass",
+                           "drum & bass", "dubstep")),
+]
+
+
+def _familia(genero: str) -> str:
+    g = (genero or "").strip().lower()
+    if not g:
+        return "9 Otros"
+    for nombre, claves in FAMILIAS:
+        if any(k in g for k in claves):
+            return nombre
+    return "9 Otros"
 
 
 def _sano(nombre: str) -> str:
@@ -114,13 +153,66 @@ def _bpm(t: dict) -> str | None:
     return f"{lo}-{lo + 2}"
 
 
+def _cargar_referencia() -> dict[str, set[str]]:
+    """{clave_de_track: {DJs que lo tocaron}} desde data/setlists/.
+
+    Esta vista no existia hasta que el corpus de referencia tuvo 40 setlists.
+    Contesta la pregunta que antes habia que contestar de memoria: "de lo que
+    tengo, que toca Cattaneo". Es la unica vista que no sale de un tag.
+    """
+    carpeta = Path(__file__).resolve().parent.parent / "data" / "setlists"
+    if not carpeta.exists():
+        return {}
+    out: dict[str, set[str]] = {}
+    for f in carpeta.glob("*.json"):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        dj = d.get("dj", "?")
+        for t in d.get("tracks", []):
+            if t.get("es_id"):
+                continue
+            k = clave(t.get("artist", ""), t.get("title", ""))
+            if k:
+                out.setdefault(k, set()).add(dj)
+    return out
+
+
+def _cargar_sin_usar() -> set[str]:
+    """Claves de los tracks que no entraron en ningun set ni se tocaron nunca."""
+    f = Path(__file__).resolve().parent.parent / "data" / "pool.json"
+    if not f.exists():
+        return set()
+    return {clave(t["artist"], t["title"])
+            for t in json.loads(f.read_text(encoding="utf-8")) if not t.get("usado")}
+
+
+REFERENCIA: dict[str, set[str]] = {}
+SIN_USAR: set[str] = set()
+
+
+def _referencia(t: dict) -> str | None:
+    djs = REFERENCIA.get(clave(t["artist"], t["title"]))
+    if not djs:
+        return None
+    # Un track que tocaron varios va en la carpeta del que mas peso tiene para
+    # este proyecto; duplicarlo en cinco carpetas haria la vista ilegible.
+    return _sano(sorted(djs)[0])
+
+
+def _sin_usar(t: dict) -> str | None:
+    if clave(t["artist"], t["title"]) not in SIN_USAR:
+        return None
+    return _rol(t) or "0 Sin energia"
+
+
 VISTAS = {
     "rol": ("Por rol", _rol),
     "energia": ("Por energia", _energia),
-    "genero": ("Por genero", lambda t: _sano(t["genre"]) if t["genre"] else None),
+    "genero": ("Por genero", lambda t: _familia(t["genre"])),
     "key": ("Por key", lambda t: t["key"] if t["key"] != "?" else None),
     "bpm": ("Por BPM", _bpm),
     "sello": ("Por sello", lambda t: _sano(t["label"]) if t["label"] else None),
+    "referencia": ("Lo que tocan los de referencia", _referencia),
+    "sin-usar": ("Sin usar en ningun set", _sin_usar),
 }
 
 
@@ -181,6 +273,12 @@ def limpiar(raiz: Path, dry: bool) -> None:
         shutil.rmtree(hijo) if hijo.is_dir() else hijo.unlink()
 
 
+def _preparar_indices() -> None:
+    global REFERENCIA, SIN_USAR
+    REFERENCIA = _cargar_referencia()
+    SIN_USAR = _cargar_sin_usar()
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry", action="store_true")
@@ -194,6 +292,11 @@ def main() -> None:
     if "onedrive" in str(args.raiz).lower():
         print("AVISO: la raiz esta dentro de OneDrive. OneDrive convierte archivos\n"
               "       en placeholders y trata mal los hardlinks. Conviene otra raiz.\n")
+
+    _preparar_indices()
+    if REFERENCIA:
+        print(f"corpus de referencia: {len(REFERENCIA)} tracks distintos en "
+              f"data/setlists/  |  sin usar en ningun set: {len(SIN_USAR)}")
 
     tracks = cargar_tracks()
     existentes = [t for t in tracks if t["path"].exists()]
