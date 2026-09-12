@@ -1,0 +1,409 @@
+{
+  "dj": "Hernan Cattaneo",
+  "evento": "[Audio/Video HQ] Hernan Cattaneo @ Sunsetstream, Eclipse Edition, Bari",
+  "fecha": "",
+  "fuente": "https://youtu.be/0ovKj1201so",
+  "orden_confiable": true,
+  "n": 39,
+  "n_identificados": 36,
+  "n_huecos_id": 3,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Marsh",
+      "title": "Florence [Anjunadeep]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Draso",
+      "title": "Luminary (Bona Fine Edit) [Souksonic]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "GRIFE",
+      "title": "Life’s Not A Contest [TRYBESof]",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "GRIFE - Life's Not a Contest"
+    },
+    {
+      "pos": 5,
+      "artist": "Pete Lazonby & Fort Romeau",
+      "title": "Sacred Cycles (Fort Romeau Remix)",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Pete Lazonby - Sacred Cycles (Fort Romeau Dub)"
+    },
+    {
+      "pos": 6,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Chymera",
+      "title": "Caprica Burning (Lake People Remix) [Connaisseur Recordings]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Bautista Toniolo",
+      "title": "Embark On Memories",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Umet K",
+      "title": "Mantra Charts [Zebralution ]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Rhye",
+      "title": "Sinful (Alan Schultz Unofficial Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Roman Kandel",
+      "title": "Mahasim [Deepwibe Underground]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Westseven feat Angus Powell",
+      "title": "Go Right Through (Club Mix) [Soul De Anima]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Stevie Wonder",
+      "title": "They Won’t Go When I Go (Sébastien Léger Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Blond:ish & Rowee",
+      "title": "Garden Of 3Den [ABRACADABRA Music]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "BAILE",
+      "title": "Siren",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Baile - Siren"
+    },
+    {
+      "pos": 16,
+      "artist": "Pink Floyd",
+      "title": "Cluster One (Carl OS Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "Efdemin",
+      "title": "Parallaxis (Traumprinz’ Over 2 The End Remix) [Dial]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Moby",
+      "title": "Memory Gospel (Fran Bux Unofficial Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "Marsh",
+      "title": "There For Me [Anjunadeep]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "Sat-Chit Música & Mantras",
+      "title": "Sat-Chit - Solfeggio 8 - Frecuencia Crísti [Sat-Chit Team]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "Marsh & Forerunners",
+      "title": "Carme [Anjunadeep]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "VITE & Hole Box",
+      "title": "Soul Seekers [Tale & Tone]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "Digital Department",
+      "title": "Disconnection",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Digital Department - Disconnection"
+    },
+    {
+      "pos": 24,
+      "artist": "Matter",
+      "title": "Hikikomori [Meanwhile]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "LØC",
+      "title": "Ours (Hermanez Remix) [Akbal Music]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 26,
+      "artist": "Baril",
+      "title": "Lost Again (Antrim Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 27,
+      "artist": "Marino Canal",
+      "title": "Radiance [Siamese]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "Haddadi Von Engst feat Phonic Youth",
+      "title": "I Was Blind (Rodriguez Jr Remix) [You Plus One]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 29,
+      "artist": "Rhythim Is Rhythim",
+      "title": "Icon (Remixed & Reconstructed By Vince Watson) [Transmat]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 30,
+      "artist": "Polynation",
+      "title": "Wildeburg [K7 Records]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 31,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 32,
+      "artist": "Jon Gurd",
+      "title": "Together (Tom Demac Extended mix) [Anjunadeep]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 33,
+      "artist": "Clarian",
+      "title": "Sunbeam (Extended Mix) [Anjunadeep]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 34,
+      "artist": "Monkey Safari",
+      "title": "Gravity (Dub) (w/ Delhia De France) [Anjunadeep]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 35,
+      "artist": "Joris Voorn",
+      "title": "Ryo (Monkey Safari Extended Mix) [Spectrum (NL)]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 36,
+      "artist": "Sébastien Léger",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 37,
+      "artist": "AIR",
+      "title": "Cherry Blossom Girl (Patricio Mucchielli's Private Bootleg)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 38,
+      "artist": "Bonobo & Totally Enormous Extinct Dinosaurs",
+      "title": "6000ft [OUTLIER]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 39,
+      "artist": "Mazzy Star",
+      "title": "Into Dust (Parra For Cuva Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.111,
+  "cobertura_bpm": 0.111
+}

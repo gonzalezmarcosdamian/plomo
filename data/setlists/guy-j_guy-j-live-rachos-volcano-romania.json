@@ -1,0 +1,427 @@
+{
+  "dj": "Guy J",
+  "evento": "Guy J Live @ Rachos Volcano, Romania",
+  "fecha": "",
+  "fuente": "https://youtu.be/jJZKoJv33Hs",
+  "orden_confiable": true,
+  "n": 40,
+  "n_identificados": 40,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Guy J",
+      "title": "Forja 2022 Intro ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Cornucopia",
+      "title": "TithoreaID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Cornucopia",
+      "title": "Other Side of the World [unreleased]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Cornucopia",
+      "title": "Deeper Side",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Guy J",
+      "title": "Barutana 2021 ID01",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Cornucopia",
+      "title": "Dopamine [unreleased]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Guy J",
+      "title": "OSC",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Volen Sentir",
+      "title": "The Great Escape (Cornucopia Remix)",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 118.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Volen Sentir - The Great Escape (Cornucopia Remix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Timo Chinala",
+      "title": "Somerville (Guy J Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Guy J",
+      "title": "IvyID01",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Guy J",
+      "title": "Blind Side",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Faminski - Blind Side "
+    },
+    {
+      "pos": 12,
+      "artist": "Guy J",
+      "title": "Las Palapas ID01",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Guy J",
+      "title": "Virtu",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Guy J",
+      "title": "Living on a Cloud",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Cornucopia",
+      "title": "Early Mornings",
+      "es_id": false,
+      "key": "D#min",
+      "bpm": 74.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Daniel Van Der Zwaag - Early Mornings (Original Mix)"
+    },
+    {
+      "pos": 16,
+      "artist": "Guy J",
+      "title": "Next to Me",
+      "es_id": false,
+      "key": null,
+      "bpm": 118.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "RÜFÜS DU SOL - Next to Me"
+    },
+    {
+      "pos": 17,
+      "artist": "Guy J",
+      "title": "Forum",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Guy J",
+      "title": "Anonymous",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - Anonymous"
+    },
+    {
+      "pos": 19,
+      "artist": "Guy J",
+      "title": "Cosmos",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - Cosmos"
+    },
+    {
+      "pos": 20,
+      "artist": "Stephan Bodzin",
+      "title": "Odyssee (Guy J Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "Cornucopia",
+      "title": "We Can",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "Cornucopia",
+      "title": "Dream Machine",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Purple Disco Machine, Alison Goldfrapp - Dream Machine (Extended Version)"
+    },
+    {
+      "pos": 23,
+      "artist": "Guy J",
+      "title": "Got no Sleep",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "Cornucopia",
+      "title": "Falling into your Eyes",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "Ryuichi Sakamoto",
+      "title": "The Revenant (Guy J Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 26,
+      "artist": "Guy J",
+      "title": "Elevate",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 27,
+      "artist": "Guy J",
+      "title": "Barutana 2021 ID02",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "Guy J",
+      "title": "\"the Track\" ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 29,
+      "artist": "Karol XVII & MB Valence",
+      "title": "Waterfall Drops (Guy J Remix)",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Karol XVII & MB Valence - Waterfall Drops (Guy J Remix)"
+    },
+    {
+      "pos": 30,
+      "artist": "Guy J",
+      "title": "Ocean",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 31,
+      "artist": "Guy J",
+      "title": "into the Void",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 128.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Perpetual Universe - Into the Void"
+    },
+    {
+      "pos": 32,
+      "artist": "Cornucopia",
+      "title": "Love Story",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Bodaishin - Love Story (Original Mix)"
+    },
+    {
+      "pos": 33,
+      "artist": "nthng",
+      "title": "With You (Guy J Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 34,
+      "artist": "Cornucopia",
+      "title": "ADE2022 ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 35,
+      "artist": "Marsh",
+      "title": "Healer (Guy J Extended Remix)",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Marsh - Healer (Guy J Extended Mix)"
+    },
+    {
+      "pos": 36,
+      "artist": "Guy J",
+      "title": "Life Is a Journey ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 37,
+      "artist": "Guy J",
+      "title": "Monster",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 38,
+      "artist": "Guy J",
+      "title": "Quantum",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 39,
+      "artist": "Grandbrothers",
+      "title": "Bloodflow (Guy J Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 40,
+      "artist": "Omid 16B",
+      "title": "Escape (Driving to Heaven) (Guy J Remix)",
+      "es_id": false,
+      "key": "Bbmin",
+      "bpm": 126.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Omid 16B - Escape (Driving To Heaven Guy J Remix)"
+    }
+  ],
+  "cobertura_key": 0.275,
+  "cobertura_bpm": 0.3
+}

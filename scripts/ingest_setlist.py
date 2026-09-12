@@ -36,7 +36,8 @@ POOL = RAIZ / "data" / "pool.json"
 
 LINEA = re.compile(
     r"^\s*(?:\[?\d{1,2}[:.]\d{2}(?::\d{2})?\]?)?\s*"   # timestamp opcional
-    r"(?:\d{1,3}[.)]?\s+)?"                             # numeracion opcional, con punto o sin el
+    r"(?:[-*•–—]\s+)?"                          # bullet al principio de la linea
+    r"(?:\d{1,3}[.),]\s*|\d{1,3}\s+)?"                  # numeracion: "3." "3)" "3," o "3 "
     r"(?P<artist>.+?)\s+[-–—]\s+(?P<title>.+?)\s*$"
 )
 RUIDO = re.compile(r"^(tracklist|setlist|w/|\s*$)", re.I)
@@ -44,6 +45,20 @@ RUIDO = re.compile(r"^(tracklist|setlist|w/|\s*$)", re.I)
 # el titulo nunca matchea contra el pool.
 COLA_TS = re.compile(r"\s*[(\[]\d{1,2}[:.]\d{2}(?::\d{2})?[)\]]\s*$")
 ES_ID = re.compile(r"^id$", re.I)
+
+
+def _sin_columnas(linea: str) -> str:
+    """Deja solo la columna que tiene el 'Artista - Titulo'.
+
+    Varios tracklists vienen en columnas separadas por tab:
+    "01<TAB>0:05:27<TAB>Fran Garay - Illusion<TAB>Mango Alley". Sin esto el
+    sello se pega al titulo y el track no matchea nunca contra el pool.
+    """
+    if "\t" not in linea:
+        return linea
+    campos = [c.strip() for c in linea.split("\t") if c.strip()]
+    con_guion = [c for c in campos if re.search(r"\s[-–—]\s", c)]
+    return con_guion[0] if con_guion else linea.replace("\t", " ")
 
 
 def slug(s: str) -> str:
@@ -63,11 +78,15 @@ def parsear(lineas: list[str]) -> list[dict]:
     for ln in lineas:
         if RUIDO.match(ln):
             continue
+        ln = _sin_columnas(ln)
         m = LINEA.match(ln.strip())
         if not m:
             continue
         artist = m.group("artist").strip()
         title = COLA_TS.sub("", m.group("title").strip()).strip()
+        # Varios tracklists cierran el titulo con " /" o " -" de separador.
+        title = title.rstrip(" /-–—").strip()
+        artist = artist.lstrip("-*• ").strip()
         # Los "ID - ID" NO se descartan: se guardan como hueco. Si se borraran,
         # dos tracks que estaban a cinco minutos uno del otro quedarian
         # consecutivos y el backtest mediria una transicion que nunca existio.

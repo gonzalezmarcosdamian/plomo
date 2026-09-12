@@ -31,9 +31,19 @@
   ],
   "tracks": [
     {
-      "artist": "Jody Wisternoff & James Grant",
-      "title": "Blue Space (feat. Jinadu) [Extended Mix]",
-      "content_id": "87407852"
+      "artist": "Sebastian Sellares",
+      "title": "Timeless Era (Extended Mix)",
+      "content_id": "80771436"
+    },
+    {
+      "artist": "Ben Bohmer & Neils Hoffmann feat. Malou",
+      "title": "Breathing",
+      "content_id": "84605287"
+    },
+    {
+      "artist": "Nils Hoffmann, Julia Church",
+      "title": "9 Days (Extended Mix)",
+      "content_id": "183236640"
     },
     {
       "artist": "Lane 8 ft. Solomon Grey",
@@ -41,34 +51,26 @@
       "content_id": "43416483"
     },
     {
-      "artist": "Nils Hoffmann, Julia Church",
-      "title": "9 Days (Extended Mix) ",
-      "content_id": "183236640"
-    },
-    {
       "artist": "Braxton",
       "title": "Torn (feat. Danni Wells) [Extended Mix]",
       "content_id": "116966407"
     },
     {
-      "artist": "Ben Bohmer & Neils Hoffmann feat. Malou",
-      "title": "Breathing ",
-      "content_id": "84605287"
+      "artist": "Jakatta",
+      "title": "American Dream (PROFF Extended Interpretation)",
+      "content_id": "264823102"
+    },
+    {
+      "artist": "Jody Wisternoff & James Grant",
+      "title": "Blue Space (feat. Jinadu)",
+      "content_id": "10116936"
     },
     {
       "artist": "Ezequiel Arias",
       "title": "Modern Memory (Extended Mix)",
       "content_id": "23002335"
-    },
-    {
-      "artist": "Sebastian Sellares",
-      "title": "Timeless Era (Extended Mix)",
-      "content_id": "80771436"
-    },
-    {
-      "artist": "Jakatta",
-      "title": "American Dream (PROFF Extended Interpretation)",
-      "content_id": "264823102"
     }
-  ]
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 6 -> 5 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

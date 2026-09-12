@@ -1,6 +1,6 @@
 {
   "name": "100. Con el material de Ezequiel Arias - Metropolitano Rosario - 2026-06-27",
-  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Metropolitano Rosario (2026-06-27) como anclas: 6 de 13 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Metropolitano Rosario (2026-06-27) como anclas: 4 de 13 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
   "_fuente": "https://www.youtube.com/watch?v=RxZQ9XOvSh8",
   "duration_h": 1.2,
   "bpm_range": [
@@ -11,24 +11,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Ezequiel Arias",
-      "title": "Estimulo (Extended Mix)",
-      "content_id": "104948479"
-    },
-    {
-      "artist": "J Lauda",
-      "title": "Lifeline (Hernan Cattaneo & Simply City Extended Remix)",
-      "content_id": "116701299"
-    },
-    {
-      "artist": "Max Wexem",
-      "title": "Override (Original Mix)",
-      "content_id": "127791241"
-    },
-    {
-      "artist": "Drunken Kong, D-SHIFT",
-      "title": "Where You Need To Be (Original Mix)",
-      "content_id": "83965273"
+      "artist": "Christian Smith",
+      "title": "Illusion (Ezequiel Arias Remix)",
+      "content_id": "209285789"
     },
     {
       "artist": "TPS",
@@ -41,39 +26,54 @@
       "content_id": "35413624"
     },
     {
+      "artist": "Drunken Kong, D-SHIFT",
+      "title": "Where You Need To Be (Original Mix)",
+      "content_id": "83965273"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Parabolic (Original Mix)",
+      "content_id": "72311255"
+    },
+    {
       "artist": "Durante, Mayro",
       "title": "Mantra (Extended Mix)",
       "content_id": "147555802"
     },
     {
-      "artist": "Moshic",
-      "title": "Love Made Me Do It (Guy J Remix)",
-      "content_id": "138530727"
+      "artist": "Rockka",
+      "title": "Initiation",
+      "content_id": "41309264"
     },
     {
-      "artist": "Cid Inc.",
-      "title": "Forgotten",
-      "content_id": "72351175"
+      "artist": "Paul Arcane",
+      "title": "Vortice (Extended Mix)",
+      "content_id": "232297180"
     },
     {
-      "artist": "Brian Cid",
-      "title": "Allure (Original Mix)",
-      "content_id": "214561412"
+      "artist": "Kamilo Sanclemente",
+      "title": "Horizons (Original Mix)",
+      "content_id": "108192280"
     },
     {
-      "artist": "Digital Mess",
-      "title": "Outlands (Dowden & Andreas Bühler Remix)",
-      "content_id": "228357353"
+      "artist": "Rauschhaus",
+      "title": "Waiting For The Birds",
+      "content_id": "5512663"
     },
     {
-      "artist": "D-Nox, Emi Galvan",
-      "title": "Dualidad (Guy Mantzur Edit)",
-      "content_id": "148348470"
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
     },
     {
-      "artist": "Maze 28",
-      "title": "C Moon (Original Mix)",
-      "content_id": "165686657"
+      "artist": "Gorkiz, Luca Abayan",
+      "title": "Drowner (Extended Mix)",
+      "content_id": "175740225"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Insomnia (Original Mix)",
+      "content_id": "80947222"
     }
   ]
 }

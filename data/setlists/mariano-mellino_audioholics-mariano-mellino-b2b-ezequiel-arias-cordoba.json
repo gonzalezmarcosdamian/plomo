@@ -1,0 +1,140 @@
+{
+  "dj": "Mariano Mellino",
+  "evento": "AUDIOHOLICS | MARIANO MELLINO B2B EZEQUIEL ARIAS @ CORDOBA",
+  "fecha": "",
+  "fuente": "https://youtu.be/w3xgjSvwGOM",
+  "orden_confiable": true,
+  "n": 12,
+  "n_identificados": 12,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Ezequiel Arias, Durante",
+      "title": "Dream Controller",
+      "es_id": false,
+      "key": "Db",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)"
+    },
+    {
+      "pos": 2,
+      "artist": "DRUNKEN KONG, D-Shift",
+      "title": "Future Heights (Mariano Mellino Remix)",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Drunken Kong, D-SHIFT - Future Heights (Mariano Mellino Remix)"
+    },
+    {
+      "pos": 3,
+      "artist": "BAILE",
+      "title": "Amae Ft. Felicia Douglass (Ezequiel Arias Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Mac Paez",
+      "title": "Spaceman",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "GW Harrison - Spaceman (Original Mix)"
+    },
+    {
+      "pos": 5,
+      "artist": "COQUEIT",
+      "title": "ID 💥",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Lean Robotti",
+      "title": "Mercurio",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Lean Robotti - Mercurio (Extended Mix)"
+    },
+    {
+      "pos": 7,
+      "artist": "Sasha",
+      "title": "Cut Me Down (Ezequiel Arias, COQUEIT Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Martin Di Sciascio",
+      "title": "Lost in Burzako",
+      "es_id": false,
+      "key": "Bm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Martin Di Sciascio - Lost in Burzako (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Ezequiel Arias",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Lean Robotti",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Slam",
+      "title": "Eterna (John Digweed & Nick Muir Remix) (Ezequiel Arias Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Jamie Stevens",
+      "title": "Calling All The Gods (Mariano Mellino Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.417,
+  "cobertura_bpm": 0.417
+}

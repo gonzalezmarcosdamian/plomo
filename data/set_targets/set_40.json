@@ -1,62 +1,202 @@
 {
   "name": "40. Gorje Hewek x Hraach — Armenio Profundo — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [116, 124],
+  "bpm_range": [
+    116,
+    124
+  ],
   "max_per_artist": 8,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.25, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.5, "e_max": 7.0, "e_center": 6.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.28, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.0,
+      "fraction": 0.25,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.5,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Armen Miran", "title": "Save My Soul"},
-    {"artist": "Hraach Armen Miran", "title": "Krunk"},
-    {"artist": "Armen Miran Hraach", "title": "Aldebaran"},
-    {"artist": "Hraach", "title": "Apricot Tree"},
-    {"artist": "Hraach Armen Miran", "title": "Nervous Layers"},
-    {"artist": "Hraach Armen Miran", "title": "Mysterious World"},
-    {"artist": "Gorje Hewek", "title": "Forest Song in the Morning"},
-    {"artist": "Gorje Hewek", "title": "Leto Ete-Satien"},
-    {"artist": "Hraach", "title": "Delirio"},
-    {"artist": "Gorje Hewek Izhevski", "title": "When I Was Young"},
-    {"artist": "Armen Miran", "title": "Nani Jan"},
-    {"artist": "Armen Miran Nicolas Rada", "title": "Fall Away"},
-    {"artist": "Hraach", "title": "Hidden Dimension"},
-    {"artist": "Hraach", "title": "Cosmic Drama"},
-    {"artist": "Gorje Hewek", "title": "Shroud in Your Warmth"},
-    {"artist": "Gorje Hewek", "title": "Actrice"},
-    {"artist": "Gorje Hewek", "title": "Amulet"},
-    {"artist": "Gorje Hewek Molac Dulus", "title": "Astro World"},
-    {"artist": "Gorje Hewek Lost Desert", "title": "Aya"},
-    {"artist": "Hraach", "title": "Promises"},
-    {"artist": "Armen Miran Felix Raphael", "title": "Ghost"},
-    {"artist": "Gorje Hewek Volen Sentir", "title": "Full of Wonder"},
-    {"artist": "Gorje Hewek", "title": "Solovey"},
-    {"artist": "Gorje Hewek", "title": "Changes"},
-    {"artist": "Roy Rosenfeld Gorje Hewek Dulus", "title": "Vida"},
-    {"artist": "Gorje Hewek Facundo Losardo", "title": "Endless History"},
-    {"artist": "Gorje Hewek Polo AR", "title": "Altitude"},
-    {"artist": "Gorje Hewek Volen Sentir", "title": "Otoko"},
-    {"artist": "Gorje Hewek Makebo Amonita", "title": "Never Been"},
-    {"artist": "Gorje Hewek Moya Dulus", "title": "Margaret"},
-    {"artist": "Gorje Hewek", "title": "U & Eyeye"},
-    {"artist": "Hraach", "title": "Lonely Sun"},
-    {"artist": "Hraach Armen Miran Iveta Mukuchyan", "title": "Sarer Jan"},
-    {"artist": "Hraach Armen Miran", "title": "Traveller"},
-    {"artist": "Armen Miran Nicolas Rada", "title": "Pull"},
-    {"artist": "Felix Raphael Armen Miran", "title": "Soul Guardian"},
-    {"artist": "Jan Blomqvist", "title": "Our Broken Mind Embassy"},
-    {"artist": "Jan Blomqvist", "title": "The Space In Between"},
-    {"artist": "Gorje Hewek Dulus", "title": "Earth"},
-    {"artist": "Gorje Hewek", "title": "Forest Song in the Night"},
-    {"artist": "Gorje Hewek Lost Desert Volen Sentir", "title": "Fluminnese"},
-    {"artist": "Gorje Hewek Volen Sentir Makebo Amonita", "title": "Unite"},
-    {"artist": "Gorje Hewek DJ KANE", "title": "Life It Is"},
-    {"artist": "Jan Blomqvist Alar Korolova", "title": "Time Again"},
-    {"artist": "Oliver Schories Jan Blomqvist", "title": "Packard"},
-    {"artist": "Armen Miran Lost Desert", "title": "Don't Worry"},
-    {"artist": "Gorje Hewek ETNE", "title": "Children"},
-    {"artist": "Jan Blomqvist Mahri", "title": "Deeper Grounds"}
-  ]
+    {
+      "artist": "Hraach",
+      "title": "Cosmic Drama (Original Mix)",
+      "content_id": "82356913"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Pull (Original Mix)",
+      "content_id": "137437468"
+    },
+    {
+      "artist": "Jan Blomqvist, Alar, Korolova",
+      "title": "Time Again (Original Mix)",
+      "content_id": "220017471"
+    },
+    {
+      "artist": "Roy Rosenfeld, Gorje Hewek, Dulus",
+      "title": "Vida (Original Mix)",
+      "content_id": "37598389"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Promises (Original Mix)",
+      "content_id": "46009275"
+    },
+    {
+      "artist": "Gorje Hewek & Izhevski",
+      "title": "When I Was Young (Original Mix)",
+      "content_id": "147987231"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Lonely Sun (Original Mix)",
+      "content_id": "150535198"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "U & Eyeye",
+      "content_id": "250993586"
+    },
+    {
+      "artist": "Hraach, Armen Miran",
+      "title": "Traveller (Original Mix)",
+      "content_id": "241036257"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Solovey (Original Mix)",
+      "content_id": "22064301"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Delirio (Original Mix)",
+      "content_id": "7928123"
+    },
+    {
+      "artist": "Gorje Hewek, Molac, Dulus",
+      "title": "Astro World (Original Mix)",
+      "content_id": "7864421"
+    },
+    {
+      "artist": "Armen Miran & Felix Raphael",
+      "title": "Ghost",
+      "content_id": "253296461"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Changes (Extended Mix)",
+      "content_id": "259106024"
+    },
+    {
+      "artist": "Armen Miran & Lost Desert",
+      "title": "Don't Worry",
+      "content_id": "109445246"
+    },
+    {
+      "artist": "Gorje Hewek, Dulus",
+      "title": "Earth (Original Mix)",
+      "content_id": "2009006"
+    },
+    {
+      "artist": "Armen Miran",
+      "title": "Nani Jan (Original)",
+      "content_id": "29053834"
+    },
+    {
+      "artist": "Gorje Hewek, Makebo & Amonita",
+      "title": "Never Been",
+      "content_id": "8151177"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Fall Away (Original Mix)",
+      "content_id": "172422541"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Actrice (Original Mix)",
+      "content_id": "6939383"
+    },
+    {
+      "artist": "Hraach, Armen Miran",
+      "title": "Nervous Layers (Original Mix)",
+      "content_id": "64560904"
+    },
+    {
+      "artist": "Hraach, Armen Miran",
+      "title": "Krunk (Original Mix)",
+      "content_id": "208642187"
+    },
+    {
+      "artist": "Armen Miran & Hraach",
+      "title": "Aldebaran",
+      "content_id": "177485482"
+    },
+    {
+      "artist": "Hraach, Armen Miran",
+      "title": "Mysterious World (Original Mix)",
+      "content_id": "29290917"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Forest Song in the Night (Original Mix)",
+      "content_id": "128337578"
+    },
+    {
+      "artist": "Gorje Hewek, ETNE",
+      "title": "Children (Extended Mix)",
+      "content_id": "59638375"
+    },
+    {
+      "artist": "Gorje Hewek, Lost Desert, Volen Sentir",
+      "title": "Fluminnese (Dub)",
+      "content_id": "224734723"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Leto Ete-Satien (Original Mix)",
+      "content_id": "184112016"
+    },
+    {
+      "artist": "Armen Miran",
+      "title": "Save My Soul (Original Mix)",
+      "content_id": "138560076"
+    },
+    {
+      "artist": "Gorje Hewek & Volen Sentir",
+      "title": "Otoko (Extended Mix)",
+      "content_id": "80827792"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Apricot Tree (Original Mix)",
+      "content_id": "135524860"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 23 -> 9 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

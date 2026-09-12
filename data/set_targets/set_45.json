@@ -1,53 +1,167 @@
 {
   "name": "45. Tom Pavicich + Durante — Prog Argentino — 2026-06-13",
   "duration_h": 2.5,
-  "bpm_range": [118, 124],
+  "bpm_range": [
+    118,
+    124
+  ],
   "max_per_artist": 4,
   "movements": [
-    {"name": "warmup", "e_min": 2.5, "e_max": 4.5, "e_center": 3.5, "fraction": 0.22, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.5, "fraction": 0.28, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.5, "e_max": 7.5, "e_center": 6.5, "fraction": 0.28, "anchor_ids": []},
-    {"name": "close",  "e_min": 5.0, "e_max": 7.0, "e_center": 4.5, "fraction": 0.22, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.5,
+      "e_max": 4.5,
+      "e_center": 3.5,
+      "fraction": 0.22,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.5,
+      "e_max": 7.5,
+      "e_center": 6.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    },
+    {
+      "name": "close",
+      "e_min": 5.0,
+      "e_max": 7.0,
+      "e_center": 4.5,
+      "fraction": 0.22,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "FAERO", "title": "No Warm (Original Mix)"},
-    {"artist": "FAERO", "title": "The Landing (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "Cardamom (FAERO Remix)"},
-    {"artist": "Nicolas Rada", "title": "Prana"},
-    {"artist": "Hraach", "title": "Cosmic Drama (Original Mix)"},
-    {"artist": "Hraach", "title": "Delirio (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "About Her (Unai Garcia Remix)"},
-    {"artist": "Tom Pavicich", "title": "Volver (Sinan Arsan Remix)"},
-    {"artist": "Tirso Enriquez", "title": "Rumble (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "Cardamom (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "About Her (Martin Fredes Remix)"},
-    {"artist": "Tom Pavicich", "title": "Fly Home (Original Mix)"},
-    {"artist": "Durante", "title": "Evaporate ft. PaulWetz (Original Mix)"},
-    {"artist": "Durante", "title": "Reaching (Weird Sounding Dude Extended"},
-    {"artist": "Tom Pavicich", "title": "About Her (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "Insight (Original Mix)"},
-    {"artist": "Nicolas Rada", "title": "Tempelhof (Dmitry Molosh Remix)"},
-    {"artist": "Nicolas Rada", "title": "El Oro De Los Tigres"},
-    {"artist": "Nicolas Rada", "title": "Cascadia"},
-    {"artist": "Nicolas Rada", "title": "The Wind Phone"},
-    {"artist": "Durante", "title": "Thread Tension"},
-    {"artist": "Durante", "title": "Winder"},
-    {"artist": "FAERO", "title": "The Landing (Club Mix)"},
-    {"artist": "Tom Pavicich", "title": "Josefina (Casnik Remix)"},
-    {"artist": "Tom Pavicich", "title": "Klingt (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "Insight (Iovino Remix)"},
-    {"artist": "Tom Pavicich", "title": "Volver (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "Anger (Original Mix)"},
-    {"artist": "Hraach", "title": "Promises (Original Mix)"},
-    {"artist": "Hraach", "title": "Lonely Sun (Original Mix)"},
-    {"artist": "Durante", "title": "Starglow (Extended Mix)"},
-    {"artist": "Durante", "title": "Dream Controller (Extended Mix)"},
-    {"artist": "Tom Pavicich", "title": "Sugar Rush (Original Mix)"},
-    {"artist": "Tom Pavicich", "title": "Olimpo (Ignacio Berardi Remix)"},
-    {"artist": "Tirso Enriquez", "title": "Mirage Rhythms (Original Mix)"},
-    {"artist": "FAERO", "title": "Evolve (Original Mix)"},
-    {"artist": "Hraach", "title": "Menq (Nick Warren & Nicolas Rada Remix)"},
-    {"artist": "Simon Vaurambon", "title": "Leman (Original Mix)"},
-    {"artist": "Nicolas Rada", "title": "Daydream (Original Mix)"}
-  ]
+    {
+      "artist": "Hraach",
+      "title": "Cosmic Drama (Original Mix)",
+      "content_id": "82356913"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "El Oro De Los Tigres",
+      "content_id": "162910837"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Fly Home (Original Mix)",
+      "content_id": "259427117"
+    },
+    {
+      "artist": "Durante",
+      "title": "Winder",
+      "content_id": "118554623"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Volver (Original Mix)",
+      "content_id": "142929823"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "About Her (Unai Garcia Remix)",
+      "content_id": "142777408"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Delirio (Original Mix)",
+      "content_id": "7928123"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "About Her (Original Mix)",
+      "content_id": "178538707"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Lonely Sun (Original Mix)",
+      "content_id": "150535198"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Sugar Rush (Original Mix)",
+      "content_id": "265949686"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Promises (Original Mix)",
+      "content_id": "46009275"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Prana",
+      "content_id": "32664654"
+    },
+    {
+      "artist": "Simon Vaurambon",
+      "title": "Leman (Original Mix)",
+      "content_id": "127771568"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "About Her (Martin Fredes Remix)",
+      "content_id": "192563500"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "The Wind Phone",
+      "content_id": "252961879"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Insight (Original Mix)",
+      "content_id": "83418763"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Insight (Iovino Remix)",
+      "content_id": "239554476"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Volver (Sinan Arsan Remix)",
+      "content_id": "123697693"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Cascadia",
+      "content_id": "50865819"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Tempelhof (Dmitry Molosh Remix)",
+      "content_id": "154302742"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Klingt (Original Mix)",
+      "content_id": "18638243"
+    },
+    {
+      "artist": "Durante",
+      "title": "Thread Tension",
+      "content_id": "117235893"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Josefina (Casnik Remix)",
+      "content_id": "210569428"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 20 -> 7 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

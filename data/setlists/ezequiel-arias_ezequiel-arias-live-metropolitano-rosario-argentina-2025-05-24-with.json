@@ -1,0 +1,333 @@
+{
+  "dj": "Ezequiel Arias",
+  "evento": "Ezequiel Arias Live @ Metropolitano Rosario, Argentina 2025-05-24 with",
+  "fecha": "",
+  "fuente": "https://youtu.be/cLySL3d7Lvg",
+  "orden_confiable": true,
+  "n": 31,
+  "n_identificados": 23,
+  "n_huecos_id": 8,
+  "cobertura_datos": 0.043,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Ezequiel Arias",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Bondarev & Supacooks",
+      "title": "Activator [WARPP]",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Supacooks, Bondarev - Activator (Original Mix)"
+    },
+    {
+      "pos": 3,
+      "artist": "Anton Borin",
+      "title": "May Spring Come",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Anton Borin (RU) - May Spring Come (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Kyotto",
+      "title": "Sorry I'm Late(HAFT Remix) [MOVEMENT]",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Kyotto - Sorry I'm Late (HAFT Remix)"
+    },
+    {
+      "pos": 7,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Jody Wisternoff & James Grant & PROFF & Takeshi Furukawa ft. Siobhan Wilson",
+      "title": "Mui(Ezequiel Arias Remix) [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "FJL",
+      "title": "Rider",
+      "es_id": false,
+      "key": "6A",
+      "bpm": 124.0,
+      "energy": 5.3,
+      "label": "Melorama Música",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 11,
+      "artist": "Blake Jarrell",
+      "title": "Twenty Miamis Ago(Cendryma Remix) [FSOE UV]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Lonya",
+      "title": "Sadness(Ziger Remix) [MANGO ALLEY]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Ezequiel Arias",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Ezequiel Arias",
+      "title": "Reanimation [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "Guy J",
+      "title": "Silver Lake [EARLY MORNING]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Santi Mossman",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "Kamilo Sanclemente",
+      "title": "Anagram(Mayro Remix) [UNIVACK]",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Kamilo Sanclemente - Anagram (Mayro Extended Remix)"
+    },
+    {
+      "pos": 20,
+      "artist": "Rezident ft. Malou",
+      "title": "It's All On You(Ezequiel Arias Remix) [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "Ezequiel Arias & Durante",
+      "title": "Dream Controller",
+      "es_id": false,
+      "key": "Db",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Durante, Ezequiel Arias - Dream Controller (Extended Mix)"
+    },
+    {
+      "pos": 22,
+      "artist": "Ezequiel Arias",
+      "title": "Delirio",
+      "es_id": false,
+      "key": "Db",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Ezequiel Arias - Delirio (Extended Mix)"
+    },
+    {
+      "pos": 23,
+      "artist": "Ezequiel Arias",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "Sasha ft. Ultraísta",
+      "title": "Bring On The Night(Ezequiel Arias Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 26,
+      "artist": "deadmau5",
+      "title": "Re_Jaded(Santi Mossman Remix) [MAU5TRAP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 27,
+      "artist": "Sasha ft. Polica",
+      "title": "Out Of Time(Antrim Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 29,
+      "artist": "Röyksopp ft. Susanne Sundfør",
+      "title": "Never Ever(COQUEIT Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 30,
+      "artist": "Jamie Stevens & Zankee Gulati",
+      "title": "Low Tide(Ezequiel Arias Remix) [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 31,
+      "artist": "The DØ",
+      "title": "Dust It Off(Kevin Di Serna & Sebastián Teillagorry Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.304,
+  "cobertura_bpm": 0.304,
+  "orden_campos_revisado": true
+}

@@ -16,7 +16,7 @@
         119,
         125
       ],
-      "e_lo": 3.8,
+      "e_lo": 3.9,
       "e_hi": 7.0,
       "max_per_artist": 2,
       "genres": [
@@ -105,7 +105,9 @@
         "173790116",
         "161660872"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 3.8,
+      "e_hi_v1": 7.0
     },
     {
       "num": 81,
@@ -118,8 +120,8 @@
         120,
         126
       ],
-      "e_lo": 4.2,
-      "e_hi": 7.4,
+      "e_lo": 4.3,
+      "e_hi": 7.5,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -214,7 +216,9 @@
         "92905250",
         "147555802"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.2,
+      "e_hi_v1": 7.4
     },
     {
       "num": 82,
@@ -227,8 +231,8 @@
         119,
         125
       ],
-      "e_lo": 4.0,
-      "e_hi": 7.2,
+      "e_lo": 4.1,
+      "e_hi": 7.3,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -313,7 +317,9 @@
       ],
       "beam": 600,
       "prefer_ids": [],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.0,
+      "e_hi_v1": 7.2
     },
     {
       "num": 83,
@@ -326,8 +332,8 @@
         119,
         125
       ],
-      "e_lo": 4.0,
-      "e_hi": 7.2,
+      "e_lo": 4.1,
+      "e_hi": 7.3,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -419,7 +425,9 @@
         "22034915",
         "30509667"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.0,
+      "e_hi_v1": 7.2
     },
     {
       "num": 84,
@@ -432,8 +440,8 @@
         120,
         126
       ],
-      "e_lo": 4.2,
-      "e_hi": 7.5,
+      "e_lo": 4.3,
+      "e_hi": 7.7,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -519,7 +527,9 @@
       "prefer_ids": [
         "223982143"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.2,
+      "e_hi_v1": 7.5
     },
     {
       "num": 85,
@@ -532,8 +542,8 @@
         119,
         125
       ],
-      "e_lo": 4.0,
-      "e_hi": 7.3,
+      "e_lo": 4.1,
+      "e_hi": 7.4,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -623,7 +633,9 @@
         "186751022",
         "134778545"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.0,
+      "e_hi_v1": 7.3
     },
     {
       "num": 86,
@@ -636,7 +648,7 @@
         118,
         124
       ],
-      "e_lo": 3.5,
+      "e_lo": 2.7,
       "e_hi": 7.0,
       "max_per_artist": 2,
       "genres": [
@@ -730,7 +742,9 @@
         "199216888",
         "53922043"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 3.5,
+      "e_hi_v1": 7.0
     },
     {
       "num": 87,
@@ -743,8 +757,8 @@
         119,
         125
       ],
-      "e_lo": 4.0,
-      "e_hi": 7.2,
+      "e_lo": 4.1,
+      "e_hi": 7.3,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -839,7 +853,9 @@
         "37141460",
         "38809884"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.0,
+      "e_hi_v1": 7.2
     },
     {
       "num": 88,
@@ -852,8 +868,8 @@
         119,
         125
       ],
-      "e_lo": 4.0,
-      "e_hi": 7.3,
+      "e_lo": 4.1,
+      "e_hi": 7.4,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -945,7 +961,9 @@
         "214664804",
         "39363922"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 4.0,
+      "e_hi_v1": 7.3
     },
     {
       "num": 89,
@@ -959,7 +977,7 @@
         127
       ],
       "e_lo": 5.0,
-      "e_hi": 8.2,
+      "e_hi": 8.5,
       "max_per_artist": 2,
       "genres": [
         "Progressive House",
@@ -1050,8 +1068,11 @@
         "100722935",
         "130702700"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "e_lo_v1": 5.0,
+      "e_hi_v1": 8.2
     }
   ],
-  "max_apariciones_por_track": 1
+  "max_apariciones_por_track": 1,
+  "_migracion_energia": "Los rangos se tradujeron de la formula v1 (con BPM) a la v2 (sin BPM) por percentil de la biblioteca, no por delta. Los valores viejos quedan en los campos *_v1. Ver scripts/migrar_configs_energia.py."
 }

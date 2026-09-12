@@ -1,0 +1,136 @@
+{
+  "dj": "Ezequiel Arias",
+  "evento": "The Anjunadeep Edition 484 with Ezequiel Arias",
+  "fecha": "",
+  "fuente": "https://youtu.be/FgkyaOMzFb4",
+  "orden_confiable": true,
+  "n": 12,
+  "n_identificados": 12,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "foglight & Joseph Kaz",
+      "title": "Radiant (WARPP)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Andrés Moris",
+      "title": "Rust (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Kabi (AR)",
+      "title": "Lost In Roses [Maezbi Remix] (Juicebox Music)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Kebin van Reeken",
+      "title": "Liminal (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Juan Ibañez, B.I.G (AR), Gianni Luciano",
+      "title": "It’s Time To Drop (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Luis Damora & Nila",
+      "title": "Pure State (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Paul Thomas",
+      "title": "Emotional Landscapes [Ezequiel Arias Remix] (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Ezequiel Arias",
+      "title": "Once A Day (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Ben Böhmer feat. lau.ra",
+      "title": "Erase [Ezequiel Arias Remix] (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Ezequiel Arias",
+      "title": "ID (White)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "AFFKT",
+      "title": "Coral (Global Underground)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Ezequiel Arias & FOLGAR",
+      "title": "You (Anjunadeep)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.0,
+  "cobertura_bpm": 0.0,
+  "orden_campos_revisado": true
+}

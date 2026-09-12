@@ -1,44 +1,97 @@
 {
   "name": "27. Progressive Colorido A — 2h — 2026-05-27",
   "duration_h": 2,
-  "bpm_range": [118, 126],
+  "bpm_range": [
+    118,
+    126
+  ],
   "style": "Anjunadeep / This Never Happened — Ben Bohmer, Monolink, Lane 8, Tinlicker",
   "movements": [
-    {"name": "warmup",  "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",   "e_min": 4.0, "e_max": 6.5, "e_center": 5.5, "fraction": 0.35, "anchor_ids": []},
-    {"name": "peak",    "e_min": 6.0, "e_max": 9.0, "e_center": 7.0, "fraction": 0.30, "anchor_ids": []},
-    {"name": "cool",    "e_min": 4.0, "e_max": 6.5, "e_center": 5.0, "fraction": 0.15, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.5,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.35,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 9.0,
+      "e_center": 7.0,
+      "fraction": 0.3,
+      "anchor_ids": []
+    },
+    {
+      "name": "cool",
+      "e_min": 4.0,
+      "e_max": 6.5,
+      "e_center": 5.0,
+      "fraction": 0.15,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Ben Bohmer", "title": "Begin Again"},
-    {"artist": "Ben Bohmer", "title": "Blossoms"},
-    {"artist": "Ben Bohmer", "title": "Breathing"},
-    {"artist": "Ben Bohmer", "title": "Beyond Beliefs"},
-    {"artist": "Ben Bohmer", "title": "In Memoriam"},
-    {"artist": "Malou Ben Bohmer", "title": "Lost In Mind"},
-    {"artist": "Monolink", "title": "The Prey"},
-    {"artist": "Monolink", "title": "Don't Hold Back"},
-    {"artist": "Monolink", "title": "Sirens"},
-    {"artist": "Monolink", "title": "Father Ocean"},
-    {"artist": "Monolink", "title": "Burning Sun"},
-    {"artist": "Lane 8", "title": "Diamonds"},
-    {"artist": "Lane 8", "title": "Keep On"},
-    {"artist": "Lane 8", "title": "Survive"},
-    {"artist": "Lane 8", "title": "Brightest Lights"},
-    {"artist": "Lane 8", "title": "No Captain"},
-    {"artist": "Tinlicker", "title": "Just To Hear You Say"},
-    {"artist": "Tinlicker", "title": "Always Will"},
-    {"artist": "Tinlicker Helsloot", "title": "Because You Move Me"},
-    {"artist": "Braxton", "title": "Holding On"},
-    {"artist": "Braxton", "title": "Between The Stars"},
-    {"artist": "ilan Bluestone", "title": "Bigger Than Love"},
-    {"artist": "ilan Bluestone", "title": "Frozen Ground"},
-    {"artist": "Andrew Bayer", "title": "Immortal Lover"},
-    {"artist": "N'to", "title": "Alter Ego"},
-    {"artist": "WhoMadeWho", "title": "Silence"},
-    {"artist": "Khen", "title": "The Lighthouse"},
-    {"artist": "Moderat", "title": "Bad Kingdom"},
-    {"artist": "Moderat", "title": "Reminder"},
-    {"artist": "PROFF", "title": "Your Light"}
-  ]
+    {
+      "artist": "Ben Böhmer",
+      "title": "Begin Again (Original Mix)",
+      "content_id": "203052470"
+    },
+    {
+      "artist": "Ben Böhmer",
+      "title": "Blossoms",
+      "content_id": "10364959"
+    },
+    {
+      "artist": "N'to",
+      "title": "Alter Ego",
+      "content_id": "166181033"
+    },
+    {
+      "artist": "Monolink",
+      "title": "Don't Hold Back",
+      "content_id": "98751952"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Keep On (Extended Mix)",
+      "content_id": "16127516"
+    },
+    {
+      "artist": "Khen",
+      "title": "The Lighthouse (Original Mix)",
+      "content_id": "264581959"
+    },
+    {
+      "artist": "Ben Bohmer",
+      "title": "In Memoriam",
+      "content_id": "120058756"
+    },
+    {
+      "artist": "Tinlicker, Helsloot",
+      "title": "Because You Move Me (Extended Mix)",
+      "content_id": "76606343"
+    },
+    {
+      "artist": "Ben Bohmer",
+      "title": "Beyond Beliefs (Original Mix)",
+      "content_id": "261366438"
+    },
+    {
+      "artist": "Monolink",
+      "title": "The Prey",
+      "content_id": "62480327"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 8 -> 5 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

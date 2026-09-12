@@ -1,0 +1,383 @@
+{
+  "dj": "Simon Vuarambon",
+  "evento": "Simon Vuarambon Live @ Metropolitano Rosario, Argentina 2026-06-27 wit",
+  "fecha": "",
+  "fuente": "https://youtu.be/kwLwCj3HAoc",
+  "orden_confiable": true,
+  "n": 36,
+  "n_identificados": 32,
+  "n_huecos_id": 4,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Nila",
+      "title": "Take A Deep Breath [KEEP THINKING]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Himmelskoerper",
+      "title": "Error.func",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Ric Niels",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Robert Babicz",
+      "title": "Cream",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 126.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Robert Babicz - Cream "
+    },
+    {
+      "pos": 6,
+      "artist": "Michael A",
+      "title": "Solar Wind [PROTAGONIST]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Robert Babicz",
+      "title": "The Wave [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Gorge",
+      "title": "Nayuma",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gorge - Nayuma (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Cirez D",
+      "title": "Deep Inside (Mike Rish Remix V2) [TRUESOUL]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Van Bellen & Greed",
+      "title": "City Lights (SV Edit) [SOGOOD]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Brisboys",
+      "title": "Worlds Apart (Michael A Remix) [BRISBEATS]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "sc00ps",
+      "title": "Play Right",
+      "es_id": false,
+      "key": "E",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "sc00ps - Play Right (Original Mix)"
+    },
+    {
+      "pos": 14,
+      "artist": "Byhon",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Juan Barrera",
+      "title": "Airplane (Leandro Murua Remix) [AH DIGITAL]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Aubrey Fry & Nick Stoynoff",
+      "title": "Baller [BALANCE]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "Ignacio Hernández",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Remcord",
+      "title": "Vision 76 [REBA]",
+      "es_id": false,
+      "key": "Abm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Remcord - Vision 76 (Original Mix)"
+    },
+    {
+      "pos": 19,
+      "artist": "Cesar Borra",
+      "title": "Don't Kill My Vibe",
+      "es_id": false,
+      "key": "A",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Cesar Borra - Don't Kill My Vibe (Original Mix)"
+    },
+    {
+      "pos": 20,
+      "artist": "Byhon",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "Fran Garay",
+      "title": "Inmarsecible",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "Ezequiel Perini",
+      "title": "Don't Push Me",
+      "es_id": false,
+      "key": "Abm",
+      "bpm": 130.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Sorley - Don't Push Me (Original Mix)"
+    },
+    {
+      "pos": 24,
+      "artist": "Byhon",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "Pig&Dan",
+      "title": "Drift To The Center [ELEVATE]",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 132.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Pig&Dan - Drift To The Center (Original Mix)"
+    },
+    {
+      "pos": 26,
+      "artist": "Fran Garay",
+      "title": "Go Ahead",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 118.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gabriel Balky - Go Ahead"
+    },
+    {
+      "pos": 27,
+      "artist": "Fischer & Kleber",
+      "title": "Wagner",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "Leo Conovaloff",
+      "title": "Let It Stop Raining",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 29,
+      "artist": "Jay Robinson & LIINKS",
+      "title": "Don't Need Sleep (SV Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 30,
+      "artist": "Alan Dixon & Mystery Affair",
+      "title": "NRGY (More Acid Mix) (SV Edit) [CORRESPONDANT]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 31,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 32,
+      "artist": "Simon Vuarambon",
+      "title": "Estigia [GLOBAL UNDERGROUND]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 33,
+      "artist": "Christian Smith",
+      "title": "Golden Point (Simon Vuarambon Remix) [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 34,
+      "artist": "ZEHV",
+      "title": "Ooze (SV Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 35,
+      "artist": "Porat",
+      "title": "Chrome [DIGITAL STRUCTURES]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 36,
+      "artist": "Anthony Pappa & Fauxplay",
+      "title": "Forever Seeking (Simon Vuarambon Remix) [EARLY MORNING]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.25,
+  "cobertura_bpm": 0.25
+}

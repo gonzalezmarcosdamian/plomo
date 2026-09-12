@@ -1,0 +1,156 @@
+{
+  "dj": "Nick Warren",
+  "evento": "Nick Warren – The Soundgarden Vol 1 CD1",
+  "fecha": "",
+  "fuente": "https://youtu.be/yBcYGqlf4CY",
+  "orden_confiable": true,
+  "n": 14,
+  "n_identificados": 14,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Clara Moto",
+      "title": "Holy 05:40",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Dextro",
+      "title": "Heaval 03:49",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Nils Frahm",
+      "title": "Says 06:35",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Mono Electric Orchestra",
+      "title": "Low Ball 06:08",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Ólafur Arnalds",
+      "title": "Alice Enters 02:48",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Verche",
+      "title": "No One Left Behind (Reprise) 03:33",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Purl",
+      "title": "Essence 07:13",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Of Norway",
+      "title": "A Forest 07:38",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Nuuda",
+      "title": "Curiosity Calling 02:24",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Purl",
+      "title": "Is 05:20",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Fait Du Prince",
+      "title": "Wintersonne 05:46",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Black 8",
+      "title": "One More Day To Regret 05:22",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Jon Sine",
+      "title": "Out Of My Mind Feat. Alex Easdale 05:33",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Antü Coimbra",
+      "title": "El Jardín De Mis Sueños 10:27",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.0,
+  "cobertura_bpm": 0.0,
+  "orden_campos_revisado": true
+}

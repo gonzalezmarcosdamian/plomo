@@ -15,10 +15,10 @@
         124
       ],
       "e_pool": [
-        3.8,
-        7.2
+        3.9,
+        7.3
       ],
-      "e_lo": 4.2,
+      "e_lo": 4.3,
       "e_hi": 6.8,
       "max_per_artist": 1,
       "max_bpm_jump": 2.0,
@@ -290,7 +290,13 @@
         "9587394",
         "96926709"
       ],
-      "beam": 1200
+      "beam": 1200,
+      "e_lo_v1": 4.2,
+      "e_hi_v1": 6.8,
+      "e_pool_v1": [
+        3.8,
+        7.2
+      ]
     },
     {
       "num": 105,
@@ -304,10 +310,10 @@
       ],
       "e_pool": [
         5.4,
-        8.4
+        8.6
       ],
-      "e_lo": 5.6,
-      "e_hi": 8.0,
+      "e_lo": 5.5,
+      "e_hi": 8.1,
       "max_per_artist": 1,
       "max_bpm_jump": 2.0,
       "artists": [
@@ -529,7 +535,14 @@
         "9587394",
         "96926709"
       ],
-      "beam": 1200
+      "beam": 1200,
+      "e_lo_v1": 5.6,
+      "e_hi_v1": 8.0,
+      "e_pool_v1": [
+        5.4,
+        8.4
+      ]
     }
-  ]
+  ],
+  "_migracion_energia": "Los rangos se tradujeron de la formula v1 (con BPM) a la v2 (sin BPM) por percentil de la biblioteca, no por delta. Los valores viejos quedan en los campos *_v1. Ver scripts/migrar_configs_energia.py."
 }

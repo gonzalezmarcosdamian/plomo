@@ -1,59 +1,126 @@
 {
   "name": "47. Organic Dulce — Pelu Opener — 2026-06-17",
   "duration_h": 2,
-  "bpm_range": [116, 124],
+  "bpm_range": [
+    116,
+    124
+  ],
   "max_per_artist": 3,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.2, "e_center": 3.0, "fraction": 0.25},
-    {"name": "build",  "e_min": 4.0, "e_max": 5.5, "e_center": 4.8, "fraction": 0.35},
-    {"name": "peak",   "e_min": 5.3, "e_max": 6.5, "e_center": 5.9, "fraction": 0.40}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.2,
+      "e_center": 3.0,
+      "fraction": 0.25
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 5.5,
+      "e_center": 4.8,
+      "fraction": 0.35
+    },
+    {
+      "name": "peak",
+      "e_min": 5.3,
+      "e_max": 6.5,
+      "e_center": 5.9,
+      "fraction": 0.4
+    }
   ],
   "tracks": [
-    {"artist": "Hermanez", "title": "Gamma Ray"},
-    {"artist": "Hermanez", "title": "Areia"},
-    {"artist": "Hermanez", "title": "Eight Years"},
-
-    {"artist": "Ben Böhmer", "title": "Blossoms"},
-    {"artist": "Ben Böhmer", "title": "Run Away"},
-    {"artist": "Ben Böhmer", "title": "Begin Again"},
-
-    {"artist": "Adriatique", "title": "Ray"},
-    {"artist": "Adriatique", "title": "Desire"},
-    {"artist": "Adriatique", "title": "Home"},
-
-    {"artist": "Rodriguez Jr.", "title": "Twilight Language"},
-    {"artist": "Rodriguez Jr.", "title": "Nairobi"},
-    {"artist": "Rodriguez Jr.", "title": "1PM Sunrise"},
-
-    {"artist": "Lane 8", "title": "Survive"},
-    {"artist": "Lane 8", "title": "Keep On"},
-    {"artist": "Lane 8", "title": "Diamonds"},
-
-    {"artist": "Lee Burridge, Lost Desert", "title": "In the Dark"},
-    {"artist": "Lee Burridge, Lost Desert", "title": "Chicago Drive"},
-    {"artist": "Lee Burridge, Lost Desert", "title": "Ash & Ember"},
-
-    {"artist": "Nils Hoffmann", "title": "Heading Home"},
-    {"artist": "Panama, Nils Hoffmann", "title": "Far Behind"},
-    {"artist": "Nils Hoffmann, Julia Church", "title": "9 Days"},
-
-    {"artist": "Monolink", "title": "Burning Sun"},
-    {"artist": "Monolink", "title": "Don't Hold Back"},
-
-    {"artist": "Bedouin", "title": "Flight of Birds"},
-    {"artist": "Bedouin", "title": "Straight To The Heart"},
-
-    {"artist": "HVOB", "title": "Tender Skin"},
-    {"artist": "Monkey Safari", "title": "Goodbye"},
-    {"artist": "Cosmonaut", "title": "Milky Way"},
-    {"artist": "Tale Of Us", "title": "Astral"},
-    {"artist": "Lost Desert", "title": "Open Form"},
-    {"artist": "Stephan Bodzin", "title": "River"},
-
-    {"artist": "N'to", "title": "Alter Ego"},
-    {"artist": "Ben Böhmer", "title": "Escalate"},
-    {"artist": "Sunlounger", "title": "Lost"},
-    {"artist": "Moderat", "title": "Running"},
-    {"artist": "Moderat", "title": "Eating Hooks"}
-  ]
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "1PM Sunrise",
+      "content_id": "152407965"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Eight Years (Original Mix)",
+      "content_id": "14601563"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Nairobi (Original Mix)",
+      "content_id": "193525568"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Twilight Language (Extended Version)",
+      "content_id": "161537486"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Chicago Drive (Original Mix)",
+      "content_id": "110557491"
+    },
+    {
+      "artist": "Nils Hoffmann, Julia Church",
+      "title": "9 Days (Extended Mix)",
+      "content_id": "183236640"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Keep On (Extended Mix)",
+      "content_id": "16127516"
+    },
+    {
+      "artist": "Adriatique",
+      "title": "Ray",
+      "content_id": "4797677"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Gamma Ray",
+      "content_id": "39981663"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Flight of Birds",
+      "content_id": "219630125"
+    },
+    {
+      "artist": "Monolink",
+      "title": "Don't Hold Back",
+      "content_id": "98751952"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Areia (Original Mix)",
+      "content_id": "72517847"
+    },
+    {
+      "artist": "N'to",
+      "title": "Alter Ego",
+      "content_id": "166181033"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Ash & Ember (Extended Mix)",
+      "content_id": "72637273"
+    },
+    {
+      "artist": "Ben Böhmer",
+      "title": "Blossoms",
+      "content_id": "10364959"
+    },
+    {
+      "artist": "Ben Böhmer",
+      "title": "Begin Again (Original Mix)",
+      "content_id": "203052470"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "In the Dark (Original Mix)",
+      "content_id": "172322904"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Straight To The Heart",
+      "content_id": "205410394"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 16 -> 10 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

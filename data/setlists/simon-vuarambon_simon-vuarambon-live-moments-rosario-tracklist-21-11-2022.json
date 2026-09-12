@@ -1,0 +1,257 @@
+{
+  "dj": "Simon Vuarambon",
+  "evento": "SIMON VUARAMBON - Live Moments, Rosario + Tracklist (21/11/2022)",
+  "fecha": "",
+  "fuente": "https://youtu.be/0jxa6BT1LAU",
+  "orden_confiable": true,
+  "n": 23,
+  "n_identificados": 15,
+  "n_huecos_id": 8,
+  "cobertura_datos": 0.133,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "SIMON VUARAMBON",
+      "title": "Live Moments Rosario, Argentina",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Hermanez",
+      "title": "Heavens Of Seven (ID Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "ARTN",
+      "title": "Passenger",
+      "es_id": false,
+      "key": "Fmaj",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Ezequiel Arias - Passenger (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Tibi Dabo",
+      "title": "Isla",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 128.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Tibi Dabo - Isla "
+    },
+    {
+      "pos": 5,
+      "artist": "Andrey Loud",
+      "title": "Cave",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Andrey Loud - Cave (Extended Remix)"
+    },
+    {
+      "pos": 6,
+      "artist": "Jinger & Traumer",
+      "title": "Apoplex",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Traumer, Jinger - Apoplex (Original Mix)"
+    },
+    {
+      "pos": 7,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Ric Niels",
+      "title": "Reasons",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Ric Niels - Reasons"
+    },
+    {
+      "pos": 9,
+      "artist": "Carl Jurgens & Niso",
+      "title": "Skyscrapers (Alex O'Rion Remix)",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Carl Jurgens & Niso - Skyscrapers (Alex O'Rion Remix)"
+    },
+    {
+      "pos": 10,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Jamie Stevens",
+      "title": "Crosses",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Jamie Stevens - Crosses"
+    },
+    {
+      "pos": 13,
+      "artist": "Bondarev ft. Denis Babin",
+      "title": "Jupiter (ARTN Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Tonaco",
+      "title": "Setentrional",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Tonaco - Setentrional (Original Mix)"
+    },
+    {
+      "pos": 15,
+      "artist": "Simon Vuarambon",
+      "title": "Quimera",
+      "es_id": false,
+      "key": "9A",
+      "bpm": 121.0,
+      "energy": 5.9,
+      "label": "Shanti Radio Moscow",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 16,
+      "artist": "Simon Vuarambon",
+      "title": "1996",
+      "es_id": false,
+      "key": "6A",
+      "bpm": 122.0,
+      "energy": 6.1,
+      "label": "Shanti Radio Moscow",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 17,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "Simon Vuarambon",
+      "title": "Delusion",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Kamilo Sanclemente - Delusion (Original Mix)"
+    },
+    {
+      "pos": 21,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "Simon Vuarambon",
+      "title": "Mature Simplicity",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Simon Vuarambón - Mature Simplicity "
+    }
+  ],
+  "cobertura_key": 0.8,
+  "cobertura_bpm": 0.8
+}

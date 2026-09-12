@@ -1,45 +1,162 @@
 {
   "name": "44. Dowden + Guy J — Progressive Profundo — 2026-06-13",
   "duration_h": 2.5,
-  "bpm_range": [119, 124],
+  "bpm_range": [
+    119,
+    124
+  ],
   "max_per_artist": 4,
   "movements": [
-    {"name": "intro",   "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.22, "anchor_ids": []},
-    {"name": "build",   "e_min": 4.5, "e_max": 6.0, "e_center": 5.5, "fraction": 0.30, "anchor_ids": []},
-    {"name": "plateau", "e_min": 5.5, "e_max": 7.5, "e_center": 7.0, "fraction": 0.30, "anchor_ids": []},
-    {"name": "close",   "e_min": 5.0, "e_max": 6.5, "e_center": 4.5, "fraction": 0.18, "anchor_ids": []}
+    {
+      "name": "intro",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.5,
+      "fraction": 0.22,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.5,
+      "e_max": 6.0,
+      "e_center": 5.5,
+      "fraction": 0.3,
+      "anchor_ids": []
+    },
+    {
+      "name": "plateau",
+      "e_min": 5.5,
+      "e_max": 7.5,
+      "e_center": 7.0,
+      "fraction": 0.3,
+      "anchor_ids": []
+    },
+    {
+      "name": "close",
+      "e_min": 5.0,
+      "e_max": 6.5,
+      "e_center": 4.5,
+      "fraction": 0.18,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Dmitry Molosh", "title": "With Me (Original Mix)"},
-    {"artist": "Dowden", "title": "Pacifist (Original Mix)"},
-    {"artist": "Dowden", "title": "Urias"},
-    {"artist": "Dowden", "title": "Deflator (Original Mix)"},
-    {"artist": "Dowden & Ric Niels", "title": "Coil"},
-    {"artist": "Dmitry Molosh", "title": "Bird Flight (Original Mix)"},
-    {"artist": "Dmitry Molosh", "title": "Butterfly (Analog Jungs Remix)"},
-    {"artist": "Navar & Dmitry Molosh", "title": "Small Wonders (Hernan Cattaneo & Marcelo"},
-    {"artist": "Dmitry Molosh", "title": "Step by Step feat. Sasha Bartashevich"},
-    {"artist": "Dowden", "title": "Eternity"},
-    {"artist": "Ric Niels & Dowden", "title": "Spiral (GMJ Remix)"},
-    {"artist": "Dowden", "title": "Feather (Original Mix)"},
-    {"artist": "Dowden", "title": "Gavia (Original Mix)"},
-    {"artist": "Dmitry Molosh", "title": "Glide"},
-    {"artist": "Dmitry Molosh", "title": "Ambition (Original Mix)"},
-    {"artist": "Navar & Dmitry Molosh", "title": "Small Wonders (Hernan Cattaneo & Marcelo"},
-    {"artist": "Guy J", "title": "Nirvana"},
-    {"artist": "Guy J", "title": "State of Trance"},
-    {"artist": "Guy J", "title": "Karma (Original Mix)"},
-    {"artist": "Guy J", "title": "Illusion (Original Mix)"},
-    {"artist": "Guy J", "title": "Airborne (Original Mix)"},
-    {"artist": "Guy J", "title": "Day Of Light (Original Mix)"},
-    {"artist": "Guy J & Astrix", "title": "River"},
-    {"artist": "Guy J", "title": "Metal Dreams (Original Mix)"},
-    {"artist": "Hernan Cattaneo", "title": "Astron (Original Mix)"},
-    {"artist": "Hernan Cattaneo", "title": "Pressure Drop"},
-    {"artist": "Hernan Cattaneo", "title": "Pick Up"},
-    {"artist": "Yotto", "title": "Radiate (Extended Mix)"},
-    {"artist": "Orbital, Yotto", "title": "Belfast - Yotto Remix"},
-    {"artist": "John Digweed", "title": "Bleu Cobalt (Alican Remix)"},
-    {"artist": "Bog", "title": "Underwater"}
-  ]
+    {
+      "artist": "Guy J",
+      "title": "Karma (Original Mix)",
+      "content_id": "25191957"
+    },
+    {
+      "artist": "Guy J",
+      "title": "State of Trance",
+      "content_id": "148837036"
+    },
+    {
+      "artist": "Dowden & Ric Niels",
+      "title": "Coil",
+      "content_id": "246250672"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bird Flight (Original Mix)",
+      "content_id": "240140989"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Urias",
+      "content_id": "41896244"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Step by Step feat. Sasha Bartashevich (Original Dub Mix)",
+      "content_id": "108226592"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Gavia (Original Mix)",
+      "content_id": "169431664"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Day Of Light (Original Mix)",
+      "content_id": "267191914"
+    },
+    {
+      "artist": "Yotto",
+      "title": "Radiate (Extended Mix)",
+      "content_id": "27307122"
+    },
+    {
+      "artist": "Ric Niels & Dowden",
+      "title": "Spiral (GMJ Remix)",
+      "content_id": "39276486"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Ambition (Original Mix)",
+      "content_id": "57277028"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Nirvana",
+      "content_id": "141998672"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Eternity",
+      "content_id": "128313410"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Airborne (Original Mix)",
+      "content_id": "43250172"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Pacifist (Original Mix)",
+      "content_id": "249390073"
+    },
+    {
+      "artist": "Orbital, Yotto",
+      "title": "Belfast - Yotto Remix",
+      "content_id": "264378478"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Glide",
+      "content_id": "267544751"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Feather (Original Mix)",
+      "content_id": "158196635"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "With Me (Original Mix)",
+      "content_id": "74328881"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Illusion (Original Mix)",
+      "content_id": "240528466"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Butterfly (Analog Jungs Remix)",
+      "content_id": "56000138"
+    },
+    {
+      "artist": "Guy J & Astrix",
+      "title": "River",
+      "content_id": "261277508"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Metal Dreams (Original Mix)",
+      "content_id": "220937168"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 17 -> 7 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

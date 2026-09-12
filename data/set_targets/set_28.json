@@ -1,44 +1,117 @@
 {
   "name": "28. Progressive Colorido B — 2h — 2026-05-27",
   "duration_h": 2,
-  "bpm_range": [119, 128],
+  "bpm_range": [
+    119,
+    128
+  ],
   "style": "Afterlife / Diynamic — Anyma, Tale Of Us, Solomun, Rufus Du Sol",
   "movements": [
-    {"name": "warmup",  "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",   "e_min": 4.0, "e_max": 6.5, "e_center": 5.5, "fraction": 0.30, "anchor_ids": []},
-    {"name": "peak",    "e_min": 6.0, "e_max": 9.0, "e_center": 7.5, "fraction": 0.35, "anchor_ids": []},
-    {"name": "cool",    "e_min": 4.0, "e_max": 6.5, "e_center": 5.0, "fraction": 0.15, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.3,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.35,
+      "anchor_ids": []
+    },
+    {
+      "name": "cool",
+      "e_min": 4.0,
+      "e_max": 6.5,
+      "e_center": 5.0,
+      "fraction": 0.15,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Rufus Du Sol", "title": "Eyes"},
-    {"artist": "Rufus Du Sol", "title": "Treat You Better"},
-    {"artist": "Rufus Du Sol", "title": "Innerbloom"},
-    {"artist": "Rufus Du Sol", "title": "Underwater"},
-    {"artist": "Armen Miran", "title": "Heavenly Life"},
-    {"artist": "Tale Of Us", "title": "Notte Senza Fine"},
-    {"artist": "Tale Of Us Mind Against", "title": "Astral"},
-    {"artist": "Innellea", "title": "Reflected Wisdom"},
-    {"artist": "HVOB", "title": "Tender Skin"},
-    {"artist": "Fancy Inc", "title": "Something Good"},
-    {"artist": "Joris Voorn", "title": "Incident"},
-    {"artist": "N'to", "title": "Trauma"},
-    {"artist": "Simon Shackleton", "title": "Traumstaat"},
-    {"artist": "8Kays", "title": "Falling Down"},
-    {"artist": "Solomun", "title": "Kackvogel"},
-    {"artist": "Solomun", "title": "Customer Is King"},
-    {"artist": "Solomun", "title": "Hypnotize"},
-    {"artist": "Solomun", "title": "Home"},
-    {"artist": "Anyma", "title": "Explore Your Future"},
-    {"artist": "Anyma", "title": "Syren"},
-    {"artist": "Anyma Chris Avantgarde", "title": "Consciousness"},
-    {"artist": "Anyma Chris Avantgarde", "title": "Eternity"},
-    {"artist": "Anyma", "title": "Running"},
-    {"artist": "Above Beyond", "title": "Sun In Your Eyes"},
-    {"artist": "Above Beyond Gemma Hayes", "title": "Counting Down The Days"},
-    {"artist": "Bicep", "title": "Glue"},
-    {"artist": "PROFF", "title": "Your Light"},
-    {"artist": "Adriatique", "title": "Mystery"},
-    {"artist": "Massano", "title": "Falling"},
-    {"artist": "Kasper Koman", "title": "The Blind Navigator"}
-  ]
+    {
+      "artist": "Rufus Du Sol",
+      "title": "Eyes",
+      "content_id": "201263819"
+    },
+    {
+      "artist": "Solomun",
+      "title": "Hypnotize",
+      "content_id": "204202645"
+    },
+    {
+      "artist": "Rufus Du Sol",
+      "title": "Treat You Better",
+      "content_id": "138264257"
+    },
+    {
+      "artist": "Anyma & Chris Avantgarde",
+      "title": "Eternity",
+      "content_id": "11222502"
+    },
+    {
+      "artist": "Solomun",
+      "title": "Customer Is King",
+      "content_id": "76614482"
+    },
+    {
+      "artist": "Rufus Du Sol",
+      "title": "Innerbloom (Original Mix)",
+      "content_id": "193544719"
+    },
+    {
+      "artist": "Solomun",
+      "title": "Kackvogel",
+      "content_id": "193633681"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "The Blind Navigator (Extended Mix)",
+      "content_id": "7813536"
+    },
+    {
+      "artist": "Massano",
+      "title": "Falling",
+      "content_id": "100629343"
+    },
+    {
+      "artist": "Anyma",
+      "title": "Explore Your Future",
+      "content_id": "163896941"
+    },
+    {
+      "artist": "Armen Miran",
+      "title": "Heavenly Life",
+      "content_id": "89832321"
+    },
+    {
+      "artist": "Tale Of Us & Mind Against",
+      "title": "Astral (Original Mix)",
+      "content_id": "171963832"
+    },
+    {
+      "artist": "Bicep",
+      "title": "Glue (Original Mix)",
+      "content_id": "244019686"
+    },
+    {
+      "artist": "Joris Voorn",
+      "title": "Incident (Original Mix)",
+      "content_id": "102931811"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 12 -> 11 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

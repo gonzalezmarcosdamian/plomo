@@ -1,0 +1,258 @@
+{
+  "dj": "Nick Warren",
+  "evento": "Live from LAS PALAPAS by NICK WARREN | On Air Music x The Soundgarden",
+  "fecha": "",
+  "fuente": "https://youtu.be/pYA5m779WYc",
+  "orden_confiable": true,
+  "n": 24,
+  "n_identificados": 24,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Recording date",
+      "title": "March 14 & 15th, 2021.",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "​ Nihii ft. Shyam P",
+      "title": "No Answer [TULUM]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "​ Chris Domingo & Mariner",
+      "title": "Beautiful Thing (Nicolas Rada Remix) [BALKAN CONNECTION]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "​ Solatic",
+      "title": "Setting Sail [EIN2 (EINMUSIKA)]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "​ Valerie Dore",
+      "title": "Get Closer (Tiger & Woods Remix) [RUNNING BACK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "​ ID",
+      "title": "ID Pre-Save",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "​ Marsh",
+      "title": "Florence (Wassu Remix) [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "​ Javier Duque",
+      "title": "30 Day Alone [OZ LAND]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "​ Mattias Herrera",
+      "title": "Ango (Matik Remix) [MASSIVE HARMONY]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "​ Milio",
+      "title": "Blue Imagination [ATOMNATION]",
+      "es_id": false,
+      "key": "C",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Milio - Blue Imagination"
+    },
+    {
+      "pos": 14,
+      "artist": "​ Abel Ray",
+      "title": "Last Exit To Transkei [PRAH]",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Abel Ray - Last Exit To Transkei "
+    },
+    {
+      "pos": 15,
+      "artist": "​ Dmitry Molosh",
+      "title": "Distant Land (Supacooks Remix) [KITCHEN]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "​ Marcelo Vasami & Dimuth K",
+      "title": "First Light [PLATTENBANK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "​ ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "​ Parallel Universe",
+      "title": "Espiral [CLUBSONICA]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "​ Paul Angelo & Don Argento",
+      "title": "Astraeus [CLUBSONICA]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "​ Marsh",
+      "title": "Healer [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "​ Weird Sounding Dude",
+      "title": "Embarkment [THE SOUNDGARDEN]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.083,
+  "cobertura_bpm": 0.083,
+  "orden_campos_revisado": true
+}

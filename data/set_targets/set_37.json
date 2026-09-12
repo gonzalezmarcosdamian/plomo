@@ -1,47 +1,102 @@
 {
   "name": "37. Bedouin x Monolink — Peluqueria — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [116, 128],
+  "bpm_range": [
+    116,
+    128
+  ],
   "max_per_artist": 6,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.0, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.25, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.5, "e_max": 7.0, "e_center": 6.0, "fraction": 0.25, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.30, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.0,
+      "e_center": 3.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.0,
+      "fraction": 0.25,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.0,
+      "fraction": 0.25,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.5,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.3,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Bedouin", "title": "Straight To The Heart"},
-    {"artist": "Bedouin", "title": "Set The Controls For The Heart Of The Sun"},
-    {"artist": "Bedouin", "title": "Hologram"},
-    {"artist": "Bedouin", "title": "Voices In My Head"},
-    {"artist": "Bedouin", "title": "Flight of Birds"},
-    {"artist": "Monolink Zigan Aldi", "title": "Fidale"},
-    {"artist": "Bedouin", "title": "Petra"},
-    {"artist": "Nils Hoffmann Julia Church", "title": "9 Days"},
-    {"artist": "DakhaBrakha", "title": "Salgir Boyu"},
-    {"artist": "Hot Oasis", "title": "Bedouin Joy"},
-    {"artist": "Monolink", "title": "Swallow"},
-    {"artist": "Monolink", "title": "Burning Sun"},
-    {"artist": "Kidnap Leo Stannard", "title": "Moments"},
-    {"artist": "Soul Of Zoo Guy Laliberte", "title": "Into Your Tribe"},
-    {"artist": "Monolink", "title": "Father Ocean"},
-    {"artist": "Ben Bohmer Nils Hoffmann Malou", "title": "Breathing"},
-    {"artist": "Monolink", "title": "Don't Hold Back"},
-    {"artist": "Adam Port Monolink", "title": "Point Of No Return"},
-    {"artist": "Nils Hoffmann Tender", "title": "Let Me Go"},
-    {"artist": "Monolink", "title": "Otherside"},
-    {"artist": "Panama Nils Hoffmann", "title": "Far Behind"},
-    {"artist": "Bedouin Iveta", "title": "Better Than This"},
-    {"artist": "Black Coffee", "title": "Wish You Were Here"},
-    {"artist": "Monolink Stephan Jolk", "title": "The Silence"},
-    {"artist": "Malou Ben Bohmer", "title": "Lost In Mind"},
-    {"artist": "Monolink", "title": "Return to Oz"},
-    {"artist": "Bedouin", "title": "Make Me Feel"},
-    {"artist": "Roisin Murphy", "title": "Dear Miami"},
-    {"artist": "Nils Hoffmann Julia Church", "title": "9 Days Dosem"},
-    {"artist": "Monolink", "title": "Laura"},
-    {"artist": "Bedouin", "title": "Tijuana"},
-    {"artist": "Worakls Ben Bohmer", "title": "Red Dressed"},
-    {"artist": "Abdel Halim Hafez", "title": "El Toba"}
-  ]
+    {
+      "artist": "Hot Oasis",
+      "title": "Bedouin Joy (Original Mix)",
+      "content_id": "241397933"
+    },
+    {
+      "artist": "Monolink",
+      "title": "Don't Hold Back",
+      "content_id": "98751952"
+    },
+    {
+      "artist": "Nils Hoffmann, Julia Church",
+      "title": "9 Days (Dosem Extended Mix)",
+      "content_id": "29688568"
+    },
+    {
+      "artist": "Monolink, Stephan Jolk",
+      "title": "The Silence (Original Mix)",
+      "content_id": "19819937"
+    },
+    {
+      "artist": "Ben Böhmer, Nils Hoffmann & Malou",
+      "title": "Breathing (Extended Mix)",
+      "content_id": "11578551"
+    },
+    {
+      "artist": "Adam Port, Monolink",
+      "title": "Point Of No Return (Extended Mix)",
+      "content_id": "258397904"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Petra (Extended Version)",
+      "content_id": "18368511"
+    },
+    {
+      "artist": "Nils Hoffmann, Julia Church",
+      "title": "9 Days (Extended Mix)",
+      "content_id": "183236640"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Flight of Birds",
+      "content_id": "219630125"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Straight To The Heart",
+      "content_id": "205410394"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Set The Controls For The Heart Of The Sun (Original Mix)",
+      "content_id": "77829817"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 9 -> 7 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

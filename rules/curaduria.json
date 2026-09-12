@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "creado": "2026-09-07",
     "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
     "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia."
@@ -27,6 +27,23 @@
     "penal_misma_key_desde_peso": {
       "valor": 1.2,
       "porque": "Costo por cada repeticion de key mas alla del umbral. Comparado con peso_desvio_arco (3.0), quedarse en la misma key cuesta menos de la mitad que desviarse del arco."
+    },
+    "penal_quedarse_en_la_rueda": {
+      "valor": 0.8,
+      "duro": false,
+      "porque": "Quedarse en la misma rueda costaba cero y el solver lo hacia el 38% de las veces, contra el 23% de lo que el DJ toca de verdad (data/tocados) y el 14% de los sets de referencia. El set no sonaba mal transicion por transicion: sonaba igual de punta a punta.",
+      "evidencia": "Medido 2026-09-12 sobre 566 transiciones de data/set_targets, 315 de data/tocados y 69 de data/setlists. El objetivo NO es el 14% de los DJs de festival sino el 23% que el DJ ya hace cuando decide en vivo."
+    },
+    "monotonia_desde": {
+      "valor": 2,
+      "duro": false,
+      "peso": 0.5,
+      "porque": "Subir un paso hacia el mismo lado tres veces seguidas aburre igual que no moverse. Se penaliza desde la tercera consecutiva.",
+      "evidencia": "En los sets del solver las corridas monotonas cubren el 22% de las transiciones con largo maximo 5; en los sets de referencia cubren el 3% con largo maximo 2."
+    },
+    "monotonia_desde_peso": {
+      "valor": 0.5,
+      "porque": "Costo por cada paso monotono mas alla del umbral. La mitad que penal_quedarse (0.8): repetir direccion es menos grave que no moverse."
     }
   },
   "energia": {
@@ -60,6 +77,12 @@
     "peso_desvio_arco": {
       "valor": 3.0,
       "porque": "El desvio del arco pesa 6x mas que un hop de Camelot (3.0 vs 0.5). Es la jerarquia declarada en docs/REGLAS.md: el arco manda."
+    },
+    "formula_sin_bpm": {
+      "valor": "v2",
+      "duro": true,
+      "porque": "La v1 sumaba (bpm-118)/8*3 sobre 10: el 30% de la energia ERA el tempo. Un tema de 118 BPM tenia techo E7.0 por construccion y pedir 'mucha energia' era pedir 'BPM alto'.",
+      "evidencia": "Antes del cambio, de 180 tracks con E>=7.0 solo 16 (9%) estaban en 122 BPM o menos. Despues: 122 de 204 (60%). Recalculado 2026-09-12 desde los cues guardados, sin re-analizar audio."
     }
   },
   "bpm": {

@@ -9,19 +9,29 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Ed Ed, JJ Dawson",
-      "title": "Higher Than Me (Stimming Remix)",
-      "content_id": "103399728"
+      "artist": "Maze 28, Rockka",
+      "title": "Corrosive",
+      "content_id": "68359216"
     },
     {
-      "artist": "Emi Galvan",
-      "title": "Dharma (Original Mix)",
-      "content_id": "96780807"
+      "artist": "Ezequiel Arias",
+      "title": "Sin Control (Extended Mix)",
+      "content_id": "142983857"
     },
     {
-      "artist": "Hot Oasis",
-      "title": "Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix)",
-      "content_id": "139352087"
+      "artist": "Iovino, Tom Pavicich",
+      "title": "Seamless (Original Mix)",
+      "content_id": "220612989"
+    },
+    {
+      "artist": "Mayro",
+      "title": "Chimi (Original Mix)",
+      "content_id": "262298802"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Carousel (Original Mix)",
+      "content_id": "252248696"
     },
     {
       "artist": "Dowden",
@@ -29,14 +39,9 @@
       "content_id": "249390073"
     },
     {
-      "artist": "Greg Ochman",
-      "title": "In Between Dreams",
-      "content_id": "129731006"
-    },
-    {
-      "artist": "Hernan Cattaneo & Marcelo Vasami",
-      "title": "Scope",
-      "content_id": "158022171"
+      "artist": "D-Nox, Andre Moret",
+      "title": "Cosmic (Extended Mix)",
+      "content_id": "76975906"
     },
     {
       "artist": "Khen",
@@ -44,19 +49,9 @@
       "content_id": "16097109"
     },
     {
-      "artist": "GMJ, Matter",
-      "title": "Telomeres (Original Mix)",
-      "content_id": "175052176"
-    },
-    {
-      "artist": "Guy J",
-      "title": "Stranger In A Strange World (Original Mix)",
-      "content_id": "80902774"
-    },
-    {
-      "artist": "Rockka",
-      "title": "Synthesis",
-      "content_id": "133677574"
+      "artist": "Hobin Rude",
+      "title": "Prism (Original Mix)",
+      "content_id": "209271901"
     },
     {
       "artist": "NUFECTS",
@@ -64,39 +59,44 @@
       "content_id": "12342979"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Canon (Original Mix)",
-      "content_id": "250153001"
+      "artist": "Cendryma",
+      "title": "Bending Speed (Rabiee Ahmad Remix)",
+      "content_id": "227598362"
     },
     {
-      "artist": "Maze 28",
-      "title": "Aer8 (Juan Pablo Torrez Remix)",
-      "content_id": "231052947"
+      "artist": "GMJ, Matter",
+      "title": "Telomeres (Original Mix)",
+      "content_id": "175052176"
     },
     {
-      "artist": "Kabi (AR), Ric Niels",
-      "title": "Kimica",
-      "content_id": "231885986"
+      "artist": "Gai Barone",
+      "title": "Shuttered (Original Mix)",
+      "content_id": "210073756"
     },
     {
-      "artist": "Amine K (Moroko Loko), WAHM (FR)",
-      "title": "Kill the Anger (Rodriguez Jr. Remix)",
-      "content_id": "16167647"
+      "artist": "Sebastian Sellares",
+      "title": "Abaddon (Extended Mix)",
+      "content_id": "40168032"
     },
     {
-      "artist": "Tom Pavicich",
-      "title": "Insight (Original Mix)",
-      "content_id": "83418763"
+      "artist": "Fideles, Be No Rain",
+      "title": "See You In Dreams (Original Mix)",
+      "content_id": "30329279"
     },
     {
-      "artist": "Rauschhaus, Cary Crank",
-      "title": "Bekal (Extended Mix)",
-      "content_id": "108617487"
+      "artist": "Tali Muss",
+      "title": "Garip (Original Mix)",
+      "content_id": "8906387"
     },
     {
-      "artist": "Leandro Murua, Martin Fredes",
-      "title": "Interference (Original Mix)",
-      "content_id": "236712792"
+      "artist": "Emi Galvan",
+      "title": "Vibration (Original Mix)",
+      "content_id": "214160790"
+    },
+    {
+      "artist": "Kostya Outta, Liam Garcia",
+      "title": "If I Win (Extended Mix)",
+      "content_id": "231387448"
     }
   ]
 }

@@ -1,0 +1,231 @@
+{
+  "dj": "John Digweed",
+  "evento": "John Digweed - Transitions 1049 Hour 2 Quivver",
+  "fecha": "",
+  "fuente": "https://youtu.be/t-NvJaSxvPY",
+  "orden_confiable": true,
+  "n": 21,
+  "n_identificados": 21,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.048,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Hour 1",
+      "title": "John Digweed",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Amrita, David Hasert, Minoas Cirillo",
+      "title": "Birdhouse (Extended Mix)",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "David Hasert, Minoas Cirillo, Amrita (FR) - Birdhouse (Extended Mix)"
+    },
+    {
+      "pos": 3,
+      "artist": "Gai Barone",
+      "title": "In the Blink of an Eye",
+      "es_id": false,
+      "key": "9A",
+      "bpm": 122.0,
+      "energy": 6.2,
+      "label": "Stripped Recordings",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 4,
+      "artist": "Quivver",
+      "title": "Deception",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Quivver - Deception (Original Mix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Gadi Mitrani",
+      "title": "Denne (Original Mix",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Four Candles & Feemarx",
+      "title": "Eudaimonia 303",
+      "es_id": false,
+      "key": "G",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Four Candles, Feemarx - Eudaimonia 303 (Original Mix)"
+    },
+    {
+      "pos": 7,
+      "artist": "Fluke",
+      "title": "Slid (sLEdger Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Jonathan Kaspar",
+      "title": "I Love Your Voice",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 117.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Jonathan Kaspar - I Love Your Voice (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Elliot Moriarty",
+      "title": "only time",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Elliot Moriarty - Only Time (Original Mix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Hour 2",
+      "title": "Quivver",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Quivver",
+      "title": "A Higher State - Anjunadeep Explorations",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Quivver",
+      "title": "Illusions - Anjunadeep Explorations",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Quivver",
+      "title": "Visitor - Bedrock",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Dachshund",
+      "title": "Basic Chord - Clapper",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Federico Epistemologie",
+      "title": "Floyd - Last Night On Earth",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Jamie Stevens Feat. Wilma",
+      "title": "Tell You Later - Music To Die For",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "D-Nox & Andre Moret",
+      "title": "Control - Global Underground",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Quivver",
+      "title": "Deception - Bedrock",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "Quivver",
+      "title": "Disconnect - Anjunadeep Explorations",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "SWIM",
+      "title": "Better Now - swim",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "Quivver",
+      "title": "Nowhere Else to Go - Anjunadeep Explorations",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.286,
+  "cobertura_bpm": 0.286
+}

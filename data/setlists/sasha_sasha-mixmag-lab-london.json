@@ -1,0 +1,196 @@
+{
+  "dj": "Sasha",
+  "evento": "Sasha | Mixmag Lab London",
+  "fecha": "",
+  "fuente": "https://youtu.be/wbU9P2DcKFs",
+  "orden_confiable": true,
+  "n": 18,
+  "n_identificados": 18,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Cassian",
+      "title": "Open Up (Durante Remix) 0:16",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Sentre",
+      "title": "IDK 5:12",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Baril",
+      "title": "Lockdown 10:56",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Reset Robot",
+      "title": "Denial 15:05",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "ONR ft. Sarah Barthel",
+      "title": "Must Stop (Icarus Better Daze Remix) 19:36",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Swoose",
+      "title": "Lotus 23:05",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Declan McKenna",
+      "title": "The Key To Life On Earth (TSHA Remix) 30:22",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Joseph Ashworth",
+      "title": "Sheen 34:06",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Sofia Kourtesis",
+      "title": "La Perla 40:33",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Koreless",
+      "title": "Black Rainbow 44:25",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Overmono",
+      "title": "If U Ever 48:02",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Marsh",
+      "title": "Little Darling 52:17",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "EJECA",
+      "title": "Beacon (Locked Groove Remix) 58:08",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Skrillex & Starrah & Four Tet",
+      "title": "Butterflies 1:03:51",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Eskuche",
+      "title": "Passion 1:11:16",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Pangaea",
+      "title": "Like This (Full Mix) 1:17:13",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "The Micronaut",
+      "title": "Table Tennis 1:21:56",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Sentre",
+      "title": "U&ME 1:27:53",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.0,
+  "cobertura_bpm": 0.0,
+  "orden_campos_revisado": true
+}

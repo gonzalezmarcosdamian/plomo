@@ -1,0 +1,122 @@
+{
+  "dj": "John Digweed",
+  "evento": "John Digweed -Transitions 1148 + Guest Joyce Muniz",
+  "fecha": "",
+  "fuente": "https://youtu.be/5qQfKOnM04I",
+  "orden_confiable": true,
+  "n": 10,
+  "n_identificados": 10,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Jonathan Kaspar",
+      "title": "The Reason Why feat. Bákayan",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Quiver",
+      "title": "Visitor",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Jonathan Kaspar",
+      "title": "Play With Me",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Jonathan Kaspar - Play With Me (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Budakid",
+      "title": "Hearts (Argia Remix)",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Budakid - Hearts (Argia Remix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Marvio",
+      "title": "Hathor",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Ruben Karapetyan - Hathor (Original Mix)"
+    },
+    {
+      "pos": 6,
+      "artist": "Chelu Garcia",
+      "title": "Guy On Fire (Timo Maas and Francesco Mami Remix)",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 126.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Chelu Garcia, Franco Botto - Guy On Fire (Timo Maas and Francesco Mami Remix)"
+    },
+    {
+      "pos": 7,
+      "artist": "Culoe De Song",
+      "title": "The Spiker (Manoo Club Remix)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Culoe De Song - The Spiker (Manoo Club Remix)"
+    },
+    {
+      "pos": 8,
+      "artist": "Voltaire",
+      "title": "Days of Hope",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 130.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Voltaire - Days of Hope (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Zuccasam",
+      "title": "Feel Happy",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Zuccasam - Feel Happy (Original Mix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Floormagnet",
+      "title": "Nodisco (Boris Louit Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.7,
+  "cobertura_bpm": 0.7
+}

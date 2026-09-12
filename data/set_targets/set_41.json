@@ -1,62 +1,187 @@
 {
   "name": "41. Dulce Progresivo — Loveland Style — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [120, 124],
+  "bpm_range": [
+    120,
+    124
+  ],
   "max_per_artist": 4,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.22, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.5, "e_max": 7.0, "e_center": 6.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.24, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.22,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.5,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.24,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Roy Rosenfeld", "title": "Kala"},
-    {"artist": "Melodiam", "title": "Leuben"},
-    {"artist": "Sebastien Leger", "title": "Quand Je Serai Seul"},
-    {"artist": "Roy Rosenfeld", "title": "Nana"},
-    {"artist": "Greta Meier", "title": "Enlightenment"},
-    {"artist": "Sebastien Leger", "title": "Son of Sun"},
-    {"artist": "Melodiam", "title": "Get Lost"},
-    {"artist": "Ezequiel Arias", "title": "Esperanza"},
-    {"artist": "Sebastien Leger", "title": "Stevie"},
-    {"artist": "Roy Rosenfeld", "title": "Skyhook"},
-    {"artist": "Sebastian Sellares Greta Meier", "title": "Benevolence"},
-    {"artist": "Sebastien Leger", "title": "Firefly"},
-    {"artist": "Melodiam", "title": "Old Garden"},
-    {"artist": "Ezequiel Arias", "title": "Purpura"},
-    {"artist": "Sebastien Leger Lost Miracle", "title": "Mistily"},
-    {"artist": "Joan Retamero Greta Meier", "title": "The Beginning"},
-    {"artist": "Roy Rosenfeld", "title": "Force Major"},
-    {"artist": "Melodiam", "title": "Flying Sequences"},
-    {"artist": "Christopher Erre Greta Meier", "title": "Giza"},
-    {"artist": "Marsh", "title": "Beech Street"},
-    {"artist": "Sebastien Leger Roy Rosenfeld", "title": "Panko Day"},
-    {"artist": "Greta Meier Maze 28", "title": "Acceptance"},
-    {"artist": "Ezequiel Arias", "title": "Modern Memory"},
-    {"artist": "Roy Rosenfeld", "title": "The Biggest Heart"},
-    {"artist": "Melodiam", "title": "Moon Arch"},
-    {"artist": "Christopher Erre Greta Meier", "title": "Osiris"},
-    {"artist": "Roy Rosenfeld", "title": "Halomot"},
-    {"artist": "Kostya Outta Greta Meier", "title": "Far Above"},
-    {"artist": "Rauschhaus Greta Meier", "title": "Painting in the Sky"},
-    {"artist": "Roland Clark", "title": "I Get Deep"},
-    {"artist": "Simon Doty", "title": "Solstice"},
-    {"artist": "Roy Rosenfeld", "title": "Toco"},
-    {"artist": "Ezequiel Arias", "title": "Solar"},
-    {"artist": "Greta Meier", "title": "Enlightenment"},
-    {"artist": "Melodiam", "title": "Trippin"},
-    {"artist": "Sante Re.you Biishop", "title": "Do You Write"},
-    {"artist": "Simon Doty", "title": "Hometown"},
-    {"artist": "Guy Gerber", "title": "Rainchecks In Montreal"},
-    {"artist": "Roy RosenfelD", "title": "Hypnosa De La Rosa"},
-    {"artist": "Melodiam", "title": "Cosmic"},
-    {"artist": "Simon Doty", "title": "The Beacon"},
-    {"artist": "Rauschhaus Greta Meier", "title": "Painting in the Sky"},
-    {"artist": "Roy RosenfelD", "title": "Creme"},
-    {"artist": "Melodiam", "title": "Words Are Weapons"},
-    {"artist": "Melodiam", "title": "Big Sirens"},
-    {"artist": "Greta Meier", "title": "Enlightenment"},
-    {"artist": "Melodiam", "title": "Dark Slide"},
-    {"artist": "Simon Doty", "title": "Solstice"}
-  ]
+    {
+      "artist": "Joan Retamero, Greta Meier",
+      "title": "The Beginning (Original Mix)",
+      "content_id": "111239667"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Firefly (Original Mix)",
+      "content_id": "38262851"
+    },
+    {
+      "artist": "Christopher Erre, Greta Meier",
+      "title": "Giza (Original Mix)",
+      "content_id": "191578274"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Stevie (Original Mix)",
+      "content_id": "49087473"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Hypnosa De La Rosa",
+      "content_id": "38612710"
+    },
+    {
+      "artist": "Greta Meier, Maze 28",
+      "title": "Acceptance (Original Mix)",
+      "content_id": "177716916"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Quand Je Serai Seul",
+      "content_id": "187641315"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Kala",
+      "content_id": "52738760"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Púrpura",
+      "content_id": "227608600"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Halomot",
+      "content_id": "262045866"
+    },
+    {
+      "artist": "Christopher Erre, Greta Meier",
+      "title": "Osiris (Original Mix)",
+      "content_id": "259100979"
+    },
+    {
+      "artist": "Simon Doty",
+      "title": "Solstice (Extended Mix)",
+      "content_id": "33955474"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Esperanza (Extended Mix)",
+      "content_id": "218829404"
+    },
+    {
+      "artist": "Simon Doty",
+      "title": "Solstice (Extended Mix)",
+      "content_id": "33955474"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Solar (Extended Mix)",
+      "content_id": "266911496"
+    },
+    {
+      "artist": "Sebastien Leger, Roy Rosenfeld",
+      "title": "Panko Day (Extended Mix)",
+      "content_id": "257660830"
+    },
+    {
+      "artist": "Melodiam",
+      "title": "Old Garden",
+      "content_id": "72587871"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Son of Sun (Original Mix)",
+      "content_id": "226428612"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Skyhook (Original Mix)",
+      "content_id": "268265765"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Modern Memory (Extended Mix)",
+      "content_id": "23002335"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Force Major (Original Mix)",
+      "content_id": "154652439"
+    },
+    {
+      "artist": "Sebastian Sellares, Greta Meier",
+      "title": "Benevolence (Extended Mix)",
+      "content_id": "114907652"
+    },
+    {
+      "artist": "Sebastien Leger, Lost Miracle",
+      "title": "Mistily (Extended Mix)",
+      "content_id": "133983297"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Creme",
+      "content_id": "113586500"
+    },
+    {
+      "artist": "Simon Doty",
+      "title": "The Beacon",
+      "content_id": "55579160"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Toco",
+      "content_id": "28986214"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Nana (Original Mix)",
+      "content_id": "111356554"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "The Biggest Heart",
+      "content_id": "249724511"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 23 -> 10 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

@@ -1,0 +1,136 @@
+{
+  "dj": "Nick Warren",
+  "evento": "Nick Warren – The Soundgarden Vol 1 CD2",
+  "fecha": "",
+  "fuente": "https://youtu.be/57WkXo9RsZE",
+  "orden_confiable": true,
+  "n": 12,
+  "n_identificados": 12,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Peet",
+      "title": "Fear Of Andarana 06:37",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Niko Mayer",
+      "title": "Anunnaki 08:03",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Simon Shackleton",
+      "title": "We All Shine On 06:51",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Stas Drive Pres. Quattar",
+      "title": "Arjuna 05:15",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Kassey Voorn",
+      "title": "Voices 06:41",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Peter Makto & Gregory S",
+      "title": "Glass House 05:46",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Tero Civill",
+      "title": "Paper Girl 04:58",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Mono Electric Orchestra",
+      "title": "Uno Momento 04:46",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "James Monro",
+      "title": "Ambientworkx.XIII 04:02",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Khen",
+      "title": "The Lighthouse 09:22",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Simon Shackleton",
+      "title": "Getting Closer 05:43",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Dark Soul Project",
+      "title": "Al Sur 07:32",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.0,
+  "cobertura_bpm": 0.0,
+  "orden_campos_revisado": true
+}

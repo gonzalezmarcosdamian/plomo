@@ -1,57 +1,152 @@
 {
   "name": "39. Guy Mantzur x Max Cooper — Dark Melodico — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [115, 127],
+  "bpm_range": [
+    115,
+    127
+  ],
   "max_per_artist": 6,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.0, "e_center": 3.0, "fraction": 0.18, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.5, "e_max": 7.0, "e_center": 6.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.28, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.0,
+      "e_center": 3.0,
+      "fraction": 0.18,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.5,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Nick Warren", "title": "Dreamcatcher"},
-    {"artist": "Husa Zeyada Hernan Cattaneo", "title": "On My Own"},
-    {"artist": "Max Cooper", "title": "Balance Perc Tool"},
-    {"artist": "Atish Mark Slee Nick Warren", "title": "Chameleon"},
-    {"artist": "Max Cooper", "title": "Hope"},
-    {"artist": "Max Cooper", "title": "Resynthesis"},
-    {"artist": "Guy Mantzur Roy Rosenfeld", "title": "Epika"},
-    {"artist": "Guy Mantzur", "title": "Tremolo Man"},
-    {"artist": "Matthias Meyer Guy Mantzur Tamir Regev", "title": "Strangely Enough"},
-    {"artist": "Armen Miran Felix Raphael Hernan Cattaneo", "title": "Ghost"},
-    {"artist": "Max Cooper", "title": "Music of the Tides"},
-    {"artist": "Max Cooper John Tejada", "title": "Cyclic"},
-    {"artist": "Dominik Eulberg Max Cooper", "title": "Sansula"},
-    {"artist": "Maga Nick Warren", "title": "Trust Me Sometime"},
-    {"artist": "Upercent Nick Warren", "title": "Pulsacions"},
-    {"artist": "Hernan Cattaneo Husa Zeyada", "title": "Love Is Coming Back"},
-    {"artist": "Guy Mantzur", "title": "Chasing The Fog"},
-    {"artist": "Guy Mantzur Khen", "title": "My Golden Cage"},
-    {"artist": "Guy Mantzur Tamir Regev", "title": "Stargazer"},
-    {"artist": "Hraach Armen Miran Nick Warren", "title": "Menq"},
-    {"artist": "Eelke Kleijn Nick Warren", "title": "8 Bit Era"},
-    {"artist": "Nick Warren", "title": "Falling In"},
-    {"artist": "Nick Warren", "title": "Balance"},
-    {"artist": "Nils Frahm Max Cooper", "title": "For"},
-    {"artist": "Hernan Cattaneo Soundexile", "title": "Wind Down"},
-    {"artist": "Hernan Cattaneo Soundexile", "title": "Pick Up"},
-    {"artist": "Hernan Cattaneo Gorje Hewek", "title": "Kaleidoscope"},
-    {"artist": "Hernan Cattaneo Soundexile", "title": "Deneb"},
-    {"artist": "Hernan Cattaneo Soundexile", "title": "Astron"},
-    {"artist": "Maze 28 Hernan Cattaneo", "title": "This Is Just a Dream"},
-    {"artist": "Mariano Mellino Hernan Cattaneo", "title": "The Old Seawolf"},
-    {"artist": "Guy Mantzur Khen", "title": "Where Is Home"},
-    {"artist": "Guy Mantzur", "title": "My Wild Flower"},
-    {"artist": "Nick Warren", "title": "Freebird"},
-    {"artist": "Hernan Cattaneo Hicky Kalo", "title": "Voyage"},
-    {"artist": "Max Cooper", "title": "Careless"},
-    {"artist": "Hidden Orchestra Max Cooper", "title": "Wingbeats"},
-    {"artist": "Guy Mantzur Khen Matthias Meyer", "title": "Where Is Home"},
-    {"artist": "Guy Mantzur", "title": "Love in a Bottle"},
-    {"artist": "Max Cooper", "title": "Organa"},
-    {"artist": "Guy Mantzur", "title": "Blackout Station"},
-    {"artist": "Joris Voorn", "title": "Fool's Paradise"},
-    {"artist": "Hernan Cattaneo Soda Stereo", "title": "En la Ciudad de la Furia"}
-  ]
+    {
+      "artist": "Max Cooper",
+      "title": "Resynthesis (Original Mix)",
+      "content_id": "95994838"
+    },
+    {
+      "artist": "Max Cooper",
+      "title": "Music of the Tides (Original Mix)",
+      "content_id": "27039211"
+    },
+    {
+      "artist": "Hernan Cattaneo, Hicky & Kalo",
+      "title": "Voyage",
+      "content_id": "222504753"
+    },
+    {
+      "artist": "Max Cooper",
+      "title": "Hope",
+      "content_id": "188613418"
+    },
+    {
+      "artist": "Nick Warren",
+      "title": "Balance",
+      "content_id": "97264205"
+    },
+    {
+      "artist": "Hernan Cattaneo & Soundexile",
+      "title": "Pick Up",
+      "content_id": "205884331"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "content_id": "212560040"
+    },
+    {
+      "artist": "Hernan Cattaneo & Soundexile",
+      "title": "Deneb",
+      "content_id": "46914447"
+    },
+    {
+      "artist": "Guy Mantzur, Roy Rosenfeld",
+      "title": "Epika (Original Mix)",
+      "content_id": "266361239"
+    },
+    {
+      "artist": "Hernan Cattaneo & Soundexile",
+      "title": "Wind Down (Outro Mix)",
+      "content_id": "154064476"
+    },
+    {
+      "artist": "Max Cooper",
+      "title": "Balance Perc Tool (Original Mix)",
+      "content_id": "255042127"
+    },
+    {
+      "artist": "Hernan Cattaneo, Husa & Zeyada",
+      "title": "Love Is Coming Back (Club Mix)",
+      "content_id": "89421126"
+    },
+    {
+      "artist": "Guy Mantzur & Khen",
+      "title": "Where Is Home (Original Mix)",
+      "content_id": "27711393"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Blackout Station (Original Mix)",
+      "content_id": "34999782"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "My Wild Flower (Original Mix)",
+      "content_id": "127812578"
+    },
+    {
+      "artist": "Guy Mantzur, Khen",
+      "title": "My Golden Cage (Original Mix)",
+      "content_id": "230647385"
+    },
+    {
+      "artist": "Nick Warren",
+      "title": "Dreamcatcher",
+      "content_id": "150545669"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Chasing The Fog",
+      "content_id": "147396412"
+    },
+    {
+      "artist": "Hernan Cattaneo & Soundexile",
+      "title": "Astron (Original Mix)",
+      "content_id": "197603712"
+    },
+    {
+      "artist": "Guy Mantzur, Tamir Regev",
+      "title": "Stargazer (Original Mix)",
+      "content_id": "222534745"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Love in a Bottle (Original Mix)",
+      "content_id": "129459033"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 19 -> 13 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

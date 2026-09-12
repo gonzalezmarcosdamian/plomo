@@ -1,37 +1,113 @@
 {
   "name": "56. Radar Colorido — Emi/Kamilo — 2h — 2026-08-03",
   "duration_h": 2,
-  "bpm_range": [120, 125],
+  "bpm_range": [
+    120,
+    125
+  ],
   "max_per_artist": 5,
   "movements": [
-    {"name": "entrada",     "e_min": 3.0, "e_max": 4.6, "e_center": 3.8, "fraction": 0.25},
-    {"name": "desarrollo",  "e_min": 4.3, "e_max": 5.8, "e_center": 5.0, "fraction": 0.35},
-    {"name": "peak vocal",  "e_min": 5.5, "e_max": 7.0, "e_center": 6.2, "fraction": 0.25},
-    {"name": "cierre",      "e_min": 4.5, "e_max": 5.8, "e_center": 5.1, "fraction": 0.15}
+    {
+      "name": "entrada",
+      "e_min": 3.0,
+      "e_max": 4.6,
+      "e_center": 3.8,
+      "fraction": 0.25
+    },
+    {
+      "name": "desarrollo",
+      "e_min": 4.3,
+      "e_max": 5.8,
+      "e_center": 5.0,
+      "fraction": 0.35
+    },
+    {
+      "name": "peak vocal",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.2,
+      "fraction": 0.25
+    },
+    {
+      "name": "cierre",
+      "e_min": 4.5,
+      "e_max": 5.8,
+      "e_center": 5.1,
+      "fraction": 0.15
+    }
   ],
   "tracks": [
-    {"artist": "Emi Galvan", "title": "Mily"},
-    {"artist": "Emi Galvan", "title": "I Wish"},
-    {"artist": "Emi Galvan", "title": "Boomera"},
-    {"artist": "Emi Galvan", "title": "Never Ending Summer"},
-    {"artist": "Emi Galvan", "title": "Reborn"},
-    {"artist": "Durante, Emi Galvan", "title": "Lunar Circuit"},
-
-    {"artist": "Kamilo Sanclemente", "title": "Auriga Moon"},
-    {"artist": "Kamilo Sanclemente", "title": "Tangiers"},
-    {"artist": "Kamilo Sanclemente", "title": "Inner Motion"},
-    {"artist": "Kamilo Sanclemente", "title": "Just Come Back"},
-    {"artist": "Kamilo Sanclemente, Mauro Aguirre", "title": "Looking For You"},
-
-    {"artist": "Ezequiel Arias", "title": "Sin Control"},
-    {"artist": "HANA", "title": "Go"},
-
-    {"artist": "Solis", "title": "Symbiosis"},
-    {"artist": "Solis", "title": "Una Volta"},
-
-    {"artist": "Nicolas Viana", "title": "Kalira"},
-    {"artist": "Antrim", "title": "Curved"},
-    {"artist": "Makebo", "title": "Balance"},
-    {"artist": "GMJ, Matter", "title": "Verticality"}
-  ]
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Sin Control (Extended Mix)",
+      "content_id": "142983857"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Boomera (Original Mix)",
+      "content_id": "192614193"
+    },
+    {
+      "artist": "Antrim",
+      "title": "Curved (Original Mix)",
+      "content_id": "61230103"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Reborn (Original Mix)",
+      "content_id": "211760669"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Auriga Moon (Original Mix)",
+      "content_id": "160611663"
+    },
+    {
+      "artist": "GMJ, Matter",
+      "title": "Verticality (Original Mix)",
+      "content_id": "183361749"
+    },
+    {
+      "artist": "Makebo",
+      "title": "Balance (Original Mix)",
+      "content_id": "141311579"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Just Come Back (Extended Mix)",
+      "content_id": "129720546"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Mily (Original Mix)",
+      "content_id": "231529570"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Mauro Aguirre",
+      "title": "Looking For You (Extended Mix)",
+      "content_id": "89039390"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "I Wish (Original Mix)",
+      "content_id": "51206498"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Tangiers (Original Mix)",
+      "content_id": "145310718"
+    },
+    {
+      "artist": "Durante, Emi Galvan",
+      "title": "Lunar Circuit (Extended Mix)",
+      "content_id": "74712366"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Never Ending Summer (Original Mix)",
+      "content_id": "98817444"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 11 -> 6 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

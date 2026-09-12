@@ -15,10 +15,10 @@
         105,
         121
       ],
-      "e_lo": 3.2,
+      "e_lo": 2.1,
       "e_hi": 5.2,
       "e_pool": [
-        2.0,
+        1.4,
         5.5
       ],
       "solo_sin_usar": true,
@@ -78,7 +78,14 @@
         "5555595"
       ],
       "_porque_exclude_set96": "Los ultimos 18 ids son los 18 tracks del set 96, que se arma primero porque tiene el pool mucho mas chico y un detonante obligatorio. rules/curaduria.json pide 0 tracks repetidos entre sets consecutivos y 95 y 96 lo son. Sin esto se pisaban en dos: Eramnesia (Emi Galvan, NOIYSE PROJECT) y Sleep Paralysis (Enamour, Nox Vahn). Se excluyen los 18 y no solo los dos que chocaban para que la separacion no dependa de que la seleccion del 96 no cambie. El pool del 95 pasa de 118 a 100 candidatos para 45 lugares.",
-      "_porque_n": "46 y no 36 (que serian los 12 por hora de densidad.tracks_por_hora). Los 46 elegidos suman 307 min brutos: con blend de 3 min eso da 178 min reales, o sea 2h58. El numero de tracks lo fija la duracion de los tracks, no una densidad nominal: el pool promedia 6.7 min y cada track solo aporta ~3.7 min netos. Con 36 el set duraria 2h15."
+      "_porque_n": "46 y no 36 (que serian los 12 por hora de densidad.tracks_por_hora). Los 46 elegidos suman 307 min brutos: con blend de 3 min eso da 178 min reales, o sea 2h58. El numero de tracks lo fija la duracion de los tracks, no una densidad nominal: el pool promedia 6.7 min y cada track solo aporta ~3.7 min netos. Con 36 el set duraria 2h15.",
+      "e_lo_v1": 3.2,
+      "e_hi_v1": 5.2,
+      "e_pool_v1": [
+        2.0,
+        5.5
+      ]
     }
-  ]
+  ],
+  "_migracion_energia": "Los rangos se tradujeron de la formula v1 (con BPM) a la v2 (sin BPM) por percentil de la biblioteca, no por delta. Los valores viejos quedan en los campos *_v1. Ver scripts/migrar_configs_energia.py."
 }

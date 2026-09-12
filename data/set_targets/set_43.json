@@ -1,58 +1,237 @@
 {
   "name": "43. Maze 28 + Cendryma — Nuevo Prog — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [120, 123],
+  "bpm_range": [
+    120,
+    123
+  ],
   "max_per_artist": 4,
   "movements": [
-    {"name": "warmup", "e_min": 2.5, "e_max": 5.0, "e_center": 4.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 5.0, "e_max": 6.5, "e_center": 6.0, "fraction": 0.28, "anchor_ids": []},
-    {"name": "mid",    "e_min": 6.0, "e_max": 7.5, "e_center": 7.0, "fraction": 0.28, "anchor_ids": []},
-    {"name": "peak",   "e_min": 7.0, "e_max": 9.0, "e_center": 6.0, "fraction": 0.24, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.5,
+      "e_max": 5.0,
+      "e_center": 4.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 5.0,
+      "e_max": 6.5,
+      "e_center": 6.0,
+      "fraction": 0.28,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 6.0,
+      "e_max": 7.5,
+      "e_center": 7.0,
+      "fraction": 0.28,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 7.0,
+      "e_max": 9.0,
+      "e_center": 6.0,
+      "fraction": 0.24,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Muuk", "title": "G-Force (Original Mix)"},
-    {"artist": "Dimas Mixon", "title": "Minicube (Original Mix)"},
-    {"artist": "Cendryma", "title": "Effective Loss (Original Mix)"},
-    {"artist": "Cendryma", "title": "Typical Use (Original Mix)"},
-    {"artist": "Cendryma", "title": "Repressure (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Mythica (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Fracture (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Evasive (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Focus Bend (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Orbitation (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Override (Original Mix)"},
-    {"artist": "Cendryma", "title": "Opulence (Original Mix)"},
-    {"artist": "Cendryma", "title": "Parabolic (Original Mix)"},
-    {"artist": "Cendryma", "title": "Circles (Extended Mix)"},
-    {"artist": "Cendryma", "title": "Enter (Extended Mix)"},
-    {"artist": "Maze 28", "title": "Flux"},
-    {"artist": "Maze 28", "title": "Stardust (Original Mix)"},
-    {"artist": "Maze 28", "title": "Red Lights From Afar"},
-    {"artist": "Maze 28", "title": "Nocte"},
-    {"artist": "Maze 28", "title": "C Moon (Original Mix)"},
-    {"artist": "Maze 28", "title": "Redux"},
-    {"artist": "Maze 28", "title": "Leave the World Behind"},
-    {"artist": "Rockka", "title": "Elevation"},
-    {"artist": "Rockka", "title": "Synthesis"},
-    {"artist": "Rockka", "title": "Initiation"},
-    {"artist": "Rockka", "title": "Subversion"},
-    {"artist": "Rockka", "title": "Decryptor"},
-    {"artist": "Rockka", "title": "The Fade (Dave Walker Remix)"},
-    {"artist": "Gai Barone", "title": "Hemels (Original Mix)"},
-    {"artist": "Gai Barone", "title": "Fractals (HAFT Extended Remix)"},
-    {"artist": "Gai Barone", "title": "Weird Behaviours (Original Mix)"},
-    {"artist": "Gai Barone", "title": "Ocean (Club Mix)"},
-    {"artist": "Gai Barone", "title": "MoMa"},
-    {"artist": "Cary Crank", "title": "Deep Forest (Extended Mix)"},
-    {"artist": "Cary Crank", "title": "Echoes From Below"},
-    {"artist": "Cary Crank", "title": "Inner Atlas (Kyotto Remix)"},
-    {"artist": "Hobin Rude", "title": "Nether (Original Mix)"},
-    {"artist": "Hobin Rude", "title": "Nothing's Gonna Hurt You"},
-    {"artist": "Hobin Rude", "title": "Shrouded Glint (Original Mix)"},
-    {"artist": "Hobin Rude", "title": "Cressida (Tonaco Remix)"},
-    {"artist": "Ruben Karapetyan", "title": "Cosmic Dot"},
-    {"artist": "Chelakhov", "title": "Crystal Fall (Original Mix)"},
-    {"artist": "Chelakhov", "title": "Rawai (Extended Mix)"},
-    {"artist": "Chelakhov", "title": "Searching (Gero Pellizzon Remix)"}
-  ]
+    {
+      "artist": "Cendryma",
+      "title": "Parabolic (Original Mix)",
+      "content_id": "72311255"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Fractals (HAFT Extended Remix)",
+      "content_id": "126065018"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Typical Use (Original Mix)",
+      "content_id": "225695184"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Initiation",
+      "content_id": "41309264"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Stardust (Original Mix)",
+      "content_id": "66961608"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Weird Behaviours (Original Mix)",
+      "content_id": "128039185"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Nothing's Gonna Hurt You",
+      "content_id": "192890946"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Redux",
+      "content_id": "115416800"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Elevation",
+      "content_id": "114312499"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Nether (Original Mix)",
+      "content_id": "105409768"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Effective Loss (Original Mix)",
+      "content_id": "168103371"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Rawai (Extended Mix)",
+      "content_id": "103956355"
+    },
+    {
+      "artist": "Rockka",
+      "title": "The Fade (Dave Walker Remix)",
+      "content_id": "28931502"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Opulence (Original Mix)",
+      "content_id": "145296301"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Subversion",
+      "content_id": "78510636"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Nocte",
+      "content_id": "37299186"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Override (Original Mix)",
+      "content_id": "244252789"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Crystal Fall (Original Mix)",
+      "content_id": "11507876"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "content_id": "112359333"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Evasive (Extended Mix)",
+      "content_id": "246569089"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Leave the World Behind (Original Mix)",
+      "content_id": "114182110"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Focus Bend (Extended Mix)",
+      "content_id": "60597750"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Searching (Gero Pellizzon Remix)",
+      "content_id": "37090778"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Fracture (Extended Mix)",
+      "content_id": "176252213"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Mythica (Extended Mix)",
+      "content_id": "172055969"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Circles (Extended Mix)",
+      "content_id": "240316573"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Hemels (Original Mix)",
+      "content_id": "212383896"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Red Lights From Afar",
+      "content_id": "20894273"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Shrouded Glint (Original Mix)",
+      "content_id": "68561043"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "MoMa",
+      "content_id": "95932754"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "C Moon (Original Mix)",
+      "content_id": "165686657"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Synthesis",
+      "content_id": "133677574"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Flux",
+      "content_id": "172301228"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Enter (Extended Mix)",
+      "content_id": "253314117"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Repressure (Extended Mix)",
+      "content_id": "216749089"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Decryptor",
+      "content_id": "261547700"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 25 -> 8 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

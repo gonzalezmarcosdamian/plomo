@@ -15,10 +15,10 @@
         124
       ],
       "e_pool": [
-        1.0,
+        0.3,
         5.8
       ],
-      "e_lo": 1.5,
+      "e_lo": 1.4,
       "e_hi": 5.5,
       "max_per_artist": 1,
       "max_bpm_jump": 2.0,
@@ -32,7 +32,13 @@
         "Organic House / Downtempo",
         "Deep House"
       ],
-      "solo_sin_usar": true
+      "solo_sin_usar": true,
+      "e_lo_v1": 1.5,
+      "e_hi_v1": 5.5,
+      "e_pool_v1": [
+        1.0,
+        5.8
+      ]
     },
     {
       "num": 75,
@@ -46,10 +52,10 @@
       ],
       "e_pool": [
         6.2,
-        9.0
+        9.4
       ],
       "e_lo": 6.8,
-      "e_hi": 8.6,
+      "e_hi": 8.7,
       "max_per_artist": 1,
       "max_bpm_jump": 2.0,
       "artists": [
@@ -79,7 +85,14 @@
       ],
       "_nota_keys": "Acotado al vecindario de 5A para que The Whiteroom (E8.6) sea alcanzable.",
       "prefer_bonus": 40.0,
-      "beam": 6000
+      "beam": 6000,
+      "e_lo_v1": 6.8,
+      "e_hi_v1": 8.6,
+      "e_pool_v1": [
+        6.2,
+        9.0
+      ]
     }
-  ]
+  ],
+  "_migracion_energia": "Los rangos se tradujeron de la formula v1 (con BPM) a la v2 (sin BPM) por percentil de la biblioteca, no por delta. Los valores viejos quedan en los campos *_v1. Ver scripts/migrar_configs_energia.py."
 }

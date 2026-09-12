@@ -108,6 +108,31 @@ def elegir(cands: list[dict], artist: str, title: str) -> dict | None:
     return mejor if mejor_score >= 2.0 else None
 
 
+def _orientacion_invertida(doc: dict, s, muestra: int = 10) -> bool:
+    """True si el tracklist viene como 'Titulo - Artista' en vez de 'Artista - Titulo'.
+
+    Pasa seguido: varios canales publican el tracklist al reves. Cargado asi el
+    setlist entra al corpus con 0% de cobertura y no mide nada, pero ocupa lugar
+    y ensucia el conteo de artistas de la lista de compras.
+
+    Se prueban las dos orientaciones sobre una muestra y gana la que matchea mas.
+    """
+    nombrados = [t for t in doc["tracks"]
+                 if not t.get("es_id") and (t.get("title") or "").strip().lower() != "id"]
+    if len(nombrados) < 6:
+        return False
+    paso = max(1, len(nombrados) // muestra)
+    derecho = invertido = 0
+    for t in nombrados[::paso][:muestra]:
+        cands = search(s, f"{t['artist']} {t['title']}") or []
+        if elegir(cands, t["artist"], t["title"]):
+            derecho += 1
+        cands2 = search(s, f"{t['title']} {t['artist']}") or []
+        if elegir(cands2, t["title"], t["artist"]):
+            invertido += 1
+    return invertido >= 3 and invertido >= derecho * 2
+
+
 def enriquecer(doc: dict, s) -> tuple[int, int, list[str]]:
     faltan = [t for t in doc["tracks"]
               if not t.get("es_id") and (t.get("key") is None or t.get("bpm") is None)]
@@ -147,6 +172,13 @@ def main() -> None:
 
     for f in args.archivos:
         doc = json.loads(f.read_text(encoding="utf-8"))
+        if not doc.get("orden_campos_revisado"):
+            if _orientacion_invertida(doc, s):
+                for t in doc["tracks"]:
+                    t["artist"], t["title"] = t["title"], t["artist"]
+                doc["orden_invertido_corregido"] = True
+                print(f"  {f.name}: venia como 'Titulo - Artista', se dio vuelta")
+            doc["orden_campos_revisado"] = True
         ok, total, log = enriquecer(doc, s)
         nombrados = doc.get("n_identificados") or sum(
             1 for t in doc["tracks"] if not t.get("es_id"))

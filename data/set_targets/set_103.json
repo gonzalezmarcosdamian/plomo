@@ -1,6 +1,6 @@
 {
   "name": "103. Con el material de Simon Vuarambon - Dahaus Palacio Alsina Cordoba - 2026-03-01",
-  "_identidad": "Set propio armado con el material que Simon Vuarambon toco en Dahaus Palacio Alsina Cordoba (2026-03-01) como anclas: 15 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_identidad": "Set propio armado con el material que Simon Vuarambon toco en Dahaus Palacio Alsina Cordoba (2026-03-01) como anclas: 13 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
   "_fuente": "https://www.youtube.com/watch?v=oJkXaWOEPAw",
   "duration_h": 1.8,
   "bpm_range": [
@@ -11,14 +11,24 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Markus Homm & Nici Faerber",
+      "title": "Basement Room (Dilby Remix)",
+      "content_id": "173761074"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Self ASCND (Original Mix) ",
+      "content_id": "185675309"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Juan Ibanez Extended Mix)",
+      "content_id": "205855457"
+    },
+    {
       "artist": "Neuralis",
       "title": "Ethereum (Original Mix)",
       "content_id": "265046171"
-    },
-    {
-      "artist": "Aman Anand",
-      "title": "Disastro (Thomas Ferell Remix)",
-      "content_id": "7134040"
     },
     {
       "artist": "Tantum, Hyunji-A",
@@ -36,19 +46,19 @@
       "content_id": "112913565"
     },
     {
-      "artist": "Ciro Riveiro",
-      "title": "Asia",
-      "content_id": "179038455"
-    },
-    {
-      "artist": "Juan Buitrago",
-      "title": "Anja",
-      "content_id": "45593537"
+      "artist": "Aman Anand",
+      "title": "Disastro (Thomas Ferell Remix)",
+      "content_id": "7134040"
     },
     {
       "artist": "Dr. Mirzoyan",
       "title": "Destruction (Ruben Karapetyan Remix)",
       "content_id": "205246945"
+    },
+    {
+      "artist": "Juan Buitrago",
+      "title": "Anja",
+      "content_id": "45593537"
     },
     {
       "artist": "Mind Echoes",
@@ -61,19 +71,9 @@
       "content_id": "176214600"
     },
     {
-      "artist": "Markus Homm & Nici Faerber",
-      "title": "Basement Room (Dilby Remix)",
-      "content_id": "173761074"
-    },
-    {
-      "artist": "DAVI",
-      "title": "Self ASCND (Original Mix) ",
-      "content_id": "185675309"
-    },
-    {
-      "artist": "Sudhaus & The Wash",
-      "title": "Spectron (DJ Ruby Remix)",
-      "content_id": "105189053"
+      "artist": "Anton Borin (RU), Bondarev",
+      "title": "Samadhi (Kasper Koman Remix)",
+      "content_id": "126926843"
     },
     {
       "artist": "Tobi Amuchastegui",
@@ -81,34 +81,34 @@
       "content_id": "228490733"
     },
     {
-      "artist": "Brian Cid",
-      "title": "Allure (Original Mix)",
-      "content_id": "214561412"
+      "artist": "Taylan",
+      "title": "Earthbound (Andre Moret Remix)",
+      "content_id": "39057490"
     },
     {
-      "artist": "Digital Mess",
-      "title": "Outlands (Dowden & Andreas Bühler Remix)",
-      "content_id": "228357353"
+      "artist": "Ciro Riveiro",
+      "title": "Asia",
+      "content_id": "179038455"
     },
     {
-      "artist": "Rubmak",
-      "title": "Fortuna (Extended Mix)",
-      "content_id": "110614481"
+      "artist": "Jody Wisternoff",
+      "title": "Paramour (Original Mix)",
+      "content_id": "6900209"
     },
     {
-      "artist": "Nick Curly & Jansons",
-      "title": "Chip Butty (Alex Kennon Remix)",
-      "content_id": "107609153"
+      "artist": "Paul Thomas & Christian Burns",
+      "title": "Enjoy the Silence (Extended Mix)",
+      "content_id": "58788950"
     },
     {
-      "artist": "Envotion",
-      "title": "Adrift (Sebastian Sellares Remix)",
-      "content_id": "44311136"
+      "artist": "Kamilo Sanclemente",
+      "title": "A Lonely Pink Cloud (Original Mix)",
+      "content_id": "58183652"
     },
     {
-      "artist": "Cendryma",
-      "title": "Enter (Extended Mix)",
-      "content_id": "253314117"
+      "artist": "Ezequiel Arias",
+      "title": "Heat Above - Original Mix",
+      "content_id": "130309928"
     }
   ]
 }

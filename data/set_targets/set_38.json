@@ -1,57 +1,152 @@
 {
   "name": "38. Rodriguez Jr. x Adriatique — Oscuro Progresivo — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [120, 126],
+  "bpm_range": [
+    120,
+    126
+  ],
   "max_per_artist": 6,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.18, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.5, "e_max": 7.0, "e_center": 6.0, "fraction": 0.27, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.28, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.18,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.5,
+      "e_max": 7.0,
+      "e_center": 6.0,
+      "fraction": 0.27,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.5,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Rodriguez Jr. Eli Fur", "title": "Night Blooming Jasmine"},
-    {"artist": "Adriatique Delhia De France Marino Canal", "title": "Home"},
-    {"artist": "RUFUS DU SOL Adriatique", "title": "On My Knees"},
-    {"artist": "Adriatique Marino Canal", "title": "Desire"},
-    {"artist": "Jeremy Olander", "title": "Leftwoods"},
-    {"artist": "Pional", "title": "Tempest"},
-    {"artist": "Adriatique", "title": "Voices From The Dawn"},
-    {"artist": "Adriatique", "title": "Mystery Isolee"},
-    {"artist": "Jan Blomqvist Rodriguez Jr.", "title": "Maybe Not"},
-    {"artist": "Rodriguez Jr.", "title": "Hydra"},
-    {"artist": "Jeremy Olander Kamaliza", "title": "Zanzibar"},
-    {"artist": "Cristoph Jeremy Olander", "title": "Last Dance"},
-    {"artist": "Nelly Furtado Adriatique", "title": "Give It To Me"},
-    {"artist": "Adriatique", "title": "Ray"},
-    {"artist": "Adriatique", "title": "Grinding Rhythm"},
-    {"artist": "Stephan Bodzin Adriatique", "title": "River"},
-    {"artist": "Adriatique", "title": "Nude"},
-    {"artist": "Kiko Rodriguez Jr.", "title": "Miller"},
-    {"artist": "Rodriguez Jr. Liset Alea", "title": "What Is Real"},
-    {"artist": "Rodriguez Jr.", "title": "Twilight Language"},
-    {"artist": "Stereo MCs Rodriguez Jr.", "title": "Relocate"},
-    {"artist": "Jeremy Olander", "title": "Nattuggla"},
-    {"artist": "Jeremy Olander", "title": "Panorama"},
-    {"artist": "Jeremy Olander", "title": "Saigon"},
-    {"artist": "Adriatique", "title": "Mystery Tale Of Us"},
-    {"artist": "WhoMadeWho Adriatique", "title": "Silence Secrets"},
-    {"artist": "RUFUS DU SOL Adriatique", "title": "In the Moment"},
-    {"artist": "Rodriguez Jr.", "title": "An Evidence Of Time"},
-    {"artist": "Rodriguez Jr.", "title": "Nairobi"},
-    {"artist": "Rodriguez Jr.", "title": "1PM Sunrise"},
-    {"artist": "Jeremy Olander", "title": "Andkoln"},
-    {"artist": "Jeremy Olander", "title": "Seige"},
-    {"artist": "Adriatique", "title": "I Need You"},
-    {"artist": "Rodriguez Jr.", "title": "Kilian"},
-    {"artist": "Jan Blomqvist Rodriguez Jr.", "title": "Destination Lost"},
-    {"artist": "Adriatique Argy", "title": "RACER"},
-    {"artist": "Jeremy Olander", "title": "Passagen"},
-    {"artist": "Adriatique", "title": "Buchla's Dreaming"},
-    {"artist": "Adriatique Eynka", "title": "Beyond Us"},
-    {"artist": "Jeremy Olander", "title": "Steps"},
-    {"artist": "Joris Voorn", "title": "Fool's Paradise"},
-    {"artist": "Joris Voorn Alex Kennon", "title": "Blinding Lights"},
-    {"artist": "Elderbrook Joris Voorn", "title": "Numb"}
-  ]
+    {
+      "artist": "Adriatique",
+      "title": "Voices From The Dawn",
+      "content_id": "133189992"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "1PM Sunrise",
+      "content_id": "152407965"
+    },
+    {
+      "artist": "Adriatique",
+      "title": "Mystery (Isolee Remix)",
+      "content_id": "240122476"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Panorama (Original Mix)",
+      "content_id": "91056575"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Hydra",
+      "content_id": "149501053"
+    },
+    {
+      "artist": "Adriatique",
+      "title": "Ray",
+      "content_id": "4797677"
+    },
+    {
+      "artist": "Adriatique, Delhia De France, Marino Canal",
+      "title": "Home (Original Mix)",
+      "content_id": "254888760"
+    },
+    {
+      "artist": "Adriatique",
+      "title": "Grinding Rhythm",
+      "content_id": "186991395"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Twilight Language (Extended Version)",
+      "content_id": "161537486"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Passagen (Original Mix)",
+      "content_id": "156826306"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Steps (Original Mix)",
+      "content_id": "64441829"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Nairobi (Original Mix)",
+      "content_id": "193525568"
+    },
+    {
+      "artist": "Adriatique, Argy",
+      "title": "RACER (Extended Mix)",
+      "content_id": "44101695"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Kilian",
+      "content_id": "139530104"
+    },
+    {
+      "artist": "Pional",
+      "title": "Tempest",
+      "content_id": "141530360"
+    },
+    {
+      "artist": "Kiko & Rodriguez Jr.",
+      "title": "Miller",
+      "content_id": "204707167"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Leftwoods (Original Mix)",
+      "content_id": "99552883"
+    },
+    {
+      "artist": "Adriatique, Marino Canal",
+      "title": "Desire (Original Mix)",
+      "content_id": "108990440"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Nattuggla",
+      "content_id": "170916780"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Saigon",
+      "content_id": "251034637"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Seige",
+      "content_id": "63927948"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 17 -> 15 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

@@ -4,44 +4,134 @@
   "playlist_id": null,
   "duration_h": 3.0,
   "target_track_count": 28,
-  "bpm_range": [118, 127],
+  "bpm_range": [
+    118,
+    127
+  ],
   "genre": "progressive deep",
   "replacement_query": "john digweed progressive deep bedrock",
-  "energy_arc": {"start": 1.5, "peak": 7.0, "end": 4.0},
+  "energy_arc": {
+    "start": 1.5,
+    "peak": 7.0,
+    "end": 4.0
+  },
   "movements": [
-    {"name": "Apertura", "e_min": 1.0, "e_max": 3.5, "e_center": 2.0, "fraction": 0.25},
-    {"name": "Desarrollo","e_min": 3.0, "e_max": 6.5, "e_center": 4.5, "fraction": 0.45},
-    {"name": "Peak",     "e_min": 6.0, "e_max": 8.0, "e_center": 7.0, "fraction": 0.20},
-    {"name": "Cierre",   "e_min": 4.0, "e_max": 6.5, "e_center": 5.0, "fraction": 0.10}
+    {
+      "name": "Apertura",
+      "e_min": 1.0,
+      "e_max": 3.5,
+      "e_center": 2.0,
+      "fraction": 0.25
+    },
+    {
+      "name": "Desarrollo",
+      "e_min": 3.0,
+      "e_max": 6.5,
+      "e_center": 4.5,
+      "fraction": 0.45
+    },
+    {
+      "name": "Peak",
+      "e_min": 6.0,
+      "e_max": 8.0,
+      "e_center": 7.0,
+      "fraction": 0.2
+    },
+    {
+      "name": "Cierre",
+      "e_min": 4.0,
+      "e_max": 6.5,
+      "e_center": 5.0,
+      "fraction": 0.1
+    }
   ],
   "tracks": [
-    {"artist": "Cubicolor",         "title": "Hardly A Day Hardly A Night",               "energy": 1.8},
-    {"artist": "Panorama Channel",  "title": "Kinly Estellar",                             "energy": 1.8},
-    {"artist": "Antrim",            "title": "Hide and Seek",  "remix": "Ric Niels",      "energy": 1.8},
-    {"artist": "Gai Barone",        "title": "All I Need",     "remix": "HC Remix",       "energy": 1.4},
-    {"artist": "Cid Inc",           "title": "Impending Storm",                            "energy": 1.8},
-    {"artist": "Juan Deminicis",    "title": "Under Control",                              "energy": 2.1},
-    {"artist": "Hobin Rude",        "title": "Seraph",         "remix": "Liam Garcia Remix", "energy": 2.2},
-    {"artist": "Cornucopia",        "title": "Early Morning",                              "energy": 3.0},
-    {"artist": "Michael A",         "title": "Hunting Flowers",                            "energy": 3.1},
-    {"artist": "Hermanez",          "title": "Eight Years",                                "energy": 2.5},
-    {"artist": "Of Norway",         "title": "I Miss You",     "remix": "Sentre Remix",   "energy": 3.0},
-    {"artist": "Jon Towell",        "title": "49 Miles",                                   "energy": 4.0},
-    {"artist": "Mike Rish",         "title": "Tu Attair",                                  "energy": 3.5},
-    {"artist": "Guy Mantzur",       "title": "Tremolo Man",                                "energy": 4.0},
-    {"artist": "Tantum",            "title": "Out Of Nowhere",                             "energy": 4.2},
-    {"artist": "Chris Isaak",       "title": "Wicked Game",    "remix": "Mass Digital Remix", "energy": 4.4},
-    {"artist": "Nicolas Rada",      "title": "Glasgow",                                    "energy": 4.4},
-    {"artist": "Fer Torti",         "title": "Star Trip",                                  "energy": 4.4},
-    {"artist": "Sebastian Sellares","title": "Limbo",                                      "energy": 4.5},
-    {"artist": "Dmitry Molosh",     "title": "Bird Flight",                                "energy": 4.5},
-    {"artist": "Pedro Capelossi",   "title": "Topaz",                                      "energy": 5.2},
-    {"artist": "Remcord",           "title": "Out Of It",                                  "energy": 5.5},
-    {"artist": "WhoMadeWho",        "title": "Kiss Me Hard",   "remix": "Adam Ten Remix", "energy": 4.5},
-    {"artist": "Supacooks",         "title": "Activator",                                  "energy": 4.5},
-    {"artist": "D-Nox",             "title": "Dolby",                                      "energy": 4.1},
-    {"artist": "Benja Molina",      "title": "Aura",                                       "energy": 2.9},
-    {"artist": "John Cosani",       "title": "Snano",                                      "energy": 2.9},
-    {"artist": "Einmusik",          "title": "Centaurio",                                  "energy": 7.3}
-  ]
+    {
+      "artist": "Panorama Channel",
+      "title": "Kinly Estellar",
+      "content_id": "250127019"
+    },
+    {
+      "artist": "Jon Towell",
+      "title": "49 Miles (Original Mix)",
+      "content_id": "72884414"
+    },
+    {
+      "artist": "Benja Molina",
+      "title": "Aura (Original Mix)",
+      "content_id": "167801376"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Eight Years (Original Mix)",
+      "content_id": "14601563"
+    },
+    {
+      "artist": "Cubicolor",
+      "title": "Hardly A Day, Hardly A Night",
+      "content_id": "169526710"
+    },
+    {
+      "artist": "Juan Deminicis",
+      "title": "Under Control (Original Mix)",
+      "content_id": "115364971"
+    },
+    {
+      "artist": "Michael A",
+      "title": "Hunting Flowers (Radio Edit)",
+      "content_id": "222461784"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Glasgow (Original Mix)",
+      "content_id": "212418278"
+    },
+    {
+      "artist": "Tantum",
+      "title": "Out Of Nowhere (Original Mix)",
+      "content_id": "71085442"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Tú Attair (Original Mix)",
+      "content_id": "71858967"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "content_id": "212560040"
+    },
+    {
+      "artist": "Fer Torti",
+      "title": "Star Trip",
+      "content_id": "190468120"
+    },
+    {
+      "artist": "Cornucopia",
+      "title": "Early Morning (Original Mix)",
+      "content_id": "71083804"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bird Flight (Original Mix)",
+      "content_id": "240140989"
+    },
+    {
+      "artist": "Remcord",
+      "title": "Out Of It (Original Mix)",
+      "content_id": "229271687"
+    },
+    {
+      "artist": "Sebastian Sellares",
+      "title": "Limbo (Extended Mix)",
+      "content_id": "96815837"
+    },
+    {
+      "artist": "John Cosani",
+      "title": "Snano (Original Mix)",
+      "content_id": "66618206"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 13 -> 9 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

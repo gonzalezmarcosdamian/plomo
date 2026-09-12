@@ -1,40 +1,132 @@
 {
   "name": "42. Emi & Kamilo — Colorido Progresivo — 2026-06-13",
   "duration_h": 3,
-  "bpm_range": [119, 124],
+  "bpm_range": [
+    119,
+    124
+  ],
   "max_per_artist": 8,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.5, "e_max": 6.0, "e_center": 5.5, "fraction": 0.28, "anchor_ids": []},
-    {"name": "mid",    "e_min": 5.8, "e_max": 7.2, "e_center": 6.5, "fraction": 0.28, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.8, "e_max": 9.0, "e_center": 7.5, "fraction": 0.24, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.5,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.5,
+      "e_max": 6.0,
+      "e_center": 5.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    },
+    {
+      "name": "mid",
+      "e_min": 5.8,
+      "e_max": 7.2,
+      "e_center": 6.5,
+      "fraction": 0.28,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.8,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.24,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Emi Galvan", "title": "Free Your Mind"},
-    {"artist": "Emi Galvan", "title": "Supernova (Original Mix)"},
-    {"artist": "Emi Galvan", "title": "No Regrets (Original Mix)"},
-    {"artist": "Emi Galvan", "title": "Trust (Original Mix)"},
-    {"artist": "Emi Galvan", "title": "Around the World"},
-    {"artist": "Emi Galvan", "title": "Crabo (Original Mix)"},
-    {"artist": "Emi Galvan", "title": "Taking Over (Rogier Remix)"},
-    {"artist": "Emi Galvan", "title": "Timeless (Original Mix)"},
-    {"artist": "Kamilo Sanclemente", "title": "The Last Mermaid"},
-    {"artist": "Kamilo Sanclemente", "title": "Parallel Moon (Original Mix)"},
-    {"artist": "Kamilo Sanclemente", "title": "Delusion (Original Mix)"},
-    {"artist": "Kamilo Sanclemente", "title": "Essence (Original Mix)"},
-    {"artist": "Kamilo Sanclemente", "title": "Strange Days (Original Mix)"},
-    {"artist": "Kamilo Sanclemente", "title": "Magic Carpet (Original Mix)"},
-    {"artist": "Kamilo Sanclemente", "title": "Divine Eternity (K Loveski Remix)"},
-    {"artist": "Kamilo Sanclemente", "title": "Go Home (Original Mix)"},
-    {"artist": "Antrim", "title": "Once and Again (Bluum Extended Mix)"},
-    {"artist": "Giovanny Aparicio", "title": "Crystal Cloud (Extended Mix)"},
-    {"artist": "Guy Mantzur", "title": "Nectar (Original Mix)"},
-    {"artist": "Dabeat", "title": "Seriously (Original Mix)"},
-    {"artist": "D-Nox", "title": "Dualidad (Guy Mantzur Edit)"},
-    {"artist": "Mauro Picotto", "title": "I Feel Love (Extended Mix)"},
-    {"artist": "Greg Ochman", "title": "In Between Dreams"},
-    {"artist": "Amir Telem", "title": "How To Learn Something New (Greg Ochman"},
-    {"artist": "Greg Ochman", "title": "Blinking Stars (Luka Sambe Remix)"},
-    {"artist": "Ignacio Hernandez", "title": "Circle Of Lights"}
-  ]
+    {
+      "artist": "Emi Galvan",
+      "title": "Taking Over (Rogier Remix)",
+      "content_id": "242011605"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Divine Eternity (K Loveski Remix)",
+      "content_id": "44465807"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "No Regrets (Original Mix)",
+      "content_id": "55980118"
+    },
+    {
+      "artist": "Amir Telem",
+      "title": "How To Learn Something New (Greg Ochman Remix)",
+      "content_id": "114547127"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Crabo (Original Mix)",
+      "content_id": "64362623"
+    },
+    {
+      "artist": "Greg Ochman",
+      "title": "In Between Dreams",
+      "content_id": "129731006"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Go Home (Original Mix)",
+      "content_id": "55215683"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Around the World",
+      "content_id": "43914218"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Trust (Original Mix)",
+      "content_id": "217307520"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Delusion (Original Mix)",
+      "content_id": "189060818"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Parallel Moon (Original Mix)",
+      "content_id": "262755587"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Strange Days (Original Mix)",
+      "content_id": "17752485"
+    },
+    {
+      "artist": "Greg Ochman",
+      "title": "Blinking Stars (Luka Sambe Remix)",
+      "content_id": "98257969"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Timeless (Original Mix)",
+      "content_id": "15718350"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "The Last Mermaid",
+      "content_id": "131332524"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Free Your Mind",
+      "content_id": "85827128"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Supernova (Original Mix)",
+      "content_id": "206841769"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 11 -> 7 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

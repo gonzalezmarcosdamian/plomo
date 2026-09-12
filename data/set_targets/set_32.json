@@ -1,38 +1,130 @@
 {
   "name": "32. Emi Style — 2h — 2026-06-01",
   "duration_h": 2,
-  "bpm_range": [119, 124],
+  "bpm_range": [
+    119,
+    124
+  ],
   "max_per_artist": 4,
   "style": "Colorido Emi/Kamilo — Emi Galvan, Kamilo nuevos, Mike Rish, Hraach, Dowden, Tantum",
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.5,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.4,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 8.5,
+      "e_center": 7.0,
+      "fraction": 0.4,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Mike Rish", "title": "Shokl"},
-    {"artist": "Hraach", "title": "Promises"},
-    {"artist": "Hraach", "title": "Delirio"},
-    {"artist": "Hraach", "title": "Cosmic Drama"},
-    {"artist": "Mike Rish", "title": "Tunnel People"},
-    {"artist": "Mike Rish", "title": "Tornn"},
-    {"artist": "Mike Rish", "title": "Sunset on Mars"},
-    {"artist": "Emi Galvan", "title": "Timeless"},
-    {"artist": "Emi Galvan", "title": "Vibration"},
-    {"artist": "Emi Galvan", "title": "Trust"},
-    {"artist": "Nick Warren", "title": "Freebird"},
-    {"artist": "Hraach", "title": "Lonely Sun"},
-    {"artist": "Tantum", "title": "Another Day"},
-    {"artist": "Tantum", "title": "Bonsai"},
-    {"artist": "Kasper Koman", "title": "Loco Motif"},
-    {"artist": "Kamilo Sanclemente", "title": "Go Home"},
-    {"artist": "Kamilo Sanclemente", "title": "Theia"},
-    {"artist": "Kamilo Sanclemente", "title": "Divine Eternity"},
-    {"artist": "Kamilo Sanclemente", "title": "Lonely Pink Cloud"},
-    {"artist": "Kamilo Sanclemente Juan Pablo Torrez", "title": "Mantura"},
-    {"artist": "Mike Rish", "title": "Dope Riddim"},
-    {"artist": "Quivver", "title": "Another Storm"},
-    {"artist": "Kamilo Sanclemente", "title": "Distant Blips"},
-    {"artist": "Emi Galvan", "title": "Samsara"}
-  ]
+    {
+      "artist": "Emi Galvan",
+      "title": "Timeless (Original Mix)",
+      "content_id": "15718350"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Cosmic Drama (Original Mix)",
+      "content_id": "82356913"
+    },
+    {
+      "artist": "Tantum",
+      "title": "Another Day (Original Mix)",
+      "content_id": "197016712"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Shokl (Original Mix)",
+      "content_id": "217832493"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Delirio (Original Mix)",
+      "content_id": "7928123"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Dope Riddim (Original Mix)",
+      "content_id": "224504691"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Theia",
+      "content_id": "28418420"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Sunset on Mars (Original Mix)",
+      "content_id": "235327692"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Promises (Original Mix)",
+      "content_id": "46009275"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Juan Pablo Torrez",
+      "title": "Mantura",
+      "content_id": "24944125"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Lonely Sun (Original Mix)",
+      "content_id": "150535198"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Trust (Original Mix)",
+      "content_id": "217307520"
+    },
+    {
+      "artist": "Tantum",
+      "title": "Bonsai (Original Mix)",
+      "content_id": "208350921"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Samsara",
+      "content_id": "139671166"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Go Home (Original Mix)",
+      "content_id": "55215683"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Vibration (Original Mix)",
+      "content_id": "214160790"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Tunnel People (Original Mix)",
+      "content_id": "56846858"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Tornn (Original Mix)",
+      "content_id": "152960737"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 11 -> 7 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

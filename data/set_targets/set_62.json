@@ -9,34 +9,24 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Roger Martinez, Simos Tagias",
-      "title": "Inner Light (Original Mix)",
-      "content_id": "109061231"
+      "artist": "Alex O'Rion",
+      "title": "Hartseer (Original Mix)",
+      "content_id": "178080089"
     },
     {
-      "artist": "Shayan Pasha",
-      "title": "Phobos (Extended Mix)",
-      "content_id": "136010198"
+      "artist": "Fran Baigo",
+      "title": "Levitate (Original Mix)",
+      "content_id": "221831821"
     },
     {
-      "artist": "Katzen",
-      "title": "What's Beyond (Original Mix)",
-      "content_id": "175757776"
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Perihelion (Hernan Cattaneo & Mercurio Remix)",
+      "content_id": "228937750"
     },
     {
-      "artist": "MXV",
-      "title": "Witch King (Original Mix)",
-      "content_id": "233901014"
-    },
-    {
-      "artist": "Max Wexem",
-      "title": "Override (Original Mix)",
-      "content_id": "127791241"
-    },
-    {
-      "artist": "KAZKO",
-      "title": "Fading Control (Original Mix)",
-      "content_id": "239831899"
+      "artist": "Ignacio Hernández, Tato Seco",
+      "title": "Sleepwalker (Original Mix)",
+      "content_id": "46529143"
     },
     {
       "artist": "Steven McCreery",
@@ -49,24 +39,35 @@
       "content_id": "82977042"
     },
     {
-      "artist": "Ignacio Hernández, Tato Seco",
-      "title": "Sleepwalker (Original Mix)",
-      "content_id": "46529143"
+      "artist": "Max Wexem",
+      "title": "Override (Original Mix)",
+      "content_id": "127791241"
     },
     {
-      "artist": "Rauschhaus, Cary Crank",
-      "title": "Perihelion (Hernan Cattaneo & Mercurio Remix)",
-      "content_id": "228937750"
+      "artist": "Katzen",
+      "title": "What's Beyond (Original Mix)",
+      "content_id": "175757776"
     },
     {
-      "artist": "Fran Baigo",
-      "title": "Levitate (Original Mix)",
-      "content_id": "221831821"
+      "artist": "MXV",
+      "title": "Witch King (Original Mix)",
+      "content_id": "233901014"
     },
     {
-      "artist": "Alex O'Rion",
-      "title": "Hartseer (Original Mix)",
-      "content_id": "178080089"
+      "artist": "Shayan Pasha",
+      "title": "Phobos (Extended Mix)",
+      "content_id": "136010198"
+    },
+    {
+      "artist": "Roger Martinez, Simos Tagias",
+      "title": "Inner Light (Original Mix)",
+      "content_id": "109061231"
+    },
+    {
+      "artist": "KAZKO",
+      "title": "Fading Control (Original Mix)",
+      "content_id": "239831899"
     }
-  ]
+  ],
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 5 -> 2 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

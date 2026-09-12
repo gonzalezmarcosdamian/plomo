@@ -9,19 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Hobin Rude",
-      "title": "The Quiet Between Us (Original Mix)",
-      "content_id": "82098194"
-    },
-    {
-      "artist": "Zankee Gulati",
-      "title": "Goofball (Original Mix)",
-      "content_id": "48900126"
-    },
-    {
-      "artist": "Dmitry Molosh",
-      "title": "The Moon Lights the Way (Original Mix)",
-      "content_id": "216332867"
+      "artist": "Christian Smith",
+      "title": "Illusion (Ezequiel Arias Remix)",
+      "content_id": "209285789"
     },
     {
       "artist": "Emil Toledo, Rinzen",
@@ -29,14 +19,24 @@
       "content_id": "233318993"
     },
     {
+      "artist": "Zankee Gulati",
+      "title": "Goofball (Original Mix)",
+      "content_id": "48900126"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "The Quiet Between Us (Original Mix)",
+      "content_id": "82098194"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "The Moon Lights the Way (Original Mix)",
+      "content_id": "216332867"
+    },
+    {
       "artist": "GRAZZE",
       "title": "Miami (Extended Mix)",
       "content_id": "62887748"
-    },
-    {
-      "artist": "Hicky & Kalo, Sinca",
-      "title": "Breathe Again (Original Mix)",
-      "content_id": "217170656"
     },
     {
       "artist": "Florian Gasperini",
@@ -49,14 +49,14 @@
       "content_id": "210398572"
     },
     {
-      "artist": "Christian Smith",
-      "title": "Illusion (Ezequiel Arias Remix)",
-      "content_id": "209285789"
+      "artist": "Hicky & Kalo, Sinca",
+      "title": "Breathe Again (Original Mix)",
+      "content_id": "217170656"
     },
     {
-      "artist": "Tali Muss, 84 Avenue",
-      "title": "Nebula (Extended Mix)",
-      "content_id": "177543291"
+      "artist": "Sezer Uysal",
+      "title": "Yutori (Ruben Karapetyan Remix)",
+      "content_id": "42401693"
     },
     {
       "artist": "Kasey Taylor",
@@ -64,9 +64,10 @@
       "content_id": "153931380"
     },
     {
-      "artist": "Sezer Uysal",
-      "title": "Yutori (Ruben Karapetyan Remix)",
-      "content_id": "42401693"
+      "artist": "Tali Muss, 84 Avenue",
+      "title": "Nebula (Extended Mix)",
+      "content_id": "177543291"
     }
-  ]
+  ],
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 5 -> 1 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

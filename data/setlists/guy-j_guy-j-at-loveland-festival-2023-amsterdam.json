@@ -1,0 +1,181 @@
+{
+  "dj": "Guy J",
+  "evento": "GUY J at LOVELAND FESTIVAL 2023 | AMSTERDAM",
+  "fecha": "",
+  "fuente": "https://youtu.be/UvdafSqDFbI",
+  "orden_confiable": true,
+  "n": 16,
+  "n_identificados": 16,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.062,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "South Bloom",
+      "title": "let me in (Volen Sentir's secret Technique)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Fran Garay",
+      "title": "Illusion",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Fran Garay - Illusion "
+    },
+    {
+      "pos": 3,
+      "artist": "Guy J",
+      "title": "Europaboat ID01",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Sudhaus feat. the Wash",
+      "title": "Spectron (Jamie Stevens Remix)",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Sudhaus & The Wash - Spectron (Jamie Stevens Remix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Timo Chinala",
+      "title": "Somerville (Guy J Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Andrés Moris & Rocio Portillo",
+      "title": "Evolver",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Andrés Moris & Rocio Portillo - Evolver"
+    },
+    {
+      "pos": 7,
+      "artist": "Tantum",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Guy J",
+      "title": "Cave2023 ID01",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Guy J",
+      "title": "Loveland2023 ID01",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Guy J",
+      "title": "Loveland2023 ID02",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Guy J",
+      "title": "Europaboat ID04",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Guy J",
+      "title": "Loveland2023 ID03",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Guy J",
+      "title": "La Cumbre ID03",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Guy Gerber",
+      "title": "Rainchecks In Montreal (Roy Rosenfeld Remix)",
+      "es_id": false,
+      "key": "9A",
+      "bpm": 120.0,
+      "energy": 7.5,
+      "label": "Rumors",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 15,
+      "artist": "Guy J",
+      "title": "Metro",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Guy J",
+      "title": "lost & found (Original Mix)",
+      "es_id": false,
+      "key": "Abm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - Lost & Found (Original Mix)"
+    }
+  ],
+  "cobertura_key": 0.312,
+  "cobertura_bpm": 0.312,
+  "orden_campos_revisado": true
+}

@@ -9,19 +9,24 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Le Youth",
+      "title": "About Us (Extended Mix)",
+      "content_id": "6550532"
+    },
+    {
       "artist": "GMJ, Matter, Zankee Gulati",
       "title": "Emerge (Original Mix)",
       "content_id": "71592299"
     },
     {
-      "artist": "Le Youth",
-      "title": "About Us (Extended Mix) ",
-      "content_id": "6550532"
-    },
-    {
       "artist": "Rockka",
       "title": "Rebit (Original Mix)",
       "content_id": "59269008"
+    },
+    {
+      "artist": "GRAZZE",
+      "title": "Miami (Extended Mix)",
+      "content_id": "62887748"
     },
     {
       "artist": "Ruben Karapetyan",
@@ -34,19 +39,14 @@
       "content_id": "116966407"
     },
     {
-      "artist": "GRAZZE",
-      "title": "Miami (Extended Mix)",
-      "content_id": "62887748"
-    },
-    {
       "artist": "Cary Crank",
       "title": "Inner Atlas (Kyotto Remix)",
       "content_id": "112359333"
     },
     {
-      "artist": "Ursula Rucker, Simon Doty",
-      "title": "Hometown feat. Ursula Rucker (Extended Mix) ",
-      "content_id": "153066855"
+      "artist": "Rauschhaus",
+      "title": "If I Had Wings",
+      "content_id": "190615690"
     },
     {
       "artist": "Hobin Rude",
@@ -64,9 +64,10 @@
       "content_id": "264378478"
     },
     {
-      "artist": "Rauschhaus",
-      "title": "If I Had Wings ",
-      "content_id": "190615690"
+      "artist": "Ursula Rucker, Simon Doty",
+      "title": "Hometown feat. Ursula Rucker (Extended Mix)",
+      "content_id": "153066855"
     }
-  ]
+  ],
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 2 -> 0 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

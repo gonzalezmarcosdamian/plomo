@@ -9,49 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Mike Rish",
-      "title": "Sunset on Mars (Original Mix)",
-      "content_id": "235327692"
-    },
-    {
-      "artist": "GMJ, Matter, Zankee Gulati",
-      "title": "Emerge (Original Mix)",
-      "content_id": "71592299"
-    },
-    {
-      "artist": "Mike rish",
-      "title": "Cloudbreaker",
-      "content_id": "249658850"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Dharma (Original Mix) ",
-      "content_id": "96780807"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "Low Light Memory (Original Mix)",
-      "content_id": "141573693"
-    },
-    {
-      "artist": "Tom Pavicich, Gonzalo Cotroneo",
-      "title": "Radiance (Original Mix)",
-      "content_id": "139490665"
-    },
-    {
-      "artist": "Nicolas Rada",
-      "title": "Glasgow (Original Mix)",
-      "content_id": "212418278"
-    },
-    {
       "artist": "Maze 28, Rockka",
-      "title": "Corrosive ",
+      "title": "Corrosive",
       "content_id": "68359216"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Aer8",
-      "content_id": "84034828"
     },
     {
       "artist": "Guy J",
@@ -59,14 +19,49 @@
       "content_id": "43250172"
     },
     {
-      "artist": "Nick Warren",
-      "title": "Ultravox (Hernan Cattaneo & Kevin Di Serna Remix)",
-      "content_id": "150569837"
+      "artist": "Nicolas Rada",
+      "title": "Glasgow (Original Mix)",
+      "content_id": "212418278"
+    },
+    {
+      "artist": "Tom Pavicich, Gonzalo Cotroneo",
+      "title": "Radiance (Original Mix)",
+      "content_id": "139490665"
     },
     {
       "artist": "Ruben Karapetyan",
       "title": "State of Progression (Original Mix)",
       "content_id": "130625045"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Low Light Memory (Original Mix)",
+      "content_id": "141573693"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Dharma (Original Mix)",
+      "content_id": "96780807"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Aer8",
+      "content_id": "84034828"
+    },
+    {
+      "artist": "Nick Warren",
+      "title": "Ultravox (Hernan Cattaneo & Kevin Di Serna Remix)",
+      "content_id": "150569837"
+    },
+    {
+      "artist": "Teho",
+      "title": "Ashes (Original Mix)",
+      "content_id": "155462869"
+    },
+    {
+      "artist": "Miro",
+      "title": "Paradise (Quivver Extended Remix)",
+      "content_id": "7965423"
     },
     {
       "artist": "Gai Barone",
@@ -79,39 +74,29 @@
       "content_id": "27711393"
     },
     {
-      "artist": "Lost Desert",
-      "title": "Aalam Waahid (Original Mix)",
-      "content_id": "127040310"
+      "artist": "Tali Muss",
+      "title": "Interlocutor (Extended Mix)",
+      "content_id": "86959118"
     },
     {
-      "artist": "GMJ & Matter",
-      "title": "Metanoia",
-      "content_id": "267415526"
+      "artist": "Hobin Rude",
+      "title": "Nothing's Gonna Hurt You",
+      "content_id": "192890946"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Whale Voices (Original Mix) ",
-      "content_id": "140659377"
+      "artist": "GMJ, Matter, Zankee Gulati",
+      "title": "Emerge (Original Mix)",
+      "content_id": "71592299"
     },
     {
-      "artist": "Cendryma",
-      "title": "Repressure (Extended Mix)",
-      "content_id": "216749089"
+      "artist": "Max Wexem",
+      "title": "Confined (Original Mix)",
+      "content_id": "15529976"
     },
     {
-      "artist": "Dmitry Molosh",
-      "title": "Ambition (Original Mix)",
-      "content_id": "57277028"
-    },
-    {
-      "artist": "Gai Barone, Aman Anand",
-      "title": "Low Era (Kebin Van Reeken Remix)",
-      "content_id": "121401439"
-    },
-    {
-      "artist": "Ezequiel Arias",
-      "title": "Control Is an Illusion (Original Mix)",
-      "content_id": "261894817"
+      "artist": "Quivver",
+      "title": "Forest Moon (Dmitry Molosh Remix)",
+      "content_id": "136685781"
     },
     {
       "artist": "Ezequiel Arias",
@@ -119,19 +104,24 @@
       "content_id": "242634326"
     },
     {
-      "artist": "Sahar Z & Guy Mantzur",
-      "title": "Survivors Guilt",
-      "content_id": "74039529"
-    },
-    {
       "artist": "Nick Warren",
-      "title": "Freebird (Emi Galvan Remix) ",
+      "title": "Freebird (Emi Galvan Remix)",
       "content_id": "112295588"
     },
     {
-      "artist": "NUFECTS",
-      "title": "Inferno (Extended Mix)",
-      "content_id": "12342979"
+      "artist": "GMJ & Matter",
+      "title": "Metanoia",
+      "content_id": "267415526"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Hi (Cid Inc. Remix)",
+      "content_id": "53043288"
+    },
+    {
+      "artist": "Lost Desert",
+      "title": "Aalam Waahid (Original Mix)",
+      "content_id": "127040310"
     },
     {
       "artist": "Paul Arcane",
@@ -144,14 +134,19 @@
       "content_id": "104234166"
     },
     {
-      "artist": "Miro",
-      "title": "Paradise (Quivver Extended Remix)",
-      "content_id": "7965423"
+      "artist": "Artic White",
+      "title": "Once We Were (Extended Mix)",
+      "content_id": "39391280"
     },
     {
-      "artist": "Teho",
-      "title": "Ashes (Original Mix)",
-      "content_id": "155462869"
+      "artist": "Sébastien Léger, Lost Miracle",
+      "title": "Dodonpachi (Original Mix)",
+      "content_id": "124748921"
+    },
+    {
+      "artist": "NUFECTS",
+      "title": "Inferno (Extended Mix)",
+      "content_id": "12342979"
     },
     {
       "artist": "GHEIST",
@@ -164,29 +159,39 @@
       "content_id": "204313298"
     },
     {
-      "artist": "Artic White",
-      "title": "Once We Were (Extended Mix)",
-      "content_id": "39391280"
+      "artist": "Gai Barone, Aman Anand",
+      "title": "Low Era (Kebin Van Reeken Remix)",
+      "content_id": "121401439"
     },
     {
-      "artist": "Sébastien Léger, Lost Miracle",
-      "title": "Dodonpachi (Original Mix)",
-      "content_id": "124748921"
+      "artist": "Dmitry Molosh",
+      "title": "Ambition (Original Mix)",
+      "content_id": "57277028"
     },
     {
-      "artist": "Tali Muss",
-      "title": "Interlocutor (Extended Mix)",
-      "content_id": "86959118"
+      "artist": "Ezequiel Arias",
+      "title": "Control Is an Illusion (Original Mix)",
+      "content_id": "261894817"
     },
     {
-      "artist": "Hobin Rude",
-      "title": "Nothing's Gonna Hurt You",
-      "content_id": "192890946"
+      "artist": "Cendryma",
+      "title": "Repressure (Extended Mix)",
+      "content_id": "216749089"
     },
     {
-      "artist": "Kasper Koman",
-      "title": "Hi (Cid Inc. Remix) ",
-      "content_id": "53043288"
+      "artist": "Mike Rish",
+      "title": "Cloudbreaker",
+      "content_id": "249658850"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Whale Voices (Original Mix)",
+      "content_id": "140659377"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Sunset on Mars (Original Mix)",
+      "content_id": "235327692"
     },
     {
       "artist": "Tali Muss",
@@ -194,14 +199,10 @@
       "content_id": "204428086"
     },
     {
-      "artist": "Quivver",
-      "title": "Forest Moon (Dmitry Molosh Remix)",
-      "content_id": "136685781"
-    },
-    {
-      "artist": "Max Wexem",
-      "title": "Confined (Original Mix)",
-      "content_id": "15529976"
+      "artist": "Sahar Z & Guy Mantzur",
+      "title": "Survivors Guilt",
+      "content_id": "74039529"
     }
-  ]
+  ],
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 19 -> 8 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

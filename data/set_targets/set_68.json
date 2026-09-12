@@ -10,7 +10,7 @@
   "tracks": [
     {
       "artist": "Mita Gami",
-      "title": "San Pedro ",
+      "title": "San Pedro",
       "content_id": "78604348"
     },
     {
@@ -24,14 +24,19 @@
       "content_id": "91056575"
     },
     {
-      "artist": "Dowden, Mazayr",
-      "title": "Deflator (Original Mix)",
-      "content_id": "5161822"
+      "artist": "Dilby",
+      "title": "Soul Vision (Original Mix)",
+      "content_id": "38264685"
     },
     {
       "artist": "Ric Niels & Juan Buitrago",
-      "title": "Glide ",
+      "title": "Glide",
       "content_id": "232948515"
+    },
+    {
+      "artist": "Dowden, Mazayr",
+      "title": "Deflator (Original Mix)",
+      "content_id": "5161822"
     },
     {
       "artist": "Danny Serrano",
@@ -39,19 +44,14 @@
       "content_id": "54905004"
     },
     {
-      "artist": "Dilby",
-      "title": "Soul Vision (Original Mix)",
-      "content_id": "38264685"
+      "artist": "Kit Lawson",
+      "title": "Ruff (Original Mix)",
+      "content_id": "29068811"
     },
     {
-      "artist": "Durante, Enamour",
-      "title": "Taos Hum",
-      "content_id": "26197501"
-    },
-    {
-      "artist": "Redspace, Diego Riga",
-      "title": "Phantom Sun (Extended Mix)",
-      "content_id": "227739486"
+      "artist": "Nox Vahn",
+      "title": "Brainwasher (Warung Extended Mix)",
+      "content_id": "61522600"
     },
     {
       "artist": "Dosem",
@@ -59,14 +59,15 @@
       "content_id": "93960449"
     },
     {
-      "artist": "Nox Vahn",
-      "title": "Brainwasher (Warung Extended Mix) ",
-      "content_id": "61522600"
+      "artist": "Redspace, Diego Riga",
+      "title": "Phantom Sun (Extended Mix)",
+      "content_id": "227739486"
     },
     {
-      "artist": "Kit Lawson",
-      "title": "Ruff (Original Mix)",
-      "content_id": "29068811"
+      "artist": "Durante, Enamour",
+      "title": "Taos Hum",
+      "content_id": "26197501"
     }
-  ]
+  ],
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 2 -> 1 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

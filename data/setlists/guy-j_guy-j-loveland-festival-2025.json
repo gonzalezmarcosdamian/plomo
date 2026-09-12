@@ -1,0 +1,164 @@
+{
+  "dj": "Guy J",
+  "evento": "GUY J | LOVELAND FESTIVAL 2025",
+  "fecha": "",
+  "fuente": "https://youtu.be/gI_hCvlw8JY",
+  "orden_confiable": true,
+  "n": 14,
+  "n_identificados": 14,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.214,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Berni Turletti",
+      "title": "Onix",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Berni Turletti - Onix (Original Mix)"
+    },
+    {
+      "pos": 2,
+      "artist": "Yeadon",
+      "title": "What is real (Abgt611)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Guy J",
+      "title": "No Drama",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - No Drama (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Guy J",
+      "title": "Element (mixed)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Guy J",
+      "title": "We are lost",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Guy J",
+      "title": "Moment of Clarity",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - A Moment Of Clarity (Original Mix)"
+    },
+    {
+      "pos": 7,
+      "artist": "Guy J",
+      "title": "Surreal",
+      "es_id": false,
+      "key": "8A",
+      "bpm": 121.0,
+      "energy": 6.7,
+      "label": "Early Morning",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 8,
+      "artist": "Guy J",
+      "title": "Elasis",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Kasper Koman",
+      "title": "Biome (Mike Rish Remix)",
+      "es_id": false,
+      "key": "Gb",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Kasper Koman - Biome (Mike Rish Remix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Guy J",
+      "title": "Nirvana (dub)",
+      "es_id": false,
+      "key": "1A",
+      "bpm": 120.0,
+      "energy": 6.9,
+      "label": "Bedrock",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 11,
+      "artist": "Guy J",
+      "title": "Worlds Apart",
+      "es_id": false,
+      "key": "8A",
+      "bpm": 122.0,
+      "energy": 5.9,
+      "label": "Early Morning",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 12,
+      "artist": "Unblur",
+      "title": "Tantum",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Guy J",
+      "title": "Eureka",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Maze 28 - Eureka"
+    },
+    {
+      "pos": 14,
+      "artist": "Guy J",
+      "title": "Selector",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - Selector (Original Mix)"
+    }
+  ],
+  "cobertura_key": 0.643,
+  "cobertura_bpm": 0.643
+}

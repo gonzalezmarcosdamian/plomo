@@ -1,0 +1,122 @@
+{
+  "dj": "Hernan Cattaneo",
+  "evento": "Hernan Cattaneo Resident 769 31-01-2026",
+  "fecha": "",
+  "fuente": "https://youtu.be/lOAuAgJ-AOI",
+  "orden_confiable": true,
+  "n": 10,
+  "n_identificados": 10,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Gaston Perez",
+      "title": "Angelic voice",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gaston Perez - Angelic Voice (Original Mix)"
+    },
+    {
+      "pos": 2,
+      "artist": "Gaston Perez",
+      "title": "Time tunnel",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gaston Perez - Time Tunnel (Original Mix)"
+    },
+    {
+      "pos": 3,
+      "artist": "Uccelli",
+      "title": "The soul flows",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "UCCELLI - The Soul Flows (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Daniel Camarillo",
+      "title": "Midnight Sun (Cipriani e Hans Gerd Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "EMPHI",
+      "title": "Cosmic Arrival",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "EMPHI - Cosmic Arrival (Original Mix)"
+    },
+    {
+      "pos": 6,
+      "artist": "Harith",
+      "title": "Frozen Flame",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Harith - Frozen Flame (Original Mix)"
+    },
+    {
+      "pos": 7,
+      "artist": "Samuel",
+      "title": "Pulse (Casnik Remix)",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Samuel (LK) - Pulse (Casnik Remix)"
+    },
+    {
+      "pos": 8,
+      "artist": "HAFT",
+      "title": "Traverse",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "HAFT - Traverse (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Astronomy",
+      "title": "Enclips",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Antrim",
+      "title": "Shades Of Reverie",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.7,
+  "cobertura_bpm": 0.7
+}

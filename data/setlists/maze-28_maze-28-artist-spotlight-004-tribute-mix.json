@@ -1,0 +1,188 @@
+{
+  "dj": "Maze 28",
+  "evento": "Maze 28 - Artist Spotlight 004 - Tribute Mix",
+  "fecha": "",
+  "fuente": "https://youtu.be/Ng3SJtqMcbw",
+  "orden_confiable": true,
+  "n": 17,
+  "n_identificados": 17,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Maze 28",
+      "title": "Great Attractor (Ruben Karapetyan Remix) [UV]",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Maze 28 - Great Attractor (Ruben Karapetyan Remix)"
+    },
+    {
+      "pos": 2,
+      "artist": "Aman Anand",
+      "title": "Space Face (Maze 28 Reform) [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Seyah",
+      "title": "Dope (Maze 28 & Kyotto Remix) [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Rockka, Maze 28",
+      "title": "Raiona (Redspace Remix) [inU]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Maze 28",
+      "title": "Redux [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Meeting Molly, Maze 28",
+      "title": "Oceans in Between (GMJ & Matter Remix) [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Maze 28",
+      "title": "Quantum Touch (Juan Buitrago & TINGA Remix) [UV]",
+      "es_id": false,
+      "key": "D",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Maze 28 - Quantum Touch (Juan Buitrago & TINGA Remix)"
+    },
+    {
+      "pos": 8,
+      "artist": "Freedo Mosho, Ignacio Corazza",
+      "title": "Ghost Rider (Maze 28 Reform) [Electronic Groove Records]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Maze 28",
+      "title": "This Is Just a Dream (Hernan Cattaneo & Marcelo Vasami Remix) [RKP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Maze 28",
+      "title": "Eureka [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "VegaZ SL",
+      "title": "The Lights (Maze 28 Remix) [AH Digital]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Maze 28",
+      "title": "Cry of the Deserts (Aman Anand Remix) [Juicebox Music]",
+      "es_id": false,
+      "key": "C",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Maze 28 - Cry of the Deserts (Aman Anand Remix)"
+    },
+    {
+      "pos": 13,
+      "artist": "Giovanny Aparicio",
+      "title": "Azul Profundo (Maze 28 Remix) [Clubsonica Records]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Dhany G, William Rizz, Havjers",
+      "title": "The Union (TEELCO & Maze 28 Remix) [Digital Emotions]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Dylhen",
+      "title": "Thumper (Maze 28 Remix) [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Maze 28",
+      "title": "Abyss Rhythm [Juicebox Music]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "Maze 28",
+      "title": "Nocte [Mango Alley]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.176,
+  "cobertura_bpm": 0.176
+}

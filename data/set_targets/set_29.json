@@ -1,37 +1,130 @@
 {
   "name": "29. Mango Alley Deep — 2h — 2026-06-01",
   "duration_h": 2,
-  "bpm_range": [120, 124],
+  "bpm_range": [
+    120,
+    124
+  ],
   "max_per_artist": 4,
   "style": "Mango Alley — Maze 28, Rockka, Cary Crank, Dowden",
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.5,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.5,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.4,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 8.5,
+      "e_center": 7.0,
+      "fraction": 0.4,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Maze 28", "title": "Stardust"},
-    {"artist": "Maze 28", "title": "C Moon"},
-    {"artist": "Maze 28", "title": "Nocte"},
-    {"artist": "Maze 28", "title": "Flux"},
-    {"artist": "Maze 28", "title": "Redux"},
-    {"artist": "Maze 28", "title": "Red Lights From Afar"},
-    {"artist": "Ruben Karapetyan Maze 28", "title": "Cosmic Dot"},
-    {"artist": "Maze 28", "title": "Cry of the Deserts"},
-    {"artist": "Rockka Maze 28", "title": "Chroma"},
-    {"artist": "Maze 28 Rockka", "title": "Inertia"},
-    {"artist": "Rockka", "title": "The Fade"},
-    {"artist": "Rockka", "title": "Decryptor"},
-    {"artist": "Rockka", "title": "Elevation"},
-    {"artist": "Rockka", "title": "Subversion"},
-    {"artist": "Cary Crank", "title": "Inner Atlas"},
-    {"artist": "Cary Crank", "title": "Deep Voltage"},
-    {"artist": "Cary Crank", "title": "Echoes From Below"},
-    {"artist": "Rauschhaus Cary Crank", "title": "Bright Things in Front of Us"},
-    {"artist": "Rauschhaus Cary Crank", "title": "Bekal"},
-    {"artist": "Dowden", "title": "Pacifist"},
-    {"artist": "Dowden", "title": "Urias"},
-    {"artist": "Dowden", "title": "Gavia"},
-    {"artist": "Dowden", "title": "Eternity"}
-  ]
+    {
+      "artist": "Dowden",
+      "title": "Urias",
+      "content_id": "41896244"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Gavia (Original Mix)",
+      "content_id": "169431664"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Decryptor",
+      "content_id": "261547700"
+    },
+    {
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bright Things in Front of Us (Extended Mix)",
+      "content_id": "100400460"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Stardust (Original Mix)",
+      "content_id": "66961608"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Elevation",
+      "content_id": "114312499"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Redux",
+      "content_id": "115416800"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Subversion",
+      "content_id": "78510636"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Nocte",
+      "content_id": "37299186"
+    },
+    {
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot",
+      "content_id": "97553620"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "C Moon (Original Mix)",
+      "content_id": "165686657"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Pacifist (Original Mix)",
+      "content_id": "249390073"
+    },
+    {
+      "artist": "Maze 28, Rockka",
+      "title": "Inertia",
+      "content_id": "117135799"
+    },
+    {
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bekal (Extended Mix)",
+      "content_id": "108617487"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Chroma (Original Mix)",
+      "content_id": "125769602"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Flux",
+      "content_id": "172301228"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Red Lights From Afar",
+      "content_id": "20894273"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Eternity",
+      "content_id": "128313410"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 12 -> 3 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

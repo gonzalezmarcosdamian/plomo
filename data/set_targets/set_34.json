@@ -1,37 +1,122 @@
 {
   "name": "34. Tom Pavicich & Friends — 2026-06-04",
   "duration_h": 2,
-  "bpm_range": [118, 124],
+  "bpm_range": [
+    118,
+    124
+  ],
   "max_per_artist": 4,
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.35, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.30, "anchor_ids": []},
-    {"name": "cool",   "e_min": 4.0, "e_max": 6.0, "e_center": 5.0, "fraction": 0.15, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.5,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.35,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 8.5,
+      "e_center": 7.0,
+      "fraction": 0.3,
+      "anchor_ids": []
+    },
+    {
+      "name": "cool",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 5.0,
+      "fraction": 0.15,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "FAERO Tom Pavicich", "title": "No Warm"},
-    {"artist": "Tom Pavicich", "title": "Volver"},
-    {"artist": "Tom Pavicich Analog Sense", "title": "Anger"},
-    {"artist": "Tom Pavicich", "title": "About Her"},
-    {"artist": "Tom Pavicich", "title": "Insight"},
-    {"artist": "Tom Pavicich", "title": "Fly Home"},
-    {"artist": "Tom Pavicich", "title": "Olimpo"},
-    {"artist": "Tom Pavicich", "title": "Sugar Rush"},
-    {"artist": "Tom Pavicich", "title": "Klingt"},
-    {"artist": "FAERO Tom Pavicich", "title": "Evolve"},
-    {"artist": "Gorkiz", "title": "Fired"},
-    {"artist": "Gorkiz K Loveski", "title": "Echos Of Eons"},
-    {"artist": "Gorkiz Gaston Sosa", "title": "All Night Long"},
-    {"artist": "Gorkiz Tonaco", "title": "Serenity"},
-    {"artist": "Bondarev", "title": "Meteora"},
-    {"artist": "Tali Muss Bondarev", "title": "Algorythm"},
-    {"artist": "Anton Borin Bondarev", "title": "Samadhi"},
-    {"artist": "Bondarev Jiminy Hop Tantum", "title": "Pale Blue Dot"},
-    {"artist": "Rodriguez Jr", "title": "Nairobi"},
-    {"artist": "Rodriguez Jr", "title": "1PM Sunrise"},
-    {"artist": "Rodriguez Jr", "title": "Twilight Language"},
-    {"artist": "Rodriguez Jr", "title": "Hydra"},
-    {"artist": "Amine K WAHM", "title": "Kill the Anger"}
-  ]
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "1PM Sunrise",
+      "content_id": "152407965"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Sugar Rush (Original Mix)",
+      "content_id": "265949686"
+    },
+    {
+      "artist": "Tom Pavicich, Analog Sense",
+      "title": "Anger (Original Mix)",
+      "content_id": "44341316"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Nairobi (Original Mix)",
+      "content_id": "193525568"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Fly Home (Original Mix)",
+      "content_id": "259427117"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Volver (Original Mix)",
+      "content_id": "142929823"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "About Her (Original Mix)",
+      "content_id": "178538707"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Hydra",
+      "content_id": "149501053"
+    },
+    {
+      "artist": "Tali Muss & Bondarev",
+      "title": "Algorythm",
+      "content_id": "26382866"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Klingt (Original Mix)",
+      "content_id": "18638243"
+    },
+    {
+      "artist": "Gorkiz & Tonaco",
+      "title": "Serenity",
+      "content_id": "46652470"
+    },
+    {
+      "artist": "Gorkiz",
+      "title": "Fired (Original Mix)",
+      "content_id": "69495287"
+    },
+    {
+      "artist": "Gorkiz & Gastón Sosa",
+      "title": "All Night Long",
+      "content_id": "107015044"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Twilight Language (Extended Version)",
+      "content_id": "161537486"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Insight (Original Mix)",
+      "content_id": "83418763"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 11 -> 6 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

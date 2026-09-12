@@ -1,38 +1,147 @@
 {
   "name": "36. This Guy Ben Peak — 2026-06-04",
   "duration_h": 2,
-  "bpm_range": [121, 126],
+  "bpm_range": [
+    121,
+    126
+  ],
   "max_per_artist": 4,
   "movements": [
-    {"name": "warmup", "e_min": 3.0, "e_max": 5.5, "e_center": 4.5, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 5.0, "e_max": 7.0, "e_center": 6.0, "fraction": 0.35, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.5, "e_max": 9.0, "e_center": 7.5, "fraction": 0.30, "anchor_ids": []},
-    {"name": "cool",   "e_min": 5.0, "e_max": 6.5, "e_center": 5.5, "fraction": 0.15, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 3.0,
+      "e_max": 5.5,
+      "e_center": 4.5,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 5.0,
+      "e_max": 7.0,
+      "e_center": 6.0,
+      "fraction": 0.35,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.5,
+      "e_max": 9.0,
+      "e_center": 7.5,
+      "fraction": 0.3,
+      "anchor_ids": []
+    },
+    {
+      "name": "cool",
+      "e_min": 5.0,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.15,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "This Guy Ben", "title": "Hey Sally"},
-    {"artist": "This Guy Ben", "title": "Kapalla"},
-    {"artist": "This Guy Ben", "title": "Neptuna"},
-    {"artist": "This Guy Ben", "title": "Five from Fargo"},
-    {"artist": "This Guy Ben", "title": "Condor"},
-    {"artist": "This Guy Ben", "title": "Pulente"},
-    {"artist": "This Guy Ben", "title": "Corbiere"},
-    {"artist": "This Guy Ben", "title": "Troubador"},
-    {"artist": "Fur Coat", "title": "Pandora's Dream"},
-    {"artist": "Fur Coat", "title": "Ethereal"},
-    {"artist": "Fur Coat", "title": "Doppler Effect"},
-    {"artist": "Fur Coat", "title": "Modular Theory"},
-    {"artist": "Fur Coat", "title": "Isolated Soundwaves"},
-    {"artist": "Sasha", "title": "Singularity"},
-    {"artist": "Massano", "title": "The Feeling"},
-    {"artist": "Massano", "title": "System"},
-    {"artist": "Massano", "title": "Odyssey"},
-    {"artist": "Massano", "title": "Solitude"},
-    {"artist": "Depeche Mode", "title": "Ghosts Again"},
-    {"artist": "Cristoph ADZ", "title": "Solpaz"},
-    {"artist": "Tinlicker", "title": "Compound"},
-    {"artist": "Tinlicker", "title": "All That I Lost"},
-    {"artist": "Oliver Schories", "title": "Lymn"},
-    {"artist": "Oliver Schories", "title": "Peron"}
-  ]
+    {
+      "artist": "This Guy Ben",
+      "title": "Condor (Extended Mix)",
+      "content_id": "224399613"
+    },
+    {
+      "artist": "Fur Coat",
+      "title": "Ethereal",
+      "content_id": "172832759"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Hey Sally (Extended Mix)",
+      "content_id": "53315809"
+    },
+    {
+      "artist": "Massano",
+      "title": "System",
+      "content_id": "15299846"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Corbiere (Extended Mix)",
+      "content_id": "82641093"
+    },
+    {
+      "artist": "Fur Coat",
+      "title": "Modular Theory",
+      "content_id": "41569460"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Kapalla (Extended Mix)",
+      "content_id": "263336960"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "Compound (Extended Mix)",
+      "content_id": "163262590"
+    },
+    {
+      "artist": "Fur Coat",
+      "title": "Pandora's Dream (Original Mix)",
+      "content_id": "109468605"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "All That I Lost",
+      "content_id": "23816256"
+    },
+    {
+      "artist": "Cristoph, ADZ",
+      "title": "Solpaz",
+      "content_id": "260096829"
+    },
+    {
+      "artist": "Massano",
+      "title": "Solitude",
+      "content_id": "43440493"
+    },
+    {
+      "artist": "Oliver Schories",
+      "title": "Lymn (Original Mix)",
+      "content_id": "60102553"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Five from Fargo (Extended Mix)",
+      "content_id": "139392021"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Pulente (Extended Mix)",
+      "content_id": "126903064"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Troubador (Extended Mix)",
+      "content_id": "126034618"
+    },
+    {
+      "artist": "Massano",
+      "title": "Odyssey",
+      "content_id": "182763835"
+    },
+    {
+      "artist": "Oliver Schories",
+      "title": "Peron (Original Mix)",
+      "content_id": "37934089"
+    },
+    {
+      "artist": "Fur Coat",
+      "title": "Doppler Effect",
+      "content_id": "128196378"
+    },
+    {
+      "artist": "Fur Coat",
+      "title": "Isolated Soundwaves",
+      "content_id": "159431134"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 12 -> 5 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

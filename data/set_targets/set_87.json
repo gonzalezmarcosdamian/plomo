@@ -10,19 +10,14 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Alex O'Rion",
-      "title": "Blackout (Original Mix)",
-      "content_id": "90098256"
-    },
-    {
       "artist": "Cendryma",
       "title": "Buildup Trap (Simos Tagias Remix)",
       "content_id": "151109647"
     },
     {
-      "artist": "Durante",
-      "title": "Reaching (Weird Sounding Dude Extended Mix)",
-      "content_id": "161831530"
+      "artist": "Paul Deep (AR)",
+      "title": "Melodramatic (Original Mix)",
+      "content_id": "154792940"
     },
     {
       "artist": "Leandro Murua, Martin Fredes",
@@ -30,74 +25,79 @@
       "content_id": "27652637"
     },
     {
+      "artist": "Facundo Borras",
+      "title": "Whispers from Dawn",
+      "content_id": "14005975"
+    },
+    {
+      "artist": "Khen",
+      "title": "Out Of A Dream (Original Mix)",
+      "content_id": "26535182"
+    },
+    {
+      "artist": "Martin Fredes, Unai Garcia",
+      "title": "The Artefact (Original Mix)",
+      "content_id": "204283090"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Juan Ibanez Extended Mix)",
+      "content_id": "205855457"
+    },
+    {
       "artist": "Cendryma",
       "title": "Pure Junction (Berdu Remix)",
       "content_id": "37141460"
     },
     {
+      "artist": "Gorkiz, K Loveski",
+      "title": "Echos Of Eons (Greenage Remix)",
+      "content_id": "86837486"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Nether (Original Mix)",
+      "content_id": "105409768"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Silver Lake (Original Mix)",
+      "content_id": "135098098"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bustle (Original Mix)",
+      "content_id": "5972317"
+    },
+    {
+      "artist": "Melodiam (AR)",
+      "title": "Martian",
+      "content_id": "230202313"
+    },
+    {
       "artist": "Rauschhaus",
-      "title": "What We Expected (Original Mix) ",
-      "content_id": "241989222"
+      "title": "Morning Walks",
+      "content_id": "161573466"
     },
     {
-      "artist": "Ezequiel Arias",
-      "title": "Púrpura",
-      "content_id": "227608600"
+      "artist": "Nick Warren",
+      "title": "Freebird (Emi Galvan Remix)",
+      "content_id": "112295588"
     },
     {
-      "artist": "Leandro Murua, Martin Fredes",
-      "title": "Interference (Original Mix)",
-      "content_id": "236712792"
+      "artist": "Dmitry Molosh",
+      "title": "The Moon Lights the Way (Original Mix)",
+      "content_id": "216332867"
     },
     {
-      "artist": "Maze 28",
-      "title": "Aer8",
-      "content_id": "84034828"
+      "artist": "Guy Mantzur, Kamilo Sanclemente",
+      "title": "The Future is in the Past (Original Mix)",
+      "content_id": "35383160"
     },
     {
-      "artist": "Iovino, Tom Pavicich",
-      "title": "Seamless (Original Mix)",
-      "content_id": "220612989"
-    },
-    {
-      "artist": "Tali Muss",
-      "title": "Garip (Original Mix) ",
-      "content_id": "8906387"
-    },
-    {
-      "artist": "Kasey Taylor, Gai Barone",
-      "title": "Spiral (Original Mix)",
-      "content_id": "253798452"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Never Ending Summer (Original Mix)",
-      "content_id": "98817444"
-    },
-    {
-      "artist": "Kamilo Sanclemente, Dabeat",
-      "title": "Vekants",
-      "content_id": "4009725"
-    },
-    {
-      "artist": "Ezequiel Arias",
-      "title": "Solar (Extended Mix)",
-      "content_id": "266911496"
-    },
-    {
-      "artist": "Paul Thomas, Maze 28",
-      "title": "Abundance (Original Mix)",
-      "content_id": "142322723"
-    },
-    {
-      "artist": "Nicolas Rada",
-      "title": "Cascadia",
-      "content_id": "50865819"
-    },
-    {
-      "artist": "Tali Muss",
-      "title": "Interlocutor (Kebin Van Reeken Extended Remix)",
-      "content_id": "70531094"
+      "artist": "Rockka",
+      "title": "The Fade (Dave Walker Remix)",
+      "content_id": "28931502"
     }
   ]
 }

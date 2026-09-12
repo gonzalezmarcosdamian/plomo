@@ -1,0 +1,342 @@
+# Lo que tocan los DJs de referencia y no esta en la biblioteca
+# 40 setlists en data/setlists/ | 276 temas confirmados en Muzpa
+# Ordenado por cuantos DJs distintos lo tocaron, despues por cuantas veces.
+
+Chelu Garcia - Guy On Fire (Timo Maas and Francesco Mami Remix)   # 1DJs x2 126.0 Ebm
+Ezequiel Arias - Delirio   # 1DJs x2 125.0 Db
+ALPHA21 - Resonance   # 1DJs x1 122.0 Cm
+ANix JAy & Juan Ibanez - Crazy (Juan Ibanez Remix)   # 1DJs x1 122.0 Fm
+ARTN - Passenger   # 1DJs x1 122.0 Fmaj
+Abduction - Shayan Pasha, Juan Barrera   # 1DJs x1 123.0 G
+Acid Pauli & Nico Stojan - Tensione   # 1DJs x1 123.0 Bbm
+Adam Ten & Volkoder - Got Me Crazy   # 1DJs x1 124.0 Fm
+Alex O´Rion - Echium   # 1DJs x1 120.0 Fmaj
+Alex O´Rion - The Chase (Original Mix)   # 1DJs x1 120.0 Cm
+Amand & Capoon - Ouverture (Khen Remix)   # 1DJs x1 123.0 Dm
+Amrita, David Hasert, Minoas Cirillo - Birdhouse (Extended Mix)   # 1DJs x1 123.0 Am
+Andrea Cassino, Lio Q, Niceshot - Wind Of Change (Extended Mix)   # 1DJs x1 120.0 A
+Andrey Loud - Cave   # 1DJs x1 127.0 F#m
+André Winter - Brunswick   # 1DJs x1 125.0 Amin
+Andrés Moris & Rocio Portillo - Evolver   # 1DJs x1 123.0 Gm
+Anton Golubev, Sofia Deren - Gathering (Sofia Deren Remix)   # 1DJs x1 122.0 Am
+Antrim - Hoffnung (Rauschhaus Remix)   # 1DJs x1 120.0 Gm
+Argia - Tulips   # 1DJs x1 123.0 Am
+Argia - Come With Me   # 1DJs x1 124.0 Fm
+Audio Junkies - Aspects Of Rhythm   # 1DJs x1 123.0 G
+Augusto Dassano - Agorim   # 1DJs x1 120.0 Fm
+Axel Zambrano & Leandro Murua - Adonis (Kay-D Remix)   # 1DJs x1 122.0 D
+B SOUL - Lustrise   # 1DJs x1 122.0 D
+BAILE - Siren   # 1DJs x1 125.0 Cm
+Because of Art & Antony Szmierek - Circle of Light (Incandescent Mix)   # 1DJs x1 126.0 Fm
+Berni Turletti - Onix   # 1DJs x1 122.0 Gm
+Berni Turletti - Obsidian Bloom   # 1DJs x1 122.0 Dbm
+Beswerda - All For Me   # 1DJs x1 124.0 Fm
+Beswerda - System   # 1DJs x1 122.0 Gm
+Bigfett - Reflection (Extended Mix)   # 1DJs x1 124.0 F#m
+Blancah & Neoclassic - Travessia   # 1DJs x1 123.0 Cm
+Brian Creao & Juan Ibanez - Temperance (Juan Ibañez Remix)   # 1DJs x1 122.0 C
+Budakid - Hearts (Argia Remix)   # 1DJs x1 123.0 Dm
+COQUEIT - Dock   # 1DJs x1 122.0 Em
+CamelPhat & Josh Gigante - The One   # 1DJs x1 124.0 Ebm
+Carl Jurgens & Niso - Skyscrapers (Alex O'Rion Remix)   # 1DJs x1 120.0 Gm
+Cendryma - Possible Interlude   # 1DJs x1 121.0 Cm
+Cesar Borra - Don't Kill My Vibe   # 1DJs x1 125.0 A
+Cezar Nica - Standard Model   # 1DJs x1 122.0 Gm
+Cherry (UA) - Giza (Original Mix)   # 1DJs x1 122.0 Bmaj
+Cherry (UA) - Infinity   # 1DJs x1 124.0 F#m
+Chiruka - Digital Dystopia (DJ Bird Remix)   # 1DJs x1 122.0 F#m
+Chris Cargo - Wide Eyed (Subandrio Remix)   # 1DJs x1 122.0 Em
+Christian Smith - Feel Me   # 1DJs x1 122.0 C
+Cloaked - Cascade (Dave Walker Remix)   # 1DJs x1 121.0 Gm
+Colyn - Resolve   # 1DJs x1 123.0 F#m
+Colyn - My Journey   # 1DJs x1 126.0 Fm
+Colyn - Dancing On My Own   # 1DJs x1 125.0 Gbm
+Colyn & Read The News - See The Light   # 1DJs x1 123.0 Cm
+Colyn & Read The News - Funk   # 1DJs x1 123.0 Bbm
+Cornucopia - Dream Machine   # 1DJs x1 120.0 Em
+Cornucopia - Love Story   # 1DJs x1 120.0 Fm
+Cristian Hidalgo - Entrophee   # 1DJs x1 122.0 D
+Culoe De Song - The Spiker (Manoo Club Remix)   # 1DJs x1 122.0 Em
+Culoe De Song - Mount Zion (Jonathan Kaspar Remix)   # 1DJs x1 122.0 Dm
+D-Shift - Control Me   # 1DJs x1 124.0 D
+DJ Bird - In Space   # 1DJs x1 119.0 Gm
+DRUNKEN KONG, D-Shift - Future Heights (Mariano Mellino Remix)   # 1DJs x1 123.0 Am
+Dabeat - Red Sky Night   # 1DJs x1 122.0 Cm
+Danny Howells - Endless Dust [Extended]   # 1DJs x1 122.0 Gm
+Dave Seaman - Two By Two (Audio Junkies Remix)   # 1DJs x1 123.0 A
+Dave Walker, Fordal - Hyperlight   # 1DJs x1 121.0 Gm
+Davi - Self CNTRL   # 1DJs x1 125.0 Bb
+Death On The Balcony - Quiet Storm (Martin Fredes & Matthew Sona Remix)   # 1DJs x1 122.0 Am
+Denney & D.Ramirez - In The Dark   # 1DJs x1 124.0 Abm
+Diego Schiller - Archway   # 1DJs x1 123.0 Fm
+Digital Department - Disconnection   # 1DJs x1 124.0 Am
+Digital Mess - Raspberry Porridge (Cosmonaut Extended Remix)   # 1DJs x1 123.0 G
+Dimitry Nakov, Natacha Atlas - Extasy (Hypnotic Mix)   # 1DJs x1 122.0 Cm
+Dion Paola (AUS) - Galaxy (Facundo Sval Remix)   # 1DJs x1 122.0 C
+Doma - Kaleidoscope   # 1DJs x1 122.0 G
+Dubfire & Oliver Huntemann - Terra (Joseph Capriati Remix)   # 1DJs x1 124.0 G#min
+EMPHI - Cosmic Arrival   # 1DJs x1 122.0 Dm
+Elliot Moriarty - only time   # 1DJs x1 123.0 Ebm
+Enclips - Astronomy   # 1DJs x1 124.0 Am
+Enrico Sangiuliano - Moon Rocks   # 1DJs x1 125.0 Ebm
+Eric Prydz vs Empire Of The Sun - We Are Mirage   # 1DJs x1 128.0 Emin
+Erich LH - Pulse   # 1DJs x1 122.0 Dm
+Essco - Headspace   # 1DJs x1 123.0 F#m
+Essco - Chromatic   # 1DJs x1 126.0 Cm
+Etzu Mahkayah - Subjel   # 1DJs x1 124.0 Cm
+Ewan Rill - Snow Echoes   # 1DJs x1 120.0 Dm
+Ezequiel Arias - Mad Man   # 1DJs x1 123.0 Gm
+Ezequiel Arias - Go   # 1DJs x1 124.0 Abm
+Fabri Lopez - Of The Group   # 1DJs x1 120.0 Dm
+Federico Campero - Absolu   # 1DJs x1 120.0 Em
+Federico Monachesi - Nile   # 1DJs x1 122.0 Eb
+Fernando Olaya - Breath of Eternity   # 1DJs x1 122.0 Bm
+Forty Cats & Bondarev - Collider (Da Luka Remix)   # 1DJs x1 122.0 F#m
+Four Candles & Feemarx - Eudaimonia 303   # 1DJs x1 122.0 G
+Fran Garay - Illusion   # 1DJs x1 120.0 Gm
+Fran Garay - Go Ahead   # 1DJs x1 118.0 Gm
+Fran Garay - Magnetic (Andrés Moris Remix)   # 1DJs x1 122.0 Gm
+Francesca Lombardo - Inside Out   # 1DJs x1 125.0 Dbm
+Frank Hopkins & Logomyx - Asymptote (Steven Weston Remix)   # 1DJs x1 120.0 Em
+Frankie M, Luke Hunter - Dive On (Jerome Isma-Ae Remix)   # 1DJs x1 126.0 Dm
+Franky Wah - desert dance   # 1DJs x1 122.0 C
+Fred again.. & The Blessed Madonna - Marea (We've Lost Dancing)   # 1DJs x1 123.0 Fm
+Freedo Mosho, Futura City - Blue Tribe (Futura City Rework)   # 1DJs x1 117.0 Em
+Freedo Mosho, JUNIOR (SL), Futura City - Fading Away (Aman Anand & Futura City Rework)   # 1DJs x1 118.0 Em
+GRIFE - Life’s Not A Contest [TRYBESof]   # 1DJs x1 121.0 Ebm
+Gab Rhome - Alter He-Go (Moscoman & OMRI. Remix)   # 1DJs x1 120.0 Gm
+Gaston Perez - Angelic voice   # 1DJs x1 120.0 Dm
+Gaston Perez - Time tunnel   # 1DJs x1 120.0 Dm
+Gero Pellizzon - Echoes Beyond   # 1DJs x1 120.0 Cm
+Gorge - Nayuma   # 1DJs x1 123.0 Am
+Greg Ochman - The Silver Lily   # 1DJs x1 120.0 Cm
+Guy J - lost & found (Original Mix)   # 1DJs x1 123.0 Abm
+Guy J - Forever Lost   # 1DJs x1 124.0 F#m
+Guy J - Predator   # 1DJs x1 123.0 Fm
+Guy J - Million Years From Now [EARLY MORNING]   # 1DJs x1 123.0 Bb
+Guy J - Blind Side   # 1DJs x1 123.0 Em
+Guy J - Next to Me   # 1DJs x1 118.0 None
+Guy J - Anonymous   # 1DJs x1 122.0 Gm
+Guy J - Cosmos   # 1DJs x1 122.0 Gm
+Guy J - into the Void   # 1DJs x1 128.0 Fm
+Guy J - No Drama   # 1DJs x1 123.0 Gm
+Guy J - Moment of Clarity   # 1DJs x1 123.0 Gm
+Guy J - Eureka   # 1DJs x1 122.0 Dm
+Guy J - Selector   # 1DJs x1 121.0 Gm
+Guy J - Alive Again   # 1DJs x1 122.0 D
+HAFT - Traverse   # 1DJs x1 122.0 Am
+HAFT - Ascendance   # 1DJs x1 122.0 Cm
+HAUMS - The Hermit   # 1DJs x1 123.0 Fm
+Harith - Frozen Flame   # 1DJs x1 123.0 Dm
+Hot Tuneik, Amber Long - Peace Within   # 1DJs x1 122.0 Bm
+Hunter Game, ALIAGA - Shapeless (Frankey & Sandrino Remix)   # 1DJs x1 125.0 Dbm
+Ignacio Hernández, FAERO - Symmetry   # 1DJs x1 123.0 Cm
+Ignacio Salgado - Zuma   # 1DJs x1 121.0 None
+Iván Lozano (unreleased) - Asphyxia   # 1DJs x1 124.0 C
+Jamie Stevens - Crosses   # 1DJs x1 122.0 Fm
+Jinger & Traumer - Apoplex   # 1DJs x1 125.0 F#m
+Jody Wisternoff & James Grant - Mui (Ezequiel Arias Remix)   # 1DJs x1 125.0 Cm
+Joel Lee - The Call   # 1DJs x1 122.0 Em
+Joel Lee - Sun Goes Down   # 1DJs x1 123.0 Am
+Jonathan Kaspar - I Love Your Voice   # 1DJs x1 117.0 Dm
+Jonathan Kaspar - Play With Me   # 1DJs x1 124.0 Fm
+Jonathan Kaspar - Yah   # 1DJs x1 124.0 Cm
+Julian Jeweil - Mars   # 1DJs x1 125.0 F#m
+Julian Millan - Stellar Venue (Dilby Remix)   # 1DJs x1 125.0 Fm
+Julieta Kühnle - Blazer (?)   # 1DJs x1 122.0 Bm
+K Loveski & Sinan Arsan - Iddicted (Tonaco & Matt Oliver Remix)   # 1DJs x1 122.0 Dm
+Kadosh & Magit Cacoon - L.O.V.E (Nico Stojan Remix)   # 1DJs x1 126.0 C
+Kaiserdisco - Black Mamba   # 1DJs x1 128.0 Amin
+Kamilo Sanclemente - Iceberg (HAFT Remix)   # 1DJs x1 124.0 Gm
+Kamilo Sanclemente - Our Last Day   # 1DJs x1 124.0 Cm
+Karol XVII & MB Valence - Waterfall Drops (Guy J Remix)   # 1DJs x1 123.0 Am
+Kasper Koman - Biome (Mike Rish Remix)   # 1DJs x1 124.0 Gb
+Kastis Torrau - Clock   # 1DJs x1 121.0 Bmin
+Lars Horton - Silent Protocol   # 1DJs x1 122.0 Cm
+Lean Robotti - Mercurio   # 1DJs x1 124.0 Am
+Lean Robotti - Reload   # 1DJs x1 123.0 Gm
+Ledokol (Cid Inc Remix) - Forty Cats   # 1DJs x1 122.0 Dm
+Lipa Tazzioli - Complex Society   # 1DJs x1 122.0 D
+Lucas Zarate - Cromo (Stae Remix)   # 1DJs x1 122.0 Cm
+Luciano Scheffer 🇧🇷 - Tudo Passa (Original Mix)   # 1DJs x1 120.0 D
+Luis Damora - Safe From Harm   # 1DJs x1 123.0 Am
+Mac Paez - Spaceman   # 1DJs x1 125.0 Fm
+Maezbi, Nicolas Viana - Smooth   # 1DJs x1 123.0 Cm
+Mango, Gorkiz - Ipanema Twilight   # 1DJs x1 122.0 Em
+Manu - Miles Apart   # 1DJs x1 120.0 Em
+Marcan Liav - Bob Light (Luis Leon Late Night Dub)   # 1DJs x1 124.0 Em
+Mariano Mellino, Folgar, Gio Santi - Never Enough   # 1DJs x1 122.0 F#m
+Marsh - Healer (Guy J Extended Remix)   # 1DJs x1 124.0 Am
+Marsh - Warrior   # 1DJs x1 126.0 Am
+Marsh - Hymn   # 1DJs x1 125.0 Fm
+Marten Lou & Colyn - Need You   # 1DJs x1 126.0 Em
+Martin Di Sciascio - Lost in Burzako   # 1DJs x1 122.0 Bm
+Marvio - Hathor   # 1DJs x1 122.0 Fm
+Masaya - Something   # 1DJs x1 128.0 F#m
+Matan Caspi - Inflamed (Original Mix)   # 1DJs x1 118.0 Cm
+Matias Ocaño - She´s A Diamond   # 1DJs x1 120.0 Ebm
+Matias Ocaño - Abnormal Day (Original Mix)   # 1DJs x1 120.0 Bm
+Matt Oliver, Togni - Brainspin   # 1DJs x1 121.0 Bbm
+Max Dumont - Maht Hild (Stereo Munk & Dublew Remix)   # 1DJs x1 121.0 Em
+Mayro - Frame   # 1DJs x1 122.0 Dm
+Maze 28 - Quantum Touch (Juan Buitrago & TINGA Remix) [UV]   # 1DJs x1 122.0 D
+Maze 28 - Fogbows   # 1DJs x1 122.0 Am
+Melodiam - Peak   # 1DJs x1 122.0 Amin
+Michael A - Conviction (Aman Anand Remix)   # 1DJs x1 122.0 Em
+Mike Isai - Chrysalis (GMJ & Matter Remix)   # 1DJs x1 121.0 Ebmin
+Mindlancholic - Mirages In Space   # 1DJs x1 123.0 Fm
+Mindlancholic - Amaranth   # 1DJs x1 123.0 F#m
+Monuloku - Floor Control (Yohai Mor Remix)   # 1DJs x1 122.0 Dm
+Moonwalk - Labyrinth (Original Mix)   # 1DJs x1 124.0 Abm
+Movement Machina - Adaptation (Donny Carr Remix)   # 1DJs x1 123.0 C
+Myrddin ft. Alasse - Penser Avec Ses Pieds (Dark Version)   # 1DJs x1 121.0 Gm
+Nathan Fake - Hypercube   # 1DJs x1 122.0 Ebm
+Ness - A Darkly Sunset In Barcelona   # 1DJs x1 127.0 Dm
+Neuralis - Event Horizon (Cendryma Remix)   # 1DJs x1 122.0 Fm
+Niceshot - Earthrise   # 1DJs x1 121.0 Em
+Nick Stoynoff - Changement (Pig&Dan Remix)   # 1DJs x1 125.0 Fm
+Notre Dame - Nobody Told Me   # 1DJs x1 122.0 Am
+ODESZA - This Version of You (feat. Julianna Barwick) [Joseph Ray Remix]   # 1DJs x1 124.0 A
+Omid 16B - Escape (Driving to Heaven) (Guy J Remix)   # 1DJs x1 126.0 Bbmin
+Optometry, John Tejada & March Adstrum - Chameleon   # 1DJs x1 125.0 C
+PASINDU - Elevate   # 1DJs x1 122.0 Cm
+Paul Deep (AR) - Milo   # 1DJs x1 123.0 Em
+Paul Hazendonk - One Plus One (Jack Lazarus Remix)   # 1DJs x1 122.0 Am
+Paul Ursin - Resonance   # 1DJs x1 126.0 Dm
+Pete Lazonby & Fort Romeau - Sacred Cycles (Fort Romeau Remix)   # 1DJs x1 127.0 Ebm
+Peter Brix - Tiefenrausch   # 1DJs x1 125.0 D
+Pleasurekraft - Tarantula (Max Styler Remix)   # 1DJs x1 127.0 Dmaj
+Pluto - World Behind (Eddy Tango Remix)   # 1DJs x1 120.0 Fm
+Praise - Kiwi   # 1DJs x1 123.0 Eb
+Praise (BR) - Eclipse   # 1DJs x1 122.0 Gm
+Qess & Ursula Rucker - Spaces In Between (Rodriguez Jr. remix)   # 1DJs x1 125.0 Em
+Quivver - Deception   # 1DJs x1 124.0 Dm
+Rabiee Ahmad - In Another Time   # 1DJs x1 122.0 Bm
+Rabiee Ahmad, Hassan Tariq Khan - Terminator   # 1DJs x1 123.0 Bbm
+Radiohead - Street Spirit (Fran Bux Unofficial Remix)   # 1DJs x1 122.0 Am
+Redfreya - Reverse The Process (Aera Remix)   # 1DJs x1 122.0 Dm
+Redspace - Day Dream (Maze 28 Remix)   # 1DJs x1 122.0 Dbm
+Redspace & Shell Robinson - Cold Atmosphere   # 1DJs x1 121.0 Fm
+Remcord - GG   # 1DJs x1 125.0 F#m
+Remcord - Vision 76 [REBA]   # 1DJs x1 124.0 Abm
+Ric Niels - Desire   # 1DJs x1 122.0 Am
+Ric Niels - Reasons   # 1DJs x1 120.0 Gm
+Robag Wruhme - Ratibor Numida   # 1DJs x1 126.0 Am
+Robert Babicz - Cream   # 1DJs x1 126.0 Am
+Rolasoul - Crystal Skies [DISTRICT]   # 1DJs x1 127.0 Ebm
+Rolasoul - Crystal Skies   # 1DJs x1 127.0 Ebm
+Romain Dary - Trust Me   # 1DJs x1 125.0 Fm
+SHERRNX & Influence - Solar Vein   # 1DJs x1 122.0 Fm
+SUZe - Late Blooming (LADS Remix)   # 1DJs x1 120.0 Dm
+Sam Collins & ESSED - Going Up   # 1DJs x1 128.0 Bmin
+Samuel - Pulse (Casnik Remix)   # 1DJs x1 123.0 Am
+Scippo - Dub Mood   # 1DJs x1 119.0 Bm
+Second Sine - The Dream   # 1DJs x1 126.0 Em
+Second Sine - Motor City (Sebastian Haas Remix)   # 1DJs x1 123.0 Dbm
+Serge Canteros - Delusions   # 1DJs x1 122.0 D
+Serge Canteros - Heart Lifter   # 1DJs x1 123.0 Em
+Seyah - Nebula (Tomas Garcia & Tonaco Remix)   # 1DJs x1 122.0 Fm
+Shayan Pasha - After All (Christian Monique Remix)   # 1DJs x1 122.0 Ebm
+Shayan Pasha, Juan Barrera - Lunar Station   # 1DJs x1 123.0 D
+Silver Panda & Maze 28 ft. Goda Brother - Mosaic (SparroX Remix)   # 1DJs x1 124.0 Dbm
+Simon Tagias - Sinners (Rodrigo Lapena & Gonzalo Sacc Remix)   # 1DJs x1 122.0 Dm
+Simon Vuarambon - Delusion   # 1DJs x1 122.0 Gm
+Simon Vuarambon - Mature Simplicity   # 1DJs x1 120.0 F#m
+Simon Vuarambon - Quiral   # 1DJs x1 122.0 Dm
+Slavak - My Own Vision (Cosmonaut Remix)   # 1DJs x1 122.0 Gm
+Son Of Son - Succession   # 1DJs x1 124.0 Eb
+Soulmade (AR) - Thunderdome   # 1DJs x1 121.0 Dm
+Soulmade (AR) - Sideral (Coloü Befu Remix)   # 1DJs x1 120.0 D
+Spencer Brown - Storm Chasing   # 1DJs x1 127.0 Dbm
+Stas Underhill - Avalanche   # 1DJs x1 124.0 Gm
+Steve Parry - Be Happy   # 1DJs x1 124.0 B
+TOLEDO - Galatari (Dave Walker Remix)   # 1DJs x1 121.0 F
+Tibi Dabo - Isla   # 1DJs x1 128.0 F#m
+Timo Maas - Ubik (Timo Maas 2026 Mix)   # 1DJs x1 129.0 Dm
+Togni - Winds of Change   # 1DJs x1 124.0 Fm
+Tom Bryder - Vector   # 1DJs x1 123.0 Cm
+Tonaco - Avalon   # 1DJs x1 122.0 Dbm
+Tonaco - Setentrional   # 1DJs x1 122.0 Gm
+Tonaco - Hausdorff Dimension (Cid Inc Remix)   # 1DJs x1 122.0 D
+Trikk - Sagrado (Original Mix)   # 1DJs x1 124.0 Em
+Twiins - Don't Waste My Time   # 1DJs x1 124.0 Cm
+UVITA & TWIINS & Milam & Colossio - Ascendance Pt. II   # 1DJs x1 122.0 C
+Uccelli - The soul flows   # 1DJs x1 123.0 Am
+VITE - Soul Strings   # 1DJs x1 120.0 Fm
+Viviana Casanova - Out of Space (Dosem Remix)   # 1DJs x1 128.0 Cm
+Volen Sentir - The Great Escape (Cornucopia Remix)   # 1DJs x1 118.0 Gm
+Wailey - Droplets (Taylan Remix)   # 1DJs x1 122.0 Fm
+Will DeKeizer, Maze 28 - Cornerstone   # 1DJs x1 121.0 Ebm
+Works Of Intent - Erase It   # 1DJs x1 127.0 Gbm
+YOTTO - Aero   # 1DJs x1 125.0 Dm
+Yulia Niko, Yotam Avni - Higher (Emanuel Satie Remix)   # 1DJs x1 124.0 Fm
+ZAC, Tiefstone, CAMILA - To Shape   # 1DJs x1 124.0 C
+Zalvador - Love   # 1DJs x1 122.0 Eb
+Zankee Gulati - Who Are You (GMJ & Matter Remix)   # 1DJs x1 120.0 Dm
+Zuccasam - Feel Happy   # 1DJs x1 125.0 Am
+Zuccasam - Away Loss   # 1DJs x1 122.0 Dm
+sc00ps - Play Right   # 1DJs x1 123.0 E
+​ Abel Ray - Last Exit To Transkei [PRAH]   # 1DJs x1 120.0 Dm
+​ Milio - Blue Imagination [ATOMNATION]   # 1DJs x1 122.0 C
+
+# No confirmados en Muzpa (407) — edits, inéditos o mal escritos:
+#   Binary Finary - 1998 (COQUEIT Edit)
+#   CHVRCHES - Leave A Trace (Ezequiel Arias Edit)
+#   Rufus Du Sol - Always (Ezequiel Arias Remix)
+#   Timo Chinala - Somerville (Guy J Remix)
+#   Argy & Anyma & MAGNUS - Higher Power (Colyn Remix)
+#   Elderbrook - Moments (Colyn Remix)
+#   Babasonicos - TIEMPO OFF (Colyn Remix)
+#   Paolo Nhe - Go
+#   Joshlane - Call In Sick
+#   Babasonicos - La Pregunta (Colyn & Von Boch Remix)
+#   Bicep - Just (Colyn Remix)
+#   Benny Benassi - Cinema (Colyn Remix)
+#   Eagles & Butterflies - Can't Stop (Colyn Remix)
+#   PAAX (Tulum) - Who Das (Extended Mix)
+#   Guy J - Alive Again - Single
+#   Rezident - It's All On You (feat. Malou) [Ezequiel Arias Remix]
+#   Damien N-Drix - Primah (Unreleased Remix)
+#   David Bowie - Time (Ezequiel Arias Edit)
+#   Chemical Brothers - Escape Velocity (Ezequiel Arias Remix)
+#   Mind Against & Sideral - Criseide
+#   Qtier - Set Me On (Ezequiel Arias Edit)
+#   The Future Sound Of London - Papua New Guinea (Yotto Remix)
+#   Ben Bohmer - Erase (Ezequiel Arias Remix)
+#   Arcade Fire - Age of Anxiety I (Ezequiel Arias Remix)
+#   Jody Wisternoff & James Grant & PROFF & Takeshi Furukawa ft. Siobhan Wilson - Mui(Ezequiel Arias Remix) [ANJUNADEEP]
+#   Rezident ft. Malou - It's All On You(Ezequiel Arias Remix) [ANJUNADEEP]
+#   Sasha ft. Ultraísta - Bring On The Night(Ezequiel Arias Edit)
+#   deadmau5 - Re_Jaded(Santi Mossman Remix) [MAU5TRAP]
+#   Sasha ft. Polica - Out Of Time(Antrim Edit)
+#   Röyksopp ft. Susanne Sundfør - Never Ever(COQUEIT Edit)
+#   The DØ - Dust It Off(Kevin Di Serna & Sebastián Teillagorry Edit)
+#   COQUEIT - ID [MELORAMA]
+#   ID - Sugar Daddy (Ezequiel Arias & COQUEIT Remix)
+#   Ezequiel Arias ft. HANA - Go [ANJUNADEEP]
+#   RÜFÜS DU SOL - Always (Ezequiel Arias Remix) [ROSE AVENUE]
+#   Marco Bailey & Tom Hades - Stars & Shines (Kevin Di Serna & Cruz Vittor Remix) [BEDROCK]
+#   Slam - Eterna (John Digweed & Nick Muir Remix) [BEDROCK]
+#   Rezident - It's All On You (Ezequiel Arias Remix)
+#   Sasha - Bring On The Night-Time (Ezequiel Arias Edit)
+#   Deadmau5 - Re_Jaded (Santi Mossman Remix)
+#   Sasha & Police - Out Of Time (Antrim Edit)
+#   Royksopp - Never Ever (COQUEIT Edit)
+#   The Do - Dust It Off (Kevin Di Serna & Sebastian Teillagorry Edit)
+#   Secret Knowledge - Sugar Daddy (Ezequiel Arias & COQUEIT Remix)
+#   Ezequiel Arias - Out of Mind
+#   Marco Bailey & Tom Hades - Stars & Shines (Kevin Di Serna & Cruz Vittor Remix)
+#   Fairmont - The Last Dance (Tomi Couto Edit)
+#   Slam - Eterna (Ezequiel Arias Remix)
+#   foglight & Joseph Kaz - Radiant (WARPP)
+#   Andrés Moris - Rust (White)
+#   Kabi (AR) - Lost In Roses [Maezbi Remix] (Juicebox Music)
+#   Kebin van Reeken - Liminal (White)
+#   Juan Ibañez, B.I.G (AR), Gianni Luciano - It’s Time To Drop (White)
+#   Luis Damora & Nila - Pure State (White)
+#   Paul Thomas - Emotional Landscapes [Ezequiel Arias Remix] (White)
+#   Ben Böhmer feat. lau.ra - Erase [Ezequiel Arias Remix] (White)
+#   Ezequiel Arias - ID (White)
+#   AFFKT - Coral (Global Underground)
+#   Ezequiel Arias & FOLGAR - You (Anjunadeep)
+#   South Bloom - let me in (Volen Sentir's secret Technique)

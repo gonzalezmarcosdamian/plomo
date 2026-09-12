@@ -1,38 +1,133 @@
 {
   "name": "57. Radar Argentina — Driving — 2h — 2026-08-03",
   "duration_h": 2,
-  "bpm_range": [119, 126],
+  "bpm_range": [
+    119,
+    126
+  ],
   "max_per_artist": 5,
   "movements": [
-    {"name": "entrada",      "e_min": 3.0, "e_max": 4.8, "e_center": 3.9, "fraction": 0.25},
-    {"name": "construccion", "e_min": 4.5, "e_max": 6.0, "e_center": 5.2, "fraction": 0.35},
-    {"name": "climax",       "e_min": 6.0, "e_max": 7.8, "e_center": 6.8, "fraction": 0.25},
-    {"name": "cierre",       "e_min": 5.0, "e_max": 6.2, "e_center": 5.5, "fraction": 0.15}
+    {
+      "name": "entrada",
+      "e_min": 3.0,
+      "e_max": 4.8,
+      "e_center": 3.9,
+      "fraction": 0.25
+    },
+    {
+      "name": "construccion",
+      "e_min": 4.5,
+      "e_max": 6.0,
+      "e_center": 5.2,
+      "fraction": 0.35
+    },
+    {
+      "name": "climax",
+      "e_min": 6.0,
+      "e_max": 7.8,
+      "e_center": 6.8,
+      "fraction": 0.25
+    },
+    {
+      "name": "cierre",
+      "e_min": 5.0,
+      "e_max": 6.2,
+      "e_center": 5.5,
+      "fraction": 0.15
+    }
   ],
   "tracks": [
-    {"artist": "Nicolas Rada", "title": "Roots"},
-    {"artist": "Nick Warren & Nicolas Rada", "title": "Fuego"},
-
-    {"artist": "Mercurio, Hernan Cattaneo", "title": "Diluted"},
-    {"artist": "Hernan Cattaneo, Tom Pavicich", "title": "Bloom"},
-    {"artist": "Tom Pavicich", "title": "You", "content_id": "168679814"},
-    {"artist": "Tom Pavicich, Gonzalo Cotroneo", "title": "Radiance"},
-
-    {"artist": "Gai Barone", "title": "Taking Credits"},
-    {"artist": "Gai Barone", "title": "Kromaky"},
-    {"artist": "Gai Barone", "title": "All About Her"},
-    {"artist": "Gai Barone, Greta Meier", "title": "Elysium"},
-    {"artist": "Kasey Taylor, Gai Barone", "title": "Spiral"},
-
-    {"artist": "Andre Moret", "title": "Gaxyda"},
-    {"artist": "Andre Moret", "title": "Kryon"},
-
-    {"artist": "Zankee Gulati", "title": "Arakeen"},
-    {"artist": "GMJ, Matter, Zankee Gulati", "title": "Emerge"},
-
-    {"artist": "Paul Deep", "title": "Tique"},
-    {"artist": "Rockka", "title": "Rebit"},
-    {"artist": "Rockka", "title": "Cinimatic"},
-    {"artist": "Jamie Stevens, Anthony Pappa", "title": "We Emerge"}
-  ]
+    {
+      "artist": "Kasey Taylor, Gai Barone",
+      "title": "Spiral (Original Mix)",
+      "content_id": "253798452"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Gaxyda (Original Mix)",
+      "content_id": "134157388"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Taking Credits (Extended Mix)",
+      "content_id": "130118132"
+    },
+    {
+      "artist": "Tom Pavicich, Gonzalo Cotroneo",
+      "title": "Radiance (Original Mix)",
+      "content_id": "139490665"
+    },
+    {
+      "artist": "Zankee Gulati",
+      "title": "Arakeen (Original Mix)",
+      "content_id": "102923995"
+    },
+    {
+      "artist": "Gai Barone, Greta Meier",
+      "title": "Elysium (Original Mix)",
+      "content_id": "197758588"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Rebit (Original Mix)",
+      "content_id": "59269008"
+    },
+    {
+      "artist": "GMJ, Matter, Zankee Gulati",
+      "title": "Emerge (Original Mix)",
+      "content_id": "71592299"
+    },
+    {
+      "artist": "Mercurio, Hernan Cattaneo",
+      "title": "Diluted (Original Mix)",
+      "content_id": "11192941"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Roots (Original Mix)",
+      "content_id": "127339207"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "All About Her (Original Mix)",
+      "content_id": "227471936"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "You (Original Mix)",
+      "content_id": "168679814"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Kryon (Original Mix)",
+      "content_id": "35413624"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Cinimatic (Original Mix)",
+      "content_id": "14020757"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Kromaky (Original Mix)",
+      "content_id": "75860698"
+    },
+    {
+      "artist": "Hernan Cattaneo, Tom Pavicich",
+      "title": "Bloom (Original Mix)",
+      "content_id": "54281220"
+    },
+    {
+      "artist": "Nick Warren & Nicolas Rada",
+      "title": "Fuego (Extended Mix)",
+      "content_id": "104132628"
+    },
+    {
+      "artist": "Jamie Stevens, Anthony Pappa",
+      "title": "We Emerge (Original Mix)",
+      "content_id": "57269616"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 13 -> 7 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

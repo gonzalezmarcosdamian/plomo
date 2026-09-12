@@ -26,11 +26,26 @@ def calculate_energy(
     outro_ms: int | None,
     track_length_ms: int | None,
 ) -> float:
-    score = 0.0
+    """Energia v2: SIN componente de BPM.
 
-    # BPM component (0-3): 118→0, 126→3
-    bpm_score = min(3.0, max(0.0, (bpm - 118) / 8 * 3))
-    score += bpm_score
+    La v1 sumaba `(bpm - 118) / 8 * 3` sobre un total de 10, o sea el 30% de la
+    "energia" era literalmente el tempo. Consecuencia medida sobre la biblioteca:
+    un tema de 118 BPM tenia un techo de E7.0 por construccion, y de los 180
+    tracks con E>=7.0 solo 16 estaban en 122 BPM o menos. Pedirle al selector
+    "un set de mucha energia" era pedirle "un set de BPM alto", y no habia forma
+    de armar lo que el DJ pedia: energia arriba con el tempo quieto.
+
+    Ahora la energia mide SOLO estructura —cuando entra el bajo, cuanto dura el
+    breakdown, si hay drop, cuanto dura el peak— y el BPM queda donde siempre
+    estuvo: en su propio campo, que el selector ya usa aparte.
+
+    Los cuatro componentes que quedan suman 7.0, asi que se reescalan a 10 para
+    que los rangos de los configs sigan queriendo decir lo mismo.
+
+    `bpm` se mantiene en la firma a proposito: los ocho llamadores lo pasan y
+    sacarlo obligaria a tocarlos todos para no ganar nada.
+    """
+    score = 0.0
 
     # Intro tightness (0-2): bass kicks in fast = energetic
     if bass_in_ms is not None and bass_in_ms > 100:
@@ -60,6 +75,10 @@ def calculate_energy(
         # 60s→0.5, 120s→1.0, 180s→1.5
         peak_score = min(1.5, peak_dur_s / 120)
         score += peak_score
+
+    # Los cuatro componentes suman como maximo 7.0 (2 + 2.5 + 1 + 1.5). Se
+    # reescala a 10 para no tener que reescribir los e_lo/e_hi de cada config.
+    score *= 10.0 / 7.0
 
     return round(min(10.0, max(0.0, score)), 1)
 

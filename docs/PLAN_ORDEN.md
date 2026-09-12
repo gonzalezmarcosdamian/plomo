@@ -1,204 +1,172 @@
-# Plan: arreglar el orden de los sets
+# Plan: arreglar el orden de los sets — v2
 
-Escrito el 2026-09-12. Pedido del DJ: *"quiero mejorar el orden de los sets
-armados, se hizo mucho lío"*, *"la idea es de mucha energía, sin necesidad de
-que los BPM se vayan para arriba siempre"*, *"Maze lo hace muy bien"*.
+v1 escrita el 2026-09-12 por la mañana. **Esta v2 es del 2026-09-12 a la tarde,
+con las fases 1, 2, 4, 5 y 6 YA EJECUTADAS.** Lo que sigue dice qué se hizo, qué
+dieron los números, y qué queda — incluida la fase de descargas, que en la v1 no
+existía.
 
-Todo lo que sigue está medido sobre el repo. Los comandos que lo reproducen
-están al lado de cada número.
+Pedido original: *"mejorar el orden de los sets armados, se hizo mucho lío"*,
+*"mucha energía sin que los BPM se vayan para arriba"*, *"Maze lo hace muy bien"*,
+*"que todo esto dé un salto de calidad"*.
 
 ---
 
-## 1. Diagnóstico
+## Lo que se ejecutó, con el antes y el después
 
-### 1.1 La energía CONTIENE el BPM. Ese es el problema de fondo
-
-`src/plomo/energy.py` arma el score con cinco componentes que suman 10:
-
-| Componente | Máximo |
-|---|---|
-| **BPM** — `(bpm - 118) / 8 * 3`, satura en 126 | **3.0** |
-| Intro (qué tan rápido entra el bajo) | 2.0 |
-| Breakdown (duración de la tensión) | 2.5 |
-| Drop presente | 1.0 |
-| Largo del peak | 1.5 |
-
-O sea: **el 30% de la "energía" es literalmente el BPM**. Un tema de 118 BPM
-tiene un techo teórico de E7.0 y no puede pasarlo aunque tenga el drop más
-grande del mundo.
-
-En la biblioteca real:
-
-- De los 180 tracks con E≥7.0, **solo 16 (9%) están en 122 BPM o menos**.
-- De los 14 con E≥8.0, **uno solo**.
-- El track más energético por debajo de 121 BPM llega a E7.1.
-
-**Consecuencia:** pedirle al solver "un set de mucha energía" es pedirle
-"un set de BPM alto". No es un defecto del solver, es la definición de la
-métrica. Mientras eso no cambie, "energía alta sin subir BPM" es imposible por
-construcción, no por criterio.
-
-### 1.2 Los sets del solver no caminan armónicamente
-
-Distribución del paso de Camelot con signo, sobre transiciones consecutivas:
-
-| Corpus | paso 0 (misma rueda) | dentro de {-1, 0, +1} | n |
-|---|---|---|---|
-| **Solver** (`data/set_targets`) | **38%** | **90%** | 566 |
-| Tocado real (`data/tocados`) | 23% | 59% | 315 |
-| Referencia, otros DJs (`data/setlists`) | 14% | 33% | 69 |
-
-Más de un tercio de las transiciones que arma el solver **no mueven la
-tonalidad**, y nueve de cada diez se quedan a un paso. Los sets no suenan mal
-transición por transición — suenan iguales de principio a fin. Eso es el "lío":
-no es que las mezclas fallen, es que el set no va a ningún lado.
-
-### 1.3 Maze 28 hace exactamente lo contrario con el BPM
-
-Su mix Proton Curator (13 tracks, 67 min) está cargado en
-`data/setlists/maze-28_proton-curator-mix-summer-2025_2025-08-01.json`:
-
-- Empieza en **130 BPM** y termina en **117**. El set **baja 13 BPM**.
-- Entre temas consecutivos salta **±3, ±4, ±5, ±6 BPM**. Nuestra regla
-  `bpm.max_salto` es **2.0**: el solver no podría armar ese set ni queriendo.
-- En Camelot es **más estricto** que los DJs de festival: 0 de 10 transiciones
-  saltan más de 1 (media 0.50), contra 72% en Eze Arias / Simon / Colyn.
-- Los últimos 5 temas los deja clavados en 9A.
-
-**Lo que enseña:** la energía de un set no la sostiene el tempo. Maze usa el BPM
-como recurso libre —lo sube y lo baja— y la continuidad la sostienen la
-tonalidad y la textura. Nosotros hacemos al revés: BPM casi fijo y tonalidad
-casi fija.
-
-### 1.4 Nuestros sets suben más el BPM que los que el DJ toca de verdad
-
-| | corr(BPM, energía) por set | BPM del track 1 al pico |
+| | antes | después |
 |---|---|---|
-| Solver | **+0.63** | **+3.0** (21 de 40 sets suben ≥3) |
-| Tocado real | +0.52 | +2.0 (9 de 21) |
+| Tracks E≥7 con BPM ≤122 | 9% (16 de 180) | **60%** (122 de 204) |
+| Transiciones flojas en los sets armados | 488 | **220** |
+| Sets con cero transiciones flojas | — | **27 de 67** |
+| Transiciones que no mueven la rueda (mediana) | 38% | **27%** |
+| Setlists de referencia en el corpus | 6 | **40** |
+| Transiciones medibles para el backtest | 63 | **243** |
 
-### 1.5 Dos definiciones de distancia Camelot en el repo
+### Fase 1 — La energía dejó de contener al BPM ✔
 
-`scripts/select_set.py::cam_dist` dice que el cambio de relativa (8A↔8B) vale
-**0**; `src/plomo/camelot.py::distance` dice que vale **1**. El solver optimiza
-con una y el auditor y el backtest miden con la otra.
+`src/plomo/energy.py` sumaba `(bpm - 118) / 8 * 3` sobre 10: el 30% del score
+era el tempo. Un tema de 118 BPM tenía techo E7.0 por construcción. Se sacó ese
+componente y se reescalaron los otros cuatro —intro, breakdown, drop, largo del
+peak— a 10.
 
-**Impacto real: casi nulo** — ese caso aparece en el 0% de las transiciones de
-referencia y el 3% de las tocadas. Es un defecto latente que hay que unificar
-antes de tocar los pesos, no la explicación del problema.
+Los 1883 tracks se recalcularon **desde los cues ya guardados**, sin re-analizar
+audio: los markers v8 en `djmdCue` tienen Bass IN, Breakdown, DROP y Mix-OUT, que
+es exactamente lo que la fórmula necesita (`scripts/recalcular_energia.py`). El
+valor viejo quedó guardado como `v1:X.X` en el comentario de cada track.
 
-### 1.6 Lo que `audit_sets.py` NO mira
+Los `e_lo`/`e_hi` de los configs se tradujeron **por percentil** y no por delta
+(`scripts/migrar_configs_energia.py`): "E5.4" no quería decir 5.4, quería decir
+"el track del percentil 42".
 
-Da "0 transiciones flojas" en los sets 97 a 105 y aun así el DJ duda. Mira cada
-par aislado y no mira el set:
+### Fase 2 — Una sola distancia Camelot ✔
 
-- si la escalera de Camelot es monótona o va y vuelve;
-- cuántas transiciones no mueven nada;
-- agrupamiento de sellos y de texturas parecidas;
-- si el BPM sube porque tiene que subir o porque se arrastra con la energía;
-- si el pico cae donde el concepto del set dice que caiga.
+Había dos definiciones y el solver optimizaba con una mientras el auditor medía
+con la otra. Queda la de `src/plomo/camelot.py`. Impacto medido: 0-3% de las
+transiciones. Era higiene, no la causa.
 
----
+### Fase 4 — La escalera camina ✔
 
-## 2. Fases
+Quedarse en la misma rueda costaba cero, y por eso pasaba el 38% de las veces
+contra el 23% de lo que el DJ toca en vivo. Se agregaron dos reglas a
+`rules/curaduria.json` (v1.1.0), con su porqué y su evidencia:
+`armonia.penal_quedarse_en_la_rueda` = 0.8 y `armonia.monotonia_desde` = 2.
 
-### Fase 1 — Separar energía de BPM *(la que desbloquea todo)*
+### Fase 5 — El auditor mira el set, no solo el par ✔
 
-**Qué se toca.** `src/plomo/energy.py`: se saca el componente BPM del score y se
-reescalan los otros cuatro a 10. La energía pasa a medir estructura —intro,
-breakdown, drop, largo del peak— y nada más. El BPM queda como lo que es, un
-campo aparte que el solver ya usa.
+`audit_sets.py` ahora reporta % de transiciones que no mueven la rueda, corrida
+monótona más larga, sellos pegados y `corr(BPM, energía)`. **Encontró sets con
+cero transiciones flojas y 55% de quietos**: esa era la ceguera que hacía dudar
+del resultado.
 
-**Antes de tocar nada.** Guardar `energy` viejo en `energy_v1` para todos los
-tracks, y correr `medir_horizontalidad.py` y `backtest_rules.py` para tener la
-foto previa.
+### Fase 6 — Se rehicieron los 67 sets ✔
 
-**Cómo se mide el éxito.** Recontar cuántos tracks con E≥7.0 quedan por debajo
-de 122 BPM. Hoy son 9%. Si el cambio sirve, tiene que subir a por lo menos 25%:
-esa es la evidencia de que ahora existe material de mucha energía y BPM bajo.
-
-**Ojo.** Esto recalcula la energía de 1883 tracks y mueve todos los `e_lo`/`e_hi`
-de los configs existentes. Los sets viejos no se rompen (guardan ContentIDs)
-pero sus rangos dejan de significar lo mismo. Hay que anotarlo en la bitácora.
-
-### Fase 2 — Unificar la distancia Camelot
-
-**Qué se toca.** `select_set.py` importa `distance` de `src/plomo/camelot.py` y
-se borra `cam_dist`. Una sola definición.
-
-**Éxito.** `backtest_rules.py` y `audit_sets.py` dan los mismos números que el
-solver optimiza. Los sets 97-105 reauditados no cambian de veredicto (el impacto
-medido es 0-3%; si cambia mucho, algo más está mal y hay que frenar).
-
-### Fase 3 — Que el BPM deje de ser una regla dura
-
-**Qué se toca.** `rules/curaduria.json`: `bpm.max_salto` pasa de dura a
-penalizada con peso. Maze salta 6 BPM y funciona; el 22% de las transiciones de
-referencia la violan.
-
-**El experimento que lo decide** (y no la opinión): rearmar los sets 97-105 con
-`max_salto` en 2.0 (hoy), 3.0 y 4.0, y comparar tres cosas — cuántos artistas
-distintos entran, cuánto se mueve la escalera Camelot, y cuánto sube el BPM
-hasta el pico. **Criterio:** se adopta el valor más alto que no empeore el
-movimiento de Camelot ni meta transiciones que el DJ escuche y rechace. La
-escucha decide el empate, los números descartan las opciones malas.
-
-### Fase 4 — Que la escalera camine
-
-**Qué se toca.** Un término nuevo en el costo de `select_set.py` que penalice
-quedarse: hoy `paso 0` cuesta cero y por eso sale 38% de las veces. Se penaliza
-el paso 0 y se penalizan las corridas monótonas largas (cinco veces +1 seguidas
-aburre igual que no moverse).
-
-**Éxito.** El paso 0 baja del 38% a la zona del 23% que el DJ toca de verdad, sin
-que aparezcan transiciones flojas. Es el número objetivo: no imitar a los DJs de
-festival (14%), imitar lo que este DJ ya hace cuando decide en vivo.
-
-### Fase 5 — Ampliar el auditor
-
-**Qué se toca.** `audit_sets.py` suma métricas de SET, no de par: % de paso 0,
-corrida monótona más larga, sellos repetidos y a qué distancia, correlación
-BPM-energía, y posición real del pico contra la declarada en `_identidad`.
-
-**Éxito.** El auditor marca los sets 97-105 actuales con lo que hoy no ve. Si
-sale todo limpio, la métrica no sirve y hay que pensarla de nuevo.
-
-### Fase 6 — Rearmar todos los sets armados
-
-Recién acá. `select_set.py` sobre todos los configs, `build_set.py`,
-`audit_sets.py` con el auditor nuevo, y comparar contra la foto de la Fase 1.
-
-**Éxito.** Ningún set empeora en transiciones flojas y la mediana de paso 0 baja.
-Lo que empeore se revisa a mano antes de escribirlo en Rekordbox.
+Los que tienen config se reseleccionaron. Los viejos —curados a mano en sesiones
+anteriores— se **reordenaron sin tocarles un track** con
+`scripts/reordenar_set.py`. Ese script no reusa el solver de selección a
+propósito: aquel filtra por restricciones duras y con la lista fija casi nunca
+existe una permutación que las cumpla todas, así que devolvía "sin solución" para
+sets que se podían mejorar mucho. El nuevo penaliza en vez de filtrar, y siempre
+devuelve el mejor orden posible. Mejoró 37 sets; los más rotos, 25→8, 23→9 y
+20→7 transiciones flojas.
 
 ---
 
-## 3. Qué NO hacer
+## Lo que los DJs de referencia dicen ahora que el corpus es grande
 
-- **No relajar `armonia.max_camelot_dist` todavía.** El backtest lo dio
-  REFUTADA porque los DJs de festival la violan el 72% de las veces, pero Maze
-  —que es la referencia que el DJ eligió— la cumple 10 de 10. No es una ley
-  universal: depende del registro. Relajarla ahora, con el problema real siendo
-  que el set no se mueve, va a producir saltos sin resolver lo otro.
-- **No tocar dos reglas en la misma vuelta.** Si cambia energía y BPM juntos no
-  hay forma de saber cuál mejoró qué.
-- **No confiar en "0 transiciones flojas".** Los 97-105 dan 0 y el problema
-  existe igual. Mientras el auditor no crezca, ese número prueba poco.
-- **No medir el resultado solo contra los sets propios.** Es circular: el solver
-  impone las reglas. La comparación que vale es contra `data/tocados` —lo que se
-  tocó de verdad— y contra `data/setlists`.
-- **No resolver los conflictos de `repeticion.*` de paso.** `max_por_artista`
-  dice 2 en la regla y 1 en el código; `separacion_minima` dice 5 y 3. Están
-  marcados hace rato en la salida de `backtest_rules.py`. Es una decisión
-  independiente y merece su propia vuelta.
+Con 40 setlists y n=243 (antes n=63):
+
+- `armonia.max_camelot_dist = 1` → **REFUTADA**: 58% de las transiciones reales
+  la violan, media 2.28 hops. Bajó del 73% que daba con n=63, pero sigue muy
+  arriba del umbral del 15%.
+- `bpm.max_salto = 2.0` → **REFUTADA**: 27%, media 2.52, máximo 44.
+- `energia.max_escalon = 1.3` → **MUESTRA INSUFICIENTE**. El backtest la daba por
+  refutada con **n=9**; se le puso un piso de 40 transiciones para animarse a
+  refutar. Un veredicto falso es peor que ninguno, porque después se usa para
+  cambiar una regla.
+
+**Maze 28 sigue siendo el contraejemplo que importa.** En su mix de Proton baja
+de 130 a 117 BPM, salta hasta 6 BPM entre temas —la regla permite 2— y en
+Camelot es más estricto que todos: 0 de 10 por encima de 1. Confirma el pedido
+—la energía no la pone el tempo— y a la vez desaconseja relajar Camelot.
 
 ---
 
-## 4. Orden sugerido y por qué
+## Fase 7 — Descargas *(pendiente, es la que sigue)*
 
-Fase 1 primero porque sin separar energía de BPM el pedido central —*mucha
-energía sin subir el tempo*— no se puede cumplir con ninguna regla. Fase 2
-después porque es barata y hay que medir con una sola vara antes de tocar pesos.
-Fases 3 y 4 son las que cambian cómo suena, una por vez. Fase 5 antes de la 6
-porque rearmar todo sin haber ampliado el auditor es volver a entregar sets que
-dan 0 y no convencen.
+El corpus de 40 setlists produce una lista de compras que no es "lo que salió"
+sino **lo que se está tocando**. La genera `scripts/lista_de_compras.py`, que
+ordena por cuántos DJs distintos tocaron cada tema.
+
+**Qué hay hoy: 705 temas del corpus que no están en la biblioteca, 295
+confirmados en Muzpa**, en `data/batch_referencia_2026-09-12.txt`.
+
+Artistas que varios DJs tocan y de los que casi no hay nada:
+
+| Artista | DJs que lo tocan | apariciones | en biblioteca |
+|---|---|---|---|
+| Sasha | 3 | 7 | 2 |
+| The Chemical Brothers | 3 | 4 | 1 |
+| COQUEIT | 3 | 3 | 1 |
+| Drunken Kong | 3 | 3 | 1 |
+| Fran Garay | 2 | 4 | **0** |
+| D-Shift | 2 | 4 | 1 |
+| Rezident | 2 | 3 | **0** |
+| Slam | 2 | 3 | **0** |
+| Deestopia | 2 | 3 | 1 |
+
+Sellos con presencia fuerte en los sets y poca en la biblioteca: **Early
+Morning** (4 apariciones, 9 tracks), **Moments** (3 / 13), **Keep My Letters**
+(2 / 3), **Movement Recordings** (2 / 6), **Warung Recordings** (2 / 9),
+**Global Underground** (2 / 6). Van al radar fijo.
+
+**Cómo se ejecuta:**
+
+1. Revisar el batch y sacar lo que no sea del estilo — 295 temas de 40 sets
+   incluyen cosas que entraron por un b2b o un cierre raro.
+2. `python scripts/muzpa_download.py --batch data/batch_referencia_2026-09-12.txt`
+3. `python scripts/import_all.py` → Rekordbox **File > Import > Add Folder**
+   (RB6 no auto-importa) → esperar el análisis → cerrar RB.
+4. `python scripts/post_import.py` → `python scripts/import_all.py --archive`
+5. `python scripts/dump_pool.py` y `python scripts/build_views.py`
+
+**Criterio de éxito:** que los artistas de la tabla pasen de 0-2 tracks a por lo
+menos 4, y que la cobertura del corpus contra la biblioteca propia suba del 6-30%
+actual — eso es lo que haría que los setlists de referencia midan transiciones
+con energía, que hoy es el dato que falta.
+
+**Ojo con el volumen.** 295 temas son unas cuatro horas de descarga y ~3 GB. Si
+hay que priorizar, el orden del archivo ya es el correcto: primero lo que tocó
+más de un DJ.
+
+---
+
+## Lo que queda después de las descargas
+
+- **Fase 3, el BPM como regla blanda.** No se hizo: cambiar dos reglas en la
+  misma vuelta hace imposible saber cuál mejoró qué. El experimento está
+  definido: rearmar los sets con `max_salto` en 2.0, 3.0 y 4.0 y comparar
+  artistas distintos, movimiento de Camelot y subida de BPM al pico. Decide la
+  escucha entre las opciones que los números no descarten.
+- **Energía en el corpus de referencia.** Muzpa da key y BPM pero no energía, que
+  la calcula el pipeline propio sobre el archivo. Por eso `energia.max_escalon`
+  sigue sin evidencia externa. Se destraba bajando los temas (Fase 7).
+- **Los conflictos de `repeticion.*`**, marcados hace rato: `max_por_artista`
+  dice 2 en la regla y 1 en el código; `separacion_minima` dice 5 y 3. Merece su
+  propia vuelta.
+- **Los 8 sets que siguen con 8 o más transiciones flojas.** El reordenador no
+  puede arreglarlos porque el problema no es el orden: es que la selección no
+  cierra. Hay que rearmarlos eligiendo de nuevo, o aceptar que son listas de
+  referencia y no sets para tocar.
+
+---
+
+## Qué NO hacer
+
+- **No relajar Camelot todavía**, aunque el backtest lo dé refutado dos veces
+  seguidas. Los DJs de festival lo violan; Maze, que es la referencia elegida,
+  no. No es una ley universal: depende del registro.
+- **No confiar en "0 transiciones flojas"** solo. Ahora hay métricas de set;
+  usarlas.
+- **No refutar con muestras chicas.** Ya pasó con n=9.
+- **No bajar los 295 temas sin mirarlos.** El corpus incluye b2b y cierres que no
+  son el estilo.

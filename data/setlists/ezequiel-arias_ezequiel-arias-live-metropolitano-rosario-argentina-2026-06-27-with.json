@@ -1,0 +1,357 @@
+{
+  "dj": "Ezequiel Arias",
+  "evento": "Ezequiel Arias Live @ Metropolitano Rosario, Argentina 2026-06-27 with",
+  "fecha": "",
+  "fuente": "https://youtu.be/Rx2nfRrlj8o",
+  "orden_confiable": true,
+  "n": 34,
+  "n_identificados": 25,
+  "n_huecos_id": 9,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Kebin Van Reeken",
+      "title": "The Unknown [MELORAMA MÚSICA]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Tps",
+      "title": "Control (Kostya Outta Remix) [RUBEN KARAPETYAN PRESENTS]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "D-SHIFT",
+      "title": "Where You Need To Be (Radio Edit) [TRONIC]",
+      "es_id": false,
+      "key": "G",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Drunken Kong, D-SHIFT - Where You Need To Be (Radio Edit)"
+    },
+    {
+      "pos": 4,
+      "artist": "Durante & Mayro",
+      "title": "Mantra (Extended Mix) [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "André Moret",
+      "title": "Kryon [SUDBEAT]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "Ezequiel Arias",
+      "title": "Sin Control [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "COQUEIT",
+      "title": "ID [MELORAMA]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "ID",
+      "title": "Sugar Daddy (Ezequiel Arias & COQUEIT Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "COQUEIT",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Ezequiel Arias",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "Maze 28",
+      "title": "C Moon [SOLIS]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Guy J",
+      "title": "Nirvana [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "Ezequiel Arias",
+      "title": "Eterno [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "Ezequiel Arias ft. HANA",
+      "title": "Go [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "Ezequiel Arias",
+      "title": "Estimulo [ANJUNADEEP]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "The Chemical Brothers",
+      "title": "Do It Again (COQUEIT Remix) [ASTRALWERKS]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "COQUEIT & Christopher Erre",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "Jark Prongo & Nicole Moudaber & Chocolate Puma",
+      "title": "Movin' Thru Your System (Hernan Cattaneo & Brigado Crew Remix) [ARMADA]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "Ezequiel Arias",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 26,
+      "artist": "Deestopia",
+      "title": "Humanity (Jerome Isma-Ae Remix) [JEE]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 27,
+      "artist": "RÜFÜS DU SOL",
+      "title": "Always (Ezequiel Arias Remix) [ROSE AVENUE]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "Binary Finary",
+      "title": "1998 (COQUEIT Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 29,
+      "artist": "Marco Bailey & Tom Hades",
+      "title": "Stars & Shines (Kevin Di Serna & Cruz Vittor Remix) [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 30,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 31,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 32,
+      "artist": "Slam",
+      "title": "Eterna (John Digweed & Nick Muir Remix) [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 33,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 34,
+      "artist": "CHVRCHES",
+      "title": "Leave A Trace (Ezequiel Arias Edit)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.04,
+  "cobertura_bpm": 0.04,
+  "orden_campos_revisado": true
+}

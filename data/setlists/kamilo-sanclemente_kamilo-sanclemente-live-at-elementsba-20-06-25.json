@@ -1,0 +1,361 @@
+{
+  "dj": "Kamilo Sanclemente",
+  "evento": "KAMILO SANCLEMENTE live at @elementsba | 20.06.25",
+  "fecha": "",
+  "fuente": "https://youtu.be/yYcdYk4sqjw",
+  "orden_confiable": true,
+  "n": 33,
+  "n_identificados": 26,
+  "n_huecos_id": 7,
+  "cobertura_datos": 0.154,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "BPT",
+      "title": "Moody (Kamilo Sanclemente Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Surge",
+      "es_id": false,
+      "key": "6A",
+      "bpm": 122.0,
+      "energy": 1.4,
+      "label": "Warung Recordings",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 3,
+      "artist": "Pablo Arbelaez, Jhonatan Parrado",
+      "title": "Nevulosa",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Markus Homm, Nici Faerber",
+      "title": "Basement Room (Dilby Remix)",
+      "es_id": false,
+      "key": "6A",
+      "bpm": 125.0,
+      "energy": 5.2,
+      "label": "klaus:elle",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 5,
+      "artist": "Antrim",
+      "title": "Hoffnung (Rauschhaus Remix)",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Antrim - Hoffnung (Rauschhaus Remix)"
+    },
+    {
+      "pos": 6,
+      "artist": "Artic White",
+      "title": "Voce",
+      "es_id": false,
+      "key": "E",
+      "bpm": 130.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Esse - Voce (Original Mix)"
+    },
+    {
+      "pos": 7,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Dabeat",
+      "title": "Red Sky Night",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Dabeat - Red Sky Night (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Yulia Niko, Yotam Avni",
+      "title": "Higher (Emanuel Satie Remix)",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Yotam Avni, Yulia Niko - Higher (Emanuel Satie Extended Remix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Julian Millan",
+      "title": "Stellar Venue (Dilby Remix)",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Julian Millan - Stellar Venue (Dilby Remix)"
+    },
+    {
+      "pos": 11,
+      "artist": "Hot Chip",
+      "title": "Flutes (Sasha Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Dimitry Nakov, Natacha Atlas",
+      "title": "Extasy (Hypnotic Mix)",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Dimitri Nakov, Roman Rai, Charlie May, Natacha Atlas - Extasy (Hypnotic Mix)"
+    },
+    {
+      "pos": 17,
+      "artist": "Kamilo Sanclemente, Dabeat",
+      "title": "Seriously",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Dabeat, Kamilo Sanclemente - Seriously (Original Mix)"
+    },
+    {
+      "pos": 18,
+      "artist": "Kamilo Sanclemente",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "Kamilo Sanclemente, Juan Pablo Torrez",
+      "title": "Mantura",
+      "es_id": false,
+      "key": "5A",
+      "bpm": 122.0,
+      "energy": 6.3,
+      "label": "Plattenbank",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 20,
+      "artist": "Maezbi, Nicolas Viana",
+      "title": "Smooth",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Maezbi, Nicolas Viana - Smooth (Original Mix)"
+    },
+    {
+      "pos": 21,
+      "artist": "Thyladomid",
+      "title": "Decade",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "ZAC, Tiefstone, CAMILA",
+      "title": "To Shape",
+      "es_id": false,
+      "key": "C",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "ZAC, Tiefstone & CAMILA - To Shape"
+    },
+    {
+      "pos": 23,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "Marsh",
+      "title": "Warrior",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 126.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Marsh - Warrior (Extended Mix)"
+    },
+    {
+      "pos": 25,
+      "artist": "Moderat",
+      "title": "Bad Kingdom (Juan Ibañez, Agoostina Bootleg)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 26,
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Spectre",
+      "es_id": false,
+      "key": "5A",
+      "bpm": 122.0,
+      "energy": 5.7,
+      "label": "Clubsonica Records",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 27,
+      "artist": "Who Da Funk",
+      "title": "Shiny Disco Balls (Zankee Gulati Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "Kamilo Sanclemente",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 29,
+      "artist": "Jochen Hamerling, VADM",
+      "title": "Go Hi",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 30,
+      "artist": "RUFUS DU SOL",
+      "title": "Always (Ezequiel Arias Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 31,
+      "artist": "Ary Sya",
+      "title": "Nikita (James Harcourt Remix)",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Ary Sya - Nikita (James Harcourt Remix)"
+    },
+    {
+      "pos": 32,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 33,
+      "artist": "Marsh",
+      "title": "Hymn",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Marsh - Hymn (Extended Mix)"
+    }
+  ],
+  "cobertura_key": 0.615,
+  "cobertura_bpm": 0.615
+}

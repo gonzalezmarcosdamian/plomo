@@ -1,10 +1,10 @@
 {
   "name": "102. Con el material de Ezequiel Arias - Dahaus x Fruta Cordoba - 2026-04-12",
-  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Dahaus x Fruta Cordoba (2026-04-12) como anclas: 13 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
+  "_identidad": "Set propio armado con el material que Ezequiel Arias toco en Dahaus x Fruta Cordoba (2026-04-12) como anclas: 15 de 20 tracks salen de ese setlist y el resto son puentes de la biblioteca. NO es la secuencia de ese DJ.",
   "_fuente": "https://www.youtube.com/watch?v=4SDpmTztWk8",
   "duration_h": 1.8,
   "bpm_range": [
-    121,
+    120,
     125
   ],
   "max_per_artist": 99,
@@ -21,11 +21,6 @@
       "content_id": "192909298"
     },
     {
-      "artist": "Dabeat",
-      "title": "Etna (Ivan Aliaga Remix)",
-      "content_id": "149327915"
-    },
-    {
       "artist": "Simos Tagias",
       "title": "Plexus",
       "content_id": "137429640"
@@ -36,9 +31,9 @@
       "content_id": "181220116"
     },
     {
-      "artist": "Estiva",
-      "title": "What Is Love (Extended Mix) ",
-      "content_id": "212446117"
+      "artist": "Dabeat",
+      "title": "Etna (Ivan Aliaga Remix)",
+      "content_id": "149327915"
     },
     {
       "artist": "Simos Tagias",
@@ -46,14 +41,9 @@
       "content_id": "177636127"
     },
     {
-      "artist": "Tali Muss, Mayro",
-      "title": "Dimension Of Space (Original Mix)",
-      "content_id": "207638313"
-    },
-    {
-      "artist": "Emi Galvan & Albuquerque",
-      "title": "Don't Kill the Messenger",
-      "content_id": "182281408"
+      "artist": "Melodiam (AR)",
+      "title": "Molicocha (Extended Mix)",
+      "content_id": "263165508"
     },
     {
       "artist": "Estiva & Julia Church",
@@ -61,34 +51,19 @@
       "content_id": "259474067"
     },
     {
-      "artist": "Monolink",
-      "title": "Father Ocean (Ben Böhmer Remix)",
-      "content_id": "177647765"
-    },
-    {
-      "artist": "Eric Lune & Juan Sapia",
-      "title": "Tension Release (Original Mix) ",
-      "content_id": "198323890"
-    },
-    {
       "artist": "JESSIN",
       "title": "Babylon (North Echo Remix)",
       "content_id": "61185373"
     },
     {
-      "artist": "Anatolie",
-      "title": "Release Yourself",
-      "content_id": "103480758"
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Don't Kill the Messenger",
+      "content_id": "182281408"
     },
     {
-      "artist": "Paul Thomas, Maze 28",
-      "title": "Abundance (Original Mix)",
-      "content_id": "142322723"
-    },
-    {
-      "artist": "Kamilo Sanclemente, Dabeat",
-      "title": "Vekants",
-      "content_id": "4009725"
+      "artist": "Maze 28",
+      "title": "Red Lights From Afar",
+      "content_id": "20894273"
     },
     {
       "artist": "Kabi (AR) & Agustin Ficarra",
@@ -96,19 +71,44 @@
       "content_id": "256941427"
     },
     {
-      "artist": "Mind Against",
-      "title": "Bloom",
-      "content_id": "200699081"
+      "artist": "Melodiam (AR)",
+      "title": "Words Are Weapons (Original Mix)",
+      "content_id": "131114728"
     },
     {
-      "artist": "Gai Barone, Aman Anand",
-      "title": "Low Era (Kebin Van Reeken Remix)",
-      "content_id": "121401439"
+      "artist": "Estiva, Cosmosky",
+      "title": "Ecstasy (Extended Mix)",
+      "content_id": "231293887"
+    },
+    {
+      "artist": "Melodiam",
+      "title": "Old Garden",
+      "content_id": "72587871"
+    },
+    {
+      "artist": "Fabricio Gutierrez",
+      "title": "Reedmov (Kebin van Reeken Remix)",
+      "content_id": "230581616"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Urania (Alex O'Rion Remix)",
+      "content_id": "252821912"
+    },
+    {
+      "artist": "Ruben Karapetyan",
+      "title": "Mindful Harmony (Dowden Remix)",
+      "content_id": "67092768"
     },
     {
       "artist": "Weird Sounding Dude",
       "title": "Step Up",
       "content_id": "227873392"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Generator (Extended Mix)",
+      "content_id": "243768609"
     }
   ]
 }

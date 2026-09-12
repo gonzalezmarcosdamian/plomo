@@ -4,33 +4,87 @@
   "playlist_id": null,
   "duration_h": 2.0,
   "target_track_count": 18,
-  "bpm_range": [118, 124],
+  "bpm_range": [
+    118,
+    124
+  ],
   "genre": "progressive melodic",
   "replacement_query": "progressive melodic kamilo sanclemente",
-  "energy_arc": {"start": 2.5, "peak": 7.0, "end": 4.5},
+  "energy_arc": {
+    "start": 2.5,
+    "peak": 7.0,
+    "end": 4.5
+  },
   "movements": [
-    {"name": "Entrada",  "e_min": 2.0, "e_max": 5.0, "e_center": 3.5, "fraction": 0.35},
-    {"name": "Cuerpo",   "e_min": 4.5, "e_max": 7.5, "e_center": 6.0, "fraction": 0.45},
-    {"name": "Cierre",   "e_min": 4.0, "e_max": 6.0, "e_center": 4.5, "fraction": 0.20}
+    {
+      "name": "Entrada",
+      "e_min": 2.0,
+      "e_max": 5.0,
+      "e_center": 3.5,
+      "fraction": 0.35
+    },
+    {
+      "name": "Cuerpo",
+      "e_min": 4.5,
+      "e_max": 7.5,
+      "e_center": 6.0,
+      "fraction": 0.45
+    },
+    {
+      "name": "Cierre",
+      "e_min": 4.0,
+      "e_max": 6.0,
+      "e_center": 4.5,
+      "fraction": 0.2
+    }
   ],
   "tracks": [
-    {"artist": "Golan Zocher",                  "title": "SAO",        "remix": "HC & Simply City", "energy": 2.9},
-    {"artist": "Mercurio",                      "title": "Turbulence",                               "energy": 2.7},
-    {"artist": "Hobin Rude",                    "title": "Seraph",     "remix": "Liam Garcia Remix", "energy": 2.2},
-    {"artist": "Maze 28",                       "title": "This Is Just a Dream", "remix": "HC & Vasami", "energy": 2.5},
-    {"artist": "Hermanez",                      "title": "Eight Years",                              "energy": 2.5},
-    {"artist": "Joe Miller",                    "title": "The Last of the Great Days", "remix": "Jamie Stevens", "energy": 2.5},
-    {"artist": "Mike Rish",                     "title": "Tu Attair",                                "energy": 3.5},
-    {"artist": "Guy Mantzur",                   "title": "Tremolo Man",                              "energy": 4.0},
-    {"artist": "Simon Vuarambon",               "title": "Afrika",                                   "energy": 4.0},
-    {"artist": "Simon Vuarambon",               "title": "Diafana",                                  "energy": 4.5},
-    {"artist": "Simon Vuarambon",               "title": "1996",                                     "energy": 4.8},
-    {"artist": "Simon Vuarambon",               "title": "Prodiga",                                  "energy": 5.0},
-    {"artist": "Simon Vuarambon",               "title": "Mars",                                     "energy": 5.5},
-    {"artist": "Simon Vuarambon",               "title": "Lake Of Fire",                             "energy": 5.5},
-    {"artist": "Simon Vuarambon",               "title": "Zenith",                                   "energy": 5.8},
-    {"artist": "Simon Vuarambon",               "title": "Liberation",                               "energy": 4.3},
-    {"artist": "D-Nox",                         "title": "Six",                                      "energy": 4.9},
-    {"artist": "Juan Deminicis",                "title": "Deep Rock Galactic",                       "energy": 4.9}
-  ]
+    {
+      "artist": "Hermanez",
+      "title": "Eight Years (Original Mix)",
+      "content_id": "14601563"
+    },
+    {
+      "artist": "Juan Deminicis",
+      "title": "Deep Rock Galactic (Original Mix)",
+      "content_id": "222066989"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "1996 (Original Mix)",
+      "content_id": "84141829"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "content_id": "212560040"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Tú Attair (Original Mix)",
+      "content_id": "71858967"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Diafana (Original Mix)",
+      "content_id": "75629027"
+    },
+    {
+      "artist": "Simon Vuarambón",
+      "title": "Afrika",
+      "content_id": "172926670"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Prodiga",
+      "content_id": "173809396"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Mars (Original Mix)",
+      "content_id": "214277057"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 5 -> 3 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

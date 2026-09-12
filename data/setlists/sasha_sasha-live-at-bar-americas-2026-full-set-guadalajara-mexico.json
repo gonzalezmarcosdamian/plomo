@@ -1,0 +1,116 @@
+{
+  "dj": "Sasha",
+  "evento": "Sasha Live at Bar Américas 2026 | Full Set (Guadalajara, Mexico)",
+  "fecha": "",
+  "fuente": "https://youtu.be/IIT_Qj8tJM8",
+  "orden_confiable": true,
+  "n": 10,
+  "n_identificados": 10,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "45:10",
+      "title": "Sasha rising!",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": ":50",
+      "title": "Groove lines",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": ":05",
+      "title": "So good at building sets...🤩",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": ":26",
+      "title": "No one does the builds like Sasha ... never too little or too much...",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": ":45",
+      "title": "Uh, what?",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": ":06",
+      "title": "Dance floor bumper stuff... 🥳",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": ":55",
+      "title": "The man doesn't stop blowing the speakers out and we love him for it!!!",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": ":17",
+      "title": "Keeps on hammering...",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": ":30",
+      "title": "The legend ...",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": ":00",
+      "title": "Saving the best for last.... Amazing track!",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.0,
+  "cobertura_bpm": 0.0,
+  "orden_campos_revisado": true
+}

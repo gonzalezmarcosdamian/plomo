@@ -1,0 +1,123 @@
+{
+  "dj": "Maze 28",
+  "evento": "Maze 28 - BPR Sessions Ep.7 #deepunderground #progressivehouse #bpr",
+  "fecha": "",
+  "fuente": "https://youtu.be/b2CmJok3wdA",
+  "orden_confiable": true,
+  "n": 10,
+  "n_identificados": 10,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.1,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Mike Isai",
+      "title": "Chrysalis (GMJ & Matter Remix)",
+      "es_id": false,
+      "key": "Ebmin",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Mike Isai - Chrysalis (Gmj & Matter Remix)"
+    },
+    {
+      "pos": 2,
+      "artist": "Shayan Pasha",
+      "title": "After All (Christian Monique Remix)",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Shayan Pasha - After All (Christian Monique Remix)"
+    },
+    {
+      "pos": 3,
+      "artist": "Mindlancholic",
+      "title": "Mirages In Space",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Mindlancholic - Mirages in Space"
+    },
+    {
+      "pos": 4,
+      "artist": "Guy J",
+      "title": "State Of Trance",
+      "es_id": false,
+      "key": "5A",
+      "bpm": 122.0,
+      "energy": 5.6,
+      "label": "Lost & Found",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 5,
+      "artist": "Rockka, Randle",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Mike Isai",
+      "title": "87 North",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Soulmade (AR)",
+      "title": "Sideral (Coloü Befu Remix)",
+      "es_id": false,
+      "key": "D",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Nahuel V - Sideral (Coloü Befu Remix)"
+    },
+    {
+      "pos": 8,
+      "artist": "Maze 28",
+      "title": "Fogbows",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Maze 28 - Fogbows"
+    },
+    {
+      "pos": 9,
+      "artist": "Rauschhaus",
+      "title": "Mindworm (The Wash Remix)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Rauschhaus - Mindworm (The Wash Remix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Chris Cargo",
+      "title": "Wide Eyed (Subandrio Remix)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Chris Cargo - Wide Eyed (Subandrio Remix)"
+    }
+  ],
+  "cobertura_key": 0.8,
+  "cobertura_bpm": 0.8
+}

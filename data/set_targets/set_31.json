@@ -1,36 +1,115 @@
 {
   "name": "31. Gai Barone Universe — 2h — 2026-06-01",
   "duration_h": 2,
-  "bpm_range": [119, 124],
+  "bpm_range": [
+    119,
+    124
+  ],
   "max_per_artist": 4,
   "style": "Progresivo oscuro colorido — Gai Barone, Chelakhov, Hermanez, Blake Jarrell",
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.5, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.5, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.5,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.5,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.4,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 8.5,
+      "e_center": 7.0,
+      "fraction": 0.4,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Chelakhov", "title": "Crystal Fall"},
-    {"artist": "Chelakhov", "title": "Rami"},
-    {"artist": "Chelakhov Redspace", "title": "Cosmonauts"},
-    {"artist": "Chelakhov", "title": "Rawai"},
-    {"artist": "Hermanez", "title": "Areia"},
-    {"artist": "Hermanez", "title": "Ensina"},
-    {"artist": "Hermanez", "title": "Third Decade"},
-    {"artist": "Hermanez", "title": "Dust Town"},
-    {"artist": "Deftones", "title": "Digital Bath"},
-    {"artist": "Gai Barone", "title": "Hemels"},
-    {"artist": "Gai Barone", "title": "Weird Behaviours"},
-    {"artist": "Gai Barone", "title": "Shuttered"},
-    {"artist": "Gai Barone Dougal Fox", "title": "Ocean"},
-    {"artist": "Hermanez", "title": "Twenty Four"},
-    {"artist": "Blake Jarrell", "title": "In the End"},
-    {"artist": "Gai Barone", "title": "MoMa"},
-    {"artist": "Hermanez", "title": "Tale of the Unexpected"},
-    {"artist": "Hermanez Lost Desert", "title": "Other Side"},
-    {"artist": "Gai Barone Luke Brancaccio", "title": "Freelove"},
-    {"artist": "Analog Jungs", "title": "Futura"},
-    {"artist": "D-Nox Two Of A Kind Gai Barone", "title": "Vida"},
-    {"artist": "Hraach Armen Miran", "title": "Sarer Jan"}
-  ]
+    {
+      "artist": "Hermanez",
+      "title": "Tale of the Unexpected (Original Mix)",
+      "content_id": "87157732"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Rawai (Extended Mix)",
+      "content_id": "103956355"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Areia (Original Mix)",
+      "content_id": "72517847"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Crystal Fall (Original Mix)",
+      "content_id": "11507876"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Weird Behaviours (Original Mix)",
+      "content_id": "128039185"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Dust Town",
+      "content_id": "11695901"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Third Decade",
+      "content_id": "221169193"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "MoMa",
+      "content_id": "95932754"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Shuttered (Original Mix)",
+      "content_id": "210073756"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Ensina",
+      "content_id": "165703060"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Hemels (Original Mix)",
+      "content_id": "212383896"
+    },
+    {
+      "artist": "Gai Barone, Luke Brancaccio",
+      "title": "Freelove (Original Mix)",
+      "content_id": "222018440"
+    },
+    {
+      "artist": "Hermanez, Lost Desert",
+      "title": "Other Side (Original Mix)",
+      "content_id": "14766383"
+    },
+    {
+      "artist": "Gai Barone, Dougal Fox",
+      "title": "Ocean (Club Mix)",
+      "content_id": "57244885"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Twenty Four",
+      "content_id": "13361161"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 10 -> 5 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

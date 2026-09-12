@@ -471,5 +471,6 @@
     }
   ],
   "cobertura_key": 0.588,
-  "cobertura_bpm": 0.588
+  "cobertura_bpm": 0.588,
+  "orden_campos_revisado": true
 }

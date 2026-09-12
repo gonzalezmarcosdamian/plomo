@@ -1,0 +1,134 @@
+{
+  "dj": "Maze 28",
+  "evento": "Maze 28 - BPR Sessions Ep.3",
+  "fecha": "",
+  "fuente": "https://youtu.be/kY1IGWhdq7s",
+  "orden_confiable": true,
+  "n": 11,
+  "n_identificados": 11,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "S.One",
+      "title": "Unknown Land (Original Mix)",
+      "es_id": false,
+      "key": "D#min",
+      "bpm": 138.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "S.ONE - Unknown Land (Original Mix)"
+    },
+    {
+      "pos": 2,
+      "artist": "M0B",
+      "title": "Wasting (Tulum edit 2022)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Moonwalk",
+      "title": "Labyrinth (Original Mix)",
+      "es_id": false,
+      "key": "Abm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Moonwalk - Labyrinth "
+    },
+    {
+      "pos": 4,
+      "artist": "Matan Caspi",
+      "title": "Inflamed (Original Mix)",
+      "es_id": false,
+      "key": "Cm",
+      "bpm": 118.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Siarem - Inflamed (Original Mix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Cherry (UA)",
+      "title": "Giza (Original Mix)",
+      "es_id": false,
+      "key": "Bmaj",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Cherry (UA) - Giza (Original Mix)"
+    },
+    {
+      "pos": 6,
+      "artist": "ISMAIL.M",
+      "title": "Galaktik (Maze 28 Remix) (Best Pro Records)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Redspace",
+      "title": "Day Dream (Maze 28 Remix)",
+      "es_id": false,
+      "key": "Dbm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Redspace - Day Dream (Maze 28 Remix)"
+    },
+    {
+      "pos": 8,
+      "artist": "Silver Panda & Maze 28 ft. Goda Brother",
+      "title": "Mosaic (SparroX Remix)",
+      "es_id": false,
+      "key": "Dbm",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Goda Brother, Maze 28, Silver Panda - Mosaic (SparroX Remix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Silver Panda & Uton",
+      "title": "Stereo Love",
+      "es_id": false,
+      "key": "Abm",
+      "bpm": 130.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "San Pacho, Noah Scannell - Stereo Love "
+    },
+    {
+      "pos": 10,
+      "artist": "Cherry (UA)",
+      "title": "Infinity",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Cherry (UA) - Infinity (Extended Mix)"
+    },
+    {
+      "pos": 11,
+      "artist": "Bigfett",
+      "title": "Reflection (Extended Mix)",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Bigfett - Reflection (Extended Mix)"
+    }
+  ],
+  "cobertura_key": 0.818,
+  "cobertura_bpm": 0.818
+}

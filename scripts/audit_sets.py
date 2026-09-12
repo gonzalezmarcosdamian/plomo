@@ -39,6 +39,57 @@ def cam_distance(a: str, b: str) -> int | None:
     return 0 if ring == 0 else ring + 1
 
 
+def _metricas_de_set(filas: list[tuple]) -> None:
+    """Lo que no se ve mirando las transiciones de a una.
+
+    Un set puede tener cero transiciones flojas y aun asi no ir a ningun lado:
+    todas las mezclas legales y la misma tonalidad de punta a punta. Estas
+    metricas miran el SET, no el par.
+    """
+    keys = [camelot(f[3] or "") for f in filas]
+    pasos = []
+    for a, b in zip(keys, keys[1:]):
+        if a and b:
+            d = (b[0] - a[0]) % 12
+            pasos.append(d if d <= 6 else d - 12)
+    if pasos:
+        quietos = sum(1 for p in pasos if p == 0) / len(pasos)
+        corrida = mejor = 1
+        for x, y in zip(pasos, pasos[1:]):
+            corrida = corrida + 1 if (x == y and x != 0) else 1
+            mejor = max(mejor, corrida)
+        aviso = ""
+        if quietos > 0.35:
+            aviso = "  <-- se queda clavado (real: 23%, referencia: 14%)"
+        elif mejor >= 4:
+            aviso = "  <-- escalera monotona"
+        print(f"  >> movimiento: {quietos:.0%} sin mover la rueda, "
+              f"corrida monotona mas larga {mejor}{aviso}")
+
+    sellos = [(i, (f[5] or "").strip()) for i, f in enumerate(filas)]
+    pegados = [(a[1], b[0] + 1, a[0] + 1) for a, b in zip(sellos, sellos[1:])
+               if a[1] and a[1] == b[1]]
+    if pegados:
+        print(f"  >> AVISO: sello repetido en posiciones seguidas: "
+              + ", ".join(f"{s} (#{i}-#{j})" for s, j, i in pegados[:4]))
+
+    bs, es = [], []
+    for f in filas:
+        m = re.match(r"E:(\d+(?:\.\d+)?)", f[4] or "")
+        if f[2] and m:
+            bs.append(f[2])
+            es.append(float(m.group(1)))
+    if len(bs) == len(es) and len(bs) >= 6:
+        mb, me = sum(bs) / len(bs), sum(es) / len(es)
+        num = sum((x - mb) * (y - me) for x, y in zip(bs, es))
+        den = (sum((x - mb) ** 2 for x in bs) * sum((y - me) ** 2 for y in es)) ** 0.5
+        if den:
+            r = num / den
+            extra = "  <-- la energia la esta poniendo el tempo" if r > 0.75 else ""
+            print(f"  >> corr(BPM, energia): {r:+.2f}   "
+                  f"BPM {min(bs):.0f}-{max(bs):.0f} (recorrido {max(bs)-min(bs):.0f}){extra}")
+
+
 con = sqlcipher3.connect(str(config.REKORDBOX_DB_PATH))
 con.execute("PRAGMA key = " + repr(config.SQLCIPHER_KEY))
 
@@ -52,11 +103,12 @@ for num in SETS:
         continue
     tracks = con.execute(
         """
-        SELECT ar.Name, c.Title, c.BPM/100.0, k.ScaleName, c.Commnt
+        SELECT ar.Name, c.Title, c.BPM/100.0, k.ScaleName, c.Commnt, lb.Name
         FROM djmdSongPlaylist sp
         JOIN djmdContent c ON c.ID = sp.ContentID
         LEFT JOIN djmdArtist ar ON ar.ID = c.ArtistID
         LEFT JOIN djmdKey k ON k.ID = c.KeyID
+        LEFT JOIN djmdLabel lb ON lb.ID = c.LabelID
         WHERE sp.PlaylistID = ? AND sp.rb_local_deleted = 0
         ORDER BY sp.TrackNo
         """,
@@ -66,7 +118,7 @@ for num in SETS:
     print(f"\n{'='*70}\n{row[1]}")
     issues = []
     prev = None
-    for i, (artist, title, bpm, key, commnt) in enumerate(tracks, 1):
+    for i, (artist, title, bpm, key, commnt, _label) in enumerate(tracks, 1):
         m = re.match(r"E:(\d+(?:\.\d+)?)", commnt or "")
         e = float(m.group(1)) if m else None
         flags = []
@@ -90,7 +142,7 @@ for num in SETS:
 
     energies = [
         float(re.match(r"E:(\d+(?:\.\d+)?)", c or "").group(1))
-        for *_, c in tracks
+        for _a, _t, _b, _k, c, _l in tracks
         if re.match(r"E:(\d+(?:\.\d+)?)", c or "")
     ]
     if energies:
@@ -102,5 +154,6 @@ for num in SETS:
         if pct < PICO_PCT - 0.27:
             print("  >> AVISO: el pico llega temprano (<55% del set)")
     print(f"  >> {len(issues)} transiciones flojas")
+    _metricas_de_set(tracks)
 
 con.close()

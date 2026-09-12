@@ -14,6 +14,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
+from plomo.camelot import distance as _cam_dist_canonico  # noqa: E402
 from plomo.rules import R  # noqa: E402
 
 # Los numeros no viven aca: viven en rules/curaduria.json con su porque y su
@@ -30,6 +31,9 @@ PESO_ARCO = R.get("energia.peso_desvio_arco")
 PESO_CAM = R.get("armonia.peso_salto_camelot")
 PENAL_MISMA_KEY_DESDE = R.get("armonia.penal_misma_key_desde")
 PESO_MISMA_KEY = R.get("armonia.penal_misma_key_desde_peso", 1.2)
+PESO_QUIETO = R.get("armonia.penal_quedarse_en_la_rueda", 0.8)
+MONOTONIA_DESDE = R.get("armonia.monotonia_desde", 2)
+PESO_MONOTONIA = R.get("armonia.monotonia_desde_peso", 0.5)
 SPLIT = (",", "&", " feat", " ft", " vs", " x ")
 # Margen para las comparaciones contra los topes. abs(7.0 - 8.3) da
 # 1.3000000000000007 en punto flotante, asi que un escalon que es exactamente
@@ -98,12 +102,25 @@ def camelot(key):
     return (int(m.group(1)), m.group(2)) if m else None
 
 
-def cam_dist(a, b):
-    ca, cb = camelot(a), camelot(b)
+# Habia DOS definiciones de distancia Camelot en el repo: esta, que daba 0 al
+# cambio de relativa (8A -> 8B), y la de src/plomo/camelot.py, que le da 1. El
+# solver optimizaba con una y el auditor y el backtest median con la otra. El
+# impacto medido es chico —ese caso aparece en el 0% de las transiciones de
+# referencia y el 3% de las tocadas— pero no se pueden discutir los pesos con
+# dos varas distintas. Queda la de plomo.camelot, que es la que usa todo lo demas.
+cam_dist = _cam_dist_canonico
+
+
+def _paso_firmado(ca, cb):
+    """Cuanto y hacia donde se movio en la rueda: -6..+6, 0 = se quedo.
+
+    Trabaja sobre el numero de rueda solamente. El cambio de modo (A<->B) ya lo
+    cobra cam_dist; aca interesa si el set avanza o se queda clavado.
+    """
     if not ca or not cb:
-        return 99
-    ring = min((ca[0] - cb[0]) % 12, (cb[0] - ca[0]) % 12)
-    return ring if ca[1] == cb[1] else (0 if ring == 0 else ring + 1)
+        return 0
+    d = (cb[0] - ca[0]) % 12
+    return d if d <= 6 else d - 12
 
 
 def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
@@ -168,6 +185,26 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                         else:
                             break
                     step = d * PESO_CAM + max(0, same - PENAL_MISMA_KEY_DESDE + 1) * PESO_MISMA_KEY
+                    # Quedarse en la misma rueda costaba CERO, y por eso pasaba
+                    # el 38% de las veces contra el 23% de lo que el DJ toca de
+                    # verdad y el 14% de los sets de referencia. El set no sonaba
+                    # mal transicion por transicion: sonaba igual de punta a punta.
+                    paso = _paso_firmado(prev["_cam"], t["_cam"])
+                    if paso == 0:
+                        step += PESO_QUIETO
+                    else:
+                        # Subir siempre un paso hacia el mismo lado aburre igual
+                        # que no moverse. Se penaliza desde la tercera seguida.
+                        corrida = 0
+                        ant = prev
+                        for prv in reversed(seq[:-1]):
+                            if _paso_firmado(prv["_cam"], ant["_cam"]) == paso:
+                                corrida += 1
+                                ant = prv
+                            else:
+                                break
+                        if corrida >= MONOTONIA_DESDE:
+                            step += (corrida - MONOTONIA_DESDE + 1) * PESO_MONOTONIA
                 else:
                     step = 0.0
                 c = cost + abs(t["energy"] - tgt) * PESO_ARCO + step

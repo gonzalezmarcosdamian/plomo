@@ -1,52 +1,57 @@
 {
-  "name": "75. La Ultima Hora — Cierre Euforico — 1h15 — 2026-08-13",
-  "duration_h": 1.25,
+  "name": "75. La Ultima Hora — Cierre Euforico — 1h30 — 2026-08-13",
+  "duration_h": 1.5,
   "bpm_range": [
-    123,
-    126
+    122,
+    127
   ],
   "max_per_artist": 1,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "ANMA",
-      "title": "Adya",
-      "content_id": "227305284"
+      "artist": "Solis [US]",
+      "title": "Una Volta (Extended Mix)",
+      "content_id": "139846182"
     },
     {
-      "artist": "Guy J",
-      "title": "Catfish (Jonas Saalbach Remix)",
-      "content_id": "255916500"
+      "artist": "Hernan Cattaneo & Soundexile",
+      "title": "Astron (Davi Remix)",
+      "content_id": "65609882"
     },
     {
-      "artist": "Gorje Hewek, ETNE",
-      "title": "Children (Extended Mix)",
-      "content_id": "59638375"
+      "artist": "Francisco Manrique",
+      "title": "The Fine Universe (Mike Kohl Remix)",
+      "content_id": "226932772"
     },
     {
-      "artist": "Durante & Maz (BR)",
-      "title": "Ivory",
-      "content_id": "66454957"
+      "artist": "Marcelo Vasami",
+      "title": "Shades Of Blue (Original Mix)",
+      "content_id": "241228611"
     },
     {
-      "artist": "Colyn",
-      "title": "The Future Is the Past",
-      "content_id": "109636107"
+      "artist": "Greta Meier",
+      "title": "Enlightenment (Poli Siufi Remix)",
+      "content_id": "93055948"
     },
     {
-      "artist": "Ferry Corsten, Dirty South",
-      "title": "Carte Blanche (Extended Mix)",
-      "content_id": "160052137"
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
     },
     {
-      "artist": "Jan Blomqvist, Mahri",
-      "title": "Deeper Grounds feat. Mahri (Extended Mix)",
-      "content_id": "266761929"
+      "artist": "Cary Crank",
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
     },
     {
-      "artist": "D-Nox, Stereo Underground",
-      "title": "Shooting Stars (Extended Version) ",
-      "content_id": "140482190"
+      "artist": "Jakatta",
+      "title": "American Dream (PROFF Extended Interpretation)",
+      "content_id": "264823102"
+    },
+    {
+      "artist": "Mike Griego",
+      "title": "Antidote",
+      "content_id": "22525767"
     },
     {
       "artist": "Andy Moor & Adam White",
@@ -54,9 +59,14 @@
       "content_id": "162072169"
     },
     {
+      "artist": "Ric Niels",
+      "title": "Invasion",
+      "content_id": "87620719"
+    },
+    {
       "artist": "Maze 28",
-      "title": "Great Attractor (Ruben Karapetyan Remix)",
-      "content_id": "106041324"
+      "title": "Leave the World Behind (Original Mix)",
+      "content_id": "114182110"
     }
   ]
 }

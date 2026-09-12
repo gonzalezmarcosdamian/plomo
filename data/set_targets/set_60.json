@@ -31,14 +31,19 @@
   ],
   "tracks": [
     {
-      "artist": "Khen",
-      "title": "Out Of A Dream (Original Mix) ",
-      "content_id": "26535182"
+      "artist": "Roy Rosenfeld",
+      "title": "Skyhook (Original Mix)",
+      "content_id": "268265765"
     },
     {
-      "artist": "Roy Rosenfeld",
-      "title": "Skyhook (Original Mix) ",
-      "content_id": "268265765"
+      "artist": "Sebastien Leger",
+      "title": "Firefly (Original Mix)",
+      "content_id": "38262851"
+    },
+    {
+      "artist": "Khen",
+      "title": "Out Of A Dream (Original Mix)",
+      "content_id": "26535182"
     },
     {
       "artist": "Kasper Koman",
@@ -46,29 +51,26 @@
       "content_id": "156983367"
     },
     {
-      "artist": "Chicola",
-      "title": "Blueberries (Extended)",
-      "content_id": "96922234"
-    },
-    {
       "artist": "Sebastien Leger",
-      "title": "Firefly (Original Mix) ",
-      "content_id": "38262851"
-    },
-    {
-      "artist": "Sebastien Leger",
-      "title": "Stevie (Original Mix) ",
+      "title": "Stevie (Original Mix)",
       "content_id": "49087473"
-    },
-    {
-      "artist": "Sébastien Léger",
-      "title": "Forbidden Garden (Tim Green Remix) ",
-      "content_id": "130441327"
     },
     {
       "artist": "Cary Crank",
       "title": "Deep Forest (Extended Mix)",
       "content_id": "243440478"
+    },
+    {
+      "artist": "Sébastien Léger",
+      "title": "Forbidden Garden (Tim Green Remix)",
+      "content_id": "130441327"
+    },
+    {
+      "artist": "Chicola",
+      "title": "Blueberries (Extended)",
+      "content_id": "96922234"
     }
-  ]
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 7 -> 4 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

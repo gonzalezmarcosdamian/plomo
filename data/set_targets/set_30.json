@@ -1,38 +1,155 @@
 {
   "name": "30. Hobin & Cendryma — 2h — 2026-06-01",
   "duration_h": 2,
-  "bpm_range": [119, 123],
+  "bpm_range": [
+    119,
+    123
+  ],
   "max_per_artist": 4,
   "style": "Melodico colorido — Hobin Rude, Cendryma, Nicolas Rada, Ewan Rill",
   "movements": [
-    {"name": "warmup", "e_min": 2.0, "e_max": 4.5, "e_center": 3.0, "fraction": 0.20, "anchor_ids": []},
-    {"name": "build",  "e_min": 4.0, "e_max": 6.5, "e_center": 5.5, "fraction": 0.40, "anchor_ids": []},
-    {"name": "peak",   "e_min": 6.0, "e_max": 8.5, "e_center": 7.0, "fraction": 0.40, "anchor_ids": []}
+    {
+      "name": "warmup",
+      "e_min": 2.0,
+      "e_max": 4.5,
+      "e_center": 3.0,
+      "fraction": 0.2,
+      "anchor_ids": []
+    },
+    {
+      "name": "build",
+      "e_min": 4.0,
+      "e_max": 6.5,
+      "e_center": 5.5,
+      "fraction": 0.4,
+      "anchor_ids": []
+    },
+    {
+      "name": "peak",
+      "e_min": 6.0,
+      "e_max": 8.5,
+      "e_center": 7.0,
+      "fraction": 0.4,
+      "anchor_ids": []
+    }
   ],
   "tracks": [
-    {"artist": "Nicolas Rada", "title": "Prana"},
-    {"artist": "Hobin Rude", "title": "Nether"},
-    {"artist": "Hobin Rude", "title": "Dusk Petals"},
-    {"artist": "Hobin Rude", "title": "Prism"},
-    {"artist": "Hobin Rude", "title": "Shrouded Glint"},
-    {"artist": "Cendryma", "title": "Fracture"},
-    {"artist": "Cendryma", "title": "Mythica"},
-    {"artist": "Cendryma", "title": "Evasive"},
-    {"artist": "Cendryma", "title": "Orbitation"},
-    {"artist": "Ewan Rill Shayan Pasha", "title": "Hidden Path"},
-    {"artist": "Ewan Rill K Loveski", "title": "Jala"},
-    {"artist": "Ewan Rill", "title": "Omega Torra"},
-    {"artist": "Nicolas Rada Antrim", "title": "Daydream"},
-    {"artist": "Nicolas Rada", "title": "El Oro De Los Tigres"},
-    {"artist": "Nicolas Rada", "title": "Cascadia"},
-    {"artist": "Nicolas Rada", "title": "The Wind Phone"},
-    {"artist": "Armen Miran Nicolas Rada", "title": "Fall Away"},
-    {"artist": "Armen Miran Nicolas Rada", "title": "Pull"},
-    {"artist": "Chaum Hobin Rude", "title": "Cressida"},
-    {"artist": "Cendryma", "title": "Circles"},
-    {"artist": "Cendryma", "title": "Override"},
-    {"artist": "Cendryma", "title": "Opulence"},
-    {"artist": "Cendryma", "title": "Destination"},
-    {"artist": "Cendryma", "title": "Focus Bend"}
-  ]
+    {
+      "artist": "Hobin Rude",
+      "title": "Prism (Original Mix)",
+      "content_id": "209271901"
+    },
+    {
+      "artist": "Ewan Rill",
+      "title": "Omega Torra",
+      "content_id": "246240908"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Destination (Original Mix)",
+      "content_id": "199362354"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "El Oro De Los Tigres",
+      "content_id": "162910837"
+    },
+    {
+      "artist": "Ewan Rill, Shayan Pasha",
+      "title": "Hidden Path (Original Mix)",
+      "content_id": "59852453"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Fall Away (Original Mix)",
+      "content_id": "172422541"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Pull (Original Mix)",
+      "content_id": "137437468"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Opulence (Original Mix)",
+      "content_id": "145296301"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Nether (Original Mix)",
+      "content_id": "105409768"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Evasive (Extended Mix)",
+      "content_id": "246569089"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "The Wind Phone",
+      "content_id": "252961879"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Override (Original Mix)",
+      "content_id": "244252789"
+    },
+    {
+      "artist": "Nicolas Rada, Antrim",
+      "title": "Daydream (Original Mix)",
+      "content_id": "154495324"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Shrouded Glint (Original Mix)",
+      "content_id": "68561043"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Cascadia",
+      "content_id": "50865819"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Circles (Extended Mix)",
+      "content_id": "240316573"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Mythica (Extended Mix)",
+      "content_id": "172055969"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Fracture (Extended Mix)",
+      "content_id": "176252213"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Prana",
+      "content_id": "32664654"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Focus Bend (Extended Mix)",
+      "content_id": "60597750"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Dusk Petals (Original Mix)",
+      "content_id": "219235985"
+    },
+    {
+      "artist": "Ewan Rill, K Loveski",
+      "title": "Jala (Original Mix)",
+      "content_id": "48216853"
+    }
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 17 -> 5 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

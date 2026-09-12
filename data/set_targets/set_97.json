@@ -9,54 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Lane 8 & Yotto",
-      "title": "I / Y (Original Mix)",
-      "content_id": "200938351"
-    },
-    {
-      "artist": "Antrim",
-      "title": "Rescue",
-      "content_id": "234158720"
-    },
-    {
-      "artist": "Gorkiz, K Loveski",
-      "title": "Echos Of Eons (Greenage Remix)",
-      "content_id": "86837486"
-    },
-    {
-      "artist": "Jonas Saalbach, Yubik",
-      "title": "Faint (Original Mix)",
-      "content_id": "38504487"
-    },
-    {
-      "artist": "Simon Vuarambon",
-      "title": "Kaskazi",
-      "content_id": "202022247"
-    },
-    {
-      "artist": "Bedrock",
-      "title": "Heaven Scent (Eagles & Butterflies Remix)",
-      "content_id": "131326922"
-    },
-    {
-      "artist": "8Kays x Juan Hansen",
-      "title": "Falling Down (Chris Avantgarde Remix)",
-      "content_id": "30972853"
-    },
-    {
       "artist": "Fur Coat",
-      "title": "Ethereal",
-      "content_id": "172832759"
-    },
-    {
-      "artist": "Tinlicker",
-      "title": "All That I Lost",
-      "content_id": "23816256"
-    },
-    {
-      "artist": "Vintage Culture, Paige Cavell",
-      "title": "Promised Land (Innellea Remix / Extended)",
-      "content_id": "197131161"
+      "title": "Modular Theory",
+      "content_id": "41569460"
     },
     {
       "artist": "Hernan Cattaneo, Audio Junkies",
@@ -64,9 +19,54 @@
       "content_id": "100261206"
     },
     {
-      "artist": "Emiliano Demarco, Amancay, RADON (AR)",
-      "title": "Grain (Original Mix)",
-      "content_id": "234315422"
+      "artist": "Kit Lawson",
+      "title": "Ruff (Original Mix)",
+      "content_id": "29068811"
+    },
+    {
+      "artist": "Massano",
+      "title": "Solitude",
+      "content_id": "43440493"
+    },
+    {
+      "artist": "Gorkiz, K Loveski",
+      "title": "Echos Of Eons (Greenage Remix)",
+      "content_id": "86837486"
+    },
+    {
+      "artist": "Bedrock",
+      "title": "Heaven Scent (Eagles & Butterflies Remix)",
+      "content_id": "131326922"
+    },
+    {
+      "artist": "Jonas Saalbach",
+      "title": "Second Surface (Original Mix)",
+      "content_id": "209805228"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Kaskazi",
+      "content_id": "202022247"
+    },
+    {
+      "artist": "Melarmony",
+      "title": "Aurora (Extended Mix)",
+      "content_id": "180136435"
+    },
+    {
+      "artist": "Gorje Hewek, Lost Desert, Volen Sentir",
+      "title": "Fluminnese (Dub)",
+      "content_id": "224734723"
+    },
+    {
+      "artist": "ANMA",
+      "title": "Adya",
+      "content_id": "227305284"
+    },
+    {
+      "artist": "Cristoph, ADZ",
+      "title": "Solpaz",
+      "content_id": "260096829"
     }
   ]
 }

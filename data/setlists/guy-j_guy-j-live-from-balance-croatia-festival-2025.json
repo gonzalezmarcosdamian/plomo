@@ -1,0 +1,189 @@
+{
+  "dj": "Guy J",
+  "evento": "Guy J - Live from Balance Croatia Festival 2025",
+  "fecha": "",
+  "fuente": "https://youtu.be/MfhLFmwzhmQ",
+  "orden_confiable": true,
+  "n": 17,
+  "n_identificados": 16,
+  "n_huecos_id": 1,
+  "cobertura_datos": 0.062,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Guy J",
+      "title": "Forever Lost",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Jordan Gill - Forever Lost "
+    },
+    {
+      "pos": 3,
+      "artist": "Guy J",
+      "title": "Predator",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Sllash & Doppe - Predator (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Christian Hornbostel",
+      "title": "Out Of The Matrix [KLING KLONG]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Charles Webster & Ursula Rucker",
+      "title": "Begin Anew [SELADOR]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Trentemøller",
+      "title": "Physical Fraction [AUDIOMATIQUE]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Guy J",
+      "title": "Million Years From Now [EARLY MORNING]",
+      "es_id": false,
+      "key": "Bb",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Guy J - Million Years from Now"
+    },
+    {
+      "pos": 8,
+      "artist": "AMTRAC",
+      "title": "Just (Patrice Bäumel Remix) [CROSSTOWN REBELS]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Guy J",
+      "title": "Rise",
+      "es_id": false,
+      "key": "4A",
+      "bpm": 122.0,
+      "energy": 7.1,
+      "label": "Global Underground",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 10,
+      "artist": "Guy J",
+      "title": "Octavia [LOST & FOUND]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Guy J",
+      "title": "Freedome Of Affection",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Guy J",
+      "title": "Nirvana ((Dub edit)) [BEDROCK]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Guy J",
+      "title": "Worlds Apart [EARLY MORNING]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "Tantum",
+      "title": "Unblur [EARLY MORNING]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "Jamie Stevens",
+      "title": "Tassolem (Don't Worry 'bout Me) (Guy J Remix) [MUSIC TO DIE FOR]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Faithless",
+      "title": "Insomnia (Guy J Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "The Acid",
+      "title": "Accidents (Guy J Remix)🙂",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.25,
+  "cobertura_bpm": 0.25
+}

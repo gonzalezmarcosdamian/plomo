@@ -1,0 +1,375 @@
+{
+  "dj": "Sasha b2b John Digweed",
+  "evento": "Sasha & John Digweed - Live @Resistance Megastructure | Ultra Miami 20",
+  "fecha": "",
+  "fuente": "https://youtu.be/VD-se3VaMGo",
+  "orden_confiable": true,
+  "n": 35,
+  "n_identificados": 26,
+  "n_huecos_id": 9,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Nathan Fake",
+      "title": "Hypercube [CAMBRIA]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Franky Wah & Sasha",
+      "title": "GOML (ID Remix) [LAST NIGHT ON EARTH]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Echonomist",
+      "title": "Dominator [HABITAT]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "Sam Collins & ESSED",
+      "title": "Going Up [DIYNAMIC]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Zuccasam",
+      "title": "Away Loss [SELADOR]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "Christian Smith",
+      "title": "Feel Me [TRONIC]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "André Winter",
+      "title": "Brunswick [JANNOWITZ]",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "Rolasoul",
+      "title": "Crystal Skies [DISTRICT]",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Rolasoul - Crystal Skies (Original Mix)"
+    },
+    {
+      "pos": 17,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": true,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "Nathan Fake",
+      "title": "Hypercube",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Max Graham & Second Sine - Hypercube"
+    },
+    {
+      "pos": 19,
+      "artist": "Franky Wah & Sasha",
+      "title": "Get On My Level (Dub)",
+      "es_id": false,
+      "key": "G",
+      "bpm": 130.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Sasha, Franky Wah - Get On My Level (Dub)"
+    },
+    {
+      "pos": 20,
+      "artist": "Echonomist",
+      "title": "Dominator",
+      "es_id": false,
+      "key": "Emaj",
+      "bpm": 132.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Human Resource, Danny Bond - Dominator (Original Mix)"
+    },
+    {
+      "pos": 21,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "Sam Collins & ESSED",
+      "title": "Going Up",
+      "es_id": false,
+      "key": "Bmin",
+      "bpm": 128.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Eddy M - Going Up (Original Mix)"
+    },
+    {
+      "pos": 23,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 26,
+      "artist": "Zuccasam",
+      "title": "Away Loss",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Zuccasam - Away Loss (Original Mix)"
+    },
+    {
+      "pos": 27,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 28,
+      "artist": "Christian Smith",
+      "title": "Feel Me",
+      "es_id": false,
+      "key": "C",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Goom Gum - Feel Me"
+    },
+    {
+      "pos": 29,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 30,
+      "artist": "André Winter",
+      "title": "Brunswick",
+      "es_id": false,
+      "key": "Amin",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Tyler Coey - Brunswick (Original Mix)"
+    },
+    {
+      "pos": 31,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 32,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 33,
+      "artist": ":30",
+      "title": "Train Of Fantastic (Ezequiel Arias Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 34,
+      "artist": "Rolasoul",
+      "title": "Crystal Skies",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Rolasoul - Crystal Skies (Original Mix)"
+    },
+    {
+      "pos": 35,
+      "artist": "ID",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.346,
+  "cobertura_bpm": 0.346,
+  "orden_campos_revisado": true
+}

@@ -1,0 +1,265 @@
+{
+  "dj": "Mariano Mellino",
+  "evento": "Mariano Mellino | live at Palacio Alsina, Córdoba, Argentina.",
+  "fecha": "",
+  "fuente": "https://youtu.be/ZFOmZ6KQiF4",
+  "orden_confiable": true,
+  "n": 25,
+  "n_identificados": 25,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "00:00",
+      "title": "Digital Mess - Reprise (Rick Pier O´Neil remix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "02:55",
+      "title": "Rick Pier O´Neil - Emotion Underground (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "07:55",
+      "title": "Joe Fisher - All That´s Left (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "13:13",
+      "title": "Agustin Pietrocola - On My Mind (Simply City remix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 5,
+      "artist": "19:02",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "23:47",
+      "title": "Anna Of The North - Someone Special (ID remix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "28:19",
+      "title": "Kiz Pattison - Moroff (Ranj Kaler remix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "32:17",
+      "title": "Maryana (IN) feat. Ajit Sarathi - Story About Monk (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "36:29",
+      "title": "Frannz - The Last Of Us (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "40:27",
+      "title": "Unusual Soul - Exhale (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "45:18",
+      "title": "Ezequiel Arias - Serenade Of (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "49:01",
+      "title": "Dellucht - Reinforce (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "53:43",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 14,
+      "artist": "59:15",
+      "title": "Atom (IE) - Follow Your Curiosity (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 15,
+      "artist": "01:03:41",
+      "title": "Cherry (UA) - Valhalla (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 16,
+      "artist": "01:08:48",
+      "title": "Markus Klee & Tommy Wahl - Nitenine (Pavel Petrov remix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "01:12:28",
+      "title": "Add-Us - Losing Me (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 18,
+      "artist": "01:16:31",
+      "title": "Add-Us - Changes (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 19,
+      "artist": "01:20:27",
+      "title": "Eli & Dani & ZAC - The Reflection Of Voices (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "01:26:41",
+      "title": "Blazonique - Connection Of A Memory (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 21,
+      "artist": "01:31:06",
+      "title": "TRQ - Ascension (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "01:36:42",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "01:41:31",
+      "title": "SNYL & Noidor feat. Bonnie Spacey - Wolf (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 24,
+      "artist": "01:44:54",
+      "title": "Band Of Horses - The Funeral (ID remix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 25,
+      "artist": "01:49:37",
+      "title": "Mariano Mellino, Lopezhouse & Folgar - Tarantula (Original mix).",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.0,
+  "cobertura_bpm": 0.0
+}

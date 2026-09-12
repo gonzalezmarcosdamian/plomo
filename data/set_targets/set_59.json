@@ -32,33 +32,13 @@
   "tracks": [
     {
       "artist": "Hraach",
-      "title": "Apricot Tree (Original Mix) ",
+      "title": "Apricot Tree (Original Mix)",
       "content_id": "135524860"
     },
     {
-      "artist": "Hermanez",
-      "title": "Third Decade ",
-      "content_id": "221169193"
-    },
-    {
       "artist": "Armen Miran, Felix Raphael",
-      "title": "Ghost (Hernan Cattaneo & Marcelo Vasami Remix) ",
+      "title": "Ghost (Hernan Cattaneo & Marcelo Vasami Remix)",
       "content_id": "207191527"
-    },
-    {
-      "artist": "Gorje Hewek",
-      "title": "Actrice (Original Mix)",
-      "content_id": "6939383"
-    },
-    {
-      "artist": "Bedouin",
-      "title": "Flight of Birds",
-      "content_id": "219630125"
-    },
-    {
-      "artist": "Lee Burridge, Lost Desert",
-      "title": "Moogami (Original Mix) ",
-      "content_id": "251360492"
     },
     {
       "artist": "Seth Schwarz & Be Svendsen",
@@ -67,8 +47,30 @@
     },
     {
       "artist": "Lee Burridge, Lost Desert",
-      "title": "Forget (Original Mix) ",
+      "title": "Forget (Original Mix)",
       "content_id": "250886425"
+    },
+    {
+      "artist": "Bedouin",
+      "title": "Flight of Birds",
+      "content_id": "219630125"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Actrice (Original Mix)",
+      "content_id": "6939383"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Third Decade",
+      "content_id": "221169193"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Moogami (Original Mix)",
+      "content_id": "251360492"
     }
-  ]
+  ],
+  "keep_order": true,
+  "_reordenado": "Reordenado con scripts/reordenar_set.py: 4 -> 2 transiciones flojas. Los tracks son los mismos; solo cambio el orden."
 }

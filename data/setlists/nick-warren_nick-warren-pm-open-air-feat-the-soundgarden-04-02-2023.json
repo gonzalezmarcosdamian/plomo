@@ -1,0 +1,269 @@
+{
+  "dj": "Nick Warren",
+  "evento": "Nick Warren @ PM Open Air feat. @the.soundgarden - 04/02/2023",
+  "fecha": "",
+  "fuente": "https://youtu.be/EXbh7QClJDA",
+  "orden_confiable": true,
+  "n": 24,
+  "n_identificados": 24,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.083,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Fatima Al Qadiri",
+      "title": "Mojik (Your Waves)",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 147.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Fatima Al Qadiri - Mojik (Your Waves)"
+    },
+    {
+      "pos": 2,
+      "artist": "ODESZA",
+      "title": "This Version of You (feat. Julianna Barwick) [Joseph Ray Remix]",
+      "es_id": false,
+      "key": "A",
+      "bpm": 124.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Julianna Barwick, ODESZA - This Version Of You (feat. Julianna Barwick feat. Julianna Barwick Joseph Ray Extended Remix)"
+    },
+    {
+      "pos": 3,
+      "artist": "Mindlancholic",
+      "title": "Amaranth",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Mindlancholic - Amaranth (Original Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Simon Vuarambon",
+      "title": "Afrika",
+      "es_id": false,
+      "key": "11A",
+      "bpm": 121.0,
+      "energy": 6.2,
+      "label": "Moments",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 5,
+      "artist": "The Journey & Kellerkind",
+      "title": "Games (Kellekind Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Andre Moret",
+      "title": "Young Movements",
+      "es_id": false,
+      "key": "1A",
+      "bpm": 120.0,
+      "energy": 4.8,
+      "label": "The Soundgarden",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 7,
+      "artist": "Julieta Kühnle",
+      "title": "Blazer (?)",
+      "es_id": false,
+      "key": "Bm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Julieta Kühnle - Blazer"
+    },
+    {
+      "pos": 8,
+      "artist": "Rampa & WhoMadeWho",
+      "title": "Tell Me Are We (ID remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Covsky & FRAIS & MNNET",
+      "title": "Frozen in Time (Juan Ibanez Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "IN-IS, Haula",
+      "title": "Broken Ones (ID remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 11,
+      "artist": "John Min",
+      "title": "Belfast Nights - TKS GIORGIO",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 12,
+      "artist": "Nhar",
+      "title": "Egide - TKS GIORGIO",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 13,
+      "artist": "Luciano Scheffer 🇧🇷",
+      "title": "Tudo Passa (Original Mix)",
+      "es_id": false,
+      "key": "D",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Luciano Scheffer - Tudo Passa"
+    },
+    {
+      "pos": 14,
+      "artist": "TOLEDO",
+      "title": "Galatari (Dave Walker Remix)",
+      "es_id": false,
+      "key": "F",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "TOLEDO - Galatari (Dave Walker Remix)"
+    },
+    {
+      "pos": 15,
+      "artist": "VITE",
+      "title": "Soul Strings",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Vite - Soul Strings"
+    },
+    {
+      "pos": 16,
+      "artist": "Amarcod",
+      "title": "A New Light (feat. Altutt)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 17,
+      "artist": "Optometry, John Tejada & March Adstrum",
+      "title": "Chameleon",
+      "es_id": false,
+      "key": "C",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Optometry, John Tejada & March Adstrum - Chameleon"
+    },
+    {
+      "pos": 18,
+      "artist": "Zalvador",
+      "title": "Love",
+      "es_id": false,
+      "key": "Eb",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Zalvador - Love "
+    },
+    {
+      "pos": 19,
+      "artist": ":20",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 20,
+      "artist": "Gab Rhome",
+      "title": "Alter He-Go (Moscoman & OMRI. Remix)",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 120.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gab Rhome - Alter He-Go (Moscoman & OMRI. Remix)"
+    },
+    {
+      "pos": 21,
+      "artist": "James Holden ft. Julie Thompson",
+      "title": "Come To Me (ID Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 22,
+      "artist": "Massive Attack",
+      "title": "Girl I Love You (Emi Galvan Unofficial Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 23,
+      "artist": "Myrddin ft. Alasse",
+      "title": "Penser Avec Ses Pieds (Dark Version)",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 121.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Myrddin - Penser Avec Ses Pieds - Dark Version"
+    },
+    {
+      "pos": 24,
+      "artist": "Dido",
+      "title": "White Flag (JP Mantero, Martin Fredes Remix) - TKS NACHO",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.542,
+  "cobertura_bpm": 0.542,
+  "orden_campos_revisado": true
+}

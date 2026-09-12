@@ -343,5 +343,6 @@
     }
   ],
   "cobertura_key": 0.786,
-  "cobertura_bpm": 0.786
+  "cobertura_bpm": 0.786,
+  "orden_campos_revisado": true
 }

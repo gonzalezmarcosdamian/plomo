@@ -40,6 +40,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 _COBERTURA = [0, 0, 0]
 COBERTURA_MINIMA = 0.80  # debajo de esto el veredicto no vale
 UMBRAL_REFUTACION = 0.15  # >15% de violaciones en sets reales refuta una regla dura
+# Piso de muestra para animarse a refutar. Sin esto el backtest daba REFUTADA la
+# regla de energia con n=9: nueve transiciones no refutan nada, y un veredicto
+# falso es peor que ninguno porque despues se usa para cambiar una regla.
+N_MINIMO_PARA_REFUTAR = 40
 
 
 # -- carga de corpus --------------------------------------------------------
@@ -264,6 +268,13 @@ def veredictos(prop: dict, ref: dict, toc: dict | None = None) -> list[dict]:
             item["detalle"] = (
                 "no hay setlists de referencia ni historial con este campo. "
                 "Cargar con scripts/ingest_setlist.py o scripts/ingest_history.py")
+        elif m_ref["n"] < N_MINIMO_PARA_REFUTAR:
+            item["veredicto"] = "MUESTRA INSUFICIENTE"
+            item["detalle"] = (
+                f"solo {m_ref['n']} transiciones de referencia con este dato "
+                f"(hacen falta {N_MINIMO_PARA_REFUTAR}). Se viola el "
+                f"{m_ref['viol_pct']:.0%} pero con esa n no se decide nada. "
+                "Cargar mas setlists con scripts/buscar_setlists.py.")
         elif m_ref["viol_pct"] > UMBRAL_REFUTACION:
             item["veredicto"] = "REFUTADA"
             item["detalle"] = (

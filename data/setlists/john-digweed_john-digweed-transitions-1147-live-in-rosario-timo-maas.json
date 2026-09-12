@@ -1,0 +1,132 @@
+{
+  "dj": "John Digweed",
+  "evento": "John Digweed - Transitions 1147 ( Live in Rosario) + Timo Maas",
+  "fecha": "",
+  "fuente": "https://youtu.be/BuJWu1oK93w",
+  "orden_confiable": true,
+  "n": 11,
+  "n_identificados": 11,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Hour 1 John Digweed",
+      "title": "Live from National Monument Argentina Jan 30th 2026",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Spencer Brown",
+      "title": "Storm Chasing",
+      "es_id": false,
+      "key": "Dbm",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Spencer Brown - Storm Chasing (Original Mix)"
+    },
+    {
+      "pos": 3,
+      "artist": "Danny Howells",
+      "title": "Endless Dust [Extended]",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Danny Howells - Endless Dust (Extended Mix)"
+    },
+    {
+      "pos": 4,
+      "artist": "Chelu Garcia",
+      "title": "Guy On Fire (Timo Maas and Francesco Mami Remix)",
+      "es_id": false,
+      "key": "Ebm",
+      "bpm": 126.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Chelu Garcia, Franco Botto - Guy On Fire (Timo Maas and Francesco Mami Remix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Rico Puestel",
+      "title": "Ri",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Gluten People",
+      "title": "Born To Drop (Original Mix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Peter Brix",
+      "title": "Tiefenrausch",
+      "es_id": false,
+      "key": "D",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Fred und Luna - Tiefenrausch "
+    },
+    {
+      "pos": 8,
+      "artist": "Paul Ursin",
+      "title": "Resonance",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 126.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Paul Ursin - Resonance (Original Mix)"
+    },
+    {
+      "pos": 9,
+      "artist": "Timo Maas",
+      "title": "Ubik (Timo Maas 2026 Mix)",
+      "es_id": false,
+      "key": "Dm",
+      "bpm": 129.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Timo Maas - Ubik (Timo Maas 2026 Extended Mix)"
+    },
+    {
+      "pos": 10,
+      "artist": "Matador & Denis Horvat",
+      "title": "Olfactory",
+      "es_id": false,
+      "key": "Gm",
+      "bpm": 132.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Matador, Denis Horvat - Olfactory (Original Mix)"
+    },
+    {
+      "pos": 11,
+      "artist": "Rick Flett",
+      "title": "Dan Duncan _ Tokyo Sunrise",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "cobertura_key": 0.636,
+  "cobertura_bpm": 0.636
+}

@@ -35,7 +35,13 @@
         "Techno",
         "Techno (Raw / Deep / Hypnotic)"
       ],
-      "beam": 800
+      "beam": 800,
+      "e_lo_v1": 5.4,
+      "e_hi_v1": 6.6,
+      "e_pool_v1": [
+        5.0,
+        7.0
+      ]
     },
     {
       "num": 98,
@@ -48,11 +54,11 @@
         128
       ],
       "e_pool": [
-        5.6,
-        7.4
+        5.5,
+        7.5
       ],
       "e_lo": 6.0,
-      "e_hi": 7.2,
+      "e_hi": 7.3,
       "max_per_artist": 1,
       "max_bpm_jump": 1.5,
       "artists": [
@@ -71,7 +77,13 @@
       "exclude_ids": [
         "256567493"
       ],
-      "_nota_exclude": "David Guetta & MORTEN - The Future is Now: Beatport lo tagea Melodic House & Techno pero el sello es Future Rave. El filtro de genero no lo agarra y en un after horizontal es exactamente lo que no va."
+      "_nota_exclude": "David Guetta & MORTEN - The Future is Now: Beatport lo tagea Melodic House & Techno pero el sello es Future Rave. El filtro de genero no lo agarra y en un after horizontal es exactamente lo que no va.",
+      "e_lo_v1": 6.0,
+      "e_hi_v1": 7.2,
+      "e_pool_v1": [
+        5.6,
+        7.4
+      ]
     },
     {
       "num": 99,
@@ -103,7 +115,14 @@
         "Techno",
         "Techno (Raw / Deep / Hypnotic)"
       ],
-      "beam": 800
+      "beam": 800,
+      "e_lo_v1": 5.2,
+      "e_hi_v1": 6.4,
+      "e_pool_v1": [
+        4.8,
+        6.8
+      ]
     }
-  ]
+  ],
+  "_migracion_energia": "Los rangos se tradujeron de la formula v1 (con BPM) a la v2 (sin BPM) por percentil de la biblioteca, no por delta. Los valores viejos quedan en los campos *_v1. Ver scripts/migrar_configs_energia.py."
 }
