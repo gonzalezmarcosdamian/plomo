@@ -6,6 +6,7 @@ que tracks entran. Es la unica forma de que key y energia no se contradigan.
 Beam search: en cada posicion se prueba cada candidato cuyo key este a distancia
 <=1 del anterior, penalizando el desvio del arco. Se conservan los mejores K.
 """
+import heapq
 import json
 import re
 import sys
@@ -155,14 +156,41 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         if "_names" not in t:
             t["_names"] = names(t["artist"], t["title"])
             t["_cam"] = camelot(t["key"])
-    beams = [(0.0, [], set(), {})]  # (costo, tracks, ids, {artista: [posiciones]})
+
+    # -- indice por vecindario de Camelot --------------------------------------
+    # El loop probaba los ~1300 tracks del pool en cada posicion de cada rama y
+    # descartaba adentro los que no eran vecinos. Precalcular que indices estan a
+    # distancia <=MAX_CAM de cada key deja ~1/6. Se guardan los INDICES en orden
+    # ascendente para que el orden de evaluacion sea identico al de recorrer el
+    # pool entero: el desempate del beam depende del orden de insercion, asi que
+    # alterarlo cambiaria los sets sin cambiar una sola regla.
+    vecinos: dict[str, list[int]] = {}
+    for k in {t["key"] for t in pool}:
+        vecinos[k] = [j for j, u in enumerate(pool) if cam_dist(k, u["key"]) <= MAX_CAM]
+    todos = list(range(len(pool)))
+
+    # (costo, track, padre, ids_mask, arts, run_num, ultimo_paso, mono_run,
+    #  generos, max_e)
+    beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"))]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
-        nxt = []
-        for cost, seq, ids, arts in beams:
-            prev = seq[-1] if seq else None
-            for t in pool:
-                if t["id"] in ids:
+        # Monticulo acotado en vez de lista completa. Antes se acumulaban
+        # todos los candidatos de todas las ramas —unas 240 mil tuplas por
+        # posicion— y recien despues se ordenaban para quedarse con `beam`.
+        # Construir y ordenar esa lista era el costo dominante. Ahora se
+        # conserva el peor de los `beam` mejores y todo lo que no le gana se
+        # descarta SIN construir el nodo, que es la parte cara.
+        nxt = []            # monticulo: el peor de los mejores queda arriba
+        orden = 0           # desempate por orden de insercion, como el sort estable
+        ultima = i == n - 1
+        subiendo = i / (n - 1) <= PICO_PCT
+        for nodo in beams:
+            (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
+             gen_cnt, max_e) = nodo
+            candidatos = vecinos[prev["key"]] if prev is not None else todos
+            for j in candidatos:
+                t = pool[j]
+                if ids >> j & 1:
                     continue
                 na = t["_names"]
                 # tope por productor + separacion minima: un showcase se banca
@@ -171,30 +199,27 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     continue
                 if any(i - p < MIN_GAP for a in na for p in arts.get(a, ())):
                     continue
-                if prev:
+                if prev is not None:
                     d = cam_dist(prev["key"], t["key"])
-                    if d > MAX_CAM:
-                        continue
                     if abs(t["bpm"] - prev["bpm"]) > max_bpm_jump + EPS:
                         continue
                     # no retroceder energia durante la subida
-                    if (i / (n - 1) <= PICO_PCT
+                    if (subiendo
                             and t["energy"] < prev["energy"] - MAX_RETROCESO - EPS):
                         continue
                     # ningun escalon brusco: el crowd tiene que no notar el cambio
                     if abs(t["energy"] - prev["energy"]) > MAX_E_STEP + EPS:
                         continue
                     # el cierre siempre baja del pico — nunca terminar arriba
-                    if i == n - 1 and t["energy"] > max(x["energy"] for x in seq) - BAJA_CIERRE:
+                    if ultima and t["energy"] > max_e - BAJA_CIERRE:
                         continue
                     # quedarse clavado en la misma key aburre: penalizar la
-                    # tercera repeticion en adelante, premiar el movimiento
-                    same = 0
-                    for prv in reversed(seq):
-                        if prv["_cam"][0] == t["_cam"][0]:
-                            same += 1
-                        else:
-                            break
+                    # tercera repeticion en adelante, premiar el movimiento.
+                    # `run_num` viene contado desde la rama: es el largo de la
+                    # corrida de tracks con el mismo numero de rueda que termina
+                    # en `prev`. Antes esto se recalculaba recorriendo el set
+                    # entero en cada candidato.
+                    same = run_num if prev["_cam"][0] == t["_cam"][0] else 0
                     step = d * PESO_CAM + max(0, same - PENAL_MISMA_KEY_DESDE + 1) * PESO_MISMA_KEY
                     # Quedarse en la misma rueda costaba CERO, y por eso pasaba
                     # el 38% de las veces contra el 23% de lo que el DJ toca de
@@ -206,17 +231,14 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     else:
                         # Subir siempre un paso hacia el mismo lado aburre igual
                         # que no moverse. Se penaliza desde la tercera seguida.
-                        corrida = 0
-                        ant = prev
-                        for prv in reversed(seq[:-1]):
-                            if _paso_firmado(prv["_cam"], ant["_cam"]) == paso:
-                                corrida += 1
-                                ant = prv
-                            else:
-                                break
+                        # `mono_run` es el largo de la corrida de pasos iguales
+                        # que termina en el paso que entro a `prev`; si ese paso
+                        # es el mismo que este, la corrida continua.
+                        corrida = mono_run if paso == ult_paso else 0
                         if corrida >= MONOTONIA_DESDE:
                             step += (corrida - MONOTONIA_DESDE + 1) * PESO_MONOTONIA
                 else:
+                    paso = None
                     step = 0.0
                 c = cost + abs(t["energy"] - tgt) * PESO_ARCO + step
                 if t["id"] in prefer:
@@ -225,7 +247,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     g = (t.get("genre") or "").strip()
                     objetivo = mezcla.get(g)
                     if objetivo is not None:
-                        ya = sum(1 for x in seq if (x.get("genre") or "").strip() == g)
+                        ya = gen_cnt.get(g, 0)
                         # El desvio es SIMETRICO a proposito. La primera version
                         # solo cobraba el exceso, y con eso la cuota nunca se
                         # alcanzaba: el genero que iba corto no pagaba, pero
@@ -238,13 +260,50 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                         # Un genero que no figura en la mezcla no es gratis: si
                         # lo fuera, el solver lo usaria para esquivar la cuota.
                         c += peso_mezcla * 0.25
+                # El estado viaja en la rama en vez de recalcularse: antes cada
+                # candidato volvia a recorrer el set entero cuatro veces (misma
+                # key, monotonia, conteo de generos, maximo de energia), y eso
+                # convertia un loop de 37 millones en uno de 900.
+                if prev is None:
+                    n_run, n_paso, n_mono = 1, None, 0
+                elif prev["_cam"][0] == t["_cam"][0]:
+                    n_run = run_num + 1
+                    n_paso, n_mono = paso, (mono_run + 1 if paso == ult_paso else 1)
+                else:
+                    n_run = 1
+                    n_paso, n_mono = paso, (mono_run + 1 if paso == ult_paso else 1)
+                gk = (t.get("genre") or "").strip()
+                if len(nxt) >= beam:
+                    pc, po = -nxt[0][0], -nxt[0][1]
+                    if c > pc or (c == pc and orden > po):
+                        continue
                 na_pos = {a: arts.get(a, ()) + (i,) for a in na}
-                nxt.append((c, seq + [t], ids | {t["id"]}, {**arts, **na_pos}))
+                gc = dict(gen_cnt)
+                gc[gk] = gc.get(gk, 0) + 1
+                nodo_hijo = (c, t, nodo, ids | (1 << j), {**arts, **na_pos},
+                             n_run, n_paso, n_mono, gc,
+                             t["energy"] if t["energy"] > max_e else max_e)
+                entrada = (-c, -orden, nodo_hijo)
+                orden += 1
+                if len(nxt) < beam:
+                    heapq.heappush(nxt, entrada)
+                else:
+                    heapq.heappushpop(nxt, entrada)
         if not nxt:
             return None
-        nxt.sort(key=lambda x: x[0])
-        beams = nxt[:beam]
-    return beams[0]
+        # ascendente por costo y, en empate, por orden de insercion: es lo mismo
+        # que daba el sort estable de antes.
+        beams = [e[2] for e in sorted(nxt, key=lambda e: (-e[0], -e[1]))]
+    # La secuencia no se guarda en cada rama: cada nodo apunta a su padre y se
+    # reconstruye una sola vez al final. Copiar la lista en cada candidato era
+    # la asignacion de memoria mas cara del loop.
+    mejor = beams[0]
+    seq, nodo = [], mejor
+    while nodo is not None and nodo[1] is not None:
+        seq.append(nodo[1])
+        nodo = nodo[2]
+    seq.reverse()
+    return (mejor[0], seq)
 
 
 def show(seq, prefer=()):
