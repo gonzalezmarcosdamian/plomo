@@ -1912,100 +1912,100 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 **Armado:** 2026-09-18  
 **Duracion:** 2.0h  
 **Tracks:** 24  
-**BPM range:** 120-125  
+**BPM range:** 120-124  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Kasper Koman, Shai T | Islander | 122 | 5.5 |
-| 2 | WhoMadeWho & Blue Hawaii | Kiss Me Hard (Adam Ten Remix) | 123 | 5.5 |
-| 3 | Dilby & Pornbugs | Next Round | 125 | 4.5 |
-| 4 | Chaim, Mads Paige | Phoenix Rising (Original Mix) | 124 | 4.6 |
-| 5 | Adam Ten, Mita Gami | Night Shift  | 123 | 4.6 |
-| 6 | Hardy Heller, Alex Connors | Colmar (Original Mix) | 125 | 4.8 |
+| 1 | Guy Gerber | What To Do (Dor Danino Remix) | 124 | 5.1 |
+| 2 | Sezer Uysal | Yutori (Ruben Karapetyan Remix) | 122 | 5.5 |
+| 3 | Chaim, Mads Paige | Phoenix Rising (Original Mix) | 124 | 4.6 |
+| 4 | Dilby | Addicted | 124 | 6.0 |
+| 5 | Tinlicker, Helsloot | Because You Move Me (Jan Oberlaender Extended Remix) | 122 | 5.5 |
+| 6 | Kasper Koman, Shai T | Islander | 122 | 5.5 |
 | 7 | Dilby | Body Talk (Original Mix) | 124 | 6.0 |
-| 8 | Shai T | Where The Heart Is (Original Mix) | 122 | 5.5 |
+| 8 | Hardy Heller, Alex Connors, Sven Kegel | Musiq (Gorge Remix) | 123 | 5.2 |
 | 9 | DAVI | The Bay 6 (Pt.2) | 121 | 5.0 |
-| 10 | Cendryma | Parabolic (Original Mix) | 122 | 5.5 |
-| 11 | Hardy Heller, Alex Connors, Sven Kegel | Musiq (Gorge Remix) | 123 | 5.2 |
-| 12 | DAVI | Self ASCND (Original Mix)  | 124 | 5.8 |
-| 13 | Butch | Countach (Kölsch Remix) | 125 | 5.5 |
-| 14 | Dabeat, Kamilo Sanclemente | Canis (Morttagua Remix) | 124 | 6.0 |
-| 15 | Guy Gerber | What To Do (Dor Danino Remix) | 124 | 5.1 |
-| 16 | Chaim | The Piano One (Kino Todo Remix) | 122 | 5.9 |
-| 17 | James Cole | Got You (Original Mix)  | 124 | 6.5 |
-| 18 | Cari Golden, Marc Lenz | Woman in the Wild (Original Mix) | 124 | 6.2 |
-| 19 | Guy J | Worlds Apart (Original Mix) | 122 | 5.5 |
-| 20 | James Cole | Go With Me (Original Mix)  | 123 | 6.0 |
-| 21 | Gai Barone | Fractals (HAFT Extended Remix) | 122 | 5.5 |
-| 22 | Marc Lenz | Asante (Original Mix) | 124 | 5.9 |
-| 23 | Emi Galvan & Albuquerque | Stay High | 122 | 5.5 |
-| 24 | Máximo Lasso | Breathe Me In (Kebin Van Reeken Remix) | 122 | 5.5 |
+| 10 | Chaim | The Piano One (Kino Todo Remix) | 122 | 5.9 |
+| 11 | Shai T | Where The Heart Is (Original Mix) | 122 | 5.5 |
+| 12 | Juan Pablo Torrez, Kamilo Sanclemente | Unknown Destination (Extended Mix) | 124 | 6.0 |
+| 13 | DAVI | Self ASCND (Original Mix)  | 124 | 5.8 |
+| 14 | Gorge, Marc Lenz | Yuna (Original Mix)  | 123 | 5.8 |
+| 15 | James Cole | Go With Me (Original Mix)  | 123 | 6.0 |
+| 16 | Death on the Balcony | Quiet Storm (Martin Fredes & Matthew Sona Remix) | 122 | 5.7 |
+| 17 | Cari Golden, Marc Lenz | Woman in the Wild (Original Mix) | 124 | 6.2 |
+| 18 | Tiefstone, Das Pharaoh | Endless Summer (Extended Mix) | 122 | 5.5 |
+| 19 | K Loveski | Check-a-Change (Federico Monachesi Remix) | 122 | 5.5 |
+| 20 | James Cole | Got You (Original Mix)  | 124 | 6.5 |
+| 21 | Maze 28 | Mandala | 124 | 6.0 |
+| 22 | Armen Miran & Nicolas Rada | Pull (Original Mix) | 122 | 5.5 |
+| 23 | ODAX | Soundexile (Original Mix) | 121 | 5.0 |
+| 24 | Ewan Rill, Shayan Pasha | Hidden Path (Original Mix) | 120 | 5.0 |
 
 
 ## Set 107. 107. Nanda — Dilby — 2h — 2026-09-18
 **Armado:** 2026-09-18  
 **Duracion:** 2.0h  
 **Tracks:** 24  
-**BPM range:** 120-127  
+**BPM range:** 121-125  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Rockka | Rebit (Original Mix) | 122 | 5.5 |
-| 2 | Roy Rosenfeld | Toco | 124 | 6.0 |
+| 1 | Jeremy Olander | Panorama (Original Mix) | 123 | 5.5 |
+| 2 | TAEF | FILTH (Extended) | 124 | 6.0 |
 | 3 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
-| 4 | Tali Muss & Mayro | Fantom (Max Freegrant & Slow Fish Remix) | 123 | 5.5 |
-| 5 | DORIANN, ORISS | REVOLUTION (Original Mix) | 124 | 6.0 |
-| 6 | Juan Pablo Torrez, Kamilo Sanclemente | Unknown Destination (Extended Mix) | 124 | 6.0 |
-| 7 | DAVI | Future Avenue | 125 | 6.0 |
-| 8 | Albuquerque, D-Nox | Brasilisco | 123 | 5.5 |
-| 9 | Vintage Culture, Paige Cavell | Promised Land (Innellea Remix / Extended) | 125 | 6.0 |
-| 10 | Stereo.type, Felix Raphael | Visions (Bebetta & Cioz Remix)  | 123 | 5.7 |
-| 11 | Nick Newman | Rituals (Hobin Rude Remix) | 122 | 5.5 |
-| 12 | Budakid | Hearts (Argia Remix) | 123 | 5.8 |
-| 13 | Sudhaus & The Wash | Spectron (DJ Ruby Remix) | 123 | 5.5 |
-| 14 | Durante, Amtrac | Gather (Original Mix) | 122 | 5.5 |
-| 15 | Massano | Falling | 122 | 5.5 |
-| 16 | Jonas Saalbach | Second Surface (Original Mix) | 123 | 5.5 |
-| 17 | LUCH | Shepard's Tone (Original Mix) | 123 | 5.5 |
-| 18 | D-Nox, Andre Moret | Brisa (Extended Mix) | 123 | 5.5 |
-| 19 | Dilby | Pranayama | 124 | 6.0 |
-| 20 | InfeXus & ANZA | Africa (Extended Mix) | 124 | 6.0 |
-| 21 | Dmitry Molosh, Michael A | Integral (Original Mix) | 122 | 5.5 |
-| 22 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
-| 23 | Analog Jungs | Futura (Dowden Remix) | 122 | 5.5 |
-| 24 | Cendryma | Focus Bend (Tiefstone Remix) | 123 | 5.5 |
+| 4 | Emi Galvan | Flowing | 121 | 5.0 |
+| 5 | This Guy Ben | Kapalla (Extended Mix) | 122 | 5.5 |
+| 6 | Circulation | Swank (Hobin Rude Remix) | 123 | 5.5 |
+| 7 | Alex O'Rion | Tunnel (Original Mix) | 122 | 5.5 |
+| 8 | Khen | Closing Doors (Original Mix) | 124 | 6.0 |
+| 9 | Hermanez | Tale of the Unexpected (Original Mix) | 123 | 5.5 |
+| 10 | Moshic | Love Made Me Do It (Guy J Remix) | 124 | 6.0 |
+| 11 | Budakid | Hearts (Argia Remix) | 123 | 5.8 |
+| 12 | Nick Newman | Rituals (Hobin Rude Remix) | 122 | 5.5 |
+| 13 | Durante, Amtrac | Gather (Original Mix) | 122 | 5.5 |
+| 14 | djimboh | Be Brave (Extended Mix) | 122 | 5.5 |
+| 15 | Ezequiel Arias | Heat Above - Original Mix | 124 | 6.0 |
+| 16 | Oliver Schories | Lymn (Original Mix) | 124 | 6.0 |
+| 17 | Che Jose | THE VOID (Extended) | 124 | 6.0 |
+| 18 | Ezequiel Arias | Mad Man - Original Mix | 123 | 6.4 |
+| 19 | Kamilo Sanclemente | Show Me the Stars (Original Mix) | 121 | 5.0 |
+| 20 | Freedo Mosho | Paradise Lost (Maze 28 Reform) | 122 | 5.5 |
+| 21 | Rockka | Subversion | 123 | 5.5 |
+| 22 | D-Nox & Beckers | Serenade (Doctor Dru Remix) | 122 | 5.5 |
+| 23 | Cendryma | Override (Luis Damora Remix) | 122 | 5.5 |
+| 24 | Tinlicker | All That I Lost | 124 | 6.0 |
 
 
 ## Set 108. 108. Cierre Groovero — Dilby — 2h — 2026-09-18
 **Armado:** 2026-09-18  
 **Duracion:** 2.0h  
 **Tracks:** 24  
-**BPM range:** 122-128  
+**BPM range:** 121-125  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Dor Danino, Yamagucci | Seven Eleven (Adam Ten Remix) | 123 | 5.5 |
-| 2 | Dilby | Feel It | 123 | 5.9 |
-| 3 | Gorge, Marc Lenz | Yuna (Original Mix)  | 123 | 5.8 |
-| 4 | Hardy Heller, Alex Connors | Haguenau (Original) | 125 | 5.5 |
-| 5 | Deep Dish | Say Hello (Korolova Extended Remix) | 126 | 5.2 |
-| 6 | James Cole | Miss You feat. E-Soreni (Vocal Mix) | 126 | 6.0 |
-| 7 | Rafael, Adam Ten | Sweet Boy (Original Mix) | 125 | 6.1 |
-| 8 | Hana, Durante, Gorje Hewek | Elysia (Original Mix) | 126 | 6.5 |
-| 9 | Nic Fanciulli, Robert Courtois | Set Me Free (feat. Robert Courtois) (Extended Mix) | 128 | 6.2 |
-| 10 | Deep Dish | Flashdance (Deep Dish Guitar Redux Extended Remix)  | 126 | 6.2 |
-| 11 | Dilby | Connect the Dots (Oliver Schories & Gorge Remix) | 124 | 6.0 |
-| 12 | DAVI | Self CNTRL (Original Mix) | 125 | 6.6 |
-| 13 | Marc Lenz | People Are People | 123 | 6.5 |
-| 14 | Alex Connors, Hardy Heller | Colourblind (Original Mix) | 123 | 6.6 |
-| 15 | James Cole | Khumba (Original Mix)  | 125 | 6.3 |
-| 16 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
-| 17 | Dr. Mirzoyan | Destruction (Ruben Karapetyan Remix) | 122 | 7.0 |
-| 18 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
-| 19 | DAVI | Among Us (Original Mix) | 123 | 5.5 |
-| 20 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
-| 21 | Rezident | Hunter (Enamour Remix)  | 124 | 7.0 |
-| 22 | Butch | No Worries (Toman RMX) | 126 | 6.2 |
-| 23 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
-| 24 | Chaim | Sun Tease (Doctor Dru Edit) | 122 | 5.5 |
+| 1 | Marc Lenz | Shujaa (Original Mix) | 125 | 6.4 |
+| 2 | Durante | Never B Alone (Extended Mix) | 123 | 5.5 |
+| 3 | Alex Connors, Hardy Heller | Paris (Mihai Popoviciu Remix) | 124 | 5.8 |
+| 4 | DAVI | Self R3B00T (Original Mix) | 124 | 5.6 |
+| 5 | Juan Pablo Torrez, Kamilo Sanclemente | Ghost Train (Original Mix) | 122 | 5.5 |
+| 6 | Dilby | Connect the Dots (Oliver Schories & Gorge Remix) | 124 | 6.0 |
+| 7 | DAVI | Self CNTRL (Original Mix) | 125 | 6.6 |
+| 8 | James Cole | Khumba (Original Mix)  | 125 | 6.3 |
+| 9 | Hardy Heller, Alex Connors | Paris (Original) | 124 | 6.2 |
+| 10 | Marc Lenz | People Are People | 123 | 6.5 |
+| 11 | Tinlicker | Just To Hear You Say (Joseph Ray Extended Mix) | 124 | 6.0 |
+| 12 | Tali Muss | Garip (Original Mix) | 122 | 5.5 |
+| 13 | Shai T | Illusions | 122 | 7.0 |
+| 14 | Fabri Lopez, Callecat | Mutual Horizons (Rauschhaus Remix) | 121 | 6.7 |
+| 15 | Emi Galvan | Samsara | 122 | 5.5 |
+| 16 | Chaim | Sun Tease (Doctor Dru Edit) | 122 | 5.5 |
+| 17 | Dilby, Simon Mattson, Lazarusman | Give It To Them (Dilby Extended 2022 Rework)  | 124 | 6.6 |
+| 18 | Shai T | Summer Oclock (Original Mix)  | 123 | 6.3 |
+| 19 | Tom Pavicich | Insight (Original Mix) | 122 | 5.5 |
+| 20 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
+| 21 | Chaim | Pow Pow (The Organism Remix)  | 121 | 6.0 |
+| 22 | Dmitry Molosh | Glide | 121 | 5.0 |
+| 23 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 5.5 |
+| 24 | Nicolas Rada | The Wind Phone | 123 | 5.5 |
 

@@ -2,21 +2,21 @@
   "name": "107. Nanda — Dilby — 2h — 2026-09-18",
   "duration_h": 2.0,
   "bpm_range": [
-    120,
-    127
+    121,
+    125
   ],
   "max_per_artist": 2,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Rockka",
-      "title": "Rebit (Original Mix)",
-      "content_id": "59269008"
+      "artist": "Jeremy Olander",
+      "title": "Panorama (Original Mix)",
+      "content_id": "91056575"
     },
     {
-      "artist": "Roy Rosenfeld",
-      "title": "Toco",
-      "content_id": "28986214"
+      "artist": "TAEF",
+      "title": "FILTH (Extended)",
+      "content_id": "104199862"
     },
     {
       "artist": "M.O.S.",
@@ -24,44 +24,39 @@
       "content_id": "208082265"
     },
     {
-      "artist": "Tali Muss & Mayro",
-      "title": "Fantom (Max Freegrant & Slow Fish Remix)",
-      "content_id": "134284103"
+      "artist": "Emi Galvan",
+      "title": "Flowing",
+      "content_id": "90404405"
     },
     {
-      "artist": "DORIANN, ORISS",
-      "title": "REVOLUTION (Original Mix)",
-      "content_id": "228177406"
+      "artist": "This Guy Ben",
+      "title": "Kapalla (Extended Mix)",
+      "content_id": "263336960"
     },
     {
-      "artist": "Juan Pablo Torrez, Kamilo Sanclemente",
-      "title": "Unknown Destination (Extended Mix)",
-      "content_id": "56840337"
+      "artist": "Circulation",
+      "title": "Swank (Hobin Rude Remix)",
+      "content_id": "193525168"
     },
     {
-      "artist": "DAVI",
-      "title": "Future Avenue",
-      "content_id": "168006387"
+      "artist": "Alex O'Rion",
+      "title": "Tunnel (Original Mix)",
+      "content_id": "7078508"
     },
     {
-      "artist": "Albuquerque, D-Nox",
-      "title": "Brasilisco",
-      "content_id": "244094498"
+      "artist": "Khen",
+      "title": "Closing Doors (Original Mix)",
+      "content_id": "199550938"
     },
     {
-      "artist": "Vintage Culture, Paige Cavell",
-      "title": "Promised Land (Innellea Remix / Extended)",
-      "content_id": "197131161"
+      "artist": "Hermanez",
+      "title": "Tale of the Unexpected (Original Mix)",
+      "content_id": "87157732"
     },
     {
-      "artist": "Stereo.type, Felix Raphael",
-      "title": "Visions (Bebetta & Cioz Remix) ",
-      "content_id": "219749411"
-    },
-    {
-      "artist": "Nick Newman",
-      "title": "Rituals (Hobin Rude Remix)",
-      "content_id": "261629930"
+      "artist": "Moshic",
+      "title": "Love Made Me Do It (Guy J Remix)",
+      "content_id": "138530727"
     },
     {
       "artist": "Budakid",
@@ -69,9 +64,9 @@
       "content_id": "109081759"
     },
     {
-      "artist": "Sudhaus & The Wash",
-      "title": "Spectron (DJ Ruby Remix)",
-      "content_id": "105189053"
+      "artist": "Nick Newman",
+      "title": "Rituals (Hobin Rude Remix)",
+      "content_id": "261629930"
     },
     {
       "artist": "Durante, Amtrac",
@@ -79,54 +74,59 @@
       "content_id": "53915983"
     },
     {
-      "artist": "Massano",
-      "title": "Falling",
-      "content_id": "100629343"
+      "artist": "djimboh",
+      "title": "Be Brave (Extended Mix)",
+      "content_id": "151312213"
     },
     {
-      "artist": "Jonas Saalbach",
-      "title": "Second Surface (Original Mix)",
-      "content_id": "209805228"
+      "artist": "Ezequiel Arias",
+      "title": "Heat Above - Original Mix",
+      "content_id": "130309928"
     },
     {
-      "artist": "LUCH",
-      "title": "Shepard's Tone (Original Mix)",
-      "content_id": "111596877"
+      "artist": "Oliver Schories",
+      "title": "Lymn (Original Mix)",
+      "content_id": "60102553"
     },
     {
-      "artist": "D-Nox, Andre Moret",
-      "title": "Brisa (Extended Mix)",
-      "content_id": "19065039"
+      "artist": "Che Jose",
+      "title": "THE VOID (Extended)",
+      "content_id": "264150212"
     },
     {
-      "artist": "Dilby",
-      "title": "Pranayama",
-      "content_id": "160831995"
+      "artist": "Ezequiel Arias",
+      "title": "Mad Man - Original Mix",
+      "content_id": "190234458"
     },
     {
-      "artist": "InfeXus & ANZA",
-      "title": "Africa (Extended Mix)",
-      "content_id": "102676153"
+      "artist": "Kamilo Sanclemente",
+      "title": "Show Me the Stars (Original Mix)",
+      "content_id": "134028327"
     },
     {
-      "artist": "Dmitry Molosh, Michael A",
-      "title": "Integral (Original Mix)",
-      "content_id": "41067932"
+      "artist": "Freedo Mosho",
+      "title": "Paradise Lost (Maze 28 Reform)",
+      "content_id": "226546454"
     },
     {
-      "artist": "Kamilo Sanclemente, Juan Pablo Torrez",
-      "title": "Mantura",
-      "content_id": "24944125"
+      "artist": "Rockka",
+      "title": "Subversion",
+      "content_id": "78510636"
     },
     {
-      "artist": "Analog Jungs",
-      "title": "Futura (Dowden Remix)",
-      "content_id": "157882627"
+      "artist": "D-Nox & Beckers",
+      "title": "Serenade (Doctor Dru Remix)",
+      "content_id": "84247083"
     },
     {
       "artist": "Cendryma",
-      "title": "Focus Bend (Tiefstone Remix)",
-      "content_id": "159659944"
+      "title": "Override (Luis Damora Remix)",
+      "content_id": "229752126"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "All That I Lost",
+      "content_id": "23816256"
     }
   ]
 }

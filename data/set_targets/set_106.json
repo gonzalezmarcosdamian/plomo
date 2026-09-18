@@ -3,25 +3,20 @@
   "duration_h": 2.0,
   "bpm_range": [
     120,
-    125
+    124
   ],
   "max_per_artist": 2,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Kasper Koman, Shai T",
-      "title": "Islander",
-      "content_id": "82572381"
+      "artist": "Guy Gerber",
+      "title": "What To Do (Dor Danino Remix)",
+      "content_id": "24770858"
     },
     {
-      "artist": "WhoMadeWho & Blue Hawaii",
-      "title": "Kiss Me Hard (Adam Ten Remix)",
-      "content_id": "25650242"
-    },
-    {
-      "artist": "Dilby & Pornbugs",
-      "title": "Next Round",
-      "content_id": "180153988"
+      "artist": "Sezer Uysal",
+      "title": "Yutori (Ruben Karapetyan Remix)",
+      "content_id": "42401693"
     },
     {
       "artist": "Chaim, Mads Paige",
@@ -29,34 +24,24 @@
       "content_id": "148926923"
     },
     {
-      "artist": "Adam Ten, Mita Gami",
-      "title": "Night Shift ",
-      "content_id": "81119906"
+      "artist": "Dilby",
+      "title": "Addicted",
+      "content_id": "194055638"
     },
     {
-      "artist": "Hardy Heller, Alex Connors",
-      "title": "Colmar (Original Mix)",
-      "content_id": "251423159"
+      "artist": "Tinlicker, Helsloot",
+      "title": "Because You Move Me (Jan Oberlaender Extended Remix)",
+      "content_id": "59528095"
+    },
+    {
+      "artist": "Kasper Koman, Shai T",
+      "title": "Islander",
+      "content_id": "82572381"
     },
     {
       "artist": "Dilby",
       "title": "Body Talk (Original Mix)",
       "content_id": "63139094"
-    },
-    {
-      "artist": "Shai T",
-      "title": "Where The Heart Is (Original Mix)",
-      "content_id": "178572778"
-    },
-    {
-      "artist": "DAVI",
-      "title": "The Bay 6 (Pt.2)",
-      "content_id": "145072917"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Parabolic (Original Mix)",
-      "content_id": "72311255"
     },
     {
       "artist": "Hardy Heller, Alex Connors, Sven Kegel",
@@ -65,23 +50,8 @@
     },
     {
       "artist": "DAVI",
-      "title": "Self ASCND (Original Mix) ",
-      "content_id": "185675309"
-    },
-    {
-      "artist": "Butch",
-      "title": "Countach (Kölsch Remix)",
-      "content_id": "214971773"
-    },
-    {
-      "artist": "Dabeat, Kamilo Sanclemente",
-      "title": "Canis (Morttagua Remix)",
-      "content_id": "180755642"
-    },
-    {
-      "artist": "Guy Gerber",
-      "title": "What To Do (Dor Danino Remix)",
-      "content_id": "24770858"
+      "title": "The Bay 6 (Pt.2)",
+      "content_id": "145072917"
     },
     {
       "artist": "Chaim",
@@ -89,19 +59,24 @@
       "content_id": "74235938"
     },
     {
-      "artist": "James Cole",
-      "title": "Got You (Original Mix) ",
-      "content_id": "28903195"
+      "artist": "Shai T",
+      "title": "Where The Heart Is (Original Mix)",
+      "content_id": "178572778"
     },
     {
-      "artist": "Cari Golden, Marc Lenz",
-      "title": "Woman in the Wild (Original Mix)",
-      "content_id": "237156491"
+      "artist": "Juan Pablo Torrez, Kamilo Sanclemente",
+      "title": "Unknown Destination (Extended Mix)",
+      "content_id": "56840337"
     },
     {
-      "artist": "Guy J",
-      "title": "Worlds Apart (Original Mix)",
-      "content_id": "194919017"
+      "artist": "DAVI",
+      "title": "Self ASCND (Original Mix) ",
+      "content_id": "185675309"
+    },
+    {
+      "artist": "Gorge, Marc Lenz",
+      "title": "Yuna (Original Mix) ",
+      "content_id": "167596639"
     },
     {
       "artist": "James Cole",
@@ -109,24 +84,49 @@
       "content_id": "212080457"
     },
     {
-      "artist": "Gai Barone",
-      "title": "Fractals (HAFT Extended Remix)",
-      "content_id": "126065018"
+      "artist": "Death on the Balcony",
+      "title": "Quiet Storm (Martin Fredes & Matthew Sona Remix)",
+      "content_id": "112550325"
     },
     {
-      "artist": "Marc Lenz",
-      "title": "Asante (Original Mix)",
-      "content_id": "36745296"
+      "artist": "Cari Golden, Marc Lenz",
+      "title": "Woman in the Wild (Original Mix)",
+      "content_id": "237156491"
     },
     {
-      "artist": "Emi Galvan & Albuquerque",
-      "title": "Stay High",
-      "content_id": "63653796"
+      "artist": "Tiefstone, Das Pharaoh",
+      "title": "Endless Summer (Extended Mix)",
+      "content_id": "27766590"
     },
     {
-      "artist": "Máximo Lasso",
-      "title": "Breathe Me In (Kebin Van Reeken Remix)",
-      "content_id": "142248575"
+      "artist": "K Loveski",
+      "title": "Check-a-Change (Federico Monachesi Remix)",
+      "content_id": "110358601"
+    },
+    {
+      "artist": "James Cole",
+      "title": "Got You (Original Mix) ",
+      "content_id": "28903195"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mandala",
+      "content_id": "185782457"
+    },
+    {
+      "artist": "Armen Miran & Nicolas Rada",
+      "title": "Pull (Original Mix)",
+      "content_id": "137437468"
+    },
+    {
+      "artist": "ODAX",
+      "title": "Soundexile (Original Mix)",
+      "content_id": "25418820"
+    },
+    {
+      "artist": "Ewan Rill, Shayan Pasha",
+      "title": "Hidden Path (Original Mix)",
+      "content_id": "59852453"
     }
   ]
 }

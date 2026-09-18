@@ -2,61 +2,36 @@
   "name": "108. Cierre Groovero — Dilby — 2h — 2026-09-18",
   "duration_h": 2.0,
   "bpm_range": [
-    122,
-    128
+    121,
+    125
   ],
   "max_per_artist": 2,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Dor Danino, Yamagucci",
-      "title": "Seven Eleven (Adam Ten Remix)",
-      "content_id": "188893207"
+      "artist": "Marc Lenz",
+      "title": "Shujaa (Original Mix)",
+      "content_id": "174470364"
     },
     {
-      "artist": "Dilby",
-      "title": "Feel It",
-      "content_id": "26667043"
+      "artist": "Durante",
+      "title": "Never B Alone (Extended Mix)",
+      "content_id": "162287546"
     },
     {
-      "artist": "Gorge, Marc Lenz",
-      "title": "Yuna (Original Mix) ",
-      "content_id": "167596639"
+      "artist": "Alex Connors, Hardy Heller",
+      "title": "Paris (Mihai Popoviciu Remix)",
+      "content_id": "192020905"
     },
     {
-      "artist": "Hardy Heller, Alex Connors",
-      "title": "Haguenau (Original)",
-      "content_id": "155931733"
+      "artist": "DAVI",
+      "title": "Self R3B00T (Original Mix)",
+      "content_id": "78722462"
     },
     {
-      "artist": "Deep Dish",
-      "title": "Say Hello (Korolova Extended Remix)",
-      "content_id": "125866221"
-    },
-    {
-      "artist": "James Cole",
-      "title": "Miss You feat. E-Soreni (Vocal Mix)",
-      "content_id": "15438786"
-    },
-    {
-      "artist": "Rafael, Adam Ten",
-      "title": "Sweet Boy (Original Mix)",
-      "content_id": "73971725"
-    },
-    {
-      "artist": "Hana, Durante, Gorje Hewek",
-      "title": "Elysia (Original Mix)",
-      "content_id": "98428952"
-    },
-    {
-      "artist": "Nic Fanciulli, Robert Courtois",
-      "title": "Set Me Free (feat. Robert Courtois) (Extended Mix)",
-      "content_id": "231835212"
-    },
-    {
-      "artist": "Deep Dish",
-      "title": "Flashdance (Deep Dish Guitar Redux Extended Remix) ",
-      "content_id": "11709060"
+      "artist": "Juan Pablo Torrez, Kamilo Sanclemente",
+      "title": "Ghost Train (Original Mix)",
+      "content_id": "158706409"
     },
     {
       "artist": "Dilby",
@@ -69,64 +44,89 @@
       "content_id": "16489024"
     },
     {
-      "artist": "Marc Lenz",
-      "title": "People Are People",
-      "content_id": "132804349"
-    },
-    {
-      "artist": "Alex Connors, Hardy Heller",
-      "title": "Colourblind (Original Mix)",
-      "content_id": "179702062"
-    },
-    {
       "artist": "James Cole",
       "title": "Khumba (Original Mix) ",
       "content_id": "256877201"
     },
     {
-      "artist": "Marsh, Simon Doty",
-      "title": "Touch The Sky (Extended Mix)",
-      "content_id": "175806155"
+      "artist": "Hardy Heller, Alex Connors",
+      "title": "Paris (Original)",
+      "content_id": "41132176"
     },
     {
-      "artist": "Dr. Mirzoyan",
-      "title": "Destruction (Ruben Karapetyan Remix)",
-      "content_id": "205246945"
+      "artist": "Marc Lenz",
+      "title": "People Are People",
+      "content_id": "132804349"
     },
     {
-      "artist": "Albuquerque, Anonimat",
-      "title": "Like First Time Flight (Extended Mix)",
-      "content_id": "92106172"
+      "artist": "Tinlicker",
+      "title": "Just To Hear You Say (Joseph Ray Extended Mix)",
+      "content_id": "110259483"
     },
     {
-      "artist": "DAVI",
-      "title": "Among Us (Original Mix)",
-      "content_id": "117775286"
+      "artist": "Tali Muss",
+      "title": "Garip (Original Mix)",
+      "content_id": "8906387"
     },
     {
-      "artist": "Francisco Manrique",
-      "title": "The Fine Universe (Mike Kohl Remix)",
-      "content_id": "226932772"
+      "artist": "Shai T",
+      "title": "Illusions",
+      "content_id": "226913303"
     },
     {
-      "artist": "Rezident",
-      "title": "Hunter (Enamour Remix) ",
-      "content_id": "102016112"
+      "artist": "Fabri Lopez, Callecat",
+      "title": "Mutual Horizons (Rauschhaus Remix)",
+      "content_id": "218114909"
     },
     {
-      "artist": "Butch",
-      "title": "No Worries (Toman RMX)",
-      "content_id": "208678786"
-    },
-    {
-      "artist": "Kamilo Sanclemente",
-      "title": "Just Come Back (Extended Mix)",
-      "content_id": "129720546"
+      "artist": "Emi Galvan",
+      "title": "Samsara",
+      "content_id": "139671166"
     },
     {
       "artist": "Chaim",
       "title": "Sun Tease (Doctor Dru Edit)",
       "content_id": "221596463"
+    },
+    {
+      "artist": "Dilby, Simon Mattson, Lazarusman",
+      "title": "Give It To Them (Dilby Extended 2022 Rework) ",
+      "content_id": "190211950"
+    },
+    {
+      "artist": "Shai T",
+      "title": "Summer Oclock (Original Mix) ",
+      "content_id": "46457686"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Insight (Original Mix)",
+      "content_id": "83418763"
+    },
+    {
+      "artist": "Cid Inc.",
+      "title": "Citadel (Original Mix)",
+      "content_id": "66290210"
+    },
+    {
+      "artist": "Chaim",
+      "title": "Pow Pow (The Organism Remix) ",
+      "content_id": "189823667"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Glide",
+      "content_id": "267544751"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "content_id": "112359333"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "The Wind Phone",
+      "content_id": "252961879"
     }
   ]
 }
