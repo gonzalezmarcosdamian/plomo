@@ -1916,30 +1916,30 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Dor Danino, DvirNuns | Sax A Boom  | 123 | 4.2 |
-| 2 | Dilby & Pornbugs | Next Round | 125 | 4.5 |
-| 3 | Chaim, Mads Paige | Phoenix Rising (Original Mix) | 124 | 4.6 |
-| 4 | Adam Ten, Mita Gami | Night Shift  | 123 | 4.6 |
-| 5 | Hardy Heller, Alex Connors | Colmar (Original Mix) | 125 | 4.8 |
-| 6 | Dilby, Tom Evans, Bruno Blanc, Monochrome (AU) | Play It Twice (Dilby Extended Remix) | 125 | 4.8 |
-| 7 | Adam Ten | I Never Knew (Extended Mix) | 125 | 5.2 |
-| 8 | Hardy Heller, Alex Connors, Sven Kegel | Musiq (Gorge Remix) | 123 | 5.2 |
+| 1 | Kasper Koman, Shai T | Islander | 122 | 5.5 |
+| 2 | WhoMadeWho & Blue Hawaii | Kiss Me Hard (Adam Ten Remix) | 123 | 5.5 |
+| 3 | Dilby & Pornbugs | Next Round | 125 | 4.5 |
+| 4 | Chaim, Mads Paige | Phoenix Rising (Original Mix) | 124 | 4.6 |
+| 5 | Adam Ten, Mita Gami | Night Shift  | 123 | 4.6 |
+| 6 | Hardy Heller, Alex Connors | Colmar (Original Mix) | 125 | 4.8 |
+| 7 | Dilby | Body Talk (Original Mix) | 124 | 6.0 |
+| 8 | Shai T | Where The Heart Is (Original Mix) | 122 | 5.5 |
 | 9 | DAVI | The Bay 6 (Pt.2) | 121 | 5.0 |
-| 10 | Chaim | The Piano One (Kino Todo Remix) | 122 | 5.9 |
-| 11 | Marc Lenz | Asante (Original Mix) | 124 | 5.9 |
-| 12 | Shai T | Where The Heart Is (Original Mix) | 122 | 5.5 |
-| 13 | DAVI | Self ASCND (Original Mix)  | 124 | 5.8 |
-| 14 | Butch | Countach (Kölsch Remix) | 125 | 5.5 |
-| 15 | Dabeat, Kamilo Sanclemente | Canis (Morttagua Remix) | 124 | 6.0 |
-| 16 | Guy Gerber | What To Do (Dor Danino Remix) | 124 | 5.1 |
-| 17 | Cari Golden, Marc Lenz | Woman in the Wild (Original Mix) | 124 | 6.2 |
-| 18 | James Cole | Got You (Original Mix)  | 124 | 6.5 |
-| 19 | Ruben Karapetyan, Maze 28 | Cosmic Dot (Cid Inc. Remix) | 123 | 5.5 |
-| 20 | Guy Mantzur & Khen | Where Is Home (Original Mix) | 122 | 5.5 |
-| 21 | James Cole | Go With Me (Original Mix)  | 123 | 6.0 |
-| 22 | Innēr Sense (ofc) | Older (Extended Mix) | 125 | 6.0 |
-| 23 | Empire Of The Sun | We Are The People (ARTBAT Extended Remix) | 125 | 6.0 |
-| 24 | Pavel Petrov | Way Too High (Original Mix) | 124 | 6.0 |
+| 10 | Cendryma | Parabolic (Original Mix) | 122 | 5.5 |
+| 11 | Hardy Heller, Alex Connors, Sven Kegel | Musiq (Gorge Remix) | 123 | 5.2 |
+| 12 | DAVI | Self ASCND (Original Mix)  | 124 | 5.8 |
+| 13 | Butch | Countach (Kölsch Remix) | 125 | 5.5 |
+| 14 | Dabeat, Kamilo Sanclemente | Canis (Morttagua Remix) | 124 | 6.0 |
+| 15 | Guy Gerber | What To Do (Dor Danino Remix) | 124 | 5.1 |
+| 16 | Chaim | The Piano One (Kino Todo Remix) | 122 | 5.9 |
+| 17 | James Cole | Got You (Original Mix)  | 124 | 6.5 |
+| 18 | Cari Golden, Marc Lenz | Woman in the Wild (Original Mix) | 124 | 6.2 |
+| 19 | Guy J | Worlds Apart (Original Mix) | 122 | 5.5 |
+| 20 | James Cole | Go With Me (Original Mix)  | 123 | 6.0 |
+| 21 | Gai Barone | Fractals (HAFT Extended Remix) | 122 | 5.5 |
+| 22 | Marc Lenz | Asante (Original Mix) | 124 | 5.9 |
+| 23 | Emi Galvan & Albuquerque | Stay High | 122 | 5.5 |
+| 24 | Máximo Lasso | Breathe Me In (Kebin Van Reeken Remix) | 122 | 5.5 |
 
 
 ## Set 107. 107. Nanda — Dilby — 2h — 2026-09-18
@@ -1950,30 +1950,30 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | David Ardila (US) | Feel The Energy (Original Mix) | 124 | 6.0 |
-| 2 | Jan Blomqvist, Alar, Korolova | Time Again (Original Mix) | 123 | 5.5 |
+| 1 | Rockka | Rebit (Original Mix) | 122 | 5.5 |
+| 2 | Roy Rosenfeld | Toco | 124 | 6.0 |
 | 3 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
-| 4 | Cioz & Nairobi D | Haunted | 123 | 5.7 |
-| 5 | Joplyn | Fact & Fiction (JAMIIE Remix)  | 124 | 5.3 |
-| 6 | Mrak, David Lindmer | Their Law (Extended Mix) | 126 | 6.5 |
-| 7 | Milk & Sugar, David Morales | Higher & Higher (David Morales 1999 Re-Edit) | 126 | 5.1 |
-| 8 | David Penn, Wh0 | La Fiesta (Extended Mix) | 127 | 6.5 |
-| 9 | Hardy Heller, Alex Connors | Haguenau (Original) | 125 | 5.5 |
-| 10 | Dilby | Body Talk (Original Mix) | 124 | 6.0 |
-| 11 | Joplyn & Einmusik | KEEP ME IN YOUR MIND (Einmusik Remix) | 124 | 5.5 |
-| 12 | Cioz | Dancing in the Night (feat. Eleonora) [Lucky Shot Extended Mix] | 122 | 6.1 |
-| 13 | Todd Terry, Gypsymen, David Penn | Babarabatiri (David Penn Remix) | 124 | 5.8 |
-| 14 | Rafael, Adam Ten | Sweet Boy (Original Mix) | 125 | 6.1 |
-| 15 | James Cole | Miss You feat. E-Soreni (Vocal Mix) | 126 | 6.0 |
-| 16 | Korolova & Monophase (IT) | Reactive (Extended Mix) | 125 | 6.0 |
-| 17 | Chaim | Round About (Original Mix) | 123 | 6.4 |
-| 18 | Gorge, Marc Lenz | Little Aimie (Original Mix)  | 124 | 6.4 |
-| 19 | Ebano Dc, Elich Garcia, Sebastian Ledher | Llego La Rumba (Lui Maldonado Remix) | 124 | 6.8 |
-| 20 | DAVI | Among Us (Original Mix) | 123 | 5.5 |
-| 21 | Kamilo Sanclemente, M.O.S., Andre Moret | Perception (Original Mix) | 122 | 5.5 |
-| 22 | Butch, C.Vogt | Bliss (Beat Tool) | 120 | 6.5 |
-| 23 | Chaim | Pow Pow (The Organism Remix)  | 121 | 6.0 |
-| 24 | Gorge, Marc Lenz | Ansia (Original Mix)  | 123 | 6.2 |
+| 4 | Tali Muss & Mayro | Fantom (Max Freegrant & Slow Fish Remix) | 123 | 5.5 |
+| 5 | DORIANN, ORISS | REVOLUTION (Original Mix) | 124 | 6.0 |
+| 6 | Juan Pablo Torrez, Kamilo Sanclemente | Unknown Destination (Extended Mix) | 124 | 6.0 |
+| 7 | DAVI | Future Avenue | 125 | 6.0 |
+| 8 | Albuquerque, D-Nox | Brasilisco | 123 | 5.5 |
+| 9 | Vintage Culture, Paige Cavell | Promised Land (Innellea Remix / Extended) | 125 | 6.0 |
+| 10 | Stereo.type, Felix Raphael | Visions (Bebetta & Cioz Remix)  | 123 | 5.7 |
+| 11 | Nick Newman | Rituals (Hobin Rude Remix) | 122 | 5.5 |
+| 12 | Budakid | Hearts (Argia Remix) | 123 | 5.8 |
+| 13 | Sudhaus & The Wash | Spectron (DJ Ruby Remix) | 123 | 5.5 |
+| 14 | Durante, Amtrac | Gather (Original Mix) | 122 | 5.5 |
+| 15 | Massano | Falling | 122 | 5.5 |
+| 16 | Jonas Saalbach | Second Surface (Original Mix) | 123 | 5.5 |
+| 17 | LUCH | Shepard's Tone (Original Mix) | 123 | 5.5 |
+| 18 | D-Nox, Andre Moret | Brisa (Extended Mix) | 123 | 5.5 |
+| 19 | Dilby | Pranayama | 124 | 6.0 |
+| 20 | InfeXus & ANZA | Africa (Extended Mix) | 124 | 6.0 |
+| 21 | Dmitry Molosh, Michael A | Integral (Original Mix) | 122 | 5.5 |
+| 22 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
+| 23 | Analog Jungs | Futura (Dowden Remix) | 122 | 5.5 |
+| 24 | Cendryma | Focus Bend (Tiefstone Remix) | 123 | 5.5 |
 
 
 ## Set 108. 108. Cierre Groovero — Dilby — 2h — 2026-09-18
@@ -1984,28 +1984,28 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Butch, Rony Seikaly, VITO (UK) | Running Cash (Butch Remix) | 128 | 5.5 |
-| 2 | Deep Dish | Say Hello (Korolova Extended Remix) | 126 | 5.2 |
-| 3 | DAVI | Future Avenue | 125 | 6.0 |
-| 4 | Gorge, Marc Lenz | Yuna (Original Mix)  | 123 | 5.8 |
-| 5 | Marina Maximilian, Adam Ten, Mita Gami | Million Pieces (Original Mix) | 125 | 5.6 |
-| 6 | Hardy Heller, Alex Connors | Remembrance (Extended Version) | 125 | 6.1 |
-| 7 | Dilby | Feel It | 123 | 5.9 |
-| 8 | Marc Lenz | Multiverse (Original Mix)  | 125 | 5.8 |
-| 9 | Adam Ten, Mita Gami | High On | 123 | 5.5 |
-| 10 | Colyn | It's All Over | 125 | 6.0 |
-| 11 | James Cole | Khumba (Original Mix)  | 125 | 6.3 |
-| 12 | Hardy Heller, Alex Connors | Paris (Original) | 124 | 6.2 |
-| 13 | DAVI | Self CNTRL (Original Mix) | 125 | 6.6 |
-| 14 | Dilby | Connect the Dots (Oliver Schories & Gorge Remix) | 124 | 6.0 |
-| 15 | Deep Dish | Flashdance (Deep Dish Guitar Redux Extended Remix)  | 126 | 6.2 |
-| 16 | Nic Fanciulli, Robert Courtois | Set Me Free (feat. Robert Courtois) (Extended Mix) | 128 | 6.2 |
-| 17 | Maverick Sabre, Jorja Smith | Slow Down (James Cole Edit) | 126 | 6.0 |
-| 18 | D-Nox | Full Moon (Original Mix) | 125 | 6.0 |
-| 19 | Butch | Same Like Dope But Different (Extended Mix)  | 123 | 6.8 |
-| 20 | Nicolas Rada | Cascadia | 122 | 5.5 |
-| 21 | Shai T | Illusions | 122 | 7.0 |
-| 22 | Rodriguez Jr. & Liset Alea | What Is Real (Deep in the Playa Mix) | 123 | 5.5 |
-| 23 | Cezar Nica | Standard Model | 122 | 6.8 |
+| 1 | Dor Danino, Yamagucci | Seven Eleven (Adam Ten Remix) | 123 | 5.5 |
+| 2 | Dilby | Feel It | 123 | 5.9 |
+| 3 | Gorge, Marc Lenz | Yuna (Original Mix)  | 123 | 5.8 |
+| 4 | Hardy Heller, Alex Connors | Haguenau (Original) | 125 | 5.5 |
+| 5 | Deep Dish | Say Hello (Korolova Extended Remix) | 126 | 5.2 |
+| 6 | James Cole | Miss You feat. E-Soreni (Vocal Mix) | 126 | 6.0 |
+| 7 | Rafael, Adam Ten | Sweet Boy (Original Mix) | 125 | 6.1 |
+| 8 | Hana, Durante, Gorje Hewek | Elysia (Original Mix) | 126 | 6.5 |
+| 9 | Nic Fanciulli, Robert Courtois | Set Me Free (feat. Robert Courtois) (Extended Mix) | 128 | 6.2 |
+| 10 | Deep Dish | Flashdance (Deep Dish Guitar Redux Extended Remix)  | 126 | 6.2 |
+| 11 | Dilby | Connect the Dots (Oliver Schories & Gorge Remix) | 124 | 6.0 |
+| 12 | DAVI | Self CNTRL (Original Mix) | 125 | 6.6 |
+| 13 | Marc Lenz | People Are People | 123 | 6.5 |
+| 14 | Alex Connors, Hardy Heller | Colourblind (Original Mix) | 123 | 6.6 |
+| 15 | James Cole | Khumba (Original Mix)  | 125 | 6.3 |
+| 16 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
+| 17 | Dr. Mirzoyan | Destruction (Ruben Karapetyan Remix) | 122 | 7.0 |
+| 18 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
+| 19 | DAVI | Among Us (Original Mix) | 123 | 5.5 |
+| 20 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
+| 21 | Rezident | Hunter (Enamour Remix)  | 124 | 7.0 |
+| 22 | Butch | No Worries (Toman RMX) | 126 | 6.2 |
+| 23 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
 | 24 | Chaim | Sun Tease (Doctor Dru Edit) | 122 | 5.5 |
 

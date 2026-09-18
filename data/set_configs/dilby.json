@@ -1,5 +1,5 @@
 {
-  "_comentario": "El sonido Dilby en tres sets de 2h. Los 117 temas del sonido van como prefer_ids con bonus alto: el solver los prefiere y usa el resto de la biblioteca solo donde necesita un puente. El genero esta acotado a las seis familias que ese material habita — sin eso entra medio catalogo, porque estos temas estan taggeados en catorce generos distintos.",
+  "_comentario": "Tres sets de 2h del sonido Dilby con peso PROGRESSIVE. La v1 salio muy melodic/deep house: Progressive House era 4 de 24 en dos sets y 0 en el tercero. El primer intento fue sacar 'House' y 'Tech House' del filtro, pero eso es un martillazo: el filtro de genero es binario y borrar un genero entero se lleva el groove junto con lo comercial. Por eso se le agrego al solver `mezcla_objetivo`, que pide una PROPORCION. Ahora los siete generos vuelven a estar permitidos y la balanza la inclina la cuota: 45% progressive, 25% melodic, 15% deep y el resto de relleno.",
   "pool": "data/pool.json",
   "targets_dir": "data/set_targets",
   "exclude_artists": [],
@@ -26,12 +26,13 @@
         "*"
       ],
       "genres": [
-        "Deep House",
-        "House",
-        "Tech House",
+        "Progressive House",
         "Melodic House & Techno",
+        "Deep House",
         "Indie Dance",
-        "Progressive House"
+        "Organic House",
+        "House",
+        "Tech House"
       ],
       "prefer_ids": [
         "168006387",
@@ -152,7 +153,7 @@
         "214516952",
         "15479622"
       ],
-      "prefer_bonus": 14.0,
+      "prefer_bonus": 6.0,
       "beam": 1200,
       "exclude_ids": [
         "123215604",
@@ -162,7 +163,16 @@
         "256567493",
         "29843850"
       ],
-      "_nota_exclude": "Future Rave y disco-house comercial: el filtro de genero no los agarra porque Beatport los tagea Deep House, pero no son este sonido."
+      "_nota_exclude": "Future Rave y disco-house comercial: el filtro de genero no los agarra porque Beatport los tagea Deep House, pero no son este sonido.",
+      "mezcla_objetivo": {
+        "Progressive House": 0.45,
+        "Melodic House & Techno": 0.25,
+        "Deep House": 0.15,
+        "House": 0.08,
+        "Tech House": 0.05,
+        "Indie Dance": 0.05
+      },
+      "peso_mezcla": 8.0
     },
     {
       "num": 107,
@@ -182,24 +192,6 @@
       "e_hi": 6.6,
       "max_per_artist": 2,
       "max_bpm_jump": 2.0,
-      "artists": [
-        "Dilby",
-        "DAVI",
-        "Butch",
-        "Nic Fanciulli",
-        "Deep Dish",
-        "Dor Danino",
-        "Marc Lenz",
-        "Hardy Heller",
-        "James Cole",
-        "Shai T",
-        "Chaim",
-        "Adam Ten",
-        "Trice Be",
-        "Liv Campbell",
-        "Alex Connors",
-        "M.O.S."
-      ],
       "prefer_ids": [
         "208082265"
       ],
@@ -215,7 +207,28 @@
         "256567493",
         "29843850"
       ],
-      "_nota_exclude": "Future Rave y disco-house comercial: el filtro de genero no los agarra porque Beatport los tagea Deep House, pero no son este sonido."
+      "_nota_exclude": "Future Rave y disco-house comercial: el filtro de genero no los agarra porque Beatport los tagea Deep House, pero no son este sonido.",
+      "genres": [
+        "Progressive House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Indie Dance",
+        "Organic House",
+        "House",
+        "Tech House"
+      ],
+      "artists": [
+        "*"
+      ],
+      "mezcla_objetivo": {
+        "Progressive House": 0.4,
+        "Melodic House & Techno": 0.25,
+        "Deep House": 0.2,
+        "House": 0.05,
+        "Tech House": 0.05,
+        "Indie Dance": 0.05
+      },
+      "peso_mezcla": 8.0
     },
     {
       "num": 108,
@@ -239,12 +252,13 @@
         "*"
       ],
       "genres": [
-        "Deep House",
-        "House",
-        "Tech House",
+        "Progressive House",
         "Melodic House & Techno",
+        "Deep House",
         "Indie Dance",
-        "Progressive House"
+        "Organic House",
+        "House",
+        "Tech House"
       ],
       "prefer_ids": [
         "168006387",
@@ -365,7 +379,7 @@
         "214516952",
         "15479622"
       ],
-      "prefer_bonus": 14.0,
+      "prefer_bonus": 6.0,
       "beam": 1200,
       "exclude_ids": [
         "123215604",
@@ -375,7 +389,16 @@
         "256567493",
         "29843850"
       ],
-      "_nota_exclude": "Future Rave y disco-house comercial: el filtro de genero no los agarra porque Beatport los tagea Deep House, pero no son este sonido."
+      "_nota_exclude": "Future Rave y disco-house comercial: el filtro de genero no los agarra porque Beatport los tagea Deep House, pero no son este sonido.",
+      "mezcla_objetivo": {
+        "Progressive House": 0.45,
+        "Melodic House & Techno": 0.25,
+        "Deep House": 0.15,
+        "House": 0.08,
+        "Tech House": 0.05,
+        "Indie Dance": 0.05
+      },
+      "peso_mezcla": 8.0
     }
   ],
   "permitir_repetir_entre_sets": true,

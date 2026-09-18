@@ -196,5 +196,12 @@
     },
     "_no_aplica_backtest": "Esta familia es por definicion una restriccion autoimpuesta: ningun setlist de otro DJ puede refutarla. Mandarla a backtest_rules.py esperando un veredicto es un error de categoria, no una medicion.",
     "_estado": "PROPUESTO con evidencia, sin aplicar. Los dos valores en 0.0. Ademas: ningun modulo lee sonido_propio todavia — encenderlo no es cambiar un numero, es agregar el termino de costo en select()."
+  },
+  "estilo": {
+    "peso_mezcla_genero": {
+      "valor": 8.0,
+      "porque": "Costo por pasarse de la cuota de un genero. Comparado con peso_desvio_arco (3.0), desviarse de la mezcla pedida cuesta mas que un punto de energia: cuando el DJ pide una proporcion, la esta pidiendo en serio.",
+      "evidencia": "2026-09-18: los tres sets del sonido Dilby salieron con Progressive House en 4 de 24 y 0 de 24, porque el filtro de genero es binario y no habia forma de pedir una proporcion."
+    }
   }
 }

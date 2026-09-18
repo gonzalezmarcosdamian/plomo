@@ -131,11 +131,22 @@ def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
 
 
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
-           max_per_artist=1, beam=BEAM):
+           max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `prefer` son ids con descuento en el costo — sirve para forzar que el set
     estrene material nuevo sin romper las restricciones duras.
+
+    `mezcla` es la proporcion objetivo por genero: {"Progressive House": 0.5,
+    "Deep House": 0.3}. Existe porque el filtro de `genres` es binario —un
+    genero entra o no entra— y eso no sabe contestar el pedido mas comun que
+    hace un DJ: "un poco mas progressive". La unica forma de inclinar la balanza
+    era sacar generos enteros, que es un martillazo: se perdia el groove junto
+    con lo comercial. Aca cada genero paga solo cuando YA SE PASO de su cuota,
+    asi que el set se acomoda a la proporcion pedida sin que nada quede vedado.
+
+    Los generos que no figuran en `mezcla` no pagan nada: la cuota es un piso
+    que se persigue, no un techo que se impone.
     """
     prefer = set(prefer)
     # names() y camelot() dependen solo del track: calcularlos una vez evita
@@ -210,6 +221,23 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 c = cost + abs(t["energy"] - tgt) * PESO_ARCO + step
                 if t["id"] in prefer:
                     c -= bonus
+                if mezcla:
+                    g = (t.get("genre") or "").strip()
+                    objetivo = mezcla.get(g)
+                    if objetivo is not None:
+                        ya = sum(1 for x in seq if (x.get("genre") or "").strip() == g)
+                        # El desvio es SIMETRICO a proposito. La primera version
+                        # solo cobraba el exceso, y con eso la cuota nunca se
+                        # alcanzaba: el genero que iba corto no pagaba, pero
+                        # tampoco ganaba nada, asi que el solver no tenia motivo
+                        # para elegirlo. Pedir "45% progressive" daba 25%. Ahora
+                        # ir corto descuenta igual que pasarse cobra, y la cuota
+                        # tira desde los dos lados.
+                        c += ((ya + 1) / (i + 1) - objetivo) * peso_mezcla
+                    elif mezcla:
+                        # Un genero que no figura en la mezcla no es gratis: si
+                        # lo fuera, el solver lo usaria para esquivar la cuota.
+                        c += peso_mezcla * 0.25
                 na_pos = {a: arts.get(a, ()) + (i,) for a in na}
                 nxt.append((c, seq + [t], ids | {t["id"]}, {**arts, **na_pos}))
         if not nxt:
@@ -280,6 +308,8 @@ if __name__ == "__main__":
             bonus=spec.get("prefer_bonus", 6.0),
             max_per_artist=spec.get("max_per_artist", 1),
             beam=spec.get("beam", BEAM),
+            mezcla=spec.get("mezcla_objetivo"),
+            peso_mezcla=spec.get("peso_mezcla", 8.0),
         )
         print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:
