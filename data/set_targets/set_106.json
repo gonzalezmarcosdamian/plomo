@@ -1,0 +1,132 @@
+{
+  "name": "106. Groove de Entrada — Dilby — 2h — 2026-09-18",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Dor Danino, DvirNuns",
+      "title": "Sax A Boom ",
+      "content_id": "264594631"
+    },
+    {
+      "artist": "Dilby & Pornbugs",
+      "title": "Next Round",
+      "content_id": "180153988"
+    },
+    {
+      "artist": "Chaim, Mads Paige",
+      "title": "Phoenix Rising (Original Mix)",
+      "content_id": "148926923"
+    },
+    {
+      "artist": "Adam Ten, Mita Gami",
+      "title": "Night Shift ",
+      "content_id": "81119906"
+    },
+    {
+      "artist": "Hardy Heller, Alex Connors",
+      "title": "Colmar (Original Mix)",
+      "content_id": "251423159"
+    },
+    {
+      "artist": "Dilby, Tom Evans, Bruno Blanc, Monochrome (AU)",
+      "title": "Play It Twice (Dilby Extended Remix)",
+      "content_id": "115985866"
+    },
+    {
+      "artist": "Adam Ten",
+      "title": "I Never Knew (Extended Mix)",
+      "content_id": "207824333"
+    },
+    {
+      "artist": "Hardy Heller, Alex Connors, Sven Kegel",
+      "title": "Musiq (Gorge Remix)",
+      "content_id": "244807769"
+    },
+    {
+      "artist": "DAVI",
+      "title": "The Bay 6 (Pt.2)",
+      "content_id": "145072917"
+    },
+    {
+      "artist": "Chaim",
+      "title": "The Piano One (Kino Todo Remix)",
+      "content_id": "74235938"
+    },
+    {
+      "artist": "Marc Lenz",
+      "title": "Asante (Original Mix)",
+      "content_id": "36745296"
+    },
+    {
+      "artist": "Shai T",
+      "title": "Where The Heart Is (Original Mix)",
+      "content_id": "178572778"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Self ASCND (Original Mix) ",
+      "content_id": "185675309"
+    },
+    {
+      "artist": "Butch",
+      "title": "Countach (Kölsch Remix)",
+      "content_id": "214971773"
+    },
+    {
+      "artist": "Dabeat, Kamilo Sanclemente",
+      "title": "Canis (Morttagua Remix)",
+      "content_id": "180755642"
+    },
+    {
+      "artist": "Guy Gerber",
+      "title": "What To Do (Dor Danino Remix)",
+      "content_id": "24770858"
+    },
+    {
+      "artist": "Cari Golden, Marc Lenz",
+      "title": "Woman in the Wild (Original Mix)",
+      "content_id": "237156491"
+    },
+    {
+      "artist": "James Cole",
+      "title": "Got You (Original Mix) ",
+      "content_id": "28903195"
+    },
+    {
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot (Cid Inc. Remix)",
+      "content_id": "101326027"
+    },
+    {
+      "artist": "Guy Mantzur & Khen",
+      "title": "Where Is Home (Original Mix)",
+      "content_id": "27711393"
+    },
+    {
+      "artist": "James Cole",
+      "title": "Go With Me (Original Mix) ",
+      "content_id": "212080457"
+    },
+    {
+      "artist": "Innēr Sense (ofc)",
+      "title": "Older (Extended Mix)",
+      "content_id": "170368755"
+    },
+    {
+      "artist": "Empire Of The Sun",
+      "title": "We Are The People (ARTBAT Extended Remix)",
+      "content_id": "267166841"
+    },
+    {
+      "artist": "Pavel Petrov",
+      "title": "Way Too High (Original Mix)",
+      "content_id": "104163843"
+    }
+  ]
+}

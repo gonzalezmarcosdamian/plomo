@@ -1,0 +1,132 @@
+{
+  "name": "108. Cierre Groovero — Dilby — 2h — 2026-09-18",
+  "duration_h": 2.0,
+  "bpm_range": [
+    122,
+    128
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Butch, Rony Seikaly, VITO (UK)",
+      "title": "Running Cash (Butch Remix)",
+      "content_id": "91933300"
+    },
+    {
+      "artist": "Deep Dish",
+      "title": "Say Hello (Korolova Extended Remix)",
+      "content_id": "125866221"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Future Avenue",
+      "content_id": "168006387"
+    },
+    {
+      "artist": "Gorge, Marc Lenz",
+      "title": "Yuna (Original Mix) ",
+      "content_id": "167596639"
+    },
+    {
+      "artist": "Marina Maximilian, Adam Ten, Mita Gami",
+      "title": "Million Pieces (Original Mix)",
+      "content_id": "168695963"
+    },
+    {
+      "artist": "Hardy Heller, Alex Connors",
+      "title": "Remembrance (Extended Version)",
+      "content_id": "66230375"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Feel It",
+      "content_id": "26667043"
+    },
+    {
+      "artist": "Marc Lenz",
+      "title": "Multiverse (Original Mix) ",
+      "content_id": "29031977"
+    },
+    {
+      "artist": "Adam Ten, Mita Gami",
+      "title": "High On",
+      "content_id": "18559665"
+    },
+    {
+      "artist": "Colyn",
+      "title": "It's All Over",
+      "content_id": "184057033"
+    },
+    {
+      "artist": "James Cole",
+      "title": "Khumba (Original Mix) ",
+      "content_id": "256877201"
+    },
+    {
+      "artist": "Hardy Heller, Alex Connors",
+      "title": "Paris (Original)",
+      "content_id": "41132176"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Self CNTRL (Original Mix)",
+      "content_id": "16489024"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Connect the Dots (Oliver Schories & Gorge Remix)",
+      "content_id": "6707410"
+    },
+    {
+      "artist": "Deep Dish",
+      "title": "Flashdance (Deep Dish Guitar Redux Extended Remix) ",
+      "content_id": "11709060"
+    },
+    {
+      "artist": "Nic Fanciulli, Robert Courtois",
+      "title": "Set Me Free (feat. Robert Courtois) (Extended Mix)",
+      "content_id": "231835212"
+    },
+    {
+      "artist": "Maverick Sabre, Jorja Smith",
+      "title": "Slow Down (James Cole Edit)",
+      "content_id": "171117235"
+    },
+    {
+      "artist": "D-Nox",
+      "title": "Full Moon (Original Mix)",
+      "content_id": "55003861"
+    },
+    {
+      "artist": "Butch",
+      "title": "Same Like Dope But Different (Extended Mix) ",
+      "content_id": "60433901"
+    },
+    {
+      "artist": "Nicolas Rada",
+      "title": "Cascadia",
+      "content_id": "50865819"
+    },
+    {
+      "artist": "Shai T",
+      "title": "Illusions",
+      "content_id": "226913303"
+    },
+    {
+      "artist": "Rodriguez Jr. & Liset Alea",
+      "title": "What Is Real (Deep in the Playa Mix)",
+      "content_id": "263315442"
+    },
+    {
+      "artist": "Cezar Nica",
+      "title": "Standard Model",
+      "content_id": "96553758"
+    },
+    {
+      "artist": "Chaim",
+      "title": "Sun Tease (Doctor Dru Edit)",
+      "content_id": "221596463"
+    }
+  ]
+}
