@@ -119,3 +119,8 @@ data/batch_nuevos_*.txt
 
 # Historial de reproduccion — dato personal, se regenera con ingest_history.py
 data/tocados/
+
+# reportes de auditoria: se regeneran con audit_sets.py
+data/auditoria_*.txt
+# candidatos crudos del barrido de setlists, antes de curarlos
+data/setlists_candidatos/

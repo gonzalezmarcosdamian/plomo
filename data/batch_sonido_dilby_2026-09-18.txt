@@ -1,0 +1,143 @@
+# El sonido Dilby — tech/melodic house groovy, 120-128 BPM, casi todo menor.
+# Semillas: la playlist de Spotify del 2026-09-18 (Nanda, Remember Me, Trippin', I Want You).
+# Bloque 1: los 12 temas de la playlist. Bloque 2: el catalogo de esos artistas en Muzpa.
+
+# --- las semillas ---
+Dilby - Remember Me
+DAVI - Self R3B00T
+Deep Dish - Flashdance (Shai T Remix)
+Dor Danino - Like A Stone
+Tom Evans - Play It Twice (Dilby Remix)
+Dilby - Trippin
+Marc Lenz - Arabic Soul (Dilby Remix)
+Hardy Heller - Ever Growing (Dilby Mix)
+Butch - I Want You
+James Cole - Khumba
+Dilby - Feel It
+M.O.S. - Nanda (Dilby Remix)
+
+# --- el catalogo de esos artistas ---
+Freddy Be, Dilby, Floorplay (LA) - Lovely Day (Extended Mix)   # 124 Ebm
+Dilby - Darkest Night (Original Mix)   # 123 Cm
+Dilby & Pornbugs - Beyond That   # 124 Fm
+Dilby & Pornbugs - Next Round   # 125 Dm
+Dilby, Trice Be - Feel It (Extended Mix)   # 125 Fm
+Dilby, Simon Mattson, Lazarusman - Give It To Them (Dilby Extended 202   # 124 Em
+Dilby, Sam Dexter, Tom Savage - No Hurry (Extended Mix)   # 128 Dm
+Rosario Galati, Yves Murasca - Lo Que Siento (Dilby Extended Remix)   # 124 B
+David Morales Presents The Face, The Face - Needin' U (Original Mistak   # 130 Am
+Milk & Sugar, David Morales - Higher & Higher (David Morales 1999 Re-E   # 126 Dm
+Roy Davis Jr, Peven Everett - Gabriel (Live Garage Mix)   # 128 Dbm
+Men From The Nile, Roy Davis Jr. - Watch Them Come   # 123 Em
+C-Dock - Traffic Jam (feat. David Wells [C-Dock Dub])   # 123 Em
+Michelle Ayers, David Morales - Respect (Def Classic Mix)   # 123 Fm
+Pete Heller's Big Love - Big Love (David Penn Extended Remix)   # 124 A
+John Summit - La Danza (David Penn Extended Remix)   # 125 Dbm
+Todd Terry, Gypsymen, David Penn - Babarabatiri (David Penn Remix)   # 124 Am
+Basement Jaxx - Do Your Thing (David Penn Remix)   # 124 Gm
+David Guetta, Sia - Titanium (feat. Sia David Guetta & MORTEN Future R   # 126 Cmaj
+Shouse - Love Tonight (David Guetta Extended Remix)   # 126 Cmin
+Oxia - Domino (David Guetta Remix)   # 130 Bbm
+Junior Jack - Stupidisco (David Penn Extended Remix)   # 123 Fm
+Salif Keita, Cesaria Evora, MoBlack, David Mackay, Franc Fala, Benja (   # 120 Dbm
+Heller & Farley Project - Ultra Flava (David Penn Extended Remix)   # 123 Gm
+David Penn - Nobody (Club Mix)   # 122 Fm
+David Penn - Losing You   # 122 Abm
+Todd Terry & Gypsymen - Babarabatiri (David Penn Remix)   # 124 Am
+Jack Back -  (It Happens Sometimes David Penn Extended Remix)   # 122 Bbm
+David Penn - Yeah Yeah   # 122 Am
+David Penn - That Vibe   # 123 Cm
+Jon Cutler - It's Yours (feat. E-Man [David Penn Vocal Mix])   # 126 Bbm
+David Penn & DJ Chus - Will I (Discover Love [feat. Concha Buika] [Med   # 126 Cm
+David Penn - Stand Up (feat. Ramona Renea [Extended Mix])   # 123 Gm
+David Penn & Jabato - El Sur   # 126 Gm
+David Penn & DJ Chus - Esperanza   # 125 Am
+Sophie Lloyd - Calling Out (feat. Dames Brown [David Penn Extended Rem   # 123 Gm
+Candi Staton - Hallelujah Anyway (David Penn Remix)   # 124 F#m
+Ron Hall & The MuthaFunkaz - The Way You Love Me (feat. Marc Evans [Da   # 126 Am
+David Penn & ATFC - Down Wid Da   # 123 Gm
+David Penn & Roland Clark - The Power (Extended Mix)   # 123 Am
+Sandy Rivera - I Can't Stop (David Penn Remix)   # 127 A
+Hardsoul - Self Religion (Believe In Me [feat. Fierce Ruling Diva] [Da   # 126 Cm
+Haji & Emanuel - Weekend (David Penn Remix)   # 122 Bbm
+David Penn & Rober Gaez - Sunshine People   # 127 Am
+Jason Hates Jazz - Pray For Love (DJ Chus & David Penn Vocal Mix)   # 126 Em
+The Shapeshifters, Kimberly Davis - Love's Been Waiting (feat. Kimberl   # 123 Bm
+Guy Gerber - What To Do (Dor Danino Remix)   # 124 Cm
+Dor Danino, DvirNuns - Sax A Boom   # 123 Cm
+Dor Danino, DvirNuns - Sax A Boom (Original Mix)   # 123 C
+40 Thieves - Don't Turn It off (feat. Qzen Dor Danino & Uza - Secret W   # 125 Em
+Dor Danino, Yamagucci - Seven Eleven (Adam Ten Remix)   # 123 Gb
+Made In TLV & Dor Danino - Make a Wish   # 120 Db
+Butch, C.Vogt - Bliss (Beat Tool)   # 120 G#min
+Cassius, Cat Power, Pharrell Williams - Go Up (Butch Remix)   # 123 Gmaj
+Butch - No Worries (2022 Version)   # 126 Dbm
+Butch - Same Like Dope But Different (Extended Mix)   # 123 Am
+Butch - No Worries (Toman RMX)   # 126 F#m
+Nic Fanciulli, Butch - I Want You (Extended Mix)   # 125 Dbm
+Nic Fanciulli, Butch - I Want You (Butch Dub)   # 128 Dbm
+Butch - Countach (Kölsch Remix)   # 125 F
+Butch, Rony Seikaly, VITO (UK) - Running Cash (Butch Remix)   # 128 Gm
+Nic Fanciulli, Robert Courtois - Set Me Free (feat. Robert Courtois Ex   # 128 Bm
+Nic Fanciulli, Calussa - Vente (Extended Mix)   # 128 Gm
+B Beat Girls - For The Same Man (Nic Fanciulli Extended Remix)   # 127 Am
+A'Studio - SOS (feat. Polina [Skylark Remix] [Nic Fanciulli Extended E   # 125 Fm
+Nic Fanciulli, Franky Rizardo, Robert Courtois - Set Me Free feat. Rob   # 128 B
+Roberto Surace - Joys (Nic Fanciulli Club Re-Edit)   # 125 Am
+Sawless - Purple Rain (Alex Connors & Hardy Heller Paisley Park Extend   # 125 Gm
+Hardy Heller, Alex Connors - Remembrance (Extended Version)   # 125 Fmin
+Hardy Heller, Alex Connors, Sven Kegel - Musiq (Gorge Remix)   # 123 Amaj
+Alex Connors, Hardy Heller - Colourblind (Original Mix)   # 123 D#min
+Hardy Heller, Alex Connors - Paris (Original)   # 124 Abm
+Hardy Heller, Alex Connors - Colmar (Original Mix)   # 125 Abm
+Alex Connors, Hardy Heller - Paris (Mihai Popoviciu Remix)   # 124 D#min
+Hardy Heller, Alex Connors - Haguenau (Original)   # 125 Gm
+Marc Lenz - People Are People   # 123 Bm
+Cari Golden, Marc Lenz - Woman in the Wild (Original Mix)   # 124 Em
+Marc Lenz - Multiverse (Original Mix)   # 125 Fm
+Gorge, Marc Lenz - Ansia (Original Mix)   # 123 Gm
+Gorge, Marc Lenz - Yuna (Original Mix)   # 123 Gm
+Gorge, Marc Lenz - Little Aimie (Original Mix)   # 124 Gm
+Marc Lenz - Asante (Original Mix)   # 124 Em
+Marc Lenz - Shujaa (Original Mix)   # 125 Abm
+Deep Dish - Flashdance (Shai T Extended Remix)   # 123 F#m
+Sahar Z - Back in My Arms (Shai T Remix)   # 122 D
+Shai T - Oriki   # 122 F
+Shai T - The Song Of Dolores (Original Mix)   # 120 Gm
+Shai T - Keep The Faith (Original Mix)   # 120 Bm
+Danny Tenaglia, Celeda - Music Is The Answer (Shai T Remix)   # 122 Abm
+Martin Solveig - Rocking Music (Shai T & Tamir Regev Remix)   # 124 Em
+Shai T, Laroz Camel Rider - Believe (Original Mix)   # 118 Dm
+Shai T - Illusions   # 122 D
+Shai T - Summer Oclock (Original Mix)   # 123 G
+Shai T - Our Time   # 120 Dm
+Shai T - Where The Heart Is (Original Mix)   # 122 Amin
+James Cole, Kevin McKay - Somebody That I Used To Know (Extended Mix)   # 129 Dm
+Maverick Sabre, Jorja Smith - Slow Down (James Cole Edit)   # 126 Am
+James Cole - Khumba (Original Mix)   # 125 Ebm
+James Cole - Got You (Original Mix)   # 124 Bm
+James Cole - Go With Me (Original Mix)   # 123 Dm
+James Cole - Khumba (Jay Shepheard Remix)   # 125 Ebm
+Kevin McKay, James Cole - Somebody That I Used To Know (Extended Mix)   # 129 Dmin
+Maverick Sabre, Jorja Smith - Slow Down (James Cole Remix)   # 126 Amaj
+Kevin McKay, James Cole, Darcey, Simon Ellis - Somebody That I Used To   # 129 ?
+James Cole - Miss You feat. E-Soreni (Vocal Mix)   # 126 Am
+Upercent, Knowkontrol - Submissive feat. KnowKontrol (Chaim Remix)   # 120 Db
+Chaim, Mads Paige - Phoenix Rising (Original Mix)   # 124 Am
+Whomadewho - Obstacle (Chaim & Jenia Tarsol Remix)   # 120 Am
+Argy - Ketuvim (Chaim & Jenia Tarsol Remix)   # 121 F
+Niv Ast - Chutney Mayhem (Chaim & Mita Gami Remix)   # 123 Cm
+Chaim - Love Rehab (Jaap Ligthart Reflux Edit)   # 122 Dbm
+Chaim - Round About (Original Mix)   # 123 Amin
+Chaim - Pow Pow (The Organism Remix)   # 121 D
+Chaim - The Piano One (Kino Todo Remix)   # 122 Em
+Chaim - Pow Pow   # 120 Bm
+Chaim - The Piano One   # 122 Em
+Chaim - Pow Pow (Zombies In Miami Remix)   # 122 Gm
+Travis Emmons, Brett Rubin, Trice Be - Grapevine (Original)   # 121 D#min
+Brett Rubin, Trice Be - Vibrations (Extended Mix)   # 121 Abm
+De'Lacy, Deep Dish - Hideaway (Dubfire Needs To Score)   # 122 F#
+VA - Sandy B - Make the World Go Round (Deep Dish Vocal Mix)   # 122 G
+Deep Dish - Say Hello (Korolova Extended Remix)   # 126 Dm
+Deep Dish - Flashdance (Deep Dish Guitar Redux Extended Remix)   # 126 F#m
+Deep Dish - Say Hello (Deep Dish Goes Peak Extended Remix)   # 126 Dm
