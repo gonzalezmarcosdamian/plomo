@@ -106,9 +106,15 @@ escucha. El loop propone; el oído dispone.
   banda por bus.
 
 ### Fase 1 — aprender
-1. **Copiando un tema** — `copiar_tema.py` tiene que dar material usable. Hoy
-   la batería es fiable (99% de bombos a <20 ms) y el bajo está roto (55 notas
-   todas de una semicorchea, 69% fuera de tonalidad).
+1. **Copiando un tema** — `copiar_tema.py` tiene que dar material usable. La
+   batería es fiable (99% de bombos a <20 ms), el bajo pasó de 55 notas todas
+   de una semicorchea (69% fuera de tonalidad) a 46 notas con duración real
+   (96% en escala), y la armonía pasó de aplastarse en un acorde repetido a
+   una progresión real (el bug era puntuar por suma en vez de correlación).
+   `tests/test_copiar_tema.py` y `tests/test_juzgar.py` blindan con audio
+   sintético la parte de la cadena que causó esos tres bugs — no reemplazan
+   probar contra una referencia real, pero evitan que un arreglo se rompa de
+   nuevo en silencio.
 2. **De foros de productores** — qué dicen sobre arreglo, sound design y
    estructura en este género. Buscar reglas con su porqué, no listas.
 3. **De videos de productores** — transcripciones de tutoriales.
