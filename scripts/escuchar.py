@@ -36,7 +36,19 @@ from plomo.midi import leer  # noqa: E402
 
 # Capas donde el largo de la nota no cambia lo que se escucha: en un Drum Rack
 # el sample se dispara entero.
-PERCUSIVAS = {"bateria", "percusion", "repiques", "subida"}
+#
+# "hats" y "metales" se sumaron el 2026-09-19: son las mismas muestras del
+# Drum Rack de bateria, solo que en su propia pista. hats sale literalmente de
+# separar bateria en dos (`_hats()` en idea.py, "se escriben en la bateria
+# como siempre y se separan despues"), y metales dispara la nota CHH del mismo
+# kit ("AG Techno Kit" / "909 Core Kit" en set_v3.py, REMAPA en montar.py trata
+# a las tres pistas igual). Sin esto, --tema es el unico camino que separa
+# hats en su propio archivo y el chequeo de staccato las marcaba ALTO en las
+# nueve secciones del tema completo — la misma alarma mal calibrada que ya
+# describe docs/APRENDIZAJES.md ("Una alarma que avisa mal es peor que
+# ninguna"), esta vez sobre una capa que --pleno/--climax/--tecno nunca habian
+# probado porque nunca la escriben separada.
+PERCUSIVAS = {"bateria", "percusion", "repiques", "subida", "hats", "metales"}
 # Un racimo es dos ataques de capas distintas a menos de esto. Por debajo de
 # 10 ms dos transientes agudos no se escuchan como flam sino como filtro de
 # peine, y como la humanizacion los mueve al azar, la coloracion cambia compas
