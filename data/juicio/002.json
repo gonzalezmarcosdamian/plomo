@@ -1,0 +1,40 @@
+{
+  "vuelta": 2,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "variacion por compas",
+  "mecanismo": "tres relojes desfasados en la bateria, y la variacion hecha por RESTA",
+  "de_donde_sale": "data/vocabulario/foros.json — 'cambio mayor cada 16 compases, cambio menor cada 8: son dos relojes distintos corriendo a la vez'; 'percusion sincopada que entra cada 2 compases y no cada uno'; 'la variacion se hace sacando, no agregando: quitar un kick o un hat, uno o dos tiempos seguidos, NUNCA UN COMPAS ENTERO'",
+  "que_se_cambio": [
+    "_hueco() nuevo en idea.py: en el compas 8 de cada bloque se cae el bombo del cuatro y su clap (el hueco grande); en el compas 4 se cae el hat cerrado del 3.5 (el chico). Los dos en el ultimo tiempo, que es donde el genero pone el fill de fin de frase.",
+    "las congas se CORREN en los compases impares (1.25/3.25 -> 1.75/3.75) en vez de sacarse. La regla del vocabulario dice que la percusion sincopada entra cada dos compases, pero sacarla baja la densidad y 'percusion x compas' es otra de las doce dimensiones. Corriendolas se consigue lo mismo sin tocar el conteo.",
+    "el hat abierto pasa de dos a cuatro contratiempos en la segunda mitad de cada bloque de 16: el reloj de 16 que el vocabulario describe para el segundo drop, aplicado a esa escala."
+  ],
+  "medido": {
+    "variacion por compas": {
+      "antes": 0.64,
+      "despues": 0.84,
+      "objetivo": [0.85, 2.5],
+      "veredicto": "a un centesimo del rango, todavia afuera"
+    },
+    "compases_distintos_de_16_en_el_MIDI": {
+      "bateria_antes": 1,
+      "bateria_despues": 3,
+      "promedio_16_capas_antes": 3.0,
+      "promedio_16_capas_despues": 3.1
+    },
+    "densidad_bateria_eventos_por_compas": {
+      "antes": 12.0,
+      "despues": 11.8,
+      "nota": "la resta casi no bajo la densidad: son dos golpes menos cada ocho compases"
+    }
+  },
+  "control": {
+    "que_se_verifico": "que la mejora no sea un artefacto de la ventana: el render de base arranca en el compas 159 y el nuevo en el 161, porque render.py engancha el transporte donde puede.",
+    "como": "se midio variacion() corriendo el inicio de 0 a 4 compases sobre los dos renders",
+    "resultado": "v3 da 0.64 a 0.70; v4 da 0.83 a 0.84. Las dos bandas no se solapan, asi que el salto es del cambio y no de donde empieza la ventana."
+  },
+  "hallazgo": "Los huecos periodicos NO pueden dar los 10-14 compases distintos de 16 de las referencias, y el motivo es aritmetico: 2, 4 y 8 dividen a 16, asi que un reloj de periodo 8 agrega UNA firma nueva cada ocho compases y no mas. Medido: la bateria pasa de 1 a 3 firmas distintas de 16, no a 10. Lo que dice eso es que la cuenta de las referencias no sale de la grilla de notas — sale del AUDIO: automatizacion de filtro, velocity que se mueve, colas, y one-shots que pasan una sola vez. Por eso la dimension subio 31% en el render con solo 3 firmas distintas en el MIDI. Perseguir 10-14 firmas de MIDI seria optimizar el proxy y romper el loop.",
+  "proxima_dimension": "variacion por compas otra vez — falta 0.01 y el vocabulario tiene el mecanismo mas fuerte sin usar: LFO con re-trigger APAGADO a una tasa que no coincide con el compas. Tres videos independientes del nicho lo dicen con las mismas palabras. Con re-trigger prendido cada nota recibe la misma modulacion desde cero y el compas 2 es bit a bit el compas 1. Es un ajuste de device en Live, no MIDI.",
+  "necesita_al_DJ": false,
+  "render": "postproduction/render/v4_161-176.wav"
+}

@@ -544,6 +544,55 @@ def _hats(bateria: Pista, bpm: float) -> Pista:
     return p
 
 
+# Tres relojes desfasados, y la variacion se hace SACANDO.
+#
+# Por que existe. Cada compas escribia exactamente las mismas posiciones: bombo
+# en las cuatro negras, clap en 1 y 3, hats en los contratiempos, shaker en las
+# semicorcheas 3-7-11-15, congas en 1.25 y 3.25. Lo unico que cambiaba de un
+# compas al otro era la velocidad. Medido sobre el MIDI, la bateria daba UN
+# compas distinto de 16 y los hats tambien uno; el promedio de las dieciseis
+# capas era 3.0 de 16 contra los 10-14 de las referencias. Sobre el render eso
+# es `variacion por compas` = 0.64 contra 0.86 / 1.45 / 2.46 de Tunnel,
+# Panorama y Closing Doors: el tema varia MENOS que el que menos varia de los
+# tres.
+#
+# El oficio del genero contesta con mecanismo, no con consejo. De
+# `data/vocabulario/foros.json`:
+#
+#   "Cambio mayor cada 16 compases [...] Cambio menor cada 8 [...] Son dos
+#    relojes distintos corriendo a la vez, no uno solo."
+#
+#   "percusion sincopada que entra cada 2 compases y no cada uno"
+#
+#   "La variacion se hace sacando, no agregando: quitar un kick o un hat, uno o
+#    dos tiempos seguidos, NUNCA UN COMPAS ENTERO."
+#
+# Las dos mitades de esa ultima regla importan y por motivos distintos. Sacando
+# y no agregando, porque agregar sube la densidad de la seccion y este tema ya
+# venia peleando por no sonar denso. Y nunca un compas entero, porque un compas
+# entero se lee como seccion nueva y le rompe la mezcla al DJ.
+#
+# El hueco va al FINAL de la frase. Es donde el genero lo pone y es lo que hace
+# que se escuche como respiracion y no como que se colgo el secuenciador.
+def _hueco(c: int, capa: str, pulso: float) -> bool:
+    """True si ese golpe NO se escribe en ese compas.
+
+    Reloj de 8 (compas 8 de cada bloque): se cae el bombo del cuatro y el clap
+    que lo acompana. Es el hueco grande, el que se escucha.
+
+    Reloj de 4 (compas 4): se cae el hat cerrado del 3.5. Es el hueco chico —
+    el fill "de a uno o dos tiempos" de la regla, no un compas vacio.
+
+    Los dos caen en el ultimo tiempo, que es donde va el fill de fin de frase.
+    """
+    fase = c % 8
+    if fase == 7:
+        return pulso >= 3.0 and capa in ("kick", "clap")
+    if fase == 3:
+        return pulso >= 3.5 and capa == "hat"
+    return False
+
+
 def _bateria(bpm: float, h: Humano, pleno: bool = False,
              climax: bool = False, tension: bool = False,
              sin_bombo: bool = False) -> Pista:
@@ -584,7 +633,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         paso = c in COMPASES_DE_PASO
         if (pleno or c >= 8) and not sin_bombo:   # el bombo entra en el 9
             for pulso in range(4):
-                if calla(c, pulso):
+                if calla(c, pulso) or _hueco(c, "kick", pulso):
                     continue
                 # El bombo del drop pega mas fuerte. Estaba en 108 en todo el
                 # tema, asi que el momento mas grande tenia exactamente el mismo
@@ -605,7 +654,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # otra, asi que se perdian 3 de los 7 golpes del acelerando.
         if (pleno or c >= 12) and not sin_bombo:
             for pulso in (1, 3):
-                if calla(c, pulso):
+                if calla(c, pulso) or _hueco(c, "clap", pulso):
                     continue
                 p.nota(c, h.pulso("clap", c, pulso), CLAP, 0.25,
                        h.vel("clap", c, pulso, 110 if climax else 90))
@@ -644,7 +693,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # El contratiempo de corchea es donde vive el hat en house: abierto en el
         # 1 y el 3, cerrado en el 2 y el 4. Alternar los dos es lo que arma el
         # vaiven, y ademas evita que los dos caigan encima como pasaba antes.
-        abiertos = ((0.5, 1.5, 2.5, 3.5) if (climax or TECNO)
+        abiertos = ((0.5, 1.5, 2.5, 3.5) if (climax or TECNO or c % 16 >= 8)
                     else (0.5, 2.5))
         for pulso in abiertos:
             # El abierto entra en el compas 3 y las congas en el 5. Escrito
@@ -676,7 +725,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
                 p.nota(c, h.pulso("hat_abierto", c, 3.5), OHH, 0.35,
                        h.vel("hat_abierto", c, 3.5, 74))
                 continue
-            if calla(c, pulso):
+            if calla(c, pulso) or _hueco(c, "hat", pulso):
                 continue
             p.nota(c, h.pulso("hat", c, pulso), CHH, 0.10,
                    h.vel("hat", c, pulso, (40 if c < 8 else 54) + int(10 * emp)))
@@ -753,7 +802,8 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # "Mas electronico y menos conga": los toms en dos posiciones, no en
         # seis. La densidad de percusion de la referencia (9.4 por compas) la
         # ponen los repiques electronicos del 808, no los toms.
-        posiciones = ((1.25, CONGA_BAJA), (3.25, CONGA_ALTA))
+        posiciones = (((1.25, CONGA_BAJA), (3.25, CONGA_ALTA)) if c % 2 == 0
+                      else ((1.75, CONGA_ALTA), (3.75, CONGA_BAJA)))
         for pulso, alt in posiciones:
             if c < 4 and not pleno:
                 continue                 # en la intro solo shaker y rim
