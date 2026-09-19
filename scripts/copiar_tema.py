@@ -51,10 +51,31 @@ BANDAS = {
     "hat": (6000, 11000, 42, 64),
 }
 
-# Solo triadas. Agregar septimas y novenas hace que el matching elija siempre el
-# acorde con mas notas, porque cubre mas energia del croma: la comparacion deja
-# de medir cual acorde suena y pasa a medir cual acorde es mas grande.
-TRIADAS = {"maj": [0, 4, 7], "min": [0, 3, 7]}
+# El vocabulario de acordes, con septimas y novenas.
+#
+# La version anterior se restringia a dos triadas, y el motivo estaba bien
+# diagnosticado: puntuando por SUMA de la energia del croma adentro del acorde,
+# el de mas notas gana siempre porque cubre mas croma. Medido sobre estos mismos
+# 16 compases de "Tunnel", con septimas y novenas habilitadas la suma elige un
+# acorde de CINCO notas en los dieciseis compases. El sesgo es real.
+#
+# Pero la cura mataba al paciente. Con solo triadas, doce de esos dieciseis
+# compases salian "F" —incluidos los que el croma muestra claramente en D— y la
+# progresion entera se aplastaba en un acorde. Un pad de progressive con la
+# fundamental, la septima y la novena sonando a la vez no ES una triada, y
+# obligarlo a serlo no da la triada mas parecida: da cualquier cosa.
+#
+# Lo que saca el sesgo sin perder el vocabulario esta en `_puntaje`.
+ACORDES = {
+    "":     [0, 4, 7],
+    "m":    [0, 3, 7],
+    "sus4": [0, 5, 7],
+    "m7":   [0, 3, 7, 10],
+    "maj7": [0, 4, 7, 11],
+    "7":    [0, 4, 7, 10],
+    "m9":   [0, 3, 7, 10, 2],
+    "add9": [0, 2, 4, 7],
+}
 NOMBRES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 MENOR = [0, 2, 3, 5, 7, 8, 10]
 MAYOR = [0, 2, 4, 5, 7, 9, 11]
@@ -161,9 +182,35 @@ def _bateria(drums: np.ndarray, sr: int, grilla: np.ndarray, semis: int,
     return p
 
 
+def _puntaje(perfil: np.ndarray, raiz: int, grados: list[int]) -> float:
+    """Pearson entre el perfil de croma y la plantilla binaria del acorde.
+
+    Centrar las DOS series es lo que saca el sesgo de tamano. Una plantilla con
+    mas unos tiene media mas alta, asi que al centrarla le baja el aporte de
+    cada nota: un acorde de cinco notas solo gana si esas cinco explican el
+    compas mejor, no por ser cinco.
+
+    Y lo importante, que la suma no hacia: la correlacion PENALIZA la energia
+    que el acorde deja afuera. La formula anterior era `dentro/3 - fuera/9`, y
+    como `fuera = total - dentro` con `total` constante por compas, eso se
+    reduce a maximizar `dentro` a secas — el "menos la energia de afuera" que
+    prometia el comentario era algebraicamente cero.
+
+    Verificado sobre 16 compases de "Tunnel": puntuando por suma, con este
+    vocabulario, el acorde elegido tiene cinco notas en los dieciseis compases.
+    Con la correlacion, ninguno: cuatro triadas y doce cuatriadas.
+    """
+    t = np.zeros(12)
+    for g in grados:
+        t[(raiz + g) % 12] = 1.0
+    a, b = perfil - perfil.mean(), t - t.mean()
+    den = float(np.linalg.norm(a) * np.linalg.norm(b))
+    return float((a * b).sum() / den) if den else -1.0
+
+
 def _armonia(other: np.ndarray, sr: int, grilla: np.ndarray, semis: int,
              bpm: float) -> tuple[Pista, list[str]]:
-    """Un acorde por compas, por correlacion del croma contra triadas."""
+    """Un acorde por compas, por correlacion del croma contra plantillas."""
     croma = librosa.feature.chroma_cqt(y=other, sr=sr, hop_length=HOP)
     veces = librosa.times_like(croma, sr=sr, hop_length=HOP)
 
@@ -176,21 +223,12 @@ def _armonia(other: np.ndarray, sr: int, grilla: np.ndarray, semis: int,
             elegidos.append("-")
             continue
         perfil = franja.mean(axis=1)
-        mejor, puntaje = (0, "min"), -1e9
-        for raiz in range(12):
-            for calidad, grados in TRIADAS.items():
-                # energia dentro del acorde menos energia afuera: premia al que
-                # explica el compas, no al que toca las notas mas frecuentes
-                dentro = sum(perfil[(raiz + g) % 12] for g in grados)
-                fuera = perfil.sum() - dentro
-                v = dentro / len(grados) - fuera / (12 - len(grados))
-                if v > puntaje:
-                    mejor, puntaje = (raiz, calidad), v
-        raiz, calidad = mejor
+        v, raiz, sufijo = max((_puntaje(perfil, r, g), r, n)
+                              for n, g in ACORDES.items() for r in range(12))
         p.acorde(compas=compas, pulso=0,
-                 alturas=[48 + raiz + g for g in TRIADAS[calidad]],
+                 alturas=[48 + raiz + g for g in ACORDES[sufijo]],
                  duracion=3.9, velocidad=64)
-        elegidos.append(NOMBRES[raiz] + ("m" if calidad == "min" else ""))
+        elegidos.append(NOMBRES[raiz] + sufijo)
     return p, elegidos
 
 
