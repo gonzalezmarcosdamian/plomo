@@ -3,15 +3,24 @@
 Que se bajo, por que, y que problema medido resuelve cada uno. Todo es gratis y
 de descarga directa del sitio del fabricante; nada de esto necesita cuenta.
 
-Los `.vst3` estan en `C:\Users\gonza\Documents\VST3` y NO en
-`C:\Program Files\Common Files\VST3`, que es donde Live mira por defecto:
-esa carpeta necesita permisos de administrador y la sesion no los tiene. Para
-que Live los vea hay que apuntarle una sola vez:
+Los diez `.vst3` estan instalados en `C:\Program Files\Common Files\VST3`,
+que es donde Live mira por defecto. No hace falta configurar ninguna carpeta.
+
+**Falta UN toggle, y lo tiene que hacer una persona.** La base del escaner de
+plugins (`%LOCALAPPDATA%\Ableton\Live Database\Live-plugins-1.db`) esta
+vacia y el log dice `Scan start` seguido inmediatamente de `Scan end`: el
+escaneo corre y no mira las carpetas de sistema porque la opcion esta apagada.
 
     Options > Preferences > Plug-Ins
-      Use VST3 Plug-In System Folders   -> On
-      VST3 Plug-In Custom Folder        -> C:\Users\gonza\Documents\VST3
-      Rescan
+      Use VST3 Plug-In System Folders  ->  On
+      (si hace falta) Rescan
+
+No se puede hacer por codigo. El flag vive en `Preferences.cfg`, que es un
+formato binario serializado donde el valor NO esta pegado a su nombre:
+`AreSystemPathsEnabled` aparece seguido del tipo `RemoteableBool` y enseguida
+el campo siguiente, sin un byte de valor en el medio. Parchearlo a ciegas es
+como se rompe la instalacion de un DAW, y ademas Live reescribe ese archivo al
+cerrar, asi que el parche se perderia igual.
 
 ## Lo instalado
 
@@ -25,15 +34,8 @@ que Live los vea hay que apuntarle una sola vez:
 | **TAL-Chorus-LX** | chorus del Juno-60 | el ancho. El bajo propio mide 0.02 de ancho en medios contra 0.27 |
 | **TAL-Vocoder-2** | vocoder vintage | pendiente: voces sin necesitar samples con licencia |
 
-## Lo bajado que falta instalar
-
-Son instaladores y piden permisos; el doble clic lo tiene que hacer una persona.
-
-- `postproduction/descargas/Install_Xfer_OTT.exe` — **OTT**, el compresor
-  multibanda de Xfer. Es el que mas se acerca al "suena producido": la cresta
-  de bateria propia da 12-18 dB contra 9-11 de las referencias.
-- `postproduction/descargas/Sitala-Setup.msi` — **Sitala**, sampler de bateria
-  de 16 pads. Alternativa al Drum Rack con mapeo fijo y conocido.
+| **OTT** (Xfer) | compresor multibanda | el "suena producido": la cresta de bateria propia da 12-18 dB contra 9-11 de las referencias |
+| **Sitala** | sampler de bateria de 16 pads | alternativa al Drum Rack con mapeo fijo y conocido — los Drum Racks de fabrica no siguen el mapa del 909 y eso ya costo dos capas mudas |
 
 ## Lo que hay que bajar a mano (piden mail o cuenta)
 
