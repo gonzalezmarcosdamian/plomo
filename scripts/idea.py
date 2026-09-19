@@ -953,7 +953,28 @@ GANCHO_DULCE = [
 # Aca las clases de altura se meten en una ventana fija y cada voz elige la
 # posicion mas cerca de donde estaba. Es lo que hace una mano: sostiene lo que
 # puede y mueve lo minimo.
-PISO_PAD, TECHO_PAD = 54, 66     # F#3 a F#4: arriba del bajo, abajo del gancho
+#
+# El piso quedaba en 54 (F#3), pero `bajo2` (el doblaje del bajo una octava
+# arriba, `_bajo_medio`) ocupa 42-54 CASI SIEMPRE — 507 de 507 notas en el
+# drop de _check_012, semilla 7 — y por eso el pad tocaba justo donde termina
+# esa capa: 4 de las 7 clases de altura (54, 56, 57, 59) caian adentro de la
+# banda 40-59 que mide `revisa_barro` en escuchar.py, la misma banda donde ya
+# viven bajo, bajo2 y sub. Con eso, en el drop la alarma de banda grave
+# embarrada media 71% con bajo2+sub+bajo+atmosfera (data/juicio/011.json),
+# sin bajar del umbral de 40% aun sacando textura. Simulado sobre el mismo
+# MIDI: sacar atmosfera de la cuenta baja el numero de ~61% a ~18% (con solo
+# bajo/bajo2/sub, que estan ahi a proposito segun data/vocabulario/videos.json
+# — "el bajo va en tres registros, no en uno" — y no son el bug).
+#
+# Subir el piso a 60 (C4) saca las siete clases de altura de la banda 40-59
+# sin excepcion; y el techo sube lo mismo (+6, a 72/C5) para que la ventana
+# siga siendo una octava completa y `_voces` siga encontrando las 12 clases
+# de altura sin quedarse corta. No hay un chequeo de las doce dimensiones ni
+# de escuchar.py que mida colision entre el pad y el gancho (62-81) o los
+# anchos (54-83) en el registro nuevo, asi que ese es un juicio de mezcla que
+# no se puede confirmar solo con MIDI: si el pad se siente empastado con el
+# gancho en el drop, hay que escucharlo.
+PISO_PAD, TECHO_PAD = 60, 72     # C4 a C5: arriba del techo de bajo2 (54)
 
 
 def _voces(tonica: int, escala: list[int], g: int,
