@@ -593,17 +593,28 @@ def _hueco(c: int, capa: str, pulso: float) -> bool:
     return False
 
 
+def _calla(compas: int, pulso: float) -> bool:
+    """True si el bombo/clap calla ahi: el ultimo compas del loop, ultimo pulso.
+
+    Antes vivia como closure adentro de `_bateria` y `_subkick` no lo conocia,
+    asi que el subkick sonaba en el mismo lugar donde `_hueco` y esto le cortan
+    el bombo — la reforma del reloj de 8 (`_hueco`, fase 7, pulso>=3.0) y el
+    final del loop. Medido en `_check_013` con plomo.midi.leer: en pleno1 el
+    subkick tenia 192 notas contra 186 del bombo, con las 6 de mas exactamente
+    en los compases 7/15/23/31/39/47, pulso 3.0 — los huecos de `_hueco`. El
+    subkick documenta su proposito como "se escucha como que el bombo pesa
+    mas": no puede reforzar un golpe que no esta.
+    """
+    return compas == ULTIMO and pulso >= 3.0
+
+
 def _bateria(bpm: float, h: Humano, pleno: bool = False,
              climax: bool = False, tension: bool = False,
              sin_bombo: bool = False) -> Pista:
     """Lo minimo que sostiene el groove. Nada mas."""
     p = Pista("Bateria", bpm, canal=9)
     vuelta = () if climax else VUELTA_BASE
-
-    def calla(compas: int, pulso: float) -> bool:
-        # Ya no calla nada por tension: la subida SUMA. Lo unico que sigue
-        # soltando es el ultimo compas del loop, y solo su ultimo pulso.
-        return compas == ULTIMO and pulso >= 3.0
+    calla = _calla
 
     for c in range(COMPASES):
         # El platillo del drop.
@@ -1956,10 +1967,16 @@ def _subkick(bpm: float, h: Humano) -> Pista:
     estrictamente por debajo de 1.0 asi que no se solapa con el ataque
     siguiente (misma altura siempre: un solape ahi es el bug de
     revisa_huecos, notas que se apagan solas).
+
+    Tiene que callar exactamente donde calla el bombo (`_calla`, `_hueco` con
+    capa "kick"): antes sonaba en TODOS los pulsos sin excepcion, tapando el
+    hueco de fin de frase que `_bateria` sí deja (vuelta 013, data/juicio).
     """
     p = Pista("Subkick", bpm, canal=0)
     for c in range(COMPASES):
         for pulso in range(4):
+            if _calla(c, pulso) or _hueco(c, "kick", pulso):
+                continue
             p.nota(c, h.pulso("kick", c, pulso),
                    grado(0, MENOR, 0, octava=0) + 5, 0.9,
                    h.vel("kick", c, pulso, 96))
