@@ -1,0 +1,77 @@
+{
+  "name": "119. Peak · Oscuro — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Gorge, Marc Lenz",
+      "title": "Ansia (Original Mix) ",
+      "content_id": "267964856"
+    },
+    {
+      "artist": "Monolink",
+      "title": "Return to Oz (Artbat Remix)",
+      "content_id": "218406880"
+    },
+    {
+      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
+      "title": "Perception (Original Mix)",
+      "content_id": "264835495"
+    },
+    {
+      "artist": "Hraach, Armen Miran",
+      "title": "Menq (Nick Warren & Nicolas Rada Remix)",
+      "content_id": "70575391"
+    },
+    {
+      "artist": "Gorkiz, Luca Abayan",
+      "title": "Drowner (Extended Mix)",
+      "content_id": "175740225"
+    },
+    {
+      "artist": "Tinlicker, Helsloot",
+      "title": "Because You Move Me (Extended Mix)",
+      "content_id": "76606343"
+    },
+    {
+      "artist": "Brian Cid",
+      "title": "Observe (Original Mix)",
+      "content_id": "107013244"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Forget (Original Mix)",
+      "content_id": "250886425"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Wakefeld (Original Mix)",
+      "content_id": "75106655"
+    },
+    {
+      "artist": "Carlo Whale, Th;en",
+      "title": "Say It",
+      "content_id": "208913720"
+    },
+    {
+      "artist": "YOTTO",
+      "title": "Aero (Original Mix)",
+      "content_id": "258139866"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Extended Mix)",
+      "content_id": "248235294"
+    },
+    {
+      "artist": "Shar, Gruuve",
+      "title": "Teller (Original Mix)",
+      "content_id": "8729646"
+    }
+  ]
+}

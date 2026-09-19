@@ -1,0 +1,77 @@
+{
+  "name": "118. Peak · Color — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "David Penn & Roland Clark",
+      "title": "The Power (Extended Mix)",
+      "content_id": "124913265"
+    },
+    {
+      "artist": "Einmusik, Jonas Saalbach",
+      "title": "Lagoon",
+      "content_id": "83715786"
+    },
+    {
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bright Things in Front of Us (Extended Mix)",
+      "content_id": "100400460"
+    },
+    {
+      "artist": "Gorje Hewek, Moya (US) & Dulus",
+      "title": "Margaret (Extended Mix)",
+      "content_id": "89193557"
+    },
+    {
+      "artist": "K3V (SL) & Jayy Vibes",
+      "title": "Kingdom of Dreams (Juan Ibanez Remix)",
+      "content_id": "198748289"
+    },
+    {
+      "artist": "Serious Dancers",
+      "title": "Echo (Kebin van Reeken Extended Remix)",
+      "content_id": "51380269"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Paradigm (Extended Mix)",
+      "content_id": "171619083"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Everlong (Ruben Karapetyan Remix)",
+      "content_id": "68108434"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Force Major (Original Mix)",
+      "content_id": "154652439"
+    },
+    {
+      "artist": "Nox Vahn",
+      "title": "Brainwasher (Warung Extended Mix)",
+      "content_id": "61522600"
+    },
+    {
+      "artist": "Praise (BR)",
+      "title": "Kiwi (Extended Mix)",
+      "content_id": "261787150"
+    },
+    {
+      "artist": "Tali Muss, Vakabular",
+      "title": "Solar Focus (Extended Mix)",
+      "content_id": "231586811"
+    },
+    {
+      "artist": "Redspace",
+      "title": "Day Dream (Maze 28 Remix)",
+      "content_id": "252619435"
+    }
+  ]
+}

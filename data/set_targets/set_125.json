@@ -1,0 +1,102 @@
+{
+  "name": "125. After · Oscuro — 2h — 2026-09-19",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Jonathan Kaspar",
+      "title": "Play With Me (Original Mix)",
+      "content_id": "14559341"
+    },
+    {
+      "artist": "8Kays",
+      "title": "Waves (John Digweed & Nick Muir Remix)",
+      "content_id": "157179718"
+    },
+    {
+      "artist": "Jody Wisternoff, PROFF, James Grant, Siobhan Wilson, Takeshi Furukawa",
+      "title": "Mui (Ezequiel Arias Extended Mix)",
+      "content_id": "183545081"
+    },
+    {
+      "artist": "Analog Trip",
+      "title": "Cold Heart (Original Mix)",
+      "content_id": "87765340"
+    },
+    {
+      "artist": "Innellea",
+      "title": "Reflected Wisdom - Five Phases Project (4 / 5)",
+      "content_id": "232352108"
+    },
+    {
+      "artist": "Durante",
+      "title": "Portal Six (Extended Mix)",
+      "content_id": "12093369"
+    },
+    {
+      "artist": "Beswerda",
+      "title": "All for Me (Original Mix)",
+      "content_id": "101370119"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "No Regrets (Extended Mix)",
+      "content_id": "59350179"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Is This Our Earth (Extended Mix)",
+      "content_id": "172027894"
+    },
+    {
+      "artist": "Luis Damora",
+      "title": "Illuminate (Original Mix)",
+      "content_id": "38239187"
+    },
+    {
+      "artist": "Oliver Schories",
+      "title": "Lymn (Original Mix)",
+      "content_id": "60102553"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Brisa (Extended Mix)",
+      "content_id": "19065039"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Kaskazi",
+      "content_id": "202022247"
+    },
+    {
+      "artist": "Jonas Saalbach",
+      "title": "Second Surface (Original Mix)",
+      "content_id": "209805228"
+    },
+    {
+      "artist": "Anton Borin (RU), Bondarev",
+      "title": "Samadhi (Kasper Koman Remix)",
+      "content_id": "126926843"
+    },
+    {
+      "artist": "James Cole",
+      "title": "Go With Me (Original Mix) ",
+      "content_id": "212080457"
+    },
+    {
+      "artist": "Bedrock",
+      "title": "Heaven Scent (Eagles & Butterflies Remix)",
+      "content_id": "131326922"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Initiation",
+      "content_id": "41309264"
+    }
+  ]
+}

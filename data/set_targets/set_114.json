@@ -1,0 +1,77 @@
+{
+  "name": "114. Previa · Organico — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    124
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Volkoder, Adam Ten",
+      "title": "Got Me Crazy (Extended Mix)",
+      "content_id": "79877444"
+    },
+    {
+      "artist": "CIOZ",
+      "title": "Cookie Man (Original Mix)",
+      "content_id": "99856005"
+    },
+    {
+      "artist": "Kasper Koman, Shai T",
+      "title": "Islander",
+      "content_id": "82572381"
+    },
+    {
+      "artist": "Christopher Erre, Greta Meier",
+      "title": "Giza (Original Mix)",
+      "content_id": "191578274"
+    },
+    {
+      "artist": "Fur Coat",
+      "title": "Modular Theory",
+      "content_id": "41569460"
+    },
+    {
+      "artist": "Safar",
+      "title": "Love Parade",
+      "content_id": "188791155"
+    },
+    {
+      "artist": "CHIRUKA",
+      "title": "Ashes Don't Fade (Anton Make Remix)",
+      "content_id": "100304329"
+    },
+    {
+      "artist": "Gorje Hewek, Molac, Dulus",
+      "title": "Astro World (Original Mix)",
+      "content_id": "7864421"
+    },
+    {
+      "artist": "Melodiam (AR)",
+      "title": "Repro Days (Original Mix)",
+      "content_id": "53854227"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Quand Je Serai Seul",
+      "content_id": "187641315"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Lonely Sun (Original Mix)",
+      "content_id": "150535198"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Kermesse",
+      "title": "Funambulo (Original Mix)",
+      "content_id": "142956669"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "111. Apertura · Organico — 2h — 2026-09-19",
+  "duration_h": 2.0,
+  "bpm_range": [
+    118,
+    123
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Felix Raphael, Armen Miran & Cafe De Anatolia",
+      "title": "Soul Guardian",
+      "content_id": "19094949"
+    },
+    {
+      "artist": "Pavel Petrov, Rafael Cerato",
+      "title": "Reflections (Original mix)",
+      "content_id": "250940736"
+    },
+    {
+      "artist": "Cioz",
+      "title": "Soul Fixer",
+      "content_id": "267157161"
+    },
+    {
+      "artist": "Guy Mantzur, Kamila, Khen",
+      "title": "Children With No Name Feat. Kamila (Original Mix)",
+      "content_id": "262498576"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "U & Eyeye",
+      "content_id": "250993586"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Rebit (Original Mix)",
+      "content_id": "59269008"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "I Wish (Original Mix)",
+      "content_id": "51206498"
+    },
+    {
+      "artist": "Joan Retamero, Greta Meier",
+      "title": "The Beginning (Original Mix)",
+      "content_id": "111239667"
+    },
+    {
+      "artist": "BIG Mouth (DXB), Under Control (LB)",
+      "title": "Radio Ga Ga (Extended Mix)",
+      "content_id": "80468010"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Mirage (Original Mix)",
+      "content_id": "32580614"
+    },
+    {
+      "artist": "Dor Danino, Yamagucci",
+      "title": "Seven Eleven (Adam Ten Remix)",
+      "content_id": "188893207"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Tale of the Unexpected (Original Mix)",
+      "content_id": "87157732"
+    },
+    {
+      "artist": "Enamour, Nox Vahn",
+      "title": "Sleep Paralysis (Extended Mix)",
+      "content_id": "137806519"
+    },
+    {
+      "artist": "Gero Pellizzon",
+      "title": "Echoes Beyond (Original Mix)",
+      "content_id": "66204065"
+    },
+    {
+      "artist": "Togni, Rodrives",
+      "title": "Existence (Original Mix)",
+      "content_id": "156328653"
+    },
+    {
+      "artist": "Ekko, Rezident",
+      "title": "Only For A Moment feat. Ekko (andhim Extended Mix)",
+      "content_id": "247785283"
+    },
+    {
+      "artist": "Izhevski, Talemates",
+      "title": "AfrikaBurn (Extended Mix)",
+      "content_id": "20837835"
+    },
+    {
+      "artist": "Redspace",
+      "title": "Neuroleptic (Agustin Pietrocola Remix)",
+      "content_id": "187915469"
+    }
+  ]
+}

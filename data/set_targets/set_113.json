@@ -1,0 +1,77 @@
+{
+  "name": "113. Previa · Oscuro — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    124
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Marc DePulse, Rafael Cerato",
+      "title": "Cocobolo",
+      "content_id": "246355061"
+    },
+    {
+      "artist": "WhoMadeWho & Blue Hawaii",
+      "title": "Kiss Me Hard (Adam Ten Remix)",
+      "content_id": "25650242"
+    },
+    {
+      "artist": "Lars Horton",
+      "title": "Silent Protocol (Extended Mix)",
+      "content_id": "7544531"
+    },
+    {
+      "artist": "Marsh",
+      "title": "Hymn (Hernan Cattaneo & Simply City Extended Mix)",
+      "content_id": "124599164"
+    },
+    {
+      "artist": "Christopher Erre, Greta Meier",
+      "title": "Giza (Agustin Pietrocola Remix)",
+      "content_id": "116310879"
+    },
+    {
+      "artist": "Hraach, Armen Miran",
+      "title": "Traveller (Original Mix)",
+      "content_id": "241036257"
+    },
+    {
+      "artist": "Cioz & T.M.A",
+      "title": "Hey Honey",
+      "content_id": "129308808"
+    },
+    {
+      "artist": "Supacooks, Bondarev",
+      "title": "Activator (Original Mix)",
+      "content_id": "266167666"
+    },
+    {
+      "artist": "Cary Crank, OBL",
+      "title": "Spitfire (Gabriel Di Pasqua Remix) ",
+      "content_id": "39445153"
+    },
+    {
+      "artist": "Durante, Mayro",
+      "title": "Mantra (Extended Mix)",
+      "content_id": "147555802"
+    },
+    {
+      "artist": "Budakid",
+      "title": "Hearts (Argia Remix)",
+      "content_id": "109081759"
+    },
+    {
+      "artist": "Bedouin, Miluhska",
+      "title": "Started Something (feat. Miluhska)",
+      "content_id": "160495909"
+    },
+    {
+      "artist": "Redspace",
+      "title": "Split Personality (Original Mix)",
+      "content_id": "218569494"
+    }
+  ]
+}

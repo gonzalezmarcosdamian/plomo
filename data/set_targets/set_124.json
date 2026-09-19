@@ -1,0 +1,102 @@
+{
+  "name": "124. After · Color — 2h — 2026-09-19",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "&ME, Rampa, Adam Port, Keinemusik, chuala",
+      "title": "Say What (feat. Chuala) (feat. Chuala)",
+      "content_id": "129739585"
+    },
+    {
+      "artist": "Lane 8 ft. Solomon Grey",
+      "title": "Diamonds (Original Mix)",
+      "content_id": "43416483"
+    },
+    {
+      "artist": "Hernan Cattaneo, Husa & Zeyada",
+      "title": "Love Is Coming Back (Club Mix)",
+      "content_id": "89421126"
+    },
+    {
+      "artist": "Durante & Elliot Toller",
+      "title": "Ceres",
+      "content_id": "226658028"
+    },
+    {
+      "artist": "M.O.S., Leonid Sivelkin, Krasa Rosa",
+      "title": "On The Strings Of Love (Original Mix)",
+      "content_id": "157561207"
+    },
+    {
+      "artist": "NUFECTS",
+      "title": "Inferno (Extended Mix)",
+      "content_id": "12342979"
+    },
+    {
+      "artist": "Redspace, Unusual Soul",
+      "title": "White Room (Original Mix)",
+      "content_id": "132240211"
+    },
+    {
+      "artist": "Julian Nates",
+      "title": "The Great Attractor (Original Mix)",
+      "content_id": "134778545"
+    },
+    {
+      "artist": "Shai T",
+      "title": "Summer Oclock (Original Mix) ",
+      "content_id": "46457686"
+    },
+    {
+      "artist": "Tali Muss, 84 Avenue",
+      "title": "Nebula (Extended Mix)",
+      "content_id": "177543291"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Shuttered (Original Mix)",
+      "content_id": "210073756"
+    },
+    {
+      "artist": "Aman Anand & Da Luka",
+      "title": "Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix)",
+      "content_id": "50536262"
+    },
+    {
+      "artist": "Marsh",
+      "title": "Beech Street (Simon Doty Extended Mix)",
+      "content_id": "38435770"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Vibration (Original Mix)",
+      "content_id": "214160790"
+    },
+    {
+      "artist": "Marc Lenz",
+      "title": "People Are People",
+      "content_id": "132804349"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Red Lights From Afar (Ruben Karapetyan Remix)",
+      "content_id": "13428525"
+    },
+    {
+      "artist": "Jeremy Olander",
+      "title": "Andköln (Hunter/Game Remix)",
+      "content_id": "100016694"
+    },
+    {
+      "artist": "Raphael Palacci",
+      "title": "Big Jet Plane (Remix)",
+      "content_id": "13187756"
+    }
+  ]
+}

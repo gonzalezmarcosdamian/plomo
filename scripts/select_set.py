@@ -196,6 +196,13 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     dur_med = sorted(t.get("dur_seg") or 0 for t in pool)[len(pool) // 2] or 300
     if not objetivo_seg:
         objetivo_seg = n * dur_med
+    # El umbral de "paso plano" no puede ser absoluto. Un set de 13 tracks con
+    # banda de 1.5 puntos tiene un paso natural de 0.12: con el umbral fijo en
+    # 0.15 el arco entero contaba como plano y la penalizacion empujaba a dar
+    # pasos grandes en una sola direccion. Medido: la autocorrelacion de los
+    # saltos salia +0.5 en los sets cortos, peor que el +0.0 original.
+    paso_natural = (e_hi - e_lo) / max(2, n - 1)
+    umbral_plano = max(0.08, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0)]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
@@ -261,7 +268,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     # (n=163). Quedarse quieto en energia cuesta, igual que
                     # quedarse quieto en la rueda.
                     de = t["energy"] - prev["energy"]
-                    if abs(de) < ENERGIA_QUIETA:
+                    if abs(de) < umbral_plano:
                         step += PESO_ENERGIA_QUIETA
                         n_signo, n_racha = 0, 0
                     else:

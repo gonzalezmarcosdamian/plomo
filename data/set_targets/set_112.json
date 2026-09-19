@@ -1,0 +1,77 @@
+{
+  "name": "112. Previa · Color — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    124
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Gorje Hewek & Facundo Losardo",
+      "title": "Endless History (12\" Version)",
+      "content_id": "137328114"
+    },
+    {
+      "artist": "House Mafia",
+      "title": "Si No Creyera",
+      "content_id": "123928958"
+    },
+    {
+      "artist": "Garden City Movement, Mita Gami",
+      "title": "Untouchable (Original Mix)",
+      "content_id": "159652256"
+    },
+    {
+      "artist": "Hernan Cattaneo & Marcelo Vasami",
+      "title": "Scope",
+      "content_id": "158022171"
+    },
+    {
+      "artist": "Santos (AR), Jussto",
+      "title": "This Is Rocking It (Original Mix)",
+      "content_id": "245723733"
+    },
+    {
+      "artist": "Serge Canteros",
+      "title": "Delusions (Original Mix)",
+      "content_id": "18389413"
+    },
+    {
+      "artist": "Cesar Borra",
+      "title": "Don't Kill My Vibe (Steven Flynn Remix)",
+      "content_id": "102730439"
+    },
+    {
+      "artist": "Simos Tagias",
+      "title": "Vortex ",
+      "content_id": "263394530"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Chroma (Original Mix)",
+      "content_id": "125769602"
+    },
+    {
+      "artist": "Greg Ochman",
+      "title": "In Between Dreams",
+      "content_id": "129731006"
+    },
+    {
+      "artist": "Kyotto",
+      "title": "District (Original Mix)",
+      "content_id": "57011885"
+    },
+    {
+      "artist": "Franky Wah",
+      "title": "Desert Dance (Original Mix)",
+      "content_id": "180668126"
+    },
+    {
+      "artist": "Khen",
+      "title": "Some Little Secrets",
+      "content_id": "16097109"
+    }
+  ]
+}

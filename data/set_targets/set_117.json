@@ -1,0 +1,102 @@
+{
+  "name": "117. Prime Time · Organico — 2h — 2026-09-19",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "DAVI",
+      "title": "Future Avenue",
+      "content_id": "168006387"
+    },
+    {
+      "artist": "Spencer Brown",
+      "title": "Comeback Kids (Original Mix)",
+      "content_id": "155709073"
+    },
+    {
+      "artist": "Paul Thomas",
+      "title": "Hippias (Agustin Pietrocola Remix)",
+      "content_id": "19702825"
+    },
+    {
+      "artist": "D-Nox, Two Of A Kind, Gai Barone",
+      "title": "Vida (DJ Zombi Remix)",
+      "content_id": "42459205"
+    },
+    {
+      "artist": "Malone, BLOND.ISH, Archila",
+      "title": "Voices Above (Original Mix)",
+      "content_id": "16438342"
+    },
+    {
+      "artist": "Colyn, Read the News",
+      "title": "See the Light (Original Mix)",
+      "content_id": "108921781"
+    },
+    {
+      "artist": "Roisin Murphy",
+      "title": "Dear Miami (Bedouin Extended Remix)",
+      "content_id": "5442525"
+    },
+    {
+      "artist": "Movement Machina",
+      "title": "Adaptation (Donny Carr Remix)",
+      "content_id": "126614108"
+    },
+    {
+      "artist": "Dabeat",
+      "title": "Red Sky Night (Original Mix)",
+      "content_id": "246751240"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Rawai (Extended Mix)",
+      "content_id": "103956355"
+    },
+    {
+      "artist": "Solis [US]",
+      "title": "Una Volta (Extended Mix)",
+      "content_id": "139846182"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Mauro Aguirre",
+      "title": "Looking For You (Extended Mix)",
+      "content_id": "89039390"
+    },
+    {
+      "artist": "Kiko Franco",
+      "title": "LOW (Extended Mix)",
+      "content_id": "70162399"
+    },
+    {
+      "artist": "InfeXus & ANZA",
+      "title": "Africa (Extended Mix)",
+      "content_id": "102676153"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Fruit",
+      "content_id": "6558348"
+    },
+    {
+      "artist": "Redspace, Diego Riga",
+      "title": "Phantom Sun (Extended Mix)",
+      "content_id": "227739486"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Opposite (Original Mix)",
+      "content_id": "186751022"
+    },
+    {
+      "artist": "Nick Warren, Martin Fredes",
+      "title": "Kairos (Original Mix)",
+      "content_id": "128348541"
+    }
+  ]
+}

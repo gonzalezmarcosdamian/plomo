@@ -101,7 +101,7 @@ def cargar_tracks() -> list[dict]:
     rows = con.execute(
         """
         SELECT c.FolderPath, a.Name, c.Title, c.BPM, k.ScaleName, c.Commnt,
-               l.Name, g.Name
+               l.Name, g.Name, c.created_at
         FROM djmdContent c
         LEFT JOIN djmdArtist a ON a.ID = c.ArtistID
         LEFT JOIN djmdKey   k ON k.ID = c.KeyID
@@ -116,7 +116,7 @@ def cargar_tracks() -> list[dict]:
     con.close()
 
     out = []
-    for folder, artist, title, bpm_raw, key, commnt, label, genre in rows:
+    for folder, artist, title, bpm_raw, key, commnt, label, genre, creado in rows:
         m = ENERGY_RE.search(commnt or "")
         out.append({
             "path": Path(folder),
@@ -125,6 +125,7 @@ def cargar_tracks() -> list[dict]:
             "key": key or "?",
             "energy": float(m.group(1)) if m else None,
             "label": label or "", "genre": genre or "",
+            "creado": str(creado or ""),
         })
     return out
 
@@ -216,10 +217,17 @@ VISTAS = {
 }
 
 
-def _prefijo(t: dict) -> str:
-    """Prefijo que hace util el orden alfabetico de la carpeta."""
+def _prefijo(t: dict, orden: int | None = None) -> str:
+    """Prefijo que hace util el orden alfabetico de la carpeta.
+
+    Si viene `orden`, va adelante y numera de MAS NUEVO a mas viejo dentro del
+    grupo: el explorador ordena por nombre, asi que 001 queda arriba. Es la
+    unica forma de que "lo ultimo que baje" este a la vista sin depender de
+    ordenar por fecha a mano cada vez que se abre una carpeta.
+    """
     e = f"E{t['energy']:.1f}" if t["energy"] is not None else "E---"
-    return f"{e} {t['bpm']:.0f} {t['key']} - "
+    cabeza = f"{orden:03d} " if orden is not None else ""
+    return f"{cabeza}{e} {t['bpm']:.0f} {t['key']} - "
 
 
 # -- enlazado ---------------------------------------------------------------
@@ -333,8 +341,11 @@ def main() -> None:
         total_grupos += len(grupos)
         for grupo, ts in sorted(grupos.items()):
             destino_dir = args.raiz / carpeta / _sano(grupo)
-            for t in ts:
-                enl.enlazar(t["path"], destino_dir / (_prefijo(t) + t["path"].name))
+            # Lo mas nuevo primero DENTRO de cada carpeta: se ordena por fecha
+            # de ingreso descendente y el numero va al principio del nombre.
+            ts = sorted(ts, key=lambda x: x.get("creado", ""), reverse=True)
+            for i, t in enumerate(ts, 1):
+                enl.enlazar(t["path"], destino_dir / (_prefijo(t, i) + t["path"].name))
             if args.m3u and not args.dry:
                 destino_dir.mkdir(parents=True, exist_ok=True)
                 (destino_dir / f"{_sano(grupo)}.m3u8").write_text(

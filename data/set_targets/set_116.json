@@ -1,0 +1,102 @@
+{
+  "name": "116. Prime Time · Oscuro — 2h — 2026-09-19",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Adeva, Groove P",
+      "title": "Hold On Honey (Extended Mix)",
+      "content_id": "10773030"
+    },
+    {
+      "artist": "8Kays x Juan Hansen",
+      "title": "Falling Down (Chris Avantgarde Remix)",
+      "content_id": "30972853"
+    },
+    {
+      "artist": "Khen",
+      "title": "Closing Doors (Original Mix)",
+      "content_id": "199550938"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Self ASCND (Original Mix) ",
+      "content_id": "185675309"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "All That I Lost",
+      "content_id": "23816256"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Quiral",
+      "content_id": "7830412"
+    },
+    {
+      "artist": "Cary Crank, OBL",
+      "title": "Face the Sun (Aman Anand Remix)",
+      "content_id": "138438414"
+    },
+    {
+      "artist": "SCRIPT",
+      "title": "On The Low (Extended Mix)",
+      "content_id": "103567259"
+    },
+    {
+      "artist": "Colyn",
+      "title": "Jatayu (Extended Version)",
+      "content_id": "88927474"
+    },
+    {
+      "artist": "Cristoph",
+      "title": "Signal (Original Mix)",
+      "content_id": "41934954"
+    },
+    {
+      "artist": "Monolink, Stephan Jolk",
+      "title": "The Silence (Original Mix)",
+      "content_id": "19819937"
+    },
+    {
+      "artist": "Dilby, Simon Mattson, Lazarusman",
+      "title": "Give It To Them (Dilby Extended 2022 Rework) ",
+      "content_id": "190211950"
+    },
+    {
+      "artist": "Callecat & Paul Hazendonk",
+      "title": "State of Mind (Noiyse Project Remix)",
+      "content_id": "102917117"
+    },
+    {
+      "artist": "Massano",
+      "title": "The Feeling (2022 Remaster)",
+      "content_id": "34902668"
+    },
+    {
+      "artist": "James Cole",
+      "title": "Got You (Original Mix) ",
+      "content_id": "28903195"
+    },
+    {
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot",
+      "content_id": "97553620"
+    },
+    {
+      "artist": "Cherry (UA)",
+      "title": "Giza (Original Mix)",
+      "content_id": "81627532"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Don't Kill the Messenger",
+      "content_id": "182281408"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "123. Cierre · Organico — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Rafael Cerato, Kinky Sound",
+      "title": "Attack (Original Mix)",
+      "content_id": "25913751"
+    },
+    {
+      "artist": "Budakid",
+      "title": "Infinity",
+      "content_id": "222696210"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Beyond Us (Extended Mix)",
+      "content_id": "22034915"
+    },
+    {
+      "artist": "Tali Muss, Mayro",
+      "title": "Dimension Of Space (Original Mix)",
+      "content_id": "207638313"
+    },
+    {
+      "artist": "Braxton",
+      "title": "Torn (feat. Danni Wells) [Extended Mix]",
+      "content_id": "116966407"
+    },
+    {
+      "artist": "Tantum, Rezident",
+      "title": "Grauzone",
+      "content_id": "24514459"
+    },
+    {
+      "artist": "Gorje Hewek, Dulus",
+      "title": "Earth (Original Mix)",
+      "content_id": "2009006"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Sinking Sky",
+      "content_id": "77712466"
+    },
+    {
+      "artist": "Rivo",
+      "title": "Last Night (Extended)",
+      "content_id": "61238021"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Amethyst (Lucas Zarate Remix)",
+      "content_id": "175034690"
+    },
+    {
+      "artist": "Niko Ava",
+      "title": "Freedom (Original Mix)",
+      "content_id": "162617230"
+    },
+    {
+      "artist": "Joris Voorn, Alex Kennon",
+      "title": "Blinding Lights (Joris Voorn Remix)",
+      "content_id": "144808595"
+    },
+    {
+      "artist": "Nora En Pure",
+      "title": "Spring Embers (Extended Mix)",
+      "content_id": "245930317"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "120. Peak · Organico — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Maze 28",
+      "title": "Redux",
+      "content_id": "115416800"
+    },
+    {
+      "artist": "Ale Russo",
+      "title": "Wake Up (Original Mix)",
+      "content_id": "190246800"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Echoes From Below (Extended Mix)",
+      "content_id": "257221487"
+    },
+    {
+      "artist": "Culoe De Song",
+      "title": "Mount Zion (Jonathan Kaspar Remix)",
+      "content_id": "204025941"
+    },
+    {
+      "artist": "Rauschhaus",
+      "title": "Morning Walks",
+      "content_id": "161573466"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Vivere (Extended Mix)",
+      "content_id": "194212659"
+    },
+    {
+      "artist": "Francisco Manrique",
+      "title": "The Fine Universe (Mike Kohl Remix)",
+      "content_id": "226932772"
+    },
+    {
+      "artist": "Lost Desert",
+      "title": "Aalam Waahid (Original Mix)",
+      "content_id": "127040310"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
+      "content_id": "117129270"
+    },
+    {
+      "artist": "Fur Coat, Running Pine",
+      "title": "Hurricane (Tim Green Remix)",
+      "content_id": "102834121"
+    },
+    {
+      "artist": "Pachanga Boys",
+      "title": "Time",
+      "content_id": "149018852"
+    },
+    {
+      "artist": "Rezident",
+      "title": "Hunter (Enamour Remix) ",
+      "content_id": "102016112"
+    },
+    {
+      "artist": "Martin Fredes & GEØVHÄN",
+      "title": "Deep Story (Ruben Karapetyan Remix)",
+      "content_id": "148022663"
+    }
+  ]
+}

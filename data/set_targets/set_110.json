@@ -1,0 +1,102 @@
+{
+  "name": "110. Apertura · Oscuro — 2h — 2026-09-19",
+  "duration_h": 2.0,
+  "bpm_range": [
+    118,
+    123
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Audio Junkies",
+      "title": "Aspects of Rhythm ",
+      "content_id": "144917505"
+    },
+    {
+      "artist": "Cheema (IT)",
+      "title": "Daunia Disko (Of Norway Version)",
+      "content_id": "183481820"
+    },
+    {
+      "artist": "Guy J",
+      "title": "A Moment Of Clarity (Original Mix)",
+      "content_id": "103873490"
+    },
+    {
+      "artist": "Solomun",
+      "title": "Customer Is King",
+      "content_id": "76614482"
+    },
+    {
+      "artist": "Le Youth",
+      "title": "About Us (Extended Mix)",
+      "content_id": "6550532"
+    },
+    {
+      "artist": "Adam Ten, Mita Gami",
+      "title": "Night Shift ",
+      "content_id": "81119906"
+    },
+    {
+      "artist": "Kebin Van Reeken",
+      "title": "Endurance (Original Mix)",
+      "content_id": "130697914"
+    },
+    {
+      "artist": "Nandu",
+      "title": "Your Heart Stole My Life (Original Mix)",
+      "content_id": "67706913"
+    },
+    {
+      "artist": "Ruben Karapetyan",
+      "title": "Neurotransmitter (Extended Mix)",
+      "content_id": "126363"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Keep On (Extended Mix)",
+      "content_id": "16127516"
+    },
+    {
+      "artist": "TPS",
+      "title": "Control (Kostya Outta Remix)",
+      "content_id": "8218025"
+    },
+    {
+      "artist": "Hraach",
+      "title": "Promises (Original Mix)",
+      "content_id": "46009275"
+    },
+    {
+      "artist": "DOMA",
+      "title": "Kaleidoscope (Original Mix)",
+      "content_id": "78502363"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Kapalla (Extended Mix)",
+      "content_id": "263336960"
+    },
+    {
+      "artist": "EdOne, Weizman",
+      "title": "Misery (Original Mix)",
+      "content_id": "94641481"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Dope Riddim (Original Mix)",
+      "content_id": "224504691"
+    },
+    {
+      "artist": "Jody Wisternoff & James Grant",
+      "title": "Blue Space (feat. Jinadu)",
+      "content_id": "10116936"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Morning Dew (Original Mix)",
+      "content_id": "96351317"
+    }
+  ]
+}

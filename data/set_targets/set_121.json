@@ -1,0 +1,77 @@
+{
+  "name": "121. Cierre · Color — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Jamie Stevens x Kasey Taylor",
+      "title": "Verlaine (Mixed)",
+      "content_id": "17485314"
+    },
+    {
+      "artist": "MKLY & Sides",
+      "title": "Mauro (Tantum extended remix)",
+      "content_id": "138444955"
+    },
+    {
+      "artist": "Durante, Ezequiel Arias",
+      "title": "Dream Controller (Extended Mix)",
+      "content_id": "7798318"
+    },
+    {
+      "artist": "Audio Junkies, AVIV BENS",
+      "title": "Perico (Original Mix)",
+      "content_id": "189190138"
+    },
+    {
+      "artist": "Melodiam",
+      "title": "Old Garden",
+      "content_id": "72587871"
+    },
+    {
+      "artist": "Tinlicker",
+      "title": "Just To Hear You Say (Joseph Ray Extended Mix)",
+      "content_id": "110259483"
+    },
+    {
+      "artist": "Sebastian Sellares",
+      "title": "Garden of Eden (Extended Mix)",
+      "content_id": "250104030"
+    },
+    {
+      "artist": "Facundo Borras",
+      "title": "Whispers from Dawn (Ruben Karapetyan Remix)",
+      "content_id": "195537216"
+    },
+    {
+      "artist": "Amir Telem",
+      "title": "How To Learn Something New (Greg Ochman Remix)",
+      "content_id": "114547127"
+    },
+    {
+      "artist": "Andrea Cassino, Lio Q & Niceshot",
+      "title": "Wind of Change (Extended Mix)",
+      "content_id": "80512405"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Aer8 (Juan Pablo Torrez Remix)",
+      "content_id": "231052947"
+    },
+    {
+      "artist": "Rodriguez Jr. & Liset Alea",
+      "title": "What Is Real (Deep in the Playa Mix)",
+      "content_id": "263315442"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Volver (Sinan Arsan Remix)",
+      "content_id": "123697693"
+    }
+  ]
+}

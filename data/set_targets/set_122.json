@@ -1,0 +1,77 @@
+{
+  "name": "122. Cierre · Oscuro — 1h30 — 2026-09-19",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Dimuth K",
+      "title": "Abyssal (Emi Galvan Remix)",
+      "content_id": "145322606"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "The Quiet Between Us (Original Mix)",
+      "content_id": "82098194"
+    },
+    {
+      "artist": "Cristoph, ADZ",
+      "title": "Solpaz",
+      "content_id": "260096829"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Hydra",
+      "content_id": "149501053"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Pranayama",
+      "content_id": "160831995"
+    },
+    {
+      "artist": "Maezbi, Nicolas Viana",
+      "title": "Smooth (Original Mix)",
+      "content_id": "58422404"
+    },
+    {
+      "artist": "Gorje Hewek, Lost Desert, Volen Sentir",
+      "title": "Fluminnese (Dub)",
+      "content_id": "224734723"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Operator (Maze 28 Remix)",
+      "content_id": "1426078"
+    },
+    {
+      "artist": "D-Nox, Baya, LENN V",
+      "title": "Silence (Extended Mix)",
+      "content_id": "100091235"
+    },
+    {
+      "artist": "Redspace, M.SON, Serge Pronichev",
+      "title": "Jets (Original Mix)",
+      "content_id": "81894397"
+    },
+    {
+      "artist": "Cary Crank & Kadhem",
+      "title": "Dusk Till Dawn (feat. Hydrah) [Lian Gold & Erika Krall Remix]",
+      "content_id": "214590367"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Zalvador",
+      "title": "Elyseum (Weird Sounding Dude Extended Remix)",
+      "content_id": "107307995"
+    },
+    {
+      "artist": "Adam Ten, Mita Gami",
+      "title": "High On",
+      "content_id": "18559665"
+    }
+  ]
+}
