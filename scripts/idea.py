@@ -631,6 +631,9 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # el principio, y al principio no hay que empujarlo.
         emp = 0.0 if c in vuelta else _empuje(c)
         paso = c in COMPASES_DE_PASO
+        # Se calcula aca, antes del clap, porque el fantasma de clap en TECNO
+        # necesita saber si el abierto ya ocupa 1.5/3.5 (ver mas abajo).
+        cuatro_abiertos = climax or TECNO or c % 16 >= 8
         if (pleno or c >= 8) and not sin_bombo:   # el bombo entra en el 9
             for pulso in range(4):
                 if calla(c, pulso) or _hueco(c, "kick", pulso):
@@ -667,7 +670,18 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
             # destiempo". Lake Of Fire mide 7.8 claps por compas pero con 7.7
             # ms de dispersion; lo que da el numero es la regularidad, no
             # golpes que anticipan.
-            if TECNO:
+            # Este fantasma nacio el mismo dia que TECNO empezo a poner el hat
+            # abierto en 1.5 y 3.5 (climax or TECNO en la linea de "abiertos"),
+            # pero un commit despues, sin mirar esa condicion: escuchar.py
+            # nunca corrio --tecno hasta la vuelta 007 y el choque quedo
+            # invisible nueve dias. bateria:39 (clap) contra bateria:46
+            # (abierto) EN EL MISMO PULSO, siempre que TECNO esta prendido
+            # porque TECNO por si solo ya hace cuatro_abiertos verdadero: no
+            # es un choque ocasional, es el 100% de los compases con clap.
+            # El fantasma existe para rellenar sin tocar el contratiempo; en
+            # el pulso donde ya toca el abierto no rellena nada, apila un
+            # segundo transitorio agudo encima del primero.
+            if TECNO and not cuatro_abiertos:
                 for pulso in (1.5, 3.5):
                     if calla(c, pulso):
                         continue
@@ -693,7 +707,6 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # El contratiempo de corchea es donde vive el hat en house: abierto en el
         # 1 y el 3, cerrado en el 2 y el 4. Alternar los dos es lo que arma el
         # vaiven, y ademas evita que los dos caigan encima como pasaba antes.
-        cuatro_abiertos = climax or TECNO or c % 16 >= 8
         abiertos = (0.5, 1.5, 2.5, 3.5) if cuatro_abiertos else (0.5, 2.5)
         for pulso in abiertos:
             # El abierto entra en el compas 3 y las congas en el 5. Escrito
