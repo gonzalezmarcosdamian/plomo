@@ -693,8 +693,8 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # El contratiempo de corchea es donde vive el hat en house: abierto en el
         # 1 y el 3, cerrado en el 2 y el 4. Alternar los dos es lo que arma el
         # vaiven, y ademas evita que los dos caigan encima como pasaba antes.
-        abiertos = ((0.5, 1.5, 2.5, 3.5) if (climax or TECNO or c % 16 >= 8)
-                    else (0.5, 2.5))
+        cuatro_abiertos = climax or TECNO or c % 16 >= 8
+        abiertos = (0.5, 1.5, 2.5, 3.5) if cuatro_abiertos else (0.5, 2.5)
         for pulso in abiertos:
             # El abierto entra en el compas 3 y las congas en el 5. Escrito
             # como estaba —`c % 8 >= 4 or c >= 8`— era literalmente `c >= 4`, y
@@ -712,10 +712,14 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
                        h.vel("hat_abierto", c, pulso,
                              max(8, int((58 + int(10 * emp)) * sube))))
         for pulso in (1.5, 3.5):
-            # En el climax el abierto va en los cuatro contratiempos, asi que
-            # el cerrado no se suma: se reemplaza. Sumandolo daban 60 racimos de
-            # abierto y cerrado a menos de 7 ms.
-            if climax:
+            # Cuando el abierto ya toca los cuatro contratiempos (climax,
+            # TECNO, o cualquier bloque con c % 16 >= 8) el cerrado no se
+            # suma: se reemplaza. La condicion tiene que ser la MISMA que
+            # decide `abiertos` arriba, no solo climax: escuchar.py encontro
+            # 26 racimos de bateria:42/46 a menos de 10 ms porque el bloque
+            # 8-15 (y 24-31) ya escribia el abierto en 1.5/3.5 y el cerrado
+            # seguia escribiendose encima, sin pasar nunca por climax.
+            if cuatro_abiertos:
                 continue
             if paso and pulso == 3.5:
                 # El repique que ocupaba este lugar se borro y quedo el guard

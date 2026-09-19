@@ -1,0 +1,28 @@
+{
+  "vuelta": 6,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "ninguna de las doce de juzgar.py — siguen bloqueadas por falta de audio real (vuelta 004). Se siguio la via que dejo explicita la vuelta 005: correr escuchar.py sobre una salida fresca de idea.py y arreglar lo que encuentre.",
+  "que_se_hizo": [
+    "Se corrio idea.py --pleno y se paso por escuchar.py. La vuelta 005 ya habia anotado esto como 'aviso preexistente, no tocado en esta vuelta': '[ALTO] bateria:42 y bateria:46 se van a escuchar sucios y corridos — 26 veces caen a menos de 10 ms una de otra'. Esta vuelta lo ataco.",
+    "42 es el hat cerrado (CHH) y 46 el abierto (OHH). En _bateria() los contratiempos 1.5 y 3.5 escriben el abierto en los cuatro contratiempos cuando `climax or TECNO or c % 16 >= 8`, y el cerrado se escribia en esos DOS MISMOS pulsos salvo cuando `climax` era verdadero. En --pleno (climax=False), los compases 8-15 y 24-31 de cada bloque de 32 (c % 16 >= 8) ya tenian el abierto en 1.5 y 3.5 por la primera condicion, y el cerrado se sumaba encima porque la segunda condicion solo miraba `climax`, no la misma condicion que decidio el abierto. Dos transientes agudos de percusiones distintas a 0 ms de distancia nominal, humanizados por separado: eso es el filtro de peine que describe el propio comentario del codigo, escrito para el caso climax y nunca extendido al caso c % 16 >= 8.",
+    "El comentario que describia el motivo ('en el climax el abierto va en los cuatro contratiempos') solo cubria una de las tres formas en que el abierto se ensancha (climax, TECNO, c % 16 >= 8) y por eso el guard solo cubria una: mismo patron que la vuelta 005 encontro en anchos(), un comentario correcto sobre un caso que ya no era el unico.",
+    "Arreglo de una sola cosa: se saco la condicion `if climax` a una variable `cuatro_abiertos` compartida entre el bucle que escribe el abierto y el que escribe el cerrado, para que sea IMPOSIBLE que dejen de coincidir de nuevo — antes eran dos lugares con la misma intencion escrita con palabras distintas. Efecto de costado (mismo commit, mismo bug): el guard de `paso` que reponia un abierto extra en el compas 16 (COMPASES_DE_PASO incluye el compas 16, que tambien cae en c % 16 >= 8) escribia un SEGUNDO evento OHH en el mismo pulso 3.5 donde el bucle de arriba ya habia escrito uno; con el nuevo guard ese camino ya no se alcanza para esos compases, y el guard sigue funcionando igual que antes para los compases 8 y 24 (donde el abierto no esta ensanchado)."
+  ],
+  "medido_antes": {
+    "pleno_racimo_42_46": "26 veces a <10ms, marcado ALTO por escuchar.py",
+    "pleno_bateria_notas": 592
+  },
+  "medido_despues": {
+    "pleno_racimo_42_46": "0 — no aparece en el veredicto",
+    "pleno_bateria_notas": 563,
+    "pleno_veredicto": "Ninguno de los doce defectos conocidos",
+    "climax_veredicto": "Ninguno de los doce defectos conocidos (sin cambios; climax ya evitaba el racimo antes de esta vuelta)"
+  },
+  "como_se_midio": "python scripts/idea.py --pleno --nombre _check_pleno --semilla 7 (y --climax por separado) seguido de python scripts/escuchar.py postproduction/bocetos/_check_*. Carpetas de prueba borradas despues de medir.",
+  "de_donde_sale": "El propio aviso de la vuelta 005 (data/juicio/005.json, campo tambien_notado): 'vale la pena que la proxima sesion sin entorno corra escuchar.py primero'. El umbral de 10 ms y la clasificacion de 42/46 como agudos que pueden dar filtro de peine ya estaban en escuchar.py (revisa_destiempo), calibrados en vueltas anteriores contra quejas reales del DJ ('a destiempo', 'arenoso').",
+  "por_que_no_es_una_de_las_doce": "Igual que en la vuelta 005: esto es un bug de arreglo (dos golpes de percusion que colisionan) medido directo sobre el MIDI con escuchar.py, no una de las doce dimensiones de audio de juzgar.py. No mueve ningun numero de la tabla de convergencia de docs/PLAN.md.",
+  "necesita_al_DJ": true,
+  "necesita_audio_real": true,
+  "por_que": "El fix esta verificado en MIDI (el racimo desaparece del veredicto de escuchar.py, medido antes y despues) pero si el hat suena mas limpio en --pleno solo se confirma escuchando el render. Comando para el DJ: regenerar (python scripts/idea.py --pleno --nombre v7 --semilla 7), montar en Live, renderizar y comparar contra un render viejo si quedo alguno con el hat sucio. La vuelta 003 sigue esperando que se escuche v5_161-176.wav; eso no cambio.",
+  "tambien_notado": "El mismo chequeo, corrido con --pleno --tecno, encuentra OTRO racimo distinto: 'bateria:39 y bateria:46' (clap contra abierto) 56 veces a <10 ms, que no existe sin --tecno. Es un bug distinto —clap, no hat cerrado— y por la regla de una dimension por vuelta queda para la proxima sesion sin entorno: correr escuchar.py sobre --tecno antes de asumir que no hay nada mas para medir sin audio."
+}
