@@ -1923,12 +1923,24 @@ def _subkick(bpm: float, h: Humano) -> Pista:
     El bombo del 909 tiene ataque y poco cuerpo abajo de 60 Hz. En un club eso
     se escucha flaco por mas que en auriculares parezca bien. El sub-kick no se
     escucha como un sonido aparte: se escucha como que el bombo pesa mas.
+
+    La duracion de 0.22 pulsos era el bug, no el instrumento: el sub-kick
+    dispara cada pulso ("kick" no tiene dispersion, asi que el hueco entre
+    ataques es siempre exactamente 1.0 pulso, medido con plomo.midi.leer sobre
+    el .mid real) y una nota de 0.22 llena el 22% de ese hueco. escuchar.py
+    (vuelta 010, data/juicio/010.json) lo marca ALTO "va a sonar a staccato"
+    en las 9 secciones de --tema porque el umbral es 45%. El instrumento
+    (Super Sub Drone Bass / Deep Bass, set_v3.py) esta pensado sostenido; 0.9
+    lo deja sonando como tal — 90% del hueco, llenado 90% > 45% — y sigue
+    estrictamente por debajo de 1.0 asi que no se solapa con el ataque
+    siguiente (misma altura siempre: un solape ahi es el bug de
+    revisa_huecos, notas que se apagan solas).
     """
     p = Pista("Subkick", bpm, canal=0)
     for c in range(COMPASES):
         for pulso in range(4):
             p.nota(c, h.pulso("kick", c, pulso),
-                   grado(0, MENOR, 0, octava=0) + 5, 0.22,
+                   grado(0, MENOR, 0, octava=0) + 5, 0.9,
                    h.vel("kick", c, pulso, 96))
     return p
 
