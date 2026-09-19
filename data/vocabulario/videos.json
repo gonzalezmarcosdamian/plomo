@@ -1,0 +1,137 @@
+[
+  {
+    "tema": "pad / cuerpo",
+    "regla": "El pad no se sintetiza: se resamplea. Tomá cualquier fuente (un preset de secuenciador, un Seashore, lo que sea), mandale un reverb con decay muy largo o un Supermassive, congelá y aplaná la pista, y el AUDIO grabado es el pad. Despues duplicas ese recorte y lo cruzas en fade para que no clickee.",
+    "porque": "La cola de reverb es la misma fuente repetida con miles de retardos y ganancias distintas. Eso rellena la banda de forma continua en vez de dejar huecos entre parciales: el pad deja de ser tres senoides y pasa a tener piso espectral en todo el medio. Un patch sintetizado con 2-3 osciladores filtrados nunca llega ahi por mas voces que le agregues.",
+    "fuente": "https://www.youtube.com/watch?v=tmKMXVl0D5Y",
+    "autor": "Dowden Production Academy (How to Make Progressive House like Dmitry Molosh — Sudbeat, Replug)",
+    "minuto": "26:13-27:47 (pad de secuenciador + Valhalla Supermassive, freeze & flatten) y 28:08-29:00 (Seashore + reverb decay alto, resample, duplicar y cross-fade)",
+    "confianza": "alta"
+  },
+  {
+    "tema": "pad / cuerpo",
+    "regla": "Variante del mismo truco, con loop en vez de duplicado: sonido cualquiera (el usa un piano de Simpler) → reverb dry/wet apenas arriba de 50 con el low cut APAGADO, delay con feedback alto y dry/wet ~30, auto pan lento, decay del reverb al maximo. Sostenes una nota, prendes loop sobre un tramo de la cola, cross-fade, y grabas eso.",
+    "porque": "Confirma el mecanismo anterior desde otro productor y otro estilo del mismo linaje. El punto explicito del video es que la fuente no importa —'podes hacer estos sonidos con practicamente cualquier cosa'— lo que importa es la cadena. O sea: el cuerpo del pad no viene del oscilador, viene del procesamiento posterior.",
+    "fuente": "https://www.youtube.com/watch?v=Gik_eQoQu2M",
+    "autor": "Dowden Production Academy (How to Make Progressive House Like Alex O'Rion — Sudbeat, Lost&Found)",
+    "minuto": "33:14-35:00",
+    "confianza": "alta"
+  },
+  {
+    "tema": "pad / cuerpo",
+    "regla": "Si igual vas a sintetizar el pad, generá armonicos DE MAS y despues restá. Osc1 saw (posicion 64%), Osc2 una wavetable elegida explicitamente por tener mas armonicos superiores ('quad saw'), mas el sub en sine, los tres a 0 dB. Recien ahi le metes un low-pass de 24 dB/oct con algo de resonancia alrededor de 1 kHz.",
+    "porque": "El orden es lo que importa. Empezar con exceso y filtrar deja un espectro denso y continuo por debajo del corte. Empezar con pocos parciales y sumar voces deja exactamente lo que mide tu bus: picos aislados y nada en el medio. El tutorial elige la wavetable recorriendo las formas y escuchando cual mete mas armonicos arriba, no cual suena mas linda sola.",
+    "fuente": "https://www.youtube.com/watch?v=Iq7s-w3JYZQ",
+    "autor": "The Sound Design Channel / Production Music Live (Gliding Progressive House Pad — Ben Bohmer, Anjunadeep)",
+    "minuto": "3:23-5:01 (osciladores) y 6:02-6:50 (filtro 24 dB/oct a ~1 kHz)",
+    "confianza": "alta"
+  },
+  {
+    "tema": "pad / cuerpo",
+    "regla": "Apagá el high cut del reverb. No lo bajes: apagalo. Dry/wet ~32%, decay ~1,5 s. Lo mismo en el return de reverb del bus de percusion: high cut off, decay ~1 s.",
+    "porque": "El high cut por defecto del reverb corta justo la banda de 2-8 kHz donde tu medicion dice que no hay nada. Si el pad ya es pobre arriba y ademas la unica fuente de densidad que tiene (la cola) viene filtrada, el agujero se garantiza. Dos videos distintos, dos contextos distintos, la misma decision.",
+    "fuente": "https://www.youtube.com/watch?v=Iq7s-w3JYZQ",
+    "autor": "The Sound Design Channel (11:19) y Dowden Production Academy en tmKMXVl0D5Y (13:32, return de drums)",
+    "minuto": "11:19-11:34",
+    "confianza": "alta"
+  },
+  {
+    "tema": "pad / cuerpo",
+    "regla": "Despues del filtro va distorsion de valvula con el wet bajo, y despues de la distorsion va OTRO EQ. El ladder filter ademas lleva resonancia y drive propios.",
+    "porque": "Un pad filtrado no tiene armonicos arriba del corte, por definicion. La distorsion los vuelve a generar a partir de lo que quedo, asi que el cuerpo en el medio aparece despues del filtro, no antes. El video es explicito sobre por que repite el EQ: 'agregamos distorsion, esto puede introducir frecuencias ahi'. Ese es exactamente el material que a tu bus melodico le falta.",
+    "fuente": "https://www.youtube.com/watch?v=zZOAXW9wyd0",
+    "autor": "The Sound Design Channel / Abstract Music Lab (SERUM 2 — Stunning LFO Pad, Progressive and Melodic House, Anjunadeep)",
+    "minuto": "3:08-3:15 (resonancia + drive en el ladder), 5:26-5:43 (tube distortion), 6:14-6:30 (EQ posterior)",
+    "confianza": "alta"
+  },
+  {
+    "tema": "bajo / cuerpo",
+    "regla": "El bajo va en tres registros, no en uno: sub (sine), bajo medio, y una tercera capa saturada que lleva los medios. Esa tercera capa es un pluck con unison en 2 voces, detune 3, y el blend corrido para que quede una voz centrada; filtro 24 dB/oct con drive, envelope 2 al cutoff con decay 300-400 ms y sustain bajo.",
+    "porque": "La capa saturada existe para que el bajo 'se escuche, no solo se sienta' — es lo que sobrevive en celular, auriculares chicos y sistemas sin sub. Es el mismo principio que el pad: la energia en el medio se pone a proposito con una capa dedicada, no aparece sola por sumar osciladores abajo.",
+    "fuente": "https://www.youtube.com/watch?v=Gik_eQoQu2M",
+    "autor": "Dowden Production Academy (Alex O'Rion — Sudbeat, Lost&Found)",
+    "minuto": "4:13-4:45 (el rol de la capa saturada), 5:10-5:56 (unison 2 / detune 3 / blend), 6:27-7:14 (filtro y envelope)",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / modulacion",
+    "regla": "LFO con RE-TRIGGER APAGADO, a una tasa que no coincida con el compas (media medida, o free rate), ruteado a cutoff, posicion de wavetable, warp o fold. Amount bajo.",
+    "porque": "Esta es la respuesta directa a tus compases identicos. Con re-trigger prendido cada nota recibe la misma forma de modulacion desde cero, asi que el compas 2 es bit a bit el compas 1. Con re-trigger apagado el LFO corre libre contra la grilla y cada repeticion cae en otra fase: las notas son las mismas, el timbre no. Tres videos independientes del nicho lo dicen con las mismas palabras, es el consenso mas fuerte que encontre.",
+    "fuente": "https://www.youtube.com/watch?v=fSFKGVyqHLc",
+    "autor": "Bound to Divide (8:55), Dowden Production Academy en tmKMXVl0D5Y (19:06) y en t7Y-m6KdFQk (5:03)",
+    "minuto": "8:55-9:32 (LFO cuadrado, re-trigger off, media medida, a posicion de osc1); LFO2 sample&hold al warp con amount muy chico en 9:42-10:12",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / modulacion",
+    "regla": "Mapeá velocity al cutoff del filtro y despues escribí velocidades distintas nota por nota. La frase textual: hacer 'una melodia, pero no melodia de frecuencia, melodia de filtrado'. Dowden lo lleva mas lejos: velocity a cutoff en -19 y a amplitud a la vez, asi la nota de velocity baja suena mas suave pero MAS abierta.",
+    "porque": "Te deja variar sin tocar las notas. Tu problema medido no es que las notas se repitan —en el genero se repiten a proposito— es que el timbre se repite con ellas. El acento deja de ser 'mas fuerte' y pasa a ser 'otro sonido', que es lo que hace que un loop de dos compases aguante ocho minutos.",
+    "fuente": "https://www.youtube.com/watch?v=fSFKGVyqHLc",
+    "autor": "Bound to Divide (Deep Progressive Basslines — Sudbeat, Mango Alley, Meanwhile) y Dowden en t7Y-m6KdFQk (1:21-2:02)",
+    "minuto": "7:12-8:20",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / modulacion",
+    "regla": "Prendé el parametro Random del mapeo velocity→cutoff, entre 15 y 20 (no mas). Es un numero probado en camara: el video sube el valor al maximo para mostrar que suena mal y despues baja a 15-20.",
+    "porque": "Randomiza el timbre por nota sin randomizar el ritmo ni las alturas. El razonamiento explicito: 'hacerlo mas interesante para el oyente y menos repetitivo'. Para un tema generado por codigo es el parametro mas barato que existe — una linea, y ningun compas queda igual al anterior.",
+    "fuente": "https://www.youtube.com/watch?v=tmKMXVl0D5Y",
+    "autor": "Dowden Production Academy (Dmitry Molosh — Sudbeat, Replug)",
+    "minuto": "17:29-18:08",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / arreglo",
+    "regla": "No duplicar el clip: duplicar las notas y dibujar un envelope de clip DISTINTO en cada copia. En Ableton es MIDI clip → Envelopes → elegis el parametro (ej. Wavetable Filter 1 Frequency) y dibujas la curva a mano, diferente en cada clip.",
+    "porque": "Es el mecanismo que te falta y es directamente implementable por codigo: el .mid y el clip guardan la automatizacion por separado de las notas. Copiar el clip te garantiza el 94-100% de compases identicos que medis; copiar las notas y variar la curva te da 10-14 de 16 distintos con exactamente el mismo material melodico. Dowden lo usa ademas como criterio de arreglo: cada clip a lo largo del tema lleva su propio dibujo.",
+    "fuente": "https://www.youtube.com/watch?v=t7Y-m6KdFQk",
+    "autor": "Dowden Production Academy (20+ Progressive House Bass Patterns — Mango Alley, Sudbeat, Meanwhile)",
+    "minuto": "3:47-4:24",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / arreglo",
+    "regla": "Tres escalas de ruptura, cada una con su periodo: mini-breaks de 4, 8 o 16 TIEMPOS (1-4 compases); transiciones cada 16-32 tiempos (4-8 compases); impactos/atmosferas cada 32-64 tiempos. Los bloques grandes del arreglo se alinean a 32/64/128 tiempos para que el DJ pueda mezclar.",
+    "porque": "Te da el reloj concreto en vez de 'varia de vez en cuando'. Notar la unidad: Dowden cuenta en TIEMPOS, no en compases, asi que un mini-break de 4 tiempos es un solo compas. El de 16 tiempos son 4 compases. Con ese periodo mas corto se explica que las referencias tengan 10-14 compases distintos de cada 16 sin que el tema deje de sentirse el mismo loop.",
+    "fuente": "https://www.youtube.com/watch?v=ywjlssWK5PQ",
+    "autor": "Dowden Production Academy (How to arrange ANY song BETTER — 3 Pass Method)",
+    "minuto": "14:44-15:13 (mini-breaks), 15:13-15:29 (transiciones), 3:21-3:52 (grilla de 32/64/128 para el DJ); impactos cada 32-64 en tmKMXVl0D5Y 34:41",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / arreglo",
+    "regla": "El segundo drop es el primero MAS algo, no un drop nuevo: mismas ideas, filtros mas abiertos, mas efectos, y un elemento de bateria agregado — tipicamente un open hat o un ride que no aparecio antes y que se retira despues en el cooldown.",
+    "porque": "Resuelve la variacion a escala de tema sin escribir material nuevo, que es justo lo que te conviene generando por codigo. El criterio declarado: que el tema siempre parezca estar construyendose hacia adelante. Y el ride/open hat funciona como marcador estructural — se reserva para esa seccion y por eso senaliza.",
+    "fuente": "https://www.youtube.com/watch?v=ywjlssWK5PQ",
+    "autor": "Dowden Production Academy (3 Pass Method)",
+    "minuto": "17:35-18:20 (drop alternativo), 10:27-10:58 (reservar los rides para el drop alternativo y sacarlos en el cooldown)",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / percusion",
+    "regla": "Percusiones colocadas de forma irregular dentro del loop (4 elementos distintos, en lugares elegidos pero no simetricos), cada golpe de hi-hat corrido un poquito respecto del anterior, y una herramienta de velocity random encima. Ademas un elemento percusivo agudo y AFINADO a la tonica (bongo/conga/clave), con un EQ que levanta la nota del tema.",
+    "porque": "La irregularidad es a proposito y esta acotada: 'no los tiro en cualquier lado, elijo donde funcionan con el resto'. El resultado buscado es que el loop aguante mas tiempo antes de cansar. El desfase por golpe es la version micro de lo mismo: ningun golpe es identico al anterior aunque el patron si se repita.",
+    "fuente": "https://www.youtube.com/watch?v=tmKMXVl0D5Y",
+    "autor": "Dowden Production Academy (Dmitry Molosh — Sudbeat, Replug)",
+    "minuto": "8:41-9:20 (percusiones irregulares), 6:06-6:12 (hats corridos golpe a golpe), 10:15-10:32 (velocity random + EQ afinado a la tonica)",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / micro-timing",
+    "regla": "Los acordes del pad se tocan deliberadamente fuera de grilla; el bajo tambien, pero mucho menos ('el bajo tiene que quedar bastante pegado a la grilla, solo un poquito'). En el bajo se puede hacer con un Groove aplicado en vez de moviendo notas.",
+    "porque": "Es una asimetria que conviene copiar tal cual: el material sostenido (pad, acordes, atmosferas) se desalinea bastante y por eso 'se siente mas un viaje que un loop'; el material que marca el pulso se desalinea apenas o se rompe el groove. Si aplicas el mismo jitter a todo, perdes el pulso; si no lo aplicas a nada, te queda la cuadricula que medis.",
+    "fuente": "https://www.youtube.com/watch?v=tmKMXVl0D5Y",
+    "autor": "Dowden Production Academy (Dmitry Molosh, 30:36 acordes) y Dowden en t7Y-m6KdFQk (11:27-11:53, groove en el bajo)",
+    "minuto": "30:36-30:58",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion / arreglo",
+    "regla": "Guardá el cambio de nota del bajo para la mitad o los 3/4 del tema. Antes de eso el bajo se queda en una sola nota (atonal/hipnotico); el cambio recien ahi es lo que da el climax melodico.",
+    "porque": "Es variacion a la escala mas grande y es gratis: no agrega capas, mueve una nota. Ademas explica por que el genero tolera tanta repeticion antes — la repeticion es la que le da valor al cambio cuando llega. Si el bajo ya cambiaba desde el compas 16, a los 3/4 no te queda con que subir.",
+    "fuente": "https://www.youtube.com/watch?v=t7Y-m6KdFQk",
+    "autor": "Dowden Production Academy (20+ Progressive House Bass Patterns)",
+    "minuto": "10:00-10:27",
+    "confianza": "alta"
+  }
+]

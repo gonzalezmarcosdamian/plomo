@@ -1,0 +1,107 @@
+[
+  {
+    "tema": "cuerpo del pad — detune como razon, no como Hz",
+    "regla": "Siete saw sobre la misma nota. El central queda fijo y los otros seis se multiplican por 1+offset, con offsets medidos del JP-8000 a detune maximo: -0.11002, -0.06288, -0.01952, 0, +0.01991, +0.06217, +0.10745 (es decir -202, -112, -34, 0, +34, +104, +177 cents). Ojo: no son simetricos ni equiespaciados, se abren mas hacia abajo. Para pad el control va en el tramo bajo de la curva, que es plano: ahi el spread real son pocos cents.",
+    "porque": "El desvio es multiplicativo, no aditivo. Si el offset es r, el armonico n de esa copia cae en n*f*(1+r), asi que su separacion en Hz respecto del armonico n del central es n*f*r: crece proporcional al numero de armonico. El fundamental queda con un batido lento de fraccion de Hz y el tono no se mueve, mientras que arriba de 1 kHz los parciales de las siete copias se abren lo suficiente como para dejar de ser lineas discretas y volverse una banda continua. Tres parciales limpios no pueden producir eso por mas nivel que se les de.",
+    "fuente": "https://www.adamszabo.com/internet/adam_szabo_how_to_emulate_the_super_saw.pdf",
+    "confianza": "alta"
+  },
+  {
+    "tema": "cuerpo del pad — por que el detune llena los medios",
+    "regla": "Regular el detune para que la diferencia entre copias quede por debajo de ~20 Hz en la zona grave (batido, el acorde se sigue leyendo) y la deje superar en la zona media-alta (aspereza dentro del ancho de banda critico). Si se pasa, a partir de la mitad del recorrido los fundamentales se empiezan a fundir entre si alrededor de 250-400 Hz y el acorde deja de distinguirse.",
+    "porque": "Es un limite del oido, no del sinte. Con menos de ~20 Hz de diferencia el oido percibe fluctuacion de amplitud (batido). Pasados los ~20 Hz percibe aspereza mientras las parciales sigan dentro del mismo ancho de banda critico, y recien mucho despues las separa en dos tonos. El ancho de banda critico crece logaritmicamente con la frecuencia, asi que el mismo porcentaje de detune produce batido abajo y aspereza arriba. Los sonogramas del estudio muestran que esa aspereza es justamente energia continua en 1-3 kHz, con el JP-8080 concentrando ademas entre 3 y 6 kHz.",
+    "fuente": "https://static1.squarespace.com/static/519a384ee4b0079d49c8a1f2/t/592c9030a5790abc03d9df21/1496092742864/An+Analysis+of+Roland%27s+Super+Saw+Oscillator+and+its+Relation+to+Pads+within+Trance+Music+-+Research+Project+-+A.+Shore.pdf",
+    "confianza": "alta"
+  },
+  {
+    "tema": "cuerpo del pad — fase aleatoria por nota",
+    "regla": "Los osciladores tienen que correr libres: cada disparo de nota asigna un valor de fase aleatorio a cada uno de los siete. Nada de fase reseteada a cero en el note-on.",
+    "porque": "Con fase fija, todas las copias suman igual siempre y cada nota arranca con el mismo transitorio y el mismo patron de cancelaciones — es la firma tipica de un pad generado por codigo. Con fase aleatoria las sumas y cancelaciones entre las siete copias cambian nota a nota, y el ataque y el timbre varian solos sin tocar una sola automatizacion. El analisis del JP-8000 confirma que las fases son estrictamente aleatorias y lo atribuye a que el sonido resulte mas organico y natural.",
+    "fuente": "https://www.adamszabo.com/internet/adam_szabo_how_to_emulate_the_super_saw.pdf",
+    "confianza": "alta"
+  },
+  {
+    "tema": "cuerpo del pad — balance entre copias y oscilador central",
+    "regla": "Las seis copias desafinadas tienen que llegar a tapar al oscilador central, no a acompanarlo. En el JP-8000 el central baja de volumen en forma lineal mientras las seis suben con forma de parabola: no es un crossfade parejo, las copias ganan mas rapido de lo que el central pierde.",
+    "porque": "Mientras el central domina, el oido tiene una frecuencia limpia a la que agarrarse y lee el sonido como un tono; el espesor aparece cuando las copias enmascaran esa frecuencia central y lo que queda dominante es la aspereza entre ellas. Un bus melodico con el central al frente y las copias de adorno mide igual de flaco que un oscilador solo.",
+    "fuente": "https://www.adamszabo.com/internet/adam_szabo_how_to_emulate_the_super_saw.pdf",
+    "confianza": "alta"
+  },
+  {
+    "tema": "cuerpo del pad — tres capas con bandas recortadas",
+    "regla": "Tres capas con EQ bracketing, cada una duena de una banda: (1) sub senoidal, pico cerca de 60 Hz, todo lo de arriba de 190 Hz afuera y low-cut en 30; (2) medio-grave, saw + triangular dos octavas arriba del sub, corte hasta 130 Hz abajo y roll-off arriba de 3 kHz; (3) acorde/lead, tres saw, low-cut hasta 250 Hz, con ruido subido para el detalle de la punta. Las tres a un bus con compresion de pegado: 4 dB de reduccion, ratio 2:1.",
+    "porque": "No es apilar lo mismo mas fuerte: cada capa se disena para una banda y se le recorta el resto, asi no se doblan frecuencias ni se enmascaran entre si. El resultado es energia continua desde el sub hasta el aire porque hay una fuente distinta ocupando cada tramo — que es exactamente lo contrario a un patch que suena en un solo registro. La compresion de bus las hace leer como un sonido y no como tres.",
+    "fuente": "https://www.attackmagazine.com/technique/synth-secrets/layering-synths/",
+    "confianza": "alta"
+  },
+  {
+    "tema": "cuerpo del pad — copia una octava arriba desafinada al reves",
+    "regla": "Duplicar el saw una octava arriba y desafinar las dos copias en direcciones opuestas (una hacia arriba, la otra hacia abajo), con la de octava mezclada algo mas baja que la principal.",
+    "porque": "Un diente de sierra pierde 6 dB por octava, asi que sus armonicos altos ya llegan debiles a la region de presencia. La copia de octava vuelve a poner parciales fuertes justo en el tramo donde la original se apago, y el detune en direcciones opuestas evita que las dos compartan armonicos exactos: en vez de reforzarse en fase (mas nivel, mismo espectro) baten entre si (mas densidad).",
+    "fuente": "https://www.attackmagazine.com/technique/tutorials/analogue-style-string-synthesis/",
+    "confianza": "media"
+  },
+  {
+    "tema": "cuerpo del pad — ruido filtrado como capa, no como efecto",
+    "regla": "Capa de ruido con pasa-bajos de 24 dB, resonancia alrededor de 75-80%, keytracking del filtro al 100% y el cutoff sintonizado a la nota que se toca. Mezclada baja, debajo del pad.",
+    "porque": "El ruido blanco tiene espectro plano y continuo: aporta energia en todos los bins, incluidos los que quedan entre los parciales del sinte. Con el filtro resonante siguiendo la nota, esa energia no queda como un siseo pegado encima sino como un formante afinado que se lee como parte del pad. Es la via mas directa para llenar los huecos de un bus que mide casi toda su banda muy por debajo del pico, porque ataca el problema donde esta — entre armonicos, no en los armonicos.",
+    "fuente": "https://gearspace.com/threads/creating-airy-synth-pads.836289/",
+    "confianza": "media"
+  },
+  {
+    "tema": "cuerpo del pad — saturacion en paralelo con la banda acotada",
+    "regla": "Bus paralelo con distorsion, y despues de la distorsion un pasa-altos en 500 Hz seguido de un pasa-bajos en 5 kHz. Mezclarlo debajo del pad limpio. Para material sostenido, saturacion suave, nunca clipper.",
+    "porque": "La distorsion recorta la forma de onda y con eso genera armonicos nuevos por encima del fundamental — es el unico proceso que agrega contenido donde no habia nada, a diferencia del EQ que solo puede realzar lo que ya existe. Acotar la banda del bus saturado a 500 Hz - 5 kHz hace que esos armonicos nuevos aterricen en la zona de presencia sin ensuciar el sub ni el aire. Ojo: la fuente describe el truco para bus de mezcla, no especificamente para pads.",
+    "fuente": "https://modwheel.net/guides/advanced-saturation-distortion-mixing",
+    "confianza": "media"
+  },
+  {
+    "tema": "cuerpo del pad — PWM para que el espectro se mueva sin cambiar la nota",
+    "regla": "Oscilador 1 pulso, con un LFO senoidal de velocidad y profundidad moderadas sobre el ancho de pulso. Oscilador 2 saw una octava arriba, levemente desafinado y mezclado mas bajo. Sumar un poco de envolvente de filtro para que cada nota tenga algo de variacion timbrica propia.",
+    "porque": "Cambiar el ancho del pulso cambia que armonicos de la serie se cancelan y cuales sobreviven, asi que el contenido armonico se mueve de forma continua mientras la nota se mantiene quieta. Es variacion espectral sin variacion melodica: sirve igual para el problema del cuerpo (el espectro barre varias configuraciones en vez de quedarse en tres parciales) y para el de la repeticion (dos compases iguales en MIDI no miden iguales).",
+    "fuente": "https://www.attackmagazine.com/technique/tutorials/analogue-style-string-synthesis/",
+    "confianza": "alta"
+  },
+  {
+    "tema": "cuerpo del pad — el reverb como fuente y el resampleo",
+    "regla": "Mandar el pad a un reverb muy largo con mezcla al 100%, grabar la cola sola como audio y volverla a cargar como capa nueva (sampler o clip), para despues ecualizarla, gatearla o saturarla aparte. Variante: resamplear un compas del patron, estirarlo a 4x y recien ahi aplicarle el reverb.",
+    "porque": "La cola de reverb son miles de copias desfasadas y filtradas de la misma senal: rellena los espacios entre parciales con energia correlacionada con el material, no con ruido ajeno. Mientras es un envio sigue atada al sonido seco y no se la puede tratar; impresa pasa a ser una capa mas que se puede empujar, recortar o comprimir por separado. El resampleo repetido suma caracter en cada pasada porque cada version reacciona distinto al proceso siguiente.",
+    "fuente": "https://www.edmprod.com/resampling-audio/",
+    "confianza": "media"
+  },
+  {
+    "tema": "contradiccion — detune y PWM en pads",
+    "regla": "Hay una postura opuesta a las entradas de detune y PWM: no desafinar osciladores en pads porque diluye la claridad de altura, y evitar barridos de filtro y PWM fuerte porque el nivel de cada armonico se vuelve impredecible. Recomienda en cambio elegir forma de onda y registro, pasa-altos desde ~300 Hz y un pozo de 4-6 dB en 3-4 kHz.",
+    "porque": "El contexto explica la diferencia y conviene tenerlo presente antes de descartarla: la fuente habla del pad como capa de refuerzo debajo de otro elemento de la mezcla, donde el pad no debe competir por la atencion ni tapar la zona mas sensible del oido. Para un pad protagonista de progressive la logica se invierte — ahi la aspereza controlada ES el sonido. Anotada con confianza baja porque contradice lo medido en el JP-8000 y lo que hacen las referencias del genero.",
+    "fuente": "https://www.soundonsound.com/techniques/creating-using-synth-pad-sounds",
+    "confianza": "baja"
+  },
+  {
+    "tema": "variacion — la jerarquia de 16 y 8 compases",
+    "regla": "Cambio mayor cada 16 compases: entra o sale una melodia, un acorde, el bajo o el kick. Cambio menor cada 8: entra o sale un hat, un crash, un clap o un snare. Son dos relojes distintos corriendo a la vez, no uno solo.",
+    "porque": "El cambio de 16 define la seccion y es lo que el DJ usa para mezclar; el de 8 mantiene el interes adentro de la seccion sin anunciar que algo termino. Si solo corre el reloj de 16, los 15 compases del medio miden identicos — que es exactamente el sintoma de 94-100% de compases repetidos.",
+    "fuente": "https://gearspace.com/board/electronic-music-instruments-and-electronic-music-production/956852-house-music-structure.html",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion — el fill va al final de la frase, y se hace restando",
+    "regla": "Patron de bateria de 8 compases con un fill en la ultima parte de cada octavo compas; en la variante mas movida, un fill chico al final del cuarto y otro mas grande al final del octavo. La variacion se hace sacando, no agregando: quitar un kick o un hat, uno o dos tiempos seguidos, nunca un compas entero. En paralelo, el filtro del bajo se abre por escalones cada 8 compases y se vuelve a cerrar unos 8 compases antes del break.",
+    "porque": "El hueco al final de la frase es lo que marca el limite: el oido cuenta de 8 en 8 porque algo cambia justo ahi. Sacar uno o dos golpes lee como respiracion del groove; sacar un compas entero lee como seccion nueva y rompe la mezcla del DJ. Y el filtro escalonado da progresion audible sin gastar elementos nuevos, que es como el genero sostiene 56 compases con el mismo material.",
+    "fuente": "https://www.kvraudio.com/forum/viewtopic.php?t=386761",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion — micro-variacion continua y ciclos desfasados",
+    "regla": "Aleatorizar la velocity del closed hat en un rango acotado (en el ejemplo, un device Velocity con random en 15 y el maximo de salida bajado), mas un groove de swing sobre la grilla y un hat de otra muestra en el contratiempo. Aparte, percusion sincopada que entra cada 2 compases y no cada uno: un clap simple al final del compas 2 y uno doble al final del 4, con congas y toms afinados cada 2 compases.",
+    "porque": "Son dos escalas de variacion que se suman. El random de velocity hace que ningun golpe sea igual al anterior aunque el MIDI sea el mismo patron — es lo que rompe el 100% de compases identicos sin escribir una nota nueva. Y el ciclo de 2 compases del clap/percusion es lo que hace que, contando de a 16, aparezcan 10-14 compases distintos: el 1 y el 3 son iguales, pero el 2 y el 4 no, y el ciclo de la percusion corre desfasado del de la bateria.",
+    "fuente": "https://www.attackmagazine.com/technique/beat-dissected/deep-melodic-progressive-techno/",
+    "confianza": "alta"
+  },
+  {
+    "tema": "variacion — eventos unicos",
+    "regla": "Sembrar sonidos, gestos o procesos que ocurren una sola vez en todo el tema y no se repiten nunca: una muestra rara en un lugar inesperado, una frase que varia una sola vez dentro de un patron por lo demas constante, o un efecto automatizado que entra unos tiempos y se apaga. Con cuentagotas.",
+    "porque": "La repeticion perfecta de loops se vuelve tediosa aunque la estructura tenga secciones y tension bien resueltas: lo que falta no es contraste de seccion sino imprevisibilidad. El evento unico rompe la expectativa justamente porque no vuelve. Y el limite tiene su propio mecanismo: si hay demasiados, el oyente empieza a esperar que pase algo raro y los eventos unicos generan su propia previsibilidad.",
+    "fuente": "https://makingmusic.ableton.com/unique-events",
+    "confianza": "alta"
+  }
+]
