@@ -41,22 +41,23 @@ from plomo.midi import leer  # noqa: E402
 # capa, no la pista: las pistas 0 a 3 son las que trae el set vacio.
 PISTAS = {
     "01_atmosfera.mid": 4,  "02_acordes.mid": 5,   "03_bajo.mid": 6,
-    "04_bateria.mid": 7,    "05_gancho.mid": 8,    "06_arpegio.mid": 9,
-    "07_cierre.mid": 10,    "09_sub.mid": 12,
+    "04_bateria.mid": 7,    "05_gancho.mid": 8,    "06_arpegio.mid": 21,
+    "07_cierre.mid": 22,    "09_sub.mid": 12,
     "10_repiques.mid": 13,  "11_splash.mid": 14,   "12_reversa.mid": 15,
-    "13_lead.mid": 16,   "14_riser.mid": 17,
+    "13_lead.mid": 23,   "14_riser.mid": 17,
     # Las capas de espesor van a las pistas que la v2 dejaba vacias. No hay
     # conflicto con la v1 porque cada version usa su propia receta de set y
     # ninguna de las dos usa los dos juegos a la vez.
     "15_bajo2.mid": 9,   "16_textura.mid": 10,
-    "17_subkick.mid": 11, "18_metales.mid": 16,
+    "17_subkick.mid": 20, "18_metales.mid": 16,
     "19_hats.mid": 18,
     # Los acordes abiertos del breakdown tienen pista PROPIA. Compartian la 11
     # con el subkick —los numeros del nombre son el orden de la capa, no la
     # pista— y como en el breakdown no hay subkick el choque no se veia: lo que
     # se veia era que el subkick de los plenos sonaba a pad, porque los acordes
     # le habian cambiado el instrumento a su pista.
-    "08_anchos.mid": 19,
+    "08_anchos.mid": 11,
+    "20_abiertos.mid": 19,
 }
 
 # El gancho se escribe en la octava 4 y suena una octava mas abajo. Es del

@@ -1,0 +1,5620 @@
+{
+  "tempo": 123.0,
+  "pistas": [
+    {
+      "indice": 4,
+      "nombre": "Atmosfera",
+      "volumen": 0.66,
+      "dispositivos": [
+        {
+          "nombre": "TAL-NoiseMaker",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.63391
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.55
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 5,
+      "nombre": "Acordes",
+      "volumen": 0.74,
+      "dispositivos": [
+        {
+          "nombre": "Surge XT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.692759
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Filter-2",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Speed Factor": {
+              "valor": 0.333333
+            },
+            "Modulation Type Legacy": {
+              "valor": 0.555556
+            },
+            "Volume In": {
+              "valor": 0.5
+            },
+            "Volume Out": {
+              "valor": 0.5
+            },
+            "Param Depth": {
+              "valor": 1.0
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.5
+            },
+            "Legacy Mode": {
+              "valor": 0.0
+            },
+            "Modulation Type": {
+              "valor": 0.0
+            },
+            "Trigger": {
+              "valor": 0.0
+            },
+            "Stereo Offset": {
+              "valor": 0.0
+            },
+            "Envelope Time Mode": {
+              "valor": 0.0
+            },
+            "Loop MOde": {
+              "valor": 0.0
+            },
+            "Trigger One Shot": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.55
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 6,
+      "nombre": "Bajo",
+      "volumen": 0.88,
+      "dispositivos": [
+        {
+          "nombre": "TAL-NoiseMaker",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.579461
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.62
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 7,
+      "nombre": "Bateria",
+      "volumen": 0.9,
+      "dispositivos": [
+        {
+          "nombre": "AG Techno Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "DrBuss Amount": {
+              "valor": 0.0
+            },
+            "DrBuss Drive": {
+              "valor": 36.0
+            },
+            "DrBuss Transient": {
+              "valor": 60.0
+            },
+            "Comp Amount": {
+              "valor": 54.0
+            },
+            "Low Gain": {
+              "valor": 66.0
+            },
+            "Mid Gain": {
+              "valor": 63.5
+            },
+            "Mid Freq": {
+              "valor": 55.0
+            },
+            "Hi Gain": {
+              "valor": 63.500015
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "OTT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Depth": {
+              "valor": 0.35
+            },
+            "Time": {
+              "valor": 0.5
+            },
+            "In Gain": {
+              "valor": 0.5
+            },
+            "Out Gain": {
+              "valor": 0.5
+            },
+            "Clean XOV": {
+              "valor": 0.0
+            },
+            "Thresh L": {
+              "valor": 0.5
+            },
+            "Thresh M": {
+              "valor": 0.5
+            },
+            "Thresh H": {
+              "valor": 0.5
+            },
+            "Gain L": {
+              "valor": 0.5
+            },
+            "Gain M": {
+              "valor": 0.5
+            },
+            "Gain H": {
+              "valor": 0.5
+            },
+            "Byp Upwd L": {
+              "valor": 0.0
+            },
+            "Byp Upwd M": {
+              "valor": 0.0
+            },
+            "Byp Upwd H": {
+              "valor": 0.0
+            },
+            "Byp Dnwd L": {
+              "valor": 0.0
+            },
+            "Byp Dnwd M": {
+              "valor": 0.0
+            },
+            "Byp Dnwd H": {
+              "valor": 0.0
+            },
+            "Upwd Strgth": {
+              "valor": 0.5
+            },
+            "Dnwd Strgth": {
+              "valor": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 8,
+      "nombre": "Gancho",
+      "volumen": 0.7,
+      "dispositivos": [
+        {
+          "nombre": "Surge XT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.73448
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Filter-2",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Speed Factor": {
+              "valor": 0.333333
+            },
+            "Modulation Type Legacy": {
+              "valor": 0.555556
+            },
+            "Volume In": {
+              "valor": 0.5
+            },
+            "Volume Out": {
+              "valor": 0.5
+            },
+            "Param Depth": {
+              "valor": 1.0
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.5
+            },
+            "Legacy Mode": {
+              "valor": 0.0
+            },
+            "Modulation Type": {
+              "valor": 0.0
+            },
+            "Trigger": {
+              "valor": 0.0
+            },
+            "Stereo Offset": {
+              "valor": 0.0
+            },
+            "Envelope Time Mode": {
+              "valor": 0.0
+            },
+            "Loop MOde": {
+              "valor": 0.0
+            },
+            "Trigger One Shot": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.55
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 9,
+      "nombre": "Bajo medio",
+      "volumen": 0.62,
+      "dispositivos": [
+        {
+          "nombre": "Noise Bass",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Low Pass Filter": {
+              "valor": 51.404758
+            },
+            "Low Pass Reso": {
+              "valor": 68.609543
+            },
+            "Hi Pass Filter": {
+              "valor": 38.530037
+            },
+            "Osc 1 Range": {
+              "valor": 0.0
+            },
+            "Filter Attack": {
+              "valor": 50.990387
+            },
+            "FIlter Decay": {
+              "valor": 78.053329
+            },
+            "Delay": {
+              "valor": 14.0
+            },
+            "Reverb": {
+              "valor": 8.0
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            },
+            "Chain Selector": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.704369
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.62
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 10,
+      "nombre": "Textura",
+      "volumen": 0.44,
+      "dispositivos": [
+        {
+          "nombre": "Broadcast Noise",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Filter Cutoff": {
+              "valor": 83.0
+            },
+            "Filter Reso": {
+              "valor": 42.0
+            },
+            "Wave Warping": {
+              "valor": 127.0
+            },
+            "Osc 1 Wave": {
+              "valor": 57.149998
+            },
+            "Global Mod Amount": {
+              "valor": 6.985
+            },
+            "Time": {
+              "valor": 42.239998
+            },
+            "Osc 2 Pitch": {
+              "valor": 97.722221
+            },
+            "Reverb": {
+              "valor": 31.0
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            },
+            "Chain Selector": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.773901
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 11,
+      "nombre": "Anchos",
+      "volumen": 0.46,
+      "dispositivos": [
+        {
+          "nombre": "Snappy Pluck",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Filter Cutoff": {
+              "valor": 49.0
+            },
+            "Filter Reso": {
+              "valor": 86.762375
+            },
+            "Filter Env": {
+              "valor": 127.0
+            },
+            "Noise Gain": {
+              "valor": 93.456978
+            },
+            "Attack": {
+              "valor": 25.0
+            },
+            "Sustain Release": {
+              "valor": 99.0
+            },
+            "LFO Rate": {
+              "valor": 55.0
+            },
+            "Dry/Wet": {
+              "valor": 50.799999
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            },
+            "Chain Selector": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.725122
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.55
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 12,
+      "nombre": "Sub",
+      "volumen": 0.78,
+      "dispositivos": [
+        {
+          "nombre": "Deep Bass",
+          "clase": "Drift",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "LP Freq": {
+              "valor": 0.20635
+            },
+            "LP Res": {
+              "valor": 0.405941
+            },
+            "LP Type": {
+              "valor": 1.0
+            },
+            "HP Freq": {
+              "valor": 0.158951
+            },
+            "Key > LPF": {
+              "valor": 1.0
+            },
+            "LP Mod Amt 1": {
+              "valor": 0.5
+            },
+            "LP Mod Amt 2": {
+              "valor": 0.812919
+            },
+            "Osc 1 Flt On": {
+              "valor": 1.0
+            },
+            "Osc 2 Flt On": {
+              "valor": 1.0
+            },
+            "Noise Flt On": {
+              "valor": 1.0
+            },
+            "LFO Time Mode": {
+              "valor": 2.0
+            },
+            "LFO Rate": {
+              "valor": 1.0
+            },
+            "LFO Ratio": {
+              "valor": 0.230159
+            },
+            "LFO Time": {
+              "valor": 0.29617
+            },
+            "LFO Synced": {
+              "valor": 15.0
+            },
+            "LFO Amt": {
+              "valor": 0.666667
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO Mod Amt": {
+              "valor": 1.0
+            },
+            "LFO Retrig On": {
+              "valor": 0.0
+            },
+            "Osc 1 Wave": {
+              "valor": 2.0
+            },
+            "Osc 1 Shape": {
+              "valor": 0.753968
+            },
+            "Osc 1 Oct": {
+              "valor": 0.0
+            },
+            "Osc 1 Shape Mod Amt": {
+              "valor": 0.5
+            },
+            "Osc 2 Wave": {
+              "valor": 0.0
+            },
+            "Osc 2 Detune": {
+              "valor": 0.5
+            },
+            "Osc 2 Oct": {
+              "valor": -1.0
+            },
+            "Pitch Mod Amt 1": {
+              "valor": 0.351562
+            },
+            "Pitch Mod Amt 2": {
+              "valor": 0.5
+            },
+            "Osc 1 Gain": {
+              "valor": 0.677218
+            },
+            "Osc 2 Gain": {
+              "valor": 0.651423
+            },
+            "Osc 1 On": {
+              "valor": 1.0
+            },
+            "Osc 2 On": {
+              "valor": 1.0
+            },
+            "Noise Gain": {
+              "valor": 0.735882
+            },
+            "Noise On": {
+              "valor": 0.0
+            },
+            "Env 1 Attack": {
+              "valor": 0.269816
+            },
+            "Env 1 Decay": {
+              "valor": 0.714795
+            },
+            "Env 1 Release": {
+              "valor": 0.396784
+            },
+            "Env 1 Sustain": {
+              "valor": 0.57
+            },
+            "Env 2 Attack": {
+              "valor": 0.0
+            },
+            "Env 2 Decay": {
+              "valor": 0.413265
+            },
+            "Env 2 Release": {
+              "valor": 0.595238
+            },
+            "Env 2 Sustain": {
+              "valor": 0.0
+            },
+            "Cyc Env Time Mode": {
+              "valor": 0.0
+            },
+            "Cyc Env Rate": {
+              "valor": 0.312256
+            },
+            "Cyc Env Ratio": {
+              "valor": 0.047619
+            },
+            "Cyc Env Time": {
+              "valor": 0.29617
+            },
+            "Cyc Env Synced": {
+              "valor": 15.0
+            },
+            "Cyc Env Tilt": {
+              "valor": 0.5
+            },
+            "Cyc Env Hold": {
+              "valor": 0.0
+            },
+            "Mod Matrix Amt 1": {
+              "valor": 0.5
+            },
+            "Mod Matrix Amt 2": {
+              "valor": 0.5
+            },
+            "Mod Matrix Amt 3": {
+              "valor": 0.5
+            },
+            "Vel > Vol": {
+              "valor": 0.726562
+            },
+            "Osc Retrig On": {
+              "valor": 0.0
+            },
+            "Env 2 Cyc On": {
+              "valor": 0.0
+            },
+            "Poly Voice Depth": {
+              "valor": 0.54
+            },
+            "Spread": {
+              "valor": 0.54
+            },
+            "Strength": {
+              "valor": 0.54
+            },
+            "Thickness": {
+              "valor": 0.54
+            },
+            "Drift": {
+              "valor": 0.523438
+            },
+            "Legato On": {
+              "valor": 0.0
+            },
+            "Note Pitch Bend On": {
+              "valor": 1.0
+            },
+            "Glide Time": {
+              "valor": 0.0
+            },
+            "Volume": {
+              "valor": 1.0
+            },
+            "Transpose": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.317678
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.62
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 13,
+      "nombre": "Repiques",
+      "volumen": 0.6,
+      "dispositivos": [
+        {
+          "nombre": "909 Core Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Low Gain  ": {
+              "valor": 63.352802
+            },
+            "Mid Gain": {
+              "valor": 63.5
+            },
+            "High Gain": {
+              "valor": 63.352802
+            },
+            "Gain": {
+              "valor": 23.948336
+            },
+            "Drive Amount": {
+              "valor": 0.0
+            },
+            "Drive Tone": {
+              "valor": 0.0
+            },
+            "Glue": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 126.007812
+            }
+          }
+        },
+        {
+          "nombre": "OTT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Depth": {
+              "valor": 0.35
+            },
+            "Time": {
+              "valor": 0.5
+            },
+            "In Gain": {
+              "valor": 0.5
+            },
+            "Out Gain": {
+              "valor": 0.5
+            },
+            "Clean XOV": {
+              "valor": 0.0
+            },
+            "Thresh L": {
+              "valor": 0.5
+            },
+            "Thresh M": {
+              "valor": 0.5
+            },
+            "Thresh H": {
+              "valor": 0.5
+            },
+            "Gain L": {
+              "valor": 0.5
+            },
+            "Gain M": {
+              "valor": 0.5
+            },
+            "Gain H": {
+              "valor": 0.5
+            },
+            "Byp Upwd L": {
+              "valor": 0.0
+            },
+            "Byp Upwd M": {
+              "valor": 0.0
+            },
+            "Byp Upwd H": {
+              "valor": 0.0
+            },
+            "Byp Dnwd L": {
+              "valor": 0.0
+            },
+            "Byp Dnwd M": {
+              "valor": 0.0
+            },
+            "Byp Dnwd H": {
+              "valor": 0.0
+            },
+            "Upwd Strgth": {
+              "valor": 0.5
+            },
+            "Dnwd Strgth": {
+              "valor": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 14,
+      "nombre": "Splash",
+      "volumen": 0.5,
+      "dispositivos": [
+        {
+          "nombre": "Cymbal 808 Full",
+          "clase": "OriginalSimpler",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Snap": {
+              "valor": 1.0
+            },
+            "Sample Selector": {
+              "valor": 0.0
+            },
+            "S Start": {
+              "valor": 0.0
+            },
+            "S Length": {
+              "valor": 1.0
+            },
+            "S Loop On": {
+              "valor": 0.0
+            },
+            "S Loop Length": {
+              "valor": 1.0
+            },
+            "S Loop Fade": {
+              "valor": 0.0
+            },
+            "Spread": {
+              "valor": 0.0
+            },
+            "Glide Mode": {
+              "valor": 0.0
+            },
+            "Glide Time": {
+              "valor": 0.539794
+            },
+            "Transpose": {
+              "valor": 0.0
+            },
+            "Detune": {
+              "valor": 0.0
+            },
+            "Pitch < LFO": {
+              "valor": 0.0
+            },
+            "Pe On": {
+              "valor": 1.0
+            },
+            "Pe < Env": {
+              "valor": 0.0
+            },
+            "Pe Attack": {
+              "valor": 0.0
+            },
+            "Pe Decay": {
+              "valor": 0.581428
+            },
+            "Pe Sustain": {
+              "valor": 0.0
+            },
+            "Pe Release": {
+              "valor": 0.355571
+            },
+            "Volume": {
+              "valor": -12.0
+            },
+            "Vol < Vel": {
+              "valor": 0.35
+            },
+            "Vol < LFO": {
+              "valor": 0.0
+            },
+            "Pan": {
+              "valor": 0.0
+            },
+            "Pan < Rnd": {
+              "valor": 0.0
+            },
+            "Pan < LFO": {
+              "valor": 0.0
+            },
+            "Ve Attack": {
+              "valor": 0.0
+            },
+            "Ve Decay": {
+              "valor": 0.581428
+            },
+            "Ve Sustain": {
+              "valor": 1.0
+            },
+            "Ve Release": {
+              "valor": 0.355571
+            },
+            "Ve Mode": {
+              "valor": 0.0
+            },
+            "Ve Loop": {
+              "valor": 0.539794
+            },
+            "Ve Retrig": {
+              "valor": 3.0
+            },
+            "Fade In": {
+              "valor": 0.03684
+            },
+            "Trigger Mode": {
+              "valor": 0.0
+            },
+            "Fade Out": {
+              "valor": 0.03684
+            },
+            "F On": {
+              "valor": 1.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Circuit - LP/HP": {
+              "valor": 0.0
+            },
+            "Filter Circuit - BP/NO/Morph": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Filter Freq": {
+              "valor": 1.0
+            },
+            "Filter Res": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Drive": {
+              "valor": 0.0
+            },
+            "Fe On": {
+              "valor": 1.0
+            },
+            "Fe < Env": {
+              "valor": 0.0
+            },
+            "Fe Attack": {
+              "valor": 0.0
+            },
+            "Fe Decay": {
+              "valor": 0.581428
+            },
+            "Fe Sustain": {
+              "valor": 0.0
+            },
+            "Fe Release": {
+              "valor": 0.355571
+            },
+            "Filt < Key": {
+              "valor": 1.0
+            },
+            "Filt < Vel": {
+              "valor": 0.0
+            },
+            "Filt < LFO": {
+              "valor": 0.0
+            },
+            "L On": {
+              "valor": 1.0
+            },
+            "L Wave": {
+              "valor": 0.0
+            },
+            "L Sync": {
+              "valor": 0.0
+            },
+            "L Rate": {
+              "valor": 0.575188
+            },
+            "L Sync Rate": {
+              "valor": 4.0
+            },
+            "L R < Key": {
+              "valor": 0.0
+            },
+            "L Attack": {
+              "valor": 0.0
+            },
+            "L Retrig": {
+              "valor": 1.0
+            },
+            "L Offset": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.884324
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 15,
+      "nombre": "Reversa",
+      "volumen": 0.42,
+      "dispositivos": [
+        {
+          "nombre": "Cymbal Crash Reverse Gnirob",
+          "clase": "OriginalSimpler",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Snap": {
+              "valor": 1.0
+            },
+            "Sample Selector": {
+              "valor": 0.0
+            },
+            "S Start": {
+              "valor": 0.0
+            },
+            "S Length": {
+              "valor": 1.0
+            },
+            "S Loop On": {
+              "valor": 0.0
+            },
+            "S Loop Length": {
+              "valor": 1.0
+            },
+            "S Loop Fade": {
+              "valor": 0.0
+            },
+            "Spread": {
+              "valor": 0.0
+            },
+            "Glide Mode": {
+              "valor": 0.0
+            },
+            "Glide Time": {
+              "valor": 0.539794
+            },
+            "Transpose": {
+              "valor": 0.0
+            },
+            "Detune": {
+              "valor": 0.0
+            },
+            "Pitch < LFO": {
+              "valor": 0.0
+            },
+            "Pe On": {
+              "valor": 1.0
+            },
+            "Pe < Env": {
+              "valor": 0.0
+            },
+            "Pe Attack": {
+              "valor": 0.0
+            },
+            "Pe Decay": {
+              "valor": 0.581428
+            },
+            "Pe Sustain": {
+              "valor": 0.0
+            },
+            "Pe Release": {
+              "valor": 0.355571
+            },
+            "Volume": {
+              "valor": -12.0
+            },
+            "Vol < Vel": {
+              "valor": 0.35
+            },
+            "Vol < LFO": {
+              "valor": 0.0
+            },
+            "Pan": {
+              "valor": 0.0
+            },
+            "Pan < Rnd": {
+              "valor": 0.0
+            },
+            "Pan < LFO": {
+              "valor": 0.0
+            },
+            "Ve Attack": {
+              "valor": 0.0
+            },
+            "Ve Decay": {
+              "valor": 0.581428
+            },
+            "Ve Sustain": {
+              "valor": 1.0
+            },
+            "Ve Release": {
+              "valor": 0.355571
+            },
+            "Ve Mode": {
+              "valor": 0.0
+            },
+            "Ve Loop": {
+              "valor": 0.539794
+            },
+            "Ve Retrig": {
+              "valor": 3.0
+            },
+            "Fade In": {
+              "valor": 0.03684
+            },
+            "Trigger Mode": {
+              "valor": 0.0
+            },
+            "Fade Out": {
+              "valor": 0.03684
+            },
+            "F On": {
+              "valor": 1.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Circuit - LP/HP": {
+              "valor": 0.0
+            },
+            "Filter Circuit - BP/NO/Morph": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Filter Freq": {
+              "valor": 1.0
+            },
+            "Filter Res": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Drive": {
+              "valor": 0.0
+            },
+            "Fe On": {
+              "valor": 1.0
+            },
+            "Fe < Env": {
+              "valor": 0.0
+            },
+            "Fe Attack": {
+              "valor": 0.0
+            },
+            "Fe Decay": {
+              "valor": 0.581428
+            },
+            "Fe Sustain": {
+              "valor": 0.0
+            },
+            "Fe Release": {
+              "valor": 0.355571
+            },
+            "Filt < Key": {
+              "valor": 1.0
+            },
+            "Filt < Vel": {
+              "valor": 0.0
+            },
+            "Filt < LFO": {
+              "valor": 0.0
+            },
+            "L On": {
+              "valor": 1.0
+            },
+            "L Wave": {
+              "valor": 0.0
+            },
+            "L Sync": {
+              "valor": 0.0
+            },
+            "L Rate": {
+              "valor": 0.575188
+            },
+            "L Sync Rate": {
+              "valor": 4.0
+            },
+            "L R < Key": {
+              "valor": 0.0
+            },
+            "L Attack": {
+              "valor": 0.0
+            },
+            "L Retrig": {
+              "valor": 1.0
+            },
+            "L Offset": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 16,
+      "nombre": "Metales",
+      "volumen": 0.7,
+      "dispositivos": [
+        {
+          "nombre": "AG Techno Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "DrBuss Amount": {
+              "valor": 0.0
+            },
+            "DrBuss Drive": {
+              "valor": 36.0
+            },
+            "DrBuss Transient": {
+              "valor": 60.0
+            },
+            "Comp Amount": {
+              "valor": 54.0
+            },
+            "Low Gain": {
+              "valor": 66.0
+            },
+            "Mid Gain": {
+              "valor": 63.5
+            },
+            "Mid Freq": {
+              "valor": 55.0
+            },
+            "Hi Gain": {
+              "valor": 63.500015
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "OTT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Depth": {
+              "valor": 0.35
+            },
+            "Time": {
+              "valor": 0.5
+            },
+            "In Gain": {
+              "valor": 0.5
+            },
+            "Out Gain": {
+              "valor": 0.5
+            },
+            "Clean XOV": {
+              "valor": 0.0
+            },
+            "Thresh L": {
+              "valor": 0.5
+            },
+            "Thresh M": {
+              "valor": 0.5
+            },
+            "Thresh H": {
+              "valor": 0.5
+            },
+            "Gain L": {
+              "valor": 0.5
+            },
+            "Gain M": {
+              "valor": 0.5
+            },
+            "Gain H": {
+              "valor": 0.5
+            },
+            "Byp Upwd L": {
+              "valor": 0.0
+            },
+            "Byp Upwd M": {
+              "valor": 0.0
+            },
+            "Byp Upwd H": {
+              "valor": 0.0
+            },
+            "Byp Dnwd L": {
+              "valor": 0.0
+            },
+            "Byp Dnwd M": {
+              "valor": 0.0
+            },
+            "Byp Dnwd H": {
+              "valor": 0.0
+            },
+            "Upwd Strgth": {
+              "valor": 0.5
+            },
+            "Dnwd Strgth": {
+              "valor": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 17,
+      "nombre": "Riser",
+      "volumen": 0.34,
+      "dispositivos": [
+        {
+          "nombre": "Riser White Noise",
+          "clase": "OriginalSimpler",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Snap": {
+              "valor": 1.0
+            },
+            "Sample Selector": {
+              "valor": 0.0
+            },
+            "S Start": {
+              "valor": 0.0
+            },
+            "S Length": {
+              "valor": 1.0
+            },
+            "S Loop On": {
+              "valor": 0.0
+            },
+            "S Loop Length": {
+              "valor": 1.0
+            },
+            "S Loop Fade": {
+              "valor": 0.0
+            },
+            "Spread": {
+              "valor": 0.0
+            },
+            "Glide Mode": {
+              "valor": 0.0
+            },
+            "Glide Time": {
+              "valor": 0.539794
+            },
+            "Transpose": {
+              "valor": 0.0
+            },
+            "Detune": {
+              "valor": 0.0
+            },
+            "Pitch < LFO": {
+              "valor": 0.0
+            },
+            "Pe On": {
+              "valor": 1.0
+            },
+            "Pe < Env": {
+              "valor": 0.0
+            },
+            "Pe Attack": {
+              "valor": 0.0
+            },
+            "Pe Decay": {
+              "valor": 0.581428
+            },
+            "Pe Sustain": {
+              "valor": 0.0
+            },
+            "Pe Release": {
+              "valor": 0.355571
+            },
+            "Volume": {
+              "valor": -12.0
+            },
+            "Vol < Vel": {
+              "valor": 0.35
+            },
+            "Vol < LFO": {
+              "valor": 0.0
+            },
+            "Pan": {
+              "valor": 0.0
+            },
+            "Pan < Rnd": {
+              "valor": 0.0
+            },
+            "Pan < LFO": {
+              "valor": 0.0
+            },
+            "Ve Attack": {
+              "valor": 0.0
+            },
+            "Ve Decay": {
+              "valor": 0.581428
+            },
+            "Ve Sustain": {
+              "valor": 1.0
+            },
+            "Ve Release": {
+              "valor": 0.355571
+            },
+            "Ve Mode": {
+              "valor": 0.0
+            },
+            "Ve Loop": {
+              "valor": 0.539794
+            },
+            "Ve Retrig": {
+              "valor": 3.0
+            },
+            "Fade In": {
+              "valor": 0.03684
+            },
+            "Trigger Mode": {
+              "valor": 0.0
+            },
+            "Fade Out": {
+              "valor": 0.03684
+            },
+            "F On": {
+              "valor": 1.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Circuit - LP/HP": {
+              "valor": 0.0
+            },
+            "Filter Circuit - BP/NO/Morph": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Filter Freq": {
+              "valor": 1.0
+            },
+            "Filter Res": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Drive": {
+              "valor": 0.0
+            },
+            "Fe On": {
+              "valor": 1.0
+            },
+            "Fe < Env": {
+              "valor": 0.0
+            },
+            "Fe Attack": {
+              "valor": 0.0
+            },
+            "Fe Decay": {
+              "valor": 0.581428
+            },
+            "Fe Sustain": {
+              "valor": 0.0
+            },
+            "Fe Release": {
+              "valor": 0.355571
+            },
+            "Filt < Key": {
+              "valor": 1.0
+            },
+            "Filt < Vel": {
+              "valor": 0.0
+            },
+            "Filt < LFO": {
+              "valor": 0.0
+            },
+            "L On": {
+              "valor": 1.0
+            },
+            "L Wave": {
+              "valor": 0.0
+            },
+            "L Sync": {
+              "valor": 0.0
+            },
+            "L Rate": {
+              "valor": 0.575188
+            },
+            "L Sync Rate": {
+              "valor": 4.0
+            },
+            "L R < Key": {
+              "valor": 0.0
+            },
+            "L Attack": {
+              "valor": 0.0
+            },
+            "L Retrig": {
+              "valor": 1.0
+            },
+            "L Offset": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.837183
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 18,
+      "nombre": "Hats",
+      "volumen": 0.88,
+      "dispositivos": [
+        {
+          "nombre": "AG Techno Kit",
+          "clase": "DrumGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "DrBuss Amount": {
+              "valor": 0.0
+            },
+            "DrBuss Drive": {
+              "valor": 36.0
+            },
+            "DrBuss Transient": {
+              "valor": 60.0
+            },
+            "Comp Amount": {
+              "valor": 54.0
+            },
+            "Low Gain": {
+              "valor": 66.0
+            },
+            "Mid Gain": {
+              "valor": 63.5
+            },
+            "Mid Freq": {
+              "valor": 55.0
+            },
+            "Hi Gain": {
+              "valor": 63.500015
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "OTT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Depth": {
+              "valor": 0.35
+            },
+            "Time": {
+              "valor": 0.5
+            },
+            "In Gain": {
+              "valor": 0.5
+            },
+            "Out Gain": {
+              "valor": 0.5
+            },
+            "Clean XOV": {
+              "valor": 0.0
+            },
+            "Thresh L": {
+              "valor": 0.5
+            },
+            "Thresh M": {
+              "valor": 0.5
+            },
+            "Thresh H": {
+              "valor": 0.5
+            },
+            "Gain L": {
+              "valor": 0.5
+            },
+            "Gain M": {
+              "valor": 0.5
+            },
+            "Gain H": {
+              "valor": 0.5
+            },
+            "Byp Upwd L": {
+              "valor": 0.0
+            },
+            "Byp Upwd M": {
+              "valor": 0.0
+            },
+            "Byp Upwd H": {
+              "valor": 0.0
+            },
+            "Byp Dnwd L": {
+              "valor": 0.0
+            },
+            "Byp Dnwd M": {
+              "valor": 0.0
+            },
+            "Byp Dnwd H": {
+              "valor": 0.0
+            },
+            "Upwd Strgth": {
+              "valor": 0.5
+            },
+            "Dnwd Strgth": {
+              "valor": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 19,
+      "nombre": "Abiertos",
+      "volumen": 0.72,
+      "dispositivos": [
+        {
+          "nombre": "Sandman Pad",
+          "clase": "InstrumentGroupDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Bright": {
+              "valor": 0.0
+            },
+            "Tone": {
+              "valor": 75.0
+            },
+            "Color": {
+              "valor": 60.476189
+            },
+            "Drop": {
+              "valor": 0.0
+            },
+            "Attack": {
+              "valor": 0.0
+            },
+            "Release": {
+              "valor": 0.0
+            },
+            "Reverb": {
+              "valor": 59.0
+            },
+            "Volume": {
+              "valor": 107.950005
+            },
+            "Macro 9": {
+              "valor": 0.0
+            },
+            "Macro 10": {
+              "valor": 0.0
+            },
+            "Macro 11": {
+              "valor": 0.0
+            },
+            "Macro 12": {
+              "valor": 0.0
+            },
+            "Macro 13": {
+              "valor": 0.0
+            },
+            "Macro 14": {
+              "valor": 0.0
+            },
+            "Macro 15": {
+              "valor": 0.0
+            },
+            "Macro 16": {
+              "valor": 0.0
+            },
+            "Chain Selector": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.680135
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.55
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 20,
+      "nombre": "Subkick",
+      "volumen": 0.58,
+      "dispositivos": [
+        {
+          "nombre": "Super Sub Drone Bass",
+          "clase": "InstrumentVector",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Osc 1 On": {
+              "valor": 1.0
+            },
+            "Osc 1 Transp": {
+              "valor": 0.0
+            },
+            "Osc 1 Detune": {
+              "valor": 0.5
+            },
+            "Osc 1 Pos": {
+              "valor": 0.470588
+            },
+            "Osc 1 Effect 1": {
+              "valor": 0.726562
+            },
+            "Osc 1 Effect 2": {
+              "valor": 0.0
+            },
+            "Osc 1 Pan": {
+              "valor": 0.484375
+            },
+            "Osc 1 Gain": {
+              "valor": 1.0
+            },
+            "Osc 2 On": {
+              "valor": 1.0
+            },
+            "Osc 2 Transp": {
+              "valor": -24.0
+            },
+            "Osc 2 Detune": {
+              "valor": 0.5
+            },
+            "Osc 2 Pos": {
+              "valor": 0.521008
+            },
+            "Osc 2 Effect 1": {
+              "valor": 0.1875
+            },
+            "Osc 2 Effect 2": {
+              "valor": 0.0
+            },
+            "Osc 2 Pan": {
+              "valor": 0.492188
+            },
+            "Osc 2 Gain": {
+              "valor": 1.0
+            },
+            "Sub On": {
+              "valor": 1.0
+            },
+            "Sub Tone": {
+              "valor": 0.148438
+            },
+            "Sub Gain": {
+              "valor": 0.132812
+            },
+            "Sub Transpose": {
+              "valor": 1.0
+            },
+            "Flt 1 On": {
+              "valor": 1.0
+            },
+            "Flt 1 Type": {
+              "valor": 0.0
+            },
+            "Flt 1 LP/HP": {
+              "valor": 2.0
+            },
+            "Flt 1 BP/NO/MO": {
+              "valor": 0.0
+            },
+            "Flt 1 Slope": {
+              "valor": 0.0
+            },
+            "Flt 1 Freq": {
+              "valor": 0.456294
+            },
+            "Flt 1 Res": {
+              "valor": 0.277778
+            },
+            "Flt 1 Drive": {
+              "valor": 0.359375
+            },
+            "Flt 1 Morph": {
+              "valor": 0.0
+            },
+            "Flt 2 On": {
+              "valor": 1.0
+            },
+            "Flt 2 Type": {
+              "valor": 0.0
+            },
+            "Flt 2 LP/HP": {
+              "valor": 2.0
+            },
+            "Flt 2 BP/NO/MO": {
+              "valor": 0.0
+            },
+            "Flt 2 Slope": {
+              "valor": 0.0
+            },
+            "Flt 2 Freq": {
+              "valor": 0.293651
+            },
+            "Flt 2 Res": {
+              "valor": 0.301587
+            },
+            "Flt 2 Drive": {
+              "valor": 0.375
+            },
+            "Flt 2 Morph": {
+              "valor": 0.0
+            },
+            "Amp Attack": {
+              "valor": 0.171875
+            },
+            "Amp Decay": {
+              "valor": 0.984375
+            },
+            "Amp Release": {
+              "valor": 0.148438
+            },
+            "Amp A Slope": {
+              "valor": 0.5
+            },
+            "Amp D Slope": {
+              "valor": 0.75
+            },
+            "Amp R Slope": {
+              "valor": 0.71875
+            },
+            "Amp Sustain": {
+              "valor": 0.707946
+            },
+            "Amp Loop Mode": {
+              "valor": 0.0
+            },
+            "Env 2 Attack": {
+              "valor": 0.773438
+            },
+            "Env 2 Decay": {
+              "valor": 0.415927
+            },
+            "Env 2 Release": {
+              "valor": 0.226562
+            },
+            "Env 2 A Slope": {
+              "valor": 0.5
+            },
+            "Env 2 D Slope": {
+              "valor": 0.75
+            },
+            "Env 2 R Slope": {
+              "valor": 0.75
+            },
+            "Env 2 Initial": {
+              "valor": 0.226562
+            },
+            "Env 2 Peak": {
+              "valor": 1.0
+            },
+            "Env 2 Sustain": {
+              "valor": 0.796875
+            },
+            "Env 2 Final": {
+              "valor": 0.0
+            },
+            "Env 2 Loop Mode": {
+              "valor": 0.0
+            },
+            "Env 3 Attack": {
+              "valor": 0.08409
+            },
+            "Env 3 Decay": {
+              "valor": 0.415927
+            },
+            "Env 3 Release": {
+              "valor": 0.415927
+            },
+            "Env 3 A Slope": {
+              "valor": 0.5
+            },
+            "Env 3 D Slope": {
+              "valor": 0.75
+            },
+            "Env 3 R Slope": {
+              "valor": 0.75
+            },
+            "Env 3 Initial": {
+              "valor": 0.0
+            },
+            "Env 3 Peak": {
+              "valor": 1.0
+            },
+            "Env 3 Sustain": {
+              "valor": 0.5
+            },
+            "Env 3 Final": {
+              "valor": 0.0
+            },
+            "Env 3 Loop Mode": {
+              "valor": 0.0
+            },
+            "LFO 1 Retrigger": {
+              "valor": 1.0
+            },
+            "LFO 1 Shape": {
+              "valor": 0.0
+            },
+            "LFO 1 Amount": {
+              "valor": 1.0
+            },
+            "LFO 1 Shaping": {
+              "valor": 0.71875
+            },
+            "LFO 1 Phase Offset": {
+              "valor": 0.0
+            },
+            "LFO 1 Sync": {
+              "valor": 1.0
+            },
+            "LFO 1 Rate": {
+              "valor": 0.320789
+            },
+            "LFO 1 S. Rate": {
+              "valor": 0.0
+            },
+            "LFO 1 Attack Time": {
+              "valor": 0.007812
+            },
+            "LFO 2 Retrigger": {
+              "valor": 1.0
+            },
+            "LFO 2 Shape": {
+              "valor": 0.0
+            },
+            "LFO 2 Amount": {
+              "valor": 1.0
+            },
+            "LFO 2 Shaping": {
+              "valor": 0.5
+            },
+            "LFO 2 Phase Offset": {
+              "valor": 0.0
+            },
+            "LFO 2 Sync": {
+              "valor": 1.0
+            },
+            "LFO 2 Rate": {
+              "valor": 0.320789
+            },
+            "LFO 2 S. Rate": {
+              "valor": 0.0
+            },
+            "LFO 2 Attack Time": {
+              "valor": 0.257812
+            },
+            "Time": {
+              "valor": 0.5
+            },
+            "Global Mod Amount": {
+              "valor": 0.5
+            },
+            "Unison Amount": {
+              "valor": 0.625
+            },
+            "Transpose": {
+              "valor": 12.0
+            },
+            "Glide": {
+              "valor": 0.25
+            },
+            "Volume": {
+              "valor": 0.460938
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.217657
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Pan-Tremolo",
+          "clase": "AutoPan2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Mode": {
+              "valor": 1.0
+            },
+            "Amount": {
+              "valor": 0.62
+            },
+            "Waveform": {
+              "valor": 0.0
+            },
+            "Invert": {
+              "valor": 0.0
+            },
+            "Time Mode": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.359952
+            },
+            "Time": {
+              "valor": 0.19739
+            },
+            "Rate": {
+              "valor": 6.0
+            },
+            "16th": {
+              "valor": 4.0
+            },
+            "Phase": {
+              "valor": 0.0
+            },
+            "Offset": {
+              "valor": 0.0
+            },
+            "Stereo Mode": {
+              "valor": 0.0
+            },
+            "Spin": {
+              "valor": 0.0
+            },
+            "Panning Shape": {
+              "valor": 0.0
+            },
+            "Tremolo Shape": {
+              "valor": 0.5
+            },
+            "Attack Time": {
+              "valor": 0.0
+            },
+            "Dyn Mod": {
+              "valor": 0.5
+            },
+            "Harmonic": {
+              "valor": 0.0
+            },
+            "Vintage": {
+              "valor": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 21,
+      "nombre": "Arpegio",
+      "volumen": 0.52,
+      "dispositivos": [
+        {
+          "nombre": "Surge XT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.74327
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 22,
+      "nombre": "Cierre",
+      "volumen": 0.58,
+      "dispositivos": [
+        {
+          "nombre": "TAL-NoiseMaker",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.666304
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "indice": 23,
+      "nombre": "Lead",
+      "volumen": 0.56,
+      "dispositivos": [
+        {
+          "nombre": "Surge XT",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "Auto Filter",
+          "clase": "AutoFilter2",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Frequency": {
+              "valor": 0.766829
+            },
+            "Resonance": {
+              "valor": 0.0
+            },
+            "Filter Morph": {
+              "valor": 0.0
+            },
+            "Filter Type": {
+              "valor": 0.0
+            },
+            "Filter Slope": {
+              "valor": 1.0
+            },
+            "Morph Slope": {
+              "valor": 2.0
+            },
+            "Circuit": {
+              "valor": 0.0
+            },
+            "Drive": {
+              "valor": 0.0
+            },
+            "Control": {
+              "valor": 0.5
+            },
+            "Pitch": {
+              "valor": 0.0
+            },
+            "Formant": {
+              "valor": 0.0
+            },
+            "LFO Amount": {
+              "valor": 0.0
+            },
+            "LFO Wave": {
+              "valor": 0.0
+            },
+            "LFO T Mode": {
+              "valor": 0.0
+            },
+            "LFO Freq": {
+              "valor": 0.359952
+            },
+            "LFO Time": {
+              "valor": 0.19739
+            },
+            "LFO Rate": {
+              "valor": 4.0
+            },
+            "LFO 16th": {
+              "valor": 16.0
+            },
+            "LFO Phase": {
+              "valor": 0.011111
+            },
+            "LFO Offset": {
+              "valor": 0.0
+            },
+            "LFO S Mode": {
+              "valor": 0.0
+            },
+            "LFO Spin": {
+              "valor": 0.0
+            },
+            "LFO Morph": {
+              "valor": 0.5
+            },
+            "LFO Smoothing": {
+              "valor": 0.0
+            },
+            "LFO Q Mode": {
+              "valor": 0.0
+            },
+            "LFO Steps": {
+              "valor": 8.0
+            },
+            "LFO S&H": {
+              "valor": -4.0
+            },
+            "Env Amount": {
+              "valor": 0.5
+            },
+            "Env Attack": {
+              "valor": 0.250841
+            },
+            "Env Hold On": {
+              "valor": 1.0
+            },
+            "Env Release": {
+              "valor": 0.474156
+            },
+            "Env S&H On": {
+              "valor": 0.0
+            },
+            "Env S&H": {
+              "valor": -4.0
+            },
+            "Output": {
+              "valor": 1.0
+            },
+            "Soft Clip On": {
+              "valor": 0.0
+            },
+            "Dry/Wet": {
+              "valor": 1.0
+            },
+            "S/C EQ On": {
+              "valor": 0.0
+            },
+            "S/C EQ Type": {
+              "valor": 5.0
+            },
+            "S/C EQ Freq": {
+              "valor": 0.305268
+            },
+            "S/C EQ Q": {
+              "valor": 0.408567
+            },
+            "S/C EQ Gain": {
+              "valor": 0.5
+            },
+            "S/C On": {
+              "valor": 0.0
+            },
+            "S/C Gain": {
+              "valor": 0.4
+            },
+            "S/C Mix": {
+              "valor": 1.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL-Chorus-LX",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "Volume": {
+              "valor": 0.5
+            },
+            "Dry / Wet": {
+              "valor": 0.5
+            },
+            "Stereo": {
+              "valor": 1.0
+            },
+            "Chorus 1": {
+              "valor": 1.0
+            },
+            "Chorus 2": {
+              "valor": 0.0
+            },
+            "Compatible with version <= 1.3.1": {
+              "valor": 0.0
+            }
+          }
+        },
+        {
+          "nombre": "TAL Reverb 4 Plugin",
+          "clase": "PluginDevice",
+          "parametros": {
+            "Device On": {
+              "valor": 1.0
+            },
+            "On / Off": {
+              "valor": 1.0
+            },
+            "Wet": {
+              "valor": 0.215821
+            },
+            "Dry": {
+              "valor": 1.0
+            },
+            "Delay": {
+              "valor": 0.0
+            },
+            "Size": {
+              "valor": 0.638666
+            },
+            "High Cut Freq": {
+              "valor": 1.0
+            },
+            "Low Cut Freq": {
+              "valor": 0.23701
+            },
+            "Peak Freq": {
+              "valor": 0.524691
+            },
+            "Peak Amount": {
+              "valor": 0.5
+            },
+            "Modulation Rate": {
+              "valor": 0.735326
+            },
+            "Modulation Depth": {
+              "valor": 0.306112
+            },
+            "Diffuse": {
+              "valor": 1.0
+            },
+            "Harmonic Tune": {
+              "valor": 0.0
+            },
+            "Harmonic Amount": {
+              "valor": 1.0
+            },
+            "Stereo width": {
+              "valor": 1.0
+            },
+            "Ducking": {
+              "valor": 0.0
+            },
+            "Side Chain": {
+              "valor": 0.0
+            },
+            "Damp": {
+              "valor": 0.195669
+            },
+            "Bits": {
+              "valor": 1.0
+            },
+            "Sample Rate Divider": {
+              "valor": 1.0
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

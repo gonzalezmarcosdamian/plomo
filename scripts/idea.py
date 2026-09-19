@@ -309,7 +309,39 @@ GRADOS_BAJO = {0: 0, 2: 0, 4: 0, 5: 0, 7: 0, 8: 0, 9: 0, 10: 0, 12: 0,
 #
 # Se queda quieta 16 compases antes de moverse. Un cambio cada cuatro obliga a
 # escuchar la armonia; cuando no se mueve, el oido se va al groove.
-PROGRESION = [0, 0, 0, 0, 4, 4, 0, 0]
+# El grado 5 es el VI (Re mayor en F#m), no el 4 (v, Do# menor).
+#
+# El bajo es un pedal fijo en la tonica. Sobre un pedal de F#, cada grado suena
+# asi:
+#
+#     i   F#m   el F# es la fundamental    VI  D    es la TERCERA — calido
+#     VII E     es la novena               iv  Bm   es la quinta
+#     III A     es la sexta                v   C#m  es la ONCENA  <- el elegido
+#
+# El unico grado que NO funciona sobre este pedal era exactamente el que se
+# habia elegido, y era el 100% del contraste armonico del tema. Ese "cambio de
+# acorde" no se escuchaba como que la armonia se movio: se escuchaba como que
+# el pad se desafino contra el bajo, ocho compases cada vez.
+#
+# Y arregla algo mas de paso. El gancho tiene una nota larga en D5. Contra C#m
+# esa nota es una b9 sostenida —la disonancia mas expuesta del tema— y contra D
+# es la FUNDAMENTAL. La nota mas expuesta de la melodia pasa de chocar a ser la
+# mas dulce sin tocar una sola altura.
+PROGRESION = [0, 0, 0, 0, 5, 5, 0, 0]
+
+# La armonia por tipo de seccion. Antes `PROGRESION` era una constante global
+# que usaban las nueve partes, asi que ninguna seccion podia sonar distinta de
+# otra: el breakdown y el drop tenian la misma armonia que la intro.
+#
+# Indices: 0 = i, 2 = III, 3 = iv, 5 = VI, 6 = VII.
+PROGRESION_POR_TIPO = {
+    "groove":    [0, 0, 0, 0, 0, 0, 6, 6],   # se plancha en la i y el VII avisa
+    "pleno":     [0, 0, 5, 5, 0, 0, 3, 6],   # i - VI - i - iv - VII
+    "bajon":     [5, 5, 5, 5, 5, 5, 5, 5],   # el bajon se queda en el VI
+    "breakdown": [3, 3, 6, 6, 5, 5, 0, 0],   # iv - VII - VI - i: aterriza en el drop
+    "drop":      [0, 0, 6, 6, 5, 5, 6, 6],   # i - VII - VI - VII: no resuelve nunca
+    "salida_dj": [0, 0, 5, 5, 0, 0, 0, 0],
+}
 
 # El gancho, en (compas del grupo de 4, pulso, grado, duracion en pulsos).
 #
@@ -317,11 +349,33 @@ PROGRESION = [0, 0, 0, 0, 4, 4, 0, 0]
 # arriba y resuelve. Ocho notas en cuatro compases — si hicieran falta mas para
 # que se entienda, no seria un gancho.
 GANCHO = [
-    (0, 0.0, 4, 2.0),
-    (1, 0.0, 7, 0.7), (1, 1.0, 6, 0.7), (1, 2.0, 4, 1.4),
-    (2, 0.0, 5, 2.0),
-    (3, 0.0, 4, 0.7), (3, 1.0, 3, 0.7), (3, 2.0, 1, 1.8),
+    # Ocho compases, y NINGUNA nota cae en un pulso.
+    #
+    # La version anterior atacaba en las semicorcheas 0, 4 y 8 — negras exactas
+    # sobre la grilla— y medido contra la bateria daba 168 de 168 ataques
+    # ENCIMA de un bombo. El 100%. Una linea de alturas correctas, en negras,
+    # sobre el pulso, sin una sola sincopa, repetida cuarenta veces: eso es la
+    # descripcion de un ringtone polifonico, y era literalmente lo que estaba
+    # escrito.
+    #
+    # El bombo ocupa las semicorcheas 0, 4, 8 y 12. El bajo ocupa las de al
+    # lado (2, 5, 7, 13, 15). La melodia tiene que vivir en el tercer estrato:
+    # 3, 7, 11 y 15, que no usa ninguno de los dos. Las alturas no se tocaron —
+    # la figura pregunta-respuesta esta bien—, solo donde caen.
+    #
+    # A (c1-c2): la pregunta entra en la semicorchea 3 y cruza DOS bombos
+    (0, 0.75, 4, 3.25),
+    (1, 1.75, 7, 0.75), (1, 2.75, 6, 0.75), (1, 3.75, 4, 1.25),
+    # B (c3-c4): la misma pregunta un grado arriba, la respuesta baja
+    (2, 0.75, 5, 3.25),
+    (3, 1.75, 6, 0.75), (3, 2.75, 4, 0.75), (3, 3.75, 3, 1.25),
+    # C (c5-c6): RECORTE. Solo la pregunta. El hueco donde estaba la respuesta
+    #            es lo que hace respirar la frase sin sacarle nada al arreglo.
+    (4, 0.75, 4, 3.25),
+    # D (c7-c8): la respuesta sola, alargada, resuelve abajo y se queda
+    (6, 1.75, 6, 0.75), (6, 2.75, 4, 0.75), (6, 3.75, 0, 5.25),
 ]
+LARGO_GANCHO = 8
 
 
 def _empuje(compas: int) -> float:
@@ -1319,7 +1373,10 @@ def _anchos(bpm: float, tonica: int, escala: list[int], h: Humano,
     """Golpes de acorde arriba. Entran en el pleno y se abren en el climax."""
     p = Pista("Anchos", bpm, canal=0)
     for bloque in range(COMPASES // 4):
-        notas = triada(tonica, escala, PROGRESION[bloque], octava=5,
+        # Octava 4 y no 5. En la 5 las voces llegaban a C#6 y la voz mas
+        # aguda del tema pasaba a ser un golpe de acorde en vez de la melodia
+        # —tocando ademas las mismas tres notas que la melodia ya toca—.
+        notas = triada(tonica, escala, PROGRESION[bloque], octava=4,
                        septima=False)
         for c in range(bloque * 4, bloque * 4 + 4):
             emp = _empuje(c)
@@ -1334,7 +1391,9 @@ def _anchos(bpm: float, tonica: int, escala: list[int], h: Humano,
             # mismo perfil los dos golpes caen en el mismo instante y se
             # escuchan como uno solo con mas cuerpo. Con perfiles distintos
             # caerian a unos milisegundos y eso es filtro de peine.
-            for pulso in ((0.5, 1.5, 2.5, 3.5) if climax else ANCHO_PULSOS):
+            # dos contratiempos tambien en el drop: los cuatro dejaban las
+            # ocho corcheas del compas ocupadas por la misma triada
+            for pulso in ANCHO_PULSOS:
                 # en el climax se suma la quinta abajo: el acorde se abre, no se
                 # mueve
                 voces = notas if not climax else [notas[0] - 12] + notas
@@ -1595,7 +1654,7 @@ def _gancho_tecno(bpm: float, tonica: int, escala: list[int], h: Humano,
     for bloque in range(COMPASES // 4):
         g = PROGRESION[bloque]
         for compas, pulso, grado_rel, dur in GANCHO_TECNO:
-            c = bloque * 4 + compas
+            c = bloque * LARGO_GANCHO + compas
             if c >= COMPASES:
                 continue
             octava = 4 if climax else 3
@@ -1635,7 +1694,7 @@ def _gancho(bpm: float, tonica: int, escala: list[int], h: Humano,
     """
     p = Pista("Gancho", bpm, canal=0)
     vuelta = () if climax else VUELTA_BASE
-    for bloque in (range(8) if pleno else (4, 5, 6, 7)):
+    for bloque in (range(COMPASES // LARGO_GANCHO) if pleno else (2, 3)):
         # en el climax, la segunda mitad se va a la figura dulce
         dulce = climax and bloque >= 4
         figura = GANCHO_DULCE if dulce else GANCHO
@@ -1643,8 +1702,8 @@ def _gancho(bpm: float, tonica: int, escala: list[int], h: Humano,
         # subio entera, y volver a empezarla desde abajo hace que el drop abra
         # mas flojo que el compas anterior — que es exactamente lo que se medía:
         # el compas 63 pesaba 3436 y el 65, el primero del drop, 2830.
-        doble = climax or bloque >= 6    # 25-32: octava arriba
-        cuerpo = climax or bloque >= 7   # 29-32: y ademas la tercera
+        doble = climax or bloque >= 3
+        cuerpo = climax or bloque >= 3
         for compas, pulso, g, dur in figura:
             c = bloque * 4 + compas
             if c >= COMPASES or (tension and c in VACIO):
@@ -1668,7 +1727,13 @@ def _gancho(bpm: float, tonica: int, escala: list[int], h: Humano,
             # llegaba al MIDI 95: en un pluck filtrado eso se escucha fino y se
             # despega del resto. El intervalo que da color es la tercera; la
             # decima es la misma nota mas lejos y suena a otra cosa.
-            if doble and not dulce:
+            # La voz de color SOLO en las notas largas. Antes la tercera
+            # entraba en el mismo tick y con la misma duracion que cada nota,
+            # y tres voces paralelas en negras no son "la melodia en dos
+            # voces": son un acorde golpeado. El criterio correcto ya estaba
+            # escrito en `_lead` (`if dur < 1.2: continue`), aplicado a la capa
+            # equivocada.
+            if doble and not dulce and largo:
                 # La tercera ABAJO, no la octava arriba.
                 #
                 # La octava arriba llevaba el techo a MIDI 90 con velocidad 60:
@@ -1849,49 +1914,48 @@ def _metales(bpm: float, h: Humano) -> Pista:
 FORMA = [
     # (parte, compas de entrada, largo, tipo)
     #
-    # Copiada de "Tali Muss - Interlocutor (Kebin Van Reeken Extended Remix)",
-    # medida compas por compas por nivel de graves (no por el clasificador, que
-    # se equivoca en las partes fuertes porque el detector de bombo se satura):
+    # Medida con `forma_bandas.py` en cinco temas de los sets nuevos (Alex
+    # O'Rion - Tunnel, Jeremy Olander - Panorama y Rubicks, Khen - Closing
+    # Doors, Emi Galvan - Flowing). El house progresivo es casi lo OPUESTO del
+    # techno en la forma:
     #
-    #     1-32    32  intro, graves -17.7   (bombo sin bajo)
-    #    33-44    12  pleno,  graves  -9.8
-    #    45-48     4  BAJON,  graves -16.6  (se va el bajo, el bombo queda)
-    #    49-64    16  pleno
-    #    65-80    16  bajada, graves -25.5  (se van los dos)
-    #    81-96    16  pleno
-    #    97-136   40  BREAKDOWN, graves -23.8 y MEDIOS -19.7
-    #   137-184   48  DROP,   graves  -9.6  y medios -20.9
-    #   185-192    8  bajon
-    #   193-200    8  bajada
-    #   201-228   28  salida con groove
+    #                    bloques PLENOS        los breakdowns
+    #   Alex O'Rion      134, 29, 12, 49       11, 4, 4
+    #   Rubicks           53, 70, 12, 12        4, 4, 9, 4
+    #   Panorama          45, 31, 24, 48        5, 4, 8, 16
+    #   Khen              72, 35, 34           13, 9, 8
+    #   -------------------------------------------------------
+    #   Interlocutor      48, 32, 16           40          (techno)
     #
-    # Lo que cambia todo: en el breakdown los MEDIOS estan MAS FUERTES que en
-    # el drop (-19.7 contra -20.9). No es un vaciado — se va el grave y lo
-    # melodico crece y se lleva el tema. Todas las versiones anteriores hacian
-    # lo contrario y por eso cada una sono "silenciosa", "brusca" o "se muere".
+    # El techno pone UN breakdown grande. El progresivo pone plenos LARGOS —de
+    # treinta a setenta compases— con bajones CORTOS de cuatro a dieciseis en
+    # el medio. Un breakdown de cuarenta compases es lo que hace que un tema
+    # progresivo "se muera".
     #
-    # Y los bajones de CUATRO compases adentro del pleno: rompen la monotonia
-    # sin vaciar nada. Es lo que le faltaba a los treinta y dos compases planos.
+    # Y duran mas: 7.6 a 8.9 minutos. 256 compases a 123 BPM son 8:19.
     ("intro",       0,  32, "groove"),
-    ("pleno1",     32,  16, "pleno"),
-    ("bajon1",     48,   4, "bajon"),
-    ("pleno2",     52,  12, "pleno"),
-    ("bajada",     64,  16, "bajada"),
-    ("pleno3",     80,  16, "pleno"),
-    ("breakdown",  96,  40, "breakdown"),
-    ("drop",      136,  48, "drop"),
-    ("bajon2",    184,   8, "bajon"),
-    ("salida",    192,  16, "pleno"),
-    ("salida_dj", 208,  32, "salida_dj"),
+    ("pleno1",     32,  48, "pleno"),
+    ("bajon1",     80,   8, "bajon"),
+    ("pleno2",     88,  48, "pleno"),
+    ("bajon2",    136,   4, "bajon"),
+    ("breakdown", 140,  16, "breakdown"),
+    ("drop",      156,  60, "drop"),
+    ("bajon3",    216,   8, "bajon"),
+    ("salida_dj", 224,  32, "salida_dj"),
 ]
+TIPO = {n: t for n, _, _, t in FORMA}
+
+# En el breakdown los medios quedan entre 0 y +3 dB respecto del drop, medido
+# en los cuatro: Khen +0.0, Rubicks +0.3, Tunnel +3.2, Panorama +0.8. La
+# version anterior llego a +6.6, que es pasarse.
+INTENSIDAD = {"intro": 0.74, "pleno1": 0.90, "bajon1": 0.90, "pleno2": 0.95,
+              "bajon2": 0.95, "breakdown": 0.97, "drop": 1.0,
+              "bajon3": 0.95, "salida_dj": 0.80}
 TIPO = {n: t for n, _, _, t in FORMA}
 
 # Cuanto pega cada parte. El breakdown va a 1.0 a proposito: su material es
 # menos, pero lo que queda suena FUERTE — es la unica forma de que los medios
 # terminen por encima de los del drop, como en la referencia.
-INTENSIDAD = {"intro": 0.72, "pleno1": 0.88, "bajon1": 0.88, "pleno2": 0.92,
-              "bajada": 0.90, "pleno3": 0.95, "breakdown": 1.0, "drop": 1.0,
-              "bajon2": 0.95, "salida": 0.98, "salida_dj": 0.80}
 
 
 
@@ -1971,9 +2035,28 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
     vieja podia dejar una capa muda en una sola seccion sin que se notara.
     """
     tipo = TIPO[nombre]
+    # La armonia de ESTA seccion. `PROGRESION` es un global que leen seis
+    # generadores, asi que se cambia antes de llamarlos y se repone despues.
+    # Feo pero honesto: pasarlo por parametro serian seis firmas nuevas para
+    # un dato que efectivamente es del contexto.
+    global PROGRESION
+    _prog_antes = PROGRESION
+    PROGRESION = PROGRESION_POR_TIPO.get(tipo, PROGRESION)
+    try:
+        return _armar_parte(nombre, tipo, bpm, tonica, escala, semilla)
+    finally:
+        PROGRESION = _prog_antes
+
+
+def _armar_parte(nombre: str, tipo: str, bpm: float, tonica: int,
+                 escala: list[int], semilla: int) -> list[tuple[str, Pista]]:
     h = Humano(semilla, INTENSIDAD[nombre])
-    bajo = _bajo_tecno if TECNO else _bajo
-    gancho = _gancho_tecno if TECNO else _gancho
+    # El bajo SALTARIN y el gancho melodico, aunque la bateria siga siendo la
+    # densa del techno. Medido en Tunnel: el bajo ataca 8.88 veces por compas
+    # con 98% de cobertura, contra 2.19 de Interlocutor. El bajo tenido es del
+    # techno; en progresivo el bajo es la mitad del groove.
+    bajo = _bajo
+    gancho = _gancho
     largo = {n: l for n, _, l, _ in FORMA}[nombre]
 
     hay_bombo = tipo in ("groove", "pleno", "bajon", "drop", "salida_dj")
@@ -2008,16 +2091,26 @@ def _parte(nombre: str, bpm: float, tonica: int, escala: list[int],
         gm = gancho(bpm, tonica, escala, h, True, grande, False) \
             if not TECNO else gancho(bpm, tonica, escala, h, grande)
         base.append(("05_gancho", gm))
-        if not TECNO:
-            base.append(("08_anchos", _anchos(bpm, tonica, escala, h, grande)))
+        base.append(("08_anchos", _anchos(bpm, tonica, escala, h, grande)))
     elif tipo == "salida_dj":
         base.append(("02_acordes", _acordes(bpm, tonica, escala, h, True, False)))
+        # La salida eran treinta y dos compases de groove sin una sola nota
+        # melodica. `CIERRE` esta escrito exactamente para esto.
+        base.append(("07_cierre", _cierre(bpm, tonica, h)))
 
     # --- los golpes
     if tipo == "drop":
         base.append(("11_splash", _splash(bpm, h)))
+        # El drop no traia UNA sola idea que el pleno no tuviera: sus pistas
+        # eran las del pleno mas siete notas de platillo, y el breakdown tenia
+        # MAS densidad melodica por compas que el. Y el material que faltaba
+        # estaba escrito en el archivo desde hace dias, sin un solo call site:
+        # `_lead` dice en su comentario "la unica capa que existe SOLO en el
+        # segundo drop" y no se llamaba nunca.
+        base.append(("13_lead", _lead(bpm, tonica, escala, h)))
+        base.append(("06_arpegio", _arpegio(bpm, tonica, escala, h)))
     if tipo == "breakdown":
-        base.append(("08_anchos", _acordes_abiertos(bpm, tonica, escala, h)))
+        base.append(("20_abiertos", _acordes_abiertos(bpm, tonica, escala, h)))
         # el riser crece los ultimos ocho compases del breakdown y desemboca
         # en el drop: es lo unico que anuncia el cambio
         riser = Pista("Riser", bpm, canal=0)
