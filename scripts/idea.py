@@ -1939,7 +1939,16 @@ def _subkick(bpm: float, h: Humano) -> Pista:
 # hace falta. Cae en semicorcheas que el hat no usa y cambia cada dos compases,
 # asi que el oido nunca termina de aprenderselo — que es la definicion practica
 # de "no suena a loop".
-METALES = ((2.75, 3.25, 3.75), (0.75, 2.25, 3.75), (1.75, 2.75, 3.25),
+#
+# El segundo banco tenia un 2.25 que rompia esa regla: 2.25 es exactamente
+# donde cae el fantasma del hat (`_bateria`, pulsos 0.25/2.25, la MISMA nota
+# CHH del mismo Drum Rack). No es un flam entre dos timbres: es la misma
+# forma de onda disparada dos veces desde pistas distintas, y escuchar.py
+# (vuelta 008, data/juicio/008.json) lo midio en pleno1/pleno2/drop —11 a 13
+# racimos de hats:42/metales:42 a menos de 10 ms por seccion, cada vez que el
+# banco 1 esta activo ((c // 2) % 4 == 1). Se cambia el 2.25 por 2.75, que ya
+# es una de las semicorcheas "seguras" que usan los otros tres bancos.
+METALES = ((2.75, 3.25, 3.75), (0.75, 2.75, 3.75), (1.75, 2.75, 3.25),
            (0.75, 1.75, 3.75))
 
 
