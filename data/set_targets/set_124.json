@@ -9,59 +9,29 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "&ME, Rampa, Adam Port, Keinemusik, chuala",
-      "title": "Say What (feat. Chuala) (feat. Chuala)",
-      "content_id": "129739585"
+      "artist": "Maze 28",
+      "title": "Flux",
+      "content_id": "172301228"
     },
     {
-      "artist": "Lane 8 ft. Solomon Grey",
-      "title": "Diamonds (Original Mix)",
-      "content_id": "43416483"
+      "artist": "Roy Rosenfeld",
+      "title": "Halomot",
+      "content_id": "262045866"
     },
     {
-      "artist": "Hernan Cattaneo, Husa & Zeyada",
-      "title": "Love Is Coming Back (Club Mix)",
-      "content_id": "89421126"
+      "artist": "Andre Moret, Mariusso",
+      "title": "Cygnus (Cosmonaut Extended Mix)",
+      "content_id": "81730683"
     },
     {
-      "artist": "Durante & Elliot Toller",
-      "title": "Ceres",
-      "content_id": "226658028"
+      "artist": "Cesar Borra",
+      "title": "Don't Kill My Vibe (Steven Flynn Remix)",
+      "content_id": "102730439"
     },
     {
-      "artist": "M.O.S., Leonid Sivelkin, Krasa Rosa",
-      "title": "On The Strings Of Love (Original Mix)",
-      "content_id": "157561207"
-    },
-    {
-      "artist": "NUFECTS",
-      "title": "Inferno (Extended Mix)",
-      "content_id": "12342979"
-    },
-    {
-      "artist": "Redspace, Unusual Soul",
-      "title": "White Room (Original Mix)",
-      "content_id": "132240211"
-    },
-    {
-      "artist": "Julian Nates",
-      "title": "The Great Attractor (Original Mix)",
-      "content_id": "134778545"
-    },
-    {
-      "artist": "Shai T",
-      "title": "Summer Oclock (Original Mix) ",
-      "content_id": "46457686"
-    },
-    {
-      "artist": "Tali Muss, 84 Avenue",
-      "title": "Nebula (Extended Mix)",
-      "content_id": "177543291"
-    },
-    {
-      "artist": "Gai Barone",
-      "title": "Shuttered (Original Mix)",
-      "content_id": "210073756"
+      "artist": "Hernan Cattaneo & Marcelo Vasami",
+      "title": "Scope",
+      "content_id": "158022171"
     },
     {
       "artist": "Aman Anand & Da Luka",
@@ -69,14 +39,29 @@
       "content_id": "50536262"
     },
     {
+      "artist": "Sebastian Sellares",
+      "title": "Garden of Eden (Extended Mix)",
+      "content_id": "250104030"
+    },
+    {
+      "artist": "Kostya Outta, Liam Garcia",
+      "title": "If I Win (Extended Mix)",
+      "content_id": "231387448"
+    },
+    {
       "artist": "Marsh",
       "title": "Beech Street (Simon Doty Extended Mix)",
       "content_id": "38435770"
     },
     {
-      "artist": "Emi Galvan",
-      "title": "Vibration (Original Mix)",
-      "content_id": "214160790"
+      "artist": "Melodiam",
+      "title": "Old Garden",
+      "content_id": "72587871"
+    },
+    {
+      "artist": "Audio Junkies, AVIV BENS",
+      "title": "Perico (Original Mix)",
+      "content_id": "189190138"
     },
     {
       "artist": "Marc Lenz",
@@ -84,19 +69,34 @@
       "content_id": "132804349"
     },
     {
-      "artist": "Maze 28",
-      "title": "Red Lights From Afar (Ruben Karapetyan Remix)",
-      "content_id": "13428525"
+      "artist": "Unusual Soul",
+      "title": "Empath",
+      "content_id": "254836060"
     },
     {
-      "artist": "Jeremy Olander",
-      "title": "Andköln (Hunter/Game Remix)",
-      "content_id": "100016694"
+      "artist": "Sebastien Leger",
+      "title": "Son of Sun (Original Mix)",
+      "content_id": "226428612"
     },
     {
-      "artist": "Raphael Palacci",
-      "title": "Big Jet Plane (Remix)",
-      "content_id": "13187756"
+      "artist": "Fabricio Gutierrez",
+      "title": "Reedmov (Kebin van Reeken Remix)",
+      "content_id": "230581616"
+    },
+    {
+      "artist": "Made In TLV & Dor Danino",
+      "title": "Make a Wish",
+      "content_id": "143641420"
+    },
+    {
+      "artist": "Dowden, Mazayr",
+      "title": "Deflator (Montw Remix)",
+      "content_id": "266149371"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "DEC (Original Mix)",
+      "content_id": "175764875"
     }
   ]
 }

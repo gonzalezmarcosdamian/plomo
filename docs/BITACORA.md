@@ -9,6 +9,73 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-19 — el gap contra los DJ reales, cerrado en las dos metricas centrales
+
+Los 18 sets por momento ya estaban auditados en 0 transiciones flojas. Lo que
+faltaba era comparar la FORMA contra el corpus de referencia. Al medirlo bien
+aparecieron cuatro errores mios encadenados.
+
+**Primero, la medicion estaba mal.** Los setlists reales tienen tracks sin
+identificar. Tomar los que tienen energia y calcular saltos entre consecutivos DE
+ESA LISTA mide el salto del track 12 al 15 como si fueran vecinos. Con los huecos
+respetados el corpus queda en 15 setlists usables de 40, y no existe ninguna
+ventana de 18 posiciones seguidas: la mas larga que banca es de 12.
+
+**Segundo, perseguia la metrica equivocada.** Venia atras de la autocorrelacion
+de saltos (-0.02 nuestro contra -0.36 referencia). Medido bien, ya estaba adentro
+del IQR. El gap real era otro: la correlacion posicion-energia daba **+0.79**
+contra **+0.11** de referencia, fuera del rango entero del corpus.
+
+La causa: el solver cobraba `|energia - arco(t)| * 3.0` en cada posicion. El arco
+es funcion del reloj, asi que eso es pedir que la energia sea funcion del reloj.
+Se convirtio el arco en una BANDA (`energia.tolerancia_arco_frac = 0.9`): solo se
+cobra el desvio que se SALE de la banda. Y `max_retroceso_en_subida` paso de 0.4
+a 0.9, que era la otra mitad del mismo problema.
+
+**Tercero, el ganador del barrido era ruido.** Sobre 3 sets `tol=1.00` daba
++0.02. Sobre 6 —uno por momento— el mismo valor daba +0.37. Los 3 primeros eran
+todos del mismo caracter: no eran tres muestras, era casi la misma tres veces. El
+ganador real era 0.90.
+
+**Cuarto, lo que quedaba no era criterio sino busqueda.** El set 114 seguia dando
++0.80; aislado daba -0.08 con la misma funcion de costo. Dos causas: el beam de
+1200 truncaba a soluciones rampa (subido a 4000), y `max_apariciones_por_track`
+estaba en 1, asi que los tres sets de un mismo momento competian por los mismos
+tracks y al tercero le llegaban las sobras.
+
+**Y el arreglo de eso salio mal antes de salir bien.** Poner el tope en 3 a secas
+dejo 67 tracks repetidos entre momentos DISTINTOS y solo 5 entre variantes:
+exactamente al reves. Los tres sets de un momento son alternativas —se toca una—
+pero dos momentos se tocan la misma noche. Se agrego `grupo` a cada set y el tope
+ahora cuenta dentro del grupo, con prohibicion total entre grupos.
+
+**Como quedo** (mediana de los 18 contra mediana de referencia):
+
+| metrica | nuestro | referencia | |
+|---|---|---|---|
+| autocorrelacion de saltos | -0.45 | -0.45 | clavado |
+| corr(posicion, energia) | +0.10 | +0.11 | clavado |
+| posicion del pico | 54% | 42% | adentro del IQR [16-80] |
+| corr(BPM, energia) | -0.06 | — | desacoplado |
+| transiciones flojas | 0 | 0 | |
+| rango de energia | 1.9 | 2.9 | **sigue corto** |
+
+(Los numeros son los de la vuelta con tope global; la vuelta con `grupo` se
+remidio despues y esta en la entrada correspondiente si cambio algo.)
+
+**Lo que queda abierto: el rango.** Nuestros sets recorren 1.9 puntos de energia
+donde una ventana del mismo largo en un set real recorre 2.9. No es el algoritmo:
+ensanchar las bandas `e_lo`/`e_hi` 0.4 puntos no movio el rango ni una decima. El
+pool filtrado por genero y BPM de cada momento tiene su p10-p90 en apenas 1.4
+puntos — los extremos existen pero son pocos. Igualar a la referencia significa
+ir sistematicamente a tracks de los que la biblioteca tiene poco: es un hueco de
+material, no de criterio. Y la evidencia del 2.9 son 19 ventanas de 4 sets, asi
+que conviene confirmarlo con mas setlists antes de salir a comprar contra ese
+numero.
+
+---
+
+
 ## 2026-09-12 — la forma de Interlocutor, medida por bandas y copiada entera
 
 Pedido: *"esta a destiempo y parece un ringtone, no tiene sentido el tema —

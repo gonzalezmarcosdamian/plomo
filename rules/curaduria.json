@@ -54,10 +54,11 @@
       "evidencia": "PENDIENTE"
     },
     "max_retroceso_en_subida": {
-      "valor": 0.4,
+      "valor": 0.9,
       "duro": true,
       "hasta_pct": 0.82,
-      "porque": "Antes del pico no se retrocede: el set pierde la promesa que venia construyendo."
+      "porque": "Antes del pico no se retrocede: el set pierde la promesa que venia construyendo.",
+      "evidencia": "Subido de 0.4 a 0.9 junto con la banda de tolerancia: prohibir bajar durante el primer 60% del set es la otra mitad de lo que hacia que la energia fuera funcion del reloj."
     },
     "baja_minima_al_cierre": {
       "valor": 0.6,
@@ -105,6 +106,11 @@
       "valor": 0.7,
       "porque": "Cobrar cada paso de mas en la misma direccion, para que el set oscile en vez de trepar.",
       "evidencia": "2026-09-19: autocorrelacion lag-1 de los saltos de energia -0.36 en los 40 setlists de referencia contra -0.05 en los del solver. Penalizar solo el paso plano no alcanzo: la correlacion posicion-energia subio de +0.64 a +0.76."
+    },
+    "tolerancia_arco_frac": {
+      "valor": 0.9,
+      "porque": "El arco es una banda, no una linea. Cobrar |energia - arco| en cada posicion equivale a pedir que la energia sea funcion del reloj: el set sube porque el reloj avanza, no porque la pista lo pida. Un DJ respeta la forma general de la noche y se mueve libre adentro de ella. Solo se cobra el desvio que se SALE de la banda, que vale esta fraccion del rango e_hi - e_lo.",
+      "evidencia": "Con la banda en 0 la correlacion posicion-energia daba +0.79, fuera del rango entero del corpus de referencia (max observado +0.60). Con 0.9 da +0.18, adentro del IQR [-0.00 .. +0.19], contra una mediana de referencia de +0.11. La autocorrelacion de saltos paso a -0.43 contra -0.45 de referencia. Medido sobre los 6 momentos, 0 transiciones flojas. Valores mas altos parecian mejores en un banco de 3 sets (tol=1.00 daba +0.02) pero eran ruido: en los 6 momentos el mismo 1.00 da +0.37."
     }
   },
   "bpm": {

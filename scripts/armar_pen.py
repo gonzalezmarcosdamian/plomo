@@ -1,9 +1,14 @@
 """Arma las playlists que se arrastran al pen, para que sincronizar sea un gesto.
 
-El Sync Manager de Rekordbox sincroniza la ESTRUCTURA de playlists pero no copia
-los archivos de audio que no esten ya en el dispositivo. Por eso la unica forma
-confiable de llevar musica nueva al pen es arrastrar, y arrastrar necesita que
-haya una sola cosa que arrastrar.
+El Sync Manager de Rekordbox SI copia el audio —el pen tiene 192 archivos y
+3.3 GB que llegaron por ahi—, pero sincroniza exactamente las playlists tildadas
+en su panel, y tildar una carpeta no arrastra a las hijas. Por eso una vez
+sincronizo una sola lista: el problema era el alcance de la seleccion, no la
+capacidad. (Una version anterior de este comentario afirmaba que no copiaba
+audio; era una conclusion sacada del sintoma, y estaba mal.)
+
+Estas dos playlists planas hacen que llevar todo sea UN tilde en vez de
+dieciocho, y sirven igual para arrastrar.
 
 Esto crea dos playlists planas bajo `Pro DJ Library`:
 

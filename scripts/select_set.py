@@ -29,6 +29,13 @@ PICO_PCT = R.get("energia.pico_en_pct")
 CAIDA_PCT = R.get("energia.caida_post_pico_pct")
 BAJA_CIERRE = R.get("energia.baja_minima_al_cierre")
 PESO_ARCO = R.get("energia.peso_desvio_arco")
+# El arco es una BANDA, no una linea. Cobrar |energia - arco| en cada
+# posicion es, literalmente, pedir que la energia sea funcion del reloj:
+# la correlacion posicion-energia daba +0.79 contra +0.13 de los sets
+# reales, fuera del rango entero del corpus (max observado +0.60). Un DJ
+# respeta la forma general y se mueve libre adentro de ella, asi que solo
+# se cobra el desvio que se SALE de la banda.
+TOL_ARCO_FRAC = R.get("energia.tolerancia_arco_frac", 0.0)
 PESO_CAM = R.get("armonia.peso_salto_camelot")
 PENAL_MISMA_KEY_DESDE = R.get("armonia.penal_misma_key_desde")
 PESO_MISMA_KEY = R.get("armonia.penal_misma_key_desde_peso", 1.2)
@@ -201,6 +208,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # 0.15 el arco entero contaba como plano y la penalizacion empujaba a dar
     # pasos grandes en una sola direccion. Medido: la autocorrelacion de los
     # saltos salia +0.5 en los sets cortos, peor que el +0.0 original.
+    tol_arco = (e_hi - e_lo) * TOL_ARCO_FRAC
     paso_natural = (e_hi - e_lo) / max(2, n - 1)
     umbral_plano = max(0.08, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0)]
@@ -297,7 +305,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 else:
                     paso = None
                     step = 0.0
-                c = cost + abs(t["energy"] - tgt) * PESO_ARCO + step
+                desvio = max(0.0, abs(t["energy"] - tgt) - tol_arco)
+                c = cost + desvio * PESO_ARCO + step
                 if t["id"] in prefer:
                     c -= bonus
                 if mezcla:
@@ -399,14 +408,25 @@ if __name__ == "__main__":
     # paletas parecidas el optimizador converge al mismo optimo y salen sets
     # identicos con nombres distintos.
     tope = cfg.get("max_apariciones_por_track", 0)
-    usos: dict[str, int] = {}
+    # El tope se cuenta DENTRO de un grupo, y entre grupos distintos un track no
+    # se repite nunca. Los tres sets de un mismo momento son alternativas —se
+    # toca una de las tres— asi que pueden compartir tracks; dos momentos
+    # distintos se tocan la MISMA noche, asi que compartir ahi es escuchar el
+    # mismo tema dos veces. Un `tope` global no distingue las dos cosas: puesto
+    # en 3 dejaba 67 tracks repetidos entre momentos y solo 5 entre variantes,
+    # exactamente al reves de lo que hace falta. Un set sin `grupo` es su propio
+    # grupo, que es el comportamiento de siempre.
+    usos: dict[str, dict[str, int]] = {}
     for spec in cfg["sets"]:
+        grupo = str(spec.get("grupo", spec["num"]))
         artistas = spec.get("artists") or ["*"]
         e_pool = spec.get("e_pool")  # [min, max] — acota el pool por energia
         generos = [g.lower() for g in spec.get("genres", [])]
         excluidos = set(spec.get("exclude_ids", []))
+        # fuera de este grupo el track ya se uso -> prohibido, sin importar el tope
+        excluidos |= {i for i, g in usos.items() if any(o != grupo for o in g)}
         if tope:
-            excluidos |= {i for i, c in usos.items() if c >= tope}
+            excluidos |= {i for i, g in usos.items() if g.get(grupo, 0) >= tope}
         pool = [
             t for t in pool_all
             if (artistas == ["*"]
@@ -473,7 +493,8 @@ if __name__ == "__main__":
         # el siguiente no los repita. Una serie de videos independientes puede
         # querer lo contrario — cada uno lleva lo mejor de su concepto.
         for t in best[1]:
-            usos[t["id"]] = usos.get(t["id"], 0) + 1
+            g = usos.setdefault(t["id"], {})
+            g[grupo] = g.get(grupo, 0) + 1
         if not cfg.get("permitir_repetir_entre_sets"):
             for t in best[1]:
                 taken |= names(t["artist"], t["title"])

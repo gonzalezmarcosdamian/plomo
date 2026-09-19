@@ -1,10 +1,10 @@
 {
-  "_comentario": "Dieciocho sets: los seis momentos de una noche por tres caracteres cada uno (Color, Oscuro, Organico). El momento define CUANDO se agarra —energia, BPM y duracion— y el caracter define COMO suena esa misma hora. Se pueden repetir artistas entre sets porque son variantes del mismo momento, pero ningun track aparece dos veces en toda la coleccion.",
+  "_comentario": "Dieciocho sets: los seis momentos de una noche por tres caracteres cada uno (Color, Oscuro, Organico). El momento define CUANDO se agarra —energia, BPM y duracion— y el caracter define COMO suena esa misma hora. Se pueden repetir artistas entre sets porque son variantes del mismo momento, pero ningun track aparece dos veces en toda la coleccion.  beam=4000: con 1200 el solver truncaba a soluciones rampa —el set 114 daba correlacion posicion-energia +0.80 y con 4000 da -0.08, con la MISMA funcion de costo. No era el criterio, era la busqueda.  max_apariciones_por_track=3: los tres sets de cada momento (Color/Oscuro/Organico) son ALTERNATIVAS —se toca una de las tres, no las tres seguidas— asi que hacerlos competir por los mismos tracks solo empobrece al que se arma ultimo. Medido: el set 114, tercero de su momento, daba correlacion posicion-energia +0.80 en la secuencia y -0.08 armado con el pool entero. Los generos y la mezcla_objetivo de cada variante son los que las mantienen distintas, no la escasez. El tope cuenta DENTRO del `grupo` (el momento): entre momentos distintos un track no se repite nunca, porque esos si se tocan la misma noche.",
   "pool": "data/pool.json",
   "targets_dir": "data/set_targets",
   "exclude_artists": [],
   "permitir_repetir_entre_sets": true,
-  "max_apariciones_por_track": 1,
+  "max_apariciones_por_track": 3,
   "sets": [
     {
       "num": 109,
@@ -44,7 +44,7 @@
         "Organic House": 0.1
       },
       "peso_mezcla": 8.0,
-      "beam": 1200,
+      "beam": 4000,
       "prefer_ids": [
         "129739585",
         "252544908",
@@ -397,7 +397,8 @@
         "244090749",
         "197015352"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "grupo": "Apertura"
     },
     {
       "num": 110,
@@ -436,7 +437,8 @@
         "Deep House": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Apertura"
     },
     {
       "num": 111,
@@ -476,7 +478,8 @@
         "Melodic House & Techno": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Apertura"
     },
     {
       "num": 112,
@@ -516,7 +519,7 @@
         "Organic House": 0.1
       },
       "peso_mezcla": 8.0,
-      "beam": 1200,
+      "beam": 4000,
       "prefer_ids": [
         "129739585",
         "252544908",
@@ -869,7 +872,8 @@
         "244090749",
         "197015352"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "grupo": "Previa"
     },
     {
       "num": 113,
@@ -908,7 +912,8 @@
         "Deep House": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Previa"
     },
     {
       "num": 114,
@@ -948,7 +953,8 @@
         "Melodic House & Techno": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Previa"
     },
     {
       "num": 115,
@@ -988,7 +994,7 @@
         "Organic House": 0.1
       },
       "peso_mezcla": 8.0,
-      "beam": 1200,
+      "beam": 4000,
       "prefer_ids": [
         "129739585",
         "252544908",
@@ -1341,7 +1347,8 @@
         "244090749",
         "197015352"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "grupo": "Prime Time"
     },
     {
       "num": 116,
@@ -1380,7 +1387,8 @@
         "Deep House": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Prime Time"
     },
     {
       "num": 117,
@@ -1420,7 +1428,8 @@
         "Melodic House & Techno": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Prime Time"
     },
     {
       "num": 118,
@@ -1460,7 +1469,7 @@
         "Organic House": 0.1
       },
       "peso_mezcla": 8.0,
-      "beam": 1200,
+      "beam": 4000,
       "prefer_ids": [
         "129739585",
         "252544908",
@@ -1813,7 +1822,8 @@
         "244090749",
         "197015352"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "grupo": "Peak"
     },
     {
       "num": 119,
@@ -1852,7 +1862,8 @@
         "Deep House": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Peak"
     },
     {
       "num": 120,
@@ -1892,7 +1903,8 @@
         "Melodic House & Techno": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Peak"
     },
     {
       "num": 121,
@@ -1932,7 +1944,7 @@
         "Organic House": 0.1
       },
       "peso_mezcla": 8.0,
-      "beam": 1200,
+      "beam": 4000,
       "prefer_ids": [
         "129739585",
         "252544908",
@@ -2285,7 +2297,8 @@
         "244090749",
         "197015352"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "grupo": "Cierre"
     },
     {
       "num": 122,
@@ -2324,7 +2337,8 @@
         "Deep House": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Cierre"
     },
     {
       "num": 123,
@@ -2364,7 +2378,8 @@
         "Melodic House & Techno": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "Cierre"
     },
     {
       "num": 124,
@@ -2404,7 +2419,7 @@
         "Organic House": 0.1
       },
       "peso_mezcla": 8.0,
-      "beam": 1200,
+      "beam": 4000,
       "prefer_ids": [
         "129739585",
         "252544908",
@@ -2757,7 +2772,8 @@
         "244090749",
         "197015352"
       ],
-      "prefer_bonus": 5.0
+      "prefer_bonus": 5.0,
+      "grupo": "After"
     },
     {
       "num": 125,
@@ -2796,7 +2812,8 @@
         "Deep House": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "After"
     },
     {
       "num": 126,
@@ -2836,7 +2853,8 @@
         "Melodic House & Techno": 0.15
       },
       "peso_mezcla": 8.0,
-      "beam": 1200
+      "beam": 4000,
+      "grupo": "After"
     }
   ]
 }

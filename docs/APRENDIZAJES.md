@@ -8,6 +8,74 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un objetivo que se persigue punto por punto deja de ser un objetivo
+
+**Que paso.** El solver cobraba `|energia - arco(t)| * 3.0` en cada posicion del
+set. El arco es una funcion del reloj, asi que minimizar ese costo es,
+literalmente, pedir que la energia sea funcion del reloj. Medido: la correlacion
+posicion-energia daba +0.79 en nuestros sets contra +0.11 en los de referencia,
+fuera del rango entero del corpus (el maximo observado en un set real era +0.60).
+El set subia porque el reloj avanzaba, no porque la pista lo pidiera.
+
+**Por que.** Habia dos cosas distintas confundidas en un mismo termino: la FORMA
+de la noche, que si es un objetivo, y la POSICION exacta de cada track dentro de
+esa forma, que no lo es. Cobrar el desvio punto por punto impone las dos. Un DJ
+real respeta la forma y se mueve libre adentro de ella.
+
+La correccion fue convertir el arco en una BANDA: solo se cobra el desvio que se
+SALE de la banda, que vale 0.9 del rango de energia del set. La forma sobrevive
+—el pico sigue cayendo donde tiene que caer— y adentro hay lugar para subir y
+bajar. Con eso la correlacion paso a +0.18, adentro del IQR de referencia.
+
+**Como se aplica.** Cuando una restriccion blanda se cumple demasiado bien,
+sospechar que se convirtio en la unica cosa que el optimizador hace. La prueba es
+medir la correlacion entre lo optimizado y su variable independiente: si da mucho
+mas alto que en los ejemplos reales, el objetivo esta sobre-especificado. La
+respuesta casi nunca es bajarle el peso —eso lo unico que hace es una rampa mas
+suave, y de hecho empeoro la metrica— sino darle una zona muerta.
+
+---
+
+## Tres casos no son una muestra: la mitad de lo que medi era ruido
+
+**Que paso.** Barri la tolerancia del arco sobre un banco de 3 sets. `tol=1.00`
+salio claramente mejor que todo lo demas: correlacion posicion-energia +0.02,
+practicamente el +0.11 de referencia. Antes de aplicarlo a los 18 sets lo repeti
+sobre un banco de 6, uno por cada momento de la noche. El mismo `tol=1.00` dio
+**+0.37**. El ganador real era `tol=0.90`, que en el banco de 3 no se distinguia.
+
+**Por que.** Cada set es un numero, no una medicion repetida: la mediana de 3
+salta con que un solo set caiga distinto. Y los 3 del primer banco eran todos del
+mismo caracter (Color), asi que compartian pool, generos y banda de energia — no
+eran tres muestras, eran casi la misma muestra tres veces.
+
+**Como se aplica.** El banco de validacion tiene que cubrir los ejes por los que
+las configuraciones difieren, no repetir el mas comodo. Para sets: uno por
+momento, no tres del mismo tipo. Y cualquier ganador que aparezca en el BORDE de
+la grilla barrida es sospechoso por default — o el optimo esta mas afuera, o es
+ruido. Las dos cosas se chequean igual: ampliando la grilla o el banco.
+
+---
+
+## Un hueco en un setlist no es una transicion
+
+**Que paso.** Para comparar nuestros sets contra el corpus de referencia habia
+que medir la autocorrelacion de los saltos de energia. Los setlists reales tienen
+tracks sin identificar: si se toman los tracks con energia y se calculan los
+saltos entre consecutivos DE ESA LISTA, se esta midiendo el salto entre el track
+12 y el 15 como si fueran vecinos. Esa transicion nunca ocurrio.
+
+**Por que.** Es el mismo error que hizo sonar horrible la reconstruccion del set
+de Simon: sacar posiciones fabrica adyacencias. En una medicion el efecto es mas
+silencioso —no suena mal, solo da un numero equivocado— y por eso es peor.
+
+**Como se aplica.** Los saltos solo se calculan dentro de tramos de posiciones
+CONSECUTIVAS. Con esa correccion el corpus quedo en 15 setlists usables de 40, y
+las ventanas de 18 tracks seguidos directamente no existen: la mas larga que el
+corpus banca es de 12. Conviene saber eso antes de citar un `n=40`.
+
+---
+
 ## Cuidado con la metrica que ya contiene la respuesta
 
 **Que paso.** El DJ pidio sets "de mucha energia sin que los BPM se vayan para
