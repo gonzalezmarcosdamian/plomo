@@ -1,0 +1,48 @@
+{
+  "vuelta": 0,
+  "fecha": "2026-09-19",
+  "que_se_hizo": "Fase 0: borrados los catorce bocetos propios; revisa_robot() arreglado (medía sobre la unión de capas y trece capas repitiendo verbatim pasaban invisibles); timbre.py nuevo.",
+  "estado": "arranca el enfoque nuevo: calcar en vez de generar",
+  "medido_ultimo_boceto_v3": {
+    "gancho_encima_del_bombo": "168/168 = 100% antes del arreglo; 1/119 = 1% despues",
+    "bus_melodico_cresta_dB": 33.0,
+    "bus_melodico_ocupacion": 0.25,
+    "bus_melodico_centroide_Hz": 950,
+    "compases_distintos_de_16": 1,
+    "capas_que_repiten_identicas": {
+      "subkick": 0.98,
+      "repiques": 0.96,
+      "bateria": 0.94,
+      "hats": 0.94
+    }
+  },
+  "objetivos": {
+    "bus_melodico_cresta_dB": [
+      18,
+      29
+    ],
+    "bus_melodico_ocupacion": [
+      0.44,
+      1.0
+    ],
+    "bus_melodico_centroide_Hz": [
+      1210,
+      1992
+    ],
+    "cresta_espectral_bateria_dB": [
+      17.4,
+      18.8
+    ],
+    "compases_distintos_de_16": [
+      10,
+      14
+    ]
+  },
+  "agentes_en_curso": [
+    "copiar_tema usable",
+    "groove real de 4 referencias",
+    "foros de productores",
+    "videos de productores"
+  ],
+  "proxima_vuelta": "Fase 1: consolidar el vocabulario de los cuatro agentes en data/vocabulario/ y escribir calcar.py"
+}
