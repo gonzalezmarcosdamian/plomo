@@ -1,0 +1,27 @@
+{
+  "vuelta": 1,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "ninguna todavia — se construyo el juez",
+  "que_se_hizo": "juzgar.py: un veredicto contra doce dimensiones en vez de la tabla de veinte de iterar.py. Se bajaron las seis que son ruido (el mismo tema contra si mismo las falla) y se sumaron tres que ninguna contestaba: cresta espectral, ocupacion del bus melodico y variacion por compas.",
+  "hallazgo": "La primera version de la variacion estaba ROTA y la calibracion la agarro: daba 1 compas distinto de 16 para Tunnel, que es obviamente falso. El coseno sobre espectros normalizados satura en 0.99 entre compases de cualquier tema. Corregida a distancia euclidea sobre bandas en dB relativos mas patron de ataque.",
+  "calibracion_variacion": {
+    "Tunnel": 0.86,
+    "Panorama": 1.45,
+    "Closing Doors": 2.46,
+    "propio_v3": 0.64
+  },
+  "medido": {
+    "variacion por compas": 0.64,
+    "objetivo": [
+      0.85,
+      2.5
+    ]
+  },
+  "proxima_dimension": "variacion por compas — es la mas lejos y no depende de los agentes",
+  "agentes_en_curso": [
+    "copiar_tema usable (productor)",
+    "groove real de 4 referencias (bateria)",
+    "foros de productores (research)",
+    "videos de productores (video)"
+  ]
+}
