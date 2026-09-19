@@ -24,6 +24,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import sys
 from pathlib import Path
 
@@ -56,6 +57,7 @@ BANDAS = {
 TRIADAS = {"maj": [0, 4, 7], "min": [0, 3, 7]}
 NOMBRES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 MENOR = [0, 2, 3, 5, 7, 8, 10]
+MAYOR = [0, 2, 4, 5, 7, 9, 11]
 
 
 def _banda(y: np.ndarray, sr: int, lo: float, hi: float) -> np.ndarray:
@@ -192,26 +194,107 @@ def _armonia(other: np.ndarray, sr: int, grilla: np.ndarray, semis: int,
     return p, elegidos
 
 
-def _bajo(bass: np.ndarray, sr: int, grilla: np.ndarray, semis: int,
-          bpm: float) -> Pista:
-    """Altura del bajo por semicorchea, con pyin sobre el stem de bajo."""
+def _alturas_por_semi(bass: np.ndarray, sr: int, grilla: np.ndarray,
+                      semis: int) -> list[int | None]:
+    """El semitono de cada semicorchea, o None si el detector no se decidio.
+
+    Por que la MODA de los semitonos y no la mediana de los Hz. La version
+    anterior hacia `median(f0)` sobre el tramo y despues redondeaba a semitono.
+    Eso funciona si el detector es estable, y pyin sobre un stem de Demucs no lo
+    es: tira frames sueltos una octava arriba o abajo. La mediana de un tramo
+    con frames en 55 Hz y en 110 Hz no da ninguna de las dos alturas — da algo
+    en el medio, que cae en cualquier semitono. Medido sobre Alex O'Rion
+    "Tunnel", eso daba 70% de notas fuera de tonalidad: las alturas no eran del
+    tema, eran el promedio de los errores del detector.
+
+    La moda de los semitonos redondeados no tiene ese problema: los frames
+    equivocados no arrastran a los buenos, solo pierden la votacion. Y si NINGUNA
+    altura junta la mitad de los frames, el detector no se decidio y no hay nota
+    — silencio honesto en vez de una altura inventada.
+    """
     f0, sonoro, _ = librosa.pyin(bass, sr=sr, fmin=35, fmax=260,
                                  frame_length=2048, hop_length=HOP)
     veces = librosa.times_like(f0, sr=sr, hop_length=HOP)
 
-    p = Pista("Bajo", bpm, canal=1)
-    anterior = None
+    # La correccion de afinacion, que no es un detalle.
+    #
+    # El stem de bajo de "Tunnel" mide -28 cents contra el temperamento igual, y
+    # los frames de pyin dan -32 de mediana. Un tercio de semitono. Redondear
+    # sin corregir eso tira sistematicamente al semitono de ABAJO en cuanto el
+    # detector agrega unos cents de su propio ruido, y se ve en el resultado:
+    # la transcripcion daba D x7 y C# x7 empatados, con C# un semitono debajo de
+    # la tonica de un tema que no se sale de Re menor.
+    #
+    # No es que el tema este desafinado: un master pasado por time-stretch o
+    # por una cinta corre unos cents, y el oido no lo registra porque todo corre
+    # junto. El redondeo a semitono si lo registra, porque es absoluto.
+    afinacion = float(librosa.estimate_tuning(y=bass, sr=sr))
+    midi = librosa.hz_to_midi(f0) - afinacion
+
+    fuera: list[int | None] = []
     for i in range(semis):
-        tramo = f0[(veces >= grilla[i]) & (veces < grilla[i + 1]) & sonoro]
-        tramo = tramo[~np.isnan(tramo)]
-        if len(tramo) < 3:
-            anterior = None
+        # `sonoro` solo, sin filtrar por voiced_prob. La version que filtraba
+        # por `prob > 0.5` se quedaba con el 4.7% de los frames donde
+        # voiced_flag da 88.7%: el umbral estaba puesto sin mirar la
+        # distribucion y tiraba casi todo el bajo a la basura.
+        m = (veces >= grilla[i]) & (veces < grilla[i + 1]) & sonoro
+        v = midi[m]
+        v = v[~np.isnan(v)]
+        if len(v) < 3:
+            fuera.append(None)
             continue
-        altura = int(np.clip(round(librosa.hz_to_midi(float(np.median(tramo)))), 24, 55))
-        if altura == anterior:      # nota sostenida: se deja sonar, no se repica
+        cuenta = Counter(int(np.clip(round(x), 24, 55)) for x in v)
+        altura, votos = cuenta.most_common(1)[0]
+        fuera.append(altura if votos >= 0.5 * len(v) else None)
+    return fuera
+
+
+def _sin_octavas(alturas: list[int | None]) -> list[int | None]:
+    """Baja los saltos de octava sueltos del detector.
+
+    Una semicorchea que esta exactamente a 12 semitonos de sus dos vecinas, y
+    esas dos vecinas son iguales entre si, no es una nota: es pyin agarrando el
+    segundo armonico por un instante. El bajo del genero no salta una octava
+    para volver en 120 ms.
+    """
+    fuera = list(alturas)
+    for i in range(1, len(fuera) - 1):
+        a, b, c = fuera[i - 1], fuera[i], fuera[i + 1]
+        if None in (a, b, c) or a != c:
             continue
-        p.nota(i // 16, (i % 16) * 0.25, altura, 0.22, 92)
-        anterior = altura
+        if abs(b - a) == 12:
+            fuera[i] = a
+    return fuera
+
+
+def _bajo(bass: np.ndarray, sr: int, grilla: np.ndarray, semis: int,
+          bpm: float) -> Pista:
+    """Transcribe el bajo con su DURACION real, no una semicorchea por nota.
+
+    La version anterior escribia cada nota con duracion 0.22 pulsos fijos y se
+    salteaba las repeticiones. El resultado eran 55 notas todas de una
+    semicorchea: un bajo que en el disco sostiene dos compases quedaba como un
+    pinchazo y un silencio. Se perdia justo lo que define al bajo del genero,
+    que es cuanto se queda.
+
+    Ahora las semicorcheas con la misma altura se AGRUPAN en una nota sola del
+    largo que ocupen. El 0.92 del final es el respiro entre notas: dos notas de
+    la misma altura pegadas se solapan en el tick, y en MIDI el note-off de la
+    segunda mata a la primera en vez de sostenerla.
+    """
+    alturas = _sin_octavas(_alturas_por_semi(bass, sr, grilla, semis))
+
+    p = Pista("Bajo", bpm, canal=1)
+    i = 0
+    while i < semis:
+        if alturas[i] is None:
+            i += 1
+            continue
+        largo = 1
+        while i + largo < semis and alturas[i + largo] == alturas[i]:
+            largo += 1
+        p.nota(i // 16, (i % 16) * 0.25, alturas[i], largo * 0.25 * 0.92, 92)
+        i += largo
     return p
 
 
@@ -235,16 +318,33 @@ def _verificar(drums: np.ndarray, sr: int, grilla: np.ndarray, bpm: float,
           f"(4.00 es lo esperado en house)")
     print(f"    grilla   {dentro * 100:3.0f}% de los bombos a menos de 20 ms")
 
-    # tonalidad implicita: la raiz mas repetida entre los acordes elegidos
+    # La tonalidad se BUSCA, no se supone.
+    #
+    # Esta verificacion decia "80% de notas fuera de F menor" sobre una
+    # transcripcion que estaba bien. El error: tomaba el acorde mas repetido
+    # —que era F MAYOR— y le armaba una escala MENOR sobre esa raiz. Fa menor y
+    # Re menor comparten tres notas de siete, asi que medir contra la primera
+    # cuando el tema esta en la segunda da un numero de basura. El archivo, que
+    # lleva el Camelot en el nombre, decia 7A = Re menor desde el principio.
+    #
+    # Se prueban las veinticuatro escalas y se reporta la que mejor explica lo
+    # que hay. Si la mejor explica poco, ahi si el detector fallo; si explica
+    # mucho pero no es la que uno esperaba, aprendimos algo del tema.
+    notas = [e.datos[1] % 12 for e in bajo._eventos if e.datos[0] & 0xF0 == 0x90]
+    if notas:
+        escalas = [(sum(1 for n in notas if n in {(pc + g) % 12 for g in grados})
+                    / len(notas), f"{NOMBRES[pc]} {nombre}")
+                   for pc in range(12)
+                   for nombre, grados in (("menor", MENOR), ("mayor", MAYOR))]
+        dentro, cual = max(escalas)
+        print(f"    bajo     {dentro * 100:3.0f}% de las notas entran en {cual} "
+              f"({len(notas)} notas, la escala que mejor explica)")
+        if dentro < 0.85:
+            print("             OJO: ninguna escala explica el bajo. Eso es "
+                  "ruido del detector, no un tema raro.")
     reales = [a for a in acordes if a != "-"]
     if reales:
         raiz = max(set(reales), key=reales.count)
-        pc = NOMBRES.index(raiz.rstrip("m"))
-        escala = {(pc + g) % 12 for g in MENOR}
-        notas = [e.datos[1] % 12 for e in bajo._eventos if e.datos[0] & 0xF0 == 0x90]
-        fuera = sum(1 for n in notas if n not in escala) / max(len(notas), 1)
-        print(f"    bajo     {fuera * 100:3.0f}% de notas fuera de {raiz} menor "
-              f"({len(notas)} notas)")
         estable = reales.count(raiz) / len(reales)
         print(f"    acordes  {estable * 100:3.0f}% de los compases en {raiz}")
 
