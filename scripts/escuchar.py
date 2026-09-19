@@ -379,11 +379,24 @@ def revisa_barro(capas: dict, d: Dictamen) -> None:
     Entre 82 y 247 Hz —MIDI 40 a 59— viven el bajo, el pedal del pad y el cuarto
     armonico del bombo. Tres voces sostenidas ahi es donde un progressive se
     ensucia.
+
+    "textura" (`_textura()` en idea.py) queda afuera: es una nota atada de
+    principio a fin de la seccion en un MIDI fijo (48), pero el propio
+    docstring de esa funcion dice que del otro lado hay "un sonido sin altura
+    definida" — un piso de ruido, no una voz armonica. Contarla mide siempre
+    3+ capas apenas hay otras dos voces sosteniendo debajo de 60, sin que
+    aporte nada a un embarre real de armonia. Medido en _check_011 (vuelta
+    011, semilla 7): sacarla baja pleno1/pleno2 de 82% a 29% y salida_dj de
+    79% a 21% — las tres caen debajo del umbral de 40% y la alarma, que
+    estaba mal calibrada, deja de sonar. drop queda en 71% (bajo, bajo2, sub
+    y atmosfera sostenidos ahi de verdad) y sigue sonando: ese es un embarre
+    real, no el bug.
     """
     BANDA = range(40, 60)
+    SIN_ALTURA = {"textura"}
     ocupacion = defaultdict(set)
     for nombre, notas in capas.items():
-        if nombre in PERCUSIVAS:
+        if nombre in PERCUSIVAS or nombre in SIN_ALTURA:
             continue
         for inicio, dur, altura, _ in notas:
             if altura in BANDA:
