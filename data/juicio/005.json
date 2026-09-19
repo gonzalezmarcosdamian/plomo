@@ -1,0 +1,25 @@
+{
+  "vuelta": 5,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "ninguna de las doce de juzgar.py — esas siguen bloqueadas por falta de audio (vuelta 004). Se ataco la via que la vuelta 004 dejo explicita: medir directo sobre el MIDI generado con escuchar.py, que no depende de render ni de Live.",
+  "que_se_hizo": [
+    "Se corrio idea.py --climax y se paso el resultado por escuchar.py (el instrumento que traduce mediciones de MIDI a la frase que diria una persona, calibrado contra quejas reales). Encontro: '[MEDIO] el/la anchos puede sonar cortado — cubre 46% del tiempo; las referencias cubren 71-84%'.",
+    "Se rastreo el origen con git log -S sobre _anchos() en idea.py. El commit original (3b0fd43) escribia CUATRO golpes por compas en el climax (hueco de 1.0 pulso entre ataques) y DOS en el resto (ANCHO_PULSOS), con duraciones calibradas para cada caso. El commit b1f89a3 ('v3 house progresivo') saco la rama de climax a proposito -- comentario propio: 'los cuatro dejaban las ocho corcheas del compas ocupadas por la misma triada', pisando el espacio del gancho que ese mismo commit vino a liberar -- pero dejo las duraciones (0.92 climax / 1.30 pleno) sin tocar. Esas duraciones estaban calibradas para un hueco de 1.0 pulso que ya no existe: con dos contratiempos el hueco real es 2.0 pulsos, asi que 0.92 paso de cubrir el 92% a cubrir el 46%.",
+      "Encima, el comentario que describia el motivo original ('CUATRO contratiempos, no dos') se quedo arriba de un codigo que ya no hacia eso: la misma funcion documentaba dos comportamientos contradictorios a la vez -- exactamente el patron de APRENDIZAJES.md 'una regla que se lee y no se usa es peor que no tenerla', esta vez en un comentario en lugar de en `rules/`.",
+    "Arreglo de una sola constante por caso: duracion de 'anchos' de 0.92/1.30 a 1.60 (climax) / 1.50 (pleno) pulsos. Las dos dejan 0.4-0.5 pulso de margen antes del siguiente ataque en la misma altura -- la misma cautela que ya habia en el codigo viejo contra el bug de note-off que corta la nota de al lado. Comentario reescrito para explicar el hueco real (2.0 pulsos) en vez de repetir el numero del climax de cuatro golpes que ya no existe."
+  ],
+  "medido_antes": {"anchos_cobertura_climax": "46%", "veredicto_escuchar": "[MEDIO] el/la anchos puede sonar cortado"},
+  "medido_despues": {
+    "anchos_cobertura_climax": "80%",
+    "anchos_cobertura_pleno": "75%",
+    "veredicto_escuchar_climax": "Ninguno de los doce defectos conocidos",
+    "veredicto_escuchar_pleno": "solo queda el aviso preexistente de bateria:42/46 (filtro de peine, no tocado en esta vuelta)"
+  },
+  "como_se_midio": "python scripts/idea.py --climax --nombre _sesion_check --semilla 7 (y de nuevo con --pleno) seguido de python scripts/escuchar.py postproduction/bocetos/_sesion_check*. Las dos carpetas de prueba se borraron despues de medir, no quedan en el repo.",
+  "de_donde_sale": "Instruccion explicita de esta sesion: sin Live ni audio, generar MIDI con idea.py y medir sobre el MIDI generado -- escuchar.py es exactamente esa herramienta, ya existia (Fase 0/2 del plan) y no se habia corrido sobre una salida fresca de idea.py en las ultimas vueltas. El umbral 71-84% que cita escuchar.py viene de las referencias medidas antes de este bloqueo de entorno (docs/PLAN.md, Fase 1).",
+  "por_que_no_es_una_de_las_doce": "Las doce dimensiones de juzgar.py se miden sobre AUDIO (render propio o stem de referencia via librosa). 'anchos cobertura' es una metrica de escuchar.py, que mide directo sobre el MIDI y es un instrumento distinto, mas antiguo, que sigue vivo y sigue sirviendo para todo lo que no necesita audio. No mueve ningun numero de la tabla de convergencia; encuentra y corrige un bug de arreglo real, verificado con el mismo rigor (medido antes y despues, con el mismo instrumento).",
+  "necesita_al_DJ": true,
+  "necesita_audio_real": true,
+  "por_que": "El fix esta verificado en MIDI (escuchar.py deja de marcar 'anchos cortado', antes y despues con el mismo instrumento) pero el efecto real -- si la capa 'anchos' ahora se escucha como acorde sostenido y no como golpe seco -- solo se confirma renderizando. Comando para el DJ: regenerar el boceto (python scripts/idea.py --climax --nombre v6 --semilla 7), montarlo en Live, renderizar, y escuchar contra la v5 anterior si quedo un render viejo. La vuelta 003 (data/juicio/003.json) ya estaba esperando que se escuche v5_161-176.wav -- eso sigue pendiente y no cambio.",
+  "tambien_notado": "escuchar.py sigue siendo la unica herramienta de este proyecto que corre de punta a punta sin audio ni Live, y no aparece mencionada en docs/PLAN.md (que solo habla de juzgar.py para las doce dimensiones). Vale la pena que la proxima sesion sin entorno la corra primero, antes de asumir que no hay nada medible: encontro este bug en el primer intento."
+}

@@ -1430,38 +1430,33 @@ def _anchos(bpm: float, tonica: int, escala: list[int], h: Humano,
                        septima=False)
         for c in range(bloque * 4, bloque * 4 + 4):
             emp = _empuje(c)
-            # En el climax los golpes anchos ocupan los CUATRO contratiempos,
-            # no dos. Es lo que significa que un acorde "se abre": no que suene
-            # mas fuerte sino que no deje huecos. Cubrian el 42% del tiempo con
-            # dos golpes de 1.05 pulsos, y una capa que suena menos de la mitad
-            # del tiempo se escucha cortada por bien colocada que este.
+            # Dos contratiempos siempre, tambien en el climax. La primera
+            # version abria a los CUATRO contratiempos en el climax; se saco en
+            # v3 house progresivo (b1f89a3) porque los cuatro dejaban las ocho
+            # corcheas del compas ocupadas por la misma triada, pisando el
+            # espacio del gancho. Ese cambio no ajusto la duracion, que seguia
+            # calibrada para un hueco de 1.0 pulso entre ataques (el de la
+            # version de cuatro); con dos contratiempos el hueco real es 2.0
+            # pulsos, asi que el mismo numero paso a cubrir la mitad de lo
+            # pensado: `escuchar.py` midio anchos al 46% en climax (staccato
+            # cortado, target de la propia referencia 71-84%). Duraciones
+            # nuevas, calibradas contra el hueco real: climax 1.60 pulsos
+            # (80%), pleno 1.50 (75%) — las dos bien adentro del rango y con
+            # 0.4-0.5 pulso de margen antes del siguiente ataque en la misma
+            # altura, para no repetir el bug de note-off que corta la nota de
+            # al lado.
             #
             # Caen encima de `_acordes`, que toca 1.5 y 3.5 dos octavas abajo, y
             # eso esta bien MIENTRAS compartan el perfil de humanizacion: con el
             # mismo perfil los dos golpes caen en el mismo instante y se
             # escuchan como uno solo con mas cuerpo. Con perfiles distintos
             # caerian a unos milisegundos y eso es filtro de peine.
-            # dos contratiempos tambien en el drop: los cuatro dejaban las
-            # ocho corcheas del compas ocupadas por la misma triada
             for pulso in ANCHO_PULSOS:
                 # en el climax se suma la quinta abajo: el acorde se abre, no se
                 # mueve
                 voces = notas if not climax else [notas[0] - 12] + notas
-                # 1.05 pulsos y no 0.45. A 123 BPM 0.45 son 220 ms: eso
-                # cubre el 22% del tiempo cuando las referencias cubren 71-84%,
-                # y una capa que suena una quinta parte del tiempo se escucha
-                # cortada por bien colocada que este. 1.05 son 512 ms — sigue
-                # siendo un golpe y no un pad, pero ahora tiene cola.
-                # 0.92 y no 1.05, y el limite no es estetico: con cuatro
-                # golpes por compas el hueco entre ataque y ataque es 1.0
-                # pulso, asi que 1.05 hace que cada acorde se solape con el
-                # siguiente EN LA MISMA ALTURA. En MIDI eso no sostiene, apaga:
-                # el note-off del primero corta al segundo y la nota real dura
-                # 0.05 pulsos. Es el mismo error de las notas ligadas, y esta
-                # vez lo encontro `escuchar.py` avisando "va a sonar a
-                # staccato", que era exactamente el sintoma.
                 p.acorde(c, h.pulso("acordes", c, pulso), voces,
-                         0.92 if climax else 1.30,
+                         1.60 if climax else 1.50,
                          h.vel("acordes", c, pulso,
                                (58 if climax else 44) + int(12 * emp)))
     return p
