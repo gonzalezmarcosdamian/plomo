@@ -9,74 +9,44 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Damon Jee, Darlyn Vlys",
-      "title": "Late Dance",
-      "content_id": "90102274"
+      "artist": "Lunet",
+      "title": "Timed Me (Original Mix)",
+      "content_id": "55038734"
     },
     {
-      "artist": "Guy Mantzur, Khen",
-      "title": "Nothing Lasts (Original Mix)",
-      "content_id": "96232923"
+      "artist": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+      "title": "Anomaly (Original Mix)",
+      "content_id": "106173077"
     },
     {
-      "artist": "Mindlancholic",
-      "title": "Amaranth (Original Mix) ",
-      "content_id": "148449293"
+      "artist": "Capoon, Amand",
+      "title": "Ouverture (Khen Remix)",
+      "content_id": "56831615"
     },
     {
-      "artist": "Kaz James, Nick Morgan",
-      "title": "Dazed (Extended Mix)",
-      "content_id": "179697811"
+      "artist": "Samantha Loveridge, Treetalk",
+      "title": "Losing My Religion (Extended Mix)",
+      "content_id": "161683451"
     },
     {
-      "artist": "FEID, YOUNG MIKO",
-      "title": "OFFLINE (JARP EDIT)",
-      "content_id": "89741070"
+      "artist": "BOg, GHEIST",
+      "title": "Venere (Fideles Remix)",
+      "content_id": "256041950"
     },
     {
-      "artist": "Fernando Olaya, Kamilo Sanclemente",
-      "title": "Renascence (Original Mix)",
-      "content_id": "162314364"
+      "artist": "Tantum, Hyunji-A",
+      "title": "Mirror (Extended)",
+      "content_id": "148486898"
     },
     {
-      "artist": "Michael A",
-      "title": "Zero Dawn (Kebin Van Reeken Remix)",
-      "content_id": "160613012"
+      "artist": "Izhevski, Talemates",
+      "title": "I Got Soul (Extended Mix)",
+      "content_id": "196839835"
     },
     {
-      "artist": "Roy Rosenfeld",
-      "title": "Kala",
-      "content_id": "52738760"
-    },
-    {
-      "artist": "Ewan Rill",
-      "title": "Jacaranda on Jupiter (Original Mix)",
-      "content_id": "109238144"
-    },
-    {
-      "artist": "Samm (BE)",
-      "title": "I'm Wondering (feat. LAUD)",
-      "content_id": "7823618"
-    },
-    {
-      "artist": "BOg, Diana Miro, 19:26",
-      "title": "Underwater (Hernan Cattaneo & Marcelo Vasami Remix)",
-      "content_id": "146983663"
-    },
-    {
-      "artist": "Hermanez",
-      "title": "Dust Town",
-      "content_id": "11695901"
-    },
-    {
-      "artist": "Ben Bohmer & Neils Hoffmann feat. Malou",
-      "title": "Breathing",
-      "content_id": "84605287"
-    },
-    {
-      "artist": "Emi Galvan & Albuquerque",
-      "title": "Stay High",
-      "content_id": "63653796"
+      "artist": "Mike Rish",
+      "title": "Leaving Brixton (Extended Mix)",
+      "content_id": "23426527"
     },
     {
       "artist": "Gorje Hewek, Molac, Dulus",
@@ -84,9 +54,29 @@
       "content_id": "7864421"
     },
     {
-      "artist": "Guy J",
-      "title": "Worlds Apart (Original Mix)",
-      "content_id": "194919017"
+      "artist": "Samm (BE)",
+      "title": "I'm Wondering (feat. LAUD)",
+      "content_id": "7823618"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Tremolo Man (Original Mix)",
+      "content_id": "212560040"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Kala",
+      "content_id": "52738760"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Keep On (Extended Mix)",
+      "content_id": "16127516"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Stay High",
+      "content_id": "63653796"
     },
     {
       "artist": "Sebastien Leger",
@@ -94,9 +84,19 @@
       "content_id": "187641315"
     },
     {
-      "artist": "Pomboklap, Aaron Sevilla, P.Rivas",
-      "title": "Se Fundieron (Original Mix)",
-      "content_id": "152683231"
+      "artist": "Fer Torti",
+      "title": "Star Trip",
+      "content_id": "190468120"
+    },
+    {
+      "artist": "D-Nox, Two Of A Kind, Gai Barone",
+      "title": "Vida (DJ Zombi Remix)",
+      "content_id": "42459205"
+    },
+    {
+      "artist": "FEFLO",
+      "title": "Rakata",
+      "content_id": "101489013"
     }
   ]
 }

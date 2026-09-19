@@ -8,6 +8,52 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Cuando cuatro palancas distintas dan el mismo numero, el limite no es la palanca
+
+**Que paso.** Los sets recorrian 1.9 puntos de energia donde una ventana del
+mismo largo en un set real recorre 2.9: solo 1 de 18 caia en el rango de los DJ
+reales, con probabilidad 4%. Se probaron cuatro cosas distintas para moverlo:
+ensanchar las bandas `e_lo`/`e_hi`, ensanchar el `e_pool`, subir el beam de 1200
+a 4000, y subir el umbral de paso plano de 0.08 a 0.75 —que efectivamente llevo
+el escalon tipico de 0.50 a 0.90, el valor de la referencia—. El rango se planto
+en 2.0 en las cuatro.
+
+**Por que.** El pool de cada momento, ya filtrado por genero y BPM, tiene su
+p10-p90 en 1.4 puntos de energia. Los temas de los extremos existen pero son
+poquisimos, y llegar a ellos choca con las otras restricciones —Camelot, tope por
+artista, cuota de generos— todas a la vez. Con pasos mas grandes el solver sube
+0.9 y baja 0.9: oscila mas fuerte adentro del mismo span. El techo no estaba en
+como elegimos sino en entre que elegimos.
+
+**Como se aplica.** Antes de seguir tuneando, mirar la distribucion del POOL, no
+la del resultado. Si el p10-p90 del material disponible es mas angosto que lo que
+se quiere producir, ninguna funcion de costo lo va a inventar. La accion correcta
+sale del dominio del algoritmo y entra en el de la biblioteca: hay que conseguir
+material en los extremos. Y el sintoma que lo delata es justamente este —varias
+palancas independientes convergiendo al mismo numero—.
+
+---
+
+## Una regla que se lee y no se usa es peor que no tenerla
+
+**Que paso.** `energia.umbral_paso_plano` vivia en `rules/curaduria.json` con su
+valor, su porque y su evidencia. `select_set.py` la leia en la linea 45 y no la
+usaba en ningun lado: el umbral real era un `max(0.08, ...)` escrito a mano en la
+linea 213. El valor documentado, 0.15, no tuvo efecto nunca.
+
+**Por que.** El proyecto tiene las reglas como dato justamente para que cambiarlas
+sea discutir el criterio y no editar codigo. Una regla desconectada rompe eso en
+la peor direccion posible: no falla, no avisa, y cualquiera que lea el JSON —o que
+corra el backtest— cree que esta midiendo algo que el solver mira. Encima esta
+importaba: de ese umbral depende el tamano del escalon tipico del set.
+
+**Como se aplica.** Toda constante leida de las reglas tiene que usarse, y la
+forma barata de garantizarlo es que no exista una constante equivalente escrita a
+mano al lado. Cuando aparezca un `max(<numero>, ...)` o un default junto a un
+`R.get(...)`, sospechar: o el numero deberia salir de la regla, o la regla sobra.
+
+---
+
 ## Un objetivo que se persigue punto por punto deja de ser un objetivo
 
 **Que paso.** El solver cobraba `|energia - arco(t)| * 3.0` en cada posicion del

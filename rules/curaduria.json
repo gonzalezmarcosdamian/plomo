@@ -89,8 +89,9 @@
       "evidencia": "Antes del cambio, de 180 tracks con E>=7.0 solo 16 (9%) estaban en 122 BPM o menos. Despues: 122 de 204 (60%). Recalculado 2026-09-12 desde los cues guardados, sin re-analizar audio."
     },
     "umbral_paso_plano": {
-      "valor": 0.15,
-      "porque": "Debajo de esto la energia no se movio: el publico escucha dos temas al mismo nivel."
+      "valor": 0.35,
+      "porque": "Debajo de este salto, mover la energia no se nota y el paso se cobra como plano. No es un numero cosmetico: de el depende el tamano del escalon tipico del set.",
+      "evidencia": "Hasta hoy esta regla se leia y NO se usaba —el umbral estaba clavado en 0.08 dentro de select_set.py—, asi que su valor anterior de 0.15 nunca tuvo efecto. Conectada y barrida sobre los 6 momentos: con 0.08 la correlacion posicion-energia da +0.14 y el escalon mediano 0.50; con 0.55 da +0.00 —el centro del IQR de referencia [-0.00..+0.11]— y el escalon sube a 0.80, contra 0.90 de los DJ reales. 0 transiciones flojas en las cuatro configuraciones probadas. Subirlo mas (0.75) clava el escalon en 0.90 pero devuelve la correlacion a +0.28."
     },
     "penal_paso_plano": {
       "valor": 0.35,

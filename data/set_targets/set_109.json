@@ -9,34 +9,29 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Gorje Hewek & Facundo Losardo",
+      "title": "Endless History (12\" Version)",
+      "content_id": "137328114"
+    },
+    {
       "artist": "House Mafia",
       "title": "Si No Creyera",
       "content_id": "123928958"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Divine Eternity (K Loveski Remix)",
-      "content_id": "44465807"
+      "artist": "FAERO, Tom Pavicich, Analog Sense",
+      "title": "Evolve (Original Mix)",
+      "content_id": "193893159"
     },
     {
-      "artist": "Mayro",
-      "title": "Chimi (Original Mix)",
-      "content_id": "262298802"
+      "artist": "Ed Ed, JJ Dawson",
+      "title": "Higher Than Me (Stimming Remix)",
+      "content_id": "103399728"
     },
     {
-      "artist": "Lane 8 & Yotto",
-      "title": "I / Y (Original Mix)",
-      "content_id": "200938351"
-    },
-    {
-      "artist": "Khen",
-      "title": "Some Little Secrets",
-      "content_id": "16097109"
-    },
-    {
-      "artist": "Dmitry Molosh",
-      "title": "Carousel (Original Mix)",
-      "content_id": "252248696"
+      "artist": "Kyotto",
+      "title": "Sorry I'm Late (HAFT Remix)",
+      "content_id": "9587394"
     },
     {
       "artist": "Chaim",
@@ -44,9 +39,9 @@
       "content_id": "233568440"
     },
     {
-      "artist": "Rauschhaus",
-      "title": "Faunus (Original Mix)",
-      "content_id": "148342248"
+      "artist": "Greg Ochman",
+      "title": "In Between Dreams",
+      "content_id": "129731006"
     },
     {
       "artist": "Dowden",
@@ -54,24 +49,14 @@
       "content_id": "249390073"
     },
     {
-      "artist": "M.O.S., Leonid Sivelkin, Krasa Rosa",
-      "title": "On The Strings Of Love (Original Mix)",
-      "content_id": "157561207"
+      "artist": "Lane 8 & Yotto",
+      "title": "I / Y (Original Mix)",
+      "content_id": "200938351"
     },
     {
-      "artist": "Ismail.M & Redspace",
-      "title": "Blanco",
-      "content_id": "47159480"
-    },
-    {
-      "artist": "Franky Wah",
-      "title": "Desert Dance (Original Mix)",
-      "content_id": "180668126"
-    },
-    {
-      "artist": "NUFECTS",
-      "title": "Inferno (Extended Mix)",
-      "content_id": "12342979"
+      "artist": "Mayro",
+      "title": "Chimi (Original Mix)",
+      "content_id": "262298802"
     },
     {
       "artist": "Hernan Cattaneo, Husa & Zeyada",
@@ -97,6 +82,21 @@
       "artist": "Mike Rish",
       "title": "Patenz (Original Mix)",
       "content_id": "104227319"
+    },
+    {
+      "artist": "Redspace, Olven",
+      "title": "Thread (Extended Mix)",
+      "content_id": "263348196"
+    },
+    {
+      "artist": "Franky Wah",
+      "title": "Desert Dance (Original Mix)",
+      "content_id": "180668126"
+    },
+    {
+      "artist": "Diego Schiller",
+      "title": "Archway (Original Mix)",
+      "content_id": "8716848"
     }
   ]
 }

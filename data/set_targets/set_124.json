@@ -9,44 +9,84 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Kamilo Sanclemente",
+      "title": "Divine Eternity (K Loveski Remix)",
+      "content_id": "44465807"
+    },
+    {
+      "artist": "Khen",
+      "title": "Yellow (Original Mix)",
+      "content_id": "125153100"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Airborne (Original Mix)",
+      "content_id": "43250172"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Oh, Miles (feat. Julia Church)",
+      "content_id": "33682689"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Synthesis",
+      "content_id": "133677574"
+    },
+    {
+      "artist": "Shai T",
+      "title": "Summer Oclock (Original Mix) ",
+      "content_id": "46457686"
+    },
+    {
       "artist": "Maze 28",
-      "title": "Flux",
-      "content_id": "172301228"
+      "title": "Aer8",
+      "content_id": "84034828"
     },
     {
-      "artist": "Roy Rosenfeld",
-      "title": "Halomot",
-      "content_id": "262045866"
+      "artist": "Rodriguez Jr. & Liset Alea",
+      "title": "What Is Real (Deep in the Playa Mix)",
+      "content_id": "263315442"
     },
     {
-      "artist": "Andre Moret, Mariusso",
-      "title": "Cygnus (Cosmonaut Extended Mix)",
-      "content_id": "81730683"
+      "artist": "Emi Galvan",
+      "title": "Crabo (Original Mix)",
+      "content_id": "64362623"
     },
     {
-      "artist": "Cesar Borra",
-      "title": "Don't Kill My Vibe (Steven Flynn Remix)",
-      "content_id": "102730439"
+      "artist": "Kyotto",
+      "title": "District (Original Mix)",
+      "content_id": "57011885"
     },
     {
-      "artist": "Hernan Cattaneo & Marcelo Vasami",
-      "title": "Scope",
-      "content_id": "158022171"
+      "artist": "Patrice Bäumel",
+      "title": "Clair (Cioz Neapolis Remix)",
+      "content_id": "165624581"
     },
     {
-      "artist": "Aman Anand & Da Luka",
-      "title": "Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix)",
-      "content_id": "50536262"
+      "artist": "Leandro Murua, Martin Fredes",
+      "title": "Interference (Original Mix)",
+      "content_id": "236712792"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Cosmic (Extended Mix)",
+      "content_id": "76975906"
+    },
+    {
+      "artist": "GMJ, Matter",
+      "title": "Telomeres (Original Mix)",
+      "content_id": "175052176"
+    },
+    {
+      "artist": "Hot Oasis",
+      "title": "Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix)",
+      "content_id": "139352087"
     },
     {
       "artist": "Sebastian Sellares",
-      "title": "Garden of Eden (Extended Mix)",
-      "content_id": "250104030"
-    },
-    {
-      "artist": "Kostya Outta, Liam Garcia",
-      "title": "If I Win (Extended Mix)",
-      "content_id": "231387448"
+      "title": "Abaddon (Extended Mix)",
+      "content_id": "40168032"
     },
     {
       "artist": "Marsh",
@@ -54,49 +94,9 @@
       "content_id": "38435770"
     },
     {
-      "artist": "Melodiam",
-      "title": "Old Garden",
-      "content_id": "72587871"
-    },
-    {
-      "artist": "Audio Junkies, AVIV BENS",
-      "title": "Perico (Original Mix)",
-      "content_id": "189190138"
-    },
-    {
-      "artist": "Marc Lenz",
-      "title": "People Are People",
-      "content_id": "132804349"
-    },
-    {
-      "artist": "Unusual Soul",
-      "title": "Empath",
-      "content_id": "254836060"
-    },
-    {
-      "artist": "Sebastien Leger",
-      "title": "Son of Sun (Original Mix)",
-      "content_id": "226428612"
-    },
-    {
-      "artist": "Fabricio Gutierrez",
-      "title": "Reedmov (Kebin van Reeken Remix)",
-      "content_id": "230581616"
-    },
-    {
-      "artist": "Made In TLV & Dor Danino",
-      "title": "Make a Wish",
-      "content_id": "143641420"
-    },
-    {
-      "artist": "Dowden, Mazayr",
-      "title": "Deflator (Montw Remix)",
-      "content_id": "266149371"
-    },
-    {
-      "artist": "Simon Vuarambon",
-      "title": "DEC (Original Mix)",
-      "content_id": "175764875"
+      "artist": "Kasper Koman",
+      "title": "Gertrude (Extended Mix)",
+      "content_id": "140196699"
     }
   ]
 }

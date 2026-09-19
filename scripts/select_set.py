@@ -210,7 +210,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # saltos salia +0.5 en los sets cortos, peor que el +0.0 original.
     tol_arco = (e_hi - e_lo) * TOL_ARCO_FRAC
     paso_natural = (e_hi - e_lo) / max(2, n - 1)
-    umbral_plano = max(0.08, paso_natural * 0.55)
+    # El piso sale de la regla, no de un 0.08 escrito aca. `ENERGIA_QUIETA` se
+    # leia de rules/curaduria.json y no se usaba en ningun lado: una regla con
+    # su porque y su evidencia que no hacia nada. Importa porque de este umbral
+    # depende el tamano del escalon tipico — el del solver era 0.20 contra 0.90
+    # de los DJ reales, y de ahi salia el rango corto de los sets.
+    umbral_plano = max(ENERGIA_QUIETA, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0)]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
