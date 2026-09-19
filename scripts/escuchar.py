@@ -200,25 +200,46 @@ def revisa_denso(capas: dict, compases: int, d: Dictamen) -> None:
 
 
 def revisa_robot(capas: dict, compases: int, d: Dictamen) -> None:
-    """"suena a robot" — compases identicos al de 8 atras.
+    """"suena a robot" — compases identicos al de 8 atras, POR CAPA.
+
+    Estaba roto por agregacion y es el error mas caro del instrumento. La
+    version anterior armaba UNA firma por compas con la union de todas las
+    capas: como el gancho y los acordes si varian, la firma del compas siempre
+    cambiaba, y trece capas repitiendo verbatim sesenta compases pasaban
+    invisibles. El umbral del 30% no se disparaba nunca.
+
+    Medido sobre el drop de la v3 con la version por capa: subkick 100%,
+    repiques 96%, bateria 94%, hats 94%. El DJ venia diciendo "parece un
+    ringtone" y el chequeo que existia para decir eso no lo decia.
 
     Y ojo con el periodo: una variacion que se repite cada 2 compases es
     invisible contra una celula de 8, porque 2 divide a 8.
     """
-    firma: dict[int, set] = defaultdict(set)
+    peor, culpable = 0.0, ""
+    detalle = []
     for nombre, notas in capas.items():
-        if nombre in ("riser", "subida", "voz"):
+        if nombre in ("riser", "subida", "voz", "reversa", "splash", "cierre"):
             continue
+        firma: dict[int, set] = defaultdict(set)
         for inicio, _, altura, _ in notas:
             firma[int(inicio // 4)].add((round(inicio % 4, 3), altura))
-    for salto in (8, 16):
-        iguales = sum(1 for c in range(salto, compases)
-                      if firma.get(c) and firma.get(c) == firma.get(c - salto))
-        frac = iguales / max(1, compases - salto)
-        if salto == 8 and frac > 0.30:
-            d.agrega("ALTO", "va a sonar a maquina",
-                     f"{frac:.0%} de los compases son identicos al de 8 antes; "
-                     f"una variacion con periodo que divide a 8 no se percibe")
+        con_notas = [c for c in range(compases) if firma.get(c)]
+        if len(con_notas) < 16:
+            continue
+        iguales = sum(1 for c in range(8, compases)
+                      if firma.get(c) and firma.get(c) == firma.get(c - 8))
+        frac = iguales / max(1, compases - 8)
+        detalle.append((frac, nombre))
+        if frac > peor:
+            peor, culpable = frac, nombre
+    if peor > 0.60:
+        otras = ", ".join(f"{n} {f:.0%}" for f, n in sorted(detalle, reverse=True)[1:4])
+        d.agrega("ALTO", "va a sonar a maquina",
+                 f"la capa {culpable} repite identica el {peor:.0%} de los compases "
+                 f"(cada 8); tambien {otras}")
+    elif peor > 0.35:
+        d.agrega("MEDIO", "puede sonar repetitivo",
+                 f"la capa {culpable} repite identica el {peor:.0%} de los compases")
 
 
 # Notas del drum rack que viven arriba de 1 kHz. El peine solo importa entre

@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "1.1.0",
+    "version": "1.2.0",
     "creado": "2026-09-07",
     "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
     "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia."
@@ -66,13 +66,16 @@
       "evidencia": "Validado en sesion 2026-05-16: Haunted como cierre funciono."
     },
     "pico_en_pct": {
-      "valor": 0.82,
-      "porque": "El pico cae al 82% del set. Despues baja el 30% del rango.",
-      "sospecha": "Digweed pone el pico mas tarde en sets de 4h+. Puede necesitar depender de duration_h."
+      "valor": 0.6,
+      "anterior": 0.82,
+      "porque": "Donde cae el punto mas alto del set, medido en TIEMPO y no en numero de track.",
+      "evidencia": "2026-09-19, dos mediciones independientes: backtest_rules sobre 24 sets de referencia da el pico a la mediana del 57%, y el analisis de forma da correlacion posicion-energia +0.11 en referencia contra +0.64 propio. Con el pico al 82% el set sube durante el 82% del tiempo y por eso trepa en vez de tener forma."
     },
     "caida_post_pico_pct": {
-      "valor": 0.3,
-      "porque": "Cuanto del rango de energia se baja despues del pico."
+      "valor": 0.5,
+      "anterior": 0.3,
+      "porque": "Cuanto del rango se baja despues del pico.",
+      "evidencia": "2026-09-19: los sets de referencia bajan 1.62 puntos desde el pico contra 1.23 los propios, y el 39% de los propios terminan arriba del 90% del pico contra el 15% de la referencia."
     },
     "peso_desvio_arco": {
       "valor": 3.0,
@@ -83,6 +86,25 @@
       "duro": true,
       "porque": "La v1 sumaba (bpm-118)/8*3 sobre 10: el 30% de la energia ERA el tempo. Un tema de 118 BPM tenia techo E7.0 por construccion y pedir 'mucha energia' era pedir 'BPM alto'.",
       "evidencia": "Antes del cambio, de 180 tracks con E>=7.0 solo 16 (9%) estaban en 122 BPM o menos. Despues: 122 de 204 (60%). Recalculado 2026-09-12 desde los cues guardados, sin re-analizar audio."
+    },
+    "umbral_paso_plano": {
+      "valor": 0.15,
+      "porque": "Debajo de esto la energia no se movio: el publico escucha dos temas al mismo nivel."
+    },
+    "penal_paso_plano": {
+      "valor": 0.35,
+      "porque": "Un set real OSCILA; el del solver era una rampa monotona.",
+      "evidencia": "2026-09-19: correlacion posicion-energia +0.64 en los sets del solver contra +0.11 en los 40 setlists de referencia y +0.18 en lo tocado. El 45% de las transiciones propias no movia la energia contra el 19.6% de la referencia (n=163). Autocorrelacion de los saltos: -0.05 propio vs -0.36 referencia.",
+      "calibracion": "Barrido 2026-09-19 sobre el set 106: peso 0.6 -> 6% de pasos planos (se pasa, la referencia es 19.6%), 0.25 -> 29%, 0.15 -> 35%. Se queda en 0.35, que cae en el medio. El objetivo NO es cero: un DJ real deja el 19.6% de las transiciones sin mover la energia."
+    },
+    "racha_misma_direccion_desde": {
+      "valor": 2,
+      "porque": "Dos pasos de energia en la misma direccion es una frase; tres ya es una rampa."
+    },
+    "racha_misma_direccion_peso": {
+      "valor": 0.7,
+      "porque": "Cobrar cada paso de mas en la misma direccion, para que el set oscile en vez de trepar.",
+      "evidencia": "2026-09-19: autocorrelacion lag-1 de los saltos de energia -0.36 en los 40 setlists de referencia contra -0.05 en los del solver. Penalizar solo el paso plano no alcanzo: la correlacion posicion-energia subio de +0.64 a +0.76."
     }
   },
   "bpm": {
@@ -146,8 +168,10 @@
   },
   "densidad": {
     "tracks_por_hora": {
-      "valor": 12,
-      "porque": "Un set de 1h30 son 18-20 tracks, no 12. Con 12 no hay margen para estirar, saltar ni leer la pista: eso es una playlist, no una caja. Los 12 se eligen arriba del escenario."
+      "valor": 8.8,
+      "anterior": 12,
+      "porque": "Cuantos temas entran de verdad en una hora.",
+      "evidencia": "2026-09-19: el reloj de djmdHistory da 6.8 min por track (p10 5.2, p90 8.4, n=315) y se usa el 93% del archivo. Con 12/hora, 8 de cada 10 sets no entraban en su horario y el 108 duraba 2h59 con cartel de 2h."
     }
   },
   "solver": {

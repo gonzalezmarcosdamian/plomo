@@ -35,6 +35,10 @@ PESO_MISMA_KEY = R.get("armonia.penal_misma_key_desde_peso", 1.2)
 PESO_QUIETO = R.get("armonia.penal_quedarse_en_la_rueda", 0.8)
 MONOTONIA_DESDE = R.get("armonia.monotonia_desde", 2)
 PESO_MONOTONIA = R.get("armonia.monotonia_desde_peso", 0.5)
+ENERGIA_QUIETA = R.get("energia.umbral_paso_plano", 0.15)
+PESO_ENERGIA_QUIETA = R.get("energia.penal_paso_plano", 0.35)
+RACHA_ENERGIA_DESDE = R.get("energia.racha_misma_direccion_desde", 2)
+PESO_RACHA_ENERGIA = R.get("energia.racha_misma_direccion_peso", 0.7)
 SPLIT = (",", "&", " feat", " ft", " vs", " x ")
 # Margen para las comparaciones contra los topes. abs(7.0 - 8.3) da
 # 1.3000000000000007 en punto flotante, asi que un escalon que es exactamente
@@ -124,15 +128,31 @@ def _paso_firmado(ca, cb):
     return d if d <= 6 else d - 12
 
 
-def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
-    t = i / (n - 1)
+def arc_en(t, lo, hi, hi_at=PICO_PCT):
+    """La energia que el arco pide en el instante `t` (0 = arranque, 1 = final)."""
+    t = min(1.0, max(0.0, t))
     if t <= hi_at:
         return lo + (hi - lo) * (t / hi_at)
     return hi - (hi - lo) * CAIDA_PCT * ((t - hi_at) / (1 - hi_at))
 
 
+def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
+    """El arco por POSICION. Se mantiene para quien lo llame de afuera.
+
+    Es la version vieja y tiene un problema: asume que todos los tracks duran lo
+    mismo. Con la posicion como reloj, el pico "al 82% del set" cae en el track
+    20 de 24 — pero si los primeros diecinueve son extended mixes de nueve
+    minutos, ese track 20 llega a las dos horas y media de empezar. Medido sobre
+    los sets armados, ocho de cada diez no entraban en el horario pedido y el
+    108 duraba 2h59 con cartel de 2h. `select()` ahora usa `arc_en()` con el
+    tiempo acumulado real.
+    """
+    return arc_en(i / (n - 1), lo, hi, hi_at)
+
+
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
-           max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0):
+           max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0,
+           objetivo_seg=None):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `prefer` son ids con descuento en el costo — sirve para forzar que el set
@@ -171,7 +191,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
 
     # (costo, track, padre, ids_mask, arts, run_num, ultimo_paso, mono_run,
     #  generos, max_e)
-    beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"))]
+    # El ultimo campo son los SEGUNDOS acumulados de la rama: el arco se
+    # mide contra el reloj, no contra el numero de track.
+    dur_med = sorted(t.get("dur_seg") or 0 for t in pool)[len(pool) // 2] or 300
+    if not objetivo_seg:
+        objetivo_seg = n * dur_med
+    beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0)]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
         # Monticulo acotado en vez de lista completa. Antes se acumulaban
@@ -183,10 +208,14 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         nxt = []            # monticulo: el peor de los mejores queda arriba
         orden = 0           # desempate por orden de insercion, como el sort estable
         ultima = i == n - 1
-        subiendo = i / (n - 1) <= PICO_PCT
         for nodo in beams:
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
-             gen_cnt, max_e) = nodo
+             gen_cnt, max_e, segs, e_signo, e_racha) = nodo
+            frac = segs / objetivo_seg
+            tgt = arc_en(frac, e_lo, e_hi)
+            # "antes del pico" tambien se mide con el reloj: si los primeros
+            # temas son largos, el pico llega antes en numero de track.
+            subiendo = frac <= PICO_PCT
             candidatos = vecinos[prev["key"]] if prev is not None else todos
             for j in candidatos:
                 t = pool[j]
@@ -225,6 +254,27 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     # el 38% de las veces contra el 23% de lo que el DJ toca de
                     # verdad y el 14% de los sets de referencia. El set no sonaba
                     # mal transicion por transicion: sonaba igual de punta a punta.
+                    # Un set real OSCILA; el nuestro era una rampa. Medido:
+                    # correlacion posicion-energia +0.64 en los sets del solver
+                    # contra +0.11 en los de referencia, y el 45% de nuestras
+                    # transiciones no movia la energia contra el 19.6% de ellos
+                    # (n=163). Quedarse quieto en energia cuesta, igual que
+                    # quedarse quieto en la rueda.
+                    de = t["energy"] - prev["energy"]
+                    if abs(de) < ENERGIA_QUIETA:
+                        step += PESO_ENERGIA_QUIETA
+                        n_signo, n_racha = 0, 0
+                    else:
+                        # Un DJ real sube y baja: la autocorrelacion de sus
+                        # saltos de energia es -0.36. La nuestra era -0.05, o
+                        # sea una rampa. Penalizar SOLO lo plano no alcanzo —
+                        # daba una rampa mas suave (correlacion posicion-energia
+                        # +0.76, peor que el +0.64 original). Lo que falta es
+                        # cobrar la RACHA en la misma direccion.
+                        n_signo = 1 if de > 0 else -1
+                        n_racha = e_racha + 1 if n_signo == e_signo else 1
+                        if n_racha > RACHA_ENERGIA_DESDE:
+                            step += (n_racha - RACHA_ENERGIA_DESDE) * PESO_RACHA_ENERGIA
                     paso = _paso_firmado(prev["_cam"], t["_cam"])
                     if paso == 0:
                         step += PESO_QUIETO
@@ -282,7 +332,10 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 gc[gk] = gc.get(gk, 0) + 1
                 nodo_hijo = (c, t, nodo, ids | (1 << j), {**arts, **na_pos},
                              n_run, n_paso, n_mono, gc,
-                             t["energy"] if t["energy"] > max_e else max_e)
+                             t["energy"] if t["energy"] > max_e else max_e,
+                             segs + (t.get("dur_seg") or dur_med),
+                             n_signo if prev is not None else 0,
+                             n_racha if prev is not None else 0)
                 entrada = (-c, -orden, nodo_hijo)
                 orden += 1
                 if len(nxt) < beam:
@@ -360,8 +413,25 @@ if __name__ == "__main__":
             and not (names(t["artist"], t["title"]) & taken)
             and t["id"] not in excluidos
         ]
+        # Cuantos tracks entran de verdad en el horario pedido. La regla vieja
+        # era 12 por hora (5 min cada uno) y el material real tiene mediana 7.2:
+        # un set de 2h con 24 tracks daba 2h52. Si el config trae duration_h se
+        # recalcula contra la mediana del POOL de ese set, que es lo que se va a
+        # usar; `n` del config queda como tope por si se quiere acotar.
+        objetivo_seg = int(spec.get("duration_h", 0) * 3600) or None
+        n_tracks = spec["n"]
+        if objetivo_seg and pool:
+            med = sorted(t.get("dur_seg") or 0 for t in pool)[len(pool) // 2] or 300
+            # Un track no suena entero: se mezcla entrando y saliendo. Medido
+            # sobre los timestamps de djmdHistory, suena el 93% del archivo y el
+            # hueco mediano entre temas es 6.8 min. La regla vieja decia 12 por
+            # hora (5 min) y la realidad son 8.8.
+            n_tracks = max(4, round(objetivo_seg / (med * 0.93)))
+            if n_tracks != spec["n"]:
+                print(f"  duracion {spec['duration_h']}h / {med/60:.1f} min por track "
+                      f"-> {n_tracks} tracks (el config decia {spec['n']})")
         best = select(
-            pool, spec["n"], spec["e_lo"], spec["e_hi"],
+            pool, n_tracks, spec["e_lo"], spec["e_hi"],
             max_bpm_jump=spec.get("max_bpm_jump", 2.0),
             prefer=set(spec.get("prefer_ids", [])),
             bonus=spec.get("prefer_bonus", 6.0),
@@ -369,6 +439,7 @@ if __name__ == "__main__":
             beam=spec.get("beam", BEAM),
             mezcla=spec.get("mezcla_objetivo"),
             peso_mezcla=spec.get("peso_mezcla", 8.0),
+            objetivo_seg=objetivo_seg,
         )
         print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:
