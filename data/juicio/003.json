@@ -1,0 +1,36 @@
+{
+  "vuelta": 3,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "variacion por compas",
+  "mecanismo": "LFO libre al cutoff en las cinco capas melodicas, una tasa distinta por capa y ninguna en un numero entero de compases",
+  "de_donde_sale": "data/vocabulario/videos.json — 'LFO con RE-TRIGGER APAGADO, a una tasa que no coincida con el compas (media medida, o free rate), ruteado a cutoff. Amount bajo.' Es el consenso mas fuerte de toda la investigacion: tres videos independientes del nicho lo dicen con las mismas palabras.",
+  "que_se_cambio": [
+    "scripts/movimiento.py nuevo: prende el LFO del Auto Filter que ya estaba en las cinco pistas melodicas (4 Atmosfera, 5 Acordes, 8 Gancho, 11 Anchos, 19 Abiertos).",
+    "Tasas 0.13 / 0.19 / 0.22 / 0.29 / 0.31 Hz = 3.94 / 2.70 / 2.23 / 1.77 / 1.65 compases. Ninguna entera, y distintas entre si: con la misma tasa en las cinco el oido escucha UN barrido sobre la mezcla, no cinco capas moviendose.",
+    "Amount 11% ('amount bajo' de la regla)."
+  ],
+  "no_habia_que_construirlo_habia_que_prenderlo": "Las cinco pistas ya tenian el Auto Filter, su LFO T Mode ya estaba en 'Rate' —que es Hz libre, o sea que no re-dispara nunca, exactamente lo que pide la regla— y LFO Amount estaba en 0.0%. El movimiento estaba cableado y apagado.",
+  "medido": {
+    "variacion por compas": {
+      "v3_base": 0.64,
+      "v4_huecos_de_bateria": 0.84,
+      "v5_con_LFO": 1.06,
+      "objetivo": [0.85, 2.5],
+      "veredicto": "DENTRO DE RANGO",
+      "referencias": {"Tunnel": 0.86, "Panorama": 1.45, "Closing Doors": 2.46}
+    },
+    "estabilidad_de_la_ventana": "1.06 a 1.10 corriendo el inicio de 0 a 4 compases: la medida es estable y el rango no toca el borde",
+    "de_paso": {
+      "centroide_mezcla_Hz": 1922,
+      "ocupacion_mezcla": 0.58,
+      "cresta_mezcla_dB": 28.7,
+      "nota": "el centroide cae dentro del objetivo del bus melodico (1210-1992) y la ocupacion tambien (44-100%), pero medidos sobre la MEZCLA, no sobre el bus separado. No cuentan como cerradas hasta medirlas con Demucs por bus."
+    }
+  },
+  "trampa_evitada": "El primer intento puso LFO Amount en 0.12 crudo y el device mostro 1.4%: el parametro esta normalizado 0..1 y NO es lineal, un factor 8.5. Se paso a buscar por biseccion contra el valor que muestra el device, que es el unico numero que significa algo. Al Hz le pasa lo mismo con otra curva.",
+  "donde_vive_este_cambio": "En el SET de Live, no en codigo que genere MIDI. Por eso movimiento.py es parte de la receta de reconstruccion: despues de armar_set.py y montar.py hay que correrlo, o el movimiento no esta. Si se captura el set con `armar_set.py --capturar` queda guardado en el JSON del set y movimiento.py pasa a ser redundante para esa version.",
+  "proxima_dimension": "las once restantes no se midieron en esta vuelta. Correr iterar.py sobre v5_161-176.wav para tener la tabla completa y elegir la proxima mas lejos. Candidata fuerte por lo que ya se sabe: ocupacion del bus melodico, con el mecanismo del pad resampleado de una cola de reverb que esta en data/vocabulario/videos.json y todavia sin usar.",
+  "necesita_al_DJ": true,
+  "por_que": "Tres vueltas de cambios sin que el escuche nada. El render v5_161-176.wav es el primero donde la variacion esta dentro del rango de las referencias, y lo que hay que saber ahora no es un numero sino si dejo de sonar a maquina.",
+  "render": "postproduction/render/v5_161-176.wav"
+}
