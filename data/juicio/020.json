@@ -1,0 +1,28 @@
+{
+  "vuelta": 20,
+  "fecha": "2026-09-20",
+  "dimension_atacada": "ninguna de las doce de docs/PLAN.md. Sexta vuelta seguida (015-019 y esta) en el mismo bloqueo. La vuelta 019 ya dijo explicitamente que una quinta confirmacion identica tenia rendimiento decreciente y pidio pausar el disparo automatico del loop hasta que hubiera un insumo nuevo (audio real, acceso a Live, o respuesta del DJ). Esta vuelta no encontro ese insumo nuevo, asi que NO repite el audit completo por sexta vez: hace solo la verificacion minima que pide el prompt y actua sobre la recomendacion de 019 en vez de ignorarla.",
+  "que_se_hizo": [
+    "git log -8 y git status antes de tocar nada. Se repitio EXACTAMENTE el mismo desfasaje que encontraron 018 y 019 por separado: HEAD detached en 336f8b1 (= origin/master, vuelta 019), branch local 'master' stale en 6d8bea3 (vuelta 003). Confirma la hipotesis de 019: es la imagen base del contenedor, no una sesion pisando a otra -- se repite identica en un contenedor nuevo. git checkout master && git fetch origin master && git merge --ff-only origin/master lo puso al dia (fast-forward limpio, 21 archivos, sin conflicto).",
+    "Se busco de nuevo cualquier archivo de audio o .als en todo el repo (wav/mp3/aiff/flac/als): cero, igual que las vueltas 004-019. Se probo el puerto OSC de Live (127.0.0.1:11000): connection refused, igual que siempre.",
+    "No se releyo escuchar.py ni idea.py ni data/vocabulario/*.json de nuevo -- 019 ya hizo esa relectura esceptica y no encontro nada, y repetirla una sexta vez es exactamente el patron que 019 pidio cortar.",
+    "Se actua sobre la recomendacion explicita de 019: se le avisa al humano (notificacion) que conviene pausar el disparo automatico de este loop hasta que exista uno de los tres insumos que faltan, en vez de dejar que la rutina siga devolviendo el mismo resultado vuelta tras vuelta sin que nadie lo lea."
+  ],
+  "medido_antes": {
+    "estado_repo": "branch local 'master' otra vez en 6d8bea3 (vuelta 003), detached HEAD en 336f8b1 (vuelta 019, = origin/master) -- mismo patron que 018 y 019"
+  },
+  "medido_despues": {
+    "estado_repo": "branch local 'master' fast-forward a 336f8b1, igual a origin/master",
+    "archivos_de_audio_o_als_en_el_repo": "cero, igual que 004-019",
+    "puerto_osc_11000": "connection refused, igual que 004-019"
+  },
+  "como_se_midio": "git log/status/checkout/fetch/merge --ff-only; find por extensiones de audio y .als en todo el repo; intento de conexion TCP a 127.0.0.1:11000. No se releyo codigo de produccion ni se genero MIDI nuevo: no hay cambio de codigo desde la vuelta 019 que ameritara remedir.",
+  "de_donde_sale": "El prompt del loop pide revisar git log y la ultima vuelta antes de tocar nada, y la vuelta 019 dejo escrito, en tambien_notado, que seguir disparando esta rutina sin insumo nuevo iba a seguir devolviendo el mismo resultado y que convenia pausar el disparo automatico. Esta vuelta confirma que sigue sin haber insumo nuevo y actua en consecuencia.",
+  "por_que_no_es_una_de_las_doce": "No se cambio codigo de produccion ni ningun valor de idea.py/humano.py. Es la misma clase de vuelta que 015-019: verificacion de precondiciones sin medicion nueva sobre una de las doce dimensiones.",
+  "necesita_al_DJ": true,
+  "necesita_audio_real": true,
+  "por_que": "Nada cambio desde la vuelta 019: sigue sin Ableton Live, sin un solo archivo de audio en el clon, y el espacio de lo medible solo con MIDI esta agotado desde la vuelta 015 y reconfirmado cuatro veces mas desde entonces.",
+  "correccion_a_vueltas_anteriores": "Ninguna. Confirma 015-019.",
+  "tambien_notado": "Esta es la SEXTA vuelta seguida en el mismo bloqueo. A diferencia de 015-019, esta vuelta no escribe un audit nuevo -- ya no hay angulo sin probar -- y en cambio le manda una notificacion directa al humano (no solo texto en este JSON, que nadie estaba leyendo entre vuelta y vuelta) pidiendo pausar el disparo automatico hasta que aparezca uno de estos tres insumos: (1) acceso a Ableton Live o un render/wav real para medir con juzgar.py/escuchar.py sobre audio de verdad; (2) respuesta del DJ a las preguntas de diseno acumuladas desde la vuelta 012-016 (pad en el drop, subkick contra el bombo, bajo con pedal fijo vs. cambio de nota a los 3/4, si suma percusion afinada); (3) el pendiente mas viejo de todos, escuchar v5_161-176.wav (vuelta 003). Si el loop se sigue disparando sin que aparezca ninguno de estos tres, la vuelta 021 deberia limitarse a repetir esta misma nota sin generar un JSON nuevo, para no ensuciar data/juicio/ con confirmaciones idénticas.",
+  "nota_de_entorno": "Confirmado por tercera vez (018, 019, esta): el branch local 'master' de un contenedor nuevo de este entorno arranca fijo en 6d8bea3 (vuelta 003), no en el HEAD real. Cualquier vuelta futura en un contenedor nuevo se va a topar con lo mismo -- correr 'git fetch origin master && git merge --ff-only origin/master' apenas se entra, antes de leer nada."
+}
