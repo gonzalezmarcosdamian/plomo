@@ -1,0 +1,102 @@
+{
+  "name": "131. Prime Time · Nuevo — 2h — 2026-09-20",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Monolink",
+      "title": "Swallow (Oliver Koletzki Remix)",
+      "content_id": "88647880"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Ensina",
+      "content_id": "165703060"
+    },
+    {
+      "artist": "Brian Cid",
+      "title": "Luminous Black",
+      "content_id": "173975846"
+    },
+    {
+      "artist": "Maz (BR), VXSION",
+      "title": "Amana",
+      "content_id": "21886445"
+    },
+    {
+      "artist": "Niceshot",
+      "title": "Earthrise (Original Mix) ",
+      "content_id": "258437382"
+    },
+    {
+      "artist": "Pandhora, Cahelo",
+      "title": "Unfold Your Heart (Kamilo Sanclemente Extended Remix)",
+      "content_id": "40578050"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Amulet feat. M.O.S (Original Mix)",
+      "content_id": "5770560"
+    },
+    {
+      "artist": "Rivo",
+      "title": "Last Night (Extended)",
+      "content_id": "61238021"
+    },
+    {
+      "artist": "Odasoul",
+      "title": "Flamenco Trip",
+      "content_id": "157467566"
+    },
+    {
+      "artist": "Nicola Schenetti, Rivaz",
+      "title": "Died In Your Arms Tonight (Afro Remix)",
+      "content_id": "69434588"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Pakpak (Extended Mix)",
+      "content_id": "36999671"
+    },
+    {
+      "artist": "GORDO, DRAKE",
+      "title": "HEALING (AURAE EDIT)",
+      "content_id": "234391546"
+    },
+    {
+      "artist": "EMPHI",
+      "title": "Among the Gods (Original Mix)",
+      "content_id": "130839701"
+    },
+    {
+      "artist": "Sohno",
+      "title": "Tura (Original Mix)",
+      "content_id": "156220518"
+    },
+    {
+      "artist": "Morttagua",
+      "title": "Imentet (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "content_id": "13512939"
+    },
+    {
+      "artist": "ID ID",
+      "title": "Confusion (Original Mix)",
+      "content_id": "218990572"
+    },
+    {
+      "artist": "MF Productions",
+      "title": "Blow It Up (Original Mix)",
+      "content_id": "240573187"
+    },
+    {
+      "artist": "Joe Smooth",
+      "title": "Promised Land (Solomun Extended Remix)",
+      "content_id": "18108849"
+    }
+  ]
+}

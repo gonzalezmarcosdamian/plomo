@@ -1,0 +1,102 @@
+{
+  "name": "128. Apertura · Bailable — 2h — 2026-09-20",
+  "duration_h": 2.0,
+  "bpm_range": [
+    118,
+    123
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Guy Mantzur, Roy Rosenfeld",
+      "title": "Epika (Original Mix)",
+      "content_id": "266361239"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Alive Again (Original Mix)",
+      "content_id": "178178954"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mindloop (Original Mix)",
+      "content_id": "177299920"
+    },
+    {
+      "artist": "Dark Soul Project & Replicanth",
+      "title": "Zicatela (Original Mix)",
+      "content_id": "188993251"
+    },
+    {
+      "artist": "Malone, BLOND.ISH, Archila",
+      "title": "Voices Above (Original Mix)",
+      "content_id": "16438342"
+    },
+    {
+      "artist": "Of Norway",
+      "title": "I Miss You (Sentre Remix)",
+      "content_id": "40824016"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Flowing",
+      "content_id": "90404405"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Parabolic (Original Mix)",
+      "content_id": "72311255"
+    },
+    {
+      "artist": "Pomboklap, Aaron Sevilla, P.Rivas",
+      "title": "Se Fundieron (Original Mix)",
+      "content_id": "152683231"
+    },
+    {
+      "artist": "Rafael Cerato",
+      "title": "Silverscreen",
+      "content_id": "232009241"
+    },
+    {
+      "artist": "djimboh",
+      "title": "Be Brave (Extended Mix)",
+      "content_id": "151312213"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Intense Delirium (Original Mix)",
+      "content_id": "248902437"
+    },
+    {
+      "artist": "GMJ & Matter",
+      "title": "Metanoia",
+      "content_id": "267415526"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Six (Extended Mix)",
+      "content_id": "8056828"
+    },
+    {
+      "artist": "Buika & Kiko Navarro",
+      "title": "El Silencio (Club Version)",
+      "content_id": "43179180"
+    },
+    {
+      "artist": "Mita Gami",
+      "title": "San Pedro",
+      "content_id": "78604348"
+    },
+    {
+      "artist": "Tantum, Hyunji-A",
+      "title": "Keep My Letters (Simon Vuarambon Remix)",
+      "content_id": "43960039"
+    },
+    {
+      "artist": "Cioz",
+      "title": "Soul Fixer",
+      "content_id": "267157161"
+    }
+  ]
+}

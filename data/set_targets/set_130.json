@@ -1,0 +1,77 @@
+{
+  "name": "130. Previa · Bailable — 1.5h — 2026-09-20",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    124
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Felix Raphael, Armen Miran & Cafe De Anatolia",
+      "title": "Soul Guardian",
+      "content_id": "19094949"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "Bird Flight (Original Mix)",
+      "content_id": "240140989"
+    },
+    {
+      "artist": "Radio Slave",
+      "title": "Strobe Queen",
+      "content_id": "191741497"
+    },
+    {
+      "artist": "Mita Gami",
+      "title": "Allenby",
+      "content_id": "108954597"
+    },
+    {
+      "artist": "Tuna, Quentro, Kuntay Cevizci",
+      "title": "Perreo (Extended Mix)",
+      "content_id": "227609391"
+    },
+    {
+      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
+      "title": "Perception (Original Mix)",
+      "content_id": "264835495"
+    },
+    {
+      "artist": "Dilby",
+      "title": "Feel It",
+      "content_id": "26667043"
+    },
+    {
+      "artist": "BIG Mouth (DXB), Under Control (LB)",
+      "title": "Radio Ga Ga (Extended Mix)",
+      "content_id": "80468010"
+    },
+    {
+      "artist": "Fran Bonetti, RRØDD",
+      "title": "Ride or Die (Kamikaze BR Remix)",
+      "content_id": "120076647"
+    },
+    {
+      "artist": "Adeva, Groove P",
+      "title": "Hold On Honey (Extended Mix)",
+      "content_id": "10773030"
+    },
+    {
+      "artist": "Quivver, Dave Seaman",
+      "title": "The Water's Edge (Original Mix)",
+      "content_id": "134832567"
+    },
+    {
+      "artist": "Artem Kalalb",
+      "title": "Satellites (Emi Galvan Dub Mix)",
+      "content_id": "168511435"
+    },
+    {
+      "artist": "CIOZ",
+      "title": "Cookie Man (Original Mix)",
+      "content_id": "99856005"
+    }
+  ]
+}

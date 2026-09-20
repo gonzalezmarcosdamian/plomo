@@ -1,0 +1,77 @@
+{
+  "name": "133. Peak · Nuevo — 1.5h — 2026-09-20",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Guy J",
+      "title": "Everyday (Original Mix)",
+      "content_id": "173241243"
+    },
+    {
+      "artist": "Juan Buitrago",
+      "title": "Anja",
+      "content_id": "45593537"
+    },
+    {
+      "artist": "Heller & Farley Project",
+      "title": "Ultra Flava (David Penn Extended Remix) ",
+      "content_id": "75283929"
+    },
+    {
+      "artist": "Franco Camiolo",
+      "title": "Torch (Extended Mix)",
+      "content_id": "14868827"
+    },
+    {
+      "artist": "Eli Nissan",
+      "title": "Karnaval (Original Mix) ",
+      "content_id": "77435258"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Vivere (Extended Mix)",
+      "content_id": "194212659"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Echoes From Below (Weird Sounding Dude Remix)",
+      "content_id": "191933243"
+    },
+    {
+      "artist": "DAVI",
+      "title": "Among Us (Original Mix)",
+      "content_id": "117775286"
+    },
+    {
+      "artist": "Scatman John",
+      "title": "Scatman (Ellie Sax Mix)",
+      "content_id": "5020394"
+    },
+    {
+      "artist": "Aaron Montes, Havana Hustlers",
+      "title": "Where Have You Been (George Calle Exclusive Traxsource Mix)",
+      "content_id": "215402847"
+    },
+    {
+      "artist": "Jan Blomqvist, Rodriguez Jr.",
+      "title": "Destination Lost (Arodes Extended Remix)",
+      "content_id": "263021675"
+    },
+    {
+      "artist": "Anturage, Alar",
+      "title": "Moet (Original Mix)",
+      "content_id": "243540383"
+    },
+    {
+      "artist": "mOat (UK)",
+      "title": "Brian (Extended Mix)",
+      "content_id": "56746870"
+    }
+  ]
+}

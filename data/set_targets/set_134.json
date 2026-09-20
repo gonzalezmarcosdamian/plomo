@@ -1,0 +1,77 @@
+{
+  "name": "134. Peak · Bailable — 1.5h — 2026-09-20",
+  "duration_h": 1.5,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Sunset Love",
+      "content_id": "1940753"
+    },
+    {
+      "artist": "Jody Wisternoff",
+      "title": "Paramour (Original Mix)",
+      "content_id": "6900209"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Great Attractor (Ruben Karapetyan Remix)",
+      "content_id": "106041324"
+    },
+    {
+      "artist": "Keith Mac",
+      "title": "The Chant - Extended Mix",
+      "content_id": "78187864"
+    },
+    {
+      "artist": "XANDL",
+      "title": "Get Over It (Original Mix)",
+      "content_id": "60999031"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Phantom (Original Mix)",
+      "content_id": "67065528"
+    },
+    {
+      "artist": "Analog Jungs",
+      "title": "Ocaris (Original Mix) ",
+      "content_id": "50523858"
+    },
+    {
+      "artist": "Pachanga Boys",
+      "title": "Time",
+      "content_id": "149018852"
+    },
+    {
+      "artist": "Favio Inker, Rodrigo Am",
+      "title": "Have a Dance",
+      "content_id": "146978273"
+    },
+    {
+      "artist": "ECHO DAFT, Kebin Van Reeken",
+      "title": "Mysterious Drag (Original Mix)",
+      "content_id": "40504915"
+    },
+    {
+      "artist": "Spencer Brown",
+      "title": "Blue Magic (feat. Danny Shamoun)",
+      "content_id": "190819323"
+    },
+    {
+      "artist": "NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens",
+      "title": "Remember Me - Hernan Cattaneo & Jamie Stevens Remix",
+      "content_id": "53721787"
+    },
+    {
+      "artist": "David Penn",
+      "title": "That Vibe (Original Mix)",
+      "content_id": "32357540"
+    }
+  ]
+}

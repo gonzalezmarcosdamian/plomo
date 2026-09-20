@@ -1,0 +1,102 @@
+{
+  "name": "132. Prime Time · Bailable — 2h — 2026-09-20",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Bedouin",
+      "title": "Tijuana (Vintage Culture Remix)",
+      "content_id": "89532638"
+    },
+    {
+      "artist": "Nick Curly & Jansons",
+      "title": "Chip Butty (Alex Kennon Remix)",
+      "content_id": "107609153"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Sinking Sky",
+      "content_id": "77712466"
+    },
+    {
+      "artist": "Maz (BR), VXSION",
+      "title": "Amana",
+      "content_id": "21886445"
+    },
+    {
+      "artist": "Rafael, Adam Ten",
+      "title": "Sweet Boy (Original Mix)",
+      "content_id": "73971725"
+    },
+    {
+      "artist": "D-Nox, Andre Moret",
+      "title": "Shine (Extended Mix)",
+      "content_id": "112900288"
+    },
+    {
+      "artist": "Mayro",
+      "title": "Enchanted Forest (Extended Mix)",
+      "content_id": "204609403"
+    },
+    {
+      "artist": "Helsloot",
+      "title": "Disco Maxi (Extended Mix)",
+      "content_id": "105776620"
+    },
+    {
+      "artist": "Culoe De Song",
+      "title": "The Spiker (Manoo Club Remix)",
+      "content_id": "166530832"
+    },
+    {
+      "artist": "Tiefstone, Das Pharaoh",
+      "title": "Endless Summer (Extended Mix)",
+      "content_id": "27766590"
+    },
+    {
+      "artist": "Peer Kusiv",
+      "title": "Nightdrive Feat Fynn (Rauschhaus Remix)",
+      "content_id": "206806086"
+    },
+    {
+      "artist": "Scippo",
+      "title": "Wave (Original Mix)",
+      "content_id": "244714268"
+    },
+    {
+      "artist": "Rubmak",
+      "title": "Fortuna (Extended Mix)",
+      "content_id": "110614481"
+    },
+    {
+      "artist": "Budakid",
+      "title": "Infinity",
+      "content_id": "222696210"
+    },
+    {
+      "artist": "Rodriguez Jr.",
+      "title": "Twilight Language (Extended Version)",
+      "content_id": "161537486"
+    },
+    {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Stay High (RIGOONI Remix)",
+      "content_id": "208451939"
+    },
+    {
+      "artist": "Cid Inc & Dmitry Molosh",
+      "title": "Coalition",
+      "content_id": "35187016"
+    },
+    {
+      "artist": "Gassan, Salahaddin & Maztrofikx",
+      "title": "Dale Rakata (Extended Vocal Club Mix)",
+      "content_id": "255442208"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "name": "136. Cierre · Bailable — 1.5h — 2026-09-20",
+  "duration_h": 1.5,
+  "bpm_range": [
+    119,
+    125
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Nandu",
+      "title": "Neglecting the Facts (Original Mix)",
+      "content_id": "36504711"
+    },
+    {
+      "artist": "Sound Quelle",
+      "title": "Fofan (Extended Mix)",
+      "content_id": "14671453"
+    },
+    {
+      "artist": "Ciro Riveiro",
+      "title": "Asia",
+      "content_id": "179038455"
+    },
+    {
+      "artist": "LUCH",
+      "title": "Shepard's Tone (Original Mix)",
+      "content_id": "111596877"
+    },
+    {
+      "artist": "Eriva",
+      "title": "Black Eyes (EHDU Extended Mix)",
+      "content_id": "239999653"
+    },
+    {
+      "artist": "Sophie Lloyd, Dames Brown, David Penn",
+      "title": "Calling Out (David Penn Extended Remix)",
+      "content_id": "147182266"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Invasion",
+      "content_id": "87620719"
+    },
+    {
+      "artist": "Kinky Sound",
+      "title": "Blow (Rafael Cerato Remix)",
+      "content_id": "59416290"
+    },
+    {
+      "artist": "LEFSOUL",
+      "title": "Sweet Dreams (Extended Mix)",
+      "content_id": "168754320"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Perfect Dream (Extended Mix)",
+      "content_id": "254804732"
+    },
+    {
+      "artist": "Tale Of Us",
+      "title": "North Star",
+      "content_id": "90006222"
+    },
+    {
+      "artist": "Cendryma, THMS (US)",
+      "title": "Moonflare (Extended Mix)",
+      "content_id": "244689120"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Urias",
+      "content_id": "41896244"
+    }
+  ]
+}

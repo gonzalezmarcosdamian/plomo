@@ -2855,6 +2855,462 @@
       "peso_mezcla": 8.0,
       "beam": 4000,
       "grupo": "After"
+    },
+    {
+      "num": 127,
+      "name": "127. Apertura · Nuevo — 2h — 2026-09-20",
+      "_identidad": "Apertura armado SOLO con material que no entro a ningun set todavia. No es una variante de caracter: es la forma de escuchar lo que acaba de entrar a la biblioteca sin que compita con lo ya probado.",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        118,
+        123
+      ],
+      "e_pool": [
+        3.0,
+        6.0
+      ],
+      "e_lo": 3.8,
+      "e_hi": 5.6,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo",
+        "Afro House",
+        "Indie Dance",
+        "House"
+      ],
+      "beam": 4000,
+      "grupo": "Apertura",
+      "solo_sin_usar": true
+    },
+    {
+      "num": 128,
+      "name": "128. Apertura · Bailable — 2h — 2026-09-20",
+      "_identidad": "Apertura por el lado del groove y no de la melodia. House, afro e indie dance por delante del progressive. El eje que Color, Oscuro y Organico no cubren: los tres son melodicos, cambia el color.",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        118,
+        123
+      ],
+      "e_pool": [
+        3.0,
+        6.0
+      ],
+      "e_lo": 3.8,
+      "e_hi": 5.6,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "House",
+        "Afro House",
+        "Indie Dance",
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "House": 0.3,
+        "Afro House": 0.2,
+        "Indie Dance": 0.2,
+        "Progressive House": 0.3
+      },
+      "peso_mezcla": 8.0,
+      "beam": 4000,
+      "grupo": "Apertura"
+    },
+    {
+      "num": 129,
+      "name": "129. Previa · Nuevo — 1.5h — 2026-09-20",
+      "_identidad": "Previa armado SOLO con material que no entro a ningun set todavia. No es una variante de caracter: es la forma de escuchar lo que acaba de entrar a la biblioteca sin que compita con lo ya probado.",
+      "duration_h": 1.5,
+      "n": 14,
+      "bpm": [
+        119,
+        124
+      ],
+      "e_pool": [
+        4.0,
+        6.8
+      ],
+      "e_lo": 4.6,
+      "e_hi": 6.2,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo",
+        "Afro House",
+        "Indie Dance",
+        "House"
+      ],
+      "beam": 4000,
+      "grupo": "Previa",
+      "solo_sin_usar": true
+    },
+    {
+      "num": 130,
+      "name": "130. Previa · Bailable — 1.5h — 2026-09-20",
+      "_identidad": "Previa por el lado del groove y no de la melodia. House, afro e indie dance por delante del progressive. El eje que Color, Oscuro y Organico no cubren: los tres son melodicos, cambia el color.",
+      "duration_h": 1.5,
+      "n": 14,
+      "bpm": [
+        119,
+        124
+      ],
+      "e_pool": [
+        4.0,
+        6.8
+      ],
+      "e_lo": 4.6,
+      "e_hi": 6.2,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "House",
+        "Afro House",
+        "Indie Dance",
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "House": 0.3,
+        "Afro House": 0.2,
+        "Indie Dance": 0.2,
+        "Progressive House": 0.3
+      },
+      "peso_mezcla": 8.0,
+      "beam": 4000,
+      "grupo": "Previa"
+    },
+    {
+      "num": 131,
+      "name": "131. Prime Time · Nuevo — 2h — 2026-09-20",
+      "_identidad": "Prime Time armado SOLO con material que no entro a ningun set todavia. No es una variante de caracter: es la forma de escuchar lo que acaba de entrar a la biblioteca sin que compita con lo ya probado.",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        125
+      ],
+      "e_pool": [
+        4.8,
+        7.4
+      ],
+      "e_lo": 5.4,
+      "e_hi": 6.9,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo",
+        "Afro House",
+        "Indie Dance",
+        "House"
+      ],
+      "beam": 4000,
+      "grupo": "Prime Time",
+      "solo_sin_usar": true
+    },
+    {
+      "num": 132,
+      "name": "132. Prime Time · Bailable — 2h — 2026-09-20",
+      "_identidad": "Prime Time por el lado del groove y no de la melodia. House, afro e indie dance por delante del progressive. El eje que Color, Oscuro y Organico no cubren: los tres son melodicos, cambia el color.",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        125
+      ],
+      "e_pool": [
+        4.8,
+        7.4
+      ],
+      "e_lo": 5.4,
+      "e_hi": 6.9,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "House",
+        "Afro House",
+        "Indie Dance",
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "House": 0.3,
+        "Afro House": 0.2,
+        "Indie Dance": 0.2,
+        "Progressive House": 0.3
+      },
+      "peso_mezcla": 8.0,
+      "beam": 4000,
+      "grupo": "Prime Time"
+    },
+    {
+      "num": 133,
+      "name": "133. Peak · Nuevo — 1.5h — 2026-09-20",
+      "_identidad": "Peak armado SOLO con material que no entro a ningun set todavia. No es una variante de caracter: es la forma de escuchar lo que acaba de entrar a la biblioteca sin que compita con lo ya probado.",
+      "duration_h": 1.5,
+      "n": 14,
+      "bpm": [
+        121,
+        126
+      ],
+      "e_pool": [
+        5.6,
+        9.5
+      ],
+      "e_lo": 6.2,
+      "e_hi": 7.8,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo",
+        "Afro House",
+        "Indie Dance",
+        "House"
+      ],
+      "beam": 4000,
+      "grupo": "Peak",
+      "solo_sin_usar": true
+    },
+    {
+      "num": 134,
+      "name": "134. Peak · Bailable — 1.5h — 2026-09-20",
+      "_identidad": "Peak por el lado del groove y no de la melodia. House, afro e indie dance por delante del progressive. El eje que Color, Oscuro y Organico no cubren: los tres son melodicos, cambia el color.",
+      "duration_h": 1.5,
+      "n": 14,
+      "bpm": [
+        121,
+        126
+      ],
+      "e_pool": [
+        5.6,
+        9.5
+      ],
+      "e_lo": 6.2,
+      "e_hi": 7.8,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "House",
+        "Afro House",
+        "Indie Dance",
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "House": 0.3,
+        "Afro House": 0.2,
+        "Indie Dance": 0.2,
+        "Progressive House": 0.3
+      },
+      "peso_mezcla": 8.0,
+      "beam": 4000,
+      "grupo": "Peak"
+    },
+    {
+      "num": 135,
+      "name": "135. Cierre · Nuevo — 1.5h — 2026-09-20",
+      "_identidad": "Cierre armado SOLO con material que no entro a ningun set todavia. No es una variante de caracter: es la forma de escuchar lo que acaba de entrar a la biblioteca sin que compita con lo ya probado.",
+      "duration_h": 1.5,
+      "n": 14,
+      "bpm": [
+        119,
+        125
+      ],
+      "e_pool": [
+        4.6,
+        8.4
+      ],
+      "e_lo": 5.4,
+      "e_hi": 7.4,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo",
+        "Afro House",
+        "Indie Dance",
+        "House"
+      ],
+      "beam": 4000,
+      "grupo": "Cierre",
+      "solo_sin_usar": true
+    },
+    {
+      "num": 136,
+      "name": "136. Cierre · Bailable — 1.5h — 2026-09-20",
+      "_identidad": "Cierre por el lado del groove y no de la melodia. House, afro e indie dance por delante del progressive. El eje que Color, Oscuro y Organico no cubren: los tres son melodicos, cambia el color.",
+      "duration_h": 1.5,
+      "n": 14,
+      "bpm": [
+        119,
+        125
+      ],
+      "e_pool": [
+        4.6,
+        8.4
+      ],
+      "e_lo": 5.4,
+      "e_hi": 7.4,
+      "max_per_artist": 1,
+      "max_bpm_jump": 2.0,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "House",
+        "Afro House",
+        "Indie Dance",
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "House": 0.3,
+        "Afro House": 0.2,
+        "Indie Dance": 0.2,
+        "Progressive House": 0.3
+      },
+      "peso_mezcla": 8.0,
+      "beam": 4000,
+      "grupo": "Cierre"
+    },
+    {
+      "num": 137,
+      "name": "137. After · Nuevo — 2h — 2026-09-20",
+      "_identidad": "After armado SOLO con material que no entro a ningun set todavia. No es una variante de caracter: es la forma de escuchar lo que acaba de entrar a la biblioteca sin que compita con lo ya probado.",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        125
+      ],
+      "e_pool": [
+        4.6,
+        7.0
+      ],
+      "e_lo": 5.2,
+      "e_hi": 6.4,
+      "max_per_artist": 1,
+      "max_bpm_jump": 1.5,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo",
+        "Afro House",
+        "Indie Dance",
+        "House"
+      ],
+      "beam": 4000,
+      "grupo": "After",
+      "solo_sin_usar": true
+    },
+    {
+      "num": 138,
+      "name": "138. After · Bailable — 2h — 2026-09-20",
+      "_identidad": "After por el lado del groove y no de la melodia. House, afro e indie dance por delante del progressive. El eje que Color, Oscuro y Organico no cubren: los tres son melodicos, cambia el color.",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        125
+      ],
+      "e_pool": [
+        4.6,
+        7.0
+      ],
+      "e_lo": 5.2,
+      "e_hi": 6.4,
+      "max_per_artist": 1,
+      "max_bpm_jump": 1.5,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "House",
+        "Afro House",
+        "Indie Dance",
+        "Progressive House",
+        "Organic House",
+        "Melodic House & Techno",
+        "Deep House",
+        "Organic House / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "House": 0.3,
+        "Afro House": 0.2,
+        "Indie Dance": 0.2,
+        "Progressive House": 0.3
+      },
+      "peso_mezcla": 8.0,
+      "beam": 4000,
+      "grupo": "After"
     }
   ]
 }
