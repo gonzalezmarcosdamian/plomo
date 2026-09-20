@@ -9,54 +9,39 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Claptone, Rune",
-      "title": "Calabria - Claptone Extended Remix",
-      "content_id": "263179092"
+      "artist": "Audio Junkies",
+      "title": "Aspects of Rhythm ",
+      "content_id": "144917505"
     },
     {
-      "artist": "Hobin Rude",
-      "title": "Blurred Reverie (Original Mix)",
-      "content_id": "27344836"
+      "artist": "Juan Pablo Torrez, Kamilo Sanclemente",
+      "title": "Unknown Destination (Extended Mix)",
+      "content_id": "56840337"
     },
     {
-      "artist": "Hermanez",
-      "title": "Tale of the Unexpected (Original Mix)",
-      "content_id": "87157732"
+      "artist": "Eli Nissan",
+      "title": "Karnaval (Roy Rosenfeld Remix) ",
+      "content_id": "250268880"
     },
     {
-      "artist": "BIG Mouth (DXB), Under Control (LB)",
-      "title": "Radio Ga Ga (Extended Mix)",
-      "content_id": "80468010"
+      "artist": "Ricardo Criollo House",
+      "title": "Papi",
+      "content_id": "191329124"
     },
     {
-      "artist": "ANMA",
-      "title": "Adya",
-      "content_id": "227305284"
+      "artist": "D-Nox, Lonya, DJ Zombi",
+      "title": "Fuze (Citizen Kain & D-Formation Remix) ",
+      "content_id": "249678237"
     },
     {
-      "artist": "Artem Kalalb",
-      "title": "Satellites (Emi Galvan Dub Mix)",
-      "content_id": "168511435"
+      "artist": "Mayro",
+      "title": "Harvest (Original Mix)",
+      "content_id": "186594533"
     },
     {
-      "artist": "Guy Mantzur, Tamir Regev",
-      "title": "Stargazer (Original Mix)",
-      "content_id": "222534745"
-    },
-    {
-      "artist": "Kamilo Sanclemente, Phillipe Lois",
-      "title": "Acid Dreams (Original Mix)",
-      "content_id": "167042355"
-    },
-    {
-      "artist": "Albuquerque, D-Nox",
-      "title": "Brasilisco",
-      "content_id": "244094498"
-    },
-    {
-      "artist": "Raúl Vidal",
-      "title": "Lamour",
-      "content_id": "182772270"
+      "artist": "Gorje Hewek",
+      "title": "Unite feat. Volen Sentir, Makebo & Amonita",
+      "content_id": "19531505"
     },
     {
       "artist": "Quivver, Dave Seaman",
@@ -69,9 +54,24 @@
       "content_id": "148355374"
     },
     {
-      "artist": "Rodriguez Jr.",
-      "title": "Hydra",
-      "content_id": "149501053"
+      "artist": "Rodri",
+      "title": "BONITA",
+      "content_id": "60661879"
+    },
+    {
+      "artist": "Benja Molina",
+      "title": "Feeling (Original Mix)",
+      "content_id": "250555039"
+    },
+    {
+      "artist": "Hermanez",
+      "title": "Areia (Original Mix)",
+      "content_id": "72517847"
+    },
+    {
+      "artist": "Ben Böhmer & Tinlicker",
+      "title": "Run Away (feat. Felix Raphael) [Extended Mix]",
+      "content_id": "30810382"
     }
   ]
 }

@@ -112,6 +112,16 @@
       "valor": 0.9,
       "porque": "El arco es una banda, no una linea. Cobrar |energia - arco| en cada posicion equivale a pedir que la energia sea funcion del reloj: el set sube porque el reloj avanza, no porque la pista lo pida. Un DJ respeta la forma general de la noche y se mueve libre adentro de ella. Solo se cobra el desvio que se SALE de la banda, que vale esta fraccion del rango e_hi - e_lo.",
       "evidencia": "Con la banda en 0 la correlacion posicion-energia daba +0.79, fuera del rango entero del corpus de referencia (max observado +0.60). Con 0.9 da +0.18, adentro del IQR [-0.00 .. +0.19], contra una mediana de referencia de +0.11. La autocorrelacion de saltos paso a -0.43 contra -0.45 de referencia. Medido sobre los 6 momentos, 0 transiciones flojas. Valores mas altos parecian mejores en un banco de 3 sets (tol=1.00 daba +0.02) pero eran ruido: en los 6 momentos el mismo 1.00 da +0.37."
+    },
+    "span_objetivo": {
+      "valor": 2.9,
+      "porque": "Cuanta energia recorre el set de punta a punta. Es lo unico GLOBAL que mira el solver: todos los demas terminos son locales —por transicion o por posicion— y por eso nadie estaba pidiendo el recorrido. La banda del arco PERMITE alejarse del centro, pero permitido no es preferido: sin premio, el solver se queda donde estan los temas armonicamente mas comodos, que es el centro denso del pool.",
+      "evidencia": "Mediana del recorrido de energia en ventanas de 8 a 18 tracks consecutivos de los setlists de referencia (n=19, IQR 2.3 a 4.7)."
+    },
+    "span_peso": {
+      "valor": 0.4,
+      "porque": "Cuanto vale cada punto de recorrido ganado, capado en span_objetivo: una vez que el set ya cubre el objetivo, estirarlo mas no paga.",
+      "evidencia": "Los sets recorrian 1.9-2.0 puntos contra 2.9 de las ventanas del mismo largo en setlists reales, con solo 1 de 18 sets adentro del rango de ellos. Se probaron SEIS palancas sin mover nada: ensanchar e_lo/e_hi, ensanchar e_pool, beam 1200->4000, umbral de paso plano hasta 0.75, tope de escalon hasta 3.2 y salto de BPM hasta 4.0. Tambien dos tandas de descarga dirigida (318 y 118 temas, la segunda de los artistas exactos que firman los temas de mayor energia de la biblioteca): la cola alta del Peak quedo en 8 temas las tres veces. No era material ni busqueda: faltaba el termino. Con span_peso 0.4 el rango sube a 2.1-2.5 y la correlacion posicion-energia queda en +0.08, adentro del IQR de referencia. Pesos mas altos (0.7 a 5.0) llevan el rango a 2.5-2.6 pero degradan la autocorrelacion de -0.46 a -0.16."
     }
   },
   "bpm": {

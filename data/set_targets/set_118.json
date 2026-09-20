@@ -9,29 +9,24 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Kane Reyna",
-      "title": "2 The Beat (Original)",
-      "content_id": "156594074"
+      "artist": "Monolink",
+      "title": "Father Ocean (Ben Boehmer Remix)",
+      "content_id": "190185168"
     },
     {
-      "artist": "Pete Heller's Big Love",
-      "title": "Big Love (David Penn Extended Remix) ",
-      "content_id": "149377496"
+      "artist": "Kamilo Sanclemente",
+      "title": "Go Home (Original Mix)",
+      "content_id": "55215683"
     },
     {
-      "artist": "Abity",
-      "title": "Roots (Gai Barone Remix)",
-      "content_id": "234818553"
+      "artist": "Digital Mess",
+      "title": "Raspberry Porridge (Cosmonaut Extended Remix)",
+      "content_id": "147366659"
     },
     {
-      "artist": "Cesar Borra",
-      "title": "Don't Kill My Vibe (Steven Flynn Remix)",
-      "content_id": "102730439"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Aer8 (Juan Pablo Torrez Remix)",
-      "content_id": "231052947"
+      "artist": "Fideles, Be No Rain",
+      "title": "See You In Dreams (Original Mix)",
+      "content_id": "30329279"
     },
     {
       "artist": "Bondarev, Max Wexem",
@@ -39,39 +34,44 @@
       "content_id": "182558236"
     },
     {
-      "artist": "Shai T",
-      "title": "Illusions",
-      "content_id": "226913303"
-    },
-    {
       "artist": "Tali Muss",
-      "title": "Garip (Original Mix)",
-      "content_id": "8906387"
+      "title": "Interlocutor (Kebin Van Reeken Extended Remix)",
+      "content_id": "70531094"
     },
     {
-      "artist": "Eric Lune & Juan Sapia",
-      "title": "Tension Release (Original Mix) ",
-      "content_id": "198323890"
+      "artist": "Shai T",
+      "title": "Summer Oclock (Original Mix) ",
+      "content_id": "46457686"
     },
     {
-      "artist": "Aman Anand & Da Luka",
-      "title": "Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix)",
-      "content_id": "50536262"
+      "artist": "Sébastien Léger",
+      "title": "Forbidden Garden (Tim Green Remix)",
+      "content_id": "130441327"
     },
     {
-      "artist": "Sebastian Sellares",
-      "title": "Garden of Eden (Extended Mix)",
-      "content_id": "250104030"
+      "artist": "Rockka, Maze 28",
+      "title": "Chroma (Original Mix)",
+      "content_id": "125769602"
     },
     {
-      "artist": "Kostya Outta, Liam Garcia",
-      "title": "If I Win (Extended Mix)",
-      "content_id": "231387448"
+      "artist": "Amine K (Moroko Loko), WAHM (FR)",
+      "title": "Kill the Anger (Rodriguez Jr. Remix)",
+      "content_id": "16167647"
     },
     {
-      "artist": "Tinlicker",
-      "title": "Just To Hear You Say (Joseph Ray Extended Mix)",
-      "content_id": "110259483"
+      "artist": "Gai Barone",
+      "title": "MoMa",
+      "content_id": "95932754"
+    },
+    {
+      "artist": "Patrice Bäumel",
+      "title": "Clair (Cioz Neapolis Remix)",
+      "content_id": "165624581"
+    },
+    {
+      "artist": "Anton Borin (RU)",
+      "title": "May Spring Come (Original Mix)",
+      "content_id": "78450926"
     }
   ]
 }

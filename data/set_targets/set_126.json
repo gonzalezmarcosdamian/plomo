@@ -9,14 +9,74 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Empire Of The Sun",
-      "title": "We Are The People (ARTBAT Extended Remix)",
-      "content_id": "267166841"
+      "artist": "Jimpster",
+      "title": "Becoming Cyclonic (Tim Green Edit)",
+      "content_id": "74324366"
     },
     {
-      "artist": "Emi Galvan",
-      "title": "Reborn (Original Mix)",
-      "content_id": "211760669"
+      "artist": "Guy J",
+      "title": "Worlds Apart (Original Mix)",
+      "content_id": "194919017"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Show Me the Stars (Original Mix)",
+      "content_id": "134028327"
+    },
+    {
+      "artist": "Beckers, D-Nox",
+      "title": "Skylab (Original Mix)",
+      "content_id": "18364583"
+    },
+    {
+      "artist": "Lee Burridge",
+      "title": "Fading Out (Extended Mix)",
+      "content_id": "126949236"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Stardust (Original Mix)",
+      "content_id": "66961608"
+    },
+    {
+      "artist": "Zakem",
+      "title": "Albadia (Original Mix) ",
+      "content_id": "168780328"
+    },
+    {
+      "artist": "Juan Deminicis",
+      "title": "Virtual Escape (Original Mix)",
+      "content_id": "166921916"
+    },
+    {
+      "artist": "Izhevski, Talemates",
+      "title": "I Got Soul (Extended Mix)",
+      "content_id": "196839835"
+    },
+    {
+      "artist": "Bosknegra",
+      "title": "Primavera (Original Mix)",
+      "content_id": "104586787"
+    },
+    {
+      "artist": "Shayan Pasha, Redspace",
+      "title": "Pantheon (Original Mix)",
+      "content_id": "252930393"
+    },
+    {
+      "artist": "Nora En Pure",
+      "title": "Spring Embers (Extended Mix)",
+      "content_id": "245930317"
+    },
+    {
+      "artist": "BOg, GHEIST",
+      "title": "Venere (Fideles Remix)",
+      "content_id": "256041950"
+    },
+    {
+      "artist": "Chicola",
+      "title": "Blueberries (Extended)",
+      "content_id": "96922234"
     },
     {
       "artist": "Gorje Hewek, Dulus",
@@ -24,79 +84,19 @@
       "content_id": "2009006"
     },
     {
+      "artist": "Emi Galvan & Albuquerque",
+      "title": "Stay High",
+      "content_id": "63653796"
+    },
+    {
+      "artist": "Sebastien Leger",
+      "title": "Feel (Original Mix)",
+      "content_id": "143177530"
+    },
+    {
       "artist": "Nico de Andrea, THEMBA (SA), Tasan",
       "title": "Disappear feat. Tasan (Andrea Oliva Extended Remix)",
       "content_id": "218236864"
-    },
-    {
-      "artist": "Dosem",
-      "title": "What If (Extended Mix)",
-      "content_id": "150756740"
-    },
-    {
-      "artist": "Fernando Olaya, Kamilo Sanclemente",
-      "title": "Renascence (Original Mix)",
-      "content_id": "162314364"
-    },
-    {
-      "artist": "Ruben Karapetyan, Maze 28",
-      "title": "Cosmic Dot (Cid Inc. Remix)",
-      "content_id": "101326027"
-    },
-    {
-      "artist": "Khen",
-      "title": "Ango (Club Mix)",
-      "content_id": "121190158"
-    },
-    {
-      "artist": "Gai Barone",
-      "title": "Learning to Say No (Original Mix)",
-      "content_id": "267317008"
-    },
-    {
-      "artist": "Maz (BR), VXSION",
-      "title": "Amana",
-      "content_id": "21886445"
-    },
-    {
-      "artist": "K Loveski",
-      "title": "Check-a-Change (Federico Monachesi Remix)",
-      "content_id": "110358601"
-    },
-    {
-      "artist": "Cherry (UA)",
-      "title": "Giza (Original Mix)",
-      "content_id": "81627532"
-    },
-    {
-      "artist": "Mindlancholic",
-      "title": "Amaranth (Original Mix) ",
-      "content_id": "148449293"
-    },
-    {
-      "artist": "Andre Moret",
-      "title": "Drift Whispers (Original Mix)",
-      "content_id": "550467"
-    },
-    {
-      "artist": "Nicolas Viana",
-      "title": "Kalira (Molac Extended Remix)",
-      "content_id": "142936317"
-    },
-    {
-      "artist": "Tayson Kryss & CAVALLI",
-      "title": "Dura (Extended Mix)",
-      "content_id": "171755005"
-    },
-    {
-      "artist": "Blake Jarrell",
-      "title": "In the End You'll Know (Original Mix)",
-      "content_id": "165735808"
-    },
-    {
-      "artist": "Simon Doty",
-      "title": "Solstice (Extended Mix)",
-      "content_id": "33955474"
     }
   ]
 }

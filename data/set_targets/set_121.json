@@ -9,14 +9,14 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Forty Cats & Ra5im",
-      "title": "Hope (Extended Mix)",
-      "content_id": "8715927"
+      "artist": "Jamie Stevens x Kasey Taylor",
+      "title": "Verlaine (Mixed)",
+      "content_id": "17485314"
     },
     {
-      "artist": "Hermanez",
-      "title": "Twenty Four",
-      "content_id": "13361161"
+      "artist": "Alex Connors, Hardy Heller",
+      "title": "Colourblind (Original Mix)",
+      "content_id": "179702062"
     },
     {
       "artist": "Durante, Ezequiel Arias",
@@ -29,19 +29,9 @@
       "content_id": "100016694"
     },
     {
-      "artist": "Dowden",
-      "title": "Gavia (Original Mix)",
-      "content_id": "169431664"
-    },
-    {
-      "artist": "Unusual Soul",
-      "title": "Empath",
-      "content_id": "254836060"
-    },
-    {
-      "artist": "Made In TLV & Dor Danino",
-      "title": "Make a Wish",
-      "content_id": "143641420"
+      "artist": "Agustin Pietrocola",
+      "title": "Endeavor (Unusual Soul Remix)",
+      "content_id": "194280890"
     },
     {
       "artist": "KAZKO",
@@ -49,29 +39,39 @@
       "content_id": "239831899"
     },
     {
-      "artist": "Sebastien Leger",
-      "title": "Son of Sun (Original Mix)",
-      "content_id": "226428612"
+      "artist": "Raphael Palacci",
+      "title": "Big Jet Plane (Remix)",
+      "content_id": "13187756"
     },
     {
-      "artist": "Rockka",
-      "title": "Decryptor",
-      "content_id": "261547700"
+      "artist": "Anyma, Rebūke",
+      "title": "Syren",
+      "content_id": "9845076"
     },
     {
-      "artist": "Massane",
-      "title": "Horizon",
-      "content_id": "131057964"
+      "artist": "Artic White",
+      "title": "Paradigm (Extended Mix)",
+      "content_id": "171619083"
     },
     {
-      "artist": "Nick Warren",
-      "title": "Falling In (Red Axes Remix)",
-      "content_id": "50603601"
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bright Things in Front of Us (Extended Mix)",
+      "content_id": "100400460"
     },
     {
-      "artist": "Tantum",
-      "title": "Spaya (Weird Sounding Dude Remix)",
-      "content_id": "52794570"
+      "artist": "Nox Vahn",
+      "title": "Brainwasher (Warung Extended Mix)",
+      "content_id": "61522600"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Karma (Original Mix)",
+      "content_id": "13403926"
+    },
+    {
+      "artist": "Dowden, Mazayr",
+      "title": "Deflator (Montw Remix)",
+      "content_id": "266149371"
     }
   ]
 }

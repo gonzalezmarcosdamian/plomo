@@ -9,59 +9,14 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Divine Eternity (K Loveski Remix)",
-      "content_id": "44465807"
+      "artist": "GMJ & Matter",
+      "title": "Arkeron (Original Mix)",
+      "content_id": "211602800"
     },
     {
-      "artist": "Khen",
-      "title": "Yellow (Original Mix)",
-      "content_id": "125153100"
-    },
-    {
-      "artist": "Guy J",
-      "title": "Airborne (Original Mix)",
-      "content_id": "43250172"
-    },
-    {
-      "artist": "Lane 8",
-      "title": "Oh, Miles (feat. Julia Church)",
-      "content_id": "33682689"
-    },
-    {
-      "artist": "Rockka",
-      "title": "Synthesis",
-      "content_id": "133677574"
-    },
-    {
-      "artist": "Shai T",
-      "title": "Summer Oclock (Original Mix) ",
-      "content_id": "46457686"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Aer8",
-      "content_id": "84034828"
-    },
-    {
-      "artist": "Rodriguez Jr. & Liset Alea",
-      "title": "What Is Real (Deep in the Playa Mix)",
-      "content_id": "263315442"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Crabo (Original Mix)",
-      "content_id": "64362623"
-    },
-    {
-      "artist": "Kyotto",
-      "title": "District (Original Mix)",
-      "content_id": "57011885"
-    },
-    {
-      "artist": "Patrice Bäumel",
-      "title": "Clair (Cioz Neapolis Remix)",
-      "content_id": "165624581"
+      "artist": "GARDEN CITY MOVEMENT",
+      "title": "UNTOUCHABLE (MITA GAMI EDIT)",
+      "content_id": "244866507"
     },
     {
       "artist": "Leandro Murua, Martin Fredes",
@@ -69,24 +24,39 @@
       "content_id": "236712792"
     },
     {
-      "artist": "D-Nox, Andre Moret",
-      "title": "Cosmic (Extended Mix)",
-      "content_id": "76975906"
+      "artist": "Rauschhaus",
+      "title": "Faunus (Original Mix)",
+      "content_id": "148342248"
     },
     {
-      "artist": "GMJ, Matter",
-      "title": "Telomeres (Original Mix)",
-      "content_id": "175052176"
+      "artist": "Kamilo Sanclemente",
+      "title": "Canon (Original Mix)",
+      "content_id": "250153001"
     },
     {
-      "artist": "Hot Oasis",
-      "title": "Farfasha feat. Bahramji (Sabo & Sarkis Mikael Remix)",
-      "content_id": "139352087"
+      "artist": "Rockka",
+      "title": "Synthesis",
+      "content_id": "133677574"
+    },
+    {
+      "artist": "Lane 8",
+      "title": "Oh, Miles (feat. Julia Church)",
+      "content_id": "33682689"
+    },
+    {
+      "artist": "Kostya Outta, Liam Garcia",
+      "title": "If I Win (Extended Mix)",
+      "content_id": "231387448"
     },
     {
       "artist": "Sebastian Sellares",
-      "title": "Abaddon (Extended Mix)",
-      "content_id": "40168032"
+      "title": "Garden of Eden (Extended Mix)",
+      "content_id": "250104030"
+    },
+    {
+      "artist": "Redspace, IAM LILITH & Cafe De Anatolia",
+      "title": "Ashigane",
+      "content_id": "201399983"
     },
     {
       "artist": "Marsh",
@@ -94,9 +64,39 @@
       "content_id": "38435770"
     },
     {
-      "artist": "Kasper Koman",
-      "title": "Gertrude (Extended Mix)",
-      "content_id": "140196699"
+      "artist": "Melodiam",
+      "title": "Old Garden",
+      "content_id": "72587871"
+    },
+    {
+      "artist": "Audio Junkies, AVIV BENS",
+      "title": "Perico (Original Mix)",
+      "content_id": "189190138"
+    },
+    {
+      "artist": "Durante, Running Touch",
+      "title": "Follow feat. Running Touch (Extended Mix)",
+      "content_id": "112653938"
+    },
+    {
+      "artist": "Roy Rosenfeld",
+      "title": "Skyhook (Original Mix)",
+      "content_id": "268265765"
+    },
+    {
+      "artist": "Fabricio Gutierrez",
+      "title": "Reedmov (Kebin van Reeken Remix)",
+      "content_id": "230581616"
+    },
+    {
+      "artist": "Made In TLV & Dor Danino",
+      "title": "Make a Wish",
+      "content_id": "143641420"
+    },
+    {
+      "artist": "Mazayr",
+      "title": "Falling",
+      "content_id": "26092840"
     }
   ]
 }

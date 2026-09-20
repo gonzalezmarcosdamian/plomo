@@ -36,6 +36,16 @@ PESO_ARCO = R.get("energia.peso_desvio_arco")
 # respeta la forma general y se mueve libre adentro de ella, asi que solo
 # se cobra el desvio que se SALE de la banda.
 TOL_ARCO_FRAC = R.get("energia.tolerancia_arco_frac", 0.0)
+# Cuanta energia tiene que RECORRER el set de punta a punta, y cuanto vale cada
+# punto de ese recorrido. El rango es una propiedad GLOBAL del set (max - min)
+# pero todos los demas terminos del costo son locales —por transicion o por
+# posicion—, asi que nadie lo estaba pidiendo. La banda del arco PERMITE
+# alejarse; permitido no es preferido, y el solver se quedaba donde estan los
+# temas armonicamente mas comodos, que es el centro denso del pool. Medido: seis
+# palancas distintas (bandas, e_pool, beam, umbral de paso, tope de escalon,
+# salto de BPM) dejaron el rango clavado en 2.0 contra 2.9 de los DJ reales.
+SPAN_OBJETIVO = R.get("energia.span_objetivo", 0.0)
+PESO_SPAN = R.get("energia.span_peso", 0.0)
 PESO_CAM = R.get("armonia.peso_salto_camelot")
 PENAL_MISMA_KEY_DESDE = R.get("armonia.penal_misma_key_desde")
 PESO_MISMA_KEY = R.get("armonia.penal_misma_key_desde_peso", 1.2)
@@ -216,7 +226,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # depende el tamano del escalon tipico — el del solver era 0.20 contra 0.90
     # de los DJ reales, y de ahi salia el rango corto de los sets.
     umbral_plano = max(ENERGIA_QUIETA, paso_natural * 0.55)
-    beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0)]
+    beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0,
+          float("inf"))]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
         # Monticulo acotado en vez de lista completa. Antes se acumulaban
@@ -230,7 +241,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         ultima = i == n - 1
         for nodo in beams:
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
-             gen_cnt, max_e, segs, e_signo, e_racha) = nodo
+             gen_cnt, max_e, segs, e_signo, e_racha, min_e) = nodo
             frac = segs / objetivo_seg
             tgt = arc_en(frac, e_lo, e_hi)
             # "antes del pico" tambien se mide con el reloj: si los primeros
@@ -311,6 +322,15 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     paso = None
                     step = 0.0
                 desvio = max(0.0, abs(t["energy"] - tgt) - tol_arco)
+                # premio por ensanchar el recorrido, capado en el objetivo: una
+                # vez que el set ya cubre SPAN_OBJETIVO, estirar mas no paga
+                if PESO_SPAN:
+                    hi_n = t["energy"] if t["energy"] > max_e else max_e
+                    lo_n = t["energy"] if t["energy"] < min_e else min_e
+                    if max_e > float("-inf"):
+                        ganado = (min(hi_n - lo_n, SPAN_OBJETIVO)
+                                  - min(max_e - min_e, SPAN_OBJETIVO))
+                        step -= ganado * PESO_SPAN
                 c = cost + desvio * PESO_ARCO + step
                 if t["id"] in prefer:
                     c -= bonus
@@ -356,7 +376,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                              t["energy"] if t["energy"] > max_e else max_e,
                              segs + (t.get("dur_seg") or dur_med),
                              n_signo if prev is not None else 0,
-                             n_racha if prev is not None else 0)
+                             n_racha if prev is not None else 0,
+                             t["energy"] if t["energy"] < min_e else min_e)
                 entrada = (-c, -orden, nodo_hijo)
                 orden += 1
                 if len(nxt) < beam:

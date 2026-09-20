@@ -4,6 +4,13 @@ Radar de nuevos lanzamientos en Muzpa.
 Escanea Muzpa por artistas y sellos de la biblioteca (ordenado por fecha),
 filtra por fecha de publicacion y descarta lo que ya esta en Rekordbox.
 
+OJO CON LOS SELLOS: Muzpa busca por nombre de TEMA y de ARTISTA, no por
+sello. Pasarle sellos como terminos devuelve falsos positivos —buscar
+'Early Morning' trae temas que tienen esas palabras en el titulo, no el
+catalogo del sello—. Medido el 2026-09-19: 18 sellos devolvieron 4 tracks,
+los 4 falsos. Para cubrir un sello hay que escanear sus artistas uno por uno
+con muzpa_artist_scan.py.
+
 Uso:
   python scripts/muzpa_new_releases.py                      # ultimos 90 dias
   python scripts/muzpa_new_releases.py --days 30
