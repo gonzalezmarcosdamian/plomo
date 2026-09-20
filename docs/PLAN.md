@@ -83,7 +83,32 @@ nuevas):
 | sidechain melódico | −6.8 a −9.6 dB | 4 referencias |
 | **cresta espectral batería** | **17.4-18.8 dB** | span de 1.4 dB en 4 refs |
 | **ocupación bus melódico** | **44-100%** | propio: 4-25% |
-| **compases distintos de 16** | **10-14** | propio: 1 |
+| **variación por compás** | **0.85-2.50** | propio: 0.64 |
+
+**Nota sobre "variación por compás" (corregido 2026-09-20, vuelta 017).** Esta
+fila decía "compases distintos de 16 | 10-14" desde que se escribió la tabla,
+pero esa métrica se abandonó en la vuelta 002 y el código (`juzgar.py`,
+`CONVERGENCIA`) mide otra cosa desde la vuelta 003. La tabla nunca se
+actualizó y quedó describiendo un proxy que ya no existe.
+
+Lo que pasó: contar "compases distintos" sobre el MIDI tiene un techo
+aritmético. Un reloj de variación con período 2, 4 u 8 no puede pasar de 3
+firmas distintas en una ventana de 16 compases, porque esos períodos dividen
+a 16 — no importa cuánto se ajuste, nunca da 10-14. La vuelta 002 lo midió
+(bombo/clap 1→3 firmas) y concluyó que perseguir ese número en MIDI sería
+"optimizar el proxy y romper el loop": la variación real de las referencias
+sale del AUDIO (automatización de filtro, velocity, colas, one-shots), no de
+la grilla de notas. `juzgar.py` reemplazó el conteo por `variacion()`: la
+mediana de distancia entre la huella (bandas + ataques) de cada compás y el
+más parecido de los anteriores, medida sobre el render.
+
+Última medición real: 1.06 en la vuelta 003 (dentro de rango 0.85-2.50,
+DENTRO DE RANGO), lograda prendiendo el LFO del Auto Filter en las cinco
+capas melódicas (device de Live, no MIDI). Eso fue antes de los cambios de
+las vueltas 004-016 (huecos, subkick, pad, hats, metales), así que el número
+está desactualizado y esta dimensión sigue, como las otras once, bloqueada
+para remedir en este entorno sin Live — no se la puede declarar cerrada de
+nuevo sin un render fresco.
 
 **Lo que NO se persigue** (seis dimensiones donde *el mismo tema contra sí
 mismo* falla la tolerancia, o donde el rango entre referencias es 4-8× la
