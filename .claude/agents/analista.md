@@ -105,6 +105,17 @@ leia y no se usaba: el umbral real era un `max(0.08, ...)` escrito a mano. Un
 1. `max_por_artista_en_set`: la regla escrita dice 2, el codigo y todos los
    configs usan 1.
 2. `separacion_minima`: la regla escrita dice 5 tracks, el codigo usa 3.
+3. **La armonia del solver es mucho mas rigida que la de los DJ de referencia**
+   (medido 2026-09-21, 182 transiciones con key de 11 DJs, solo posiciones
+   consecutivas): se quedan en el mismo numero de la rueda el **29%** de las
+   veces, dan un solo paso el 21%, y saltan 3 o mas el **36%**; 28% de sus
+   saltos de BPM pasan de 2. `penal_quedarse_en_la_rueda` se calibro contra un
+   14% de una medicion vieja, y `max_camelot_dist` <=1 es una regla dura que
+   ellos no cumplen. Antes de tocarlas: la key viene de NUESTRO analisis de los
+   temas que matchearon, y parte de los "saltos de 3" pueden ser errores de
+   deteccion. Validarlo contra una fuente de key externa antes de relajar nada.
+   Caso que lo destapo: el set 139 paso de 31% a 0% quieto "mejorandolo", y se
+   alejo de los profesionales en vez de acercarse.
 
 ## Como entregas
 
