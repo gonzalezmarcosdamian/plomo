@@ -117,6 +117,22 @@ leia y no se usaba: el umbral real era un `max(0.08, ...)` escrito a mano. Un
    Caso que lo destapo: el set 139 paso de 31% a 0% quieto "mejorandolo", y se
    alejo de los profesionales en vez de acercarse.
 
+## La energia calculada no es la escuchada (2026-09-21)
+
+Sale de donde caen los cues (Bass IN, Breakdown, DROP), no de lo que suena.
+Contra el oido del DJ, en la escucha del set 139: error medio **1.3 puntos** en 7
+temas, con dos de 2.5 (Sizer 5.2 -> lo siente 7.7; Low Era 7.5 -> 5.0). Las
+correcciones viven en `data/energia_percibida.json` con el valor calculado al
+lado. Cuando haya unas 30, recalibrar la formula contra ellas —candidatos que ya
+mostraron senal: medios, profundidad del breakdown, rango dinamico—.
+
+## Proceso de reglas: el historial va en el mismo commit
+
+`rules/curaduria.json` pide subir version y mover el valor viejo a `historial`
+en cada cambio. Ocho cambios de septiembre se hicieron sin eso y hubo que
+reconstruirlo desde git. Cada cambio de regla: valor nuevo, evidencia, entrada
+en historial, version, y tag `reglas-vX.Y.Z` — todo en el mismo commit.
+
 ## Como entregas
 
 Numero, muestra y que hacer. "Camelot <=1 se viola 10.1% de las veces (n=365)"

@@ -9,6 +9,33 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-21 — el set del cumple de Zorro, en cuatro versiones
+
+Fecha puntual: 1 a 3 AM, recibe y entrega a otro DJ, Sizer como tema modelo.
+El set paso por cuatro versiones (tags `set139-v1` a `v4`, detalle en
+`docs/sets/139_cumple_zorro.md`) y cada una dejo algo en el sistema:
+
+- **v1** — indice de la forma de 826 temas (`indexar_forma.py`) y ranking por
+  parecido a un tema modelo (`parecido_forma.py`). Los cues no sirven para eso:
+  marcan el primer breakdown, no el mas grande. Arco propio por set, anclas.
+- **v2** — "mejora" de la rueda de 31% a 0% quieto contra un 14% de referencia
+  viejo. Fue un error: medido contra los pros era 29%.
+- **v3** — "siempre referencia pro es la clave". La armonia y el tempo se
+  calibraron contra 11 DJs (reglas 1.4.0) y la medicion contra los pros ahora
+  incluye armonia. El auditor tenia los umbrales escritos a mano con las reglas
+  viejas.
+- **v4** — la escucha del DJ. La energia calculada estaba invertida en varios
+  pares (error medio 1.3). Lo que el escucha pisa al calculo en todo el sistema
+  (`data/energia_percibida.json`). Los patrones de su escucha (medios,
+  breakdowns que se desploman) se midieron contra los pros: los tocan a tasa
+  normal, asi que son gusto de esa noche y no regla.
+
+Proceso: ocho cambios de reglas de estos dias se habian hecho sin subir version
+ni llenar el historial. Reconstruido desde git; reglas en 1.4.0, con tags
+`reglas-v1.3.0` y `reglas-v1.4.0`.
+
+---
+
 ## 2026-09-19 — el gap contra los DJ reales, cerrado en las dos metricas centrales
 
 Los 18 sets por momento ya estaban auditados en 0 transiciones flojas. Lo que

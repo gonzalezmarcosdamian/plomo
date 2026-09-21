@@ -92,6 +92,37 @@ misma funcion de costo.
 2.9 / `span_peso` 0.4. Juntas llevaron los sets de 26/54 a 41/54 contra la
 distribucion de los DJ reales. Cada una tiene su evidencia escrita.
 
+## Fechas puntuales (2026-09-21)
+
+Una fecha no es un momento: tiene un arco OBLIGATORIO (recibir, construir,
+entregar o cerrar) y un contexto que manda. Van en `Sets Armados / 0 Fechas`, con
+config propio (ejemplo: `data/set_configs/cumple_zorro.json`) y su historia en
+`docs/sets/NNN_*.md`.
+
+Herramientas del config, todas por set:
+- `arco`: `pico_en_pct`, `caida_post_pico_pct`, `tolerancia_arco_frac` (0.3 en
+  una fecha; la global de 0.9 deja la energia libre y desarma el arco),
+  `penal_quedarse_en_la_rueda`, `monotonia_peso`.
+- `inicio_fijo`: los primeros temas en el orden del DJ, sin restricciones duras.
+- `anclas` (descuento fijo 25: tienen que estar) y `anclas_en` {id: [desde,
+  hasta]}: DONDE tienen que caer. Sin la ventana, el ancla entra donde convenga.
+- Tema modelo: `scripts/indexar_forma.py` + `scripts/parecido_forma.py <id>`
+  ordenan la biblioteca por la forma de un tema. La forma suele vivir en energia
+  media: sumar aparte los mas parecidos ENTRE los intensos, o el pico se queda
+  sin combustible.
+
+**La prioridad le gana al arco si es alta.** `prefer_bonus` 5 adelanto el pico a
+la media hora; 2.5 para vocales tiro el final abajo. En una fecha, <=1.5.
+
+**Mirar la curva, no el promedio.** Una variante con desvio medio 0.44 llegaba a
+E7.8 a la 1:29: el promedio escondia el salto. Siempre la lista con horario.
+
+**La escucha del DJ es el paso que cierra.** Despues de que escucha: su energia
+percibida va a `data/energia_percibida.json` (pisa al calculo en todo el
+sistema), sus vetos al config, y cada iteracion se versiona con un tag
+`setNNN-vK`. Un patron que sale de su escucha se chequea contra los pros antes de
+volverlo regla: si ellos tambien lo hacen, es gusto de esa noche.
+
 ## Numeracion
 
 `XX. Nombre — Duracion — Fecha`. El numero es unico: `build_set.py` resuelve por
