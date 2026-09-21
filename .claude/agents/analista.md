@@ -73,6 +73,33 @@ Medido sobre 56 sets propios (1214 tracks, excluidos los `[POOL]`), reglas v1.0.
   regla — pero eso es circular: lo puso el solver.
 - BPM: solo **0.8%** de violaciones. Es la regla mas solida de las tres duras.
 
+## Como se compara contra la referencia (2026-09-19)
+
+**Distribuciones, no medianas.** Dos medianas de muestras chicas difieren por
+azar. La medida es cuantos de nuestros sets caen en el p10-p90 de las ventanas
+reales: una ventana real cae en su propio p10-p90 el 80% de las veces, ese es el
+techo. `scripts/medir_contra_referencia.py` compara autocorrelacion de saltos,
+corr posicion-energia y rango de energia. Estado al 2026-09-20: **41/54**, techo 43.
+
+**Un hueco no es una transicion.** Los setlists tienen temas sin identificar:
+los saltos se calculan solo entre posiciones CONSECUTIVAS. Con eso quedan 15
+setlists usables de 40, y no existe ninguna ventana de 18 seguidas —la mas
+larga es de 12—. No citar `n=40` para metricas de transicion.
+
+**El banco de validacion cubre los ejes, no repite el comodo.** Uno por momento,
+no tres del mismo caracter. Sobre 3 sets Color, `tol=1.00` daba +0.02; sobre 6
+momentos, +0.37. Y un ganador en el BORDE de la grilla es sospechoso por default.
+
+**Cuando varias palancas independientes dan el mismo numero, el limite no es la
+palanca.** Seis cambios distintos dejaron el rango clavado en 2.0. El rango es
+GLOBAL y todos los terminos del costo eran locales: faltaba un termino, no un
+valor. Antes de tunear, mirar el p10-p90 del POOL: si es mas angosto que lo que
+se pide, ninguna funcion de costo lo inventa.
+
+**Toda constante leida de las reglas tiene que usarse.** `umbral_paso_plano` se
+leia y no se usaba: el umbral real era un `max(0.08, ...)` escrito a mano. Un
+`R.get(...)` con un numero equivalente al lado es la senal.
+
 ## Conflictos abiertos (resolver antes de armar mas sets encima)
 
 1. `max_por_artista_en_set`: la regla escrita dice 2, el codigo y todos los

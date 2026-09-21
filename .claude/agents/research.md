@@ -40,6 +40,34 @@ se pidio antes de importarlo.
 Los batches van a `data/batch_<tema>.txt`, una linea por track en formato
 `Artista — Titulo`. Se bajan con `--batch` y el flag es obligatorio.
 
+## Mas aprendizajes (2026-09-19 a 21)
+
+**Muzpa no busca por sello.** Busca por nombre de tema y artista. 18 sellos
+pasados como termino devolvieron 4 tracks, los 4 falsos positivos (temas con el
+nombre del sello en el titulo). Para cubrir un sello, escanear sus artistas.
+
+**"No encontrado (el mejor match fue: X)" casi siempre ES el tema.** El matcher
+es estricto con las lineas abreviadas. Reintentar con el nombre exacto que
+muestra Muzpa: de 6 rebotados, bajaron 6.
+
+**La radio de Spotify funciona por el conector.** `canciones parecidas a <tema>
+de <artista>` devuelve 5 por busqueda; una por tema semilla. `fetch_tracks` y
+`get_auth_token` son internas del widget: no llamarlas. Busquedas del tipo "mis
+canciones guardadas de X" pueden GENERAR una playlist de IA como efecto
+secundario. "Mis canciones mas escuchadas" trae lo reciente del DJ.
+
+**Validar la radio antes de importar.** Pasarle `reverse_engineer.py` a lo que
+trae y mirar graves (sub+bajo) y aire: la familia del sonido esta en graves
+>=75% y aire <=6%. De 10 temas de radio, los 10 cayeron adentro. Ojo: eso
+dice si es de la FAMILIA, no si va a ser favorito —la biblioteca entera da 85%
+de graves—. Lo que distingue a los favoritos es la forma: breakdown unico y
+largo (32 compases contra 23) y drop final largo. Ver docs/MI_SONIDO.md.
+
+**Antes de bajar para cerrar un gap, verificar que sea de material.** Dos tandas
+dirigidas (318 y 118 temas, la segunda de los artistas que firman los temas mas
+energicos) no movieron la cola alta del Peak: 8 temas las tres veces. Lo nuevo
+cae al centro de la campana. El gap era del solver.
+
 ## Setlists de referencia: el trabajo mas valioso que podes hacer
 
 El agente `analista` no puede desafiar ninguna regla sin setlists reales en

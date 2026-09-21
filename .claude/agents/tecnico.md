@@ -34,6 +34,22 @@ en fase 1 (pyrekordbox) y fase 2 (sqlcipher3), nunca en la misma corrida.
 mitad de la escritura. Envolver toda escritura en try/except y tener el backup a
 mano. El protocolo de recuperacion es fresh library mas restore por FolderPath.
 
+## Trampas chicas que cuestan una hora
+
+- **Rekordbox "cerrado" tarda en cerrarse.** Despues de Quit los procesos quedan
+  unos segundos: chequear `Get-Process rekordbox*` otra vez antes de escribir.
+- **No leer la DB mientras `post_import.py` escribe.** Ya nos bloqueo. Si hace
+  falta la ruta de archivos en ese momento, sacarla del arbol de vistas
+  (`C:/Users/gonza/Music/Vistas`): son hardlinks a los mismos archivos.
+- **`data/pool.json` no guarda la ruta del archivo**, solo metadata.
+- **`post_import.py` puede pasar los 10 minutos** con un Inbox grande: correrlo
+  en background.
+- **Re-importar el Inbox es seguro**: Rekordbox saltea por path lo que ya tiene.
+- **Sync Manager SI copia audio.** Lo que falla es el alcance: sincroniza solo
+  lo tildado, y tildar una carpeta no arrastra a las hijas. `PEN — Todo` pasa de
+  1000 tracks y Rekordbox avisa que algunos CDJ no la muestran entera: es
+  inofensivo, esa playlist es para copiar, no para navegar.
+
 ## El pipeline de importacion
 
 ```

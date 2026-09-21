@@ -57,6 +57,41 @@ No relajes las restricciones duras primero. En orden: ampliar el pool (bajar el
 filtro de genero o el rango de BPM), despues subir el beam, despues bajar `n`, y
 recien al final tocar una regla — diciendo cual y por que.
 
+## La coleccion por momentos (2026-09-20)
+
+`Sets Armados` tiene seis carpetas de momento —Apertura, Previa, Prime Time,
+Peak, Cierre, After— con cinco variantes cada una: Color, Oscuro, Organico,
+Nuevo y Bailable. Config en `data/set_configs/momentos.json`.
+
+**Las variantes de un momento son ALTERNATIVAS; los momentos son la misma
+noche.** Por eso cada set lleva `grupo` (el momento): un track puede repetirse
+hasta `max_apariciones_por_track` veces DENTRO del grupo y nunca entre grupos.
+Un tope global a secas dejo 67 temas repetidos entre momentos y 5 entre
+variantes: exactamente al reves.
+
+**Sumar sets sin rehacer los que ya estan.** Correr solo los nuevos pasandoles en
+`exclude_ids` lo que usan los OTROS momentos —la exclusion que `grupo` les daria
+en una corrida completa—. Rehacer los 30 para agregar dos cambia sets que ya
+estan en el pen.
+
+**Tres cosas que no hacen lo que parece:**
+- `build_set.py` no renombra una playlist que ya existe: si el nombre cambio,
+  queda el viejo con el contenido nuevo. Renombrar a mano.
+- `organizar_sets.py` reclasifica TODOS los numerados por pico de energia y
+  deshace el archivado. Para ubicar un set nuevo, moverlo a la carpeta de su
+  `grupo` directo en la DB.
+- Despues de escribir: `audit_sets.py`, `armar_pen.py` y `build_views.py`, en
+  ese orden. Sin el segundo, el pen no se entera de los sets nuevos.
+
+**Beam minimo 4000.** Con 1200 el solver truncaba a soluciones rampa: el set 114
+daba correlacion posicion-energia +0.80 con beam 1200 y -0.08 con 4000, con la
+misma funcion de costo.
+
+**No bajes estas reglas sin medir** (`rules/curaduria.json`, seccion energia):
+`tolerancia_arco_frac` 0.9, `umbral_paso_plano` 0.35 y el par `span_objetivo`
+2.9 / `span_peso` 0.4. Juntas llevaron los sets de 26/54 a 41/54 contra la
+distribucion de los DJ reales. Cada una tiene su evidencia escrita.
+
 ## Numeracion
 
 `XX. Nombre — Duracion — Fecha`. El numero es unico: `build_set.py` resuelve por

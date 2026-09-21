@@ -331,3 +331,13 @@ MAS FUERTES que en el drop.
 Y una trampa: el fragmento de referencia lo elige `_mejor_momento` por pico de
 energia, y en este tema el pico cae en un GROOVE, no en el drop. Verificar
 siempre en que seccion cae el fragmento antes de usar sus numeros.
+
+## Lo que tienen los favoritos del DJ (2026-09-21)
+
+Medido contra un control de la propia biblioteca (docs/MI_SONIDO.md, ultimo
+capitulo): el color espectral NO distingue a los favoritos —toda la biblioteca
+da 85-87% de graves y 3-4% de aire—. Lo que los distingue es la FORMA: menos
+secciones, un solo breakdown largo (32 compases contra 23) y un drop final largo
+que arranca entre el 61% y el 69% del tema. Para el tema propio: apostar a UN
+momento, no repartir la tension en varios quiebres. Evidencia moderada (n=19).
+

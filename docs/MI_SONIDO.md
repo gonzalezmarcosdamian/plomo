@@ -239,3 +239,63 @@ Se listan con `python scripts/mi_sonido.py --batch`.
 No reemplaza al documento escrito: lo contrasta. Lo escrito dice qué querés
 sonar; esto dice qué sonás. Donde no coinciden hay una decisión, no un error —
 pero la decisión hay que tomarla sabiendo que existe.
+
+---
+
+## El sonido de tus favoritos — medido en el audio (2026-09-21)
+
+Hasta aca el sonido estaba descrito en BPM, key y energia: nunca en como SUENA.
+Esto sale de `scripts/reverse_engineer.py` corrido sobre 19 favoritos explicitos
+—los cuatro del auto ("increibles"), lo mas escuchado y guardado en Spotify, y
+los 9 temas con estrellas en Rekordbox— contra un control de 35 temas al azar de
+la biblioteca en el mismo rango de BPM (118-126).
+
+La pregunta no es como suenan los favoritos. Es **en que se diferencian del
+resto de lo que ya elegiste comprar.**
+
+### Lo que NO los distingue: el color
+
+| | favoritos | control |
+|---|---|---|
+| graves (sub + bajo) | 87% | 85% |
+| aire (2 kHz para arriba) | 3.3% | 4.2% |
+| ancho del medio | 0.43 | 0.48 |
+| loudness | -9.7 LUFS | -9.5 LUFS |
+
+Tu biblioteca entera es pesada abajo, oscura arriba y con pads abiertos. Es el
+sonido del genero, no el de tus favoritos. Sirve como FILTRO de familia —lo que
+trae una radio de Spotify cae adentro o no— pero no dice que tema te va a volar
+la cabeza.
+
+### Lo que SI los distingue: la forma
+
+| | favoritos | control | favorito > control |
+|---|---|---|---|
+| duracion | 7.8 min | 7.2 min | 66% |
+| breakdown principal | **32 compases** | 23 compases | 69% |
+| cantidad de pausas | menos | mas | 31% |
+| secciones | 5 | 6 | 36% |
+| drop final | 77 compases | 57 compases | 57% |
+
+**Menos eventos, mas desarrollo.** Un solo respiro grande —largo, profundo— y
+despues una recompensa larga hasta el final. Los cuatro del auto lo muestran
+limpio: el drop final arranca siempre entre el 61% y el 69% del tema.
+
+La evidencia es moderada: ningun rasgo separa "fuerte" (un favorito supera a un
+tema al azar entre 66% y 69% de las veces, no 75%+), y son 19 favoritos. Es una
+direccion, no una ley.
+
+### Que cambia
+
+- **Para elegir:** entre dos temas del mismo registro, el de breakdown unico y
+  largo gana. Un tema con tres pausas cortas no es de esta familia aunque suene
+  igual.
+- **Para producir:** el tema propio tiene que apostar a UN momento. No repartir
+  la tension en varios quiebres.
+- **Para buscar:** los sellos de los favoritos son pista —UV Noir, DAYS like
+  NIGHTS, Protagonist, Endangered, onedotsixtwo, Mango Alley, Univack, Sudbeat—
+  pero Muzpa no busca por sello: hay que ir por sus artistas.
+
+Reproducible: `data/favoritos_2026-09-21.json` lista la muestra; las recetas
+estan en `data/recetas/comparacion/`.
+
