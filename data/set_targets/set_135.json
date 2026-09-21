@@ -9,19 +9,34 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "FEID, YOUNG MIKO",
-      "title": "OFFLINE (JARP EDIT)",
-      "content_id": "89741070"
+      "artist": "Vini Pistori",
+      "title": "Sanctify Your Love (Original Mix)",
+      "content_id": "25706782"
     },
     {
-      "artist": "Guy Mantzur",
-      "title": "Chasing The Fog",
-      "content_id": "147396412"
+      "artist": "Emphi",
+      "title": "Dust (John Cosani Remix)",
+      "content_id": "198354998"
     },
     {
-      "artist": "Simos Tagias",
-      "title": "Euphoria (Paul Deep Remix)",
-      "content_id": "241284453"
+      "artist": "Brian Cid",
+      "title": "Observe (Original Mix)",
+      "content_id": "107013244"
+    },
+    {
+      "artist": "Adriatique, Delhia De France, Marino Canal",
+      "title": "Home (Mind Against Remix)",
+      "content_id": "68420540"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "With Me (Original Mix)",
+      "content_id": "74328881"
+    },
+    {
+      "artist": "Fraser Rix",
+      "title": "Strawberry Cake (Mind Echoes Remix)",
+      "content_id": "12042556"
     },
     {
       "artist": "Kamilo Sanclemente",
@@ -29,39 +44,9 @@
       "content_id": "17713969"
     },
     {
-      "artist": "Artic White",
-      "title": "Futuro Infinito (Extended Mix)",
-      "content_id": "42002227"
-    },
-    {
-      "artist": "Digital Mess",
-      "title": "Outlands (Dowden & Andreas Bühler Remix)",
-      "content_id": "228357353"
-    },
-    {
-      "artist": "Joris Voorn, Alex Kennon",
-      "title": "Blinding Lights (Joris Voorn Remix)",
-      "content_id": "144808595"
-    },
-    {
-      "artist": "Niko Ava",
-      "title": "Freedom (Original Mix)",
-      "content_id": "162617230"
-    },
-    {
-      "artist": "Afro Exotiq",
-      "title": "Covenant",
-      "content_id": "176999333"
-    },
-    {
-      "artist": "Chelakhov",
-      "title": "Rami (Khaaron Remix)",
-      "content_id": "33529972"
-    },
-    {
-      "artist": "Adriatique, Delhia De France, Marino Canal",
-      "title": "Home (Mind Against Remix)",
-      "content_id": "68420540"
+      "artist": "Fur Coat, Running Pine",
+      "title": "Hurricane (Tim Green Remix)",
+      "content_id": "102834121"
     },
     {
       "artist": "D-Nox & Beckers",
@@ -72,6 +57,21 @@
       "artist": "Hugel, GROSSOMODDO",
       "title": "Andalucia (Extended Mix)",
       "content_id": "54403248"
+    },
+    {
+      "artist": "Guy Mantzur",
+      "title": "Chasing The Fog",
+      "content_id": "147396412"
+    },
+    {
+      "artist": "Afro Exotiq",
+      "title": "Covenant",
+      "content_id": "176999333"
+    },
+    {
+      "artist": "Samantha Loveridge, Treetalk",
+      "title": "Losing My Religion (Extended Mix)",
+      "content_id": "161683451"
     }
   ]
 }

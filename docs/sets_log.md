@@ -2470,31 +2470,31 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 127. 127. Apertura · Nuevo — 2h — 2026-09-20
-**Armado:** 2026-09-20  
+**Armado:** 2026-09-21  
 **Duracion:** 2.0h  
 **Tracks:** 18  
 **BPM range:** 118-123  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Nick Warren | Only I Know What You Said (Original Mix) | 120 | 3.3 |
-| 2 | Mike Rish | The Likes of You (Original Mix) | 120 | 5.0 |
-| 3 | PASINDU | Elevate (Original Mix) | 122 | 5.7 |
-| 4 | House Mafia | Si No Creyera | 123 | 5.5 |
-| 5 | Ignacio Salgado, Ezequiel Perini | Modul8 (Sacha Rener Remix) | 123 | 6.0 |
-| 6 | Khen | Some Little Secrets | 122 | 5.5 |
-| 7 | Dmitry Molosh | Carousel (Original Mix) | 123 | 5.5 |
-| 8 | Kyotto | District (Original Mix) | 122 | 5.5 |
-| 9 | D-Nox, Andre Moret | Cosmic (Extended Mix) | 121 | 5.0 |
-| 10 | Maze 28, Rockka | Inertia | 122 | 5.5 |
-| 11 | FAERO, Tom Pavicich, Analog Sense | Evolve (Original Mix) | 123 | 5.5 |
-| 12 | Mayro | Chimi (Original Mix) | 122 | 5.5 |
-| 13 | M.O.S., Leonid Sivelkin, Krasa Rosa | On The Strings Of Love (Original Mix) | 123 | 5.5 |
-| 14 | Chaim | Pow Pow (Zombies In Miami Remix)  | 122 | 5.1 |
-| 15 | Hobin Rude | Mirror (Original Mix) | 123 | 5.5 |
-| 16 | Beat Factory | Exodus (Analog Trip Remix) | 122 | 5.5 |
-| 17 | Antrim | Morning Changes (Original Mix) | 123 | 5.4 |
-| 18 | Dor Danino, DvirNuns | Sax A Boom  | 123 | 4.2 |
+| 1 | Ewan Rill, Shayan Pasha | Hidden Path (Can Costa & Futura City Remix) | 120 | 5.3 |
+| 2 | Sebastien Leger, Roy Rosenfeld, Lost Miracle | Closer To You (Extended Mix) | 120 | 5.0 |
+| 3 | Indigo Man | Similarity (Mayro Remix) | 122 | 4.0 |
+| 4 | Agustin Pietrocola | Amethyst (Original Mix) | 123 | 5.2 |
+| 5 | Frezz | Venom Groove (Praise (BR) Remix) | 122 | 5.8 |
+| 6 | House Mafia | Si No Creyera | 123 | 5.5 |
+| 7 | Hydrah, Enamour | Hypertrophy of Heart feat. Hydrah (Extended Mix)  | 122 | 6.0 |
+| 8 | Khen | Some Little Secrets | 122 | 5.5 |
+| 9 | Dmitry Molosh | Carousel (Original Mix) | 123 | 5.5 |
+| 10 | Kyotto | District (Original Mix) | 122 | 5.5 |
+| 11 | D-Nox, Andre Moret | Cosmic (Extended Mix) | 121 | 5.0 |
+| 12 | Maze 28, Rockka | Inertia | 122 | 5.5 |
+| 13 | FAERO, Tom Pavicich, Analog Sense | Evolve (Original Mix) | 123 | 5.5 |
+| 14 | Ed Ed, JJ Dawson | Higher Than Me (Stimming Remix) | 121 | 5.0 |
+| 15 | Serge Canteros | Delusions (Original Mix) | 122 | 5.4 |
+| 16 | Redspace, Unusual Soul | White Room (Original Mix) | 122 | 5.9 |
+| 17 | Soulmade (AR) | Thunderdome (Original Mix) | 121 | 5.1 |
+| 18 | Digital Mess | Raspberry Porridge (Extended Mix) | 120 | 4.1 |
 
 
 ## Set 128. 128. Apertura · Bailable — 2h — 2026-09-20
@@ -2526,26 +2526,26 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 129. 129. Previa · Nuevo — 1.5h — 2026-09-20
-**Armado:** 2026-09-20  
+**Armado:** 2026-09-21  
 **Duracion:** 1.5h  
 **Tracks:** 13  
 **BPM range:** 119-124  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Felix Raphael, Armen Miran & Cafe De Anatolia | Soul Guardian | 122 | 5.5 |
-| 2 | This Guy Ben | Neptuna (Gai Barone Extended Remix) | 123 | 5.5 |
-| 3 | Ewan Rill | Nature Pentacles (Original Mix) | 122 | 5.5 |
-| 4 | Artem Kalalb | Satellites (Emi Galvan Dub Mix) | 122 | 5.5 |
-| 5 | Kamilo Sanclemente, Zalvador | Elyseum (Weird Sounding Dude Extended Remix) | 124 | 6.0 |
-| 6 | D-Formation, Nihil Young | Set You Free (Extended Mix) | 124 | 6.0 |
-| 7 | Ziger & Mind Conspiracy | The Light (Original) | 122 | 5.5 |
-| 8 | Notre Dame | Yumi | 122 | 5.5 |
-| 9 | Gogol | Desert Rose | 120 | 5.0 |
-| 10 | Analog Jungs | Futura (Dowden Remix) | 122 | 5.5 |
-| 11 | Pissi | Bailar (Original Mix) | 120 | 5.0 |
-| 12 | Mike Rish | Drifter (Original Mix) | 120 | 5.0 |
-| 13 | Paul Hazendonk, Return To Saturn | You Can Have It All (Peter Makto & Matthew Sona Remix) | 121 | 5.0 |
+| 1 | DJ Bird | In Space | 119 | 5.8 |
+| 2 | Dmitry Molosh | Flower Field (Original Mix) | 120 | 6.2 |
+| 3 | Mind Echoes | Answers (Original Mix) | 120 | 6.6 |
+| 4 | Ignacio Hernandez | Circle Of Lights (Claudio Cornejo (AR) Night Mix) | 121 | 5.0 |
+| 5 | Rich Trelo, Sineforma | Lost in Brooklyn (Gabbe (AR) Remix) | 123 | 6.4 |
+| 6 | Paul Hazendonk, Return To Saturn | You Can Have It All (Peter Makto & Matthew Sona Remix) | 121 | 5.0 |
+| 7 | ANix JAy | Crazy (Juan Ibanez Remix) | 122 | 4.6 |
+| 8 | Gogol | Desert Rose | 120 | 5.0 |
+| 9 | Redspace, 4T6 | Trust You (Original Mix) | 120 | 6.8 |
+| 10 | Ewan Rill | Nature Pentacles (Original Mix) | 122 | 5.5 |
+| 11 | Menori | Lunar (Viktop Extended Remix) | 123 | 5.3 |
+| 12 | This Guy Ben | Troubador (Extended Mix) | 124 | 6.0 |
+| 13 | Freddy Be, Dilby, Floorplay (LA) | Lovely Day (Extended Mix)  | 124 | 4.4 |
 
 
 ## Set 130. 130. Previa · Bailable — 1.5h — 2026-09-20
@@ -2572,31 +2572,31 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 131. 131. Prime Time · Nuevo — 2h — 2026-09-20
-**Armado:** 2026-09-20  
+**Armado:** 2026-09-21  
 **Duracion:** 2.0h  
 **Tracks:** 18  
 **BPM range:** 120-125  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Monolink | Swallow (Oliver Koletzki Remix) | 121 | 5.0 |
-| 2 | Hermanez | Ensina | 120 | 5.0 |
-| 3 | Brian Cid | Luminous Black | 121 | 5.0 |
-| 4 | Maz (BR), VXSION | Amana | 123 | 5.5 |
-| 5 | Niceshot | Earthrise (Original Mix)  | 121 | 7.4 |
-| 6 | Pandhora, Cahelo | Unfold Your Heart (Kamilo Sanclemente Extended Remix) | 121 | 5.0 |
-| 7 | Gorje Hewek | Amulet feat. M.O.S (Original Mix) | 120 | 5.0 |
-| 8 | Rivo | Last Night (Extended) | 122 | 5.5 |
-| 9 | Odasoul | Flamenco Trip | 122 | 5.5 |
-| 10 | Nicola Schenetti, Rivaz | Died In Your Arms Tonight (Afro Remix) | 122 | 5.5 |
-| 11 | Sebastien Leger | Pakpak (Extended Mix) | 122 | 5.5 |
-| 12 | GORDO, DRAKE | HEALING (AURAE EDIT) | 120 | 5.0 |
-| 13 | EMPHI | Among the Gods (Original Mix) | 120 | 5.0 |
-| 14 | Sohno | Tura (Original Mix) | 120 | 5.0 |
-| 15 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
-| 16 | ID ID | Confusion (Original Mix) | 123 | 5.5 |
-| 17 | MF Productions | Blow It Up (Original Mix) | 125 | 6.0 |
-| 18 | Joe Smooth | Promised Land (Solomun Extended Remix) | 123 | 5.5 |
+| 1 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 2 | Drunken Kong, D-SHIFT | City Lights (Original Mix) | 122 | 6.4 |
+| 3 | Evelynka, Jean Vayat, Artaria | Sun Is Setting  | 124 | 6.9 |
+| 4 | Cesar Borra | Don't Kill My Vibe (Steven Flynn Remix) | 123 | 6.0 |
+| 5 | Quivver | Deception (Original Mix) | 124 | 5.2 |
+| 6 | Fernando Olaya | Lost In Marrakesh (Extended Mix)  | 124 | 4.9 |
+| 7 | Andre Moret, Mariusso | Cygnus (Cosmonaut Extended Mix) | 123 | 5.5 |
+| 8 | Monolink | Father Ocean (Ben Böhmer Remix) | 122 | 5.5 |
+| 9 | Iovino | Deep Jungle (Tom Pavicich Remix) | 124 | 6.0 |
+| 10 | Kamilo Sanclemente, Sebastian Valencia (COL) | Test Flight (Original Mix) | 123 | 5.5 |
+| 11 | Eric Lune & Juan Sapia | Tension Release (Original Mix)  | 123 | 6.9 |
+| 12 | Khen | Yellow (Original Mix) | 122 | 5.5 |
+| 13 | Maze 28 | Flux | 122 | 5.5 |
+| 14 | Rodriguez Jr. & Liset Alea | What Is Real (Deep in the Playa Mix) | 123 | 5.5 |
+| 15 | Ezequiel Arias | ReAnimation (Extended Mix) | 125 | 5.7 |
+| 16 | Kiko Navarro | Soñando Contigo (feat. Buika) [Kiko's Rework Of Yotam Avni Remix] | 125 | 6.1 |
+| 17 | Chemical Brothers | Out of control (Teiko Yume's Frequent Flyer remix) | 125 | 6.0 |
+| 18 | Santos (AR), Jussto | This Is Rocking It (Original Mix) | 124 | 6.0 |
 
 
 ## Set 132. 132. Prime Time · Bailable — 2h — 2026-09-20
@@ -2628,7 +2628,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 133. 133. Peak · Nuevo — 1.5h — 2026-09-20
-**Armado:** 2026-09-20  
+**Armado:** 2026-09-21  
 **Duracion:** 1.5h  
 **Tracks:** 13  
 **BPM range:** 121-126  
@@ -2674,26 +2674,26 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 135. 135. Cierre · Nuevo — 1.5h — 2026-09-20
-**Armado:** 2026-09-20  
+**Armado:** 2026-09-21  
 **Duracion:** 1.5h  
 **Tracks:** 13  
 **BPM range:** 119-125  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | FEID, YOUNG MIKO | OFFLINE (JARP EDIT) | 122 | 5.5 |
-| 2 | Guy Mantzur | Chasing The Fog | 122 | 5.5 |
-| 3 | Simos Tagias | Euphoria (Paul Deep Remix) | 122 | 7.7 |
-| 4 | Kamilo Sanclemente | Orb (Original Mix) | 121 | 5.0 |
-| 5 | Artic White | Futuro Infinito (Extended Mix) | 122 | 8.0 |
-| 6 | Digital Mess | Outlands (Dowden & Andreas Bühler Remix) | 123 | 5.5 |
-| 7 | Joris Voorn, Alex Kennon | Blinding Lights (Joris Voorn Remix) | 124 | 6.0 |
-| 8 | Niko Ava | Freedom (Original Mix) | 122 | 7.3 |
-| 9 | Afro Exotiq | Covenant | 120 | 5.0 |
-| 10 | Chelakhov | Rami (Khaaron Remix) | 120 | 5.0 |
-| 11 | Adriatique, Delhia De France, Marino Canal | Home (Mind Against Remix) | 120 | 5.0 |
-| 12 | D-Nox & Beckers | Serenade (Doctor Dru Remix) | 122 | 5.5 |
-| 13 | Hugel, GROSSOMODDO | Andalucia (Extended Mix) | 120 | 5.0 |
+| 1 | Vini Pistori | Sanctify Your Love (Original Mix) | 123 | 5.5 |
+| 2 | Emphi | Dust (John Cosani Remix) | 122 | 6.1 |
+| 3 | Brian Cid | Observe (Original Mix) | 121 | 5.0 |
+| 4 | Adriatique, Delhia De France, Marino Canal | Home (Mind Against Remix) | 120 | 5.0 |
+| 5 | Dmitry Molosh | With Me (Original Mix) | 119 | 3.5 |
+| 6 | Fraser Rix | Strawberry Cake (Mind Echoes Remix) | 120 | 7.6 |
+| 7 | Kamilo Sanclemente | Orb (Original Mix) | 121 | 5.0 |
+| 8 | Fur Coat, Running Pine | Hurricane (Tim Green Remix) | 123 | 7.5 |
+| 9 | D-Nox & Beckers | Serenade (Doctor Dru Remix) | 122 | 5.5 |
+| 10 | Hugel, GROSSOMODDO | Andalucia (Extended Mix) | 120 | 5.0 |
+| 11 | Guy Mantzur | Chasing The Fog | 122 | 5.5 |
+| 12 | Afro Exotiq | Covenant | 120 | 5.0 |
+| 13 | Samantha Loveridge, Treetalk | Losing My Religion (Extended Mix) | 122 | 5.5 |
 
 
 ## Set 136. 136. Cierre · Bailable — 1.5h — 2026-09-20
@@ -2720,7 +2720,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 137. 137. After · Nuevo — 2h — 2026-09-20
-**Armado:** 2026-09-20  
+**Armado:** 2026-09-21  
 **Duracion:** 2.0h  
 **Tracks:** 18  
 **BPM range:** 120-125  
