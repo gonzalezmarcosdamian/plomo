@@ -1,9 +1,10 @@
 {
   "_meta": {
-    "version": "1.2.0",
+    "version": "1.4.0",
     "creado": "2026-09-07",
     "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
-    "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia."
+    "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
+    "nota_de_proceso": "2026-09-21: nueve cambios de estos dias se hicieron sin subir version ni llenar historial, aunque el proceso lo pide. Se reconstruyo desde git con los valores reales de cada commit. Desde aca: cada cambio de regla se registra en historial en el MISMO commit que lo aplica."
   },
   "armonia": {
     "max_camelot_dist": {
@@ -198,7 +199,78 @@
       "porque": "Ancho del beam search. 6000 se usa cuando hay un track ancla obligatorio (prefer_ids con bonus alto)."
     }
   },
-  "historial": [],
+  "historial": [
+    {
+      "version": "1.3.0",
+      "fecha": "2026-09-19",
+      "tema": "la forma de la energia contra los DJ reales",
+      "cambios": [
+        {
+          "regla": "energia.tolerancia_arco_frac",
+          "antes": null,
+          "despues": 0.9,
+          "commit": "248cc68",
+          "por_que": "cobrar el desvio del arco punto por punto hacia la energia funcion del reloj: corr posicion-energia +0.79 contra +0.11 de referencia"
+        },
+        {
+          "regla": "energia.max_retroceso_en_subida",
+          "antes": 0.4,
+          "despues": 0.9,
+          "commit": "248cc68",
+          "por_que": "prohibir bajar en el primer 60% era la otra mitad de la rampa"
+        },
+        {
+          "regla": "energia.umbral_paso_plano",
+          "antes": 0.15,
+          "despues": 0.35,
+          "commit": "68af992",
+          "por_que": "la regla se leia y NO se usaba (umbral clavado en 0.08 en el codigo); conectada y calibrada comparando distribuciones"
+        },
+        {
+          "regla": "energia.span_objetivo",
+          "antes": null,
+          "despues": 2.9,
+          "commit": "5c3413f",
+          "por_que": "el rango es global y todos los terminos eran locales; seis palancas lo dejaban en 2.0"
+        },
+        {
+          "regla": "energia.span_peso",
+          "antes": null,
+          "despues": 0.4,
+          "commit": "5c3413f",
+          "por_que": "con 0.4 el rango entra al IQR de referencia sin romper la autocorrelacion; 26/54 -> 41/54"
+        }
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "fecha": "2026-09-21",
+      "tema": "la armonia y el tempo contra los DJ reales",
+      "cambios": [
+        {
+          "regla": "armonia.max_camelot_dist",
+          "antes": 1,
+          "despues": 2,
+          "commit": "823c9a3",
+          "por_que": "los pros dan pasos de 2 el 15% de las veces; el solver daba 100% de pasos de 1. Saltos de 3+ sin habilitar hasta verificar deteccion de key"
+        },
+        {
+          "regla": "armonia.penal_quedarse_en_la_rueda",
+          "antes": 0.8,
+          "despues": 0.3,
+          "commit": "823c9a3",
+          "por_que": "calibrada contra un 14% viejo; medido contra 11 DJs es 29%"
+        },
+        {
+          "regla": "bpm.max_salto",
+          "antes": 2.0,
+          "despues": 3.0,
+          "commit": "ef4eb7f",
+          "por_que": "salto mediano de los pros 1.0 y el 28% pasa de 2"
+        }
+      ]
+    }
+  ],
   "sonido_propio": {
     "_que_es": "El sonido medido, no el declarado. Sale de scripts/mi_sonido.py sobre las 1004 reproducciones registradas. PROPUESTO el 2026-09-07, sin aplicar todavia: lo tiene que medir el analista antes de que select_set lo lea.",
     "bpm_banda": {
