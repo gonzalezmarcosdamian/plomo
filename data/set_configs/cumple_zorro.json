@@ -22,7 +22,7 @@
       "e_lo": 5.6,
       "e_hi": 7.9,
       "max_per_artist": 1,
-      "max_bpm_jump": 2.0,
+      "max_bpm_jump": 3.0,
       "artists": [
         "*"
       ],
@@ -1631,8 +1631,7 @@
       "arco": {
         "pico_en_pct": 0.6,
         "caida_post_pico_pct": 0.2,
-        "tolerancia_arco_frac": 0.3,
-        "penal_quedarse_en_la_rueda": 3.5
+        "tolerancia_arco_frac": 0.3
       },
       "anclas": [
         "74740589"

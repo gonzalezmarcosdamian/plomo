@@ -12,7 +12,8 @@ Uso:
 import json,glob,statistics as st,sys
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8",errors="replace")
-BASE=Path(sys.argv[1]) if len(sys.argv)>1 else Path("data/set_targets")
+BASE=Path(next((a for a in sys.argv[1:] if not a.isdigit()),"data/set_targets"))
+NUMS=[int(a) for a in sys.argv[1:] if a.isdigit()] or list(range(109,139))
 
 def corr(xs,ys):
     mx,my=st.mean(xs),st.mean(ys)
@@ -45,7 +46,7 @@ for f in sorted(glob.glob("data/setlists/*.json")):
 
 pool={t["id"]:t for t in json.loads(Path("data/pool.json").read_text(encoding="utf-8"))}
 our_ac,our_cp,our_rg=[],[],[]
-for num in range(109,139):
+for num in NUMS:
     f=BASE/f"set_{num}.json"
     if not f.exists(): continue
     es=[pool[t["content_id"]]["energy"] for t in json.loads(f.read_text(encoding="utf-8"))["tracks"] if t["content_id"] in pool]
@@ -75,3 +76,77 @@ print(f"targets medidos: {BASE}")
 compara("autocorrelacion de saltos",our_ac,ref_ac)
 compara("corr(posicion, energia)",our_cp,ref_cp)
 compara("rango de energia",our_rg,ref_rg)
+
+
+# --- Armonia y tempo contra los pros -----------------------------------------
+# Agregado el 2026-09-21. El set 139 se "mejoro" de 31% a 0% de pasos sin mover
+# la rueda usando un 14% de referencia citado en un comentario viejo; medido ese
+# dia contra 11 DJs era 29%, y la mejora lo alejo de los profesionales. Desde
+# aca, cualquier ajuste de armonia se mide contra ellos en el momento.
+def _armonia(sets_propios: list[list[dict]]) -> None:
+    from collections import Counter
+    from itertools import groupby
+    CAM = {f"{i}{L}": (i, L) for i in range(1, 13) for L in "AB"}
+
+    def dist(a, b):
+        (x, lx), (y, ly) = CAM[a], CAM[b]
+        r = min((x - y) % 12, (y - x) % 12)
+        return r if lx == ly else r + 1
+
+    def paso(a, b):
+        dl = (CAM[b][0] - CAM[a][0] + 6) % 12 - 6
+        return "+" if dl > 0 else "-" if dl < 0 else "="
+
+    def metricas(tramos):
+        dc, n, quieto, runs, bpm = Counter(), 0, 0, [], []
+        for tr in tramos:
+            ps = []
+            for a, b in zip(tr, tr[1:]):
+                if a.get("key") in CAM and b.get("key") in CAM:
+                    dc[min(dist(a["key"], b["key"]), 3)] += 1
+                    n += 1
+                    quieto += CAM[a["key"]][0] == CAM[b["key"]][0]
+                    ps.append(paso(a["key"], b["key"]))
+                if a.get("bpm") and b.get("bpm"):
+                    bpm.append(abs(b["bpm"] - a["bpm"]))
+            runs += [len(list(g)) for k, g in groupby(ps) if k != "="]
+        return dc, n, quieto, runs, bpm
+
+    ref = []
+    for f in sorted(glob.glob("data/setlists/*.json")):
+        d = json.load(open(f, encoding="utf-8"))
+        if not d.get("orden_confiable", True):
+            continue
+        cur = []
+        for t in d["tracks"]:
+            if not t.get("key") or (cur and t["pos"] != cur[-1]["pos"] + 1):
+                if len(cur) > 1:
+                    ref.append(cur)
+                cur = []
+            if t.get("key"):
+                cur.append(t)
+        if len(cur) > 1:
+            ref.append(cur)
+    R, O = metricas(ref), metricas(sets_propios)
+    print("\nARMONIA Y TEMPO (transiciones consecutivas)")
+    print(f"  {'':30} {'pros':>7} {'nuestro':>8}")
+    for k, lab in ((0, "misma key o relativa"), (1, "un paso"), (2, "dos pasos"), (3, "tres o mas")):
+        print(f"  {lab:<30} {R[0][k]/R[1]:>7.0%} {O[0][k]/max(1, O[1]):>8.0%}")
+    print(f"  {'sin mover el numero':<30} {R[2]/R[1]:>7.0%} {O[2]/max(1, O[1]):>8.0%}")
+    print(f"  {'escalera mas larga':<30} {max(R[3]):>7} {max(O[3] or [0]):>8}")
+    print(f"  {'saltos de BPM > 2':<30} {sum(1 for x in R[4] if x > 2)/len(R[4]):>7.0%} "
+          f"{sum(1 for x in O[4] if x > 2)/max(1, len(O[4])):>8.0%}")
+    print(f"  (pros: {R[1]} transiciones con key)")
+
+
+if __name__ == "__main__":
+    _pool = {t["id"]: t for t in json.loads(Path("data/pool.json").read_text(encoding="utf-8"))}
+    _nums = NUMS
+    _sets = []
+    for _n in _nums:
+        _f = BASE / f"set_{_n}.json"
+        if _f.exists():
+            _sets.append([_pool[t["content_id"]] for t in
+                          json.loads(_f.read_text(encoding="utf-8"))["tracks"]
+                          if t["content_id"] in _pool])
+    _armonia(_sets)

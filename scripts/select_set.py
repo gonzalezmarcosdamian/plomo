@@ -309,6 +309,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     # entero en cada candidato.
                     same = run_num if prev["_cam"][0] == t["_cam"][0] else 0
                     step = d * PESO_CAM + max(0, same - PENAL_MISMA_KEY_DESDE + 1) * PESO_MISMA_KEY
+                    # [2026-09-21: el 14% de referencia citado abajo era de una medicion vieja;
+                    # medido contra 11 DJs es 29%. Ver armonia.penal_quedarse_en_la_rueda.]
                     # Quedarse en la misma rueda costaba CERO, y por eso pasaba
                     # el 38% de las veces contra el 23% de lo que el DJ toca de
                     # verdad y el 14% de los sets de referencia. El set no sonaba
