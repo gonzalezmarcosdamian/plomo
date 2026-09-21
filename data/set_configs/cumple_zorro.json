@@ -1631,7 +1631,8 @@
       "arco": {
         "pico_en_pct": 0.6,
         "caida_post_pico_pct": 0.2,
-        "tolerancia_arco_frac": 0.3
+        "tolerancia_arco_frac": 0.3,
+        "penal_quedarse_en_la_rueda": 3.5
       },
       "anclas": [
         "74740589"

@@ -177,7 +177,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
-    {"pico_en_pct", "caida_post_pico_pct", "tolerancia_arco_frac"}. Existe por
+    {"pico_en_pct", "caida_post_pico_pct", "tolerancia_arco_frac",
+    "penal_quedarse_en_la_rueda", "monotonia_peso"}. Existe por
     las fechas puntuales. Las reglas globales se calibraron para que la
     COLECCION entera se parezca a los DJ reales —la banda de 0.9 deja a la
     energia moverse libre—, y en una fecha con un arco obligatorio esa libertad
@@ -208,6 +209,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     pico = arco.get("pico_en_pct", PICO_PCT)
     caida = arco.get("caida_post_pico_pct", CAIDA_PCT)
     tol_frac = arco.get("tolerancia_arco_frac", TOL_ARCO_FRAC)
+    # con el arco apretado quedarse en la rueda sale relativamente barato: el
+    # set 139 dio 31% de pasos quietos contra ~14% de la referencia
+    peso_quieto = arco.get("penal_quedarse_en_la_rueda", PESO_QUIETO)
+    # y al subir el castigo por quedarse quieto, la salida barata es la escalera:
+    # el 139 paso de 31% quieto a una corrida de 5 pasos para el mismo lado
+    peso_mono = arco.get("monotonia_peso", PESO_MONOTONIA)
     # names() y camelot() dependen solo del track: calcularlos una vez evita
     # millones de regex dentro del doble loop (beam x candidatos x posiciones).
     for t in pool:
@@ -329,7 +336,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                             step += (n_racha - RACHA_ENERGIA_DESDE) * PESO_RACHA_ENERGIA
                     paso = _paso_firmado(prev["_cam"], t["_cam"])
                     if paso == 0:
-                        step += PESO_QUIETO
+                        step += peso_quieto
                     else:
                         # Subir siempre un paso hacia el mismo lado aburre igual
                         # que no moverse. Se penaliza desde la tercera seguida.
@@ -338,7 +345,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                         # es el mismo que este, la corrida continua.
                         corrida = mono_run if paso == ult_paso else 0
                         if corrida >= MONOTONIA_DESDE:
-                            step += (corrida - MONOTONIA_DESDE + 1) * PESO_MONOTONIA
+                            step += (corrida - MONOTONIA_DESDE + 1) * peso_mono
                 else:
                     paso = None
                     step = 0.0
