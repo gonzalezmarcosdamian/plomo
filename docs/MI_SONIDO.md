@@ -299,3 +299,23 @@ direccion, no una ley.
 Reproducible: `data/favoritos_2026-09-21.json` lista la muestra; las recetas
 estan en `data/recetas/comparacion/`.
 
+### Lo que dijo la escucha del set 139 (2026-09-21)
+
+Correcciones del DJ tema por tema, cruzadas con la receta del audio:
+
+- **Sizer es de pico**, no de apertura. Lo que lo hace sentir alto no es el
+  volumen: mantiene la tension incluso en su breakdown (cae solo al 55% de su
+  energia de groove), tiene rango dinamico minimo (2.3 dB, empuja parejo) y
+  muchos medios (11%).
+- **Sin medios no hay color.** Los dos rechazados por "oscuro, baja energia"
+  tenian 4.2% y 4.3% de medios; el resto del set, 5.4% o mas.
+- **En el pico no sirve un tema que se desploma.** Inertia cae al 26% en su
+  breakdown y "se cae fortisimo".
+- **Nada tecnoso**: el rechazado por tecno era el unico sin aire arriba.
+- **Mas voces** para la parte alta y la entrega.
+- Para abrir: Imentet y despues Open Sea — mas tranqui, mucho groove.
+
+Los pros tocan temas sin medios y breakdowns profundos a la tasa normal: esto
+es el gusto del DJ, no una regla del oficio. Por eso vive aca y no en
+`rules/curaduria.json`.
+

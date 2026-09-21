@@ -22,6 +22,14 @@ PICO_PCT = R.get("energia.pico_en_pct")
 # como "flojos" los pasos que los profesionales hacen todo el tiempo.
 MAX_CAM = R.get("armonia.max_camelot_dist")
 MAX_BPM = R.get("bpm.max_salto")
+# La energia que el DJ escucho pisa la del comentario, igual que en el solver.
+# Sin esto el auditor marcaba como "bajon -1.9" la entrada de Sizer al pico del
+# set 139: medido 5.2 calculado, y el DJ lo escucha 7.7.
+import json as _json
+from pathlib import Path as _Path
+_PERC_F = _Path(__file__).resolve().parent.parent / "data" / "energia_percibida.json"
+PERCIBIDA = ({k: v["E"] for k, v in _json.loads(_PERC_F.read_text(encoding="utf-8")).items()
+              if "E" in v} if _PERC_F.exists() else {})
 EPS = 1e-9
 
 SETS = [int(a) for a in sys.argv[1:]] or [65, 66, 67, 68, 69, 70]
@@ -109,7 +117,7 @@ for num in SETS:
         continue
     tracks = con.execute(
         """
-        SELECT ar.Name, c.Title, c.BPM/100.0, k.ScaleName, c.Commnt, lb.Name
+        SELECT ar.Name, c.Title, c.BPM/100.0, k.ScaleName, c.Commnt, lb.Name, c.ID
         FROM djmdSongPlaylist sp
         JOIN djmdContent c ON c.ID = sp.ContentID
         LEFT JOIN djmdArtist ar ON ar.ID = c.ArtistID
@@ -120,6 +128,8 @@ for num in SETS:
         """,
         (row[0],),
     ).fetchall()
+    tracks = [(a, t, b, k, (f"E:{PERCIBIDA[str(cid)]}" if str(cid) in PERCIBIDA else cm), lb)
+              for a, t, b, k, cm, lb, cid in tracks]
 
     print(f"\n{'='*70}\n{row[1]}")
     issues = []

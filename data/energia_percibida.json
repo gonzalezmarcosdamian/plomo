@@ -1,0 +1,80 @@
+{
+  "74740589": {
+    "artist": "Agustin Pietrocola",
+    "title": "Sizer (Original Mix)",
+    "E_calc": 5.2,
+    "nota": "deberia ir mas adelante, mas peak",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 7.7
+  },
+  "175806155": {
+    "artist": "Marsh, Simon Doty",
+    "title": "Touch The Sky (Extended Mix)",
+    "E_calc": 6.8,
+    "nota": "energia parecida a Sizer",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 7.5
+  },
+  "13512939": {
+    "artist": "Morttagua",
+    "title": "Imentet (Hernan Cattaneo & Marcelo Vasami Remix)",
+    "E_calc": 5.7,
+    "nota": "arranca mas tranqui que Sizer",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.4
+  },
+  "214849857": {
+    "artist": "Cary Crank",
+    "title": "Open Sea (Ric Niels Remix)",
+    "E_calc": 6.1,
+    "nota": "menos energia que Imentet, un poco mas oscuro, mucho mas groove; me gusta",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.2
+  },
+  "121401439": {
+    "artist": "Gai Barone, Aman Anand",
+    "title": "Low Era (Kebin Van Reeken Remix)",
+    "E_calc": 7.5,
+    "nota": "oscuro, baja energia",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.0
+  },
+  "95994954": {
+    "artist": "ECHO DAFT, Redspace",
+    "title": "A Story Retold",
+    "E_calc": 6.7,
+    "nota": "poca energia para entregar; quiero mas energia y mas voces",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.5
+  },
+  "18559665": {
+    "artist": "Adam Ten, Mita Gami",
+    "title": "High On",
+    "E_calc": 6.5,
+    "nota": "pasado de energia, muy tecnoso",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 7.6
+  },
+  "266913935": {
+    "artist": "Ezequiel Arias",
+    "title": "Inertia (Original Mix)",
+    "E_calc": 7.8,
+    "nota": "se cae en energia fortisimo (breakdown profundo): no sostiene un pico",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21"
+  },
+  "45593537": {
+    "artist": "Juan Buitrago",
+    "title": "Anja",
+    "E_calc": 6.9,
+    "nota": "mas lento",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21"
+  },
+  "6435521": {
+    "artist": "Boxer",
+    "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
+    "E_calc": 5.7,
+    "E": 7.8,
+    "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
+    "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+  }
+}

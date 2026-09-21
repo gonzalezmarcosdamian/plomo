@@ -8,6 +8,38 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## El oido del DJ es la verdad de base; un patron de una escucha no es una regla
+
+**Que paso.** El DJ escucho el set 139 y corrigio tema por tema. Nuestra energia
+calculada estaba invertida en varios pares: Sizer daba 5.2 (el mas bajo del set)
+y el DJ lo siente de pico; Low Era daba 7.5 y lo siente oscuro y bajo. Error
+medio de la formula contra su oido: **1.3 puntos** sobre 7 temas, con dos de 2.5.
+
+En sus correcciones habia patrones claros: los dos temas que rechazo por "baja
+energia" eran los dos con menos medios del set (4.2% y 4.3%), el que "se cae
+fortisimo" tenia el breakdown mas profundo (26% de su energia de groove), y el
+"tecnoso" era el unico sin aire arriba (1.4%).
+
+**Por que.** La energia calculada sale de DONDE caen los cues (Bass IN, Breakdown,
+DROP), no de lo que suena. No ve medios, ni profundidad de breakdown, ni brillo.
+
+Pero antes de convertir los patrones en regla se midieron contra los pros: tocan
+temas sin medios a la misma tasa que la biblioteca (10.9% contra 8.2%), y
+breakdowns que se desploman tambien (18.6% contra 17.4%). No son reglas del
+oficio: son el gusto del DJ para esa noche.
+
+**Como se aplica.**
+- Lo que el DJ escucho PISA el calculo en todo el sistema:
+  `data/energia_percibida.json`, leido por el solver y por el auditor. Cada
+  correccion queda como dato para recalibrar la formula cuando haya suficientes.
+- Un patron que sale de una escucha va como filtro DE ESE SET y como preferencia
+  documentada. Pasa a regla global solo si los pros tambien lo evitan.
+- Dos herramientas quedaron por esto: `inicio_fijo` (los primeros temas en el
+  orden del DJ, sin restricciones duras) y `anclas_en` (DONDE tiene que caer un
+  ancla, no solo que este).
+
+---
+
 ## Cuando cuatro palancas distintas dan el mismo numero, el limite no es la palanca
 
 **Que paso.** Los sets recorrian 1.9 puntos de energia donde una ventana del

@@ -173,7 +173,8 @@ def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
 
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
            max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0,
-           objetivo_seg=None, arco=None, anclas=()):
+           objetivo_seg=None, arco=None, anclas=(), inicio_fijo=(),
+           anclas_en=None):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
@@ -184,6 +185,15 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     energia moverse libre—, y en una fecha con un arco obligatorio esa libertad
     lo desarma: el set del cumple de Zorro, que recibe la pista y la entrega
     arriba, salio con el pico en el tema 2 y terminando en E5.7.
+
+    `inicio_fijo` son los primeros temas en el orden que decidio el DJ. En esas
+    posiciones no se aplica ninguna restriccion dura: si el DJ quiere pasar de
+    1A a 4A para abrir, lo decidio con el oido, y el 36% de los pasos de los
+    profesionales saltan 3 o mas lugares en la rueda.
+
+    `anclas_en` es {id: [desde, hasta]} en fraccion del tiempo del set: DONDE
+    tiene que caer un ancla. Sin esto el ancla garantiza que el tema este pero
+    no donde: Sizer quedaba a la 1:49 cuando el DJ lo pidio en el pico.
 
     `anclas` son ids con un descuento fijo y grande (BONUS_ANCLA): el tema
     modelo de una fecha tiene que estar, no solo convenir. No se escala con
@@ -205,6 +215,9 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     """
     prefer = set(prefer)
     anclas = set(anclas)
+    pos_de = {t['id']: k for k, t in enumerate(pool)}
+    fijo_idx = [pos_de[x] for x in inicio_fijo if x in pos_de]
+    anclas_en = anclas_en or {}
     arco = arco or {}
     pico = arco.get("pico_en_pct", PICO_PCT)
     caida = arco.get("caida_post_pico_pct", CAIDA_PCT)
@@ -275,10 +288,17 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
             # "antes del pico" tambien se mide con el reloj: si los primeros
             # temas son largos, el pico llega antes en numero de track.
             subiendo = frac <= pico
-            candidatos = vecinos[prev["key"]] if prev is not None else todos
+            fijo = i < len(fijo_idx)
+            if fijo:
+                candidatos = [fijo_idx[i]]
+            else:
+                candidatos = vecinos[prev["key"]] if prev is not None else todos
             for j in candidatos:
                 t = pool[j]
                 if ids >> j & 1:
+                    continue
+                ven = anclas_en.get(t["id"])
+                if ven and not (ven[0] <= frac <= ven[1]):
                     continue
                 na = t["_names"]
                 # tope por productor + separacion minima: un showcase se banca
@@ -289,14 +309,14 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     continue
                 if prev is not None:
                     d = cam_dist(prev["key"], t["key"])
-                    if abs(t["bpm"] - prev["bpm"]) > max_bpm_jump + EPS:
+                    if not fijo and abs(t["bpm"] - prev["bpm"]) > max_bpm_jump + EPS:
                         continue
                     # no retroceder energia durante la subida
-                    if (subiendo
+                    if not fijo and (subiendo
                             and t["energy"] < prev["energy"] - MAX_RETROCESO - EPS):
                         continue
                     # ningun escalon brusco: el crowd tiene que no notar el cambio
-                    if abs(t["energy"] - prev["energy"]) > MAX_E_STEP + EPS:
+                    if not fijo and abs(t["energy"] - prev["energy"]) > MAX_E_STEP + EPS:
                         continue
                     # el cierre siempre baja del pico — nunca terminar arriba
                     if ultima and t["energy"] > max_e - BAJA_CIERRE:
@@ -460,6 +480,18 @@ if __name__ == "__main__":
 
     cfg = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
     pool_all = json.loads(ruta(cfg["pool"]).read_text(encoding="utf-8"))
+    # La energia que el DJ ESCUCHO pisa la calculada. La calculada sale de donde
+    # caen los cues, no de lo que suena: en el set 139 daba Sizer 5.2 (el mas
+    # bajo) cuando el DJ lo siente de pico, y Low Era 7.5 cuando lo siente
+    # oscuro y bajo. Cada correccion queda en data/energia_percibida.json y es
+    # dato para recalibrar la formula cuando haya suficientes.
+    _perc = RAIZ / "data" / "energia_percibida.json"
+    if _perc.exists():
+        _ov = json.loads(_perc.read_text(encoding="utf-8"))
+        for t in pool_all:
+            if t["id"] in _ov and "E" in _ov[t["id"]]:
+                t["energy_calc"] = t["energy"]
+                t["energy"] = _ov[t["id"]]["E"]
     # artistas ya comprometidos en otros sets — cada set mantiene identidad propia
     taken = {a.lower() for a in cfg.get("exclude_artists", [])}
     # Cuantas veces puede aparecer un mismo track en toda la tanda. Sin tope, con
@@ -527,6 +559,8 @@ if __name__ == "__main__":
             objetivo_seg=objetivo_seg,
             arco=spec.get("arco"),
             anclas=set(spec.get("anclas", [])),
+            inicio_fijo=spec.get("inicio_fijo", []),
+            anclas_en=spec.get("anclas_en"),
         )
         print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:

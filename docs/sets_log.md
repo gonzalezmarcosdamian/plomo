@@ -2783,21 +2783,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 2 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
-| 3 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
-| 4 | Cary Crank | Open Sea (Ric Niels Remix) | 121 | 5.0 |
-| 5 | Adam Ten, Mita Gami | High On | 123 | 5.5 |
-| 6 | Juan Buitrago | Anja | 121 | 6.9 |
-| 7 | Beckers, D-Nox | Bitter Rain (Cid Inc. Remix) | 123 | 6.3 |
-| 8 | Gonzalo Cotroneo | Dark Rain (Extended Mix) | 121 | 7.3 |
-| 9 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
-| 10 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 11 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
-| 12 | Ezequiel Arias | Inertia (Original Mix) | 121 | 5.0 |
-| 13 | Nicolas Rada | Cascadia | 122 | 5.5 |
-| 14 | Cendryma | Circles (Extended Mix) | 122 | 5.5 |
-| 15 | Kamilo Sanclemente, Dabeat | Vekants | 124 | 6.0 |
-| 16 | Gai Barone, Aman Anand | Low Era (Kebin Van Reeken Remix) | 122 | 5.5 |
-| 17 | ECHO DAFT, Redspace | A Story Retold | 122 | 6.7 |
+| 1 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
+| 2 | Cary Crank | Open Sea (Ric Niels Remix) | 121 | 5.0 |
+| 3 | Ziger, Mind Conspiracy | Pink Cadillac (Original Mix) | 122 | 6.4 |
+| 4 | Hraach, Armen Miran | Menq (Nick Warren & Nicolas Rada Remix) | 122 | 5.5 |
+| 5 | Luttrell, Molly Moonwater | Something Right feat. Molly Moonwater (Ezequiel Arias Extended Mix) | 125 | 6.0 |
+| 6 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
+| 7 | Guy Mantzur & Lonya | Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix)  | 122 | 6.7 |
+| 8 | Durante, Running Touch | Follow feat. Running Touch (Extended Mix) | 122 | 5.5 |
+| 9 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.5 |
+| 10 | Cendryma | Enter (Extended Mix) | 122 | 5.5 |
+| 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 12 | Kostya Outta, Frameloue | Altitude (Feat. Frameloue Extended Mix) | 122 | 6.6 |
+| 13 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 14 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 15 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
+| 16 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 17 | Guy J | Placebo (Original Mix) | 122 | 5.5 |
 
