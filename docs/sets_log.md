@@ -2774,3 +2774,30 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 17 | Shayan Pasha, Redspace | Pantheon (Original Mix) | 121 | 5.0 |
 | 18 | Bosknegra | Primavera (Original Mix) | 120 | 5.0 |
 
+
+## Set 139. 139. Cumple Zorro · 1 a 3 AM — 2h — 2026-09-21
+**Armado:** 2026-09-21  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 121-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 2 | Budakid & Jamie Stevens | Story of Tokay (Khen Remix) | 121 | 6.3 |
+| 3 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
+| 4 | Rauschhaus, Greta Meier | Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix) | 124 | 6.0 |
+| 5 | ECHO DAFT, Redspace | A Story Retold | 122 | 6.7 |
+| 6 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
+| 7 | Mike Kohl | Deep Waters (Original Mix) | 122 | 7.0 |
+| 8 | Adam Ten, Mita Gami | High On | 123 | 5.5 |
+| 9 | about : river | Never Forget (Rockka Remix) | 122 | 5.5 |
+| 10 | Hraach, Armen Miran | Menq (Nick Warren & Nicolas Rada Remix) | 122 | 5.5 |
+| 11 | Ezequiel Arias | Passenger (Original Mix) | 122 | 5.5 |
+| 12 | Seyah | Nebula (Tomas Garcia & Tonaco Remix) | 122 | 7.1 |
+| 13 | Juan Buitrago | Anja | 121 | 6.9 |
+| 14 | Gonzalo Cotroneo | Dark Rain (Extended Mix) | 121 | 7.3 |
+| 15 | Guy J | Placebo (Original Mix) | 122 | 5.5 |
+| 16 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 17 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+

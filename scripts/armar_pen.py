@@ -43,7 +43,7 @@ import sqlcipher3  # noqa: E402
 from plomo import config  # noqa: E402
 
 PADRE = "Pro DJ Library"
-NIVELES_ACTIVOS = ("1 Apertura", "2 Previa", "3 Prime Time", "4 Peak",
+NIVELES_ACTIVOS = ("0 Fechas", "1 Apertura", "2 Previa", "3 Prime Time", "4 Peak",
                    "5 Cierre", "6 After")
 
 

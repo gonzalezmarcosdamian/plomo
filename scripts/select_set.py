@@ -56,6 +56,9 @@ ENERGIA_QUIETA = R.get("energia.umbral_paso_plano", 0.15)
 PESO_ENERGIA_QUIETA = R.get("energia.penal_paso_plano", 0.35)
 RACHA_ENERGIA_DESDE = R.get("energia.racha_misma_direccion_desde", 2)
 PESO_RACHA_ENERGIA = R.get("energia.racha_misma_direccion_peso", 0.7)
+# Descuento de un tema ancla. Mayor que cualquier costo razonable de una
+# posicion, para que el ancla entre salvo que rompa una restriccion dura.
+BONUS_ANCLA = 25.0
 SPLIT = (",", "&", " feat", " ft", " vs", " x ")
 # Margen para las comparaciones contra los topes. abs(7.0 - 8.3) da
 # 1.3000000000000007 en punto flotante, asi que un escalon que es exactamente
@@ -145,12 +148,13 @@ def _paso_firmado(ca, cb):
     return d if d <= 6 else d - 12
 
 
-def arc_en(t, lo, hi, hi_at=PICO_PCT):
+def arc_en(t, lo, hi, hi_at=PICO_PCT, caida=None):
     """La energia que el arco pide en el instante `t` (0 = arranque, 1 = final)."""
+    caida = CAIDA_PCT if caida is None else caida
     t = min(1.0, max(0.0, t))
     if t <= hi_at:
         return lo + (hi - lo) * (t / hi_at)
-    return hi - (hi - lo) * CAIDA_PCT * ((t - hi_at) / (1 - hi_at))
+    return hi - (hi - lo) * caida * ((t - hi_at) / (1 - hi_at))
 
 
 def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
@@ -169,8 +173,20 @@ def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
 
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
            max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0,
-           objetivo_seg=None):
+           objetivo_seg=None, arco=None, anclas=()):
     """Devuelve la mejor secuencia de n tracks, o None.
+
+    `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
+    {"pico_en_pct", "caida_post_pico_pct", "tolerancia_arco_frac"}. Existe por
+    las fechas puntuales. Las reglas globales se calibraron para que la
+    COLECCION entera se parezca a los DJ reales —la banda de 0.9 deja a la
+    energia moverse libre—, y en una fecha con un arco obligatorio esa libertad
+    lo desarma: el set del cumple de Zorro, que recibe la pista y la entrega
+    arriba, salio con el pico en el tema 2 y terminando en E5.7.
+
+    `anclas` son ids con un descuento fijo y grande (BONUS_ANCLA): el tema
+    modelo de una fecha tiene que estar, no solo convenir. No se escala con
+    `prefer_bonus`: bajar la prioridad general no puede sacar al ancla.
 
     `prefer` son ids con descuento en el costo — sirve para forzar que el set
     estrene material nuevo sin romper las restricciones duras.
@@ -187,6 +203,11 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     que se persigue, no un techo que se impone.
     """
     prefer = set(prefer)
+    anclas = set(anclas)
+    arco = arco or {}
+    pico = arco.get("pico_en_pct", PICO_PCT)
+    caida = arco.get("caida_post_pico_pct", CAIDA_PCT)
+    tol_frac = arco.get("tolerancia_arco_frac", TOL_ARCO_FRAC)
     # names() y camelot() dependen solo del track: calcularlos una vez evita
     # millones de regex dentro del doble loop (beam x candidatos x posiciones).
     for t in pool:
@@ -218,7 +239,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # 0.15 el arco entero contaba como plano y la penalizacion empujaba a dar
     # pasos grandes en una sola direccion. Medido: la autocorrelacion de los
     # saltos salia +0.5 en los sets cortos, peor que el +0.0 original.
-    tol_arco = (e_hi - e_lo) * TOL_ARCO_FRAC
+    tol_arco = (e_hi - e_lo) * tol_frac
     paso_natural = (e_hi - e_lo) / max(2, n - 1)
     # El piso sale de la regla, no de un 0.08 escrito aca. `ENERGIA_QUIETA` se
     # leia de rules/curaduria.json y no se usaba en ningun lado: una regla con
@@ -243,10 +264,10 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
              gen_cnt, max_e, segs, e_signo, e_racha, min_e) = nodo
             frac = segs / objetivo_seg
-            tgt = arc_en(frac, e_lo, e_hi)
+            tgt = arc_en(frac, e_lo, e_hi, pico, caida)
             # "antes del pico" tambien se mide con el reloj: si los primeros
             # temas son largos, el pico llega antes en numero de track.
-            subiendo = frac <= PICO_PCT
+            subiendo = frac <= pico
             candidatos = vecinos[prev["key"]] if prev is not None else todos
             for j in candidatos:
                 t = pool[j]
@@ -334,6 +355,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 c = cost + desvio * PESO_ARCO + step
                 if t["id"] in prefer:
                     c -= bonus
+                if t["id"] in anclas:
+                    c -= BONUS_ANCLA
                 if mezcla:
                     g = (t.get("genre") or "").strip()
                     objetivo = mezcla.get(g)
@@ -493,6 +516,8 @@ if __name__ == "__main__":
             mezcla=spec.get("mezcla_objetivo"),
             peso_mezcla=spec.get("peso_mezcla", 8.0),
             objetivo_seg=objetivo_seg,
+            arco=spec.get("arco"),
+            anclas=set(spec.get("anclas", [])),
         )
         print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:
