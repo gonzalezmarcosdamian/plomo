@@ -130,7 +130,7 @@ def _armonia(sets_propios: list[list[dict]]) -> None:
     R, O = metricas(ref), metricas(sets_propios)
     print("\nARMONIA Y TEMPO (transiciones consecutivas)")
     print(f"  {'':30} {'pros':>7} {'nuestro':>8}")
-    for k, lab in ((0, "misma key o relativa"), (1, "un paso"), (2, "dos pasos"), (3, "tres o mas")):
+    for k, lab in ((0, "misma key"), (1, "un paso (o relativa)"), (2, "dos pasos"), (3, "tres o mas")):
         print(f"  {lab:<30} {R[0][k]/R[1]:>7.0%} {O[0][k]/max(1, O[1]):>8.0%}")
     print(f"  {'sin mover el numero':<30} {R[2]/R[1]:>7.0%} {O[2]/max(1, O[1]):>8.0%}")
     print(f"  {'escalera mas larga':<30} {max(R[3]):>7} {max(O[3] or [0]):>8}")

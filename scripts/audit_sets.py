@@ -16,6 +16,12 @@ from plomo.rules import R
 # distintos que medirlo, y las dos cosas se hacen en el mismo proyecto.
 MAX_ESCALON = R.get("energia.max_escalon")
 PICO_PCT = R.get("energia.pico_en_pct")
+# Tambien los dos umbrales que definen una transicion floja. Estaban escritos
+# a mano (rueda >= 2, BPM > 2) aunque el encabezado dijera lo contrario, y al
+# calibrar la armonia contra los pros el 2026-09-21 el auditor siguio marcando
+# como "flojos" los pasos que los profesionales hacen todo el tiempo.
+MAX_CAM = R.get("armonia.max_camelot_dist")
+MAX_BPM = R.get("bpm.max_salto")
 EPS = 1e-9
 
 SETS = [int(a) for a in sys.argv[1:]] or [65, 66, 67, 68, 69, 70]
@@ -125,9 +131,9 @@ for num in SETS:
         if prev:
             pe, pbpm, pkey = prev
             d = cam_distance(pkey, key)
-            if d is not None and d >= 2:
+            if d is not None and d > MAX_CAM:
                 flags.append(f"CAMELOT {pkey}->{key} (salto {d})")
-            if pbpm and bpm and abs(bpm - pbpm) > 2:
+            if pbpm and bpm and abs(bpm - pbpm) > MAX_BPM + EPS:
                 flags.append(f"BPM {pbpm:.0f}->{bpm:.0f} (+{abs(bpm-pbpm):.0f})")
             if pe and e and e - pe > MAX_ESCALON + EPS:
                 flags.append(f"ENERGIA salto +{e-pe:.1f}")

@@ -126,9 +126,10 @@
   },
   "bpm": {
     "max_salto": {
-      "valor": 2.0,
+      "valor": 3.0,
       "duro": true,
-      "porque": "Mas de 2 BPM entre consecutivos obliga a forzar el pitch fuera del rango comodo."
+      "porque": "Mas de 2 BPM entre consecutivos obliga a forzar el pitch fuera del rango comodo.",
+      "evidencia": "2026-09-21: medido contra 11 DJs de referencia, el salto de BPM mediano entre temas consecutivos es 1.0 y el 28% pasa de 2. Con el tope en 2 el solver daba 0% de saltos mayores: mas rigido que cualquier profesional. Se sube a 3."
     }
   },
   "repeticion": {
