@@ -59,6 +59,8 @@ PESO_RACHA_ENERGIA = R.get("energia.racha_misma_direccion_peso", 0.7)
 # Descuento de un tema ancla. Mayor que cualquier costo razonable de una
 # posicion, para que el ancla entre salvo que rompa una restriccion dura.
 BONUS_ANCLA = 25.0
+# Costo por BPM de desvio de la rampa de `bpm_arco`, con 1 BPM de tolerancia.
+PESO_BPM_ARCO = 1.5
 SPLIT = (",", "&", " feat", " ft", " vs", " x ")
 # Margen para las comparaciones contra los topes. abs(7.0 - 8.3) da
 # 1.3000000000000007 en punto flotante, asi que un escalon que es exactamente
@@ -174,7 +176,8 @@ def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
            max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0,
            objetivo_seg=None, arco=None, anclas=(), inicio_fijo=(),
-           anclas_en=None):
+           anclas_en=None, entrada=None, salida=None, bpm_arco=None,
+           cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
@@ -190,6 +193,18 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     posiciones no se aplica ninguna restriccion dura: si el DJ quiere pasar de
     1A a 4A para abrir, lo decidio con el oido, y el 36% de los pasos de los
     profesionales saltan 3 o mas lugares en la rueda.
+
+    `cierre_fijo` son los ULTIMOS temas, en orden: el set termina con ellos. Una
+    ventana de horario no alcanza para "cortar a cero con Haunted": se cumple
+    con Haunted anteultimo.
+
+    `entrada` y `salida` son {key, bpm} del ultimo tema del set ANTERIOR y del
+    primero del SIGUIENTE: en una noche de sets encadenados, el primero tiene
+    que empalmar con lo que viene sonando y el ultimo con lo que sigue.
+
+    `bpm_arco` es [desde, hasta]: el BPM sigue una rampa en el tiempo. Un warm
+    que arranca en 118 y tiene que entregar a 122 no puede elegir el tempo
+    tema por tema sin mirar el reloj.
 
     `anclas_en` es {id: [desde, hasta]} en fraccion del tiempo del set: DONDE
     tiene que caer un ancla. Sin esto el ancla garantiza que el tema este pero
@@ -218,6 +233,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     pos_de = {t['id']: k for k, t in enumerate(pool)}
     fijo_idx = [pos_de[x] for x in inicio_fijo if x in pos_de]
     anclas_en = anclas_en or {}
+    cierre_idx = [pos_de[x] for x in cierre_fijo if x in pos_de]
+    cierre_set = set(cierre_idx)
     arco = arco or {}
     pico = arco.get("pico_en_pct", PICO_PCT)
     caida = arco.get("caida_post_pico_pct", CAIDA_PCT)
@@ -289,13 +306,33 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
             # temas son largos, el pico llega antes en numero de track.
             subiendo = frac <= pico
             fijo = i < len(fijo_idx)
-            if fijo:
+            k_cierre = i - (n - len(cierre_idx))
+            if k_cierre >= 0:
+                candidatos = [cierre_idx[k_cierre]]
+            elif fijo:
                 candidatos = [fijo_idx[i]]
+            elif prev is None and entrada:
+                candidatos = [j for j in todos
+                              if cam_dist(entrada["key"], pool[j]["key"]) <= MAX_CAM
+                              and abs(pool[j]["bpm"] - entrada["bpm"]) <= max_bpm_jump + EPS]
             else:
                 candidatos = vecinos[prev["key"]] if prev is not None else todos
             for j in candidatos:
                 t = pool[j]
                 if ids >> j & 1:
+                    continue
+                # los temas del cierre esperan su lugar: no pueden entrar antes
+                if j in cierre_set and k_cierre < 0:
+                    continue
+                # el tema anterior al cierre fijo tiene que empalmar con el: sin
+                # esto el 141 llegaba a Haunted con un salto de 5 en la rueda
+                if (k_cierre == -1 and cierre_idx and (
+                        cam_dist(t["key"], pool[cierre_idx[0]]["key"]) > MAX_CAM
+                        or abs(t["bpm"] - pool[cierre_idx[0]]["bpm"]) > max_bpm_jump + EPS)):
+                    continue
+                if ultima and salida and (
+                        cam_dist(t["key"], salida["key"]) > MAX_CAM
+                        or abs(t["bpm"] - salida["bpm"]) > max_bpm_jump + EPS):
                     continue
                 ven = anclas_en.get(t["id"])
                 if ven and not (ven[0] <= frac <= ven[1]):
@@ -382,6 +419,9 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                                   - min(max_e - min_e, SPAN_OBJETIVO))
                         step -= ganado * PESO_SPAN
                 c = cost + desvio * PESO_ARCO + step
+                if bpm_arco:
+                    tb = bpm_arco[0] + (bpm_arco[1] - bpm_arco[0]) * frac
+                    c += max(0.0, abs(t["bpm"] - tb) - 1.0) * bpm_arco_peso
                 if t["id"] in prefer:
                     c -= bonus
                 if t["id"] in anclas:
@@ -479,6 +519,13 @@ if __name__ == "__main__":
         return q if q.is_absolute() else RAIZ / q
 
     cfg = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+
+    def _vecino(cid):
+        """key y BPM de un tema de OTRO set, para empalmar con el."""
+        if not cid:
+            return None
+        t = next((x for x in pool_all if x["id"] == cid), None)
+        return {"key": t["key"], "bpm": t["bpm"]} if t else None
     pool_all = json.loads(ruta(cfg["pool"]).read_text(encoding="utf-8"))
     # La energia que el DJ ESCUCHO pisa la calculada. La calculada sale de donde
     # caen los cues, no de lo que suena: en el set 139 daba Sizer 5.2 (el mas
@@ -561,6 +608,11 @@ if __name__ == "__main__":
             anclas=set(spec.get("anclas", [])),
             inicio_fijo=spec.get("inicio_fijo", []),
             anclas_en=spec.get("anclas_en"),
+            entrada=_vecino(spec.get("entrada_desde")),
+            salida=_vecino(spec.get("salida_hacia")),
+            bpm_arco=spec.get("bpm_arco"),
+            cierre_fijo=spec.get("cierre_fijo", []),
+            bpm_arco_peso=spec.get("bpm_arco_peso", PESO_BPM_ARCO),
         )
         print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:

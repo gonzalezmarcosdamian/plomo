@@ -76,5 +76,28 @@
     "E": 7.8,
     "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
     "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+  },
+  "83535228": {
+    "artist": "Paul Thomas",
+    "title": "Jumbo (Jamie Stevens Remix)",
+    "E_calc": 6.1,
+    "E": 7.8,
+    "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
+    "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+  },
+  "75591601": {
+    "artist": "Guy J",
+    "title": "Placebo (Original Mix)",
+    "E_calc": 6.9,
+    "nota": "como cierre del 139 no esta bueno: quiere terminar mas arriba",
+    "fuente": "escucha del set 139 v4, 2026-09-22"
+  },
+  "104234166": {
+    "artist": "Kamilo Sanclemente",
+    "title": "Fragma (GORKIZ Remix)",
+    "E_calc": 7.5,
+    "nota": "tremendo tema, mi sonido totalmente",
+    "favorito": true,
+    "fuente": "escucha del set 139 v4, 2026-09-22"
   }
 }

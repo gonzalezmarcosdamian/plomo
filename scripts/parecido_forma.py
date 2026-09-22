@@ -15,6 +15,10 @@ Necesita el indice de data/recetas/lib/ (scripts/indexar_forma.py).
 Uso:
     python scripts/parecido_forma.py <content_id_modelo>
     python scripts/parecido_forma.py <content_id_modelo> --top 60 --json out.json
+    python scripts/parecido_forma.py <id1> <id2> ...     # un ESTILO: varios modelos
+
+Con varios modelos, cada tema se mide contra el mas parecido de ellos. Sirve
+para "estilo Maze 28": no un tema de Maze, sino cualquier forma que el tenga.
 """
 from __future__ import annotations
 
@@ -56,7 +60,7 @@ def rasgos(d: dict) -> dict | None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("modelo")
+    ap.add_argument("modelo", nargs="+")
     ap.add_argument("--top", type=int, default=40)
     ap.add_argument("--json", type=Path)
     a = ap.parse_args()
@@ -66,20 +70,23 @@ def main() -> None:
         x = rasgos(json.loads(f.read_text(encoding="utf-8")))
         if x:
             todos[f.stem] = x
-    if a.modelo not in todos:
-        sys.exit(f"el modelo {a.modelo} no esta en el indice (o su receta no es confiable)")
+    modelos = [m for m in a.modelo if m in todos]
+    if not modelos:
+        sys.exit("ningun modelo esta en el indice (o sus recetas no son confiables)")
     desvio = {k: (st.pstdev(v[k] for v in todos.values()) or 1.0) for k in RASGOS}
-    m = todos[a.modelo]
     orden = []
     for cid, x in todos.items():
-        dist = sum(((x[k] - m[k]) / desvio[k]) ** 2 for k in RASGOS) ** 0.5
+        dist = min(sum(((x[k] - todos[mo][k]) / desvio[k]) ** 2 for k in RASGOS) ** 0.5
+                   for mo in modelos)
         orden.append((1 / (1 + dist), cid))
+    m = todos[modelos[0]]
     orden.sort(reverse=True)
 
     pool = {t["id"]: t for t in json.loads(
         (RAIZ / "data" / "pool.json").read_text(encoding="utf-8"))}
-    print(f"indice: {len(todos)} temas.  modelo: "
-          f"{pool.get(a.modelo, {}).get('artist', '?')} - {pool.get(a.modelo, {}).get('title', '?')}")
+    print(f"indice: {len(todos)} temas.  modelos: {len(modelos)} "
+          f"({pool.get(modelos[0], {}).get('artist', '?')} - {pool.get(modelos[0], {}).get('title', '?')}"
+          f"{' y otros' if len(modelos) > 1 else ''})")
     print(f"  forma del modelo: breakdown {m['bd_len']}c al {m['bd_pos']:.0%}, drop final "
           f"{m['drop_len']}c al {m['drop_pos']:.0%}, {m['n_secc']} secciones, sub {m['sub']:.0f}%\n")
     for p, cid in orden[:a.top]:

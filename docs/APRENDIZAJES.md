@@ -8,6 +8,27 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Fijar un tema no fija sus vecinos; y deduplicar por artista no es deduplicar por cancion
+
+**Que paso.** Armando la noche del cumple de Zorro aparecieron dos errores que
+ninguna metrica marcaba. Con `cierre_fijo` = Haunted, el set llegaba a Haunted con
+un salto de 5 en la rueda: fijar el ultimo tema le salteaba al solver el control
+de key del anteultimo. Y en el warm entraron dos remixes de la misma cancion
+(Cry of the Deserts): el solver cuenta artistas, no canciones, y con
+`max_per_artist` 2 las dos versiones eran legales. Antes, entre sets, Muse habia
+sonado dos veces en la noche en dos remixes distintos.
+
+**Por que.** Cada restriccion nueva que saltea las duras (apertura fija, cierre
+fijo) deja sin cubrir las transiciones de su borde. Y la identidad de un tema
+para el DJ es la CANCION, no el archivo ni el artista.
+
+**Como se aplica.** Toda posicion fija obliga a su vecino a empalmar con ella
+(ya en `select_set.py`). Antes de escribir una noche de varios sets, chequear
+canciones repetidas por titulo base —sin versiones ni "feat."— dentro de cada set
+y entre todos. Y mirar la transicion de entrada y salida de cada tema fijo.
+
+---
+
 ## El oido del DJ es la verdad de base; un patron de una escucha no es una regla
 
 **Que paso.** El DJ escucho el set 139 y corrigio tema por tema. Nuestra energia

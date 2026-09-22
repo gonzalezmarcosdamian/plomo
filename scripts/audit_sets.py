@@ -28,6 +28,34 @@ MAX_BPM = R.get("bpm.max_salto")
 import json as _json
 from pathlib import Path as _Path
 _PERC_F = _Path(__file__).resolve().parent.parent / "data" / "energia_percibida.json"
+def _rueda_pros() -> tuple[float, int, int]:
+    """Cuanto se quedan quietos en la rueda los DJ de referencia, set por set
+    (p90), y su escalera mas larga. Se mide en vivo: el aviso citaba un "14%"
+    viejo cuando los pros, medidos, dan 29% de mediana."""
+    import glob
+    fr, esc = [], [1]
+    for f in glob.glob(str(_Path(__file__).resolve().parent.parent / "data" / "setlists" / "*.json")):
+        d = _json.loads(_Path(f).read_text(encoding="utf-8"))
+        if not d.get("orden_confiable", True):
+            continue
+        ts = [t for t in d["tracks"] if camelot(t.get("key") or "")]
+        ps = []
+        for a, b in zip(ts, ts[1:]):
+            if b["pos"] != a["pos"] + 1:
+                continue
+            na, nb = camelot(a["key"])[0], camelot(b["key"])[0]
+            x = (nb - na) % 12
+            ps.append(x if x <= 6 else x - 12)
+        if len(ps) >= 5:
+            fr.append(sum(1 for x in ps if x == 0) / len(ps))
+            c = 1
+            for x, y in zip(ps, ps[1:]):
+                c = c + 1 if (x == y and x != 0) else 1
+                esc.append(c)
+    fr.sort()
+    return (fr[int(len(fr) * 0.9)] if fr else 0.35), max(esc), len(fr)
+
+
 PERCIBIDA = ({k: v["E"] for k, v in _json.loads(_PERC_F.read_text(encoding="utf-8")).items()
               if "E" in v} if _PERC_F.exists() else {})
 EPS = 1e-9
@@ -73,10 +101,11 @@ def _metricas_de_set(filas: list[tuple]) -> None:
             corrida = corrida + 1 if (x == y and x != 0) else 1
             mejor = max(mejor, corrida)
         aviso = ""
-        if quietos > 0.35:
-            aviso = "  <-- se queda clavado (real: 23%, referencia: 14%)"
-        elif mejor >= 4:
-            aviso = "  <-- escalera monotona"
+        p90_quieto, esc_max, n_pros = _rueda_pros()
+        if quietos > p90_quieto:
+            aviso = f"  <-- mas quieto que el 90% de los pros (p90 {p90_quieto:.0%})"
+        elif mejor > esc_max:
+            aviso = f"  <-- escalera mas larga que la de los pros (max {esc_max} en {n_pros} sets: muestra chica)"
         print(f"  >> movimiento: {quietos:.0%} sin mover la rueda, "
               f"corrida monotona mas larga {mejor}{aviso}")
 

@@ -1,0 +1,97 @@
+{
+  "name": "140. Cumple Zorro · Warm · 23 a 1 AM — 2h — 2026-09-22",
+  "duration_h": 2.0,
+  "bpm_range": [
+    117,
+    122
+  ],
+  "max_per_artist": 2,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Parra for Cuva",
+      "title": "Juri (Original Mix)",
+      "content_id": "183767397"
+    },
+    {
+      "artist": "Mike Rish",
+      "title": "Tú Attair (Original Mix)",
+      "content_id": "71858967"
+    },
+    {
+      "artist": "DJ Bird",
+      "title": "In Space",
+      "content_id": "46354432"
+    },
+    {
+      "artist": "Callecat",
+      "title": "A New Beginning ",
+      "content_id": "2339517"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Lazos (Original Mix)",
+      "content_id": "136780130"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mindloop (Original Mix)",
+      "content_id": "177299920"
+    },
+    {
+      "artist": "Nick Warren, Martin Fredes",
+      "title": "Kairos (Original Mix)",
+      "content_id": "128348541"
+    },
+    {
+      "artist": "Simone Vitullo, Seraphiel",
+      "title": "Every Breath You Take (Extended Mix)",
+      "content_id": "222226234"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Cry of the Deserts (Aman Anand Remix)",
+      "content_id": "77073459"
+    },
+    {
+      "artist": "Tim Green",
+      "title": "We've Been Here Before",
+      "content_id": "242789993"
+    },
+    {
+      "artist": "Taylan",
+      "title": "Earthbound (Andre Moret Remix)",
+      "content_id": "39057490"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "The Observer",
+      "content_id": "156983367"
+    },
+    {
+      "artist": "Lee Burridge",
+      "title": "Fading Out (Extended Mix)",
+      "content_id": "126949236"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Giovanny Aparicio",
+      "title": "Magic Carpet (Original Mix)",
+      "content_id": "24336805"
+    },
+    {
+      "artist": "Freedo Mosho",
+      "title": "Paradise Lost (Maze 28 Reform)",
+      "content_id": "226546454"
+    },
+    {
+      "artist": "Ezequiel Arias",
+      "title": "Púrpura",
+      "content_id": "227608600"
+    },
+    {
+      "artist": "Unusual Soul",
+      "title": "In Circles (Original Mix)",
+      "content_id": "93069008"
+    }
+  ]
+}

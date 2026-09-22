@@ -1,0 +1,97 @@
+{
+  "name": "141. Cumple Zorro · 3 a 5 AM — 2h — 2026-09-22",
+  "duration_h": 2.0,
+  "bpm_range": [
+    121,
+    126
+  ],
+  "max_per_artist": 1,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Peer Kusiv",
+      "title": "Nightdrive Feat Fynn (Rauschhaus Remix)",
+      "content_id": "206806086"
+    },
+    {
+      "artist": "Redspace",
+      "title": "Life Without You (Original Mix)",
+      "content_id": "88397370"
+    },
+    {
+      "artist": "Braxton",
+      "title": "Torn (feat. Danni Wells) [Extended Mix]",
+      "content_id": "116966407"
+    },
+    {
+      "artist": "Spencer Brown",
+      "title": "Blue Magic (feat. Danny Shamoun)",
+      "content_id": "190819323"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "The Moon Lights the Way (Original Mix)",
+      "content_id": "216332867"
+    },
+    {
+      "artist": "Ric Niels",
+      "title": "Invasion",
+      "content_id": "87620719"
+    },
+    {
+      "artist": "Anturage, Alar",
+      "title": "Moet (Original Mix)",
+      "content_id": "243540383"
+    },
+    {
+      "artist": "Gorje Hewek feat. Lost Desert",
+      "title": "Aya",
+      "content_id": "70414084"
+    },
+    {
+      "artist": "Carlita & Calussa",
+      "title": "Fell In Luv (Black Circle Extended Remix)",
+      "content_id": "189111149"
+    },
+    {
+      "artist": "Cristoph, Franky Wah, Artche",
+      "title": "The World You See (Original Mix) ",
+      "content_id": "134919226"
+    },
+    {
+      "artist": "Junior Jack",
+      "title": "Stupidisco (David Penn Extended Remix) ",
+      "content_id": "146967328"
+    },
+    {
+      "artist": "Blancah, NeoClassic",
+      "title": "Travessia (Hicky & Kalo Remix)",
+      "content_id": "22351229"
+    },
+    {
+      "artist": "Paul Thomas",
+      "title": "Jumbo (Jamie Stevens Remix)",
+      "content_id": "83535228"
+    },
+    {
+      "artist": "Andy Moor & Adam White",
+      "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
+      "content_id": "162072169"
+    },
+    {
+      "artist": "K Loveski",
+      "title": "Amuja (Unusual Soul Remix)",
+      "content_id": "115510727"
+    },
+    {
+      "artist": "PROFF Ft. Mokka",
+      "title": "Your Light (Extended Mix)",
+      "content_id": "41628252"
+    },
+    {
+      "artist": "Chelakhov",
+      "title": "Haunted (Original Mix)",
+      "content_id": "31001277"
+    }
+  ]
+}

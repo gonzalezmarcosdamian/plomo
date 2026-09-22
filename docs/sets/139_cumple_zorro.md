@@ -35,3 +35,26 @@ python scripts/build_set.py 139        # con Rekordbox cerrado
 | A Story Retold | 6.7 | poca energia para entregar, quiero mas voces -> afuera |
 
 Queda en `data/energia_percibida.json`, que leen el solver y el auditor.
+
+| `set139-v5` | (este commit) | Cierra con Fragma: Olimpo 2:36 -> Alafia (E8.6) 2:44 -> Fragma 2:53. Placebo afuera. | Escucha del DJ: "Placebo no esta bueno, quiero terminar mas arriba; Fragma tremendo tema, mi sonido totalmente". |
+
+## La noche completa
+
+| set | horario | config | tag |
+|---|---|---|---|
+| 140 · Warm organico estilo Maze 28 | 23 a 1 | `cumple_zorro_warm.json` | `set140-v1` |
+| 139 · Sizer | 1 a 3 | `cumple_zorro.json` | `set139-v5` |
+| 141 · House/progressive vocal, cierre heroico y romantico | 3 a 5 | `cumple_zorro_3a5.json` | `set141-v1` |
+
+Ninguna cancion se repite en la noche (tampoco en otra version). Cada set empalma
+con el siguiente: el ultimo del warm es compatible con Imentet (`salida_hacia`), y
+el primero del 3 a 5 con Fragma (`entrada_desde`).
+
+- **140**: BPM en rampa 118 -> 122 (`bpm_arco`). En la biblioteca hay solo 40
+  organicos a 117-119 y el ranking por forma de Maze los dejaba afuera: se
+  sumaron aparte. El arranque es suave (Juri, E4.1) porque lo organico a 118 lo es.
+- **141**: Jumbo (heroico) hacia las 4:21, The Whiteroom E8.5 a las 4:28, y
+  cierre fijo Your Light -> Haunted (`cierre_fijo`). La primera version llegaba a
+  Haunted con un salto de 5 en la rueda: fijar el ultimo le salteaba el control
+  de key al anteultimo. Corregido en el solver.
+
