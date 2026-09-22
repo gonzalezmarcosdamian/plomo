@@ -177,7 +177,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
            max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0,
            objetivo_seg=None, arco=None, anclas=(), inicio_fijo=(),
            anclas_en=None, entrada=None, salida=None, bpm_arco=None,
-           cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO):
+           cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO,
+           bpm_span=None, bpm_span_peso=0.0):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
@@ -193,6 +194,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     posiciones no se aplica ninguna restriccion dura: si el DJ quiere pasar de
     1A a 4A para abrir, lo decidio con el oido, y el 36% de los pasos de los
     profesionales saltan 3 o mas lugares en la rueda.
+
+    `bpm_span` es cuanto tempo tiene que RECORRER el set, con `bpm_span_peso`
+    como premio por cada BPM ganado. Mismo problema que el rango de energia: es
+    una propiedad global y todos los demas terminos son locales. Medido sobre
+    los 8 setlists de Maze 28 y Simon Vuarambon en ventanas de 17 temas, ellos
+    recorren 8 BPM y nuestros sets recorrian 4, con pools que llegaban a 6.
 
     `cierre_fijo` son los ULTIMOS temas, en orden: el set termina con ellos. Una
     ventana de horario no alcanza para "cortar a cero con Haunted": se cumple
@@ -285,7 +292,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # de los DJ reales, y de ahi salia el rango corto de los sets.
     umbral_plano = max(ENERGIA_QUIETA, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0,
-          float("inf"))]
+          float("inf"), float("-inf"), float("inf"))]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
         # Monticulo acotado en vez de lista completa. Antes se acumulaban
@@ -299,7 +306,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         ultima = i == n - 1
         for nodo in beams:
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
-             gen_cnt, max_e, segs, e_signo, e_racha, min_e) = nodo
+             gen_cnt, max_e, segs, e_signo, e_racha, min_e, bpm_hi, bpm_lo) = nodo
             frac = segs / objetivo_seg
             tgt = arc_en(frac, e_lo, e_hi, pico, caida)
             # "antes del pico" tambien se mide con el reloj: si los primeros
@@ -419,6 +426,11 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                                   - min(max_e - min_e, SPAN_OBJETIVO))
                         step -= ganado * PESO_SPAN
                 c = cost + desvio * PESO_ARCO + step
+                if bpm_span_peso:
+                    bh = t["bpm"] if t["bpm"] > bpm_hi else bpm_hi
+                    bl = t["bpm"] if t["bpm"] < bpm_lo else bpm_lo
+                    if bpm_hi > float("-inf"):
+                        c -= (min(bh - bl, bpm_span) - min(bpm_hi - bpm_lo, bpm_span)) * bpm_span_peso
                 if bpm_arco:
                     tb = bpm_arco[0] + (bpm_arco[1] - bpm_arco[0]) * frac
                     c += max(0.0, abs(t["bpm"] - tb) - 1.0) * bpm_arco_peso
@@ -469,7 +481,9 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                              segs + (t.get("dur_seg") or dur_med),
                              n_signo if prev is not None else 0,
                              n_racha if prev is not None else 0,
-                             t["energy"] if t["energy"] < min_e else min_e)
+                             t["energy"] if t["energy"] < min_e else min_e,
+                             t["bpm"] if t["bpm"] > bpm_hi else bpm_hi,
+                             t["bpm"] if t["bpm"] < bpm_lo else bpm_lo)
                 entrada = (-c, -orden, nodo_hijo)
                 orden += 1
                 if len(nxt) < beam:
@@ -613,6 +627,8 @@ if __name__ == "__main__":
             bpm_arco=spec.get("bpm_arco"),
             cierre_fijo=spec.get("cierre_fijo", []),
             bpm_arco_peso=spec.get("bpm_arco_peso", PESO_BPM_ARCO),
+            bpm_span=spec.get("bpm_span", 0),
+            bpm_span_peso=spec.get("bpm_span_peso", 0.0),
         )
         print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:

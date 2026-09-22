@@ -2,8 +2,8 @@
   "name": "140. Cumple Zorro · Warm · 23 a 1 AM — 2h — 2026-09-22",
   "duration_h": 2.0,
   "bpm_range": [
-    117,
-    122
+    116,
+    123
   ],
   "max_per_artist": 2,
   "keep_order": true,
@@ -14,49 +14,34 @@
       "content_id": "183767397"
     },
     {
+      "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
+      "title": "Fading Away (Aman Anand & Futura City Rework)",
+      "content_id": "12611861"
+    },
+    {
       "artist": "Mike Rish",
-      "title": "Tú Attair (Original Mix)",
-      "content_id": "71858967"
+      "title": "Wait for Me (Original Mix)",
+      "content_id": "10604688"
     },
     {
-      "artist": "DJ Bird",
-      "title": "In Space",
-      "content_id": "46354432"
+      "artist": "Callecat",
+      "title": "A New Beginning ",
+      "content_id": "2339517"
     },
     {
-      "artist": "Maze 28",
-      "title": "Mindloop (Original Mix)",
-      "content_id": "177299920"
+      "artist": "Derrok, Rodrigo Gallardo",
+      "title": "Instantes (Original Mix)",
+      "content_id": "13560916"
     },
     {
-      "artist": "Simon Vuarambon",
-      "title": "Lazos (Original Mix)",
-      "content_id": "136780130"
+      "artist": "Goldcap, Budajevo, Munaylayt",
+      "title": "East Route (Ohxala Remix)",
+      "content_id": "147263657"
     },
     {
-      "artist": "Roy Rosenfeld",
-      "title": "Kala",
-      "content_id": "52738760"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Pure Junction (Berdu Remix)",
-      "content_id": "37141460"
-    },
-    {
-      "artist": "Grance & Soulmac",
-      "title": "Happy Incident (Ale Russo Remix)",
-      "content_id": "49887591"
-    },
-    {
-      "artist": "Kasper Koman",
-      "title": "The Observer",
-      "content_id": "156983367"
-    },
-    {
-      "artist": "Hot Tuneik, Sarah Chilanti",
-      "title": "Soul on Fire (Original Mix)",
-      "content_id": "150544681"
+      "artist": "Isidoros, Marten Lou",
+      "title": "Better Days (Extended)",
+      "content_id": "222139688"
     },
     {
       "artist": "Tim Green",
@@ -64,34 +49,49 @@
       "content_id": "152876237"
     },
     {
-      "artist": "Gai Barone",
-      "title": "Fractals (Nicolas Viana Extended Remix)",
-      "content_id": "52625039"
+      "artist": "Cendryma",
+      "title": "Pure Junction (Berdu Remix)",
+      "content_id": "37141460"
     },
     {
-      "artist": "Max Dumont",
-      "title": "Maht Hild (Stereo Munk & Dublew Remix)",
-      "content_id": "142030767"
+      "artist": "Simon Vuarambon",
+      "title": "Lazos (Original Mix)",
+      "content_id": "136780130"
     },
     {
-      "artist": "Ale Russo",
-      "title": "True Colors (Original Mix)",
-      "content_id": "4921826"
+      "artist": "Grance & Soulmac",
+      "title": "Happy Incident (Ale Russo Remix)",
+      "content_id": "49887591"
     },
     {
-      "artist": "Budakid & Jamie Stevens",
-      "title": "Story of Tokay (Khen Remix)",
-      "content_id": "229141805"
+      "artist": "Maze 28",
+      "title": "Mindloop (Original Mix)",
+      "content_id": "177299920"
     },
     {
-      "artist": "Lost Desert, Kevin Maduna, Artic White",
-      "title": "Moya (Original Mix)",
-      "content_id": "145550680"
+      "artist": "Nick Warren, Martin Fredes",
+      "title": "Kairos (Original Mix)",
+      "content_id": "128348541"
     },
     {
-      "artist": "Teclas, Matt Oliver",
-      "title": "Silent Bloom (Original Mix)",
-      "content_id": "16726129"
+      "artist": "Cendryma, THMS (US)",
+      "title": "Moonflare (Extended Mix)",
+      "content_id": "244689120"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Jungla Safari (Extended Mix)",
+      "content_id": "235017915"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Komodo (Original Mix)",
+      "content_id": "202149228"
+    },
+    {
+      "artist": "Second Sine",
+      "title": "Motor City (Sebastian Haas Remix) ",
+      "content_id": "89092658"
     }
   ]
 }

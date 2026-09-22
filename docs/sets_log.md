@@ -2779,26 +2779,26 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 **Armado:** 2026-09-22  
 **Duracion:** 2.0h  
 **Tracks:** 17  
-**BPM range:** 121-125  
+**BPM range:** 120-126  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
 | 2 | Cary Crank | Open Sea (Ric Niels Remix) | 121 | 5.0 |
-| 3 | Analog Jungs | Futura (Dowden Remix) | 122 | 5.5 |
-| 4 | Ignacio Hernandez | Circle Of Lights (Claudio Cornejo (AR) Night Mix) | 121 | 5.0 |
-| 5 | Ziger, Mind Conspiracy | Pink Cadillac (Original Mix) | 122 | 6.4 |
+| 3 | ANMA | Adya | 124 | 6.0 |
+| 4 | Coeus | Paramount (Original Mix) | 126 | 6.5 |
+| 5 | Maezbi, Nicolas Viana | Smooth (Original Mix) | 123 | 6.8 |
 | 6 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
 | 7 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.5 |
 | 8 | Cendryma | Enter (Extended Mix) | 122 | 5.5 |
-| 9 | Redspace | Secret Valley (Extended Mix) | 124 | 6.6 |
-| 10 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 11 | Deep Dish | Flashdance (Shai T Extended Remix) | 123 | 8.2 |
+| 9 | Andre Moret | Drift Whispers (Original Mix) | 123 | 5.5 |
+| 10 | Nicolas Rada | Cascadia | 122 | 5.5 |
+| 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 12 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
 | 13 | Emi Galvan | Samsara | 122 | 5.5 |
 | 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 15 | YOTTO | Aero (Original Mix) | 125 | 7.5 |
-| 16 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 15 | Carl Jurgens & Niso | Skyscrapers (Alex O'Rion Remix)  | 120 | 8.4 |
+| 16 | Fabri Lopez | Of The Group (Original Mix)  | 120 | 7.1 |
 | 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
 
 
@@ -2806,25 +2806,25 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 **Armado:** 2026-09-22  
 **Duracion:** 2.0h  
 **Tracks:** 17  
-**BPM range:** 121-126  
+**BPM range:** 120-127  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Peer Kusiv | Nightdrive Feat Fynn (Rauschhaus Remix) | 124 | 6.0 |
-| 2 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 3 | Worakls, Ben Bohmer | Red Dressed feat. Eivor (Ben Bohmer Remix) | 124 | 6.0 |
+| 1 | Worakls, Ben Bohmer | Red Dressed feat. Eivor (Ben Bohmer Remix) | 124 | 6.0 |
+| 2 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 3 | Hot Tuneik, Sarah Chilanti | Soul on Fire (Original Mix) | 120 | 5.0 |
 | 4 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 5.5 |
-| 5 | Kabi (AR), Ric Niels | Mutant | 121 | 5.0 |
-| 6 | Gorkiz, Luca Abayan | Drowner (Extended Mix) | 122 | 5.5 |
-| 7 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
-| 8 | Anturage, Alar | Moet (Original Mix) | 123 | 5.5 |
-| 9 | PROFF Ft. Mokka | Your Light (Extended Mix) | 122 | 5.5 |
-| 10 | about : river | Never Forget (Rockka Remix) | 122 | 5.5 |
-| 11 | David Penn | That Vibe (Original Mix) | 123 | 6.9 |
+| 5 | Habbo Foxx, Katy Alex | Touch (Extended Mix) | 126 | 6.5 |
+| 6 | Anturage, Alar | Moet (Original Mix) | 123 | 5.5 |
+| 7 | Cendryma | Fracture (Extended Mix) | 121 | 5.0 |
+| 8 | Guy Mantzur & Lonya | Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix)  | 122 | 6.7 |
+| 9 | about : river | Never Forget (Rockka Remix) | 122 | 5.5 |
+| 10 | David Penn | That Vibe (Original Mix) | 123 | 6.9 |
+| 11 | Gorkiz, Luca Abayan | Drowner (Extended Mix) | 122 | 5.5 |
 | 12 | Mike Griego | Antidote | 123 | 7.9 |
 | 13 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
 | 14 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.0 |
-| 15 | Guy Mantzur & Lonya | Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix)  | 122 | 6.7 |
+| 15 | PROFF Ft. Mokka | Your Light (Extended Mix) | 122 | 5.5 |
 | 16 | Gorje Hewek feat. Lost Desert | Aya | 123 | 5.5 |
 | 17 | Chelakhov | Haunted (Original Mix) | 121 | 5.0 |
 
@@ -2833,25 +2833,25 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 **Armado:** 2026-09-22  
 **Duracion:** 2.0h  
 **Tracks:** 17  
-**BPM range:** 117-122  
+**BPM range:** 116-123  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 3.5 |
-| 2 | Mike Rish | Tú Attair (Original Mix) | 119 | 3.5 |
-| 3 | DJ Bird | In Space | 119 | 5.8 |
-| 4 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
-| 5 | Simon Vuarambon | Lazos (Original Mix) | 120 | 5.0 |
-| 6 | Roy Rosenfeld | Kala | 120 | 5.0 |
-| 7 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
-| 8 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 5.0 |
-| 9 | Kasper Koman | The Observer | 121 | 5.0 |
-| 10 | Hot Tuneik, Sarah Chilanti | Soul on Fire (Original Mix) | 120 | 5.0 |
-| 11 | Tim Green | It's Only Lightning (Original Mix)  | 120 | 6.8 |
-| 12 | Gai Barone | Fractals (Nicolas Viana Extended Remix) | 121 | 5.0 |
-| 13 | Max Dumont | Maht Hild (Stereo Munk & Dublew Remix) | 121 | 6.5 |
-| 14 | Ale Russo | True Colors (Original Mix) | 121 | 5.0 |
-| 15 | Budakid & Jamie Stevens | Story of Tokay (Khen Remix) | 121 | 6.3 |
-| 16 | Lost Desert, Kevin Maduna, Artic White | Moya (Original Mix) | 122 | 5.7 |
-| 17 | Teclas, Matt Oliver | Silent Bloom (Original Mix) | 122 | 6.3 |
+| 2 | Freedo Mosho, JUNIOR (SL), Futura City | Fading Away (Aman Anand & Futura City Rework) | 118 | 4.4 |
+| 3 | Mike Rish | Wait for Me (Original Mix) | 118 | 3.5 |
+| 4 | Callecat | A New Beginning  | 118 | 6.3 |
+| 5 | Derrok, Rodrigo Gallardo | Instantes (Original Mix) | 117 | 2.5 |
+| 6 | Goldcap, Budajevo, Munaylayt | East Route (Ohxala Remix) | 118 | 3.5 |
+| 7 | Isidoros, Marten Lou | Better Days (Extended) | 118 | 3.5 |
+| 8 | Tim Green | It's Only Lightning (Original Mix)  | 120 | 6.8 |
+| 9 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
+| 10 | Simon Vuarambon | Lazos (Original Mix) | 120 | 5.0 |
+| 11 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 5.0 |
+| 12 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
+| 13 | Nick Warren, Martin Fredes | Kairos (Original Mix) | 120 | 5.0 |
+| 14 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
+| 15 | Artic White | Jungla Safari (Extended Mix) | 122 | 6.0 |
+| 16 | Maze 28 | Komodo (Original Mix) | 121 | 5.5 |
+| 17 | Second Sine | Motor City (Sebastian Haas Remix)  | 123 | 6.1 |
 

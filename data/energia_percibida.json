@@ -123,5 +123,39 @@
     "nota": "extremadamente bueno; el DJ quiere todo el warm en este flow",
     "favorito": true,
     "fuente": "escucha del set 140, 2026-09-22"
+  },
+  "52738760": {
+    "artist": "Roy Rosenfeld",
+    "title": "Kala",
+    "E_calc": 5.8,
+    "nota": "se queda corto: no esta bueno para el warm",
+    "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
+  },
+  "37141460": {
+    "artist": "Cendryma",
+    "title": "Pure Junction (Berdu Remix)",
+    "E_calc": 5.9,
+    "nota": "temazo mal",
+    "favorito": true,
+    "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
+  },
+  "49887591": {
+    "artist": "Grance & Soulmac",
+    "title": "Happy Incident (Ale Russo Remix)",
+    "E_calc": 6.9,
+    "nota": "muy bueno",
+    "favorito": true,
+    "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
+  },
+  "156983367": {
+    "artist": "Kasper Koman",
+    "title": "The Observer",
+    "E_calc": 6.1,
+    "nota": "flojo para esa altura: iria antes en el set",
+    "ubicacion": [
+      0.0,
+      0.45
+    ],
+    "fuente": "escucha del set 140 v3 (warm), 2026-09-22"
   }
 }

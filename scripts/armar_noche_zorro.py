@@ -86,6 +86,12 @@ def resolver(p: Path) -> None:
     subprocess.run([PY, str(RAIZ / "scripts/select_set.py"), str(p)], cwd=str(RAIZ))
 
 
+# Medido sobre los 8 setlists de Maze 28 y Simon Vuarambon, en ventanas de 17
+# temas (el largo de nuestros sets): repiten un artista 5 veces por ventana
+# (p90 9) y mueven el BPM 8 puntos. Nuestros sets daban 0 repeticiones y 4 de
+# rango: el tope de 1 por artista y bandas de 121-125 eran mucho mas rigidos que
+# ellos. Se sube el tope a 2 con la separacion minima que ya aplica el solver, y
+# se ensanchan las bandas.
 GEN_PROG = {"Progressive House", "Melodic House & Techno"}
 GEN_HOUSE = {"House", "Progressive House", "Melodic House & Techno", "Indie Dance"}
 GEN_ORG = {"Organic House", "Organic House / Downtempo", "Progressive House", "Afro House"}
@@ -114,7 +120,7 @@ def set_139() -> Path:
         "boxer": ("I'm Lighter With You", "Boxer")}.items()}
     # el pool tiene que dar aire: con 212 candidatos y la apertura fija, el cierre
     # fijo y cuatro anclas, la busqueda se quedaba sin ramas validas
-    elig, mind = permitidos(GEN_PROG, (121, 125), set(), 150)
+    elig, mind = permitidos(GEN_PROG, (120, 126), set(), 150)
     # el groove vive en energia media: sesgar el pool hacia el se lleva puesto el
     # material de pico. Con Fragma fijo al cierre (E7.5) y la regla de bajar 0.6
     # del pico, el set NECESITA un tema de 8.1+; quedaba uno solo y no habia
@@ -127,6 +133,10 @@ def set_139() -> Path:
                               if (t.get("genre") or "") in GEN_PROG and i not in perm)
     s["prefer_ids"] = mind
     s["prefer_bonus"] = 1.0
+    s["max_per_artist"] = 2
+    s["bpm"] = [120, 126]
+    s["bpm_span"] = 6
+    s["bpm_span_peso"] = 1.5
     s["anclas"] = [fija["sizer"], fija["touch"], fija["olimpo"], fija["boxer"]]
     s["anclas_en"] = {fija["sizer"]: [0.55, 0.75], fija["olimpo"]: [0.70, 0.95]}
     s["inicio_fijo"] = [fija["imentet"], fija["opensea"]]
@@ -143,7 +153,7 @@ def set_141() -> Path:
         "jumbo": ("Jumbo", "Paul Thomas"), "haunted": ("Haunted", "Chelakhov"),
         "whiteroom": ("The Whiteroom", "Andy Moor")}.items()}
     fuera = noche_fuera(139) - set(fija.values())
-    elig, mind = permitidos(GEN_HOUSE, (121, 126), fuera, 120)
+    elig, mind = permitidos(GEN_HOUSE, (120, 127), fuera, 120)
     voz = [i for i in elig if re.search(r"feat\.?|ft\.|vocal|\bvox\b", POOL[i]["artist"] + " " + POOL[i]["title"], re.I)]
     perm = set(elig[:260]) | set(mind) | set(voz) | set(fija.values())
     cfg = json.loads((RAIZ / "data/set_configs/cumple_zorro_3a5.json").read_text(encoding="utf-8"))
@@ -152,6 +162,10 @@ def set_141() -> Path:
                               if (t.get("genre") or "") in GEN_HOUSE and i not in perm)
     s["prefer_ids"] = sorted(set(voz) | set(mind[:60]))
     s["prefer_bonus"] = 1.2
+    s["max_per_artist"] = 2
+    s["bpm"] = [120, 127]
+    s["bpm_span"] = 6
+    s["bpm_span_peso"] = 1.5
     s["anclas"] = [fija["jumbo"], fija["whiteroom"]]
     # The Whiteroom (E8.5) es la carta mas grande del set: sin ventana caia en el
     # tema 5 y el pico quedaba al 29%. Va junto a Jumbo, en el tramo heroico.
@@ -164,7 +178,7 @@ def set_141() -> Path:
 def set_140() -> Path:
     fav = [i for i, x in PERC.items() if x.get("favorito") and i in POOL and 117 <= POOL[i]["bpm"] <= 122]
     fuera = noche_fuera(139, 141) - set(fav)
-    elig, mind = permitidos(GEN_ORG, (117, 122), fuera, 170)
+    elig, mind = permitidos(GEN_ORG, (116, 123), fuera, 170)
     lentos = [i for i in elig if POOL[i]["bpm"] < 119.5]
     alta = [i for i in elig if E(i) >= 6.5][:30]
     perm = set(mind) | set(lentos) | set(alta) | {i for i in fav if i in elig}
@@ -174,7 +188,22 @@ def set_140() -> Path:
                               if (t.get("genre") or "") in GEN_ORG and i not in perm)
     s["prefer_ids"] = mind[:60]
     s["prefer_bonus"] = 1.2
-    s["anclas"] = [i for i in fav if i in perm]
+    s["max_per_artist"] = 2
+    s["bpm"] = [116, 123]
+    s["bpm_arco"] = [117, 122]
+    s["bpm_span"] = 6
+    s["bpm_span_peso"] = 1.5
+    # "mis temas no muy al principio en warm, asi aprovecho la ultima hora a tirar
+    # los mejores": los favoritos van de la mitad para adelante (00:00 en un warm
+    # de 23 a 1). El mas bajo de todos queda libre: es el unico que puede abrir.
+    anc = [i for i in fav if i in perm]
+    abre = min(anc, key=E) if anc else None
+    s["anclas"] = anc
+    s["anclas_en"] = {i: [0.45, 1.0] for i in anc if i != abre}
+    # el DJ tambien puede decir DONDE no va un tema sin vetarlo ("flojo ahi,
+    # iria antes"): la ventana vale aunque el tema no sea ancla.
+    s["anclas_en"].update({i: v["ubicacion"] for i, v in PERC.items()
+                           if v.get("ubicacion") and i in perm})
     s["salida_hacia"] = ids_de(139)[0]
     return guardar("cumple_zorro_warm.json", cfg)
 
