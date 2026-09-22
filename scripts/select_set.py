@@ -237,6 +237,14 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     """
     prefer = set(prefer)
     anclas = set(anclas)
+    # Un ancla, una apertura o un cierre que no esta en el pool se ignoraba en
+    # silencio: el set salia sin el tema que el DJ pidio y nada lo decia.
+    _ids = {t["id"] for t in pool}
+    for _que, _lista in (("ancla", anclas), ("inicio_fijo", inicio_fijo),
+                         ("cierre_fijo", cierre_fijo)):
+        _faltan = [x for x in _lista if x not in _ids]
+        if _faltan:
+            print(f"  AVISO: {len(_faltan)} {_que} fuera del pool, se ignoran: {_faltan}")
     pos_de = {t['id']: k for k, t in enumerate(pool)}
     fijo_idx = [pos_de[x] for x in inicio_fijo if x in pos_de]
     anclas_en = anclas_en or {}

@@ -8,6 +8,33 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un filtro que falla en silencio es peor que no tener filtro
+
+**Que paso.** Tres veces en la misma sesion el sistema ignoro una instruccion del
+DJ sin decir nada. (1) Los vetos se detectaban buscando palabras en la nota
+—"tecnoso", "se cae", "lento"—; el DJ escribio "muy abajo" y "malisimo", y los
+dos temas que rechazo volvieron al set. (2) Tres temas anclados para dar onda al
+arranque no entraron porque no estaban en el pool: el ancla se ignoraba en
+silencio. (3) La version "colorida" de un set salio IDENTICA a la base, porque
+heredaba las exclusiones del base y el color solo podia reordenar el mismo
+material.
+
+**Por que.** Las tres son la misma forma: una instruccion que no se cumple y un
+sistema que sigue adelante sin avisar. El resultado se ve bien —hay 17 temas, 0
+transiciones flojas— y solo se descubre leyendo el tracklist tema por tema.
+
+**Como se aplica.**
+- El veto es una MARCA (`"veto": true` en `data/energia_percibida.json`), no una
+  palabra a adivinar en un texto libre.
+- `select_set.py` avisa cuando un ancla, una apertura o un cierre no esta en el
+  pool, en vez de ignorarlo.
+- Una variante que hereda el pool de otra no es una variante. La colorida arma
+  el suyo, ordenado por su propio criterio.
+- Al terminar, comparar la variante contra su base: si comparten 17 de 17, algo
+  no se aplico.
+
+---
+
 ## Fijar un tema no fija sus vecinos; y deduplicar por artista no es deduplicar por cancion
 
 **Que paso.** Armando la noche del cumple de Zorro aparecieron dos errores que

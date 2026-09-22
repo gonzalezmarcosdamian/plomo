@@ -2838,20 +2838,101 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 3.5 |
-| 2 | Freedo Mosho, JUNIOR (SL), Futura City | Fading Away (Aman Anand & Futura City Rework) | 118 | 4.4 |
-| 3 | Mike Rish | Wait for Me (Original Mix) | 118 | 3.5 |
-| 4 | Callecat | A New Beginning  | 118 | 6.3 |
-| 5 | Derrok, Rodrigo Gallardo | Instantes (Original Mix) | 117 | 2.5 |
-| 6 | Goldcap, Budajevo, Munaylayt | East Route (Ohxala Remix) | 118 | 3.5 |
-| 7 | Isidoros, Marten Lou | Better Days (Extended) | 118 | 3.5 |
-| 8 | Tim Green | It's Only Lightning (Original Mix)  | 120 | 6.8 |
-| 9 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
+| 2 | Mike Rish | Wait for Me (Original Mix) | 118 | 3.5 |
+| 3 | Callecat | A New Beginning  | 118 | 6.3 |
+| 4 | DJ Bird | In Space | 119 | 5.8 |
+| 5 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 5.0 |
+| 6 | Sebastien Leger | Ariana | 122 | 5.5 |
+| 7 | Dmitry Molosh | Flower Field (Original Mix) | 120 | 6.2 |
+| 8 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
+| 9 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 5.0 |
+| 10 | Simon Vuarambon | Lazos (Original Mix) | 120 | 5.0 |
+| 11 | Kabi (AR), Ric Niels | Mutant | 121 | 5.0 |
+| 12 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
+| 13 | Nick Warren, Martin Fredes | Kairos (Original Mix) | 120 | 5.0 |
+| 14 | Kamilo Sanclemente | Theia | 122 | 5.5 |
+| 15 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
+| 16 | Artic White | Jungla Safari (Extended Mix) | 122 | 6.0 |
+| 17 | Meriva, MATTIC (BR) | Piece of Hope (D-Nox & Kamilo Sanclemente Extended Remix) | 123 | 5.5 |
+
+
+## Set 142. 142. Cumple Zorro · Warm Colorido · 23 a 1 AM — 2h — 2026-09-22
+**Armado:** 2026-09-22  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 116-123  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Parra for Cuva | Juri (Original Mix) | 118 | 3.5 |
+| 2 | Mike Rish | Tú Attair (Original Mix) | 119 | 3.5 |
+| 3 | Husa & Zeyada | On My Own (Hernan Cattaneo & Marcelo Vasami Remix) | 118 | 3.5 |
+| 4 | Eli Nissan | Lyla (Original Mix) | 120 | 5.6 |
+| 5 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 5.0 |
+| 6 | Sebastien Leger | Ariana | 122 | 5.5 |
+| 7 | Pissi | Bailar (Original Mix) | 120 | 5.0 |
+| 8 | Buika & Kiko Navarro | El Silencio (Club Version Edit) | 120 | 5.9 |
+| 9 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
 | 10 | Simon Vuarambon | Lazos (Original Mix) | 120 | 5.0 |
 | 11 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 5.0 |
-| 12 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
-| 13 | Nick Warren, Martin Fredes | Kairos (Original Mix) | 120 | 5.0 |
-| 14 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
-| 15 | Artic White | Jungla Safari (Extended Mix) | 122 | 6.0 |
-| 16 | Maze 28 | Komodo (Original Mix) | 121 | 5.5 |
-| 17 | Second Sine | Motor City (Sebastian Haas Remix)  | 123 | 6.1 |
+| 12 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
+| 13 | Tim Green | Tears (Original Mix)  | 121 | 6.7 |
+| 14 | Guy Mantzur | Moongazer | 120 | 5.0 |
+| 15 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
+| 16 | TOLEDO | Galatari (Dave Walker Remix) | 121 | 5.5 |
+| 17 | Durante | Never B Alone (Extended Mix) | 123 | 5.5 |
+
+
+## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
+**Armado:** 2026-09-22  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 120-126  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
+| 2 | Cary Crank | Open Sea (Ric Niels Remix) | 121 | 5.0 |
+| 3 | Tinlicker | All That I Lost | 124 | 6.0 |
+| 4 | David Guetta, MORTEN | The Future is Now | 125 | 6.0 |
+| 5 | Mayro | Harvest (Original Mix) | 123 | 5.5 |
+| 6 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 7 | Guy Mantzur, Tamir Regev | Mystica (Original Mix) | 122 | 5.5 |
+| 8 | Manu (NL) | Miles Apart (Original Mix) | 120 | 6.0 |
+| 9 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
+| 10 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 12 | Galestian, Claxy | Before the Sun (Galestian Remix) | 126 | 7.4 |
+| 13 | Deep Dish | Flashdance (Shai T Extended Remix) | 123 | 8.2 |
+| 14 | Sebastian Sellares | Timeless Era (Extended Mix) | 122 | 5.5 |
+| 15 | Graziano Raffa | Carbonia (Original Mix) | 125 | 6.0 |
+| 16 | Rezident, Kate Morgan | Muse feat. Kate Morgan (Roman Extended Mix) | 125 | 7.1 |
+| 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
+
+
+## Set 144. 144. Cumple Zorro · Colorido · 3 a 5 AM — 2h — 2026-09-22
+**Armado:** 2026-09-22  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 120-127  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | David Guetta, MORTEN | The Future is Now | 125 | 6.0 |
+| 2 | Notre Dame | Yumi | 122 | 5.5 |
+| 3 | Alex O'Rion | Elysium (Original Mix) | 120 | 6.9 |
+| 4 | Kiko Navarro, DJ Pippi, Willie Graff, QVLN, Pere Navarro | Llegó La Hora (Afrocuban Dub)  | 122 | 6.5 |
+| 5 | Will DeKeizer, Maze 28 | Cornerstone (Kostya Outta & Alisha Remix) | 121 | 7.0 |
+| 6 | Junior Jack | Stupidisco (David Penn Extended Remix)  | 123 | 7.4 |
+| 7 | Kamilo Sanclemente, Mauro Aguirre | Looking For You (Extended Mix) | 123 | 5.5 |
+| 8 | D-Nox, Baya, LENN V | Silence (Extended Mix) | 124 | 6.0 |
+| 9 | Cloaked | Cascade (Dave Walker Extended Remix) | 121 | 7.6 |
+| 10 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 5.5 |
+| 11 | Marcelo Vasami | Shades Of Blue (Original Mix) | 122 | 5.5 |
+| 12 | Heller & Farley Project | Ultra Flava (David Penn Extended Remix)  | 123 | 8.1 |
+| 13 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.0 |
+| 14 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
+| 15 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
+| 16 | Gorje Hewek feat. Lost Desert | Aya | 123 | 5.5 |
+| 17 | Chelakhov | Haunted (Original Mix) | 121 | 5.0 |
 

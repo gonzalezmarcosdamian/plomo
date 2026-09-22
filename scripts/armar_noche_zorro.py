@@ -58,9 +58,10 @@ def gusto_ok(i: str) -> bool:
     return x is None or not (x["medio"] < 5 or x["aire"] < 2 or (x["bd"] < 0.30 and E(i) >= 7))
 
 
-VETOS = {k for k, v in PERC.items()
-         if any(w in v.get("nota", "") for w in
-                ("tecnoso", "oscuro, baja", "poca energia", "se cae", "lento", "no esta bueno"))}
+# El veto es una MARCA, no una palabra en la nota. Buscar palabras clave fallaba
+# en silencio: "muy abajo" y "malisimo" no estaban en la lista, y los dos temas
+# que el DJ rechazo volvieron a entrar al set sin que nada lo avisara.
+VETOS = {k for k, v in PERC.items() if v.get("veto")}
 RANK_MIND = [r["id"] for r in
              json.loads((RAIZ / "data/parecido_mindloop.json").read_text(encoding="utf-8"))
              if r["id"] in POOL]
@@ -205,11 +206,86 @@ def set_140() -> Path:
     s["anclas_en"].update({i: v["ubicacion"] for i, v in PERC.items()
                            if v.get("ubicacion") and i in perm})
     s["salida_hacia"] = ids_de(139)[0]
+    # "dale mas onda al principio": los temas de la radio de It's Only Lightning
+    # que ya estan en la biblioteca, anclados en el primer tramo del warm.
+    onda = [i for i, t in POOL.items()
+            if any(t["title"].startswith(k) for k in ("Ariana", "Astro World", "Homeboy"))
+            and (t.get("genre") or "") in GEN_ORG
+            and s["bpm"][0] <= t["bpm"] <= s["bpm"][1]
+            and i not in fuera and i not in VETOS]
+    perm |= set(onda)   # entran al pool aunque no vengan del ranking del groove
+    s["exclude_ids"] = sorted(i for i, t in POOL.items()
+                              if (t.get("genre") or "") in GEN_ORG and i not in perm)
+    s["anclas"] = s["anclas"] + onda
+    s["anclas_en"].update({i: [0.05, 0.40] for i in onda})
     return guardar("cumple_zorro_warm.json", cfg)
+
+
+
+# --- versiones coloridas -----------------------------------------------------
+# "Haceme las versiones coloridas de cada set". Color = melodia y brillo, que en
+# la receta del audio son los medios y el aire. Son ALTERNATIVAS: comparten los
+# empalmes de la noche y los temas que definen la identidad del set, pero el
+# relleno lo elige el color en vez del groove.
+def color_score(i: str) -> float:
+    x = receta(i)
+    return (x["medio"] + 2 * x["aire"]) if x else 0.0
+
+
+def variante_color(base_cfg: str, num: int, nombre: str, quita: list, otros: list) -> Path:
+    """La colorida arma SU pool: heredar el del base la dejaba identica, porque
+    ese pool ya estaba recortado al groove y el color solo podia reordenarlo."""
+    cfg = json.loads((RAIZ / "data/set_configs" / base_cfg).read_text(encoding="utf-8"))
+    s = cfg["sets"][0]
+    fuera = noche_fuera(*otros)
+    fijos = set(s.get("anclas", [])) | set(s.get("inicio_fijo", [])) | set(s.get("cierre_fijo", []))
+    fijos -= set(quita)
+    elegibles = [i for i, t in POOL.items()
+                 if (t.get("genre") or "") in set(s["genres"])
+                 and s["bpm"][0] <= t["bpm"] <= s["bpm"][1]
+                 and s["e_pool"][0] <= (t.get("energy") or 0) <= s["e_pool"][1]
+                 and i not in fuera and i not in VETOS and gusto_ok(i)]
+    color = sorted(elegibles, key=color_score, reverse=True)[:220]
+    altos = [i for i in sorted(elegibles, key=color_score, reverse=True)
+             if E(i) >= 7.6][:40]   # el color vive en energia media: el pico aparte
+    perm = set(color) | set(altos) | fijos
+    s["num"] = num
+    s["name"] = nombre
+    s["grupo"] = s["grupo"] + " color"
+    s["exclude_ids"] = sorted(i for i, t in POOL.items()
+                              if (t.get("genre") or "") in set(s["genres"]) and i not in perm)
+    s["prefer_ids"] = color[:80]
+    s["prefer_bonus"] = 1.2
+    s["anclas"] = [i for i in s.get("anclas", []) if i not in quita]
+    s["anclas_en"] = {k: v for k, v in s.get("anclas_en", {}).items() if k not in quita}
+    s["_identidad"] = (s["_identidad"].split(" v5")[0].split(" v6")[0] +
+                       " VERSION COLORIDA: mismo horario y mismos empalmes, pero el pool" + 
+                       " lo ordena la melodia y el brillo (medios y aire) en vez del groove.")
+    return guardar(base_cfg.replace(".json", "_color.json"), cfg)
+
+
+def colores() -> None:
+    q = {k: buscar(*v) for k, v in {
+        "touch": ("Touch The Sky", "Marsh"), "boxer": ("I" + chr(39) + "m Lighter With You", "Boxer"),
+        "olimpo": ("Olimpo", "Pavicich"), "white": ("The Whiteroom", "Andy Moor")}.items()}
+    for base_cfg, num, otros, nom, quita in (
+            ("cumple_zorro_warm.json", 142, [139, 141],
+             "142. Cumple Zorro " + chr(183) + " Warm Colorido " + chr(183) + " 23 a 1 AM " + chr(8212) + " 2h " + chr(8212) + " 2026-09-22", []),
+            ("cumple_zorro.json", 143, [140, 141],
+             "143. Cumple Zorro " + chr(183) + " Colorido " + chr(183) + " 1 a 3 AM " + chr(8212) + " 2h " + chr(8212) + " 2026-09-22",
+             [q["touch"], q["boxer"], q["olimpo"]]),
+            ("cumple_zorro_3a5.json", 144, [140, 139],
+             "144. Cumple Zorro " + chr(183) + " Colorido " + chr(183) + " 3 a 5 AM " + chr(8212) + " 2h " + chr(8212) + " 2026-09-22", [q["white"]])):
+        ruta = variante_color(base_cfg, num, nom, quita, otros)
+        print("===== set " + str(num) + ": " + ruta.name)
+        resolver(ruta)
 
 
 if __name__ == "__main__":
     solo = "--solo-config" in sys.argv
+    if "--color" in sys.argv:
+        colores()
+        sys.exit()
     for nombre, hacer in (("139", set_139), ("141", set_141), ("140", set_140)):
         p = hacer()
         print(f"\n===== set {nombre}: {p.name}")
