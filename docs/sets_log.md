@@ -2785,20 +2785,20 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 |---|--------|-------|-----|---|
 | 1 | Morttagua | Imentet (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 5.5 |
 | 2 | Cary Crank | Open Sea (Ric Niels Remix) | 121 | 5.0 |
-| 3 | Ziger, Mind Conspiracy | Pink Cadillac (Original Mix) | 122 | 6.4 |
-| 4 | Hraach, Armen Miran | Menq (Nick Warren & Nicolas Rada Remix) | 122 | 5.5 |
-| 5 | Luttrell, Molly Moonwater | Something Right feat. Molly Moonwater (Ezequiel Arias Extended Mix) | 125 | 6.0 |
+| 3 | Analog Jungs | Futura (Dowden Remix) | 122 | 5.5 |
+| 4 | Ignacio Hernandez | Circle Of Lights (Claudio Cornejo (AR) Night Mix) | 121 | 5.0 |
+| 5 | Ziger, Mind Conspiracy | Pink Cadillac (Original Mix) | 122 | 6.4 |
 | 6 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.0 |
-| 7 | Guy Mantzur & Lonya | Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix)  | 122 | 6.7 |
-| 8 | Durante, Running Touch | Follow feat. Running Touch (Extended Mix) | 122 | 5.5 |
-| 9 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.5 |
-| 10 | Cendryma | Enter (Extended Mix) | 122 | 5.5 |
-| 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 12 | Kostya Outta, Frameloue | Altitude (Feat. Frameloue Extended Mix) | 122 | 6.6 |
-| 13 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 14 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 15 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 16 | Spirit & The Guide | Alafia (Golan Zocher Remix) | 121 | 5.0 |
+| 7 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.5 |
+| 8 | Cendryma | Enter (Extended Mix) | 122 | 5.5 |
+| 9 | Redspace | Secret Valley (Extended Mix) | 124 | 6.6 |
+| 10 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 11 | Deep Dish | Flashdance (Shai T Extended Remix) | 123 | 8.2 |
+| 12 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
+| 13 | Emi Galvan | Samsara | 122 | 5.5 |
+| 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 15 | YOTTO | Aero (Original Mix) | 125 | 7.5 |
+| 16 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
 | 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
 
 
@@ -2811,21 +2811,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Peer Kusiv | Nightdrive Feat Fynn (Rauschhaus Remix) | 124 | 6.0 |
-| 2 | Redspace | Life Without You (Original Mix) | 122 | 6.9 |
-| 3 | Braxton | Torn (feat. Danni Wells) [Extended Mix] | 121 | 5.0 |
+| 2 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 3 | Worakls, Ben Bohmer | Red Dressed feat. Eivor (Ben Bohmer Remix) | 124 | 6.0 |
 | 4 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 5.5 |
-| 5 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
-| 6 | Ric Niels | Invasion | 123 | 5.5 |
-| 7 | Anturage, Alar | Moet (Original Mix) | 123 | 5.5 |
-| 8 | Gorje Hewek feat. Lost Desert | Aya | 123 | 5.5 |
-| 9 | Carlita & Calussa | Fell In Luv (Black Circle Extended Remix) | 126 | 6.5 |
-| 10 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
-| 11 | Junior Jack | Stupidisco (David Penn Extended Remix)  | 123 | 7.4 |
-| 12 | Blancah, NeoClassic | Travessia (Hicky & Kalo Remix) | 123 | 7.9 |
-| 13 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.0 |
-| 14 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
-| 15 | K Loveski | Amuja (Unusual Soul Remix) | 122 | 7.7 |
-| 16 | PROFF Ft. Mokka | Your Light (Extended Mix) | 122 | 5.5 |
+| 5 | Kabi (AR), Ric Niels | Mutant | 121 | 5.0 |
+| 6 | Gorkiz, Luca Abayan | Drowner (Extended Mix) | 122 | 5.5 |
+| 7 | Cendryma, THMS (US) | Moonflare (Extended Mix) | 121 | 5.0 |
+| 8 | Anturage, Alar | Moet (Original Mix) | 123 | 5.5 |
+| 9 | PROFF Ft. Mokka | Your Light (Extended Mix) | 122 | 5.5 |
+| 10 | about : river | Never Forget (Rockka Remix) | 122 | 5.5 |
+| 11 | David Penn | That Vibe (Original Mix) | 123 | 6.9 |
+| 12 | Mike Griego | Antidote | 123 | 7.9 |
+| 13 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
+| 14 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.0 |
+| 15 | Guy Mantzur & Lonya | Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix)  | 122 | 6.7 |
+| 16 | Gorje Hewek feat. Lost Desert | Aya | 123 | 5.5 |
 | 17 | Chelakhov | Haunted (Original Mix) | 121 | 5.0 |
 
 
@@ -2840,18 +2840,18 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 3.5 |
 | 2 | Mike Rish | Tú Attair (Original Mix) | 119 | 3.5 |
 | 3 | DJ Bird | In Space | 119 | 5.8 |
-| 4 | Callecat | A New Beginning  | 118 | 6.3 |
+| 4 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
 | 5 | Simon Vuarambon | Lazos (Original Mix) | 120 | 5.0 |
-| 6 | Maze 28 | Mindloop (Original Mix) | 120 | 5.0 |
-| 7 | Nick Warren, Martin Fredes | Kairos (Original Mix) | 120 | 5.0 |
-| 8 | Simone Vitullo, Seraphiel | Every Breath You Take (Extended Mix) | 121 | 5.0 |
-| 9 | Maze 28 | Cry of the Deserts (Aman Anand Remix) | 121 | 5.0 |
-| 10 | Tim Green | We've Been Here Before | 121 | 7.5 |
-| 11 | Taylan | Earthbound (Andre Moret Remix) | 120 | 5.0 |
-| 12 | Kasper Koman | The Observer | 121 | 5.0 |
-| 13 | Lee Burridge | Fading Out (Extended Mix) | 122 | 6.8 |
-| 14 | Kamilo Sanclemente, Giovanny Aparicio | Magic Carpet (Original Mix) | 121 | 5.0 |
-| 15 | Freedo Mosho | Paradise Lost (Maze 28 Reform) | 122 | 5.5 |
-| 16 | Ezequiel Arias | Púrpura | 122 | 5.5 |
-| 17 | Unusual Soul | In Circles (Original Mix) | 122 | 6.4 |
+| 6 | Roy Rosenfeld | Kala | 120 | 5.0 |
+| 7 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.0 |
+| 8 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 5.0 |
+| 9 | Kasper Koman | The Observer | 121 | 5.0 |
+| 10 | Hot Tuneik, Sarah Chilanti | Soul on Fire (Original Mix) | 120 | 5.0 |
+| 11 | Tim Green | It's Only Lightning (Original Mix)  | 120 | 6.8 |
+| 12 | Gai Barone | Fractals (Nicolas Viana Extended Remix) | 121 | 5.0 |
+| 13 | Max Dumont | Maht Hild (Stereo Munk & Dublew Remix) | 121 | 6.5 |
+| 14 | Ale Russo | True Colors (Original Mix) | 121 | 5.0 |
+| 15 | Budakid & Jamie Stevens | Story of Tokay (Khen Remix) | 121 | 6.3 |
+| 16 | Lost Desert, Kevin Maduna, Artic White | Moya (Original Mix) | 122 | 5.7 |
+| 17 | Teclas, Matt Oliver | Silent Bloom (Original Mix) | 122 | 6.3 |
 
