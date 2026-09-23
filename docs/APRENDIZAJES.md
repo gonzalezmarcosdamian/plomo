@@ -8,6 +8,70 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## "Colorido" era un nombre, no un numero — y el set entero estaba en menor
+
+**Que paso.** El DJ escucho el set de 1 a 3 y dijo: "un par medios oscuros para
+ser el colorido". Buscando esos dos temas aparecio algo mas grande: los SIETE
+sets del cumple tenian **0% de temas en tonalidad mayor**. No un par de temas
+oscuros: el set entero en modo menor, de punta a punta.
+
+Los numeros, sobre 15 setlists de referencia con key:
+
+| | mayor | cambios de modo entre temas |
+|---|---|---|
+| los pros | 11% (p25 8%, p75 20%) | **25%** |
+| Ezequiel Arias, que el DJ sigue | 25% | |
+| nuestros sets | **0%** | **0%** |
+
+Nada lo prohibia. Pasar de 8A a 8B es distancia 1 en Camelot y estaba
+permitido con `max_camelot_dist` en 2. Lo que no habia era algo que lo
+premiara, y como el 84% de la biblioteca esta en menor, el solver nunca tenia
+motivo para cruzar. Una preferencia que no se escribe en el costo no existe.
+
+Los dos temas oscuros que el DJ escucho eran, efectivamente, los dos primeros:
+Imentet (percentil 33 de brillo) y Open Sea (43). Son la apertura que el eligio
+para el 139 y ahi estan bien; la variante colorida los heredaba del config base
+y abria oscura por herencia, no por decision.
+
+**Por que importa.** "Colorido" venia implementado como una lista de preferidos
+por brillo aplicada por AFUERA del costo. Empujaba, pero no impedia nada: el
+set podia arrancar con lo mas oscuro que tuviera y seguir llamandose colorido.
+Un adjetivo que no es un numero no se puede cumplir ni verificar.
+
+**Como se aplica.** Cuando el DJ pide un caracter ("colorido", "oscuro",
+"organico"), traducirlo a rasgos medibles ANTES de armar, calibrarlos contra la
+referencia, y meterlos en el costo. Colorido son dos numeros: `modo_mayor_
+objetivo` 0.25 (donde esta Ezequiel Arias) y `color_peso` sobre el brillo. Y el
+control que lo hubiera cachado antes: mirar el reparto del rasgo en el set
+terminado, no solo si los temas "suenan" al pedido.
+
+---
+
+## Una cuota sobre algo binario hay que cobrarla de los dos lados
+
+**Que paso.** La cuota de tonalidad mayor, recien puesta, movio el set colorido
+de 0% a 6% cuando el objetivo era 25%. El codigo copiaba la cuota de genero:
+
+    c += (mayores_hasta_aca / (i + 1) - objetivo) * peso
+
+Con generos funciona porque el contador es del genero del candidato: un tema de
+House mueve el contador de House. Con una variable binaria no: el contador solo
+sube con los mayores, asi que un tema MENOR dejaba el cociente abajo del
+objetivo y el termino le daba un DESCUENTO, justo cuando faltaban mayores. La
+cuota empujaba para el lado contrario al que decia.
+
+**Por que importa.** El bug no rompe nada, no tira ningun error y deja el set
+armado: solo hace lo opuesto de lo que se le pidio, un poco. Del 0% subio a 6%
+—por el otro termino, el de brillo— y eso alcanzaba para parecer que andaba.
+
+**Como se aplica.** Una cuota sobre algo binario se cobra en las dos caras: el
+mayor contra su objetivo, el menor contra el complemento. Y siempre verificar
+una cuota nueva barriendo su peso: si el rasgo no se mueve al subirlo, el
+termino esta mal escrito. Aca el barrido lo mostro de una: 2.0 daba 12%, 5.0
+daba 24%, y de 5.0 a 9.0 no se movia mas.
+
+---
+
 ## La jerarquia estaba escrita en la doc y al reves en el codigo
 
 **Que paso.** El DJ escucho los sets del cumple y saco tres cosas: un tema de

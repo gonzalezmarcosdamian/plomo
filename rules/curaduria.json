@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.6.1",
+  "version": "1.7.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -45,6 +45,14 @@
   "monotonia_desde_peso": {
    "valor": 0.5,
    "porque": "Costo por cada paso monotono mas alla del umbral. La mitad que penal_quedarse (0.8): repetir direccion es menos grave que no moverse."
+  },
+  "modo_mayor_objetivo": {
+   "valor": 0.11,
+   "porque": "La mediana de los pros. Los siete sets del cumple salieron con 0% de temas en tonalidad mayor y 0 cambios de modo, y el DJ escucho el que se llamaba 'colorido' y dijo que habia temas oscuros. Medido sobre 15 setlists de referencia con key: los pros van en 11% de mediana (p25 8%, p75 20%) y cambian de modo en el 25% de las transiciones. Ezequiel Arias, que el DJ sigue, va en 25%. Nada lo prohibia: 8A a 8B es distancia 1 y estaba permitido. No habia nada que lo premiara, y el 84% del pool es menor."
+  },
+  "peso_modo": {
+   "valor": 2.0,
+   "porque": "Cuota simetrica, igual mecanica que la de genero: ir corto descuenta lo mismo que pasarse cobra. Va arriba de la cuota de genero (1.5) y debajo de artistas (2.0): el modo es armonia, no etiqueta. Con 2.0 los sets normales dan 12% de mayores contra 11% de mediana de los pros."
   }
  },
  "energia": {
@@ -364,6 +372,34 @@
      "salto_groove": 1.25
     }
    }
+  },
+  {
+   "version": "1.7.0",
+   "fecha": "2026-09-23",
+   "tema": "colorido deja de ser un nombre y pasa a ser dos numeros",
+   "cambios": [
+    {
+     "regla": "armonia.modo_mayor_objetivo",
+     "antes": "no existia",
+     "despues": 0.11,
+     "por_que": "nuestros sets iban 0% mayor contra 11% de mediana de los pros"
+    },
+    {
+     "regla": "armonia.peso_modo",
+     "antes": "no existia",
+     "despues": 2.0,
+     "por_que": "idem"
+    },
+    {
+     "regla": "estilo.colorido",
+     "antes": "prefer_ids por brillo, fuera del costo",
+     "despues": {
+      "modo_mayor_objetivo": 0.25,
+      "color_peso": 1.5
+     },
+     "por_que": "el DJ escucho el 143 y encontro temas oscuros en el set llamado colorido"
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -428,6 +464,14 @@
   "peso_progresivo": {
    "valor": 2.5,
    "porque": "Tercero, debajo de energia y groove y arriba de artistas. El DJ, 2026-09-23: 'quiero que domine la energia y groove constante, luego lo progresivo y luego recien la cuota de genero; artistas le gana, productores le gana a cuota de genero'. En el codigo la escala estaba al reves: la cuota de genero pesaba 8.0 y el desvio del arco 3.0, o sea el genero mandaba 2.7 veces mas que la energia. Los cuatro temas que el DJ rechazo escuchando entraron por la cuota. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
+  },
+  "colorido": {
+   "valor": {
+    "modo_mayor_objetivo": 0.25,
+    "color_peso": 1.5,
+    "peso_modo": 5.0
+   },
+   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el brillo (medio + 2*aire, como percentil de la biblioteca); antes el brillo se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 quedaba en 25.1 de brillo con dos temas en el percentil 33 y 43 abriendo el set. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove."
   }
  },
  "groove": {

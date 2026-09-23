@@ -24,6 +24,8 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 RAIZ = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(RAIZ / 'src'))
+from plomo.rules import R  # noqa: E402
 PY = str(RAIZ / ".venv" / "Scripts" / "python.exe")
 LIB = RAIZ / "data" / "recetas" / "lib"
 
@@ -248,6 +250,12 @@ def set_140() -> Path:
 # la receta del audio son los medios y el aire. Son ALTERNATIVAS: comparten los
 # empalmes de la noche y los temas que definen la identidad del set, pero el
 # relleno lo elige el color en vez del groove.
+# Que cambia un set "colorido" respecto de su base, segun rules/curaduria.json:
+# la cuota de tonalidad mayor sube de 11% (mediana de los pros) a 25% (Ezequiel
+# Arias, el mas colorido de la referencia) y el brillo entra al costo.
+COLORIDO = R.get("estilo.colorido") or {}
+
+
 def color_score(i: str) -> float:
     x = receta(i)
     return (x["medio"] + 2 * x["aire"]) if x else 0.0
@@ -269,14 +277,32 @@ def variante_color(base_cfg: str, num: int, nombre: str, quita: list, otros: lis
     color = sorted(elegibles, key=color_score, reverse=True)[:220]
     altos = [i for i in sorted(elegibles, key=color_score, reverse=True)
              if E(i) >= 7.6][:40]   # el color vive en energia media: el pico aparte
-    perm = set(color) | set(altos) | fijos
+    # Todo lo que este en tonalidad MAYOR entra al pool aunque no sea de los 220
+    # mas brillantes. Sin esto la cuota de modo es una orden imposible: el 84%
+    # de la biblioteca es menor, y recortar por brillo antes de elegir dejaba
+    # al solver sin un solo tema mayor para cumplirla. Es el mismo error que la
+    # cuota de genero pidiendo House con House fuera de `genres`.
+    mayores = [i for i in elegibles if (POOL[i].get("key") or "").endswith("B")]
+    perm = set(color) | set(altos) | set(mayores) | fijos
     s["num"] = num
     s["name"] = nombre
     s["grupo"] = s["grupo"] + " color"
     s["exclude_ids"] = sorted(i for i, t in POOL.items()
                               if (t.get("genre") or "") in set(s["genres"]) and i not in perm)
-    s["prefer_ids"] = color[:80]
-    s["prefer_bonus"] = 1.2
+    # El brillo ahora lo cobra el costo (color_peso), no una lista de preferidos
+    # por afuera. Con la lista, el 143 salia con dos temas del percentil 33 y 43
+    # de brillo abriendo el set: los preferidos empujaban, pero nada impedia
+    # arrancar oscuro.
+    for k, v in COLORIDO.items():
+        s[k] = v
+    s.pop("prefer_ids", None)
+    s.pop("prefer_bonus", None)
+    # La colorida NO hereda el arranque fijo del base. Imentet y Open Sea son la
+    # apertura que el DJ eligio para el 139 y estan bien ahi, pero son los dos
+    # temas mas oscuros del 143, y en un set que se llama colorido abren en el
+    # percentil 33 y 43. El empalme con el set vecino lo sostienen `entrada` y
+    # `salida`, que no obligan a ningun tema en particular.
+    s.pop("inicio_fijo", None)
     s["anclas"] = [i for i in s.get("anclas", []) if i not in quita]
     s["anclas_en"] = {k: v for k, v in s.get("anclas_en", {}).items() if k not in quita}
     s["_identidad"] = (s["_identidad"].split(" v5")[0].split(" v6")[0] +

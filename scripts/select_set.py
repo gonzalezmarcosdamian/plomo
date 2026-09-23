@@ -92,6 +92,9 @@ _MUNDO = _dato("mundo_propio.json")
 _GR_SD = _GROOVE.get("desvios", [1.0, 1.0])
 _MUNDO_ART = set(_MUNDO.get("artistas", []))
 _MUNDO_SELLO = set(_MUNDO.get("sellos", []))
+_BRILLO = _GROOVE.get("brillo_pct", {})
+MODO_OBJETIVO = R.get("armonia.modo_mayor_objetivo", 0.0)
+PESO_MODO = R.get("armonia.peso_modo", 0.0)
 
 BONUS_ANCLA = 25.0
 # Costo por BPM de desvio de la rampa de `bpm_arco`, con 1 BPM de tolerancia.
@@ -220,7 +223,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
            objetivo_seg=None, arco=None, anclas=(), inicio_fijo=(),
            anclas_en=None, entrada=None, salida=None, bpm_arco=None,
            cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO,
-           bpm_span=None, bpm_span_peso=0.0):
+           bpm_span=None, bpm_span_peso=0.0,
+           modo_objetivo=None, peso_modo=None, color_peso=0.0):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
@@ -276,6 +280,21 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
 
     Los generos que no figuran en `mezcla` no pagan nada: la cuota es un piso
     que se persigue, no un techo que se impone.
+
+    `modo_objetivo` es que fraccion del set va en tonalidad MAYOR, con la misma
+    mecanica simetrica que la cuota de genero. Existe porque los siete sets del
+    cumple salieron con 0% de temas en mayor, y el DJ escucho el que se llamaba
+    "colorido" y dijo que habia temas oscuros. Un set entero en tonalidad menor
+    no es colorido, se llame como se llame. Los DJ de referencia van en 11% de
+    mediana (p75 20%), y Ezequiel Arias, que es de los que el DJ sigue, en 25%;
+    cambian de modo en el 25% de las transiciones y nosotros en el 0%. Nada lo
+    prohibia —8A a 8B es distancia 1 y estaba permitido— pero tampoco nada lo
+    premiaba, y el 84% del pool es menor.
+
+    `color_peso` premia el brillo: la fraccion de energia que vive arriba del
+    bajo, como percentil de la biblioteca (data/groove_index.json). Es la otra
+    mitad de "colorido", y la que ya se usaba, aunque por afuera del costo y
+    como lista de preferidos.
     """
     prefer = set(prefer)
     anclas = set(anclas)
@@ -311,6 +330,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # rueda en una direccion. Medido en el set 43 del DJ, el que llama increible:
     # 6A aparece 8 veces de 24 y el set VUELVE a ella ocho veces. El solver, sin
     # esto, se aleja y no vuelve: la misma cantidad de 6A pero solo 5 regresos.
+    modo_obj = MODO_OBJETIVO if modo_objetivo is None else modo_objetivo
+    p_modo = PESO_MODO if peso_modo is None else peso_modo
     key_hogar = arco.get("key_hogar")
     peso_hogar = arco.get("peso_hogar", 0.0)
     # names() y camelot() dependen solo del track: calcularlos una vez evita
@@ -362,7 +383,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # de los DJ reales, y de ahi salia el rango corto de los sets.
     umbral_plano = max(umbral_plano_set, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0,
-          float("inf"), float("-inf"), float("inf"))]
+          float("inf"), float("-inf"), float("inf"), 0)]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
         # Monticulo acotado en vez de lista completa. Antes se acumulaban
@@ -376,7 +397,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         ultima = i == n - 1
         for nodo in beams:
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
-             gen_cnt, max_e, segs, e_signo, e_racha, min_e, bpm_hi, bpm_lo) = nodo
+             gen_cnt, max_e, segs, e_signo, e_racha, min_e, bpm_hi, bpm_lo,
+             may_cnt) = nodo
             frac = segs / objetivo_seg
             tgt = arc_en(frac, e_lo, e_hi, pico, caida)
             # "antes del pico" tambien se mide con el reloj: si los primeros
@@ -520,6 +542,22 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 if bpm_arco:
                     tb = bpm_arco[0] + (bpm_arco[1] - bpm_arco[0]) * frac
                     c += max(0.0, abs(t["bpm"] - tb) - 1.0) * bpm_arco_peso
+                # COLORIDO, medido y no declarado. Dos mitades: el modo de la
+                # tonalidad y el brillo del audio.
+                if p_modo and modo_obj:
+                    # Simetrico sobre las DOS caras, como la cuota de genero.
+                    # La primera version contaba solo los mayores, y con eso un
+                    # tema MENOR se abarataba justo cuando faltaban mayores: la
+                    # cuota empujaba para el lado contrario y el set colorido
+                    # paso de 0% a 6% en vez de 25%. Con una variable binaria
+                    # hay que cobrarle a las dos caras o no se cobra ninguna.
+                    if t["key"].endswith("B"):
+                        c += ((may_cnt + 1) / (i + 1) - modo_obj) * p_modo
+                    else:
+                        men = (i - may_cnt) + 1
+                        c += (men / (i + 1) - (1 - modo_obj)) * p_modo
+                if color_peso:
+                    c -= _BRILLO.get(t["id"], 0.5) * color_peso
                 # LO PROGRESIVO, tercero: descuenta, no veda.
                 if PESO_PROG and t["_prog"]:
                     c -= PESO_PROG
@@ -557,6 +595,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 # candidato volvia a recorrer el set entero cuatro veces (misma
                 # key, monotonia, conteo de generos, maximo de energia), y eso
                 # convertia un loop de 37 millones en uno de 900.
+                n_may = may_cnt + (1 if t["key"].endswith("B") else 0)
                 if prev is None:
                     n_run, n_paso, n_mono = 1, None, 0
                 elif prev["_cam"][0] == t["_cam"][0]:
@@ -581,7 +620,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                              n_racha if prev is not None else 0,
                              t["energy"] if t["energy"] < min_e else min_e,
                              t["bpm"] if t["bpm"] > bpm_hi else bpm_hi,
-                             t["bpm"] if t["bpm"] < bpm_lo else bpm_lo)
+                             t["bpm"] if t["bpm"] < bpm_lo else bpm_lo,
+                             n_may)
                 entrada = (-c, -orden, nodo_hijo)
                 orden += 1
                 if len(nxt) < beam:
@@ -753,6 +793,9 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
             bpm_arco_peso=spec.get("bpm_arco_peso", PESO_BPM_ARCO),
             bpm_span=spec.get("bpm_span", 0),
             bpm_span_peso=spec.get("bpm_span_peso", 0.0),
+            modo_objetivo=spec.get("modo_mayor_objetivo"),
+            peso_modo=spec.get("peso_modo"),
+            color_peso=spec.get("color_peso", 0.0),
         )
         _print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:
