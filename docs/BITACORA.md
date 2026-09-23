@@ -9,6 +9,35 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-23 — los sets en Spotify, y una conclusion negativa que estaba mal
+
+Las siete listas del cumple quedaron en la cuenta del DJ, 17 de 17 cada una,
+en el orden exacto del set y con las versiones correctas. Verificado URI por
+URI contra `data/set_targets/`. El procedimiento completo esta en
+[SPOTIFY.md](SPOTIFY.md); se re-sincronizan con un comando y conservan la URL.
+
+**Lo que hay que recordar de este dia no es que salio, sino que casi no sale.**
+Todas las escrituras daban 403 y cerre el tema diciendo que Spotify bloquea la
+escritura para apps en modo desarrollo y que habia que pedir Extended Quota
+Mode. Lo escribi en el repo como si fuera un hecho. Antes habia revisado
+scopes, cuenta premium, usuario del dashboard, redirect y consentimiento: todo
+razonable, todo al lado del problema.
+
+El DJ dijo "esto anduvo asi que en loop busca caminos". Siguiendo, aparecio
+que `/users/{id}/playlists` y `/playlists/{id}/tracks` estan deprecados y que
+Spotify los responde con 403 pelado en vez de 404. Los nuevos —`/me/playlists`
+y `/playlists/{id}/items`— andan. Diez minutos despues estaban las siete.
+
+Quedo como regla en [CLAUDE.md](../CLAUDE.md): antes de decir que algo no se
+puede, agotar una lista de cuatro pasos y recien ahi decirlo, con que se probo
+y que devolvio cada cosa.
+
+Ademas: el conector de Spotify respeta una lista de temas nombrados pero ignora
+el orden, asi que para un set no sirve. Y el matcheo contra Spotify da 119 de
+119 despues de arreglar dos bugs que trataban el sufijo del titulo como dato.
+
+---
+
 ## 2026-09-23 — el cue que faltaba en los drops largos
 
 El DJ mando una captura de Lane 8, Sultan + Shepard - The Little Mushroom That

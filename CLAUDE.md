@@ -19,6 +19,42 @@ arma a mano en el CDJ en el momento, que es donde se decide.
 
 ---
 
+## Antes de decir que algo no se puede (2026-09-23)
+
+**REGLA:** "No se puede" es una conclusión, no una observación, y es la más
+cara del proyecto. Antes de escribirla —y mucho antes de documentarla como si
+fuera un hecho— hay que agotar esta lista:
+
+1. **Probar la versión nueva del endpoint / la API / el flag.** Un error puede
+   estar mal etiquetado. Spotify devuelve `403 Forbidden` con el cuerpo vacío
+   para endpoints DEPRECADOS: `/playlists/{id}/tracks` da 403 y
+   `/playlists/{id}/items` da 201. Cuesta una llamada descartarlo.
+2. **Separar el síntoma de la explicación.** "403" es el síntoma. "Spotify
+   bloquea las apps en modo desarrollo" es una historia, y que sea coherente y
+   tenga documentación que la respalde no la hace cierta.
+3. **Probar la operación mínima aislada.** Si falla crear una lista, probar
+   agregar un tema a una que ya existe; si falla eso, seguir a un artista. Cada
+   prueba que falla o pasa recorta el espacio.
+4. **Buscar el mismo objetivo por otro camino.** El conector, el script, otra
+   ruta de la misma API.
+5. Recién ahí decirlo, **con qué se probó y qué devolvió cada cosa**.
+
+**Qué pasó:** el 2026-09-23 cerré el tema de las listas de Spotify diciendo que
+era imposible sin Extended Quota Mode, después de revisar scopes, cuenta,
+usuario del dashboard, redirect y consentimiento. Lo escribí en el repo. El DJ
+dijo "esto anduvo así que en loop busca caminos", seguí probando, y eran
+endpoints deprecados. Las siete listas salieron completas y en orden diez
+minutos después.
+
+**Por qué:** una conclusión negativa mal sacada no se revisa sola. Queda
+escrita, se cita a sí misma más adelante y cierra el camino para siempre. Si
+el DJ no hubiera insistido, hoy el proyecto "sabría" que Spotify no se puede.
+
+Ver `docs/APRENDIZAJES.md` → "Un 403 sin cuerpo puede ser un endpoint viejo",
+y `docs/SPOTIFY.md` para el procedimiento que quedó.
+
+---
+
 ## Numeración de sets
 
 - Sets activos: `XX. Nombre — Duración — Fecha` (ej: `09. Progressive Dark — 3h — 2026-05-21`)
