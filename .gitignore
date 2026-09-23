@@ -137,3 +137,12 @@ data/batch_*.txt
 # Permiso de usuario de Spotify (lo genera scripts/spotify_auth.py)
 data/spotify_token.json
 data/spotify_matches.json
+
+# Grabaciones: el material pesado vive en el repo pero NO en git.
+# Son 8 GB de 4K y WAV; lo que se publica va a redes/shorts/, que pesa megas.
+grabaciones/**/*.MOV
+grabaciones/**/*.mov
+grabaciones/**/*.wav
+grabaciones/**/*.WAV
+grabaciones/**/*.mp4
+grabaciones/**/*.mp3
