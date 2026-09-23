@@ -17,27 +17,23 @@ en vez de poner cualquier otra version. Un tema que no aparece no se reemplaza
 por el radio edit ni por otro remix: seria una lista que suena distinto de lo
 que el DJ va a tocar.
 
-LO QUE NO FUNCIONA, Y POR QUE
-----------------------------
-Con las credenciales propias del proyecto esto NO puede escribir. Probado el
-2026-09-23 con los 19 scopes de usuario otorgados, cuenta premium y el usuario
-habilitado en el dashboard: todas las lecturas dan 200 y TODAS las escrituras
-dan 403 con un "Forbidden" pelado. No es la cuenta ni los permisos: Spotify
-bloquea la escritura para las apps en modo desarrollo, y se destraba pidiendo
-Extended Quota Mode.
+LOS ENDPOINTS VIEJOS DEVUELVEN 403, Y PARECE OTRA COSA
+------------------------------------------------------
+Spotify deprecó `/users/{id}/playlists` y `/playlists/{id}/tracks`, y en vez de
+404 o de un mensaje que lo diga, devuelve **403 Forbidden** con el cuerpo vacio.
+Eso se lee como "no tenes permiso" y manda a buscar el problema donde no esta:
+scopes, cuenta, modo desarrollo, Extended Quota. Perdi una tarde en eso.
 
-El conector de Spotify de claude.ai TAMPOCO sirve para esto, probado el mismo
-dia: sus cinco herramientas son generar una lista desde una descripcion, buscar,
-guardar y sacar de la biblioteca, y ver que esta sonando. Ninguna agrega temas
-concretos en un orden concreto. Pidiendole la lista con los 17 temas escritos en
-orden, creo una playlist con el nombre correcto y VACIA.
+Los que andan son los nuevos:
 
-Y una vez creada por el conector, nuestra app tampoco puede llenarla: agregar un
-tema a una playlist que ya existe y es del usuario tambien da 403.
+    POST /me/playlists                 crear          -> 201
+    POST /playlists/{id}/items         agregar        -> 201
+    PUT  /playlists/{id}/items         reemplazar     -> 200
+    GET  /playlists/{id}/items         leer           -> 200
 
-O sea que hoy no hay forma de publicar un set exacto en Spotify desde aca. La
-unica via es pedir Extended Quota Mode para la app en el dashboard. Este script
-queda listo para ese dia: el matcheo ya da 119 de 119 y las lecturas andan.
+Regla para la proxima: un 403 sin cuerpo en una API que uno cree conocer es
+sospechoso de endpoint viejo antes que de permisos. Se descarta probando la
+version nueva del mismo endpoint.
 
 COMO BUSCA
 ----------
@@ -52,7 +48,6 @@ USO
     python scripts/spotify_auth.py            # una sola vez
     python scripts/spotify_sync.py 143
     python scripts/spotify_sync.py 139 140 141 142 143 144 145
-    python scripts/spotify_sync.py 143 --carpeta "Cumple Zorro"   # solo nombra
 """
 from __future__ import annotations
 
@@ -226,15 +221,15 @@ def main() -> None:
             continue
         pid = sp.playlist_por_nombre(nombre)
         if pid is None:
-            pid = sp.post(f"/users/{sp.yo}/playlists",
+            pid = sp.post("/me/playlists",
                           {"name": nombre, "public": False,
                            "description": "Set armado con plomo. Se re-sincroniza en cada iteracion."})["id"]
             estado = "creada"
         else:
             estado = "actualizada"
-        sp.put(f"/playlists/{pid}/tracks", {"uris": uris[:100]})
+        sp.put(f"/playlists/{pid}/items", {"uris": uris[:100]})
         for i in range(100, len(uris), 100):
-            sp.post(f"/playlists/{pid}/tracks", {"uris": uris[i:i + 100]})
+            sp.post(f"/playlists/{pid}/items", {"uris": uris[i:i + 100]})
         print(f"{nombre}")
         print(f"  {estado}: {len(uris)}/{len(doc['tracks'])} temas   "
               f"https://open.spotify.com/playlist/{pid}")

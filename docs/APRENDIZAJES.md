@@ -86,6 +86,49 @@ distribucion, mover su centro, nunca cortarle la cola.
 
 ---
 
+## Un 403 sin cuerpo puede ser un endpoint viejo, no un permiso
+
+**Que paso.** El DJ pidio sus sets como listas de Spotify. Con el token de
+usuario recien sacado, todas las lecturas daban 200 y todas las escrituras 403
+con `{"error": {"status": 403, "message": "Forbidden"}}` y nada mas. Crear una
+lista, agregarle un tema, guardar una cancion, seguir a un artista: 403.
+
+Investigue en la direccion que sugiere la palabra "Forbidden": scopes (estaban
+los 19), cuenta premium (si), usuario habilitado en el dashboard (lo agrego),
+redirect mal configurado (lo arregle), consentimiento viejo (volvi a autorizar).
+Cerre el tema diciendole al DJ que Spotify bloquea la escritura para apps en
+modo desarrollo y que habia que pedir Extended Quota Mode. **Estaba
+equivocado.**
+
+El DJ dijo "esto anduvo asi que en loop busca caminos" y al seguir probando
+aparecio esto:
+
+| endpoint | resultado |
+|---|---|
+| `POST /users/{id}/playlists` | **403** |
+| `POST /me/playlists` | **201** |
+| `POST /playlists/{id}/tracks` | **403** |
+| `POST /playlists/{id}/items` | **201** |
+| `PUT /playlists/{id}/tracks` | **403** |
+| `PUT /playlists/{id}/items` | **200** |
+
+Los dos que fallaban estan deprecados. Spotify no devuelve 404 ni un mensaje que
+lo diga: devuelve 403 pelado, que se lee como un problema de permisos y manda a
+buscar donde no esta.
+
+**Por que importa.** Un error mal etiquetado dirige toda la investigacion, y
+cuanto mas plausible es la explicacion falsa, mas lejos lleva. "Forbidden" +
+"app en modo desarrollo" es una historia coherente, con documentacion que la
+respalda, y me hizo escribir en el repo que algo era imposible cuando era un
+endpoint viejo. Casi lo dejo asi.
+
+**Como se aplica.** Ante un 403 sin cuerpo en una API conocida, probar la
+version nueva del mismo endpoint ANTES de investigar permisos: cuesta una
+llamada. Y si el resultado es "esto no se puede", revisarlo dos veces: es la
+conclusion que mas barato sale y la que mas caro se paga.
+
+---
+
 ## "Oscuro" no era falta de agudos: era falta de cuerpo
 
 **Que paso.** El DJ escucho el set 143 entero y fue nombrando: "airbone baja
