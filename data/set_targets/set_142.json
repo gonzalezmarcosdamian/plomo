@@ -5,7 +5,7 @@
     116,
     123
   ],
-  "max_per_artist": 2,
+  "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
@@ -39,24 +39,24 @@
       "content_id": "11622300"
     },
     {
-      "artist": "Pissi",
-      "title": "Bailar (Original Mix)",
-      "content_id": "145386445"
+      "artist": "Bosknegra",
+      "title": "Primavera (Original Mix)",
+      "content_id": "104586787"
     },
     {
-      "artist": "Buika & Kiko Navarro",
-      "title": "El Silencio (Club Version Edit)",
-      "content_id": "117416851"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Mindloop (Original Mix)",
-      "content_id": "177299920"
+      "artist": "Aaron Sevilla, RBØR, El Gato CHP",
+      "title": "Gitanos (Original Mix)",
+      "content_id": "228808924"
     },
     {
       "artist": "Simon Vuarambon",
       "title": "Lazos (Original Mix)",
       "content_id": "136780130"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mindloop (Original Mix)",
+      "content_id": "177299920"
     },
     {
       "artist": "Grance & Soulmac",

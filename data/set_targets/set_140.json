@@ -5,7 +5,7 @@
     116,
     123
   ],
-  "max_per_artist": 2,
+  "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
@@ -34,24 +34,14 @@
       "content_id": "7864421"
     },
     {
+      "artist": "Dimas Mixon, Cendryma",
+      "title": "Minicube (Original Mix)",
+      "content_id": "160319896"
+    },
+    {
       "artist": "Sebastien Leger",
       "title": "Ariana",
       "content_id": "11622300"
-    },
-    {
-      "artist": "Dmitry Molosh",
-      "title": "Flower Field (Original Mix)",
-      "content_id": "70560823"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Mindloop (Original Mix)",
-      "content_id": "177299920"
-    },
-    {
-      "artist": "Grance & Soulmac",
-      "title": "Happy Incident (Ale Russo Remix)",
-      "content_id": "49887591"
     },
     {
       "artist": "Simon Vuarambon",
@@ -59,24 +49,24 @@
       "content_id": "136780130"
     },
     {
-      "artist": "Kabi (AR), Ric Niels",
-      "title": "Mutant",
-      "content_id": "165429937"
-    },
-    {
       "artist": "Cendryma",
       "title": "Pure Junction (Berdu Remix)",
       "content_id": "37141460"
     },
     {
+      "artist": "Grance & Soulmac",
+      "title": "Happy Incident (Ale Russo Remix)",
+      "content_id": "49887591"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mindloop (Original Mix)",
+      "content_id": "177299920"
+    },
+    {
       "artist": "Nick Warren, Martin Fredes",
       "title": "Kairos (Original Mix)",
       "content_id": "128348541"
-    },
-    {
-      "artist": "Kamilo Sanclemente",
-      "title": "Theia",
-      "content_id": "28418420"
     },
     {
       "artist": "Cendryma, THMS (US)",
@@ -89,9 +79,19 @@
       "content_id": "235017915"
     },
     {
-      "artist": "Meriva, MATTIC (BR)",
-      "title": "Piece of Hope (D-Nox & Kamilo Sanclemente Extended Remix)",
-      "content_id": "164056394"
+      "artist": "DJ Zombi, Guy Maayan",
+      "title": "Sparkling in the Shadow (Maze 28 & Kebin van Reeken Remix)",
+      "content_id": "127950263"
+    },
+    {
+      "artist": "Gai Barone, Luke Brancaccio",
+      "title": "Freelove (Original Mix)",
+      "content_id": "222018440"
+    },
+    {
+      "artist": "Second Sine",
+      "title": "Motor City (Sebastian Haas Remix) ",
+      "content_id": "89092658"
     }
   ]
 }

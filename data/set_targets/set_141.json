@@ -5,23 +5,13 @@
     120,
     127
   ],
-  "max_per_artist": 2,
+  "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Worakls, Ben Bohmer",
-      "title": "Red Dressed feat. Eivor (Ben Bohmer Remix)",
-      "content_id": "245233560"
-    },
-    {
-      "artist": "Samuel (LK)",
-      "title": "Pulse (Casnik Remix)",
-      "content_id": "132154683"
-    },
-    {
-      "artist": "Hot Tuneik, Sarah Chilanti",
-      "title": "Soul on Fire (Original Mix)",
-      "content_id": "150544681"
+      "artist": "Hobin Rude",
+      "title": "Nether (Original Mix)",
+      "content_id": "105409768"
     },
     {
       "artist": "Spencer Brown",
@@ -29,34 +19,44 @@
       "content_id": "190819323"
     },
     {
-      "artist": "Habbo Foxx, Katy Alex",
-      "title": "Touch (Extended Mix)",
-      "content_id": "110847285"
+      "artist": "Coeus",
+      "title": "Paramount (Original Mix)",
+      "content_id": "196332857"
     },
     {
-      "artist": "Anturage, Alar",
-      "title": "Moet (Original Mix)",
-      "content_id": "243540383"
+      "artist": "Fran Bonetti, RRØDD",
+      "title": "Ride or Die (Kamikaze BR Remix)",
+      "content_id": "120076647"
+    },
+    {
+      "artist": "Kabi (AR), Ric Niels",
+      "title": "Mutant",
+      "content_id": "165429937"
+    },
+    {
+      "artist": "Samuel (LK)",
+      "title": "Pulse (Casnik Remix)",
+      "content_id": "132154683"
+    },
+    {
+      "artist": "Peer Kusiv",
+      "title": "Nightdrive Feat Fynn (Rauschhaus Remix)",
+      "content_id": "206806086"
+    },
+    {
+      "artist": "Anderson vs Ivan Aliaga",
+      "title": "Breakdown (Original Mix)",
+      "content_id": "193106499"
+    },
+    {
+      "artist": "Rezident, Kate Morgan",
+      "title": "Muse feat. Kate Morgan (Roman Extended Mix)",
+      "content_id": "115900435"
     },
     {
       "artist": "Cendryma",
-      "title": "Fracture (Extended Mix)",
-      "content_id": "176252213"
-    },
-    {
-      "artist": "Guy Mantzur & Lonya",
-      "title": "Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix) ",
-      "content_id": "28160387"
-    },
-    {
-      "artist": "about : river",
-      "title": "Never Forget (Rockka Remix)",
-      "content_id": "204225656"
-    },
-    {
-      "artist": "David Penn",
-      "title": "That Vibe (Original Mix)",
-      "content_id": "32357540"
+      "title": "Wakefeld (Original Mix)",
+      "content_id": "75106655"
     },
     {
       "artist": "Gorkiz, Luca Abayan",
@@ -64,9 +64,9 @@
       "content_id": "175740225"
     },
     {
-      "artist": "Mike Griego",
-      "title": "Antidote",
-      "content_id": "22525767"
+      "artist": "about : river",
+      "title": "Never Forget (Rockka Remix)",
+      "content_id": "204225656"
     },
     {
       "artist": "Andy Moor & Adam White",

@@ -62,6 +62,18 @@ def gusto_ok(i: str) -> bool:
 # en silencio: "muy abajo" y "malisimo" no estaban en la lista, y los dos temas
 # que el DJ rechazo volvieron a entrar al set sin que nada lo avisara.
 VETOS = {k for k, v in PERC.items() if v.get("veto")}
+# El vecindario del set 43, el que el DJ llamo increible: 24 temas de 7 artistas.
+# Repetir artista es la firma de ese set, no un error (reglas 1.5.0: tope 4).
+VECINDARIO = json.loads((RAIZ / "data/vecindario_maze.json").read_text(encoding="utf-8"))
+VEC_ART = [a.lower() for a in VECINDARIO["artistas"]]
+
+
+def del_vecindario(i: str) -> bool:
+    t = POOL[i]
+    texto = (t["artist"] + " " + t["title"]).lower()
+    return any(a in texto for a in VEC_ART)
+
+
 RANK_MIND = [r["id"] for r in
              json.loads((RAIZ / "data/parecido_mindloop.json").read_text(encoding="utf-8"))
              if r["id"] in POOL]
@@ -93,7 +105,9 @@ def resolver(p: Path) -> None:
 # rango: el tope de 1 por artista y bandas de 121-125 eran mucho mas rigidos que
 # ellos. Se sube el tope a 2 con la separacion minima que ya aplica el solver, y
 # se ensanchan las bandas.
-GEN_PROG = {"Progressive House", "Melodic House & Techno"}
+# "Ultimamente iteramos mi sonido con mas house, metele de eso": el set de la 1
+# tenia 203 temas de House entre 120 y 126 que no podia usar.
+GEN_PROG = {"Progressive House", "Melodic House & Techno", "House"}
 GEN_HOUSE = {"House", "Progressive House", "Melodic House & Techno", "Indie Dance"}
 GEN_ORG = {"Organic House", "Organic House / Downtempo", "Progressive House", "Afro House"}
 
@@ -118,6 +132,7 @@ def set_139() -> Path:
         "imentet": ("Imentet", "Morttagua"), "opensea": ("Open Sea", "Cary Crank"),
         "sizer": ("Sizer", "Pietrocola"), "fragma": ("Fragma", "Kamilo"),
         "touch": ("Touch The Sky", "Marsh"), "olimpo": ("Olimpo", "Pavicich"),
+        "go": ("Go", "Arias"),
         "boxer": ("I'm Lighter With You", "Boxer")}.items()}
     # el pool tiene que dar aire: con 212 candidatos y la apertura fija, el cierre
     # fijo y cuatro anclas, la busqueda se quedaba sin ramas validas
@@ -127,18 +142,21 @@ def set_139() -> Path:
     # del pico, el set NECESITA un tema de 8.1+; quedaba uno solo y no habia
     # solucion. Se suman los mas parecidos al groove ENTRE los intensos.
     alta = [i for i in elig if E(i) >= 7.6][:40]
-    perm = set(elig[:400]) | set(mind) | set(alta) | set(fija.values())
+    house = [i for i in elig if (POOL[i].get("genre") or "") == "House"][:60]
+    perm = set(elig[:400]) | set(mind) | set(alta) | set(house) | set(fija.values())
     cfg = json.loads((RAIZ / "data/set_configs/cumple_zorro.json").read_text(encoding="utf-8"))
     s = cfg["sets"][0]
     s["exclude_ids"] = sorted(i for i, t in POOL.items()
                               if (t.get("genre") or "") in GEN_PROG and i not in perm)
-    s["prefer_ids"] = mind
+    s["prefer_ids"] = sorted(set(mind) | {i for i in elig if del_vecindario(i)})
     s["prefer_bonus"] = 1.0
-    s["max_per_artist"] = 2
+    s["max_per_artist"] = 4
     s["bpm"] = [120, 126]
+    s["genres"] = sorted(GEN_PROG)   # sin esto la cuota de House no entra
+    s["mezcla_objetivo"] = {"Progressive House": 0.6, "Melodic House & Techno": 0.2, "House": 0.2}
     s["bpm_span"] = 6
     s["bpm_span_peso"] = 1.5
-    s["anclas"] = [fija["sizer"], fija["touch"], fija["olimpo"], fija["boxer"]]
+    s["anclas"] = [fija["sizer"], fija["touch"], fija["olimpo"], fija["boxer"], fija["go"]]
     s["anclas_en"] = {fija["sizer"]: [0.55, 0.75], fija["olimpo"]: [0.70, 0.95]}
     s["inicio_fijo"] = [fija["imentet"], fija["opensea"]]
     s["cierre_fijo"] = [fija["fragma"]]
@@ -161,9 +179,9 @@ def set_141() -> Path:
     s = cfg["sets"][0]
     s["exclude_ids"] = sorted(i for i, t in POOL.items()
                               if (t.get("genre") or "") in GEN_HOUSE and i not in perm)
-    s["prefer_ids"] = sorted(set(voz) | set(mind[:60]))
+    s["prefer_ids"] = sorted(set(voz) | set(mind[:60]) | {i for i in elig if del_vecindario(i)})
     s["prefer_bonus"] = 1.2
-    s["max_per_artist"] = 2
+    s["max_per_artist"] = 4
     s["bpm"] = [120, 127]
     s["bpm_span"] = 6
     s["bpm_span_peso"] = 1.5
@@ -173,6 +191,9 @@ def set_141() -> Path:
     s["anclas_en"] = {fija["jumbo"]: [0.70, 0.88], fija["whiteroom"]: [0.62, 0.90]}
     s["cierre_fijo"] = [fija["haunted"]]
     s["entrada_desde"] = ids_de(139)[-1]
+    # medido contra los pros: con la banda en 0.30 el set era una rampa
+    # (corr posicion-energia +0.55); con 0.50 baja a +0.43 sin mover el pico.
+    s["arco"]["tolerancia_arco_frac"] = 0.50
     return guardar("cumple_zorro_3a5.json", cfg)
 
 
@@ -187,9 +208,9 @@ def set_140() -> Path:
     s = cfg["sets"][0]
     s["exclude_ids"] = sorted(i for i, t in POOL.items()
                               if (t.get("genre") or "") in GEN_ORG and i not in perm)
-    s["prefer_ids"] = mind[:60]
+    s["prefer_ids"] = sorted(set(mind[:60]) | {i for i in elig if del_vecindario(i)})
     s["prefer_bonus"] = 1.2
-    s["max_per_artist"] = 2
+    s["max_per_artist"] = 4
     s["bpm"] = [116, 123]
     s["bpm_arco"] = [117, 122]
     s["bpm_span"] = 6
@@ -264,6 +285,40 @@ def variante_color(base_cfg: str, num: int, nombre: str, quita: list, otros: lis
     return guardar(base_cfg.replace(".json", "_color.json"), cfg)
 
 
+def set_145() -> Path:
+    """Alternativa para la franja de 1 a 3, al estilo del set 43: un vecindario
+    chico recorrido a fondo. No sale de subir el tope por artista —eso solo lo
+    permite— sino de achicar el pool a los siete artistas de ese set."""
+    fuera = noche_fuera(140, 141)
+    elig = [i for i, t in POOL.items()
+            if del_vecindario(i) and (t.get("genre") or "") in GEN_PROG
+            and 119 <= t["bpm"] <= 125 and 4.5 <= (t.get("energy") or 0) <= 8.5
+            and i not in fuera and i not in VETOS and gusto_ok(i)]
+    cfg = {"pool": "data/pool.json", "targets_dir": "data/set_targets",
+           "exclude_artists": [], "permitir_repetir_entre_sets": True,
+           "_comentario": ("Cumple de Zorro, alternativa de 1 a 3 al estilo del set 43: "
+                           "solo los artistas de ese set, hasta 4 temas cada uno."),
+           "sets": [{"num": 145, "grupo": "Cumple Zorro vecindario", "n": 17,
+                     "name": "145. Cumple Zorro " + chr(183) + " Vecindario " + chr(183) + " 1 a 3 AM " + chr(8212) + " 2h " + chr(8212) + " 2026-09-22",
+                     "_identidad": ("El recorrido por un vecindario, no una coleccion de temas "
+                                    "sueltos: Cendryma, Gai Barone, Rockka, Maze 28, Hobin Rude, "
+                                    "Chelakhov y Cary Crank, hasta cuatro temas cada uno. Es la "
+                                    "forma del set 43, el que el DJ llamo increible."),
+                     "duration_h": 2.0, "bpm": [119, 125], "e_pool": [4.5, 8.5],
+                     "e_lo": 5.2, "e_hi": 7.9, "max_per_artist": 4, "max_bpm_jump": 2.0,
+                     "artists": ["*"], "genres": sorted(GEN_PROG),
+                     "beam": 4000,
+                     # el pool chico hace que el set se quede clavado en la rueda:
+                     # daba 50% contra el 22% del set 43, que es el modelo
+                     "arco": {"pico_en_pct": 0.8, "caida_post_pico_pct": 0.15,
+                              "tolerancia_arco_frac": 0.35,
+                              "penal_quedarse_en_la_rueda": 2.0},
+                     "exclude_ids": sorted(i for i in POOL if i not in set(elig)),
+                     "prefer_ids": elig, "prefer_bonus": 0.8}]}
+    print("vecindario elegible:", len(elig), "temas")
+    return guardar("cumple_zorro_vecindario.json", cfg)
+
+
 def colores() -> None:
     q = {k: buscar(*v) for k, v in {
         "touch": ("Touch The Sky", "Marsh"), "boxer": ("I" + chr(39) + "m Lighter With You", "Boxer"),
@@ -283,6 +338,9 @@ def colores() -> None:
 
 if __name__ == "__main__":
     solo = "--solo-config" in sys.argv
+    if "--vecindario" in sys.argv:
+        resolver(set_145())
+        sys.exit()
     if "--color" in sys.argv:
         colores()
         sys.exit()

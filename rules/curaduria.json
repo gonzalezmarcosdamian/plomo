@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "version": "1.4.0",
+    "version": "1.5.0",
     "creado": "2026-09-07",
     "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
     "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -135,9 +135,10 @@
   },
   "repeticion": {
     "max_por_artista_en_set": {
-      "valor": 2,
-      "porque": "docs/REGLAS.md 2026-08-13. El remixer cuenta como artista.",
-      "CONFLICTO": "El codigo usa max_per_artist=1 por defecto en select_set.py y los set_configs existentes tambien pasan 1. La regla escrita dice 2. Uno de los dos esta mal. Resolver antes de tocar nada mas."
+      "valor": 4,
+      "porque": "Cuantos temas del mismo productor entran en un set, contando remixers. No es una regla de higiene: es lo que decide si el set es una coleccion de temas sueltos o el recorrido por un vecindario. Los configs pueden bajarlo, nunca subirlo sin evidencia.",
+      "CONFLICTO": "El codigo usa max_per_artist=1 por defecto en select_set.py y los set_configs existentes tambien pasan 1. La regla escrita dice 2. Uno de los dos esta mal. Resolver antes de tocar nada mas.",
+      "evidencia": "2026-09-22, invalidada la version anterior (2). El set 43 del propio DJ —'Maze 28 + Cendryma', el que llama increible— tiene 24 temas de SIETE artistas: Cendryma 4, Gai Barone 4, Rockka 4, Maze 28 4, Hobin Rude 3, Chelakhov 3, Cary Crank 2, con Mango Alley siete veces. Con el tope en 1 o 2 ese set es imposible de armar. Medido ademas sobre los 8 setlists de Maze 28 y Simon Vuarambon en ventanas de 17 temas: repiten un artista 5 veces (p90 9); los otros 26 DJs de referencia, 4. Nuestros sets daban 0. El tope va a 4 y la separacion minima sigue evitando que suenen pegados."
     },
     "max_por_remixer_en_set": {
       "valor": 3,
@@ -200,6 +201,20 @@
     }
   },
   "historial": [
+    {
+      "version": "1.5.0",
+      "fecha": "2026-09-22",
+      "tema": "repetir artista no es un error, es la firma del set",
+      "cambios": [
+        {
+          "regla": "repeticion.max_por_artista_en_set",
+          "antes": 2,
+          "despues": 4,
+          "commit": "(este)",
+          "por_que": "el set favorito del DJ tiene 24 temas de 7 artistas; Maze y Simon repiten 5 veces cada 17 temas y nuestros sets 0"
+        }
+      ]
+    },
     {
       "version": "1.3.0",
       "fecha": "2026-09-19",

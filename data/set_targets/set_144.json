@@ -5,7 +5,7 @@
     120,
     127
   ],
-  "max_per_artist": 2,
+  "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
@@ -29,24 +29,19 @@
       "content_id": "148323142"
     },
     {
-      "artist": "Will DeKeizer, Maze 28",
-      "title": "Cornerstone (Kostya Outta & Alisha Remix)",
-      "content_id": "181423521"
-    },
-    {
       "artist": "Junior Jack",
       "title": "Stupidisco (David Penn Extended Remix) ",
       "content_id": "146967328"
     },
     {
-      "artist": "Kamilo Sanclemente, Mauro Aguirre",
-      "title": "Looking For You (Extended Mix)",
-      "content_id": "89039390"
+      "artist": "Albuquerque",
+      "title": "Look Back (Original Mix)",
+      "content_id": "170504545"
     },
     {
-      "artist": "D-Nox, Baya, LENN V",
-      "title": "Silence (Extended Mix)",
-      "content_id": "100091235"
+      "artist": "Joe Goddard",
+      "title": "Music Is The Answer (Hot Since 82 Remix)",
+      "content_id": "184313844"
     },
     {
       "artist": "Cloaked",
@@ -64,14 +59,14 @@
       "content_id": "241228611"
     },
     {
-      "artist": "Heller & Farley Project",
-      "title": "Ultra Flava (David Penn Extended Remix) ",
-      "content_id": "75283929"
+      "artist": "Eli Nissan",
+      "title": "Karnaval (Original Mix) ",
+      "content_id": "77435258"
     },
     {
-      "artist": "Paul Thomas",
-      "title": "Jumbo (Jamie Stevens Remix)",
-      "content_id": "83535228"
+      "artist": "Kamilo Sanclemente & Mauro Aguirre",
+      "title": "Essence",
+      "content_id": "266450877"
     },
     {
       "artist": "Andy Moor & Adam White",
@@ -79,14 +74,19 @@
       "content_id": "162072169"
     },
     {
-      "artist": "Cristoph, Franky Wah, Artche",
-      "title": "The World You See (Original Mix) ",
-      "content_id": "134919226"
+      "artist": "Paul Thomas",
+      "title": "Jumbo (Jamie Stevens Remix)",
+      "content_id": "83535228"
     },
     {
-      "artist": "Gorje Hewek feat. Lost Desert",
-      "title": "Aya",
-      "content_id": "70414084"
+      "artist": "D-Nox, Baya, LENN V",
+      "title": "Silence (Extended Mix)",
+      "content_id": "100091235"
+    },
+    {
+      "artist": "Sebastien Leger, Lost Miracle",
+      "title": "Mistily (Extended Mix)",
+      "content_id": "133983297"
     },
     {
       "artist": "Chelakhov",

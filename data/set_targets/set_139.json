@@ -5,7 +5,7 @@
     120,
     126
   ],
-  "max_per_artist": 2,
+  "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
@@ -24,14 +24,19 @@
       "content_id": "227305284"
     },
     {
-      "artist": "Coeus",
-      "title": "Paramount (Original Mix)",
-      "content_id": "196332857"
+      "artist": "Habbo Foxx, Katy Alex",
+      "title": "Touch (Extended Mix)",
+      "content_id": "110847285"
     },
     {
-      "artist": "Maezbi, Nicolas Viana",
-      "title": "Smooth (Original Mix)",
-      "content_id": "58422404"
+      "artist": "Guy Mantzur",
+      "title": "Love in a Bottle (Original Mix)",
+      "content_id": "129459033"
+    },
+    {
+      "artist": "HANA, Ezequiel Arias",
+      "title": "Go (Extended Mix)",
+      "content_id": "114323706"
     },
     {
       "artist": "Marsh, Simon Doty",
@@ -49,14 +54,9 @@
       "content_id": "253314117"
     },
     {
-      "artist": "Andre Moret",
-      "title": "Drift Whispers (Original Mix)",
-      "content_id": "550467"
-    },
-    {
-      "artist": "Nicolas Rada",
-      "title": "Cascadia",
-      "content_id": "50865819"
+      "artist": "Bigfett",
+      "title": "Reflection (Extended Mix)",
+      "content_id": "57706939"
     },
     {
       "artist": "Agustin Pietrocola",
@@ -64,14 +64,9 @@
       "content_id": "74740589"
     },
     {
-      "artist": "Amber Long, Hot Tuneik",
-      "title": "Peace Within (Original Mix)",
-      "content_id": "73970961"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Samsara",
-      "content_id": "139671166"
+      "artist": "Hobin Rude",
+      "title": "Shrouded Glint (Original Mix)",
+      "content_id": "68561043"
     },
     {
       "artist": "Tom Pavicich",
@@ -79,9 +74,14 @@
       "content_id": "34012266"
     },
     {
-      "artist": "Carl Jurgens & Niso",
-      "title": "Skyscrapers (Alex O'Rion Remix) ",
-      "content_id": "255595969"
+      "artist": "Hot Tuneik, Sarah Chilanti",
+      "title": "Soul on Fire (Original Mix)",
+      "content_id": "150544681"
+    },
+    {
+      "artist": "Heller & Farley Project",
+      "title": "Ultra Flava (David Penn Extended Remix) ",
+      "content_id": "75283929"
     },
     {
       "artist": "Fabri Lopez",

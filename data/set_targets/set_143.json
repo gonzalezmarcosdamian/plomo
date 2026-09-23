@@ -5,7 +5,7 @@
     120,
     126
   ],
-  "max_per_artist": 2,
+  "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
@@ -19,49 +19,44 @@
       "content_id": "214849857"
     },
     {
-      "artist": "Tinlicker",
-      "title": "All That I Lost",
-      "content_id": "23816256"
+      "artist": "Kiko Navarro, DJ Pippi, Willie Graff, QVLN, Pere Navarro",
+      "title": "Llegó La Hora (Afrocuban Dub) ",
+      "content_id": "148323142"
     },
     {
-      "artist": "David Guetta, MORTEN",
-      "title": "The Future is Now",
-      "content_id": "256567493"
+      "artist": "Meduza",
+      "title": "Friends (Extended Mix)",
+      "content_id": "212256971"
     },
     {
-      "artist": "Mayro",
-      "title": "Harvest (Original Mix)",
-      "content_id": "186594533"
+      "artist": "HANA, Ezequiel Arias",
+      "title": "Go (Extended Mix)",
+      "content_id": "114323706"
     },
     {
-      "artist": "Rezident, Kate Morgan",
-      "title": "Muse feat. Kate Morgan (L.GU. Extended Mix)",
-      "content_id": "21932826"
+      "artist": "Will DeKeizer, Maze 28",
+      "title": "Cornerstone (Kostya Outta & Alisha Remix)",
+      "content_id": "181423521"
     },
     {
-      "artist": "Guy Mantzur, Tamir Regev",
-      "title": "Mystica (Original Mix)",
-      "content_id": "48847382"
+      "artist": "Junior Jack",
+      "title": "Stupidisco (David Penn Extended Remix) ",
+      "content_id": "146967328"
     },
     {
-      "artist": "Manu (NL)",
-      "title": "Miles Apart (Original Mix)",
-      "content_id": "147483098"
+      "artist": "Alex O'Rion",
+      "title": "Elysium (Original Mix)",
+      "content_id": "8612131"
     },
     {
-      "artist": "Sébastien Léger, Lost Miracle",
-      "title": "Dodonpachi (Original Mix)",
-      "content_id": "124748921"
+      "artist": "Sebastian Sellares",
+      "title": "Event Horizon (Extended Mix)",
+      "content_id": "217780172"
     },
     {
-      "artist": "Hobin Rude",
-      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
-      "content_id": "250703508"
-    },
-    {
-      "artist": "Agustin Pietrocola",
-      "title": "Sizer (Original Mix)",
-      "content_id": "74740589"
+      "artist": "Boxer",
+      "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
+      "content_id": "6435521"
     },
     {
       "artist": "Galestian, Claxy",
@@ -69,9 +64,19 @@
       "content_id": "225170045"
     },
     {
+      "artist": "Agustin Pietrocola",
+      "title": "Sizer (Original Mix)",
+      "content_id": "74740589"
+    },
+    {
       "artist": "Deep Dish",
       "title": "Flashdance (Shai T Extended Remix)",
       "content_id": "187496904"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
+      "content_id": "250703508"
     },
     {
       "artist": "Sebastian Sellares",
@@ -79,14 +84,9 @@
       "content_id": "80771436"
     },
     {
-      "artist": "Graziano Raffa",
-      "title": "Carbonia (Original Mix)",
-      "content_id": "193083808"
-    },
-    {
-      "artist": "Rezident, Kate Morgan",
-      "title": "Muse feat. Kate Morgan (Roman Extended Mix)",
-      "content_id": "115900435"
+      "artist": "Sébastien Léger, Lost Miracle",
+      "title": "Dodonpachi (Original Mix)",
+      "content_id": "124748921"
     },
     {
       "artist": "Kamilo Sanclemente",

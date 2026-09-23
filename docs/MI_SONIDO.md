@@ -319,3 +319,28 @@ Los pros tocan temas sin medios y breakdowns profundos a la tasa normal: esto
 es el gusto del DJ, no una regla del oficio. Por eso vive aca y no en
 `rules/curaduria.json`.
 
+### El vecindario del set 43 (2026-09-22)
+
+El DJ llamo "increible" a su propio set 43, `Maze 28 + Cendryma - Nuevo Prog`
+(junio). Medido, es lo contrario de lo que se venia optimizando:
+
+| | set 43 | DJs de referencia | nuestros sets de septiembre |
+|---|---|---|---|
+| corr(posicion, energia) | **+0.78** | +0.04 | +0.34 a +0.79 |
+| rango de BPM | **3** | 8 | 6 |
+| artistas distintos | **7 en 24 temas** | ~13 en 17 | 17 en 17 |
+
+Lo que lo hace grande no es la variedad: son **veinticuatro temas de siete
+artistas** —Cendryma 4, Gai Barone 4, Rockka 4, Maze 28 4, Hobin Rude 3,
+Chelakhov 3, Cary Crank 2— con Mango Alley siete veces. Es el recorrido por un
+vecindario, no una coleccion de temas sueltos.
+
+**Dos consecuencias.** La regla `max_por_artista_en_set` paso de 2 a 4
+(reglas 1.5.0): con el tope viejo ese set es imposible de armar. Y la
+correlacion posicion-energia deja de tratarse como defecto: los pros tocan
+noches largas donde suben y bajan, y el DJ en dos horas construye una rampa. Se
+mide y se reporta, no se optimiza contra ella.
+
+El vecindario queda en `data/vecindario_maze.json`: artistas, sellos y los 24
+temas del set.
+

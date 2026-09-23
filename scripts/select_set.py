@@ -260,6 +260,11 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # y al subir el castigo por quedarse quieto, la salida barata es la escalera:
     # el 139 paso de 31% quieto a una corrida de 5 pasos para el mismo lado
     peso_mono = arco.get("monotonia_peso", PESO_MONOTONIA)
+    # oscilar ADENTRO del arco: con la banda apretada por el horario del pico, lo
+    # unico que baja la correlacion posicion-energia es exigir pasos mas grandes y
+    # castigar las rachas en la misma direccion.
+    umbral_plano_set = arco.get("umbral_paso_plano", ENERGIA_QUIETA)
+    peso_racha = arco.get("racha_peso", PESO_RACHA_ENERGIA)
     # names() y camelot() dependen solo del track: calcularlos una vez evita
     # millones de regex dentro del doble loop (beam x candidatos x posiciones).
     for t in pool:
@@ -298,7 +303,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # su porque y su evidencia que no hacia nada. Importa porque de este umbral
     # depende el tamano del escalon tipico — el del solver era 0.20 contra 0.90
     # de los DJ reales, y de ahi salia el rango corto de los sets.
-    umbral_plano = max(ENERGIA_QUIETA, paso_natural * 0.55)
+    umbral_plano = max(umbral_plano_set, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0,
           float("inf"), float("-inf"), float("inf"))]
     for i in range(n):
@@ -407,7 +412,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                         n_signo = 1 if de > 0 else -1
                         n_racha = e_racha + 1 if n_signo == e_signo else 1
                         if n_racha > RACHA_ENERGIA_DESDE:
-                            step += (n_racha - RACHA_ENERGIA_DESDE) * PESO_RACHA_ENERGIA
+                            step += (n_racha - RACHA_ENERGIA_DESDE) * peso_racha
                     paso = _paso_firmado(prev["_cam"], t["_cam"])
                     if paso == 0:
                         step += peso_quieto
@@ -616,6 +621,13 @@ if __name__ == "__main__":
             if n_tracks != spec["n"]:
                 print(f"  duracion {spec['duration_h']}h / {med/60:.1f} min por track "
                       f"-> {n_tracks} tracks (el config decia {spec['n']})")
+        # una cuota de un genero que el filtro no deja entrar es una orden que
+        # nadie cumple: el set 139 pedia 20% de House con House fuera de `genres`.
+        _gen = {g.lower() for g in spec.get("genres", [])}
+        _sin = [g for g in (spec.get("mezcla_objetivo") or {}) if _gen and g.lower() not in _gen]
+        if _sin:
+            print(f"  AVISO: mezcla_objetivo pide {_sin} pero no estan en genres")
+
         best = select(
             pool, n_tracks, spec["e_lo"], spec["e_hi"],
             max_bpm_jump=spec.get("max_bpm_jump", 2.0),
