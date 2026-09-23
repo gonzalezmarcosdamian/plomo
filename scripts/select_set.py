@@ -265,6 +265,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # castigar las rachas en la misma direccion.
     umbral_plano_set = arco.get("umbral_paso_plano", ENERGIA_QUIETA)
     peso_racha = arco.get("racha_peso", PESO_RACHA_ENERGIA)
+    # La key HOGAR: el set orbita alrededor de una tonalidad en vez de caminar la
+    # rueda en una direccion. Medido en el set 43 del DJ, el que llama increible:
+    # 6A aparece 8 veces de 24 y el set VUELVE a ella ocho veces. El solver, sin
+    # esto, se aleja y no vuelve: la misma cantidad de 6A pero solo 5 regresos.
+    key_hogar = arco.get("key_hogar")
+    peso_hogar = arco.get("peso_hogar", 0.0)
     # names() y camelot() dependen solo del track: calcularlos una vez evita
     # millones de regex dentro del doble loop (beam x candidatos x posiciones).
     for t in pool:
@@ -428,6 +434,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 else:
                     paso = None
                     step = 0.0
+                if key_hogar and peso_hogar:
+                    step += cam_dist(key_hogar, t["key"]) * peso_hogar
                 desvio = max(0.0, abs(t["energy"] - tgt) - tol_arco)
                 # premio por ensanchar el recorrido, capado en el objetivo: una
                 # vez que el set ya cubre SPAN_OBJETIVO, estirar mas no paga
