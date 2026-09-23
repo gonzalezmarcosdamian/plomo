@@ -2,31 +2,26 @@
   "name": "142. Cumple Zorro · Warm Colorido · 23 a 1 AM — 2h — 2026-09-22",
   "duration_h": 2.0,
   "bpm_range": [
-    116,
-    123
+    117,
+    125
   ],
   "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Parra for Cuva",
-      "title": "Juri (Original Mix)",
-      "content_id": "183767397"
+      "artist": "Drunken Kong, D-SHIFT",
+      "title": "City Lights (Kostya Outta Remix)",
+      "content_id": "246732908"
     },
     {
-      "artist": "Eli Nissan",
-      "title": "Whem Bhem ",
-      "content_id": "137553905"
+      "artist": "Khen",
+      "title": "Homeboy (Dilby Remix)",
+      "content_id": "148429182"
     },
     {
-      "artist": "Mike Rish",
-      "title": "Tú Attair (Original Mix)",
-      "content_id": "71858967"
-    },
-    {
-      "artist": "Husa & Zeyada",
-      "title": "On My Own (Hernan Cattaneo & Marcelo Vasami Remix)",
-      "content_id": "262575865"
+      "artist": "Sebastien Leger, Tim Green",
+      "title": "Embre (Original Mix) ",
+      "content_id": "245494571"
     },
     {
       "artist": "Gorje Hewek, Molac, Dulus",
@@ -34,14 +29,19 @@
       "content_id": "7864421"
     },
     {
+      "artist": "Kasper Koman",
+      "title": "The Observer",
+      "content_id": "156983367"
+    },
+    {
       "artist": "Sebastien Leger",
       "title": "Ariana",
       "content_id": "11622300"
     },
     {
-      "artist": "Underworld",
-      "title": "Two Months Off (Tim Green Remix)",
-      "content_id": "252545895"
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bright Things in Front of Us (Extended Mix)",
+      "content_id": "100400460"
     },
     {
       "artist": "Maze 28",
@@ -64,29 +64,29 @@
       "content_id": "136780130"
     },
     {
-      "artist": "Alex O'Rion",
-      "title": "Cuprum",
-      "content_id": "211484918"
-    },
-    {
       "artist": "Shai T & Tamir Regev",
       "title": "The Captain",
       "content_id": "194339407"
     },
     {
-      "artist": "Redspace, Unusual Soul",
-      "title": "White Room (Original Mix)",
-      "content_id": "132240211"
+      "artist": "Sebastien Leger",
+      "title": "Lava (Original Mix)",
+      "content_id": "241869933"
     },
     {
-      "artist": "Abity",
-      "title": "Roots (Gai Barone Remix)",
-      "content_id": "234818553"
+      "artist": "Mayro",
+      "title": "Harvest (Original Mix)",
+      "content_id": "186594533"
     },
     {
-      "artist": "Emi Galvan",
-      "title": "Crabo (Original Mix)",
-      "content_id": "64362623"
+      "artist": "Kamilo Sanclemente",
+      "title": "Anagram (Original Mix)",
+      "content_id": "100255710"
+    },
+    {
+      "artist": "Durante, Ezequiel Arias",
+      "title": "Prisma (Original Mix)",
+      "content_id": "4969537"
     },
     {
       "artist": "Jiminy Hop, Busy Mind",

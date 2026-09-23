@@ -2,36 +2,16 @@
   "name": "141. Cumple Zorro · 3 a 5 AM — 2h — 2026-09-22",
   "duration_h": 2.0,
   "bpm_range": [
-    120,
-    127
+    119,
+    128
   ],
   "max_per_artist": 4,
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Che Jose",
-      "title": "THE VOID (Extended)",
-      "content_id": "264150212"
-    },
-    {
-      "artist": "Gux Jimenez, Kurt Caesar",
-      "title": "Voryn (Original Mix)",
-      "content_id": "11016180"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "Nether (Original Mix)",
-      "content_id": "105409768"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Focus Bend (Extended Mix)",
-      "content_id": "60597750"
-    },
-    {
-      "artist": "Hraach, Armen Miran",
-      "title": "Menq (Nick Warren & Nicolas Rada Remix)",
-      "content_id": "70575391"
+      "artist": "Eleonora, CIOZ",
+      "title": "Dancing in the Night feat. Eleonora Lucky Shot (Extended Mix)",
+      "content_id": "186467404"
     },
     {
       "artist": "Simos Tagias",
@@ -39,14 +19,34 @@
       "content_id": "114196042"
     },
     {
-      "artist": "Hot Tuneik, Sarah Chilanti",
-      "title": "Soul on Fire (Original Mix)",
-      "content_id": "150544681"
+      "artist": "Rockka",
+      "title": "Initiation",
+      "content_id": "41309264"
     },
     {
-      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
-      "title": "Perception (Original Mix)",
-      "content_id": "264835495"
+      "artist": "Che Jose",
+      "title": "THE VOID (Extended)",
+      "content_id": "264150212"
+    },
+    {
+      "artist": "Ignacio Salgado, Ezequiel Perini",
+      "title": "Modul8 (Sacha Rener Remix)",
+      "content_id": "267006788"
+    },
+    {
+      "artist": "Rezident, Kate Morgan",
+      "title": "Muse feat. Kate Morgan (Roman Extended Mix)",
+      "content_id": "115900435"
+    },
+    {
+      "artist": "Tobi Amuchastegui",
+      "title": "Spectral (Original Mix)",
+      "content_id": "69012374"
+    },
+    {
+      "artist": "Luttrell, Molly Moonwater",
+      "title": "Something Right feat. Molly Moonwater (Ezequiel Arias Extended Mix)",
+      "content_id": "88989129"
     },
     {
       "artist": "Andrés Moris",
@@ -54,14 +54,19 @@
       "content_id": "13912967"
     },
     {
-      "artist": "Alex O'Rion",
-      "title": "Lucida (Original Mix)",
-      "content_id": "158318781"
+      "artist": "Marsh",
+      "title": "All Night Long (Extended Mix)",
+      "content_id": "157297426"
     },
     {
-      "artist": "Cendryma",
-      "title": "Fracture (Extended Mix)",
-      "content_id": "176252213"
+      "artist": "Maezbi, Nicolas Viana",
+      "title": "Smooth (Original Mix)",
+      "content_id": "58422404"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Tangiers (Original Mix)",
+      "content_id": "145310718"
     },
     {
       "artist": "Paul Thomas",
@@ -79,14 +84,9 @@
       "content_id": "204225656"
     },
     {
-      "artist": "Guy Mantzur & Lonya",
-      "title": "Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix) ",
-      "content_id": "28160387"
-    },
-    {
-      "artist": "Durante, Running Touch",
-      "title": "Follow feat. Running Touch (Extended Mix)",
-      "content_id": "112653938"
+      "artist": "Gorje Hewek",
+      "title": "My Heart (Original Mix)",
+      "content_id": "227117324"
     },
     {
       "artist": "Chelakhov",

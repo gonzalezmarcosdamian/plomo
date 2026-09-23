@@ -4,6 +4,29 @@ Boliche con sistema grande. Recibe la pista de otro DJ a la 1 y la entrega a otr
 a las 3. Progressive con color e intensidad, y **Sizer** (Agustin Pietrocola) como
 tema modelo. Config: `data/set_configs/cumple_zorro.json`.
 
+## v8 — la zona, no los temas (2026-09-23)
+
+"Estan o muy oscuros o muy pasados o muy lentos". Las tres cosas estaban
+medidas: ibamos 1-3 BPM debajo del piso de los pros y 1.5 puntos de energia
+arriba de su techo.
+
+| set | BPM med | E med | E max | mayor | groove |
+|---|---|---|---|---|---|
+| 140 warm | 122 | 6.0 | 6.9 | 6% | 1.04 |
+| 142 warm col | 122 | 6.0 | 6.9 | 24% | 0.83 |
+| 139 | 123 | 6.6 | 8.6 | 18% | 0.95 |
+| 143 col | 123 | 6.4 | 8.6 | 24% | 1.04 |
+| 141 | 123 | 6.7 | 8.5 | 6% | 0.83 |
+| 144 col | 124 | 6.6 | 7.3 | 24% | 0.98 |
+| 145 | 122 | 6.3 | 7.5 | 6% | 0.72 |
+| los pros | 123 | 5.7 | 6.9 (p90) | 11% | 1.25 |
+
+El unico tema arriba de 7.5 en cada set es el pico anclado: Alafia (E8.6) en
+el 139 y el 143, The Whiteroom (E8.5) en el 141. Todo lo demas vive en la
+banda de la referencia.
+
+---
+
 ## v7 — el colorido deja de ser un nombre (2026-09-23)
 
 "Escuche entero el de 1 a 3, un par medios oscuro para ser el colorido". Los

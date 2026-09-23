@@ -91,7 +91,43 @@ def buscar(titulo: str, artista: str) -> str:
                 if t["title"].lower().startswith(titulo.lower()) and artista.lower() in t["artist"].lower())
 
 
+def _coherente(s: dict) -> None:
+    """Saca de anclas, apertura y cierre lo que la propia banda del set excluye.
+
+    Un tema fijo que no entra al pool se ignoraba adentro del solver con un
+    AVISO, o sea DESPUES de que el config ya decia una cosa que no iba a pasar.
+    Tres veces en esta ronda: el pico elegido en E8.7 contra un techo de 8.6,
+    y Fragma en 7.5 como ancla del warm, que corta en 7.4. Se valida acá, contra
+    la banda que el mismo config declara, y se dice cual se cae y por que.
+    """
+    lo_e, hi_e = s.get("e_pool", [0, 99])
+    lo_b, hi_b = s.get("bpm", [0, 999])
+    for campo in ("anclas", "inicio_fijo", "cierre_fijo"):
+        quedan = []
+        for i in s.get(campo, []):
+            t = POOL.get(i)
+            if not t:
+                print(f"  [{campo}] {i} no esta en el pool, se cae")
+                continue
+            if not (lo_e <= (t.get("energy") or 0) <= hi_e):
+                print(f"  [{campo}] se cae E{t['energy']} fuera de [{lo_e}, {hi_e}]: "
+                      f"{t['artist'][:20]} - {t['title'][:34]}")
+                continue
+            if not (lo_b <= t["bpm"] <= hi_b):
+                print(f"  [{campo}] se cae {t['bpm']:.0f} BPM fuera de [{lo_b}, {hi_b}]: "
+                      f"{t['artist'][:20]} - {t['title'][:34]}")
+                continue
+            quedan.append(i)
+        if campo in s:
+            s[campo] = quedan
+    s["anclas_en"] = {k: v for k, v in s.get("anclas_en", {}).items()
+                      if k in set(s.get("anclas", [])) | set(s.get("inicio_fijo", []))
+                      | set(s.get("cierre_fijo", []))}
+
+
 def guardar(nombre: str, cfg: dict) -> Path:
+    for s_ in cfg.get("sets", []):
+        _coherente(s_)
     p = RAIZ / "data/set_configs" / nombre
     p.write_text(json.dumps(cfg, ensure_ascii=False, indent=2), encoding="utf-8")
     return p
@@ -138,7 +174,7 @@ def set_139() -> Path:
         "boxer": ("I'm Lighter With You", "Boxer")}.items()}
     # el pool tiene que dar aire: con 212 candidatos y la apertura fija, el cierre
     # fijo y cuatro anclas, la busqueda se quedaba sin ramas validas
-    elig, mind = permitidos(GEN_PROG, (120, 126), set(), 150)
+    elig, mind = permitidos(GEN_PROG, (119, 127), set(), 150)
     # el groove vive en energia media: sesgar el pool hacia el se lleva puesto el
     # material de pico. Con Fragma fijo al cierre (E7.5) y la regla de bajar 0.6
     # del pico, el set NECESITA un tema de 8.1+; quedaba uno solo y no habia
@@ -153,13 +189,45 @@ def set_139() -> Path:
     s["prefer_ids"] = sorted(set(mind) | {i for i in elig if del_vecindario(i)})
     s["prefer_bonus"] = 1.0
     s["max_per_artist"] = 4
-    s["bpm"] = [120, 126]
+    # Tempo y energia contra la referencia (reglas 1.8.0). Los pros van en 123 de
+    # mediana con p25 122, iguales en los tres tercios del set, y su p90 de
+    # energia es 6.9. Nosotros ibamos 2-3 BPM abajo de su piso y 1.5 puntos de
+    # energia arriba de su techo: el DJ lo escucho como "muy lentos" y "muy
+    # pasados" en la misma frase. El pico sigue existiendo, pero deja de vivir
+    # arriba de lo que hace la referencia.
+    # El tempo se corrige con el ARCO, no con el piso de la banda. Subir el piso
+    # a 122 (el p25 de los pros) dejo afuera a Open Sea en 121, a Haunted en 121
+    # y a un ancla del warm, y los dos sets de pico salieron SIN SOLUCION: el 25%
+    # de los temas que tocan los pros esta debajo de ese p25, prohibirlo es
+    # prohibirles la cola. Lo que se busca es que la MEDIANA quede en 123, y eso
+    # lo hace bpm_arco tirando del centro con la banda ancha.
+    s["bpm"] = [119, 127]
+    s["bpm_arco"] = [122, 124]
+    s["bpm_arco_peso"] = 2.5
+    # El pool deja pasar hasta 8.6 para que las anclas grandes (The Whiteroom
+    # E8.5, Olimpo E7.9) sigan existiendo: lo que se escucha "pasado" es que el
+    # ARCO entero viva arriba, no que haya un tema grande en su lugar. El arco
+    # es el que baja a la banda de los pros.
+    s["e_pool"] = [5.0, 8.6]
+    s["e_lo"], s["e_hi"] = 5.4, 7.2
     s["genres"] = sorted(GEN_PROG)   # sin esto la cuota de House no entra
     s["mezcla_objetivo"] = {"Progressive House": 0.6, "Melodic House & Techno": 0.2, "House": 0.2}
     s["bpm_span"] = 6
     s["bpm_span_peso"] = 1.5
+    # UN pico anclado, no un arco entero arriba. Con el arco bajado a la banda
+    # de los pros (su p90 de energia es 6.9 y su mediana 5.7) el solver dejo de
+    # producir temas de 8.1+, y sin uno de esos la regla de bajar 0.6 del pico
+    # hace imposible cerrar con Fragma en 7.5: el set salia SIN SOLUCION. Lo que
+    # el DJ escucho como "muy pasado" es la MEDIANA del set, no que exista un
+    # tema grande en su lugar, asi que el pico se ancla y el resto baja.
+    techo = s["e_pool"][1]
+    pico = max((i for i in perm if 8.1 <= E(i) <= techo and gusto_ok(i)), key=E, default=None)
     s["anclas"] = [fija["sizer"], fija["touch"], fija["olimpo"], fija["boxer"], fija["go"]]
     s["anclas_en"] = {fija["sizer"]: [0.55, 0.75], fija["olimpo"]: [0.70, 0.95]}
+    if pico:
+        s["anclas"].append(pico)
+        s["anclas_en"][pico] = [0.62, 0.88]
+        print(f"  pico anclado: E{E(pico):.1f} {POOL[pico]['artist']} - {POOL[pico]['title'][:40]}")
     s["inicio_fijo"] = [fija["imentet"], fija["opensea"]]
     s["cierre_fijo"] = [fija["fragma"]]
     s["_identidad"] = (s["_identidad"].split(" v5 (22/9)")[0] +
@@ -184,7 +252,27 @@ def set_141() -> Path:
     s["prefer_ids"] = sorted(set(voz) | set(mind[:60]) | {i for i in elig if del_vecindario(i)})
     s["prefer_bonus"] = 1.2
     s["max_per_artist"] = 4
-    s["bpm"] = [120, 127]
+    # Tempo y energia contra la referencia (reglas 1.8.0). Los pros van en 123 de
+    # mediana con p25 122, iguales en los tres tercios del set, y su p90 de
+    # energia es 6.9. Nosotros ibamos 2-3 BPM abajo de su piso y 1.5 puntos de
+    # energia arriba de su techo: el DJ lo escucho como "muy lentos" y "muy
+    # pasados" en la misma frase. El pico sigue existiendo, pero deja de vivir
+    # arriba de lo que hace la referencia.
+    # El tempo se corrige con el ARCO, no con el piso de la banda. Subir el piso
+    # a 122 (el p25 de los pros) dejo afuera a Open Sea en 121, a Haunted en 121
+    # y a un ancla del warm, y los dos sets de pico salieron SIN SOLUCION: el 25%
+    # de los temas que tocan los pros esta debajo de ese p25, prohibirlo es
+    # prohibirles la cola. Lo que se busca es que la MEDIANA quede en 123, y eso
+    # lo hace bpm_arco tirando del centro con la banda ancha.
+    s["bpm"] = [119, 128]
+    s["bpm_arco"] = [123, 125]
+    s["bpm_arco_peso"] = 2.5
+    # El pool deja pasar hasta 8.6 para que las anclas grandes (The Whiteroom
+    # E8.5, Olimpo E7.9) sigan existiendo: lo que se escucha "pasado" es que el
+    # ARCO entero viva arriba, no que haya un tema grande en su lugar. El arco
+    # es el que baja a la banda de los pros.
+    s["e_pool"] = [5.8, 8.6]
+    s["e_lo"], s["e_hi"] = 6.2, 7.3
     s["bpm_span"] = 6
     s["bpm_span_peso"] = 1.5
     s["anclas"] = [fija["jumbo"], fija["whiteroom"]]
@@ -200,10 +288,10 @@ def set_141() -> Path:
 
 
 def set_140() -> Path:
-    fav = [i for i, x in PERC.items() if x.get("favorito") and i in POOL and 117 <= POOL[i]["bpm"] <= 122]
+    fav = [i for i, x in PERC.items() if x.get("favorito") and i in POOL and 117 <= POOL[i]["bpm"] <= 125]
     fuera = noche_fuera(139, 141) - set(fav)
     elig, mind = permitidos(GEN_ORG, (116, 123), fuera, 170)
-    lentos = [i for i in elig if POOL[i]["bpm"] < 119.5]
+    lentos = [i for i in elig if POOL[i]["bpm"] < 119.0]
     alta = [i for i in elig if E(i) >= 6.5][:30]
     perm = set(mind) | set(lentos) | set(alta) | {i for i in fav if i in elig}
     cfg = json.loads((RAIZ / "data/set_configs/cumple_zorro_warm.json").read_text(encoding="utf-8"))
@@ -213,8 +301,23 @@ def set_140() -> Path:
     s["prefer_ids"] = sorted(set(mind[:60]) | {i for i in elig if del_vecindario(i)})
     s["prefer_bonus"] = 1.2
     s["max_per_artist"] = 4
-    s["bpm"] = [116, 123]
-    s["bpm_arco"] = [117, 122]
+    # Tempo y energia contra la referencia (reglas 1.8.0). Los pros van en 123 de
+    # mediana con p25 122, iguales en los tres tercios del set, y su p90 de
+    # energia es 6.9. Nosotros ibamos 2-3 BPM abajo de su piso y 1.5 puntos de
+    # energia arriba de su techo: el DJ lo escucho como "muy lentos" y "muy
+    # pasados" en la misma frase. El pico sigue existiendo, pero deja de vivir
+    # arriba de lo que hace la referencia.
+    # El tempo se corrige con el ARCO, no con el piso de la banda. Subir el piso
+    # a 122 (el p25 de los pros) dejo afuera a Open Sea en 121, a Haunted en 121
+    # y a un ancla del warm, y los dos sets de pico salieron SIN SOLUCION: el 25%
+    # de los temas que tocan los pros esta debajo de ese p25, prohibirlo es
+    # prohibirles la cola. Lo que se busca es que la MEDIANA quede en 123, y eso
+    # lo hace bpm_arco tirando del centro con la banda ancha.
+    s["bpm"] = [117, 125]
+    s["bpm_arco"] = [120, 124]
+    s["bpm_arco_peso"] = 2.5
+    s["e_pool"] = [4.0, 7.4]
+    s["e_lo"], s["e_hi"] = 4.8, 6.8
     s["bpm_span"] = 6
     s["bpm_span_peso"] = 1.5
     # "mis temas no muy al principio en warm, asi aprovecho la ultima hora a tirar
@@ -318,7 +421,7 @@ def set_145() -> Path:
     fuera = noche_fuera(140, 141)
     elig = [i for i, t in POOL.items()
             if del_vecindario(i) and (t.get("genre") or "") in GEN_PROG
-            and 119 <= t["bpm"] <= 125 and 4.5 <= (t.get("energy") or 0) <= 8.5
+            and 119 <= t["bpm"] <= 126 and 4.5 <= (t.get("energy") or 0) <= 7.8
             and i not in fuera and i not in VETOS and gusto_ok(i)]
     cfg = {"pool": "data/pool.json", "targets_dir": "data/set_targets",
            "exclude_artists": [], "permitir_repetir_entre_sets": True,
@@ -330,8 +433,8 @@ def set_145() -> Path:
                                     "sueltos: Cendryma, Gai Barone, Rockka, Maze 28, Hobin Rude, "
                                     "Chelakhov y Cary Crank, hasta cuatro temas cada uno. Es la "
                                     "forma del set 43, el que el DJ llamo increible."),
-                     "duration_h": 2.0, "bpm": [119, 125], "e_pool": [4.5, 8.5],
-                     "e_lo": 5.2, "e_hi": 7.9, "max_per_artist": 4, "max_bpm_jump": 2.0,
+                     "duration_h": 2.0, "bpm": [119, 126], "bpm_arco": [122, 124], "bpm_arco_peso": 2.5, "e_pool": [4.5, 7.8],
+                     "e_lo": 5.2, "e_hi": 7.2, "max_per_artist": 4, "max_bpm_jump": 2.0,
                      "artists": ["*"], "genres": sorted(GEN_PROG),
                      "beam": 4000,
                      # el pool chico hace que el set se quede clavado en la rueda:

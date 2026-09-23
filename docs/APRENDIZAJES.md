@@ -8,6 +8,47 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Tocabamos mas lento y mas fuerte que la referencia, todo el tiempo
+
+**Que paso.** El DJ escucho la ronda anterior y dijo: "estan o muy oscuros o muy
+pasados o muy lentos". Tres quejas distintas en una frase, que sonaban a que
+sobraban dos o tres temas. Eran tres mediciones:
+
+| | los pros | nosotros |
+|---|---|---|
+| BPM mediana | **123** (igual en los tres tercios) | 120 el warm, 122 los de pico |
+| energia mediana | **5.7** | 6.0 a 7.2 |
+| energia p90 / tope | **6.9** | 8.2 a 8.5 |
+| tonalidad mayor | 11% | 0% |
+
+"Lento", "pasado" y "oscuro" no eran temas sueltos: era la ZONA entera. Y el
+tempo de los pros no rampea —123 en el primer tercio, 123 en el segundo, 123 en
+el ultimo—, asi que un warm que arranca en 117 y sube no se parece a nada de lo
+que ellos hacen.
+
+**El error que cometi arreglandolo, otra vez.** Subi el piso de la banda de BPM
+a 122, el p25 de los pros. Eso dejo afuera a Open Sea en 121, a Haunted en 121 y
+a un ancla del warm, y los dos sets de pico salieron SIN SOLUCION. El p25 es,
+por definicion, el punto debajo del cual esta el 25% de lo que ellos tocan:
+poner el piso ahi es prohibir una cuarta parte de la referencia. Lo que habia
+que mover era la MEDIANA, y eso lo hace el arco de tempo tirando del centro con
+la banda ancha. Segunda vez en dos dias que intento arreglar una distribucion
+con un tope duro.
+
+**Un pico anclado, no un arco arriba.** Bajar el arco a la banda de los pros
+dejo al solver sin temas de 8.1+, y sin uno de esos la regla de bajar 0.6 del
+pico hace imposible cerrar con Fragma en 7.5. La salida no es subir el arco
+entero: lo que se escucha "pasado" es la mediana del set, no que exista un tema
+grande donde corresponde. Se ancla UN pico entre el 62% y el 88% y el resto
+baja. Quedo Alafia en E8.6, que es el que el DJ ya habia elegido a mano.
+
+**Como se aplica.** Cuando el DJ describe un set con adjetivos, medir los tres o
+cuatro rasgos obvios contra la referencia ANTES de tocar temas sueltos: es mas
+probable que este corrida la zona a que sobren dos canciones. Y para mover una
+distribucion, mover su centro, nunca cortarle la cola.
+
+---
+
 ## "Colorido" era un nombre, no un numero — y el set entero estaba en menor
 
 **Que paso.** El DJ escucho el set de 1 a 3 y dijo: "un par medios oscuros para
