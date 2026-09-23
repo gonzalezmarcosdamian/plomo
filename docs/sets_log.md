@@ -2896,7 +2896,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 3 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
 | 4 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
 | 5 | Guy J | Day Of Light (Original Mix) | 123 | 5.5 |
-| 6 | Kamilo Sanclemente, Mauro Aguirre | Looking For You (Extended Mix) | 123 | 5.5 |
+| 6 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
 | 7 | Sebastien Leger, Tim Green | Embre (Original Mix)  | 122 | 5.9 |
 | 8 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
 | 9 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
