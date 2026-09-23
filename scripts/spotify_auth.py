@@ -11,7 +11,7 @@ autorice a la app. Sin eso no hay forma, ni con la API key.
 COMO FUNCIONA
 -------------
 Abre el navegador en la pantalla de permisos de Spotify, levanta un servidor
-local en el redirect que ya esta configurado (localhost:8888/callback), y cuando
+local en el redirect configurado (127.0.0.1:8888/callback), y cuando
 el DJ toca "Aceptar" recibe el codigo por ahi mismo. Nadie copia y pega nada.
 
 El resultado es un refresh token que queda en data/spotify_token.json, fuera de
@@ -20,13 +20,14 @@ a pasar por el navegador.
 
 PERMISOS QUE PIDE
 -----------------
-playlist-modify-private y playlist-modify-public: crear y editar listas.
-playlist-read-private: encontrar una lista que ya existe en vez de duplicarla.
-No pide acceso a la biblioteca ni a la reproduccion.
+Todos los de usuario, por pedido del DJ: listas, biblioteca, reproduccion,
+seguidos, mas escuchados y portadas. La idea es autorizar una sola vez en la
+vida del proyecto y no volver a frenarse cuando haga falta algo nuevo.
 
 USO
 ---
-    python scripts/spotify_auth.py
+    python scripts/spotify_auth.py         # espera 3 minutos
+    python scripts/spotify_auth.py 900     # espera 15
 """
 from __future__ import annotations
 
@@ -48,7 +49,21 @@ load_dotenv(RAIZ / ".env")
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 DESTINO = RAIZ / "data" / "spotify_token.json"
-SCOPES = "playlist-modify-private playlist-modify-public playlist-read-private"
+# El DJ pidio "todos los permisos full" para no tener que volver a pasar por el
+# navegador cuando aparezca algo nuevo: guardar temas en la biblioteca, mirar
+# sus mas escuchados, subir portadas, ver lo que esta sonando. Son todos los
+# scopes de usuario que publica Spotify.
+SCOPES = " ".join([
+    "ugc-image-upload",
+    "user-read-playback-state", "user-modify-playback-state",
+    "user-read-currently-playing", "app-remote-control", "streaming",
+    "playlist-read-private", "playlist-read-collaborative",
+    "playlist-modify-private", "playlist-modify-public",
+    "user-follow-modify", "user-follow-read",
+    "user-read-playback-position", "user-top-read", "user-read-recently-played",
+    "user-library-modify", "user-library-read",
+    "user-read-email", "user-read-private",
+])
 
 _codigo: dict[str, str] = {}
 
@@ -80,19 +95,23 @@ def main() -> None:
         "client_id": cid, "response_type": "code",
         "redirect_uri": redirect, "scope": SCOPES})
 
-    servidor = HTTPServer(("localhost", puerto), Handler)
+    # 127.0.0.1 y no "localhost": desde 2025 Spotify rechaza localhost en los
+    # redirect de loopback y pide la IP. El error que da es "redirect_uri: Not
+    # matching configured", que suena a otra cosa.
+    servidor = HTTPServer(("127.0.0.1", puerto), Handler)
     threading.Thread(target=servidor.handle_request, daemon=True).start()
     print("Se abre el navegador para que autorices la app.")
     print("Si no se abre solo, entra a:\n  " + url + "\n")
     webbrowser.open(url)
-    servidor.socket.settimeout(180)
-    for _ in range(180):
+    espera = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1].isdigit() else 180
+    servidor.socket.settimeout(espera)
+    for _ in range(espera):
         if _codigo:
             break
         import time
         time.sleep(1)
     if "code" not in _codigo:
-        sys.exit("no llego el permiso (pasaron 3 minutos o lo cancelaste)")
+        sys.exit(f"no llego el permiso (pasaron {espera//60} minutos o lo cancelaste)")
 
     b = base64.b64encode(f"{cid}:{secret}".encode()).decode()
     r = requests.post("https://accounts.spotify.com/api/token",

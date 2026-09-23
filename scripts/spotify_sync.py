@@ -17,6 +17,19 @@ en vez de poner cualquier otra version. Un tema que no aparece no se reemplaza
 por el radio edit ni por otro remix: seria una lista que suena distinto de lo
 que el DJ va a tocar.
 
+LO QUE NO FUNCIONA, Y POR QUE
+----------------------------
+Con las credenciales propias del proyecto esto NO puede escribir. Probado el
+2026-09-23 con los 19 scopes de usuario otorgados, cuenta premium y el usuario
+habilitado en el dashboard: todas las lecturas dan 200 y TODAS las escrituras
+dan 403 con un "Forbidden" pelado. No es la cuenta ni los permisos: Spotify
+bloquea la escritura para las apps en modo desarrollo, y se destraba pidiendo
+Extended Quota Mode.
+
+El camino que si funciona es el conector de Spotify de claude.ai, que escribe
+con la integracion de Spotify y no con nuestra app. Este script queda para el
+dia que haya Extended Quota, y para las lecturas, que si andan.
+
 COMO BUSCA
 ----------
 Primero `artist:"X" track:"Y"` con el titulo limpio de "(Extended Mix)" y
@@ -157,8 +170,16 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("nums", type=int, nargs="+")
     ap.add_argument("--prefijo", default="", help="texto delante del nombre de la lista")
+    ap.add_argument("--archivo", action="store_true",
+                    help="no escribe en Spotify: deja los links en data/spotify/ para pegar a mano")
     args = ap.parse_args()
 
+    # Spotify bloquea TODA escritura para apps en modo desarrollo: crear una
+    # lista, guardar un tema y hasta seguir a un artista dan 403 con los scopes
+    # otorgados y la cuenta habilitada. Lo unico que destraba eso es el Extended
+    # Quota Mode, que se pide y puede no salir. Mientras tanto, --archivo deja
+    # los links en orden y la app de escritorio los pega de una: se seleccionan
+    # todas las lineas, se copian, y se pegan adentro de la lista.
     sp = Spotify(acceso())
     cache_f = RAIZ / "data" / "spotify_matches.json"
     cache = json.loads(cache_f.read_text(encoding="utf-8")) if cache_f.exists() else {}
@@ -182,6 +203,18 @@ def main() -> None:
                 uris.append(uri)
             else:
                 faltan.append(f"{t['artist']} - {t['title']}")
+        if args.archivo:
+            dest = RAIZ / "data" / "spotify"
+            dest.mkdir(parents=True, exist_ok=True)
+            f_out = dest / f"set_{num}.txt"
+            links = [u.replace("spotify:track:", "https://open.spotify.com/track/")
+                     for u in uris]
+            f_out.write_text("\n".join(links), encoding="utf-8")
+            print(f"{nombre}")
+            print(f"  {len(uris)}/{len(doc['tracks'])} temas -> {f_out.relative_to(RAIZ)}")
+            for x in faltan:
+                print(f"    no esta en Spotify: {x[:66]}")
+            continue
         pid = sp.playlist_por_nombre(nombre)
         if pid is None:
             pid = sp.post(f"/users/{sp.yo}/playlists",
