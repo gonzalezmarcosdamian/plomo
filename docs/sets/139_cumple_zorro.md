@@ -4,6 +4,36 @@ Boliche con sistema grande. Recibe la pista de otro DJ a la 1 y la entrega a otr
 a las 3. Progressive con color e intensidad, y **Sizer** (Agustin Pietrocola) como
 tema modelo. Config: `data/set_configs/cumple_zorro.json`.
 
+## v6 — la noche entera con el criterio entrenado (2026-09-23)
+
+El DJ escucho y saco tres cosas: Llego La Hora, Meduza - Friends y "nada afro"
+como categoria. Despues dijo donde estaba el problema real: la cuota de genero
+tenia que ser lo ultimo, no lo primero. Ver APRENDIZAJES.md, "La jerarquia
+estaba escrita en la doc y al reves en el codigo".
+
+Los siete sets se rearmaron con reglas 1.6.1, cuyos pesos los eligio
+`scripts/entrenar_criterio.py` midiendo contra los 40 setlists de referencia
+(perdida 3.750 -> 2.467). Verificado sobre los sets escritos:
+
+| set | temas | vetados | ajenos | afro | groove | paso E | corr | top-5 |
+|---|---|---|---|---|---|---|---|---|
+| 139 | 17 | 0 | 0 | 0 | 1.19 | 0.55 | +0.73 | 29% |
+| 140 | 17 | 0 | 0 | 0 | 0.97 | 0.40 | +0.42 | 29% |
+| 141 | 17 | 0 | 1 | 0 | 0.95 | 0.45 | +0.18 | 29% |
+| 142 | 17 | 0 | 0 | 0 | 0.82 | 0.45 | +0.55 | 35% |
+| 143 | 17 | 0 | 0 | 0 | 1.23 | 0.50 | +0.70 | 35% |
+| 144 | 17 | 0 | 0 | 0 | 0.97 | 0.65 | +0.08 | 29% |
+| 145 | 17 | 0 | 0 | 0 | 0.79 | 0.70 | +0.80 | 71% |
+| pro | | 0 | | 0 | 1.25 | 1.00 | +0.11 | 50% |
+
+Lo que cierra: vetos, procedencia y groove. Lo que no: seguimos dando pasos de
+energia de la mitad que ellos. Y la correlacion posicion-energia no es
+comparable de frente: el +0.11 de los pros sale de sets que cubren una noche
+entera, y estos son tramos de dos horas que reciben y entregan la pista, asi
+que un 139 que sube esta haciendo lo que tiene que hacer.
+
+---
+
 ## Versiones
 
 Cada version es un tag de git. Para volver a una:
