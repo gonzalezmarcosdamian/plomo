@@ -8,6 +8,80 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un set sin tracklist igual se puede medir: el arco esta en el audio
+
+**Que paso.** El DJ mando un set que le volo la cabeza (Maze 28 en La Biblioteca,
+29/08/2026, tres horas) y pidio aprender de el. No tiene tracklist publicado: en
+los comentarios hay cuatro personas pidiendolo y nadie contesta. Con el metodo de
+siempre —nombres de temas, cruzarlos contra la biblioteca, sacar energia y key—
+el set era inservible. Bajando el audio y midiendolo por bloques de un minuto
+(`scripts/arco_de_audio.py`) salieron tres horas de dato de un DJ que el DJ
+admire, tocando en el club que le importa.
+
+**Por que.** La evidencia de referencia del proyecto eran setlists: texto. Eso
+deja afuera la mayoria de los sets buenos, y ademas la energia que les
+atribuimos sale de NUESTRO calculo sobre NUESTRA copia del track, no de lo que
+sono esa noche. El audio del set no tiene ninguno de los dos problemas: es el
+set entero, en orden, con las mezclas y el EQ reales. Se pierde la identidad de
+los temas y se gana el arco, que es justamente lo que el solver decide.
+
+Dos trampas que costaron tiempo:
+
+- **El RMS de un set de YouTube no es energia.** La plataforma normaliza y el
+  sistema del club comprime: 10 dB de rango en tres horas, plano. Lo que
+  sobrevive es el brillo (banda de aire), la densidad de onsets y el tempo.
+- **Un estimador de tempo devuelve valores de una grilla.** Los 178 bloques
+  dieron 117.5 exacto y eso parecia un bug. Tres metodos independientes
+  (`tempo()`, `beat_track`, tempograma con interpolacion parabolica) en cinco
+  momentos distintos dieron 117.45-117.83: era real. Un numero sospechosamente
+  redondo se confirma con otro metodo antes de tirarlo Y antes de creerlo.
+
+**Como se aplica.** Cuando un set de referencia no tiene tracklist, medirle el
+arco igual: `python scripts/arco_de_audio.py <audio.wav> --nombre <slug>`, y
+comparar contra los nuestros con la MISMA vara (para los nuestros, aire y
+densidad de `data/recetas/lib/` puestos minuto a minuto). Nunca comparar la
+curva del audio contra la escala E1-E10 de la biblioteca: son unidades
+distintas.
+
+---
+
+## Lo que el pro no hace tambien es dato: meseta, no rampa
+
+**Que paso.** Medido el set de Maze contra nuestra noche del cumple (140 + 139 +
+141, 381 min), con la misma vara:
+
+| | corr(posicion, energia) | pico | meseta (+-0.3 z) | BPM |
+|---|---|---|---|---|
+| Maze, 3 h | **-0.05** | 36% | **74% del set** | 117.5 plano |
+| nuestra noche | +0.19 | 83% | 60% | rampa por set |
+| 140 warm | **+0.71** | 92% | 50% | 118 -> 122 |
+| 139 pico | +0.25 | 43% | 53% | |
+| 141 cierre | +0.32 | 48% | 46% | |
+
+El set del pro **no sube**. Entra abajo, sube en los primeros 40 minutos, y hace
+meseta dos horas dentro de una banda angosta hasta un corte brutal en los
+ultimos cinco minutos (-2.2 z; el nuestro cierra en -0.4). Y lo hace **sin tocar
+el tempo**: 117.5 BPM durante tres horas.
+
+**Por que importa.** Nuestro modelo de arco tiene forma de campana: un
+`pico_en_pct` y una `caida_post_pico_pct`. El pro no tiene un pico, tiene una
+meseta, y la variedad la mete DENTRO de la meseta, no subiendo. Nuestro warm es
+el caso extremo opuesto: correlacion +0.71, o sea una rampa casi limpia que
+termina arriba de todo.
+
+**Cuanto vale esta evidencia.** Es UN set contra tres nuestros, medido con un
+proxy (brillo + densidad) que no es la escala de energia de la biblioteca, y
+contra material puesto punta a punta que no puede capturar lo que el pro hace
+con el EQ. Ademas el pro toca la noche entera solo, y una meseta puede ser
+consecuencia de eso y no una decision. Por eso NO se cambio ninguna regla: queda
+como candidato a medir con mas sets de audio antes de tocar `pico_en_pct`.
+
+**Como se aplica.** Antes de dar por buena una rampa, mirar cuanto del set queda
+dentro de una banda angosta. Y sumar sets de audio de referencia: con tres o
+cuatro mas, "meseta larga + corte final" pasa de anecdota a regla.
+
+---
+
 ## Un filtro que falla en silencio es peor que no tener filtro
 
 **Que paso.** Tres veces en la misma sesion el sistema ignoro una instruccion del

@@ -9,6 +9,30 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-22 — el set de Maze en La Biblioteca, medido sin tracklist
+
+El DJ mando `youtube.com/watch?v=DzEnYuRjPF0` (MAZE 28, La Biblioteca, Buenos
+Aires, 29/08/2026, 2h58) y pidio armarlo y aprender de el.
+
+**No tiene tracklist.** Ni en la descripcion, ni en los comentarios (cuatro
+personas lo piden, nadie contesta), ni en 1001tracklists, ni en trackid.net. El
+unico track confirmado lo confirmo el propio Maze respondiendo un comentario:
+Kyotto - Knock Knock (Maze 28 Reform), 1:16:50. Bajado, en el Inbox. No se cargo
+el set al corpus con un tema y ocho agujeros: `data/setlists/` es la unica
+evidencia no circular del proyecto y no se ensucia.
+
+**En vez de eso se le midio el audio.** `scripts/arco_de_audio.py`, nuevo: baja a
+178 bloques de un minuto y saca BPM, densidad de onsets, balance espectral y
+RMS. Resultado en `data/arcos/maze_biblioteca.json`. Los dos hallazgos —meseta
+en vez de rampa, y tempo plano tres horas— estan en
+[APRENDIZAJES.md](APRENDIZAJES.md). Ninguna regla se cambio: un set no alcanza.
+
+**Tambien:** `.claude/agents/research.md` ahora dice donde buscar tracklists y
+donde no (trackid.net tiene 20 sets de La Biblioteca; 1001tracklists esta detras
+de Cloudflare). Quedan tres archivos en el Inbox esperando import de Rekordbox.
+
+---
+
 ## 2026-09-21 — el set del cumple de Zorro, en cuatro versiones
 
 Fecha puntual: 1 a 3 AM, recibe y entrega a otro DJ, Sizer como tema modelo.
