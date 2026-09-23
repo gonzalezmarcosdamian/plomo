@@ -133,3 +133,7 @@ data/parecido_*.json
 data/auto_radio_ids.json
 data/favoritos_*.json
 data/batch_*.txt
+
+# Permiso de usuario de Spotify (lo genera scripts/spotify_auth.py)
+data/spotify_token.json
+data/spotify_matches.json
