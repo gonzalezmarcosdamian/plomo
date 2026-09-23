@@ -138,7 +138,7 @@
       "valor": 4,
       "porque": "Cuantos temas del mismo productor entran en un set, contando remixers. No es una regla de higiene: es lo que decide si el set es una coleccion de temas sueltos o el recorrido por un vecindario. Los configs pueden bajarlo, nunca subirlo sin evidencia.",
       "CONFLICTO": "El codigo usa max_per_artist=1 por defecto en select_set.py y los set_configs existentes tambien pasan 1. La regla escrita dice 2. Uno de los dos esta mal. Resolver antes de tocar nada mas.",
-      "evidencia": "2026-09-22, invalidada la version anterior (2). El set 43 del propio DJ —'Maze 28 + Cendryma', el que llama increible— tiene 24 temas de SIETE artistas: Cendryma 4, Gai Barone 4, Rockka 4, Maze 28 4, Hobin Rude 3, Chelakhov 3, Cary Crank 2, con Mango Alley siete veces. Con el tope en 1 o 2 ese set es imposible de armar. Medido ademas sobre los 8 setlists de Maze 28 y Simon Vuarambon en ventanas de 17 temas: repiten un artista 5 veces (p90 9); los otros 26 DJs de referencia, 4. Nuestros sets daban 0. El tope va a 4 y la separacion minima sigue evitando que suenen pegados."
+      "evidencia": "2026-09-22, invalidada la version anterior (2). Dos evidencias. La fuerte: medido sobre los 8 setlists de Maze 28 y Simon Vuarambon en ventanas de 17 temas —el largo de nuestros sets—, repiten un artista 5 veces (p90 9); los otros 26 DJs de referencia, 4; nuestros sets daban 0. La segunda: el set 43 del propio DJ ('Maze 28 + Cendryma', junio) tiene 24 temas de SIETE artistas —Cendryma 4, Gai Barone 4, Rockka 4, Maze 28 4— con Mango Alley nueve veces, y con el tope en 2 es imposible de armar. CORRECCION del 2026-09-22: en la primera version de esta evidencia se dijo que el DJ habia llamado 'increible' al set 43. No fue asi: hablaba del set de Maze 28 en el club La Biblioteca (Buenos Aires, 29/08/2026), que es otra cosa. El 43 sigue siendo un ejemplo valido de set suyo con el tope viejo roto, pero no es un set que el haya elogiado."
     },
     "max_por_remixer_en_set": {
       "valor": 3,
@@ -211,7 +211,7 @@
           "antes": 2,
           "despues": 4,
           "commit": "(este)",
-          "por_que": "el set favorito del DJ tiene 24 temas de 7 artistas; Maze y Simon repiten 5 veces cada 17 temas y nuestros sets 0"
+          "por_que": "Maze y Simon repiten un artista 5 veces cada 17 temas y nuestros sets 0; el set 43 del DJ tiene 24 temas de 7 artistas"
         }
       ]
     },

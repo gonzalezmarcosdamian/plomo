@@ -321,8 +321,10 @@ es el gusto del DJ, no una regla del oficio. Por eso vive aca y no en
 
 ### El vecindario del set 43 (2026-09-22)
 
-El DJ llamo "increible" a su propio set 43, `Maze 28 + Cendryma - Nuevo Prog`
-(junio). Medido, es lo contrario de lo que se venia optimizando:
+El set 43 del DJ, `Maze 28 + Cendryma - Nuevo Prog` (junio), mide al contrario de
+lo que se venia optimizando. (Ojo: una version anterior de esta seccion decia que
+el DJ lo habia llamado "increible". No fue asi: hablaba del set de Maze 28 en el
+club La Biblioteca, Buenos Aires, 29/08/2026.)
 
 | | set 43 | DJs de referencia | nuestros sets de septiembre |
 |---|---|---|---|
