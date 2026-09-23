@@ -4,6 +4,34 @@ Boliche con sistema grande. Recibe la pista de otro DJ a la 1 y la entrega a otr
 a las 3. Progressive con color e intensidad, y **Sizer** (Agustin Pietrocola) como
 tema modelo. Config: `data/set_configs/cumple_zorro.json`.
 
+## v7 — el colorido deja de ser un nombre (2026-09-23)
+
+"Escuche entero el de 1 a 3, un par medios oscuro para ser el colorido". Los
+dos eran los dos primeros: Imentet (percentil 33 de brillo) y Open Sea (43), que
+la colorida heredaba del config base. Pero el problema era mas grande: los siete
+sets tenian 0% de temas en tonalidad mayor.
+
+| set | mayor | cambios de modo | brillo |
+|---|---|---|---|
+| 139 | 0% | 0% | 19.3 |
+| 140 | 0% | 0% | 22.3 |
+| 141 | 18% | 38% | 20.6 |
+| 142 colorido | 29% | 12% | 25.6 |
+| 143 colorido | 24% | 44% | 25.8 |
+| 144 colorido | 24% | 38% | 27.0 |
+| 145 | 6% | 6% | 17.8 |
+| los pros | 11% | 25% | |
+
+El 143 ahora abre con Kamilo Sanclemente en 2B y cruza a mayor cuatro veces.
+
+**El 139 y el 140 siguen en 0%, y es por sus anclas.** El 139 tiene 8 de 17
+posiciones fijas entre anclas, apertura y cierre, y las ocho son temas en menor;
+el 140 tiene siete. Material mayor hay (17% de su pool elegible), pero con medio
+set clavado la cuota no tiene donde moverse. Son los temas que eligio el DJ: si
+quiere color ahi tambien, hay que soltar alguna ancla.
+
+---
+
 ## v6 — la noche entera con el criterio entrenado (2026-09-23)
 
 El DJ escucho y saco tres cosas: Llego La Hora, Meduza - Friends y "nada afro"

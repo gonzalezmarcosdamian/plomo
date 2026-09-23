@@ -124,3 +124,12 @@ data/tocados/
 data/auditoria_*.txt
 # candidatos crudos del barrido de setlists, antes de curarlos
 data/setlists_candidatos/
+
+# Indice de recetas: 1584 archivos generados por scripts/indexar_forma.py.
+# Lo que el solver lee es data/groove_index.json, que si se versiona.
+data/recetas/
+# Scratch de busquedas y batches
+data/parecido_*.json
+data/auto_radio_ids.json
+data/favoritos_*.json
+data/batch_*.txt
