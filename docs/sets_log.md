@@ -3002,21 +3002,22 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 147. 147. Maze 28 + Cendryma · Peak — 1.5h — 2026-09-23
 **Armado:** 2026-09-23  
 **Duracion:** 1.5h  
-**Tracks:** 12  
+**Tracks:** 13  
 **BPM range:** 120-127  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | ECHO DAFT, SHERRNX | Power Surge (Fuenka Remix) | 123 | 7.0 |
-| 2 | Solis [US] | Symbiosis (Extended Mix) | 122 | 5.5 |
-| 3 | Gai Barone, Dougal Fox | Ocean (Club Mix) | 122 | 5.5 |
-| 4 | Mike Kohl | Deep Waters (Original Mix) | 122 | 7.0 |
-| 5 | Juan Deminicis | Solar Reign (Original Mix) | 122 | 7.6 |
-| 6 | Kamilo Sanclemente | Tangiers (Original Mix) | 123 | 5.5 |
-| 7 | Praise (BR) | Kiwi (Extended Mix) | 123 | 7.3 |
-| 8 | Emi Galvan | Everlong (Ruben Karapetyan Remix) | 123 | 5.5 |
-| 9 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
-| 10 | Analog Jungs | Ocaris (Original Mix)  | 123 | 8.1 |
-| 11 | Rockka, Maze 28 | Mirage (Extended Mix) | 123 | 5.5 |
-| 12 | Cristoph | Elements (Original Mix) | 125 | 7.1 |
+| 1 | Chelakhov | Insomnia (Original Mix) | 122 | 5.5 |
+| 2 | Niko Ava | Freedom (Original Mix) | 122 | 7.3 |
+| 3 | Simos Tagias | Euphoria (Paul Deep Remix) | 122 | 7.7 |
+| 4 | K Loveski & Sinan Arsan | IDdicted (TONACO & Matt Oliver Remix) | 122 | 7.2 |
+| 5 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
+| 6 | Supacooks | Un Mundo En Paz (Serious Dancers Extended Remix) | 124 | 7.5 |
+| 7 | Kamilo Sanclemente | Tangiers (Original Mix) | 123 | 5.5 |
+| 8 | Praise (BR) | Kiwi (Extended Mix) | 123 | 7.3 |
+| 9 | Emi Galvan | Everlong (Ruben Karapetyan Remix) | 123 | 5.5 |
+| 10 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
+| 11 | Analog Jungs | Ocaris (Original Mix)  | 123 | 8.1 |
+| 12 | Nicolas Viana | Wayfarer (Extended Mix) | 124 | 6.7 |
+| 13 | Barry Jamieson | Fractured Lens (Lemon8 Remix) | 125 | 7.4 |
 

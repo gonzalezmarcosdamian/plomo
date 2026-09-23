@@ -77,6 +77,7 @@ RUIDO = re.compile(r"\s*[\(\[](original|extended|radio|club|vocal|instrumental)[
 # tales hacia que el buscador castigara al candidato correcto por no decir
 # "mix" en el titulo, y Juri de Parra for Cuva caia de 0.63 a 0.48 y quedaba
 # como "no esta en Spotify" estando.
+PARENTESIS = re.compile(r"[\(\[][^\)\]]*[\)\]]")
 REMIX = re.compile(
     r"[\(\[]\s*(?!(?:original|extended|radio|club|vocal|instrumental))"
     r"([^\)\]]*(?:remix|rework|edit|mix)[^\)\]]*)[\)\]]", re.I)
@@ -132,10 +133,19 @@ class Spotify:
     def buscar(self, artista: str, titulo: str) -> tuple[str | None, str]:
         t, a = limpiar(titulo), artista.split(",")[0].strip()
         remix = REMIX.search(titulo)
+        # El NUCLEO del titulo, sin ningun parentesis. Spotify publica el remix
+        # con guion y otras palabras --"Un Mundo En Paz - Serious Dancers
+        # Remix"-- asi que buscar track:"Un Mundo En Paz (Serious Dancers
+        # Extended Remix)" da CERO resultados, y buscar solo "Un Mundo En Paz"
+        # lo encuentra con 0.93. El parentesis, que para nosotros es
+        # informacion, para el buscador es ruido.
+        nucleo = PARENTESIS.sub("", titulo).strip(" -")
         intentos = [f'artist:"{a}" track:"{t}"']
+        if nucleo != t:
+            intentos.append(f'artist:"{a}" track:"{nucleo}"')
         if remix:
-            intentos.append(f'{t} {remix.group(1)}')
-        intentos.append(f"{a} {t}")
+            intentos.append(f'{nucleo} {remix.group(1)}')
+        intentos += [f"{a} {t}", f"{a} {nucleo}", nucleo]
         for q in intentos:
             try:
                 res = self.get("/search", q=q, type="track", limit=10)["tracks"]["items"]
@@ -146,7 +156,8 @@ class Spotify:
                 # se compara el titulo CON y SIN el sufijo: Spotify publica
                 # "Juri" y la biblioteca lo tiene como "Juri (Original Mix)",
                 # y comparar solo la forma larga lo dejaba en 0.47 y afuera
-                pt = max(parecido(titulo, it["name"]), parecido(t, it["name"]))
+                pt = max(parecido(titulo, it["name"]), parecido(t, it["name"]),
+                         parecido(nucleo, it["name"]))
                 p = pt * 0.6 + max(parecido(artista, ar["name"]) for ar in it["artists"]) * 0.4
                 # una version distinta del mismo tema no sirve: si el titulo
                 # original dice remix, el candidato tiene que decir algo parecido
