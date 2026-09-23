@@ -9,19 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Alex O'Rion",
-      "title": "Tinderbox (Original Mix)",
-      "content_id": "257820159"
-    },
-    {
-      "artist": "Khen",
-      "title": "Homeboy (Dilby Remix)",
-      "content_id": "148429182"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Parabolic (Original Mix)",
-      "content_id": "72311255"
+      "artist": "Parra for Cuva",
+      "title": "Juri (Original Mix)",
+      "content_id": "183767397"
     },
     {
       "artist": "Gorje Hewek, Molac, Dulus",
@@ -29,9 +19,14 @@
       "content_id": "7864421"
     },
     {
-      "artist": "Gai Barone",
-      "title": "Fractals (Nicolas Viana Extended Remix)",
-      "content_id": "52625039"
+      "artist": "Hobin Rude",
+      "title": "Dusk Petals (Original Mix)",
+      "content_id": "219235985"
+    },
+    {
+      "artist": "Khen",
+      "title": "Homeboy (Dilby Remix)",
+      "content_id": "148429182"
     },
     {
       "artist": "Sebastien Leger",
@@ -39,29 +34,19 @@
       "content_id": "11622300"
     },
     {
-      "artist": "Kasper Koman",
-      "title": "The Observer",
-      "content_id": "156983367"
+      "artist": "Julian Nates, Julieta Kühnle, Cendryma",
+      "title": "For Another Storm (Cendryma Extended Mix)",
+      "content_id": "69309836"
     },
     {
-      "artist": "Brian Creao",
-      "title": "Temperance (Juan Ibañez Remix)",
-      "content_id": "74604190"
+      "artist": "Redspace, Olven",
+      "title": "Thread (Extended Mix)",
+      "content_id": "263348196"
     },
     {
-      "artist": "Maze 28",
-      "title": "Mindloop (Original Mix)",
-      "content_id": "177299920"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Pure Junction (Berdu Remix)",
-      "content_id": "37141460"
-    },
-    {
-      "artist": "Grance & Soulmac",
-      "title": "Happy Incident (Ale Russo Remix)",
-      "content_id": "49887591"
+      "artist": "Gai Barone",
+      "title": "Fractals (Nicolas Viana Extended Remix)",
+      "content_id": "52625039"
     },
     {
       "artist": "Simon Vuarambon",
@@ -69,14 +54,29 @@
       "content_id": "136780130"
     },
     {
-      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
-      "title": "Perception (Original Mix)",
-      "content_id": "264835495"
+      "artist": "Grance & Soulmac",
+      "title": "Happy Incident (Ale Russo Remix)",
+      "content_id": "49887591"
     },
     {
-      "artist": "Hobin Rude",
-      "title": "Until the End of Time",
-      "content_id": "177056811"
+      "artist": "Cendryma",
+      "title": "Pure Junction (Berdu Remix)",
+      "content_id": "37141460"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mindloop (Original Mix)",
+      "content_id": "177299920"
+    },
+    {
+      "artist": "M.O.S.",
+      "title": "Skywalkers (Paul Thomas Extended Remix)",
+      "content_id": "213620861"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Focus Bend (Extended Mix)",
+      "content_id": "60597750"
     },
     {
       "artist": "Artic White",

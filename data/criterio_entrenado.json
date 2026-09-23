@@ -2,27 +2,29 @@
  "generado": "scripts/entrenar_criterio.py",
  "beam_entrenamiento": 150,
  "objetivos_pro": {
-  "paso_energia": 1.0,
-  "paso_bpm": 2.0,
+  "paso_energia": 1.0999999999999996,
+  "paso_bpm": 1.5,
   "corr_pos_energia": 0.11395833713207677,
-  "top5_artistas": 0.5,
+  "top5_artistas": 0.45608628659476114,
   "salto_groove": 1.25
  },
  "pesos": {
-  "PESO_ARCO": 8.0,
-  "PESO_GROOVE": 6.0,
+  "PESO_ARCO": 4.0,
+  "PESO_GROOVE": 4.0,
   "PESO_PROG": 2.5,
   "PESO_AJENO": 2.0,
   "PESO_MEZCLA": 1.5,
-  "MAX_E_STEP": 1.3,
-  "MAX_BPM_JUMP": 2.0
+  "MAX_E_STEP": 2.3,
+  "MAX_BPM_JUMP": 2.0,
+  "VENTANA_ARCO": 3,
+  "BONUS_ARTISTA": 0.0
  },
  "rasgos_finales": {
-  "paso_energia": 0.5499999999999998,
-  "salto_groove": 1.0291962696256873,
+  "paso_energia": 0.7999999999999998,
+  "salto_groove": 1.0786261153330847,
   "paso_bpm": 1.0,
-  "corr_pos_energia": 0.34678849189592587,
-  "top5_artistas": 0.4117647058823529
+  "corr_pos_energia": 0.12078184051463045,
+  "top5_artistas": 0.29411764705882354
  },
- "perdida": 2.46726434635399
+ "perdida": 1.1324044167164455
 }

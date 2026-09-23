@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.8.0",
+  "version": "1.10.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -57,9 +57,9 @@
  },
  "energia": {
   "max_escalon": {
-   "valor": 1.3,
+   "valor": 2.3,
    "duro": true,
-   "porque": "Un escalon mayor lo nota el publico como corte. La continuidad la sostiene la energia, no la key. | 2026-09-23: el loop probo 1.8, 2.3 y 2.8 y las tres EMPEORAN (perdida 3.107 contra 2.467). La hipotesis era que este techo era lo que nos dejaba dando pasos de 0.55 contra 1.00 de los pros; queda refutada, el freno esta en el costo y no aca.",
+   "porque": "Un escalon mayor lo nota el publico como corte. La continuidad la sostiene la energia, no la key. | 2026-09-23: el loop probo 1.8, 2.3 y 2.8 y las tres EMPEORAN (perdida 3.107 contra 2.467). La hipotesis era que este techo era lo que nos dejaba dando pasos de 0.55 contra 1.00 de los pros; queda refutada, el freno esta en el costo y no aca. | 2026-09-23, segunda vuelta: con ventana_arco en 3 el techo de 2.3 MEJORA, al reves que cuando el arco tiraba de cada tema. Tiene sentido: si la tendencia la gobierna la ventana, el tema suelto puede saltar mas sin desarmar el arco.",
    "evidencia": "PENDIENTE"
   },
   "max_retroceso_en_subida": {
@@ -88,7 +88,7 @@
    "evidencia": "2026-09-19: los sets de referencia bajan 1.62 puntos desde el pico contra 1.23 los propios, y el 39% de los propios terminan arriba del 90% del pico contra el 15% de la referencia."
   },
   "peso_desvio_arco": {
-   "valor": 8.0,
+   "valor": 4.0,
    "porque": "La energia manda. Queda arriba de todo: 6.0 contra 4.0 del groove, 2.5 de lo progresivo, 2.0 de la afinidad de artista y 1.5 de la cuota de genero. El DJ, 2026-09-23: 'quiero que domine la energia y groove constante, luego lo progresivo y luego recien la cuota de genero; artistas le gana, productores le gana a cuota de genero'. En el codigo la escala estaba al reves: la cuota de genero pesaba 8.0 y el desvio del arco 3.0, o sea el genero mandaba 2.7 veces mas que la energia. Los cuatro temas que el DJ rechazo escuchando entraron por la cuota. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
   },
   "formula_sin_bpm": {
@@ -135,13 +135,17 @@
   "techo_pro": {
    "valor": 6.9,
    "porque": "p90 de los pros; su mediana es 5.7. Nuestros sets iban de 6.0 a 7.2 de mediana y tocaban 8.2-8.5 arriba: tocabamos MAS FUERTE que la referencia todo el tiempo, que es lo que el DJ escucho como 'muy pasados'. Medido el 2026-09-23 sobre 487 temas de los setlists de referencia con BPM y 358 con energia. El DJ escucho los sets y dijo 'estan o muy oscuros o muy pasados o muy lentos'. Las tres cosas estaban medidas y ninguna era un par de temas sueltos."
+  },
+  "ventana_arco": {
+   "valor": 3,
+   "porque": "Sobre cuantos temas se mide el desvio del arco. En 1 el arco tira de cada tema y el set camina pegado a la curva: pasos de energia de 0.55 de mediana contra 1.00 de los pros. Un valor mayor deja que el tema suelto se mueva mientras la TENDENCIA obedece, que es lo que hace un DJ real (y lo que mide el set de Maze: tres horas dentro de una banda de +-0.3 z con variedad local alta). Lo elige el loop de entrenamiento. | 2026-09-23: el loop la eligio en 2 y fue la mejora mas grande de la ronda (2.976 -> 2.781). El paso de energia subio de 0.60 a 0.70 contra 1.00 de los pros: la diferencia que quedaba abierta era, en parte, que el arco tiraba de cada tema."
   }
  },
  "bpm": {
   "max_salto": {
    "valor": 3.0,
    "duro": true,
-   "porque": "Mas de 2 BPM entre consecutivos obliga a forzar el pitch fuera del rango comodo.",
+   "porque": "Mas de 2 BPM entre consecutivos obliga a forzar el pitch fuera del rango comodo. | 2026-09-23: el paso mediano de BPM de los pros es 1.0, no 2.0. El 2.0 salia de comparar un BPM medido por Rekordbox contra uno de muzpa. Ver APRENDIZAJES.",
    "evidencia": "2026-09-21: medido contra 11 DJs de referencia, el salto de BPM mediano entre temas consecutivos es 1.0 y el 28% pasa de 2. Con el tope en 2 el solver daba 0% de saltos mayores: mas rigido que cualquier profesional. Se sube a 3."
   },
   "banda_pro": {
@@ -184,6 +188,10 @@
    "valor": 3,
    "porque": "Lo que el solver aplica HOY (MIN_GAP). Se deja explicito para no esconder el conflicto con separacion_minima=5 detras de un default. Cuando se resuelva el conflicto, este campo desaparece.",
    "CONFLICTO": "Duplica separacion_minima con otro valor a proposito: el codigo usa 3, la regla escrita dice 5. Existe solo hasta que el analista decida cual gana."
+  },
+  "bonus_artista_repetido": {
+   "valor": 0.0,
+   "porque": "Descuento por volver a un artista que ya sono en el set. Los 5 artistas mas repetidos son el 47-50% de un set de los pros y el 29-41% de los nuestros: un set tiene un nucleo y satelites, no 17 nombres distintos. El tope por artista y la separacion minima siguen valiendo. Lo elige el loop de entrenamiento. | 2026-09-23: el loop lo probo en 0.5, 1.0 y 2.0 y las tres EMPEORAN. Los 5 mas repetidos siguen en 35% contra 50% de los pros, pero forzarlo por aca cuesta mas de lo que da. Queda en 0."
   }
  },
  "detonantes": {
@@ -433,6 +441,115 @@
      "por_que": "nuestros picos en 8.2-8.5 contra un p90 de 6.9"
     }
    ]
+  },
+  {
+   "version": "1.9.0",
+   "fecha": "2026-09-23",
+   "tema": "el arco rige la tendencia, no cada tema",
+   "cambios": [
+    {
+     "regla": "energia.peso_desvio_arco",
+     "antes": 8.0,
+     "despues": 6.0,
+     "por_que": "lo eligio el loop contra los 40 setlists de referencia"
+    },
+    {
+     "regla": "groove.peso_continuidad",
+     "antes": 6.0,
+     "despues": 4.0,
+     "por_que": "lo eligio el loop contra los 40 setlists de referencia"
+    },
+    {
+     "regla": "genero.peso_mezcla",
+     "antes": 1.5,
+     "despues": 0.5,
+     "por_que": "lo eligio el loop contra los 40 setlists de referencia"
+    },
+    {
+     "regla": "energia.ventana_arco",
+     "antes": 1,
+     "despues": 2,
+     "por_que": "lo eligio el loop contra los 40 setlists de referencia"
+    },
+    {
+     "regla": "bpm.max_salto en los configs",
+     "antes": "2.0 hardcodeado",
+     "despues": "lo que diga la regla (3.0)",
+     "por_que": "los configs pasaban 2.0 a mano y pisaban la regla, como paso con peso_mezcla"
+    }
+   ],
+   "resultado": {
+    "perdida_antes": 3.572,
+    "perdida_despues": 2.781,
+    "rasgos_nuestros": {
+     "paso_energia": 0.7000000000000002,
+     "salto_groove": 0.9780919714107923,
+     "paso_bpm": 1.0,
+     "corr_pos_energia": 0.4078879729078055,
+     "top5_artistas": 0.35294117647058826
+    },
+    "rasgos_pro": {
+     "paso_energia": 1.0,
+     "paso_bpm": 2.0,
+     "corr_pos_energia": 0.11395833713207677,
+     "top5_artistas": 0.5,
+     "salto_groove": 1.25
+    }
+   }
+  },
+  {
+   "version": "1.10.0",
+   "fecha": "2026-09-23",
+   "tema": "el objetivo estaba mal medido: tres rondas persiguiendo ruido de fuentes",
+   "cambios": [
+    {
+     "regla": "energia.peso_desvio_arco",
+     "antes": 6.0,
+     "despues": 4.0,
+     "por_que": "lo eligio el loop con los objetivos ya corregidos"
+    },
+    {
+     "regla": "genero.peso_mezcla",
+     "antes": 0.5,
+     "despues": 1.5,
+     "por_que": "lo eligio el loop con los objetivos ya corregidos"
+    },
+    {
+     "regla": "energia.ventana_arco",
+     "antes": 2,
+     "despues": 3,
+     "por_que": "lo eligio el loop con los objetivos ya corregidos"
+    },
+    {
+     "regla": "energia.max_escalon",
+     "antes": 1.3,
+     "despues": 2.3,
+     "por_que": "lo eligio el loop con los objetivos ya corregidos"
+    },
+    {
+     "regla": "objetivo paso_bpm (scripts/entrenar_criterio.py)",
+     "antes": 2.0,
+     "despues": 1.0,
+     "por_que": "solo pares donde los dos temas salen de la misma medicion"
+    }
+   ],
+   "resultado": {
+    "perdida_antes": 1.1324044167164455,
+    "rasgos_nuestros": {
+     "paso_energia": 0.7999999999999998,
+     "salto_groove": 1.0786261153330847,
+     "paso_bpm": 1.0,
+     "corr_pos_energia": 0.12078184051463045,
+     "top5_artistas": 0.29411764705882354
+    },
+    "rasgos_pro": {
+     "paso_energia": 1.0999999999999996,
+     "paso_bpm": 1.5,
+     "corr_pos_energia": 0.11395833713207677,
+     "top5_artistas": 0.45608628659476114,
+     "salto_groove": 1.25
+    }
+   }
   }
  ],
  "sonido_propio": {
@@ -514,7 +631,7 @@
    "porque": "Mediana de 236 pares consecutivos de data/setlists/ donde los dos temas estan indexados. Nuestros sets del cumple daban 1.68 a 2.37; el 140, el unico que el DJ elogio entero, era el mas cercano al pro con 1.68."
   },
   "peso_continuidad": {
-   "valor": 6.0,
+   "valor": 4.0,
    "porque": "Segundo en la jerarquia, junto con la energia y arriba de todo lo demas. El DJ, 2026-09-23: 'quiero que domine la energia y groove constante, luego lo progresivo y luego recien la cuota de genero; artistas le gana, productores le gana a cuota de genero'. En el codigo la escala estaba al reves: la cuota de genero pesaba 8.0 y el desvio del arco 3.0, o sea el genero mandaba 2.7 veces mas que la energia. Los cuatro temas que el DJ rechazo escuchando entraron por la cuota. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
   }
  },

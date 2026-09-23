@@ -8,6 +8,43 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Tres rondas persiguiendo un numero que era ruido de medicion
+
+**Que paso.** El loop de entrenamiento venia diciendo, ronda tras ronda, que
+nuestros sets movian poco el tempo: paso mediano de BPM 1.0 contra 2.0 de los
+pros. Movi pesos, ensanche bandas, sume un arco de tempo. Antes de agregar un
+termino para forzarlo, mire de donde salia el 2.0.
+
+Los setlists de referencia traen el BPM de dos fuentes: `biblioteca` (el
+analisis de Rekordbox sobre nuestra copia del track) y `muzpa` (el dato de la
+tienda). Separando los pares:
+
+| pares consecutivos | paso mediano de BPM |
+|---|---|
+| los dos de la misma fuente (n=182) | **1.0** |
+| fuentes mezcladas (n=114) | 2.0 |
+
+Nuestros sets, medidos todos con Rekordbox, daban 1.0. **Ya estabamos igual que
+ellos desde el principio.** El 2.0 era la diferencia entre dos formas de medir
+el mismo tema, no entre dos formas de armar un set.
+
+**Por que importa.** El loop optimiza contra el objetivo que uno le da, y lo
+hace bien: durante tres rondas movio pesos reales para acercarse a un numero que
+no existia, y de paso distorsiono lo demas (eligio `max_bpm_jump` 3.0 para
+perseguirlo). Un objetivo mal medido no se nota nunca desde adentro del
+optimizador: la perdida baja igual.
+
+**Como se aplica.** Antes de optimizar contra una diferencia, verificar que la
+diferencia no sea de instrumento: comparar solo lo medido con la misma vara. En
+`data/setlists/` eso es filtrar por `fuente_datos`, y el entrenador ahora lo
+hace. Con los objetivos limpios, corr(posicion, energia) nos dio +0.12 contra
++0.11 de los pros, que es el rasgo donde mas lejos estabamos hace dos dias.
+
+Esto es primo hermano de [[feedback_tilt_espectral_no_es_registro]] y del tilt
+espectral: dos mediciones que parecen la misma cosa y no lo son.
+
+---
+
 ## Tocabamos mas lento y mas fuerte que la referencia, todo el tiempo
 
 **Que paso.** El DJ escucho la ronda anterior y dijo: "estan o muy oscuros o muy

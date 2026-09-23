@@ -4,6 +4,25 @@ Boliche con sistema grande. Recibe la pista de otro DJ a la 1 y la entrega a otr
 a las 3. Progressive con color e intensidad, y **Sizer** (Agustin Pietrocola) como
 tema modelo. Config: `data/set_configs/cumple_zorro.json`.
 
+## v9 — el criterio entrenado con objetivos limpios (2026-09-23)
+
+| set | BPM | E med | paso E | corr | mayor | groove | top-5 |
+|---|---|---|---|---|---|---|---|
+| 140 warm | 121 | 6.0 | 0.60 | +0.48 | 6% | 0.88 | 35% |
+| 142 warm col | 122 | 5.8 | 0.95 | +0.38 | 24% | 0.80 | 29% |
+| 139 | 123 | 6.3 | 0.70 | +0.44 | 18% | 1.14 | 29% |
+| 143 col | 123 | 6.6 | 0.85 | +0.59 | 35% | 1.11 | 29% |
+| 141 | 123 | 6.3 | 0.60 | +0.08 | 6% | 0.95 | 29% |
+| 144 col | 124 | 6.6 | 0.65 | -0.09 | 29% | 0.99 | 29% |
+| 145 | 123 | 6.2 | 0.75 | +0.32 | 6% | 1.03 | 65% |
+| los pros | 123 | 5.7 | 1.10 | +0.11 | 11% | 1.25 | 46% |
+
+El arco paso a regir la TENDENCIA (`ventana_arco` 3) en vez de cada tema, que
+fue la mejora mas grande del loop. Y el objetivo de paso de BPM resulto ser
+ruido de medicion: ver APRENDIZAJES.
+
+---
+
 ## v8 — la zona, no los temas (2026-09-23)
 
 "Estan o muy oscuros o muy pasados o muy lentos". Las tres cosas estaban

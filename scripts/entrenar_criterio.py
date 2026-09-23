@@ -86,6 +86,13 @@ ORDEN = ["PESO_ARCO", "PESO_GROOVE", "PESO_PROG", "PESO_AJENO", "PESO_MEZCLA"]
 TECHOS = {
     "MAX_E_STEP": [1.3, 1.8, 2.3, 2.8],
     "MAX_BPM_JUMP": [2.0, 3.0, 4.0, 5.0],
+    # La FORMA del arco: sobre cuantos temas se mide el desvio. Es la coordenada
+    # que puede cerrar la diferencia que quedo abierta dos rondas seguidas
+    # (pasos de energia 0.55 contra 1.00 de los pros), porque con ventana 1 el
+    # arco tira de cada tema y el set camina pegado a la curva.
+    "VENTANA_ARCO": [1, 2, 3, 4],
+    # Concentracion de artistas: los pros repiten mas que nosotros.
+    "BONUS_ARTISTA": [0.0, 0.5, 1.0, 2.0],
 }
 CANDIDATOS.update(TECHOS)
 ORDEN = ORDEN + list(TECHOS)
@@ -164,6 +171,16 @@ def objetivos() -> dict:
         for tramo in tramos:
             if len(tramo) < 3:
                 continue
+            # SOLO pares medidos con la misma vara. El BPM de estos setlists sale
+            # de dos fuentes: nuestra biblioteca (analisis de Rekordbox) y muzpa.
+            # Mezclarlas inventa saltos: el paso mediano de BPM da 2.0 con
+            # fuentes mezcladas y 1.0 cuando los dos temas salen de la nuestra,
+            # que es exactamente lo que ya hacian nuestros sets. El loop persiguio
+            # ese 2.0 durante tres rondas: no era una diferencia con los pros,
+            # era ruido de medicion.
+            tramo = [t for t in tramo if t.get("fuente_datos") == "biblioteca"]
+            if len(tramo) < 3:
+                continue
             r = rasgos([t.get("energy") for t in tramo],
                        [t.get("bpm") for t in tramo],
                        [t.get("key") for t in tramo],
@@ -198,6 +215,8 @@ def armar(pesos: dict, beam: int) -> list:
     # se arma después con el beam de produccion.
     original = S.select
     S.MAX_E_STEP = pesos["MAX_E_STEP"]
+    S.VENTANA_ARCO = int(pesos["VENTANA_ARCO"])
+    S.BONUS_ARTISTA = pesos["BONUS_ARTISTA"]
     forzar = {"beam": beam, "max_bpm_jump": pesos["MAX_BPM_JUMP"]}
     S.select = lambda *a, **k: original(*a, **{**k, **forzar})
     try:
@@ -251,6 +270,8 @@ def main() -> None:
     pesos = {k: float(getattr(S, k)) for k in ORDEN if k.startswith("PESO_")}
     pesos["MAX_E_STEP"] = float(S.MAX_E_STEP)
     pesos["MAX_BPM_JUMP"] = 2.0
+    pesos["VENTANA_ARCO"] = float(S.VENTANA_ARCO)
+    pesos["BONUS_ARTISTA"] = float(S.BONUS_ARTISTA)
     print(f"\narranque (reglas {json.loads((RAIZ/'rules/curaduria.json').read_text(encoding='utf-8'))['_meta']['version']}): "
           + "  ".join(f"{k.replace('PESO_','').lower()} {v}" for k, v in pesos.items()))
 
@@ -297,6 +318,8 @@ def main() -> None:
         rp = RAIZ / "rules" / "curaduria.json"
         r = json.loads(rp.read_text(encoding="utf-8"))
         donde = {"MAX_E_STEP": ("energia", "max_escalon"),
+                 "VENTANA_ARCO": ("energia", "ventana_arco"),
+                 "BONUS_ARTISTA": ("repeticion", "bonus_artista_repetido"),
                  "PESO_ARCO": ("energia", "peso_desvio_arco"),
                  "PESO_GROOVE": ("groove", "peso_continuidad"),
                  "PESO_PROG": ("estilo", "peso_progresivo"),

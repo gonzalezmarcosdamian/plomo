@@ -9,64 +9,14 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Gru V & Rockka",
-      "title": "Closer (Fabri Lopez Remix)",
-      "content_id": "256092326"
-    },
-    {
       "artist": "Hobin Rude",
-      "title": "Last Glimpse",
-      "content_id": "189440160"
+      "title": "Mirror (Original Mix)",
+      "content_id": "5884854"
     },
     {
       "artist": "Cendryma",
-      "title": "Override (Luis Damora Remix)",
-      "content_id": "229752126"
-    },
-    {
-      "artist": "Gai Barone",
-      "title": "All About Her (Danny Bonnici Remix)",
-      "content_id": "237988574"
-    },
-    {
-      "artist": "Circulation",
-      "title": "Swank (Hobin Rude Remix)",
-      "content_id": "193525168"
-    },
-    {
-      "artist": "Rockka",
-      "title": "Subversion",
-      "content_id": "78510636"
-    },
-    {
-      "artist": "Blake Jarrell",
-      "title": "Twenty Miami's Ago (Cendryma Extended Mix)",
-      "content_id": "96926709"
-    },
-    {
-      "artist": "Chelakhov",
-      "title": "Rawai (Extended Mix)",
-      "content_id": "103956355"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "In the Still of Absence (Kasey Taylor & Gai Barone Remix)",
-      "content_id": "244583766"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Focus Bend (Extended Mix)",
-      "content_id": "60597750"
-    },
-    {
-      "artist": "Chelakhov",
-      "title": "Searching (Gero Pellizzon Remix)",
-      "content_id": "37090778"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Great Attractor (Ruben Karapetyan Remix)",
-      "content_id": "106041324"
+      "title": "Parabolic (Original Mix)",
+      "content_id": "72311255"
     },
     {
       "artist": "Gai Barone, Aman Anand",
@@ -74,14 +24,39 @@
       "content_id": "248641334"
     },
     {
-      "artist": "Cary Crank, OBL",
-      "title": "Spitfire (Original Mix) ",
-      "content_id": "65473191"
+      "artist": "Rockka",
+      "title": "Elevation",
+      "content_id": "114312499"
     },
     {
-      "artist": "Rockka",
-      "title": "Amnesia (Fuenka Remix)",
-      "content_id": "216766461"
+      "artist": "Maze 28",
+      "title": "Nocte",
+      "content_id": "37299186"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Last Glimpse",
+      "content_id": "189440160"
+    },
+    {
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot",
+      "content_id": "97553620"
+    },
+    {
+      "artist": "Cary Crank, OBL",
+      "title": "Face the Sun (Aman Anand Remix)",
+      "content_id": "138438414"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Shrouded Glint (Original Mix)",
+      "content_id": "68561043"
     },
     {
       "artist": "Freedo Mosho",
@@ -89,9 +64,34 @@
       "content_id": "226546454"
     },
     {
-      "artist": "Gai Barone",
-      "title": "Kromaky (Original Mix)",
-      "content_id": "75860698"
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot (Cid Inc. Remix)",
+      "content_id": "101326027"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
+    },
+    {
+      "artist": "Cary Crank, OBL",
+      "title": "Spitfire (Original Mix) ",
+      "content_id": "65473191"
+    },
+    {
+      "artist": "Circulation",
+      "title": "Swank (Hobin Rude Remix)",
+      "content_id": "193525168"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Great Attractor (Ruben Karapetyan Remix)",
+      "content_id": "106041324"
+    },
+    {
+      "artist": "QuiQui, Thom Rich",
+      "title": "Victorious (Gai Barone Dark Extended Remix)",
+      "content_id": "20688664"
     }
   ]
 }

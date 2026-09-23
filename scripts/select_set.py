@@ -93,6 +93,8 @@ _GR_SD = _GROOVE.get("desvios", [1.0, 1.0])
 _MUNDO_ART = set(_MUNDO.get("artistas", []))
 _MUNDO_SELLO = set(_MUNDO.get("sellos", []))
 _BRILLO = _GROOVE.get("brillo_pct", {})
+VENTANA_ARCO = R.get("energia.ventana_arco", 1)
+BONUS_ARTISTA = R.get("repeticion.bonus_artista_repetido", 0.0)
 MODO_OBJETIVO = R.get("armonia.modo_mayor_objetivo", 0.0)
 PESO_MODO = R.get("armonia.peso_modo", 0.0)
 
@@ -218,7 +220,7 @@ def _minus(s: str) -> str:
     return s.lower().strip()
 
 
-def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
+def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
            max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=PESO_MEZCLA,
            objetivo_seg=None, arco=None, anclas=(), inicio_fijo=(),
            anclas_en=None, entrada=None, salida=None, bpm_arco=None,
@@ -330,6 +332,12 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # rueda en una direccion. Medido en el set 43 del DJ, el que llama increible:
     # 6A aparece 8 veces de 24 y el set VUELVE a ella ocho veces. El solver, sin
     # esto, se aleja y no vuelve: la misma cantidad de 6A pero solo 5 regresos.
+    # El salto de BPM sale de las reglas si nadie lo pide distinto: bpm.max_salto
+    # valia 3.0 desde la version 1.4.0 y nunca se aplicaba, porque el default de
+    # la firma era 2.0 y ademas los configs lo escribian a mano. Tercer override
+    # silencioso de la misma familia que peso_mezcla.
+    if max_bpm_jump is None:
+        max_bpm_jump = R.get("bpm.max_salto", 2.0)
     modo_obj = MODO_OBJETIVO if modo_objetivo is None else modo_objetivo
     p_modo = PESO_MODO if peso_modo is None else peso_modo
     key_hogar = arco.get("key_hogar")
@@ -383,7 +391,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
     # de los DJ reales, y de ahi salia el rango corto de los sets.
     umbral_plano = max(umbral_plano_set, paso_natural * 0.55)
     beams = [(0.0, None, None, 0, {}, 0, None, 0, {}, float("-inf"), 0.0, 0, 0,
-          float("inf"), float("-inf"), float("inf"), 0)]
+          float("inf"), float("-inf"), float("inf"), 0, ())]
     for i in range(n):
         tgt = arc_target(i, n, e_lo, e_hi)
         # Monticulo acotado en vez de lista completa. Antes se acumulaban
@@ -398,7 +406,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         for nodo in beams:
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
              gen_cnt, max_e, segs, e_signo, e_racha, min_e, bpm_hi, bpm_lo,
-             may_cnt) = nodo
+             may_cnt, ventana) = nodo
             frac = segs / objetivo_seg
             tgt = arc_en(frac, e_lo, e_hi, pico, caida)
             # "antes del pico" tambien se mide con el reloj: si los primeros
@@ -523,7 +531,20 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                              + abs(t["_gr"][1] - prev["_gr"][1]))
                     if salto > SALTO_GROOVE:
                         step += (salto - SALTO_GROOVE) * PESO_GROOVE
-                desvio = max(0.0, abs(t["energy"] - tgt) - tol_arco)
+                # EL ARCO RIGE LA TENDENCIA, NO CADA TEMA. Con el desvio medido
+                # sobre el tema suelto y un peso de 8.0, el set camina pegado a
+                # la curva: pasos de energia de 0.55 de mediana contra 1.00 de
+                # los pros, que es la diferencia que quedaba sin explicar. Un
+                # DJ real oscila ALREDEDOR de la tendencia. Medido en el set de
+                # Maze en La Biblioteca: tres horas dentro de una banda de +-0.3
+                # z, con variedad local alta adentro. Con ventana 1 esto es
+                # identico al comportamiento viejo.
+                if VENTANA_ARCO > 1:
+                    prev_e = ventana + (t["energy"],)
+                    media = sum(prev_e) / len(prev_e)
+                    desvio = max(0.0, abs(media - tgt) - tol_arco)
+                else:
+                    desvio = max(0.0, abs(t["energy"] - tgt) - tol_arco)
                 # premio por ensanchar el recorrido, capado en el objetivo: una
                 # vez que el set ya cubre SPAN_OBJETIVO, estirar mas no paga
                 if PESO_SPAN:
@@ -570,6 +591,13 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 # unico eje que los ve venir.
                 if PESO_AJENO and t["_ajeno"]:
                     c += PESO_AJENO
+                # Los pros no tocan 17 artistas distintos: sus 5 mas repetidos
+                # son el 47-50% del set y el nuestro andaba en 29-41%. Un set
+                # tiene un nucleo y satelites. El tope por artista y la
+                # separacion minima siguen valiendo; esto solo abarata volver a
+                # alguien que ya sono.
+                if BONUS_ARTISTA and (t["_names"] & set(arts)):
+                    c -= BONUS_ARTISTA
                 if t["id"] in prefer:
                     c -= bonus
                 if t["id"] in anclas:
@@ -621,7 +649,9 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                              t["energy"] if t["energy"] < min_e else min_e,
                              t["bpm"] if t["bpm"] > bpm_hi else bpm_hi,
                              t["bpm"] if t["bpm"] < bpm_lo else bpm_lo,
-                             n_may)
+                             n_may,
+                             (ventana + (t["energy"],))[-(VENTANA_ARCO - 1):]
+                             if VENTANA_ARCO > 1 else ())
                 entrada = (-c, -orden, nodo_hijo)
                 orden += 1
                 if len(nxt) < beam:
@@ -774,7 +804,7 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
 
         best = select(
             pool, n_tracks, spec["e_lo"], spec["e_hi"],
-            max_bpm_jump=spec.get("max_bpm_jump", 2.0),
+            max_bpm_jump=spec.get("max_bpm_jump"),
             prefer=set(spec.get("prefer_ids", [])),
             bonus=spec.get("prefer_bonus", 6.0),
             max_per_artist=spec.get("max_per_artist", 1),

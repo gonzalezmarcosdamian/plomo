@@ -434,7 +434,7 @@ def set_145() -> Path:
                                     "Chelakhov y Cary Crank, hasta cuatro temas cada uno. Es la "
                                     "forma del set 43, el que el DJ llamo increible."),
                      "duration_h": 2.0, "bpm": [119, 126], "bpm_arco": [122, 124], "bpm_arco_peso": 2.5, "e_pool": [4.5, 7.8],
-                     "e_lo": 5.2, "e_hi": 7.2, "max_per_artist": 4, "max_bpm_jump": 2.0,
+                     "e_lo": 5.2, "e_hi": 7.2, "max_per_artist": 4,
                      "artists": ["*"], "genres": sorted(GEN_PROG),
                      "beam": 4000,
                      # el pool chico hace que el set se quede clavado en la rueda:
