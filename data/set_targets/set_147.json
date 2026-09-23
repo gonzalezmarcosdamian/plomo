@@ -1,0 +1,72 @@
+{
+  "name": "147. Maze 28 + Cendryma · Peak — 1.5h — 2026-09-23",
+  "duration_h": 1.5,
+  "bpm_range": [
+    120,
+    127
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "ECHO DAFT, SHERRNX",
+      "title": "Power Surge (Fuenka Remix)",
+      "content_id": "83267074"
+    },
+    {
+      "artist": "Solis [US]",
+      "title": "Symbiosis (Extended Mix)",
+      "content_id": "234858019"
+    },
+    {
+      "artist": "Gai Barone, Dougal Fox",
+      "title": "Ocean (Club Mix)",
+      "content_id": "57244885"
+    },
+    {
+      "artist": "Mike Kohl",
+      "title": "Deep Waters (Original Mix)",
+      "content_id": "18489049"
+    },
+    {
+      "artist": "Juan Deminicis",
+      "title": "Solar Reign (Original Mix)",
+      "content_id": "125422752"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Tangiers (Original Mix)",
+      "content_id": "145310718"
+    },
+    {
+      "artist": "Praise (BR)",
+      "title": "Kiwi (Extended Mix)",
+      "content_id": "261787150"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Everlong (Ruben Karapetyan Remix)",
+      "content_id": "68108434"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
+      "content_id": "117129270"
+    },
+    {
+      "artist": "Analog Jungs",
+      "title": "Ocaris (Original Mix) ",
+      "content_id": "50523858"
+    },
+    {
+      "artist": "Rockka, Maze 28",
+      "title": "Mirage (Extended Mix)",
+      "content_id": "248235294"
+    },
+    {
+      "artist": "Cristoph",
+      "title": "Elements (Original Mix)",
+      "content_id": "4975889"
+    }
+  ]
+}
