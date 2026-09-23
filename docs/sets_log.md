@@ -2891,19 +2891,19 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Tim Green | Moho (Original Mix)  | 120 | 5.6 |
+| 1 | Rauschhaus, GRAZZE | Nord (Extended Mix)  | 122 | 6.3 |
 | 2 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 5.5 |
 | 3 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
 | 4 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
 | 5 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
-| 6 | Guy J | Airborne (Original Mix) | 123 | 5.5 |
+| 6 | Emi Galvan | Crabo (Original Mix) | 122 | 5.5 |
 | 7 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
-| 8 | Marcelo Vasami | Shades Of Blue (Original Mix) | 122 | 5.5 |
-| 9 | Joris Voorn, Alex Kennon | Blinding Lights (Joris Voorn Remix) | 124 | 6.0 |
+| 8 | Ben Bohmer | Beyond Beliefs (Original Mix) | 124 | 6.0 |
+| 9 | Estiva & Julia Church | On the Line | 124 | 6.9 |
 | 10 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 11 | Rauschhaus | Faunus (Original Mix) | 123 | 5.5 |
-| 12 | Eric Lune & Juan Sapia | Tension Release (Original Mix)  | 123 | 6.9 |
-| 13 | Spirit & The Guide | Alafia (Golan Zocher Remix) | 121 | 5.0 |
+| 11 | Sultan + Shepard | Indigo (Extended Mix) | 122 | 5.5 |
+| 12 | Monolink | Otherside (Fideles Remix) | 123 | 5.5 |
+| 13 | Artic White | Once We Were (Extended Mix) | 123 | 5.5 |
 | 14 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.0 |
 | 15 | D-Nox, Stereo Underground | Shooting Stars (Extended Version) | 125 | 6.0 |
 | 16 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |

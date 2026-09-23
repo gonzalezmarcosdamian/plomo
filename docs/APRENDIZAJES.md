@@ -86,6 +86,51 @@ distribucion, mover su centro, nunca cortarle la cola.
 
 ---
 
+## "Oscuro" no era falta de agudos: era falta de cuerpo
+
+**Que paso.** El DJ escucho el set 143 entero y fue nombrando: "airbone baja
+toda la energia totalmente", "moho tambien arranca muy abajo", "shades of blue
+muy oscuro", "joris voorn blinding lights muy oscuro", "faunus muy oscurooo",
+"tension release poca energia", "alafia oscuro". Siete de diecisiete, incluido
+el pico anclado.
+
+Con siete rechazos y diez sobrevivientes del MISMO set hay con que medir:
+
+| | quedan (10) | salen (7) |
+|---|---|---|
+| medios | **14.5** | 11.4 |
+| aire | **5.4** | 7.4 |
+| rango dinamico | **5.1 dB** | 3.7 |
+| breakdown mas largo | **43 compases** | 34 |
+| tonalidad mayor | 11% | **60%** |
+
+Para su oido "oscuro" es un tema finito y comprimido: pocos medios, mucho aire,
+poco aire para respirar. La formula que yo tenia para "colorido" era
+`brillo = medio + 2 * aire`, o sea que pesaba al DOBLE justo lo que el rechaza.
+Estuve empujando el set hacia lo que no quiere y llamandolo color.
+
+**Y la cuota de modo mayor que agregue el dia anterior lo empeoro.** El 60% de
+lo que saco estaba en tonalidad mayor contra el 11% de lo que dejo: al pedirle
+al solver un 25% de mayores, lo obligue a buscar mayores donde no habia buenos.
+Ojo con la conclusion facil: If I Win, que el mismo llamo TEMAZO TOTAL, es 12B.
+El problema no es la tonalidad, es pedirla como cuota y que el material que la
+cumple no tenga cuerpo.
+
+**Por que importa.** Dos dias midiendo contra los pros y acertandole a la
+correlacion posicion-energia con dos decimales, y al mismo tiempo el termino que
+define el caracter del set estaba con el signo cambiado. Ninguna metrica contra
+la referencia lo iba a mostrar: los pros no tienen opinion sobre el aire de un
+tema, y el DJ si.
+
+**Como se aplica.** Cuando el DJ rechaza varios temas del mismo set, comparar
+los que saca contra los que deja: es un experimento con control que el armo sin
+querer, y vale mas que cualquier regla traida de afuera. Y antes de definir un
+adjetivo como formula, chequear el signo de cada termino contra un caso real.
+`estilo.cuerpo` = medios - aire + rango dinamico. Muestra chica (7 contra 10) y
+un solo set: se vuelve a medir con el proximo que escuche.
+
+---
+
 ## "Colorido" era un nombre, no un numero — y el set entero estaba en menor
 
 **Que paso.** El DJ escucho el set de 1 a 3 y dijo: "un par medios oscuros para

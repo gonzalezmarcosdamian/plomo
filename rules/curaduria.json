@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.10.0",
+  "version": "1.11.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -550,6 +550,25 @@
      "salto_groove": 1.25
     }
    }
+  },
+  {
+   "version": "1.11.0",
+   "fecha": "2026-09-23",
+   "tema": "'oscuro' era falta de cuerpo, no falta de agudos",
+   "cambios": [
+    {
+     "regla": "estilo.cuerpo",
+     "antes": "brillo = medio + 2*aire",
+     "despues": "cuerpo = medio - aire + rango",
+     "por_que": "la formula vieja premiaba el aire, que es lo que el DJ rechaza"
+    },
+    {
+     "regla": "estilo.colorido.modo_mayor_objetivo",
+     "antes": 0.25,
+     "despues": 0.11,
+     "por_que": "el 60% de lo que saco era mayor contra el 11% de lo que dejo"
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -617,11 +636,16 @@
   },
   "colorido": {
    "valor": {
-    "modo_mayor_objetivo": 0.25,
+    "modo_mayor_objetivo": 0.11,
     "color_peso": 1.5,
-    "peso_modo": 5.0
+    "peso_modo": 2.0,
+    "medida": "cuerpo_pct"
    },
-   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el brillo (medio + 2*aire, como percentil de la biblioteca); antes el brillo se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 quedaba en 25.1 de brillo con dos temas en el percentil 33 y 43 abriendo el set. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove."
+   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el brillo (medio + 2*aire, como percentil de la biblioteca); antes el brillo se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 quedaba en 25.1 de brillo con dos temas en el percentil 33 y 43 abriendo el set. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove. | 2026-09-23, despues de que el DJ escuchara el 143 entero: de los 7 temas que saco, el 60% estaban en tonalidad mayor contra el 11% de los 10 que dejo. Forzar un 25% obligaba al solver a buscar mayores sin cuerpo. Baja al 11% de los pros, que es lo que sale solo cuando el material da. If I Win, que llamo TEMAZO, es 12B: el problema no es la tonalidad sino pedirla como cuota."
+  },
+  "cuerpo": {
+   "valor": "medio - aire + rango_dinamico_db",
+   "porque": "Lo que el DJ llama 'oscuro' no es falta de agudos: los 7 temas que saco del 143 tienen medios 11.4 y aire 7.4, y los 10 que dejo medios 14.5 y aire 5.4, con rango dinamico 5.1 contra 3.7. Un tema 'oscuro' para el es uno finito y comprimido. La formula vieja de brillo (medio + 2*aire) premiaba justo lo que rechaza. Muestra chica (7 contra 10), medida sobre un solo set."
   }
  },
  "groove": {

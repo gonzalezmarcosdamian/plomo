@@ -97,7 +97,7 @@ def mundo_propio(con) -> dict:
 
 
 def groove_index() -> dict:
-    tracks, brillo = {}, {}
+    tracks, brillo, cuerpo = {}, {}, {}
     for f in LIB.glob("*.json"):
         r = json.loads(f.read_text(encoding="utf-8"))["referencia"]
         if not r.get("secciones"):
@@ -107,6 +107,16 @@ def groove_index() -> dict:
         # brillo: cuanta energia vive arriba del bajo. Es la mitad medible de
         # "colorido"; la otra mitad es el modo, que sale de la key y no de aca.
         brillo[f.stem] = round(r["balance"]["medio"] + 2 * r["balance"]["aire"], 2)
+        # CUERPO: medios y aire tiran para lados opuestos, y el rango dinamico
+        # suma. Medido el 2026-09-23 sobre el set 143, que el DJ escucho entero:
+        # los 10 temas que dejo tienen medios 14.5 y aire 5.4; los 7 que saco
+        # llamandolos "oscuros", medios 11.4 y aire 7.4, con la mitad del rango
+        # dinamico (3.7 dB contra 5.1). Para su oido "oscuro" no es falta de
+        # agudos sino falta de CUERPO: un tema finito y comprimido. La formula
+        # de brillo hacia exactamente lo contrario, porque pesaba el aire al
+        # doble.
+        cuerpo[f.stem] = round(r["balance"]["medio"] - r["balance"]["aire"]
+                               + r["rango_dinamico_db"], 2)
     if not tracks:
         return {"tracks": {}, "desvios": [1.0, 1.0]}
     arr = np.array(list(tracks.values()))
@@ -121,6 +131,8 @@ def groove_index() -> dict:
         # del solver signifique lo mismo aunque cambie la biblioteca.
         "brillo_pct": {k: round(float((np.array(list(brillo.values())) < v).mean()), 3)
                        for k, v in brillo.items()},
+        "cuerpo_pct": {k: round(float((np.array(list(cuerpo.values())) < v).mean()), 3)
+                       for k, v in cuerpo.items()},
     }
 
 

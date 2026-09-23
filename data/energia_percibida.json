@@ -216,5 +216,64 @@
   "nota": "temazo total, mi musica",
   "fuente": "escucha del set 143, 2026-09-23",
   "favorito": true
+ },
+ "43250172": {
+  "artist": "Guy J",
+  "title": "Airborne (Original Mix)",
+  "E_calc": 5.5,
+  "nota": "baja toda la energia totalmente",
+  "E": 4.0,
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true
+ },
+ "125897635": {
+  "artist": "Tim Green",
+  "title": "Moho (Original Mix) ",
+  "E_calc": 5.6,
+  "nota": "arranca muy abajo",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true,
+  "E": 4.2
+ },
+ "241228611": {
+  "artist": "Marcelo Vasami",
+  "title": "Shades Of Blue (Original Mix)",
+  "E_calc": 7.4,
+  "nota": "muy oscuro",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true
+ },
+ "144808595": {
+  "artist": "Joris Voorn, Alex Kennon",
+  "title": "Blinding Lights (Joris Voorn Remix)",
+  "E_calc": 6.9,
+  "nota": "muy oscuro",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true
+ },
+ "148342248": {
+  "artist": "Rauschhaus",
+  "title": "Faunus (Original Mix)",
+  "E_calc": 5.7,
+  "nota": "muy oscuro",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true,
+  "E": 4.5
+ },
+ "67105990": {
+  "artist": "Spirit & The Guide",
+  "title": "Alafia (Golan Zocher Remix)",
+  "E_calc": 8.6,
+  "nota": "oscuro",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true
+ },
+ "198323890": {
+  "artist": "Eric Lune & Juan Sapia",
+  "title": "Tension Release (Original Mix) ",
+  "E_calc": 6.9,
+  "nota": "poca energia",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true
  }
 }
