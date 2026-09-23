@@ -4,7 +4,9 @@
 
 **REGLA:** El proyecto no genera loops. Ningún cue lleva `OutMsec` ni `BeatLoopSize`.
 
-- `apply_cues_v8()` → escribe 9 markers, ninguno es loop
+- `apply_cues_v8()` → escribe 10 markers (layout v9), ninguno es loop
+- El cue **Medio** (hot E) aparece solo cuando el tramo final supera 32 compases;
+  el Mix-OUT pasó a hot F para que las letras sigan el orden del tiempo
 - `post_import.py` → no crea loops
 - Nunca agregar loops "porque sí" al tocar cues
 

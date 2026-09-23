@@ -9,6 +9,32 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-23 — el cue que faltaba en los drops largos
+
+El DJ mando una captura de Lane 8, Sultan + Shepard - The Little Mushroom That
+Got Away: del DROP en 4:07 al Mix-OUT en 5:44 no habia un solo punto donde
+agarrarse, 49 compases. "En los drops largos asi como estos quiero un hot cue
+intermedio".
+
+Layout v9, de 9 markers a 10: el cue **Medio** (hot E) aparece cuando el tramo
+final supera 32 compases, y el Mix-OUT pasa a hot F para que las letras sigan
+el orden del tiempo. Un hot cue que suena antes tiene que estar antes en el
+teclado.
+
+- `src/plomo/cue_engine.py` lo pone en los temas que entren de ahora en mas, y
+  elige el respiro de medios mas marcado del tramo si hay uno; si no, la frase
+  de 16 compases mas cercana a la mitad.
+- `scripts/cue_medio.py` lo agrega a los que ya estan, SIN reanalizar audio: los
+  cues que el tema ya tiene dicen donde empieza y termina el tramo, y el BPM
+  dice cuanto dura un compas. Por eso son segundos y no horas de CPU. Lo que se
+  pierde es elegir el respiro, que si necesita escuchar el audio.
+
+Corrido sobre los siete sets del cumple: 99 de 101 temas tenian tramo largo.
+Backup antes, `quick_check` ok despues, y cero loops en la base. Falta correrlo
+sobre el resto de la biblioteca (`--todo`).
+
+---
+
 ## 2026-09-22 — el set de Maze en La Biblioteca, medido sin tracklist
 
 El DJ mando `youtube.com/watch?v=DzEnYuRjPF0` (MAZE 28, La Biblioteca, Buenos

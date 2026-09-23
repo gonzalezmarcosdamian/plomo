@@ -1,11 +1,23 @@
 """Cue Engine v8 - Algoritmo de cues automático con feedback DJ aplicado.
 
-Layout v8 (9 markers):
+Layout v9 (10 markers):
 - Cue 1 / M1 — Mix-IN First Beat: primer onset absoluto
 - Cue 2 / M2 — Bass IN: primer kick sustained
 - Cue 3 / M3 — Breakdown: longest kick-absent stretch
 - Cue 4 / M4 — DROP: kick re-entry post-breakdown
-- Cue 5 — Mix-OUT (no Memory): 16 bars antes del último kick
+- Cue 5 — Medio (no Memory): SOLO si el tramo final es largo
+- Cue 6 — Mix-OUT (no Memory): 16 bars antes del último kick
+
+El "Medio" existe porque en los temas con drop largo quedaban dos minutos sin un
+solo punto donde agarrarse: del DROP al Mix-OUT, y si el tema no tenia drop
+detectado, del Breakdown al Mix-OUT. Pedido del DJ mirando Lane 8, Sultan +
+Shepard - The Little Mushroom That Got Away, que tiene el ultimo tercio entero
+sin cue. Se pone en la frase de 16 compases mas cercana a la mitad del tramo, o
+en la bajada de medios mas marcada si hay una: un tramo largo casi siempre tiene
+un respiro adentro, y ese respiro es donde un DJ quiere entrar.
+
+Las letras siguen el orden del tiempo: el Medio se queda con E y el Mix-OUT pasa
+a F. Un hot cue que suena antes tiene que estar antes en el teclado.
 
 Sin loops: el engine no escribe ningun cue con OutMsec/BeatLoopSize.
 El loop se arma a mano en el CDJ cuando hace falta.
@@ -35,7 +47,37 @@ class CueAnalysis:
     bass_in: float          # seconds - Cue 2 / M2
     breakdown: Optional[float] = None  # Cue 3 / M3
     drop: Optional[float] = None       # Cue 4 / M4
-    outro: float = 0.0      # Cue 5 - Mix-OUT
+    drop_mid: Optional[float] = None   # Cue 5 - Medio (solo si el tramo es largo)
+    outro: float = 0.0      # Cue 6 - Mix-OUT
+
+
+MIN_TRAMO = 32     # compases: debajo de esto el tramo no necesita un punto mas
+FRASE = 16         # los cues caen en frase, nunca en un compas cualquiera
+BORDE = 16         # no pegado al principio ni al final del tramo
+
+
+def _bar_medio(inicio: int, fin: int, bm) -> Optional[int]:
+    """El compas donde poner el cue intermedio, o None si el tramo es corto.
+
+    Entre los limites de frase del tramo se elige el que tenga la bajada de
+    medios mas marcada —el respiro que casi todo tramo largo tiene— y si
+    ninguno baja de forma clara, el mas cercano a la mitad. Siempre en frase: un
+    cue a mitad de frase no sirve para entrar mezclando.
+    """
+    largo = fin - inicio
+    if largo < MIN_TRAMO:
+        return None
+    candidatos = [inicio + k for k in range(FRASE, largo - BORDE + 1, FRASE)]
+    if not candidatos:
+        return None
+    medio = inicio + largo / 2
+    ref = float(np.median(bm[inicio:fin])) or 1.0
+    def puntaje(b):
+        # cuanto baja el medio en la frase que arranca ahi, y cuanto se aleja
+        # de la mitad del tramo: la bajada manda, la posicion desempata
+        caida = 1.0 - float(np.mean(bm[b:b + 4])) / ref
+        return (caida if caida > 0.25 else 0.0) - abs(b - medio) / largo * 0.5
+    return max(candidatos, key=puntaje)
 
 
 def analyze_track(path: str, known_bpm: float = 122.0) -> Optional[CueAnalysis]:
@@ -122,11 +164,19 @@ def analyze_track(path: str, known_bpm: float = 122.0) -> Optional[CueAnalysis]:
                 })
     main_bd = max(breakdowns, key=lambda b: b['dur'] + 5 * b['mid']) if breakdowns else None
 
+    # === Medio: un punto donde agarrarse en el tramo final largo ===
+    # El tramo va del DROP al Mix-OUT, o del Bass IN al Mix-OUT si el tema no
+    # tiene breakdown. Debajo de MIN_TRAMO compases no hace falta nada: se entra
+    # por el DROP y se sale por el Mix-OUT.
+    inicio = main_bd['end'] if main_bd else bass_in_bar
+    drop_mid_bar = _bar_medio(inicio, outro_bar, bm)
+
     return CueAnalysis(
         first_beat=first_beat,
         bass_in=bass_in_bar * bar_duration,
         breakdown=main_bd['start'] * bar_duration if main_bd else None,
         drop=main_bd['end'] * bar_duration if main_bd else None,
+        drop_mid=drop_mid_bar * bar_duration if drop_mid_bar else None,
         outro=outro_bar * bar_duration,
     )
 
@@ -185,7 +235,9 @@ def apply_cues_v8(db, content_id: str, cues: CueAnalysis) -> int:
             ('DROP', cues.drop * 1000, 4, 8),
             ('M-DROP', cues.drop * 1000, 0, -1),
         ])
-    cue_specs.append(('Mix-OUT', cues.outro * 1000, 5, 13))
+    if cues.drop_mid is not None:
+        cue_specs.append(('Medio', cues.drop_mid * 1000, 5, 2))
+    cue_specs.append(('Mix-OUT', cues.outro * 1000, 6, 13))
 
     for name, in_msec, kind, color in cue_specs:
         cue = DjmdCue(
@@ -318,7 +370,9 @@ def apply_cues_v8_direct(con, content_id: int, cues: CueAnalysis) -> int:
             (cues.drop * 1000, -1, 4, 8, 'DROP',   None, None),
             (cues.drop * 1000, -1, 0,-1, 'M-DROP', None, None),
         ]
-    cue_specs.append((cues.outro * 1000, -1, 5, 13, 'Mix-OUT', None, None))
+    if cues.drop_mid is not None:
+        cue_specs.append((cues.drop_mid * 1000, -1, 5, 2, 'Medio', None, None))
+    cue_specs.append((cues.outro * 1000, -1, 6, 13, 'Mix-OUT', None, None))
 
     for in_ms, out_ms, kind, color, comment, al, bls in cue_specs:
         insert_cue(in_ms, out_ms, kind, color, comment, al, bls)
