@@ -1,184 +1,212 @@
 {
-  "74740589": {
-    "artist": "Agustin Pietrocola",
-    "title": "Sizer (Original Mix)",
-    "E_calc": 5.2,
-    "nota": "deberia ir mas adelante, mas peak",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 7.7
-  },
-  "175806155": {
-    "artist": "Marsh, Simon Doty",
-    "title": "Touch The Sky (Extended Mix)",
-    "E_calc": 6.8,
-    "nota": "energia parecida a Sizer",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 7.5
-  },
-  "13512939": {
-    "artist": "Morttagua",
-    "title": "Imentet (Hernan Cattaneo & Marcelo Vasami Remix)",
-    "E_calc": 5.7,
-    "nota": "arranca mas tranqui que Sizer",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 5.4
-  },
-  "214849857": {
-    "artist": "Cary Crank",
-    "title": "Open Sea (Ric Niels Remix)",
-    "E_calc": 6.1,
-    "nota": "menos energia que Imentet, un poco mas oscuro, mucho mas groove; me gusta",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 5.2
-  },
-  "121401439": {
-    "artist": "Gai Barone, Aman Anand",
-    "title": "Low Era (Kebin Van Reeken Remix)",
-    "E_calc": 7.5,
-    "nota": "oscuro, baja energia",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 5.0,
-    "veto": true
-  },
-  "95994954": {
-    "artist": "ECHO DAFT, Redspace",
-    "title": "A Story Retold",
-    "E_calc": 6.7,
-    "nota": "poca energia para entregar; quiero mas energia y mas voces",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 5.5,
-    "veto": true
-  },
-  "18559665": {
-    "artist": "Adam Ten, Mita Gami",
-    "title": "High On",
-    "E_calc": 6.5,
-    "nota": "pasado de energia, muy tecnoso",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "E": 7.6,
-    "veto": true
-  },
-  "266913935": {
-    "artist": "Ezequiel Arias",
-    "title": "Inertia (Original Mix)",
-    "E_calc": 7.8,
-    "nota": "se cae en energia fortisimo (breakdown profundo): no sostiene un pico",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "veto": true
-  },
-  "45593537": {
-    "artist": "Juan Buitrago",
-    "title": "Anja",
-    "E_calc": 6.9,
-    "nota": "mas lento",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-    "veto": true
-  },
-  "6435521": {
-    "artist": "Boxer",
-    "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
-    "E_calc": 5.7,
-    "E": 7.8,
-    "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
-    "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
-  },
-  "83535228": {
-    "artist": "Paul Thomas",
-    "title": "Jumbo (Jamie Stevens Remix)",
-    "E_calc": 6.1,
-    "E": 7.8,
-    "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
-    "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
-  },
-  "75591601": {
-    "artist": "Guy J",
-    "title": "Placebo (Original Mix)",
-    "E_calc": 6.9,
-    "nota": "como cierre del 139 no esta bueno: quiere terminar mas arriba",
-    "fuente": "escucha del set 139 v4, 2026-09-22",
-    "veto": true
-  },
-  "104234166": {
-    "artist": "Kamilo Sanclemente",
-    "title": "Fragma (GORKIZ Remix)",
-    "E_calc": 7.5,
-    "nota": "tremendo tema, mi sonido totalmente",
-    "favorito": true,
-    "fuente": "escucha del set 139 v4, 2026-09-22"
-  },
-  "136780130": {
-    "artist": "Simon Vuarambon",
-    "title": "Lazos (Original Mix)",
-    "E_calc": 6.4,
-    "nota": "temazo, mi sonido",
-    "favorito": true,
-    "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22"
-  },
-  "183767397": {
-    "artist": "Parra for Cuva",
-    "title": "Juri (Original Mix)",
-    "E_calc": 4.1,
-    "nota": "temazo",
-    "favorito": true,
-    "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22"
-  },
-  "177299920": {
-    "artist": "Maze 28",
-    "title": "Mindloop (Original Mix)",
-    "E_calc": 5.8,
-    "nota": "extremadamente bueno; el DJ quiere todo el warm en este flow",
-    "favorito": true,
-    "fuente": "escucha del set 140, 2026-09-22"
-  },
-  "52738760": {
-    "artist": "Roy Rosenfeld",
-    "title": "Kala",
-    "E_calc": 5.8,
-    "nota": "se queda corto: no esta bueno para el warm",
-    "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
-    "veto": true
-  },
-  "37141460": {
-    "artist": "Cendryma",
-    "title": "Pure Junction (Berdu Remix)",
-    "E_calc": 5.9,
-    "nota": "temazo mal",
-    "favorito": true,
-    "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
-  },
-  "49887591": {
-    "artist": "Grance & Soulmac",
-    "title": "Happy Incident (Ale Russo Remix)",
-    "E_calc": 6.9,
-    "nota": "muy bueno",
-    "favorito": true,
-    "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
-  },
-  "156983367": {
-    "artist": "Kasper Koman",
-    "title": "The Observer",
-    "E_calc": 6.1,
-    "nota": "flojo para esa altura: iria antes en el set",
-    "ubicacion": [
-      0.0,
-      0.45
-    ],
-    "fuente": "escucha del set 140 v3 (warm), 2026-09-22"
-  },
-  "12611861": {
-    "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
-    "title": "Fading Away (Aman Anand & Futura City Rework)",
-    "E_calc": 4.4,
-    "nota": "muy abajo de energia para el warm",
-    "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
-    "veto": true
-  },
-  "13560916": {
-    "artist": "Derrok, Rodrigo Gallardo",
-    "title": "Instantes (Original Mix)",
-    "E_calc": 5.8,
-    "nota": "malisimo",
-    "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
-    "veto": true
-  }
+ "74740589": {
+  "artist": "Agustin Pietrocola",
+  "title": "Sizer (Original Mix)",
+  "E_calc": 5.2,
+  "nota": "deberia ir mas adelante, mas peak",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 7.7
+ },
+ "175806155": {
+  "artist": "Marsh, Simon Doty",
+  "title": "Touch The Sky (Extended Mix)",
+  "E_calc": 6.8,
+  "nota": "energia parecida a Sizer",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 7.5
+ },
+ "13512939": {
+  "artist": "Morttagua",
+  "title": "Imentet (Hernan Cattaneo & Marcelo Vasami Remix)",
+  "E_calc": 5.7,
+  "nota": "arranca mas tranqui que Sizer",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 5.4
+ },
+ "214849857": {
+  "artist": "Cary Crank",
+  "title": "Open Sea (Ric Niels Remix)",
+  "E_calc": 6.1,
+  "nota": "menos energia que Imentet, un poco mas oscuro, mucho mas groove; me gusta",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 5.2
+ },
+ "121401439": {
+  "artist": "Gai Barone, Aman Anand",
+  "title": "Low Era (Kebin Van Reeken Remix)",
+  "E_calc": 7.5,
+  "nota": "oscuro, baja energia",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 5.0,
+  "veto": true
+ },
+ "95994954": {
+  "artist": "ECHO DAFT, Redspace",
+  "title": "A Story Retold",
+  "E_calc": 6.7,
+  "nota": "poca energia para entregar; quiero mas energia y mas voces",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 5.5,
+  "veto": true
+ },
+ "18559665": {
+  "artist": "Adam Ten, Mita Gami",
+  "title": "High On",
+  "E_calc": 6.5,
+  "nota": "pasado de energia, muy tecnoso",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "E": 7.6,
+  "veto": true
+ },
+ "266913935": {
+  "artist": "Ezequiel Arias",
+  "title": "Inertia (Original Mix)",
+  "E_calc": 7.8,
+  "nota": "se cae en energia fortisimo (breakdown profundo): no sostiene un pico",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "veto": true
+ },
+ "45593537": {
+  "artist": "Juan Buitrago",
+  "title": "Anja",
+  "E_calc": 6.9,
+  "nota": "mas lento",
+  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+  "veto": true
+ },
+ "6435521": {
+  "artist": "Boxer",
+  "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
+  "E_calc": 5.7,
+  "E": 7.8,
+  "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
+  "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+ },
+ "83535228": {
+  "artist": "Paul Thomas",
+  "title": "Jumbo (Jamie Stevens Remix)",
+  "E_calc": 6.1,
+  "E": 7.8,
+  "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
+  "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+ },
+ "75591601": {
+  "artist": "Guy J",
+  "title": "Placebo (Original Mix)",
+  "E_calc": 6.9,
+  "nota": "como cierre del 139 no esta bueno: quiere terminar mas arriba",
+  "fuente": "escucha del set 139 v4, 2026-09-22",
+  "veto": true
+ },
+ "104234166": {
+  "artist": "Kamilo Sanclemente",
+  "title": "Fragma (GORKIZ Remix)",
+  "E_calc": 7.5,
+  "nota": "tremendo tema, mi sonido totalmente",
+  "favorito": true,
+  "fuente": "escucha del set 139 v4, 2026-09-22"
+ },
+ "136780130": {
+  "artist": "Simon Vuarambon",
+  "title": "Lazos (Original Mix)",
+  "E_calc": 6.4,
+  "nota": "temazo, mi sonido",
+  "favorito": true,
+  "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22"
+ },
+ "183767397": {
+  "artist": "Parra for Cuva",
+  "title": "Juri (Original Mix)",
+  "E_calc": 4.1,
+  "nota": "temazo",
+  "favorito": true,
+  "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22"
+ },
+ "177299920": {
+  "artist": "Maze 28",
+  "title": "Mindloop (Original Mix)",
+  "E_calc": 5.8,
+  "nota": "extremadamente bueno; el DJ quiere todo el warm en este flow",
+  "favorito": true,
+  "fuente": "escucha del set 140, 2026-09-22"
+ },
+ "52738760": {
+  "artist": "Roy Rosenfeld",
+  "title": "Kala",
+  "E_calc": 5.8,
+  "nota": "se queda corto: no esta bueno para el warm",
+  "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
+  "veto": true
+ },
+ "37141460": {
+  "artist": "Cendryma",
+  "title": "Pure Junction (Berdu Remix)",
+  "E_calc": 5.9,
+  "nota": "temazo mal",
+  "favorito": true,
+  "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
+ },
+ "49887591": {
+  "artist": "Grance & Soulmac",
+  "title": "Happy Incident (Ale Russo Remix)",
+  "E_calc": 6.9,
+  "nota": "muy bueno",
+  "favorito": true,
+  "fuente": "escucha del set 140 v2 (warm), 2026-09-22"
+ },
+ "156983367": {
+  "artist": "Kasper Koman",
+  "title": "The Observer",
+  "E_calc": 6.1,
+  "nota": "flojo para esa altura: iria antes en el set",
+  "ubicacion": [
+   0.0,
+   0.45
+  ],
+  "fuente": "escucha del set 140 v3 (warm), 2026-09-22"
+ },
+ "12611861": {
+  "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
+  "title": "Fading Away (Aman Anand & Futura City Rework)",
+  "E_calc": 4.4,
+  "nota": "muy abajo de energia para el warm",
+  "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
+  "veto": true
+ },
+ "13560916": {
+  "artist": "Derrok, Rodrigo Gallardo",
+  "title": "Instantes (Original Mix)",
+  "E_calc": 5.8,
+  "nota": "malisimo",
+  "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
+  "veto": true
+ },
+ "148323142": {
+  "artist": "Kiko Navarro, DJ Pippi, Willie Graff, QVLN, Pere Navarro",
+  "title": "Llego La Hora (Afrocuban Dub)",
+  "nota": "llego la hora es malisimo, lo saco; no quiero nada afro",
+  "fuente": "escucha del set 144, 2026-09-23",
+  "veto": true
+ },
+ "212256971": {
+  "artist": "Meduza",
+  "title": "Friends (Extended Mix)",
+  "nota": "es todo lo que no quiero, horrible",
+  "fuente": "escucha del set 143, 2026-09-23",
+  "veto": true
+ },
+ "104586787": {
+  "artist": "Bosknegra",
+  "title": "Primavera (Original Mix)",
+  "nota": "afro house; fuera por categoria, no por el tema en si",
+  "fuente": "regla vetos.generos, 2026-09-23",
+  "veto": true
+ },
+ "228808924": {
+  "artist": "Aaron Sevilla, RBOR, El Gato CHP",
+  "title": "Gitanos (Original Mix)",
+  "nota": "afro house; fuera por categoria, no por el tema en si",
+  "fuente": "regla vetos.generos, 2026-09-23",
+  "veto": true
+ }
 }

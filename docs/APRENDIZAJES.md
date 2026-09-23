@@ -8,6 +8,97 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## La jerarquia estaba escrita en la doc y al reves en el codigo
+
+**Que paso.** El DJ escucho los sets del cumple y saco tres cosas: un tema de
+afro house, Meduza - Friends y "nada afro" como categoria. Despues dijo donde
+estaba el problema de fondo: "quiero que domine la energia y groove constante,
+luego lo progresivo y luego recien la cuota de genero; artistas le gana,
+productores le gana a cuota de genero".
+
+Medido en el codigo, la escala real era:
+
+| termino | peso |
+|---|---|
+| cuota de genero (`peso_mezcla`) | **8.0** |
+| desvio del arco de energia | 3.0 |
+| groove | no existia |
+| de que escena viene el tema | no existia |
+
+La cuota de genero pesaba 2.7 veces mas que la energia, y los cuatro temas que
+el DJ rechazo entraron todos por ahi: pedir "20% de House" obliga al solver a
+meter el House que haya, y lo que habia era Meduza, David Guetta y Kiko Navarro.
+Peor: los seis configs del cumple traian `"peso_mezcla": 8.0` escrito adentro,
+asi que bajar la regla no hubiera cambiado nada. Dos capas de la misma decision,
+y la de abajo ganando en silencio.
+
+**El eje que faltaba no era el que yo pensaba.** Primero probe medir "mi sonido"
+por la FORMA del audio (donde cae el breakdown, balance espectral, rango
+dinamico), que es lo que ya teniamos indexado. No los distingue: los cuatro
+rechazados quedaban a 2.6-3.7 de sus favoritos contra una mediana de 2.40 de la
+biblioteca entera. Un umbral que los cortara se comia media coleccion.
+
+Lo que si los separa es la PROCEDENCIA. Cruzando artista y sello contra
+`djmdHistory` —lo que el DJ efectivamente toco, que no lo escribio el solver—:
+los cuatro rechazados eran los cuatro unicos temas de esos sets con artista Y
+sello ajenos a su historial. Y el set 140, el unico que elogio entero, tiene
+cero ajenos en 17 temas.
+
+**Por que importa.** El solver optimizaba key, energia, BPM y cuota de genero.
+Para el, dos temas en 9A a 124 BPM con E7.2 son intercambiables aunque uno sea
+Cendryma y el otro David Guetta. Le faltaba la pregunta que un DJ se hace
+primero: de que mundo viene esto.
+
+**Como se aplica.** La jerarquia vive en `rules/curaduria.json` 1.6.0 y el orden
+lo fija el DJ, no el optimizador. Un veto es por CATEGORIA (genero, artista), no
+por track: sacar un tema de afro house y que vuelva otro del mismo palo es no
+haber entendido el veto. Y antes de agregar un eje nuevo, medir si el que ya
+existe lo ve: la forma del audio no veia nada, y me hubiera ahorrado el termino.
+
+---
+
+## Cuando el loop se clava, sospechar del techo — y despues creerle al loop
+
+**Que paso.** Con la jerarquia puesta, el DJ pidio "un loop de entrenamiento de
+tus criterios mirando los pro que me gustan". `scripts/entrenar_criterio.py`
+hace descenso por coordenadas: mueve un peso por vez, arma los sets, los mide
+con la misma vara que a los 40 setlists de referencia, y se queda con el que
+acorta la distancia.
+
+La primera corrida bajo la perdida de 3.40 a 2.55 y ahi se clavo, con una
+diferencia sistematica que ningun peso movia:
+
+| rasgo | nuestro | pro |
+|---|---|---|
+| paso de energia entre temas | 0.55 | **1.00** |
+| paso de BPM | 1.00 | **2.00** |
+| corr(posicion, energia) | +0.35 | +0.11 |
+
+Nuestros sets se mueven MENOS que los de los pros, no mas. La hipotesis obvia
+era el techo: `energia.max_escalon` estaba en 1.3 y el p90 de los pros es 2.50,
+o sea que el solver tenia prohibido el paso que ellos dan. Entraron al loop
+`max_escalon` y `max_bpm_jump` como coordenadas propias.
+
+**El loop refuto la hipotesis.** Aflojar el techo a 1.8, 2.3 o 2.8 da 3.107 de
+perdida contra 2.467 con el techo en 1.3, y las tres dan exactamente lo mismo:
+pasos mayores a 1.8 no aparecen ni cuando se permiten. El freno no era el limite
+duro, era el costo. Lo que si mejoro fue subir energia (6.0 -> 8.0) y groove
+(4.0 -> 6.0), que dejaron la perdida en 2.467.
+
+**Por que importa.** Un optimizador siempre devuelve un optimo, y el optimo
+adentro de una caja chica parece un buen resultado, asi que sospechar del techo
+cuando el loop se clava es el reflejo correcto. Lo que no es correcto es
+quedarse con la sospecha: yo ya habia escrito el aprendizaje con el techo como
+culpable antes de que terminara la corrida que lo desmintio.
+
+**Como se aplica.** Cuando un rasgo no cierra, probar el limite duro COMO UNA
+COORDENADA MAS y dejar que el numero decida. Y no escribir la conclusion antes
+del resultado, por mas que la hipotesis parezca obvia. Los tres rasgos siguen
+cortos: es lo proximo a entender, y todavia no se por que.
+
+---
+
+
 ## Un set sin tracklist igual se puede medir: el arco esta en el audio
 
 **Que paso.** El DJ mando un set que le volo la cabeza (Maze 28 en La Biblioteca,

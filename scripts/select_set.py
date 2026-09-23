@@ -9,6 +9,7 @@ Beam search: en cada posicion se prueba cada candidato cuyo key este a distancia
 import heapq
 import json
 import re
+import unicodedata
 import sys
 from pathlib import Path
 
@@ -58,6 +59,40 @@ RACHA_ENERGIA_DESDE = R.get("energia.racha_misma_direccion_desde", 2)
 PESO_RACHA_ENERGIA = R.get("energia.racha_misma_direccion_peso", 0.7)
 # Descuento de un tema ancla. Mayor que cualquier costo razonable de una
 # posicion, para que el ancla entre salvo que rompa una restriccion dura.
+# --- la jerarquia que pidio el DJ (2026-09-23), de arriba abajo ---------------
+# "quiero que domine la energia y groove constante, luego lo progresivo y luego
+# recien la cuota de genero; artistas le gana, productores le gana a cuota de
+# genero". Estaba al reves: peso_mezcla era 8.0 hardcodeado y el desvio del arco
+# 3.0, asi que el genero mandaba 2.7 veces mas que la energia, y los cuatro
+# temas que el DJ rechazo escuchando entraron todos por la cuota.
+PESO_GROOVE = R.get("groove.peso_continuidad", 0.0)
+SALTO_GROOVE = R.get("groove.salto_tolerado", 1.25)
+NUCLEO_PROG = {g.lower() for g in (R.get("estilo.nucleo_progresivo") or [])}
+PESO_PROG = R.get("estilo.peso_progresivo", 0.0)
+PESO_AJENO = R.get("sonido_propio.peso_ajeno", 0.0)
+PESO_MEZCLA = R.get("genero.peso_mezcla", 8.0)
+FRAC_FUERA_MEZCLA = R.get("genero.penal_fuera_de_mezcla_frac", 0.25)
+VETO_GENEROS = {g.lower() for g in (R.get("vetos.generos") or [])}
+VETO_ARTISTAS = {a.lower() for a in (R.get("vetos.artistas") or [])}
+
+
+_RAIZ = Path(__file__).resolve().parent.parent
+
+
+def _dato(nombre: str) -> dict:
+    """Carga un JSON de data/, o vacio si no se genero todavia."""
+    f = _RAIZ / "data" / nombre
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
+# Generados por scripts/perfilar_gusto.py. Si faltan, los terminos que dependen
+# de ellos valen cero y el solver se comporta como antes.
+_GROOVE = _dato("groove_index.json")
+_MUNDO = _dato("mundo_propio.json")
+_GR_SD = _GROOVE.get("desvios", [1.0, 1.0])
+_MUNDO_ART = set(_MUNDO.get("artistas", []))
+_MUNDO_SELLO = set(_MUNDO.get("sellos", []))
+
 BONUS_ANCLA = 25.0
 # Costo por BPM de desvio de la rampa de `bpm_arco`, con 1 BPM de tolerancia.
 PESO_BPM_ARCO = 1.5
@@ -173,8 +208,15 @@ def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
     return arc_en(i / (n - 1), lo, hi, hi_at)
 
 
+def _minus(s: str) -> str:
+    """Minusculas sin acentos, igual que scripts/perfilar_gusto.py."""
+    s = "".join(c for c in unicodedata.normalize("NFD", s or "")
+                if unicodedata.category(c) != "Mn")
+    return s.lower().strip()
+
+
 def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
-           max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=8.0,
+           max_per_artist=1, beam=BEAM, mezcla=None, peso_mezcla=PESO_MEZCLA,
            objetivo_seg=None, arco=None, anclas=(), inicio_fijo=(),
            anclas_en=None, entrada=None, salida=None, bpm_arco=None,
            cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO,
@@ -277,6 +319,15 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
         if "_names" not in t:
             t["_names"] = names(t["artist"], t["title"])
             t["_cam"] = camelot(t["key"])
+            # groove: densidad ritmica y peso de graves, ya normalizados
+            g = _GROOVE.get("tracks", {}).get(t["id"])
+            t["_gr"] = (g[0] / _GR_SD[0], g[1] / _GR_SD[1]) if g else None
+            t["_prog"] = (t.get("genre") or "").strip().lower() in NUCLEO_PROG
+            # de que mundo viene: el artista o el sello aparecen en lo que el DJ
+            # TOCO de verdad (djmdHistory) o en sus favoritos
+            _art = {a.strip() for a in _minus(t["artist"]).replace("&", ",").split(",") if a.strip()}
+            t["_ajeno"] = (not (_art & _MUNDO_ART)
+                           and _minus(t.get("label") or "") not in _MUNDO_SELLO)
 
     # -- indice por vecindario de Camelot --------------------------------------
     # El loop probaba los ~1300 tracks del pool en cada posicion de cada rama y
@@ -436,6 +487,20 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     step = 0.0
                 if key_hogar and peso_hogar:
                     step += cam_dist(key_hogar, t["key"]) * peso_hogar
+                # GROOVE CONSTANTE. No es que los pasos de energia sean chicos
+                # --en los setlists reales la mediana del paso es 0.90 y el p90
+                # es 2.50, o sea que un pro se mueve--: es que el groove no se
+                # corte. Medido sobre 236 pares consecutivos de referencia con
+                # los dos temas indexados, el salto mediano de densidad + graves
+                # es 1.25. Nuestros sets del cumple daban 1.68 a 2.37, y el
+                # unico que el DJ elogio entero era el mas cercano al pro.
+                # Los temas sin receta indexada no pagan: no se castiga a un
+                # tema por no estar medido.
+                if PESO_GROOVE and prev is not None and t["_gr"] and prev["_gr"]:
+                    salto = (abs(t["_gr"][0] - prev["_gr"][0])
+                             + abs(t["_gr"][1] - prev["_gr"][1]))
+                    if salto > SALTO_GROOVE:
+                        step += (salto - SALTO_GROOVE) * PESO_GROOVE
                 desvio = max(0.0, abs(t["energy"] - tgt) - tol_arco)
                 # premio por ensanchar el recorrido, capado en el objetivo: una
                 # vez que el set ya cubre SPAN_OBJETIVO, estirar mas no paga
@@ -455,6 +520,18 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                 if bpm_arco:
                     tb = bpm_arco[0] + (bpm_arco[1] - bpm_arco[0]) * frac
                     c += max(0.0, abs(t["bpm"] - tb) - 1.0) * bpm_arco_peso
+                # LO PROGRESIVO, tercero: descuenta, no veda.
+                if PESO_PROG and t["_prog"]:
+                    c -= PESO_PROG
+                # ARTISTAS Y PRODUCTORES, cuarto y arriba de la cuota de genero.
+                # Un tema cuyo artista Y sello no aparecen nunca en lo que el DJ
+                # toco paga. Los cuatro temas que rechazo escuchando el 23/09
+                # eran los cuatro ajenos; el set 140, el unico que elogio entero,
+                # tiene cero ajenos en 17. Por forma del audio eran
+                # indistinguibles del resto de la biblioteca, asi que este es el
+                # unico eje que los ve venir.
+                if PESO_AJENO and t["_ajeno"]:
+                    c += PESO_AJENO
                 if t["id"] in prefer:
                     c -= bonus
                 if t["id"] in anclas:
@@ -475,7 +552,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=2.0, prefer=(), bonus=6.0,
                     elif mezcla:
                         # Un genero que no figura en la mezcla no es gratis: si
                         # lo fuera, el solver lo usaria para esquivar la cuota.
-                        c += peso_mezcla * 0.25
+                        c += peso_mezcla * FRAC_FUERA_MEZCLA
                 # El estado viaja en la rama en vez de recalcularse: antes cada
                 # candidato volvia a recorrer el set entero cuatro veces (misma
                 # key, monotonia, conteo de generos, maximo de energia), y eso
@@ -545,15 +622,22 @@ def show(seq, prefer=()):
         prev = t
 
 
-if __name__ == "__main__":
+def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
+    """Arma todos los sets de un config. Devuelve [(spec, secuencia), ...].
+
+    `escribir=False` no toca data/targets: sirve para el loop de entrenamiento
+    (scripts/entrenar_criterio.py), que arma cientos de sets solo para medirlos.
+    """
     RAIZ = Path(__file__).parent.parent
+    hechos = []
+    _print = (lambda *a, **k: None) if callado else print
 
     def ruta(p: str) -> Path:
         """Las rutas del config son relativas a la raiz del repo."""
         q = Path(p)
         return q if q.is_absolute() else RAIZ / q
 
-    cfg = json.loads(Path(sys.argv[1]).read_text(encoding="utf-8"))
+    cfg = json.loads(Path(cfg_ruta).read_text(encoding="utf-8"))
 
     def _vecino(cid):
         """key y BPM de un tema de OTRO set, para empalmar con el."""
@@ -611,7 +695,19 @@ if __name__ == "__main__":
             and camelot(t["key"])
             and not (names(t["artist"], t["title"]) & taken)
             and t["id"] not in excluidos
+            and (t.get("genre") or "").strip().lower() not in VETO_GENEROS
+            and not any(a in _minus(t["artist"]) for a in VETO_ARTISTAS)
         ]
+        # Un veto de track no ensenaba nada de sus vecinos: sacado un tema de
+        # Afro House volvia otro del mismo palo. Los vetos de
+        # rules/curaduria.json son por CATEGORIA y se aplican aca, antes de que
+        # el costo pueda pedirlos.
+        if VETO_GENEROS or VETO_ARTISTAS:
+            _fuera = len([t for t in pool_all
+                          if (t.get("genre") or "").strip().lower() in VETO_GENEROS
+                          or any(a in _minus(t["artist"]) for a in VETO_ARTISTAS)])
+            if _fuera:
+                _print(f"  vetos por categoria: {_fuera} tracks fuera del pool")
         # Cuantos tracks entran de verdad en el horario pedido. La regla vieja
         # era 12 por hora (5 min cada uno) y el material real tiene mediana 7.2:
         # un set de 2h con 24 tracks daba 2h52. Si el config trae duration_h se
@@ -627,14 +723,14 @@ if __name__ == "__main__":
             # hora (5 min) y la realidad son 8.8.
             n_tracks = max(4, round(objetivo_seg / (med * 0.93)))
             if n_tracks != spec["n"]:
-                print(f"  duracion {spec['duration_h']}h / {med/60:.1f} min por track "
+                _print(f"  duracion {spec['duration_h']}h / {med/60:.1f} min por track "
                       f"-> {n_tracks} tracks (el config decia {spec['n']})")
         # una cuota de un genero que el filtro no deja entrar es una orden que
         # nadie cumple: el set 139 pedia 20% de House con House fuera de `genres`.
         _gen = {g.lower() for g in spec.get("genres", [])}
         _sin = [g for g in (spec.get("mezcla_objetivo") or {}) if _gen and g.lower() not in _gen]
         if _sin:
-            print(f"  AVISO: mezcla_objetivo pide {_sin} pero no estan en genres")
+            _print(f"  AVISO: mezcla_objetivo pide {_sin} pero no estan en genres")
 
         best = select(
             pool, n_tracks, spec["e_lo"], spec["e_hi"],
@@ -644,7 +740,7 @@ if __name__ == "__main__":
             max_per_artist=spec.get("max_per_artist", 1),
             beam=spec.get("beam", BEAM),
             mezcla=spec.get("mezcla_objetivo"),
-            peso_mezcla=spec.get("peso_mezcla", 8.0),
+            peso_mezcla=spec.get("peso_mezcla", PESO_MEZCLA),
             objetivo_seg=objetivo_seg,
             arco=spec.get("arco"),
             anclas=set(spec.get("anclas", [])),
@@ -658,11 +754,13 @@ if __name__ == "__main__":
             bpm_span=spec.get("bpm_span", 0),
             bpm_span_peso=spec.get("bpm_span_peso", 0.0),
         )
-        print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
+        _print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:
-            print("  SIN SOLUCION — relajar restricciones")
+            _print("  SIN SOLUCION — relajar restricciones")
             continue
-        show(best[1], spec.get("prefer_ids", []))
+        if not callado:
+            show(best[1], spec.get("prefer_ids", []))
+        hechos.append((spec, best[1]))
         target = {
             "name": spec["name"],
             # carpeta destino en Rekordbox; build_set la resuelve por nombre
@@ -676,9 +774,10 @@ if __name__ == "__main__":
                 for t in best[1]
             ],
         }
-        out = ruta(cfg["targets_dir"]) / f"set_{spec['num']}.json"
-        out.write_text(json.dumps(target, ensure_ascii=False, indent=2), encoding="utf-8")
-        print(f"  -> {out.name}")
+        if escribir:
+            out = ruta(cfg["targets_dir"]) / f"set_{spec['num']}.json"
+            out.write_text(json.dumps(target, ensure_ascii=False, indent=2), encoding="utf-8")
+            _print(f"  -> {out.name}")
         # Por defecto cada set del config estrena artistas: se acumulan para que
         # el siguiente no los repita. Una serie de videos independientes puede
         # querer lo contrario — cada uno lleva lo mejor de su concepto.
@@ -688,3 +787,8 @@ if __name__ == "__main__":
         if not cfg.get("permitir_repetir_entre_sets"):
             for t in best[1]:
                 taken |= names(t["artist"], t["title"])
+    return hechos
+
+
+if __name__ == "__main__":
+    correr(sys.argv[1])

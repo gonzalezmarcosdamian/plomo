@@ -109,7 +109,7 @@ def resolver(p: Path) -> None:
 # tenia 203 temas de House entre 120 y 126 que no podia usar.
 GEN_PROG = {"Progressive House", "Melodic House & Techno", "House"}
 GEN_HOUSE = {"House", "Progressive House", "Melodic House & Techno", "Indie Dance"}
-GEN_ORG = {"Organic House", "Organic House / Downtempo", "Progressive House", "Afro House"}
+GEN_ORG = {"Organic House", "Organic House / Downtempo", "Progressive House"}
 
 
 def permitidos(generos: set, bpm: tuple, fuera: set, tope_mind: int) -> tuple[list, list]:
