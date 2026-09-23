@@ -1,5 +1,6 @@
 {
-  "name": "147. Maze 28 + Cendryma · Peak — 1.5h — 2026-09-23",
+  "name": "147. Cumple Zorro · Peak Maze 28 · 1 a 2:30 AM — 1.5h — 2026-09-23",
+  "carpeta": "0 Fechas",
   "duration_h": 1.5,
   "bpm_range": [
     120,
@@ -9,9 +10,29 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Kostya Outta, Frameloue",
+      "title": "Altitude (Feat. Frameloue Extended Mix)",
+      "content_id": "191112049"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Aer8 (Juan Pablo Torrez Remix)",
+      "content_id": "231052947"
+    },
+    {
+      "artist": "Paul Deep AR",
+      "title": "Milo",
+      "content_id": "42634301"
+    },
+    {
       "artist": "Chelakhov",
       "title": "Insomnia (Original Mix)",
       "content_id": "80947222"
+    },
+    {
+      "artist": "Sounom & Sagou",
+      "title": "Everyday Moments (Kamilo Sanclemente Remix)",
+      "content_id": "92834938"
     },
     {
       "artist": "Niko Ava",
@@ -19,39 +40,9 @@
       "content_id": "162617230"
     },
     {
-      "artist": "Simos Tagias",
-      "title": "Euphoria (Paul Deep Remix)",
-      "content_id": "241284453"
-    },
-    {
-      "artist": "K Loveski & Sinan Arsan",
-      "title": "IDdicted (TONACO & Matt Oliver Remix)",
-      "content_id": "45383593"
-    },
-    {
-      "artist": "Dmitry Molosh",
-      "title": "The Moon Lights the Way (Original Mix)",
-      "content_id": "216332867"
-    },
-    {
-      "artist": "Supacooks",
-      "title": "Un Mundo En Paz (Serious Dancers Extended Remix)",
-      "content_id": "64018165"
-    },
-    {
-      "artist": "Kamilo Sanclemente",
-      "title": "Tangiers (Original Mix)",
-      "content_id": "145310718"
-    },
-    {
-      "artist": "Praise (BR)",
-      "title": "Kiwi (Extended Mix)",
-      "content_id": "261787150"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Everlong (Ruben Karapetyan Remix)",
-      "content_id": "68108434"
+      "artist": "Analog Jungs",
+      "title": "Ocaris (Original Mix) ",
+      "content_id": "50523858"
     },
     {
       "artist": "Kamilo Sanclemente",
@@ -59,19 +50,29 @@
       "content_id": "117129270"
     },
     {
-      "artist": "Analog Jungs",
-      "title": "Ocaris (Original Mix) ",
-      "content_id": "50523858"
+      "artist": "Emi Galvan",
+      "title": "Everlong (Ruben Karapetyan Remix)",
+      "content_id": "68108434"
     },
     {
-      "artist": "Nicolas Viana",
-      "title": "Wayfarer (Extended Mix)",
-      "content_id": "10543890"
+      "artist": "Praise (BR)",
+      "title": "Kiwi (Extended Mix)",
+      "content_id": "261787150"
     },
     {
-      "artist": "Barry Jamieson",
-      "title": "Fractured Lens (Lemon8 Remix)",
-      "content_id": "120436217"
+      "artist": "Supacooks",
+      "title": "Un Mundo En Paz (Serious Dancers Extended Remix)",
+      "content_id": "64018165"
+    },
+    {
+      "artist": "Movement Machina",
+      "title": "Adaptation (Donny Carr Remix)",
+      "content_id": "126614108"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Just Come Back (Extended Mix)",
+      "content_id": "129720546"
     }
   ]
 }

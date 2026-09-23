@@ -4,6 +4,26 @@ Boliche con sistema grande. Recibe la pista de otro DJ a la 1 y la entrega a otr
 a las 3. Progressive con color e intensidad, y **Sizer** (Agustin Pietrocola) como
 tema modelo. Config: `data/set_configs/cumple_zorro.json`.
 
+## El 147: una cuarta carta para la hora del pico (2026-09-23)
+
+"Haceme uno de 1,5 horas de esos, la parte mas peak" y despues "llevalo al
+cumple". Es el mundo del 146 —Cendryma, Gai Barone, Rockka, Maze 28, Hobin
+Rude, Chelakhov, Cary Crank y sus sellos— pero solo la mitad de arriba, y con
+material que no suena en ningun otro set de la noche: cero cruces, ni por
+archivo ni por cancion en otra version.
+
+13 temas, E6.3 a 8.1, BPM 122-124. Entra en 11A despues de Motor City (que
+cierra el warm en 12A) y sale en 7A entregandole a Voryn en 7B. Insomnia de
+Chelakhov va en el puesto 4: el DJ pidio que estuviera, y como es E6.3 contra
+un arco de 7.0-7.8, forzarlo a abrir rompia el empalme con el warm. Ancla en
+vez de apertura fija.
+
+**Dura 1.5h y el hueco es de 2h.** Cubre de 1:00 a 2:30 y quedan treinta
+minutos: o se estira el set a 2h, o esos treinta los toma el siguiente. Es la
+decision que falta.
+
+---
+
 ## v9 — el criterio entrenado con objetivos limpios (2026-09-23)
 
 | set | BPM | E med | paso E | corr | mayor | groove | top-5 |

@@ -3007,17 +3007,17 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Chelakhov | Insomnia (Original Mix) | 122 | 5.5 |
-| 2 | Niko Ava | Freedom (Original Mix) | 122 | 7.3 |
-| 3 | Simos Tagias | Euphoria (Paul Deep Remix) | 122 | 7.7 |
-| 4 | K Loveski & Sinan Arsan | IDdicted (TONACO & Matt Oliver Remix) | 122 | 7.2 |
-| 5 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
-| 6 | Supacooks | Un Mundo En Paz (Serious Dancers Extended Remix) | 124 | 7.5 |
-| 7 | Kamilo Sanclemente | Tangiers (Original Mix) | 123 | 5.5 |
-| 8 | Praise (BR) | Kiwi (Extended Mix) | 123 | 7.3 |
+| 1 | Kostya Outta, Frameloue | Altitude (Feat. Frameloue Extended Mix) | 122 | 6.6 |
+| 2 | Maze 28 | Aer8 (Juan Pablo Torrez Remix) | 122 | 5.5 |
+| 3 | Paul Deep AR | Milo | 123 | 7.1 |
+| 4 | Chelakhov | Insomnia (Original Mix) | 122 | 5.5 |
+| 5 | Sounom & Sagou | Everyday Moments (Kamilo Sanclemente Remix) | 122 | 5.5 |
+| 6 | Niko Ava | Freedom (Original Mix) | 122 | 7.3 |
+| 7 | Analog Jungs | Ocaris (Original Mix)  | 123 | 8.1 |
+| 8 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
 | 9 | Emi Galvan | Everlong (Ruben Karapetyan Remix) | 123 | 5.5 |
-| 10 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
-| 11 | Analog Jungs | Ocaris (Original Mix)  | 123 | 8.1 |
-| 12 | Nicolas Viana | Wayfarer (Extended Mix) | 124 | 6.7 |
-| 13 | Barry Jamieson | Fractured Lens (Lemon8 Remix) | 125 | 7.4 |
+| 10 | Praise (BR) | Kiwi (Extended Mix) | 123 | 7.3 |
+| 11 | Supacooks | Un Mundo En Paz (Serious Dancers Extended Remix) | 124 | 7.5 |
+| 12 | Movement Machina | Adaptation (Donny Carr Remix) | 123 | 6.3 |
+| 13 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
 
