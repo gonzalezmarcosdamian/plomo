@@ -68,6 +68,43 @@ dirigidas (318 y 118 temas, la segunda de los artistas que firman los temas mas
 energicos) no movieron la cola alta del Peak: 8 temas las tres veces. Lo nuevo
 cae al centro de la campana. El gap era del solver.
 
+## Donde buscar tracklists, y donde no (2026-09-22)
+
+**1001tracklists esta cerrado.** Cloudflare Turnstile en todas las vias probadas
+(UA de browser, UA de Googlebot, r.jina.ai, allorigins) y cero snapshots en
+Wayback. Lo unico que se lee es lo que indexan los buscadores: `site:1001
+tracklists.com/tracklist "<dj>" <anio>` en Google, Bing o DuckDuckGo. Ojo con un
+falso positivo feo: el HTML del challenge trae `framework.js?ver=2026-08-29`, y
+ese string parece una fecha de set. Verificar el contexto de todo match de fecha.
+
+**trackid.net es la fuente buena para la escena de Buenos Aires.** Tiene 20 sets
+de La Biblioteca con tracklist —ANTRIM 42 temas, Martin Fredes, BLANCAh,
+ALBUQUERQUE, Spencer Brown, MAEZBI b2b Nicolas Viana, Agustin Pietrocola— que es
+exactamente el vecindario del DJ. Su API publica no pide auth:
+
+```
+https://trackid.net/api/public/audiostreams?keywords=<texto>&pageSize=50
+  -> {"result": {"audiostreams": [...], "rowCount": N}}
+https://trackid.net/api/public/audiostreams/<slug>   # detalle, SIN los tracks
+```
+
+El parametro es `keywords`: `search`, `query` y `searchTerm` se ignoran EN
+SILENCIO y devuelven el feed general, que es facil de confundir con resultados.
+El detalle se pide por SLUG, no por id (el id da 404).
+
+**Lo que falta:** el endpoint que devuelve los tracks de un set. No esta en las
+rutas obvias (`/tracks`, `/detections`, `/tracklists`) y el bundle de la SPA arma
+las rutas concatenando, asi que no salen con grep estatico. Mientras tanto, el
+camino que funciona es abrir la pagina en el browser y pegar el tracklist a
+`scripts/ingest_setlist.py`, que para eso existe.
+
+**Un set sin tracklist publicado no se carga a medias.** El de Maze 28 en La
+Biblioteca (29/08/2026) no lo tiene: en los comentarios del video hay cuatro
+personas pidiendolo y nadie contesto. Solo un track quedo confirmado, y lo
+confirmo el propio Maze en un hilo: Kyotto - Knock Knock (Maze 28 Reform), a
+1:16:50. Dos temas y seis agujeros no entran al corpus: es la unica evidencia no
+circular del proyecto.
+
 ## Setlists de referencia: el trabajo mas valioso que podes hacer
 
 El agente `analista` no puede desafiar ninguna regla sin setlists reales en
