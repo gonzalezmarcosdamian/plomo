@@ -8,6 +8,32 @@ Progressive house con alma. Sets que son un viaje — no una colección de track
 
 ---
 
+## El septimo favorito, y la franja que no podia entrar (2026-09-23)
+
+**Kostya Outta, Liam Garcia - If I Win (Cosmonaut Extended Mix)** — "TEMAZO TOTAL
+MI MUSICA". E6.3, 123 BPM, **12B**, sello Univack.
+
+Lo importante no es el tema: es COMO llego al set. Hasta ese dia los siete sets
+del cumple tenian 0% de temas en tonalidad mayor, y este es el primero que
+entro cuando se agrego la cuota de modo. Una franja entera de su propia
+coleccion no podia aparecer en un set, y el primer tema de esa franja que
+aparecio fue el que llamo temazo.
+
+**Sin sobre-leerlo.** Sus siete favoritos son 14% mayor, la biblioteca 15% y los
+pros 11%: no hay una preferencia por lo mayor, hay una coleccion que se estaba
+usando a medias. Y sus 13 vetos son 0% mayor, que con esos numeros no dice
+nada todavia.
+
+Los siete favoritos, juntos: 118-123 BPM, E4.1 a E7.5, y salvo este todos en
+6A-9A. Lo que comparten no es la key sino el registro: progressive de groove
+medio, ni oscuro ni eufórico.
+
+**La veta:** Univack tiene 72 temas en la biblioteca y 40 sin usar en ningun
+set, con Kamilo Sanclemente, Artic White, Cloaked y Nicolas Viana adentro. De
+Kostya Outta hay 8 temas, 6 sin usar.
+
+---
+
 ## Artistas de referencia
 
 ### Eze Arias
