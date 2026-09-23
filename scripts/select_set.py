@@ -56,6 +56,8 @@ PESO_MONOTONIA = R.get("armonia.monotonia_desde_peso", 0.5)
 ENERGIA_QUIETA = R.get("energia.umbral_paso_plano", 0.15)
 PESO_ENERGIA_QUIETA = R.get("energia.penal_paso_plano", 0.35)
 RACHA_ENERGIA_DESDE = R.get("energia.racha_misma_direccion_desde", 2)
+PENAL_RACHA_BAJANDO = R.get("energia.penal_racha_bajando", 0.0)
+CIERRE_NO_BAJA = bool(R.get("energia.cierre_no_baja_del_inicio", False))
 PESO_RACHA_ENERGIA = R.get("energia.racha_misma_direccion_peso", 0.7)
 # Descuento de un tema ancla. Mayor que cualquier costo razonable de una
 # posicion, para que el ancla entre salvo que rompa una restriccion dura.
@@ -92,6 +94,12 @@ _MUNDO = _dato("mundo_propio.json")
 _GR_SD = _GROOVE.get("desvios", [1.0, 1.0])
 _MUNDO_ART = set(_MUNDO.get("artistas", []))
 _MUNDO_SELLO = set(_MUNDO.get("sellos", []))
+# Los temas que el DJ saco escuchando. Estaban solo en armar_noche_zorro, que es
+# el que arma los configs, asi que llamar al solver derecho los volvia a meter:
+# rearmando el 139 aparecio Alafia, vetada por oscura. Un veto tiene que valer en
+# el unico lugar por el que pasan todos los sets, y ese lugar es este.
+VETO_TRACKS = {k for k, v in (_dato("energia_percibida.json") or {}).items()
+               if v.get("veto")}
 _BRILLO = _GROOVE.get("brillo_pct", {})
 VENTANA_ARCO = R.get("energia.ventana_arco", 1)
 BONUS_ARTISTA = R.get("repeticion.bonus_artista_repetido", 0.0)
@@ -176,6 +184,16 @@ def camelot(key):
 # referencia y el 3% de las tocadas— pero no se pueden discutir los pesos con
 # dos varas distintas. Queda la de plomo.camelot, que es la que usa todo lo demas.
 cam_dist = _cam_dist_canonico
+
+
+def _primera(nodo):
+    """Energia del primer tema de la rama. Sube por los padres hasta la raiz."""
+    prev, padre = nodo[1], nodo[2]
+    if prev is None:
+        return None
+    while padre is not None and padre[1] is not None:
+        prev, padre = padre[1], padre[2]
+    return prev["energy"]
 
 
 def _paso_firmado(ca, cb):
@@ -407,6 +425,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
             (cost, prev, _padre, ids, arts, run_num, ult_paso, mono_run,
              gen_cnt, max_e, segs, e_signo, e_racha, min_e, bpm_hi, bpm_lo,
              may_cnt, ventana) = nodo
+            # la energia del primer tema de esta rama, para el piso del cierre
+            e_primero = _primera(nodo)
             frac = segs / objetivo_seg
             tgt = arc_en(frac, e_lo, e_hi, pico, caida)
             # "antes del pico" tambien se mide con el reloj: si los primeros
@@ -462,8 +482,16 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                     # ningun escalon brusco: el crowd tiene que no notar el cambio
                     if not fijo and abs(t["energy"] - prev["energy"]) > MAX_E_STEP + EPS:
                         continue
-                    # el cierre siempre baja del pico — nunca terminar arriba
-                    if ultima and t["energy"] > max_e - BAJA_CIERRE:
+                    # El cierre ya no esta obligado a bajar del pico: la regla
+                    # baja_minima_al_cierre quedo en 0.0 porque le imponia el
+                    # mismo final a los ocho sets de la noche. Con 0.0 esto no
+                    # descarta nada y el filtro de abajo es el que manda.
+                    if BAJA_CIERRE and ultima and t["energy"] > max_e - BAJA_CIERRE:
+                        continue
+                    # "Quiero que no baje": el ultimo tema no puede quedar
+                    # debajo del primero. Un set que termina mas abajo de donde
+                    # empezo entrego la pista peor de lo que la recibio.
+                    if CIERRE_NO_BAJA and ultima and t["energy"] < e_primero:
                         continue
                     # quedarse clavado en la misma key aburre: penalizar la
                     # tercera repeticion en adelante, premiar el movimiento.
@@ -500,6 +528,20 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                         n_racha = e_racha + 1 if n_signo == e_signo else 1
                         if n_racha > RACHA_ENERGIA_DESDE:
                             step += (n_racha - RACHA_ENERGIA_DESDE) * peso_racha
+                        # "Quiero que no baje" (el DJ, 2026-09-23). Una bajada
+                        # sola entre dos temas que sostienen es un respiro y no
+                        # paga nada; dos seguidas ya es el set apagandose, y
+                        # desde ahi cada una cuesta. Es asimetrico a proposito:
+                        # subir dos veces seguidas no tiene nada de malo, y el
+                        # termino de racha que esta arriba, que si es simetrico,
+                        # castiga las dos direcciones por igual.
+                        # Desde la TERCERA bajada seguida, no desde la segunda:
+                        # una soltada de verdad son dos pasos (-1.5 y despues
+                        # -0.8) y la referencia nunca encadena mas de dos.
+                        # Cobrando desde la segunda se bloqueaba justo el gesto
+                        # que a estos sets les faltaba.
+                        if PENAL_RACHA_BAJANDO and n_signo < 0 and n_racha >= 3:
+                            step += (n_racha - 2) * PENAL_RACHA_BAJANDO
                     paso = _paso_firmado(prev["_cam"], t["_cam"])
                     if paso == 0:
                         step += peso_quieto
@@ -765,6 +807,7 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
             and camelot(t["key"])
             and not (names(t["artist"], t["title"]) & taken)
             and t["id"] not in excluidos
+            and t["id"] not in VETO_TRACKS
             and (t.get("genre") or "").strip().lower() not in VETO_GENEROS
             and not any(a in _minus(t["artist"]) for a in VETO_ARTISTAS)
         ]
@@ -778,6 +821,9 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
                           or any(a in _minus(t["artist"]) for a in VETO_ARTISTAS)])
             if _fuera:
                 _print(f"  vetos por categoria: {_fuera} tracks fuera del pool")
+        _vt = len([t for t in pool_all if t["id"] in VETO_TRACKS])
+        if _vt:
+            _print(f"  vetos del DJ: {_vt} tracks fuera del pool")
         # Cuantos tracks entran de verdad en el horario pedido. La regla vieja
         # era 12 por hora (5 min cada uno) y el material real tiene mediana 7.2:
         # un set de 2h con 24 tracks daba 2h52. Si el config trae duration_h se

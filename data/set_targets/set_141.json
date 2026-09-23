@@ -9,44 +9,14 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Cioz",
+      "title": "Dancing in the Night (feat. Eleonora) [Lucky Shot Extended Mix]",
+      "content_id": "221873665"
+    },
+    {
       "artist": "Gux Jimenez, Kurt Caesar",
       "title": "Voryn (Original Mix)",
       "content_id": "11016180"
-    },
-    {
-      "artist": "Che Jose",
-      "title": "THE VOID (Extended)",
-      "content_id": "264150212"
-    },
-    {
-      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
-      "title": "Perception (Original Mix)",
-      "content_id": "264835495"
-    },
-    {
-      "artist": "Eleonora, CIOZ",
-      "title": "Dancing in the Night feat. Eleonora Lucky Shot (Extended Mix)",
-      "content_id": "186467404"
-    },
-    {
-      "artist": "Rockka",
-      "title": "Initiation",
-      "content_id": "41309264"
-    },
-    {
-      "artist": "Rezident, Kate Morgan",
-      "title": "Muse feat. Kate Morgan (Roman Extended Mix)",
-      "content_id": "115900435"
-    },
-    {
-      "artist": "Kostya Outta, Greta Meier, Alisha (PL)",
-      "title": "Far Above (Original Mix)",
-      "content_id": "101403813"
-    },
-    {
-      "artist": "Maezbi, Nicolas Viana",
-      "title": "Smooth (Original Mix)",
-      "content_id": "58422404"
     },
     {
       "artist": "Durante, Mayro",
@@ -54,9 +24,34 @@
       "content_id": "147555802"
     },
     {
-      "artist": "Marsh",
-      "title": "All Night Long (Extended Mix)",
-      "content_id": "157297426"
+      "artist": "Cendryma",
+      "title": "Wakefeld (Original Mix)",
+      "content_id": "75106655"
+    },
+    {
+      "artist": "Ignacio Salgado, Ezequiel Perini",
+      "title": "Modul8 (Sacha Rener Remix)",
+      "content_id": "267006788"
+    },
+    {
+      "artist": "Rezident, Kate Morgan",
+      "title": "Muse feat. Kate Morgan (Roman Extended Mix)",
+      "content_id": "115900435"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Initiation",
+      "content_id": "41309264"
+    },
+    {
+      "artist": "Maezbi, Nicolas Viana",
+      "title": "Smooth (Original Mix)",
+      "content_id": "58422404"
+    },
+    {
+      "artist": "Gorje Hewek, Lost Desert, Volen Sentir",
+      "title": "Fluminnese (Dub)",
+      "content_id": "224734723"
     },
     {
       "artist": "Andrés Moris",
@@ -79,14 +74,19 @@
       "content_id": "83535228"
     },
     {
-      "artist": "Gorje Hewek",
-      "title": "My Heart (Original Mix)",
-      "content_id": "227117324"
+      "artist": "Guy Mantzur & Lonya",
+      "title": "Dynasty feat. Adam Gorlizki (Kotelett & Zadak Remix) ",
+      "content_id": "28160387"
     },
     {
-      "artist": "Abity, Ewan Rill",
-      "title": "La Cumbre (Original Mix)",
-      "content_id": "4142613"
+      "artist": "Kamilo Sanclemente, Dabeat",
+      "title": "Vekants",
+      "content_id": "4009725"
+    },
+    {
+      "artist": "Kasey Taylor, Gai Barone",
+      "title": "Spiral (Original Mix)",
+      "content_id": "253798452"
     },
     {
       "artist": "Chelakhov",

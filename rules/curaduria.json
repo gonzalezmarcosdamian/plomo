@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.11.0",
+  "version": "1.14.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -63,23 +63,16 @@
    "evidencia": "PENDIENTE"
   },
   "max_retroceso_en_subida": {
-   "valor": 0.9,
-   "duro": true,
-   "hasta_pct": 0.82,
-   "porque": "Antes del pico no se retrocede: el set pierde la promesa que venia construyendo.",
-   "evidencia": "Subido de 0.4 a 0.9 junto con la banda de tolerancia: prohibir bajar durante el primer 60% del set es la otra mitad de lo que hacia que la energia fuera funcion del reloj."
+   "valor": 1.8,
+   "porque": "Backtest sobre 133 pares consecutivos de referencia anteriores al 60% del set (11 DJs, 24 setlists, energia de biblioteca en los dos temas): 0.9 lo violan el 25.6% y 1.8 el 11.3%. Por el criterio del proyecto, arriba del 15% no es ley del genero sino restriccion propia. Lo que destapo el numero: nuestros ocho sets tenian CERO bajadas de 1.2 o mas en el primer tercio contra el 23% de la referencia, y su bajada mas grande era 0.9, o sea exactamente este techo. El DJ escuchaba 'se cae' no porque bajaramos de mas sino porque en 83 minutos nada aflojaba nunca, y despues la primera bajada real llegaba sin nada que la precediera."
   },
   "baja_minima_al_cierre": {
-   "valor": 0.6,
-   "duro": true,
-   "porque": "Nunca terminar arriba. El ultimo track tiene que estar al menos 0.6 por debajo del pico del set.",
-   "evidencia": "Validado en sesion 2026-05-16: Haunted como cierre funciono."
+   "valor": 0.0,
+   "porque": "El DJ, 2026-09-23: 'todos los sets se caen de energia siempre' y 'quiero que no baje'. Ocho sets de la misma noche con el mismo final que baja no es el material: es una regla. Esta regla obligaba a que el ultimo tema quedara al menos 0.6 debajo del pico, en TODOS los sets, siempre. En 0.0 el set puede terminar en su punto mas alto si el material da. No se invierte —no se exige subir al final— porque eso seria imponer otra forma unica: se deja de imponer una."
   },
   "pico_en_pct": {
    "valor": 0.6,
-   "anterior": 0.82,
-   "porque": "Donde cae el punto mas alto del set, medido en TIEMPO y no en numero de track.",
-   "evidencia": "2026-09-19, dos mediciones independientes: backtest_rules sobre 24 sets de referencia da el pico a la mediana del 57%, y el analisis de forma da correlacion posicion-energia +0.11 en referencia contra +0.64 propio. Con el pico al 82% el set sube durante el 82% del tiempo y por eso trepa en vez de tener forma."
+   "porque": "El DJ, 2026-09-23: 'todos los sets se caen de energia siempre' y 'quiero que no baje'. Ocho sets de la misma noche con el mismo final que baja no es el material: es una regla. Con el pico al 60% quedan cuatro temas despues que solo pueden bajar. Al 85% el set construye hasta casi el final. Es la decision de Digweed, que en el unico tramo largo suyo medido con nuestra vara pone el pico al 90%; la referencia entera va de 19% (Vuarambon) a 90% (Digweed), asi que no hay un numero correcto sino una eleccion. | 2026-09-23, vuelta atras del 0.85: la zona donde rige max_retroceso_en_subida es `frac <= pico_en_pct`, asi que subir el pico ENSANCHA la parte del set donde nada puede aflojar. Iba justo en contra de lo que el cambio buscaba. Para mover el pico hay que desacoplar las dos cosas primero."
   },
   "caida_post_pico_pct": {
    "valor": 0.5,
@@ -139,6 +132,14 @@
   "ventana_arco": {
    "valor": 3,
    "porque": "Sobre cuantos temas se mide el desvio del arco. En 1 el arco tira de cada tema y el set camina pegado a la curva: pasos de energia de 0.55 de mediana contra 1.00 de los pros. Un valor mayor deja que el tema suelto se mueva mientras la TENDENCIA obedece, que es lo que hace un DJ real (y lo que mide el set de Maze: tres horas dentro de una banda de +-0.3 z con variedad local alta). Lo elige el loop de entrenamiento. | 2026-09-23: el loop la eligio en 2 y fue la mejora mas grande de la ronda (2.976 -> 2.781). El paso de energia subio de 0.60 a 0.70 contra 1.00 de los pros: la diferencia que quedaba abierta era, en parte, que el arco tiraba de cada tema."
+  },
+  "penal_racha_bajando": {
+   "valor": 3.0,
+   "porque": "Dos temas seguidos bajando ya es el set apagandose; uno solo entre dos que sostienen es un respiro. Se cobra desde la SEGUNDA bajada consecutiva, y solo hacia abajo: subir dos veces seguidas no es un problema. Existe aparte de racha_misma_direccion_peso, que es simetrica y castiga las dos direcciones por igual. | Subido de 1.5 a 3.0 el mismo dia: con 1.5 seguian apareciendo colas de dos bajadas seguidas despues del pico (el 139 hacia 8.5 -> 6.6 -> 6.3). | Corregido el mismo dia: cobra desde la TERCERA bajada seguida, no desde la segunda. Una soltada de verdad suele ser dos pasos (-1.5 y despues -0.8) y la referencia nunca encadena mas de dos; penalizar desde la segunda bloqueaba justo el gesto que faltaba."
+  },
+  "cierre_no_baja_del_inicio": {
+   "valor": true,
+   "porque": "El DJ, 2026-09-23: 'quiero que no baje'. Un set que termina mas abajo de donde empezo entrego la pista peor de lo que la recibio. Es la forma mas directa de escribir el pedido: no una forma impuesta, sino un piso. Medido antes de ponerla, dos de los ocho sets de la noche terminaban debajo de su arranque."
   }
  },
  "bpm": {
@@ -567,6 +568,75 @@
      "antes": 0.25,
      "despues": 0.11,
      "por_que": "el 60% de lo que saco era mayor contra el 11% de lo que dejo"
+    }
+   ]
+  },
+  {
+   "version": "1.12.0",
+   "fecha": "2026-09-23",
+   "tema": "el set deja de estar obligado a terminar abajo",
+   "cambios": [
+    {
+     "regla": "energia.baja_minima_al_cierre",
+     "antes": 0.6,
+     "despues": 0.0,
+     "por_que": "forzaba el mismo final que baja en los ocho sets de la noche"
+    },
+    {
+     "regla": "energia.pico_en_pct",
+     "antes": 0.6,
+     "despues": 0.85,
+     "por_que": "con el pico al 60% quedan cuatro temas que solo pueden bajar"
+    },
+    {
+     "regla": "energia.penal_racha_bajando",
+     "antes": "no existia",
+     "despues": 1.5,
+     "por_que": "distingue el respiro de una sola bajada de la caida sostenida"
+    }
+   ]
+  },
+  {
+   "version": "1.13.0",
+   "fecha": "2026-09-23",
+   "tema": "que no baje, como piso y no como forma",
+   "cambios": [
+    {
+     "regla": "energia.cierre_no_baja_del_inicio",
+     "antes": "no existia",
+     "despues": true,
+     "por_que": "dos de ocho sets terminaban debajo de su arranque"
+    },
+    {
+     "regla": "energia.penal_racha_bajando",
+     "antes": 1.5,
+     "despues": 3.0,
+     "por_que": "con 1.5 seguian saliendo dos bajadas seguidas despues del pico"
+    }
+   ]
+  },
+  {
+   "version": "1.14.0",
+   "fecha": "2026-09-23",
+   "tema": "el set no soltaba nunca antes del ultimo tercio",
+   "cambios": [
+    {
+     "regla": "energia.max_retroceso_en_subida",
+     "antes": 0.9,
+     "despues": 1.8,
+     "por_que": "0.9 lo viola el 25.6% de la referencia; nuestros sets tenian 0% de bajadas >=1.2 en el primer tercio contra 23%"
+    },
+    {
+     "regla": "energia.pico_en_pct",
+     "antes": 0.85,
+     "despues": 0.6,
+     "por_que": "subirlo ensanchaba la zona sin aflojar: va en contra del cambio de arriba"
+    },
+    {
+     "regla": "energia.penal_racha_bajando",
+     "antes": "desde la 2a bajada",
+     "despues": "desde la 3a",
+     "por_que": "una soltada real son dos pasos abajo, y la referencia nunca encadena mas de dos"
     }
    ]
   }
