@@ -26,9 +26,18 @@ dan 403 con un "Forbidden" pelado. No es la cuenta ni los permisos: Spotify
 bloquea la escritura para las apps en modo desarrollo, y se destraba pidiendo
 Extended Quota Mode.
 
-El camino que si funciona es el conector de Spotify de claude.ai, que escribe
-con la integracion de Spotify y no con nuestra app. Este script queda para el
-dia que haya Extended Quota, y para las lecturas, que si andan.
+El conector de Spotify de claude.ai TAMPOCO sirve para esto, probado el mismo
+dia: sus cinco herramientas son generar una lista desde una descripcion, buscar,
+guardar y sacar de la biblioteca, y ver que esta sonando. Ninguna agrega temas
+concretos en un orden concreto. Pidiendole la lista con los 17 temas escritos en
+orden, creo una playlist con el nombre correcto y VACIA.
+
+Y una vez creada por el conector, nuestra app tampoco puede llenarla: agregar un
+tema a una playlist que ya existe y es del usuario tambien da 403.
+
+O sea que hoy no hay forma de publicar un set exacto en Spotify desde aca. La
+unica via es pedir Extended Quota Mode para la app en el dashboard. Este script
+queda listo para ese dia: el matcheo ya da 119 de 119 y las lecturas andan.
 
 COMO BUSCA
 ----------
