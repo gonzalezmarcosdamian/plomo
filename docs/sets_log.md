@@ -2963,3 +2963,38 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 16 | Rockka | Operator (Maze 28 Remix) | 122 | 7.2 |
 | 17 | Chelakhov | Crystal Fall (Original Mix) | 120 | 5.0 |
 
+
+## Set 146. 146. Maze 28 + Cendryma · Vecindario — 3h — 2026-09-22
+**Armado:** 2026-09-22  
+**Duracion:** 3.0h  
+**Tracks:** 25  
+**BPM range:** 119-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Rauschhaus, Cary Crank | Tapestry of Perception (Extended Mix) | 120 | 5.0 |
+| 2 | Cendryma | Orbitation (Extended Mix) | 122 | 5.5 |
+| 3 | Gai Barone | All About Her (Original Mix) | 122 | 5.5 |
+| 4 | Chelakhov | Insomnia (Original Mix) | 122 | 5.5 |
+| 5 | Chaum, Hobin Rude | Cressida (Tonaco Remix) | 122 | 5.5 |
+| 6 | Maze 28 | Stardust (Original Mix) | 121 | 5.0 |
+| 7 | Cendryma | Focus Bend (Extended Mix) | 122 | 5.5 |
+| 8 | Chelakhov | Rawai (Extended Mix) | 122 | 5.5 |
+| 9 | Hobin Rude | The Only Thing That Matters | 120 | 7.2 |
+| 10 | Cary Crank | Deep Voltage (NOIYSE PROJECT Remix) | 122 | 5.5 |
+| 11 | Maze 28 | Great Attractor (Ruben Karapetyan Remix) | 124 | 6.0 |
+| 12 | Gru V & Rockka | Closer (Vitaly Shturm Remix) | 122 | 6.9 |
+| 13 | Chelakhov | Searching (Gero Pellizzon Remix) | 122 | 5.5 |
+| 14 | Hobin Rude | Until the End of Time | 122 | 6.6 |
+| 15 | Cendryma | Evasive (Extended Mix) | 121 | 5.0 |
+| 16 | Gai Barone, Aman Anand | Low Era (Original Mix) | 122 | 5.5 |
+| 17 | Rockka | Operator (Maze 28 Remix) | 122 | 7.2 |
+| 18 | Chelakhov | Crystal Fall (Original Mix) | 120 | 5.0 |
+| 19 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
+| 20 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
+| 21 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 22 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 5.5 |
+| 23 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
+| 24 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
+| 25 | Rockka | Subversion | 123 | 5.5 |
+
