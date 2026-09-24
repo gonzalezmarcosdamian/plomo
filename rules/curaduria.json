@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.14.0",
+  "version": "1.15.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -639,6 +639,25 @@
      "por_que": "una soltada real son dos pasos abajo, y la referencia nunca encadena mas de dos"
     }
    ]
+  },
+  {
+   "version": "1.15.0",
+   "fecha": "2026-09-24",
+   "tema": "el color necesita medios Y aire, no uno u otro",
+   "cambios": [
+    {
+     "regla": "estilo.color",
+     "antes": "cuerpo = medio - aire + rango",
+     "despues": "medio * campana(aire, centro 5.5)",
+     "por_que": "Ariana (medios 19.2, aire 5.7) es color; Leuben (21.2, 1.8) no, y con la resta ganaba Leuben"
+    },
+    {
+     "regla": "select_set: max_camelot y max_retroceso por set",
+     "antes": "solo global",
+     "despues": "opcional por set",
+     "por_que": "reordenar un set cerrado es otro problema que armarlo: con los 18 temas del 143 no existe orden que respete 1.8 de retroceso"
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -715,7 +734,11 @@
   },
   "cuerpo": {
    "valor": "medio - aire + rango_dinamico_db",
-   "porque": "Lo que el DJ llama 'oscuro' no es falta de agudos: los 7 temas que saco del 143 tienen medios 11.4 y aire 7.4, y los 10 que dejo medios 14.5 y aire 5.4, con rango dinamico 5.1 contra 3.7. Un tema 'oscuro' para el es uno finito y comprimido. La formula vieja de brillo (medio + 2*aire) premiaba justo lo que rechaza. Muestra chica (7 contra 10), medida sobre un solo set."
+   "porque": "Lo que el DJ llama 'oscuro' no es falta de agudos: los 7 temas que saco del 143 tienen medios 11.4 y aire 7.4, y los 10 que dejo medios 14.5 y aire 5.4, con rango dinamico 5.1 contra 3.7. Un tema 'oscuro' para el es uno finito y comprimido. La formula vieja de brillo (medio + 2*aire) premiaba justo lo que rechaza. Muestra chica (7 contra 10), medida sobre un solo set. | SUPERADA el 2026-09-24 por estilo.color: restar el aire linealmente hacia que Leuben (aire 1.8) ganara, y el DJ lo rechazo."
+  },
+  "color": {
+   "valor": "medio * exp(-((aire - 5.5) / 3.5)^2)",
+   "porque": "Tercera version, y la primera que ordena bien todos los casos etiquetados. El DJ, 2026-09-24, sobre Ariana de Sebastien Leger: 'a eso llamo color'. Tiene medios 19.2 CON aire 5.7. Lo que rechazo el mismo dia, Leuben, tiene MAS medios (21.2) pero aire 1.8; y lo que llamo oscuro semanas antes va para el otro lado: Shades Of Blue, medios 5.8 y aire 14.9. Oscuro resulta ser cualquiera de los dos extremos: sin aire suena apagado, sin medios suena hueco. El aire no es malo ni bueno, tiene un punto justo, y por eso va una campana y no una resta. Ranking resultante: Ariana 19.1, los ocho favoritos 11.5 de promedio, Blinding Lights 9.7, Alafia 8.1, Leuben 6.9, Shades Of Blue 0.004."
   }
  },
  "groove": {

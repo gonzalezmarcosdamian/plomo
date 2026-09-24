@@ -244,7 +244,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
            anclas_en=None, entrada=None, salida=None, bpm_arco=None,
            cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO,
            bpm_span=None, bpm_span_peso=0.0,
-           modo_objetivo=None, peso_modo=None, color_peso=0.0):
+           modo_objetivo=None, peso_modo=None, color_peso=0.0, max_cam=None, max_retro=None):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
@@ -356,6 +356,18 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
     # silencioso de la misma familia que peso_mezcla.
     if max_bpm_jump is None:
         max_bpm_jump = R.get("bpm.max_salto", 2.0)
+    # La distancia maxima en la rueda es global, pero REORDENAR un set cerrado
+    # es otro problema: hay que usar los 18 temas que ya estan, y si un solo par
+    # no cierra a distancia 2 no hay solucion posible. Poder aflojarla por set
+    # deja pedir "ordena esto lo mejor que puedas" sin cambiar la regla para
+    # todos los demas.
+    tope_cam = MAX_CAM if max_cam is None else max_cam
+    # Lo mismo que el tope de rueda, por el mismo motivo: reordenar un set
+    # cerrado es un problema distinto de armarlo. Con los 18 temas del 143 no
+    # existe ningun orden que respete un retroceso de 1.8 mientras sube, asi que
+    # o se afloja aca o no hay set. Armando desde la biblioteca entera el 1.8
+    # sigue valiendo, que es donde se midio.
+    tope_retro = MAX_RETROCESO if max_retro is None else max_retro
     modo_obj = MODO_OBJETIVO if modo_objetivo is None else modo_objetivo
     p_modo = PESO_MODO if peso_modo is None else peso_modo
     key_hogar = arco.get("key_hogar")
@@ -385,7 +397,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
     # alterarlo cambiaria los sets sin cambiar una sola regla.
     vecinos: dict[str, list[int]] = {}
     for k in {t["key"] for t in pool}:
-        vecinos[k] = [j for j, u in enumerate(pool) if cam_dist(k, u["key"]) <= MAX_CAM]
+        vecinos[k] = [j for j, u in enumerate(pool) if cam_dist(k, u["key"]) <= tope_cam]
     todos = list(range(len(pool)))
 
     # (costo, track, padre, ids_mask, arts, run_num, ultimo_paso, mono_run,
@@ -477,7 +489,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                         continue
                     # no retroceder energia durante la subida
                     if not fijo and (subiendo
-                            and t["energy"] < prev["energy"] - MAX_RETROCESO - EPS):
+                            and t["energy"] < prev["energy"] - tope_retro - EPS):
                         continue
                     # ningun escalon brusco: el crowd tiene que no notar el cambio
                     if not fijo and abs(t["energy"] - prev["energy"]) > MAX_E_STEP + EPS:
@@ -872,6 +884,8 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
             modo_objetivo=spec.get("modo_mayor_objetivo"),
             peso_modo=spec.get("peso_modo"),
             color_peso=spec.get("color_peso", 0.0),
+            max_cam=spec.get("max_camelot"),
+            max_retro=spec.get("max_retroceso"),
         )
         _print(f"\n{'='*72}\n{spec['name']}  (pool {len(pool)})")
         if not best:

@@ -32,6 +32,7 @@ Uso:
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import sys
@@ -107,16 +108,25 @@ def groove_index() -> dict:
         # brillo: cuanta energia vive arriba del bajo. Es la mitad medible de
         # "colorido"; la otra mitad es el modo, que sale de la key y no de aca.
         brillo[f.stem] = round(r["balance"]["medio"] + 2 * r["balance"]["aire"], 2)
-        # CUERPO: medios y aire tiran para lados opuestos, y el rango dinamico
-        # suma. Medido el 2026-09-23 sobre el set 143, que el DJ escucho entero:
-        # los 10 temas que dejo tienen medios 14.5 y aire 5.4; los 7 que saco
-        # llamandolos "oscuros", medios 11.4 y aire 7.4, con la mitad del rango
-        # dinamico (3.7 dB contra 5.1). Para su oido "oscuro" no es falta de
-        # agudos sino falta de CUERPO: un tema finito y comprimido. La formula
-        # de brillo hacia exactamente lo contrario, porque pesaba el aire al
-        # doble.
-        cuerpo[f.stem] = round(r["balance"]["medio"] - r["balance"]["aire"]
-                               + r["rango_dinamico_db"], 2)
+        # COLOR: medios Y aire a la vez, no uno u otro.
+        #
+        # Version 1 fue brillo = medio + 2*aire, y rankeaba PRIMERO a los que el
+        # DJ llama oscuros: Shades Of Blue tiene aire 14.9 y medios 5.8.
+        # Version 2 fue cuerpo = medio - aire + rango, que arregla eso pero
+        # rankea primero a Leuben (medios 21.2, aire 1.8), que el DJ tambien
+        # rechazo.
+        #
+        # Con Ariana de Sebastien Leger —"a eso llamo color"— aparece el patron:
+        # medios 19.2 CON aire 5.7. Oscuro resulta ser cualquiera de los dos
+        # extremos: sin aire suena apagado (Leuben, Blinding Lights con 22.5 de
+        # medios y 2.3 de aire), sin medios suena hueco (Shades Of Blue). El
+        # aire no es malo ni bueno: tiene un punto justo, y la campana lo dice.
+        #
+        # Ordena bien los ocho casos etiquetados: Ariana 19.1, los ocho
+        # favoritos 11.5 de promedio, Blinding Lights 9.7, Alafia 8.1, Leuben
+        # 6.9, Shades Of Blue 0.004.
+        _aire_ok = math.exp(-(((r["balance"]["aire"] - 5.5) / 3.5) ** 2))
+        cuerpo[f.stem] = round(r["balance"]["medio"] * _aire_ok, 2)
     if not tracks:
         return {"tracks": {}, "desvios": [1.0, 1.0]}
     arr = np.array(list(tracks.values()))

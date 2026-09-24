@@ -2830,7 +2830,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 140. 140. Cumple Zorro · Warm · 23 a 1 AM — 2h — 2026-09-22
-**Armado:** 2026-09-23  
+**Armado:** 2026-09-24  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 117-125  
@@ -2840,7 +2840,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 3.5 |
 | 2 | GMJ, Matter | Verticality (Original Mix) | 121 | 5.0 |
 | 3 | Khen | Homeboy (Dilby Remix) | 124 | 4.8 |
-| 4 | Sebastien Leger | Ariana | 122 | 5.5 |
+| 4 | Jody Wisternoff | Paramour (Original Mix) | 123 | 5.5 |
 | 5 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 5.0 |
 | 6 | Redspace, Olven | Thread (Extended Mix) | 122 | 5.5 |
 | 7 | Gai Barone | Fractals (Nicolas Viana Extended Remix) | 121 | 5.0 |
@@ -2857,7 +2857,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 142. 142. Cumple Zorro · Warm Colorido · 23 a 1 AM — 2h — 2026-09-22
-**Armado:** 2026-09-23  
+**Armado:** 2026-09-24  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 117-125  
@@ -2867,7 +2867,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 3.5 |
 | 2 | Chelakhov, Redspace | Cosmonauts (Tiefstone Remix) | 121 | 5.0 |
 | 3 | Khen | Homeboy (Dilby Remix) | 124 | 4.8 |
-| 4 | Sebastien Leger | Ariana | 122 | 5.5 |
+| 4 | Paul Deep (AR) | Tique (Original Mix) | 123 | 5.5 |
 | 5 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 5.0 |
 | 6 | Kasper Koman | ⁠⁠Different Plain (Extended Mix) | 122 | 5.5 |
 | 7 | Axel Boman | Chestnut Heartsprite (Tim Green Edit) | 120 | 7.0 |
@@ -2885,28 +2885,28 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 ## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
 **Armado:** 2026-09-24  
-**Duracion:** 2.0h  
+**Duracion:** 0h  
 **Tracks:** 18  
-**BPM range:** 119-127  
+**BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Melodiam | Leuben (Orignal Mix) | 120 | 5.0 |
-| 2 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
-| 3 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
+| 1 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
+| 2 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
+| 3 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
 | 4 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
-| 5 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
-| 6 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
-| 7 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
-| 8 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
-| 9 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
-| 10 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
-| 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 12 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
-| 13 | Braxton | Torn (feat. Danni Wells) [Extended Mix] | 121 | 5.0 |
-| 14 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
-| 15 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
-| 16 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 5 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
+| 6 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
+| 7 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
+| 8 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
+| 9 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
+| 10 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 11 | Sebastien Leger | Ariana | 122 | 5.5 |
+| 12 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
+| 13 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 14 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
+| 15 | Braxton | Torn (feat. Danni Wells) [Extended Mix] | 121 | 5.0 |
+| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
 | 18 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
 
