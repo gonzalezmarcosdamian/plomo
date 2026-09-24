@@ -91,6 +91,8 @@ def main() -> None:
     ap.add_argument("num", type=int)
     ap.add_argument("--dry", action="store_true")
     ap.add_argument("--desde", help="target JSON guardado en vez de leer la base")
+    ap.add_argument("--como", nargs="*", default=[],
+                    help='"tipo tal artista": descuenta a sus temas y a los de sus sellos')
     args = ap.parse_args()
 
     POOL = {t["id"]: t for t in json.loads((RAIZ / "data/pool.json").read_text(encoding="utf-8"))}
@@ -115,6 +117,17 @@ def main() -> None:
     def ajeno(t):
         arts = {a.strip() for a in minus(t["artist"]).replace("&", ",").split(",") if a.strip()}
         return not (arts & ART) and minus(t.get("label") or "") not in SELLO
+
+    # "pone temas mas coloridos y fiesteros tipo de Sebastian Leger": un artista
+    # de referencia no es un filtro sino una direccion. Se descuenta a sus temas
+    # y a los de los sellos donde el edita, que es donde vive ese sonido.
+    como = [minus(x) for x in args.como]
+    sellos_como = set()
+    if como:
+        for t in POOL.values():
+            if any(c in minus(t["artist"]) for c in como) and t.get("label"):
+                sellos_como.add(minus(t["label"]))
+        print(f"  como {', '.join(args.como)}: {len(sellos_como)} sellos de ese mundo")
 
     con = conectar()
     pid, nom, ids = playlist(con, args.num)
@@ -177,6 +190,11 @@ def main() -> None:
             c = abs(E(cid) - e_obj) * 3.0
             if ajeno(t):
                 c += PESO_AJENO
+            if como:
+                if any(c in minus(t["artist"]) for c in como):
+                    c -= 2.5
+                elif minus(t.get("label") or "") in sellos_como:
+                    c -= 1.2
             if colorido:
                 # CUERPO, no brillo. Y sin premio a la tonalidad mayor: de los 7
                 # temas que el DJ saco del 143, el 60% eran mayores contra el

@@ -275,5 +275,30 @@
   "nota": "poca energia",
   "fuente": "escucha del set 143, 2026-09-23",
   "veto": true
+ },
+ "245494571": {
+  "artist": "Sebastien Leger, Tim Green",
+  "title": "Embre (Original Mix) ",
+  "E_calc": 5.9,
+  "nota": "mas energia; lo puso de apertura",
+  "fuente": "escucha del set 143, 2026-09-24",
+  "veto": true,
+  "E": 4.4
+ },
+ "267191914": {
+  "artist": "Guy J",
+  "title": "Day Of Light (Original Mix)",
+  "E_calc": 5.8,
+  "nota": "mas groovero y colorido",
+  "fuente": "escucha del set 143, 2026-09-24",
+  "veto": true
+ },
+ "69012374": {
+  "artist": "Tobi Amuchastegui",
+  "title": "Spectral (Original Mix)",
+  "E_calc": 6.6,
+  "nota": "sacalo; mas colorido y fiestero, tipo Sebastien Leger",
+  "fuente": "escucha del set 143, 2026-09-24",
+  "veto": true
  }
 }

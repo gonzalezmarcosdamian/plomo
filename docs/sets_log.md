@@ -2884,26 +2884,26 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
-**Armado:** 2026-09-23  
+**Armado:** 2026-09-24  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-127  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
-| 2 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
-| 3 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
+| 1 | Sebastien Leger | Son of Sun (Original Mix) | 121 | 5.0 |
+| 2 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
+| 3 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
 | 4 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
-| 5 | Guy J | Day Of Light (Original Mix) | 123 | 5.5 |
-| 6 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
-| 7 | Sebastien Leger, Tim Green | Embre (Original Mix)  | 122 | 5.9 |
+| 5 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
+| 6 | George X, Anonimat | Telazar (Original Mix) | 122 | 5.5 |
+| 7 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
 | 8 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
 | 9 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
-| 10 | Tobi Amuchastegui | Voices (Original Mix) | 123 | 6.9 |
-| 11 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
+| 10 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
+| 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 12 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
-| 13 | Tobi Amuchastegui | Spectral (Original Mix) | 123 | 6.6 |
+| 13 | Sebastien Leger, Roy Rosenfeld, Lost Miracle | Guarana (Extended Mix) | 122 | 6.3 |
 | 14 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
 | 15 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
 | 16 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
