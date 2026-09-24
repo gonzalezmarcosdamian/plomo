@@ -2891,19 +2891,19 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Sebastien Leger | Son of Sun (Original Mix) | 121 | 5.0 |
+| 1 | Melodiam | Leuben (Orignal Mix) | 120 | 5.0 |
 | 2 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
 | 3 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
 | 4 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
 | 5 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
-| 6 | George X, Anonimat | Telazar (Original Mix) | 122 | 5.5 |
+| 6 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
 | 7 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
 | 8 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
 | 9 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
 | 10 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
 | 11 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 12 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
-| 13 | Sebastien Leger, Roy Rosenfeld, Lost Miracle | Guarana (Extended Mix) | 122 | 6.3 |
+| 13 | Braxton | Torn (feat. Danni Wells) [Extended Mix] | 121 | 5.0 |
 | 14 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
 | 15 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
 | 16 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |

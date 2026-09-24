@@ -93,6 +93,10 @@ def main() -> None:
     ap.add_argument("--desde", help="target JSON guardado en vez de leer la base")
     ap.add_argument("--como", nargs="*", default=[],
                     help='"tipo tal artista": descuenta a sus temas y a los de sus sellos')
+    ap.add_argument("--sin", nargs="*", default=[],
+                    help="artistas que no pueden entrar en este reemplazo")
+    ap.add_argument("--posiciones", type=int, nargs="*", default=[],
+                    help="rehacer estos lugares (1 = el primero) sin vetar lo que sale")
     args = ap.parse_args()
 
     POOL = {t["id"]: t for t in json.loads((RAIZ / "data/pool.json").read_text(encoding="utf-8"))}
@@ -149,7 +153,15 @@ def main() -> None:
         except SystemExit:
             pass
 
-    huecos = [i for i, c in enumerate(ids) if c in VET]
+    # Rehacer un lugar NO es vetar lo que estaba: el DJ puede querer otro tema
+    # sin haber rechazado ese. Vetar por las dudas ensucia data/energia_percibida,
+    # que es lo que define "mi sonido", con temas que nunca dijo que no le
+    # gustaran.
+    if args.posiciones:
+        huecos = [n - 1 for n in args.posiciones if 0 < n <= len(ids)]
+    else:
+        huecos = [i for i, c in enumerate(ids) if c in VET]
+    sin = [minus(x) for x in args.sin]
     if not huecos:
         print(f"{nom}\n  sin temas vetados, no hay nada que reemplazar")
         return
@@ -158,8 +170,9 @@ def main() -> None:
     nuevos = list(ids)
     usados = set(ids) | suena
     for i in huecos:
-        prev = next((nuevos[j] for j in range(i - 1, -1, -1) if nuevos[j] not in VET), None)
-        sig = next((nuevos[j] for j in range(i + 1, len(nuevos)) if nuevos[j] not in VET), None)
+        fuera = set(huecos)
+        prev = next((nuevos[j] for j in range(i - 1, -1, -1) if j not in fuera), None)
+        sig = next((nuevos[j] for j in range(i + 1, len(nuevos)) if j not in fuera), None)
         vecinos = [c for c in (prev, sig) if c]
         # El hueco hereda el ROL del tema que sale, no el promedio de sus
         # vecinos. Si no, sacar el pico del set lo reemplaza por algo del monton
@@ -178,6 +191,8 @@ def main() -> None:
         mejor, mejor_c = None, 1e9
         for cid, t in POOL.items():
             if cid in usados or cid in VET or not t.get("key"):
+                continue
+            if sin and any(x in minus(t["artist"]) for x in sin):
                 continue
             ok = True
             for v in vecinos:
