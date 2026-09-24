@@ -2886,7 +2886,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
 **Armado:** 2026-09-24  
 **Duracion:** 2.0h  
-**Tracks:** 17  
+**Tracks:** 18  
 **BPM range:** 119-127  
 
 | # | Artist | Title | BPM | E |
@@ -2907,7 +2907,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 14 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
 | 15 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
 | 16 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
+| 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 18 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
 
 
 ## Set 144. 144. Cumple Zorro · Colorido · 3 a 5 AM — 2h — 2026-09-22
