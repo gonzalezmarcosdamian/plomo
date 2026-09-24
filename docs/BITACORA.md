@@ -9,6 +9,34 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-24 — el color por fin medido, y el video del atardecer
+
+**El set.** El DJ escucho el 143 entero y fue nombrando temas. Tres rondas de
+reemplazos, su propio reordenamiento respetado en el medio, y al final un
+reorden completo porque Ariana no daba para abrir. Quedo en 18 temas, abre en
+5.3 con Serenity, pica en The Whiteroom al 78% y cierra con Fragma; corr
+posicion-energia +0.69 y termina 2.2 arriba de donde arranca.
+
+**El color.** Tercera formula y primera que ordena bien los ocho casos
+etiquetados. La destrabo Ariana: medios 19.2 CON aire 5.7. Ver APRENDIZAJES.
+
+**La grabacion.** 26 minutos de consola en WAV, masterizados a -14 y -9 LUFS
+(venian a -9.2 con picos a +1.41 dBTP), y el video de 4K del telefono
+sincronizado por correlacion: la consola arranco 19.14 s antes, medido en tres
+ventanas que coincidieron dentro de 10 ms.
+
+**Los shorts.** Veinte segundos mudos del atardecer entero, para ponerle musica
+en Instagram. Dos errores en el camino, los dos por la misma causa —no mirar lo
+que el archivo realmente tenia—: el primero cubria solo los primeros diez
+minutos (600 keyframes de 1576), y el segundo saltaba porque tomaba un cuadro
+cada 2.58 s. La version final son 1207 cuadros a 60 fps con 16 cuadros
+promediados en cada uno.
+
+**Spotify.** Las nueve listas publicadas y validadas tema por tema. Los 403 que
+ayer me hicieron decir que era imposible eran endpoints deprecados.
+
+---
+
 ## 2026-09-23 — los sets en Spotify, y una conclusion negativa que estaba mal
 
 Las siete listas del cumple quedaron en la cuenta del DJ, 17 de 17 cada una,

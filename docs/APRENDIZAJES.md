@@ -129,7 +129,9 @@ conclusion que mas barato sale y la que mas caro se paga.
 
 ---
 
-## "Oscuro" no era falta de agudos: era falta de cuerpo
+## "Oscuro" no era falta de agudos: era falta de cuerpo (SUPERADO)
+
+**CORREGIDO el 2026-09-24:** la conclusion de abajo es correcta en que el aire de mas suena oscuro, pero incompleta. Restar el aire linealmente hace ganar a los temas SIN aire, y el DJ tambien los rechaza. Ver el aprendizaje sobre los casos etiquetados.
 
 **Que paso.** El DJ escucho el set 143 entero y fue nombrando: "airbone baja
 toda la energia totalmente", "moho tambien arranca muy abajo", "shades of blue
@@ -171,6 +173,83 @@ querer, y vale mas que cualquier regla traida de afuera. Y antes de definir un
 adjetivo como formula, chequear el signo de cada termino contra un caso real.
 `estilo.cuerpo` = medios - aire + rango dinamico. Muestra chica (7 contra 10) y
 un solo set: se vuelve a medir con el proximo que escuche.
+
+---
+
+## Un adjetivo del DJ se define con sus casos, y puede costar tres intentos
+
+**Que paso.** "Colorido" tardo tres versiones en quedar bien medido, y cada una
+la refuto un caso nuevo que el DJ puso sobre la mesa.
+
+| version | formula | que la refuto |
+|---|---|---|
+| brillo | `medio + 2 * aire` | los temas que llamo oscuros salian PRIMEROS: Shades Of Blue tiene aire 14.9 |
+| cuerpo | `medio - aire + rango` | Leuben ganaba con medios 21.2 y aire 1.8, y lo rechazo |
+| color | `medio * campana(aire, centro 5.5)` | ordena bien los ocho casos etiquetados |
+
+Lo que destrabo la tercera fue una frase: "suma Ariana de Sebastien Leger, a eso
+llamo color". Ariana tiene medios 19.2 **con** aire 5.7. Puesta al lado de lo
+que rechazo el mismo dia (Leuben: 21.2 y 1.8) y de lo que llamo oscuro semanas
+antes (Shades Of Blue: 5.8 y 14.9), el patron aparece solo: **oscuro es
+cualquiera de los dos extremos**. Sin aire suena apagado; sin medios, hueco. El
+aire no es bueno ni malo, tiene un punto justo, y por eso va una campana y no
+una suma ni una resta.
+
+**Por que importa.** Las dos primeras formulas eran razonables y cada una
+explicaba los datos que habia en ese momento. El error no fue elegir mal: fue
+que ninguna de las dos se podia refutar con los casos que tenia. Una formula con
+dos o tres ejemplos a favor no esta validada, esta sin probar.
+
+**Como se aplica.** Cuando el DJ nombra un tema y dice "a eso llamo X", ese caso
+vale mas que cualquier razonamiento sobre que deberia ser X: medirlo contra los
+que rechazo y ver si la formula vigente los ordena bien. Si no los ordena, la
+formula esta mal aunque suene sensata. Y guardar los casos etiquetados: son ocho
+y ya alcanzan para descartar dos hipotesis.
+
+---
+
+## Reordenar un set cerrado no es el mismo problema que armarlo
+
+**Que paso.** El DJ pidio reordenar el 143 sin cambiar los temas. El solver
+devolvio SIN SOLUCION tres veces seguidas, y aflojar a ciegas no ayudaba.
+Probando cada restriccion por separado aparecio la respuesta: con esos 18 temas
+exactos **no existe ningun orden** que respete `max_retroceso_en_subida` en 1.8.
+Ademas los temas fuertes estan todos en 6A-7A y los suaves en 2B-12A, asi que la
+armonia estricta obliga a poner los grandes al principio, que es justo lo que el
+DJ no queria.
+
+**Por que importa.** Los limites se calibraron ARMANDO, o sea eligiendo 17 de
+2800. Con esa libertad casi cualquier limite es satisfacible. Reordenando, el
+conjunto esta fijo y el espacio de soluciones es una permutacion: un limite que
+nunca molestaba pasa a ser imposible. Es el mismo numero midiendo dos cosas
+distintas.
+
+**Como se aplica.** `max_camelot` y `max_retroceso` ahora se pueden pasar por
+set. Armando desde la biblioteca siguen valiendo los globales, que es donde se
+midieron. Y cuando algo da SIN SOLUCION, probar las restricciones de a una
+—apagando cada una y viendo cual lo destraba— en vez de aflojarlas todas: en
+este caso la respuesta fueron seis corridas de dos segundos.
+
+---
+
+## Pedir cambiar un tema no es rechazarlo
+
+**Que paso.** El DJ pidio sacar dos temas de Sebastien Leger que yo habia puesto
+("coloridos pero no de ese artista"). Lo facil era vetarlos. No los veto: lo que
+rechazo fue que el set tuviera tres temas del mismo artista de referencia, no
+esos temas. Vetarlos habria escrito en `data/energia_percibida.json` —que es lo
+que define "mi sonido" y alimenta el perfil de gusto— que no le gustan dos temas
+que nunca dijo que no le gustaran.
+
+**Por que importa.** Ese archivo es la unica fuente de verdad sobre su oido.
+Cada entrada falsa desvia el perfil, el emparejamiento por forma y los
+reemplazos futuros, y no hay forma de distinguir despues un veto real de uno
+puesto por comodidad.
+
+**Como se aplica.** `scripts/reemplazar.py` gana `--posiciones` (rehacer un
+lugar sin vetar lo que sale) y `--sin` (excluir artistas solo en ese reemplazo).
+Antes de escribir un veto, preguntarse si el DJ rechazo el TEMA o el lugar que
+ocupaba.
 
 ---
 
