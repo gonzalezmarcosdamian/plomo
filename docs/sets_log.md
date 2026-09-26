@@ -2884,31 +2884,36 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
-**Armado:** 2026-09-24  
+**Armado:** 2026-09-26  
 **Duracion:** 0h  
-**Tracks:** 18  
+**Tracks:** 23  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
-| 2 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
-| 3 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
-| 4 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
-| 5 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
-| 6 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
-| 7 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
-| 8 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
-| 9 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
-| 10 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 11 | Sebastien Leger | Ariana | 122 | 5.5 |
-| 12 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
-| 13 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
-| 14 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
-| 15 | Braxton | Torn (feat. Danni Wells) [Extended Mix] | 121 | 5.0 |
+| 1 | Ruben Karapetyan | Mindful Harmony (Dowden Remix) | 122 | 5.5 |
+| 2 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
+| 3 | Braxton | Torn (feat. Danni Wells) [Extended Mix] | 121 | 5.0 |
+| 4 | Jamie Stevens, Zankee Gulati | Running (Original Mix) | 120 | 5.0 |
+| 5 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
+| 6 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
+| 7 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 8 | Sebastien Leger | Ariana | 122 | 5.5 |
+| 9 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 10 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
+| 11 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 12 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
+| 13 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 14 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
+| 15 | Ruben Karapetyan | Rejuvenescence | 124 | 6.0 |
 | 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 18 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
+| 18 | Gorkiz & Tonaco | Serenity | 122 | 5.5 |
+| 19 | Michael A | Look Closer (Original Mix) | 121 | 5.0 |
+| 20 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
+| 21 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
+| 22 | Boxer, Jody Wisternoff & James Grant | Sun Kissed (Extended Mix) | 124 | 6.0 |
+| 23 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
 
 
 ## Set 144. 144. Cumple Zorro · Colorido · 3 a 5 AM — 2h — 2026-09-22
