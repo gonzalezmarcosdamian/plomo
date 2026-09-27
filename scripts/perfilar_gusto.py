@@ -98,16 +98,13 @@ def mundo_propio(con) -> dict:
 
 
 def groove_index() -> dict:
-    tracks, brillo, cuerpo = {}, {}, {}
+    tracks, color = {}, {}
     for f in LIB.glob("*.json"):
         r = json.loads(f.read_text(encoding="utf-8"))["referencia"]
         if not r.get("secciones"):
             continue
         dens = float(np.mean([s["densidad"] for s in r["secciones"]]))
         tracks[f.stem] = [round(dens, 3), round(r["balance"]["sub"], 3)]
-        # brillo: cuanta energia vive arriba del bajo. Es la mitad medible de
-        # "colorido"; la otra mitad es el modo, que sale de la key y no de aca.
-        brillo[f.stem] = round(r["balance"]["medio"] + 2 * r["balance"]["aire"], 2)
         # COLOR: medios Y aire a la vez, no uno u otro.
         #
         # Version 1 fue brillo = medio + 2*aire, y rankeaba PRIMERO a los que el
@@ -125,8 +122,15 @@ def groove_index() -> dict:
         # Ordena bien los ocho casos etiquetados: Ariana 19.1, los ocho
         # favoritos 11.5 de promedio, Blinding Lights 9.7, Alafia 8.1, Leuben
         # 6.9, Shades Of Blue 0.004.
+        #
+        # Y es la UNICA medida de color que se guarda. El indice traia tambien
+        # `brillo_pct`, que era la version 1 (medio + 2*aire) que estos mismos
+        # casos refutaron, y el solver la seguia usando para armar los sets
+        # coloridos: Shades Of Blue, que el DJ llama oscuro, salia en 0.981 de
+        # brillo y en 0.000 de color. Una medida refutada que queda guardada al
+        # lado de la buena se vuelve a usar sola.
         _aire_ok = math.exp(-(((r["balance"]["aire"] - 5.5) / 3.5) ** 2))
-        cuerpo[f.stem] = round(r["balance"]["medio"] * _aire_ok, 2)
+        color[f.stem] = round(r["balance"]["medio"] * _aire_ok, 2)
     if not tracks:
         return {"tracks": {}, "desvios": [1.0, 1.0]}
     arr = np.array(list(tracks.values()))
@@ -136,13 +140,11 @@ def groove_index() -> dict:
         "referencia_fuente": "236 pares consecutivos de data/setlists/ con los dos temas indexados",
         "desvios": [float(arr[:, 0].std() or 1.0), float(arr[:, 1].std() or 1.0)],
         "tracks": tracks,
-        # percentil de brillo en la biblioteca: 0 es lo mas oscuro que hay, 1 lo
-        # mas claro. Se guarda el percentil y no el valor crudo para que el peso
-        # del solver signifique lo mismo aunque cambie la biblioteca.
-        "brillo_pct": {k: round(float((np.array(list(brillo.values())) < v).mean()), 3)
-                       for k, v in brillo.items()},
-        "cuerpo_pct": {k: round(float((np.array(list(cuerpo.values())) < v).mean()), 3)
-                       for k, v in cuerpo.items()},
+        # percentil de color en la biblioteca: 0 es lo mas oscuro que hay, 1 lo
+        # mas colorido. Se guarda el percentil y no el valor crudo para que el
+        # peso del solver signifique lo mismo aunque cambie la biblioteca.
+        "color_pct": {k: round(float((np.array(list(color.values())) < v).mean()), 3)
+                      for k, v in color.items()},
     }
 
 

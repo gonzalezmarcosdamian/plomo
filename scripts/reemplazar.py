@@ -105,8 +105,7 @@ def main() -> None:
     MUNDO = json.loads((RAIZ / "data/mundo_propio.json").read_text(encoding="utf-8"))
     ART, SELLO = set(MUNDO["artistas"]), set(MUNDO["sellos"])
     G = json.loads((RAIZ / "data/groove_index.json").read_text(encoding="utf-8"))
-    BR = G.get("brillo_pct", {})
-    CU = G.get("cuerpo_pct", {})
+    CO = G.get("color_pct") or G.get("cuerpo_pct", {})
 
     def E(cid):
         v = PERC.get(cid, {})
@@ -211,11 +210,11 @@ def main() -> None:
                 elif minus(t.get("label") or "") in sellos_como:
                     c -= 1.2
             if colorido:
-                # CUERPO, no brillo. Y sin premio a la tonalidad mayor: de los 7
+                # COLOR, no brillo. Y sin premio a la tonalidad mayor: de los 7
                 # temas que el DJ saco del 143, el 60% eran mayores contra el
                 # 11% de los que dejo. La cuota de modo que puse el 2026-09-23
                 # le estuvo trayendo material que no quiere.
-                c -= CU.get(cid, 0.5) * COLORIDO.get("color_peso", 1.5)
+                c -= CO.get(cid, 0.5) * COLORIDO.get("color_peso", 1.5)
             if c < mejor_c:
                 mejor, mejor_c = cid, c
         if mejor is None:

@@ -189,12 +189,15 @@ def main() -> None:
                     help="no escribe en Spotify: deja los links en data/spotify/ para pegar a mano")
     args = ap.parse_args()
 
-    # Spotify bloquea TODA escritura para apps en modo desarrollo: crear una
-    # lista, guardar un tema y hasta seguir a un artista dan 403 con los scopes
-    # otorgados y la cuenta habilitada. Lo unico que destraba eso es el Extended
-    # Quota Mode, que se pide y puede no salir. Mientras tanto, --archivo deja
-    # los links en orden y la app de escritorio los pega de una: se seleccionan
-    # todas las lineas, se copian, y se pegan adentro de la lista.
+    # ESTE COMENTARIO DECIA que Spotify bloquea toda escritura para apps en modo
+    # desarrollo y que hacia falta Extended Quota Mode. Era falso: los 403 venian
+    # de endpoints deprecados, y con los nuevos las listas se crean y se
+    # reemplazan sin ningun permiso especial (ver el encabezado del archivo).
+    # Queda escrito porque una conclusion negativa equivocada no se revisa sola:
+    # si manana algo vuelve a dar 403, el primer sospechoso es el endpoint.
+    #
+    # `--archivo` sobrevive por otro motivo: deja los links en orden en un .txt
+    # para pegar a mano, que sirve cuando no hay permiso de usuario a mano.
     sp = Spotify(acceso())
     cache_f = RAIZ / "data" / "spotify_matches.json"
     cache = json.loads(cache_f.read_text(encoding="utf-8")) if cache_f.exists() else {}

@@ -1363,7 +1363,7 @@
       "modo_mayor_objetivo": 0.11,
       "color_peso": 1.5,
       "peso_modo": 2.0,
-      "medida": "cuerpo_pct"
+      "medida": "color_pct"
     }
   ]
 }

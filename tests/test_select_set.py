@@ -10,6 +10,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
+
+from plomo.rules import R  # noqa: E402
 from select_set import arc_target, cam_dist, camelot, names  # noqa: E402
 
 
@@ -71,8 +74,13 @@ class TestCamelot:
         assert cam_dist("12A", "1A") == 1
         assert cam_dist("1A", "12A") == 1
 
-    def test_relativa_mayor_es_compatible(self) -> None:
-        assert cam_dist("8A", "8B") == 0
+    def test_relativa_mayor_cuesta_un_paso_y_entra(self) -> None:
+        # Cambiar de modo sin cambiar de numero cuesta UN paso, no cero: 8A y 8B
+        # comparten las notas pero no el color, y el solver lo cobra como
+        # cualquier otro movimiento. Lo que importa es que entre, y entra porque
+        # el tope de la regla es 2.
+        assert cam_dist("8A", "8B") == 1
+        assert cam_dist("8A", "8B") <= R.get("armonia.max_camelot_dist")
 
     def test_salto_lejano(self) -> None:
         assert cam_dist("4A", "9A") == 5
@@ -84,11 +92,16 @@ class TestCamelot:
 @pytest.mark.unit
 class TestArcoDeEnergia:
     def test_arranca_abajo_y_sube_al_pico(self) -> None:
+        # Donde cae el pico se LEE de la regla. Estaba escrito 0.82 aca adentro,
+        # la regla paso a 0.6 cuando se midio que 0.85 se acoplaba a la zona de
+        # retroceso, y el test quedo fallando por copiar un numero que no le
+        # pertenece. Un test que duplica una regla la convierte en dos reglas.
         n = 12
-        assert arc_target(0, n, 4.0, 7.0) == pytest.approx(4.0)
-        # el pico cae al 82% del set, no al final
-        peak_pos = round(0.82 * (n - 1))
-        assert arc_target(peak_pos, n, 4.0, 7.0) == pytest.approx(7.0, abs=0.1)
+        pico = R.get("energia.pico_en_pct")
+        arco = [arc_target(i, n, 4.0, 7.0) for i in range(n)]
+        assert arco[0] == pytest.approx(4.0)
+        assert arco.index(max(arco)) == round(pico * (n - 1))
+        assert max(arco) == pytest.approx(7.0, abs=0.2)
 
     def test_el_cierre_baja_del_pico(self) -> None:
         n = 12

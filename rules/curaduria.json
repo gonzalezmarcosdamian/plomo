@@ -658,6 +658,19 @@
      "por_que": "reordenar un set cerrado es otro problema que armarlo: con los 18 temas del 143 no existe orden que respete 1.8 de retroceso"
     }
    ]
+  },
+  {
+   "version": "1.15.1",
+   "fecha": "2026-09-27",
+   "tema": "el solver no estaba leyendo la medida de color que dice la regla",
+   "cambios": [
+    {
+     "regla": "estilo.colorido.medida",
+     "antes": "declarada cuerpo_pct, pero select_set.py puntuaba con brillo_pct (medio + 2*aire)",
+     "despues": "color_pct en la regla, en el indice y en los dos scripts que lo usan",
+     "por_que": "brillo_pct es la version 1 refutada por los casos del DJ: Shades Of Blue 0.981 de brillo contra 0.000 de color, Leuben 0.842 contra 0.528. reemplazar.py ya usaba la buena, asi que 'colorido' significaba dos cosas distintas segun el script. No cambia ningun peso: cambia QUE se mide."
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -728,9 +741,9 @@
     "modo_mayor_objetivo": 0.11,
     "color_peso": 1.5,
     "peso_modo": 2.0,
-    "medida": "cuerpo_pct"
+    "medida": "color_pct"
    },
-   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el brillo (medio + 2*aire, como percentil de la biblioteca); antes el brillo se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 quedaba en 25.1 de brillo con dos temas en el percentil 33 y 43 abriendo el set. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove. | 2026-09-23, despues de que el DJ escuchara el 143 entero: de los 7 temas que saco, el 60% estaban en tonalidad mayor contra el 11% de los 10 que dejo. Forzar un 25% obligaba al solver a buscar mayores sin cuerpo. Baja al 11% de los pros, que es lo que sale solo cuando el material da. If I Win, que llamo TEMAZO, es 12B: el problema no es la tonalidad sino pedirla como cuota."
+   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el COLOR: los medios pesados por una campana sobre el aire, como percentil de la biblioteca. Oscuro es cualquiera de los dos extremos, asi que no es una suma. Antes se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 abria con dos temas en el percentil 33 y 43. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove. | 2026-09-23, despues de que el DJ escuchara el 143 entero: de los 7 temas que saco, el 60% estaban en tonalidad mayor contra el 11% de los 10 que dejo. Forzar un 25% obligaba al solver a buscar mayores sin cuerpo. Baja al 11% de los pros, que es lo que sale solo cuando el material da. If I Win, que llamo TEMAZO, es 12B: el problema no es la tonalidad sino pedirla como cuota. | 2026-09-27: `medida` decia cuerpo_pct y el solver leia brillo_pct, la version 1 que estos mismos casos refutaron. Los sets coloridos se armaron premiando lo contrario de lo pedido durante cuatro dias: Shades Of Blue, que el DJ llama oscuro, daba 0.981 de brillo y 0.000 de color. La regla estaba bien escrita; el codigo no la leia."
   },
   "cuerpo": {
    "valor": "medio - aire + rango_dinamico_db",

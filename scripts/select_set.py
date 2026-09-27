@@ -100,7 +100,13 @@ _MUNDO_SELLO = set(_MUNDO.get("sellos", []))
 # el unico lugar por el que pasan todos los sets, y ese lugar es este.
 VETO_TRACKS = {k for k, v in (_dato("energia_percibida.json") or {}).items()
                if v.get("veto")}
-_BRILLO = _GROOVE.get("brillo_pct", {})
+# COLORIDO se mide con `color_pct`: medios por una campana sobre el aire. Aca
+# decia `brillo_pct`, que era medio + 2*aire, la version que los propios casos
+# del DJ refutaron — Shades Of Blue, que el llama oscuro, daba 0.981 de brillo
+# y 0.000 de color. O sea que TODOS los sets coloridos se armaron premiando lo
+# contrario de lo que el pidio, mientras `reemplazar.py` ya usaba la buena: el
+# mismo adjetivo significaba dos cosas segun que script corriera.
+_COLOR = _GROOVE.get("color_pct") or _GROOVE.get("cuerpo_pct", {})
 VENTANA_ARCO = R.get("energia.ventana_arco", 1)
 BONUS_ARTISTA = R.get("repeticion.bonus_artista_repetido", 0.0)
 MODO_OBJETIVO = R.get("armonia.modo_mayor_objetivo", 0.0)
@@ -221,8 +227,8 @@ def arc_target(i, n, lo, hi, hi_at=PICO_PCT):
     """El arco por POSICION. Se mantiene para quien lo llame de afuera.
 
     Es la version vieja y tiene un problema: asume que todos los tracks duran lo
-    mismo. Con la posicion como reloj, el pico "al 82% del set" cae en el track
-    20 de 24 — pero si los primeros diecinueve son extended mixes de nueve
+    mismo. Con la posicion como reloj, el pico que pide `energia.pico_en_pct`
+    cae en un NUMERO de track — pero si los primeros diecinueve son extended mixes de nueve
     minutos, ese track 20 llega a las dos horas y media de empezar. Medido sobre
     los sets armados, ocho de cada diez no entraban en el horario pedido y el
     108 duraba 2h59 con cartel de 2h. `select()` ahora usa `arc_en()` con el
@@ -311,10 +317,10 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
     prohibia —8A a 8B es distancia 1 y estaba permitido— pero tampoco nada lo
     premiaba, y el 84% del pool es menor.
 
-    `color_peso` premia el brillo: la fraccion de energia que vive arriba del
-    bajo, como percentil de la biblioteca (data/groove_index.json). Es la otra
-    mitad de "colorido", y la que ya se usaba, aunque por afuera del costo y
-    como lista de preferidos.
+    `color_peso` premia el COLOR: los medios pesados por una campana sobre el
+    aire, como percentil de la biblioteca (data/groove_index.json). Oscuro es
+    cualquiera de los dos extremos —sin aire suena apagado, sin medios hueco—,
+    asi que no es una suma sino un punto justo. Es la otra mitad de "colorido".
     """
     prefer = set(prefer)
     anclas = set(anclas)
@@ -618,7 +624,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                     tb = bpm_arco[0] + (bpm_arco[1] - bpm_arco[0]) * frac
                     c += max(0.0, abs(t["bpm"] - tb) - 1.0) * bpm_arco_peso
                 # COLORIDO, medido y no declarado. Dos mitades: el modo de la
-                # tonalidad y el brillo del audio.
+                # tonalidad y el color del audio.
                 if p_modo and modo_obj:
                     # Simetrico sobre las DOS caras, como la cuota de genero.
                     # La primera version contaba solo los mayores, y con eso un
@@ -632,7 +638,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                         men = (i - may_cnt) + 1
                         c += (men / (i + 1) - (1 - modo_obj)) * p_modo
                 if color_peso:
-                    c -= _BRILLO.get(t["id"], 0.5) * color_peso
+                    c -= _COLOR.get(t["id"], 0.5) * color_peso
                 # LO PROGRESIVO, tercero: descuenta, no veda.
                 if PESO_PROG and t["_prog"]:
                     c -= PESO_PROG
