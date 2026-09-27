@@ -4,6 +4,17 @@ Lo que se grabó tocando. **Está en el repo pero no en git**: son 8 GB de video
 y audio WAV, y un repo con eso adentro se vuelve inmanejable. Lo que sí se
 versiona es lo que se publica, que vive en `redes/shorts/` y pesa megas.
 
+## 2026-05-07
+
+| archivo | qué es |
+|---|---|
+| `video/2026-05-07_set.MOV` | 10:16, 4K 24, 3.4 GB |
+| `2026-05-07_set_audio_del_video.wav` | el audio de ESE video, no una grabación aparte |
+
+Los dos estaban sueltos en la raíz del repo como `IMG_8372.MOV` y
+`set_audio.wav`, sin nada que dijera qué eran. Que el wav sale del video no es
+una suposición: duran 616.468 s y 616.462 s, seis milésimas de diferencia.
+
 ## 2026-09-23
 
 | archivo | qué es |

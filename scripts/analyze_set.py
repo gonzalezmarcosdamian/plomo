@@ -1,4 +1,12 @@
-"""Analyze DJ set audio: energy, BPM, transitions, loudness."""
+"""Mide un set grabado: energia por segmento, BPM, transiciones y loudness.
+
+El archivo se pasa por argumento. Estaba clavado en `set_audio.wav` de la raiz
+del repo con la ruta absoluta de esta maquina, o sea que el script servia para UN
+archivo y solo en esta computadora. Las grabaciones viven en `grabaciones/`.
+
+    python scripts/analyze_set.py grabaciones/2026-09-23_set_consola_REC001.wav
+    python scripts/analyze_set.py          # la grabacion mas nueva que haya
+"""
 import sys
 import numpy as np
 from pathlib import Path
@@ -8,7 +16,17 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 import librosa
 import librosa.display
 
-AUDIO_PATH = r"C:\Users\gonza\Documents\plomo\set_audio.wav"
+if len(sys.argv) > 1:
+    AUDIO_PATH = Path(sys.argv[1])
+else:
+    grabs = sorted((Path(__file__).resolve().parent.parent / "grabaciones").glob("*.wav"),
+                   key=lambda f: f.stat().st_mtime)
+    if not grabs:
+        sys.exit("no hay grabaciones en grabaciones/: pasa el archivo por argumento")
+    AUDIO_PATH = grabs[-1]
+    print(f"(sin argumento: uso la mas nueva, {AUDIO_PATH.name})")
+if not AUDIO_PATH.exists():
+    sys.exit(f"no existe {AUDIO_PATH}")
 
 print("Cargando audio...")
 y, sr = librosa.load(AUDIO_PATH, sr=22050, mono=True)

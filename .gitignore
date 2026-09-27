@@ -134,6 +134,13 @@ data/auto_radio_ids.json
 data/favoritos_*.json
 data/batch_*.txt
 
+# Scratch de una sesion: listas de ContentID a medio camino, huecos, ordenes
+# intermedios. El lugar de esto es el scratchpad de la sesion y no `data/`, pero
+# cuando se escapa que quede afuera del repo: son 10 archivos que aparecieron en
+# cuatro dias y ninguno lo leia ningun script.
+data/_*.json
+data/set_targets/_*.json
+
 # Permiso de usuario de Spotify (lo genera scripts/spotify_auth.py)
 data/spotify_token.json
 data/spotify_matches.json
