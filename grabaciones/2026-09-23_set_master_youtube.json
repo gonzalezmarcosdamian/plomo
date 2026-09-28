@@ -1,0 +1,62 @@
+{
+  "origen": "grabaciones\\2026-09-23_set_consola_REC001.wav",
+  "salida": "grabaciones\\2026-09-23_set_master_youtube.wav",
+  "antes": {
+    "lufs": -9.22,
+    "pico_dbfs": 0.0,
+    "true_peak_dbtp": 1.45,
+    "muestras_al_tope": 9347,
+    "dc": [
+      -0.0033,
+      -0.00332
+    ],
+    "duracion_s": 1575.8
+  },
+  "despues": {
+    "lufs": -14.0,
+    "pico_dbfs": -2.34,
+    "true_peak_dbtp": -2.11,
+    "muestras_al_tope": 1,
+    "dc": [
+      0.0,
+      0.0
+    ],
+    "duracion_s": 1549.48
+  },
+  "recorte_inicio_s": 21.504,
+  "recorte_fin_s": 4.811,
+  "declip": {
+    "rachas": 9253,
+    "muestras_cambiadas": 1317
+  },
+  "subsonico_hz": 10.0,
+  "ganancias": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      357.8,
+      0.0
+    ],
+    [
+      361.2,
+      1.5
+    ],
+    [
+      717.3,
+      1.5
+    ],
+    [
+      718.6,
+      0.0
+    ],
+    [
+      1575.0,
+      0.0
+    ]
+  ],
+  "lufs_objetivo": -14.0,
+  "techo_dbtp": -1.0,
+  "sr": 48000
+}

@@ -3037,21 +3037,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Cendryma | Buildup Trap (Diego R Remix) | 121 | 5.1 |
-| 2 | KAS:ST | Who's to Say What's Real (Mind Against, Colyn Remix) | 123 | 5.5 |
-| 3 | Maze 28 | Red Lights From Afar (Nacres Remix) | 122 | 5.5 |
-| 4 | Guy Mantzur, Khen | My Golden Cage (Original Mix) | 122 | 5.5 |
-| 5 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
-| 6 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
-| 7 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
-| 8 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
-| 9 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
-| 10 | Tinlicker, Ben Böhmer | Voodoo (Extended Mix) | 124 | 6.0 |
-| 11 | Colyn, Read the News | See the Light (Original Mix) | 123 | 6.1 |
-| 12 | Cary Crank, OBL | Spitfire (Original Mix)  | 124 | 6.6 |
-| 13 | Martin Fredes & GEØVHÄN | Deep Story (Ruben Karapetyan Remix) | 123 | 7.1 |
-| 14 | Tobi Amuchastegui | Voices (Gonzalo Cotroneo Remix) | 123 | 6.7 |
-| 15 | Analog Jungs | Ocaris (Original Mix)  | 123 | 8.1 |
-| 16 | Kamilo Sanclemente, Mauro Aguirre | Goldes Eyes (Original Mix) | 123 | 5.5 |
-| 17 | D-Nox, Stereo Underground | Shooting Stars (Extended Version) | 125 | 6.0 |
+| 1 | Simon Neviani | Uprising Fall (Hobin Rude Remix) | 122 | 5.2 |
+| 2 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
+| 3 | Emi Galvan & Albuquerque | Don't Kill the Messenger | 123 | 5.5 |
+| 4 | Ruben Karapetyan, Maze 28 | Cosmic Dot | 123 | 5.5 |
+| 5 | Paul Deep AR | Milo | 123 | 7.1 |
+| 6 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
+| 7 | Maze 28 | Fogbows | 122 | 6.3 |
+| 8 | Sounom & Sagou | Everyday Moments (Kamilo Sanclemente Remix) | 122 | 5.5 |
+| 9 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
+| 10 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
+| 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 12 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
+| 13 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
+| 14 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
+| 15 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
+| 16 | Martin Fredes & GEØVHÄN | Deep Story (Ruben Karapetyan Remix) | 123 | 7.1 |
+| 17 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
 
