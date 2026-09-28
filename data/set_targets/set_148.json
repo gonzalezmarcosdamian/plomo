@@ -19,14 +19,14 @@
       "content_id": "197567059"
     },
     {
-      "artist": "Emi Galvan & Albuquerque",
-      "title": "Don't Kill the Messenger",
-      "content_id": "182281408"
+      "artist": "Guy Mantzur, Khen",
+      "title": "My Golden Cage (Original Mix)",
+      "content_id": "230647385"
     },
     {
-      "artist": "Ruben Karapetyan, Maze 28",
-      "title": "Cosmic Dot",
-      "content_id": "97553620"
+      "artist": "Kostya Outta, Frameloue",
+      "title": "Altitude (Feat. Frameloue Extended Mix)",
+      "content_id": "191112049"
     },
     {
       "artist": "Paul Deep AR",
@@ -93,5 +93,6 @@
       "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
       "content_id": "117129270"
     }
-  ]
+  ],
+  "_nota_spotify": "Los lugares 3 y 4 se cambiaron el 2026-09-28 porque el DJ ya toco mucho Don't Kill the Messenger y Cosmic Dot. NO es un veto: dijo que la eleccion estaba bien. El cambio se publico SOLO en Spotify a pedido suyo, asi que la playlist de Rekordbox quedo en la version anterior hasta que se corra build_set.py 148."
 }
