@@ -8,6 +8,32 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un tema se reconoce en una mezcla por su coherencia, no por su mejor puntaje
+
+**Que paso.** Para sacar el tracklist de una grabacion de consola sin historial
+se probo primero chroma con DTW: los costos salian todos parecidos y el "mejor"
+caia en el silencio del principio. Despues, mel con busqueda de tempo: una
+veintena de temas daban correlacion 0.6 con la grabacion, y solo cuatro eran de
+verdad. Los falsos tenian buen puntaje y posiciones incoherentes; los reales,
+cinco fragmentos del tema cayendo en la grabacion separados exactamente como en
+el tema (±0 a 16 s contra ±80 a 500 s de los falsos).
+
+**Por que.** En un mismo palo —misma tonalidad, mismo tempo, mismo bombo— un
+fragmento de groove se parece a cualquier otro groove. Chroma solo ve notas, y
+en temas del mismo key no separa nada. El timbre separa mas, pero un groove
+generico igual correlaciona 0.6 con cualquier cosa. Lo que no puede fingir un
+falso positivo es la GEOMETRIA: que varios pedazos del tema aparezcan en la
+mezcla en el orden y con la distancia que tienen en el tema.
+
+**Como se aplica.** Para identificar material en una mezcla (tracklist de un set
+ajeno, verificar que sono lo que se dice), nunca aceptar un match por el puntaje
+de un fragmento: pedir varios fragmentos y que la posicion implicita del inicio
+del tema coincida entre ellos. Normalizar por la ventana local de la grabacion,
+y enmascarar el silencio: dividir por un desvio de casi cero hace ganar a
+cualquiera. Ver `docs/BITACORA.md` 2026-09-28.
+
+---
+
 ## Tres rondas persiguiendo un numero que era ruido de medicion
 
 **Que paso.** El loop de entrenamiento venia diciendo, ronda tras ronda, que

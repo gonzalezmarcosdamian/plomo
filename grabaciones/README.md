@@ -23,6 +23,7 @@ una suposición: duran 616.468 s y 616.462 s, seis milésimas de diferencia.
 | `2026-09-23_set_master_streaming.wav` | −14 LUFS, −1 dBTP. Para Instagram, TikTok y YouTube, que normalizan a ese nivel |
 | `2026-09-23_set_master_club.wav` | −9 LUFS, −1 dBTP. Para escuchar y para SoundCloud |
 | `2026-09-23_set_master_streaming.mp3` | 320k, para mandar por mensaje |
+| `2026-09-23_set_master_youtube.wav` | **el publicable** (2026-09-28): −14 LUFS, −2.1 dBTP, 48 kHz / 24 bit, con declip, pasa-altos de 10 Hz, recorte y +1.5 dB a A New Beginning. Lo hace `scripts/pulir_master.py` con `data/video/2026-09-23_ganancias.json`; su `.json` dice qué le hizo |
 | `video/IMG_1688.MOV` | lo que filmó el teléfono. 25:49, 4K 60, 6.2 GB |
 | `video/IMG_168{6,7,9}.MOV` | clips cortos de la misma noche |
 | `20s_vertical_IG.mp4` | el short mudo, 1080x1920 |

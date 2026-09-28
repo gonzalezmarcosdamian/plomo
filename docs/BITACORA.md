@@ -9,6 +9,50 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-28 — el atardecer del 23, pulido y animado para YouTube
+
+**Qué sonó.** La grabación de consola no tenía tracklist y el historial de
+Rekordbox no mostraba nada a esa hora. Se identificó desde el audio: correlación
+de mel contra 615 candidatos con búsqueda de tempo, confirmada con cinco
+fragmentos por tema en posiciones coherentes. Wait for Me (Mike Rish) → A New
+Beginning (Callecat) → In Space (DJ Bird) → Mindloop (Maze 28). Coincide con
+`HISTORY 2026-09-26 (1)`: el historial de la consola, importado cuando se enchufó
+el pen el 26. El primer intento, con chroma, no discriminaba: temas del mismo
+palo y tonalidad dan todos parecido.
+
+**El master** (`scripts/pulir_master.py`, `grabaciones/2026-09-23_set_master_youtube.wav`).
+El de -14 del 23 solo había bajado ganancia: seguían adentro 9347 muestras al
+tope, infrasonido que corría el cero hasta -0.017 en el minuto 12, y 22 s de
+silencio. Se agregaron declip por spline, pasa-altos de 10 Hz de fase cero,
+recorte, y +1.5 dB a A New Beginning. Tres auditores contra el ORIGINAL de cada
+tema:
+- `productor`: la consola es transparente (0.13 dB contra el original en todos
+  los tercios de Wait for Me y Mindloop). No hay EQ que corregir.
+- `mezclador`: A New Beginning entró -1.95 dB desde la consola; su master es
+  apenas 0.6 abajo. +1.5 y no +1.9 para dejar margen a que fuera intención, con
+  rampas dentro de los huecos de bajo del DJ. Dispersión entre temas 2.27 -> 0.77 dB.
+- `bajo`: no hay acumulación de grave en ningún blend (son cambios de bajos de
+  manual); bombos desfasados 4.5-6.6 ms; el pasa-altos le cuesta 0.01 dB al bombo.
+Resultado: -14.0 LUFS, -2.11 dBTP, LRA 4.2 (era 4.6: la diferencia es el pozo
+corregido).
+
+**El video** (`scripts/video_rasgos.py`, `scripts/video_animar.py`,
+`scripts/shaders/atardecer.frag`). Un cielo abstracto renderizado en la GPU fuera
+de tiempo real, 4K30, 25:49 en 42 minutos. La paleta sale del video del teléfono
+de esa misma tarde; el movimiento, del master. El audio del .mov es el master
+bit a bit, desfase 0.000 ms en tres puntos. Dos errores en el camino, los dos de
+no mirar lo que salía: el bombo medido a 30 cuadros por segundo marcaba uno sí y
+uno no (se pasó a grilla de beats con la fuerza real del bombo), y el "cielo" era
+lo más brillante de arriba —el horizonte y los reflejos— así que la paleta salía
+toda naranja (ahora es lo más azul, y de noche sostiene el último azul medido).
+
+**YouTube.** Proyecto de Google Cloud `plomo-youtube` con la API activada,
+`scripts/youtube_auth.py` y `scripts/youtube_publicar.py` escritos. Falta la
+credencial OAuth (la baja el DJ de la consola) y el permiso. Paquete de
+publicación en `data/youtube/2026-09-23_atardecer.md`.
+
+---
+
 ## 2026-09-27 — el circuito del repo, y las listas de Spotify que no eran
 
 **El repo, cinco commits.** Lo mas caro: `select_set.py` puntuaba "colorido" con

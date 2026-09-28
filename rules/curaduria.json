@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.16.0",
+  "version": "1.16.1",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -778,6 +778,19 @@
      "por_que": "filtrar por genero House daba MENOS groove que Progressive House (densidad 12.8 contra 14.1): el genero no es la medida. Ningun valor existente cambia; es un termino nuevo que solo se activa si el set lo pide."
     }
    ]
+  },
+  {
+   "version": "1.16.1",
+   "fecha": "2026-09-28",
+   "tema": "el eje empuje, y la primera aprobacion del housero por el oido del DJ",
+   "cambios": [
+    {
+     "regla": "estilo.housero.valor.empuje_peso / color_peso_con_brillo",
+     "antes": "solo housero_peso, que resta el color y por eso no podia dar brillo",
+     "despues": "empuje 2.0 (groove sin descontar melodia) + color 1.5, pedidos a la vez",
+     "por_que": "'mas brillo y progresivo lindo' sobre un set housero es una contradiccion para el indice housero, que resta el color por definicion. Separar los ejes da empuje 0.91 y color 0.64 a la vez; con color en 2.0 el empuje se cae a 0.61 y es otro set. El DJ escucho el resultado y lo aprobo."
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -870,10 +883,12 @@
      "Progressive House": 0.5,
      "House": 0.35,
      "Melodic House & Techno": 0.15
-    }
+    },
+    "empuje_peso": 2.0,
+    "color_peso_con_brillo": 1.5
    },
    "porque": "Lo que cambia un set 'housero' respecto de su base. El DJ, 2026-09-28: 'una variante del set mas housera pero progresive'. NO es un filtro de genero: medido sobre los 1353 tracks del indice, el genero House tiene MENOS densidad que Progressive House (12.8 contra 14.1), asi que filtrar por genero da lo contrario de lo pedido. Lo que separa es el sonido: groove denso, bajo presente y poco protagonismo melodico. El peso 1.5 es el mismo de color_peso porque es el mismo termino con el signo cambiado: un set no puede ser colorido y housero a la vez. | Se guarda como PERCENTIL y no en crudo: el indice crudo va de -8.1 a +4.8 y el color de 0 a 1, asi que el mismo numero de peso pesaba seis veces mas de un lado que del otro y se comia el arco de energia.",
-   "evidencia": "2026-09-28, sobre data/groove_index.json (1584 tracks). El eje ordena los extremos como se espera sin que nadie se lo diga: arriba Impending Storm (Navar Remix) dens 15.3 / sub 69.7 / color 0.02, Power Pink y Quantum Touch; abajo Paramour de Jody Wisternoff (dens 6.7, sub 22.8, color 0.87), Once a Day de Ezequiel Arias y el Wind Down de Cattaneo. PENDIENTE de validacion externa: no hay setlists etiquetados como 'houseros' contra los que medirlo, asi que por ahora es una definicion operativa y no una regla probada."
+   "evidencia": "2026-09-28, sobre data/groove_index.json (1584 tracks). El eje ordena los extremos como se espera sin que nadie se lo diga: arriba Impending Storm (Navar Remix) dens 15.3 / sub 69.7 / color 0.02, Power Pink y Quantum Touch; abajo Paramour de Jody Wisternoff (dens 6.7, sub 22.8, color 0.87), Once a Day de Ezequiel Arias y el Wind Down de Cattaneo. VALIDADO POR EL OIDO DEL DJ el 2026-09-28: escucho el set 148 v2 --empuje 2.0 y color 1.5, empuje mediano 0.91 y color 0.64-- y dijo 'me esta gustando'. Es la primera aprobacion directa del eje. Sigue sin haber setlists ajenos etiquetados como houseros contra los que medirlo, asi que el eje esta validado por su escucha y no por la referencia; para el proyecto eso pesa mas, no menos (ver docs/APRENDIZAJES: la escucha del DJ pisa a la formula). Lo que NO esta resuelto es 'brillo': el color_pct que uso aca falla con Running, que el DJ dice que tiene brillo y mide 0.13."
   }
  },
  "groove": {

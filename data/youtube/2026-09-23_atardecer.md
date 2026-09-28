@@ -112,6 +112,11 @@ La pregunta es de DJ a DJ y no un "track ID?", así que las respuestas sirven ta
 
 - **Cuenta verificada:** el video dura más de 15 min y lleva miniatura personalizada. Sin verificar (verificación por teléfono), no se puede ninguna de las dos cosas.
 - **Content ID va a reclamar** los cuatro temas y los ingresos van a los sellos. Es lo esperado (`docs/YOUTUBE_SERIE.md`: vidriera, no ingreso). Conviene subirlo primero como **privado** y esperar el paso de "Comprobaciones" de YouTube: ahí aparecen los reclamos antes de publicar, y si algún titular eligió bloquear en algún país se ve ahí y no con el video ya público.
+- **RESUELTO (2026-09-28, después de escrito esto):** el master final es
+  `grabaciones/2026-09-23_set_master_youtube.wav`, CON el +1.5 dB a Callecat. El
+  recorte siguió en 21.50 s, así que capítulos y shorts no se movieron; los rasgos
+  se recalcularon y el render final (`postproduction/video/2026-09-23_atardecer.mov`)
+  usa ese master. Lo que sigue queda como registro de la advertencia original.
 - **El master que usan los rasgos y los capítulos** es `v2_master_youtube.wav`: dura 1549.48 s y tiene un recorte de 21.504 s, lo mismo que los capítulos. Vive en la carpeta temporal de la sesión (`C:\Users\gonza\AppData\Local\Temp\claude\...\scratchpad\`), **no en `grabaciones/`**. Su informe dice que **se hizo sin ganancias por tramo**, o sea sin el +1.5 dB de Callecat de `data/video/2026-09-23_ganancias.json`. Si el render final va con ese ajuste, hay que regenerar el master con `scripts/pulir_master.py --ganancias ...`, verificar que el recorte siga dando 21.504 s (si da eso, los capítulos y los shorts no se mueven) y recalcular los rasgos. Si no, el video sale con Callecat unos 2 dB abajo de los otros tres, que es como se tocó.
 
 ---
