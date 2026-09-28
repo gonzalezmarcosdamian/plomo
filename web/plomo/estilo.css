@@ -1,0 +1,55 @@
+:root {
+  --fondo: #0b0f14;
+  --texto: #e9e4da;
+  --suave: #a39c90;
+  --acento: #e8964a;
+  --linea: #243140;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  background-image: linear-gradient(180deg, #16222e 0%, var(--fondo) 55%);
+  color: var(--texto);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 56px 16px 64px; }
+h1 { font-size: 2.2rem; letter-spacing: 0.02em; margin: 0 0 4px; }
+h2 { font-size: 1.15rem; margin: 2rem 0 0.4rem; color: var(--acento); }
+.horizonte { height: 3px; margin: 18px 0 28px; background: linear-gradient(90deg, transparent, var(--acento), transparent); }
+p, li { color: var(--texto); }
+.suave { color: var(--suave); }
+a { color: var(--acento); }
+nav { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--linea); font-size: 0.95rem; }
+nav a { margin-right: 18px; }
+
+/* portada de artista */
+.portada {
+  min-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  text-align: center;
+  background: #0b0f14 url("/img/cielo.jpg") center / cover no-repeat;
+}
+.portada h1 {
+  font-family: "Bahnschrift", "Barlow Condensed", "DIN Condensed", "Arial Narrow", system-ui, sans-serif;
+  font-stretch: condensed;
+  font-weight: 700;
+  font-size: clamp(2.4rem, 9vw, 5.5rem);
+  letter-spacing: 0.08em;
+  color: #f3ebdd;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.55);
+  margin: 0;
+}
+.portada + main { padding-top: 32px; }
+section { margin-bottom: 8px; }
+.set img { width: 100%; height: auto; display: block; border-radius: 6px; }
+.tracklist { list-style: none; padding: 0; margin: 12px 0 0; }
+.tracklist li { padding: 6px 0; border-bottom: 1px solid var(--linea); }
+.tracklist span { display: inline-block; min-width: 3.4em; color: var(--suave); font-variant-numeric: tabular-nums; }
+nav p { margin: 0 0 10px; font-size: 0.9rem; }
+.tracklist em { font-style: normal; color: var(--suave); font-size: 0.85em; margin-left: 6px; }
+.redes a { margin-right: 18px; }

@@ -26,27 +26,16 @@ Descartados:
 
 ## Descripción
 
+**Definitiva, dictada por el DJ (2026-09-28):** "deja los track list y algo mas de agradecimiento, fin". Nada de presentación ni de explicar la imagen, y NUNCA un cierre tipo "compralo y bancá al artista". Es la que está cargada en el video.
+
 ```
-Un atardecer por la ventana, de principio a fin: 25 minutos grabados en casa el 23 de septiembre de 2026, en una sola toma, con la salida directa de la consola. Cuatro temas entre 118 y 120 BPM: arranca con Wait for Me de Mike Rish y el cielo todavía naranja, y cierra con Mindloop de Maze 28, que ya suena de noche.
-
-La imagen es ese mismo cielo convertido en animación: los colores salen de lo que filmó el teléfono esa tarde, el resplandor del horizonte sigue la energía del set, el bombo lo hace respirar, los hats prenden las luces de la ciudad, y cuando el DJ cierra un filtro la imagen se ablanda.
-
-TRACKLIST
-
 0:00 Mike Rish - Wait for Me (Original Mix) [tornn]
 6:03 Callecat - A New Beginning [The Soundgarden]
 11:25 DJ Bird - In Space [Consapevole Recordings]
 18:41 Maze 28 - Mindloop (Original Mix) [Balance Music]
 
-Sellos: tornn, The Soundgarden, Consapevole Recordings, Balance Music.
-
-Todos los tracks son de sus autores y sellos. Este set existe para mostrarlos,
-no para reemplazarlos: si algo te gusta, compralo en el sello.
+Gracias por escuchar.
 ```
-
-Cómo quedan los capítulos en YouTube: el primer renglón arranca en 0:00, son 4 capítulos (el mínimo es 3), todos de más de 10 s y en orden. Es formato válido.
-
-Chequeado contra los fotogramas del teléfono: a las 0:00 el horizonte está naranja, y cuando entra Mindloop (teléfono 18:45) y en su drop (teléfono 22:51) ya es de noche, con luces de ciudad.
 
 ## Tracklist
 
@@ -84,6 +73,8 @@ Son 21 tags y 356 caracteres. Contando como cuenta YouTube, que suma las comilla
 
 ## Momentos para shorts
 
+**DESCARTADOS (2026-09-28).** Se renderizó el primero (drop de Wait for Me, 36 s, vertical, solo la animación con el nombre del tema) y el DJ dijo: "descarta el short malisimo es". Los tiempos de abajo quedan como registro, no como plan.
+
 Salen de `data/video/2026-09-23_rasgos.npz`. Se buscaron los saltos de `cuerpo` (loudness de 3 s) de menos de 0.35 a casi 1 y el drop se ajustó al golpe de bombo más fuerte de la grilla de beats. Cada clip entra **2 compases antes del drop** (4 s de subida, así el drop cae en el segundo 4) y sale **16 compases después**. Los tres terminan con la energía todavía arriba, ninguno en un breakdown.
 
 | # | In | Drop | Out | Dur | Tema | Por qué |
@@ -102,11 +93,7 @@ Reserva, por si se hacen más:
 
 ## Comentario fijado
 
-```
-El cuadro de la miniatura es la ventana de verdad, en el minuto 6 de la grabación; todo lo demás es lo que la música hizo con ese cielo. ¿Qué tema ponías vos después de Mindloop?
-```
-
-La pregunta es de DJ a DJ y no un "track ID?", así que las respuestas sirven también de radar de música. No lleva timestamps a los drops a propósito: mandar a la gente al 22:49 de un video de 25:49 les corta el tiempo de visualización.
+Descartado: tenía el mismo tono de informe que la primera descripción. Si se quiere uno, que lo escriba el DJ.
 
 ## Antes de subir
 

@@ -173,3 +173,6 @@ grabaciones/**/*.mp3
 # Rasgos del video: se regeneran desde el master con scripts/video_rasgos.py
 data/video/*.npz
 data/video/*.npy
+
+# Enlace local del proyecto de Vercel (lo crea `vercel link`)
+web/*/.vercel/

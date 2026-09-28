@@ -56,6 +56,25 @@ pasó a no listado y se borró. Canal verificado para videos largos. Subido en
 privado con título, capítulos, tags y miniatura: https://youtu.be/cxPG09u-edM.
 Publicarlo lo decide el DJ después de mirar los reclamos de Content ID.
 
+Después, la app pasó a producción para que el permiso no venza a los 7 días. Google pide
+una página de marca con inicio y política de privacidad en un dominio propio: quedó en
+https://plomo.marcosdamiangonzalez.ar (`web/plomo/`, proyecto de Vercel `plomo-web`; el DNS
+del dominio ya está en Vercel y el comodín lo resolvió sin registros nuevos). No hizo falta
+verificar el dominio en Search Console para publicar. Permiso de producción renovado.
+
+La primera descripción del video explicaba la animación en tono de informe y hablaba del
+DJ en tercera persona: "la descripcion es MALISIMA HUMANIsa, pensa como lo habria hecho yo".
+Se reescribió en primera persona, en dos renglones, y se cargó sobre el video privado. Después él la dejó en tracklist y un "Gracias por escuchar.", y prohibió
+el cierre de "compralo y bancá al artista" ("esto NUNCA").
+
+**Nombre artístico: Marcos Damian.** Canal con descripción, palabras clave, país y banner
+nuevos (`scripts/youtube_canal.py`, desde `data/youtube/canal.json`). El NOMBRE del canal
+no cambia por API aunque la API acepte el campo sin error: se mandó y se leyó de vuelta el
+viejo. Nombre, handle (@marcosdamianmusic) y foto van a mano en Studio. La web del subdominio
+pasó a ser la página de artista: portada con el cielo de la animación, último set con su
+tracklist, y Plomo con privacidad y condiciones al pie. La primera versión mostraba el nombre
+dos veces: el fondo era el banner de YouTube, que ya lo trae dibujado.
+
 ---
 
 ## 2026-09-27 — el circuito del repo, y las listas de Spotify que no eran

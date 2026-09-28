@@ -65,9 +65,9 @@ def texto_del_tema(w: int, h: int, n: int, total: int, artista: str, titulo: str
     # en vertical (Shorts) el 20% de abajo lo tapa la interfaz de YouTube
     x, y = (int(w * 0.08), int(h * 0.62)) if h > w else (int(w * 0.055), int(h * 0.80))
     sombra = max(2, h // 540)
-    renglones = [(f"{n:02d} / {total:02d}", chica, (255, 255, 255, 150)),
-                 (artista, grande, (255, 255, 255, 235)),
-                 (titulo, chica, (255, 255, 255, 215))]
+    renglones = [(artista, grande, (255, 255, 255, 235)), (titulo, chica, (255, 255, 255, 215))]
+    if w > h:   # el "02 / 04" solo tiene sentido dentro del set entero, no en un Short suelto
+        renglones.insert(0, (f"{n:02d} / {total:02d}", chica, (255, 255, 255, 150)))
     for texto, fuente, color in renglones:
         d.text((x + sombra, y + sombra), texto, font=fuente, fill=(0, 0, 0, 120))
         d.text((x, y), texto, font=fuente, fill=color)

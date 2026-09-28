@@ -145,11 +145,28 @@ def cmd_publicar(yt, p: dict) -> None:
     print(f"PUBLICO: https://youtu.be/{vid}  (estado real: {estado_de(yt, vid)['status']['privacyStatus']})")
 
 
+def cmd_programar(yt, p: dict, cuando: str) -> None:
+    """Deja el video privado con fecha de publicacion: YouTube lo abre solo a esa hora."""
+    from datetime import datetime, timezone
+    momento = datetime.fromisoformat(cuando)
+    if momento.tzinfo is None:
+        sys.exit("la hora necesita zona: por ejemplo 2026-09-28T19:00-03:00")
+    if momento <= datetime.now(timezone.utc):
+        sys.exit(f"{cuando} ya paso")
+    vid = json.loads(registro(p).read_text(encoding="utf-8"))["id"]
+    utc = momento.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    yt.videos().update(part="status", body={"id": vid, "status": {
+        "privacyStatus": "private", "publishAt": utc, "selfDeclaredMadeForKids": False, "embeddable": True}}).execute()
+    st = estado_de(yt, vid)["status"]
+    print(f"programado: {vid} sale {cuando} (UTC {st.get('publishAt')}), hasta entonces {st['privacyStatus']}")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("accion", choices=["prueba", "subir", "actualizar", "estado", "publicar"])
+    ap.add_argument("accion", choices=["prueba", "subir", "actualizar", "estado", "programar", "publicar"])
     ap.add_argument("paquete", nargs="?")
     ap.add_argument("--id")
+    ap.add_argument("--cuando", help="programar: fecha con zona, ej. 2026-09-28T19:00-03:00")
     a = ap.parse_args()
     yt = cliente()
     if a.accion == "prueba":
@@ -161,6 +178,10 @@ def main() -> None:
         if not a.id:
             sys.exit("actualizar necesita --id del video subido a mano")
         return cmd_actualizar(yt, p, a.id)
+    if a.accion == "programar":
+        if not a.cuando:
+            sys.exit("programar necesita --cuando, ej. 2026-09-28T19:00-03:00")
+        return cmd_programar(yt, p, a.cuando)
     {"subir": cmd_subir, "estado": cmd_estado, "publicar": cmd_publicar}[a.accion](yt, p)
 
 
