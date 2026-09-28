@@ -3028,3 +3028,30 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 12 | Movement Machina | Adaptation (Donny Carr Remix) | 123 | 6.3 |
 | 13 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
 
+
+## Set 148. 148. Housero Progresivo · 1 a 3 AM — 2h — 2026-09-28
+**Armado:** 2026-09-28  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 119-127  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Cendryma | Buildup Trap (Diego R Remix) | 121 | 5.1 |
+| 2 | KAS:ST | Who's to Say What's Real (Mind Against, Colyn Remix) | 123 | 5.5 |
+| 3 | Maze 28 | Red Lights From Afar (Nacres Remix) | 122 | 5.5 |
+| 4 | Guy Mantzur, Khen | My Golden Cage (Original Mix) | 122 | 5.5 |
+| 5 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
+| 6 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
+| 7 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
+| 8 | Kamilo Sanclemente | Just Come Back (Extended Mix) | 124 | 6.0 |
+| 9 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
+| 10 | Tinlicker, Ben Böhmer | Voodoo (Extended Mix) | 124 | 6.0 |
+| 11 | Colyn, Read the News | See the Light (Original Mix) | 123 | 6.1 |
+| 12 | Cary Crank, OBL | Spitfire (Original Mix)  | 124 | 6.6 |
+| 13 | Martin Fredes & GEØVHÄN | Deep Story (Ruben Karapetyan Remix) | 123 | 7.1 |
+| 14 | Tobi Amuchastegui | Voices (Gonzalo Cotroneo Remix) | 123 | 6.7 |
+| 15 | Analog Jungs | Ocaris (Original Mix)  | 123 | 8.1 |
+| 16 | Kamilo Sanclemente, Mauro Aguirre | Goldes Eyes (Original Mix) | 123 | 5.5 |
+| 17 | D-Nox, Stereo Underground | Shooting Stars (Extended Version) | 125 | 6.0 |
+

@@ -107,6 +107,50 @@ VETO_TRACKS = {k for k, v in (_dato("energia_percibida.json") or {}).items()
 # contrario de lo que el pidio, mientras `reemplazar.py` ya usaba la buena: el
 # mismo adjetivo significaba dos cosas segun que script corriera.
 _COLOR = _GROOVE.get("color_pct") or _GROOVE.get("cuerpo_pct", {})
+
+
+def _indice_housero() -> dict:
+    """Cuanto EMPUJA un tema, en z-scores de la biblioteca.
+
+    "Mas housera pero progresive" (el DJ, 2026-09-28). Housero no es un genero:
+    medido sobre 1353 tracks, el genero "House" tiene MENOS densidad que
+    "Progressive House" (12.8 contra 14.1), asi que filtrar por genero da lo
+    contrario de lo que pide. Lo que separa es el sonido:
+
+        groove alto  (densidad de golpes por compas)
+      + bajo presente (energia en el sub)
+      - protagonismo melodico (el mismo `color_pct` del set colorido)
+
+    Es el eje OPUESTO al colorido, y por eso comparte el termino: un set no
+    puede ser las dos cosas a la vez. Comprobado en los extremos: arriba quedan
+    Impending Storm (Navar Remix), Power Pink y Quantum Touch; abajo Paramour de
+    Jody Wisternoff, Once a Day de Ezequiel Arias y el Wind Down de Cattaneo,
+    que son exactamente los temas de los que el DJ NO quiere que se trate.
+    """
+    tr = _GROOVE.get("tracks") or {}
+    if not tr:
+        return {}
+    dens = [v[0] for v in tr.values()]
+    sub = [v[1] for v in tr.values()]
+    md = sum(dens) / len(dens)
+    ms = sum(sub) / len(sub)
+    sd = (sum((x - md) ** 2 for x in dens) / len(dens)) ** 0.5 or 1.0
+    ss = (sum((x - ms) ** 2 for x in sub) / len(sub)) ** 0.5 or 1.0
+    crudo = {c: (v[0] - md) / sd + (v[1] - ms) / ss - (_COLOR.get(c, 0.5) - 0.5) * 2
+             for c, v in tr.items()}
+    # PERCENTIL, no z-score, por la misma razon que `color_pct`: el peso del
+    # solver tiene que significar lo mismo en los dos ejes. En crudo el indice va
+    # de -8.1 a +4.8 y el color de 0 a 1, asi que housero_peso=1.5 pesaba seis
+    # veces mas que color_peso=1.5 y se comia el arco de energia: el set salia
+    # con la cima a la mitad y dos temas bajando seguidos, no porque faltara
+    # material --hay 58 temas de E>=7.4 en el pool-- sino porque el groove
+    # compraba cualquier desvio.
+    orden = sorted(crudo.values())
+    n = len(orden)
+    return {c: round(sum(1 for x in orden if x < val) / n, 3) for c, val in crudo.items()}
+
+
+_HOUSERO = _indice_housero()
 VENTANA_ARCO = R.get("energia.ventana_arco", 1)
 BONUS_ARTISTA = R.get("repeticion.bonus_artista_repetido", 0.0)
 MODO_OBJETIVO = R.get("armonia.modo_mayor_objetivo", 0.0)
@@ -250,7 +294,8 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
            anclas_en=None, entrada=None, salida=None, bpm_arco=None,
            cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO,
            bpm_span=None, bpm_span_peso=0.0,
-           modo_objetivo=None, peso_modo=None, color_peso=0.0, max_cam=None, max_retro=None):
+           modo_objetivo=None, peso_modo=None, color_peso=0.0, housero_peso=0.0,
+           max_cam=None, max_retro=None):
     """Devuelve la mejor secuencia de n tracks, o None.
 
     `arco` pisa, SOLO para este set, la forma de la noche que fijan las reglas:
@@ -639,6 +684,10 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                         c += (men / (i + 1) - (1 - modo_obj)) * p_modo
                 if color_peso:
                     c -= _COLOR.get(t["id"], 0.5) * color_peso
+                # HOUSERO: el eje contrario. Se premia el empuje en vez del
+                # color, y por eso los dos pesos no deberian usarse juntos.
+                if housero_peso:
+                    c -= _HOUSERO.get(t["id"], 0.0) * housero_peso
                 # LO PROGRESIVO, tercero: descuenta, no veda.
                 if PESO_PROG and t["_prog"]:
                     c -= PESO_PROG
@@ -890,6 +939,7 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
             modo_objetivo=spec.get("modo_mayor_objetivo"),
             peso_modo=spec.get("peso_modo"),
             color_peso=spec.get("color_peso", 0.0),
+            housero_peso=spec.get("housero_peso", 0.0),
             max_cam=spec.get("max_camelot"),
             max_retro=spec.get("max_retroceso"),
         )
