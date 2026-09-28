@@ -68,6 +68,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 load_dotenv(RAIZ / ".env")
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+class CuotaAgotada(RuntimeError):
+    """Spotify devolvio 429. NO es que el tema no exista."""
+
+
 TOKEN_F = RAIZ / "data" / "spotify_token.json"
 API = "https://api.spotify.com/v1"
 RUIDO = re.compile(r"\s*[\(\[](original|extended|radio|club|vocal|instrumental)[^\)\]]*[\)\]]",
@@ -180,7 +184,15 @@ class Spotify:
         for q in intentos:
             try:
                 res = self.get("/search", q=q, type="track", limit=10)["tracks"]["items"]
-            except requests.HTTPError:
+            except requests.HTTPError as e:
+                # 429 no significa "no esta": significa que no pude preguntar.
+                # Tratarlo como ausencia escribe una conclusion falsa en el
+                # informe Y la deja cacheada, que es peor: el tema queda
+                # marcado como inexistente para siempre.
+                if e.response is not None and e.response.status_code == 429:
+                    espera = e.response.headers.get("retry-after", "?")
+                    raise CuotaAgotada(
+                        f"Spotify corto por cuota; vuelve en {espera} segundos") from e
                 continue
             mejor, punt, pa_mejor = None, 0.0, 0.0
             for it in res:
@@ -283,7 +295,12 @@ def main() -> None:
             else:
                 uri, nom = sp.buscar(t["artist"], t["title"],
                                     (POOL.get(cid) or {}).get("dur_seg"))
-                cache[cid] = {"uri": uri, "nombre": nom}
+                cache[cid] = {"uri": uri, "nombre": nom} if uri else None
+                if cache[cid] is None:
+                    # no se cachea el fracaso: la proxima corrida vuelve a
+                    # intentar en vez de heredar un "no existe" que quiza
+                    # solo fue un mal dia de la API.
+                    del cache[cid]
             if uri:
                 uris.append(uri)
             else:

@@ -1,0 +1,32 @@
+{
+  "que_es": "Ganancias por tramo para scripts/pulir_master.py --ganancias. Segundos del ORIGINAL de consola (2026-09-23_set_consola_REC001.wav), dB lineales entre puntos.",
+  "por_que": "A New Beginning entro con -2.0 dB de ganancia de consola (mediana del cuerpo; las tres bandas bajan parejo -2.00/-2.02/-1.84 durante 4.5 min: trim o fader fijo, no EQ). Su original esta al nivel de los otros tres. Se corrige +1.5 y no +1.9: 0.4 dB de margen por si el DJ lo quiso mas bajo, y para que el build de 10:08-10:36 no quede mas de 0.5 dB arriba del resto del set. Dispersion entre temas: 2.24 -> 0.74 dB.",
+  "rampas": "Caen dentro de huecos de bajo medidos cada 0.1 s (357.7-361.55 y 717.1-718.85): el cambio pasa sin energia y no se oye.",
+  "auditoria": "mezclador y productor, 2026-09-28",
+  "puntos": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      357.8,
+      0.0
+    ],
+    [
+      361.2,
+      1.5
+    ],
+    [
+      717.3,
+      1.5
+    ],
+    [
+      718.6,
+      0.0
+    ],
+    [
+      1575.0,
+      0.0
+    ]
+  ]
+}

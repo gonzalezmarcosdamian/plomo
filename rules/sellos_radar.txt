@@ -1,0 +1,11 @@
+# Los sellos que definen el sonido, con su id de Beatport.
+# Se resuelven con: python scripts/beatport_sello.py --buscar "<nombre>"
+#
+# Estos seis estaban FLACOS y nadie sabia por que: Muzpa no busca por sello.
+selador:30570
+narratives:147353
+narratives-music:23926
+all-day-i-dream:23038
+natura-sonoris:7981
+replug:13758
+early-morning:123828

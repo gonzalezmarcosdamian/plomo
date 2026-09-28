@@ -168,3 +168,4 @@ grabaciones/**/*.mp3
 
 # Rasgos del video: se regeneran desde el master con scripts/video_rasgos.py
 data/video/*.npz
+data/video/*.npy

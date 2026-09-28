@@ -1,42 +1,37 @@
 {
   "name": "NUEVO · melodic + housero — propuesta 2026-09-28",
   "keep_order": true,
-  "_que_es": "Lo que la investigacion trajo y NO estaba en la biblioteca: 30 temas de los ultimos meses. 27 ya bajados de Muzpa y esperando import en Rekordbox; 3 no estan ahi. Es para escuchar y decidir, no para tocar de corrido.",
+  "_que_es": "Lo que la investigacion del 2026-09-28 trajo y no estaba en la biblioteca. Los que se bajaron ya estan importados y llevan su ContentID real, asi que esta lista se valida como cualquier set. Es para escuchar y decidir.",
   "tracks": [
     {
       "artist": "Jamie Stevens, Christian Smith",
       "title": "Hivemind (Extended Mix)",
-      "content_id": "_nuevo_0"
-    },
-    {
-      "artist": "Tim Green, Josefina Silveyra",
-      "title": "La Joda (Original Mix)",
-      "content_id": "_nuevo_1"
+      "content_id": "177605121"
     },
     {
       "artist": "Quivver",
       "title": "Visitor (Original Mix)",
-      "content_id": "_nuevo_2"
+      "content_id": "21966134"
     },
     {
       "artist": "Henry Saiz",
       "title": "We Are All (Hernan Cattaneo & Kevin Di Serna Remix)",
-      "content_id": "_nuevo_3"
+      "content_id": "73245568"
     },
     {
       "artist": "Alex O'Rion, Zankee Gulati",
       "title": "Sabata (Original Mix)",
-      "content_id": "_nuevo_4"
+      "content_id": "77361825"
     },
     {
       "artist": "Modd",
       "title": "Train to Toronto (Nick Warren & Nicolas Rada Extended Remix)",
-      "content_id": "_nuevo_5"
+      "content_id": "92188503"
     },
     {
       "artist": "Gadi Mitrani",
       "title": "Denne (Original Mix)",
-      "content_id": "_nuevo_6"
+      "content_id": "93478625"
     },
     {
       "artist": "Melodiam",
@@ -51,32 +46,32 @@
     {
       "artist": "Fran Garay",
       "title": "A Ruined World (Original Mix)",
-      "content_id": "_nuevo_9"
+      "content_id": "216494335"
     },
     {
       "artist": "Benja Molina",
       "title": "Limbo (Original Mix)",
-      "content_id": "_nuevo_10"
+      "content_id": "263299789"
     },
     {
       "artist": "D-Nox, M.O.S.",
       "title": "Dream On (Extended Mix)",
-      "content_id": "_nuevo_11"
+      "content_id": "191016480"
     },
     {
       "artist": "Luciano Ficarra",
       "title": "Golondrina (Extended Mix)",
-      "content_id": "_nuevo_12"
+      "content_id": "219787494"
     },
     {
       "artist": "Anthony Pappa, Nick Stoynoff",
       "title": "435 (Original Mix)",
-      "content_id": "_nuevo_13"
+      "content_id": "164807767"
     },
     {
       "artist": "Ewan Hoo's Army",
       "title": "(Mean Things) On My Mind (Quivver & Dave Seaman Remix)",
-      "content_id": "_nuevo_14"
+      "content_id": "209964808"
     },
     {
       "artist": "Jody Wisternoff, James Grant, Kiskadee, Ren Ocean",
@@ -86,32 +81,32 @@
     {
       "artist": "Kebin Van Reeken",
       "title": "Stay Weird (Original Mix)",
-      "content_id": "_nuevo_16"
+      "content_id": "83398886"
     },
     {
       "artist": "Ellroy",
       "title": "Artificial Soul (Original Mix)",
-      "content_id": "_nuevo_17"
+      "content_id": "33253510"
     },
     {
       "artist": "Dave Seaman",
       "title": "Nightfalls (Dilby Remix)",
-      "content_id": "_nuevo_18"
+      "content_id": "231382469"
     },
     {
       "artist": "Danny Howells",
       "title": "Shutdown (Original Mix)",
-      "content_id": "_nuevo_19"
+      "content_id": "82077981"
     },
     {
       "artist": "Danny Howells",
       "title": "Godsexy (Original Mix)",
-      "content_id": "_nuevo_20"
+      "content_id": "17314289"
     },
     {
       "artist": "Danny Howells",
       "title": "Endless Dust (Extended Mix)",
-      "content_id": "_nuevo_21"
+      "content_id": "148420759"
     },
     {
       "artist": "Dave Seaman",
@@ -121,37 +116,37 @@
     {
       "artist": "Jody Wisternoff, James Grant, Feiertag",
       "title": "Nomad (Extended Mix)",
-      "content_id": "_nuevo_23"
+      "content_id": "156642915"
     },
     {
       "artist": "Marsh",
       "title": "Home (Extended Mix)",
-      "content_id": "_nuevo_24"
+      "content_id": "120367560"
     },
     {
       "artist": "Marsh",
       "title": "Beside (Extended Mix)",
-      "content_id": "_nuevo_25"
+      "content_id": "104205197"
     },
     {
       "artist": "Steve Lawler",
       "title": "Sass (Original Mix)",
-      "content_id": "_nuevo_26"
+      "content_id": "72947877"
     },
     {
       "artist": "16BL",
       "title": "Yum@ (Extended Mix)",
-      "content_id": "_nuevo_27"
+      "content_id": "59298085"
     },
     {
       "artist": "Dilby, Amine K (Moroko Loko)",
       "title": "Confusion (Extended Mix)",
-      "content_id": "_nuevo_28"
+      "content_id": "145263774"
     },
     {
       "artist": "Maty Owl",
       "title": "Sunday Afternoons (Extended Mix)",
-      "content_id": "_nuevo_29"
+      "content_id": "191216258"
     }
   ]
 }

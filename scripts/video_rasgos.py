@@ -58,6 +58,7 @@ TASA_FINA = 200                  # mediciones por segundo para los ataques (5 ms
 PASO_TELEFONO_S = 2.0            # un cuadro del telefono cada 2 s alcanza para una paleta
 SUAVIZADO_PALETA_S = 30.0        # el cielo cambia en minutos, no en segundos
 FUNDIDO_TEMAS_S = 20.0
+CIELO_MEDIBLE = 0.05             # por debajo, el "color" del cielo es ruido del sensor
 LUZ_ROL = {"fondo": 0.09, "cielo": 0.42, "resplandor": 0.82, "brillo": 0.97}
 
 
@@ -151,14 +152,21 @@ def rasgos_de_audio(master: Path) -> tuple[dict[str, np.ndarray], np.ndarray]:
 
 
 def cuadros_del_telefono(video: Path) -> np.ndarray:
-    """Un cuadro chico cada 2 s. Solo keyframes: decodificar el 4K60 entero son 40 minutos."""
+    """Un cuadro chico cada 2 s. Solo keyframes: decodificar el 4K60 entero son 40 minutos.
+    Aun asi son dos minutos, asi que se guardan al lado de los rasgos y se reusan."""
     w, h = 96, 54
+    cache = DEST / f"{video.stem}_{w}x{h}_cada{PASO_TELEFONO_S:g}s.npy"
+    if cache.exists():
+        return np.load(cache).astype(np.float32) / 255
     crudo = subprocess.run(
         ["ffmpeg", "-hide_banner", "-loglevel", "error", "-skip_frame", "nokey", "-i", str(video),
          "-vf", f"fps={1 / PASO_TELEFONO_S},scale={w}:{h}:flags=area",
          "-f", "rawvideo", "-pix_fmt", "rgb24", "-"],
         capture_output=True, check=True).stdout
-    return np.frombuffer(crudo, dtype=np.uint8).reshape(-1, h, w, 3).astype(np.float32) / 255
+    cuadros = np.frombuffer(crudo, dtype=np.uint8).reshape(-1, h, w, 3)
+    DEST.mkdir(parents=True, exist_ok=True)
+    np.save(cache, cuadros)
+    return cuadros.astype(np.float32) / 255
 
 
 def paleta_de_cuadro(img: np.ndarray) -> dict[str, np.ndarray | float]:
@@ -166,7 +174,10 @@ def paleta_de_cuadro(img: np.ndarray) -> dict[str, np.ndarray | float]:
     arriba = img[: int(h * 0.38)].reshape(-1, 3)
     abajo = img[int(h * 0.45):].reshape(-1, 3)
     luz_arr = arriba.mean(1)
-    cielo = arriba[luz_arr >= np.percentile(luz_arr, 70)].mean(0)
+    # el cielo es lo MAS AZUL de arriba, no lo mas brillante: lo brillante es el horizonte
+    # y los reflejos, y con eso la paleta salia toda naranja
+    azul = arriba[:, 2] - arriba[:, 0]
+    cielo = arriba[azul >= np.percentile(azul, 95)].mean(0)
     calidez = (arriba[:, 0] - arriba[:, 2]) * (0.3 + luz_arr)
     horizonte = arriba[calidez >= np.percentile(calidez, 97)].mean(0)
     luz_ab = abajo.mean(1)
@@ -187,7 +198,16 @@ def paleta(video: Path, n_cuadros: int, desfase_s: float) -> tuple[np.ndarray, n
     imgs = cuadros_del_telefono(video)
     crudas = [paleta_de_cuadro(im) for im in imgs]
     roles = np.stack([np.stack([c["cielo"], c["resplandor"], c["brillo"]]) for c in crudas])
-    luz = np.array([c["luz"] for c in crudas])
+    # de noche el cielo queda negro y su tono es ruido del sensor: se sostiene el ultimo
+    # azul que se pudo medir
+    medible = roles[:, 0].mean(1) >= CIELO_MEDIBLE
+    ultimo = int(np.argmax(medible))
+    for j in range(len(roles)):
+        if medible[j]:
+            ultimo = j
+        else:
+            roles[j, 0] = roles[ultimo, 0]
+    luz = normalizar(np.array([c["luz"] for c in crudas]), 0, 100)
     k = int(SUAVIZADO_PALETA_S / PASO_TELEFONO_S)
     roles = uniform_filter1d(roles, k, axis=0, mode="nearest")
     luz = uniform_filter1d(luz, k, mode="nearest")
@@ -197,11 +217,13 @@ def paleta(video: Path, n_cuadros: int, desfase_s: float) -> tuple[np.ndarray, n
     por_muestra = {}
     for j in np.unique(idx):
         cielo, resp, brillo = roles[j]
+        oscurece = 0.55 + 0.45 * luz[j]      # el cielo baja con la noche, sin apagarse
         por_muestra[j] = np.stack([
-            levantar(cielo, LUZ_ROL["fondo"], 1.4), levantar(cielo, LUZ_ROL["cielo"]),
+            levantar(cielo, LUZ_ROL["fondo"] * oscurece, 2.2),
+            levantar(cielo, LUZ_ROL["cielo"] * oscurece, 1.8),
             levantar(resp, LUZ_ROL["resplandor"]), levantar(brillo, LUZ_ROL["brillo"], 1.1)])
     pal = np.stack([por_muestra[j] for j in idx]).astype(np.float32)
-    luz_video = np.interp(t_video, t_tel, normalizar(luz, 0, 100))
+    luz_video = np.interp(t_video, t_tel, luz)
     return pal, luz_video.astype(np.float32)
 
 

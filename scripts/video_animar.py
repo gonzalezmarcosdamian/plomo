@@ -62,7 +62,8 @@ def texto_del_tema(w: int, h: int, n: int, total: int, artista: str, titulo: str
     grande.set_variation_by_name("SemiBold")
     chica = ImageFont.truetype(str(FUENTE), int(h * 0.026))
     chica.set_variation_by_name("Light")
-    x, y = int(w * 0.055), int(h * 0.80)
+    # en vertical (Shorts) el 20% de abajo lo tapa la interfaz de YouTube
+    x, y = (int(w * 0.08), int(h * 0.62)) if h > w else (int(w * 0.055), int(h * 0.80))
     sombra = max(2, h // 540)
     renglones = [(f"{n:02d} / {total:02d}", chica, (255, 255, 255, 150)),
                  (artista, grande, (255, 255, 255, 235)),

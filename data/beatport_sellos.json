@@ -1,0 +1,2915 @@
+{
+ "generado": "2026-09-28",
+ "desde": "2024-06-01",
+ "sellos": [
+  "selador:30570",
+  "narratives:147353",
+  "narratives-music:23926",
+  "all-day-i-dream:23038",
+  "natura-sonoris:7981",
+  "replug:13758",
+  "early-morning:123828"
+ ],
+ "faltan": [
+  {
+   "artista": "Infusion",
+   "titulo": "Legacy",
+   "version": "Freedo Mosho, Maze 28, GMJ, Matter Rework",
+   "sello": "Selador",
+   "fecha": "2026-10-02",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Infusion",
+   "titulo": "Legacy",
+   "version": "Nick Warren & Jamie Stevens Remix",
+   "sello": "Selador",
+   "fecha": "2026-10-02",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 481
+  },
+  {
+   "artista": "Infusion",
+   "titulo": "Legacy",
+   "version": "Junkie XL Remix (2026 Remaster)",
+   "sello": "Selador",
+   "fecha": "2026-09-25",
+   "bpm": 128,
+   "camelot": "7A",
+   "largo_seg": 621
+  },
+  {
+   "artista": "Infusion",
+   "titulo": "Legacy",
+   "version": "Kevin Di Serna & Devlant Remix",
+   "sello": "Selador",
+   "fecha": "2026-09-25",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 542
+  },
+  {
+   "artista": "Infusion",
+   "titulo": "Legacy",
+   "version": "Kevin Di Serna & Devlant Dub",
+   "sello": "Selador",
+   "fecha": "2026-09-25",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 495
+  },
+  {
+   "artista": "Dave Seaman",
+   "titulo": "Mirrorball Sleaze",
+   "version": "Christian Smith & D-SHIFT Remix",
+   "sello": "Selador",
+   "fecha": "2026-09-11",
+   "bpm": 124,
+   "camelot": "9B",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Dave Seaman",
+   "titulo": "Mirrorball Sleaze",
+   "version": "12\" Club Mix",
+   "sello": "Selador",
+   "fecha": "2026-09-11",
+   "bpm": 124,
+   "camelot": "9B",
+   "largo_seg": 379
+  },
+  {
+   "artista": "Anthony Pappa, Nick Stoynoff",
+   "titulo": "Selcouth",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-07-31",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 474
+  },
+  {
+   "artista": "Beckers, D-Nox, Lexer",
+   "titulo": "Conquista",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-06-05",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 330
+  },
+  {
+   "artista": "Beckers, D-Nox",
+   "titulo": "True Peak",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-06-05",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 425
+  },
+  {
+   "artista": "Gavin Hardkiss, Colin Rist",
+   "titulo": "False Alarm",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-06-02",
+   "bpm": 128,
+   "camelot": "4A",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Lorenzo Balzarini",
+   "titulo": "Redes",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-06-02",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 437
+  },
+  {
+   "artista": "Just Her, AmyElle",
+   "titulo": "Feel Again",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-06-02",
+   "bpm": 126,
+   "camelot": "12B",
+   "largo_seg": 356
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Jomi",
+   "version": "Derderwandert Story Version",
+   "sello": "Selador",
+   "fecha": "2026-05-15",
+   "bpm": 123,
+   "camelot": "11A",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Flip No",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-05-15",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 403
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Jomi",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-05-15",
+   "bpm": 125,
+   "camelot": "11A",
+   "largo_seg": 499
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Jomi",
+   "version": "Derderwandert Dub",
+   "sello": "Selador",
+   "fecha": "2026-05-15",
+   "bpm": 123,
+   "camelot": "11A",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Danny Howells, Dilby",
+   "titulo": "Flyover",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-04-17",
+   "bpm": 126,
+   "camelot": "5B",
+   "largo_seg": 495
+  },
+  {
+   "artista": "DEEKAY, Nick Varon",
+   "titulo": "Kismet(a)",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-03-20",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 412
+  },
+  {
+   "artista": "Fordal",
+   "titulo": "Luminize",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-03-20",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 435
+  },
+  {
+   "artista": "Nick Stoynoff, Gai Barone",
+   "titulo": "Post Boutique",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-03-20",
+   "bpm": 123,
+   "camelot": "5B",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Dave Valentine, Phil Kelsey, Kelsey Valentine",
+   "titulo": "Get Into The Music",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-03-20",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 470
+  },
+  {
+   "artista": "UnbrokenOne",
+   "titulo": "Gradient",
+   "version": "Kamilo Sanclemente & Mauro Aguirre Remix",
+   "sello": "Selador",
+   "fecha": "2026-02-27",
+   "bpm": 123,
+   "camelot": "2A",
+   "largo_seg": 439
+  },
+  {
+   "artista": "UnbrokenOne",
+   "titulo": "Gradient",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-02-27",
+   "bpm": 121,
+   "camelot": "5B",
+   "largo_seg": 500
+  },
+  {
+   "artista": "UnbrokenOne",
+   "titulo": "Wilderness",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-02-27",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 418
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Freeze",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-02-06",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 391
+  },
+  {
+   "artista": "Dave Seaman",
+   "titulo": "Ego Savvy",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2026-02-06",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Just Her",
+   "titulo": "Secrets",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-12-12",
+   "bpm": 125,
+   "camelot": "1A",
+   "largo_seg": 299
+  },
+  {
+   "artista": "Just Her",
+   "titulo": "Floating Clouds",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-12-12",
+   "bpm": 124,
+   "camelot": "2B",
+   "largo_seg": 349
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR), SACK (AR)",
+   "titulo": "Hopes and Challenge",
+   "version": "Graziano Raffa Remix",
+   "sello": "Selador",
+   "fecha": "2025-12-05",
+   "bpm": 127,
+   "camelot": "2A",
+   "largo_seg": 367
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR), SACK (AR)",
+   "titulo": "Bionik",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-12-05",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR), SACK (AR)",
+   "titulo": "Bionik",
+   "version": "Mehil Remix",
+   "sello": "Selador",
+   "fecha": "2025-12-05",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 352
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR), SACK (AR)",
+   "titulo": "Hopes and Challenge",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-12-05",
+   "bpm": 124,
+   "camelot": "1A",
+   "largo_seg": 374
+  },
+  {
+   "artista": "Stereo Underground",
+   "titulo": "Make Your Heartbeat",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-11-21",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 365
+  },
+  {
+   "artista": "Axel Giova",
+   "titulo": "Detroit Touches",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-11-21",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 456
+  },
+  {
+   "artista": "Kelsey Valentine",
+   "titulo": "B Somebody",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-11-21",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 410
+  },
+  {
+   "artista": "Dave Seaman, AIKON, Daisy Valentine",
+   "titulo": "Burning Up",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-11-21",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 349
+  },
+  {
+   "artista": "Dave Seaman",
+   "titulo": "Donkey Engine",
+   "version": "SKALA Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-29",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 367
+  },
+  {
+   "artista": "Dave Seaman, Thomas Gandey",
+   "titulo": "Heavyweight",
+   "version": "Cortona Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-29",
+   "bpm": 124,
+   "camelot": "12B",
+   "largo_seg": 544
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Waterfloor",
+   "version": "Harald Bjork Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-29",
+   "bpm": 128,
+   "camelot": "3B",
+   "largo_seg": 355
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Turn Up The Juice",
+   "version": "Dilby Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-29",
+   "bpm": 125,
+   "camelot": "7B",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Waterfloor",
+   "version": "Stereo Underground Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-15",
+   "bpm": 122,
+   "camelot": "3B",
+   "largo_seg": 367
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Fenner",
+   "version": "Pornbugs Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-15",
+   "bpm": 128,
+   "camelot": "6A",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Dave Seaman",
+   "titulo": "Inflammable Contraband",
+   "version": "Anido Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-15",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 319
+  },
+  {
+   "artista": "Dave Seaman, Thomas Gandey",
+   "titulo": "Heavyweight Residue",
+   "version": "Derun Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-01",
+   "bpm": 121,
+   "camelot": "12B",
+   "largo_seg": 403
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Won't You Believe",
+   "version": "Just Her Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-01",
+   "bpm": 128,
+   "camelot": "6A",
+   "largo_seg": 315
+  },
+  {
+   "artista": "Steve Parry, Four Candles",
+   "titulo": "Mysko",
+   "version": "Hernan Cattaneo & Mercurio Remix",
+   "sello": "Selador",
+   "fecha": "2025-08-01",
+   "bpm": 122,
+   "camelot": "1B",
+   "largo_seg": 512
+  },
+  {
+   "artista": "Pauline Taylor, Andrew Sant",
+   "titulo": "Rollin On",
+   "version": "Dub Mix",
+   "sello": "Selador",
+   "fecha": "2025-06-27",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 357
+  },
+  {
+   "artista": "Andre Espeut, Andrew Sant",
+   "titulo": "The Call",
+   "version": "Radio Edit",
+   "sello": "Selador",
+   "fecha": "2025-06-27",
+   "bpm": 120,
+   "camelot": "3A",
+   "largo_seg": 254
+  },
+  {
+   "artista": "Andre Espeut, Andrew Sant",
+   "titulo": "The Call",
+   "version": "Jim Rivers Remix",
+   "sello": "Selador",
+   "fecha": "2025-06-27",
+   "bpm": 125,
+   "camelot": "2A",
+   "largo_seg": 470
+  },
+  {
+   "artista": "Andre Espeut, Andrew Sant",
+   "titulo": "The Call",
+   "version": "2025 Remaster",
+   "sello": "Selador",
+   "fecha": "2025-06-13",
+   "bpm": 120,
+   "camelot": "3A",
+   "largo_seg": 578
+  },
+  {
+   "artista": "Andre Espeut, Andrew Sant",
+   "titulo": "The Call",
+   "version": "Instrumental",
+   "sello": "Selador",
+   "fecha": "2025-06-13",
+   "bpm": 120,
+   "camelot": "3A",
+   "largo_seg": 578
+  },
+  {
+   "artista": "Pauline Taylor, Andrew Sant",
+   "titulo": "Rollin On'",
+   "version": "Vocal Mix",
+   "sello": "Selador",
+   "fecha": "2025-06-13",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Lonya",
+   "titulo": "Ultimate Sin",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-05-23",
+   "bpm": 124,
+   "camelot": "2B",
+   "largo_seg": 346
+  },
+  {
+   "artista": "Lonya, SNYL",
+   "titulo": "Synthetic Dreams",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-05-23",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 381
+  },
+  {
+   "artista": "Jonathan Cowan",
+   "titulo": "Sawyer",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-05-02",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 453
+  },
+  {
+   "artista": "Jonathan Cowan",
+   "titulo": "Slater",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-05-02",
+   "bpm": 126,
+   "camelot": "11A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Dave Seaman, AIKON",
+   "titulo": "Promise You",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-03-21",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Danny Howells",
+   "titulo": "Stereodrama",
+   "version": "Aubrey Fry & Nick Stoynoff Remix",
+   "sello": "Selador",
+   "fecha": "2025-03-07",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 536
+  },
+  {
+   "artista": "Danny Howells",
+   "titulo": "Stereodrama",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-02-28",
+   "bpm": 127,
+   "camelot": "5A",
+   "largo_seg": 506
+  },
+  {
+   "artista": "Danny Howells",
+   "titulo": "Powershow",
+   "version": "Payback Dub",
+   "sello": "Selador",
+   "fecha": "2025-02-28",
+   "bpm": 122,
+   "camelot": "11A",
+   "largo_seg": 480
+  },
+  {
+   "artista": "Danny Howells",
+   "titulo": "Powershow",
+   "version": "Payoff Mix",
+   "sello": "Selador",
+   "fecha": "2025-02-28",
+   "bpm": 122,
+   "camelot": "11A",
+   "largo_seg": 498
+  },
+  {
+   "artista": "Steve Parry, Four Candles",
+   "titulo": "Mysko",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-02-07",
+   "bpm": 122,
+   "camelot": "10A",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Steve Parry, Four Candles",
+   "titulo": "Soul Repeat",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-02-07",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Sacred Ground",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-01-17",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 414
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Closer",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-01-17",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 441
+  },
+  {
+   "artista": "Dilby, DÉ SAINT.",
+   "titulo": "Give It Up Again",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2025-01-17",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Inertia",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-13",
+   "bpm": 123,
+   "camelot": "3A",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Andre Espeut, Andrew Sant",
+   "titulo": "The Call",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-13",
+   "bpm": 120,
+   "camelot": "3A",
+   "largo_seg": 580
+  },
+  {
+   "artista": "Mapiu",
+   "titulo": "808 Love",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-13",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Costax",
+   "titulo": "Terry",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-06",
+   "bpm": 126,
+   "camelot": "7B",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Moritz",
+   "titulo": "Echoes",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-06",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 394
+  },
+  {
+   "artista": "Dmitry Molosh",
+   "titulo": "On The Brink",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-06",
+   "bpm": 120,
+   "camelot": "9B",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Dilby, DÉ SAINT.",
+   "titulo": "Give It Up Again",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-12-06",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Sam Hopgood",
+   "titulo": "Kill My Love",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-11-29",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 461
+  },
+  {
+   "artista": "Non Citizens, Lucas Blumen",
+   "titulo": "Somebody (Just Like You)",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-11-29",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 437
+  },
+  {
+   "artista": "Mango, The Wash",
+   "titulo": "Fair Warning",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-11-29",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 394
+  },
+  {
+   "artista": "Nick Stoynoff",
+   "titulo": "Dirtsy Flirtsy",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-11-29",
+   "bpm": 125,
+   "camelot": "8A",
+   "largo_seg": 442
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Turn Up The Juice",
+   "version": "Panthera Krause Remix",
+   "sello": "Selador",
+   "fecha": "2024-11-08",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 488
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Turn Up The Juice",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-10-25",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 393
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Won't You Believe?",
+   "version": "Original Mix",
+   "sello": "Selador",
+   "fecha": "2024-08-16",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 379
+  },
+  {
+   "artista": "Steve Parry",
+   "titulo": "Won't You Believe?",
+   "version": "Dachshund Remix",
+   "sello": "Selador",
+   "fecha": "2024-08-16",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 393
+  },
+  {
+   "artista": "Dave Seaman, Shola Phillips",
+   "titulo": "Hold On",
+   "version": "Denney Remix",
+   "sello": "Selador",
+   "fecha": "2024-07-12",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 381
+  },
+  {
+   "artista": "Dave Seaman, Shola Phillips",
+   "titulo": "Hold On",
+   "version": "AIKON Remix",
+   "sello": "Selador",
+   "fecha": "2024-07-12",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 394
+  },
+  {
+   "artista": "Death on the Balcony",
+   "titulo": "2Gether",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-10-01",
+   "bpm": 125,
+   "camelot": "6A",
+   "largo_seg": 497
+  },
+  {
+   "artista": "Death on the Balcony, Mitch Oliver",
+   "titulo": "2Gether",
+   "version": "Mitch Oliver Extended Remix",
+   "sello": "Narratives",
+   "fecha": "2026-10-01",
+   "bpm": 127,
+   "camelot": "6A",
+   "largo_seg": 348
+  },
+  {
+   "artista": "Death on the Balcony, Zone+",
+   "titulo": "2Gether",
+   "version": "Zone+ Extended Remix",
+   "sello": "Narratives",
+   "fecha": "2026-10-01",
+   "bpm": 127,
+   "camelot": "6A",
+   "largo_seg": 384
+  },
+  {
+   "artista": "Death on the Balcony, DOTB",
+   "titulo": "2Gether",
+   "version": "DOTB Extended Dub",
+   "sello": "Narratives",
+   "fecha": "2026-10-01",
+   "bpm": 125,
+   "camelot": "6A",
+   "largo_seg": 464
+  },
+  {
+   "artista": "Alaa Jazaeri",
+   "titulo": "Ah Babe",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-09-24",
+   "bpm": 126,
+   "camelot": "8A",
+   "largo_seg": 432
+  },
+  {
+   "artista": "Marc Lenz, Alaa Jazaeri",
+   "titulo": "House of Love",
+   "version": "Marc Lenz Remix Extended",
+   "sello": "Narratives",
+   "fecha": "2026-09-24",
+   "bpm": 126,
+   "camelot": "5B",
+   "largo_seg": 356
+  },
+  {
+   "artista": "Alaa Jazaeri",
+   "titulo": "House of Love",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-09-24",
+   "bpm": 126,
+   "camelot": "6B",
+   "largo_seg": 413
+  },
+  {
+   "artista": "C1, Dilby",
+   "titulo": "My Soul (feat. C1)",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-08-06",
+   "bpm": 125,
+   "camelot": "1B",
+   "largo_seg": 407
+  },
+  {
+   "artista": "Julian Millan, ·Corvex·",
+   "titulo": "When We Touch",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-07-09",
+   "bpm": 125,
+   "camelot": "2A",
+   "largo_seg": 399
+  },
+  {
+   "artista": "Julian Millan, ·Corvex·",
+   "titulo": "Gold of You",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-07-09",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 407
+  },
+  {
+   "artista": "Lost Boy, Daniyal Shah",
+   "titulo": "Wasting Time",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-06-30",
+   "bpm": 125,
+   "camelot": "8A",
+   "largo_seg": 392
+  },
+  {
+   "artista": "Lost Boy, Mustafa Ismaeel, Daniyal Shah",
+   "titulo": "Ahista",
+   "version": "Mustafa Ismaeel Remix Extended",
+   "sello": "Narratives",
+   "fecha": "2026-06-30",
+   "bpm": 126,
+   "camelot": "10A",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Lost Boy, Daniyal Shah",
+   "titulo": "Ahista",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-06-30",
+   "bpm": 122,
+   "camelot": "10A",
+   "largo_seg": 363
+  },
+  {
+   "artista": "SAAND",
+   "titulo": "Deep Baby",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 125,
+   "camelot": "1A",
+   "largo_seg": 307
+  },
+  {
+   "artista": "Dames House, Marchisio",
+   "titulo": "Take Our Time",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 325
+  },
+  {
+   "artista": "BRQ",
+   "titulo": "Gimmie Love",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 128,
+   "camelot": "9A",
+   "largo_seg": 364
+  },
+  {
+   "artista": "Rik Never",
+   "titulo": "Mine",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 126,
+   "camelot": "7A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Dames House, Marchisio",
+   "titulo": "Body to Body",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 128,
+   "camelot": "2A",
+   "largo_seg": 315
+  },
+  {
+   "artista": "Kennedy, G.A.S.",
+   "titulo": "Four on the Floor",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 126,
+   "camelot": "8A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "SAAND",
+   "titulo": "Keep the Pace",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 125,
+   "camelot": "7A",
+   "largo_seg": 295
+  },
+  {
+   "artista": "Hervé Solar",
+   "titulo": "Mas Day",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 343
+  },
+  {
+   "artista": "Fernando Ortega",
+   "titulo": "Businesses in America",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 126,
+   "camelot": "5A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "FAMÜ",
+   "titulo": "Too Much",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 380
+  },
+  {
+   "artista": "Unknown Vibezz",
+   "titulo": "You Did Nothing",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 126,
+   "camelot": "6B",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Michael Hooker",
+   "titulo": "No Plans",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 128,
+   "camelot": "9A",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Groefer",
+   "titulo": "Breathe",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-05-21",
+   "bpm": 127,
+   "camelot": "5A",
+   "largo_seg": 367
+  },
+  {
+   "artista": "Sergio Parrado, Dilby",
+   "titulo": "Chango",
+   "version": "Dilby Remix Extended",
+   "sello": "Narratives",
+   "fecha": "2026-04-23",
+   "bpm": 126,
+   "camelot": "2A",
+   "largo_seg": 383
+  },
+  {
+   "artista": "Sergio Parrado",
+   "titulo": "Chango",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-04-23",
+   "bpm": 125,
+   "camelot": "2A",
+   "largo_seg": 453
+  },
+  {
+   "artista": "Sergio Parrado, Sergio Bennett",
+   "titulo": "That Summer in Cusco",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-04-23",
+   "bpm": 125,
+   "camelot": "11A",
+   "largo_seg": 392
+  },
+  {
+   "artista": "Mustafa Ismaeel, Ramy Mishriky, Alaa Jazaeri",
+   "titulo": "From Afar",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-03-17",
+   "bpm": 126,
+   "camelot": "11B",
+   "largo_seg": 396
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Good to Me",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-02-19",
+   "bpm": 124,
+   "camelot": "5B",
+   "largo_seg": 437
+  },
+  {
+   "artista": "Dilby, nineteen79",
+   "titulo": "Head Spin",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-02-19",
+   "bpm": 126,
+   "camelot": "6A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "LARSa",
+   "titulo": "Cotati",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-01-15",
+   "bpm": 123,
+   "camelot": "12A",
+   "largo_seg": 418
+  },
+  {
+   "artista": "LARSa",
+   "titulo": "Inward",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-01-15",
+   "bpm": 126,
+   "camelot": "9A",
+   "largo_seg": 330
+  },
+  {
+   "artista": "LARSa, Swanya",
+   "titulo": "Postcards from the Club",
+   "version": "Extended Mix",
+   "sello": "Narratives",
+   "fecha": "2026-01-15",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 345
+  },
+  {
+   "artista": "Mustafa Ismaeel",
+   "titulo": "Up My Pimp Game",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-12-25",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 380
+  },
+  {
+   "artista": "Mustafa Ismaeel",
+   "titulo": "Soul N Pepper",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-12-25",
+   "bpm": 127,
+   "camelot": "11A",
+   "largo_seg": 349
+  },
+  {
+   "artista": "Adrià Falcó",
+   "titulo": "Too Funky",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 128,
+   "camelot": "6A",
+   "largo_seg": 393
+  },
+  {
+   "artista": "Different Ray",
+   "titulo": "Vision",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Mr. Teh & KB",
+   "titulo": "The Situation",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 127,
+   "camelot": "2B",
+   "largo_seg": 401
+  },
+  {
+   "artista": "Mazin (US)",
+   "titulo": "Bad Muh",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 126,
+   "camelot": "8B",
+   "largo_seg": 387
+  },
+  {
+   "artista": "Downpour",
+   "titulo": "Mimu",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 126,
+   "camelot": "6A",
+   "largo_seg": 370
+  },
+  {
+   "artista": "Enrico Del Piero",
+   "titulo": "Taking Us Higher",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 363
+  },
+  {
+   "artista": "Alaa Jazaeri",
+   "titulo": "Gloria",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 460
+  },
+  {
+   "artista": "Adrià Falcó",
+   "titulo": "Sweet Ramen",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 125,
+   "camelot": "2A",
+   "largo_seg": 401
+  },
+  {
+   "artista": "REMARE",
+   "titulo": "Body Sync",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 125,
+   "camelot": "7A",
+   "largo_seg": 401
+  },
+  {
+   "artista": "Max Connor",
+   "titulo": "Smooth Like Velvet",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-11-27",
+   "bpm": 128,
+   "camelot": "9A",
+   "largo_seg": 496
+  },
+  {
+   "artista": "Dilby, Mustafa Ismaeel",
+   "titulo": "Part Time Lover",
+   "version": "Original Mix",
+   "sello": "Narratives",
+   "fecha": "2025-09-17",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Blocks & Escher",
+   "titulo": "All That Glitters",
+   "version": "Original Mix",
+   "sello": "Narratives Music",
+   "fecha": "2025-10-24",
+   "bpm": 123,
+   "camelot": "2A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "Lee Burridge",
+   "titulo": "Glow ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-09-25",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 411
+  },
+  {
+   "artista": "Lee Burridge",
+   "titulo": "Before I Lose Control ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-09-25",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 391
+  },
+  {
+   "artista": "STAY GOLDEN",
+   "titulo": "RITUAL PAUSE ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-08-14",
+   "bpm": 125,
+   "camelot": "11A",
+   "largo_seg": 334
+  },
+  {
+   "artista": "STAY GOLDEN",
+   "titulo": "Silent Covenant ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-08-14",
+   "bpm": 125,
+   "camelot": "7B",
+   "largo_seg": 340
+  },
+  {
+   "artista": "STAY GOLDEN",
+   "titulo": "Stay With Me ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-08-14",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 323
+  },
+  {
+   "artista": "Alexey Union, David LeSal, Broken Hill, STAY GOLDEN",
+   "titulo": "Synth Lines ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-08-14",
+   "bpm": 124,
+   "camelot": "2B",
+   "largo_seg": 387
+  },
+  {
+   "artista": "STAY GOLDEN",
+   "titulo": "Fragments Of A Dream ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-08-14",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Paul Ross, Lost Desert",
+   "titulo": "Shooting Stars ",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-06-26",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 505
+  },
+  {
+   "artista": "Lost Desert, Aiola",
+   "titulo": "Drift A Little Longer ",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-06-26",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 514
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Feel The Love",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-06-05",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 381
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Deep Sleep",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-06-05",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Dreaming Of You",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-06-05",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 335
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Acrobat Dreamer",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 406
+  },
+  {
+   "artista": "Raw Main, Anvia",
+   "titulo": "Right Side",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 447
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Theory of Love",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 387
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Kashmir",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 458
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Acrobat Dreamer ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 206
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Theory Of Love ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 222
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Right Side feat. Anvia ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 238
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Kashmir ",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-05-15",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 283
+  },
+  {
+   "artista": "Different Ray",
+   "titulo": "Aurum",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 121,
+   "camelot": "12B",
+   "largo_seg": 374
+  },
+  {
+   "artista": "Aldous",
+   "titulo": "Blue and White",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 334
+  },
+  {
+   "artista": "Gaston Sosa, Poli Siufi",
+   "titulo": "Azul Infinito",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 121,
+   "camelot": "10A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Kalima",
+   "titulo": "Wanna See",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 123,
+   "camelot": "3A",
+   "largo_seg": 362
+  },
+  {
+   "artista": "Hermanez, Lost Desert, Tasha (BE)",
+   "titulo": "Be As One",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 126,
+   "camelot": "5A",
+   "largo_seg": 491
+  },
+  {
+   "artista": "Rossie",
+   "titulo": "Asphodel",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 122,
+   "camelot": "6B",
+   "largo_seg": 391
+  },
+  {
+   "artista": "Strange Malcolm",
+   "titulo": "Elysian",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 476
+  },
+  {
+   "artista": "Ariaty, ROVE",
+   "titulo": "Feeling Lonely",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 419
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Baghdad",
+   "version": "Diego Druck Remix (Extended Mix)",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 122,
+   "camelot": "3B",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Rob Davy",
+   "titulo": "Run With Me",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 403
+  },
+  {
+   "artista": "Lee Burridge, Sunora",
+   "titulo": "Bianco Montana ",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-03-27",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Makebo",
+   "titulo": "Save Me",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-02-13",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 458
+  },
+  {
+   "artista": "Makebo",
+   "titulo": "Birth Of A New Sun",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-02-13",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 459
+  },
+  {
+   "artista": "Makebo",
+   "titulo": "The Universe",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-02-13",
+   "bpm": 122,
+   "camelot": "3B",
+   "largo_seg": 576
+  },
+  {
+   "artista": "Makebo",
+   "titulo": "Galaxy",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2026-02-13",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 469
+  },
+  {
+   "artista": "Ramiro Drisdale",
+   "titulo": "Norte",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-12-19",
+   "bpm": 122,
+   "camelot": "12A",
+   "largo_seg": 569
+  },
+  {
+   "artista": "Ramiro Drisdale",
+   "titulo": "Glade",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-12-19",
+   "bpm": 122,
+   "camelot": "10A",
+   "largo_seg": 602
+  },
+  {
+   "artista": "Ramiro Drisdale",
+   "titulo": "Jebel",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-12-19",
+   "bpm": 122,
+   "camelot": "1B",
+   "largo_seg": 578
+  },
+  {
+   "artista": "Lee Burridge, Lost Desert",
+   "titulo": "April Fools",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-11-28",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 506
+  },
+  {
+   "artista": "Lee Burridge, Lost Desert",
+   "titulo": "Memories Remain",
+   "version": "November Snowflakes (Extended Mix)",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-11-28",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 537
+  },
+  {
+   "artista": "Disalazar, Natasha Gaglio",
+   "titulo": "Child Chants",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 120,
+   "camelot": "5A",
+   "largo_seg": 320
+  },
+  {
+   "artista": "VICTHOR",
+   "titulo": "The Dawn",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 505
+  },
+  {
+   "artista": "Aldous",
+   "titulo": "Silhouette",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 359
+  },
+  {
+   "artista": "Nacho Varela, Cruz Vittor",
+   "titulo": "Bright In The Club",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 408
+  },
+  {
+   "artista": "Noraj Cue, John Woods",
+   "titulo": "The Youth Substance",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 122,
+   "camelot": "2A",
+   "largo_seg": 490
+  },
+  {
+   "artista": "SAPU",
+   "titulo": "Gyal Got Moves",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 126,
+   "camelot": "8A",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Still-Life",
+   "titulo": "The Sound Of Herself",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Amand",
+   "titulo": "In The Dark",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 124,
+   "camelot": "9B",
+   "largo_seg": 434
+  },
+  {
+   "artista": "Shayan Pasha, Facundo Leiarz",
+   "titulo": "Leave It On",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 122,
+   "camelot": "1A",
+   "largo_seg": 334
+  },
+  {
+   "artista": "Nichols+Roark",
+   "titulo": "Melodica",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Abel, Cameron Jack",
+   "titulo": "Sixth Sense",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 410
+  },
+  {
+   "artista": "mredrollo",
+   "titulo": "Funkinmusic",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-09-26",
+   "bpm": 122,
+   "camelot": "11B",
+   "largo_seg": 504
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Desire",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-08-22",
+   "bpm": 123,
+   "camelot": "5A",
+   "largo_seg": 301
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Amour",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-08-22",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 319
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Gran Amigo",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-08-22",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 354
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Come With Me",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-08-22",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Tim Green",
+   "titulo": "Body Stars",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-07-25",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 566
+  },
+  {
+   "artista": "Tim Green",
+   "titulo": "You Look Good",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-07-25",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 488
+  },
+  {
+   "artista": "Tim Green",
+   "titulo": "Minds",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-07-25",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 522
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "Dance With Me",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 454
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "New World",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 507
+  },
+  {
+   "artista": "DIM KELLY, Ana Layla",
+   "titulo": "The Lure",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 120,
+   "camelot": "4A",
+   "largo_seg": 315
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "Gold & Fire",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 382
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "Beau Rivage",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 464
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "Beau Rivage",
+   "version": "Afterlight Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 462
+  },
+  {
+   "artista": "Shurakano, DIM KELLY",
+   "titulo": "Redemption",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 118
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "Sound Of Us",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 416
+  },
+  {
+   "artista": "Tommy Raffa",
+   "titulo": "Outta Nowhere",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 124,
+   "camelot": "12B",
+   "largo_seg": 391
+  },
+  {
+   "artista": "Dimitri Nakov, Natacha Atlas, Limara",
+   "titulo": "W.O.W",
+   "version": "Trip Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 122,
+   "camelot": "2A",
+   "largo_seg": 442
+  },
+  {
+   "artista": "Wassu, HAUMS",
+   "titulo": "Star Safari",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 122,
+   "camelot": "6A",
+   "largo_seg": 442
+  },
+  {
+   "artista": "Molac, Nathan Katz",
+   "titulo": "Magnetic",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 439
+  },
+  {
+   "artista": "Jim Rider, NIICX",
+   "titulo": "Dust",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 123,
+   "camelot": "5A",
+   "largo_seg": 441
+  },
+  {
+   "artista": "Luca Saporito, Dalma Puskas",
+   "titulo": "Next To Me",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 123,
+   "camelot": "5A",
+   "largo_seg": 357
+  },
+  {
+   "artista": "Marian (AR)",
+   "titulo": "Obsidian",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 122,
+   "camelot": "3B",
+   "largo_seg": 441
+  },
+  {
+   "artista": "Pole Folder, GMJ, Matter",
+   "titulo": "Voyage Austral",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 121,
+   "camelot": "10A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Lauren Ritter",
+   "titulo": "Form Constant",
+   "version": "Lost Desert Remix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 125,
+   "camelot": "8A",
+   "largo_seg": 444
+  },
+  {
+   "artista": "Az Denar",
+   "titulo": "This Way",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 121,
+   "camelot": "7A",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Andy Page",
+   "titulo": "Blob and Wriggle",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 119,
+   "camelot": "5A",
+   "largo_seg": 302
+  },
+  {
+   "artista": "MATIRAMIC",
+   "titulo": "The Chant",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-04-25",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Khen",
+   "titulo": "Uchi Mata",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-03-14",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 392
+  },
+  {
+   "artista": "Khen",
+   "titulo": "Lyup",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-03-14",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 508
+  },
+  {
+   "artista": "Khen",
+   "titulo": "My Pure Soul",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-03-14",
+   "bpm": 122,
+   "camelot": "8A",
+   "largo_seg": 459
+  },
+  {
+   "artista": "Lost Desert",
+   "titulo": "Dunes Of Alula",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-02-14",
+   "bpm": 123,
+   "camelot": "2A",
+   "largo_seg": 408
+  },
+  {
+   "artista": "Lost Desert",
+   "titulo": "When Sun Rises",
+   "version": "Volen Sentir Extended Remix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-02-14",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 480
+  },
+  {
+   "artista": "Lost Desert",
+   "titulo": "Saudade",
+   "version": "Extended Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-02-14",
+   "bpm": 119,
+   "camelot": "12A",
+   "largo_seg": 468
+  },
+  {
+   "artista": "Lost Desert",
+   "titulo": "Dear To Me",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2025-02-14",
+   "bpm": 125,
+   "camelot": "12B",
+   "largo_seg": 447
+  },
+  {
+   "artista": "Facundo Mohrr",
+   "titulo": "Little Pains",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-11-15",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 581
+  },
+  {
+   "artista": "Facundo Mohrr, Polo",
+   "titulo": "Hermosa",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-11-15",
+   "bpm": 122,
+   "camelot": "1B",
+   "largo_seg": 486
+  },
+  {
+   "artista": "Facundo Mohrr, Maxi Degrassi",
+   "titulo": "Clusters",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-11-15",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 476
+  },
+  {
+   "artista": "Facundo Mohrr",
+   "titulo": "As It Happens",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-11-15",
+   "bpm": 121,
+   "camelot": "9A",
+   "largo_seg": 525
+  },
+  {
+   "artista": "Rebelski, Caroline Sheehan",
+   "titulo": "Under Your Spell",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-09-13",
+   "bpm": 120,
+   "camelot": "11B",
+   "largo_seg": 140
+  },
+  {
+   "artista": "Maxi Degrassi",
+   "titulo": "No Drama Dance",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 122,
+   "camelot": "6A",
+   "largo_seg": 382
+  },
+  {
+   "artista": "Double Touch",
+   "titulo": "Pomelo",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 461
+  },
+  {
+   "artista": "JFR",
+   "titulo": "Lasa",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 382
+  },
+  {
+   "artista": "Alejo Gonzalez, Barklas",
+   "titulo": "Ten Days",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 122,
+   "camelot": "3B",
+   "largo_seg": 433
+  },
+  {
+   "artista": "Doyeq",
+   "titulo": "Melted",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 120,
+   "camelot": "12A",
+   "largo_seg": 532
+  },
+  {
+   "artista": "David Orin, Hannah Noelle",
+   "titulo": "Downpour",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 121,
+   "camelot": "5B",
+   "largo_seg": 484
+  },
+  {
+   "artista": "Budakid",
+   "titulo": "Promised",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 123,
+   "camelot": "4B",
+   "largo_seg": 415
+  },
+  {
+   "artista": "Shai T",
+   "titulo": "We Will Dance Again",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 122,
+   "camelot": "2A",
+   "largo_seg": 443
+  },
+  {
+   "artista": "Raw Main",
+   "titulo": "Calys",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 123,
+   "camelot": "11B",
+   "largo_seg": 450
+  },
+  {
+   "artista": "Katherine Ellis, Mass Digital",
+   "titulo": "The Need In Me",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 438
+  },
+  {
+   "artista": "Sean Doron",
+   "titulo": "Sunshine Hotel",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-08-09",
+   "bpm": 126,
+   "camelot": "6A",
+   "largo_seg": 372
+  },
+  {
+   "artista": "DIM KELLY",
+   "titulo": "Rising Child",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-06-14",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 387
+  },
+  {
+   "artista": "DIM KELLY, Mondingo",
+   "titulo": "Homily",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-06-14",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 458
+  },
+  {
+   "artista": "DIM KELLY, Maya Safar",
+   "titulo": "Like When We Love",
+   "version": "Original Mix",
+   "sello": "All Day I Dream ",
+   "fecha": "2024-06-14",
+   "bpm": 122,
+   "camelot": "6A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "The Rider",
+   "version": "Eichenbaum & Maezbi Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 417
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Madre Noche",
+   "version": "Mariano Mellino Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2026-04-24",
+   "bpm": 122,
+   "camelot": "6A",
+   "largo_seg": 380
+  },
+  {
+   "artista": "Luciano Lozz",
+   "titulo": "Tribalism",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2026-01-30",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 358
+  },
+  {
+   "artista": "Luciano Lozz",
+   "titulo": "Follow Me",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2026-01-30",
+   "bpm": 125,
+   "camelot": "12A",
+   "largo_seg": 361
+  },
+  {
+   "artista": "Luciano Lozz, Mäthzz",
+   "titulo": "Plasma",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2026-01-30",
+   "bpm": 125,
+   "camelot": "12A",
+   "largo_seg": 419
+  },
+  {
+   "artista": "Luciano Lozz",
+   "titulo": "Foundation",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2026-01-30",
+   "bpm": 120,
+   "camelot": "6A",
+   "largo_seg": 426
+  },
+  {
+   "artista": "Eloy",
+   "titulo": "Like Waves To The Sea",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-10-17",
+   "bpm": 124,
+   "camelot": "10A",
+   "largo_seg": 392
+  },
+  {
+   "artista": "Eloy",
+   "titulo": "Like Waves To The Sea",
+   "version": "Henry Saiz Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-10-17",
+   "bpm": 125,
+   "camelot": "10B",
+   "largo_seg": 334
+  },
+  {
+   "artista": "Fernando Olaya",
+   "titulo": "Real Love",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-07-11",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 387
+  },
+  {
+   "artista": "Fernando Olaya",
+   "titulo": "Green Smoke Horizon",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-07-11",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Henry Saiz, Tentacle",
+   "titulo": "The Prophetess",
+   "version": "Max Pask Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-06-27",
+   "bpm": 117,
+   "camelot": "6A",
+   "largo_seg": 665
+  },
+  {
+   "artista": "Henry Saiz, Tentacle",
+   "titulo": "The Prophetess",
+   "version": "Brian Cid Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-06-27",
+   "bpm": 120,
+   "camelot": "10A",
+   "largo_seg": 500
+  },
+  {
+   "artista": "Henry Saiz, Tentacle",
+   "titulo": "The Prophetess",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-06-27",
+   "bpm": 117,
+   "camelot": "10A",
+   "largo_seg": 405
+  },
+  {
+   "artista": "Luciano Lozz",
+   "titulo": "No Society",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-06-20",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 430
+  },
+  {
+   "artista": "Luciano Lozz",
+   "titulo": "No Society",
+   "version": "Graziano Raffa Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-06-20",
+   "bpm": 126,
+   "camelot": "8B",
+   "largo_seg": 434
+  },
+  {
+   "artista": "Luciano Lozz",
+   "titulo": "Sani Sphere",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-06-20",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 388
+  },
+  {
+   "artista": "Himbrecht",
+   "titulo": "Oskar",
+   "version": "One D Garage Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-05-04",
+   "bpm": 123,
+   "camelot": "1A",
+   "largo_seg": 377
+  },
+  {
+   "artista": "Robert Feltman",
+   "titulo": "Balderdash",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-04-11",
+   "bpm": 127,
+   "camelot": "9B",
+   "largo_seg": 321
+  },
+  {
+   "artista": "Robert Feltman",
+   "titulo": "Ghost",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-04-11",
+   "bpm": 125,
+   "camelot": "10B",
+   "largo_seg": 392
+  },
+  {
+   "artista": "Robert Feltman",
+   "titulo": "Procrastinate",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-04-11",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 461
+  },
+  {
+   "artista": "Robert Feltman",
+   "titulo": "She Walks",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-04-11",
+   "bpm": 124,
+   "camelot": "3A",
+   "largo_seg": 356
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Midnight Ride",
+   "version": "Gebeater Grimes Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2025-01-24",
+   "bpm": 123,
+   "camelot": "4B",
+   "largo_seg": 390
+  },
+  {
+   "artista": "Henry Saiz & Band, Moonlight Wolves",
+   "titulo": "All I Need",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-09-06",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 298
+  },
+  {
+   "artista": "Henry Saiz & Band, Moonlight Wolves",
+   "titulo": "All I Need",
+   "version": "Third Son Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-09-06",
+   "bpm": 128,
+   "camelot": "7B",
+   "largo_seg": 272
+  },
+  {
+   "artista": "Henry Saiz & Band, Moonlight Wolves",
+   "titulo": "All I Need",
+   "version": "Third Son Remix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-09-06",
+   "bpm": 128,
+   "camelot": "7B",
+   "largo_seg": 272
+  },
+  {
+   "artista": "Henry Saiz & Band, Moonlight Wolves",
+   "titulo": "All I Need",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-09-06",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 298
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Midnight Ride",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-08-16",
+   "bpm": 128,
+   "camelot": "2A",
+   "largo_seg": 443
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Midnight Ride",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-08-16",
+   "bpm": 128,
+   "camelot": "2A",
+   "largo_seg": 443
+  },
+  {
+   "artista": "Paul Deep (AR), Luciano Lozz",
+   "titulo": "Fire Crystal",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-07-19",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 525
+  },
+  {
+   "artista": "Paul Deep (AR), Luciano Lozz",
+   "titulo": "Create",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-07-19",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 521
+  },
+  {
+   "artista": "Paul Deep (AR), Luciano Lozz",
+   "titulo": "Reversiones",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-07-19",
+   "bpm": 121,
+   "camelot": "10A",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Paul Deep (AR), Luciano Lozz",
+   "titulo": "Create",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-07-19",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 521
+  },
+  {
+   "artista": "Paul Deep (AR), Luciano Lozz",
+   "titulo": "Fire Crystal",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-07-19",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 525
+  },
+  {
+   "artista": "Paul Deep (AR), Luciano Lozz",
+   "titulo": "Reversiones",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-07-19",
+   "bpm": 121,
+   "camelot": "10A",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Zelda",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-06-14",
+   "bpm": 128,
+   "camelot": "1A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Zelda",
+   "version": "Original Mix",
+   "sello": "Natura Sonoris",
+   "fecha": "2024-06-14",
+   "bpm": 128,
+   "camelot": "1A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "Guy J",
+   "titulo": "Secret Serv1ce",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2026-08-21",
+   "bpm": 117,
+   "camelot": "7B",
+   "largo_seg": 464
+  },
+  {
+   "artista": "Guy J",
+   "titulo": "Against the Wall",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2026-03-13",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 433
+  },
+  {
+   "artista": "Tantum",
+   "titulo": "Unblur",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-08-29",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Chopstick & Johnjon, Signaljacker",
+   "titulo": "Roots feat. Signaljacker",
+   "version": "Cornucopia Remix",
+   "sello": "Early Morning",
+   "fecha": "2025-07-25",
+   "bpm": 119,
+   "camelot": "9A",
+   "largo_seg": 438
+  },
+  {
+   "artista": "Chicola",
+   "titulo": "Samerano",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-05-02",
+   "bpm": 122,
+   "camelot": "10A",
+   "largo_seg": 395
+  },
+  {
+   "artista": "Chicola",
+   "titulo": "Mr Pong",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-05-02",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 397
+  },
+  {
+   "artista": "Cypherpunx",
+   "titulo": "Cyclone",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-03-28",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Cypherpunx",
+   "titulo": "Cyclone",
+   "version": "Khen Remix",
+   "sello": "Early Morning",
+   "fecha": "2025-03-28",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 442
+  },
+  {
+   "artista": "Cornucopia",
+   "titulo": "Remember Me",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-02-28",
+   "bpm": 118,
+   "camelot": "7A",
+   "largo_seg": 460
+  },
+  {
+   "artista": "Sébastien Léger",
+   "titulo": "Koi Fish",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-01-24",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 456
+  },
+  {
+   "artista": "Sébastien Léger",
+   "titulo": "Gaufrette",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2025-01-24",
+   "bpm": 121,
+   "camelot": "8A",
+   "largo_seg": 524
+  },
+  {
+   "artista": "Guy J",
+   "titulo": "Evo",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2024-12-20",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 414
+  },
+  {
+   "artista": "Roy Rosenfeld",
+   "titulo": "Forgotten",
+   "version": "Extended",
+   "sello": "Early Morning",
+   "fecha": "2024-11-29",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 498
+  },
+  {
+   "artista": "Roy Rosenfeld",
+   "titulo": "Hello",
+   "version": "Extended",
+   "sello": "Early Morning",
+   "fecha": "2024-11-29",
+   "bpm": 120,
+   "camelot": "2B",
+   "largo_seg": 514
+  },
+  {
+   "artista": "Guy J",
+   "titulo": "Just Rain",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2024-09-27",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 488
+  },
+  {
+   "artista": "Guy J",
+   "titulo": "Million Years from Now",
+   "version": "Original Mix",
+   "sello": "Early Morning",
+   "fecha": "2024-09-27",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 440
+  }
+ ]
+}

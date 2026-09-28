@@ -49,7 +49,9 @@ float fbm(vec2 p, float detalle) {
 }
 
 void main() {
-    vec2 frag = vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y);   // y hacia abajo
+    // la fila 0 del framebuffer es la primera que se lee y la primera que recibe ffmpeg:
+    // o sea, la de ARRIBA del video. Con gl_FragCoord tal cual, y crece hacia abajo.
+    vec2 frag = gl_FragCoord.xy;
     vec2 uv = frag / uRes;
     vec2 p = (frag - 0.5 * uRes) / uRes.y;
     float t = uTime * 0.035;
@@ -72,7 +74,7 @@ void main() {
     vec3 cielo = mix(uFondo, uCielo, smoothstep(-0.05, hy, y)) * (0.65 + 0.7 * f);
     // abajo: la ciudad en penumbra
     vec3 suelo = uFondo * (0.55 + 0.3 * f);
-    vec3 col = mix(cielo, suelo, smoothstep(hy - 0.01, hy + 0.03, y));
+    vec3 col = mix(cielo, suelo, smoothstep(hy - 0.03, hy + 0.09, y));
 
     // resplandor del horizonte: ancho con el bajo, intensidad con el cuerpo, respira con el bombo
     float ancho = 0.045 + 0.05 * uBajo + 0.008 * uBombo;
@@ -80,12 +82,17 @@ void main() {
     float fuerza = (0.30 + 0.70 * uCuerpo) * (1.0 + 0.10 * uBombo);
     col += uResplandor * g * fuerza * (0.45 + 0.75 * f);
     // las nubes cerca del horizonte agarran el color del resplandor
-    float tinte = smoothstep(hy - 0.35, hy, y) * (1.0 - smoothstep(hy, hy + 0.02, y));
+    // (un corte de 0.02 aca dibujaba una linea dentada y dura bajo el horizonte)
+    float tinte = smoothstep(hy - 0.35, hy, y) * (1.0 - smoothstep(hy - 0.01, hy + 0.09, y));
     col = mix(col, col + uResplandor * 0.35 * f, tinte * (0.4 + 0.6 * uCuerpo));
 
     // filamentos finos: solo existen si hay agudos
-    float hilo = pow(smoothstep(0.55, 0.92, f), 3.0) * uAire * (1.0 - step(hy + 0.02, y));
+    float hilo = pow(smoothstep(0.55, 0.92, f), 3.0) * uAire * (1.0 - smoothstep(hy - 0.02, hy + 0.06, y));
     col += uBrillo * hilo * 0.30;
+
+    // reflejo del resplandor en la ciudad, continuo a traves del horizonte
+    float bajoHorizonte = smoothstep(hy - 0.02, hy + 0.06, y);
+    col += uResplandor * g * 0.25 * bajoHorizonte * (1.0 - smoothstep(hy + 0.02, hy + 0.35, y));
 
     // luces de la ciudad: mas cuanto mas de noche, titilan con los hats
     if (y > hy + 0.02) {
@@ -98,8 +105,6 @@ void main() {
         float titila = 0.35 + 0.65 * uChispa * step(0.5, fract(r * 17.0 + floor(uTime * 4.0) * 0.37));
         float lejos = smoothstep(hy + 0.02, hy + 0.35, y);
         col += uBrillo * hay * punto * titila * (0.35 + 0.65 * lejos) * (0.4 + 0.6 * uNoche);
-        // reflejo del resplandor en la ciudad
-        col += uResplandor * g * 0.25 * (1.0 - lejos);
     }
 
     col *= 1.0 + 0.04 * uBombo;
