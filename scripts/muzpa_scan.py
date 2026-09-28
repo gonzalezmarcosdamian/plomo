@@ -87,7 +87,9 @@ def main():
     print(f"  No encontrado:  {len(not_found)}")
 
     # Guardar resultado
-    out = Path(targets_file).stem + "_scan_result.json"
+    # al lado del archivo de entrada (data/), no donde uno este parado: en la raiz
+    # se juntaban y tres terminaron versionados
+    out = Path(targets_file).with_name(Path(targets_file).stem + "_scan_result.json")
     with open(out, "w", encoding="utf-8") as f:
         json.dump({"found": found, "not_found": not_found, "already_have": already_have}, f, ensure_ascii=False, indent=2)
     print(f"\nResultado guardado: {out}")

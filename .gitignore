@@ -178,3 +178,5 @@ data/video/*.npy
 # Enlace local del proyecto de Vercel (lo crea `vercel link`)
 web/*/.vercel/
 data/sync_pendiente.log
+# lo genera scripts/programar_sync.py con la ruta absoluta de esta maquina: se regenera
+scripts/sync_pendiente.cmd
