@@ -9,6 +9,28 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-09-28 — el arquetipo 1.0.0: lo que prometía, entregado
+
+"Ordená el arquetipo y versioná." Dos agentes: `analista` para coherencia (probó
+el generador con 12 casos borde y armó la versión corregida con tests), y otro
+que cosechó de APRENDIZAJES y las memorias lo que el método aprendió desde el 8/9.
+
+Lo que el arquetipo prometía y no traía: `.gitignore` (el README decía que
+`data/` estaba adentro y no había ninguno; es el error que más se repite en el
+log de plomo: secretos agregados por nombre y después de existir), el lector de
+las reglas, `docs/ARCHITECTURE.md`, la skill `/sesion`, un paquete importable.
+El generador convertía "Ñandú" en `and`, escribía CRLF y le dejaba al proyecto
+nuevo un puntero a una ruta de plomo en vez del método. Salió `redes/short_rapido.py`
+(copia exacta de `scripts/`, que el generador nunca copiaba; la lección fue a
+APRENDIZAJES).
+
+El método pasa de cinco a ocho reglas: verificar mirando la salida y contra la
+fuente; "no se puede" es una conclusión; lo que dice la persona es dato y lo que
+sale a su nombre es suyo; la fuente se lee en el momento. Versión en
+`arquetipo/VERSION`, cambios en `arquetipo/CHANGELOG.md`, tag `arquetipo-v1.0.0`.
+Probado de punta a punta: un proyecto generado pasa sus propios 4 tests, y
+`tests/test_arquetipo.py` chequea que lo que el README promete llegue.
+
 ## 2026-09-28 — el atardecer del 23, pulido y animado para YouTube
 
 **Qué sonó.** La grabación de consola no tenía tracklist y el historial de

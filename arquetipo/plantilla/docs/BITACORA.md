@@ -7,22 +7,19 @@ Esto NO es el lugar de las lecciones — esas van en `APRENDIZAJES.md`. La
 diferencia: si dentro de seis meses, en otro proyecto, seguirías aplicándolo, es
 aprendizaje. Si solo explica una fecha, es bitácora.
 
----
+<!-- Formato de cada entrada (copiar ARRIBA de la más nueva):
 
 ## AAAA-MM-DD — título de la sesión
 
 **Qué se hizo**
-
--
-
 **Qué se decidió, y por qué**
-
--
-
 **Qué quedó pendiente**
-
--
-
 **Qué se rompió y cómo se arregló**
+-->
 
--
+---
+
+## {{FECHA}} — arranque
+
+Proyecto creado desde el arquetipo {{ARQUETIPO}}. El método que trae está en
+`docs/METODO.md`.

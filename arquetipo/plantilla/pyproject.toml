@@ -1,0 +1,19 @@
+[project]
+name = "{{PAQUETE}}"
+version = "0.1.0"
+description = "{{DESCRIPCION}}"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Los tests importan el paquete sin instalarlo. Los scripts, en cambio, lo importan
+# INSTALADO (`pip install -e .`): nunca `sys.path.insert(0, "src")`, que es relativo
+# a donde uno esta parado y falla justo cuando se corre desde otro lado.
+pythonpath = ["src"]

@@ -8,6 +8,23 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Lo rapido es elegir que se decodifica, no decodificar mas rapido
+
+**Que paso.** Un short de 20 segundos con 26 minutos de video 4K60 comprimidos
+77 veces. Con `setpts=PTS/77`, ffmpeg decodificaba los 93.000 cuadros para
+quedarse con 600: cuarenta minutos. Con `-skip_frame nokey` decodifica solo los
+keyframes —en un video de telefono caen cada uno o dos segundos, mas de los 600
+que hacian falta— y tardo once segundos. Mismo resultado a la vista. La paleta
+del video del atardecer uso el mismo truco: un cuadro chico cada 2 s, dos minutos.
+
+**Por que.** Decodificar es lo caro, y la mayoria de lo decodificado se tiraba.
+Cuando la salida necesita una fraccion chica de la entrada, el costo lo pone
+cuanto se lee, no cuan rapido se procesa lo leido.
+
+**Como se aplica.** Antes de optimizar un paso lento, contar cuanto de lo que lee
+termina en la salida. Si es poco, buscar la forma de no leer el resto (keyframes,
+rangos, un indice) antes que paralelizar. Esta en `scripts/short_rapido.py`.
+
 ## Un tema se reconoce en una mezcla por su coherencia, no por su mejor puntaje
 
 **Que paso.** Para sacar el tracklist de una grabacion de consola sin historial

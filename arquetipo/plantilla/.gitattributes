@@ -1,0 +1,6 @@
+# Finales de linea LF en el repo, sin importar core.autocrlf de cada maquina.
+# Sin esto, en Windows git convierte a CRLF al tocar un archivo y el diff sale entero.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.wav binary

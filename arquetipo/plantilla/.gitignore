@@ -1,0 +1,59 @@
+# .gitignore NO saca del indice lo que ya se versiono. Si una regla se agrega
+# tarde, hay que `git rm --cached` lo que ataja, o el archivo parece correcto y no
+# hace nada. Chequeo: `git ls-files -ci --exclude-standard` tiene que salir vacio
+# (lo corre tests/test_estructura.py).
+
+# --- Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# --- Secretos: por PATRON, no por nombre de archivo. Una credencial nueva queda
+# atajada antes de existir, no despues del primer commit que la sube.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*_token.json
+*client_secret*.json
+credentials*.json
+
+# --- Claude: los agentes y las skills SON el proyecto y van al repo.
+# Lo que queda afuera es lo local de cada maquina.
+.claude/settings.local.json
+.claude/*.local.json
+
+# --- Scratch: lo intermedio de una sesion va al scratchpad, no a data/ ni a la raiz
+data/_*
+/_*
+*_scan_result.json
+
+# --- Generado: se reconstruye con un script; lo que se lee de verdad, si va
+data/cache/
+
+# --- Pesado: vive en disco, no en git
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.mp4
+*.mov
+*.MOV
+*.zip
+
+# --- OS / IDE / logs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+logs/
+*.log
+
+# Para ignorar una carpeta CON excepciones se escribe `carpeta/*` y no `carpeta/`:
+# con `carpeta/` git no entra y los `!` que siguen no se leen nunca.
+#   carpeta/*
+#   !carpeta/README.md

@@ -1,12 +1,23 @@
 {
-  "version": 1,
-  "_formato": "Cada regla lleva valor, porque y evidencia. El codigo lee de aca; nadie hardcodea un numero. Una regla sin evidencia se marca PENDIENTE y se sabe que esta sin medir.",
-  "ejemplo": {
-    "umbral_algo": {
-      "valor": 0.75,
-      "porque": "Por debajo de esto el resultado deja de ser util para X.",
-      "evidencia": "PENDIENTE: medir sobre el corpus de control.",
-      "dura": false
-    }
+ "_meta": {
+  "version": "1.0.0",
+  "creado": "{{FECHA}}",
+  "como_se_cambia": "1) Formular la regla como pregunta medible. 2) Medirla contra el corpus de control y, si existe, contra una referencia externa. 3) proponer() devuelve el parche, no escribe. 4) Una persona lo aprueba mirando el numero. 5) aplicar() sube la version y deja historial. Valor, evidencia, historial, version y tag `criterio-vX.Y.Z` van en el MISMO commit.",
+  "campos": {
+   "valor": "lo que el codigo lee.",
+   "porque": "para que existe la regla, con los numeros que la sostienen.",
+   "evidencia": "contra que se midio. 'PENDIENTE' es una deuda, no un adorno.",
+   "duro": "true = restriccion que no se puede violar; si no, es un costo con peso.",
+   "decision_humana": "true = la puso una persona por gusto, no una medicion. La referencia externa la describe, no la refuta."
   }
+ },
+ "ejemplo": {
+  "umbral_algo": {
+   "valor": 0.75,
+   "porque": "Por debajo de esto el resultado deja de ser util para X.",
+   "evidencia": "PENDIENTE: medir sobre el corpus de control.",
+   "duro": false
+  }
+ },
+ "historial": []
 }
