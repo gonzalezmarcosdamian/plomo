@@ -325,10 +325,12 @@ def main() -> None:
             for x in faltan:
                 print(f"    no esta en Spotify: {x[:66]}")
         if sin_preguntar:
+            print(f"{nombre}")
             print(f"    {len(sin_preguntar)} temas SIN PREGUNTAR: {cortado}")
             for x in sin_preguntar[:5]:
                 print(f"      {x[:66]}")
-            print("    la lista quedo incompleta; re-correr cuando vuelva la cuota")
+            print(f"    NO SE PUBLICO NADA: la lista de Spotify queda como estaba. "
+                  f"Re-correr cuando vuelva la cuota.")
             continue
         pid = sp.playlist_por_nombre(nombre)
         if pid is None:

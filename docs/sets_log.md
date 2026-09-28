@@ -3032,21 +3032,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Simon Neviani | Uprising Fall (Hobin Rude Remix) | 122 | 5.2 |
-| 2 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
-| 3 | Emi Galvan & Albuquerque | Don't Kill the Messenger | 123 | 5.5 |
-| 4 | Ruben Karapetyan, Maze 28 | Cosmic Dot | 123 | 5.5 |
-| 5 | Paul Deep AR | Milo | 123 | 7.1 |
-| 6 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
-| 7 | Maze 28 | Fogbows | 122 | 6.3 |
-| 8 | Sounom & Sagou | Everyday Moments (Kamilo Sanclemente Remix) | 122 | 5.5 |
-| 9 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
-| 10 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
-| 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 12 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
-| 13 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
-| 14 | Cary Crank | Deep Forest (Extended Mix) | 122 | 5.5 |
-| 15 | Francisco Manrique | The Fine Universe (Mike Kohl Remix) | 122 | 5.5 |
-| 16 | Martin Fredes & GEØVHÄN | Deep Story (Ruben Karapetyan Remix) | 123 | 7.1 |
-| 17 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 5.5 |
+| 1 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
+| 2 | Henry Saiz & Band | Just A Mirage (Karmon Remix) | 122 | 5.5 |
+| 3 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
+| 4 | Kamilo Sanclemente | Auriga Moon (Original Mix) | 122 | 5.5 |
+| 5 | Maze 28 | Fogbows | 122 | 6.3 |
+| 6 | Chaim | Sun Tease (Doctor Dru Edit) | 122 | 5.5 |
+| 7 | Cendryma | Wakefeld (Original Mix) | 122 | 5.5 |
+| 8 | Eli Nissan | Naked  | 122 | 6.1 |
+| 9 | Brian Cid | Allure (Original Mix) | 122 | 5.5 |
+| 10 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 5.5 |
+| 11 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
+| 12 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 5.5 |
+| 13 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
+| 14 | Digital Mess | Outlands (Dowden & Andreas Bühler Remix) | 123 | 5.5 |
+| 15 | CamelPhat & ARTBAT | For a Feeling (feat. RHODES) [Dark Matter Edit] | 122 | 7.0 |
+| 16 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 5.5 |
+| 17 | Sebastian Busto | December (Zankee Gulati Remix) | 122 | 7.3 |
 
