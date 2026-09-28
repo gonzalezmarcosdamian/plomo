@@ -127,6 +127,16 @@ def plan(con, content_ids: set[str] | None) -> list[dict]:
 
 
 def escribir(con, tareas: list[dict]) -> int:
+    """Escribe el cue Medio, UN COMMIT POR TEMA.
+
+    Estaba con un solo commit al final del bucle: con `--todo` son unas 2800
+    vueltas y tres sentencias cada una, o sea ~8400 escrituras a `djmdCue` en una
+    sola transaccion. Es exactamente la tabla cuyo B-tree se corrompio en junio, y
+    una transaccion asi de larga es la forma de repetirlo.
+
+    Commitear por tema tambien lo hace reanudable, que es lo que ya hacen
+    `backfill_energy.py` y `build_set.py`.
+    """
     ahora = datetime.now()
     now_str = ahora.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
     now_iso = ahora.strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "+00:00"
@@ -166,6 +176,7 @@ def escribir(con, tareas: list[dict]) -> int:
         } for c in cues]
         con.execute("UPDATE ContentCue SET Cues=?, updated_at=? WHERE ContentID=?",
                     (json.dumps(payload), now_str, t["cid"]))
+        con.commit()
         hechos += 1
     return hechos
 
@@ -199,8 +210,13 @@ def main() -> None:
     if args.dry:
         print("\n--dry: no se escribio nada")
         return
-    n = escribir(con, tareas)
-    con.commit()
+    try:
+        n = escribir(con, tareas)
+    finally:
+        # quick_check ANTES de cerrar, y cerrar pase lo que pase: dejar el WAL
+        # sin checkpoint es el sintoma para el que existe fix_db_wal.py.
+        print("integridad:", con.execute("PRAGMA quick_check").fetchone()[0])
+        con.close()
     print(f"\n{n} cues Medio escritos. El Mix-OUT de esos temas paso de E a F.")
     print("Abri Rekordbox y hace sync al pen.")
 

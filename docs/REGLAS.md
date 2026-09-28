@@ -28,7 +28,7 @@
 
 ## Algoritmo de cues v8
 
-9 markers por track:
+10 markers por track:
 
 | # | Tipo | Color | Posición |
 |---|------|-------|----------|

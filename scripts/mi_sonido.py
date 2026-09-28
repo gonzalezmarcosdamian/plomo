@@ -56,6 +56,19 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 CARPETA = "MI SONIDO"
 
 
+def nuevo_id() -> str:
+    """ID de playlist, en el rango que usan los otros once scripts que crean.
+
+    Estaba en 100000000-999999999, que es el rango de los CUES —copiado de
+    `cue_engine.py`, donde esta bien porque un cue no se mapea al XML—. Para una
+    playlist, todo ID por debajo de 0x10000000 (268.435.456) da 7 caracteres hex
+    en vez de 8 y la playlist aparece VACIA en Rekordbox. Eso es el 18.7% de ese
+    rango: de las cuatro filas que este script creo, la mas baja quedo en
+    274.377.085, un 2% por encima del precipicio. Salio bien de casualidad.
+    """
+    return str(random.randint(1_500_000_000, 4_000_000_000))
+
+
 def conectar():
     con = sqlcipher3.connect(os.environ["REKORDBOX_DB_PATH"])
     con.execute(f"PRAGMA key='{os.environ['SQLCIPHER_KEY']}'")
@@ -122,7 +135,7 @@ def main() -> None:
     if raiz:
         raiz = raiz[0]
     else:
-        raiz = str(random.randint(100000000, 999999999))
+        raiz = str(nuevo_id())
         con.execute("""INSERT INTO djmdPlaylist (ID, Seq, Name, ImagePath, Attribute, ParentID,
             SmartList, UUID, rb_data_status, rb_local_data_status, rb_local_deleted,
             rb_local_synced, usn, rb_local_usn, created_at, updated_at)
@@ -138,7 +151,7 @@ def main() -> None:
             con.execute("UPDATE djmdSongPlaylist SET rb_local_deleted=1 WHERE PlaylistID=?", (vieja[0],))
             pid = vieja[0]
         else:
-            pid = str(random.randint(100000000, 999999999))
+            pid = str(nuevo_id())
             con.execute("""INSERT INTO djmdPlaylist (ID, Seq, Name, ImagePath, Attribute, ParentID,
                 SmartList, UUID, rb_data_status, rb_local_data_status, rb_local_deleted,
                 rb_local_synced, usn, rb_local_usn, created_at, updated_at)
@@ -149,7 +162,7 @@ def main() -> None:
                 UUID, rb_data_status, rb_local_data_status, rb_local_deleted, rb_local_synced,
                 usn, rb_local_usn, created_at, updated_at)
                 VALUES (?,?,?,?,?,0,0,0,0,NULL,NULL,?,?)""",
-                (str(random.randint(100000000, 999999999)), pid, cid, n,
+                (str(nuevo_id()), pid, cid, n,
                  str(uuid_lib.uuid4()), ahora, ahora))
         print(f"  {nombre}: {len(filas)} temas")
     con.commit()

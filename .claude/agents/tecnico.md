@@ -90,7 +90,6 @@ aparecer desde Rekordbox, `scripts/remove_loops.py`.
 ```
 scripts/db_audit.py --dry          # duplicados y reasignaciones
 scripts/check_db.py                # estado general
-scripts/_diagnose_db.py            # diagnostico profundo
 scripts/fix_missing_paths.py       # paths rotos
 scripts/repair_db.py               # reparacion
 scripts/recover_db.py              # recovery post-corrupcion

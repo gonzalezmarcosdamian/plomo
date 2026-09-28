@@ -1,7 +1,22 @@
-"""
-Elimina los cues corruptos (rowid > 50000) del djmdCue directamente.
-Esto permite que RB abra sin crashear al leer cues invalidos.
-Los tracks nuevos pierden sus cue points pero los viejos los conservan.
+"""ONE-OFF DE LA CORRUPCION DE JUNIO 2026. NO CORRER. Archivado el 2026-09-27.
+
+Borra cues por rowid: `DELETE FROM djmdCue WHERE rowid > 50000`, y si eso falla
+reintenta con 40000, 30000, 20000 y 10000 — o sea que el ultimo intento borra la
+tabla entera.
+
+El 50000 se calibro cuando la biblioteca era un tercio de la de hoy. Medido
+contra la base actual: `djmdCue` tiene 124.995 filas y el corte de 50000
+borraria 102.388, el 81.9% de los cues de la coleccion. Los fallbacks llegan
+al 100%.
+
+Y no hay forma de mirar antes lo que va a hacer: no tiene `--dry`, no tiene
+argparse y no tiene `if __name__ == "__main__"`. La conexion y el DELETE estan a
+nivel de modulo, asi que IMPORTARLO alcanza para que borre.
+
+Queda archivado y no borrado porque es el registro de como se salio de esa
+corrupcion. Para diagnosticar la base estan `check_db.py` y `db_audit.py`; para
+repararla, `repair_db.py`, `recover_db.py`, `fix_db_wal.py` y `vacuum_db.py`, que
+son las cuatro estrategias que documenta el agente `tecnico`.
 """
 import sys
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")

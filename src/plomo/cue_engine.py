@@ -51,6 +51,46 @@ class CueAnalysis:
     outro: float = 0.0      # Cue 6 - Mix-OUT
 
 
+@dataclass(frozen=True)
+class Marcador:
+    """Un punto del layout. `kind` 0 es memory cue; 1 a 6 son los hot A a F."""
+    nombre: str
+    msec: int
+    kind: int
+    color: int
+
+
+def layout_v9(cues: "CueAnalysis") -> list[Marcador]:
+    """Los marcadores que lleva un track, en orden de tiempo.
+
+    Existe porque esto estaba escrito DOS veces —una en `apply_cues_v8`, que
+    escribe por pyrekordbox, y otra en `apply_cues_v8_direct`, que escribe por
+    SQL— y las dos listas tenian que decir lo mismo sin que nada lo garantizara.
+    Hoy coinciden; el dia que alguien agregue un cue en una sola, la biblioteca
+    queda con dos layouts distintos segun por donde entro cada track, y eso no
+    se ve hasta que el DJ aprieta una tecla y no hay nada.
+
+    Sin loops: un Marcador no tiene donde guardar OutMsec ni BeatLoopSize. El
+    loop interfiere con el automix y se arma a mano en el CDJ.
+    """
+    m = [
+        Marcador("Mix-IN First Beat", int(cues.first_beat * 1000), 1, 1),
+        Marcador("M-First Beat", int(cues.first_beat * 1000), 0, -1),
+        Marcador("Bass IN", int(cues.bass_in * 1000), 2, 4),
+        Marcador("M-Bass IN", int(cues.bass_in * 1000), 0, -1),
+    ]
+    if cues.breakdown is not None:
+        m += [Marcador("Breakdown", int(cues.breakdown * 1000), 3, 5),
+              Marcador("M-Breakdown", int(cues.breakdown * 1000), 0, -1)]
+    if cues.drop is not None:
+        m += [Marcador("DROP", int(cues.drop * 1000), 4, 8),
+              Marcador("M-DROP", int(cues.drop * 1000), 0, -1)]
+    if cues.drop_mid is not None:
+        m.append(Marcador("Medio", int(cues.drop_mid * 1000), 5, 2))
+    m.append(Marcador("Mix-OUT", int(cues.outro * 1000), 6, 13))
+    return m
+
+
 MIN_TRAMO = 32     # compases: debajo de esto el tramo no necesita un punto mas
 FRASE = 16         # los cues caen en frase, nunca en un compas cualquiera
 BORDE = 16         # no pegado al principio ni al final del tramo
@@ -218,28 +258,8 @@ def apply_cues_v8(db, content_id: str, cues: CueAnalysis) -> int:
     now = datetime.now()
     new_objs = []
 
-    # Cue specs: (name, time_msec, kind, color)
-    cue_specs = [
-        ('Mix-IN First Beat', cues.first_beat * 1000, 1, 1),
-        ('M-First Beat', cues.first_beat * 1000, 0, -1),
-        ('Bass IN', cues.bass_in * 1000, 2, 4),
-        ('M-Bass IN', cues.bass_in * 1000, 0, -1),
-    ]
-    if cues.breakdown is not None:
-        cue_specs.extend([
-            ('Breakdown', cues.breakdown * 1000, 3, 5),
-            ('M-Breakdown', cues.breakdown * 1000, 0, -1),
-        ])
-    if cues.drop is not None:
-        cue_specs.extend([
-            ('DROP', cues.drop * 1000, 4, 8),
-            ('M-DROP', cues.drop * 1000, 0, -1),
-        ])
-    if cues.drop_mid is not None:
-        cue_specs.append(('Medio', cues.drop_mid * 1000, 5, 2))
-    cue_specs.append(('Mix-OUT', cues.outro * 1000, 6, 13))
-
-    for name, in_msec, kind, color in cue_specs:
+    for name, in_msec, kind, color in ((x.nombre, x.msec, x.kind, x.color)
+                                       for x in layout_v9(cues)):
         cue = DjmdCue(
             ID=str(random.randint(100000000, 999999999)),
             ContentID=canonical.ID, InMsec=int(in_msec),
@@ -354,28 +374,10 @@ def apply_cues_v8_direct(con, content_id: int, cues: CueAnalysis) -> int:
             "created_at": now_iso, "updated_at": now_iso,
         })
 
-    cue_specs = [
-        (cues.first_beat * 1000, -1, 1,  1,  'Mix-IN First Beat', None, None),
-        (cues.first_beat * 1000, -1, 0, -1,  'M-First Beat',      None, None),
-        (cues.bass_in * 1000,    -1, 2,  4,  'Bass IN',           None, None),
-        (cues.bass_in * 1000,    -1, 0, -1,  'M-Bass IN',         None, None),
-    ]
-    if cues.breakdown is not None:
-        cue_specs += [
-            (cues.breakdown * 1000, -1, 3, 5, 'Breakdown',   None, None),
-            (cues.breakdown * 1000, -1, 0,-1, 'M-Breakdown', None, None),
-        ]
-    if cues.drop is not None:
-        cue_specs += [
-            (cues.drop * 1000, -1, 4, 8, 'DROP',   None, None),
-            (cues.drop * 1000, -1, 0,-1, 'M-DROP', None, None),
-        ]
-    if cues.drop_mid is not None:
-        cue_specs.append((cues.drop_mid * 1000, -1, 5, 2, 'Medio', None, None))
-    cue_specs.append((cues.outro * 1000, -1, 6, 13, 'Mix-OUT', None, None))
-
-    for in_ms, out_ms, kind, color, comment, al, bls in cue_specs:
-        insert_cue(in_ms, out_ms, kind, color, comment, al, bls)
+    # -1 en OutMsec y None en ActiveLoop/BeatLoopSize: eso es lo que hace que un
+    # marcador sea un punto y no un loop.
+    for x in layout_v9(cues):
+        insert_cue(x.msec, -1, x.kind, x.color, x.nombre, None, None)
 
     # Sin loops: ningun cue lleva OutMsec/BeatLoopSize. Ver apply_cues_v8.
 

@@ -31,6 +31,15 @@ ESCRIBEN = {
     # db_audit hace soft-delete de tracks, reasigna entradas de playlist y mueve
     # archivos. Sin --dry escribe, y se habia colado fuera de esta lista.
     "db_audit.py", "undo_import.py",
+    # Toda la ola de scripts nuevos de septiembre estaba sin proteger: la lista
+    # se actualizo por ultima vez con db_audit.py y nadie la volvio a mirar.
+    # Estos siete escriben en djmdPlaylist, djmdSongPlaylist, djmdCue o
+    # djmdContent y ninguno se bloqueaba con Rekordbox abierto.
+    "mi_sonido.py", "cue_medio.py", "armar_pen.py", "borrar_candidatos.py",
+    "recalcular_energia.py", "organizar_sets.py", "limpiar_metadata.py",
+    # One-offs que borran tracks. Viven en scripts/archive/ y el hook matchea
+    # por nombre de archivo, asi que siguen cubiertos ahi.
+    "_remove_epika.py", "_remove_track.py",
 }
 # Flags que hacen que un script en dry-run pase a escribir de verdad.
 SOLO_LECTURA = ("--dry", "--dry-run", "--check")

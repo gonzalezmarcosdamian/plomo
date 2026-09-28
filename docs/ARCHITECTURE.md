@@ -41,17 +41,25 @@ plomo/
 | `scripts/import_all.py` | Fase 1 del pipeline | Mueve archivos de Downloads → Music/YYYY-MM. Para tracks ya en DB: fija FolderPath y DeliveryControl para export USB sin error [2]. NO importa a DB ni aplica cues. |
 | `scripts/post_import.py` | Fase 3 del pipeline (después de que RB analice) | Aplica cues v8, energy score, restaura playlists para tracks recién importados. |
 | `scripts/muzpa_download.py` | Cuando hay tracks nuevos en Muzpa | Descarga tracks desde la plataforma Muzpa. |
-| `scripts/build_set_v2.py` | Construcción de sets nuevos | Set builder con movimientos de energía y anclas Camelot. |
-| `scripts/rebuild_all_sets.py` | Reconstrucción total | Reconstruye todos los sets desde cero. |
-| `scripts/reorder_sets_energy.py` | Reordenar por energía | Reordena tracks dentro de sets siguiendo curva de energía. |
-| `scripts/apply_energy_v2.py` | Aplicar energy score v2 | Aplica el algoritmo energy score v2 a la biblioteca. |
-| `scripts/build_setlist_sets.py` | Sets en orden de setlist real | Construye playlists en Rekordbox siguiendo el orden de un setlist histórico. |
+| `scripts/build_set.py` | Escribir un set en Rekordbox | Toma el target JSON y crea la playlist. Es el que ESCRIBE; `select_set.py` es el que ELIGE. |
+| `scripts/reordenar_set.py` | Reordenar un set cerrado | Cambia el orden sin cambiar los temas. Acepta tolerancia y topes por set. |
+| `scripts/organizar_sets.py` | Ordenar la carpeta de sets | Mueve las playlists a una jerarquia por pico de energia. |
+| `scripts/recalcular_energia.py` | Recalcular energia | Reescribe `E:` en toda la biblioteca con `plomo.energy`, que es la formula vigente. |
 | `scripts/analyze_set.py` | Análisis y exploración | Analiza composición y métricas de un set. |
 | `scripts/backfill_energy.py` | Cuando hay tracks sin energía | Aplica cues + energía a lo que quedó fuera del pipeline. Elige por ESTADO (sin `E:`), no por carpeta como `post_import.py`. Idempotente y reanudable; preserva el comentario previo como `E:5.4 \| /* ... */`. |
 | `scripts/dump_pool.py` | Antes de armar sets | Exporta la biblioteca a `data/pool.json` para `select_set.py`. Marca qué tracks ya están en algún set numerado. |
 | `scripts/select_set.py` | Armar un set nuevo | Beam search que ELIGE los tracks respetando a la vez escalera Camelot, arco de energía, BPM y tope por artista/remixer. Config JSON en `data/set_configs/`. |
 | `scripts/audit_sets.py` | Después de armar o al revisar | Audita sets existentes: arco de energía, saltos de Camelot y de BPM. |
 | `scripts/watcher.py` | Daemon en background | Vigila la carpeta Downloads y procesa nuevos archivos automáticamente. |
+
+> **Cinco scripts salieron de esta tabla el 2026-09-27** y estan en
+> `scripts/archive/`: `build_set_v2.py`, `rebuild_all_sets.py`,
+> `reorder_sets_energy.py`, `apply_energy_v2.py` y `build_setlist_sets.py`.
+> Estaban listados como activos y ninguno se usa desde mayo. El peor era
+> `apply_energy_v2.py`: reescribia la energia de toda la biblioteca con
+> `plomo.energy_v2`, una formula que el pipeline abandono, y `select_set.py`
+> elige con esos numeros. Una tabla de "scripts activos" que miente es peor que
+> no tenerla, porque mantiene vivo lo que habria que borrar.
 
 ### Flujo correcto del pipeline de importación
 

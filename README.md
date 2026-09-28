@@ -4,7 +4,7 @@ Automation toolkit para Rekordbox 6. Importa música nueva, aplica cues automát
 
 ## Qué hace
 
-- **Cues automáticos (v8)**: detecta first beat, bass in, breakdown, drop, outro y escribe 9 markers en Rekordbox
+- **Cues automáticos (v8)**: detecta first beat, bass in, breakdown, drop, outro y escribe 10 markers en Rekordbox
 - **Energy score (0-10)**: calcula la energía de cada track desde los timings de cues (intro length, breakdown duration, drop presence)
 - **Orden Camelot**: ordena sets minimizando saltos armónicos entre tracks
 - **Pipeline completo**: mueve archivos de Downloads → Music, Rekordbox importa, luego aplica todo lo anterior
@@ -75,8 +75,7 @@ BACKUP_FOLDER=C:\Users\TU_USUARIO\Music\plomo\outputs
 |--------|-------------|
 | `scripts/import_all.py` | Mueve archivos de Downloads → Music, fix metadata |
 | `scripts/post_import.py` | Cues v8, energy score, restaura/asigna playlists |
-| `scripts/reorder_sets_energy.py` | Reordena sets por Camelot + energía |
-| `scripts/reorganize_sets.py` | Crea y reorganiza playlists en Sets Armados |
+| `scripts/organizar_sets.py` | Ordena las playlists de Sets Armados por pico de energia |
 
 ### CLI
 
@@ -100,7 +99,7 @@ src/plomo/
 
 ## Algoritmo de cues v8
 
-9 markers por track:
+10 markers por track:
 
 | # | Nombre | Descripción |
 |---|--------|-------------|

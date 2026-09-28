@@ -43,7 +43,7 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 
 from color_melodico import _color  # noqa: E402
 from continuidad import continuidad_audio  # noqa: E402
-from copiar_tema import (BANDAS, MARGEN_S, NOMBRES, SR, TRIADAS,  # noqa: E402
+from copiar_tema import (BANDAS, MARGEN_S, NOMBRES, SR,  # noqa: E402
                          _afinar_bpm, _bajo, _cuantizar, _envolvente, _golpes,
                          _grilla)
 from medir_arreglos import _mejor_momento  # noqa: E402
