@@ -113,7 +113,10 @@ Resumen:
 - `scripts/archive/` → one-offs ya ejecutados
 - `scripts/hooks/` → hooks de Claude Code (guardarrailes)
 - `rules/` → reglas de curaduría como dato versionado
-- `data/` → JSONs de datos personales (en .gitignore)
+- `data/` → datos medidos y chicos, versionados a propósito: las recetas de los sets
+  (`set_targets/`, `set_configs/`, `setlists/`), los paquetes de YouTube, los capítulos.
+  Lo personal, lo pesado y el scratch los ataja `.gitignore` (`pool.json`, `samples/`,
+  los `*_scan_result.json`, los `.npz`). El criterio vive en `.gitignore`, no acá.
 - `docs/` → documentación técnica y artística
 - `.claude/agents/` → los agentes del proyecto
 - `.claude/skills/` → los flujos invocables (`/sesion`, `/set`, `/reglas`, …)

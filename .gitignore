@@ -104,7 +104,8 @@ data/samples/*
 
 # Artefactos generados — se reconstruyen con dump_pool.py / muzpa_*_scan.py
 data/pool.json
-data/*_scan_result.json
+# en cualquier carpeta: tres se colaron en la raiz porque el patron decia data/
+*_scan_result.json
 data/pool_apertura_crudo.json
 data/pool_apertura_sel.json
 

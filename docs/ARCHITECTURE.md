@@ -128,23 +128,18 @@ Los siguientes archivos viven en `data/` y NO en la raíz:
 
 ### Qué NUNCA va al repo
 
-```gitignore
-.env                          # Secrets locales
-data/muzpa_batch*.json        # Datos personales de batches
-data/setlists_muzpa.json      # Setlists personales
-data/track_playlist_mapping.json  # Mapeo personal
-data/available_ids.json
-data/dj_sets_new.json
-data/sunset_*.json
-*.mp3 *.flac *.wav *.aiff     # Audio (copyright / tamaño)
-*.mov *.MOV *.mp4             # Video (tamaño)
-postproduction/               # Output de postproducción
-```
+Lo dice `.gitignore`, y solo ahí. Esta sección tenía una copia y quedó vieja sin
+avisar: no traía los tokens de YouTube ni `grabaciones/` ni los rasgos del video.
+El criterio, en corto: secretos (por patrón), audio y video, lo que se regenera
+con un script (`.npz`, caches, scan results), lo personal (`pool.json`, batches) y
+el scratch. Para chequear que nada ignorado quedó adentro:
+`git ls-files -ci --exclude-standard` tiene que salir vacío.
 
 ### Qué SÍ va al repo
 
 - Todo código en `src/plomo/` y `scripts/`
-- `data/transition_feedback.json` (config del sistema, no dato personal)
+- `data/` medido y chico: `set_targets/`, `set_configs/`, `setlists/`, `youtube/`, `video/`
+  (capítulos, alineación, ganancias; los `.npz` no), `transition_feedback.json`
 - `docs/` completo
 - `tests/` completo
 - `pyproject.toml`, `requirements.txt`, `README.md`, `.gitignore`

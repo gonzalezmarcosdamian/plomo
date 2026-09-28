@@ -5,7 +5,10 @@ que, con que herramientas, y que cosas el sistema no deja hacer.
 
 ---
 
-## El arquetipo
+## El esquema
+
+(No confundir con `arquetipo/`, que es el método empaquetado para arrancar otro
+proyecto: ver `arquetipo/README.md`.)
 
 Plomo no es un proyecto de software con una tarea. Son cinco dominios que se
 tocan entre si:
