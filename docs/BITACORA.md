@@ -77,6 +77,8 @@ proyecto no auditado queda trabado en privado— NO se aplicó: se probó con 10
 pasó a no listado y se borró. Canal verificado para videos largos. Subido en
 privado con título, capítulos, tags y miniatura: https://youtu.be/cxPG09u-edM.
 Publicarlo lo decide el DJ después de mirar los reclamos de Content ID.
+**Publicado el 2026-09-28 a las 18:03** por pedido del DJ ("publica ahora el video"), antes
+de las 19:00 que estaban programadas.
 
 Después, la app pasó a producción para que el permiso no venza a los 7 días. Google pide
 una página de marca con inicio y política de privacidad en un dominio propio: quedó en

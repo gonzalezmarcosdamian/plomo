@@ -1,6 +1,6 @@
 # Set suelto — Atardecer, 2026-09-23
 
-**Estado:** grabado. La animación tiene prototipos en `postproduction/video/`, falta el render final. No publicado: subir lo decide Gonzalo.
+**Estado:** PUBLICADO el 2026-09-28 a las 18:03: https://youtu.be/cxPG09u-edM. (Antes: grabado.) La animación tiene prototipos en `postproduction/video/`, falta el render final. No publicado: subir lo decide Gonzalo.
 **No es de la serie "Sonido Argentino".** No lleva número, ni "Style", ni la plantilla de miniatura de la serie.
 **Grabación:** en casa, al atardecer, una sola toma, salida directa de consola (`grabaciones/2026-09-23_set_consola_REC001.wav`).
 **Master del video:** 25:49 (1549.5 s), −14 LUFS. Capítulos en `data/video/2026-09-23_capitulos.json`.
