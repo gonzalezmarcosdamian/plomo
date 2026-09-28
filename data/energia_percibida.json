@@ -440,5 +440,24 @@
   "nota": "lo toque mucho",
   "fuente": "escucha del 148 v2, 2026-09-28",
   "gastado": true
+ },
+ "116807064": {
+  "artist": "Maze 28",
+  "title": "Fogbows",
+  "E_calc": 6.3,
+  "nota": "tiene el groove",
+  "fuente": "escucha del 148 v2, 2026-09-28",
+  "groove_ok": true,
+  "referencia_de": "groove",
+  "favorito": true
+ },
+ "42634301": {
+  "artist": "Paul Deep AR",
+  "title": "Milo",
+  "E_calc": 7.1,
+  "nota": "no tiene el groove",
+  "fuente": "escucha del 148 v2, 2026-09-28",
+  "groove_ok": false,
+  "referencia_de": "groove"
  }
 }

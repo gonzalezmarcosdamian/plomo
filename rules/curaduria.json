@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.16.1",
+  "version": "1.17.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -791,6 +791,19 @@
      "por_que": "'mas brillo y progresivo lindo' sobre un set housero es una contradiccion para el indice housero, que resta el color por definicion. Separar los ejes da empuje 0.91 y color 0.64 a la vez; con color en 2.0 el empuje se cae a 0.61 y es otro set. El DJ escucho el resultado y lo aprobo."
     }
    ]
+  },
+  {
+   "version": "1.17.0",
+   "fecha": "2026-09-28",
+   "tema": "el groove del DJ es la forma del tema, no cuanta densidad tiene",
+   "cambios": [
+    {
+     "regla": "estilo.groove_del_dj",
+     "antes": "no existia; 'groove' se aproximaba con el eje empuje (densidad + sub)",
+     "despues": "techo de densidad >= 15.5 y piso <= 78% de la media, por seccion",
+     "por_que": "el empuje ordena a Milo POR ENCIMA de Fogbows y el DJ dice lo contrario. Ni el sub (57.2 / 55.6 / 48.0) ni el color (0.17 / 0.60 / 0.67) separan los tres casos. La densidad por seccion si."
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -889,6 +902,16 @@
    },
    "porque": "Lo que cambia un set 'housero' respecto de su base. El DJ, 2026-09-28: 'una variante del set mas housera pero progresive'. NO es un filtro de genero: medido sobre los 1353 tracks del indice, el genero House tiene MENOS densidad que Progressive House (12.8 contra 14.1), asi que filtrar por genero da lo contrario de lo pedido. Lo que separa es el sonido: groove denso, bajo presente y poco protagonismo melodico. El peso 1.5 es el mismo de color_peso porque es el mismo termino con el signo cambiado: un set no puede ser colorido y housero a la vez. | Se guarda como PERCENTIL y no en crudo: el indice crudo va de -8.1 a +4.8 y el color de 0 a 1, asi que el mismo numero de peso pesaba seis veces mas de un lado que del otro y se comia el arco de energia.",
    "evidencia": "2026-09-28, sobre data/groove_index.json (1584 tracks). El eje ordena los extremos como se espera sin que nadie se lo diga: arriba Impending Storm (Navar Remix) dens 15.3 / sub 69.7 / color 0.02, Power Pink y Quantum Touch; abajo Paramour de Jody Wisternoff (dens 6.7, sub 22.8, color 0.87), Once a Day de Ezequiel Arias y el Wind Down de Cattaneo. VALIDADO POR EL OIDO DEL DJ el 2026-09-28: escucho el set 148 v2 --empuje 2.0 y color 1.5, empuje mediano 0.91 y color 0.64-- y dijo 'me esta gustando'. Es la primera aprobacion directa del eje. Sigue sin haber setlists ajenos etiquetados como houseros contra los que medirlo, asi que el eje esta validado por su escucha y no por la referencia; para el proyecto eso pesa mas, no menos (ver docs/APRENDIZAJES: la escucha del DJ pisa a la formula). Lo que NO esta resuelto es 'brillo': el color_pct que uso aca falla con Running, que el DJ dice que tiene brillo y mide 0.13."
+  },
+  "groove_del_dj": {
+   "valor": {
+    "techo_minimo": 15.5,
+    "piso_maximo_frac": 0.78,
+    "medida": "sobre la densidad por seccion de data/recetas/lib"
+   },
+   "porque": "Que es 'el groove adecuado' para el DJ. NO es el promedio de densidad ni el eje empuje: Milo, que el dijo que NO lo tiene, mide MAS empuje (0.76) que Fogbows, que dijo que SI (0.71). Lo que separa es la FORMA del tema: los dos aprobados llegan a 16 de densidad y bajan al 70% de su media; Milo llega a 15.5 y su piso es el 87%, o sea nunca suelta. Pega fuerte arriba y vacia de verdad abajo.",
+   "evidencia": "2026-09-28, TRES casos del DJ escuchando el 148 v2: Ipanema Twilight (techo 16.2, piso 70%) si, Fogbows (16.0, 71%) si, Milo (15.5, 87%) no. La regla los separa a los tres. HIPOTESIS, NO REGLA PROBADA: son tres casos y dos parametros, que es justo lo que el proyecto ya aprendio a desconfiar con 'colorido' --una formula con dos o tres ejemplos a favor no esta validada, esta sin probar--. La prueba real son sus veredictos sobre temas que la regla NO vio: en el 148 predice que tienen groove el 4, 12, 14 y 17, y que no lo tienen el 1, 3, 6, 9, 10 y 11.",
+   "_estado": "PROPUESTA. Ningun codigo la lee todavia: primero hay que confirmarla con mas casos."
   }
  },
  "groove": {
