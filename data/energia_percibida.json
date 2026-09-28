@@ -339,8 +339,8 @@
   "artist": "Sébastien Léger, Lost Miracle",
   "title": "Dodonpachi (Original Mix)",
   "E_calc": 7.0,
-  "nota": "lo nombro para mi sonido",
-  "fuente": "pedido del DJ, 2026-09-26",
+  "nota": "es favorito",
+  "fuente": "escucha del 148 v2, 2026-09-28",
   "favorito": true,
   "momentos": [
    "pico",
@@ -423,7 +423,8 @@
   "nota": "tiene el groove adecuado",
   "fuente": "escucha del 148 v2, 2026-09-28",
   "favorito": true,
-  "referencia_de": "groove"
+  "referencia_de": "groove",
+  "groove_ok": true
  },
  "182281408": {
   "artist": "Emi Galvan & Albuquerque",
@@ -431,7 +432,12 @@
   "E_calc": 6.3,
   "nota": "lo toque mucho",
   "fuente": "escucha del 148 v2, 2026-09-28",
-  "gastado": true
+  "gastado": {
+   "fecha": "2026-09-28",
+   "alcance": "la tanda del cumple, sets 139-148",
+   "vale_en_otra_fecha": true,
+   "por_que": "lo toque mucho"
+  }
  },
  "97553620": {
   "artist": "Ruben Karapetyan, Maze 28",
@@ -439,7 +445,12 @@
   "E_calc": 6.6,
   "nota": "lo toque mucho",
   "fuente": "escucha del 148 v2, 2026-09-28",
-  "gastado": true
+  "gastado": {
+   "fecha": "2026-09-28",
+   "alcance": "la tanda del cumple, sets 139-148",
+   "vale_en_otra_fecha": true,
+   "por_que": "lo toque mucho"
+  }
  },
  "116807064": {
   "artist": "Maze 28",
@@ -459,5 +470,14 @@
   "fuente": "escucha del 148 v2, 2026-09-28",
   "groove_ok": false,
   "referencia_de": "groove"
+ },
+ "_campos": {
+  "veto": "el tema no le gusta. No entra nunca, en ningun set.",
+  "gastado": "lo toco mucho y no lo quiere EN ESA TANDA. No es un veto: en otra fecha vuelve a estar disponible. Lleva fecha y alcance.",
+  "favorito": "le gusta. Un 'si' suyo sobre un tema cuenta como favorito.",
+  "groove_ok": "su veredicto sobre si el tema tiene el groove que busca. Independiente de si le gusta.",
+  "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension.",
+  "E": "la energia que EL escucho, que pisa a la calculada.",
+  "_nota": "Estos campos salen de lo que el DJ dice, TEXTUAL. Si no dijo que si o que no sobre algo, no se anota nada de eso: no se supone."
  }
 }
