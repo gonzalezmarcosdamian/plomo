@@ -1,0 +1,29 @@
+{
+  "vuelta": 9,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "ninguna de las doce de juzgar.py — sigue bloqueada por falta de audio real (vuelta 004). Se resuelve el pendiente explicito que dejo la vuelta 008 (tambien_notado): la colision de fase entre metales y el fantasma del hat, misma nota CHH desde dos pistas distintas.",
+  "que_se_hizo": [
+    "Se conto donde caen exactamente los 11-13 racimos hats:42/metales:42 que reporto la vuelta 008. METALES tiene 4 bancos de 3 pulsos cada uno, elegido por (c // 2) % 4; el banco 1 es (0.75, 2.25, 3.75). El fantasma del hat (_bateria, funcion de percusion) dispara CHH en 0.25 y 2.25 en TODOS los compases que no callan. El 2.25 del banco 1 de METALES es un choque exacto con ese fantasma: misma nota, mismo pulso nominal, y como la humanizacion mueve unos pocos ms, el intervalo cae casi siempre por debajo de los 10 ms del umbral de racimo.",
+    "El propio comentario de METALES (linea 1938-1941 de idea.py, sin tocar en esta vuelta) dice el diseno: 'Cae en semicorcheas que el hat no usa'. El 2.25 del banco 1 violaba esa regla que el codigo mismo se puso: no es una colision de mala suerte, es un dato que no cumplia su propia especificacion.",
+    "Arreglo de un solo valor: 2.25 pasa a 2.75 en el banco 1 de METALES. 2.75 ya es una semicorchea 'segura' que usan los bancos 0 y 2, y no coincide con ningun pulso del hat cerrado (1.5/3.5) ni de los fantasmas (0.25/2.25). Se dejo un comentario en el propio METALES con la evidencia (vuelta y archivo) para que no se repita a ciegas."
+  ],
+  "medido_antes": {
+    "hats_metales_racimo_pleno1": "ALTO, 11 racimos <10ms (semilla 7)",
+    "hats_metales_racimo_pleno2": "ALTO, 11 racimos <10ms (semilla 7)",
+    "hats_metales_racimo_drop": "ALTO, 13 racimos <10ms (semilla 7)"
+  },
+  "medido_despues": {
+    "hats_metales_racimo_pleno1": "desaparece (semilla 7 y semilla 3)",
+    "hats_metales_racimo_pleno2": "desaparece (semilla 7 y semilla 3)",
+    "hats_metales_racimo_drop": "desaparece (semilla 7 y semilla 3)",
+    "otros_racimos_agudos": "ninguno nuevo en pleno1/pleno2/drop ni en el resto de las 9 secciones, con las dos semillas",
+    "defectos_preexistentes_sin_cambio": "subkick staccato (9 secciones que lo tenian), subkick repite identico 96-98% (intro/pleno1/pleno2/drop/salida_dj), banda grave embarrada 79-95% (pleno1/pleno2/drop/salida_dj) — mismos numeros antes y despues, no los toca este fix"
+  },
+  "como_se_midio": "python scripts/idea.py --tema --nombre _check_X --semilla 7 (y de nuevo con --semilla 3 como control), y un escuchar.py por cada una de las 9 subcarpetas de postproduction/bocetos/_check_X/. Comparado el bloque hats:42/metales:42 antes y despues del cambio de METALES, y el resto del dictamen de cada seccion para confirmar que no se movio nada mas. Carpetas de prueba borradas despues de medir.",
+  "de_donde_sale": "El aviso explicito de la vuelta 007 y retomado por la vuelta 008 (data/juicio/008.json, campo tambien_notado): 'mirar por que METALES y el patron de hats coinciden tan seguido ... antes de decidir si se resuelve con un _hueco()-like guard o cambiando el patron de METALES para evitar los pulsos exactos del hat'.",
+  "por_que_no_es_una_de_las_doce": "Es un bug de colision de fase en el MIDI generado por idea.py (METALES pisando al fantasma del hat), no una de las doce dimensiones de convergencia de docs/PLAN.md. Se verifica enteramente sobre MIDI con escuchar.py, sin ambiguedad de oido.",
+  "necesita_al_DJ": false,
+  "necesita_audio_real": false,
+  "por_que": "El cambio es un solo valor en una tupla de datos (2.25 a 2.75), medido antes y despues con el mismo instrumento (escuchar.py) sobre las mismas 9 secciones y dos semillas distintas: el racimo que reportaba ALTO en pleno1/pleno2/drop desaparece y no aparece ningun racimo nuevo en su lugar. El motivo esta confirmado por el propio comentario de diseno de METALES en el codigo, no por una hipotesis nueva.",
+  "tambien_notado": "Quedan sin tocar, por la regla de una dimension por vuelta, los tres pendientes que la vuelta 008 ya habia dejado anotados y que esta vuelta confirmo que siguen igual: 'subkick va a sonar a staccato' (real: usa un instrumento sostenido tocado con notas de 0.22 pulsos, presente en las 9 secciones), 'subkick puede sonar a maquina' (repite identico 96-98% de los compases, cada 8, en intro/pleno1/pleno2/drop/salida_dj) y 'la banda grave se va a embarrar' (79-95% del tiempo en pleno1/pleno2/drop/salida_dj, con atmosfera+textura+bajo2+sub/acordes apilados entre 82 y 247 Hz). La solucion probable para los dos primeros sigue siendo la misma que anoto la vuelta 008: la variacion de velocity/filtro que documenta data/vocabulario/videos.json ('Prende el parametro Random del mapeo velocity-cutoff, entre 15 y 20'), y es la dimension mas lejos del rango que se puede atacar sin Live para la proxima vuelta — pero es una dimension distinta (variacion de subkick, no colision de fase) y hay que medirla sola, no junto con esta."
+}

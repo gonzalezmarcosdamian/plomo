@@ -36,7 +36,33 @@ from plomo.midi import leer  # noqa: E402
 
 # Capas donde el largo de la nota no cambia lo que se escucha: en un Drum Rack
 # el sample se dispara entero.
-PERCUSIVAS = {"bateria", "percusion", "repiques", "subida"}
+#
+# "hats" y "metales" se sumaron el 2026-09-19: son las mismas muestras del
+# Drum Rack de bateria, solo que en su propia pista. hats sale literalmente de
+# separar bateria en dos (`_hats()` en idea.py, "se escriben en la bateria
+# como siempre y se separan despues"), y metales dispara la nota CHH del mismo
+# kit ("AG Techno Kit" / "909 Core Kit" en set_v3.py, REMAPA en montar.py trata
+# a las tres pistas igual). Sin esto, --tema es el unico camino que separa
+# hats en su propio archivo y el chequeo de staccato las marcaba ALTO en las
+# nueve secciones del tema completo — la misma alarma mal calibrada que ya
+# describe docs/APRENDIZAJES.md ("Una alarma que avisa mal es peor que
+# ninguna"), esta vez sobre una capa que --pleno/--climax/--tecno nunca habian
+# probado porque nunca la escriben separada.
+PERCUSIVAS = {"bateria", "percusion", "repiques", "subida", "hats", "metales"}
+# Capas que son EL RELOJ, no una capa mas: humano.py les fija dispersion 0.0 a
+# proposito ("el bombo no se mueve nunca — es el reloj contra el que se mide
+# todo lo demas") y por eso repetir identico compas a compas no es un defecto,
+# es la definicion de su rol. subkick entro aca porque despues de la vuelta 013
+# (data/juicio/013.json) su patron es, nota por nota, el mismo que el del
+# bombo dentro de "bateria" — mismo mecanismo, capa separada. "bateria" NO
+# entra: mezcla kick con clap/hat/snare, que SI tienen dispersion propia
+# (humano.py PERFILES), asi que ahi un compas identico a 8 atras seguiria
+# siendo una alarma real. Medido con _check_014 (semillas 7 y 3): subkick es
+# la UNICA capa que revisa_robot marca arriba de 6% en las 9 secciones del
+# --tema — "bateria" mide 0% en todas, porque el jitter de clap/hat alcanza
+# para que el compas C nunca sea un set identico al C-8, aunque el kick que
+# vive adentro sea siempre el mismo.
+RELOJ = {"subkick"}
 # Un racimo es dos ataques de capas distintas a menos de esto. Por debajo de
 # 10 ms dos transientes agudos no se escuchan como flam sino como filtro de
 # peine, y como la humanizacion los mueve al azar, la coloracion cambia compas
@@ -214,11 +240,17 @@ def revisa_robot(capas: dict, compases: int, d: Dictamen) -> None:
 
     Y ojo con el periodo: una variacion que se repite cada 2 compases es
     invisible contra una celula de 8, porque 2 divide a 8.
+
+    RELOJ se excluye por el mismo motivo que PERCUSIVAS se excluye de
+    revisa_cortado y SIN_ALTURA de revisa_barro (vuelta 014, data/juicio):
+    la metrica mide algo que para ese rol no es un defecto por definicion.
+    No mueve el numero de "subkick repite identico" — sigue siendo asi,
+    a proposito — mueve si ESTE chequeo tiene que decirlo.
     """
     peor, culpable = 0.0, ""
     detalle = []
     for nombre, notas in capas.items():
-        if nombre in ("riser", "subida", "voz", "reversa", "splash", "cierre"):
+        if nombre in ("riser", "subida", "voz", "reversa", "splash", "cierre") or nombre in RELOJ:
             continue
         firma: dict[int, set] = defaultdict(set)
         for inicio, _, altura, _ in notas:
@@ -367,11 +399,24 @@ def revisa_barro(capas: dict, d: Dictamen) -> None:
     Entre 82 y 247 Hz —MIDI 40 a 59— viven el bajo, el pedal del pad y el cuarto
     armonico del bombo. Tres voces sostenidas ahi es donde un progressive se
     ensucia.
+
+    "textura" (`_textura()` en idea.py) queda afuera: es una nota atada de
+    principio a fin de la seccion en un MIDI fijo (48), pero el propio
+    docstring de esa funcion dice que del otro lado hay "un sonido sin altura
+    definida" — un piso de ruido, no una voz armonica. Contarla mide siempre
+    3+ capas apenas hay otras dos voces sosteniendo debajo de 60, sin que
+    aporte nada a un embarre real de armonia. Medido en _check_011 (vuelta
+    011, semilla 7): sacarla baja pleno1/pleno2 de 82% a 29% y salida_dj de
+    79% a 21% — las tres caen debajo del umbral de 40% y la alarma, que
+    estaba mal calibrada, deja de sonar. drop queda en 71% (bajo, bajo2, sub
+    y atmosfera sostenidos ahi de verdad) y sigue sonando: ese es un embarre
+    real, no el bug.
     """
     BANDA = range(40, 60)
+    SIN_ALTURA = {"textura"}
     ocupacion = defaultdict(set)
     for nombre, notas in capas.items():
-        if nombre in PERCUSIVAS:
+        if nombre in PERCUSIVAS or nombre in SIN_ALTURA:
             continue
         for inicio, dur, altura, _ in notas:
             if altura in BANDA:

@@ -593,17 +593,28 @@ def _hueco(c: int, capa: str, pulso: float) -> bool:
     return False
 
 
+def _calla(compas: int, pulso: float) -> bool:
+    """True si el bombo/clap calla ahi: el ultimo compas del loop, ultimo pulso.
+
+    Antes vivia como closure adentro de `_bateria` y `_subkick` no lo conocia,
+    asi que el subkick sonaba en el mismo lugar donde `_hueco` y esto le cortan
+    el bombo — la reforma del reloj de 8 (`_hueco`, fase 7, pulso>=3.0) y el
+    final del loop. Medido en `_check_013` con plomo.midi.leer: en pleno1 el
+    subkick tenia 192 notas contra 186 del bombo, con las 6 de mas exactamente
+    en los compases 7/15/23/31/39/47, pulso 3.0 — los huecos de `_hueco`. El
+    subkick documenta su proposito como "se escucha como que el bombo pesa
+    mas": no puede reforzar un golpe que no esta.
+    """
+    return compas == ULTIMO and pulso >= 3.0
+
+
 def _bateria(bpm: float, h: Humano, pleno: bool = False,
              climax: bool = False, tension: bool = False,
              sin_bombo: bool = False) -> Pista:
     """Lo minimo que sostiene el groove. Nada mas."""
     p = Pista("Bateria", bpm, canal=9)
     vuelta = () if climax else VUELTA_BASE
-
-    def calla(compas: int, pulso: float) -> bool:
-        # Ya no calla nada por tension: la subida SUMA. Lo unico que sigue
-        # soltando es el ultimo compas del loop, y solo su ultimo pulso.
-        return compas == ULTIMO and pulso >= 3.0
+    calla = _calla
 
     for c in range(COMPASES):
         # El platillo del drop.
@@ -631,6 +642,9 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # el principio, y al principio no hay que empujarlo.
         emp = 0.0 if c in vuelta else _empuje(c)
         paso = c in COMPASES_DE_PASO
+        # Se calcula aca, antes del clap, porque el fantasma de clap en TECNO
+        # necesita saber si el abierto ya ocupa 1.5/3.5 (ver mas abajo).
+        cuatro_abiertos = climax or TECNO or c % 16 >= 8
         if (pleno or c >= 8) and not sin_bombo:   # el bombo entra en el 9
             for pulso in range(4):
                 if calla(c, pulso) or _hueco(c, "kick", pulso):
@@ -667,7 +681,18 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
             # destiempo". Lake Of Fire mide 7.8 claps por compas pero con 7.7
             # ms de dispersion; lo que da el numero es la regularidad, no
             # golpes que anticipan.
-            if TECNO:
+            # Este fantasma nacio el mismo dia que TECNO empezo a poner el hat
+            # abierto en 1.5 y 3.5 (climax or TECNO en la linea de "abiertos"),
+            # pero un commit despues, sin mirar esa condicion: escuchar.py
+            # nunca corrio --tecno hasta la vuelta 007 y el choque quedo
+            # invisible nueve dias. bateria:39 (clap) contra bateria:46
+            # (abierto) EN EL MISMO PULSO, siempre que TECNO esta prendido
+            # porque TECNO por si solo ya hace cuatro_abiertos verdadero: no
+            # es un choque ocasional, es el 100% de los compases con clap.
+            # El fantasma existe para rellenar sin tocar el contratiempo; en
+            # el pulso donde ya toca el abierto no rellena nada, apila un
+            # segundo transitorio agudo encima del primero.
+            if TECNO and not cuatro_abiertos:
                 for pulso in (1.5, 3.5):
                     if calla(c, pulso):
                         continue
@@ -693,8 +718,7 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
         # El contratiempo de corchea es donde vive el hat en house: abierto en el
         # 1 y el 3, cerrado en el 2 y el 4. Alternar los dos es lo que arma el
         # vaiven, y ademas evita que los dos caigan encima como pasaba antes.
-        abiertos = ((0.5, 1.5, 2.5, 3.5) if (climax or TECNO or c % 16 >= 8)
-                    else (0.5, 2.5))
+        abiertos = (0.5, 1.5, 2.5, 3.5) if cuatro_abiertos else (0.5, 2.5)
         for pulso in abiertos:
             # El abierto entra en el compas 3 y las congas en el 5. Escrito
             # como estaba —`c % 8 >= 4 or c >= 8`— era literalmente `c >= 4`, y
@@ -712,10 +736,14 @@ def _bateria(bpm: float, h: Humano, pleno: bool = False,
                        h.vel("hat_abierto", c, pulso,
                              max(8, int((58 + int(10 * emp)) * sube))))
         for pulso in (1.5, 3.5):
-            # En el climax el abierto va en los cuatro contratiempos, asi que
-            # el cerrado no se suma: se reemplaza. Sumandolo daban 60 racimos de
-            # abierto y cerrado a menos de 7 ms.
-            if climax:
+            # Cuando el abierto ya toca los cuatro contratiempos (climax,
+            # TECNO, o cualquier bloque con c % 16 >= 8) el cerrado no se
+            # suma: se reemplaza. La condicion tiene que ser la MISMA que
+            # decide `abiertos` arriba, no solo climax: escuchar.py encontro
+            # 26 racimos de bateria:42/46 a menos de 10 ms porque el bloque
+            # 8-15 (y 24-31) ya escribia el abierto en 1.5/3.5 y el cerrado
+            # seguia escribiendose encima, sin pasar nunca por climax.
+            if cuatro_abiertos:
                 continue
             if paso and pulso == 3.5:
                 # El repique que ocupaba este lugar se borro y quedo el guard
@@ -936,7 +964,28 @@ GANCHO_DULCE = [
 # Aca las clases de altura se meten en una ventana fija y cada voz elige la
 # posicion mas cerca de donde estaba. Es lo que hace una mano: sostiene lo que
 # puede y mueve lo minimo.
-PISO_PAD, TECHO_PAD = 54, 66     # F#3 a F#4: arriba del bajo, abajo del gancho
+#
+# El piso quedaba en 54 (F#3), pero `bajo2` (el doblaje del bajo una octava
+# arriba, `_bajo_medio`) ocupa 42-54 CASI SIEMPRE — 507 de 507 notas en el
+# drop de _check_012, semilla 7 — y por eso el pad tocaba justo donde termina
+# esa capa: 4 de las 7 clases de altura (54, 56, 57, 59) caian adentro de la
+# banda 40-59 que mide `revisa_barro` en escuchar.py, la misma banda donde ya
+# viven bajo, bajo2 y sub. Con eso, en el drop la alarma de banda grave
+# embarrada media 71% con bajo2+sub+bajo+atmosfera (data/juicio/011.json),
+# sin bajar del umbral de 40% aun sacando textura. Simulado sobre el mismo
+# MIDI: sacar atmosfera de la cuenta baja el numero de ~61% a ~18% (con solo
+# bajo/bajo2/sub, que estan ahi a proposito segun data/vocabulario/videos.json
+# — "el bajo va en tres registros, no en uno" — y no son el bug).
+#
+# Subir el piso a 60 (C4) saca las siete clases de altura de la banda 40-59
+# sin excepcion; y el techo sube lo mismo (+6, a 72/C5) para que la ventana
+# siga siendo una octava completa y `_voces` siga encontrando las 12 clases
+# de altura sin quedarse corta. No hay un chequeo de las doce dimensiones ni
+# de escuchar.py que mida colision entre el pad y el gancho (62-81) o los
+# anchos (54-83) en el registro nuevo, asi que ese es un juicio de mezcla que
+# no se puede confirmar solo con MIDI: si el pad se siente empastado con el
+# gancho en el drop, hay que escucharlo.
+PISO_PAD, TECHO_PAD = 60, 72     # C4 a C5: arriba del techo de bajo2 (54)
 
 
 def _voces(tonica: int, escala: list[int], g: int,
@@ -1430,38 +1479,33 @@ def _anchos(bpm: float, tonica: int, escala: list[int], h: Humano,
                        septima=False)
         for c in range(bloque * 4, bloque * 4 + 4):
             emp = _empuje(c)
-            # En el climax los golpes anchos ocupan los CUATRO contratiempos,
-            # no dos. Es lo que significa que un acorde "se abre": no que suene
-            # mas fuerte sino que no deje huecos. Cubrian el 42% del tiempo con
-            # dos golpes de 1.05 pulsos, y una capa que suena menos de la mitad
-            # del tiempo se escucha cortada por bien colocada que este.
+            # Dos contratiempos siempre, tambien en el climax. La primera
+            # version abria a los CUATRO contratiempos en el climax; se saco en
+            # v3 house progresivo (b1f89a3) porque los cuatro dejaban las ocho
+            # corcheas del compas ocupadas por la misma triada, pisando el
+            # espacio del gancho. Ese cambio no ajusto la duracion, que seguia
+            # calibrada para un hueco de 1.0 pulso entre ataques (el de la
+            # version de cuatro); con dos contratiempos el hueco real es 2.0
+            # pulsos, asi que el mismo numero paso a cubrir la mitad de lo
+            # pensado: `escuchar.py` midio anchos al 46% en climax (staccato
+            # cortado, target de la propia referencia 71-84%). Duraciones
+            # nuevas, calibradas contra el hueco real: climax 1.60 pulsos
+            # (80%), pleno 1.50 (75%) — las dos bien adentro del rango y con
+            # 0.4-0.5 pulso de margen antes del siguiente ataque en la misma
+            # altura, para no repetir el bug de note-off que corta la nota de
+            # al lado.
             #
             # Caen encima de `_acordes`, que toca 1.5 y 3.5 dos octavas abajo, y
             # eso esta bien MIENTRAS compartan el perfil de humanizacion: con el
             # mismo perfil los dos golpes caen en el mismo instante y se
             # escuchan como uno solo con mas cuerpo. Con perfiles distintos
             # caerian a unos milisegundos y eso es filtro de peine.
-            # dos contratiempos tambien en el drop: los cuatro dejaban las
-            # ocho corcheas del compas ocupadas por la misma triada
             for pulso in ANCHO_PULSOS:
                 # en el climax se suma la quinta abajo: el acorde se abre, no se
                 # mueve
                 voces = notas if not climax else [notas[0] - 12] + notas
-                # 1.05 pulsos y no 0.45. A 123 BPM 0.45 son 220 ms: eso
-                # cubre el 22% del tiempo cuando las referencias cubren 71-84%,
-                # y una capa que suena una quinta parte del tiempo se escucha
-                # cortada por bien colocada que este. 1.05 son 512 ms — sigue
-                # siendo un golpe y no un pad, pero ahora tiene cola.
-                # 0.92 y no 1.05, y el limite no es estetico: con cuatro
-                # golpes por compas el hueco entre ataque y ataque es 1.0
-                # pulso, asi que 1.05 hace que cada acorde se solape con el
-                # siguiente EN LA MISMA ALTURA. En MIDI eso no sostiene, apaga:
-                # el note-off del primero corta al segundo y la nota real dura
-                # 0.05 pulsos. Es el mismo error de las notas ligadas, y esta
-                # vez lo encontro `escuchar.py` avisando "va a sonar a
-                # staccato", que era exactamente el sintoma.
                 p.acorde(c, h.pulso("acordes", c, pulso), voces,
-                         0.92 if climax else 1.30,
+                         1.60 if climax else 1.50,
                          h.vel("acordes", c, pulso,
                                (58 if climax else 44) + int(12 * emp)))
     return p
@@ -1911,12 +1955,30 @@ def _subkick(bpm: float, h: Humano) -> Pista:
     El bombo del 909 tiene ataque y poco cuerpo abajo de 60 Hz. En un club eso
     se escucha flaco por mas que en auriculares parezca bien. El sub-kick no se
     escucha como un sonido aparte: se escucha como que el bombo pesa mas.
+
+    La duracion de 0.22 pulsos era el bug, no el instrumento: el sub-kick
+    dispara cada pulso ("kick" no tiene dispersion, asi que el hueco entre
+    ataques es siempre exactamente 1.0 pulso, medido con plomo.midi.leer sobre
+    el .mid real) y una nota de 0.22 llena el 22% de ese hueco. escuchar.py
+    (vuelta 010, data/juicio/010.json) lo marca ALTO "va a sonar a staccato"
+    en las 9 secciones de --tema porque el umbral es 45%. El instrumento
+    (Super Sub Drone Bass / Deep Bass, set_v3.py) esta pensado sostenido; 0.9
+    lo deja sonando como tal — 90% del hueco, llenado 90% > 45% — y sigue
+    estrictamente por debajo de 1.0 asi que no se solapa con el ataque
+    siguiente (misma altura siempre: un solape ahi es el bug de
+    revisa_huecos, notas que se apagan solas).
+
+    Tiene que callar exactamente donde calla el bombo (`_calla`, `_hueco` con
+    capa "kick"): antes sonaba en TODOS los pulsos sin excepcion, tapando el
+    hueco de fin de frase que `_bateria` sí deja (vuelta 013, data/juicio).
     """
     p = Pista("Subkick", bpm, canal=0)
     for c in range(COMPASES):
         for pulso in range(4):
+            if _calla(c, pulso) or _hueco(c, "kick", pulso):
+                continue
             p.nota(c, h.pulso("kick", c, pulso),
-                   grado(0, MENOR, 0, octava=0) + 5, 0.22,
+                   grado(0, MENOR, 0, octava=0) + 5, 0.9,
                    h.vel("kick", c, pulso, 96))
     return p
 
@@ -1927,7 +1989,16 @@ def _subkick(bpm: float, h: Humano) -> Pista:
 # hace falta. Cae en semicorcheas que el hat no usa y cambia cada dos compases,
 # asi que el oido nunca termina de aprenderselo — que es la definicion practica
 # de "no suena a loop".
-METALES = ((2.75, 3.25, 3.75), (0.75, 2.25, 3.75), (1.75, 2.75, 3.25),
+#
+# El segundo banco tenia un 2.25 que rompia esa regla: 2.25 es exactamente
+# donde cae el fantasma del hat (`_bateria`, pulsos 0.25/2.25, la MISMA nota
+# CHH del mismo Drum Rack). No es un flam entre dos timbres: es la misma
+# forma de onda disparada dos veces desde pistas distintas, y escuchar.py
+# (vuelta 008, data/juicio/008.json) lo midio en pleno1/pleno2/drop —11 a 13
+# racimos de hats:42/metales:42 a menos de 10 ms por seccion, cada vez que el
+# banco 1 esta activo ((c // 2) % 4 == 1). Se cambia el 2.25 por 2.75, que ya
+# es una de las semicorcheas "seguras" que usan los otros tres bancos.
+METALES = ((2.75, 3.25, 3.75), (0.75, 2.75, 3.75), (1.75, 2.75, 3.25),
            (0.75, 1.75, 3.75))
 
 

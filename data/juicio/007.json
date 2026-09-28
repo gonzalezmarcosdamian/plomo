@@ -1,0 +1,28 @@
+{
+  "vuelta": 7,
+  "fecha": "2026-09-19",
+  "dimension_atacada": "ninguna de las doce de juzgar.py — siguen bloqueadas por falta de audio real (vuelta 004). Se siguio la pista que dejo explicita la vuelta 006 (tambien_notado): correr escuchar.py sobre --pleno --tecno antes de asumir que no hay mas para medir sin audio.",
+  "que_se_hizo": [
+    "Se corrio idea.py --pleno --tecno y se paso por escuchar.py. Aparecio, tal cual lo anticipo la vuelta 006: '[ALTO] bateria:39 y bateria:46 se van a escuchar sucios y corridos — 56 veces caen a menos de 10 ms una de otra'. 39 es el clap, 46 es el hat abierto (OHH).",
+    "La causa esta en dos mecanismos escritos con un dia de diferencia (commits 57c130c y 0f482b8, 9 y 10 de septiembre) que nunca se vieron entre si. El primero puso el hat abierto en los cuatro contratiempos (0.5/1.5/2.5/3.5) cuando 'climax or TECNO'. El commit siguiente, sin mirar esa condicion, angosto el fantasma de clap de TECNO a EXACTAMENTE los mismos dos pulsos, 1.5 y 3.5, para que dejara de sonar como anticipo del bombo. Desde ese segundo commit, en modo TECNO el clap fantasma y el hat abierto pisan el mismo pulso el 100% de las veces que hay clap — no es un choque ocasional como el de la vuelta 006 (bloques de 8 compases), es todos los compases, porque TECNO por si solo ya hace cuatro_abiertos verdadero. Nueve dias sin que nadie corriera escuchar.py con --tecno lo dejaron invisible.",
+    "Arreglo de una sola cosa: el fantasma de clap de TECNO ahora chequea `not cuatro_abiertos` antes de escribirse en 1.5/3.5 — si el abierto ya ocupa ese pulso, el fantasma no se suma encima (el hat abierto, mas fuerte y mas largo, ya cumple el rol de marcar el contratiempo; el fantasma ahi no rellena nada, apila un segundo transitorio agudo). Efecto de costado necesario: `cuatro_abiertos` se calculaba mas abajo, en el bloque de los hats, y el bloque del clap va ANTES en el mismo compas — se subio esa unica linea de definicion al principio del compas, antes de tocar nada, en vez de duplicarla. Sigue siendo una sola variable, ahora visible para los dos bloques que la necesitan."
+  ],
+  "medido_antes": {
+    "tecno_racimo_39_46": "56 veces a <10ms, marcado ALTO por escuchar.py",
+    "tecno_bateria_notas": 628
+  },
+  "medido_despues": {
+    "tecno_racimo_39_46": "0 - no aparece en el veredicto",
+    "tecno_bateria_notas": 565,
+    "tecno_veredicto": "Ninguno de los doce defectos conocidos",
+    "pleno_veredicto": "Ninguno de los doce defectos conocidos (sin cambios: bateria 563 notas, igual que la vuelta 006 - ese camino no tenia el fantasma, no tenia nada para sacar)",
+    "climax_veredicto": "Ninguno de los doce defectos conocidos (bateria 565 notas - climax tampoco escribia el fantasma, solo TECNO lo hacia, asi que este numero no deberia moverse por este cambio: se dejo anotado para que quede el rastro de que se re-corrio)"
+  },
+  "como_se_midio": "python scripts/idea.py --pleno --tecno --nombre _check_tecno --semilla 7, y por separado --pleno solo y --pleno --climax, cada uno seguido de python scripts/escuchar.py postproduction/bocetos/_check_*. Carpetas de prueba borradas despues de medir.",
+  "de_donde_sale": "El aviso explicito de la vuelta 006 (data/juicio/006.json, campo tambien_notado): 'el mismo chequeo, corrido con --pleno --tecno, encuentra OTRO racimo distinto... por la regla de una dimension por vuelta queda para la proxima sesion sin entorno'.",
+  "por_que_no_es_una_de_las_doce": "Mismo caso que las vueltas 005 y 006: bug de arreglo (dos golpes de percusion agudos colisionando) medido sobre MIDI con escuchar.py, no una de las doce dimensiones de audio de juzgar.py. No mueve ningun numero de la tabla de convergencia de docs/PLAN.md.",
+  "necesita_al_DJ": true,
+  "necesita_audio_real": true,
+  "por_que": "El fix esta verificado en MIDI (el racimo 39/46 desaparece del veredicto de escuchar.py en --tecno, sin tocar --pleno ni --climax) pero si el modo TECNO suena mas limpio solo se confirma escuchando el render. Comando para el DJ: regenerar en modo tecno (python scripts/idea.py --pleno --tecno --nombre v8_tecno --semilla 7), montar en Live, renderizar y comparar contra un render viejo en ese modo si quedo alguno. La vuelta 003 sigue esperando que se escuche v5_161-176.wav; eso no cambio.",
+  "tambien_notado": "Se corrio escuchar.py sobre las tres variantes que tocan bateria (pleno, pleno+tecno, pleno+climax) para asegurar que el fix de esta vuelta no rompiera lo que la vuelta 006 ya habia dejado limpio, y las tres dan 'ninguno de los doce defectos conocidos'. No quedan mas invocaciones de idea.py sin correr por escuchar.py que se puedan pensar de memoria; si la proxima sesion sin Live quiere seguir por esta via, tiene que buscar una combinacion de flags nueva (por ejemplo --sin-bombo, u otros modos que no sean pleno) en vez de asumir que ya no hay nada."
+}
