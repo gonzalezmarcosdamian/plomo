@@ -26,8 +26,8 @@ Rango de duraciones: **1:18:48 a 1:31:03**, promedio 1:25:43.
 ## Como se regenera
 
 ```
-python data/youtube/_generar_paquetes.py        # los diez
-python data/youtube/_generar_paquetes.py 96     # el video 11, cuando el set exista
+python scripts/generar_paquetes_youtube.py        # los diez
+python scripts/generar_paquetes_youtube.py 96     # el video 11, cuando el set exista
 ```
 
 El texto editorial (titulo, descripcion, portada, nicho) vive en `_editorial.json`;

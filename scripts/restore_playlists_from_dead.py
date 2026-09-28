@@ -7,7 +7,11 @@ import sys, random, uuid as uuid_lib
 from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.stderr.reconfigure(encoding="utf-8", errors="replace")
-sys.path.insert(0, 'src')
+# La ruta a src/ sale del ARCHIVO, no del directorio donde uno esta parado.
+# Decia sys.path.insert(0, 'src'), que solo funciona corriendo desde la raiz del
+# repo. Cuatro de los diecisseis que lo tenian asi son las herramientas de
+# emergencia de la base: fallaban con ImportError justo cuando mas se necesitan.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / 'src'))
 from plomo import config
 import sqlcipher3
 from datetime import datetime

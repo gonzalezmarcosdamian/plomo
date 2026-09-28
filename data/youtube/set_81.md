@@ -120,4 +120,4 @@ Correcciones y avisos:
 
 ---
 
-Generado por `data/youtube/_generar_paquetes.py`. No publicar sin que Gonzalo lo decida.
+Generado por `scripts/generar_paquetes_youtube.py`. No publicar sin que Gonzalo lo decida.

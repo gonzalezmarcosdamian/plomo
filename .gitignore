@@ -104,9 +104,6 @@ data/*_scan_result.json
 data/pool_apertura_crudo.json
 data/pool_apertura_sel.json
 
-# Archivos grandes sueltos en raíz
-*.MOV
-*.wav
 
 # Config de Claude: los agentes y las skills SON el proyecto y van al repo.
 # Lo que queda afuera es lo personal de cada maquina.
@@ -141,6 +138,21 @@ data/batch_*.txt
 data/_*.json
 data/set_targets/_*.json
 
+# Transcripciones de temas COMERCIALES a mediciones (scripts/iterar.py las cachea
+# en data/traducciones/). Es el mismo material que repiques_* y comparacion_* de
+# postproduction: arreglo de temas ajenos, referencia para producir, igual que los
+# samples. Los dos casos identicos tenian tratamiento opuesto y nada lo explicaba.
+data/traducciones/
+
+# Reportes y scans de una sesion: se regeneran, o no los genera nadie y son el
+# resultado de una pregunta que ya se contesto. El mas grande del repo era
+# evaluacion_listas.json (443 KB) y ningun script lo lee ni lo escribe.
+data/evaluacion_listas.json
+data/radar_sellos_fijos.json
+data/pool_apertura_final.json
+data/reanalizar_energia.json
+data/scan_emi_estilo.txt
+data/sets_41_45_for_spotify.json
 # Permiso de usuario de Spotify (lo genera scripts/spotify_auth.py)
 data/spotify_token.json
 data/spotify_matches.json
