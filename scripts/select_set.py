@@ -150,7 +150,34 @@ def _indice_housero() -> dict:
     return {c: round(sum(1 for x in orden if x < val) / n, 3) for c, val in crudo.items()}
 
 
+def _indice_empuje() -> dict:
+    """El groove SOLO: densidad y bajo, sin descontarle la melodia.
+
+    "Mas brillo y progresivo lindo" (el DJ, 2026-09-28), pedido sobre el set
+    housero. Housero le RESTA el color --es su definicion-- asi que pedirle
+    brillo al mismo indice es pedirle que se contradiga: el tema que empuja y
+    ademas tiene medios queda castigado por tener medios.
+
+    Este eje corta esa parte: mide cuanto empuja y nada mas. El brillo se pide
+    aparte, con `color_peso`, que es lo que ya hace el set colorido. Asi los dos
+    se pueden pedir a la vez sin que uno anule al otro.
+    """
+    tr = _GROOVE.get("tracks") or {}
+    if not tr:
+        return {}
+    dens = [v[0] for v in tr.values()]
+    sub = [v[1] for v in tr.values()]
+    md, ms = sum(dens) / len(dens), sum(sub) / len(sub)
+    sd = (sum((x - md) ** 2 for x in dens) / len(dens)) ** 0.5 or 1.0
+    ss = (sum((x - ms) ** 2 for x in sub) / len(sub)) ** 0.5 or 1.0
+    crudo = {c: (v[0] - md) / sd + (v[1] - ms) / ss for c, v in tr.items()}
+    orden = sorted(crudo.values())
+    n = len(orden)
+    return {c: round(sum(1 for x in orden if x < val) / n, 3) for c, val in crudo.items()}
+
+
 _HOUSERO = _indice_housero()
+_EMPUJE = _indice_empuje()
 VENTANA_ARCO = R.get("energia.ventana_arco", 1)
 BONUS_ARTISTA = R.get("repeticion.bonus_artista_repetido", 0.0)
 MODO_OBJETIVO = R.get("armonia.modo_mayor_objetivo", 0.0)
@@ -295,6 +322,7 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
            cierre_fijo=(), bpm_arco_peso=PESO_BPM_ARCO,
            bpm_span=None, bpm_span_peso=0.0,
            modo_objetivo=None, peso_modo=None, color_peso=0.0, housero_peso=0.0,
+           empuje_peso=0.0,
            max_cam=None, max_retro=None):
     """Devuelve la mejor secuencia de n tracks, o None.
 
@@ -688,6 +716,11 @@ def select(pool, n, e_lo, e_hi, max_bpm_jump=None, prefer=(), bonus=6.0,
                 # color, y por eso los dos pesos no deberian usarse juntos.
                 if housero_peso:
                     c -= _HOUSERO.get(t["id"], 0.0) * housero_peso
+                # EMPUJE: el groove sin descontar la melodia, para cuando se
+                # quiere un set que empuje Y tenga brillo. Se usa junto con
+                # color_peso, no en lugar de el.
+                if empuje_peso:
+                    c -= _EMPUJE.get(t["id"], 0.0) * empuje_peso
                 # LO PROGRESIVO, tercero: descuenta, no veda.
                 if PESO_PROG and t["_prog"]:
                     c -= PESO_PROG
@@ -940,6 +973,7 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
             peso_modo=spec.get("peso_modo"),
             color_peso=spec.get("color_peso", 0.0),
             housero_peso=spec.get("housero_peso", 0.0),
+            empuje_peso=spec.get("empuje_peso", 0.0),
             max_cam=spec.get("max_camelot"),
             max_retro=spec.get("max_retroceso"),
         )

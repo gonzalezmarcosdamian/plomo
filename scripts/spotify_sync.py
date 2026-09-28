@@ -287,14 +287,22 @@ def main() -> None:
             continue
         doc = json.loads(f.read_text(encoding="utf-8"))
         nombre = args.prefijo + doc["name"]
-        uris, faltan = [], []
+        uris, faltan, sin_preguntar = [], [], []
+        cortado = ""
         for t in doc["tracks"]:
             cid = t["content_id"]
             if cid in cache:
                 uri, nom = cache[cid]["uri"], cache[cid]["nombre"]
             else:
-                uri, nom = sp.buscar(t["artist"], t["title"],
-                                    (POOL.get(cid) or {}).get("dur_seg"))
+                try:
+                    uri, nom = sp.buscar(t["artist"], t["title"],
+                                         (POOL.get(cid) or {}).get("dur_seg"))
+                except CuotaAgotada as e:
+                    # no es ausencia: es que no pude preguntar. Se publica lo que
+                    # hay y se avisa, en vez de tirar la corrida entera.
+                    sin_preguntar.append(f"{t['artist']} - {t['title']}")
+                    cortado = str(e)
+                    continue
                 cache[cid] = {"uri": uri, "nombre": nom} if uri else None
                 if cache[cid] is None:
                     # no se cachea el fracaso: la proxima corrida vuelve a
@@ -316,6 +324,11 @@ def main() -> None:
             print(f"  {len(uris)}/{len(doc['tracks'])} temas -> {f_out.relative_to(RAIZ)}")
             for x in faltan:
                 print(f"    no esta en Spotify: {x[:66]}")
+        if sin_preguntar:
+            print(f"    {len(sin_preguntar)} temas SIN PREGUNTAR: {cortado}")
+            for x in sin_preguntar[:5]:
+                print(f"      {x[:66]}")
+            print("    la lista quedo incompleta; re-correr cuando vuelva la cuota")
             continue
         pid = sp.playlist_por_nombre(nombre)
         if pid is None:

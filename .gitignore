@@ -23,6 +23,10 @@ Thumbs.db
 # Secrets
 .env
 *.key
+# Credencial OAuth de YouTube (se baja de la consola de Google) y el permiso del DJ
+# (lo genera scripts/youtube_auth.py). Con cualquiera de los dos se opera el canal.
+data/youtube_client_secret.json
+data/youtube_token.json
 
 # Rekordbox DB / backups (personal, non-shareable)
 *.db.backup-*

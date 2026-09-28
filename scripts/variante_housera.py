@@ -43,10 +43,16 @@ POOL = {t["id"]: t for t in json.loads((RAIZ / "data/pool.json").read_text(encod
 HOUSERO = R.get("estilo.housero") or {}
 
 
-def indice() -> dict:
-    """El mismo indice que usa el solver, para poder recortar el pool con el."""
+def indice(brillo: bool) -> dict:
+    """El mismo indice que usa el solver, para recortar el pool con el.
+
+    Con `--brillo` se usa `_EMPUJE`, que mide el groove SIN descontarle la
+    melodia. `_HOUSERO` le resta el color por definicion, asi que pedirle brillo
+    es pedirle que se contradiga: el tema que empuja y ademas tiene medios queda
+    castigado justamente por tenerlos.
+    """
     import select_set as S
-    return S._HOUSERO
+    return S._EMPUJE if brillo else S._HOUSERO
 
 
 def spec_base(num: int) -> tuple[Path, dict, dict]:
@@ -64,12 +70,14 @@ def main() -> None:
     ap.add_argument("--num", type=int, required=True)
     ap.add_argument("--nombre", default="")
     ap.add_argument("--top", type=int, default=260, help="cuantos temas del ranking entran al pool")
+    ap.add_argument("--brillo", action="store_true",
+                    help="groove CON melodia: usa el eje empuje y premia el color")
     ap.add_argument("--pico", type=float, default=0.75,
                     help="en que fraccion del set cae el pico")
     ap.add_argument("--dry", action="store_true")
     args = ap.parse_args()
 
-    H = indice()
+    H = indice(args.brillo)
     f_base, cfg, base = spec_base(args.base)
     s = json.loads(json.dumps(base))          # copia, el base no se toca
 
@@ -99,8 +107,16 @@ def main() -> None:
     s["num"] = args.num
     s["name"] = args.nombre or f"{args.num}. {s['name'].split('. ', 1)[1]}"
     s["grupo"] = s.get("grupo", "") + " housero"
-    s["housero_peso"] = HOUSERO.get("peso", 1.5)
-    s["color_peso"] = 0.0          # es el eje contrario: no se piden los dos
+    if args.brillo:
+        # Los dos ejes a la vez, que es lo que pide "housero pero con brillo":
+        # el empuje elige el pool y el color decide entre los que empujan.
+        s["empuje_peso"] = HOUSERO.get("peso", 1.5)
+        s["housero_peso"] = 0.0
+        s["color_peso"] = (R.get("estilo.colorido") or {}).get("color_peso", 1.5)
+    else:
+        s["housero_peso"] = HOUSERO.get("peso", 1.5)
+        s["empuje_peso"] = 0.0
+        s["color_peso"] = 0.0      # el eje contrario: no se piden los dos
     s["mezcla_objetivo"] = HOUSERO.get("mezcla_objetivo", s.get("mezcla_objetivo"))
     # El pico va MAS TARDE que en el set base. Con el arco heredado (0.65) el
     # unico tema muy alto del pool housero caia a la mitad y despues el set
