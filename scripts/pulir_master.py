@@ -60,7 +60,8 @@ TECHO_DBTP = -1.0
 SR_SALIDA = 48000
 UMBRAL_SILENCIO_DB = -60.0
 COLA_S = 2.0               # aire despues de que la musica termina
-FUNDIDO_ENTRADA_S = 0.02   # evita el click si la musica arranca de golpe
+FUNDIDO_ENTRADA_S = 0.005  # evita el click; mas largo le come el ataque al primer bombo
+PREROLL_S = 0.5            # aire antes del primer sonido
 FUNDIDO_SALIDA_S = 1.5
 CORTE_SUBSONICO_HZ = 10.0
 VECINOS_DECLIP = 6
@@ -84,7 +85,7 @@ def recortar(x: np.ndarray, sr: int) -> tuple[np.ndarray, float, float]:
     """Saca el silencio digital de punta y cola. Devuelve el audio y los segundos recortados."""
     umbral = 10 ** (UMBRAL_SILENCIO_DB / 20)
     sonando = np.where(np.abs(x).max(axis=1) > umbral)[0]
-    ini = int(sonando[0])
+    ini = max(0, int(sonando[0]) - int(PREROLL_S * sr))
     fin = min(len(x), int(sonando[-1]) + int(COLA_S * sr))
     return x[ini:fin].copy(), ini / sr, (len(x) - fin) / sr
 
@@ -124,7 +125,9 @@ def curva_de_ganancia(puntos: list[list[float]], n: int, sr: int, inicio_s: floa
 def fundir(x: np.ndarray, sr: int) -> np.ndarray:
     y = x.copy()
     ne, ns = int(FUNDIDO_ENTRADA_S * sr), int(FUNDIDO_SALIDA_S * sr)
-    y[:ne] *= np.linspace(0, 1, ne)[:, None]
+    arranque = int(PREROLL_S * sr)
+    y[:arranque] = 0.0
+    y[arranque:arranque + ne] *= np.linspace(0, 1, ne)[:, None]
     y[-ns:] *= (np.cos(np.linspace(0, np.pi, ns)) * 0.5 + 0.5)[:, None]
     return y
 

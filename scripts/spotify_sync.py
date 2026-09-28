@@ -182,14 +182,17 @@ class Spotify:
                 res = self.get("/search", q=q, type="track", limit=10)["tracks"]["items"]
             except requests.HTTPError:
                 continue
-            mejor, punt = None, 0.0
+            mejor, punt, pa_mejor = None, 0.0, 0.0
             for it in res:
                 # se compara el titulo CON y SIN el sufijo: Spotify publica
                 # "Juri" y la biblioteca lo tiene como "Juri (Original Mix)",
                 # y comparar solo la forma larga lo dejaba en 0.47 y afuera
                 pt = max(parecido(titulo, it["name"]), parecido(t, it["name"]),
                          parecido(nucleo, it["name"]), parecido(corto, it["name"]))
-                p = pt * 0.6 + max(parecido(artista, ar["name"]) for ar in it["artists"]) * 0.4
+                pa = max(parecido(artista, ar["name"]) for ar in it["artists"])
+                pa = max(pa, max(parecido(artista.split(",")[0].strip(), ar["name"])
+                                 for ar in it["artists"]))
+                p = pt * 0.6 + pa * 0.4
                 nom = norm(it["name"])
                 gente = norm(" ".join(ar["name"] for ar in it["artists"]))
                 if remix:
@@ -215,7 +218,16 @@ class Spotify:
                     elif rel < 0.04:
                         p += 0.08
                 if p > punt:
-                    mejor, punt = it, p
+                    mejor, punt, pa_mejor = it, p, pa
+            # PISO al parecido de artista. "Confusion" de Dilby & Amine K
+            # engancho el "Confusion" de Adam Sellouk & Glowal: titulo 1.00,
+            # artista 0.38, y el promedio ponderado daba 0.75. Con un titulo
+            # generico el titulo no identifica nada, y el artista es lo unico
+            # que queda. El piso es 0.40: los matches buenos verificados van
+            # de 0.53 para arriba (Rockka contra Rockka+Fuenka 0.63, Andy Moor
+            # & Adam White contra su version con Whiteroom 0.71).
+            if pa_mejor < 0.40:
+                mejor, punt = None, 0.0
             if mejor and punt >= 0.62:
                 return mejor["uri"], f"{mejor['artists'][0]['name']} - {mejor['name']}"
         return None, ""

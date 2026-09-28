@@ -96,9 +96,14 @@ def main() -> None:
                 res = requests.get(S.API + "/search", headers=h,
                                    params={"q": nucleo, "type": "track", "limit": 5},
                                    timeout=20).json()["tracks"]["items"]
-                mejor = max((S.parecido(t["title"], x["name"]) * 0.6
-                             + max(S.parecido(t["artist"], a["name"]) for a in x["artists"]) * 0.4,
-                             x) for x in res) if res else (0, None)
+                # key=, si no Python compara el SEGUNDO elemento cuando hay
+                # empate de puntaje: dos candidatos con el mismo parecido hacen
+                # `dict > dict` y revienta con TypeError. Pasa justo en el caso
+                # que este bloque existe para cubrir --el tema que no se
+                # encontro-- que es cuando hay varias versiones parecidas.
+                mejor = max(((S.parecido(t["title"], x["name"]) * 0.6
+                              + max(S.parecido(t["artist"], a["name"]) for a in x["artists"]) * 0.4,
+                              x) for x in res), key=lambda par: par[0]) if res else (0, None)
                 if mejor[0] >= 0.62:
                     problemas.append(f"#{n+1} {t['artist'][:18]} - {t['title'][:30]}  "
                                      f"SI ESTA en Spotify como: {mejor[1]['artists'][0]['name']} - "
@@ -127,6 +132,19 @@ def main() -> None:
                 # edit --Portal Six esta en 4:00 y no existe otra version--.
                 # Es el mismo mix y sirve igual para escuchar el set en el auto;
                 # lo que no sirve es otro remix, y eso si es un problema.
+                # El ARTISTA, que el validador no miraba: un titulo generico
+                # engancha cualquier cosa. "Confusion" de Dilby quedo como el
+                # "Confusion" de Adam Sellouk & Glowal y validaba perfecto,
+                # porque el remixer no estaba nombrado y el largo daba parecido.
+                suyos = [a["name"] for a in x.get("artists", [])]
+                pa = max((S.parecido(t["artist"], a) for a in suyos), default=0.0)
+                pa = max(pa, max((S.parecido(t["artist"].split(",")[0].strip(), a)
+                                  for a in suyos), default=0.0))
+                if pa < 0.40:
+                    problemas.append(
+                        f"#{n+1} OTRO ARTISTA: la biblioteca dice "
+                        f"{t['artist']} y Spotify acredita {chr(44).join(suyos)}")
+                    continue
                 dur = (POOL.get(t["content_id"]) or {}).get("dur_seg")
                 sdur = (x.get("duration_ms") or 0) / 1000
                 if dur and sdur and abs(sdur - dur) / dur > 0.30:
