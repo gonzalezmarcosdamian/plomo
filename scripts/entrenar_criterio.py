@@ -53,6 +53,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import datetime
 import statistics as st
 import sys
 from pathlib import Path
@@ -64,6 +65,7 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 import select_set as S  # noqa: E402
+from plomo.rules import R  # noqa: E402
 
 CONFIGS = ["cumple_zorro_warm.json", "cumple_zorro.json", "cumple_zorro_3a5.json"]
 
@@ -315,22 +317,38 @@ def main() -> None:
     print(f"\n-> {destino.relative_to(RAIZ)}")
 
     if args.aplicar:
-        rp = RAIZ / "rules" / "curaduria.json"
-        r = json.loads(rp.read_text(encoding="utf-8"))
-        donde = {"MAX_E_STEP": ("energia", "max_escalon"),
-                 "VENTANA_ARCO": ("energia", "ventana_arco"),
-                 "BONUS_ARTISTA": ("repeticion", "bonus_artista_repetido"),
-                 "PESO_ARCO": ("energia", "peso_desvio_arco"),
-                 "PESO_GROOVE": ("groove", "peso_continuidad"),
-                 "PESO_PROG": ("estilo", "peso_progresivo"),
-                 "PESO_AJENO": ("sonido_propio", "peso_ajeno"),
-                 "PESO_MEZCLA": ("genero", "peso_mezcla")}
-        for k, (sec, campo) in donde.items():
-            r[sec][campo]["valor"] = pesos[k]
-            r[sec][campo]["porque"] += (f" | Entrenado contra los setlists de referencia el "
-                                        f"2026-09-23 (scripts/entrenar_criterio.py, perdida {mejor:.3f}).")
-        rp.write_text(json.dumps(r, indent=1, ensure_ascii=False), encoding="utf-8")
-        print("reglas actualizadas con los pesos entrenados")
+        # Esto escribia `rules/curaduria.json` a mano: sin subir _meta.version, sin
+        # agregar nada al historial, sin tocar `evidencia`, y firmando cada cambio
+        # con la fecha "2026-09-23" HARDCODEADA en la f-string. O sea que el unico
+        # camino automatizado que cambia reglas era el que violaba el proceso que
+        # las reglas exigen, y toda corrida futura iba a firmar con la fecha de
+        # septiembre. Ahora pasa por R.aplicar(), que sube version y deja historial.
+        donde = {"MAX_E_STEP": "energia.max_escalon",
+                 "VENTANA_ARCO": "energia.ventana_arco",
+                 "BONUS_ARTISTA": "repeticion.bonus_artista_repetido",
+                 "PESO_ARCO": "energia.peso_desvio_arco",
+                 "PESO_GROOVE": "groove.peso_continuidad",
+                 "PESO_PROG": "estilo.peso_progresivo",
+                 "PESO_AJENO": "sonido_propio.peso_ajeno",
+                 "PESO_MEZCLA": "genero.peso_mezcla"}
+        # MAX_BPM_JUMP se entrena y NO esta aca a proposito: gano en 2.0, que es el
+        # borde inferior de su grilla, y un ganador en el borde es sospechoso hasta
+        # que la grilla se extienda. `bpm.max_salto` sigue en lo que diga la regla.
+        hoy = datetime.now().strftime("%Y-%m-%d")
+        cambiadas = 0
+        for k, ruta in donde.items():
+            if R.get(ruta) == pesos[k]:
+                continue
+            R.aplicar(R.proponer(
+                ruta, pesos[k],
+                (f"Entrenado el {hoy} contra los setlists de referencia con "
+                 f"scripts/entrenar_criterio.py (beam {args.beam}, perdida {mejor:.3f})."),
+                autor="entrenar_criterio.py"),
+                nota="descenso por coordenadas con la jerarquia como restriccion")
+            cambiadas += 1
+        print(f"reglas actualizadas: {cambiadas} valores, version {R.version}")
+        if not cambiadas:
+            print("  (el entrenamiento no movio ningun valor)")
 
 
 if __name__ == "__main__":

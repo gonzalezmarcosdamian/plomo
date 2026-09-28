@@ -23,7 +23,11 @@ from typing import Optional
 from .camelot import distance as camelot_dist
 from .energy import reorder_by_energy_and_camelot
 
-FEEDBACK_FILE = Path(__file__).parent.parent.parent / "transition_feedback.json"
+# El archivo vive en `data/`, que es lo que dicen docs/ARCHITECTURE.md, el agente
+# analista y la skill /set. Apuntaba a la RAIZ del repo, o sea a otro archivo con
+# el mismo nombre: habia dos, con nueve entradas cada uno y cero en comun, y las
+# nueve que el DJ anoto tocando estaban en el que nadie leia.
+FEEDBACK_FILE = Path(__file__).parent.parent.parent / "data" / "transition_feedback.json"
 
 
 # ─────────────────────────────────────────────────────────────────────────────

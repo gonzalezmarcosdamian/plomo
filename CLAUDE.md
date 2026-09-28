@@ -74,8 +74,17 @@ Lo esencial:
 - Se **selecciona** con key y energía a la vez (`select_set.py`), no se elige
   por vibe y se ordena después — una selección incoherente no se arregla
   reordenando.
-- Tope: 2 tracks por artista, 3 por remixer, 0 repetidos entre sets consecutivos.
-- Un set de 1h30 son 18-20 tracks (una caja), no 12 (una playlist).
+- Tope por artista: la regla dice **4** (`repeticion.max_por_artista_en_set`) y
+  `select_set.py` usa **1** por defecto, que los configs suben cuando el set es el
+  recorrido por un vecindario. 0 repetidos entre sets consecutivos.
+  Aca decia "2 por artista", que es el valor anterior a la v1.5.0 de las reglas:
+  el numero vive en `rules/curaduria.json` y este archivo no lo puede repetir sin
+  quedarse viejo. Ante la duda, `python -c "...R.get('repeticion.max_por_artista_en_set')"`.
+- Cuantos temas entran: `densidad.tracks_por_hora` = **8.8**, o sea 13 para 1h30.
+  Aca decia 18-20, que son 12-13 por hora — la regla vieja cuya propia evidencia
+  dice que con 12/hora ocho de cada diez sets no entraban en su horario y el 108
+  duraba 2h59 con cartel de 2h. El solver ya no usa ese numero: calcula cuantos
+  entran desde la duracion mediana del pool (`select_set.py`).
 
 ## Energía faltante
 

@@ -1,10 +1,17 @@
 {
  "_meta": {
-  "version": "1.15.0",
+  "version": "1.15.3",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
-  "nota_de_proceso": "2026-09-21: nueve cambios de estos dias se hicieron sin subir version ni llenar historial, aunque el proceso lo pide. Se reconstruyo desde git con los valores reales de cada commit. Desde aca: cada cambio de regla se registra en historial en el MISMO commit que lo aplica."
+  "nota_de_proceso": "2026-09-21: nueve cambios de estos dias se hicieron sin subir version ni llenar historial, aunque el proceso lo pide. Se reconstruyo desde git con los valores reales de cada commit. Desde aca: cada cambio de regla se registra en historial en el MISMO commit que lo aplica.",
+  "campos": {
+   "valor": "lo que el codigo lee.",
+   "porque": "para que existe la regla, con los numeros que la sostienen.",
+   "evidencia": "contra que se midio. 'PENDIENTE' es una deuda, no un adorno.",
+   "duro": "true = restriccion que el solver no puede violar; si no, es un costo.",
+   "decision_del_dj": "true = la puso el DJ escuchando, no una medicion. La referencia NO la refuta: si 40 setlists ajenos la violan, eso describe a esos DJ, no un error nuestro. backtest_rules.py la reporta con el numero pero sin veredicto de refutacion."
+  }
  },
  "armonia": {
   "max_camelot_dist": {
@@ -12,14 +19,14 @@
    "duro": true,
    "porque": "Un salto de rueda mayor a 1 se escucha como choque tonal salvo que la transicion sea larga o con corte de bajos.",
    "evidencia": "Medido 2026-09-21 contra 182 transiciones consecutivas con key de 11 DJs de referencia (scripts/medir_contra_referencia.py): 27% misma key o relativa, 21% un paso, 15% dos pasos, 36% tres o mas; 29% sin mover el numero de la rueda. Con el tope en 1 el solver daba 100% de pasos de un lugar: mas prolijo que cualquier profesional. Se sube a 2, que es lo que hacen el 15% de las veces y que la auditoria no considera flojo. Los saltos de 3+ NO se habilitan: la key de la referencia sale de nuestro analisis de los temas matcheados y parte de ese 36% puede ser error de deteccion. Verificar con una fuente externa antes de abrirlos.",
-   "sospecha": "Es la regla mas probable de estar de mas. Los DJs de referencia saltan de rueda cuando el track entrante entra por breakdown. Si el backtest muestra >15% de saltos >=2 en sets reales, la regla tiene que pasar de dura a penalizada."
+   "sospecha": "DISPARADOR CUMPLIDO Y NO RESUELTO. El texto anterior decia: 'si el backtest muestra >15% de saltos >=2 en sets reales, la regla tiene que pasar de dura a penalizada'. La evidencia de este mismo nodo reporta 15% de dos pasos MAS 36% de tres o mas = 51%, o sea 3.4 veces el disparador, y la regla sigue con duro=true y tope 2. Lo que falta para moverla no es medir de nuevo: es una fuente EXTERNA de key, porque ese 36% sale de nuestro propio analisis y puede tener error de deteccion."
   },
   "penal_misma_key_desde": {
    "valor": 2,
    "duro": false,
-   "peso": 1.2,
    "porque": "Quedarse mas de 2 tracks en la misma tonalidad aplana el set. Se penaliza desde la tercera repeticion.",
-   "evidencia": "Criterio propio, sin medir."
+   "evidencia": "Criterio propio, sin medir.",
+   "_nota": "Tenia un campo `peso: 1.2` que NINGUN codigo lee: R.get() devuelve `valor`. El peso que usa el solver es la regla hermana `armonia.penal_misma_key_desde_peso`. Estaba escrito dos veces y editar el de adentro no hacia nada."
   },
   "peso_salto_camelot": {
    "valor": 0.5,
@@ -38,13 +45,13 @@
   "monotonia_desde": {
    "valor": 2,
    "duro": false,
-   "peso": 0.5,
    "porque": "Subir un paso hacia el mismo lado tres veces seguidas aburre igual que no moverse. Se penaliza desde la tercera consecutiva.",
-   "evidencia": "En los sets del solver las corridas monotonas cubren el 22% de las transiciones con largo maximo 5; en los sets de referencia cubren el 3% con largo maximo 2."
+   "evidencia": "En los sets del solver las corridas monotonas cubren el 22% de las transiciones con largo maximo 5; en los sets de referencia cubren el 3% con largo maximo 2.",
+   "_nota": "Tenia un campo `peso: 0.5` que NINGUN codigo lee: R.get() devuelve `valor`. El peso que usa el solver es la regla hermana `armonia.monotonia_desde_peso`. Estaba escrito dos veces y editar el de adentro no hacia nada."
   },
   "monotonia_desde_peso": {
    "valor": 0.5,
-   "porque": "Costo por cada paso monotono mas alla del umbral. La mitad que penal_quedarse (0.8): repetir direccion es menos grave que no moverse."
+   "porque": "Costo por cada paso monotono mas alla del umbral. Escrito como 'la mitad que penal_quedarse (0.8)' cuando penal_quedarse_en_la_rueda bajo a 0.3 en la v1.4.0: 0.5 no es la mitad, es 1.7 veces. La relacion que justificaba el numero quedo al reves y el numero no se volvio a mirar: repetir direccion es menos grave que no moverse."
   },
   "modo_mayor_objetivo": {
    "valor": 0.11,
@@ -82,7 +89,7 @@
   },
   "peso_desvio_arco": {
    "valor": 4.0,
-   "porque": "La energia manda. Queda arriba de todo: 6.0 contra 4.0 del groove, 2.5 de lo progresivo, 2.0 de la afinidad de artista y 1.5 de la cuota de genero. El DJ, 2026-09-23: 'quiero que domine la energia y groove constante, luego lo progresivo y luego recien la cuota de genero; artistas le gana, productores le gana a cuota de genero'. En el codigo la escala estaba al reves: la cuota de genero pesaba 8.0 y el desvio del arco 3.0, o sea el genero mandaba 2.7 veces mas que la energia. Los cuatro temas que el DJ rechazo escuchando entraron por la cuota. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
+   "porque": "La energia manda. Hoy EMPATA con el groove: 4.0 y 4.0, arriba de 2.5 de lo progresivo, 2.0 de la afinidad de artista y 1.5 de la cuota de genero. Este texto decia 6.0 contra 4.0, que eran los valores de la v1.9.0; la v1.10.0 bajo el arco y nadie corrigio la frase. 'La energia manda' es el pedido del DJ y el empate no lo cumple: subir el arco o bajar el groove necesita backtest, 2.5 de lo progresivo, 2.0 de la afinidad de artista y 1.5 de la cuota de genero. El DJ, 2026-09-23: 'quiero que domine la energia y groove constante, luego lo progresivo y luego recien la cuota de genero; artistas le gana, productores le gana a cuota de genero'. En el codigo la escala estaba al reves: la cuota de genero pesaba 8.0 y el desvio del arco 3.0, o sea el genero mandaba 2.7 veces mas que la energia. Los cuatro temas que el DJ rechazo escuchando entraron por la cuota. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
   },
   "formula_sin_bpm": {
    "valor": "v2",
@@ -139,7 +146,8 @@
   },
   "cierre_no_baja_del_inicio": {
    "valor": true,
-   "porque": "El DJ, 2026-09-23: 'quiero que no baje'. Un set que termina mas abajo de donde empezo entrego la pista peor de lo que la recibio. Es la forma mas directa de escribir el pedido: no una forma impuesta, sino un piso. Medido antes de ponerla, dos de los ocho sets de la noche terminaban debajo de su arranque."
+   "porque": "El DJ, 2026-09-23: 'quiero que no baje'. Un set que termina mas abajo de donde empezo entrego la pista peor de lo que la recibio. Es la forma mas directa de escribir el pedido: no una forma impuesta, sino un piso. Medido antes de ponerla, dos de los ocho sets de la noche terminaban debajo de su arranque.",
+   "decision_del_dj": true
   }
  },
  "bpm": {
@@ -161,7 +169,7 @@
   "max_por_artista_en_set": {
    "valor": 4,
    "porque": "Cuantos temas del mismo productor entran en un set, contando remixers. No es una regla de higiene: es lo que decide si el set es una coleccion de temas sueltos o el recorrido por un vecindario. Los configs pueden bajarlo, nunca subirlo sin evidencia.",
-   "CONFLICTO": "El codigo usa max_per_artist=1 por defecto en select_set.py y los set_configs existentes tambien pasan 1. La regla escrita dice 2. Uno de los dos esta mal. Resolver antes de tocar nada mas.",
+   "CONFLICTO": "Cuatro valores para la misma regla: 4 aca, 1 por defecto en select_set.py, 3 en build_set.py (target.get('max_per_artista', 3)) y 99 en set_desde_setlist.py:204. Este texto decia 'la regla escrita dice 2', que era el valor anterior a la v1.5.0. Y el porque dice que los configs pueden bajarlo pero nunca subirlo: el 99 lo sube. Resolver decidiendo UN default y pasandolo por config donde haga falta.",
    "evidencia": "2026-09-22, invalidada la version anterior (2). Dos evidencias. La fuerte: medido sobre los 8 setlists de Maze 28 y Simon Vuarambon en ventanas de 17 temas —el largo de nuestros sets—, repiten un artista 5 veces (p90 9); los otros 26 DJs de referencia, 4; nuestros sets daban 0. La segunda: el set 43 del propio DJ ('Maze 28 + Cendryma', junio) tiene 24 temas de SIETE artistas —Cendryma 4, Gai Barone 4, Rockka 4, Maze 28 4— con Mango Alley nueve veces, y con el tope en 2 es imposible de armar. CORRECCION del 2026-09-22: en la primera version de esta evidencia se dijo que el DJ habia llamado 'increible' al set 43. No fue asi: hablaba del set de Maze 28 en el club La Biblioteca (Buenos Aires, 29/08/2026), que es otra cosa. El 43 sigue siendo un ejemplo valido de set suyo con el tope viejo roto, pero no es un set que el haya elogiado."
   },
   "max_por_remixer_en_set": {
@@ -671,6 +679,92 @@
      "por_que": "brillo_pct es la version 1 refutada por los casos del DJ: Shades Of Blue 0.981 de brillo contra 0.000 de color, Leuben 0.842 contra 0.528. reemplazar.py ya usaba la buena, asi que 'colorido' significaba dos cosas distintas segun el script. No cambia ningun peso: cambia QUE se mide."
     }
    ]
+  },
+  {
+   "version": "1.15.2",
+   "fecha": "2026-09-27",
+   "tema": "el medidor del cierre estaba roto y una decision del DJ se reportaba como regla refutable",
+   "cambios": [
+    {
+     "regla": "backtest_rules.py: cierra_arriba_pct",
+     "antes": "ens[-1] > max(ens) - baja_minima_al_cierre, con la regla en 0.0",
+     "despues": "umbral propio del medidor (0.3) mas 'termina abajo del arranque'",
+     "por_que": "con la regla en 0.0 la condicion era ens[-1] > max(ens), falsa por definicion: daba 0% para cualquier corpus y el reporte lo imprimia como medicion con veredicto COMPATIBLE. Ahora da 7% en los sets propios, 21% en lo tocado y 12% en la referencia, y el 42% de la referencia termina abajo de donde arranco."
+    },
+    {
+     "regla": "_meta.campos.decision_del_dj",
+     "antes": "no existia: toda regla era refutable por la referencia",
+     "despues": "campo explicito, y cierre_no_baja_del_inicio lo lleva",
+     "por_que": "'quiero que no baje' es una eleccion, no una hipotesis. El 42% de la referencia la viola y eso no la refuta; sin el campo, el backtest empujaba a desarmar un pedido del DJ con datos de otros DJ."
+    },
+    {
+     "regla": "_meta.version",
+     "antes": "1.15.0 con un 1.15.1 ya escrito en historial",
+     "despues": "1.15.2",
+     "por_que": "el campo que R.version lee se habia quedado atras del historial"
+    }
+   ]
+  },
+  {
+   "version": "1.15.3",
+   "fecha": "2026-09-27",
+   "tema": "las reglas decian cosas falsas sobre si mismas (ningun valor cambia)",
+   "cambios": [
+    {
+     "regla": "energia.peso_desvio_arco.porque",
+     "antes": "decia 6.0 contra 4.0, son 4.0 y 4.0",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "estilo.peso_mezcla_genero",
+     "antes": "marcada MUERTA, la que corre es genero.peso_mezcla",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "sonido_propio._estado",
+     "antes": "decia que nadie lo lee y el solver lo cobra",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "repeticion.max_por_artista_en_set.CONFLICTO",
+     "antes": "eran 4 valores, no 2",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "armonia.max_camelot_dist.sospecha",
+     "antes": "el disparador ya se cumplio 3.4x",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "armonia.penal_misma_key_desde",
+     "antes": "sale el campo peso que era un senuelo",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "armonia.monotonia_desde",
+     "antes": "sale el campo peso que era un senuelo",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "armonia.monotonia_desde_peso.porque",
+     "antes": "la relacion estaba invertida",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    },
+    {
+     "regla": "estilo.colorido",
+     "antes": "aviso de que su porque calibra contra un objetivo abandonado",
+     "despues": "texto corregido",
+     "por_que": "un porque desactualizado se cita como si fuera medicion"
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -711,7 +805,7 @@
    "CONFLICTO": "Relacion obligatoria: w_rep / w_lift >= 1.5. Por debajo de eso el bonus gana y los estrenos vuelven al nivel base. Y ojo: el bonus estrecha tambien ENTRE sets de una misma tanda (85/180 tracks distintos -> 59/180), cosa que la penalizacion no cubre porque mira historico, no la tanda. Si se enciende, hay que poner max_apariciones_por_track: 1 en el config."
   },
   "_no_aplica_backtest": "Esta familia es por definicion una restriccion autoimpuesta: ningun setlist de otro DJ puede refutarla. Mandarla a backtest_rules.py esperando un veredicto es un error de categoria, no una medicion.",
-  "_estado": "PROPUESTO con evidencia, sin aplicar. Los dos valores en 0.0. Ademas: ningun modulo lee sonido_propio todavia — encenderlo no es cambiar un numero, es agregar el termino de costo en select().",
+  "_estado": "APLICADO EN PARTE. `peso_ajeno` = 2.0 se lee en select_set.py:74 y se cobra en :652 (c += PESO_AJENO), y reemplazar.py hace lo mismo. Los otros dos valores siguen en 0.0, o sea apagados. Este campo decia 'ningun modulo lee sonido_propio todavia', que era cierto antes de la v1.6.0 y falso desde entonces.",
   "peso_ajeno": {
    "valor": 2.0,
    "porque": "Un tema cuyo artista Y sello no aparecen nunca en djmdHistory ni en sus favoritos paga 2.0. Medido el 2026-09-23: los 4 temas que rechazo escuchando eran los 4 ajenos; el set 140, el que elogio entero, tiene 0 ajenos en 17. Por forma del audio esos 4 eran indistinguibles del resto de la biblioteca (2.6-3.7 contra mediana 2.40), asi que este es el unico eje que los ve. Arriba de la cuota de genero, como pidio el DJ. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
@@ -721,7 +815,8 @@
   "peso_mezcla_genero": {
    "valor": 8.0,
    "porque": "Costo por pasarse de la cuota de un genero. Comparado con peso_desvio_arco (3.0), desviarse de la mezcla pedida cuesta mas que un punto de energia: cuando el DJ pide una proporcion, la esta pidiendo en serio.",
-   "evidencia": "2026-09-18: los tres sets del sonido Dilby salieron con Progressive House en 4 de 24 y 0 de 24, porque el filtro de genero es binario y no habia forma de pedir una proporcion."
+   "evidencia": "2026-09-18: los tres sets del sonido Dilby salieron con Progressive House en 4 de 24 y 0 de 24, porque el filtro de genero es binario y no habia forma de pedir una proporcion.",
+   "_estado": "MUERTA: ningun codigo lee esta ruta. La que corre es genero.peso_mezcla = 1.5, en select_set.py:75. Este 8.0 es el valor que el historial v1.6.0 identifico como el bug —la cuota de genero pesando 2.7 veces mas que el arco— y quedo escrito aca, antes que el otro en el orden de las claves, asi que el que abre el archivo encuentra primero el numero que no rige. No se borra para no perder su evidencia; se lee en genero.peso_mezcla."
   },
   "nucleo_progresivo": {
    "valor": [
@@ -743,7 +838,8 @@
     "peso_modo": 2.0,
     "medida": "color_pct"
    },
-   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el COLOR: los medios pesados por una campana sobre el aire, como percentil de la biblioteca. Oscuro es cualquiera de los dos extremos, asi que no es una suma. Antes se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 abria con dos temas en el percentil 33 y 43. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove. | 2026-09-23, despues de que el DJ escuchara el 143 entero: de los 7 temas que saco, el 60% estaban en tonalidad mayor contra el 11% de los 10 que dejo. Forzar un 25% obligaba al solver a buscar mayores sin cuerpo. Baja al 11% de los pros, que es lo que sale solo cuando el material da. If I Win, que llamo TEMAZO, es 12B: el problema no es la tonalidad sino pedirla como cuota. | 2026-09-27: `medida` decia cuerpo_pct y el solver leia brillo_pct, la version 1 que estos mismos casos refutaron. Los sets coloridos se armaron premiando lo contrario de lo pedido durante cuatro dias: Shades Of Blue, que el DJ llama oscuro, daba 0.981 de brillo y 0.000 de color. La regla estaba bien escrita; el codigo no la leia."
+   "porque": "Lo que cambia un set 'colorido' respecto de su base. El 25% es donde esta Ezequiel Arias, el mas colorido de la referencia, no un numero inventado. color_peso premia el COLOR: los medios pesados por una campana sobre el aire, como percentil de la biblioteca. Oscuro es cualquiera de los dos extremos, asi que no es una suma. Antes se aplicaba por afuera del costo, como lista de preferidos, y por eso el 143 abria con dos temas en el percentil 33 y 43. El peso se midio barriendo el 143: con 2.0 da 12% de mayores y con 5.0 da 24%, que es el objetivo; de 5.0 a 9.0 no se mueve mas, o sea que 5.0 ya satura la cuota y subirlo solo le sacaria lugar a la energia y al groove. | 2026-09-23, despues de que el DJ escuchara el 143 entero: de los 7 temas que saco, el 60% estaban en tonalidad mayor contra el 11% de los 10 que dejo. Forzar un 25% obligaba al solver a buscar mayores sin cuerpo. Baja al 11% de los pros, que es lo que sale solo cuando el material da. If I Win, que llamo TEMAZO, es 12B: el problema no es la tonalidad sino pedirla como cuota. | 2026-09-27: `medida` decia cuerpo_pct y el solver leia brillo_pct, la version 1 que estos mismos casos refutaron. Los sets coloridos se armaron premiando lo contrario de lo pedido durante cuatro dias: Shades Of Blue, que el DJ llama oscuro, daba 0.981 de brillo y 0.000 de color. La regla estaba bien escrita; el codigo no la leia.",
+   "_nota": "OJO con el porque: describe una calibracion contra un objetivo del 25% de tonalidad mayor y dice que 'con 5.0 da 24%, que es el objetivo'. Los valores vigentes son modo_mayor_objetivo 0.11 y color_peso 1.5: el 25% se abandono el 2026-09-23 cuando se midio que de los 7 temas que el DJ saco del 143 el 60% eran mayores. Quien lea el porque y suba color_peso a 5.0 persigue un objetivo que ya no existe."
   },
   "cuerpo": {
    "valor": "medio - aire + rango_dinamico_db",

@@ -80,10 +80,21 @@ Sube la version menor y deja historial con el valor viejo y la evidencia.
 
 ## Higiene pendiente
 
-`R.conflictos()` lista donde lo escrito no coincide con lo que corre. Hoy hay
-dos abiertos y contaminan todo set que se arme encima:
+`R.conflictos()` lista donde lo escrito no coincide con lo que corre, y
+`backtest_rules.py` agrega `[SIN LECTOR]`: reglas que existen en el JSON y que
+ningun codigo lee, o sea que editarlas no cambia nada. El 2026-09-27 eran 21.
 
-1. `max_por_artista_en_set`: la regla dice 2, el codigo usa 1.
-2. `separacion_minima`: la regla dice 5 tracks, el codigo usa 3.
+Los conflictos abiertos:
+
+1. `max_por_artista_en_set`: **cuatro** valores para la misma regla — 4 en la
+   regla, 1 por defecto en `select_set.py`, 3 en `build_set.py` y 99 en
+   `set_desde_setlist.py`. Aca decia "la regla dice 2", que es el valor previo a
+   la v1.5.0.
+2. `separacion_minima`: la regla escrita dice 5 tracks, el codigo usa 3.
+3. `armonia.max_camelot_dist`: su campo `sospecha` dice que si el backtest
+   muestra >15% de saltos >=2 en sets reales, la regla pasa de dura a penalizada.
+   La evidencia del mismo nodo reporta 51% (15% dos pasos + 36% tres o mas): el
+   disparador esta cumplido 3.4 veces y la regla sigue dura en 2. Lo que falta no
+   es medir de nuevo, es una fuente EXTERNA de key.
 
 `R.sin_evidencia()` lista las reglas duras que nadie midio nunca.

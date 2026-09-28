@@ -53,7 +53,7 @@ Regla nueva:
 
 ```
 dentro de un SET:
-  máx 2 tracks por artista        (separación mínima 5 tracks)
+  máx 4 tracks por artista        (regla; el solver usa 1 salvo que el config lo suba)
   máx 3 tracks por remixer/mano   ← el remixer cuenta como artista
   máx 4 tracks por sello
 
@@ -76,11 +76,20 @@ limitaba la pereza dentro del set: la exportaba hacia afuera.
 Sin estas, el optimizador produce sets que se ven bien en la planilla y son
 injugables. Están implementadas en `select_set.py` como condiciones duras:
 
-1. Escalón de energía **<= 1.3** entre tracks consecutivos
-2. El cierre baja **al menos 0.6** del pico — nunca terminar arriba
-3. Sin retroceso de energía durante la subida (tolerancia 0.4)
-4. Key a distancia **<= 1** en Camelot, BPM **±2**
+1. Escalón de energía **<= 2.3** entre tracks consecutivos
+2. **El cierre NO baja del arranque** (`energia.cierre_no_baja_del_inicio`). El DJ,
+   2026-09-23: *"quiero que no baje"*. Acá decía lo contrario —"el cierre baja al
+   menos 0.6 del pico, nunca terminar arriba"— que era `baja_minima_al_cierre`,
+   en **0.0** desde la v1.12.0 justamente porque forzaba a que los ocho sets de la
+   noche terminaran bajando.
+3. Retroceso de energía durante la subida hasta **1.8** (decía 0.4)
+4. Key a distancia **<= 2** en Camelot, BPM **±3.0** (decía <=1 y ±2)
 5. Penalizar quedarse en la misma key más de 2 tracks seguidos
+
+> Los cinco números de esta lista estuvieron vencidos hasta el 2026-09-27, y el 2
+> decía justo lo contrario de lo que el DJ pidió. **Un número copiado a un doc se
+> queda viejo solo**: el valor vive en `rules/curaduria.json` y se lee con
+> `R.get(...)`. Si esta lista y la regla no coinciden, gana la regla.
 
 **Prioridad cuando compiten:** el arco de energía manda. Un salto de Camelot se
 tapa con una transición larga o un corte de bajos; un bache de energía en el

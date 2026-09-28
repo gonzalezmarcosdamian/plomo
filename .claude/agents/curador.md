@@ -90,7 +90,9 @@ misma funcion de costo.
 **No bajes estas reglas sin medir** (`rules/curaduria.json`, seccion energia):
 `tolerancia_arco_frac` 0.9, `umbral_paso_plano` 0.35 y el par `span_objetivo`
 2.9 / `span_peso` 0.4. Juntas llevaron los sets de 26/54 a 41/54 contra la
-distribucion de los DJ reales. Cada una tiene su evidencia escrita.
+distribucion de los DJ reales, medido sobre 18 sets. El banco hoy son 30 sets y
+la misma medicion da 66/90 (73%, techo 80%): el agregado NO es comparable con el
+anterior, hay que decir siempre sobre cuantos sets se midio. Cada una tiene su evidencia escrita.
 
 ## Fechas puntuales (2026-09-21)
 

@@ -50,6 +50,15 @@ class Reglas:
         nodo = self._nodo(ruta)
         return nodo.get("porque", "") if isinstance(nodo, dict) else ""
 
+    def es_decision_del_dj(self, ruta: str) -> bool:
+        """True si la regla la puso el DJ escuchando y no una medicion.
+
+        Una regla asi no la refuta la referencia: que 40 setlists ajenos la
+        violen describe a esos DJ, no un error nuestro.
+        """
+        nodo = self._nodo(ruta)
+        return bool(isinstance(nodo, dict) and nodo.get("decision_del_dj"))
+
     def es_dura(self, ruta: str) -> bool:
         nodo = self._nodo(ruta)
         return bool(nodo.get("duro", False)) if isinstance(nodo, dict) else False
@@ -108,7 +117,10 @@ class Reglas:
         nodo["evidencia"] = parche["evidencia"]
         mayor, menor, patch = (self._data["_meta"]["version"].split(".") + ["0", "0"])[:3]
         self._data["_meta"]["version"] = f"{mayor}.{int(menor) + 1}.0"
-        self._data.setdefault("historial", []).insert(0, {
+        # El historial va del mas viejo al mas nuevo, como lo tiene el archivo (la
+        # primera entrada es 1.5.0). Esto insertaba en el indice 0, o sea al revés,
+        # y la proxima lectura de "la ultima version" agarraba la mas vieja.
+        self._data.setdefault("historial", []).append({
             "version": self._data["_meta"]["version"],
             "ruta": parche["ruta"],
             "de": anterior,
@@ -117,8 +129,10 @@ class Reglas:
             "autor": parche.get("autor", "?"),
             "nota": nota,
         })
+        # indent=1, que es como esta escrito el archivo: con 2 el diff de un cambio
+        # de un numero son las 800 lineas reformateadas y no se puede revisar.
         self.path.write_text(
-            json.dumps(self._data, ensure_ascii=False, indent=2), encoding="utf-8"
+            json.dumps(self._data, ensure_ascii=False, indent=1), encoding="utf-8"
         )
 
 

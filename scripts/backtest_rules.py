@@ -191,22 +191,39 @@ def medir(sets: list[dict]) -> dict:
             "p90": round(sorted(es)[int(len(es) * 0.9)], 2),
         }
 
-    # forma del set: donde cae el pico y como cierra
-    picos, cierres_arriba, n_forma = [], 0, 0
+    # forma del set: donde cae el pico y como cierra.
+    #
+    # Aca habia un instrumento roto. La condicion era
+    #     ens[-1] > max(ens) - R.get("energia.baja_minima_al_cierre")
+    # y esa regla paso a 0.0 en la v1.12.0, asi que quedo en `ens[-1] > max(ens)`:
+    # falsa por definicion. `cierra_arriba_pct` daba 0% para cualquier corpus y el
+    # reporte lo imprimia como una medicion, con veredicto "COMPATIBLE CON LO
+    # TOCADO" incluido. El hallazgo viejo de que el 15% de los sets reales
+    # terminan arriba dejo de ser reproducible con la herramienta del proyecto.
+    #
+    # Las dos medidas de abajo no dependen de ninguna regla que pueda apagarse:
+    # CERCA_DEL_PICO es un umbral explicito del medidor, y "termina abajo del
+    # arranque" es exactamente lo que el DJ dijo que no quiere.
+    CERCA_DEL_PICO = 0.3
+    picos, cierres_arriba, cierres_abajo, n_forma = [], 0, 0, 0
     for s in sets:
         ens = [t["energy"] for t in s["tracks"] if t.get("energy") is not None]
         if len(ens) < 5:
             continue
         n_forma += 1
         picos.append(ens.index(max(ens)) / (len(ens) - 1))
-        if ens[-1] > max(ens) - R.get("energia.baja_minima_al_cierre"):
+        if ens[-1] >= max(ens) - CERCA_DEL_PICO:
             cierres_arriba += 1
+        if ens[-1] < ens[0]:
+            cierres_abajo += 1
     if n_forma:
         out["forma"] = {
             "n_sets": n_forma,
             "pico_pct_medio": round(statistics.mean(picos), 3),
             "pico_pct_mediana": round(statistics.median(picos), 3),
             "cierra_arriba_pct": cierres_arriba / n_forma,
+            "cerca_del_pico": CERCA_DEL_PICO,
+            "cierra_abajo_del_inicio_pct": cierres_abajo / n_forma,
         }
 
     por_artista, por_sello = [], []
@@ -308,18 +325,58 @@ def veredictos(prop: dict, ref: dict, toc: dict | None = None) -> list[dict]:
                         f"del set; la regla dice {decl:.0%}."),
             "n_referencia": fuente["forma"]["n_sets"],
         })
-        cierra = fuente["forma"]["cierra_arriba_pct"]
+        # La regla que se mide es la que CORRE: `cierre_no_baja_del_inicio`.
+        # `baja_minima_al_cierre` esta en 0.0 desde la v1.12.0, o sea apagada, y
+        # reportarla como dura era afirmar que rige algo que no rige.
+        arriba = fuente["forma"]["cierra_arriba_pct"]
+        abajo = fuente["forma"]["cierra_abajo_del_inicio_pct"]
         out.append({
-            "regla": "energia.baja_minima_al_cierre",
-            "valor": R.get("energia.baja_minima_al_cierre"), "dura": True,
-            "porque": R.porque("energia.baja_minima_al_cierre"),
-            "veredicto": "CONTRADICHA POR LO TOCADO" if cierra > UMBRAL_REFUTACION
-                         else "COMPATIBLE CON LO TOCADO",
-            "detalle": (f"el {cierra:.0%} de {etiqueta} termina arriba, sin bajar "
-                        f"los {R.get('energia.baja_minima_al_cierre')} del pico."),
+            "regla": "energia.cierre_no_baja_del_inicio",
+            "valor": R.get("energia.cierre_no_baja_del_inicio"),
+            "dura": R.es_dura("energia.cierre_no_baja_del_inicio"),
+            "porque": R.porque("energia.cierre_no_baja_del_inicio"),
+            # Es una decision del DJ, asi que la referencia no la refuta: se
+            # reporta el numero y se dice de quien es la decision.
+            "veredicto": ("DECISION DEL DJ - la referencia no la refuta"
+                          if R.es_decision_del_dj("energia.cierre_no_baja_del_inicio")
+                          else "CONTRADICHA POR LO TOCADO" if abajo > UMBRAL_REFUTACION
+                          else "COMPATIBLE CON LO TOCADO"),
+            "detalle": (f"el {abajo:.0%} de {etiqueta} termina POR DEBAJO de donde "
+                        f"arranco, y el {arriba:.0%} termina a menos de "
+                        f"{fuente['forma']['cerca_del_pico']} de su propio pico."),
             "n_referencia": fuente["forma"]["n_sets"],
         })
     return out
+
+
+def sin_lector() -> list[str]:
+    """Reglas que existen en el JSON y que ningun `R.get()` del repo pide.
+
+    Una regla sin lector es peor que no tenerla: alguien la edita esperando que
+    cambie algo y no cambia nada. Aparecieron 21 asi, y dos con dano concreto:
+    `estilo.peso_mezcla_genero` en 8.0 al lado de `genero.peso_mezcla` en 1.5,
+    que es la que corre, y `detonantes.umbral_energia` en 7.5 mientras el mismo
+    7.5 esta hardcodeado en exportar_copia.py.
+
+    Busca el texto de la ruta en `scripts/` y `src/`. Una ruta armada por
+    concatenacion no la ve y da un falso positivo; preferible eso a dar por
+    leida una regla muerta.
+    """
+    codigo = []
+    for d in ("scripts", "src"):
+        for f in (RAIZ / d).rglob("*.py"):
+            if "archive" in f.parts or "__pycache__" in f.parts:
+                continue
+            codigo.append(f.read_text(encoding="utf-8", errors="replace"))
+    todo = chr(10).join(codigo)
+    fuera = []
+    for ruta in sorted(R.todas()):
+        if ruta.split(".")[-1].startswith("_"):
+            continue                      # _estado, _comentario: son notas
+        if (chr(34) + ruta + chr(34)) in todo or (chr(39) + ruta + chr(39)) in todo:
+            continue
+        fuera.append(ruta)
+    return fuera
 
 
 # -- salida -----------------------------------------------------------------
@@ -390,6 +447,12 @@ def main() -> None:
     sin = R.sin_evidencia()
     if sin:
         print(f"  [SIN EVIDENCIA] reglas duras que nadie midio: {', '.join(sin)}")
+    huerfanas = sin_lector()
+    if huerfanas:
+        print(f"  [SIN LECTOR] {len(huerfanas)} reglas que ningun codigo lee "
+              f"(editarlas no cambia nada):")
+        for r in huerfanas:
+            print(f"      {r}")
 
     if args.json:
         args.json.write_text(json.dumps(

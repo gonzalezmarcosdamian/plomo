@@ -78,8 +78,12 @@ Medido sobre 56 sets propios (1214 tracks, excluidos los `[POOL]`), reglas v1.0.
 **Distribuciones, no medianas.** Dos medianas de muestras chicas difieren por
 azar. La medida es cuantos de nuestros sets caen en el p10-p90 de las ventanas
 reales: una ventana real cae en su propio p10-p90 el 80% de las veces, ese es el
-techo. `scripts/medir_contra_referencia.py` compara autocorrelacion de saltos,
-corr posicion-energia y rango de energia. Estado al 2026-09-20: **41/54**, techo 43.
+techo. `scripts/medir_contra_referencia.py` compara autocorrelacion de saltos, corr
+posicion-energia y rango de energia. **Corrido el 2026-09-27: 17/30, 24/30 y** 
+**25/30 en p10-p90, o sea 66/90 (73%) contra un techo de 80%.** El "41/54" que
+decia antes ya no se puede reproducir: eran 18 sets x 3 metricas y el banco crecio
+a 30 (`NUMS = range(109, 139)`). No cites un agregado sin decir sobre cuantos sets
+se midio, o el numero siguiente no se puede comparar con el anterior.
 
 **Un hueco no es una transicion.** Los setlists tienen temas sin identificar:
 los saltos se calculan solo entre posiciones CONSECUTIVAS. Con eso quedan 15
@@ -102,16 +106,24 @@ leia y no se usaba: el umbral real era un `max(0.08, ...)` escrito a mano. Un
 
 ## Conflictos abiertos (resolver antes de armar mas sets encima)
 
-1. `max_por_artista_en_set`: la regla escrita dice 2, el codigo y todos los
-   configs usan 1.
+1. `max_por_artista_en_set`: **cuatro** valores para la misma regla — 4 en la
+   regla, 1 por defecto en `select_set.py`, 3 en `build_set.py` y 99 en
+   `set_desde_setlist.py`. Aca decia "la regla dice 2", que es el valor previo a
+   la v1.5.0.
 2. `separacion_minima`: la regla escrita dice 5 tracks, el codigo usa 3.
+3. `armonia.max_camelot_dist`: su campo `sospecha` dice que si el backtest
+   muestra >15% de saltos >=2 en sets reales, la regla pasa de dura a penalizada.
+   La evidencia del mismo nodo reporta 51% (15% dos pasos + 36% tres o mas): el
+   disparador esta cumplido 3.4 veces y la regla sigue dura en 2. Lo que falta no
+   es medir de nuevo, es una fuente EXTERNA de key.
 3. **La armonia del solver es mucho mas rigida que la de los DJ de referencia**
    (medido 2026-09-21, 182 transiciones con key de 11 DJs, solo posiciones
    consecutivas): se quedan en el mismo numero de la rueda el **29%** de las
    veces, dan un solo paso el 21%, y saltan 3 o mas el **36%**; 28% de sus
-   saltos de BPM pasan de 2. `penal_quedarse_en_la_rueda` se calibro contra un
-   14% de una medicion vieja, y `max_camelot_dist` <=1 es una regla dura que
-   ellos no cumplen. Antes de tocarlas: la key viene de NUESTRO analisis de los
+   saltos de BPM pasan de 2. `penal_quedarse_en_la_rueda` esta en 0.3 y
+   `max_camelot_dist` en 2 desde la v1.4.0 —este texto decia 14% y <=1, que era
+   el estado anterior—, y aun asi el solver da 99% de saltos de un paso contra
+   el 21% de los pros. Antes de tocarlas: la key viene de NUESTRO analisis de los
    temas que matchearon, y parte de los "saltos de 3" pueden ser errores de
    deteccion. Validarlo contra una fuente de key externa antes de relajar nada.
    Caso que lo destapo: el set 139 paso de 31% a 0% quieto "mejorandolo", y se
