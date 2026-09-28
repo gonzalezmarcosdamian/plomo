@@ -176,6 +176,59 @@ un solo set: se vuelve a medir con el proximo que escuche.
 
 ---
 
+## Un validador que compara contra su propio cache no valida nada
+
+**Que paso.** El DJ miro la lista del 143 en Spotify y dijo "no esta bien". Los
+23 temas estaban, en orden, y `spotify_validar.py` decia OK. Seis eran otra
+version: el remix de Roman en vez del de L.GU., tres cortes "- Mixed" de
+compilaciones mezcladas, y dos edits de cuatro minutos donde la biblioteca tiene
+extendeds de ocho.
+
+El validador leia lo que habia quedado vivo en Spotify y lo comparaba contra
+`data/spotify_matches.json`, que es lo que el buscador habia elegido. O sea que
+verificaba que el buscador fuera consistente consigo mismo. Un match equivocado
+validaba perfecto, y cuanto mas seguro estaba el buscador, mas limpio se veia el
+informe.
+
+**Por que importa.** Es la forma mas cara de error de medicion: no falla, tranquiliza.
+Los nueve informes anteriores decian "todas las listas dicen exactamente lo que
+dice su set" y ninguno era cierto.
+
+**Como se aplica.** Un chequeo tiene que comparar contra la FUENTE, no contra un
+paso intermedio del propio proceso. Ahora compara contra Rekordbox: el remixer
+que nombra el titulo tiene que estar acreditado en Spotify, y el largo del
+archivo tiene que parecerse. Antes de escribir un validador, preguntarse contra
+que compara — si la respuesta es "contra lo que guardo el paso anterior", no es
+un validador.
+
+---
+
+## Un caracter invisible puede desactivar una regla durante dias
+
+**Que paso.** `REMIX` en `spotify_sync.py` tenia un lookahead para no tratar
+"(Original Mix)" y "(Extended Mix)" como remixes. Adentro habia un byte 0x08 —un
+backspace— que se colo al generar el archivo, y que convertia el lookahead en una
+condicion imposible. La regla estaba escrita, comentada, con su porque, y no
+corria. Desde el PRIMER commit de Spotify, hace cuatro dias: el comentario de
+arriba explica el bug que supuestamente arreglaba.
+
+Como aparecio: escribiendo codigo con un heredoc de bash, las barras invertidas
+se comen un nivel. `"...instrumental))"` con `\\b` en otra linea termino como
+`"...instrumental)<0x08>)"`. En pantalla no se ve, el archivo compila, los tests
+pasan y el regex hace otra cosa.
+
+**Por que importa.** No hay forma de revisarlo leyendo. El diff se ve bien, el
+codigo se ve bien, y el comportamiento es el de antes del arreglo.
+
+**Como se aplica.** Dos cosas. La primera: al generar codigo desde un heredoc,
+NUNCA escribir una barra invertida literal — se arma con `chr(92)` o con un
+caracter marcador que despues se reemplaza. La segunda: despues de tocar un
+regex, imprimir `patron.pattern` con `repr()` y probarlo contra tres casos, uno
+que tiene que dar y dos que no. Un `ast.parse` no alcanza: el archivo compilaba
+perfecto. Barrer el repo entero por caracteres de control cuesta diez lineas y
+aparecio uno solo, este.
+
+---
 ## Un adjetivo del DJ se define con sus casos, y puede costar tres intentos
 
 **Que paso.** "Colorido" tardo tres versiones en quedar bien medido, y cada una

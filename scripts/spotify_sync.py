@@ -78,8 +78,15 @@ RUIDO = re.compile(r"\s*[\(\[](original|extended|radio|club|vocal|instrumental)[
 # "mix" en el titulo, y Juri de Parra for Cuva caia de 0.63 a 0.48 y quedaba
 # como "no esta en Spotify" estando.
 PARENTESIS = re.compile(r"[\(\[][^\)\]]*[\)\]]")
+# "Cosita - Mixed" es el corte de una compilacion mezclada, no el tema.
+MIXED = re.compile(r"(?:^|[-(\[ ])mixed\b", re.I)
+# "Muse feat. Kate Morgan" es "Muse": el invitado va acreditado aparte en
+# Spotify, y dejarlo adentro del titulo hundia el parecido de 0.9 a 0.5.
+FEAT = re.compile(r"\s*[(\[]?\b(feat|ft|featuring)\b[.]?[^)\]]*[)\]]?", re.I)
+# palabras que NO son el nombre del remixer dentro del parentesis
+VERSIONES = re.compile(r"\b(extended|original|radio|club|vocal|instrumental|remix|rework|edit|mix|version|feat|ft|featuring)\b", re.I)
 REMIX = re.compile(
-    r"[\(\[]\s*(?!(?:original|extended|radio|club|vocal|instrumental))"
+    r"[\(\[]\s*(?!(?:original|extended|radio|club|vocal|instrumental))"
     r"([^\)\]]*(?:remix|rework|edit|mix)[^\)\]]*)[\)\]]", re.I)
 
 
@@ -130,7 +137,25 @@ class Spotify:
         r.raise_for_status()
         return r.json() if r.text else {}
 
-    def buscar(self, artista: str, titulo: str) -> tuple[str | None, str]:
+    def buscar(self, artista: str, titulo: str,
+               dur_seg: int | None = None) -> tuple[str | None, str]:
+        """El tema que el DJ va a tocar, no otro con el mismo nombre.
+
+        Tres cosas hunden a un candidato, y las tres aparecieron el 2026-09-27
+        mirando la lista del 143 contra Rekordbox:
+
+        1. EL REMIXER. La biblioteca tenia "Muse (L.GU. Extended Mix)" y en la
+           lista habia quedado el "Roman Extended Mix". Los dos existen, los dos
+           dicen "mix", y el puntaje anterior solo pedia que el candidato dijera
+           "mix" en alguna parte: no comparaba QUIEN lo remezclo.
+        2. LAS VERSIONES "Mixed". Spotify publica los temas de las
+           compilaciones mezcladas con el sufijo "- Mixed", y son el corte de
+           la mezcla continua, no el tema. Tres habian entrado asi.
+        3. EL LARGO. Un extended de ocho minutos contra un edit de cuatro es el
+           mismo titulo y otro tema. `dur_seg` viene de Rekordbox, que es la
+           duracion del archivo que va a sonar, y es la senal mas barata y mas
+           dura de todas: Portal Six entro en 4:00 contra 7:22 del archivo.
+        """
         t, a = limpiar(titulo), artista.split(",")[0].strip()
         remix = REMIX.search(titulo)
         # El NUCLEO del titulo, sin ningun parentesis. Spotify publica el remix
@@ -140,11 +165,17 @@ class Spotify:
         # lo encuentra con 0.93. El parentesis, que para nosotros es
         # informacion, para el buscador es ruido.
         nucleo = PARENTESIS.sub("", titulo).strip(" -")
+        corto = FEAT.sub("", nucleo).strip(" -") or nucleo
+        # quien remezclo, sin las palabras de version: de "L.GU. Extended Mix"
+        # queda "l gu", que es lo que tiene que aparecer en el candidato.
+        quien = ""
+        if remix:
+            quien = norm(VERSIONES.sub("", remix.group(1)))
         intentos = [f'artist:"{a}" track:"{t}"']
         if nucleo != t:
             intentos.append(f'artist:"{a}" track:"{nucleo}"')
         if remix:
-            intentos.append(f'{nucleo} {remix.group(1)}')
+            intentos.append(f"{nucleo} {remix.group(1)}")
         intentos += [f"{a} {t}", f"{a} {nucleo}", nucleo]
         for q in intentos:
             try:
@@ -157,18 +188,37 @@ class Spotify:
                 # "Juri" y la biblioteca lo tiene como "Juri (Original Mix)",
                 # y comparar solo la forma larga lo dejaba en 0.47 y afuera
                 pt = max(parecido(titulo, it["name"]), parecido(t, it["name"]),
-                         parecido(nucleo, it["name"]))
+                         parecido(nucleo, it["name"]), parecido(corto, it["name"]))
                 p = pt * 0.6 + max(parecido(artista, ar["name"]) for ar in it["artists"]) * 0.4
-                # una version distinta del mismo tema no sirve: si el titulo
-                # original dice remix, el candidato tiene que decir algo parecido
-                if remix and "remix" not in it["name"].lower() and "mix" not in it["name"].lower():
-                    p -= 0.15
+                nom = norm(it["name"])
+                gente = norm(" ".join(ar["name"] for ar in it["artists"]))
+                if remix:
+                    if "remix" not in nom and "mix" not in nom:
+                        p -= 0.15
+                    # el remixer TIENE que estar, en el titulo o acreditado
+                    if quien:
+                        p += 0.15 if (quien in nom or quien in gente) else -0.40
+                # El largo y el "- Mixed" ORDENAN, no descartan. Un radio edit
+                # del mismo mix sigue siendo el tema, y la lista existe para que
+                # el DJ la escuche en el auto: mejor el edit que un hueco. Lo
+                # que SI descarta es el remixer equivocado, que es otro tema con
+                # el mismo nombre. Puesto en -0.30 dejaba siete afuera diciendo
+                # "no esta en Spotify" con la version buena a la vista.
+                if MIXED.search(it["name"]) and not MIXED.search(titulo):
+                    p -= 0.10
+                if dur_seg and it.get("duration_ms"):
+                    rel = abs(it["duration_ms"] / 1000 - dur_seg) / dur_seg
+                    if rel > 0.25:
+                        p -= 0.12
+                    elif rel > 0.12:
+                        p -= 0.05
+                    elif rel < 0.04:
+                        p += 0.08
                 if p > punt:
                     mejor, punt = it, p
             if mejor and punt >= 0.62:
                 return mejor["uri"], f"{mejor['artists'][0]['name']} - {mejor['name']}"
         return None, ""
-
     def playlist_por_nombre(self, nombre: str) -> str | None:
         off = 0
         while True:
@@ -199,6 +249,10 @@ def main() -> None:
     # `--archivo` sobrevive por otro motivo: deja los links en orden en un .txt
     # para pegar a mano, que sirve cuando no hay permiso de usuario a mano.
     sp = Spotify(acceso())
+    # La duracion del archivo de Rekordbox es la senal que separa el extended
+    # del radio edit y de las versiones "- Mixed" de las compilaciones.
+    POOL = {t["id"]: t for t in json.loads(
+        (RAIZ / "data/pool.json").read_text(encoding="utf-8"))}
     cache_f = RAIZ / "data" / "spotify_matches.json"
     cache = json.loads(cache_f.read_text(encoding="utf-8")) if cache_f.exists() else {}
 
@@ -215,7 +269,8 @@ def main() -> None:
             if cid in cache:
                 uri, nom = cache[cid]["uri"], cache[cid]["nombre"]
             else:
-                uri, nom = sp.buscar(t["artist"], t["title"])
+                uri, nom = sp.buscar(t["artist"], t["title"],
+                                    (POOL.get(cid) or {}).get("dur_seg"))
                 cache[cid] = {"uri": uri, "nombre": nom}
             if uri:
                 uris.append(uri)
