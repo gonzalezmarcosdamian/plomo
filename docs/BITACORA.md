@@ -47,9 +47,14 @@ lo más brillante de arriba —el horizonte y los reflejos— así que la paleta
 toda naranja (ahora es lo más azul, y de noche sostiene el último azul medido).
 
 **YouTube.** Proyecto de Google Cloud `plomo-youtube` con la API activada,
-`scripts/youtube_auth.py` y `scripts/youtube_publicar.py` escritos. Falta la
-credencial OAuth (la baja el DJ de la consola) y el permiso. Paquete de
-publicación en `data/youtube/2026-09-23_atardecer.md`.
+`scripts/youtube_auth.py` y `scripts/youtube_publicar.py`. La app queda en modo
+prueba con el DJ como usuario de prueba: Google no deja publicarla sin página de
+marca con dominio verificado, y en prueba el permiso vence a los 7 días (se
+renueva con `youtube_auth.py`). La restricción documentada —lo que sube un
+proyecto no auditado queda trabado en privado— NO se aplicó: se probó con 10 s,
+pasó a no listado y se borró. Canal verificado para videos largos. Subido en
+privado con título, capítulos, tags y miniatura: https://youtu.be/cxPG09u-edM.
+Publicarlo lo decide el DJ después de mirar los reclamos de Content ID.
 
 ---
 
