@@ -1,0 +1,30 @@
+{
+  "fps": 30,
+  "duracion_s": 1549.4666666666667,
+  "capitulos": [
+    {
+      "t": 0.0,
+      "artista": "Mike Rish",
+      "titulo": "Wait for Me (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 362.7,
+      "artista": "Callecat",
+      "titulo": "A New Beginning",
+      "tempo": 1.005
+    },
+    {
+      "t": 686.3,
+      "artista": "DJ Bird",
+      "titulo": "In Space",
+      "tempo": 1.01
+    },
+    {
+      "t": 1121.3,
+      "artista": "Maze 28",
+      "titulo": "Mindloop (Original Mix)",
+      "tempo": 1.0
+    }
+  ]
+}

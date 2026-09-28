@@ -55,12 +55,32 @@ def main():
     con = sqlcipher3.connect(str(config.REKORDBOX_DB_PATH))
     con.execute(f"PRAGMA key = '{config.SQLCIPHER_KEY}'")
 
+    # SOLO lo que falta procesar, no todo el arbol.
+    #
+    # La consulta decia `FolderPath LIKE %Nuevos% OR LIKE %Inbox%`, y la
+    # biblioteca entera vive bajo Music/2026/Nuevos/: o sea que "por carpeta"
+    # significaba TODA la coleccion. Medido el 2026-09-28: 2851 tracks en vez de
+    # los 32 del Inbox, y con el commit unico del final una corrida cortada por
+    # tiempo deshace el trabajo entero. Esa corrida llego hasta la R y no dejo
+    # nada.
+    #
+    # El filtro real es el ESTADO: un track sin `E:` en el comentario es uno que
+    # todavia no paso por aca. Con --todo se fuerza el recalculo de lo que ya
+    # tiene energia, que es lo que hacia siempre sin querer.
+    solo_nuevos = "--todo" not in sys.argv
     new_tracks = con.execute("""
         SELECT c.ID, c.FileNameL, c.FolderPath, c.BPM
         FROM djmdContent c
         WHERE (c.FolderPath LIKE '%Nuevos%' OR c.FolderPath LIKE '%Inbox%')
           AND c.rb_local_deleted=0
     """).fetchall()
+    if solo_nuevos:
+        con_energia = {str(r[0]) for r in con.execute(
+            "SELECT ID FROM djmdContent WHERE Commnt LIKE 'E:%' AND rb_local_deleted=0")}
+        antes = len(new_tracks)
+        new_tracks = [t for t in new_tracks if str(t[0]) not in con_energia]
+        print(f"{antes} tracks en el arbol, {len(new_tracks)} sin energia todavia"
+              f" (--todo los procesa a todos)")
 
     print(f"Procesando {len(new_tracks)} tracks...\n")
 
@@ -125,7 +145,13 @@ def main():
             if added:
                 print(f"         -> {added} playlists")
 
-    con.commit()
+        # COMMIT POR TRACK. Estaba una sola vez al final del bucle: con la
+        # consulta vieja eran ~2800 tracks y tres escrituras cada uno en una
+        # transaccion unica sobre djmdCue, que es la tabla que ya se corrompio
+        # una vez. Ademas hace la corrida reanudable: lo que se proceso, queda.
+        con.commit()
+
+    con.commit()          # el ultimo, por si algo quedo suelto
 
     # Copiar ANLZ al pen
     if (PEN_ROOT / "PIONEER").exists():
