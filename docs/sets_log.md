@@ -2884,18 +2884,18 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
-**Armado:** 2026-09-28  
+**Armado:** 2026-09-29  
 **Duracion:** 0h  
 **Tracks:** 19  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Jamie Stevens, Zankee Gulati | Running (Original Mix) | 120 | 5.0 |
+| 1 | GMJ, Matter, Zankee Gulati | Emerge (Original Mix) | 120 | 5.0 |
 | 2 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 3 | Kamilo Sanclemente, Juan Pablo Torrez | Mantura | 122 | 5.5 |
+| 3 | Ignacio Hernandez | Circle Of Lights (Claudio Cornejo (AR) Night Mix) | 121 | 5.0 |
 | 4 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 5 | Tinlicker | Blackbirds (Extended Mix) | 123 | 5.5 |
+| 5 | COQUEIT | Lost in My Head (Original Mix) | 122 | 5.5 |
 | 6 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
 | 7 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
 | 8 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |

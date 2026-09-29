@@ -375,10 +375,11 @@
   "artist": "Jamie Stevens, Zankee Gulati",
   "title": "Running (Original Mix)",
   "E_calc": 4.5,
-  "nota": "lo nombro para mi sonido",
-  "fuente": "pedido del DJ, 2026-09-26",
+  "nota": "no lo puedo usar, lo va a usar un amigo",
+  "fuente": "2026-09-29",
   "favorito": true,
-  "momentos": []
+  "momentos": [],
+  "reservado_por_otro": true
  },
  "130869533": {
   "artist": "Andre Moret",

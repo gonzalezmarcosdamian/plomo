@@ -88,12 +88,24 @@ def main() -> None:
         return
     cuando = datetime.now() + timedelta(seconds=faltan, minutes=MARGEN_MIN)
     escribir_cmd(args.sets)
-    subprocess.run(["schtasks", "/create", "/tn", TAREA, "/tr", str(CMD),
-                    "/sc", "once", "/st", cuando.strftime("%H:%M"),
-                    "/sd", cuando.strftime("%d/%m/%Y"), "/f"], check=True)
+    # PowerShell y no `schtasks`, por UNA opcion que schtasks no expone:
+    # StartWhenAvailable. El 2026-09-28 la tarea quedo para las 21:35, la
+    # maquina estaba apagada a esa hora, y una tarea "once" NO se recupera: al
+    # dia siguiente decia "Last Run Time: 11/30/1999" y "Next Run Time: N/A".
+    # Con esto, si la hora pasa con la maquina apagada, corre apenas prende.
+    ps = (
+        f'$a = New-ScheduledTaskAction -Execute "{CMD}"; '
+        f'$t = New-ScheduledTaskTrigger -Once -At "{cuando.strftime("%Y-%m-%dT%H:%M:%S")}"; '
+        '$s = New-ScheduledTaskSettingsSet -StartWhenAvailable '
+        '-AllowStartIfOnBatteries -DontStopIfGoingOnBatteries; '
+        f'Register-ScheduledTask -TaskName "{TAREA}" -Action $a -Trigger $t '
+        '-Settings $s -Force | Out-Null'
+    )
+    subprocess.run(["powershell", "-NoProfile", "-Command", ps], check=True)
     print(f"la cuota vuelve en {faltan / 3600:.1f} h")
-    print(f"sets {args.sets} programados para las {cuando.strftime('%H:%M')} "
+    print(f"sets {args.sets} programados para el {cuando.strftime('%d/%m a las %H:%M')} "
           f"({MARGEN_MIN} min de margen)")
+    print("  si la maquina esta apagada a esa hora, corre apenas prenda")
     print(f"  log -> data/sync_pendiente.log")
     print(f"  estado: python scripts/programar_sync.py --estado")
 
