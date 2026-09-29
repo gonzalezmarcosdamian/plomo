@@ -106,3 +106,20 @@ class TestArcoDeEnergia:
     def test_el_cierre_baja_del_pico(self) -> None:
         n = 12
         assert arc_target(n - 1, n, 4.0, 7.0) < 7.0
+
+
+@pytest.mark.unit
+class TestAcentos:
+    def test_el_mismo_productor_con_y_sin_acento_es_uno_solo(self) -> None:
+        # Rekordbox guarda el mismo nombre de las dos formas segun de donde vino
+        # el archivo. Sin normalizar, el tope por artista los deja convivir: el
+        # 2026-09-29 el mejor candidato para acompanar a Go era otro Leger, con
+        # Leger ya en el set.
+        a = names("Sébastien Léger, Lost Miracle", "Dodonpachi (Original Mix)")
+        b = names("Sebastien Leger, Roy Rosenfeld", "Panko Day (Extended Mix)")
+        assert a & b == {"sebastien leger"}
+
+    def test_tambien_en_el_remixer(self) -> None:
+        a = names("Simon Vuarambón", "Afrika")
+        b = names("Tantum, Hyunji-A", "Keep My Letters (Simon Vuarambon Remix)")
+        assert a & b == {"simon vuarambon"}

@@ -212,8 +212,19 @@ APODO_RE = re.compile(r"\s*['‘’\"][^'‘’\"]{2,}['‘’\"]\s*")
 
 
 def _clean(name: str) -> str:
-    """Normaliza un nombre de productor quitando sufijos de version."""
-    n = APODO_RE.sub(" ", name).strip().lower()
+    """Normaliza un nombre de productor: sin acentos y sin sufijos de version.
+
+    Los acentos importan porque Rekordbox guarda el mismo productor de las dos
+    formas segun de donde vino el archivo: "Sebastien Leger, Roy Rosenfeld" en
+    Panko Day y "Sébastien Léger, Lost Miracle" en Dodonpachi. Sin normalizar
+    son dos productores distintos y el tope por artista los deja convivir, que
+    es justo lo que la regla existe para evitar. Aparecio el 2026-09-29 buscando
+    un equivalente para Go: el candidato mas alto era otro Leger con Leger ya en
+    el set.
+    """
+    n = "".join(c for c in unicodedata.normalize("NFD", name or "")
+                if unicodedata.category(c) != "Mn")
+    n = APODO_RE.sub(" ", n).strip().lower()
     changed = True
     while changed:
         changed = False
