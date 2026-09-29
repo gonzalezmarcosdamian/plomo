@@ -504,5 +504,21 @@
   "favorito": true,
   "nota": "si",
   "fuente": "escucha del 148 v2, 2026-09-28"
+ },
+ "71592299": {
+  "artist": "GMJ, Matter, Zankee Gulati",
+  "title": "Emerge (Original Mix)",
+  "E_calc": 5.3,
+  "nota": "muy oscuro",
+  "fuente": "escucha del 143, 2026-09-29",
+  "veto": true
+ },
+ "219225046": {
+  "artist": "Ignacio Hernandez",
+  "title": "Circle Of Lights (Claudio Cornejo (AR) Night Mix)",
+  "E_calc": 5.7,
+  "nota": "muy oscuro",
+  "fuente": "escucha del 143, 2026-09-29",
+  "veto": true
  }
 }

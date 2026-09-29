@@ -2891,9 +2891,9 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | GMJ, Matter, Zankee Gulati | Emerge (Original Mix) | 120 | 5.0 |
+| 1 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
 | 2 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 3 | Ignacio Hernandez | Circle Of Lights (Claudio Cornejo (AR) Night Mix) | 121 | 5.0 |
+| 3 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
 | 4 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 5 | COQUEIT | Lost in My Head (Original Mix) | 122 | 5.5 |
 | 6 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
@@ -3025,9 +3025,9 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 148. 148. Housero Progresivo · 1 a 3 AM — 2h — 2026-09-28
-**Armado:** 2026-09-28  
+**Armado:** 2026-09-29  
 **Duracion:** 2.0h  
-**Tracks:** 17  
+**Tracks:** 16  
 **BPM range:** 119-127  
 
 | # | Artist | Title | BPM | E |
@@ -3042,11 +3042,10 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 8 | Eli Nissan | Naked  | 122 | 6.1 |
 | 9 | Brian Cid | Allure (Original Mix) | 122 | 5.5 |
 | 10 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 5.5 |
-| 11 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
-| 12 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 5.5 |
-| 13 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
-| 14 | Digital Mess | Outlands (Dowden & Andreas Bühler Remix) | 123 | 5.5 |
-| 15 | CamelPhat & ARTBAT | For a Feeling (feat. RHODES) [Dark Matter Edit] | 122 | 7.0 |
-| 16 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 5.5 |
-| 17 | Sebastian Busto | December (Zankee Gulati Remix) | 122 | 7.3 |
+| 11 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 5.5 |
+| 12 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
+| 13 | Digital Mess | Outlands (Dowden & Andreas Bühler Remix) | 123 | 5.5 |
+| 14 | CamelPhat & ARTBAT | For a Feeling (feat. RHODES) [Dark Matter Edit] | 122 | 7.0 |
+| 15 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 5.5 |
+| 16 | Sebastian Busto | December (Zankee Gulati Remix) | 122 | 7.3 |
 

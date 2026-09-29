@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.17.0",
+  "version": "1.18.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -804,6 +804,19 @@
      "por_que": "el empuje ordena a Milo POR ENCIMA de Fogbows y el DJ dice lo contrario. Ni el sub (57.2 / 55.6 / 48.0) ni el color (0.17 / 0.60 / 0.67) separan los tres casos. La densidad por seccion si."
     }
    ]
+  },
+  {
+   "version": "1.18.0",
+   "fecha": "2026-09-29",
+   "tema": "'oscuro' es la relacion medio/aire, no el color",
+   "cambios": [
+    {
+     "regla": "estilo.oscuro_del_dj",
+     "antes": "no existia; 'oscuro' se creia medido por color_pct (medio * campana(aire))",
+     "despues": "medio/aire, banda buena 2.8-4.5",
+     "por_que": "color_pct dio 0.85 y 0.83 a los dos temas que el DJ llamo 'muy oscuro' el mismo dia: la campana centrada en aire 5.5 premia exactamente el aire que el rechaza. Es la tercera formula que se cae con sus casos, despues de brillo y cuerpo."
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -912,6 +925,19 @@
    "porque": "Que es 'el groove adecuado' para el DJ. NO es el promedio de densidad ni el eje empuje: Milo, que el dijo que NO lo tiene, mide MAS empuje (0.76) que Fogbows, que dijo que SI (0.71). Lo que separa es la FORMA del tema: los dos aprobados llegan a 16 de densidad y bajan al 70% de su media; Milo llega a 15.5 y su piso es el 87%, o sea nunca suelta. Pega fuerte arriba y vacia de verdad abajo.",
    "evidencia": "2026-09-28, TRES casos del DJ escuchando el 148 v2: Ipanema Twilight (techo 16.2, piso 70%) si, Fogbows (16.0, 71%) si, Milo (15.5, 87%) no. La regla los separa a los tres. HIPOTESIS, NO REGLA PROBADA: son tres casos y dos parametros, que es justo lo que el proyecto ya aprendio a desconfiar con 'colorido' --una formula con dos o tres ejemplos a favor no esta validada, esta sin probar--. La prueba real son sus veredictos sobre temas que la regla NO vio: en el 148 predice que tienen groove el 4, 12, 14 y 17, y que no lo tienen el 1, 3, 6, 9, 10 y 11.",
    "_estado": "PROPUESTA. Ningun codigo la lee todavia: primero hay que confirmarla con mas casos."
+  },
+  "oscuro_del_dj": {
+   "valor": {
+    "medida": "medio / aire, del balance espectral",
+    "banda_buena": [
+     2.8,
+     4.5
+    ],
+    "oscuro_debajo_de": 2.2
+   },
+   "porque": "Que escucha el DJ cuando dice 'oscuro'. NO es color_pct: Emerge (0.85) y Circle Of Lights (0.83) puntuan entre lo mas brillante de la biblioteca y el 2026-09-29 los llamo 'muy oscuro'. La formula del color premia el aire alrededor de 5.5 y esos dos tienen 6.0 y 5.7, o sea que los premia POR lo que el rechaza.",
+   "evidencia": "Nueve casos etiquetados, medidos sobre el balance de data/recetas/lib: | aprueba: One World 3.7, Ariana 3.4 ('a eso llamo color'), Mantura 3.1, Silver Lily 2.9 | llama oscuro: Emerge 1.9, Circle Of Lights 1.9, Shades Of Blue 0.4 | rechazo por otra cosa: Leuben 11.8 (seco). La banda 2.8-4.5 separa los siete casos de color. NO explica a Running (2.3), del que dijo que TIENE brillo: brillo y oscuro pueden no ser el mismo eje.",
+   "_estado": "PROPUESTA. Ningun codigo la lee: se uso a mano para elegir los reemplazos del 143 el 2026-09-29. Lo que la puede refutar son sus veredictos sobre temas que no vio. Prediccion abierta: Lost in My Head mide 1.5 y entro al set el mismo dia que los dos que llamo oscuros; si no le molesta, la banda esta mal."
   }
  },
  "groove": {

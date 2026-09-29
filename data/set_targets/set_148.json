@@ -59,11 +59,6 @@
       "content_id": "112359333"
     },
     {
-      "artist": "Rockka",
-      "title": "Amnesia (Fuenka Remix)",
-      "content_id": "216766461"
-    },
-    {
       "artist": "Spencer Brown",
       "title": "Blue Magic (feat. Danny Shamoun)",
       "content_id": "190819323"
@@ -94,5 +89,5 @@
       "content_id": "234396932"
     }
   ],
-  "_nota_spotify": "v3 del 2026-09-28: mas brillo con el mismo groove. Los seis que el DJ dijo que SI quedan fijos; los otros once se eligieron con color >= 0.55 y el groove de Ipanema (techo >= 15.5, piso <= 78%). Publicado SOLO en Spotify: la playlist de Rekordbox sigue en la v2 hasta que se corra build_set.py 148."
+  "_nota_spotify": "2026-09-29: Amnesia salio de aca y queda solo en el 143, a pedido del DJ. v3 del 2026-09-28: mas brillo con el mismo groove. Los seis que el DJ dijo que SI quedan fijos; los otros once se eligieron con color >= 0.55 y el groove de Ipanema (techo >= 15.5, piso <= 78%). Publicado SOLO en Spotify: la playlist de Rekordbox sigue en la v2 hasta que se corra build_set.py 148."
 }
