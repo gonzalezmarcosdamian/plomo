@@ -2891,28 +2891,28 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
-| 2 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 3 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
-| 4 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 5 | COQUEIT | Lost in My Head (Original Mix) | 122 | 5.5 |
-| 6 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
-| 7 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
-| 8 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
-| 9 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
-| 10 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 11 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 12 | Guy J | Dizzy Moments | 125 | 6.0 |
-| 13 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 14 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
-| 15 | Alex Kennon | Last Call (Karmon Remix) | 122 | 5.5 |
-| 16 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 5.5 |
-| 17 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
-| 18 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 6.0 |
-| 19 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
-| 20 | Emi Galvan | Karma (Original Mix) | 121 | 5.0 |
-| 21 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
-| 22 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 1 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
+| 2 | Alex Kennon | Last Call (Karmon Remix) | 122 | 5.5 |
+| 3 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 5.5 |
+| 4 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
+| 5 | Durante | Portal Six (Extended Mix) | 124 | 6.0 |
+| 6 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 7 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 8 | COQUEIT | Lost in My Head (Original Mix) | 122 | 5.5 |
+| 9 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 5.5 |
+| 10 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
+| 11 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
+| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
+| 13 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
+| 14 | Emi Galvan | Everlong (Original Mix) | 124 | 6.0 |
+| 15 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 16 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
+| 18 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 19 | Abity | Roots (Gai Barone Remix) | 122 | 5.5 |
+| 20 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 21 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 22 | Rauschhaus, Cary Crank | Bekal (Extended Mix) | 120 | 5.0 |
 | 23 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
 
 

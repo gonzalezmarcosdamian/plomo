@@ -9,71 +9,6 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Wailey",
-      "title": "Droplets (Taylan Remix)",
-      "content_id": "6719392"
-    },
-    {
-      "artist": "Greg Ochman",
-      "title": "The Silver Lily (Original Mix)",
-      "content_id": "80536228"
-    },
-    {
-      "artist": "Ruben Karapetyan",
-      "title": "The Ways (Extended Mix)",
-      "content_id": "103933571"
-    },
-    {
-      "artist": "Andre Moret",
-      "title": "One World (Extended Mix)",
-      "content_id": "130869533"
-    },
-    {
-      "artist": "COQUEIT",
-      "title": "Lost in My Head (Original Mix)",
-      "content_id": "163317399"
-    },
-    {
-      "artist": "Dmitry Molosh",
-      "title": "The Moon Lights the Way (Original Mix)",
-      "content_id": "216332867"
-    },
-    {
-      "artist": "Tom Pavicich",
-      "title": "Olimpo (Ignacio Berardi Remix)",
-      "content_id": "34012266"
-    },
-    {
-      "artist": "Rockka",
-      "title": "Amnesia (Fuenka Remix)",
-      "content_id": "216766461"
-    },
-    {
-      "artist": "Kamilo Sanclemente",
-      "title": "Fragma (GORKIZ Remix)",
-      "content_id": "104234166"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
-      "content_id": "250703508"
-    },
-    {
-      "artist": "Rabiee Ahmad, Hassan Tariq Khan",
-      "title": "In Another Time (Original Mix)",
-      "content_id": "221636509"
-    },
-    {
-      "artist": "Guy J",
-      "title": "Dizzy Moments",
-      "content_id": "204313298"
-    },
-    {
-      "artist": "Agustin Pietrocola",
-      "title": "Sizer (Original Mix)",
-      "content_id": "74740589"
-    },
-    {
       "artist": "HANA, Ezequiel Arias",
       "title": "Go (Extended Mix)",
       "content_id": "114323706"
@@ -89,14 +24,49 @@
       "content_id": "157884382"
     },
     {
+      "artist": "Wailey",
+      "title": "Droplets (Taylan Remix)",
+      "content_id": "6719392"
+    },
+    {
       "artist": "Durante",
       "title": "Portal Six (Extended Mix)",
       "content_id": "12093369"
     },
     {
-      "artist": "Andy Moor & Adam White",
-      "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
-      "content_id": "162072169"
+      "artist": "Andre Moret",
+      "title": "One World (Extended Mix)",
+      "content_id": "130869533"
+    },
+    {
+      "artist": "Greg Ochman",
+      "title": "The Silver Lily (Original Mix)",
+      "content_id": "80536228"
+    },
+    {
+      "artist": "COQUEIT",
+      "title": "Lost in My Head (Original Mix)",
+      "content_id": "163317399"
+    },
+    {
+      "artist": "Dmitry Molosh",
+      "title": "The Moon Lights the Way (Original Mix)",
+      "content_id": "216332867"
+    },
+    {
+      "artist": "Ruben Karapetyan",
+      "title": "The Ways (Extended Mix)",
+      "content_id": "103933571"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
     },
     {
       "artist": "Jeff Ozmits, Miguel Ante",
@@ -105,8 +75,8 @@
     },
     {
       "artist": "Emi Galvan",
-      "title": "Karma (Original Mix)",
-      "content_id": "13403926"
+      "title": "Everlong (Original Mix)",
+      "content_id": "219733407"
     },
     {
       "artist": "Maze 28",
@@ -119,10 +89,40 @@
       "content_id": "21932826"
     },
     {
+      "artist": "Kamilo Sanclemente",
+      "title": "Fragma (GORKIZ Remix)",
+      "content_id": "104234166"
+    },
+    {
+      "artist": "Rabiee Ahmad, Hassan Tariq Khan",
+      "title": "In Another Time (Original Mix)",
+      "content_id": "221636509"
+    },
+    {
+      "artist": "Abity",
+      "title": "Roots (Gai Barone Remix)",
+      "content_id": "234818553"
+    },
+    {
+      "artist": "Agustin Pietrocola",
+      "title": "Sizer (Original Mix)",
+      "content_id": "74740589"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
+      "content_id": "250703508"
+    },
+    {
+      "artist": "Rauschhaus, Cary Crank",
+      "title": "Bekal (Extended Mix)",
+      "content_id": "108617487"
+    },
+    {
       "artist": "Sébastien Léger, Lost Miracle",
       "title": "Dodonpachi (Original Mix)",
       "content_id": "124748921"
     }
   ],
-  "_nota": "2026-09-29: se agregan tres SIN sacar ninguno, elegidos por el ataque de su capa melodica (estilo.pianitos): Moon Lights the Way 12.7, Dizzy Moments 6.6, Karma 6.3. Todos por encima del 5.0 que separa lo que el DJ llama oscuro. Referencias: Silver Lily 9.4 y Fading Silhouettes 8.7."
+  "_nota": "2026-09-29: el DJ ENTREGA LA CABINA al main, asi que el arco sube hasta el final en vez de picar y bajar. Sale The Whiteroom (pierde el groove: densidad 10.6 y ataque de su capa melodica por medir) y entra Bekal, el unico de seis candidatos a pico que tiene groove Y ataque (densidad 15.9, ataque 7.9). Dizzy Moments y Karma salen por gastados; entran Roots (ataque 9.1) y Everlong (7.9, planitud 0.0051, la firma de los pianitos)."
 }

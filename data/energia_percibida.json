@@ -548,5 +548,47 @@
   "nota": "el que siento mas polenta",
   "fuente": "escucha del 143, 2026-09-29",
   "referencia_de": "polenta"
+ },
+ "204313298": {
+  "artist": "Guy J",
+  "title": "Dizzy Moments",
+  "E_calc": 5.9,
+  "nota": "lo he tocado ya",
+  "fuente": "2026-09-29",
+  "gastado": {
+   "fecha": "2026-09-29",
+   "alcance": "la tanda del cumple, sets 139-148",
+   "vale_en_otra_fecha": true,
+   "por_que": "lo he tocado ya"
+  }
+ },
+ "13403926": {
+  "artist": "Emi Galvan",
+  "title": "Karma (Original Mix)",
+  "E_calc": 7.6,
+  "nota": "lo he tocado ya",
+  "fuente": "2026-09-29",
+  "gastado": {
+   "fecha": "2026-09-29",
+   "alcance": "la tanda del cumple, sets 139-148",
+   "vale_en_otra_fecha": true,
+   "por_que": "lo he tocado ya"
+  }
+ },
+ "21932826": {
+  "artist": "Rezident, Kate Morgan",
+  "title": "Muse feat. Kate Morgan (L.GU. Extended Mix)",
+  "E_calc": 7.1,
+  "favorito": true,
+  "nota": "TREMENDO TEMA, el mas tecnoso y linda frase",
+  "fuente": "escucha del 143, 2026-09-29"
+ },
+ "162072169": {
+  "artist": "Andy Moor & Adam White",
+  "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
+  "E_calc": 8.5,
+  "nota": "pierde el groove",
+  "fuente": "escucha del 143, 2026-09-29",
+  "groove_ok": false
  }
 }
