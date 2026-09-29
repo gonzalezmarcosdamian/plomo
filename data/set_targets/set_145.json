@@ -9,9 +9,24 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Hobin Rude",
-      "title": "Mirror (Original Mix)",
-      "content_id": "5884854"
+      "artist": "Cendryma",
+      "title": "Parabolic (Original Mix)",
+      "content_id": "72311255"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Orbitation (Extended Mix)",
+      "content_id": "264401297"
+    },
+    {
+      "artist": "Paul Deep (AR)",
+      "title": "Melodramatic (Original Mix)",
+      "content_id": "154792940"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Elevation",
+      "content_id": "114312499"
     },
     {
       "artist": "Maze 28",
@@ -24,29 +39,9 @@
       "content_id": "226546454"
     },
     {
-      "artist": "Maze 28",
-      "title": "Nocte",
-      "content_id": "37299186"
-    },
-    {
       "artist": "Cendryma",
       "title": "Override (Original Mix)",
       "content_id": "244252789"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Parabolic (Original Mix)",
-      "content_id": "72311255"
-    },
-    {
-      "artist": "Rockka",
-      "title": "Elevation",
-      "content_id": "114312499"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Orbitation (Extended Mix)",
-      "content_id": "264401297"
     },
     {
       "artist": "Rockka",
@@ -54,9 +49,9 @@
       "content_id": "216766461"
     },
     {
-      "artist": "Cary Crank, OBL",
-      "title": "Spitfire (Original Mix) ",
-      "content_id": "65473191"
+      "artist": "Lorenzo Balzarini",
+      "title": "Redes (Original Mix)",
+      "content_id": "211633569"
     },
     {
       "artist": "Maze 28",
@@ -64,9 +59,14 @@
       "content_id": "106041324"
     },
     {
-      "artist": "QuiQui, Thom Rich",
-      "title": "Victorious (Gai Barone Dark Extended Remix)",
-      "content_id": "20688664"
+      "artist": "Gorkiz & Mind Echoes",
+      "title": "Without Your Noose (Paul Arcane Remix)",
+      "content_id": "159402664"
+    },
+    {
+      "artist": "Dilby, Amine K (Moroko Loko)",
+      "title": "Confusion (Extended Mix)",
+      "content_id": "145263774"
     },
     {
       "artist": "Gai Barone, Aman Anand",
@@ -74,14 +74,9 @@
       "content_id": "248641334"
     },
     {
-      "artist": "Circulation",
-      "title": "Swank (Hobin Rude Remix)",
-      "content_id": "193525168"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "Last Glimpse",
-      "content_id": "189440160"
+      "artist": "Sebastian Busto",
+      "title": "December (Zankee Gulati Remix)",
+      "content_id": "234396932"
     },
     {
       "artist": "Alex O'Rion, Antrim",
@@ -90,8 +85,13 @@
     },
     {
       "artist": "Hobin Rude",
-      "title": "Shrouded Glint (Original Mix)",
-      "content_id": "68561043"
+      "title": "Mirror (Original Mix)",
+      "content_id": "5884854"
+    },
+    {
+      "artist": "Just Her, AmyElle",
+      "title": "Feel Again (Original Mix)",
+      "content_id": "183460034"
     }
   ]
 }

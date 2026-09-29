@@ -55,6 +55,10 @@ GEN = {"Progressive House", "House", "Melodic House & Techno"}
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("nums", type=int, nargs="+")
+    ap.add_argument("--inyectar", type=int, default=0,
+                    help="cuantos temas flojos cambiar por material nuevo")
+    ap.add_argument("--nuevos", type=Path, default=RAIZ / "data/_nuevos_usables.json",
+                    help="lista de ContentID del material nuevo")
     ap.add_argument("--beam", type=int, default=6000)
     ap.add_argument("--dry", action="store_true")
     args = ap.parse_args()
@@ -99,9 +103,44 @@ def main() -> None:
         ocup = set()
         for c in quedan:
             ocup |= S.names(POOL[c]["artist"], POOL[c]["title"])
-
+        nuevos_inyectados: list[str] = []
         nuevos: list[str] = []
-        for viejo in fuera:
+
+        # INYECCION DE MATERIAL NUEVO. El paso anterior solo cambiaba lo vetado
+        # y lo gastado, asi que despues de bajar 340 temas los sets seguian con
+        # el 4% de material nuevo. Aca salen los mas flojos --menos groove y
+        # menos color-- SIEMPRE QUE EL DJ NO LOS HAYA MARCADO: lo que el escucho
+        # y aprobo no se toca nunca.
+        if args.inyectar and args.nuevos.exists():
+            frescos = [c for c in json.loads(args.nuevos.read_text(encoding="utf-8"))
+                       if c not in todos and c in POOL]
+            marcados = {c for c in quedan if dato(c).get("favorito") or dato(c).get("rol")
+                        or dato(c).get("referencia_de")}
+            flojitos = sorted((c for c in quedan if c not in marcados),
+                              key=lambda c: dens(c) / 20 + COL.get(c, 0))[:args.inyectar]
+            for viejo in flojitos:
+                e0, k0 = E(viejo), POOL[viejo]["key"]
+                mejor, mejor_k = None, 1e9
+                for c in frescos:
+                    t = POOL[c]
+                    if c in todos or abs(t["energy"] - e0) > 0.9 or cam(k0, t["key"]) > 1:
+                        continue
+                    if S.names(t["artist"], t["title"]) & ocup:
+                        continue
+                    # tiene que ser MEJOR que el que sale, no solo distinto
+                    if dens(c) < dens(viejo) or COL.get(c, 0) < COL.get(viejo, 0):
+                        continue
+                    k = abs(t["energy"] - e0) - COL.get(c, 0) - dens(c) / 20
+                    if k < mejor_k:
+                        mejor, mejor_k = c, k
+                if mejor:
+                    fuera.append(viejo)
+                    quedan.remove(viejo)
+                    nuevos_inyectados.append(mejor)
+                    todos.add(mejor)
+                    ocup |= S.names(POOL[mejor]["artist"], POOL[mejor]["title"])
+
+        for viejo in [x for x in fuera if x in ids and (x in VET or x in GAST)]:
             e0, k0 = E(viejo), POOL[viejo]["key"]
             mejor, mejor_k = None, 1e9
             for c, t in POOL.items():
@@ -121,7 +160,7 @@ def main() -> None:
             if mejor:
                 nuevos.append(mejor)
                 ocup |= S.names(POOL[mejor]["artist"], POOL[mejor]["title"])
-        temas = quedan + nuevos
+        temas = quedan + nuevos + nuevos_inyectados
         n = len(temas)
         if n < 4:
             print(f"set {num}: quedan {n} temas, no lo toco")
@@ -163,34 +202,44 @@ def main() -> None:
         # -- paso en el 143 y decia SIN SOLUCION teniendo camino.
         cierre_min = lo + (hi - lo) * 0.62 if forma == "entrega" else 0.0
         VEC = {c: {y for y in temas if y != c and enlaza(c, y)} for c in temas}
-        estados = [(0.0, 0.0, [], frozenset())]
-        roto = False
-        for paso in range(n):
-            sig = []
-            for _, k, seq, us in estados:
-                ultimo = len(seq) == n - 1
-                for c in temas:
-                    if c in us or (seq and not enlaza(seq[-1], c)):
-                        continue
-                    # El que ENTREGA no puede terminar abajo: la pista pasa al
-                    # que sigue como se la dejan. El que CIERRA si puede bajar.
-                    if ultimo and forma == "entrega" and E(c) < cierre_min:
-                        continue
-                    nu = us | {c}
-                    libres = [x for x in temas if x not in nu]
-                    salidas = len(VEC[c] & set(libres)) if libres else 0
-                    if libres and salidas == 0:
-                        continue
-                    if libres and any(not (VEC[x] & (set(libres) | {c})) for x in libres):
-                        continue
-                    nk = k + costo(seq, c)
-                    sig.append((nk - salidas * 0.35, nk, seq + [c], nu))
-            if not sig:
-                print(f"set {num}: SIN SOLUCION en el paso {paso + 1}, queda como estaba")
-                roto = True
+        # Dos intentos: primero con el cierre alto obligado y, si con esos temas
+        # no existe recorrido que respete Camelot 2, sin esa condicion. Mejor un
+        # set reordenado que termina algo mas abajo que uno sin tocar.
+        intentos = [cierre_min, 0.0] if cierre_min else [0.0]
+        roto = True
+        for intento_i, piso_cierre in enumerate(intentos):
+            estados = [(0.0, 0.0, [], frozenset())]
+            roto = False
+            for paso in range(n):
+                sig = []
+                for _, k, seq, us in estados:
+                    ultimo = len(seq) == n - 1
+                    for c in temas:
+                        if c in us or (seq and not enlaza(seq[-1], c)):
+                            continue
+                        # El que ENTREGA no puede terminar abajo: la pista pasa
+                        # al que sigue como se la dejan. El que CIERRA si baja.
+                        if ultimo and piso_cierre and E(c) < piso_cierre:
+                            continue
+                        nu = us | {c}
+                        libres = [x for x in temas if x not in nu]
+                        salidas = len(VEC[c] & set(libres)) if libres else 0
+                        if libres and salidas == 0:
+                            continue
+                        if libres and any(not (VEC[x] & (set(libres) | {c})) for x in libres):
+                            continue
+                        nk = k + costo(seq, c)
+                        sig.append((nk - salidas * 0.35, nk, seq + [c], nu))
+                if not sig:
+                    roto = True
+                    break
+                estados = heapq.nsmallest(args.beam, sig, key=lambda x: x[0])
+            if not roto:
                 break
-            estados = heapq.nsmallest(args.beam, sig, key=lambda x: x[0])
+            if intento_i == 0 and len(intentos) > 1:
+                print(f"set {num}: sin recorrido con el cierre alto, reintento sin esa condicion")
         if roto:
+            print(f"set {num}: SIN SOLUCION, queda como estaba")
             continue
         mejor_orden = min(estados, key=lambda x: x[1])[2]
 
@@ -208,7 +257,7 @@ def main() -> None:
               f"| cima al {es.index(max(es)) / (n - 1):.0%} | racha {peor}")
         for c in fuera:
             print(f"      sale  {POOL[c]['artist'][:20]:20s} - {POOL[c]['title'][:30]}")
-        for c in nuevos:
+        for c in nuevos + nuevos_inyectados:
             print(f"      entra {POOL[c]['artist'][:20]:20s} - {POOL[c]['title'][:30]}"
                   f"  (dens {dens(c):.1f}, col {COL.get(c, 0):.2f})")
         if args.dry:
