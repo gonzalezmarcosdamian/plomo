@@ -39,7 +39,11 @@ sys.path.insert(0, str(RAIZ / "scripts"))
 from plomo import config  # noqa: E402
 from separar import MARGEN_S, separar  # noqa: E402
 
-DEPOSITO = config.MUSIC_LIBRARY_ROOT / "Biblioteca"
+# Toda la raiz de musica, no solo Biblioteca/: lo que se importo hace poco
+# vive en Nuevos/YYYY-MM y en Nuevos/Inbox, asi que buscando solo en
+# Biblioteca el script no encontraba nada reciente. The Silver Lily, que el DJ
+# usa de referencia, daba "ningun archivo".
+DEPOSITO = config.MUSIC_LIBRARY_ROOT
 SR = 22050
 SEGUNDOS = 20.0
 

@@ -333,7 +333,8 @@
   "momentos": [
    "pico",
    "cierre"
-  ]
+  ],
+  "rol": "el momento emotivo"
  },
  "124748921": {
   "artist": "Sébastien Léger, Lost Miracle",
@@ -345,7 +346,8 @@
   "momentos": [
    "pico",
    "cierre"
-  ]
+  ],
+  "rol": "el cierre heroico"
  },
  "80536228": {
   "artist": "Greg Ochman",
@@ -479,7 +481,8 @@
   "groove_ok": "su veredicto sobre si el tema tiene el groove que busca. Independiente de si le gusta.",
   "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension.",
   "E": "la energia que EL escucho, que pisa a la calculada.",
-  "_nota": "Estos campos salen de lo que el DJ dice, TEXTUAL. Si no dijo que si o que no sobre algo, no se anota nada de eso: no se supone."
+  "_nota": "Estos campos salen de lo que el DJ dice, TEXTUAL. Si no dijo que si o que no sobre algo, no se anota nada de eso: no se supone.",
+  "rol": "la funcion que el DJ le da al tema DENTRO de un set, dicha por el: 'el momento emotivo', 'el cierre heroico'. No es que le guste ni que tenga groove: es para que sirve."
  },
  "66290210": {
   "artist": "Cid Inc.",

@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.18.0",
+  "version": "1.19.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -817,6 +817,19 @@
      "por_que": "color_pct dio 0.85 y 0.83 a los dos temas que el DJ llamo 'muy oscuro' el mismo dia: la campana centrada en aire 5.5 premia exactamente el aire que el rechaza. Es la tercera formula que se cae con sus casos, despues de brillo y cuerpo."
     }
    ]
+  },
+  {
+   "version": "1.19.0",
+   "fecha": "2026-09-29",
+   "tema": "'oscuro' es una capa melodica sin ataque, no un problema de brillo",
+   "cambios": [
+    {
+     "regla": "estilo.pianitos",
+     "antes": "oscuro_del_dj medía medio/aire del mix entero",
+     "despues": "ataque del stem melodico >= 5.0, con aire <= 10 como segunda condicion",
+     "por_que": "el DJ pidio mirar 'los brillos de los pianitos de Silver Lily'. Separando el stem melodico, Silver Lily da ataque 9.4 y los dos temas que llamo muy oscuros dan 2.8 y 3.6. Son pads sin transitorios. El centroide, que era la hipotesis obvia, no separa nada."
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -937,7 +950,17 @@
    },
    "porque": "Que escucha el DJ cuando dice 'oscuro'. NO es color_pct: Emerge (0.85) y Circle Of Lights (0.83) puntuan entre lo mas brillante de la biblioteca y el 2026-09-29 los llamo 'muy oscuro'. La formula del color premia el aire alrededor de 5.5 y esos dos tienen 6.0 y 5.7, o sea que los premia POR lo que el rechaza.",
    "evidencia": "Nueve casos etiquetados, medidos sobre el balance de data/recetas/lib: | aprueba: One World 3.7, Ariana 3.4 ('a eso llamo color'), Mantura 3.1, Silver Lily 2.9 | llama oscuro: Emerge 1.9, Circle Of Lights 1.9, Shades Of Blue 0.4 | rechazo por otra cosa: Leuben 11.8 (seco). La banda 2.8-4.5 separa los siete casos de color. NO explica a Running (2.3), del que dijo que TIENE brillo: brillo y oscuro pueden no ser el mismo eje.",
-   "_estado": "PROPUESTA. Ningun codigo la lee: se uso a mano para elegir los reemplazos del 143 el 2026-09-29. Lo que la puede refutar son sus veredictos sobre temas que no vio. Prediccion abierta: Lost in My Head mide 1.5 y entro al set el mismo dia que los dos que llamo oscuros; si no le molesta, la banda esta mal."
+   "_estado": "SUPERADA por estilo.pianitos el 2026-09-29. medio/aire explicaba siete casos; el ataque del stem melodico explica once de doce y ademas dice QUE es lo que el DJ escucha (un pad sin transitorios) en vez de solo separar. Se deja anotada porque es barata de calcular --sale del balance, sin separar nada-- y sirve de primer filtro antes de gastar un minuto por tema."
+  },
+  "pianitos": {
+   "valor": {
+    "ataque_minimo": 5.0,
+    "aire_maximo": 10.0,
+    "medida": "ataque del stem `other` (scripts/color_melodico.py) + aire del balance"
+   },
+   "porque": "Lo que el DJ llama 'los brillos de los pianitos' y lo que llama 'oscuro'. No es el brillo espectral ni el registro: es si la capa melodica ATACA o solo sostiene. Un piano, un pluck o un arpegio tienen transitorios; un pad no tiene ninguno. El DJ, 2026-09-29: 'los brillos de los pianitos de Silver Lily, todo voy girando en torno a ese groove y color'.",
+   "evidencia": "Doce casos suyos, medidos sobre el stem melodico separado con Demucs. Ataque: Silver Lily 9.4 (su referencia), The Ways 9.0, Running 8.1 ('tiene brillo'), Ariana 7.6 ('a eso llamo color'), Droplets 7.1, In Another Time 6.6, One World 6.1 | los que llamo MUY OSCURO: Emerge 3.6 y Circle Of Lights 2.8, y el que rechazo por seco, Leuben, 4.3. Separa los once. La unica excepcion es Shades Of Blue (ataque 8.4 y lo llamo oscuro), y ahi el problema es otro eje: aire 14.9 contra 2.5-5.7 de todos los demas. De ahi las dos condiciones. | El centroide NO sirve: Circle 1201 contra Droplets 1203, The Ways 975 contra Emerge 940.",
+   "_estado": "PROPUESTA con un costo real: medir el ataque necesita separar el tema con Demucs, un minuto por tema. No se puede indexar la biblioteca entera (serian 50 horas), asi que se usa como FILTRO sobre una lista corta de candidatos, no como indice. Reemplaza a estilo.oscuro_del_dj (medio/aire), que explicaba 7 casos; este explica 11 de 12."
   }
  },
  "groove": {
