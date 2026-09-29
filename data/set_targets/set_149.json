@@ -7,12 +7,12 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": "2026-09-29: el 143 recortado a 1h30 a pedido del DJ. De los 22 quedan 13: los 10 que el marco mas Moon Lights the Way y Lost in My Head, que hacen el levante, y Futuro Infinito, que sostiene arriba antes de entregar. Sale toda la entrada (Go, Last Call, Little Mushroom, Portal Six) porque en 1h30 no hay lugar para construir, y salen los tres de 7.9 del pico (Olimpo, Crossing the Styx, Leave the World Behind) porque no entra la meseta larga. Bekal sale porque el DJ dijo 'prefiero no' — no es veto, es cambio para esta version. Lo reemplaza Futuro Infinito: 9A como Dodonpachi, E 8.0 igual que Fading Silhouettes, densidad 15.4, color p92 y ataque melodico 10.8, que es la firma de Silver Lily (1555Hz / 0.005 / 9). SOLO SPOTIFY: el DJ pidio no tocar Rekordbox con esta version. | 2026-09-29 v2, pedido del DJ: cambiar el que abre y el del levante, y Silver Lily mas adelante. Abre Moongazer (1742Hz/0.0030/ataque 11.3, la zona de Silver Lily) en vez de Droplets. Levante: Ariana (ataque 7.6) en vez de Moon Lights. Descartados por ataque de pad: Annunaki 4.7, Post Boutique 2.2, Generator 2.3, Earthbound 3.1. Silver Lily pasa de 3 a 5, que es lo mas atras que entra sin romper la subida (E 5.5 y el 6 ya esta en 6.9). Droplets NO queda vetado: pedir cambiar no es rechazar, y sigue marcado favorito.",
+  "_nota": "2026-09-29: el 143 recortado a 1h30 a pedido del DJ. De los 22 quedan 13: los 10 que el marco mas Moon Lights the Way y Lost in My Head, que hacen el levante, y Futuro Infinito, que sostiene arriba antes de entregar. Sale toda la entrada (Go, Last Call, Little Mushroom, Portal Six) porque en 1h30 no hay lugar para construir, y salen los tres de 7.9 del pico (Olimpo, Crossing the Styx, Leave the World Behind) porque no entra la meseta larga. Bekal sale porque el DJ dijo 'prefiero no' — no es veto, es cambio para esta version. Lo reemplaza Futuro Infinito: 9A como Dodonpachi, E 8.0 igual que Fading Silhouettes, densidad 15.4, color p92 y ataque melodico 10.8, que es la firma de Silver Lily (1555Hz / 0.005 / 9). SOLO SPOTIFY: el DJ pidio no tocar Rekordbox con esta version. | 2026-09-29 v2, pedido del DJ: cambiar el que abre y el del levante, y Silver Lily mas adelante. Abre Moongazer (1742Hz/0.0030/ataque 11.3, la zona de Silver Lily) en vez de Droplets. Levante: Ariana (ataque 7.6) en vez de Moon Lights. Descartados por ataque de pad: Annunaki 4.7, Post Boutique 2.2, Generator 2.3, Earthbound 3.1. Silver Lily pasa de 3 a 5, que es lo mas atras que entra sin romper la subida (E 5.5 y el 6 ya esta en 6.9). Droplets NO queda vetado: pedir cambiar no es rechazar, y sigue marcado favorito. | 2026-09-29 v3: 'no estan buenos esos que subiste' (Moongazer, Ariana). Entran dos del 143: Little Mushroom abre y Maze 28 - Leave the World Behind es el levante. OJO: el ataque melodico eligio Moongazer (11.3, el mas alto medido) y el DJ lo rechazo, asi que ese numero mide una propiedad real pero NO mide si el tema va. Queda como desempate, no como filtro.",
   "tracks": [
     {
-      "artist": "Guy Mantzur",
-      "title": "Moongazer",
-      "content_id": "98274423"
+      "artist": "Lane 8, Sultan + Shepard",
+      "title": "The Little Mushroom That Got Away (Extended Mix)",
+      "content_id": "157884382"
     },
     {
       "artist": "Andre Moret",
@@ -35,9 +35,9 @@
       "content_id": "80536228"
     },
     {
-      "artist": "Sebastien Leger",
-      "title": "Ariana",
-      "content_id": "11622300"
+      "artist": "Maze 28",
+      "title": "Leave the World Behind (Original Mix)",
+      "content_id": "114182110"
     },
     {
       "artist": "Rockka",
