@@ -479,7 +479,7 @@
   "gastado": "lo toco mucho y no lo quiere EN ESA TANDA. No es un veto: en otra fecha vuelve a estar disponible. Lleva fecha y alcance.",
   "favorito": "le gusta. Un 'si' suyo sobre un tema cuenta como favorito.",
   "groove_ok": "su veredicto sobre si el tema tiene el groove que busca. Independiente de si le gusta.",
-  "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension.",
+  "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension: groove (Ipanema), polenta (Fading Silhouettes), pianitos y color (The Silver Lily).",
   "E": "la energia que EL escucho, que pisa a la calculada.",
   "_nota": "Estos campos salen de lo que el DJ dice, TEXTUAL. Si no dijo que si o que no sobre algo, no se anota nada de eso: no se supone.",
   "rol": "la funcion que el DJ le da al tema DENTRO de un set, dicha por el: 'el momento emotivo', 'el cierre heroico'. No es que le guste ni que tenga groove: es para que sirve."
@@ -539,5 +539,14 @@
   "favorito": true,
   "nota": "me gustaron ambos",
   "fuente": "escucha del 143, 2026-09-29"
+ },
+ "250703508": {
+  "artist": "Hobin Rude",
+  "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
+  "E_calc": 8.0,
+  "favorito": true,
+  "nota": "el que siento mas polenta",
+  "fuente": "escucha del 143, 2026-09-29",
+  "referencia_de": "polenta"
  }
 }
