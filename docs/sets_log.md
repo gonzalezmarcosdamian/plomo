@@ -2886,7 +2886,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 143. 143. Cumple Zorro · Colorido · 1 a 3 AM — 2h — 2026-09-22
 **Armado:** 2026-09-29  
 **Duracion:** 0h  
-**Tracks:** 23  
+**Tracks:** 22  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -2904,16 +2904,15 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 11 | Rockka | Amnesia (Fuenka Remix) | 123 | 5.5 |
 | 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 5.5 |
 | 13 | Jeff Ozmits, Miguel Ante | Crossing the Styx (DJ Ruby Extended Remix) | 123 | 7.9 |
-| 14 | Emi Galvan | Everlong (Original Mix) | 124 | 6.0 |
-| 15 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
-| 16 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
-| 18 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 19 | Abity | Roots (Gai Barone Remix) | 122 | 5.5 |
-| 20 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 21 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 22 | Rauschhaus, Cary Crank | Bekal (Extended Mix) | 120 | 5.0 |
-| 23 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
+| 14 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 5.5 |
+| 15 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 16 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 5.5 |
+| 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 18 | Abity | Roots (Gai Barone Remix) | 122 | 5.5 |
+| 19 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 20 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 21 | Rauschhaus, Cary Crank | Bekal (Extended Mix) | 120 | 5.0 |
+| 22 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 5.5 |
 
 
 ## Set 144. 144. Cumple Zorro · Colorido · 3 a 5 AM — 2h — 2026-09-22

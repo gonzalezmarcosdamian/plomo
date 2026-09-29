@@ -590,5 +590,18 @@
   "nota": "pierde el groove",
   "fuente": "escucha del 143, 2026-09-29",
   "groove_ok": false
+ },
+ "219733407": {
+  "artist": "Emi Galvan",
+  "title": "Everlong (Original Mix)",
+  "E_calc": 6.9,
+  "nota": "vetado por uso",
+  "fuente": "2026-09-29",
+  "gastado": {
+   "fecha": "2026-09-29",
+   "alcance": "la tanda del cumple, sets 139-148",
+   "vale_en_otra_fecha": true,
+   "por_que": "vetado por uso"
+  }
  }
 }
