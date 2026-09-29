@@ -11,6 +11,7 @@ Uso:
   python scripts/build_set.py 16 --dry    # muestra el orden sin escribir
   python scripts/build_set.py --all       # construye todos los sets con target JSON
 """
+import re
 import sys
 import json
 import random
@@ -187,11 +188,17 @@ def resolve_tracks(con, target: dict) -> list[dict]:
 
         bpm_val = (bpm_raw or 12200) / 100
         energy = t.get("energy", _bpm_proxy(bpm_val))
-        if commnt and "E:" in commnt:
-            try:
-                energy = float(commnt.split("|")[0].replace("E:", "").strip())
-            except ValueError:
-                energy = _bpm_proxy(bpm_val)
+        if commnt:
+            # El comentario es "E:7.9 [peak] | v1:7.0": hay que sacar el numero,
+            # no el resto de la linea. Antes se hacia split("|")[0] menos "E:",
+            # que dejaba "7.9 [peak]", float() fallaba y el tema caia al proxy
+            # por BPM. O sea que TODO tema etiquetado [mid] o [peak] --los que el
+            # DJ mas trabajo-- entraba al solver con la energia de un tema
+            # cualquiera de su BPM, y en un set sin keep_order eso lo ordenaba mal
+            # sin avisar.
+            m = re.search(r"E:\s*([0-9]+(?:\.[0-9]+)?)", commnt)
+            if m:
+                energy = float(m.group(1))
 
         resolved.append({
             "id": str(cid),

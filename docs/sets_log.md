@@ -3052,3 +3052,26 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 15 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
 | 16 | Cid Inc. | Citadel (Original Mix) | 123 | 5.5 |
 
+
+## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22
+**Armado:** 2026-09-29  
+**Duracion:** 0h  
+**Tracks:** 13  
+**BPM range:** 100-140  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 6.6 |
+| 2 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 3 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
+| 4 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
+| 5 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 6 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 7.9 |
+| 7 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 8 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 9 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 10 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 11 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 12 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
+| 13 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+
