@@ -9,9 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Cioz",
-      "title": "Dancing in the Night (feat. Eleonora) [Lucky Shot Extended Mix]",
-      "content_id": "221873665"
+      "artist": "Ignacio Salgado, Ezequiel Perini",
+      "title": "Modul8 (Sacha Rener Remix)",
+      "content_id": "267006788"
     },
     {
       "artist": "Gux Jimenez, Kurt Caesar",
@@ -19,9 +19,9 @@
       "content_id": "11016180"
     },
     {
-      "artist": "Durante, Mayro",
-      "title": "Mantra (Extended Mix)",
-      "content_id": "147555802"
+      "artist": "Cioz",
+      "title": "Dancing in the Night (feat. Eleonora) [Lucky Shot Extended Mix]",
+      "content_id": "221873665"
     },
     {
       "artist": "Cendryma",
@@ -29,9 +29,9 @@
       "content_id": "75106655"
     },
     {
-      "artist": "Ignacio Salgado, Ezequiel Perini",
-      "title": "Modul8 (Sacha Rener Remix)",
-      "content_id": "267006788"
+      "artist": "Rockka",
+      "title": "Initiation",
+      "content_id": "41309264"
     },
     {
       "artist": "Rezident, Kate Morgan",
@@ -39,9 +39,14 @@
       "content_id": "115900435"
     },
     {
-      "artist": "Rockka",
-      "title": "Initiation",
-      "content_id": "41309264"
+      "artist": "Durante, Mayro",
+      "title": "Mantra (Extended Mix)",
+      "content_id": "147555802"
+    },
+    {
+      "artist": "Andy Moor & Adam White",
+      "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
+      "content_id": "162072169"
     },
     {
       "artist": "Maezbi, Nicolas Viana",
@@ -64,11 +69,6 @@
       "content_id": "88989129"
     },
     {
-      "artist": "Andy Moor & Adam White",
-      "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
-      "content_id": "162072169"
-    },
-    {
       "artist": "Paul Thomas",
       "title": "Jumbo (Jamie Stevens Remix)",
       "content_id": "83535228"
@@ -79,6 +79,11 @@
       "content_id": "28160387"
     },
     {
+      "artist": "Chelakhov",
+      "title": "Haunted (Original Mix)",
+      "content_id": "31001277"
+    },
+    {
       "artist": "Kamilo Sanclemente, Dabeat",
       "title": "Vekants",
       "content_id": "4009725"
@@ -87,11 +92,6 @@
       "artist": "Kasey Taylor, Gai Barone",
       "title": "Spiral (Original Mix)",
       "content_id": "253798452"
-    },
-    {
-      "artist": "Chelakhov",
-      "title": "Haunted (Original Mix)",
-      "content_id": "31001277"
     }
   ]
 }

@@ -9,6 +9,61 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Chelakhov",
+      "title": "Haunted (Original Mix)",
+      "content_id": "31001277"
+    },
+    {
+      "artist": "Estiva, Cosmosky",
+      "title": "Ecstasy (Extended Mix)",
+      "content_id": "231293887"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "My Heart (Original Mix)",
+      "content_id": "227117324"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "The Drip (Original Mix)",
+      "content_id": "114502536"
+    },
+    {
+      "artist": "D-Nox, Baya, LENN V",
+      "title": "Silence (Extended Mix)",
+      "content_id": "100091235"
+    },
+    {
+      "artist": "This Guy Ben",
+      "title": "Pulente (Extended Mix)",
+      "content_id": "126903064"
+    },
+    {
+      "artist": "Paul Thomas",
+      "title": "Jumbo (Jamie Stevens Remix)",
+      "content_id": "83535228"
+    },
+    {
+      "artist": "Albuquerque, Anonimat",
+      "title": "Like First Time Flight (Shai T Extended Remix)",
+      "content_id": "217881642"
+    },
+    {
+      "artist": "Blancah, NeoClassic",
+      "title": "Travessia (Hicky & Kalo Remix)",
+      "content_id": "22351229"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Mauro Aguirre",
+      "title": "Looking For You (Extended Mix)",
+      "content_id": "89039390"
+    },
+    {
+      "artist": "Tobi Amuchastegui",
+      "title": "Voices (Original Mix)",
+      "content_id": "264722257"
+    },
+    {
       "artist": "Rockka, Maze 28",
       "title": "Solid (Extended Mix)",
       "content_id": "160307690"
@@ -19,29 +74,14 @@
       "content_id": "61522600"
     },
     {
-      "artist": "Redspace, Diego Riga",
-      "title": "Phantom Sun (Extended Mix)",
-      "content_id": "227739486"
-    },
-    {
       "artist": "Tinlicker",
       "title": "All That I Lost",
       "content_id": "23816256"
     },
     {
-      "artist": "Tobi Amuchastegui",
-      "title": "Voices (Original Mix)",
-      "content_id": "264722257"
-    },
-    {
-      "artist": "Blancah, NeoClassic",
-      "title": "Travessia (Hicky & Kalo Remix)",
-      "content_id": "22351229"
-    },
-    {
-      "artist": "This Guy Ben",
-      "title": "Pulente (Extended Mix)",
-      "content_id": "126903064"
+      "artist": "Redspace, Diego Riga",
+      "title": "Phantom Sun (Extended Mix)",
+      "content_id": "227739486"
     },
     {
       "artist": "D-Nox, Stereo Underground",
@@ -49,49 +89,9 @@
       "content_id": "140482190"
     },
     {
-      "artist": "Albuquerque, Anonimat",
-      "title": "Like First Time Flight (Shai T Extended Remix)",
-      "content_id": "217881642"
-    },
-    {
-      "artist": "Kamilo Sanclemente, Mauro Aguirre",
-      "title": "Looking For You (Extended Mix)",
-      "content_id": "89039390"
-    },
-    {
-      "artist": "D-Nox, Baya, LENN V",
-      "title": "Silence (Extended Mix)",
-      "content_id": "100091235"
-    },
-    {
       "artist": "Colyn",
       "title": "The Future Is the Past",
       "content_id": "109636107"
-    },
-    {
-      "artist": "Paul Thomas",
-      "title": "Jumbo (Jamie Stevens Remix)",
-      "content_id": "83535228"
-    },
-    {
-      "artist": "This Guy Ben",
-      "title": "The Drip (Original Mix)",
-      "content_id": "114502536"
-    },
-    {
-      "artist": "Gorje Hewek",
-      "title": "My Heart (Original Mix)",
-      "content_id": "227117324"
-    },
-    {
-      "artist": "Estiva, Cosmosky",
-      "title": "Ecstasy (Extended Mix)",
-      "content_id": "231293887"
-    },
-    {
-      "artist": "Chelakhov",
-      "title": "Haunted (Original Mix)",
-      "content_id": "31001277"
     }
   ]
 }

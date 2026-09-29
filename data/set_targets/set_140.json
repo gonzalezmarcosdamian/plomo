@@ -9,9 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Parra for Cuva",
-      "title": "Juri (Original Mix)",
-      "content_id": "183767397"
+      "artist": "Khen",
+      "title": "Homeboy (Dilby Remix)",
+      "content_id": "148429182"
     },
     {
       "artist": "GMJ, Matter",
@@ -19,29 +19,9 @@
       "content_id": "183361749"
     },
     {
-      "artist": "Khen",
-      "title": "Homeboy (Dilby Remix)",
-      "content_id": "148429182"
-    },
-    {
-      "artist": "Jody Wisternoff",
-      "title": "Paramour (Original Mix)",
-      "content_id": "6900209"
-    },
-    {
-      "artist": "Gorje Hewek, Molac, Dulus",
-      "title": "Astro World (Original Mix)",
-      "content_id": "7864421"
-    },
-    {
-      "artist": "Redspace, Olven",
-      "title": "Thread (Extended Mix)",
-      "content_id": "263348196"
-    },
-    {
-      "artist": "Gai Barone",
-      "title": "Fractals (Nicolas Viana Extended Remix)",
-      "content_id": "52625039"
+      "artist": "Simon Neviani",
+      "title": "Uprising Fall (Hobin Rude Remix)",
+      "content_id": "254829790"
     },
     {
       "artist": "Cary Crank, OBL",
@@ -49,14 +29,19 @@
       "content_id": "138438414"
     },
     {
+      "artist": "Gai Barone",
+      "title": "Fractals (Nicolas Viana Extended Remix)",
+      "content_id": "52625039"
+    },
+    {
+      "artist": "Gorje Hewek, Molac, Dulus",
+      "title": "Astro World (Original Mix)",
+      "content_id": "7864421"
+    },
+    {
       "artist": "Maze 28",
       "title": "Mindloop (Original Mix)",
       "content_id": "177299920"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Pure Junction (Berdu Remix)",
-      "content_id": "37141460"
     },
     {
       "artist": "Grance & Soulmac",
@@ -64,14 +49,29 @@
       "content_id": "49887591"
     },
     {
+      "artist": "Jody Wisternoff",
+      "title": "Paramour (Original Mix)",
+      "content_id": "6900209"
+    },
+    {
+      "artist": "Redspace, Olven",
+      "title": "Thread (Extended Mix)",
+      "content_id": "263348196"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Pure Junction (Berdu Remix)",
+      "content_id": "37141460"
+    },
+    {
+      "artist": "Parra for Cuva",
+      "title": "Juri (Original Mix)",
+      "content_id": "183767397"
+    },
+    {
       "artist": "Simon Vuarambon",
       "title": "Lazos (Original Mix)",
       "content_id": "136780130"
-    },
-    {
-      "artist": "Simon Neviani",
-      "title": "Uprising Fall (Hobin Rude Remix)",
-      "content_id": "254829790"
     },
     {
       "artist": "Amber Long, Hot Tuneik",
@@ -84,14 +84,14 @@
       "content_id": "38628920"
     },
     {
-      "artist": "Kostya Outta, Liam Garcia",
-      "title": "If I Win (Cosmonaut Extended Remix)",
-      "content_id": "151391665"
-    },
-    {
       "artist": "Gai Barone, Luke Brancaccio",
       "title": "Freelove (Original Mix)",
       "content_id": "222018440"
+    },
+    {
+      "artist": "Kostya Outta, Liam Garcia",
+      "title": "If I Win (Cosmonaut Extended Remix)",
+      "content_id": "151391665"
     }
   ]
 }

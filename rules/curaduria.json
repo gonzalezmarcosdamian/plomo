@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.19.0",
+  "version": "1.19.1",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -830,6 +830,19 @@
      "por_que": "el DJ pidio mirar 'los brillos de los pianitos de Silver Lily'. Separando el stem melodico, Silver Lily da ataque 9.4 y los dos temas que llamo muy oscuros dan 2.8 y 3.6. Son pads sin transitorios. El centroide, que era la hipotesis obvia, no separa nada."
     }
    ]
+  },
+  {
+   "version": "1.19.1",
+   "fecha": "2026-09-29",
+   "tema": "medio/aire no sirve para descartar: se lleva puestos 8 de 23 favoritos",
+   "cambios": [
+    {
+     "regla": "estilo.oscuro_del_dj._estado",
+     "antes": "propuesta usable como primer filtro barato",
+     "despues": "refutada como filtro; solo sirve para ordenar",
+     "por_que": "medida contra TODOS los favoritos del DJ y no solo contra los casos con los que se armo, descarta Amnesia, Citadel, Fragma e Ipanema Twilight, que son cuatro de sus si mas claros."
+    }
+   ]
   }
  ],
  "sonido_propio": {
@@ -950,7 +963,7 @@
    },
    "porque": "Que escucha el DJ cuando dice 'oscuro'. NO es color_pct: Emerge (0.85) y Circle Of Lights (0.83) puntuan entre lo mas brillante de la biblioteca y el 2026-09-29 los llamo 'muy oscuro'. La formula del color premia el aire alrededor de 5.5 y esos dos tienen 6.0 y 5.7, o sea que los premia POR lo que el rechaza.",
    "evidencia": "Nueve casos etiquetados, medidos sobre el balance de data/recetas/lib: | aprueba: One World 3.7, Ariana 3.4 ('a eso llamo color'), Mantura 3.1, Silver Lily 2.9 | llama oscuro: Emerge 1.9, Circle Of Lights 1.9, Shades Of Blue 0.4 | rechazo por otra cosa: Leuben 11.8 (seco). La banda 2.8-4.5 separa los siete casos de color. NO explica a Running (2.3), del que dijo que TIENE brillo: brillo y oscuro pueden no ser el mismo eje.",
-   "_estado": "SUPERADA por estilo.pianitos el 2026-09-29. medio/aire explicaba siete casos; el ataque del stem melodico explica once de doce y ademas dice QUE es lo que el DJ escucha (un pad sin transitorios) en vez de solo separar. Se deja anotada porque es barata de calcular --sale del balance, sin separar nada-- y sirve de primer filtro antes de gastar un minuto por tema."
+   "_estado": "REFUTADA COMO FILTRO el 2026-09-29. Separaba los siete casos con los que se armo, pero medida contra los 23 temas que el DJ aprobo, OCHO caen debajo de 2.2 y serian descartados: Amnesia 1.6, Citadel 1.8, Fragma 1.7, Ipanema Twilight 1.9, Mindloop 1.8, Lazos 1.5, Pure Junction 1.3, If I Win 1.6. Es la trampa de siempre: una formula ajustada a siete casos explica esos siete. Sirve para ORDENAR candidatos --los que estan arriba tienden a gustarle-- pero no para excluir a nadie. Lo que si separa es el ataque de la capa melodica (estilo.pianitos), y eso cuesta un minuto por tema."
   },
   "pianitos": {
    "valor": {

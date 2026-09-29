@@ -25,9 +25,9 @@
       "content_id": "42634301"
     },
     {
-      "artist": "Chelakhov",
-      "title": "Insomnia (Original Mix)",
-      "content_id": "80947222"
+      "artist": "Niko Ava",
+      "title": "Freedom (Original Mix)",
+      "content_id": "162617230"
     },
     {
       "artist": "Sounom & Sagou",
@@ -35,9 +35,14 @@
       "content_id": "92834938"
     },
     {
-      "artist": "Niko Ava",
-      "title": "Freedom (Original Mix)",
-      "content_id": "162617230"
+      "artist": "Chelakhov",
+      "title": "Insomnia (Original Mix)",
+      "content_id": "80947222"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Just Come Back (Extended Mix)",
+      "content_id": "129720546"
     },
     {
       "artist": "Analog Jungs",
@@ -45,14 +50,9 @@
       "content_id": "50523858"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
-      "content_id": "117129270"
-    },
-    {
-      "artist": "Emi Galvan",
-      "title": "Everlong (Ruben Karapetyan Remix)",
-      "content_id": "68108434"
+      "artist": "Movement Machina",
+      "title": "Adaptation (Donny Carr Remix)",
+      "content_id": "126614108"
     },
     {
       "artist": "Praise (BR)",
@@ -60,19 +60,19 @@
       "content_id": "261787150"
     },
     {
-      "artist": "Supacooks",
-      "title": "Un Mundo En Paz (Serious Dancers Extended Remix)",
-      "content_id": "64018165"
-    },
-    {
-      "artist": "Movement Machina",
-      "title": "Adaptation (Donny Carr Remix)",
-      "content_id": "126614108"
+      "artist": "Emi Galvan",
+      "title": "Everlong (Ruben Karapetyan Remix)",
+      "content_id": "68108434"
     },
     {
       "artist": "Kamilo Sanclemente",
-      "title": "Just Come Back (Extended Mix)",
-      "content_id": "129720546"
+      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
+      "content_id": "117129270"
+    },
+    {
+      "artist": "Supacooks",
+      "title": "Un Mundo En Paz (Serious Dancers Extended Remix)",
+      "content_id": "64018165"
     }
   ]
 }
