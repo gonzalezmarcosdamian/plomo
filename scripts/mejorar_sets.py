@@ -78,6 +78,10 @@ def main() -> None:
     # eligio Moongazer y lo rechazo, la densidad eligio Karnaval y lo rechazo, y
     # el lugar 12 del 149 lo resolvio de una una transicion que el ya habia
     # tocado (In Another Time -> Peace Within). Por eso pesa mas que el color.
+    # OJO CON `ancho` DE LA RECETA: es un dict por banda
+    # {"sub":1.0,"bajo":0.99,"medio":0.60,"aire":0.22}, no un numero. Leerlo con
+    # un get() plano devuelve 0 y el filtro que lo use pasa a no filtrar nada,
+    # en silencio. El valor que separa los casos etiquetados es ancho["medio"].
     VECINOS: dict[str, list[str]] = {}
     fn = RAIZ / "data/vecinos_tocados.json"
     if fn.exists():

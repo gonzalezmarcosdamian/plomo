@@ -3067,7 +3067,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 4 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
 | 5 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
 | 6 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 7 | Jonathan Cowan | Sawyer (Original Mix) | 124 | 5.6 |
+| 7 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
 | 8 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
 | 9 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
 | 10 | Joe Goddard | Music Is The Answer (Hot Since 82 Remix) | 123 | 6.4 |

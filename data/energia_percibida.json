@@ -673,5 +673,17 @@
       "textual": "pomelo no me gusto cambialo"
     },
     "fuente": "escucha del 149, 2026-09-30"
+  },
+  "193615620": {
+    "artist": "Jonathan Cowan",
+    "title": "Sawyer (Original Mix)",
+    "E_calc": 5.6,
+    "nota": "sawyer muy duro",
+    "fuente": "escucha del 149, 2026-09-30",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "sawyer muy duro"
+    }
   }
 }
