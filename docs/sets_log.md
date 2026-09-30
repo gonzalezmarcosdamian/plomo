@@ -3056,7 +3056,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22
 **Armado:** 2026-09-30  
 **Duracion:** 0h  
-**Tracks:** 21  
+**Tracks:** 17  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3067,19 +3067,15 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 4 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
 | 5 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
 | 6 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 7 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
-| 8 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
-| 9 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
-| 10 | Joe Goddard | Music Is The Answer (Hot Since 82 Remix) | 123 | 6.4 |
-| 11 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
-| 12 | Maze 28 | Fogbows | 122 | 6.3 |
-| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 15 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 16 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 18 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 19 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 20 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
-| 21 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 7 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 8 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
+| 9 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 10 | Maze 28 | Fogbows | 122 | 6.3 |
+| 11 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 13 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 14 | Ruben Karapetyan | Perceptual Isolation (Original Mix) | 121 | 6.2 |
+| 15 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 16 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 17 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 
