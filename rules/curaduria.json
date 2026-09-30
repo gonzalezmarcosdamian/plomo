@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.19.1",
+  "version": "1.20.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -11,7 +11,20 @@
    "evidencia": "contra que se midio. 'PENDIENTE' es una deuda, no un adorno.",
    "duro": "true = restriccion que el solver no puede violar; si no, es un costo.",
    "decision_del_dj": "true = la puso el DJ escuchando, no una medicion. La referencia NO la refuta: si 40 setlists ajenos la violan, eso describe a esos DJ, no un error nuestro. backtest_rules.py la reporta con el numero pero sin veredicto de refutacion."
-  }
+  },
+  "historial": [
+   {
+    "version": "1.20.0",
+    "fecha": "2026-09-30",
+    "cambios": [
+     "vetos.alcance: el veto es del set, no global (textual del DJ)",
+     "groove.piso_graves 40 y piso_densidad 14: el groove es el peso de graves, no la densidad",
+     "voces: dimension nueva, medida",
+     "densidad.largo_con_mezclas: el solape es fijo por mezcla, no un porcentaje",
+     "estilo: el ataque melodico queda degradado a detector de oscuro"
+    ]
+   }
+  ]
  },
  "armonia": {
   "max_camelot_dist": {
@@ -228,6 +241,12 @@
    "anterior": 12,
    "porque": "Cuantos temas entran de verdad en una hora.",
    "evidencia": "2026-09-19: el reloj de djmdHistory da 6.8 min por track (p10 5.2, p90 8.4, n=315) y se usa el 93% del archivo. Con 12/hora, 8 de cada 10 sets no entraban en su horario y el 108 duraba 2h59 con cartel de 2h."
+  },
+  "largo_con_mezclas": {
+   "valor": 60,
+   "porque": "Segundos de solape por transicion. El largo tocado es crudo menos 1 minuto por cada mezcla, o sea menos (n-1) minutos. Se venia calculando como crudo x 0.93, que es un PORCENTAJE, y el solape no es proporcional: es una cantidad fija de segundos, asi que cuanto mas corto el tema mas pesa.",
+   "evidencia": "2026-09-30: el DJ pidio '1.3 tocable con mezclas de 1 minuto aprox'. Sobre los 13 temas que tenia el 149: crudo 1h37, con el 0.93 daba 1h30 y con mezclas de 1 minuto 1h25. Cinco minutos de diferencia.",
+   "lee": "nadie todavia: select_set.py sigue con el 0.93"
   }
  },
  "solver": {
@@ -974,7 +993,8 @@
    "porque": "Lo que el DJ llama 'los brillos de los pianitos' y lo que llama 'oscuro'. No es el brillo espectral ni el registro: es si la capa melodica ATACA o solo sostiene. Un piano, un pluck o un arpegio tienen transitorios; un pad no tiene ninguno. El DJ, 2026-09-29: 'los brillos de los pianitos de Silver Lily, todo voy girando en torno a ese groove y color'.",
    "evidencia": "Doce casos suyos, medidos sobre el stem melodico separado con Demucs. Ataque: Silver Lily 9.4 (su referencia), The Ways 9.0, Running 8.1 ('tiene brillo'), Ariana 7.6 ('a eso llamo color'), Droplets 7.1, In Another Time 6.6, One World 6.1 | los que llamo MUY OSCURO: Emerge 3.6 y Circle Of Lights 2.8, y el que rechazo por seco, Leuben, 4.3. Separa los once. La unica excepcion es Shades Of Blue (ataque 8.4 y lo llamo oscuro), y ahi el problema es otro eje: aire 14.9 contra 2.5-5.7 de todos los demas. De ahi las dos condiciones. | El centroide NO sirve: Circle 1201 contra Droplets 1203, The Ways 975 contra Emerge 940.",
    "_estado": "PROPUESTA con un costo real: medir el ataque necesita separar el tema con Demucs, un minuto por tema. No se puede indexar la biblioteca entera (serian 50 horas), asi que se usa como FILTRO sobre una lista corta de candidatos, no como indice. Reemplaza a estilo.oscuro_del_dj (medio/aire), que explicaba 7 casos; este explica 11 de 12."
-  }
+  },
+  "_ataque_melodico_degradado": "2026-09-30: el ataque de la capa melodica se uso tres veces para elegir y las tres fallo. Eligio Moongazer (11.3, el mas alto medido) y el DJ lo rechazo; eligio Ariana (7.6) y tambien; y no explica 'drop muy iglesia', porque Orb da 8.5 --mas alto que Wakefeld 5.8, que el DJ aprueba--. Separa bien lo que el DJ llama OSCURO (Emerge 3.6, Circle of Lights 2.8 contra Silver Lily 9.0) y nada mas. Ademas color_melodico mide al 45% del tema y no en el breakdown, asi que para juzgar un drop esta mirando el lugar equivocado."
  },
  "groove": {
   "_que_es": "Continuidad del groove entre temas consecutivos: densidad ritmica y peso de graves, de data/groove_index.json. Es lo que se escucha como 'se corta'.",
@@ -985,7 +1005,21 @@
   "peso_continuidad": {
    "valor": 4.0,
    "porque": "Segundo en la jerarquia, junto con la energia y arriba de todo lo demas. El DJ, 2026-09-23: 'quiero que domine la energia y groove constante, luego lo progresivo y luego recien la cuota de genero; artistas le gana, productores le gana a cuota de genero'. En el codigo la escala estaba al reves: la cuota de genero pesaba 8.0 y el desvio del arco 3.0, o sea el genero mandaba 2.7 veces mas que la energia. Los cuatro temas que el DJ rechazo escuchando entraron por la cuota. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
-  }
+  },
+  "piso_graves": {
+   "valor": 40.0,
+   "porque": "Lo que el DJ llama 'tiene groove' NO es la densidad. Contra sus propios veredictos la densidad no separa nada: Ipanema 'tiene el groove' 14.9 contra Karnaval 'pierde el groove' 14.8; Fogbows 'tiene' 14.6 contra Pomelo 'no me gusto' 14.6. Lo que si los separa es el peso de graves, que estaba guardado en el indice y nadie miraba.",
+   "evidencia": "2026-09-30: tienen groove Ipanema 57.2, Fogbows 48.0, Fading Silhouettes 46.4, Silver Lily 45.4, Mily 43.1, Coaster 40.9. No tienen: Karnaval 29.0, Pomelo 37.1, The Whiteroom 39.2. Con el piso de densidad da 11/11 en los casos etiquetados y pasa el 30% de la biblioteca, asi que no aprueba a cualquiera. ARIA es el caso fuera de muestra: su receta se indexo DESPUES de encontrar el patron, la regla predijo que si (14.3/44.1) y el DJ dijo 'aria tiene el groove'. Segundo acierto fuera de muestra: If I Had Wings tenia graves 32.3 --abajo del piso-- y el DJ dijo 'la baja un poco'.",
+   "estado": "HIPOTESIS. Se encontro mirando diez casos etiquetados, o sea que esta ajustada a ellos. Se valida o se cae con los proximos veredictos del DJ, no con mas analisis de los mismos diez.",
+   "lee": "nadie todavia"
+  },
+  "piso_densidad": {
+   "valor": 14.0,
+   "porque": "Va junto con el piso de graves: Milo tiene graves 55.6 y el DJ dijo 'no tiene el groove'. Su densidad es 13.5.",
+   "evidencia": "2026-09-30: es el unico de los diez casos que falla por densidad y no por graves.",
+   "lee": "nadie todavia"
+  },
+  "_refutado": "El piso de DENSIDAD solo no sirve para decidir si un tema tiene groove: los veredictos del DJ caen a los dos lados del mismo numero. La densidad sigue valiendo para el SALTO entre consecutivos (salto_tolerado), que es otra pregunta."
  },
  "genero": {
   "_que_es": "La cuota de genero: el norte, no la ley.",
@@ -999,7 +1033,7 @@
   }
  },
  "vetos": {
-  "_que_es": "Lo que no entra nunca, por mas que el costo lo pida. Sale de la escucha del DJ y generaliza a la categoria: un veto de track no ensena nada de sus vecinos, y el mismo problema volvia por otro tema del mismo palo.",
+  "_que_es": "Lo que el DJ saco de UN SET. Textual, 2026-09-30: 'veto no entra en este set, solamente'. Hasta ese dia este campo decia 'lo que no entra nunca' y los 28 vetos anotados quedaron guardados como si fueran para siempre; con la definicion correcta 22 de ellos vuelven a estar disponibles fuera de su set, porque 'oscuro', 'poca energia' o 'no sostiene el pico' son juicios sobre un LUGAR y no sobre el tema.",
   "generos": {
    "valor": [
     "Afro House"
@@ -1012,6 +1046,29 @@
     "david guetta"
    ],
    "porque": "El DJ sobre Meduza - Friends: 'es todo lo que no quiero, horrible'. Guetta entra por ser la misma familia y estar de tema 1 en el set 144; si el DJ lo quiere de vuelta, se saca de aca."
+  },
+  "alcance": {
+   "valor": "set",
+   "porque": "Un veto vale en el set donde se dijo. Solo es global cuando el DJ rechaza lo que el tema ES --'malisimo', 'horrible', 'es todo lo que no quiero'-- o cuando sale por categoria, como el genero. La diferencia entre las dos cosas es un tema que vuelve o un tema que se pierde.",
+   "evidencia": "2026-09-30: el DJ lo dijo textual. Sobre los 28 vetos anotados, 22 pasan a ser de su set y 6 quedan globales.",
+   "lee": "scripts/mejorar_sets.py vetado_en(c, num)"
+  }
+ },
+ "voces": {
+  "_que_es": "Cuanta voz tiene un tema, medido sobre el stem vocals de Demucs con scripts/voces.py. Antes no existia el dato y se elegia por el titulo.",
+  "umbral_cantado": {
+   "valor": [
+    0.6,
+    0.08
+   ],
+   "porque": "presencia > 60% del fragmento y peso > 8% de la energia de la mezcla.",
+   "evidencia": "2026-09-30: 23 temas medidos en data/voces.json."
+  },
+  "el_titulo_no_alcanza": {
+   "valor": 0.31,
+   "porque": "Fraccion de falsos positivos al filtrar por 'feat.' en el credito.",
+   "evidencia": "2026-09-30: de 13 temas bajados con 'feat.' en el credito, 4 midieron instrumental --We Were There 21%, Cosmic Love feat. GAALIA 19%, Get Lost feat. Flor Pavone 29%, Aria 24%--. Y al reves: 'If I Had Wings' promete voz y da 0%, 'Just Rain' 1%. Sirve para armar el batch, no para decidir.",
+   "lee": "nadie todavia"
   }
  }
 }

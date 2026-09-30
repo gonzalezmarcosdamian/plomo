@@ -3072,10 +3072,10 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 9 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
 | 10 | Joe Goddard | Music Is The Answer (Hot Since 82 Remix) | 123 | 6.4 |
 | 11 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
-| 12 | Kamilo Sanclemente | Show Me the Stars (Original Mix) | 121 | 6.5 |
+| 12 | Maze 28 | Fogbows | 122 | 6.3 |
 | 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 14 | Rauschhaus | If I Had Wings | 121 | 6.8 |
-| 15 | Kamilo Sanclemente | Orb (Original Mix) | 121 | 7.0 |
+| 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 15 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
 | 16 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
 | 17 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
 | 18 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |

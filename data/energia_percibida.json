@@ -685,5 +685,69 @@
       "fecha": "2026-09-30",
       "textual": "sawyer muy duro"
     }
+  },
+  "190615690": {
+    "artist": "Rauschhaus",
+    "title": "If I Had Wings",
+    "E_calc": 6.8,
+    "nota": "if i had winds la baja un poco",
+    "fuente": "escucha del 149, 2026-09-30",
+    "E": 6.0,
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "if i had winds la baja un poco"
+    }
+  },
+  "17713969": {
+    "artist": "Kamilo Sanclemente",
+    "title": "Orb (Original Mix)",
+    "E_calc": 7.0,
+    "nota": "orb sacalo tambien tiene un drop muy iglesia",
+    "fuente": "escucha del 149, 2026-09-30",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "orb sacalo tambien tiene un drop muy iglesia"
+    },
+    "ataque_medido": 8.5,
+    "_ojo": "el ataque melodico NO explica 'drop muy iglesia': Orb da 8.5, mas alto que Wakefeld (5.8) que el DJ aprueba. Ademas color_melodico mide al 45% del tema y no en el drop, asi que probablemente este mirando el lugar equivocado."
+  },
+  "134028327": {
+    "artist": "Kamilo Sanclemente",
+    "title": "Show Me the Stars (Original Mix)",
+    "E_calc": 6.5,
+    "nota": "show me the start tambien veto este set y cambio mas groove",
+    "groove_ok": false,
+    "fuente": "escucha del 149, 2026-09-30",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "show me the start tambien veto este set"
+    }
+  },
+  "11622300": {
+    "artist": "Sebastien Leger",
+    "title": "Ariana",
+    "E_calc": 6.9,
+    "nota": "no estan buenos esos que subiste",
+    "fuente": "escucha del 149, 2026-09-29",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-29",
+      "textual": "no estan buenos esos que subiste"
+    }
+  },
+  "98274423": {
+    "artist": "Guy Mantzur",
+    "title": "Moongazer",
+    "E_calc": 5.9,
+    "nota": "no estan buenos esos que subiste",
+    "fuente": "escucha del 149, 2026-09-29",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-29",
+      "textual": "no estan buenos esos que subiste"
+    }
   }
 }
