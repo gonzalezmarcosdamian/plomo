@@ -2784,21 +2784,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Luciano Scheffer | Boonlake (Original Mix) | 120 | 6.0 |
-| 2 | Sebastien Leger, Roy Rosenfeld | Panko Day (Extended Mix) | 121 | 5.6 |
+| 2 | Noraj Cue, John Woods | The Youth Substance (Original Mix) | 122 | 7.4 |
 | 3 | Second Sine | Motor City (Sebastian Haas Remix)  | 123 | 6.1 |
 | 4 | Luciano Lozz | Follow Me (Original Mix) | 125 | 6.5 |
 | 5 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 6 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.7 |
 | 7 | HANA, Ezequiel Arias | Go (Extended Mix) | 124 | 6.2 |
 | 8 | Meriva, MATTIC (BR) | Piece of Hope (D-Nox & Kamilo Sanclemente Extended Remix) | 123 | 6.6 |
-| 9 | Emmanuel Dip | Guggy (Original Mix) | 122 | 5.9 |
+| 9 | Supacooks | Un Mundo En Paz (Extended Mix) | 122 | 7.1 |
 | 10 | Mind Echoes | Unsafe Numbers (Original Mix) | 121 | 7.2 |
 | 11 | Quivver | Visitor (Original Mix) | 124 | 6.2 |
 | 12 | Che Jose | THE VOID (Extended) | 124 | 6.3 |
 | 13 | Andrew Bayer | Immortal Lover (8kays Extended Mix) | 125 | 6.3 |
 | 14 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
 | 15 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 16 | Henry Saiz | The Rider (Eichenbaum & Maezbi Remix) | 122 | 5.2 |
+| 16 | Zakem | When We Meet (Original Mix) | 120 | 8.9 |
 | 17 | Andy Moor & Adam White | The Whiteroom (feat. Whiteroom) [Marsh Extended Mix] | 125 | 8.5 |
 
 
@@ -2838,20 +2838,20 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 4.1 |
-| 2 | Zankee Gulati | Kerring (Original Mix) | 121 | 5.3 |
-| 3 | GMJ | Stage Flight (Jiminy Hop Remix) | 122 | 5.5 |
+| 2 | Artic White | Futuro Infinito (Extended Mix) | 122 | 8.0 |
+| 3 | Fulltone, Izhevski | Orange Gardens (Original Mix)  | 122 | 8.0 |
 | 4 | Maze 28 | Mindloop (Original Mix) | 120 | 5.8 |
 | 5 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
 | 6 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 6.0 |
 | 7 | Gai Barone | Fractals (Nicolas Viana Extended Remix) | 121 | 6.0 |
 | 8 | Roy Rosenfeld | Forgotten (Extended) | 124 | 6.2 |
-| 9 | Khen | Lyup (Original Mix) | 122 | 4.9 |
+| 9 | Tim Green, Sébastien Léger | Duel | 124 | 7.1 |
 | 10 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
 | 11 | Simon Vuarambon | Lazos (Original Mix) | 120 | 6.4 |
 | 12 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 6.9 |
 | 13 | Sebastien Leger | Ariana | 122 | 6.9 |
-| 14 | 16BL | Yum@ (Extended Mix) | 122 | 4.7 |
-| 15 | UnbrokenOne | Gradient (Kamilo Sanclemente & Mauro Aguirre Remix) | 123 | 5.4 |
+| 14 | Augusto Dassano | Agorim | 120 | 7.5 |
+| 15 | Tim Green | Minds (Original Mix) | 122 | 6.5 |
 | 16 | Just Her | Secrets (Original Mix) | 125 | 4.6 |
 | 17 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
 
@@ -2865,21 +2865,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Parra for Cuva | Juri (Original Mix) | 118 | 4.1 |
-| 2 | Max Wexem | Override (Original Mix) | 121 | 5.1 |
-| 3 | Chelakhov, Redspace | Cosmonauts (Tiefstone Remix) | 121 | 4.4 |
+| 2 | Lee Burridge, Lost Desert | April Fools (Extended Mix) | 122 | 7.8 |
+| 3 | Dion Paola (AUS) | Galaxy (Facundo Sval Remix) | 122 | 6.9 |
 | 4 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
 | 5 | Gorje Hewek, Molac, Dulus | Astro World (Original Mix) | 120 | 6.0 |
 | 6 | Simon Vuarambon | Lazos (Original Mix) | 120 | 6.4 |
 | 7 | Maze 28 | Mindloop (Original Mix) | 120 | 5.8 |
 | 8 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 6.9 |
-| 9 | Dave Seaman | Ego Savvy (Original Mix) | 122 | 5.4 |
+| 9 | Tom Bryder | Vector (Original Mix) | 123 | 7.3 |
 | 10 | Paul Deep (AR) | Tique (Original Mix) | 123 | 6.9 |
 | 11 | Paul Deep AR & Luciano Lozz | Create | 123 | 6.9 |
-| 12 | Mayro | Harvest (Original Mix) | 123 | 5.9 |
+| 12 | Ruben Karapetyan | The Ways (Kamilo Sanclemente Extended Mix) | 123 | 6.4 |
 | 13 | Melodiam (AR) | Molicocha (Extended Mix) | 123 | 6.1 |
 | 14 | Nora En Pure | Spring Embers (Extended Mix) | 122 | 6.7 |
 | 15 | Dabeat, Kamilo Sanclemente | Incense (Original Mix) | 123 | 6.8 |
-| 16 | Modd | Train to Toronto (Nick Warren & Nicolas Rada Extended Remix) | 122 | 5.8 |
+| 16 | Tim Green | Monster It (Original Mix)  | 124 | 7.6 |
 | 17 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
 
 
@@ -2950,19 +2950,19 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Lorenzo Balzarini | Redes (Original Mix) | 124 | 5.3 |
-| 2 | Cendryma | Orbitation (Extended Mix) | 122 | 5.9 |
+| 1 | Tim Green | You Look Good (Original Mix) | 123 | 7.5 |
+| 2 | Gru V & Rockka | Closer (Fourthstate Remix) | 122 | 7.8 |
 | 3 | Rockka | Elevation | 122 | 6.2 |
-| 4 | Paul Deep (AR) | Melodramatic (Original Mix) | 122 | 4.8 |
-| 5 | Cendryma | Parabolic (Original Mix) | 122 | 5.2 |
+| 4 | Francisco Manrique | The Fine Universe (Cendryma Remix) | 121 | 7.7 |
+| 5 | Sebastien Leger, Tim Green | Iso (Original Mix)  | 121 | 7.3 |
 | 6 | Maze 28 | Fogbows | 122 | 6.3 |
 | 7 | Freedo Mosho | Paradise Lost (Maze 28 Reform) | 122 | 6.6 |
 | 8 | Kamilo Sanclemente | Orb (Original Mix) | 121 | 7.0 |
 | 9 | Alex O'Rion, Antrim | Imagine (Original Mix)  | 120 | 6.6 |
 | 10 | Sebastian Busto | December (Zankee Gulati Remix) | 122 | 7.3 |
-| 11 | Joel Lee | Sun Goes Down (Original Mix) | 123 | 5.5 |
+| 11 | Matt Oliver & Mind Echoes | Reborn Crystal (Original Mix) | 121 | 7.6 |
 | 12 | Taylan | Earthbound (Andre Moret Remix) | 120 | 6.7 |
-| 13 | Gorkiz & Mind Echoes | Without Your Noose (Paul Arcane Remix) | 122 | 5.9 |
+| 13 | Tripswitch | Box Fresh (Emi Galvan Remix) | 122 | 6.8 |
 | 14 | Dilby, Amine K (Moroko Loko) | Confusion (Extended Mix) | 124 | 6.2 |
 | 15 | Maze 28 | Great Attractor (Ruben Karapetyan Remix) | 124 | 7.5 |
 | 16 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
@@ -2977,11 +2977,11 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Infusion | Legacy (Kevin Di Serna & Devlant Dub) | 124 | 3.9 |
-| 2 | Sebastien Leger, Tim Green | Embre (Original Mix)  | 122 | 5.9 |
-| 3 | Gai Barone | All About Her (Original Mix) | 122 | 5.2 |
-| 4 | Melodiam (AR) | Cosmic | 122 | 5.7 |
-| 5 | Cendryma | Orbitation (Extended Mix) | 122 | 5.9 |
+| 1 | Tim Green | Coriolis (Original Mix)  | 122 | 8.0 |
+| 2 | Lost Desert & Hermanez | Jinx (Volen Sentir Pure Magic Healing) | 122 | 7.1 |
+| 3 | Taylan, Shani Zen | Geronimo (Kamilo Sanclemente Remix) | 122 | 6.3 |
+| 4 | Simos Tagias | Melted Pot (Maze 28 Remix) | 122 | 6.7 |
+| 5 | Mathew Jonson & Quenum | Cyclops (Tim Green Remix) | 120 | 6.6 |
 | 6 | Patch Park | Hips and Dips (Zankee Gulati Remix) | 121 | 6.2 |
 | 7 | Chelakhov | Searching (Gero Pellizzon Remix) | 122 | 6.2 |
 | 8 | Cary Crank | Deep Voltage (NOIYSE PROJECT Remix) | 122 | 6.3 |
@@ -3016,8 +3016,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 2 | Maze 28 | Aer8 (Juan Pablo Torrez Remix) | 122 | 7.0 |
 | 3 | Paul Deep AR | Milo | 123 | 7.1 |
 | 4 | Niko Ava | Freedom (Original Mix) | 122 | 7.3 |
-| 5 | Henry Saiz | Madre Noche (Mariano Mellino Remix) | 122 | 5.9 |
-| 6 | Nicolas Rada | Roots (Original Mix) | 119 | 5.8 |
+| 5 | Lost Desert | When Sun Rises (Volen Sentir Extended Remix) | 124 | 6.9 |
+| 6 | Emi Galvan | Everlong (Ruben Karapetyan Remix) | 123 | 7.8 |
 | 7 | NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens | Remember Me - Hernan Cattaneo & Jamie Stevens Remix | 122 | 8.2 |
 | 8 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
 | 9 | Sounom & Sagou | Everyday Moments (Kamilo Sanclemente Remix) | 122 | 7.8 |
@@ -3039,7 +3039,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 2 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 | 3 | Chaim | Sun Tease (Doctor Dru Edit) | 122 | 6.5 |
 | 4 | Guy J | Illusion (Original Mix) | 122 | 7.3 |
-| 5 | Kamilo Sanclemente | Auriga Moon (Original Mix) | 122 | 5.9 |
+| 5 | Cezar Nica | Standard Model | 122 | 6.8 |
 | 6 | Maze 28 | Fogbows | 122 | 6.3 |
 | 7 | Eli Nissan | Naked  | 122 | 6.1 |
 | 8 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |

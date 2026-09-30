@@ -14,9 +14,9 @@
       "content_id": "255582355"
     },
     {
-      "artist": "Sebastien Leger, Roy Rosenfeld",
-      "title": "Panko Day (Extended Mix)",
-      "content_id": "257660830"
+      "artist": "Noraj Cue, John Woods",
+      "title": "The Youth Substance (Original Mix)",
+      "content_id": "66270346"
     },
     {
       "artist": "Second Sine",
@@ -49,9 +49,9 @@
       "content_id": "164056394"
     },
     {
-      "artist": "Emmanuel Dip",
-      "title": "Guggy (Original Mix)",
-      "content_id": "204966439"
+      "artist": "Supacooks",
+      "title": "Un Mundo En Paz (Extended Mix)",
+      "content_id": "188612304"
     },
     {
       "artist": "Mind Echoes",
@@ -84,14 +84,15 @@
       "content_id": "34012266"
     },
     {
-      "artist": "Henry Saiz",
-      "title": "The Rider (Eichenbaum & Maezbi Remix)",
-      "content_id": "40338185"
+      "artist": "Zakem",
+      "title": "When We Meet (Original Mix)",
+      "content_id": "219347450"
     },
     {
       "artist": "Andy Moor & Adam White",
       "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
       "content_id": "162072169"
     }
-  ]
+  ],
+  "_nota": " | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale."
 }

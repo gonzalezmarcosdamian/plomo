@@ -14,14 +14,14 @@
       "content_id": "183767397"
     },
     {
-      "artist": "Max Wexem",
-      "title": "Override (Original Mix)",
-      "content_id": "127791241"
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "April Fools (Extended Mix)",
+      "content_id": "139245364"
     },
     {
-      "artist": "Chelakhov, Redspace",
-      "title": "Cosmonauts (Tiefstone Remix)",
-      "content_id": "242225309"
+      "artist": "Dion Paola (AUS)",
+      "title": "Galaxy (Facundo Sval Remix)",
+      "content_id": "46436680"
     },
     {
       "artist": "Cendryma",
@@ -49,9 +49,9 @@
       "content_id": "49887591"
     },
     {
-      "artist": "Dave Seaman",
-      "title": "Ego Savvy (Original Mix)",
-      "content_id": "6459862"
+      "artist": "Tom Bryder",
+      "title": "Vector (Original Mix)",
+      "content_id": "61644792"
     },
     {
       "artist": "Paul Deep (AR)",
@@ -64,9 +64,9 @@
       "content_id": "266380722"
     },
     {
-      "artist": "Mayro",
-      "title": "Harvest (Original Mix)",
-      "content_id": "186594533"
+      "artist": "Ruben Karapetyan",
+      "title": "The Ways (Kamilo Sanclemente Extended Mix)",
+      "content_id": "266546084"
     },
     {
       "artist": "Melodiam (AR)",
@@ -84,14 +84,15 @@
       "content_id": "219874957"
     },
     {
-      "artist": "Modd",
-      "title": "Train to Toronto (Nick Warren & Nicolas Rada Extended Remix)",
-      "content_id": "92188503"
+      "artist": "Tim Green",
+      "title": "Monster It (Original Mix) ",
+      "content_id": "126436438"
     },
     {
       "artist": "Kostya Outta, Liam Garcia",
       "title": "If I Win (Cosmonaut Extended Remix)",
       "content_id": "151391665"
     }
-  ]
+  ],
+  "_nota": " | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale."
 }

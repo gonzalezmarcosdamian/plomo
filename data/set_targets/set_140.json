@@ -14,14 +14,14 @@
       "content_id": "183767397"
     },
     {
-      "artist": "Zankee Gulati",
-      "title": "Kerring (Original Mix)",
-      "content_id": "138979807"
+      "artist": "Artic White",
+      "title": "Futuro Infinito (Extended Mix)",
+      "content_id": "42002227"
     },
     {
-      "artist": "GMJ",
-      "title": "Stage Flight (Jiminy Hop Remix)",
-      "content_id": "215047356"
+      "artist": "Fulltone, Izhevski",
+      "title": "Orange Gardens (Original Mix) ",
+      "content_id": "109970878"
     },
     {
       "artist": "Maze 28",
@@ -49,9 +49,9 @@
       "content_id": "154122194"
     },
     {
-      "artist": "Khen",
-      "title": "Lyup (Original Mix)",
-      "content_id": "187978337"
+      "artist": "Tim Green, Sébastien Léger",
+      "title": "Duel",
+      "content_id": "61797145"
     },
     {
       "artist": "Amber Long, Hot Tuneik",
@@ -74,14 +74,14 @@
       "content_id": "11622300"
     },
     {
-      "artist": "16BL",
-      "title": "Yum@ (Extended Mix)",
-      "content_id": "59298085"
+      "artist": "Augusto Dassano",
+      "title": "Agorim",
+      "content_id": "172946191"
     },
     {
-      "artist": "UnbrokenOne",
-      "title": "Gradient (Kamilo Sanclemente & Mauro Aguirre Remix)",
-      "content_id": "236269456"
+      "artist": "Tim Green",
+      "title": "Minds (Original Mix)",
+      "content_id": "218581493"
     },
     {
       "artist": "Just Her",
@@ -93,5 +93,6 @@
       "title": "If I Win (Cosmonaut Extended Remix)",
       "content_id": "151391665"
     }
-  ]
+  ],
+  "_nota": " | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale."
 }

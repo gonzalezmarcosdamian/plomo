@@ -8,7 +8,7 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche.",
+  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale.",
   "tracks": [
     {
       "artist": "Henry Saiz & Band",
@@ -31,9 +31,9 @@
       "content_id": "240528466"
     },
     {
-      "artist": "Kamilo Sanclemente",
-      "title": "Auriga Moon (Original Mix)",
-      "content_id": "160611663"
+      "artist": "Cezar Nica",
+      "title": "Standard Model",
+      "content_id": "96553758"
     },
     {
       "artist": "Maze 28",

@@ -9,14 +9,14 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Lorenzo Balzarini",
-      "title": "Redes (Original Mix)",
-      "content_id": "211633569"
+      "artist": "Tim Green",
+      "title": "You Look Good (Original Mix)",
+      "content_id": "111568983"
     },
     {
-      "artist": "Cendryma",
-      "title": "Orbitation (Extended Mix)",
-      "content_id": "264401297"
+      "artist": "Gru V & Rockka",
+      "title": "Closer (Fourthstate Remix)",
+      "content_id": "162735134"
     },
     {
       "artist": "Rockka",
@@ -24,14 +24,14 @@
       "content_id": "114312499"
     },
     {
-      "artist": "Paul Deep (AR)",
-      "title": "Melodramatic (Original Mix)",
-      "content_id": "154792940"
+      "artist": "Francisco Manrique",
+      "title": "The Fine Universe (Cendryma Remix)",
+      "content_id": "258842628"
     },
     {
-      "artist": "Cendryma",
-      "title": "Parabolic (Original Mix)",
-      "content_id": "72311255"
+      "artist": "Sebastien Leger, Tim Green",
+      "title": "Iso (Original Mix) ",
+      "content_id": "19730723"
     },
     {
       "artist": "Maze 28",
@@ -59,9 +59,9 @@
       "content_id": "234396932"
     },
     {
-      "artist": "Joel Lee",
-      "title": "Sun Goes Down (Original Mix)",
-      "content_id": "67745954"
+      "artist": "Matt Oliver & Mind Echoes",
+      "title": "Reborn Crystal (Original Mix)",
+      "content_id": "107307401"
     },
     {
       "artist": "Taylan",
@@ -69,9 +69,9 @@
       "content_id": "39057490"
     },
     {
-      "artist": "Gorkiz & Mind Echoes",
-      "title": "Without Your Noose (Paul Arcane Remix)",
-      "content_id": "159402664"
+      "artist": "Tripswitch",
+      "title": "Box Fresh (Emi Galvan Remix)",
+      "content_id": "264382119"
     },
     {
       "artist": "Dilby, Amine K (Moroko Loko)",
@@ -93,5 +93,6 @@
       "title": "Feel Again (Original Mix)",
       "content_id": "183460034"
     }
-  ]
+  ],
+  "_nota": " | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale."
 }

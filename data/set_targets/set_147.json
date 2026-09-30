@@ -30,14 +30,14 @@
       "content_id": "162617230"
     },
     {
-      "artist": "Henry Saiz",
-      "title": "Madre Noche (Mariano Mellino Remix)",
-      "content_id": "252101268"
+      "artist": "Lost Desert",
+      "title": "When Sun Rises (Volen Sentir Extended Remix)",
+      "content_id": "160848604"
     },
     {
-      "artist": "Nicolas Rada",
-      "title": "Roots (Original Mix)",
-      "content_id": "127339207"
+      "artist": "Emi Galvan",
+      "title": "Everlong (Ruben Karapetyan Remix)",
+      "content_id": "68108434"
     },
     {
       "artist": "NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens",
@@ -74,5 +74,6 @@
       "title": "Un Mundo En Paz (Serious Dancers Extended Remix)",
       "content_id": "64018165"
     }
-  ]
+  ],
+  "_nota": " | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale."
 }
