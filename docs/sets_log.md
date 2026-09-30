@@ -3056,7 +3056,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22
 **Armado:** 2026-09-30  
 **Duracion:** 0h  
-**Tracks:** 14  
+**Tracks:** 16  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3067,12 +3067,14 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 4 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
 | 5 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
 | 6 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
-| 7 | Maze 28 | Leave the World Behind (Original Mix) | 122 | 7.9 |
-| 8 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 9 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 10 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 11 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 12 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 13 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
-| 14 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 7 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 8 | Emi Galvan | Trust (Original Mix) | 122 | 6.4 |
+| 9 | Eli Nissan | Karnaval (Original Mix)  | 122 | 8.2 |
+| 10 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 11 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 12 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 13 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 14 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 15 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
+| 16 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 

@@ -1,607 +1,615 @@
 {
- "74740589": {
-  "artist": "Agustin Pietrocola",
-  "title": "Sizer (Original Mix)",
-  "E_calc": 5.2,
-  "nota": "deberia ir mas adelante, mas peak",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 7.7
- },
- "175806155": {
-  "artist": "Marsh, Simon Doty",
-  "title": "Touch The Sky (Extended Mix)",
-  "E_calc": 6.8,
-  "nota": "energia parecida a Sizer",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 7.5
- },
- "13512939": {
-  "artist": "Morttagua",
-  "title": "Imentet (Hernan Cattaneo & Marcelo Vasami Remix)",
-  "E_calc": 5.7,
-  "nota": "arranca mas tranqui que Sizer",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 5.4
- },
- "214849857": {
-  "artist": "Cary Crank",
-  "title": "Open Sea (Ric Niels Remix)",
-  "E_calc": 6.1,
-  "nota": "menos energia que Imentet, un poco mas oscuro, mucho mas groove; me gusta",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 5.2
- },
- "121401439": {
-  "artist": "Gai Barone, Aman Anand",
-  "title": "Low Era (Kebin Van Reeken Remix)",
-  "E_calc": 7.5,
-  "nota": "oscuro, baja energia",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 5.0,
-  "veto": true
- },
- "95994954": {
-  "artist": "ECHO DAFT, Redspace",
-  "title": "A Story Retold",
-  "E_calc": 6.7,
-  "nota": "poca energia para entregar; quiero mas energia y mas voces",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 5.5,
-  "veto": true
- },
- "18559665": {
-  "artist": "Adam Ten, Mita Gami",
-  "title": "High On",
-  "E_calc": 6.5,
-  "nota": "pasado de energia, muy tecnoso",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "E": 7.6,
-  "veto": true
- },
- "266913935": {
-  "artist": "Ezequiel Arias",
-  "title": "Inertia (Original Mix)",
-  "E_calc": 7.8,
-  "nota": "se cae en energia fortisimo (breakdown profundo): no sostiene un pico",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "veto": true
- },
- "45593537": {
-  "artist": "Juan Buitrago",
-  "title": "Anja",
-  "E_calc": 6.9,
-  "nota": "mas lento",
-  "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
-  "veto": true
- },
- "6435521": {
-  "artist": "Boxer",
-  "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
-  "E_calc": 5.7,
-  "E": 7.8,
-  "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
-  "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
- },
- "83535228": {
-  "artist": "Paul Thomas",
-  "title": "Jumbo (Jamie Stevens Remix)",
-  "E_calc": 6.1,
-  "E": 7.8,
-  "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
-  "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
- },
- "75591601": {
-  "artist": "Guy J",
-  "title": "Placebo (Original Mix)",
-  "E_calc": 6.9,
-  "nota": "como cierre del 139 no esta bueno: quiere terminar mas arriba",
-  "fuente": "escucha del set 139 v4, 2026-09-22",
-  "veto": true
- },
- "104234166": {
-  "artist": "Kamilo Sanclemente",
-  "title": "Fragma (GORKIZ Remix)",
-  "E_calc": 7.5,
-  "nota": "tremendo tema, mi sonido totalmente",
-  "favorito": true,
-  "fuente": "escucha del set 139 v4, 2026-09-22",
-  "momentos": [
-   "pico",
-   "cierre"
-  ]
- },
- "136780130": {
-  "artist": "Simon Vuarambon",
-  "title": "Lazos (Original Mix)",
-  "E_calc": 6.4,
-  "nota": "temazo, mi sonido",
-  "favorito": true,
-  "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22",
-  "momentos": [
-   "warm"
-  ]
- },
- "183767397": {
-  "artist": "Parra for Cuva",
-  "title": "Juri (Original Mix)",
-  "E_calc": 4.1,
-  "nota": "temazo",
-  "favorito": true,
-  "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22",
-  "momentos": []
- },
- "177299920": {
-  "artist": "Maze 28",
-  "title": "Mindloop (Original Mix)",
-  "E_calc": 5.8,
-  "nota": "extremadamente bueno; el DJ quiere todo el warm en este flow",
-  "favorito": true,
-  "fuente": "escucha del set 140, 2026-09-22",
-  "momentos": [
-   "warm"
-  ]
- },
- "52738760": {
-  "artist": "Roy Rosenfeld",
-  "title": "Kala",
-  "E_calc": 5.8,
-  "nota": "se queda corto: no esta bueno para el warm",
-  "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
-  "veto": true
- },
- "37141460": {
-  "artist": "Cendryma",
-  "title": "Pure Junction (Berdu Remix)",
-  "E_calc": 5.9,
-  "nota": "temazo mal",
-  "favorito": true,
-  "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
-  "momentos": [
-   "warm"
-  ]
- },
- "49887591": {
-  "artist": "Grance & Soulmac",
-  "title": "Happy Incident (Ale Russo Remix)",
-  "E_calc": 6.9,
-  "nota": "muy bueno",
-  "favorito": true,
-  "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
-  "momentos": [
-   "warm"
-  ]
- },
- "156983367": {
-  "artist": "Kasper Koman",
-  "title": "The Observer",
-  "E_calc": 6.1,
-  "nota": "flojo para esa altura: iria antes en el set",
-  "ubicacion": [
-   0.0,
-   0.45
-  ],
-  "fuente": "escucha del set 140 v3 (warm), 2026-09-22"
- },
- "12611861": {
-  "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
-  "title": "Fading Away (Aman Anand & Futura City Rework)",
-  "E_calc": 4.4,
-  "nota": "muy abajo de energia para el warm",
-  "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
-  "veto": true
- },
- "13560916": {
-  "artist": "Derrok, Rodrigo Gallardo",
-  "title": "Instantes (Original Mix)",
-  "E_calc": 5.8,
-  "nota": "malisimo",
-  "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
-  "veto": true
- },
- "148323142": {
-  "artist": "Kiko Navarro, DJ Pippi, Willie Graff, QVLN, Pere Navarro",
-  "title": "Llego La Hora (Afrocuban Dub)",
-  "nota": "llego la hora es malisimo, lo saco; no quiero nada afro",
-  "fuente": "escucha del set 144, 2026-09-23",
-  "veto": true
- },
- "212256971": {
-  "artist": "Meduza",
-  "title": "Friends (Extended Mix)",
-  "nota": "es todo lo que no quiero, horrible",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true
- },
- "104586787": {
-  "artist": "Bosknegra",
-  "title": "Primavera (Original Mix)",
-  "nota": "afro house; fuera por categoria, no por el tema en si",
-  "fuente": "regla vetos.generos, 2026-09-23",
-  "veto": true
- },
- "228808924": {
-  "artist": "Aaron Sevilla, RBOR, El Gato CHP",
-  "title": "Gitanos (Original Mix)",
-  "nota": "afro house; fuera por categoria, no por el tema en si",
-  "fuente": "regla vetos.generos, 2026-09-23",
-  "veto": true
- },
- "151391665": {
-  "artist": "Kostya Outta, Liam Garcia",
-  "title": "If I Win (Cosmonaut Extended Remix)",
-  "E_calc": 6.3,
-  "nota": "temazo total, mi musica",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "favorito": true,
-  "momentos": [
-   "warm",
-   "pico",
-   "cierre"
-  ]
- },
- "43250172": {
-  "artist": "Guy J",
-  "title": "Airborne (Original Mix)",
-  "E_calc": 5.5,
-  "nota": "baja toda la energia totalmente",
-  "E": 4.0,
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true
- },
- "125897635": {
-  "artist": "Tim Green",
-  "title": "Moho (Original Mix) ",
-  "E_calc": 5.6,
-  "nota": "arranca muy abajo",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true,
-  "E": 4.2
- },
- "241228611": {
-  "artist": "Marcelo Vasami",
-  "title": "Shades Of Blue (Original Mix)",
-  "E_calc": 7.4,
-  "nota": "muy oscuro",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true
- },
- "144808595": {
-  "artist": "Joris Voorn, Alex Kennon",
-  "title": "Blinding Lights (Joris Voorn Remix)",
-  "E_calc": 6.9,
-  "nota": "muy oscuro",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true
- },
- "148342248": {
-  "artist": "Rauschhaus",
-  "title": "Faunus (Original Mix)",
-  "E_calc": 5.7,
-  "nota": "muy oscuro",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true,
-  "E": 4.5
- },
- "67105990": {
-  "artist": "Spirit & The Guide",
-  "title": "Alafia (Golan Zocher Remix)",
-  "E_calc": 8.6,
-  "nota": "oscuro",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true
- },
- "198323890": {
-  "artist": "Eric Lune & Juan Sapia",
-  "title": "Tension Release (Original Mix) ",
-  "E_calc": 6.9,
-  "nota": "poca energia",
-  "fuente": "escucha del set 143, 2026-09-23",
-  "veto": true
- },
- "245494571": {
-  "artist": "Sebastien Leger, Tim Green",
-  "title": "Embre (Original Mix) ",
-  "E_calc": 5.9,
-  "nota": "mas energia; lo puso de apertura",
-  "fuente": "escucha del set 143, 2026-09-24",
-  "veto": true,
-  "E": 4.4
- },
- "267191914": {
-  "artist": "Guy J",
-  "title": "Day Of Light (Original Mix)",
-  "E_calc": 5.8,
-  "nota": "mas groovero y colorido",
-  "fuente": "escucha del set 143, 2026-09-24",
-  "veto": true
- },
- "69012374": {
-  "artist": "Tobi Amuchastegui",
-  "title": "Spectral (Original Mix)",
-  "E_calc": 6.6,
-  "nota": "sacalo; mas colorido y fiestero, tipo Sebastien Leger",
-  "fuente": "escucha del set 143, 2026-09-24",
-  "veto": true
- },
- "221636509": {
-  "artist": "Rabiee Ahmad, Hassan Tariq Khan",
-  "title": "In Another Time (Original Mix)",
-  "E_calc": 7.5,
-  "nota": "lo pidio para el set y para mi sonido",
-  "fuente": "pedido del DJ, 2026-09-24",
-  "favorito": true,
-  "momentos": [
-   "pico",
-   "cierre"
-  ],
-  "rol": "el momento emotivo"
- },
- "124748921": {
-  "artist": "Sébastien Léger, Lost Miracle",
-  "title": "Dodonpachi (Original Mix)",
-  "E_calc": 7.0,
-  "nota": "es favorito",
-  "fuente": "escucha del 148 v2, 2026-09-28",
-  "favorito": true,
-  "momentos": [
-   "pico",
-   "cierre"
-  ],
-  "rol": "el cierre heroico"
- },
- "80536228": {
-  "artist": "Greg Ochman",
-  "title": "The Silver Lily (Original Mix)",
-  "E_calc": 5.5,
-  "nota": "lo nombro para mi sonido",
-  "fuente": "pedido del DJ, 2026-09-26",
-  "favorito": true,
-  "momentos": [
-   "warm"
-  ]
- },
- "178297946": {
-  "artist": "Ruben Karapetyan",
-  "title": "Rejuvenescence",
-  "E_calc": 6.5,
-  "nota": "lo nombro para mi sonido",
-  "fuente": "pedido del DJ, 2026-09-26",
-  "favorito": true,
-  "momentos": [
-   "warm",
-   "pico",
-   "cierre"
-  ]
- },
- "106407929": {
-  "artist": "Jamie Stevens, Zankee Gulati",
-  "title": "Running (Original Mix)",
-  "E_calc": 4.5,
-  "nota": "no lo puedo usar, lo va a usar un amigo",
-  "fuente": "2026-09-29",
-  "favorito": true,
-  "momentos": [],
-  "reservado_por_otro": true
- },
- "130869533": {
-  "artist": "Andre Moret",
-  "title": "One World (Extended Mix)",
-  "E_calc": 5.6,
-  "nota": "lo nombro para mi sonido",
-  "fuente": "pedido del DJ, 2026-09-26",
-  "favorito": true,
-  "momentos": [
-   "warm",
-   "pico"
-  ]
- },
- "116966407": {
-  "artist": "Braxton",
-  "title": "Torn (feat. Danni Wells) [Extended Mix]",
-  "E_calc": 6.3,
-  "nota": "afuera",
-  "fuente": "escucha del set 143, 2026-09-27 (whatsapp)",
-  "veto": true
- },
- "46652470": {
-  "artist": "Gorkiz & Tonaco",
-  "title": "Serenity",
-  "E_calc": 5.3,
-  "nota": "no va",
-  "fuente": "escucha del set 143, 2026-09-27 (whatsapp)",
-  "veto": true
- },
- "231028609": {
-  "artist": "Tim Green, Josefina Silveyra",
-  "title": "La Joda (Original Mix)",
-  "E_calc": 6.9,
-  "nota": "malisimo",
-  "fuente": "escucha de la tanda nueva, 2026-09-28",
-  "veto": true
- },
- "197567059": {
-  "artist": "Gorkiz & Mango",
-  "title": "Ipanema Twilight (Analog Jungs Remix) ",
-  "E_calc": 5.9,
-  "nota": "tiene el groove adecuado",
-  "fuente": "escucha del 148 v2, 2026-09-28",
-  "favorito": true,
-  "referencia_de": "groove",
-  "groove_ok": true
- },
- "182281408": {
-  "artist": "Emi Galvan & Albuquerque",
-  "title": "Don't Kill the Messenger",
-  "E_calc": 6.3,
-  "nota": "lo toque mucho",
-  "fuente": "escucha del 148 v2, 2026-09-28",
-  "gastado": {
-   "fecha": "2026-09-28",
-   "alcance": "la tanda del cumple, sets 139-148",
-   "vale_en_otra_fecha": true,
-   "por_que": "lo toque mucho"
+  "74740589": {
+    "artist": "Agustin Pietrocola",
+    "title": "Sizer (Original Mix)",
+    "E_calc": 5.2,
+    "nota": "deberia ir mas adelante, mas peak",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 7.7
+  },
+  "175806155": {
+    "artist": "Marsh, Simon Doty",
+    "title": "Touch The Sky (Extended Mix)",
+    "E_calc": 6.8,
+    "nota": "energia parecida a Sizer",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 7.5
+  },
+  "13512939": {
+    "artist": "Morttagua",
+    "title": "Imentet (Hernan Cattaneo & Marcelo Vasami Remix)",
+    "E_calc": 5.7,
+    "nota": "arranca mas tranqui que Sizer",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.4
+  },
+  "214849857": {
+    "artist": "Cary Crank",
+    "title": "Open Sea (Ric Niels Remix)",
+    "E_calc": 6.1,
+    "nota": "menos energia que Imentet, un poco mas oscuro, mucho mas groove; me gusta",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.2
+  },
+  "121401439": {
+    "artist": "Gai Barone, Aman Anand",
+    "title": "Low Era (Kebin Van Reeken Remix)",
+    "E_calc": 7.5,
+    "nota": "oscuro, baja energia",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.0,
+    "veto": true
+  },
+  "95994954": {
+    "artist": "ECHO DAFT, Redspace",
+    "title": "A Story Retold",
+    "E_calc": 6.7,
+    "nota": "poca energia para entregar; quiero mas energia y mas voces",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 5.5,
+    "veto": true
+  },
+  "18559665": {
+    "artist": "Adam Ten, Mita Gami",
+    "title": "High On",
+    "E_calc": 6.5,
+    "nota": "pasado de energia, muy tecnoso",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "E": 7.6,
+    "veto": true
+  },
+  "266913935": {
+    "artist": "Ezequiel Arias",
+    "title": "Inertia (Original Mix)",
+    "E_calc": 7.8,
+    "nota": "se cae en energia fortisimo (breakdown profundo): no sostiene un pico",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "veto": true
+  },
+  "45593537": {
+    "artist": "Juan Buitrago",
+    "title": "Anja",
+    "E_calc": 6.9,
+    "nota": "mas lento",
+    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "veto": true
+  },
+  "6435521": {
+    "artist": "Boxer",
+    "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
+    "E_calc": 5.7,
+    "E": 7.8,
+    "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
+    "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+  },
+  "83535228": {
+    "artist": "Paul Thomas",
+    "title": "Jumbo (Jamie Stevens Remix)",
+    "E_calc": 6.1,
+    "E": 7.8,
+    "nota": "clasificado por el DJ como 'Heroico: pico total, vocales, aplausos, captura a bailar'",
+    "fuente": "docs/MI_SONIDO.md, taxonomia escrita por el DJ"
+  },
+  "75591601": {
+    "artist": "Guy J",
+    "title": "Placebo (Original Mix)",
+    "E_calc": 6.9,
+    "nota": "como cierre del 139 no esta bueno: quiere terminar mas arriba",
+    "fuente": "escucha del set 139 v4, 2026-09-22",
+    "veto": true
+  },
+  "104234166": {
+    "artist": "Kamilo Sanclemente",
+    "title": "Fragma (GORKIZ Remix)",
+    "E_calc": 7.5,
+    "nota": "tremendo tema, mi sonido totalmente",
+    "favorito": true,
+    "fuente": "escucha del set 139 v4, 2026-09-22",
+    "momentos": [
+      "pico",
+      "cierre"
+    ]
+  },
+  "136780130": {
+    "artist": "Simon Vuarambon",
+    "title": "Lazos (Original Mix)",
+    "E_calc": 6.4,
+    "nota": "temazo, mi sonido",
+    "favorito": true,
+    "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22",
+    "momentos": [
+      "warm"
+    ]
+  },
+  "183767397": {
+    "artist": "Parra for Cuva",
+    "title": "Juri (Original Mix)",
+    "E_calc": 4.1,
+    "nota": "temazo",
+    "favorito": true,
+    "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22",
+    "momentos": []
+  },
+  "177299920": {
+    "artist": "Maze 28",
+    "title": "Mindloop (Original Mix)",
+    "E_calc": 5.8,
+    "nota": "extremadamente bueno; el DJ quiere todo el warm en este flow",
+    "favorito": true,
+    "fuente": "escucha del set 140, 2026-09-22",
+    "momentos": [
+      "warm"
+    ]
+  },
+  "52738760": {
+    "artist": "Roy Rosenfeld",
+    "title": "Kala",
+    "E_calc": 5.8,
+    "nota": "se queda corto: no esta bueno para el warm",
+    "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
+    "veto": true
+  },
+  "37141460": {
+    "artist": "Cendryma",
+    "title": "Pure Junction (Berdu Remix)",
+    "E_calc": 5.9,
+    "nota": "temazo mal",
+    "favorito": true,
+    "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
+    "momentos": [
+      "warm"
+    ]
+  },
+  "49887591": {
+    "artist": "Grance & Soulmac",
+    "title": "Happy Incident (Ale Russo Remix)",
+    "E_calc": 6.9,
+    "nota": "muy bueno",
+    "favorito": true,
+    "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
+    "momentos": [
+      "warm"
+    ]
+  },
+  "156983367": {
+    "artist": "Kasper Koman",
+    "title": "The Observer",
+    "E_calc": 6.1,
+    "nota": "flojo para esa altura: iria antes en el set",
+    "ubicacion": [
+      0.0,
+      0.45
+    ],
+    "fuente": "escucha del set 140 v3 (warm), 2026-09-22"
+  },
+  "12611861": {
+    "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
+    "title": "Fading Away (Aman Anand & Futura City Rework)",
+    "E_calc": 4.4,
+    "nota": "muy abajo de energia para el warm",
+    "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
+    "veto": true
+  },
+  "13560916": {
+    "artist": "Derrok, Rodrigo Gallardo",
+    "title": "Instantes (Original Mix)",
+    "E_calc": 5.8,
+    "nota": "malisimo",
+    "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
+    "veto": true
+  },
+  "148323142": {
+    "artist": "Kiko Navarro, DJ Pippi, Willie Graff, QVLN, Pere Navarro",
+    "title": "Llego La Hora (Afrocuban Dub)",
+    "nota": "llego la hora es malisimo, lo saco; no quiero nada afro",
+    "fuente": "escucha del set 144, 2026-09-23",
+    "veto": true
+  },
+  "212256971": {
+    "artist": "Meduza",
+    "title": "Friends (Extended Mix)",
+    "nota": "es todo lo que no quiero, horrible",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true
+  },
+  "104586787": {
+    "artist": "Bosknegra",
+    "title": "Primavera (Original Mix)",
+    "nota": "afro house; fuera por categoria, no por el tema en si",
+    "fuente": "regla vetos.generos, 2026-09-23",
+    "veto": true
+  },
+  "228808924": {
+    "artist": "Aaron Sevilla, RBOR, El Gato CHP",
+    "title": "Gitanos (Original Mix)",
+    "nota": "afro house; fuera por categoria, no por el tema en si",
+    "fuente": "regla vetos.generos, 2026-09-23",
+    "veto": true
+  },
+  "151391665": {
+    "artist": "Kostya Outta, Liam Garcia",
+    "title": "If I Win (Cosmonaut Extended Remix)",
+    "E_calc": 6.3,
+    "nota": "temazo total, mi musica",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "favorito": true,
+    "momentos": [
+      "warm",
+      "pico",
+      "cierre"
+    ]
+  },
+  "43250172": {
+    "artist": "Guy J",
+    "title": "Airborne (Original Mix)",
+    "E_calc": 5.5,
+    "nota": "baja toda la energia totalmente",
+    "E": 4.0,
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true
+  },
+  "125897635": {
+    "artist": "Tim Green",
+    "title": "Moho (Original Mix) ",
+    "E_calc": 5.6,
+    "nota": "arranca muy abajo",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true,
+    "E": 4.2
+  },
+  "241228611": {
+    "artist": "Marcelo Vasami",
+    "title": "Shades Of Blue (Original Mix)",
+    "E_calc": 7.4,
+    "nota": "muy oscuro",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true
+  },
+  "144808595": {
+    "artist": "Joris Voorn, Alex Kennon",
+    "title": "Blinding Lights (Joris Voorn Remix)",
+    "E_calc": 6.9,
+    "nota": "muy oscuro",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true
+  },
+  "148342248": {
+    "artist": "Rauschhaus",
+    "title": "Faunus (Original Mix)",
+    "E_calc": 5.7,
+    "nota": "muy oscuro",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true,
+    "E": 4.5
+  },
+  "67105990": {
+    "artist": "Spirit & The Guide",
+    "title": "Alafia (Golan Zocher Remix)",
+    "E_calc": 8.6,
+    "nota": "oscuro",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true
+  },
+  "198323890": {
+    "artist": "Eric Lune & Juan Sapia",
+    "title": "Tension Release (Original Mix) ",
+    "E_calc": 6.9,
+    "nota": "poca energia",
+    "fuente": "escucha del set 143, 2026-09-23",
+    "veto": true
+  },
+  "245494571": {
+    "artist": "Sebastien Leger, Tim Green",
+    "title": "Embre (Original Mix) ",
+    "E_calc": 5.9,
+    "nota": "mas energia; lo puso de apertura",
+    "fuente": "escucha del set 143, 2026-09-24",
+    "veto": true,
+    "E": 4.4
+  },
+  "267191914": {
+    "artist": "Guy J",
+    "title": "Day Of Light (Original Mix)",
+    "E_calc": 5.8,
+    "nota": "mas groovero y colorido",
+    "fuente": "escucha del set 143, 2026-09-24",
+    "veto": true
+  },
+  "69012374": {
+    "artist": "Tobi Amuchastegui",
+    "title": "Spectral (Original Mix)",
+    "E_calc": 6.6,
+    "nota": "sacalo; mas colorido y fiestero, tipo Sebastien Leger",
+    "fuente": "escucha del set 143, 2026-09-24",
+    "veto": true
+  },
+  "221636509": {
+    "artist": "Rabiee Ahmad, Hassan Tariq Khan",
+    "title": "In Another Time (Original Mix)",
+    "E_calc": 7.5,
+    "nota": "lo pidio para el set y para mi sonido",
+    "fuente": "pedido del DJ, 2026-09-24",
+    "favorito": true,
+    "momentos": [
+      "pico",
+      "cierre"
+    ],
+    "rol": "el momento emotivo"
+  },
+  "124748921": {
+    "artist": "Sébastien Léger, Lost Miracle",
+    "title": "Dodonpachi (Original Mix)",
+    "E_calc": 7.0,
+    "nota": "es favorito",
+    "fuente": "escucha del 148 v2, 2026-09-28",
+    "favorito": true,
+    "momentos": [
+      "pico",
+      "cierre"
+    ],
+    "rol": "el cierre heroico"
+  },
+  "80536228": {
+    "artist": "Greg Ochman",
+    "title": "The Silver Lily (Original Mix)",
+    "E_calc": 5.5,
+    "nota": "lo nombro para mi sonido",
+    "fuente": "pedido del DJ, 2026-09-26",
+    "favorito": true,
+    "momentos": [
+      "warm"
+    ]
+  },
+  "178297946": {
+    "artist": "Ruben Karapetyan",
+    "title": "Rejuvenescence",
+    "E_calc": 6.5,
+    "nota": "lo nombro para mi sonido",
+    "fuente": "pedido del DJ, 2026-09-26",
+    "favorito": true,
+    "momentos": [
+      "warm",
+      "pico",
+      "cierre"
+    ]
+  },
+  "106407929": {
+    "artist": "Jamie Stevens, Zankee Gulati",
+    "title": "Running (Original Mix)",
+    "E_calc": 4.5,
+    "nota": "no lo puedo usar, lo va a usar un amigo",
+    "fuente": "2026-09-29",
+    "favorito": true,
+    "momentos": [],
+    "reservado_por_otro": true
+  },
+  "130869533": {
+    "artist": "Andre Moret",
+    "title": "One World (Extended Mix)",
+    "E_calc": 5.6,
+    "nota": "lo nombro para mi sonido",
+    "fuente": "pedido del DJ, 2026-09-26",
+    "favorito": true,
+    "momentos": [
+      "warm",
+      "pico"
+    ]
+  },
+  "116966407": {
+    "artist": "Braxton",
+    "title": "Torn (feat. Danni Wells) [Extended Mix]",
+    "E_calc": 6.3,
+    "nota": "afuera",
+    "fuente": "escucha del set 143, 2026-09-27 (whatsapp)",
+    "veto": true
+  },
+  "46652470": {
+    "artist": "Gorkiz & Tonaco",
+    "title": "Serenity",
+    "E_calc": 5.3,
+    "nota": "no va",
+    "fuente": "escucha del set 143, 2026-09-27 (whatsapp)",
+    "veto": true
+  },
+  "231028609": {
+    "artist": "Tim Green, Josefina Silveyra",
+    "title": "La Joda (Original Mix)",
+    "E_calc": 6.9,
+    "nota": "malisimo",
+    "fuente": "escucha de la tanda nueva, 2026-09-28",
+    "veto": true
+  },
+  "197567059": {
+    "artist": "Gorkiz & Mango",
+    "title": "Ipanema Twilight (Analog Jungs Remix) ",
+    "E_calc": 5.9,
+    "nota": "tiene el groove adecuado",
+    "fuente": "escucha del 148 v2, 2026-09-28",
+    "favorito": true,
+    "referencia_de": "groove",
+    "groove_ok": true
+  },
+  "182281408": {
+    "artist": "Emi Galvan & Albuquerque",
+    "title": "Don't Kill the Messenger",
+    "E_calc": 6.3,
+    "nota": "lo toque mucho",
+    "fuente": "escucha del 148 v2, 2026-09-28",
+    "gastado": {
+      "fecha": "2026-09-28",
+      "alcance": "la tanda del cumple, sets 139-148",
+      "vale_en_otra_fecha": true,
+      "por_que": "lo toque mucho"
+    }
+  },
+  "97553620": {
+    "artist": "Ruben Karapetyan, Maze 28",
+    "title": "Cosmic Dot",
+    "E_calc": 6.6,
+    "nota": "lo toque mucho",
+    "fuente": "escucha del 148 v2, 2026-09-28",
+    "gastado": {
+      "fecha": "2026-09-28",
+      "alcance": "la tanda del cumple, sets 139-148",
+      "vale_en_otra_fecha": true,
+      "por_que": "lo toque mucho"
+    }
+  },
+  "116807064": {
+    "artist": "Maze 28",
+    "title": "Fogbows",
+    "E_calc": 6.3,
+    "nota": "tiene el groove",
+    "fuente": "escucha del 148 v2, 2026-09-28",
+    "groove_ok": true,
+    "referencia_de": "groove",
+    "favorito": true
+  },
+  "42634301": {
+    "artist": "Paul Deep AR",
+    "title": "Milo",
+    "E_calc": 7.1,
+    "nota": "no tiene el groove",
+    "fuente": "escucha del 148 v2, 2026-09-28",
+    "groove_ok": false,
+    "referencia_de": "groove"
+  },
+  "_campos": {
+    "veto": "el tema no le gusta. No entra nunca, en ningun set.",
+    "gastado": "lo toco mucho y no lo quiere EN ESA TANDA. No es un veto: en otra fecha vuelve a estar disponible. Lleva fecha y alcance.",
+    "favorito": "le gusta. Un 'si' suyo sobre un tema cuenta como favorito.",
+    "groove_ok": "su veredicto sobre si el tema tiene el groove que busca. Independiente de si le gusta.",
+    "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension: groove (Ipanema), polenta (Fading Silhouettes), pianitos y color (The Silver Lily).",
+    "E": "la energia que EL escucho, que pisa a la calculada.",
+    "_nota": "Estos campos salen de lo que el DJ dice, TEXTUAL. Si no dijo que si o que no sobre algo, no se anota nada de eso: no se supone.",
+    "rol": "la funcion que el DJ le da al tema DENTRO de un set, dicha por el: 'el momento emotivo', 'el cierre heroico'. No es que le guste ni que tenga groove: es para que sirve."
+  },
+  "66290210": {
+    "artist": "Cid Inc.",
+    "title": "Citadel (Original Mix)",
+    "E_calc": 7.3,
+    "favorito": true,
+    "nota": "esta bien, es un si",
+    "fuente": "escucha del 148 v2, 2026-09-28"
+  },
+  "216766461": {
+    "artist": "Rockka",
+    "title": "Amnesia (Fuenka Remix)",
+    "E_calc": 7.2,
+    "favorito": true,
+    "nota": "si",
+    "fuente": "escucha del 148 v2, 2026-09-28"
+  },
+  "75106655": {
+    "artist": "Cendryma",
+    "title": "Wakefeld (Original Mix)",
+    "E_calc": 7.6,
+    "favorito": true,
+    "nota": "si",
+    "fuente": "escucha del 148 v2, 2026-09-28"
+  },
+  "71592299": {
+    "artist": "GMJ, Matter, Zankee Gulati",
+    "title": "Emerge (Original Mix)",
+    "E_calc": 5.3,
+    "nota": "muy oscuro",
+    "fuente": "escucha del 143, 2026-09-29",
+    "veto": true
+  },
+  "219225046": {
+    "artist": "Ignacio Hernandez",
+    "title": "Circle Of Lights (Claudio Cornejo (AR) Night Mix)",
+    "E_calc": 5.7,
+    "nota": "muy oscuro",
+    "fuente": "escucha del 143, 2026-09-29",
+    "veto": true
+  },
+  "6719392": {
+    "artist": "Wailey",
+    "title": "Droplets (Taylan Remix)",
+    "E_calc": 5.3,
+    "favorito": true,
+    "nota": "me gustaron ambos",
+    "fuente": "escucha del 143, 2026-09-29"
+  },
+  "103933571": {
+    "artist": "Ruben Karapetyan",
+    "title": "The Ways (Extended Mix)",
+    "E_calc": 5.5,
+    "favorito": true,
+    "nota": "me gustaron ambos",
+    "fuente": "escucha del 143, 2026-09-29"
+  },
+  "250703508": {
+    "artist": "Hobin Rude",
+    "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
+    "E_calc": 8.0,
+    "favorito": true,
+    "nota": "el que siento mas polenta",
+    "fuente": "escucha del 143, 2026-09-29",
+    "referencia_de": "polenta"
+  },
+  "204313298": {
+    "artist": "Guy J",
+    "title": "Dizzy Moments",
+    "E_calc": 5.9,
+    "nota": "lo he tocado ya",
+    "fuente": "2026-09-29",
+    "gastado": {
+      "fecha": "2026-09-29",
+      "alcance": "la tanda del cumple, sets 139-148",
+      "vale_en_otra_fecha": true,
+      "por_que": "lo he tocado ya"
+    }
+  },
+  "13403926": {
+    "artist": "Emi Galvan",
+    "title": "Karma (Original Mix)",
+    "E_calc": 7.6,
+    "nota": "lo he tocado ya",
+    "fuente": "2026-09-29",
+    "gastado": {
+      "fecha": "2026-09-29",
+      "alcance": "la tanda del cumple, sets 139-148",
+      "vale_en_otra_fecha": true,
+      "por_que": "lo he tocado ya"
+    }
+  },
+  "21932826": {
+    "artist": "Rezident, Kate Morgan",
+    "title": "Muse feat. Kate Morgan (L.GU. Extended Mix)",
+    "E_calc": 7.1,
+    "favorito": true,
+    "nota": "TREMENDO TEMA, el mas tecnoso y linda frase",
+    "fuente": "escucha del 143, 2026-09-29"
+  },
+  "162072169": {
+    "artist": "Andy Moor & Adam White",
+    "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
+    "E_calc": 8.5,
+    "nota": "pierde el groove",
+    "fuente": "escucha del 143, 2026-09-29",
+    "groove_ok": false
+  },
+  "219733407": {
+    "artist": "Emi Galvan",
+    "title": "Everlong (Original Mix)",
+    "E_calc": 6.9,
+    "nota": "vetado por uso",
+    "fuente": "2026-09-29",
+    "gastado": {
+      "fecha": "2026-09-29",
+      "alcance": "la tanda del cumple, sets 139-148",
+      "vale_en_otra_fecha": true,
+      "por_que": "vetado por uso"
+    }
+  },
+  "231529570": {
+    "artist": "Emi Galvan",
+    "title": "Mily (Original Mix)",
+    "E_calc": 5.9,
+    "favorito": true,
+    "nota": "me gusto mily",
+    "fuente": "escucha del 149, 2026-09-30"
   }
- },
- "97553620": {
-  "artist": "Ruben Karapetyan, Maze 28",
-  "title": "Cosmic Dot",
-  "E_calc": 6.6,
-  "nota": "lo toque mucho",
-  "fuente": "escucha del 148 v2, 2026-09-28",
-  "gastado": {
-   "fecha": "2026-09-28",
-   "alcance": "la tanda del cumple, sets 139-148",
-   "vale_en_otra_fecha": true,
-   "por_que": "lo toque mucho"
-  }
- },
- "116807064": {
-  "artist": "Maze 28",
-  "title": "Fogbows",
-  "E_calc": 6.3,
-  "nota": "tiene el groove",
-  "fuente": "escucha del 148 v2, 2026-09-28",
-  "groove_ok": true,
-  "referencia_de": "groove",
-  "favorito": true
- },
- "42634301": {
-  "artist": "Paul Deep AR",
-  "title": "Milo",
-  "E_calc": 7.1,
-  "nota": "no tiene el groove",
-  "fuente": "escucha del 148 v2, 2026-09-28",
-  "groove_ok": false,
-  "referencia_de": "groove"
- },
- "_campos": {
-  "veto": "el tema no le gusta. No entra nunca, en ningun set.",
-  "gastado": "lo toco mucho y no lo quiere EN ESA TANDA. No es un veto: en otra fecha vuelve a estar disponible. Lleva fecha y alcance.",
-  "favorito": "le gusta. Un 'si' suyo sobre un tema cuenta como favorito.",
-  "groove_ok": "su veredicto sobre si el tema tiene el groove que busca. Independiente de si le gusta.",
-  "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension: groove (Ipanema), polenta (Fading Silhouettes), pianitos y color (The Silver Lily).",
-  "E": "la energia que EL escucho, que pisa a la calculada.",
-  "_nota": "Estos campos salen de lo que el DJ dice, TEXTUAL. Si no dijo que si o que no sobre algo, no se anota nada de eso: no se supone.",
-  "rol": "la funcion que el DJ le da al tema DENTRO de un set, dicha por el: 'el momento emotivo', 'el cierre heroico'. No es que le guste ni que tenga groove: es para que sirve."
- },
- "66290210": {
-  "artist": "Cid Inc.",
-  "title": "Citadel (Original Mix)",
-  "E_calc": 7.3,
-  "favorito": true,
-  "nota": "esta bien, es un si",
-  "fuente": "escucha del 148 v2, 2026-09-28"
- },
- "216766461": {
-  "artist": "Rockka",
-  "title": "Amnesia (Fuenka Remix)",
-  "E_calc": 7.2,
-  "favorito": true,
-  "nota": "si",
-  "fuente": "escucha del 148 v2, 2026-09-28"
- },
- "75106655": {
-  "artist": "Cendryma",
-  "title": "Wakefeld (Original Mix)",
-  "E_calc": 7.6,
-  "favorito": true,
-  "nota": "si",
-  "fuente": "escucha del 148 v2, 2026-09-28"
- },
- "71592299": {
-  "artist": "GMJ, Matter, Zankee Gulati",
-  "title": "Emerge (Original Mix)",
-  "E_calc": 5.3,
-  "nota": "muy oscuro",
-  "fuente": "escucha del 143, 2026-09-29",
-  "veto": true
- },
- "219225046": {
-  "artist": "Ignacio Hernandez",
-  "title": "Circle Of Lights (Claudio Cornejo (AR) Night Mix)",
-  "E_calc": 5.7,
-  "nota": "muy oscuro",
-  "fuente": "escucha del 143, 2026-09-29",
-  "veto": true
- },
- "6719392": {
-  "artist": "Wailey",
-  "title": "Droplets (Taylan Remix)",
-  "E_calc": 5.3,
-  "favorito": true,
-  "nota": "me gustaron ambos",
-  "fuente": "escucha del 143, 2026-09-29"
- },
- "103933571": {
-  "artist": "Ruben Karapetyan",
-  "title": "The Ways (Extended Mix)",
-  "E_calc": 5.5,
-  "favorito": true,
-  "nota": "me gustaron ambos",
-  "fuente": "escucha del 143, 2026-09-29"
- },
- "250703508": {
-  "artist": "Hobin Rude",
-  "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
-  "E_calc": 8.0,
-  "favorito": true,
-  "nota": "el que siento mas polenta",
-  "fuente": "escucha del 143, 2026-09-29",
-  "referencia_de": "polenta"
- },
- "204313298": {
-  "artist": "Guy J",
-  "title": "Dizzy Moments",
-  "E_calc": 5.9,
-  "nota": "lo he tocado ya",
-  "fuente": "2026-09-29",
-  "gastado": {
-   "fecha": "2026-09-29",
-   "alcance": "la tanda del cumple, sets 139-148",
-   "vale_en_otra_fecha": true,
-   "por_que": "lo he tocado ya"
-  }
- },
- "13403926": {
-  "artist": "Emi Galvan",
-  "title": "Karma (Original Mix)",
-  "E_calc": 7.6,
-  "nota": "lo he tocado ya",
-  "fuente": "2026-09-29",
-  "gastado": {
-   "fecha": "2026-09-29",
-   "alcance": "la tanda del cumple, sets 139-148",
-   "vale_en_otra_fecha": true,
-   "por_que": "lo he tocado ya"
-  }
- },
- "21932826": {
-  "artist": "Rezident, Kate Morgan",
-  "title": "Muse feat. Kate Morgan (L.GU. Extended Mix)",
-  "E_calc": 7.1,
-  "favorito": true,
-  "nota": "TREMENDO TEMA, el mas tecnoso y linda frase",
-  "fuente": "escucha del 143, 2026-09-29"
- },
- "162072169": {
-  "artist": "Andy Moor & Adam White",
-  "title": "The Whiteroom (feat. Whiteroom) [Marsh Extended Mix]",
-  "E_calc": 8.5,
-  "nota": "pierde el groove",
-  "fuente": "escucha del 143, 2026-09-29",
-  "groove_ok": false
- },
- "219733407": {
-  "artist": "Emi Galvan",
-  "title": "Everlong (Original Mix)",
-  "E_calc": 6.9,
-  "nota": "vetado por uso",
-  "fuente": "2026-09-29",
-  "gastado": {
-   "fecha": "2026-09-29",
-   "alcance": "la tanda del cumple, sets 139-148",
-   "vale_en_otra_fecha": true,
-   "por_que": "vetado por uso"
-  }
- }
 }

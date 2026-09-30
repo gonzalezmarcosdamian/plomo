@@ -244,15 +244,54 @@ class Spotify:
                 return mejor["uri"], f"{mejor['artists'][0]['name']} - {mejor['name']}"
         return None, ""
     def playlist_por_nombre(self, nombre: str) -> str | None:
-        off = 0
+        """Todas las coincidencias, no la primera, y explota si hay mas de una.
+
+        Antes devolvia en cuanto encontraba una. El 2026-09-30 la paginacion no
+        devolvio la lista del set 149 --que existia-- y el script la dio por
+        inexistente y creo una SEGUNDA con el mismo nombre. A partir de ahi la
+        busqueda por nombre elige cualquiera de las dos y el link que el DJ tiene
+        guardado deja de ser el que se actualiza.
+
+        Ahora recorre TODAS las paginas antes de decidir, tolera los items en
+        null que a veces manda la API, y si aparece mas de una lista con el mismo
+        nombre corta en vez de elegir al azar.
+        """
+        off, encontradas = 0, []
         while True:
             r = self.get("/me/playlists", limit=50, offset=off)
-            for pl in r["items"]:
-                if pl["name"] == nombre and pl["owner"]["id"] == self.yo:
-                    return pl["id"]
+            for pl in r.get("items") or []:
+                if not pl:
+                    continue          # la API manda null de a ratos
+                if pl.get("name") == nombre and (pl.get("owner") or {}).get("id") == self.yo:
+                    encontradas.append(pl["id"])
             if not r.get("next"):
-                return None
+                break
             off += 50
+        if len(encontradas) > 1:
+            raise RuntimeError(
+                f"hay {len(encontradas)} listas llamadas {nombre!r}: "
+                f"{', '.join(encontradas)}. Borrar las de mas a mano antes de seguir."
+            )
+        return encontradas[0] if encontradas else None
+
+    def items_de(self, pid: str) -> list[str]:
+        """Los URIs de una lista, paginados.
+
+        El endpoint nuevo /items devuelve cada fila bajo la clave `item`; el
+        viejo /tracks la devolvia bajo `track`. Leer `track` contra /items da
+        cero temas, que leido de apuro parece "la lista esta vacia" y lleva a
+        pisarla. Se aceptan las dos claves.
+        """
+        off, uris = 0, []
+        while True:
+            r = self.get(f"/playlists/{pid}/items", limit=100, offset=off)
+            for fila in r.get("items") or []:
+                t = (fila or {}).get("item") or (fila or {}).get("track")
+                if t and t.get("uri"):
+                    uris.append(t["uri"])
+            if not r.get("next"):
+                return uris
+            off += 100
 
 
 def main() -> None:
@@ -279,6 +318,8 @@ def main() -> None:
         (RAIZ / "data/pool.json").read_text(encoding="utf-8"))}
     cache_f = RAIZ / "data" / "spotify_matches.json"
     cache = json.loads(cache_f.read_text(encoding="utf-8")) if cache_f.exists() else {}
+    ids_f = RAIZ / "data" / "spotify_playlists.json"
+    ids_listas = json.loads(ids_f.read_text(encoding="utf-8")) if ids_f.exists() else {}
 
     for num in args.nums:
         f = RAIZ / "data" / "set_targets" / f"set_{num}.json"
@@ -332,7 +373,17 @@ def main() -> None:
             print(f"    NO SE PUBLICO NADA: la lista de Spotify queda como estaba. "
                   f"Re-correr cuando vuelva la cuota.")
             continue
-        pid = sp.playlist_por_nombre(nombre)
+        # El id manda sobre el nombre: si ya publicamos esta lista alguna vez,
+        # se actualiza ESA y no una que se le parezca. Asi el link que el DJ
+        # tiene guardado sigue siendo el que se actualiza.
+        pid = ids_listas.get(str(num))
+        if pid:
+            try:
+                sp.get(f"/playlists/{pid}")
+            except Exception:
+                pid = None            # la borro a mano: se vuelve a buscar
+        if pid is None:
+            pid = sp.playlist_por_nombre(nombre)
         if pid is None:
             pid = sp.post("/me/playlists",
                           {"name": nombre, "public": False,
@@ -346,6 +397,9 @@ def main() -> None:
         print(f"{nombre}")
         print(f"  {estado}: {len(uris)}/{len(doc['tracks'])} temas   "
               f"https://open.spotify.com/playlist/{pid}")
+        ids_listas[str(num)] = pid
+        ids_f.write_text(json.dumps(ids_listas, ensure_ascii=False, indent=1),
+                         encoding="utf-8")
         for x in faltan:
             print(f"    no esta en Spotify: {x[:66]}")
     cache_f.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
