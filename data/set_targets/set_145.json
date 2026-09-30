@@ -9,9 +9,9 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Cendryma",
-      "title": "Parabolic (Original Mix)",
-      "content_id": "72311255"
+      "artist": "Lorenzo Balzarini",
+      "title": "Redes (Original Mix)",
+      "content_id": "211633569"
     },
     {
       "artist": "Cendryma",
@@ -19,14 +19,19 @@
       "content_id": "264401297"
     },
     {
+      "artist": "Rockka",
+      "title": "Elevation",
+      "content_id": "114312499"
+    },
+    {
       "artist": "Paul Deep (AR)",
       "title": "Melodramatic (Original Mix)",
       "content_id": "154792940"
     },
     {
-      "artist": "Rockka",
-      "title": "Elevation",
-      "content_id": "114312499"
+      "artist": "Cendryma",
+      "title": "Parabolic (Original Mix)",
+      "content_id": "72311255"
     },
     {
       "artist": "Maze 28",
@@ -39,24 +44,29 @@
       "content_id": "226546454"
     },
     {
-      "artist": "Cendryma",
-      "title": "Override (Original Mix)",
-      "content_id": "244252789"
+      "artist": "Kamilo Sanclemente",
+      "title": "Orb (Original Mix)",
+      "content_id": "17713969"
     },
     {
-      "artist": "Rockka",
-      "title": "Amnesia (Fuenka Remix)",
-      "content_id": "216766461"
+      "artist": "Alex O'Rion, Antrim",
+      "title": "Imagine (Original Mix) ",
+      "content_id": "134503503"
     },
     {
-      "artist": "Lorenzo Balzarini",
-      "title": "Redes (Original Mix)",
-      "content_id": "211633569"
+      "artist": "Sebastian Busto",
+      "title": "December (Zankee Gulati Remix)",
+      "content_id": "234396932"
     },
     {
-      "artist": "Maze 28",
-      "title": "Great Attractor (Ruben Karapetyan Remix)",
-      "content_id": "106041324"
+      "artist": "Joel Lee",
+      "title": "Sun Goes Down (Original Mix)",
+      "content_id": "67745954"
+    },
+    {
+      "artist": "Taylan",
+      "title": "Earthbound (Andre Moret Remix)",
+      "content_id": "39057490"
     },
     {
       "artist": "Gorkiz & Mind Echoes",
@@ -69,24 +79,14 @@
       "content_id": "145263774"
     },
     {
-      "artist": "Gai Barone, Aman Anand",
-      "title": "Low Era (Original Mix)",
-      "content_id": "248641334"
+      "artist": "Maze 28",
+      "title": "Great Attractor (Ruben Karapetyan Remix)",
+      "content_id": "106041324"
     },
     {
-      "artist": "Sebastian Busto",
-      "title": "December (Zankee Gulati Remix)",
-      "content_id": "234396932"
-    },
-    {
-      "artist": "Alex O'Rion, Antrim",
-      "title": "Imagine (Original Mix) ",
-      "content_id": "134503503"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "Mirror (Original Mix)",
-      "content_id": "5884854"
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
     },
     {
       "artist": "Just Her, AmyElle",

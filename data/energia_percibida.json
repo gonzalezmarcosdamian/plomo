@@ -652,5 +652,26 @@
       "fecha": "2026-09-30",
       "textual": "crabo veto este set"
     }
+  },
+  "225441549": {
+    "artist": "Andre Moret",
+    "title": "Aria (Gorkiz Remix)",
+    "E_calc": 5.8,
+    "nota": "aria tiene el groove",
+    "groove_ok": true,
+    "fuente": "escucha del 149, 2026-09-30"
+  },
+  "8109197": {
+    "artist": "Double Touch",
+    "title": "Pomelo (Original Mix) ",
+    "E_calc": 6.5,
+    "nota": "pomelo no me gusto cambialo",
+    "groove_ok": false,
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "pomelo no me gusto cambialo"
+    },
+    "fuente": "escucha del 149, 2026-09-30"
   }
 }
