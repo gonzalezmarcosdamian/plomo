@@ -475,8 +475,8 @@
     "referencia_de": "groove"
   },
   "_campos": {
-    "veto": "el tema no le gusta. No entra nunca, en ningun set.",
-    "gastado": "lo toco mucho y no lo quiere EN ESA TANDA. No es un veto: en otra fecha vuelve a estar disponible. Lleva fecha y alcance.",
+    "veto": "NO ENTRA EN ESE SET, SOLAMENTE. Textual del DJ, 2026-09-30: 'veto no entra en este set, solamente'. No es que el tema no le guste ni que no lo quiera nunca: es que ahi no va. Lleva el set o la fecha en `fuente`, y el alcance sale de ahi. Los `veto: true` anteriores al 2026-09-30 se anotaron creyendo que era global; hay que releerlos con su `fuente` antes de dar por perdido un tema.",
+    "gastado": "lo toco mucho y no lo quiere EN ESA TANDA. Se distingue del veto en el motivo --uso, no criterio-- no en el alcance: los dos son de esa fecha.",
     "favorito": "le gusta. Un 'si' suyo sobre un tema cuenta como favorito.",
     "groove_ok": "su veredicto sobre si el tema tiene el groove que busca. Independiente de si le gusta.",
     "referencia_de": "el tema sirve de patron para medir a los demas en esa dimension: groove (Ipanema), polenta (Fading Silhouettes), pianitos y color (The Silver Lily).",
@@ -610,6 +610,35 @@
     "E_calc": 5.9,
     "favorito": true,
     "nota": "me gusto mily",
+    "fuente": "escucha del 149, 2026-09-30"
+  },
+  "217307520": {
+    "artist": "Emi Galvan",
+    "title": "Trust (Original Mix)",
+    "E_calc": 6.4,
+    "nota": "trus vetado del set",
+    "fuente": "escucha del 149, 2026-09-30",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "trus vetado del set",
+      "confirmado_por_el_DJ": "veto no entra en este set, solamente"
+    }
+  },
+  "77435258": {
+    "artist": "Eli Nissan",
+    "title": "Karnaval (Original Mix) ",
+    "E_calc": 8.2,
+    "nota": "karnaval pierde el groove",
+    "groove_ok": false,
+    "fuente": "escucha del 149, 2026-09-30"
+  },
+  "33761156": {
+    "artist": "Ilias Katelanos, Plecta, Anonimat",
+    "title": "Coaster (Durante Remix)",
+    "E_calc": 6.3,
+    "nota": "coaster muy bien",
+    "favorito": true,
     "fuente": "escucha del 149, 2026-09-30"
   }
 }
