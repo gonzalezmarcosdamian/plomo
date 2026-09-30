@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.20.0",
+  "version": "1.20.1",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -22,6 +22,14 @@
      "voces: dimension nueva, medida",
      "densidad.largo_con_mezclas: el solape es fijo por mezcla, no un porcentaje",
      "estilo: el ataque melodico queda degradado a detector de oscuro"
+    ]
+   },
+   {
+    "version": "1.20.1",
+    "fecha": "2026-09-30",
+    "cambios": [
+     "groove.piso_densidad ELIMINADO: lo refuto Sizer, que la regla predijo mal por escrito",
+     "groove.piso_graves queda solo, 11/12, con Milo como excepcion abierta"
     ]
    }
   ]
@@ -1008,18 +1016,14 @@
   },
   "piso_graves": {
    "valor": 40.0,
-   "porque": "Lo que el DJ llama 'tiene groove' NO es la densidad. Contra sus propios veredictos la densidad no separa nada: Ipanema 'tiene el groove' 14.9 contra Karnaval 'pierde el groove' 14.8; Fogbows 'tiene' 14.6 contra Pomelo 'no me gusto' 14.6. Lo que si los separa es el peso de graves, que estaba guardado en el indice y nadie miraba.",
-   "evidencia": "2026-09-30: tienen groove Ipanema 57.2, Fogbows 48.0, Fading Silhouettes 46.4, Silver Lily 45.4, Mily 43.1, Coaster 40.9. No tienen: Karnaval 29.0, Pomelo 37.1, The Whiteroom 39.2. Con el piso de densidad da 11/11 en los casos etiquetados y pasa el 30% de la biblioteca, asi que no aprueba a cualquiera. ARIA es el caso fuera de muestra: su receta se indexo DESPUES de encontrar el patron, la regla predijo que si (14.3/44.1) y el DJ dijo 'aria tiene el groove'. Segundo acierto fuera de muestra: If I Had Wings tenia graves 32.3 --abajo del piso-- y el DJ dijo 'la baja un poco'.",
+   "porque": "Lo que el DJ llama 'tiene groove' es el peso de GRAVES, no la densidad. La densidad no separa nada contra sus veredictos: Ipanema 'tiene' 14.9 contra Karnaval 'pierde' 14.8; Fogbows 'tiene' 14.6 contra Pomelo 'no me gusto' 14.6.",
+   "evidencia": "2026-09-30: 11 de 12 casos etiquetados por el DJ. Tienen groove Sizer 63.9, Ipanema 57.2, Fogbows 48.0, Fading Silhouettes 46.4, Silver Lily 45.4, Aria 44.1, Mily 43.1, Coaster 40.9. No tienen: Karnaval 29.0, Pomelo 37.1, The Whiteroom 39.2. Pasa el 53% de la biblioteca. Dos aciertos fuera de muestra el mismo dia: Aria --indexado despues de encontrar el patron-- y If I Had Wings, que el DJ saco solo con graves 32.3.",
    "estado": "HIPOTESIS. Se encontro mirando diez casos etiquetados, o sea que esta ajustada a ellos. Se valida o se cae con los proximos veredictos del DJ, no con mas analisis de los mismos diez.",
-   "lee": "nadie todavia"
+   "lee": "nadie todavia",
+   "excepcion_abierta": "Milo tiene graves 55.6 y el DJ dijo 'no tiene el groove'. Es el unico caso que la regla no explica. No se toca la regla por un caso: queda anotado."
   },
-  "piso_densidad": {
-   "valor": 14.0,
-   "porque": "Va junto con el piso de graves: Milo tiene graves 55.6 y el DJ dijo 'no tiene el groove'. Su densidad es 13.5.",
-   "evidencia": "2026-09-30: es el unico de los diez casos que falla por densidad y no por graves.",
-   "lee": "nadie todavia"
-  },
-  "_refutado": "El piso de DENSIDAD solo no sirve para decidir si un tema tiene groove: los veredictos del DJ caen a los dos lados del mismo numero. La densidad sigue valiendo para el SALTO entre consecutivos (salto_tolerado), que es otra pregunta."
+  "_refutado": "El piso de DENSIDAD solo no sirve para decidir si un tema tiene groove: los veredictos del DJ caen a los dos lados del mismo numero. La densidad sigue valiendo para el SALTO entre consecutivos (salto_tolerado), que es otra pregunta.",
+  "_refutado_piso_densidad": "2026-09-30: el piso de densidad de 14.0 vivio unas horas y lo refuto SIZER. La regla predijo por escrito que se iba a cortar --densidad 10.9-- y el DJ escucho y dijo 'en mi oido sizer entra'. Se saca.\nPOR QUE ESTABA MAL, que importa mas que el numero: la densidad del indice es el PROMEDIO de las secciones, y promediar mezcla los breakdowns con los drops. Sizer por seccion es [14.2, 6.2, 12.6, 6.5, 14.9]: donde groovea esta en 14-15 igual que cualquier aprobado, y el promedio le da 10.9 porque BAJA A 6. El piso estaba castigando al tema por tener dinamica, que es lo contrario de lo que se busca. Si algun dia se usa densidad para juzgar un tema, tiene que ser la de sus secciones altas, no la media."
  },
  "genero": {
   "_que_es": "La cuota de genero: el norte, no la ley.",

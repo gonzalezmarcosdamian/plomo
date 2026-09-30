@@ -1,5 +1,6 @@
 {
   "name": "148. Housero Progresivo · 1 a 3 AM — 2h — 2026-09-28",
+  "carpeta": "0 Fechas",
   "duration_h": 2.0,
   "bpm_range": [
     119,
@@ -7,6 +8,7 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
+  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche.",
   "tracks": [
     {
       "artist": "Henry Saiz & Band",
@@ -88,6 +90,5 @@
       "title": "Citadel (Original Mix)",
       "content_id": "66290210"
     }
-  ],
-  "_nota_spotify": "2026-09-29: Amnesia salio de aca y queda solo en el 143, a pedido del DJ. v3 del 2026-09-28: mas brillo con el mismo groove. Los seis que el DJ dijo que SI quedan fijos; los otros once se eligieron con color >= 0.55 y el groove de Ipanema (techo >= 15.5, piso <= 78%). Publicado SOLO en Spotify: la playlist de Rekordbox sigue en la v2 hasta que se corra build_set.py 148."
+  ]
 }
