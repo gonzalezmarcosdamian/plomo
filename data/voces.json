@@ -1,0 +1,173 @@
+{
+  "_generado": "scripts/voces.py",
+  "_fecha": "2026-09-30",
+  "_que_es": {
+    "presencia": "fraccion del fragmento con voz audible (-34dB de la mezcla)",
+    "peso": "fraccion de la energia de la mezcla que es voz",
+    "umbral": "cantado = presencia>60% y peso>8%; algo de voz = presencia>30%"
+  },
+  "_por_que": "El titulo miente. De 13 temas con 'feat.' en el credito, 4 midieron instrumental --We Were There 21%, Cosmic Love 19%, Get Lost 29%, Aria 24%--: 31% de falsos positivos. Y al reves, 'If I Had Wings' y 'Just Rain' prometen voz y dan 0% y 1%.",
+  "tracks": {
+    "28274869": {
+      "artist": "Kloyd, Winifred",
+      "title": "Nothing Could've Made Me feat. Winifred (Original Mix)",
+      "presencia": 0.98,
+      "peso": 0.242,
+      "etiqueta": "cantado"
+    },
+    "54818175": {
+      "artist": "Wassu",
+      "title": "From Here (feat. MØØNE) (Extended Mix)",
+      "presencia": 0.87,
+      "peso": 0.456,
+      "etiqueta": "cantado"
+    },
+    "184313844": {
+      "artist": "Joe Goddard",
+      "title": "Music Is The Answer (Hot Since 82 Remix)",
+      "presencia": 0.85,
+      "peso": 0.889,
+      "etiqueta": "cantado"
+    },
+    "142801239": {
+      "artist": "Warung, Steven Weston",
+      "title": "Hourglass (feat. ALLKNIGHT) (Extended Mix)",
+      "presencia": 0.84,
+      "peso": 0.225,
+      "etiqueta": "cantado"
+    },
+    "136375568": {
+      "artist": "PRAANA, RKTKT",
+      "title": "We Both Know It (feat. lydi lynn) (Extended Mix)",
+      "presencia": 0.82,
+      "peso": 0.247,
+      "etiqueta": "cantado"
+    },
+    "262575865": {
+      "artist": "Husa & Zeyada",
+      "title": "On My Own (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "presencia": 0.8,
+      "peso": 0.321,
+      "etiqueta": "cantado"
+    },
+    "214005436": {
+      "artist": "Kloyd, Tonguetied",
+      "title": "Saturated feat. Tonguetied (Original Mix)",
+      "presencia": 0.75,
+      "peso": 0.22,
+      "etiqueta": "cantado"
+    },
+    "64362623": {
+      "artist": "Emi Galvan",
+      "title": "Crabo (Original Mix)",
+      "presencia": 0.71,
+      "peso": 0.396,
+      "etiqueta": "cantado"
+    },
+    "162287546": {
+      "artist": "Durante",
+      "title": "Never B Alone (Extended Mix)",
+      "presencia": 0.66,
+      "peso": 0.405,
+      "etiqueta": "cantado"
+    },
+    "102288890": {
+      "artist": "PRAANA",
+      "title": "Dive (feat. Courtney Storm) (Extended Mix)",
+      "presencia": 0.61,
+      "peso": 0.453,
+      "etiqueta": "cantado"
+    },
+    "78190291": {
+      "artist": "ALLKNIGHT",
+      "title": "If Here Was Forever (feat. MØØNE) (Extended Mix)",
+      "presencia": 0.57,
+      "peso": 0.121,
+      "etiqueta": "algo de voz"
+    },
+    "90807305": {
+      "artist": "Polar Inc.",
+      "title": "For You (feat. Nathan Ball) (Extended Mix)",
+      "presencia": 0.47,
+      "peso": 0.271,
+      "etiqueta": "algo de voz"
+    },
+    "14272909": {
+      "artist": "Nordfold",
+      "title": "Soul Seek (Extended Mix)",
+      "presencia": 0.3,
+      "peso": 0.057,
+      "etiqueta": "instrumental"
+    },
+    "109564874": {
+      "artist": "Nico Sparvieri, Larrosa (AR), SACK (AR), Flor Pavone",
+      "title": "Get Lost ",
+      "presencia": 0.29,
+      "peso": 0.056,
+      "etiqueta": "instrumental"
+    },
+    "58788950": {
+      "artist": "Paul Thomas & Christian Burns",
+      "title": "Enjoy the Silence (Extended Mix)",
+      "presencia": 0.24,
+      "peso": 0.086,
+      "etiqueta": "instrumental"
+    },
+    "225441549": {
+      "artist": "Andre Moret",
+      "title": "Aria (Gorkiz Remix)",
+      "presencia": 0.24,
+      "peso": 0.043,
+      "etiqueta": "instrumental"
+    },
+    "137054094": {
+      "artist": "Fejká",
+      "title": "We Were There (feat. Kim Van Loo) (Extended Mix)",
+      "presencia": 0.21,
+      "peso": 0.043,
+      "etiqueta": "instrumental"
+    },
+    "140558522": {
+      "artist": "Anriu",
+      "title": "Cosmic Love (feat. GAALIA) (Extended Mix)",
+      "presencia": 0.19,
+      "peso": 0.048,
+      "etiqueta": "instrumental"
+    },
+    "44465807": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Divine Eternity (K Loveski Remix)",
+      "presencia": 0.14,
+      "peso": 0.031,
+      "etiqueta": "instrumental"
+    },
+    "92106172": {
+      "artist": "Albuquerque, Anonimat",
+      "title": "Like First Time Flight (Extended Mix)",
+      "presencia": 0.05,
+      "peso": 0.02,
+      "etiqueta": "instrumental"
+    },
+    "117987483": {
+      "artist": "Guy J",
+      "title": "Just Rain",
+      "presencia": 0.01,
+      "peso": 0.003,
+      "etiqueta": "instrumental"
+    },
+    "190615690": {
+      "artist": "Rauschhaus",
+      "title": "If I Had Wings",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental"
+    },
+    "53721787": {
+      "artist": "NOIYSE PROJECT, Hernan Cattaneo, Jamie Stevens",
+      "title": "Remember Me - Hernan Cattaneo & Jamie Stevens Remix",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental"
+    }
+  }
+}
