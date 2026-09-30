@@ -36,6 +36,7 @@ from __future__ import annotations
 import argparse
 import heapq
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -67,7 +68,43 @@ def main() -> None:
     G = json.loads((RAIZ / "data/groove_index.json").read_text(encoding="utf-8"))
     TR, COL = G["tracks"], G["color_pct"]
     P = json.loads((RAIZ / "data/energia_percibida.json").read_text(encoding="utf-8"))
-    VET = {k for k, v in P.items() if isinstance(v, dict) and v.get("veto")}
+    VOCES = {}
+    fv = RAIZ / "data/voces.json"
+    if fv.exists():
+        VOCES = json.loads(fv.read_text(encoding="utf-8"))["tracks"]
+
+    # VECINOS TOCADOS. Que temas puso el DJ pegados a cual, en tandas reales del
+    # CDJ. Es la unica senal de esta semana que no se cayo: el ataque melodico
+    # eligio Moongazer y lo rechazo, la densidad eligio Karnaval y lo rechazo, y
+    # el lugar 12 del 149 lo resolvio de una una transicion que el ya habia
+    # tocado (In Another Time -> Peace Within). Por eso pesa mas que el color.
+    VECINOS: dict[str, list[str]] = {}
+    fn = RAIZ / "data/vecinos_tocados.json"
+    if fn.exists():
+        VECINOS = json.loads(fn.read_text(encoding="utf-8"))["vecinos"]
+
+    # EL VETO TIENE ALCANCE. El 2026-09-30 el DJ fijo que "veto" quiere decir "no
+    # entra en ESE set, solamente", no "no lo quiero nunca". Tratarlos a todos
+    # como globales sacaba 22 temas de circulacion para siempre por un juicio que
+    # era sobre un lugar: "oscuro", "poca energia", "no sostiene el pico" hablan
+    # de donde estaba puesto, no del tema.
+    #
+    # Quedan globales solo los que el DJ rechazo por lo que el tema ES: los que
+    # llamo malisimo u horrible, y los que salieron por genero.
+    GLOBAL = re.compile(r"malisimo|horrible|todo lo que no quiero|afro", re.I)
+
+    def vetado_en(c: str, num: int) -> bool:
+        v = P.get(c)
+        if not isinstance(v, dict):
+            return False
+        ve = v.get("veto")
+        if not ve:
+            return False
+        if GLOBAL.search(v.get("nota") or ""):
+            return True
+        marca = f"{v.get('fuente', '')} {ve.get('alcance', '') if isinstance(ve, dict) else ''}"
+        return str(num) in marca
+
     GAST = {k for k, v in P.items() if isinstance(v, dict) and v.get("gastado")}
 
     def dato(c):
@@ -98,7 +135,7 @@ def main() -> None:
             continue
         doc = json.loads(f.read_text(encoding="utf-8"))
         ids = [t["content_id"] for t in doc["tracks"]]
-        fuera = [c for c in ids if c in VET or c in GAST]
+        fuera = [c for c in ids if vetado_en(c, num) or c in GAST]
         quedan = [c for c in ids if c not in fuera]
         ocup = set()
         for c in quedan:
@@ -130,7 +167,12 @@ def main() -> None:
                     # tiene que ser MEJOR que el que sale, no solo distinto
                     if dens(c) < dens(viejo) or COL.get(c, 0) < COL.get(viejo, 0):
                         continue
-                    k = abs(t["energy"] - e0) - COL.get(c, 0) - dens(c) / 20
+                    # Un tema que el DJ ya toco al lado de alguno de los que
+                    # quedan en el set gana 1.0, que es mas que lo que puede
+                    # mover el color entero (0..1). Deliberado: el color es una
+                    # medida nuestra y esto es algo que el hizo.
+                    vecino = 1.0 if (set(VECINOS.get(c, [])) & set(quedan)) else 0.0
+                    k = abs(t["energy"] - e0) - COL.get(c, 0) - dens(c) / 20 - vecino
                     if k < mejor_k:
                         mejor, mejor_k = c, k
                 if mejor:
@@ -140,11 +182,11 @@ def main() -> None:
                     todos.add(mejor)
                     ocup |= S.names(POOL[mejor]["artist"], POOL[mejor]["title"])
 
-        for viejo in [x for x in fuera if x in ids and (x in VET or x in GAST)]:
+        for viejo in [x for x in fuera if x in ids and (vetado_en(x, num) or x in GAST)]:
             e0, k0 = E(viejo), POOL[viejo]["key"]
             mejor, mejor_k = None, 1e9
             for c, t in POOL.items():
-                if c in todos or c in VET or c in GAST or c not in TR or c in nuevos:
+                if c in todos or vetado_en(c, num) or c in GAST or c not in TR or c in nuevos:
                     continue
                 if t.get("genre") not in GEN or abs(t["energy"] - e0) > 0.7:
                     continue
