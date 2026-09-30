@@ -3056,7 +3056,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22
 **Armado:** 2026-09-30  
 **Duracion:** 0h  
-**Tracks:** 17  
+**Tracks:** 18  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3076,6 +3076,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 13 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
 | 14 | Ruben Karapetyan | Perceptual Isolation (Original Mix) | 121 | 6.2 |
 | 15 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 16 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 17 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 17 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 18 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 
