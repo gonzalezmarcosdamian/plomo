@@ -1,0 +1,5103 @@
+{
+ "generado": "2026-09-30",
+ "desde": "2025-01-01",
+ "sellos": [
+  "nightcolours:48412",
+  "sudbeat-music:12968",
+  "the-soundgarden:56551",
+  "anjunadeep:1390",
+  "colorize-enhanced:22655"
+ ],
+ "faltan": [
+  {
+   "artista": "Mazayr",
+   "titulo": "Hibernate",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-10-09",
+   "bpm": 118,
+   "camelot": "2B",
+   "largo_seg": 428
+  },
+  {
+   "artista": "Mazayr",
+   "titulo": "Hibernate",
+   "version": "HAFT Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-10-09",
+   "bpm": 124,
+   "camelot": "2B",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Mazayr",
+   "titulo": "Moments Lost",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-10-09",
+   "bpm": 120,
+   "camelot": "2B",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Lucho Salari",
+   "titulo": "1958",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-09-25",
+   "bpm": 120,
+   "camelot": "8B",
+   "largo_seg": 352
+  },
+  {
+   "artista": "Lucho Salari",
+   "titulo": "Refine",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-09-25",
+   "bpm": 121,
+   "camelot": "4A",
+   "largo_seg": 381
+  },
+  {
+   "artista": "Lucho Salari",
+   "titulo": "Refine",
+   "version": "Mateo Balsa Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-09-25",
+   "bpm": 124,
+   "camelot": "4A",
+   "largo_seg": 373
+  },
+  {
+   "artista": "Lucho Salari",
+   "titulo": "1958",
+   "version": "Mareveg Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-09-25",
+   "bpm": 120,
+   "camelot": "8B",
+   "largo_seg": 420
+  },
+  {
+   "artista": "Hotmode",
+   "titulo": "Nights",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-08-21",
+   "bpm": 123,
+   "camelot": "2A",
+   "largo_seg": 351
+  },
+  {
+   "artista": "Hotmode",
+   "titulo": "Fade Away",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-08-21",
+   "bpm": 122,
+   "camelot": "8A",
+   "largo_seg": 305
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Far Cry",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-31",
+   "bpm": 125,
+   "camelot": "7B",
+   "largo_seg": 476
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Far Cry",
+   "version": "Hernan Cattaneo & Mercurio Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-31",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 588
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Prophet",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-31",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 479
+  },
+  {
+   "artista": "Andre Moret",
+   "titulo": "Aria",
+   "version": "Gorkiz Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-10",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 407
+  },
+  {
+   "artista": "Andre Moret",
+   "titulo": "Enough",
+   "version": "Agustin Pietrocola Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-10",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 476
+  },
+  {
+   "artista": "Andre Moret",
+   "titulo": "Enough",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-10",
+   "bpm": 123,
+   "camelot": "3A",
+   "largo_seg": 457
+  },
+  {
+   "artista": "Andre Moret",
+   "titulo": "Aria",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-07-10",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "Ignacio Tuzio",
+   "titulo": "Ethereal Glow",
+   "version": "Ric Niels Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-06-26",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 384
+  },
+  {
+   "artista": "Ignacio Tuzio",
+   "titulo": "Medium",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-06-26",
+   "bpm": 124,
+   "camelot": "4A",
+   "largo_seg": 435
+  },
+  {
+   "artista": "Ignacio Tuzio",
+   "titulo": "Ethereal Glow",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-06-26",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 392
+  },
+  {
+   "artista": "SURFFACE",
+   "titulo": "Zohar",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-06-19",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 437
+  },
+  {
+   "artista": "SURFFACE",
+   "titulo": "Atlas",
+   "version": "Kostya Outta Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-06-19",
+   "bpm": 124,
+   "camelot": "5B",
+   "largo_seg": 453
+  },
+  {
+   "artista": "SURFFACE",
+   "titulo": "Atlas",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-06-19",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Daesmith",
+   "titulo": "Nugnudub",
+   "version": "Kabi (AR) Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-05-22",
+   "bpm": 126,
+   "camelot": "6A",
+   "largo_seg": 501
+  },
+  {
+   "artista": "Daesmith",
+   "titulo": "Nugnudub",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-05-22",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Daesmith",
+   "titulo": "Acome",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-05-22",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 397
+  },
+  {
+   "artista": "LUNATIV",
+   "titulo": "Vaka",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-05-01",
+   "bpm": 122,
+   "camelot": "11B",
+   "largo_seg": 415
+  },
+  {
+   "artista": "LUNATIV",
+   "titulo": "Jakare",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-05-01",
+   "bpm": 122,
+   "camelot": "8A",
+   "largo_seg": 384
+  },
+  {
+   "artista": "LUNATIV",
+   "titulo": "Feel Me",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-05-01",
+   "bpm": 123,
+   "camelot": "11B",
+   "largo_seg": 412
+  },
+  {
+   "artista": "Elliot Moriarty",
+   "titulo": "Halo",
+   "version": "Leandro Murua Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-04-10",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 441
+  },
+  {
+   "artista": "Elliot Moriarty",
+   "titulo": "When Are You Coming Home",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-04-10",
+   "bpm": 122,
+   "camelot": "12A",
+   "largo_seg": 425
+  },
+  {
+   "artista": "Elliot Moriarty",
+   "titulo": "Halo",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-04-10",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 535
+  },
+  {
+   "artista": "Boris Louit, Tom Pavicich",
+   "titulo": "L'Ange",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-03-27",
+   "bpm": 125,
+   "camelot": "7A",
+   "largo_seg": 385
+  },
+  {
+   "artista": "Boris Louit, Tom Pavicich",
+   "titulo": "Le Cœur À Découvert",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-03-27",
+   "bpm": 124,
+   "camelot": "12B",
+   "largo_seg": 502
+  },
+  {
+   "artista": "Boris Louit, Tom Pavicich",
+   "titulo": "The Crown",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-03-27",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 322
+  },
+  {
+   "artista": "Boris Louit, Tom Pavicich",
+   "titulo": "Conjurer",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-03-27",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 446
+  },
+  {
+   "artista": "Praise (BR)",
+   "titulo": "Go Your Way",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-02-27",
+   "bpm": 121,
+   "camelot": "11B",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Praise (BR)",
+   "titulo": "Wind",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2026-02-27",
+   "bpm": 121,
+   "camelot": "12B",
+   "largo_seg": 417
+  },
+  {
+   "artista": "Praise (BR)",
+   "titulo": "Go Your Way",
+   "version": "Juan Buitrago Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-02-27",
+   "bpm": 121,
+   "camelot": "11B",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Stil & Bense",
+   "titulo": "Excuse",
+   "version": "Zuccasam Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-01-16",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 489
+  },
+  {
+   "artista": "Stil & Bense",
+   "titulo": "Excuse",
+   "version": "Agustin Ficarra Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2026-01-16",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Jares",
+   "titulo": "Pressure",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-12-05",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 300
+  },
+  {
+   "artista": "Jares",
+   "titulo": "Darkest Night",
+   "version": "Berni Turletti Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-12-05",
+   "bpm": 124,
+   "camelot": "7B",
+   "largo_seg": 406
+  },
+  {
+   "artista": "Jares",
+   "titulo": "Pressure",
+   "version": "Tomas Briski Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-12-05",
+   "bpm": 123,
+   "camelot": "11A",
+   "largo_seg": 393
+  },
+  {
+   "artista": "Jares",
+   "titulo": "Darkest Night",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-12-05",
+   "bpm": 124,
+   "camelot": "7B",
+   "largo_seg": 304
+  },
+  {
+   "artista": "Dan Barrow",
+   "titulo": "Multisingle",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-28",
+   "bpm": 123,
+   "camelot": "1B",
+   "largo_seg": 325
+  },
+  {
+   "artista": "Taylan, Nacres",
+   "titulo": "Polaris",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-28",
+   "bpm": 121,
+   "camelot": "7B",
+   "largo_seg": 436
+  },
+  {
+   "artista": "Byhon",
+   "titulo": "Redeem",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-28",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 377
+  },
+  {
+   "artista": "Federico Epis",
+   "titulo": "Trés Bien",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-28",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 461
+  },
+  {
+   "artista": "LOVAT",
+   "titulo": "Lysergic",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-28",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 458
+  },
+  {
+   "artista": "Chemicał (CA)",
+   "titulo": "Cathinone",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-21",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Fordal",
+   "titulo": "In Avalon",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-21",
+   "bpm": 125,
+   "camelot": "7B",
+   "largo_seg": 407
+  },
+  {
+   "artista": "Missio (ARG)",
+   "titulo": "The Answer",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-21",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 304
+  },
+  {
+   "artista": "Busy Mind",
+   "titulo": "Visitors",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-21",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 437
+  },
+  {
+   "artista": "Mattim",
+   "titulo": "Grime Cuts",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-21",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 425
+  },
+  {
+   "artista": "Ranj Kaler, Fauxplay",
+   "titulo": "Cloud Breaker",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-21",
+   "bpm": 125,
+   "camelot": "7A",
+   "largo_seg": 411
+  },
+  {
+   "artista": "Luca Abayan",
+   "titulo": "Reset",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-14",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 415
+  },
+  {
+   "artista": "Luca Abayan",
+   "titulo": "Prisma",
+   "version": "Tonaco Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-14",
+   "bpm": 120,
+   "camelot": "5B",
+   "largo_seg": 486
+  },
+  {
+   "artista": "Luca Abayan",
+   "titulo": "Reset",
+   "version": "Ayan Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-14",
+   "bpm": 123,
+   "camelot": "11A",
+   "largo_seg": 390
+  },
+  {
+   "artista": "Luca Abayan",
+   "titulo": "Prisma",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-11-14",
+   "bpm": 123,
+   "camelot": "5B",
+   "largo_seg": 401
+  },
+  {
+   "artista": "Lonya",
+   "titulo": "Workinprogress",
+   "version": "Circulation Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-10-24",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 401
+  },
+  {
+   "artista": "Lonya",
+   "titulo": "Workinprogress",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-10-24",
+   "bpm": 120,
+   "camelot": "10B",
+   "largo_seg": 412
+  },
+  {
+   "artista": "Mallinder",
+   "titulo": "Dust Storm",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-10-03",
+   "bpm": 122,
+   "camelot": "8A",
+   "largo_seg": 450
+  },
+  {
+   "artista": "Mallinder",
+   "titulo": "Dune",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-10-03",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Mallinder",
+   "titulo": "Dune",
+   "version": "Fonz Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-10-03",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 322
+  },
+  {
+   "artista": "Mallinder",
+   "titulo": "Dust Storm",
+   "version": "André Moret Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-10-03",
+   "bpm": 122,
+   "camelot": "11B",
+   "largo_seg": 464
+  },
+  {
+   "artista": "Jon Towell",
+   "titulo": "The Matrix",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-09-12",
+   "bpm": 123,
+   "camelot": "11B",
+   "largo_seg": 449
+  },
+  {
+   "artista": "Jon Towell",
+   "titulo": "Running Man",
+   "version": "Larrosa (AR), Nico Sparvieri & SACK (AR) Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-09-12",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 374
+  },
+  {
+   "artista": "Jon Towell",
+   "titulo": "Running Man",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-09-12",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 447
+  },
+  {
+   "artista": "Jon Towell",
+   "titulo": "The Matrix",
+   "version": "Redspace Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-09-12",
+   "bpm": 123,
+   "camelot": "11B",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Rolasoul",
+   "titulo": "Close Encounter",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-22",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 488
+  },
+  {
+   "artista": "Rolasoul",
+   "titulo": "Morpheus",
+   "version": "Weird Sounding Dude Extended Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-22",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 408
+  },
+  {
+   "artista": "Rolasoul",
+   "titulo": "Spectral",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-22",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Rolasoul",
+   "titulo": "Morpheus",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-22",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 373
+  },
+  {
+   "artista": "Michael Hooker",
+   "titulo": "Temporary Confusion",
+   "version": "Extended Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-01",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Michael Hooker",
+   "titulo": "Temporary Confusion",
+   "version": "Secret Factory Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-01",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 453
+  },
+  {
+   "artista": "Michael Hooker",
+   "titulo": "Temporary Confusion",
+   "version": "Kebin van Reeken Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-08-01",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 424
+  },
+  {
+   "artista": "David Calo",
+   "titulo": "Radar Scope",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-07-11",
+   "bpm": 124,
+   "camelot": "12A",
+   "largo_seg": 410
+  },
+  {
+   "artista": "Yudi Watanabe, Andre Moret",
+   "titulo": "Clarity",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-07-11",
+   "bpm": 120,
+   "camelot": "8B",
+   "largo_seg": 408
+  },
+  {
+   "artista": "Tani Marcone",
+   "titulo": "Fake Memories",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-07-11",
+   "bpm": 118,
+   "camelot": "6A",
+   "largo_seg": 411
+  },
+  {
+   "artista": "Aubrey Fry, Zuccasam",
+   "titulo": "Now! 1987",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-07-11",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 476
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR), SACK (AR), Flor Pavone",
+   "titulo": "Get Lost (feat. Flor Pavone)",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-07-11",
+   "bpm": 125,
+   "camelot": "9A",
+   "largo_seg": 399
+  },
+  {
+   "artista": "Hobin Rude",
+   "titulo": "Hollow",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-07-11",
+   "bpm": 120,
+   "camelot": "1B",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Daesmith",
+   "titulo": "Intense Momentarism",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-06-20",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Daesmith",
+   "titulo": "Christiania",
+   "version": "Alican Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-06-20",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 314
+  },
+  {
+   "artista": "Daesmith",
+   "titulo": "Christiania",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-06-20",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Alan Schultz",
+   "titulo": "Glimpse Of Elegance",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-05-30",
+   "bpm": 121,
+   "camelot": "2A",
+   "largo_seg": 492
+  },
+  {
+   "artista": "Alan Schultz",
+   "titulo": "Glimpse Of Elegance",
+   "version": "Zuccasam Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-05-30",
+   "bpm": 125,
+   "camelot": "10B",
+   "largo_seg": 462
+  },
+  {
+   "artista": "ID ID",
+   "titulo": "Basement",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-05-09",
+   "bpm": 125,
+   "camelot": "11B",
+   "largo_seg": 348
+  },
+  {
+   "artista": "ID ID",
+   "titulo": "Basement",
+   "version": "Yoram Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-05-09",
+   "bpm": 125,
+   "camelot": "8A",
+   "largo_seg": 353
+  },
+  {
+   "artista": "ID ID",
+   "titulo": "Wait For Me",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-05-09",
+   "bpm": 125,
+   "camelot": "2B",
+   "largo_seg": 303
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Influences",
+   "version": "Mike Griego Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-04-18",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 440
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Levitation",
+   "version": "Lopezhouse Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-04-18",
+   "bpm": 126,
+   "camelot": "7A",
+   "largo_seg": 367
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Influences",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-04-18",
+   "bpm": 123,
+   "camelot": "5A",
+   "largo_seg": 406
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Levitation",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-04-18",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 377
+  },
+  {
+   "artista": "Stub, My Flower",
+   "titulo": "Nightfall",
+   "version": "RADON (AR) Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-03-28",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 403
+  },
+  {
+   "artista": "Stub, My Flower",
+   "titulo": "Nightfall",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-03-28",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 373
+  },
+  {
+   "artista": "Stub, My Flower",
+   "titulo": "Nightfall",
+   "version": "Subandrio Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-03-28",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 519
+  },
+  {
+   "artista": "Tomas Briski",
+   "titulo": "Akhenaten",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-03-07",
+   "bpm": 122,
+   "camelot": "6A",
+   "largo_seg": 456
+  },
+  {
+   "artista": "Tomas Briski",
+   "titulo": "Paradise Again",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-03-07",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 453
+  },
+  {
+   "artista": "Tomas Briski",
+   "titulo": "Paradise Again",
+   "version": "Agustin Pietrocola Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-03-07",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 413
+  },
+  {
+   "artista": "Zuccasam",
+   "titulo": "Mr Arpy",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-02-14",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 472
+  },
+  {
+   "artista": "Roman (AR)",
+   "titulo": "The Reach",
+   "version": "Original Mix",
+   "sello": "Nightcolours",
+   "fecha": "2025-01-24",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 441
+  },
+  {
+   "artista": "Roman (AR)",
+   "titulo": "The Reach",
+   "version": "Kostya Outta Remix",
+   "sello": "Nightcolours",
+   "fecha": "2025-01-24",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 450
+  },
+  {
+   "artista": "Tom Pavicich",
+   "titulo": "Just Take It",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-09-18",
+   "bpm": 128,
+   "camelot": "5A",
+   "largo_seg": 394
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Drift Through Space",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-07-10",
+   "bpm": 125,
+   "camelot": "7B",
+   "largo_seg": 438
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Oxytocin",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-07-10",
+   "bpm": 125,
+   "camelot": "10B",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Mike Griego, Zankee Gulati",
+   "titulo": "Arakeen",
+   "version": "Mike Griego Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-06-12",
+   "bpm": 124,
+   "camelot": "12B",
+   "largo_seg": 457
+  },
+  {
+   "artista": "Paul Deep (AR)",
+   "titulo": "The Return",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-05-22",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 458
+  },
+  {
+   "artista": "D-SHIFT",
+   "titulo": "Far Out",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-05-08",
+   "bpm": 124,
+   "camelot": "2A",
+   "largo_seg": 409
+  },
+  {
+   "artista": "D-SHIFT",
+   "titulo": "To Be Continued",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-05-08",
+   "bpm": 124,
+   "camelot": "3B",
+   "largo_seg": 329
+  },
+  {
+   "artista": "DCLVIII OFC",
+   "titulo": "My Secret",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-04-24",
+   "bpm": 128,
+   "camelot": "10B",
+   "largo_seg": 428
+  },
+  {
+   "artista": "Anthony Pappa, Fauxplay",
+   "titulo": "Plasm",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-04-10",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 509
+  },
+  {
+   "artista": "Anthony Pappa, Fauxplay",
+   "titulo": "Voltaire",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-04-10",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 448
+  },
+  {
+   "artista": "Aubrey Fry",
+   "titulo": "Burn and Rave",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-03-13",
+   "bpm": 121,
+   "camelot": "6B",
+   "largo_seg": 471
+  },
+  {
+   "artista": "Aubrey Fry",
+   "titulo": "Eternal Moment",
+   "version": "Jody Barr Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-03-13",
+   "bpm": 124,
+   "camelot": "12A",
+   "largo_seg": 440
+  },
+  {
+   "artista": "Aubrey Fry",
+   "titulo": "Eternal Moment",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-03-13",
+   "bpm": 121,
+   "camelot": "12A",
+   "largo_seg": 488
+  },
+  {
+   "artista": "DEEKAY, Nick Varon",
+   "titulo": "Cactus",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-02-13",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 439
+  },
+  {
+   "artista": "DEEKAY, Nick Varon",
+   "titulo": "Inyeon",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-02-13",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 377
+  },
+  {
+   "artista": "Mike Isai",
+   "titulo": "Desire",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-01-30",
+   "bpm": 126,
+   "camelot": "12A",
+   "largo_seg": 432
+  },
+  {
+   "artista": "Mike Isai",
+   "titulo": "Control",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-01-30",
+   "bpm": 120,
+   "camelot": "3B",
+   "largo_seg": 440
+  },
+  {
+   "artista": "Facundo Leiarz",
+   "titulo": "Humans Being Humans",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-01-09",
+   "bpm": 124,
+   "camelot": "4A",
+   "largo_seg": 406
+  },
+  {
+   "artista": "Facundo Leiarz",
+   "titulo": "Tempting Things",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-01-09",
+   "bpm": 121,
+   "camelot": "1A",
+   "largo_seg": 337
+  },
+  {
+   "artista": "Facundo Leiarz",
+   "titulo": "Let's Turn Up",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2026-01-09",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 348
+  },
+  {
+   "artista": "Four Candles, Kabi (AR)",
+   "titulo": "Sofa Surfing",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-12-19",
+   "bpm": 125,
+   "camelot": "7A",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Four Candles, Kabi (AR)",
+   "titulo": "Need U",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-12-19",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Danny Tenaglia, Cass & Slide, Cass (UK)",
+   "titulo": "Fever Rising",
+   "version": "Baunder Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-11-28",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 482
+  },
+  {
+   "artista": "Danny Tenaglia, Cass & Slide, Cass (UK)",
+   "titulo": "Fever Rising",
+   "version": "Cass 4by4 Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-11-28",
+   "bpm": 125,
+   "camelot": "11B",
+   "largo_seg": 497
+  },
+  {
+   "artista": "Danny Tenaglia, Cass & Slide, Cass (UK)",
+   "titulo": "Fever Rising",
+   "version": "Cass Is Broken Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-11-28",
+   "bpm": 125,
+   "camelot": "11B",
+   "largo_seg": 375
+  },
+  {
+   "artista": "DAVI",
+   "titulo": "Tomb of Anu",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-11-07",
+   "bpm": 123,
+   "camelot": "5A",
+   "largo_seg": 410
+  },
+  {
+   "artista": "Facundo Leiarz",
+   "titulo": "Peak Peak",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 316
+  },
+  {
+   "artista": "Nick Varon",
+   "titulo": "Pure Rage",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Nicholas Van Orton",
+   "titulo": "Slash Dash",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 122,
+   "camelot": "10A",
+   "largo_seg": 449
+  },
+  {
+   "artista": "Tim French, Aubrey Fry",
+   "titulo": "Stompaphunker",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 122,
+   "camelot": "2B",
+   "largo_seg": 443
+  },
+  {
+   "artista": "Not Demure, Kebin Van Reeken",
+   "titulo": "Batholith",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 395
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR), SACK (AR)",
+   "titulo": "Fall In",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 122,
+   "camelot": "10A",
+   "largo_seg": 409
+  },
+  {
+   "artista": "Lisandro (AR), NAHS",
+   "titulo": "Rombo",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "Axel Giova",
+   "titulo": "Analog",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 454
+  },
+  {
+   "artista": "Lopezhouse, Paul Deep (AR)",
+   "titulo": "Flow Condenser",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-10-17",
+   "bpm": 124,
+   "camelot": "4A",
+   "largo_seg": 457
+  },
+  {
+   "artista": "Alex O'Rion",
+   "titulo": "Atlas",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-09-19",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Alex O'Rion",
+   "titulo": "Dirk",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-09-19",
+   "bpm": 122,
+   "camelot": "2A",
+   "largo_seg": 443
+  },
+  {
+   "artista": "Subandrio",
+   "titulo": "Karnage",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-09-05",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 575
+  },
+  {
+   "artista": "Subandrio",
+   "titulo": "Morph into the Sun",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-09-05",
+   "bpm": 122,
+   "camelot": "6B",
+   "largo_seg": 510
+  },
+  {
+   "artista": "Subandrio",
+   "titulo": "Heritage '82",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-09-05",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 464
+  },
+  {
+   "artista": "Henry Saiz",
+   "titulo": "Redes",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-08-22",
+   "bpm": 126,
+   "camelot": "7B",
+   "largo_seg": 351
+  },
+  {
+   "artista": "Hernan Cattaneo, Franky Wah",
+   "titulo": "Groovejet",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-07-25",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Franky Wah",
+   "titulo": "Riptide",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-07-25",
+   "bpm": 122,
+   "camelot": "6B",
+   "largo_seg": 400
+  },
+  {
+   "artista": "Vandelor",
+   "titulo": "The Sound of Freedom",
+   "version": "Gai Barone Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 425
+  },
+  {
+   "artista": "Vandelor",
+   "titulo": "The Sound of Freedom",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "1A",
+   "largo_seg": 619
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Lost",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-05-23",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 426
+  },
+  {
+   "artista": "Dilby",
+   "titulo": "Last Horizon",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-05-23",
+   "bpm": 125,
+   "camelot": "7A",
+   "largo_seg": 407
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Joy",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-05-09",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 372
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Trust Me",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-05-09",
+   "bpm": 125,
+   "camelot": "8A",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Nico Sparvieri, Larrosa (AR)",
+   "titulo": "Faraway",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-05-09",
+   "bpm": 123,
+   "camelot": "11B",
+   "largo_seg": 375
+  },
+  {
+   "artista": "Quivver, Dave Seaman",
+   "titulo": "Cowbells of Nuneaton",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-04-18",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 425
+  },
+  {
+   "artista": "Quivver, Dave Seaman",
+   "titulo": "The Promise",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-04-18",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 396
+  },
+  {
+   "artista": "Paul Deep (AR)",
+   "titulo": "Rea",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-04-04",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 523
+  },
+  {
+   "artista": "Paul Deep (AR)",
+   "titulo": "Pulsa De Nura",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-04-04",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 508
+  },
+  {
+   "artista": "Mike Harkins",
+   "titulo": "Fever Dream",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-03-21",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 382
+  },
+  {
+   "artista": "Mike Harkins",
+   "titulo": "Carbon",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-03-21",
+   "bpm": 122,
+   "camelot": "4B",
+   "largo_seg": 396
+  },
+  {
+   "artista": "Mike Harkins",
+   "titulo": "Strato",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-03-21",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 394
+  },
+  {
+   "artista": "DCLVIII OFC",
+   "titulo": "Become Human",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-03-07",
+   "bpm": 126,
+   "camelot": "1A",
+   "largo_seg": 572
+  },
+  {
+   "artista": "DCLVIII OFC",
+   "titulo": "Reborn",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-03-07",
+   "bpm": 126,
+   "camelot": "6A",
+   "largo_seg": 431
+  },
+  {
+   "artista": "DCLVIII OFC",
+   "titulo": "Last Moment",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-03-07",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Mercurio, Hernan Cattaneo",
+   "titulo": "Cliff to Nowhere",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-02-21",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 453
+  },
+  {
+   "artista": "Mercurio, Hernan Cattaneo",
+   "titulo": "Altered Reality",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-02-21",
+   "bpm": 126,
+   "camelot": "4A",
+   "largo_seg": 535
+  },
+  {
+   "artista": "Kevin Di Serna",
+   "titulo": "The Perfect Time Is Now",
+   "version": "Musumeci & Dodi Palese Remix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-02-07",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 323
+  },
+  {
+   "artista": "Kevin Di Serna",
+   "titulo": "The Perfect Time Is Now",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-02-07",
+   "bpm": 121,
+   "camelot": "4A",
+   "largo_seg": 355
+  },
+  {
+   "artista": "Alto Astral",
+   "titulo": "Luciérnaga",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-01-24",
+   "bpm": 126,
+   "camelot": "5A",
+   "largo_seg": 427
+  },
+  {
+   "artista": "Jody Barr",
+   "titulo": "Cherry Red",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-01-10",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 441
+  },
+  {
+   "artista": "Jody Barr",
+   "titulo": "Cordoba",
+   "version": "Sierra Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-01-10",
+   "bpm": 121,
+   "camelot": "3A",
+   "largo_seg": 454
+  },
+  {
+   "artista": "Jody Barr",
+   "titulo": "Cordoba",
+   "version": "Original Mix",
+   "sello": "Sudbeat Music",
+   "fecha": "2025-01-10",
+   "bpm": 124,
+   "camelot": "2B",
+   "largo_seg": 454
+  },
+  {
+   "artista": "Lean Robotti, Ivan Akselman",
+   "titulo": "Orbital Pulse",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-10-02",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 417
+  },
+  {
+   "artista": "Lean Robotti",
+   "titulo": "Fiora",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-10-02",
+   "bpm": 122,
+   "camelot": "2B",
+   "largo_seg": 449
+  },
+  {
+   "artista": "Lean Robotti, Ivan Akselman",
+   "titulo": "Us On The Moon",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-10-02",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 506
+  },
+  {
+   "artista": "AOVA",
+   "titulo": "Apex",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 121,
+   "camelot": "6A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "KAZKO",
+   "titulo": "Other Side of the World",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 488
+  },
+  {
+   "artista": "Manuel Ventresca",
+   "titulo": "Lydian Sun",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 380
+  },
+  {
+   "artista": "STEREO MUNK, Lucas Zárate",
+   "titulo": "Searching The Pieces",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 429
+  },
+  {
+   "artista": "Camilo Verna",
+   "titulo": "Spring Flowers",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 453
+  },
+  {
+   "artista": "MDSOUND",
+   "titulo": "Open Your Soul",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 416
+  },
+  {
+   "artista": "Aliakim",
+   "titulo": "Sekhmet",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Oliver Harper",
+   "titulo": "Antioch",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 120,
+   "camelot": "6A",
+   "largo_seg": 468
+  },
+  {
+   "artista": "Mai Lawson, Raiann",
+   "titulo": "Bimba Loca",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 374
+  },
+  {
+   "artista": "Cassiamusik",
+   "titulo": "Echoes of the Memory",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 123,
+   "camelot": "4A",
+   "largo_seg": 425
+  },
+  {
+   "artista": "Patricio Mucchielli, Augusto Landucci",
+   "titulo": "The Path In Between",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 428
+  },
+  {
+   "artista": "Kostya Outta, ECHO DAFT",
+   "titulo": "Guiding Light",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-24",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 433
+  },
+  {
+   "artista": "Zankee Gulati",
+   "titulo": "Vertigo",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-07-10",
+   "bpm": 122,
+   "camelot": "11B",
+   "largo_seg": 444
+  },
+  {
+   "artista": "Lean Robotti",
+   "titulo": "Haven",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-06-12",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 354
+  },
+  {
+   "artista": "Lean Robotti",
+   "titulo": "Poplar",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-06-12",
+   "bpm": 123,
+   "camelot": "1B",
+   "largo_seg": 421
+  },
+  {
+   "artista": "Lean Robotti",
+   "titulo": "Shake It",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-06-12",
+   "bpm": 123,
+   "camelot": "11B",
+   "largo_seg": 414
+  },
+  {
+   "artista": "GEØVHÄN",
+   "titulo": "Khaos",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-05-15",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 472
+  },
+  {
+   "artista": "GEØVHÄN",
+   "titulo": "Harmonia",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-05-15",
+   "bpm": 120,
+   "camelot": "12B",
+   "largo_seg": 408
+  },
+  {
+   "artista": "Cristina Tosio",
+   "titulo": "Sonna",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-05-01",
+   "bpm": 128,
+   "camelot": "6A",
+   "largo_seg": 361
+  },
+  {
+   "artista": "Cristina Tosio",
+   "titulo": "Paralelo",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-05-01",
+   "bpm": 125,
+   "camelot": "12B",
+   "largo_seg": 359
+  },
+  {
+   "artista": "Cristina Tosio",
+   "titulo": "Mapache",
+   "version": "Dub Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-05-01",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 335
+  },
+  {
+   "artista": "Cristina Tosio",
+   "titulo": "Mapache",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-05-01",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 335
+  },
+  {
+   "artista": "RIGOONI",
+   "titulo": "From Sunrise to Sunset",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-04-03",
+   "bpm": 118,
+   "camelot": "9A",
+   "largo_seg": 377
+  },
+  {
+   "artista": "RIGOONI",
+   "titulo": "Lift Your Head Up",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-04-03",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 404
+  },
+  {
+   "artista": "RIGOONI",
+   "titulo": "Ready to Rescue",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-04-03",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 366
+  },
+  {
+   "artista": "Nick Warren, Nicolas Rada",
+   "titulo": "Siete Lagos",
+   "version": "Satoshi Fumi Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-03-20",
+   "bpm": 118,
+   "camelot": "12A",
+   "largo_seg": 529
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "Cobble Pot",
+   "version": "Miss Melera Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-03-20",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 348
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "Cobble Pot",
+   "version": "Cignol Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-03-20",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Robin Thurston",
+   "titulo": "Wherever You Go",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-03-06",
+   "bpm": 122,
+   "camelot": "12A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "Robin Thurston",
+   "titulo": "Esperanza",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-03-06",
+   "bpm": 121,
+   "camelot": "7A",
+   "largo_seg": 446
+  },
+  {
+   "artista": "Solis [US]",
+   "titulo": "Superposition",
+   "version": "Dowden Extended Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-02-20",
+   "bpm": 121,
+   "camelot": "7B",
+   "largo_seg": 476
+  },
+  {
+   "artista": "Solis [US]",
+   "titulo": "Afterimage",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-02-20",
+   "bpm": 122,
+   "camelot": "6B",
+   "largo_seg": 472
+  },
+  {
+   "artista": "Solis [US]",
+   "titulo": "Superposition",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-02-20",
+   "bpm": 121,
+   "camelot": "7B",
+   "largo_seg": 497
+  },
+  {
+   "artista": "K Loveski, Tetouze",
+   "titulo": "Cantara Playa",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-02-06",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 448
+  },
+  {
+   "artista": "K Loveski, Tetouze",
+   "titulo": "3 Minutes In Tulum",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-02-06",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 464
+  },
+  {
+   "artista": "XAVI st",
+   "titulo": "Kewán",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 121,
+   "camelot": "7B",
+   "largo_seg": 393
+  },
+  {
+   "artista": "Cesar Herresuelo",
+   "titulo": "Sakura",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 119,
+   "camelot": "8A",
+   "largo_seg": 453
+  },
+  {
+   "artista": "Kirwan",
+   "titulo": "Un Dia De Mayo",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 120,
+   "camelot": "6A",
+   "largo_seg": 332
+  },
+  {
+   "artista": "Leo Riggio",
+   "titulo": "Echoes of the Andes",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 120,
+   "camelot": "12A",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Chicato, Byhon",
+   "titulo": "Velvet Maze",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 427
+  },
+  {
+   "artista": "Tom Pavicich",
+   "titulo": "Independence",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 121,
+   "camelot": "1B",
+   "largo_seg": 382
+  },
+  {
+   "artista": "Supacooks",
+   "titulo": "Skyfall",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 480
+  },
+  {
+   "artista": "ROJAS (AR)",
+   "titulo": "Toronto",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 519
+  },
+  {
+   "artista": "Mystic Mind",
+   "titulo": "Albion",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 544
+  },
+  {
+   "artista": "Juan Ibanez, Alejo Fochi, Agustin Petros",
+   "titulo": "Ashes",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 121,
+   "camelot": "10B",
+   "largo_seg": 478
+  },
+  {
+   "artista": "NAHS, Facu Davila DJ",
+   "titulo": "Focusology",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 122,
+   "camelot": "1A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "UNIV3RSE (sL)",
+   "titulo": "Mumtaz & Taj Mahal",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 120,
+   "camelot": "11B",
+   "largo_seg": 496
+  },
+  {
+   "artista": "Sergio Almada",
+   "titulo": "Asteroide",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 120,
+   "camelot": "6B",
+   "largo_seg": 464
+  },
+  {
+   "artista": "Agustin Pengov",
+   "titulo": "Trip",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-23",
+   "bpm": 120,
+   "camelot": "6B",
+   "largo_seg": 448
+  },
+  {
+   "artista": "Nichols+Roark",
+   "titulo": "Time+Space",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-09",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Nichols+Roark",
+   "titulo": "Time+Space",
+   "version": "Fernando Olaya, Gorkiz Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2026-01-09",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 460
+  },
+  {
+   "artista": "Cass (UK)",
+   "titulo": "Gunship",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-12-26",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 468
+  },
+  {
+   "artista": "Cass (UK)",
+   "titulo": "Backdraft",
+   "version": "Cass Is Broken Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-12-26",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 479
+  },
+  {
+   "artista": "Dmitry Molosh",
+   "titulo": "Alpha",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-12-12",
+   "bpm": 121,
+   "camelot": "1B",
+   "largo_seg": 447
+  },
+  {
+   "artista": "Dmitry Molosh",
+   "titulo": "Drown In The Eyes",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-12-12",
+   "bpm": 120,
+   "camelot": "8A",
+   "largo_seg": 452
+  },
+  {
+   "artista": "IDQ",
+   "titulo": "Shadow Me",
+   "version": "Leandro Murua Groove Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-11-28",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 441
+  },
+  {
+   "artista": "IDQ",
+   "titulo": "Shadow Me",
+   "version": "Leandro Murua Break Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-11-28",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 378
+  },
+  {
+   "artista": "IDQ",
+   "titulo": "Shadow Me",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-11-28",
+   "bpm": 122,
+   "camelot": "9A",
+   "largo_seg": 382
+  },
+  {
+   "artista": "fishplant",
+   "titulo": "Smoke Waves in Sun Beams",
+   "version": "Andre Moret Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-11-14",
+   "bpm": 121,
+   "camelot": "3A",
+   "largo_seg": 462
+  },
+  {
+   "artista": "Gorkiz, Luca Abayan",
+   "titulo": "Vacuum",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-10-31",
+   "bpm": 122,
+   "camelot": "2B",
+   "largo_seg": 449
+  },
+  {
+   "artista": "RYAN (CU), ODAX",
+   "titulo": "Intrapersonal Journey",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-10-17",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 439
+  },
+  {
+   "artista": "RYAN (CU), ODAX",
+   "titulo": "Ouroboros",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-10-17",
+   "bpm": 122,
+   "camelot": "8A",
+   "largo_seg": 513
+  },
+  {
+   "artista": "Death on the Balcony",
+   "titulo": "Illusion of Motion",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-10-03",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 507
+  },
+  {
+   "artista": "Nick Warren, Tripswitch",
+   "titulo": "Sadly",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-19",
+   "bpm": 120,
+   "camelot": "4B",
+   "largo_seg": 576
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "The Covern",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-19",
+   "bpm": 124,
+   "camelot": "9B",
+   "largo_seg": 402
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "Patagonia",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-19",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 414
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "Cobble Pot",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-19",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 438
+  },
+  {
+   "artista": "Nick Warren, Mattias Herrera",
+   "titulo": "Midnight Shuffle",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-19",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 437
+  },
+  {
+   "artista": "Seycel",
+   "titulo": "Chasing Shadows",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-05",
+   "bpm": 120,
+   "camelot": "12A",
+   "largo_seg": 488
+  },
+  {
+   "artista": "Seycel",
+   "titulo": "Echoes Of Dawn",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-05",
+   "bpm": 121,
+   "camelot": "8A",
+   "largo_seg": 516
+  },
+  {
+   "artista": "Seycel",
+   "titulo": "Mystic Whispers",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-09-05",
+   "bpm": 121,
+   "camelot": "4A",
+   "largo_seg": 482
+  },
+  {
+   "artista": "Rebeat, Parlando",
+   "titulo": "Rasta",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-08-08",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 420
+  },
+  {
+   "artista": "Federico Epis",
+   "titulo": "The Day After",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 515
+  },
+  {
+   "artista": "SURFFACE",
+   "titulo": "Make it Happen",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 124,
+   "camelot": "7B",
+   "largo_seg": 357
+  },
+  {
+   "artista": "Ramiro Alvarez",
+   "titulo": "With The Heart",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 120,
+   "camelot": "7B",
+   "largo_seg": 432
+  },
+  {
+   "artista": "Steven McCreery",
+   "titulo": "Swell",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 122,
+   "camelot": "6B",
+   "largo_seg": 451
+  },
+  {
+   "artista": "Interlude, Emotional Tourist",
+   "titulo": "Broken Echoes",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 120,
+   "camelot": "9B",
+   "largo_seg": 432
+  },
+  {
+   "artista": "BERDU",
+   "titulo": "Integro",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 117,
+   "camelot": "10B",
+   "largo_seg": 435
+  },
+  {
+   "artista": "Matias Vega",
+   "titulo": "Sonic Bloom",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 122,
+   "camelot": "5A",
+   "largo_seg": 411
+  },
+  {
+   "artista": "Iovino",
+   "titulo": "Determination",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 443
+  },
+  {
+   "artista": "Lavie Au Soleil, Oreiente",
+   "titulo": "Suivi",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-25",
+   "bpm": 120,
+   "camelot": "7A",
+   "largo_seg": 513
+  },
+  {
+   "artista": "Mattias Herrera",
+   "titulo": "Golden Clouds",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-04",
+   "bpm": 121,
+   "camelot": "4A",
+   "largo_seg": 468
+  },
+  {
+   "artista": "Mattias Herrera",
+   "titulo": "Fields of Heaven",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-04",
+   "bpm": 120,
+   "camelot": "5A",
+   "largo_seg": 454
+  },
+  {
+   "artista": "Mattias Herrera",
+   "titulo": "Gardens",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-07-04",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 429
+  },
+  {
+   "artista": "Martin Fredes, Matthew Sona",
+   "titulo": "Aegon",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 439
+  },
+  {
+   "artista": "Martin Fredes, Matthew Sona",
+   "titulo": "Trainwreck",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-06-20",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 427
+  },
+  {
+   "artista": "Glenn Morrison, Frank Sonic",
+   "titulo": "Good Nights Only",
+   "version": "Mattias Herrera Extended Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-06-06",
+   "bpm": 120,
+   "camelot": "6A",
+   "largo_seg": 456
+  },
+  {
+   "artista": "Glenn Morrison, Frank Sonic, Champanzee",
+   "titulo": "Sagaland",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-06-06",
+   "bpm": 120,
+   "camelot": "9A",
+   "largo_seg": 398
+  },
+  {
+   "artista": "Glenn Morrison, Frank Sonic",
+   "titulo": "Good Nights Only",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-06-06",
+   "bpm": 120,
+   "camelot": "5A",
+   "largo_seg": 483
+  },
+  {
+   "artista": "Gux Jimenez, Dastan (US)",
+   "titulo": "High Priestess",
+   "version": "Newman (I Love) Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-05-23",
+   "bpm": 124,
+   "camelot": "8B",
+   "largo_seg": 439
+  },
+  {
+   "artista": "Gux Jimenez, Dastan (US)",
+   "titulo": "High Priestess",
+   "version": "SURFFACE Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-05-23",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 342
+  },
+  {
+   "artista": "Gux Jimenez, Dastan (US)",
+   "titulo": "High Priestess",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-05-23",
+   "bpm": 120,
+   "camelot": "8B",
+   "largo_seg": 422
+  },
+  {
+   "artista": "Newman (I Love)",
+   "titulo": "On My Mind",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-05-09",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 501
+  },
+  {
+   "artista": "Newman (I Love)",
+   "titulo": "Strawberry Moon",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-05-09",
+   "bpm": 124,
+   "camelot": "11A",
+   "largo_seg": 454
+  },
+  {
+   "artista": "Poli-Poli",
+   "titulo": "Earth Space",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-04-25",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 406
+  },
+  {
+   "artista": "Poli-Poli",
+   "titulo": "Earth Space",
+   "version": "Weird Sounding Dude Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-04-25",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 439
+  },
+  {
+   "artista": "Black 8",
+   "titulo": "Behind Closed Eyes",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-04-11",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 472
+  },
+  {
+   "artista": "Niceshot",
+   "titulo": "With You",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-03-28",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 448
+  },
+  {
+   "artista": "Niceshot",
+   "titulo": "With You",
+   "version": "Gowzer Extended Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-03-28",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 445
+  },
+  {
+   "artista": "Kevin Di Serna, Gerbas",
+   "titulo": "Feel It",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-03-14",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 392
+  },
+  {
+   "artista": "Kevin Di Serna, Gerbas",
+   "titulo": "Feel It",
+   "version": "Budakid Extended Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-03-14",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Weird Sounding Dude",
+   "titulo": "A Mountain's Heartbeat",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-02-28",
+   "bpm": 121,
+   "camelot": "10B",
+   "largo_seg": 448
+  },
+  {
+   "artista": "Weird Sounding Dude",
+   "titulo": "As Fate Has It",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-02-28",
+   "bpm": 123,
+   "camelot": "3B",
+   "largo_seg": 408
+  },
+  {
+   "artista": "Weird Sounding Dude",
+   "titulo": "Solar Coaster",
+   "version": "Extended Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-02-28",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 415
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "Cobble Pot",
+   "version": "Original Mix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-02-07",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 438
+  },
+  {
+   "artista": "Nick Warren",
+   "titulo": "Cobble Pot",
+   "version": "Zankee Gulati Remix",
+   "sello": "The Soundgarden",
+   "fecha": "2025-02-07",
+   "bpm": 123,
+   "camelot": "10A",
+   "largo_seg": 507
+  },
+  {
+   "artista": "Nicky Elisabeth",
+   "titulo": "My Heart",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-23",
+   "bpm": 127,
+   "camelot": "8A",
+   "largo_seg": 332
+  },
+  {
+   "artista": "Nicky Elisabeth",
+   "titulo": "Sparklestar",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-23",
+   "bpm": 128,
+   "camelot": "3B",
+   "largo_seg": 352
+  },
+  {
+   "artista": "Nicky Elisabeth",
+   "titulo": "Eclipse",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-23",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 336
+  },
+  {
+   "artista": "Nordfold",
+   "titulo": "Tidal Shift",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-13",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "Countdown",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-09",
+   "bpm": 126,
+   "camelot": "8B",
+   "largo_seg": 335
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "Moonlight",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-09",
+   "bpm": 125,
+   "camelot": "5B",
+   "largo_seg": 308
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "Urgency",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-09",
+   "bpm": 126,
+   "camelot": "5A",
+   "largo_seg": 321
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "Up All Night",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-09",
+   "bpm": 125,
+   "camelot": "4A",
+   "largo_seg": 294
+  },
+  {
+   "artista": "Eric Luttrell, LeyeT",
+   "titulo": "How Will I Know?",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-09",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "LOVE",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-09",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 431
+  },
+  {
+   "artista": "Ryan Davis",
+   "titulo": "Home",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-02",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 221
+  },
+  {
+   "artista": "Ryan Davis",
+   "titulo": "You're Not Alone",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-10-02",
+   "bpm": 127,
+   "camelot": "1A",
+   "largo_seg": 225
+  },
+  {
+   "artista": "Nicky Elisabeth",
+   "titulo": "Sparklestar",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-29",
+   "bpm": 128,
+   "camelot": "3B",
+   "largo_seg": 352
+  },
+  {
+   "artista": "Dusky",
+   "titulo": "Lab",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-25",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 324
+  },
+  {
+   "artista": "Dusky",
+   "titulo": "Bindweed",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-25",
+   "bpm": 125,
+   "camelot": "4B",
+   "largo_seg": 262
+  },
+  {
+   "artista": "Dusky, Rromarin",
+   "titulo": "Next Life",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-25",
+   "bpm": 127,
+   "camelot": "5B",
+   "largo_seg": 379
+  },
+  {
+   "artista": "Dusky",
+   "titulo": "Same Path",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-25",
+   "bpm": 120,
+   "camelot": "9B",
+   "largo_seg": 201
+  },
+  {
+   "artista": "Dusky, Pritt, Nadeem Karim",
+   "titulo": "Kadhalan",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-25",
+   "bpm": 125,
+   "camelot": "11A",
+   "largo_seg": 255
+  },
+  {
+   "artista": "Maty Owl",
+   "titulo": "Finding A Way",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-18",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 409
+  },
+  {
+   "artista": "Maty Owl",
+   "titulo": "Waves",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-18",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 407
+  },
+  {
+   "artista": "Maty Owl, Keilimei",
+   "titulo": "Dreamer",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-18",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 391
+  },
+  {
+   "artista": "Malou, Nils Hoffmann, Ben Böhmer",
+   "titulo": "Breathing",
+   "version": "orbit Remix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-15",
+   "bpm": 121,
+   "camelot": "10A",
+   "largo_seg": 266
+  },
+  {
+   "artista": "Shadow Child, Because of Art",
+   "titulo": "Perception",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-08",
+   "bpm": 125,
+   "camelot": "5B",
+   "largo_seg": 354
+  },
+  {
+   "artista": "Leaving Laurel",
+   "titulo": "another good start",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-04",
+   "bpm": 120,
+   "camelot": "4A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Leaving Laurel",
+   "titulo": "for when i'm gone",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-04",
+   "bpm": 118,
+   "camelot": "8B",
+   "largo_seg": 188
+  },
+  {
+   "artista": "Leaving Laurel",
+   "titulo": "a moment alone",
+   "version": "extended mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-04",
+   "bpm": 127,
+   "camelot": "11B",
+   "largo_seg": 342
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "Moonlight",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-09-01",
+   "bpm": 125,
+   "camelot": "5B",
+   "largo_seg": 308
+  },
+  {
+   "artista": "Rezident, Romain Garcia",
+   "titulo": "Ghost In Paris",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-25",
+   "bpm": 127,
+   "camelot": "7A",
+   "largo_seg": 387
+  },
+  {
+   "artista": "Dusky",
+   "titulo": "Bindweed",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-21",
+   "bpm": 125,
+   "camelot": "4B",
+   "largo_seg": 223
+  },
+  {
+   "artista": "Dosem",
+   "titulo": "Overgrafik",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-18",
+   "bpm": 128,
+   "camelot": "10B",
+   "largo_seg": 364
+  },
+  {
+   "artista": "Dosem",
+   "titulo": "Ornamentz",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-18",
+   "bpm": 127,
+   "camelot": "2B",
+   "largo_seg": 333
+  },
+  {
+   "artista": "Dosem",
+   "titulo": "Levitize",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-18",
+   "bpm": 125,
+   "camelot": "6B",
+   "largo_seg": 372
+  },
+  {
+   "artista": "Dosem",
+   "titulo": "Morning Runner",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-18",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 372
+  },
+  {
+   "artista": "Dosem",
+   "titulo": "I Got You",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-18",
+   "bpm": 127,
+   "camelot": "4B",
+   "largo_seg": 336
+  },
+  {
+   "artista": "Zakes Bantwini, Jordan Arts",
+   "titulo": "You Never Know",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-11",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 342
+  },
+  {
+   "artista": "Zakes Bantwini, Sun-El Musician, kisskisskiss",
+   "titulo": "Impatient",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-11",
+   "bpm": 119,
+   "camelot": "11A",
+   "largo_seg": 274
+  },
+  {
+   "artista": "Because of Art",
+   "titulo": "Fired Up",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-07",
+   "bpm": 125,
+   "camelot": "8A",
+   "largo_seg": 415
+  },
+  {
+   "artista": "Shadow Child, Because of Art",
+   "titulo": "Perception",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-07",
+   "bpm": 125,
+   "camelot": "5B",
+   "largo_seg": 354
+  },
+  {
+   "artista": "Because of Art",
+   "titulo": "Thinkin' Bout You",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-07",
+   "bpm": 126,
+   "camelot": "5B",
+   "largo_seg": 396
+  },
+  {
+   "artista": "Claxy, Steven Weston",
+   "titulo": "Shallow Water",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-04",
+   "bpm": 122,
+   "camelot": "8B",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Claxy, Steven Weston",
+   "titulo": "Hiding",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-08-04",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 394
+  },
+  {
+   "artista": "Dosem",
+   "titulo": "Morning Runner",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-07-28",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 372
+  },
+  {
+   "artista": "Leaving Laurel",
+   "titulo": "another good start",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-07-21",
+   "bpm": 120,
+   "camelot": "4A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Dusky, Pritt, Nadeem Karim",
+   "titulo": "Kadhalan",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-07-17",
+   "bpm": 125,
+   "camelot": "11A",
+   "largo_seg": 212
+  },
+  {
+   "artista": "Nordfold",
+   "titulo": "Collide",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-07-14",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 372
+  },
+  {
+   "artista": "Eric Luttrell, LeyeT",
+   "titulo": "How Will I Know?",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-07-07",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Jody Wisternoff, James Grant, Kiskadee, Ren Ocean",
+   "titulo": "Friendly Fire",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-07-03",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 278
+  },
+  {
+   "artista": "Kloyd, Tonguetied",
+   "titulo": "Saturated feat. Tonguetied",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-26",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 197
+  },
+  {
+   "artista": "Kloyd, Winifred",
+   "titulo": "Nothing Could've Made Me feat. Winifred",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-26",
+   "bpm": 120,
+   "camelot": "6B",
+   "largo_seg": 249
+  },
+  {
+   "artista": "Kloyd",
+   "titulo": "Far From Us",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-26",
+   "bpm": 128,
+   "camelot": "4A",
+   "largo_seg": 267
+  },
+  {
+   "artista": "Kloyd, Tonguetied",
+   "titulo": "Everything (For You) feat. Tonguetied",
+   "version": "For You",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-26",
+   "bpm": 126,
+   "camelot": "10B",
+   "largo_seg": 294
+  },
+  {
+   "artista": "Kloyd",
+   "titulo": "New Love",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-26",
+   "bpm": 128,
+   "camelot": "5B",
+   "largo_seg": 269
+  },
+  {
+   "artista": "Dusky, Rromarin",
+   "titulo": "Next Life feat. Rromarin",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-23",
+   "bpm": 127,
+   "camelot": "5B",
+   "largo_seg": 379
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "Double Oath",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-19",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 221
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "Mountain Dew",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-19",
+   "bpm": 123,
+   "camelot": "1B",
+   "largo_seg": 300
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "When You're In Love",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-19",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 300
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "When You're In Love",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-19",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 230
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "Double Oath",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-19",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 339
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "Mountain Dew",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-19",
+   "bpm": 123,
+   "camelot": "1B",
+   "largo_seg": 249
+  },
+  {
+   "artista": "Cubicolor",
+   "titulo": "Wait State",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-16",
+   "bpm": 123,
+   "camelot": "9B",
+   "largo_seg": 303
+  },
+  {
+   "artista": "Cubicolor",
+   "titulo": "Kindred",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-16",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 305
+  },
+  {
+   "artista": "Sonatine",
+   "titulo": "To Sunrise",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-09",
+   "bpm": 125,
+   "camelot": "10B",
+   "largo_seg": 260
+  },
+  {
+   "artista": "Sonatine",
+   "titulo": "All The World Is Blue",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-09",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 293
+  },
+  {
+   "artista": "Sonatine",
+   "titulo": "Way Home",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-06-09",
+   "bpm": 123,
+   "camelot": "5A",
+   "largo_seg": 258
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "Anulpha Pass",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 128,
+   "camelot": "1A",
+   "largo_seg": 301
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "High Speed Ring",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 125,
+   "camelot": "4B",
+   "largo_seg": 278
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "Same Team",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 128,
+   "camelot": "7B",
+   "largo_seg": 243
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "Civilian World",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 127,
+   "camelot": "12B",
+   "largo_seg": 456
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "Identical",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 126,
+   "camelot": "10B",
+   "largo_seg": 279
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "Love Always Had A Way",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 120,
+   "camelot": "9A",
+   "largo_seg": 451
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "High Speed Ring",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-29",
+   "bpm": 125,
+   "camelot": "4B",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Tim Green, PROFF",
+   "titulo": "Sopia",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-26",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 470
+  },
+  {
+   "artista": "Jody Wisternoff, Jamie Mcdermott",
+   "titulo": "Citadel",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-12",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 318
+  },
+  {
+   "artista": "Jody Wisternoff, Jamie Mcdermott",
+   "titulo": "Citadel",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-12",
+   "bpm": 124,
+   "camelot": "11B",
+   "largo_seg": 228
+  },
+  {
+   "artista": "Kloyd, Tonguetied",
+   "titulo": "Everything (For You) feat. Tonguetied",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-05-07",
+   "bpm": 126,
+   "camelot": "10B",
+   "largo_seg": 294
+  },
+  {
+   "artista": "Braxton",
+   "titulo": "Green To Gold",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-28",
+   "bpm": 126,
+   "camelot": "5A",
+   "largo_seg": 196
+  },
+  {
+   "artista": "Braxton",
+   "titulo": "There's Still Time",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-28",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 391
+  },
+  {
+   "artista": "Braxton",
+   "titulo": "There's Still Time",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-28",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 209
+  },
+  {
+   "artista": "Braxton",
+   "titulo": "Green To Gold",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-28",
+   "bpm": 126,
+   "camelot": "7B",
+   "largo_seg": 282
+  },
+  {
+   "artista": "CRi, Jesse Mac Cormack",
+   "titulo": "Back of My Mind",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-24",
+   "bpm": 128,
+   "camelot": "7B",
+   "largo_seg": 253
+  },
+  {
+   "artista": "CRi, Romain Garcia",
+   "titulo": "A Smile With Scars",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-24",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 237
+  },
+  {
+   "artista": "CRi, Dj Cinema Quartier Latin",
+   "titulo": "Unsaid",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-24",
+   "bpm": 126,
+   "camelot": "4A",
+   "largo_seg": 234
+  },
+  {
+   "artista": "Because of Art",
+   "titulo": "Thinkin' Bout You",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-21",
+   "bpm": 126,
+   "camelot": "5B",
+   "largo_seg": 396
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "High Speed Ring",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-17",
+   "bpm": 125,
+   "camelot": "4B",
+   "largo_seg": 278
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "High Speed Ring",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-17",
+   "bpm": 125,
+   "camelot": "4B",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Leaving Laurel",
+   "titulo": "our lives entwined",
+   "version": "K-LONE Remix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-14",
+   "bpm": 124,
+   "camelot": "3B",
+   "largo_seg": 253
+  },
+  {
+   "artista": "Leaving Laurel",
+   "titulo": "her certain uncertainty",
+   "version": "Isolée Remix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-14",
+   "bpm": 128,
+   "camelot": "4A",
+   "largo_seg": 293
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "Mountain Dew",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-07",
+   "bpm": 123,
+   "camelot": "1B",
+   "largo_seg": 249
+  },
+  {
+   "artista": "Michael Cassette",
+   "titulo": "Mountain Dew",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-07",
+   "bpm": 123,
+   "camelot": "1B",
+   "largo_seg": 300
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "LOVE",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-02",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 202
+  },
+  {
+   "artista": "Eric Luttrell",
+   "titulo": "LOVE",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-04-02",
+   "bpm": 125,
+   "camelot": "9B",
+   "largo_seg": 431
+  },
+  {
+   "artista": "Jody Wisternoff, James Grant, Calcou",
+   "titulo": "Screen",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-03-20",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 246
+  },
+  {
+   "artista": "Jody Wisternoff, James Grant, Calcou",
+   "titulo": "Screen",
+   "version": "Extended Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-03-20",
+   "bpm": 122,
+   "camelot": "12B",
+   "largo_seg": 323
+  },
+  {
+   "artista": "CRi, Romain Garcia",
+   "titulo": "A Smile With Scars",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-03-17",
+   "bpm": 123,
+   "camelot": "2B",
+   "largo_seg": 237
+  },
+  {
+   "artista": "Amtrac",
+   "titulo": "Civilian World",
+   "version": "Original Mix",
+   "sello": "Anjunadeep",
+   "fecha": "2026-03-13",
+   "bpm": 127,
+   "camelot": "12B",
+   "largo_seg": 456
+  },
+  {
+   "artista": "Falden",
+   "titulo": "Lifeline",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-07",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 313
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Repeater",
+   "version": "Einmusik Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-05",
+   "bpm": 126,
+   "camelot": "7B",
+   "largo_seg": 397
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Lotus",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 125,
+   "camelot": "11B",
+   "largo_seg": 344
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Waiting",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 127,
+   "camelot": "5B",
+   "largo_seg": 293
+  },
+  {
+   "artista": "Guy Didden, Jack Willard",
+   "titulo": "Over & Over",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 342
+  },
+  {
+   "artista": "Moone, Jack Willard",
+   "titulo": "Call To Me",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 331
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Time",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 126,
+   "camelot": "5A",
+   "largo_seg": 356
+  },
+  {
+   "artista": "Jack Willard, Little Foot, Ava Sofia",
+   "titulo": "Light Shines",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 336
+  },
+  {
+   "artista": "Jack Willard, Matthew Adam Green",
+   "titulo": "Move With Soul",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 309
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Give Up The Ghost",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 331
+  },
+  {
+   "artista": "JOSEFINA, Jack Willard",
+   "titulo": "Slow Burn",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 125,
+   "camelot": "12A",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Searching For You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-10-02",
+   "bpm": 124,
+   "camelot": "12A",
+   "largo_seg": 285
+  },
+  {
+   "artista": "L.GU., Hedara",
+   "titulo": "Black Hole",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-30",
+   "bpm": 124,
+   "camelot": "11A",
+   "largo_seg": 358
+  },
+  {
+   "artista": "Tre, Jessie Lee Thetford, Temazkal, NUVORA",
+   "titulo": "Ashfall",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-23",
+   "bpm": 120,
+   "camelot": "9B",
+   "largo_seg": 266
+  },
+  {
+   "artista": "Taylr Renee, Walshy Fire, Temazkal",
+   "titulo": "Written In Destiny",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-23",
+   "bpm": 122,
+   "camelot": "1B",
+   "largo_seg": 335
+  },
+  {
+   "artista": "PRAANA, Klur, Kuala",
+   "titulo": "Breathe In",
+   "version": "Fejká Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-21",
+   "bpm": 123,
+   "camelot": "12B",
+   "largo_seg": 391
+  },
+  {
+   "artista": "ALLKNIGHT",
+   "titulo": "Electric Love",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-16",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 373
+  },
+  {
+   "artista": "ALLKNIGHT",
+   "titulo": "If Here Was Forever (feat. MØØNE)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-16",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 375
+  },
+  {
+   "artista": "ALLKNIGHT",
+   "titulo": "No Way Out",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-16",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 385
+  },
+  {
+   "artista": "L.GU., ALLKNIGHT",
+   "titulo": "I Found You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-16",
+   "bpm": 126,
+   "camelot": "11A",
+   "largo_seg": 335
+  },
+  {
+   "artista": "Moone, ALLKNIGHT",
+   "titulo": "Overcome",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-16",
+   "bpm": 125,
+   "camelot": "10B",
+   "largo_seg": 354
+  },
+  {
+   "artista": "Lipless",
+   "titulo": "Wishing Well",
+   "version": "edapollo Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-14",
+   "bpm": 124,
+   "camelot": "3A",
+   "largo_seg": 281
+  },
+  {
+   "artista": "Hannah Ray, Polar Inc.",
+   "titulo": "Slopes",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-11",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Josha Daniel, Falden",
+   "titulo": "No Goodbye",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-09",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 327
+  },
+  {
+   "artista": "Sound Quelle",
+   "titulo": "Deep Chicken",
+   "version": "Astrality Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-07",
+   "bpm": 122,
+   "camelot": "3A",
+   "largo_seg": 317
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Give Up The Ghost",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-04",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 331
+  },
+  {
+   "artista": "Rose Ringed",
+   "titulo": "Till The End",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-02",
+   "bpm": 127,
+   "camelot": "11A",
+   "largo_seg": 334
+  },
+  {
+   "artista": "Rose Ringed",
+   "titulo": "Those Who Danced",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-09-02",
+   "bpm": 128,
+   "camelot": "10B",
+   "largo_seg": 379
+  },
+  {
+   "artista": "Klur",
+   "titulo": "Roots",
+   "version": "il:lo Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-31",
+   "bpm": 123,
+   "camelot": "2A",
+   "largo_seg": 281
+  },
+  {
+   "artista": "Linney, Mees Salomé",
+   "titulo": "Constellations",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-28",
+   "bpm": 125,
+   "camelot": "8B",
+   "largo_seg": 316
+  },
+  {
+   "artista": "Massane",
+   "titulo": "Shadows",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-26",
+   "bpm": 128,
+   "camelot": "4B",
+   "largo_seg": 242
+  },
+  {
+   "artista": "Massane, sadHAPPY",
+   "titulo": "Another Life",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-26",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 333
+  },
+  {
+   "artista": "Hessian, Courtney Storm",
+   "titulo": "Heartbeat",
+   "version": "Estiva Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-24",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 444
+  },
+  {
+   "artista": "Moone, mölly (USA)",
+   "titulo": "calling me",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 120,
+   "camelot": "1B",
+   "largo_seg": 385
+  },
+  {
+   "artista": "Richard Walters, OCULA, mölly (USA)",
+   "titulo": "feeling something",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 125,
+   "camelot": "12B",
+   "largo_seg": 386
+  },
+  {
+   "artista": "LeyeT, Hessian, mölly (USA)",
+   "titulo": "the art of letting go",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 127,
+   "camelot": "7B",
+   "largo_seg": 364
+  },
+  {
+   "artista": "Mees Salomé, mölly (USA)",
+   "titulo": "transmission",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 311
+  },
+  {
+   "artista": "mölly (USA)",
+   "titulo": "for a fire",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 120,
+   "camelot": "12B",
+   "largo_seg": 297
+  },
+  {
+   "artista": "mölly (USA), sandpiper",
+   "titulo": "all i wanted",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 120,
+   "camelot": "3B",
+   "largo_seg": 352
+  },
+  {
+   "artista": "Farley, mölly (USA)",
+   "titulo": "edges",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 126,
+   "camelot": "1A",
+   "largo_seg": 338
+  },
+  {
+   "artista": "Moone, mölly (USA)",
+   "titulo": "miles away",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 390
+  },
+  {
+   "artista": "Moone, mölly (USA)",
+   "titulo": "find you",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 378
+  },
+  {
+   "artista": "mölly (USA)",
+   "titulo": "drops of oil",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-21",
+   "bpm": 122,
+   "camelot": "5B",
+   "largo_seg": 323
+  },
+  {
+   "artista": "ALLKNIGHT",
+   "titulo": "Electric Love",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-19",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 373
+  },
+  {
+   "artista": "Lipless, Blue Noir",
+   "titulo": "Cimmerian",
+   "version": "OCULA Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-17",
+   "bpm": 125,
+   "camelot": "1A",
+   "largo_seg": 296
+  },
+  {
+   "artista": "Polar Inc.",
+   "titulo": "For You (feat. Nathan Ball)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-14",
+   "bpm": 122,
+   "camelot": "2B",
+   "largo_seg": 334
+  },
+  {
+   "artista": "Falden, sadHAPPY",
+   "titulo": "Better Days",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-12",
+   "bpm": 122,
+   "camelot": "4A",
+   "largo_seg": 333
+  },
+  {
+   "artista": "Trilucid",
+   "titulo": "One Day At A Time",
+   "version": "Tim Green Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-10",
+   "bpm": 124,
+   "camelot": "11A",
+   "largo_seg": 388
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Waiting",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-07",
+   "bpm": 127,
+   "camelot": "5B",
+   "largo_seg": 293
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "TCL",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-05",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Chemicals",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-05",
+   "bpm": 124,
+   "camelot": "9A",
+   "largo_seg": 302
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Noo Tacchi",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-05",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 360
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Palma",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-05",
+   "bpm": 126,
+   "camelot": "9A",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Via Balearia",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-05",
+   "bpm": 126,
+   "camelot": "4A",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "The Wave",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-05",
+   "bpm": 124,
+   "camelot": "11A",
+   "largo_seg": 389
+  },
+  {
+   "artista": "Sound Quelle",
+   "titulo": "Ah Up",
+   "version": "Hessian Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-08-03",
+   "bpm": 124,
+   "camelot": "11A",
+   "largo_seg": 374
+  },
+  {
+   "artista": "Matt Fax, 88Birds",
+   "titulo": "High On Life",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-31",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 382
+  },
+  {
+   "artista": "Matt Fax",
+   "titulo": "Oddity",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-31",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 406
+  },
+  {
+   "artista": "Matt Fax",
+   "titulo": "Till You Let Go",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-31",
+   "bpm": 124,
+   "camelot": "2A",
+   "largo_seg": 390
+  },
+  {
+   "artista": "Matt Fax",
+   "titulo": "Tomorrow",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-31",
+   "bpm": 124,
+   "camelot": "7B",
+   "largo_seg": 410
+  },
+  {
+   "artista": "PRAANA",
+   "titulo": "Calling Out",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 122,
+   "camelot": "7A",
+   "largo_seg": 423
+  },
+  {
+   "artista": "PRAANA",
+   "titulo": "Zilker Gardens Echo",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 122,
+   "camelot": "4B",
+   "largo_seg": 431
+  },
+  {
+   "artista": "PRAANA",
+   "titulo": "Dive (feat. Courtney Storm)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 340
+  },
+  {
+   "artista": "PRAANA, RKTKT",
+   "titulo": "We Both Know It (feat. lydi lynn)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 122,
+   "camelot": "9B",
+   "largo_seg": 437
+  },
+  {
+   "artista": "Susie Ledge, PRAANA",
+   "titulo": "Smoke Signals",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 124,
+   "camelot": "1B",
+   "largo_seg": 410
+  },
+  {
+   "artista": "PRAANA",
+   "titulo": "Fernwake",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 120,
+   "camelot": "12B",
+   "largo_seg": 368
+  },
+  {
+   "artista": "PRAANA, Freddie Elmberg",
+   "titulo": "When I Need You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 122,
+   "camelot": "2B",
+   "largo_seg": 399
+  },
+  {
+   "artista": "PRAANA, ready ready wait",
+   "titulo": "Falling Off",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 120,
+   "camelot": "10B",
+   "largo_seg": 476
+  },
+  {
+   "artista": "PRAANA",
+   "titulo": "Smoke Signals (Afterglow)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 124,
+   "camelot": "1B",
+   "largo_seg": 306
+  },
+  {
+   "artista": "PRAANA, Courtney Storm",
+   "titulo": "Synergy",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 123,
+   "camelot": "4B",
+   "largo_seg": 363
+  },
+  {
+   "artista": "PRAANA",
+   "titulo": "Surge State",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-29",
+   "bpm": 120,
+   "camelot": "3A",
+   "largo_seg": 355
+  },
+  {
+   "artista": "Boxer",
+   "titulo": "Verde",
+   "version": "Jerome Isma-Ae Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-27",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 380
+  },
+  {
+   "artista": "Richard Walters, OCULA, mölly (USA)",
+   "titulo": "feeling something",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-24",
+   "bpm": 125,
+   "camelot": "12B",
+   "largo_seg": 386
+  },
+  {
+   "artista": "L.GU., ALLKNIGHT",
+   "titulo": "I Found You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-22",
+   "bpm": 126,
+   "camelot": "11A",
+   "largo_seg": 335
+  },
+  {
+   "artista": "Braxton, Lauren L'aimant",
+   "titulo": "Holding On",
+   "version": "Icarus Extended Remix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-20",
+   "bpm": 127,
+   "camelot": "2A",
+   "largo_seg": 336
+  },
+  {
+   "artista": "Polar Inc.",
+   "titulo": "Cerulean",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-17",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 386
+  },
+  {
+   "artista": "Klur",
+   "titulo": "Continents",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-16",
+   "bpm": 118,
+   "camelot": "7A",
+   "largo_seg": 444
+  },
+  {
+   "artista": "Fejká",
+   "titulo": "We Were There (feat. Kim Van Loo)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-15",
+   "bpm": 120,
+   "camelot": "5B",
+   "largo_seg": 273
+  },
+  {
+   "artista": "RUVEN (ES)",
+   "titulo": "Kora",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-13",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 342
+  },
+  {
+   "artista": "Rromarin, Hii Spirits",
+   "titulo": "We All Pretend",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-13",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 290
+  },
+  {
+   "artista": "Anriu",
+   "titulo": "Cosmic Love (feat. GAALIA)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-13",
+   "bpm": 124,
+   "camelot": "9B",
+   "largo_seg": 285
+  },
+  {
+   "artista": "Sound Quelle, Hensho",
+   "titulo": "Desire",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 124,
+   "camelot": "5A",
+   "largo_seg": 329
+  },
+  {
+   "artista": "Sound Quelle, Lily Denning",
+   "titulo": "With You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 125,
+   "camelot": "5B",
+   "largo_seg": 373
+  },
+  {
+   "artista": "Sound Quelle, Lake Silver",
+   "titulo": "This Fight",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 118,
+   "camelot": "7B",
+   "largo_seg": 363
+  },
+  {
+   "artista": "Sound Quelle, Braxton",
+   "titulo": "Anlecta",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 126,
+   "camelot": "11A",
+   "largo_seg": 275
+  },
+  {
+   "artista": "Sound Quelle, Jantine",
+   "titulo": "Resurrection",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 120,
+   "camelot": "2A",
+   "largo_seg": 371
+  },
+  {
+   "artista": "Sound Quelle",
+   "titulo": "Sunshine",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 120,
+   "camelot": "3B",
+   "largo_seg": 355
+  },
+  {
+   "artista": "Sound Quelle, Moone",
+   "titulo": "Freefall",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 120,
+   "camelot": "8A",
+   "largo_seg": 388
+  },
+  {
+   "artista": "Sound Quelle, M.O.S.",
+   "titulo": "Arcade",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-10",
+   "bpm": 124,
+   "camelot": "7A",
+   "largo_seg": 360
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Palma",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-08",
+   "bpm": 126,
+   "camelot": "9A",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Ophanim",
+   "titulo": "Last Touch",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-06",
+   "bpm": 125,
+   "camelot": "11A",
+   "largo_seg": 333
+  },
+  {
+   "artista": "Ophanim",
+   "titulo": "Caught In Glow",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-06",
+   "bpm": 123,
+   "camelot": "6B",
+   "largo_seg": 336
+  },
+  {
+   "artista": "Jack Willard",
+   "titulo": "Searching For You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-03",
+   "bpm": 124,
+   "camelot": "12A",
+   "largo_seg": 285
+  },
+  {
+   "artista": "Warung, Steven Weston",
+   "titulo": "It Can't Hurt",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-01",
+   "bpm": 125,
+   "camelot": "2A",
+   "largo_seg": 308
+  },
+  {
+   "artista": "Warung, Steven Weston",
+   "titulo": "In Love With",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-01",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 344
+  },
+  {
+   "artista": "Warung, Steven Weston",
+   "titulo": "Hourglass (feat. ALLKNIGHT)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-07-01",
+   "bpm": 123,
+   "camelot": "11A",
+   "largo_seg": 391
+  },
+  {
+   "artista": "Mees Salomé, mölly (USA)",
+   "titulo": "transmission",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-26",
+   "bpm": 124,
+   "camelot": "4B",
+   "largo_seg": 311
+  },
+  {
+   "artista": "Matt Fax, 88Birds",
+   "titulo": "High On Life",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-24",
+   "bpm": 123,
+   "camelot": "8B",
+   "largo_seg": 382
+  },
+  {
+   "artista": "ALLKNIGHT",
+   "titulo": "No Way Out",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-19",
+   "bpm": 125,
+   "camelot": "5A",
+   "largo_seg": 385
+  },
+  {
+   "artista": "Susie Ledge, PRAANA",
+   "titulo": "Smoke Signals",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-17",
+   "bpm": 124,
+   "camelot": "1B",
+   "largo_seg": 410
+  },
+  {
+   "artista": "Wassu",
+   "titulo": "From Here (feat. MØØNE)",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-15",
+   "bpm": 124,
+   "camelot": "4A",
+   "largo_seg": 404
+  },
+  {
+   "artista": "Wassu",
+   "titulo": "Elevate",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-15",
+   "bpm": 123,
+   "camelot": "6A",
+   "largo_seg": 376
+  },
+  {
+   "artista": "Polar Inc., Anna-Sophia Henry",
+   "titulo": "Sympathy",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-12",
+   "bpm": 122,
+   "camelot": "6A",
+   "largo_seg": 291
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Via Balearia",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-10",
+   "bpm": 126,
+   "camelot": "4A",
+   "largo_seg": 341
+  },
+  {
+   "artista": "Sound Quelle, Braxton",
+   "titulo": "Anlecta",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-05",
+   "bpm": 126,
+   "camelot": "11A",
+   "largo_seg": 275
+  },
+  {
+   "artista": "Lipless, Finley Bruckner, CALILA",
+   "titulo": "Float On",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-03",
+   "bpm": 124,
+   "camelot": "12B",
+   "largo_seg": 338
+  },
+  {
+   "artista": "Ophanim",
+   "titulo": "Sapphire",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-01",
+   "bpm": 123,
+   "camelot": "7A",
+   "largo_seg": 352
+  },
+  {
+   "artista": "Ophanim",
+   "titulo": "Tourmaline",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-06-01",
+   "bpm": 122,
+   "camelot": "12A",
+   "largo_seg": 358
+  },
+  {
+   "artista": "Jack Willard, Matthew Adam Green",
+   "titulo": "Move With Soul",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-29",
+   "bpm": 127,
+   "camelot": "8B",
+   "largo_seg": 309
+  },
+  {
+   "artista": "MXV, Extra Special",
+   "titulo": "Slave To Desire",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-27",
+   "bpm": 124,
+   "camelot": "11A",
+   "largo_seg": 279
+  },
+  {
+   "artista": "MXV",
+   "titulo": "New Moon",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-27",
+   "bpm": 126,
+   "camelot": "2A",
+   "largo_seg": 368
+  },
+  {
+   "artista": "Farley, mölly (USA)",
+   "titulo": "edges",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-22",
+   "bpm": 126,
+   "camelot": "1A",
+   "largo_seg": 338
+  },
+  {
+   "artista": "Matt Fax",
+   "titulo": "Tomorrow",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-20",
+   "bpm": 124,
+   "camelot": "7B",
+   "largo_seg": 410
+  },
+  {
+   "artista": "Julia Linkogel",
+   "titulo": "All You Need",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-13",
+   "bpm": 125,
+   "camelot": "6A",
+   "largo_seg": 325
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Mistika",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-13",
+   "bpm": 124,
+   "camelot": "4A",
+   "largo_seg": 373
+  },
+  {
+   "artista": "M.O.S.",
+   "titulo": "Changes",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-13",
+   "bpm": 124,
+   "camelot": "10B",
+   "largo_seg": 403
+  },
+  {
+   "artista": "Rokazer",
+   "titulo": "Atom",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-13",
+   "bpm": 123,
+   "camelot": "12A",
+   "largo_seg": 395
+  },
+  {
+   "artista": "LAR",
+   "titulo": "Be There",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-06",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 263
+  },
+  {
+   "artista": "Fagin, Temazkal, NUVORA, Descoqueo",
+   "titulo": "Color By Color",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-04",
+   "bpm": 122,
+   "camelot": "6B",
+   "largo_seg": 348
+  },
+  {
+   "artista": "Skyknock, Elliot Vast, Temazkal, NUVORA",
+   "titulo": "Looking For Truth",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-04",
+   "bpm": 122,
+   "camelot": "7B",
+   "largo_seg": 357
+  },
+  {
+   "artista": "Sound Quelle, Moone",
+   "titulo": "Freefall",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-05-01",
+   "bpm": 120,
+   "camelot": "8A",
+   "largo_seg": 388
+  },
+  {
+   "artista": "Farley, Falden",
+   "titulo": "Home In You",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-29",
+   "bpm": 122,
+   "camelot": "10B",
+   "largo_seg": 333
+  },
+  {
+   "artista": "Astral Field",
+   "titulo": "Eternity",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-27",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 348
+  },
+  {
+   "artista": "Slow Ted",
+   "titulo": "Try Again",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-27",
+   "bpm": 123,
+   "camelot": "10B",
+   "largo_seg": 332
+  },
+  {
+   "artista": "Tom Bailey, Rhea Silvia",
+   "titulo": "Jaded",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-27",
+   "bpm": 120,
+   "camelot": "1A",
+   "largo_seg": 370
+  },
+  {
+   "artista": "Klama",
+   "titulo": "Forever",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-27",
+   "bpm": 120,
+   "camelot": "8B",
+   "largo_seg": 273
+  },
+  {
+   "artista": "Jack Willard, Little Foot, Ava Sofia",
+   "titulo": "Light Shines",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-24",
+   "bpm": 123,
+   "camelot": "7B",
+   "largo_seg": 336
+  },
+  {
+   "artista": "LeyeT, Hessian, mölly (USA)",
+   "titulo": "the art of letting go",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-17",
+   "bpm": 127,
+   "camelot": "7B",
+   "largo_seg": 364
+  },
+  {
+   "artista": "Estiva",
+   "titulo": "Noo Tacchi",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-15",
+   "bpm": 124,
+   "camelot": "8A",
+   "largo_seg": 360
+  },
+  {
+   "artista": "MXV, GAALIA",
+   "titulo": "Fading Light",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-10",
+   "bpm": 121,
+   "camelot": "8A",
+   "largo_seg": 387
+  },
+  {
+   "artista": "MXV",
+   "titulo": "Open Roads",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-10",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 378
+  },
+  {
+   "artista": "Avenue One",
+   "titulo": "Take Me Home",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-08",
+   "bpm": 123,
+   "camelot": "9A",
+   "largo_seg": 333
+  },
+  {
+   "artista": "Avenue One",
+   "titulo": "Nopia",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-08",
+   "bpm": 123,
+   "camelot": "8A",
+   "largo_seg": 314
+  },
+  {
+   "artista": "Trilucid, Esque",
+   "titulo": "The Key",
+   "version": "Extended Mix",
+   "sello": "Colorize (Enhanced)",
+   "fecha": "2026-04-03",
+   "bpm": 124,
+   "camelot": "6A",
+   "largo_seg": 403
+  }
+ ]
+}

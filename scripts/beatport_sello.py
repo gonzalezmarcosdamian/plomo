@@ -205,7 +205,12 @@ def main() -> None:
                 extra = f" ({t['version']})"
             f.write(f"{t['artista']} - {t['titulo']}{extra}\n")
     print(f"\n{len(faltan)} temas que no tenes")
-    print(f"  -> {args.salida.relative_to(RAIZ)}")
+    # relative_to() explota si --salida vino relativa: no es un error del
+    # scraper y no tiene que tirar la corrida despues de escribir el archivo.
+    try:
+        print(f"  -> {args.salida.resolve().relative_to(RAIZ)}")
+    except ValueError:
+        print(f"  -> {args.salida}")
     print(f"  -> {batch.relative_to(RAIZ)}  (para muzpa_scan.py)")
 
 
