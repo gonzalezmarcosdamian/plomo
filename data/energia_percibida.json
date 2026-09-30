@@ -640,5 +640,17 @@
     "nota": "coaster muy bien",
     "favorito": true,
     "fuente": "escucha del 149, 2026-09-30"
+  },
+  "64362623": {
+    "artist": "Emi Galvan",
+    "title": "Crabo (Original Mix)",
+    "E_calc": 6.2,
+    "nota": "crabo veto este set",
+    "fuente": "escucha del 149, 2026-09-30",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-09-30",
+      "textual": "crabo veto este set"
+    }
   }
 }
