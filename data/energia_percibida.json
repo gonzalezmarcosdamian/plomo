@@ -1091,5 +1091,27 @@
       "fecha": "2026-10-01",
       "textual": "stolen, nada que ver"
     }
+  },
+  "162287546": {
+    "artist": "Durante",
+    "title": "Never B Alone (Extended Mix)",
+    "nota_149": "el DJ lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ, 2026-10-01",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-10-01",
+      "textual": "saque temas"
+    }
+  },
+  "163751611": {
+    "artist": "Sunchain",
+    "title": "Neurosonic Drift (Taylan Extended Mix)",
+    "nota_149": "el DJ lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ, 2026-10-01",
+    "veto": {
+      "alcance": "el set 149",
+      "fecha": "2026-10-01",
+      "textual": "saque temas"
+    }
   }
 }

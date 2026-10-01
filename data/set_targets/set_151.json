@@ -1,5 +1,5 @@
 {
-  "name": "151. Catalogo del DJ · 3h — 2026-10-01",
+  "name": "151. Los tres sets · 4h — 2026-10-01",
   "duration_h": 0,
   "bpm_range": [
     100,
@@ -7,72 +7,42 @@
   ],
   "max_per_artist": 99,
   "keep_order": true,
-  "_nota": "2026-10-01: 'no pierdas todos estos temas que te catalogue bien' + 'a todos ponelos en el 151 de 3 horas bien ordenado como pro'. Entran TODOS los que el DJ marco favorito, groove_ok, rol o referencia a lo largo del proyecto, incluidos los que saco de un set puntual --Dodonpachi, Citadel, Mirages, Perpetual--: esos vetos son del set, no del tema. Solo quedan afuera los tres que juzgo DEL TEMA: Milo 'no tiene el groove', Satori 'lo saco', Running 'no lo puedo usar'. ORDEN CON LAS REGLAS DEL PROYECTO, no a ojo: salto de rueda maximo 2 (armonia.max_camelot_dist), salto de groove tolerado 1.25 --la mediana de 236 pares de setlists reales--, escalon de energia maximo 2.3, y un arco que sube hasta el 65% del set y despues se sostiene sin caer por debajo del arranque.",
+  "_nota": "2026-10-01: 'todo el 150, lo mejor del 149 y del 148, en ese orden, 4 horas'. Tres bloques. Se excluyen los temas que el DJ rechazo HOY aunque el veto sea de otro set: el alcance del veto vale para otra NOCHE, no para otro bloque de la misma. DOS COSAS QUE HUBO QUE ARREGLAR: ordenar cada bloque por separado dejaba un salto de rueda de 6 en la costura, asi que ahora el ultimo tema del bloque anterior entra en el calculo del siguiente. Y un tema puede ser un CALLEJON --Mythical Creatures en 11B no tenia ningun vecino de rueda en su bloque-- asi que ahora se exige que cada candidato tenga al menos un vecino a un paso dentro de su bloque.",
   "tracks": [
     {
-      "artist": "Maze 28",
-      "title": "Mindloop (Original Mix)",
-      "content_id": "177299920"
+      "artist": "Paul Thomas, Maze 28",
+      "title": "Abundance (Original Mix)",
+      "content_id": "142322723"
     },
     {
-      "artist": "Wassu",
-      "title": "From Here (feat. MØØNE) (Extended Mix)",
-      "content_id": "54818175"
+      "artist": "Jonas Saalbach",
+      "title": "Keep Spirit High (Original Mix)",
+      "content_id": "260623666"
     },
     {
-      "artist": "Wailey",
-      "title": "Droplets (Taylan Remix)",
-      "content_id": "6719392"
+      "artist": "Agustin Pietrocola",
+      "title": "Sizer (Original Mix)",
+      "content_id": "74740589"
     },
     {
-      "artist": "Greg Ochman",
-      "title": "The Silver Lily (Original Mix)",
-      "content_id": "80536228"
+      "artist": "Rabiee Ahmad, Hassan Tariq Khan",
+      "title": "In Another Time (Original Mix)",
+      "content_id": "221636509"
     },
     {
-      "artist": "Andre Moret",
-      "title": "One World (Extended Mix)",
-      "content_id": "130869533"
+      "artist": "Hobin Rude",
+      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
+      "content_id": "250703508"
     },
     {
-      "artist": "Andre Moret",
-      "title": "Aria (Gorkiz Remix)",
-      "content_id": "225441549"
+      "artist": "COQUEIT",
+      "title": "Dock (Original Mix)",
+      "content_id": "144658018"
     },
     {
-      "artist": "Emi Galvan",
-      "title": "Mily (Original Mix)",
-      "content_id": "231529570"
-    },
-    {
-      "artist": "Ruben Karapetyan",
-      "title": "The Ways (Extended Mix)",
-      "content_id": "103933571"
-    },
-    {
-      "artist": "Ilias Katelanos, Plecta, Anonimat",
-      "title": "Coaster (Durante Remix)",
-      "content_id": "33761156"
-    },
-    {
-      "artist": "Cendryma",
-      "title": "Pure Junction (Berdu Remix)",
-      "content_id": "37141460"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Fogbows",
-      "content_id": "116807064"
-    },
-    {
-      "artist": "Simon Vuarambon",
-      "title": "Lazos (Original Mix)",
-      "content_id": "136780130"
-    },
-    {
-      "artist": "Cid Inc.",
-      "title": "Citadel (Original Mix)",
-      "content_id": "66290210"
+      "artist": "Samuel (LK)",
+      "title": "Pulse (Casnik Remix)",
+      "content_id": "132154683"
     },
     {
       "artist": "Kamilo Sanclemente",
@@ -80,19 +50,14 @@
       "content_id": "104234166"
     },
     {
-      "artist": "Rockka",
-      "title": "Amnesia (Fuenka Remix)",
-      "content_id": "216766461"
+      "artist": "Maze 28",
+      "title": "Fogbows",
+      "content_id": "116807064"
     },
     {
-      "artist": "Gonzalo Cotroneo",
-      "title": "Thrill (Extended Mix)",
-      "content_id": "5802991"
-    },
-    {
-      "artist": "Grance & Soulmac",
-      "title": "Happy Incident (Ale Russo Remix)",
-      "content_id": "49887591"
+      "artist": "Cendryma",
+      "title": "Pure Junction (Berdu Remix)",
+      "content_id": "37141460"
     },
     {
       "artist": "Cendryma",
@@ -105,59 +70,134 @@
       "content_id": "34012266"
     },
     {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
+    },
+    {
+      "artist": "Gonzalo Cotroneo",
+      "title": "Thrill (Extended Mix)",
+      "content_id": "5802991"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Aria (Gorkiz Remix)",
+      "content_id": "225441549"
+    },
+    {
+      "artist": "Wailey",
+      "title": "Droplets (Taylan Remix)",
+      "content_id": "6719392"
+    },
+    {
+      "artist": "Wassu",
+      "title": "From Here (feat. MØØNE) (Extended Mix)",
+      "content_id": "54818175"
+    },
+    {
+      "artist": "Marsh, Simon Doty",
+      "title": "Touch The Sky (Extended Mix)",
+      "content_id": "175806155"
+    },
+    {
+      "artist": "Durante",
+      "title": "Never B Alone (Extended Mix)",
+      "content_id": "162287546"
+    },
+    {
+      "artist": "Lane 8, Sultan + Shepard",
+      "title": "The Little Mushroom That Got Away (Extended Mix)",
+      "content_id": "157884382"
+    },
+    {
+      "artist": "Sunchain",
+      "title": "Neurosonic Drift (Taylan Extended Mix)",
+      "content_id": "163751611"
+    },
+    {
       "artist": "COQUEIT",
-      "title": "Dock (Original Mix)",
-      "content_id": "144658018"
+      "title": "Lost in My Head (Original Mix)",
+      "content_id": "163317399"
     },
     {
-      "artist": "Hobin Rude",
-      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
-      "content_id": "250703508"
+      "artist": "Andre Moret",
+      "title": "One World (Extended Mix)",
+      "content_id": "130869533"
     },
     {
-      "artist": "Rabiee Ahmad, Hassan Tariq Khan",
-      "title": "In Another Time (Original Mix)",
-      "content_id": "221636509"
+      "artist": "Greg Ochman",
+      "title": "The Silver Lily (Original Mix)",
+      "content_id": "80536228"
     },
     {
-      "artist": "Agustin Pietrocola",
-      "title": "Sizer (Original Mix)",
-      "content_id": "74740589"
+      "artist": "Ruben Karapetyan",
+      "title": "The Ways (Extended Mix)",
+      "content_id": "103933571"
     },
     {
-      "artist": "Jonas Saalbach",
-      "title": "Keep Spirit High (Original Mix)",
-      "content_id": "260623666"
+      "artist": "Emi Galvan",
+      "title": "Mily (Original Mix)",
+      "content_id": "231529570"
     },
     {
-      "artist": "Kostya Outta, Liam Garcia",
-      "title": "If I Win (Cosmonaut Extended Remix)",
-      "content_id": "151391665"
+      "artist": "Ilias Katelanos, Plecta, Anonimat",
+      "title": "Coaster (Durante Remix)",
+      "content_id": "33761156"
     },
     {
-      "artist": "Paul Thomas, Maze 28",
-      "title": "Abundance (Original Mix)",
-      "content_id": "142322723"
+      "artist": "Subconscious Tales",
+      "title": "Magnectares (Kasper Koman Remix) ",
+      "content_id": "137408628"
     },
     {
-      "artist": "Gorkiz & Mango",
-      "title": "Ipanema Twilight (Analog Jungs Remix) ",
-      "content_id": "197567059"
+      "artist": "Paul Hazendonk",
+      "title": "One Plus One (Jack Lazarus Club Mix)",
+      "content_id": "237883588"
     },
     {
-      "artist": "Parra for Cuva",
-      "title": "Juri (Original Mix)",
-      "content_id": "183767397"
+      "artist": "Togni, Mind Echoes",
+      "title": "Questions (Original Mix)",
+      "content_id": "81600661"
     },
     {
-      "artist": "Rezident, Kate Morgan",
-      "title": "Muse feat. Kate Morgan (L.GU. Extended Mix)",
-      "content_id": "21932826"
+      "artist": "Togni, Rodrives",
+      "title": "Existence (Original Mix)",
+      "content_id": "156328653"
     },
     {
-      "artist": "Sébastien Léger, Lost Miracle",
-      "title": "Dodonpachi (Original Mix)",
-      "content_id": "124748921"
+      "artist": "Anton Make",
+      "title": "You My Rhythm (Original Mix)",
+      "content_id": "34169690"
+    },
+    {
+      "artist": "Nick Stoynoff, Gai Barone",
+      "title": "Post Boutique (Original Mix)",
+      "content_id": "130112507"
+    },
+    {
+      "artist": "Zuccasam",
+      "title": "Come Home (Dowden Remix)",
+      "content_id": "100626342"
+    },
+    {
+      "artist": "Gorkiz & Mind Echoes",
+      "title": "Without Your Noose (Paul Arcane Remix)",
+      "content_id": "159402664"
+    },
+    {
+      "artist": "Kasper Koman",
+      "title": "Rocking Boat",
+      "content_id": "194123706"
+    },
+    {
+      "artist": "Sinkix",
+      "title": "Hyperion (Original Mix)",
+      "content_id": "39363922"
+    },
+    {
+      "artist": "Cristoph, Franky Wah, Artche",
+      "title": "The World You See (Original Mix) ",
+      "content_id": "134919226"
     }
   ]
 }

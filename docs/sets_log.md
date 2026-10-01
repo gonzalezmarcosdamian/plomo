@@ -3054,34 +3054,32 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22
-**Armado:** 2026-09-30  
+**Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 21  
+**Tracks:** 19  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Durante | Never B Alone (Extended Mix) | 123 | 6.0 |
-| 2 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 6.6 |
-| 3 | Sunchain | Neurosonic Drift (Taylan Extended Mix) | 121 | 6.4 |
-| 4 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 5 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
-| 6 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
-| 7 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 8 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
-| 9 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
-| 10 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
-| 11 | DJ Ruby | Goldrake (Original Mix) | 123 | 4.8 |
-| 12 | Maze 28 | Fogbows | 122 | 6.3 |
-| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 15 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 16 | Ruben Karapetyan | Perceptual Isolation (Original Mix) | 121 | 6.2 |
-| 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 18 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 19 | Ruben Karapetyan | Between the Lines (Original Mix) | 122 | 6.5 |
-| 20 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 21 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 1 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 6.6 |
+| 2 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 3 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
+| 4 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
+| 5 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 6 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 7 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
+| 8 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 9 | DJ Ruby | Goldrake (Original Mix) | 123 | 4.8 |
+| 10 | Maze 28 | Fogbows | 122 | 6.3 |
+| 11 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 13 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 14 | Ruben Karapetyan | Perceptual Isolation (Original Mix) | 121 | 6.2 |
+| 15 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 17 | Ruben Karapetyan | Between the Lines (Original Mix) | 122 | 6.5 |
+| 18 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 19 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 
 
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
@@ -3115,39 +3113,47 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01
 **Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 30  
+**Tracks:** 38  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Maze 28 | Mindloop (Original Mix) | 120 | 5.8 |
-| 2 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 3 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
-| 4 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 5 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 6 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
-| 7 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
-| 8 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
-| 9 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 1 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 2 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
+| 3 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 5 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 6 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 7 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 8 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 9 | Maze 28 | Fogbows | 122 | 6.3 |
 | 10 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
-| 11 | Maze 28 | Fogbows | 122 | 6.3 |
-| 12 | Simon Vuarambon | Lazos (Original Mix) | 120 | 6.4 |
-| 13 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
-| 14 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 15 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 16 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 17 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 6.9 |
-| 18 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 19 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 20 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 21 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 22 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 23 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 24 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
-| 25 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
-| 26 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 27 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
-| 28 | Parra for Cuva | Juri (Original Mix) | 118 | 4.1 |
-| 29 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 30 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 11 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 14 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 15 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 16 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
+| 17 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 18 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 19 | Durante | Never B Alone (Extended Mix) | 123 | 6.0 |
+| 20 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 6.6 |
+| 21 | Sunchain | Neurosonic Drift (Taylan Extended Mix) | 121 | 6.4 |
+| 22 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
+| 23 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 24 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 25 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
+| 26 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
+| 27 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 28 | Subconscious Tales | Magnectares (Kasper Koman Remix)  | 120 | 5.7 |
+| 29 | Paul Hazendonk | One Plus One (Jack Lazarus Club Mix) | 122 | 6.7 |
+| 30 | Togni, Mind Echoes | Questions (Original Mix) | 120 | 6.9 |
+| 31 | Togni, Rodrives | Existence (Original Mix) | 121 | 5.4 |
+| 32 | Anton Make | You My Rhythm (Original Mix) | 121 | 5.9 |
+| 33 | Nick Stoynoff, Gai Barone | Post Boutique (Original Mix) | 123 | 5.5 |
+| 34 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
+| 35 | Gorkiz & Mind Echoes | Without Your Noose (Paul Arcane Remix) | 122 | 5.9 |
+| 36 | Kasper Koman | Rocking Boat | 123 | 5.8 |
+| 37 | Sinkix | Hyperion (Original Mix) | 122 | 6.6 |
+| 38 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
 
