@@ -8,42 +8,22 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set.",
+  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set. | 2026-10-01: todos los temas con la ESTRUCTURA de Fogbows, medida de su receta: UN breakdown de 35 compases, drop final de 77 --32% del tema-- y 5.2 de caida de densidad. Se elige por distancia a esa firma. Quedan los 5 marcados por el DJ. Se exige energia >= 6.3: sin ese piso la forma de Fogbows arrastra el set de 7.0 a 6.2 de mediana, justo despues de que el DJ pidiera subirlos. | reordenado con beam search: el orden greedy --ir eligiendo el vecino mas cercano-- terminaba en un salto de 1A a 6A, cinco pasos de rueda, porque se queda sin opciones al final. Un paso mayor a 2 ahora cuesta 40, o sea prohibido.",
   "tracks": [
     {
-      "artist": "Henry Saiz & Band",
-      "title": "Just A Mirage (Karmon Remix)",
-      "content_id": "156067944"
+      "artist": "PROFF, Volen Sentir",
+      "title": "Luna Amazonia (PM Mix)",
+      "content_id": "211128031"
     },
     {
-      "artist": "Sébastien Léger, Lost Miracle",
-      "title": "Dodonpachi (Original Mix)",
-      "content_id": "124748921"
+      "artist": "Mindlancholic",
+      "title": "Mirages in Space",
+      "content_id": "248152537"
     },
     {
-      "artist": "Chaim",
-      "title": "Sun Tease (Doctor Dru Edit)",
-      "content_id": "221596463"
-    },
-    {
-      "artist": "Guy J",
-      "title": "Illusion (Original Mix)",
-      "content_id": "240528466"
-    },
-    {
-      "artist": "Cezar Nica",
-      "title": "Standard Model",
-      "content_id": "96553758"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Fogbows",
-      "content_id": "116807064"
-    },
-    {
-      "artist": "GMJ",
-      "title": "Stage Flight (Jiminy Hop Remix)",
-      "content_id": "215047356"
+      "artist": "Gonzalo Cotroneo",
+      "title": "Thrill (Extended Mix)",
+      "content_id": "5802991"
     },
     {
       "artist": "Cendryma",
@@ -51,34 +31,19 @@
       "content_id": "75106655"
     },
     {
-      "artist": "Christian Smith",
-      "title": "Mileage Run (Dowden Remix)",
-      "content_id": "188049117"
+      "artist": "Maze 28",
+      "title": "Fogbows",
+      "content_id": "116807064"
     },
     {
-      "artist": "Kamilo Sanclemente & Jossem",
-      "title": "Inner Motion (Original Mix)",
-      "content_id": "205464452"
+      "artist": "Cid Inc.",
+      "title": "Citadel (Original Mix)",
+      "content_id": "66290210"
     },
     {
-      "artist": "Gux Jimenez, Kurt Caesar",
-      "title": "Voryn (Original Mix)",
-      "content_id": "11016180"
-    },
-    {
-      "artist": "Rauschhaus",
-      "title": "Morning Walks",
-      "content_id": "161573466"
-    },
-    {
-      "artist": "Chelakhov",
-      "title": "Rami (Khaaron Remix)",
-      "content_id": "33529972"
-    },
-    {
-      "artist": "Mike Koglin",
-      "title": "The Silence (GMJ & Matter Remix)",
-      "content_id": "164106768"
+      "artist": "Sébastien Léger, Lost Miracle",
+      "title": "Dodonpachi (Original Mix)",
+      "content_id": "124748921"
     },
     {
       "artist": "Gorkiz & Mango",
@@ -86,9 +51,44 @@
       "content_id": "197567059"
     },
     {
-      "artist": "Cid Inc.",
-      "title": "Citadel (Original Mix)",
-      "content_id": "66290210"
+      "artist": "Supacooks",
+      "title": "Echo Groove (Extended Mix)",
+      "content_id": "92223153"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Wayfarer (Extended Mix)",
+      "content_id": "10543890"
+    },
+    {
+      "artist": "Digital Mess, Astral Base",
+      "title": "Turbulence (Extended Mix)",
+      "content_id": "194114969"
+    },
+    {
+      "artist": "Zuccasam",
+      "title": "Feel Happy (Original Mix)",
+      "content_id": "148406361"
+    },
+    {
+      "artist": "Dave Seaman",
+      "title": "Mirrorball Sleaze (12\" Club Mix)",
+      "content_id": "160229080"
+    },
+    {
+      "artist": "Wassu",
+      "title": "From Here (feat. MØØNE) (Extended Mix)",
+      "content_id": "54818175"
+    },
+    {
+      "artist": "Marsh, Simon Doty",
+      "title": "Touch The Sky (Extended Mix)",
+      "content_id": "175806155"
+    },
+    {
+      "artist": "Jark Prongo, Hernan Cattaneo, Chocolate Puma, Brigado Crew",
+      "title": "Movin' Thru Your System (Extended Mix) ",
+      "content_id": "149101778"
     }
   ]
 }

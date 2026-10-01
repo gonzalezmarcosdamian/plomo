@@ -3035,22 +3035,22 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Henry Saiz & Band | Just A Mirage (Karmon Remix) | 122 | 6.4 |
-| 2 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
-| 3 | Chaim | Sun Tease (Doctor Dru Edit) | 122 | 6.5 |
-| 4 | Guy J | Illusion (Original Mix) | 122 | 7.3 |
-| 5 | Cezar Nica | Standard Model | 122 | 6.8 |
-| 6 | Maze 28 | Fogbows | 122 | 6.3 |
-| 7 | GMJ | Stage Flight (Jiminy Hop Remix) | 122 | 5.5 |
-| 8 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 9 | Christian Smith | Mileage Run (Dowden Remix) | 123 | 6.0 |
-| 10 | Kamilo Sanclemente & Jossem | Inner Motion (Original Mix) | 123 | 7.1 |
-| 11 | Gux Jimenez, Kurt Caesar | Voryn (Original Mix) | 122 | 6.8 |
-| 12 | Rauschhaus | Morning Walks | 121 | 7.1 |
-| 13 | Chelakhov | Rami (Khaaron Remix) | 120 | 5.6 |
-| 14 | Mike Koglin | The Silence (GMJ & Matter Remix) | 121 | 7.0 |
-| 15 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
-| 16 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
+| 1 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
+| 2 | Mindlancholic | Mirages in Space | 123 | 6.9 |
+| 3 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 4 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 5 | Maze 28 | Fogbows | 122 | 6.3 |
+| 6 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
+| 7 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 8 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
+| 9 | Supacooks | Echo Groove (Extended Mix) | 123 | 6.7 |
+| 10 | Nicolas Viana | Wayfarer (Extended Mix) | 124 | 6.7 |
+| 11 | Digital Mess, Astral Base | Turbulence (Extended Mix) | 121 | 6.3 |
+| 12 | Zuccasam | Feel Happy (Original Mix) | 125 | 6.6 |
+| 13 | Dave Seaman | Mirrorball Sleaze (12" Club Mix) | 124 | 6.6 |
+| 14 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 15 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 16 | Jark Prongo, Hernan Cattaneo, Chocolate Puma, Brigado Crew | Movin' Thru Your System (Extended Mix)  | 125 | 6.6 |
 
 
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22
