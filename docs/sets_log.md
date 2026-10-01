@@ -2803,7 +2803,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 141. 141. Cumple Zorro · 3 a 5 AM — 2h — 2026-09-22
-**Armado:** 2026-09-30  
+**Armado:** 2026-10-01  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-128  
@@ -2812,12 +2812,12 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 |---|--------|-------|-----|---|
 | 1 | Ignacio Salgado, Ezequiel Perini | Modul8 (Sacha Rener Remix) | 123 | 6.0 |
 | 2 | Rockka | Initiation | 123 | 5.8 |
-| 3 | Kabi (AR), Ric Niels | Mutant | 121 | 7.2 |
+| 3 | ALLKNIGHT | If Here Was Forever (feat. MØØNE) (Extended Mix) | 124 | 7.6 |
 | 4 | KYOTTO | Knock Knock | 121 | 6.1 |
-| 5 | Juan Deminicis | Disorder (Andrea Cassino Remix)  | 122 | 6.7 |
+| 5 | Jamie Stevens | Neofine (Original Mix) | 124 | 6.1 |
 | 6 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 7 | Durante, Mayro | Mantra (Extended Mix) | 124 | 6.0 |
-| 8 | Luttrell, Molly Moonwater | Something Right feat. Molly Moonwater (Ezequiel Arias Extended Mix) | 125 | 6.2 |
+| 7 | Robag Wruhme | Ratibor Numida (Original Mix) | 126 | 5.2 |
+| 8 | 8Kays | Waves (John Digweed & Nick Muir Remix) | 125 | 5.3 |
 | 9 | Maezbi, Nicolas Viana | Smooth (Original Mix) | 123 | 6.8 |
 | 10 | Ruben Karapetyan | 1982 (Matthew Sona Extended Mix) | 121 | 7.1 |
 | 11 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.1 |
@@ -2916,25 +2916,25 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 144. 144. Cumple Zorro · Colorido · 3 a 5 AM — 2h — 2026-09-22
-**Armado:** 2026-09-30  
+**Armado:** 2026-10-01  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-128  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Guy J | Just Rain | 122 | 7.1 |
-| 2 | Rich Trelo, Sineforma | Lost in Brooklyn (Gabbe (AR) Remix) | 123 | 6.4 |
+| 1 | Artic White | Flashback (Extended Mix) | 123 | 6.7 |
+| 2 | Blake Toth, Kilowatt | Valhalla Sonique (Extended Mix) | 126 | 5.4 |
 | 3 | Tobi Amuchastegui | Voices (Original Mix) | 123 | 6.9 |
-| 4 | Tinlicker | All That I Lost | 124 | 6.0 |
-| 5 | Redspace, Diego Riga | Phantom Sun (Extended Mix) | 124 | 6.4 |
-| 6 | D-Nox, Baya, LENN V | Silence (Extended Mix) | 124 | 7.3 |
-| 7 | This Guy Ben | Pulente (Extended Mix) | 124 | 6.4 |
+| 4 | Zankee Gulati | Plonker (Original Mix) | 122 | 5.2 |
+| 5 | Beswerda | All for Me (Original Mix) | 124 | 5.8 |
+| 6 | Teleport-X, DILE (LK) | Sick of All (Redspace Remix) | 124 | 6.9 |
+| 7 | Elliot Moriarty | Only Time (Original Mix) | 123 | 6.0 |
 | 8 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.1 |
-| 9 | Albuquerque, Anonimat | Like First Time Flight (Shai T Extended Remix) | 123 | 6.4 |
+| 9 | Tali Muss, Vakabular | Uniqueness (D-Nox & Ed Steele Remix) | 125 | 6.7 |
 | 10 | Blancah, NeoClassic | Travessia (Hicky & Kalo Remix) | 123 | 7.9 |
-| 11 | Kamilo Sanclemente, Mauro Aguirre | Looking For You (Extended Mix) | 123 | 6.9 |
-| 12 | D-Nox, Stereo Underground | Shooting Stars (Extended Version) | 125 | 7.2 |
+| 11 | Lipa Tazzioli | Complex Society (Original Mix) | 122 | 5.9 |
+| 12 | Ramsay | Call My Name (Cetrini Remix) | 123 | 6.3 |
 | 13 | Colyn | The Future Is the Past | 126 | 6.6 |
 | 14 | This Guy Ben | The Drip (Original Mix) | 124 | 6.8 |
 | 15 | Estiva, Cosmosky | Ecstasy (Extended Mix) | 124 | 6.8 |
