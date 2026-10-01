@@ -3087,7 +3087,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
 **Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 19  
+**Tracks:** 17  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3098,19 +3098,17 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
 | 5 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
 | 6 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 7 | Simon Vuarambon | Lazos (Original Mix) | 120 | 6.4 |
+| 7 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
 | 8 | Maze 28 | Fogbows | 122 | 6.3 |
-| 9 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
-| 10 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 9 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
+| 10 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
 | 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 12 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 14 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 6.9 |
-| 15 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 12 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 13 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 14 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 15 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
 | 16 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
 | 17 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 18 | Låpsley, Franky Wah | Stolen Glances (feat. Låpsley) (Original Mix) | 120 | 6.3 |
-| 19 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
 
 
 ## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01

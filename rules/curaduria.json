@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.20.1",
+  "version": "1.21.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -30,6 +30,14 @@
     "cambios": [
      "groove.piso_densidad ELIMINADO: lo refuto Sizer, que la regla predijo mal por escrito",
      "groove.piso_graves queda solo, 11/12, con Milo como excepcion abierta"
+    ]
+   },
+   {
+    "version": "1.21.0",
+    "fecha": "2026-10-01",
+    "cambios": [
+     "sonido_del_150: el perfil medido del set que el DJ aprobo tema por tema",
+     "queda escrito lo que NO se puede medir: tecnoso, cambia-el-groove sin cambio de densidad, drop iglesia"
     ]
    }
   ]
@@ -1074,5 +1082,33 @@
    "evidencia": "2026-09-30: de 13 temas bajados con 'feat.' en el credito, 4 midieron instrumental --We Were There 21%, Cosmic Love feat. GAALIA 19%, Get Lost feat. Flor Pavone 29%, Aria 24%--. Y al reves: 'If I Had Wings' promete voz y da 0%, 'Just Rain' 1%. Sirve para armar el batch, no para decidir.",
    "lee": "nadie todavia"
   }
+ },
+ "sonido_del_150": {
+  "_que_es": "El perfil medido del set 150, que el DJ llamo 'muy de lo que quiero' el 2026-10-01. No son umbrales inventados: son los percentiles del set que el aprobo tema por tema despues de siete vueltas de escucha, sacando 13 y dejando 17.",
+  "_como_se_uso": "Estos numeros FILTRAN candidatos; no eligen. Lo que elige sigue siendo, en orden: lo que el DJ dijo textual, lo que ya toco (data/vecinos_tocados.json), y recien despues el numero.",
+  "graves_minimo": {
+   "valor": 43.1,
+   "porque": "El tema mas bajo de graves que el DJ dejo en el set. Debajo de eso saco todo lo que probo.",
+   "evidencia": "2026-10-01: minimo 43.1, mediana 50.6 sobre 17 temas."
+  },
+  "densidad_banda": {
+   "valor": [
+    10.8,
+    14.7
+   ],
+   "porque": "Donde vive el groove del set. El DJ saca por igual lo que queda abajo y lo que se dispara.",
+   "evidencia": "2026-10-01: p10 a p90 del 150. Mediana 14.0."
+  },
+  "secciones_maximo": {
+   "valor": 8,
+   "porque": "Temas que van a un lugar y se quedan, no que van y vuelven. Es lo que el DJ viene eligiendo desde que puso a Fogbows de modelo y dijo 'demasiado bajada' de Satori.",
+   "evidencia": "2026-10-01: saco Just A Mirage, que tiene 13 secciones y drop del 2%."
+  },
+  "drop_minimo": {
+   "valor": 0.15,
+   "porque": "Cuanto del tema es el drop final. Abundance, su modelo, llega al 45%.",
+   "evidencia": "2026-10-01: p10 del 150. Mediana 37%."
+  },
+  "_lo_que_NO_se_puede_medir": "Tres cosas que el DJ dice y el proyecto no sabe medir, anotadas para no fingir que si:\n1. TECNOSO. Tres casos etiquetados --High On, Muse, Dock-- con densidad 11.6 / 8.3 / 14.0, color p16 / p97 / p68 y graves 66 / 42 / 59. No comparten nada.\n2. 'CAMBIA EL GROOVE' sin cambio de densidad. Happy Incident esta a +0.5 de la mediana del set e If I Win a 0.0, y los saco a los dos.\n3. 'DROP MUY IGLESIA'. El ataque melodico da 8.5 en Orb, mas alto que Wakefeld (5.8) que el aprueba. Ademas color_melodico mide al 45% del tema y no en el breakdown."
  }
 }

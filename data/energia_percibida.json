@@ -120,10 +120,16 @@
     "E_calc": 6.4,
     "nota": "temazo, mi sonido",
     "favorito": true,
-    "fuente": "escucha del set 140 (warm del cumple de Zorro), 2026-09-22",
+    "fuente": "escucha del 150, 2026-10-01",
     "momentos": [
       "warm"
-    ]
+    ],
+    "nota_150": "lazos muy abajo",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "lazos muy abajo"
+    }
   },
   "183767397": {
     "artist": "Parra for Cuva",
@@ -170,10 +176,16 @@
     "E_calc": 6.9,
     "nota": "muy bueno",
     "favorito": true,
-    "fuente": "escucha del set 140 v2 (warm), 2026-09-22",
+    "fuente": "escucha del 150, 2026-10-01",
     "momentos": [
       "warm"
-    ]
+    ],
+    "nota_150": "happy incidents cambia el groove",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "happy incidents cambia el groove"
+    }
   },
   "156983367": {
     "artist": "Kasper Koman",
@@ -235,13 +247,19 @@
     "title": "If I Win (Cosmonaut Extended Remix)",
     "E_calc": 6.3,
     "nota": "temazo total, mi musica",
-    "fuente": "escucha del set 143, 2026-09-23",
+    "fuente": "escucha del 150, 2026-10-01",
     "favorito": true,
     "momentos": [
       "warm",
       "pico",
       "cierre"
-    ]
+    ],
+    "nota_150": "if i win, nada que ver",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "if i win, nada que ver"
+    }
   },
   "43250172": {
     "artist": "Guy J",
@@ -597,7 +615,13 @@
     "E_calc": 7.1,
     "favorito": true,
     "nota": "TREMENDO TEMA, el mas tecnoso y linda frase",
-    "fuente": "escucha del 143, 2026-09-29"
+    "fuente": "escucha del 150, 2026-10-01",
+    "nota_150": "muse muy cambio de groove",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "muse muy cambio de groove"
+    }
   },
   "162072169": {
     "artist": "Andy Moor & Adam White",
@@ -1055,6 +1079,17 @@
       "alcance": "el set 150",
       "fecha": "2026-10-01",
       "textual": "del 150 saca dondonpachi citadel mirages in space; perpetual tambien cambialo"
+    }
+  },
+  "240028414": {
+    "artist": "Låpsley, Franky Wah",
+    "title": "Stolen Glances (feat. Låpsley) (Original Mix)",
+    "nota_150": "stolen, nada que ver",
+    "fuente": "escucha del 150, 2026-10-01",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "stolen, nada que ver"
     }
   }
 }
