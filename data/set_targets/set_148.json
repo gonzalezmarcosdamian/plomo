@@ -8,7 +8,7 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale.",
+  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set.",
   "tracks": [
     {
       "artist": "Henry Saiz & Band",
@@ -41,9 +41,9 @@
       "content_id": "116807064"
     },
     {
-      "artist": "Eli Nissan",
-      "title": "Naked ",
-      "content_id": "14636373"
+      "artist": "GMJ",
+      "title": "Stage Flight (Jiminy Hop Remix)",
+      "content_id": "215047356"
     },
     {
       "artist": "Cendryma",
@@ -51,29 +51,29 @@
       "content_id": "75106655"
     },
     {
-      "artist": "Cary Crank",
-      "title": "Inner Atlas (Kyotto Remix)",
-      "content_id": "112359333"
+      "artist": "Christian Smith",
+      "title": "Mileage Run (Dowden Remix)",
+      "content_id": "188049117"
     },
     {
-      "artist": "Brian Cid",
-      "title": "Allure (Original Mix)",
-      "content_id": "214561412"
+      "artist": "Kamilo Sanclemente & Jossem",
+      "title": "Inner Motion (Original Mix)",
+      "content_id": "205464452"
     },
     {
-      "artist": "Kabi (AR), Ric Niels",
-      "title": "Mutant",
-      "content_id": "165429937"
+      "artist": "Gux Jimenez, Kurt Caesar",
+      "title": "Voryn (Original Mix)",
+      "content_id": "11016180"
     },
     {
-      "artist": "Fordal",
-      "title": "Luminize (Original Mix)",
-      "content_id": "174666228"
+      "artist": "Rauschhaus",
+      "title": "Morning Walks",
+      "content_id": "161573466"
     },
     {
-      "artist": "Spencer Brown",
-      "title": "Blue Magic (feat. Danny Shamoun)",
-      "content_id": "190819323"
+      "artist": "Chelakhov",
+      "title": "Rami (Khaaron Remix)",
+      "content_id": "33529972"
     },
     {
       "artist": "Mike Koglin",

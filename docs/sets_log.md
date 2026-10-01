@@ -3028,7 +3028,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 148. 148. Housero Progresivo · 1 a 3 AM — 2h — 2026-09-28
-**Armado:** 2026-09-30  
+**Armado:** 2026-10-01  
 **Duracion:** 2.0h  
 **Tracks:** 16  
 **BPM range:** 119-127  
@@ -3041,13 +3041,13 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 4 | Guy J | Illusion (Original Mix) | 122 | 7.3 |
 | 5 | Cezar Nica | Standard Model | 122 | 6.8 |
 | 6 | Maze 28 | Fogbows | 122 | 6.3 |
-| 7 | Eli Nissan | Naked  | 122 | 6.1 |
+| 7 | GMJ | Stage Flight (Jiminy Hop Remix) | 122 | 5.5 |
 | 8 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 9 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 6.8 |
-| 10 | Brian Cid | Allure (Original Mix) | 122 | 7.8 |
-| 11 | Kabi (AR), Ric Niels | Mutant | 121 | 7.2 |
-| 12 | Fordal | Luminize (Original Mix) | 124 | 7.5 |
-| 13 | Spencer Brown | Blue Magic (feat. Danny Shamoun) | 123 | 6.9 |
+| 9 | Christian Smith | Mileage Run (Dowden Remix) | 123 | 6.0 |
+| 10 | Kamilo Sanclemente & Jossem | Inner Motion (Original Mix) | 123 | 7.1 |
+| 11 | Gux Jimenez, Kurt Caesar | Voryn (Original Mix) | 122 | 6.8 |
+| 12 | Rauschhaus | Morning Walks | 121 | 7.1 |
+| 13 | Chelakhov | Rami (Khaaron Remix) | 120 | 5.6 |
 | 14 | Mike Koglin | The Silence (GMJ & Matter Remix) | 121 | 7.0 |
 | 15 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
 | 16 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
