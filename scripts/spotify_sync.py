@@ -391,6 +391,17 @@ def main() -> None:
             estado = "creada"
         else:
             estado = "actualizada"
+        # RENOMBRAR SI EL SET CAMBIO DE NOMBRE. El sync resuelve la lista por id
+        # y le reemplaza el contenido, pero nunca le tocaba el nombre: al
+        # renombrar un set en su receta, Spotify quedaba con el nombre viejo y
+        # spotify_validar.py --que busca por nombre-- lo daba por inexistente.
+        try:
+            actual = sp.get(f"/playlists/{pid}").get("name")
+            if actual and actual != nombre:
+                sp.put(f"/playlists/{pid}", {"name": nombre})
+                print(f"  renombrada: {actual!r} -> {nombre!r}")
+        except Exception as e:
+            print(f"  (no se pudo renombrar: {e})")
         sp.put(f"/playlists/{pid}/items", {"uris": uris[:100]})
         for i in range(100, len(uris), 100):
             sp.post(f"/playlists/{pid}/items", {"uris": uris[i:i + 100]})

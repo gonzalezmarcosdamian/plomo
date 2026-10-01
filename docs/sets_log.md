@@ -3092,21 +3092,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Maze 28 | Fogbows | 122 | 6.3 |
-| 2 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 3 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 4 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
-| 5 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
-| 6 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 7 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
-| 8 | John Keding | Perpetual (Hobin Rude Extended Remix) | 122 | 6.6 |
-| 9 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
-| 10 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 11 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 12 | Dave Seaman | Mirrorball Sleaze (12" Club Mix) | 124 | 6.6 |
-| 13 | CamelPhat & ARTBAT | For a Feeling (feat. RHODES) [Dark Matter Edit] | 122 | 7.0 |
-| 14 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 15 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
-| 16 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 17 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 1 | Ziger & Mind Conspiracy | The Light (Original) | 122 | 6.5 |
+| 2 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 3 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 4 | Mindlancholic | Mirages in Space | 123 | 6.9 |
+| 5 | K Loveski | Amuja (Unusual Soul Remix) | 122 | 7.7 |
+| 6 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 7 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
+| 8 | Rauschhaus | Morning Walks | 121 | 7.1 |
+| 9 | Gonzalo Cotroneo | Dark Rain (Extended Mix) | 121 | 7.3 |
+| 10 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 11 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 12 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
+| 13 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 14 | John Cosani | Power Pink | 122 | 7.3 |
+| 15 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
+| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
 
