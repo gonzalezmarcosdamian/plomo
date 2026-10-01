@@ -3087,26 +3087,23 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
 **Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 17  
+**Tracks:** 14  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Ziger & Mind Conspiracy | The Light (Original) | 122 | 6.5 |
-| 2 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 3 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 4 | Mindlancholic | Mirages in Space | 123 | 6.9 |
-| 5 | K Loveski | Amuja (Unusual Soul Remix) | 122 | 7.7 |
-| 6 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 7 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
-| 8 | Rauschhaus | Morning Walks | 121 | 7.1 |
-| 9 | Gonzalo Cotroneo | Dark Rain (Extended Mix) | 121 | 7.3 |
-| 10 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 11 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 12 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
-| 13 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 14 | John Cosani | Power Pink | 122 | 7.3 |
-| 15 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
-| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 17 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 1 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 2 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
+| 3 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 5 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 6 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 7 | Maze 28 | Fogbows | 122 | 6.3 |
+| 8 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
+| 9 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 10 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 11 | Mindlancholic | Mirages in Space | 123 | 6.9 |
+| 12 | John Keding | Perpetual (Hobin Rude Extended Remix) | 122 | 6.6 |
+| 13 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 14 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
 

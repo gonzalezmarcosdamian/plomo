@@ -3,12 +3,13 @@
     "artist": "Agustin Pietrocola",
     "title": "Sizer (Original Mix)",
     "E_calc": 5.2,
-    "nota": "deberia ir mas adelante, mas peak",
-    "fuente": "escucha del set 139 (cumple Zorro), 2026-09-21",
+    "nota": "sizer muy bien",
+    "fuente": "escucha del 150, 2026-10-01",
     "E": 7.7,
     "groove_ok": true,
     "nota_groove": "en mi oido sizer entra",
-    "fuente_groove": "escucha del 149, 2026-09-30"
+    "fuente_groove": "escucha del 149, 2026-09-30",
+    "favorito": true
   },
   "175806155": {
     "artist": "Marsh, Simon Doty",
@@ -330,8 +331,8 @@
     "artist": "Rabiee Ahmad, Hassan Tariq Khan",
     "title": "In Another Time (Original Mix)",
     "E_calc": 7.5,
-    "nota": "lo pidio para el set y para mi sonido",
-    "fuente": "pedido del DJ, 2026-09-24",
+    "nota": "in another time esta bien muy",
+    "fuente": "escucha del 150, 2026-10-01",
     "favorito": true,
     "momentos": [
       "pico",
@@ -934,6 +935,104 @@
     "referencia_de": "modelo del set 150",
     "favorito": true,
     "nota": "abundance deberia ser modelo del 50",
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "115510727": {
+    "artist": "K Loveski",
+    "title": "Amuja (Unusual Soul Remix)",
+    "E_calc": 7.7,
+    "nota": "amuja muy oscuro tambien cambio",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "amuja muy oscuro"
+    },
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "5802991": {
+    "artist": "Gonzalo Cotroneo",
+    "title": "Thrill (Extended Mix)",
+    "E_calc": 7.2,
+    "nota": "thrill perfecto, muy bien",
+    "favorito": true,
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "250713787": {
+    "artist": "John Cosani",
+    "title": "Power Pink",
+    "E_calc": 7.3,
+    "nota": "power pink cambia el groove",
+    "fuente": "escucha del 150, 2026-10-01",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "power pink cambia el groove cambialo"
+    },
+    "groove_ok": false
+  },
+  "260623666": {
+    "artist": "Jonas Saalbach",
+    "title": "Keep Spirit High (Original Mix)",
+    "E_calc": 7.7,
+    "nota": "keep spirit high bien heroico puede andar ahi",
+    "fuente": "escucha del 150, 2026-10-01",
+    "favorito": true,
+    "rol": "heroico",
+    "_correccion": "lo habia sacado yo por color p15, aplicando a los tres oscuros el criterio que el DJ dio sobre Amuja. El DJ lo escucho y dijo que ahi esta bien: el color bajo no lo molesta cuando el tema es heroico. Generalizar un veto a temas que el DJ no nombro fue de mas."
+  },
+  "161573466": {
+    "artist": "Rauschhaus",
+    "title": "Morning Walks",
+    "E_calc": 7.1,
+    "nota": "morning walks la baja",
+    "fuente": "escucha del 150, 2026-10-01",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "morning walks la baja"
+    }
+  },
+  "77870371": {
+    "artist": "MuscleDyke",
+    "title": "Dark White (Mind Echoes Remix)",
+    "E_calc": 6.5,
+    "nota": "dark white antes que los 3 primeros",
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "14113136": {
+    "artist": "Gonzalo Cotroneo",
+    "title": "Dark Rain (Extended Mix)",
+    "E_calc": 7.3,
+    "nota": "dark rain tambien antes de los primeros",
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "34012266": {
+    "artist": "Tom Pavicich",
+    "title": "Olimpo (Ignacio Berardi Remix)",
+    "E_calc": 7.9,
+    "favorito": true,
+    "nota": "olimpo bien",
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "144658018": {
+    "artist": "COQUEIT",
+    "title": "Dock (Original Mix)",
+    "E_calc": 7.0,
+    "favorito": true,
+    "groove_ok": true,
+    "nota": "dock tecnoso bien, puede andar en esa ubicacion",
+    "fuente": "escucha del 150, 2026-10-01"
+  },
+  "44311136": {
+    "artist": "Envotion",
+    "title": "Adrift (Sebastian Sellares Remix)",
+    "E_calc": 6.6,
+    "nota": "adrift muy heroico, tal vez mas al final o cambiarlo por mas energetico",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "adrift muy heroico"
+    },
     "fuente": "escucha del 150, 2026-10-01"
   }
 }
