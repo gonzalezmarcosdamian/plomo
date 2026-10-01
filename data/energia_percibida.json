@@ -866,5 +866,65 @@
       "textual": "saque temas",
       "medido": "breakdown 47 compases, bajadas 26% del tema"
     }
+  },
+  "74083421": {
+    "artist": "Sultan + Shepard",
+    "title": "Indigo (Extended Mix)",
+    "nota": "lo saco de la lista en Spotify, segunda vuelta",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "otra vez saque",
+      "medido": "9 secciones, drop 26% del tema"
+    }
+  },
+  "79685574": {
+    "artist": "Kebin Van Reeken",
+    "title": "Mycelium (Extended Mix)",
+    "nota": "lo saco de la lista en Spotify, segunda vuelta",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "otra vez saque",
+      "medido": "10 secciones, drop 28% del tema"
+    }
+  },
+  "156067944": {
+    "artist": "Henry Saiz & Band",
+    "title": "Just A Mirage (Karmon Remix)",
+    "nota": "lo saco de la lista en Spotify, segunda vuelta",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "otra vez saque",
+      "medido": "13 secciones, drop 2% del tema"
+    }
+  },
+  "211128031": {
+    "artist": "PROFF, Volen Sentir",
+    "title": "Luna Amazonia (PM Mix)",
+    "nota": "lo saco de la lista en Spotify, segunda vuelta",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "otra vez saque",
+      "medido": "4 secciones, drop 36% del tema"
+    }
+  },
+  "18489049": {
+    "artist": "Mike Kohl",
+    "title": "Deep Waters (Original Mix)",
+    "nota": "lo saco de la lista en Spotify, segunda vuelta",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "otra vez saque",
+      "medido": "4 secciones, drop 34% del tema"
+    }
   }
 }

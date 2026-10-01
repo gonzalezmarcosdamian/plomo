@@ -3035,21 +3035,21 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Sultan + Shepard | Indigo (Extended Mix) | 122 | 6.3 |
-| 2 | Kebin Van Reeken | Mycelium (Extended Mix) | 122 | 6.3 |
-| 3 | Aman Anand & Da Luka | Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix) | 122 | 6.3 |
-| 4 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
-| 5 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 6 | Henry Saiz & Band | Just A Mirage (Karmon Remix) | 122 | 6.4 |
-| 7 | Maze 28 | Fogbows | 122 | 6.3 |
-| 8 | Rauschhaus | Morning Walks | 121 | 7.1 |
-| 9 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
-| 10 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 11 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 12 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
-| 13 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
-| 14 | Mindlancholic | Mirages in Space | 123 | 6.9 |
-| 15 | Mike Kohl | Deep Waters (Original Mix) | 122 | 7.0 |
+| 1 | Aman Anand & Da Luka | Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix) | 122 | 6.3 |
+| 2 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
+| 3 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 4 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 5 | Digital Mess, Astral Base | Turbulence (Extended Mix) | 121 | 6.3 |
+| 6 | Maze 28 | Fogbows | 122 | 6.3 |
+| 7 | Rauschhaus | Morning Walks | 121 | 7.1 |
+| 8 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
+| 9 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 10 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 11 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
+| 12 | Mindlancholic | Mirages in Space | 123 | 6.9 |
+| 13 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
+| 14 | Rabiee Ahmad, Hassan Tariq Khan | Terminator (Original Mix) | 123 | 6.2 |
+| 15 | Ziger & Mind Conspiracy | The Light (Original) | 122 | 6.5 |
 | 16 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
 
 

@@ -8,18 +8,8 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set. | 2026-10-01: todos los temas con la ESTRUCTURA de Fogbows, medida de su receta: UN breakdown de 35 compases, drop final de 77 --32% del tema-- y 5.2 de caida de densidad. Se elige por distancia a esa firma. Quedan los 5 marcados por el DJ. Se exige energia >= 6.3: sin ese piso la forma de Fogbows arrastra el set de 7.0 a 6.2 de mediana, justo despues de que el DJ pidiera subirlos. | reordenado con beam search: el orden greedy --ir eligiendo el vecino mas cercano-- terminaba en un salto de 1A a 6A, cinco pasos de rueda, porque se queda sin opciones al final. Un paso mayor a 2 ahora cuesta 40, o sea prohibido. | 2026-10-01: 'quita los que esten mas abajo y que no mantengan el groove, no tenes limitaciones en este set'. Se subieron los dos pisos a la vez: energia 6.5 y graves 48 para quedarse, y los que entran tienen que superar 6.6 y 50. Salieron 5, DOS DE ELLOS MARCADOS POR EL DJ --Wakefeld, que era favorito pero tiene los graves mas bajos del set (43.1), e Ipanema Twilight, que es su referencia de groove pero es el mas bajo de energia (5.9)--. Se tocaron porque el DJ levanto la restriccion para este set en particular. Fogbows se queda: es el modelo con el que se armo. | corregido: habia entrado 'Low Era (Original Mix)', que es OTRA VERSION de un tema que el DJ llamo 'oscuro, baja energia' en el 139. El veto estaba anotado sobre el remix y la busqueda miraba el ContentID, no el titulo. Ahora se descarta cualquier version de un titulo que el DJ rechazo. | 2026-10-01: 'from here es modelo, saca echo sound y wisper, mete mas de este tipo' + 'tambien cambia don don pachi y citadel'. El modelo del set pasa de Fogbows a From Here, que es otra cosa: misma forma (breakdown 33, drop 73) pero densidad 12.5 --abajo del piso que yo usaba--, graves 49.8, color p84, 7.8dB de rango y voz al 87%. O sea cantado, brillante y que respira. Los cuatro que entran cumplen graves>=48, color>=p70 y rango>=4.5. Salen Dodonpachi, que era el cierre heroico, y Citadel, que era favorito: el DJ los saco de este set. | corregido: Rosea (2B) quedaba aislado --4 pasos de rueda del resto del set-- porque el filtro miraba atributos y forma pero no si la key ENCAJABA con las que ya estan. Ahora se exige que el candidato tenga al menos dos temas del set a un paso de rueda o menos. | 2026-10-01: el DJ saco 6 temas a mano en Spotify y pidio 'mas parecidos a los que quedaron'. Comparando los 10 que dejo contra los 6 que saco: lo que separa NO es el groove --los que saco tienen MAS graves, 58.8 contra 52.1-- sino el BREAKDOWN: 31 compases los que quedan contra 44 los que saco, y bajadas del 16% contra 26%. Probada condicion por condicion contra sus 16 decisiones, 'breakdown <= 35' sola acierta 14/16; agregarle densidad y color la baja a 9/16. Se usa la simple. | 2026-10-01: el DJ saco 6 a mano en Spotify y pidio mas parecidos a los que dejo. Lo que separa sus decisiones NO es el groove --los que saco tienen MAS graves, 58.8 contra 52.1-- sino el BREAKDOWN: 31 compases los que quedan contra 44 los que saco. Probada condicion por condicion contra sus 16 decisiones, 'breakdown <= 35' sola acierta 14/16; sumarle densidad y color la baja a 9/16, asi que se usa la simple. Se priorizaron candidatos en 9A/10A para que el bloque de 8A llegue al par de 11A sin un salto de 3.",
+  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set. | 2026-10-01: todos los temas con la ESTRUCTURA de Fogbows, medida de su receta: UN breakdown de 35 compases, drop final de 77 --32% del tema-- y 5.2 de caida de densidad. Se elige por distancia a esa firma. Quedan los 5 marcados por el DJ. Se exige energia >= 6.3: sin ese piso la forma de Fogbows arrastra el set de 7.0 a 6.2 de mediana, justo despues de que el DJ pidiera subirlos. | reordenado con beam search: el orden greedy --ir eligiendo el vecino mas cercano-- terminaba en un salto de 1A a 6A, cinco pasos de rueda, porque se queda sin opciones al final. Un paso mayor a 2 ahora cuesta 40, o sea prohibido. | 2026-10-01: 'quita los que esten mas abajo y que no mantengan el groove, no tenes limitaciones en este set'. Se subieron los dos pisos a la vez: energia 6.5 y graves 48 para quedarse, y los que entran tienen que superar 6.6 y 50. Salieron 5, DOS DE ELLOS MARCADOS POR EL DJ --Wakefeld, que era favorito pero tiene los graves mas bajos del set (43.1), e Ipanema Twilight, que es su referencia de groove pero es el mas bajo de energia (5.9)--. Se tocaron porque el DJ levanto la restriccion para este set en particular. Fogbows se queda: es el modelo con el que se armo. | corregido: habia entrado 'Low Era (Original Mix)', que es OTRA VERSION de un tema que el DJ llamo 'oscuro, baja energia' en el 139. El veto estaba anotado sobre el remix y la busqueda miraba el ContentID, no el titulo. Ahora se descarta cualquier version de un titulo que el DJ rechazo. | 2026-10-01: 'from here es modelo, saca echo sound y wisper, mete mas de este tipo' + 'tambien cambia don don pachi y citadel'. El modelo del set pasa de Fogbows a From Here, que es otra cosa: misma forma (breakdown 33, drop 73) pero densidad 12.5 --abajo del piso que yo usaba--, graves 49.8, color p84, 7.8dB de rango y voz al 87%. O sea cantado, brillante y que respira. Los cuatro que entran cumplen graves>=48, color>=p70 y rango>=4.5. Salen Dodonpachi, que era el cierre heroico, y Citadel, que era favorito: el DJ los saco de este set. | corregido: Rosea (2B) quedaba aislado --4 pasos de rueda del resto del set-- porque el filtro miraba atributos y forma pero no si la key ENCAJABA con las que ya estan. Ahora se exige que el candidato tenga al menos dos temas del set a un paso de rueda o menos. | 2026-10-01: el DJ saco 6 temas a mano en Spotify y pidio 'mas parecidos a los que quedaron'. Comparando los 10 que dejo contra los 6 que saco: lo que separa NO es el groove --los que saco tienen MAS graves, 58.8 contra 52.1-- sino el BREAKDOWN: 31 compases los que quedan contra 44 los que saco, y bajadas del 16% contra 26%. Probada condicion por condicion contra sus 16 decisiones, 'breakdown <= 35' sola acierta 14/16; agregarle densidad y color la baja a 9/16. Se usa la simple. | 2026-10-01: el DJ saco 6 a mano en Spotify y pidio mas parecidos a los que dejo. Lo que separa sus decisiones NO es el groove --los que saco tienen MAS graves, 58.8 contra 52.1-- sino el BREAKDOWN: 31 compases los que quedan contra 44 los que saco. Probada condicion por condicion contra sus 16 decisiones, 'breakdown <= 35' sola acierta 14/16; sumarle densidad y color la baja a 9/16, asi que se usa la simple. Se priorizaron candidatos en 9A/10A para que el bloque de 8A llegue al par de 11A sin un salto de 3. | 2026-10-01 segunda vuelta: el DJ saco 5 mas. El criterio CAMBIO: ahora lo que separa sus decisiones es SECCIONES y LARGO DEL DROP --5 secciones y drop del 40% los que deja, contra 9 secciones y 28% los que saca--. La regla de ayer (breakdown <= 35) ya no explica estas: acierta menos que 'secciones <= 8', que da 13/16. Entra lo que tenga <= 8 secciones y drop >= 30% del tema: temas que van a un lugar y se quedan, en vez de ir y volver muchas veces. | 2026-10-01 segunda vuelta: el criterio del DJ CAMBIO. Ya no lo explica el breakdown sino SECCIONES y LARGO DEL DROP: deja temas de 5 secciones con drop del 40%, saca los de 9 secciones con drop del 28%. 'Secciones <= 8' sola acierta 13/16 contra sus decisiones. Entra lo que tenga <= 8 secciones y drop >= 30%: temas que van a un lugar y se quedan. Dos candidatos se eligieron en 9A/10A a proposito, para que el bloque de 8A llegue al de 11A sin saltar 4 pasos de rueda.",
   "tracks": [
-    {
-      "artist": "Sultan + Shepard",
-      "title": "Indigo (Extended Mix)",
-      "content_id": "74083421"
-    },
-    {
-      "artist": "Kebin Van Reeken",
-      "title": "Mycelium (Extended Mix)",
-      "content_id": "79685574"
-    },
     {
       "artist": "Aman Anand & Da Luka",
       "title": "Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix)",
@@ -36,9 +26,14 @@
       "content_id": "142322723"
     },
     {
-      "artist": "Henry Saiz & Band",
-      "title": "Just A Mirage (Karmon Remix)",
-      "content_id": "156067944"
+      "artist": "COQUEIT",
+      "title": "Dock (Original Mix)",
+      "content_id": "144658018"
+    },
+    {
+      "artist": "Digital Mess, Astral Base",
+      "title": "Turbulence (Extended Mix)",
+      "content_id": "194114969"
     },
     {
       "artist": "Maze 28",
@@ -66,14 +61,9 @@
       "content_id": "54818175"
     },
     {
-      "artist": "Albuquerque, Anonimat",
-      "title": "Like First Time Flight (Extended Mix)",
-      "content_id": "92106172"
-    },
-    {
-      "artist": "PROFF, Volen Sentir",
-      "title": "Luna Amazonia (PM Mix)",
-      "content_id": "211128031"
+      "artist": "Hernan Cattaneo, Khen",
+      "title": "Rogelito (Original Mix)",
+      "content_id": "173790116"
     },
     {
       "artist": "Mindlancholic",
@@ -81,9 +71,19 @@
       "content_id": "248152537"
     },
     {
-      "artist": "Mike Kohl",
-      "title": "Deep Waters (Original Mix)",
-      "content_id": "18489049"
+      "artist": "Albuquerque, Anonimat",
+      "title": "Like First Time Flight (Extended Mix)",
+      "content_id": "92106172"
+    },
+    {
+      "artist": "Rabiee Ahmad, Hassan Tariq Khan",
+      "title": "Terminator (Original Mix)",
+      "content_id": "41405074"
+    },
+    {
+      "artist": "Ziger & Mind Conspiracy",
+      "title": "The Light (Original)",
+      "content_id": "266671052"
     },
     {
       "artist": "Marsh, Simon Doty",
