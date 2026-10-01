@@ -792,5 +792,19 @@
       "fecha": "2026-10-01",
       "textual": "saca wisper"
     }
+  },
+  "185957804": {
+    "artist": "Analog Jungs feat. Abi Ferraresi",
+    "title": "Satori (Original Mix) ",
+    "E_calc": 7.5,
+    "nota": "satori demasiado es, la idea esta pero demasiado bajada y voces; el groove esta bien en partes",
+    "groove_ok": true,
+    "fuente": "escucha del 150, 2026-10-01",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "satori demasiado es, la idea esta pero demasiado bajada y voces",
+      "medido": "breakdown de 47 compases de corrido (23% del tema) y voz al 100% de presencia"
+    }
   }
 }

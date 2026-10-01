@@ -7,7 +7,7 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": "2026-10-01: 'un 3er set con la mezcla de lo mejor del housero y el colorido'. Ocho del 148, ocho del 149 y Fogbows, que estaba en los dos. 'Lo mejor' se puntuo con lo que se sostuvo esta semana: las marcas del DJ pesan mas que cualquier medicion (favorito 2.0, rol 1.5, referencia 1.5), despues los graves --la regla de groove que dio 11/12 con dos aciertos fuera de muestra--, despues el color, y la voz suma. Un tema por artista. Dodonpachi cierra: es su cierre heroico. Se repiten temas con el 148 y el 149 A PROPOSITO: son tres versiones de la misma noche para elegir una, no tres sets para tocar seguidos.",
+  "_nota": "2026-10-01: 'un 3er set con la mezcla de lo mejor del housero y el colorido'. Ocho del 148, ocho del 149 y Fogbows, que estaba en los dos. 'Lo mejor' se puntuo con lo que se sostuvo esta semana: las marcas del DJ pesan mas que cualquier medicion (favorito 2.0, rol 1.5, referencia 1.5), despues los graves --la regla de groove que dio 11/12 con dos aciertos fuera de muestra--, despues el color, y la voz suma. Un tema por artista. Dodonpachi cierra: es su cierre heroico. Se repiten temas con el 148 y el 149 A PROPOSITO: son tres versiones de la misma noche para elegir una, no tres sets para tocar seguidos. | 2026-10-01: sale Satori. El DJ: 'demasiado es, la idea esta pero demasiado bajada y voces; el groove esta bien en partes'. Medido, la queja es estructural: Satori tiene UN breakdown de 47 compases de corrido, el 23% del tema, y solo tres secciones (groove 48 / breakdown 47 / drop 113); ademas voz al 100% de presencia. From Here, que el DJ puso de modelo, tiene el breakdown en 33 y lo parte con un respiro. Entra John Keding - Perpetual (Hobin Rude Extended Remix): breakdown de 25 compases, bajadas 11% --menos de la mitad que Satori-- y graves 62.3, los mas altos de los candidatos.",
   "tracks": [
     {
       "artist": "Maze 28",
@@ -45,14 +45,14 @@
       "content_id": "211128031"
     },
     {
+      "artist": "John Keding",
+      "title": "Perpetual (Hobin Rude Extended Remix)",
+      "content_id": "124315085"
+    },
+    {
       "artist": "Albuquerque, Anonimat",
       "title": "Like First Time Flight (Extended Mix)",
       "content_id": "92106172"
-    },
-    {
-      "artist": "Wassu",
-      "title": "From Here (feat. MØØNE) (Extended Mix)",
-      "content_id": "54818175"
     },
     {
       "artist": "Marsh, Simon Doty",
@@ -60,9 +60,9 @@
       "content_id": "175806155"
     },
     {
-      "artist": "Analog Jungs feat. Abi Ferraresi",
-      "title": "Satori (Original Mix) ",
-      "content_id": "185957804"
+      "artist": "Wassu",
+      "title": "From Here (feat. MØØNE) (Extended Mix)",
+      "content_id": "54818175"
     },
     {
       "artist": "Dave Seaman",

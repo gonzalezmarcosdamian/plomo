@@ -3099,10 +3099,10 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 5 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
 | 6 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 7 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
-| 8 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
-| 9 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 8 | John Keding | Perpetual (Hobin Rude Extended Remix) | 122 | 6.6 |
+| 9 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
 | 10 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 11 | Analog Jungs feat. Abi Ferraresi | Satori (Original Mix)  | 120 | 7.5 |
+| 11 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
 | 12 | Dave Seaman | Mirrorball Sleaze (12" Club Mix) | 124 | 6.6 |
 | 13 | CamelPhat & ARTBAT | For a Feeling (feat. RHODES) [Dark Matter Edit] | 122 | 7.0 |
 | 14 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
