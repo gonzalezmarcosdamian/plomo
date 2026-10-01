@@ -1650,3 +1650,111 @@ el valor de un tema depende de sus vecinos.
 temas del set a un paso de rueda o menos-- y el orden se resuelve con beam search
 y un costo prohibitivo para un salto mayor a 2. El greedy sirve para empezar y
 falla sistematicamente en el ultimo tramo.
+
+---
+
+## Lo que el DJ saca ensena mas que lo que deja
+
+**Que paso.** El 2026-10-01 el set 150 se armo en siete vueltas de escucha. El DJ
+aprobo 17 temas y saco 14. Las reglas nuevas --`sonido_del_150`-- no salieron de
+los aprobados: salieron de los descartes, porque cada uno vino con un motivo
+distinto y entre todos dibujaron el criterio.
+
+"Demasiado bajada" dio la medida de breakdown. "Muy oscuro" dio el piso de color.
+"La baja" dio el piso de energia. "Cambia el groove" dio el piso de graves. Los
+aprobados, en cambio, solo decian "bien".
+
+**Por que.** Un si confirma que algo cae dentro del gusto pero no dice donde esta
+el borde. Un no marca el borde exacto, y ademas viene explicado: el DJ no dice
+"no" a secas, dice por que.
+
+**Como se aplica.** Anotar los rechazos con la frase textual y el numero del tema
+en ese momento. Despues, contrastar aprobados contra rechazados dimension por
+dimension y quedarse con la que los separa. Una regla sacada de diez aprobados es
+una descripcion; una sacada de diez rechazos es un limite.
+
+---
+
+## Mas condiciones no es mas precision
+
+**Que paso.** Para explicar que temas dejaba el DJ en un set arme una regla de
+cuatro condiciones: breakdown corto, pocas bajadas, densidad alta y color alto.
+Acerto 9 de 16.
+
+Probando cada condicion SOLA contra las mismas 16 decisiones:
+
+    breakdown <= 35            14/16
+    bajadas <= 22%             12/16
+    graves <= 56               11/16
+    densidad >= 12.5           10/16
+    color >= p60               10/16
+    las cuatro juntas           9/16
+
+**Por que.** Cada condicion de mas agrega sus propios falsos negativos. Si una
+sola explica el 87% y las otras tres estan correlacionadas con ella, sumarlas
+solo agrega ruido.
+
+**Como se aplica.** Antes de combinar criterios, medir cada uno por separado
+contra los casos etiquetados. Si la combinacion no supera a la mejor condicion
+sola, usar la sola. Es mas facil de explicar, mas facil de refutar y acierta mas.
+
+---
+
+## El alcance de un veto es por noche, no por bloque
+
+**Que paso.** El DJ saco Dodonpachi del set 150. El veto quedo anotado con
+alcance "el set 150". Despues, armando el 151 --que incluye bloques del 148, el
+149 y el 150-- el tema volvio a entrar por el bloque del 149, porque formalmente
+ese veto no lo cubria.
+
+Peor: tambien volvio al PROPIO 150. Yo habia escrito el veto y despues, al buscar
+un reemplazo, el filtro solo miraba si el tema ya estaba en la lista y nunca leyo
+el veto que yo mismo habia escrito.
+
+**Por que.** El alcance de un rechazo existe para que un tema sacado de una noche
+siga disponible en OTRA noche. Dentro de la misma noche, aunque sea en otro
+bloque u otra lista, el DJ lo va a volver a escuchar y va a ver que lo ignoraron.
+
+**Como se aplica.** Un rechazo fresco --del dia-- se respeta en todo lo que se
+arme ese dia, sin importar el alcance escrito. Y el chequeo de vetos se corre
+SIEMPRE antes de proponer un candidato, no solo al armar desde cero: escribir el
+rechazo no sirve de nada si el buscador no lo lee.
+
+---
+
+## Un tema puede ser un callejon sin salida
+
+**Que paso.** Un set quedaba con un salto de rueda de 6 y no habia forma de
+ordenarlo mejor. La causa era un solo tema: Mythical Creatures en 11B, cuyos
+vecinos de rueda --11A, 12B, 10B-- no existian en ese bloque. El orden tenia que
+saltar para salir de el.
+
+Lo mismo paso antes con Artic White - Rosea en 2B y con un bloque de 11A separado
+del nucleo de 6A.
+
+**Por que.** Los filtros juzgan al tema SOLO: groove, color, forma, energia. Pero
+el valor de un tema en un set depende de con quien puede ir. Un tema perfecto que
+no conecta con nada obliga a romper la secuencia.
+
+**Como se aplica.** Todo candidato pasa un chequeo de VECINDARIO: al menos un
+tema del set a un paso de rueda. Y el orden se resuelve con beam search, no
+greedy: elegir siempre el vecino mas cercano funciona hasta que quedan pocos y
+entonces falla justo al final, donde ya no hay opciones.
+
+---
+
+## Toda iteracion termina en sync
+
+**Que paso.** Varias veces en el mismo dia el DJ escucho una version vieja y
+pregunto por que no veia los cambios. Yo habia armado el set en el repo y no lo
+habia publicado. Una vez le quedo un target MAS VIEJO que la lista publicada,
+porque el edito en Spotify y yo no baje esos cambios.
+
+**Por que.** El trabajo no esta hecho cuando el archivo esta bien: esta hecho
+cuando el DJ lo puede escuchar. Y cuando hay dos lugares donde vive la lista, el
+que no se actualiza se vuelve una fuente de verdad falsa.
+
+**Como se aplica.** Cada vuelta termina con las dos puntas sincronizadas y
+verificadas: Spotify contra el target, y Rekordbox leido de djmdSongPlaylist
+contra el mismo target. Si el DJ edito en Spotify, PRIMERO se baja su edicion al
+repo y recien despues se publica.

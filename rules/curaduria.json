@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "1.21.0",
+  "version": "1.22.0",
   "creado": "2026-09-07",
   "que_es": "Las reglas de curaduria de sets como DATO, no como constante hardcodeada. Cada regla lleva su valor, su porque y su evidencia. El agente analista las desafia con backtest_rules.py y propone cambios; el cambio lo aprueba el humano y queda versionado aca.",
   "como_se_cambia": "1) backtest_rules.py mide la regla contra setlists reales y contra los sets propios ya tocados. 2) Si la evidencia contradice la regla, se propone un valor nuevo con el numero que lo justifica. 3) Aprobado el cambio: se sube version, se mueve el valor viejo a historial y se escribe la evidencia.",
@@ -38,6 +38,16 @@
     "cambios": [
      "sonido_del_150: el perfil medido del set que el DJ aprobo tema por tema",
      "queda escrito lo que NO se puede medir: tecnoso, cambia-el-groove sin cambio de densidad, drop iglesia"
+    ]
+   },
+   {
+    "version": "1.22.0",
+    "fecha": "2026-10-01",
+    "cambios": [
+     "sonido_propio se mide ahora en DOS fuentes: lo tocado (djmdHistory) y lo elegido (set 150)",
+     "energia_banda 4.0-7.0 -> 5.3-8.0: la vieja salia de noches enteras con warm-up",
+     "bpm_banda 120-124 -> 120-125; pct_zona_menor 86 -> 100",
+     "nuevas: graves_medianos 50.4, densidad_mediana 14.0, color_mediano p68"
     ]
    }
   ]
@@ -881,28 +891,27 @@
   }
  ],
  "sonido_propio": {
-  "_que_es": "El sonido medido, no el declarado. Sale de scripts/mi_sonido.py sobre las 1004 reproducciones registradas. PROPUESTO el 2026-09-07, sin aplicar todavia: lo tiene que medir el analista antes de que select_set lo lea.",
+  "_que_es": "El sonido del DJ, medido en DOS fuentes que dicen cosas distintas y las dos valen:\n  TOCADO     454 temas indexados de djmdHistory. Es lo que hizo arriba del escenario.\n  ELEGIDO    el set 150, que el 2026-10-01 llamo 'muy mi sonido' y aprobo entero tras siete vueltas.\nDonde difieren, el 150 manda para ARMAR y el historial para ENTENDER de donde viene: el historial tiene warm-ups y cierres de noches enteras, el 150 es un tramo de pico elegido a proposito.",
   "bpm_banda": {
    "valor": [
     120,
-    124
+    125
    ],
-   "porque": "Mediana 122 sobre lo tocado, ponderado por veces. Coincide con lo escrito en MI_SONIDO.md.",
-   "evidencia": "1004 reproducciones, p10-p90 = 120-124"
+   "porque": "El historial da 120-124 con mediana 122; el 150 llega a 125 con mediana 123. Se abre el techo.",
+   "evidencia": "2026-10-01: 454 temas tocados contra los 18 del 150."
   },
   "energia_banda": {
    "valor": [
-    4.0,
-    7.0
+    5.3,
+    8.0
    ],
-   "porque": "Piso y pico MEDIANOS por sesion sobre las 19 sesiones con pulso real de reproduccion. Es lo que select_set consume como e_lo/e_hi.",
-   "evidencia": "n=356 reproducciones. Medido POR SESION: pico mediano 7.0, maximo 8.8, 11 de 19 sesiones pasan 6.8, rango interno mediano 3.0.",
-   "CORREGIDO": "Antes decia [4.3, 6.8] y afirmaba que CONTRADICE docs/MI_SONIDO.md porque 'lo que realmente suena es meseta'. Era FALSO y peligroso: alguien podia poner e_hi=6.8 en un config y decapitarle el peak a todos los sets. La banda 4.3-6.8 es el p10-p90 de reproducciones AGRUPADAS, y una muestra al azar de la biblioteca da 4.0/5.7/6.9 — indistinguible. No medida preferencia: medida inventario. Un percentil agrupado no puede mostrar un arco."
+   "porque": "La banda vieja --4.0 a 7.0-- salia del piso y el pico MEDIANOS por sesion, o sea noches enteras con warm-up. El 150 es el tramo que el DJ quiere tocar y va de 5.3 a 8.0 con mediana 7.2, contra 5.9 de mediana en el historial. Para armar un set de pico, la banda vieja apunta demasiado abajo.",
+   "evidencia": "2026-10-01: minimo y maximo del set que el DJ llamo 'muy mi sonido'."
   },
   "pct_zona_menor": {
-   "valor": 86,
-   "porque": "86% de lo tocado esta en zona A. Confirma lo escrito.",
-   "evidencia": "1004 reproducciones"
+   "valor": 100,
+   "porque": "El historial da 86% en zona A; el 150 da 100%. Cuando elige, elige todo menor.",
+   "evidencia": "2026-10-01: los 18 temas del 150 terminan en A."
   },
   "bonus_por_lift_de_artista": {
    "valor": 0.0,
@@ -922,6 +931,37 @@
   "peso_ajeno": {
    "valor": 2.0,
    "porque": "Un tema cuyo artista Y sello no aparecen nunca en djmdHistory ni en sus favoritos paga 2.0. Medido el 2026-09-23: los 4 temas que rechazo escuchando eran los 4 ajenos; el set 140, el que elogio entero, tiene 0 ajenos en 17. Por forma del audio esos 4 eran indistinguibles del resto de la biblioteca (2.6-3.7 contra mediana 2.40), asi que este es el unico eje que los ve. Arriba de la cuota de genero, como pidio el DJ. | Entrenado el 2026-09-23 contra los 40 setlists de referencia con scripts/entrenar_criterio.py: la perdida bajo de 3.750 a 2.467."
+  },
+  "_historial": [
+   {
+    "fecha": "2026-10-01",
+    "antes": {
+     "bpm_banda": [
+      120,
+      124
+     ],
+     "energia_banda": [
+      4.0,
+      7.0
+     ],
+     "pct_zona_menor": 86
+    }
+   }
+  ],
+  "graves_medianos": {
+   "valor": 50.4,
+   "porque": "Dimension que el sonido propio no tenia. El historial da 47.1 y el 150 da 50.4: cuando elige, elige con mas graves que lo que termino tocando.",
+   "evidencia": "2026-10-01: 454 temas del historial contra los 18 del 150."
+  },
+  "densidad_mediana": {
+   "valor": 14.0,
+   "porque": "Historial 13.8, set 150 14.0. Es la unica dimension donde lo que toca y lo que elige coinciden.",
+   "evidencia": "2026-10-01."
+  },
+  "color_mediano": {
+   "valor": 0.68,
+   "porque": "Dimension nueva. El 150 vive en p68: ni gris ni saturado.",
+   "evidencia": "2026-10-01: mediana del set aprobado."
   }
  },
  "estilo": {
