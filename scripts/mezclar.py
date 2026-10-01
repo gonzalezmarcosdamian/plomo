@@ -39,7 +39,7 @@ from scipy.signal import butter, sosfilt
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 from plomo.mezcla import en_compases, leer_set, medir  # noqa: E402
-from plomo.mezcla_motor import SR, Plantilla, planificar, renderizar_tema  # noqa: E402
+from plomo.mezcla_motor import SR, Plantilla, ataques_cerca, planificar, renderizar_tema  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 DEST = RAIZ / "postproduction" / "mixes"
@@ -47,23 +47,6 @@ LUFS_FINAL = -14.0
 TECHO_DBTP = -1.0
 FLAMEO_MAX_MS = 5.0
 SALTO_MAX_DB = 2.0
-
-
-def ataques_de_grave(audio: np.ndarray, t0: float, beats_mix: np.ndarray) -> np.ndarray:
-    """Tiempo (mix) del ataque de grave mas cercano a cada beat de la grilla."""
-    grave = sosfilt(butter(4, [40, 150], "bandpass", fs=SR, output="sos"), audio.mean(1))
-    env = np.convolve(np.abs(grave), np.ones(88) / 88, "same")
-    subida = np.diff(env, prepend=env[0])
-    v = int(0.040 * SR)
-    out = []
-    for b in beats_mix:
-        i = int((b - t0) * SR)
-        tramo = subida[max(0, i - v): i + v]
-        if len(tramo) == 2 * v and tramo.max() > 0:
-            out.append(t0 + (max(0, i - v) + int(np.argmax(tramo))) / SR)
-        else:
-            out.append(np.nan)
-    return np.array(out)
 
 
 def informe_estructura(temas, estructuras) -> list[dict]:
@@ -121,7 +104,7 @@ def main() -> None:
         if largo > 0:
             mix[i0:i0 + largo] += audio[j0:j0 + largo]
         beats_mix = c.offset + c.tema.beats / c.factor
-        ataques[k] = (beats_mix, ataques_de_grave(sin_eq, inicio / SR, beats_mix))
+        ataques[k] = (beats_mix, ataques_cerca(sin_eq, inicio / SR, beats_mix)[0])
         print(f"  {k + 1:2d} renderizado (grilla corrida {desfases[k]:+.1f} ms)  {time.time() - t_arranque:5.0f} s",
               flush=True)
 

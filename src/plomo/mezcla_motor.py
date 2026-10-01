@@ -132,31 +132,49 @@ def _decodificar(ruta, desde_s: float, hasta_s: float) -> np.ndarray:
     return np.frombuffer(crudo, dtype=np.float32).reshape(-1, 2).copy()
 
 
+BANDA_CLICK = (1000.0, 8000.0)   # el golpe que marca la grilla; el cuerpo del bombo llega 7-20 ms despues
+
+
+def ataques_cerca(audio: np.ndarray, t0: float, tiempos: np.ndarray,
+                  banda: tuple[float, float] = BANDA_CLICK, ventana_s: float = 0.040) -> tuple[np.ndarray, np.ndarray]:
+    """Para cada tiempo de grilla, el ataque mas fuerte a +-40 ms y su fuerza.
+
+    Se mide el CLICK (1-8 kHz) y no el cuerpo grave: entre uno y otro hay de 7 a 20 ms segun
+    el diseno de cada bombo (medido por el agente `bajo`), asi que alinear cuerpos de dos
+    bombos distintos los desfasa. La grilla de Rekordbox marca el golpe.
+    """
+    x = sosfilt(butter(4, banda, "bandpass", fs=SR, output="sos"), audio.mean(1))
+    env = np.convolve(np.abs(x), np.ones(44) / 44, "same")              # 1 ms
+    subida = np.diff(env, prepend=env[0])
+    v = int(ventana_s * SR)
+    cuando, fuerza = [], []
+    for t in tiempos:
+        i = int((t - t0) * SR)
+        tramo = subida[max(0, i - v): i + v]
+        if len(tramo) == 2 * v and tramo.max() > 0:
+            k = int(np.argmax(tramo))
+            cuando.append(t0 + (i - v + k) / SR)
+            fuerza.append(tramo[k])
+        else:
+            cuando.append(np.nan)
+            fuerza.append(0.0)
+    return np.array(cuando), np.array(fuerza)
+
+
 def _desfase_grilla(crudo: np.ndarray, ini: float, tema: Tema) -> float:
-    """Cuanto despues de la grilla de Rekordbox cae el ataque del bombo en ESTE audio decodificado.
+    """Cuanto despues de la grilla de Rekordbox cae el golpe en ESTE audio decodificado.
 
     La grilla se calculo con el decodificador de Rekordbox; aca decodifica ffmpeg. En mp3 el
     retardo del codificador puede correr todo unos milisegundos, y dos bombos superpuestos
-    se escuchan dobles a partir de ~5. Se mide sobre los tiempos con golpe de grave claro.
+    se escuchan dobles a partir de ~5. Se mide sobre los golpes francos.
     """
-    grave = sosfilt(butter(4, [40, 150], "bandpass", fs=SR, output="sos"), crudo.mean(1))
-    env = np.convolve(np.abs(grave), np.ones(88) / 88, "same")          # 2 ms
-    subida = np.diff(env, prepend=env[0])
-    ventana = int(0.040 * SR)
-    lags, fuerzas = [], []
-    for g in tema.beats[(tema.beats > ini + 0.1) & (tema.beats < ini + len(crudo) / SR - 0.1)]:
-        i = int((g - ini) * SR)
-        tramo = subida[i - ventana: i + ventana]
-        if len(tramo) < 2 * ventana:
-            continue
-        k = int(np.argmax(tramo))
-        lags.append((k - ventana) / SR)
-        fuerzas.append(tramo[k])
-    if len(lags) < 16:
+    beats = tema.beats[(tema.beats > ini + 0.1) & (tema.beats < ini + len(crudo) / SR - 0.1)]
+    cuando, fuerza = ataques_cerca(crudo, ini, beats)
+    ok = np.isfinite(cuando)
+    if ok.sum() < 16:
         return 0.0
-    lags, fuerzas = np.array(lags), np.array(fuerzas)
-    claros = lags[fuerzas >= np.percentile(fuerzas, 60)]                # solo los bombos francos
-    return float(np.median(claros))
+    lags, fuerza = (cuando - beats)[ok], fuerza[ok]
+    return float(np.median(lags[fuerza >= np.percentile(fuerza, 60)]))
 
 
 def _bandas(x: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:

@@ -1758,3 +1758,43 @@ que no se actualiza se vuelve una fuente de verdad falsa.
 verificadas: Spotify contra el target, y Rekordbox leido de djmdSongPlaylist
 contra el mismo target. Si el DJ edito en Spotify, PRIMERO se baja su edicion al
 repo y recien despues se publica.
+
+## Un set aprobado entero esta cerrado
+
+El DJ escucho el set 150 de punta a punta y dijo "Me encanta el set 150". Despues
+aprobo cuatro temas sueltos por nombre, y yo los meti ADENTRO del 150. Su
+respuesta: "me cambiaste el 150 volvelo a la version que yo queria... por dios,
+era perfecta y lo dije".
+
+**Que paso:** sume material bueno a un conjunto que ya estaba cerrado. Los cuatro
+temas eran buenos y el los habia valorado; el error no fue elegirlos, fue donde
+los puse. Un set aprobado entero no es una lista de temas aprobados: es una
+secuencia aprobada. Agregarle uno cambia el arco, las transiciones y la duracion
+de todo lo que viene despues.
+
+**Por que:** la aprobacion de un set es la unica evidencia no circular que tiene
+el proyecto de que algo funciona --el oido del DJ sobre el resultado completo-- y
+se destruye en el momento en que se toca. Peor: se destruye silenciosamente,
+porque la lista sigue teniendo solo temas que a el le gustan.
+
+**Como se aplica:** cuando el DJ aprueba un set COMPLETO, ese target queda
+congelado y el material nuevo va a otra lista. Si de verdad conviene que entre,
+se pregunta antes y se dice que implica. Y la version aprobada se puede recuperar
+siempre: `git log -- data/set_targets/set_NN.json` y el commit que dice que la
+aprobo.
+
+## La indicacion de ubicacion vale para el set donde se dijo
+
+El DJ pidio cuatro temas "antes de los tres primeros" del 150. Al armar el 151
+los quise poner tambien al frente, y no se podia: estan en 2A, 10A, 6A y 6A, no
+encadenan entre si, y contra el 11A que abre costaban dos saltos de rueda de 4 en
+un set que corre entero en 2.
+
+**Por que:** "antes de los primeros" no describe al tema, describe su lugar en una
+secuencia concreta. En otra lista, con otro primer tema, la misma frase pide algo
+distinto o no pide nada. Lo que viaja de un set a otro es el juicio sobre el tema
+--"es de construccion", "muy heroico"--, no la posicion.
+
+**Como se aplica:** al mover un tema de un set a otro viaja su valoracion, no su
+indice. La ubicacion se vuelve a calcular, y si la rueda la contradice, manda la
+rueda y se dice por que.

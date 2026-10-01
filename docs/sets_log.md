@@ -3085,39 +3085,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
 **Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 22  
-**BPM range:** 100-140  
-
-| # | Artist | Title | BPM | E |
-|---|--------|-------|-----|---|
-| 1 | Maze 28 | Constant Daydream (TEELCO Remix) | 122 | 6.9 |
-| 2 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
-| 3 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
-| 4 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
-| 5 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 6 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 7 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 8 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 9 | Maze 28 | Fogbows | 122 | 6.3 |
-| 10 | Jamie Stevens, GMJ, Matter, Wilma (AU) | Tell You Later feat. Wilma (AU) (GMJ & Matter Remix) | 122 | 5.6 |
-| 11 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
-| 12 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 13 | Ra Duh | Ganymede (Original Mix)  | 121 | 6.1 |
-| 14 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 15 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 17 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
-| 18 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 19 | Molac | Crisopea (Ilias Katelanos & Plecta Remix) | 124 | 5.2 |
-| 20 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 21 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 22 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-
-
-## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01
-**Armado:** 2026-10-01  
-**Duracion:** 0h  
-**Tracks:** 38  
+**Tracks:** 18  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3140,24 +3108,59 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 16 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
 | 17 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
 | 18 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 19 | Durante | Never B Alone (Extended Mix) | 123 | 6.0 |
-| 20 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 6.6 |
-| 21 | Sunchain | Neurosonic Drift (Taylan Extended Mix) | 121 | 6.4 |
-| 22 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
-| 23 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 24 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
-| 25 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
-| 26 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
-| 27 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
-| 28 | Subconscious Tales | Magnectares (Kasper Koman Remix)  | 120 | 5.7 |
-| 29 | Paul Hazendonk | One Plus One (Jack Lazarus Club Mix) | 122 | 6.7 |
-| 30 | Togni, Mind Echoes | Questions (Original Mix) | 120 | 6.9 |
-| 31 | Togni, Rodrives | Existence (Original Mix) | 121 | 5.4 |
-| 32 | Anton Make | You My Rhythm (Original Mix) | 121 | 5.9 |
-| 33 | Nick Stoynoff, Gai Barone | Post Boutique (Original Mix) | 123 | 5.5 |
-| 34 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
-| 35 | Gorkiz & Mind Echoes | Without Your Noose (Paul Arcane Remix) | 122 | 5.9 |
-| 36 | Kasper Koman | Rocking Boat | 123 | 5.8 |
-| 37 | Sinkix | Hyperion (Original Mix) | 122 | 6.6 |
-| 38 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
+
+
+## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01
+**Armado:** 2026-10-01  
+**Duracion:** 0h  
+**Tracks:** 45  
+**BPM range:** 100-140  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 2 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
+| 3 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 4 | Ra Duh | Ganymede (Original Mix)  | 121 | 6.1 |
+| 5 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 6 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 7 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 8 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 9 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 10 | Maze 28 | Fogbows | 122 | 6.3 |
+| 11 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
+| 12 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 13 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 14 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 15 | Gonzalo Cotroneo | Dark Rain (Extended Mix) | 121 | 7.3 |
+| 16 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 17 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
+| 18 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 19 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
+| 20 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 21 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 22 | Ziger & Mind Conspiracy | The Light (Original) | 122 | 6.5 |
+| 23 | Durante | Never B Alone (Extended Mix) | 123 | 6.0 |
+| 24 | Lane 8, Sultan + Shepard | The Little Mushroom That Got Away (Extended Mix) | 122 | 6.6 |
+| 25 | Sunchain | Neurosonic Drift (Taylan Extended Mix) | 121 | 6.4 |
+| 26 | COQUEIT | Lost in My Head (Original Mix) | 122 | 6.2 |
+| 27 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 28 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 29 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
+| 30 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
+| 31 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 32 | Subconscious Tales | Magnectares (Kasper Koman Remix)  | 120 | 5.7 |
+| 33 | Jamie Stevens, GMJ, Matter, Wilma (AU) | Tell You Later feat. Wilma (AU) (GMJ & Matter Remix) | 122 | 5.6 |
+| 34 | Paul Hazendonk | One Plus One (Jack Lazarus Club Mix) | 122 | 6.7 |
+| 35 | Togni, Mind Echoes | Questions (Original Mix) | 120 | 6.9 |
+| 36 | Togni, Rodrives | Existence (Original Mix) | 121 | 5.4 |
+| 37 | Anton Make | You My Rhythm (Original Mix) | 121 | 5.9 |
+| 38 | Nick Stoynoff, Gai Barone | Post Boutique (Original Mix) | 123 | 5.5 |
+| 39 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
+| 40 | Gorkiz & Mind Echoes | Without Your Noose (Paul Arcane Remix) | 122 | 5.9 |
+| 41 | Kasper Koman | Rocking Boat | 123 | 5.8 |
+| 42 | Molac | Crisopea (Ilias Katelanos & Plecta Remix) | 124 | 5.2 |
+| 43 | Sinkix | Hyperion (Original Mix) | 122 | 6.6 |
+| 44 | Maze 28 | Constant Daydream (TEELCO Remix) | 122 | 6.9 |
+| 45 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
 

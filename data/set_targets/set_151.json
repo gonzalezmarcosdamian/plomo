@@ -1,5 +1,5 @@
 {
-  "name": "151. Los tres sets · 4h — 2026-10-01",
+  "name": "151. Los tres sets · 4h49 — 2026-10-01",
   "duration_h": 0,
   "bpm_range": [
     100,
@@ -7,7 +7,7 @@
   ],
   "max_per_artist": 99,
   "keep_order": true,
-  "_nota": "2026-10-01: 'todo el 150, lo mejor del 149 y del 148, en ese orden, 4 horas'. Tres bloques. Se excluyen los temas que el DJ rechazo HOY aunque el veto sea de otro set: el alcance del veto vale para otra NOCHE, no para otro bloque de la misma. DOS COSAS QUE HUBO QUE ARREGLAR: ordenar cada bloque por separado dejaba un salto de rueda de 6 en la costura, asi que ahora el ultimo tema del bloque anterior entra en el calculo del siguiente. Y un tema puede ser un CALLEJON --Mythical Creatures en 11B no tenia ningun vecino de rueda en su bloque-- asi que ahora se exige que cada candidato tenga al menos un vecino a un paso dentro de su bloque.",
+  "_nota": "2026-10-01: 'todo el 150, lo mejor del 149 y del 148, en ese orden, 4 horas'. Tres bloques. Se excluyen los temas que el DJ rechazo HOY aunque el veto sea de otro set: el alcance del veto vale para otra NOCHE, no para otro bloque de la misma. DOS COSAS QUE HUBO QUE ARREGLAR: ordenar cada bloque por separado dejaba un salto de rueda de 6 en la costura, asi que ahora el ultimo tema del bloque anterior entra en el calculo del siguiente. Y un tema puede ser un CALLEJON --Mythical Creatures en 11B no tenia ningun vecino de rueda en su bloque-- asi que ahora se exige que cada candidato tenga al menos un vecino a un paso dentro de su bloque. | 2026-10-01 (2): 'el 150 volvelo a la version que yo queria, hace el 151 lo que quieras'. El 150 volvio a los 18 que aprobo entero y TODO lo demas vive aca. Entran los siete que el DJ valoro por nombre y no estaban: Constant Daydream (TEELCO), Ganymede (Ra Duh), Tell You Later (GMJ & Matter), Crisopea (Molac/Katelanos), Dark White, Dark Rain y The Light (Ziger). Cada uno fue al lugar que dice la rueda y no al que decia mi nota: los cuatro que el pidio 'antes de los tres primeros' estan en 2A, 10A, 6A y 6A y no encadenan entre si --forzarlos al frente contra el 11A de Abundance costaba dos saltos de 4-- y esa indicacion era para el 150, no para esta lista. ADRIFT QUEDA AFUERA y no es un veto: el DJ dijo 'muy heroico, tal vez mas al final o cambiarlo'. Su 11A no tiene vecino en toda la cola (1A a 3A), asi que la unica ubicacion tardia posible metia dos saltos de 3 en el unico set que corre entero en 2. Se tomo la segunda opcion que el ofrecio. Siguen afuera por rechazo explicito: Dodonpachi, Mirages in Space y Morning Walks.",
   "tracks": [
     {
       "artist": "Paul Thomas, Maze 28",
@@ -23,6 +23,11 @@
       "artist": "Agustin Pietrocola",
       "title": "Sizer (Original Mix)",
       "content_id": "74740589"
+    },
+    {
+      "artist": "Ra Duh",
+      "title": "Ganymede (Original Mix) ",
+      "content_id": "233643423"
     },
     {
       "artist": "Rabiee Ahmad, Hassan Tariq Khan",
@@ -76,8 +81,18 @@
     },
     {
       "artist": "Gonzalo Cotroneo",
+      "title": "Dark Rain (Extended Mix)",
+      "content_id": "14113136"
+    },
+    {
+      "artist": "Gonzalo Cotroneo",
       "title": "Thrill (Extended Mix)",
       "content_id": "5802991"
+    },
+    {
+      "artist": "MuscleDyke",
+      "title": "Dark White (Mind Echoes Remix)",
+      "content_id": "77870371"
     },
     {
       "artist": "Andre Moret",
@@ -98,6 +113,11 @@
       "artist": "Marsh, Simon Doty",
       "title": "Touch The Sky (Extended Mix)",
       "content_id": "175806155"
+    },
+    {
+      "artist": "Ziger & Mind Conspiracy",
+      "title": "The Light (Original)",
+      "content_id": "266671052"
     },
     {
       "artist": "Durante",
@@ -150,6 +170,11 @@
       "content_id": "137408628"
     },
     {
+      "artist": "Jamie Stevens, GMJ, Matter, Wilma (AU)",
+      "title": "Tell You Later feat. Wilma (AU) (GMJ & Matter Remix)",
+      "content_id": "94334109"
+    },
+    {
       "artist": "Paul Hazendonk",
       "title": "One Plus One (Jack Lazarus Club Mix)",
       "content_id": "237883588"
@@ -190,9 +215,19 @@
       "content_id": "194123706"
     },
     {
+      "artist": "Molac",
+      "title": "Crisopea (Ilias Katelanos & Plecta Remix)",
+      "content_id": "21782262"
+    },
+    {
       "artist": "Sinkix",
       "title": "Hyperion (Original Mix)",
       "content_id": "39363922"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Constant Daydream (TEELCO Remix)",
+      "content_id": "95485469"
     },
     {
       "artist": "Cristoph, Franky Wah, Artche",

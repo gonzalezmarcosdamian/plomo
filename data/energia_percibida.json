@@ -1054,12 +1054,9 @@
     "title": "Adrift (Sebastian Sellares Remix)",
     "E_calc": 6.6,
     "nota": "adrift muy heroico, tal vez mas al final o cambiarlo por mas energetico",
-    "veto": {
-      "alcance": "el set 150",
-      "fecha": "2026-10-01",
-      "textual": "adrift muy heroico"
-    },
-    "fuente": "escucha del 150, 2026-10-01"
+    "fuente": "escucha del 150, 2026-10-01",
+    "ubicacion": "final",
+    "_correccion_2026-10-01": "estaba anotado como VETO y no lo es. El DJ dijo 'adrift muy heroico tal vez mas al final o cambiarlo por mas energetico': ofrecio dos opciones, y la primera es MOVERLO. Pedir cambiar un tema no es rechazarlo, y anotarlo como veto lo saca de todos los sets para siempre. Queda como nota de ubicacion. En el 151 no entro porque su 11A no tiene vecino de rueda en la cola, que es la segunda opcion que el mismo dio, no un rechazo."
   },
   "248152537": {
     "artist": "Mindlancholic",
