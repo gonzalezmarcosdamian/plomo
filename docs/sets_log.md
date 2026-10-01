@@ -3087,7 +3087,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
 **Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 14  
+**Tracks:** 19  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3096,14 +3096,59 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 2 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
 | 3 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 5 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 6 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
-| 7 | Maze 28 | Fogbows | 122 | 6.3 |
-| 8 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
-| 9 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 10 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 11 | Mindlancholic | Mirages in Space | 123 | 6.9 |
-| 12 | John Keding | Perpetual (Hobin Rude Extended Remix) | 122 | 6.6 |
-| 13 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 14 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 5 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 6 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 7 | Simon Vuarambon | Lazos (Original Mix) | 120 | 6.4 |
+| 8 | Maze 28 | Fogbows | 122 | 6.3 |
+| 9 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 10 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 12 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 14 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 6.9 |
+| 15 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 16 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 17 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 18 | Låpsley, Franky Wah | Stolen Glances (feat. Låpsley) (Original Mix) | 120 | 6.3 |
+| 19 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
+
+
+## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01
+**Armado:** 2026-10-01  
+**Duracion:** 0h  
+**Tracks:** 30  
+**BPM range:** 100-140  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Maze 28 | Mindloop (Original Mix) | 120 | 5.8 |
+| 2 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 3 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
+| 4 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
+| 5 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 6 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 7 | Emi Galvan | Mily (Original Mix) | 122 | 5.9 |
+| 8 | Ruben Karapetyan | The Ways (Extended Mix) | 123 | 5.5 |
+| 9 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
+| 10 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
+| 11 | Maze 28 | Fogbows | 122 | 6.3 |
+| 12 | Simon Vuarambon | Lazos (Original Mix) | 120 | 6.4 |
+| 13 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
+| 14 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 15 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 16 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 17 | Grance & Soulmac | Happy Incident (Ale Russo Remix) | 120 | 6.9 |
+| 18 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 19 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 20 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 21 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 22 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 23 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 24 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
+| 25 | Kostya Outta, Liam Garcia | If I Win (Cosmonaut Extended Remix) | 123 | 6.3 |
+| 26 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 27 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
+| 28 | Parra for Cuva | Juri (Original Mix) | 118 | 4.1 |
+| 29 | Rezident, Kate Morgan | Muse feat. Kate Morgan (L.GU. Extended Mix) | 125 | 7.1 |
+| 30 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 

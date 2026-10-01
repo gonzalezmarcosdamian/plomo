@@ -353,10 +353,11 @@
     ],
     "rol": "el cierre heroico",
     "veto": {
-      "alcance": "el set 148",
+      "alcance": "el set 150",
       "fecha": "2026-10-01",
-      "textual": "cambia don don pachi"
-    }
+      "textual": "del 150 saca dondonpachi citadel mirages in space; perpetual tambien cambialo"
+    },
+    "nota_150": "el DJ lo saco del 150 el 2026-10-01"
   },
   "80536228": {
     "artist": "Greg Ochman",
@@ -501,10 +502,11 @@
     "nota": "cambia citadel",
     "fuente": "escucha del 148, 2026-10-01",
     "veto": {
-      "alcance": "el set 148",
+      "alcance": "el set 150",
       "fecha": "2026-10-01",
-      "textual": "cambia citadel"
-    }
+      "textual": "del 150 saca dondonpachi citadel mirages in space; perpetual tambien cambialo"
+    },
+    "nota_150": "el DJ lo saco del 150 el 2026-10-01"
   },
   "216766461": {
     "artist": "Rockka",
@@ -1034,5 +1036,25 @@
       "textual": "adrift muy heroico"
     },
     "fuente": "escucha del 150, 2026-10-01"
+  },
+  "248152537": {
+    "artist": "Mindlancholic",
+    "title": "Mirages in Space",
+    "nota_150": "el DJ lo saco del 150 el 2026-10-01",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "del 150 saca dondonpachi citadel mirages in space; perpetual tambien cambialo"
+    }
+  },
+  "124315085": {
+    "artist": "John Keding",
+    "title": "Perpetual (Hobin Rude Extended Remix)",
+    "nota_150": "el DJ lo saco del 150 el 2026-10-01",
+    "veto": {
+      "alcance": "el set 150",
+      "fecha": "2026-10-01",
+      "textual": "del 150 saca dondonpachi citadel mirages in space; perpetual tambien cambialo"
+    }
   }
 }
