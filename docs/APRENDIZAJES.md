@@ -1527,3 +1527,126 @@ cuantas capas suenan ahi. Si es una, el sonido no es el problema.
 (Corregido: la primera version de esta entrada terminaba diciendo que un final
 baja soltando una capa cada cuatro compases. Es falso, y esta desarrollado en
 "El contraste no se hace restando", arriba.)
+
+---
+
+## Una medida que ordena de lejos no sirve para decidir de cerca
+
+**Que paso.** En dos dias, tres numeros del proyecto eligieron un tema y el DJ lo
+rechazo de oido:
+
+- El **ataque de la capa melodica** eligio Moongazer --11.3, el mas alto medido--
+  y lo rechazo. Despues eligio Ariana, y tambien. Y no explica "drop muy
+  iglesia": Orb da 8.5, mas alto que Wakefeld (5.8), que si le gusta.
+- La **densidad ritmica** eligio Karnaval --14.8, arriba de la mediana del set-- y
+  dijo "pierde el groove". Peor: contra sus propios veredictos la densidad no
+  separa nada. Ipanema "tiene el groove" 14.9 contra Karnaval "lo pierde" 14.8;
+  Fogbows "tiene" 14.6 contra Pomelo "no me gusto" 14.6.
+- El **piso de densidad** predijo por escrito que Sizer iba a cortar el groove
+  (10.9 contra piso 14). Dijo "en mi oido sizer entra".
+
+Las tres separan bien los extremos. Ninguna decide entre dos candidatos buenos.
+
+**Por que.** Una medida que ordena bien el ranking completo puede ser inutil en
+el rango estrecho donde se elige de verdad, porque ahi la diferencia entre los
+candidatos es menor que el ruido de la medicion. Y porque casi siempre mide una
+propiedad del audio que CORRELACIONA con lo que importa, no lo que importa.
+
+**Como se aplica.** Usar las medidas para FILTRAR --sacar lo que claramente no
+va-- y no para ELEGIR entre los que quedan. Para elegir, en este orden: lo que el
+DJ dijo textual, lo que ya toco, y recien despues el numero. Cuando un numero se
+cae, anotarlo: `estilo._ataque_melodico_degradado` existe para que no vuelva a
+usarse como si nunca hubiera fallado.
+
+---
+
+## El promedio esconde la forma
+
+**Que paso.** El piso de densidad de 14.0 sacaba a Sizer, que mide 10.9. Mirando
+sus secciones: `[14.2, 6.2, 12.6, 6.5, 14.9]`. Donde groovea esta en 14-15, igual
+que cualquier tema aprobado. El promedio le da 10.9 porque BAJA A 6 en los
+breakdowns. El piso castigaba al tema por tener dinamica, que es lo contrario de
+lo que se busca.
+
+**Por que.** Promediar una serie que tiene estructura --un tema tiene drops y
+breakdowns a proposito-- mezcla dos poblaciones distintas y devuelve un numero
+que no describe a ninguna.
+
+**Como se aplica.** Antes de usar un promedio para juzgar, mirar la serie. Si
+tiene secciones con funcion distinta, el estadistico correcto es el de la seccion
+que importa --la densidad de los drops, no la del tema-- o la forma entera.
+
+---
+
+## Un rechazo que no se escribe vuelve por la misma puerta
+
+**Que paso.** El buscador propuso Ariana para el set 149. El DJ lo habia
+rechazado doce horas antes y nunca quedo anotado. Lo mismo con Moongazer.
+
+Una variante peor: entro "Low Era (Original Mix)" a un set. El DJ habia vetado
+"Low Era (Kebin Van Reeken Remix)" con la nota "oscuro, baja energia". El filtro
+compara ContentID, y otra version del mismo tema es otro ID.
+
+**Por que.** La memoria del proyecto es el archivo, no la conversacion. Lo que no
+se escribe no existe para la proxima corrida, y lo que se escribe atado a un ID
+no cubre al mismo tema en otra version.
+
+**Como se aplica.** Anotar el veredicto en `data/energia_percibida.json` en el
+mismo momento en que se dice, textual. Y filtrar por TITULO BASE --sin el
+parentesis del remix-- ademas de por ID.
+
+---
+
+## El alcance de un "no" es parte del dato
+
+**Que paso.** El campo veto se definia como "el tema no le gusta, no entra
+nunca". El DJ lo corrigio: "veto no entra en este set, solamente". Con la
+definicion correcta, 22 de los 28 vetos anotados volvieron a estar disponibles.
+
+**Por que.** "Oscuro", "poca energia" o "no sostiene el pico" son juicios sobre un
+LUGAR, no sobre el tema. Guardarlos como definitivos pierde material bueno para
+siempre, y el que lo pierde no se entera.
+
+**Como se aplica.** Todo rechazo lleva alcance. Solo es global cuando el DJ
+rechaza lo que el tema ES --"malisimo", "es todo lo que no quiero"-- o cuando sale
+por categoria. Ante la duda, el alcance es el set: un tema que vuelve se puede
+sacar otra vez, uno que se pierde no vuelve.
+
+---
+
+## Un ratio arriba de 100% no es un hallazgo, es un bug
+
+**Que paso.** La medicion de voz dio 343.9% de peso en un tema. Un ratio de
+energia de la voz sobre energia de la mezcla no puede pasar de 100%, asi que no
+era un tema muy cantado.
+
+La causa: el stem de voz salia del 45% del tema --donde corta Demucs-- y la
+mezcla se cargaba del archivo original desde el segundo 5. Comparaba el
+estribillo contra la intro.
+
+**Por que.** Cuando dos series vienen de procesos distintos es facil que no sean
+del mismo fragmento, y nada en el codigo avisa. El unico control fue que el
+resultado era imposible.
+
+**Como se aplica.** Cuando una medida tiene rango teorico --un ratio, un
+porcentaje, una correlacion-- chequearlo en el codigo y gritar si se sale. Y al
+comparar dos senales, derivarlas de la misma fuente: aca la mezcla se reconstruye
+sumando los cuatro stems en vez de leer el archivo original.
+
+---
+
+## Antes de publicar, preguntar si la key entra
+
+**Que paso.** Dos veces entro a un set un tema que cumplia todo --groove, color,
+forma, energia-- y quedaba a cuatro o cinco pasos de rueda de sus vecinos. Una
+vez porque el orden greedy se quedaba sin opciones al final; otra porque el
+filtro miraba atributos del tema pero nunca si su tonalidad encajaba con las que
+ya estaban.
+
+**Por que.** Un filtro de atributos juzga al tema solo. Un set es una secuencia:
+el valor de un tema depende de sus vecinos.
+
+**Como se aplica.** Todo candidato pasa un chequeo de VECINDARIO --al menos dos
+temas del set a un paso de rueda o menos-- y el orden se resuelve con beam search
+y un costo prohibitivo para un salto mayor a 2. El greedy sirve para empezar y
+falla sistematicamente en el ultimo tramo.

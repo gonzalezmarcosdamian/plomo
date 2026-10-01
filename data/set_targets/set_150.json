@@ -1,0 +1,98 @@
+{
+  "name": "150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01",
+  "duration_h": 0,
+  "bpm_range": [
+    100,
+    140
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "_nota": "2026-10-01: 'un 3er set con la mezcla de lo mejor del housero y el colorido'. Ocho del 148, ocho del 149 y Fogbows, que estaba en los dos. 'Lo mejor' se puntuo con lo que se sostuvo esta semana: las marcas del DJ pesan mas que cualquier medicion (favorito 2.0, rol 1.5, referencia 1.5), despues los graves --la regla de groove que dio 11/12 con dos aciertos fuera de muestra--, despues el color, y la voz suma. Un tema por artista. Dodonpachi cierra: es su cierre heroico. Se repiten temas con el 148 y el 149 A PROPOSITO: son tres versiones de la misma noche para elegir una, no tres sets para tocar seguidos.",
+  "tracks": [
+    {
+      "artist": "Maze 28",
+      "title": "Fogbows",
+      "content_id": "116807064"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Fragma (GORKIZ Remix)",
+      "content_id": "104234166"
+    },
+    {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "content_id": "216766461"
+    },
+    {
+      "artist": "Ilias Katelanos, Plecta, Anonimat",
+      "title": "Coaster (Durante Remix)",
+      "content_id": "33761156"
+    },
+    {
+      "artist": "Emi Galvan",
+      "title": "Mily (Original Mix)",
+      "content_id": "231529570"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "One World (Extended Mix)",
+      "content_id": "130869533"
+    },
+    {
+      "artist": "PROFF, Volen Sentir",
+      "title": "Luna Amazonia (PM Mix)",
+      "content_id": "211128031"
+    },
+    {
+      "artist": "Albuquerque, Anonimat",
+      "title": "Like First Time Flight (Extended Mix)",
+      "content_id": "92106172"
+    },
+    {
+      "artist": "Wassu",
+      "title": "From Here (feat. MØØNE) (Extended Mix)",
+      "content_id": "54818175"
+    },
+    {
+      "artist": "Marsh, Simon Doty",
+      "title": "Touch The Sky (Extended Mix)",
+      "content_id": "175806155"
+    },
+    {
+      "artist": "Analog Jungs feat. Abi Ferraresi",
+      "title": "Satori (Original Mix) ",
+      "content_id": "185957804"
+    },
+    {
+      "artist": "Dave Seaman",
+      "title": "Mirrorball Sleaze (12\" Club Mix)",
+      "content_id": "160229080"
+    },
+    {
+      "artist": "CamelPhat & ARTBAT",
+      "title": "For a Feeling (feat. RHODES) [Dark Matter Edit]",
+      "content_id": "144634580"
+    },
+    {
+      "artist": "Rabiee Ahmad, Hassan Tariq Khan",
+      "title": "In Another Time (Original Mix)",
+      "content_id": "221636509"
+    },
+    {
+      "artist": "Envotion",
+      "title": "Adrift (Sebastian Sellares Remix)",
+      "content_id": "44311136"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Fading Silhouettes (Pierre Sebastiano Remix)",
+      "content_id": "250703508"
+    },
+    {
+      "artist": "Sébastien Léger, Lost Miracle",
+      "title": "Dodonpachi (Original Mix)",
+      "content_id": "124748921"
+    }
+  ]
+}
