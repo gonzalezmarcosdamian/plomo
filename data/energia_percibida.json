@@ -381,7 +381,7 @@
     "artist": "Greg Ochman",
     "title": "The Silver Lily (Original Mix)",
     "E_calc": 5.5,
-    "nota": "lo nombro para mi sonido",
+    "nota": "lo nombro para mi sonido | el DJ lo pidio por nombre para el 150, en lugar de Pulse",
     "fuente": "pedido del DJ, 2026-09-26",
     "favorito": true,
     "momentos": [
@@ -1143,5 +1143,12 @@
     "favorito": true,
     "nota": "crisopea esta bueno",
     "fuente": "escucha 2026-10-01"
+  },
+  "132154683": {
+    "artist": "Samuel (LK)",
+    "title": "Pulse (Casnik Remix)",
+    "nota": "cambiame pulse por the silver lily",
+    "cambiado_en": "set 150",
+    "_no_es_veto": "pidio CAMBIARLO, no lo rechazo: no dijo nada de lo que el tema ES. Sigue en el 151. Pedir cambiar un tema no es rechazarlo."
   }
 }

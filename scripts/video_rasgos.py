@@ -246,21 +246,39 @@ def temas(alineacion: list[dict], recorte_s: float, n_cuadros: int) -> tuple[np.
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--master", required=True)
-    ap.add_argument("--informe", required=True, help="el JSON que escribe pulir_master.py")
-    ap.add_argument("--alineacion", required=True)
+    ap.add_argument("--informe", help="el JSON que escribe pulir_master.py (grabaciones)")
+    ap.add_argument("--alineacion", help="el tracklist alineado (grabaciones)")
+    ap.add_argument("--mix", help="el JSON que escribe mezclar.py: reemplaza --informe y --alineacion")
     ap.add_argument("--telefono", required=True)
-    ap.add_argument("--desfase-telefono", type=float, required=True,
+    ap.add_argument("--desfase-telefono", type=float, default=0.0,
                     help="segundos que la consola arranco ANTES que el telefono")
+    ap.add_argument("--noche", action="store_true",
+                    help="paleta fija del final del video del telefono: para un set nocturno")
     ap.add_argument("--nombre", required=True)
     a = ap.parse_args()
 
-    recorte = json.loads(Path(a.informe).read_text(encoding="utf-8"))["recorte_inicio_s"]
+    if a.mix:
+        # un mix armado no tiene recorte; cada tema arranca su capitulo en su cambio de bajos
+        plan = json.loads(Path(a.mix).read_text(encoding="utf-8"))["plan"]
+        recorte, alineacion = 0.0, []
+        for k, c in enumerate(plan):
+            artista, _, titulo = c["tema"].partition(" - ")
+            cambio = c["cambio_in"] or 0.0
+            sigue = plan[k + 1]["cambio_in"] if k + 1 < len(plan) else c["hasta"]
+            alineacion.append({"artista": artista, "titulo": titulo, "ratio": c["factor"],
+                               "rec_desde_s": cambio, "rec_hasta_s": sigue})
+    elif a.informe and a.alineacion:
+        recorte = json.loads(Path(a.informe).read_text(encoding="utf-8"))["recorte_inicio_s"]
+        alineacion = json.loads(Path(a.alineacion).read_text(encoding="utf-8"))
+    else:
+        sys.exit("hace falta --mix, o --informe y --alineacion")
     audio, beats = rasgos_de_audio(Path(a.master))
     n = min(len(v) for v in audio.values())
     audio = {k: v[:n].astype(np.float32) for k, v in audio.items()}
-    # segundo del telefono = segundo del master + recorte - desfase
-    pal, luz = paleta(Path(a.telefono), n, recorte - a.desfase_telefono)
-    alineacion = json.loads(Path(a.alineacion).read_text(encoding="utf-8"))
+    # segundo del telefono = segundo del master + recorte - desfase. Con --noche, todo cae
+    # despues del final del video y la paleta queda fija en el ultimo cuadro: la noche.
+    desfase = recorte - a.desfase_telefono + (10 ** 6 if a.noche else 0)
+    pal, luz = paleta(Path(a.telefono), n, desfase)
     pesos, capitulos = temas(alineacion, recorte, n)
 
     DEST.mkdir(parents=True, exist_ok=True)

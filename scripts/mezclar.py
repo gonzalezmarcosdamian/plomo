@@ -11,7 +11,7 @@ publique nada.
 QUE VERIFICA (y reporta tambien cuando sale bien)
 ------------------------------------------------
 - Bombos juntos: en los 8 compases antes de cada cambio suenan los dos temas; se
-  miden los ataques de grave de cada uno por separado y se reporta el desfase.
+  correlacionan los ataques de cada uno por separado y se reporta el desfase.
   Mas de 5 ms se escucha como bombo doble.
 - Volumen parejo: loudness de corto plazo alrededor de cada cambio contra el cuerpo
   de los temas. Un salto de mas de 2 dB se nota.
@@ -39,7 +39,7 @@ from scipy.signal import butter, sosfilt
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 from plomo.mezcla import en_compases, leer_set, medir  # noqa: E402
-from plomo.mezcla_motor import SR, Plantilla, ataques_cerca, planificar, renderizar_tema  # noqa: E402
+from plomo.mezcla_motor import SR, Plantilla, planificar, renderizar_tema  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 DEST = RAIZ / "postproduction" / "mixes"
@@ -47,6 +47,61 @@ LUFS_FINAL = -14.0
 TECHO_DBTP = -1.0
 FLAMEO_MAX_MS = 5.0
 SALTO_MAX_DB = 2.0
+POZO_DB = (-12.0, -2.0)        # el pozo del cambio de bajos; el del DJ es de -3 a -10
+DOBLE_BAJO_MAX_DB = 3.0        # el grave antes del cambio no sube: nunca dos bajos llenos
+
+GOLPE = (1000.0, 8000.0)   # el click: lo que marca la grilla y lo que tiene que coincidir
+# el cuerpo grave NO se verifica por correlacion: en esa banda estan tambien las lineas de bajo
+# de los dos temas y la correlacion encuentra cualquier pico (dio 47 ms donde el golpe daba 1)
+
+
+def envolvente_de_ataques(audio: np.ndarray, t0: float, desde: float, hasta: float,
+                          banda: tuple[float, float]) -> np.ndarray:
+    """Subida de la envolvente en una banda, a 1 ms, en un tramo del mix."""
+    i, j = int((desde - t0) * SR), int((hasta - t0) * SR)
+    x = sosfilt(butter(2, banda, "bandpass", fs=SR, output="sos"), audio[max(0, i):max(0, j)].mean(1))
+    env = np.abs(x)[: (len(x) // 44) * 44].reshape(-1, 44).mean(1)            # 1 ms
+    return np.maximum(np.diff(env, prepend=env[:1]), 0)
+
+
+def desfase_entre(a: tuple[np.ndarray, float], b: tuple[np.ndarray, float], desde: float, hasta: float,
+                  banda: tuple[float, float] = GOLPE) -> float:
+    """Milisegundos que B va corrido respecto de A: el pico de la correlacion de sus ataques (+-50 ms).
+
+    En la grabacion del DJ (agente `bajo`, 2026-09-28) los golpes le quedan a 4.5-6.6 ms y los
+    cuerpos graves a 10-20 ms, por el diseno distinto de cada bombo: se verifica el golpe.
+    """
+    ea, eb = envolvente_de_ataques(*a, desde, hasta, banda), envolvente_de_ataques(*b, desde, hasta, banda)
+    n = min(len(ea), len(eb))
+    ea, eb = ea[:n] - ea[:n].mean(), eb[:n] - eb[:n].mean()
+    lags = np.arange(-50, 51)
+    corr = [np.dot(ea[max(0, -lag): n - max(0, lag)], eb[max(0, lag): n - max(0, -lag)]) for lag in lags]
+    return float(lags[int(np.argmax(corr))])
+
+
+def pozo_de_grave(mix: np.ndarray, t0: float, x: float) -> tuple[float, float]:
+    """El grave (< 90 Hz) alrededor del cambio, contra el cuerpo del entrante despues.
+
+    Devuelve (el nivel en los 3 s del cambio, el percentil 95 de los 60 s previos), en dB. En
+    la grabacion del DJ el pozo es de -3 a -10 dB; mas hondo es un agujero. Si el grave antes
+    del cambio sube mucho, suenan dos bajos llenos a la vez.
+    """
+    # ventanas de 1 s que se corren de a 0.25: siempre contienen dos golpes. Con ventanas de
+    # 0.5 s el nivel alternaba entre golpe y hueco (+3/-8 dB) y el "pozo" era el peor hueco
+    # entre dos bombos (-15.7) en vez del nivel del cambio (-7.8)
+    ancho, salto = SR, SR // 4
+    a, b = max(0, int((x - 60 - t0) * SR)), max(0, int((x + 30 - t0) * SR))
+    sub = sosfilt(butter(4, 90, "lowpass", fs=SR, output="sos"), mix[a:b].mean(1))
+    acumulado = np.concatenate([[0.0], np.cumsum(sub.astype(np.float64) ** 2)])
+    inicios = np.arange(0, len(sub) - ancho, salto)
+    db = 10 * np.log10((acumulado[inicios + ancho] - acumulado[inicios]) / ancho + 1e-18)
+    t = a / SR + t0 + (inicios + ancho / 2) / SR
+    ref = np.median(db[(t > x + 10) & (t < x + 30)])
+    # el nivel DURANTE el cambio (3 s), que es lo que se midio en la grabacion del DJ
+    # ("-8 a -10 dB durante unos 3 s"); el fondo de un solo segundo es otra medida
+    cerca = db[np.abs(t - x) <= 1.5] - ref
+    antes = db[(t > x - 60) & (t < x - 6)] - ref
+    return round(float(np.median(cerca)), 1), round(float(np.percentile(antes, 95)), 1)
 
 
 def informe_estructura(temas, estructuras) -> list[dict]:
@@ -93,37 +148,47 @@ def main() -> None:
 
     n = int((ventana[1] - ventana[0]) * SR) + SR
     mix = np.zeros((n, 2), dtype=np.float32)
-    ataques, desfases = {}, {}
+    compas = 240.0 / tempo
+    tramos, desfases, empujes = {}, {}, {}
+    arrastre = 0.0              # lo que se empujo a los anteriores se arrastra a los siguientes
     for k in elegidos:
         c = plan[k]
         inicio, audio, lag, sin_eq = renderizar_tema(c, tempo, p)
         desfases[k] = round(lag * 1000, 1)
+        inicio += int(round(arrastre * SR))
+        if k - 1 in tramos:
+            # el empujon al plato: el entrante se engancha con el saliente en los 8 compases
+            # previos al cambio. Corregir cada tema contra su grilla no alcanza: en Adrift y
+            # Fogbows el primer ataque no es el bombo y la grilla queda 14 ms corrida
+            x = plan[k].cambio_in
+            empuje = desfase_entre(tramos[k - 1], (sin_eq, inicio / SR), x - 8 * compas, x) / 1000
+            inicio -= int(round(empuje * SR))
+            arrastre -= empuje
+            empujes[k] = round(empuje * 1000, 1)
         a0 = inicio - int(ventana[0] * SR)
         i0, j0 = max(0, a0), max(0, -a0)
         largo = min(len(audio) - j0, n - i0)
         if largo > 0:
             mix[i0:i0 + largo] += audio[j0:j0 + largo]
-        beats_mix = c.offset + c.tema.beats / c.factor
-        ataques[k] = (beats_mix, ataques_cerca(sin_eq, inicio / SR, beats_mix)[0])
-        print(f"  {k + 1:2d} renderizado (grilla corrida {desfases[k]:+.1f} ms)  {time.time() - t_arranque:5.0f} s",
-              flush=True)
+        tramos[k] = (sin_eq, inicio / SR)
+        print(f"  {k + 1:2d} renderizado (grilla {desfases[k]:+.1f} ms, empujon {empujes.get(k, 0):+.1f} ms)"
+              f"  {time.time() - t_arranque:5.0f} s", flush=True)
 
-    # --- verificar: bombos juntos en los 8 compases antes de cada cambio
-    compas = 240.0 / tempo
+    # --- verificar: bombos juntos, en TRES ventanas que no se tocan. El empujon se calculo en
+    # los 8 compases previos al cambio; medir solo ahi seria medir contra el propio paso. Si el
+    # enganche es real, tiene que sostenerse antes, justo antes y despues del cambio.
     chequeo = []
     for k in elegidos[:-1]:
         x = plan[k + 1].cambio_in
-        ba, ta = ataques[k]
-        bb, tb = ataques[k + 1]
-        difs = []
-        for b, t in zip(bb, tb):
-            if x - 8 * compas <= b <= x and not np.isnan(t):
-                j = int(np.argmin(np.abs(ba - b)))
-                if not np.isnan(ta[j]):
-                    difs.append((t - ta[j]) * 1000)
-        flameo = float(np.median(np.abs(difs))) if difs else float("nan")
+        ventanas = [(x - 8 * compas, x - 4 * compas), (x - 4 * compas, x), (x, x + 4 * compas)]
+        lags = [desfase_entre(tramos[k], tramos[k + 1], d, h) for d, h in ventanas]
+        flameo = max(abs(v) for v in lags)
+        pozo, doble = pozo_de_grave(mix, ventana[0], x)
         chequeo.append({"cambio": f"{k + 1}->{k + 2}", "minuto": mmss(x), "flameo_ms": round(flameo, 1),
-                        "ok": bool(flameo <= FLAMEO_MAX_MS)})
+                        "ventanas_ms": lags, "empujon_ms": empujes.get(k + 1, 0.0),
+                        "pozo_db": pozo, "doble_bajo_db": doble,
+                        "ok": bool(flameo <= FLAMEO_MAX_MS and POZO_DB[0] <= pozo <= POZO_DB[1]
+                                   and doble <= DOBLE_BAJO_MAX_DB)})
 
     # --- volumen parejo alrededor de cada cambio: contra el cuerpo, lejos de los cambios
     medidor = pyln.Meter(SR)
@@ -166,10 +231,10 @@ def main() -> None:
                "estructura": informe_estructura(temas, estructuras)}
     salida.with_suffix(".json").write_text(json.dumps(informe, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"\n{'cambio':>7} {'minuto':>7} {'bombos':>8} {'volumen':>8}")
+    print(f"\n{'cambio':>7} {'minuto':>7} {'golpe':>8} {'volumen':>8} {'pozo':>7} {'2 bajos':>8}")
     for ch in chequeo:
-        print(f"{ch['cambio']:>7} {ch['minuto']:>7} {ch['flameo_ms']:>6.1f}ms {ch['salto_db']:>6.1f}dB  "
-              f"{'ok' if ch['ok'] else 'REVISAR'}")
+        print(f"{ch['cambio']:>7} {ch['minuto']:>7} {ch['flameo_ms']:>6.1f}ms {ch['salto_db']:>6.1f}dB "
+              f"{ch['pozo_db']:>5.1f}dB {ch['doble_bajo_db']:>6.1f}dB  {'ok' if ch['ok'] else 'REVISAR'}")
     print(f"\n-> {salida}  ({len(mix) / SR / 60:.1f} min, {time.time() - t_arranque:.0f} s)")
 
 

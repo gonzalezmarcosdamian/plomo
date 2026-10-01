@@ -3096,15 +3096,15 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
 | 5 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
 | 6 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 7 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
-| 8 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 9 | Maze 28 | Fogbows | 122 | 6.3 |
-| 10 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
-| 11 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 14 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 15 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 7 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 8 | Maze 28 | Fogbows | 122 | 6.3 |
+| 9 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
+| 10 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
+| 12 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 13 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 14 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 15 | Greg Ochman | The Silver Lily (Original Mix) | 120 | 5.5 |
 | 16 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
 | 17 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
 | 18 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |

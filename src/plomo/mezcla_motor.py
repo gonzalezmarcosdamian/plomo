@@ -6,8 +6,8 @@ Los numeros de `Plantilla` salen de separar los dos decks en las tres transicion
 de la grabacion de consola del 2026-09-23 (agente `bajo`, regresion por banda):
 - el entrante suena 40-75 s antes del cambio de bajos, con medios y agudos de 3 a
   12 dB abajo y el grave cortado (o a medias, -12 a -30 dB, al final);
-- el cambio de bajos dura 2-4 s: el grave del saliente se va y el del entrante
-  entra, con un pozo corto en el medio;
+- el cambio de bajos dura 3-5 s y es un cruce: los dos graves se mueven a la vez y se
+  encuentran cerca de -9 dB, lo que deja un pozo corto de -3 a -10 dB;
 - despues, el saliente sigue 20-30 s sin sub, sus medios bajan a -6/-8 dB y se
   apaga.
 A 122 BPM eso es entrar 32 compases antes y sacar el saliente en 12.
@@ -51,8 +51,12 @@ class Plantilla:
     medios_casi_db: float = -3.0    # ... a 8 compases del cambio
     grave_cortado_db: float = -40.0
     grave_parcial_db: float = -18.0  # los ultimos 8 compases antes del cambio
-    salida_grave_tiempos: float = 2.0    # el grave del saliente se va en 2 tiempos
-    entrada_grave_tiempos: float = 2.0   # el del entrante entra en 2 tiempos
+    # el cambio de bajos es un CRUCE, no un corte y una entrada: en la grabacion (blend 1) el
+    # saliente baja de 0 a -16 dB mientras el entrante sube de -17 a -4, a la vez, en ~5 s, y
+    # se cruzan cerca de -9. Primero sacar uno y despues meter el otro dejaba un pozo de -27 dB.
+    cruce_tiempos: float = 8.0            # el cruce dura 8 tiempos, centrado en el cambio
+    cruce_saliente_db: float = -16.0      # donde termina el saliente al final del cruce
+    cruce_entrante_db: float = -4.0       # donde termina el entrante al final del cruce
     salida_compases: int = 12       # el saliente se apaga en 12 compases despues del cambio
     salida_medios_db: float = -6.0  # ... bajando primero a -6 dB en 8
 
@@ -75,6 +79,30 @@ def _compas_mix(t: Tema, factor: float, offset: float, compas: int) -> float:
     return offset + c[compas] / factor
 
 
+COMPASES_LLENOS_DESPUES = 16   # el entrante tiene que tener piso despues del cambio
+LLENO_MINIMO = 0.8
+
+
+def compas_de_cambio(e: Estructura, preferido: int) -> int:
+    """El compas (en frase) donde el entrante toma el grave.
+
+    Tiene que tener bombo y bajo llenos en los 16 compases siguientes: con la regla fija de
+    "32 compases", Adrift cambiaba en el 32 y entraba en su breakdown en el 34 — el saliente se
+    iba justo cuando el entrante se quedaba sin piso (pozo medido: +16 dB, o sea, sin grave).
+    Se prefiere el mas cercano a `preferido` desde abajo; si no hay, el primero despues.
+    """
+    from plomo.mezcla import COMPASES_FRASE, UMBRAL_BAJO
+    lleno = (e.bombo >= 0.75) & (e.bajo >= UMBRAL_BAJO)
+    sirve = lambda c: c + COMPASES_LLENOS_DESPUES <= len(lleno) and \
+        lleno[c:c + COMPASES_LLENOS_DESPUES].mean() >= LLENO_MINIMO
+    frases = range(0, len(lleno) - COMPASES_LLENOS_DESPUES, COMPASES_FRASE)
+    abajo = [c for c in frases if c <= preferido and c >= e.bass_in and sirve(c)]
+    if abajo:
+        return max(abajo)
+    arriba = [c for c in frases if c > preferido and sirve(c)]
+    return arriba[0] if arriba else max(e.bass_in, preferido)
+
+
 def planificar(temas: list[Tema], estructuras: list[Estructura], tempo: float,
                p: Plantilla = Plantilla()) -> list[Colocado]:
     """Donde arranca, donde termina y donde cambia de bajos cada tema."""
@@ -86,8 +114,9 @@ def planificar(temas: list[Tema], estructuras: list[Estructura], tempo: float,
         if i > 0:
             ant, e_ant = colocados[-1], estructuras[i - 1]
             t_cambio = _compas_mix(ant.tema, ant.factor, ant.offset, e_ant.mix_out())
-            # 32 compases antes del cambio, aunque el bajo propio arranque antes: suena con el grave cortado
-            compas_in = max(e.bass_in, p.compases_antes)
+            # hasta 32 compases antes del cambio, aunque el bajo propio arranque antes (suena con
+            # el grave cortado), y el cambio donde el entrante tiene piso despues
+            compas_in = compas_de_cambio(e, p.compases_antes)
             offset = t_cambio - t.compases[compas_in] / f
             desde = offset + t.compases[max(0, compas_in - p.compases_antes)] / f
             cambio_in = t_cambio
@@ -110,12 +139,15 @@ def _envolventes(c: Colocado, tempo: float, p: Plantilla) -> dict[str, list[tupl
         # el fader sube desde silencio en 2 compases, no aparece de golpe en -12
         medio += [(c.desde, SILENCIO_DB), (c.desde + 2 * compas, p.medios_inicio_db),
                   (x - 8 * compas, p.medios_casi_db), (x, 0.0)]
+        medio_cruce = p.cruce_tiempos / 2 * tiempo
         grave += [(c.desde, p.grave_cortado_db), (x - 8 * compas, p.grave_cortado_db),
-                  (x - 8 * compas + 0.01, p.grave_parcial_db), (x, p.grave_parcial_db),
-                  (x + p.entrada_grave_tiempos * tiempo, 0.0)]
+                  (x - 8 * compas + 0.01, p.grave_parcial_db), (x - medio_cruce, p.grave_parcial_db),
+                  (x + medio_cruce, p.cruce_entrante_db), (x + 3 * medio_cruce, 0.0)]
     if c.cambio_out is not None:
         y = c.cambio_out
-        grave += [(y - p.salida_grave_tiempos * tiempo, 0.0), (y, p.grave_cortado_db)]
+        medio_cruce = p.cruce_tiempos / 2 * tiempo
+        grave += [(y - medio_cruce, 0.0), (y + medio_cruce, p.cruce_saliente_db),
+                  (y + 3 * medio_cruce, p.grave_cortado_db)]
         medio += [(y, 0.0), (y + 8 * compas, p.salida_medios_db),
                   (y + p.salida_compases * compas, SILENCIO_DB)]
     else:
@@ -206,7 +238,10 @@ def renderizar_tema(c: Colocado, tempo: float, p: Plantilla,
     crudo = _decodificar(c.tema.archivo, ini, fin)
     lag = _desfase_grilla(crudo, ini, c.tema)
     # pedalboard espera (canales, muestras)
-    estirado = time_stretch(np.ascontiguousarray(crudo.T), SR, stretch_factor=c.factor, high_quality=True,
+    # high_quality=False A PROPOSITO: con True, Rubber Band deja el largo total exacto pero corre
+    # la grilla adentro — medido por `research`: de 0 a +109 ms en 4 minutos de un tema real
+    # subido 1.2%. Con False el error queda en 1.5 ms. Un factor fijo por tema, nunca variable.
+    estirado = time_stretch(np.ascontiguousarray(crudo.T), SR, stretch_factor=c.factor, high_quality=False,
                             transient_mode="crisp").T.astype(np.float32)
     # el audio del segundo `ini` del tema cae en el mix donde cae la grilla, corrida por lo medido
     t0_mix = c.offset + (ini - lag) / c.factor
