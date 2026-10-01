@@ -3035,22 +3035,22 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
-| 2 | Mindlancholic | Mirages in Space | 123 | 6.9 |
-| 3 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 4 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 1 | Dave Seaman | Mirrorball Sleaze (12" Club Mix) | 124 | 6.6 |
+| 2 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
+| 3 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
+| 4 | Zuccasam | Feel Happy (Original Mix) | 125 | 6.6 |
 | 5 | Maze 28 | Fogbows | 122 | 6.3 |
 | 6 | Cid Inc. | Citadel (Original Mix) | 123 | 7.3 |
 | 7 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
-| 8 | Gorkiz & Mango | Ipanema Twilight (Analog Jungs Remix)  | 122 | 5.9 |
-| 9 | Supacooks | Echo Groove (Extended Mix) | 123 | 6.7 |
-| 10 | Nicolas Viana | Wayfarer (Extended Mix) | 124 | 6.7 |
-| 11 | Digital Mess, Astral Base | Turbulence (Extended Mix) | 121 | 6.3 |
-| 12 | Zuccasam | Feel Happy (Original Mix) | 125 | 6.6 |
-| 13 | Dave Seaman | Mirrorball Sleaze (12" Club Mix) | 124 | 6.6 |
+| 8 | Supacooks | Echo Groove (Extended Mix) | 123 | 6.7 |
+| 9 | Facundo Borras | Whispers from Dawn (Ruben Karapetyan Remix) | 120 | 7.5 |
+| 10 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 11 | ECHO DAFT, SHERRNX | Power Surge (Claudio Cornejo (AR) Remix) | 122 | 6.8 |
+| 12 | Beije | Sigil (Emi Galvan Remix) | 122 | 6.6 |
+| 13 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
 | 14 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 15 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 16 | Jark Prongo, Hernan Cattaneo, Chocolate Puma, Brigado Crew | Movin' Thru Your System (Extended Mix)  | 125 | 6.6 |
+| 15 | Mindlancholic | Mirages in Space | 123 | 6.9 |
+| 16 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
 
 
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22

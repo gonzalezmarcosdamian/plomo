@@ -8,17 +8,12 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set. | 2026-10-01: todos los temas con la ESTRUCTURA de Fogbows, medida de su receta: UN breakdown de 35 compases, drop final de 77 --32% del tema-- y 5.2 de caida de densidad. Se elige por distancia a esa firma. Quedan los 5 marcados por el DJ. Se exige energia >= 6.3: sin ese piso la forma de Fogbows arrastra el set de 7.0 a 6.2 de mediana, justo despues de que el DJ pidiera subirlos. | reordenado con beam search: el orden greedy --ir eligiendo el vecino mas cercano-- terminaba en un salto de 1A a 6A, cinco pasos de rueda, porque se queda sin opciones al final. Un paso mayor a 2 ahora cuesta 40, o sea prohibido.",
+  "_nota": " | 2026-09-30: va en la carpeta '0 Fechas' de Rekordbox, con el resto de la noche. | 2026-09-30: subido con subir_sets.py --piso 6.0. El DJ quiere poder saltar entre sets en vivo, y para eso tienen que estar a la misma altura. Solo se cambiaron temas que el no marco, y el que entra no corta el groove mas que el que sale. | 2026-10-01: 'mas housero dentro del progresive y melodic house lindo'. Housero esta medido como densidad + graves - color, el eje OPUESTO al colorido; pedir las dos cosas se resuelve subiendo groove y graves sin irse al extremo sin melodia. Salieron los temas abajo del piso de graves de 40 --Blue Magic 18.7, Luminize 22.0-- por otros con graves >= 48, densidad >= 14.5 y color >= p55. Lo marcado por el DJ no se toco. | corregido: Alafia habia entrado por la regla nueva de veto por set --lo habia vetado del 143-- pero su nota decia 'oscuro' y el pedido es melodic house LINDO. Se excluyen todos los que el DJ llamo oscuros, aunque el veto sea de otro set. | 2026-10-01: todos los temas con la ESTRUCTURA de Fogbows, medida de su receta: UN breakdown de 35 compases, drop final de 77 --32% del tema-- y 5.2 de caida de densidad. Se elige por distancia a esa firma. Quedan los 5 marcados por el DJ. Se exige energia >= 6.3: sin ese piso la forma de Fogbows arrastra el set de 7.0 a 6.2 de mediana, justo despues de que el DJ pidiera subirlos. | reordenado con beam search: el orden greedy --ir eligiendo el vecino mas cercano-- terminaba en un salto de 1A a 6A, cinco pasos de rueda, porque se queda sin opciones al final. Un paso mayor a 2 ahora cuesta 40, o sea prohibido. | 2026-10-01: 'quita los que esten mas abajo y que no mantengan el groove, no tenes limitaciones en este set'. Se subieron los dos pisos a la vez: energia 6.5 y graves 48 para quedarse, y los que entran tienen que superar 6.6 y 50. Salieron 5, DOS DE ELLOS MARCADOS POR EL DJ --Wakefeld, que era favorito pero tiene los graves mas bajos del set (43.1), e Ipanema Twilight, que es su referencia de groove pero es el mas bajo de energia (5.9)--. Se tocaron porque el DJ levanto la restriccion para este set en particular. Fogbows se queda: es el modelo con el que se armo. | corregido: habia entrado 'Low Era (Original Mix)', que es OTRA VERSION de un tema que el DJ llamo 'oscuro, baja energia' en el 139. El veto estaba anotado sobre el remix y la busqueda miraba el ContentID, no el titulo. Ahora se descarta cualquier version de un titulo que el DJ rechazo.",
   "tracks": [
     {
-      "artist": "PROFF, Volen Sentir",
-      "title": "Luna Amazonia (PM Mix)",
-      "content_id": "211128031"
-    },
-    {
-      "artist": "Mindlancholic",
-      "title": "Mirages in Space",
-      "content_id": "248152537"
+      "artist": "Dave Seaman",
+      "title": "Mirrorball Sleaze (12\" Club Mix)",
+      "content_id": "160229080"
     },
     {
       "artist": "Gonzalo Cotroneo",
@@ -26,9 +21,14 @@
       "content_id": "5802991"
     },
     {
-      "artist": "Cendryma",
-      "title": "Wakefeld (Original Mix)",
-      "content_id": "75106655"
+      "artist": "MuscleDyke",
+      "title": "Dark White (Mind Echoes Remix)",
+      "content_id": "77870371"
+    },
+    {
+      "artist": "Zuccasam",
+      "title": "Feel Happy (Original Mix)",
+      "content_id": "148406361"
     },
     {
       "artist": "Maze 28",
@@ -46,39 +46,29 @@
       "content_id": "124748921"
     },
     {
-      "artist": "Gorkiz & Mango",
-      "title": "Ipanema Twilight (Analog Jungs Remix) ",
-      "content_id": "197567059"
-    },
-    {
       "artist": "Supacooks",
       "title": "Echo Groove (Extended Mix)",
       "content_id": "92223153"
     },
     {
-      "artist": "Nicolas Viana",
-      "title": "Wayfarer (Extended Mix)",
-      "content_id": "10543890"
+      "artist": "Facundo Borras",
+      "title": "Whispers from Dawn (Ruben Karapetyan Remix)",
+      "content_id": "195537216"
     },
     {
-      "artist": "Digital Mess, Astral Base",
-      "title": "Turbulence (Extended Mix)",
-      "content_id": "194114969"
+      "artist": "Paul Thomas, Maze 28",
+      "title": "Abundance (Original Mix)",
+      "content_id": "142322723"
     },
     {
-      "artist": "Zuccasam",
-      "title": "Feel Happy (Original Mix)",
-      "content_id": "148406361"
+      "artist": "ECHO DAFT, SHERRNX",
+      "title": "Power Surge (Claudio Cornejo (AR) Remix)",
+      "content_id": "19474652"
     },
     {
-      "artist": "Dave Seaman",
-      "title": "Mirrorball Sleaze (12\" Club Mix)",
-      "content_id": "160229080"
-    },
-    {
-      "artist": "Wassu",
-      "title": "From Here (feat. MØØNE) (Extended Mix)",
-      "content_id": "54818175"
+      "artist": "Beije",
+      "title": "Sigil (Emi Galvan Remix)",
+      "content_id": "133117372"
     },
     {
       "artist": "Marsh, Simon Doty",
@@ -86,9 +76,19 @@
       "content_id": "175806155"
     },
     {
-      "artist": "Jark Prongo, Hernan Cattaneo, Chocolate Puma, Brigado Crew",
-      "title": "Movin' Thru Your System (Extended Mix) ",
-      "content_id": "149101778"
+      "artist": "Wassu",
+      "title": "From Here (feat. MØØNE) (Extended Mix)",
+      "content_id": "54818175"
+    },
+    {
+      "artist": "Mindlancholic",
+      "title": "Mirages in Space",
+      "content_id": "248152537"
+    },
+    {
+      "artist": "PROFF, Volen Sentir",
+      "title": "Luna Amazonia (PM Mix)",
+      "content_id": "211128031"
     }
   ]
 }
