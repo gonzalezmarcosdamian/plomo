@@ -1113,5 +1113,38 @@
       "fecha": "2026-10-01",
       "textual": "saque temas"
     }
+  },
+  "95485469": {
+    "artist": "Maze 28",
+    "title": "Constant Daydream (TEELCO Remix)",
+    "E_calc": 6.9,
+    "favorito": true,
+    "nota": "teelco esta bien",
+    "fuente": "escucha 2026-10-01",
+    "_refuta_reglas": "Este tema NO pasa sonido_del_150: 9 secciones (max 8) y drop 14% (min 15%). El DJ lo aprobo igual. Primer caso en que las reglas rechazan algo que el acepta, y confirma la jerarquia escrita: las reglas FILTRAN, el oido del DJ DECIDE. No se toca el umbral por un caso; se anota y se mira si se repite."
+  },
+  "233643423": {
+    "artist": "Ra Duh",
+    "title": "Ganymede (Original Mix) ",
+    "E_calc": 6.1,
+    "favorito": true,
+    "nota": "ganymed tambien antes, es de construccion",
+    "fuente": "escucha 2026-10-01"
+  },
+  "94334109": {
+    "artist": "Jamie Stevens, GMJ, Matter, Wilma (AU)",
+    "title": "Tell You Later feat. Wilma (AU) (GMJ & Matter Remix)",
+    "E_calc": 5.6,
+    "favorito": true,
+    "nota": "tell you later muy bien",
+    "fuente": "escucha 2026-10-01"
+  },
+  "21782262": {
+    "artist": "Molac",
+    "title": "Crisopea (Ilias Katelanos & Plecta Remix)",
+    "E_calc": 5.2,
+    "favorito": true,
+    "nota": "crisopea esta bueno",
+    "fuente": "escucha 2026-10-01"
   }
 }

@@ -3085,29 +3085,33 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
 **Armado:** 2026-10-01  
 **Duracion:** 0h  
-**Tracks:** 18  
+**Tracks:** 22  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 2 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
-| 3 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 5 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 6 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 7 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 1 | Maze 28 | Constant Daydream (TEELCO Remix) | 122 | 6.9 |
+| 2 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
+| 3 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
+| 4 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
+| 5 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
+| 6 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
+| 7 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
 | 8 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
 | 9 | Maze 28 | Fogbows | 122 | 6.3 |
-| 10 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
-| 11 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
-| 12 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 13 | Rockka | Amnesia (Fuenka Remix) | 123 | 7.2 |
-| 14 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 15 | Andre Moret | Aria (Gorkiz Remix) | 125 | 5.8 |
-| 16 | Wailey | Droplets (Taylan Remix) | 122 | 5.3 |
-| 17 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 18 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 10 | Jamie Stevens, GMJ, Matter, Wilma (AU) | Tell You Later feat. Wilma (AU) (GMJ & Matter Remix) | 122 | 5.6 |
+| 11 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 12 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 13 | Ra Duh | Ganymede (Original Mix)  | 121 | 6.1 |
+| 14 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 15 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 16 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 17 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
+| 18 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 19 | Molac | Crisopea (Ilias Katelanos & Plecta Remix) | 124 | 5.2 |
+| 20 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
+| 21 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 22 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
 
 
 ## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01
