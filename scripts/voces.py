@@ -44,8 +44,30 @@ SEGUNDOS = 30.0
 
 
 def _voz(stem_voz: Path, mezcla: Path) -> dict | None:
+    """Compara la voz contra la SUMA DE LOS STEMS, no contra el archivo original.
+
+    El bug que esto arregla: el stem de voz sale del 45% del tema --donde Demucs
+    corto-- y la mezcla se cargaba del archivo entero con offset 5s, o sea de la
+    intro. Comparar el estribillo contra la intro daba pesos imposibles: Satori
+    midio 343.9%, y un ratio no puede pasar de 100%. Todos los pesos anteriores
+    al 2026-10-01 estan mal por esto; la presencia tambien, porque su umbral
+    sale del maximo de la mezcla.
+
+    Los cuatro stems son del MISMO fragmento, asi que sumarlos reconstruye esa
+    porcion de la mezcla y el ratio vuelve a significar algo.
+    """
     y, _ = librosa.load(stem_voz, sr=SR, offset=min(MARGEN_S, 5.0), duration=SEGUNDOS)
-    m, _ = librosa.load(mezcla, sr=SR, offset=min(MARGEN_S, 5.0), duration=SEGUNDOS)
+    partes = []
+    for nom in ("drums", "bass", "other", "vocals"):
+        f = stem_voz.parent / f"{nom}.wav"
+        if f.exists():
+            a, _ = librosa.load(f, sr=SR, offset=min(MARGEN_S, 5.0), duration=SEGUNDOS)
+            partes.append(a)
+    if partes:
+        n = min(len(a) for a in partes)
+        m = sum(a[:n] for a in partes)
+    else:
+        m, _ = librosa.load(mezcla, sr=SR, offset=min(MARGEN_S, 5.0), duration=SEGUNDOS)
     if len(y) == 0 or len(m) == 0:
         return None
     rv = librosa.feature.rms(y=y, hop_length=512)[0]

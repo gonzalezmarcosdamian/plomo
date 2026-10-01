@@ -343,14 +343,19 @@
     "artist": "Sébastien Léger, Lost Miracle",
     "title": "Dodonpachi (Original Mix)",
     "E_calc": 7.0,
-    "nota": "es favorito",
-    "fuente": "escucha del 148 v2, 2026-09-28",
+    "nota": "cambia don don pachi",
+    "fuente": "escucha del 148, 2026-10-01",
     "favorito": true,
     "momentos": [
       "pico",
       "cierre"
     ],
-    "rol": "el cierre heroico"
+    "rol": "el cierre heroico",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "cambia don don pachi"
+    }
   },
   "80536228": {
     "artist": "Greg Ochman",
@@ -492,8 +497,13 @@
     "title": "Citadel (Original Mix)",
     "E_calc": 7.3,
     "favorito": true,
-    "nota": "esta bien, es un si",
-    "fuente": "escucha del 148 v2, 2026-09-28"
+    "nota": "cambia citadel",
+    "fuente": "escucha del 148, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "cambia citadel"
+    }
   },
   "216766461": {
     "artist": "Rockka",
@@ -751,6 +761,36 @@
       "alcance": "el set 149",
       "fecha": "2026-09-29",
       "textual": "no estan buenos esos que subiste"
+    }
+  },
+  "54818175": {
+    "artist": "Wassu",
+    "title": "From Here (feat. MØØNE) (Extended Mix)",
+    "referencia_de": "modelo del set 148",
+    "favorito": true,
+    "nota": "from here es modelo",
+    "fuente": "escucha del 148, 2026-10-01"
+  },
+  "92223153": {
+    "artist": "Supacooks",
+    "title": "Echo Groove (Extended Mix)",
+    "nota": "saca echo sound",
+    "fuente": "escucha del 148, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saca echo sound"
+    }
+  },
+  "195537216": {
+    "artist": "Facundo Borras",
+    "title": "Whispers from Dawn (Ruben Karapetyan Remix)",
+    "nota": "saca wisper",
+    "fuente": "escucha del 148, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saca wisper"
     }
   }
 }

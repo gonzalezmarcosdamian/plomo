@@ -18,9 +18,10 @@
     "54818175": {
       "artist": "Wassu",
       "title": "From Here (feat. MØØNE) (Extended Mix)",
-      "presencia": 0.87,
-      "peso": 0.456,
-      "etiqueta": "cantado"
+      "presencia": 0.9,
+      "peso": 0.506,
+      "etiqueta": "cantado",
+      "medido": "2026-10-01, con el bug arreglado"
     },
     "184313844": {
       "artist": "Joe Goddard",
@@ -145,8 +146,9 @@
       "artist": "Albuquerque, Anonimat",
       "title": "Like First Time Flight (Extended Mix)",
       "presencia": 0.05,
-      "peso": 0.02,
-      "etiqueta": "instrumental"
+      "peso": 0.011,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-01, con el bug arreglado"
     },
     "117987483": {
       "artist": "Guy J",
@@ -168,6 +170,47 @@
       "presencia": 0.0,
       "peso": 0.001,
       "etiqueta": "instrumental"
+    },
+    "44311136": {
+      "artist": "Envotion",
+      "title": "Adrift (Sebastian Sellares Remix)",
+      "presencia": 0.34,
+      "peso": 0.035,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-01, con el bug arreglado"
+    },
+    "217881642": {
+      "artist": "Albuquerque, Anonimat",
+      "title": "Like First Time Flight (Shai T Extended Remix)",
+      "presencia": 0.05,
+      "peso": 0.011,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-01, con el bug arreglado"
+    },
+    "26677532": {
+      "artist": "Analog Jungs",
+      "title": "Satori (Instrumental Mix) ",
+      "presencia": 1.0,
+      "peso": 0.483,
+      "etiqueta": "cantado",
+      "medido": "2026-10-01, con el bug arreglado"
+    },
+    "185957804": {
+      "artist": "Analog Jungs feat. Abi Ferraresi",
+      "title": "Satori (Original Mix) ",
+      "presencia": 1.0,
+      "peso": 0.483,
+      "etiqueta": "cantado",
+      "medido": "2026-10-01, con el bug arreglado"
+    },
+    "144634580": {
+      "artist": "CamelPhat & ARTBAT",
+      "title": "For a Feeling (feat. RHODES) [Dark Matter Edit]",
+      "presencia": 0.49,
+      "peso": 0.198,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-01, con el bug arreglado"
     }
-  }
+  },
+  "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."
 }
