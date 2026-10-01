@@ -3035,22 +3035,22 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Maze 28 | Fogbows | 122 | 6.3 |
-| 2 | Zuccasam | Feel Happy (Original Mix) | 125 | 6.6 |
-| 3 | CamelPhat & ARTBAT | For a Feeling (feat. RHODES) [Dark Matter Edit] | 122 | 7.0 |
-| 4 | Dave Seaman | Mirrorball Sleaze (12" Club Mix) | 124 | 6.6 |
-| 5 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
-| 6 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
-| 7 | Mindlancholic | Mirages in Space | 123 | 6.9 |
-| 8 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
-| 9 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
-| 10 | Analog Jungs feat. Abi Ferraresi | Satori (Original Mix)  | 120 | 7.5 |
+| 1 | Sultan + Shepard | Indigo (Extended Mix) | 122 | 6.3 |
+| 2 | Kebin Van Reeken | Mycelium (Extended Mix) | 122 | 6.3 |
+| 3 | Aman Anand & Da Luka | Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix) | 122 | 6.3 |
+| 4 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
+| 5 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
+| 6 | Henry Saiz & Band | Just A Mirage (Karmon Remix) | 122 | 6.4 |
+| 7 | Maze 28 | Fogbows | 122 | 6.3 |
+| 8 | Rauschhaus | Morning Walks | 121 | 7.1 |
+| 9 | MuscleDyke | Dark White (Mind Echoes Remix) | 122 | 6.5 |
+| 10 | Gonzalo Cotroneo | Thrill (Extended Mix) | 122 | 7.2 |
 | 11 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 12 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
-| 13 | Beije | Sigil (Emi Galvan Remix) | 122 | 6.6 |
-| 14 | ECHO DAFT, SHERRNX | Power Surge (Claudio Cornejo (AR) Remix) | 122 | 6.8 |
-| 15 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 16 | Envotion | Adrift (Sebastian Sellares Remix) | 123 | 6.6 |
+| 12 | Albuquerque, Anonimat | Like First Time Flight (Extended Mix) | 123 | 7.0 |
+| 13 | PROFF, Volen Sentir | Luna Amazonia (PM Mix) | 123 | 6.5 |
+| 14 | Mindlancholic | Mirages in Space | 123 | 6.9 |
+| 15 | Mike Kohl | Deep Waters (Original Mix) | 122 | 7.0 |
+| 16 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
 
 
 ## Set 149. 149. Cumple Zorro · Colorido · version corta — 1h30 — 2026-09-22

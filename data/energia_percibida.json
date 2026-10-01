@@ -797,14 +797,74 @@
     "artist": "Analog Jungs feat. Abi Ferraresi",
     "title": "Satori (Original Mix) ",
     "E_calc": 7.5,
-    "nota": "satori demasiado es, la idea esta pero demasiado bajada y voces; el groove esta bien en partes",
+    "nota": "lo saco de la lista en Spotify",
     "groove_ok": true,
-    "fuente": "escucha del 150, 2026-10-01",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
     "veto": {
-      "alcance": "el set 150",
+      "alcance": "el set 148",
       "fecha": "2026-10-01",
-      "textual": "satori demasiado es, la idea esta pero demasiado bajada y voces",
-      "medido": "breakdown de 47 compases de corrido (23% del tema) y voz al 100% de presencia"
+      "textual": "saque temas",
+      "medido": "breakdown 47 compases, bajadas 23% del tema"
+    }
+  },
+  "148406361": {
+    "artist": "Zuccasam",
+    "title": "Feel Happy (Original Mix)",
+    "nota": "lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saque temas",
+      "medido": "breakdown 48 compases, bajadas 29% del tema"
+    }
+  },
+  "144634580": {
+    "artist": "CamelPhat & ARTBAT",
+    "title": "For a Feeling (feat. RHODES) [Dark Matter Edit]",
+    "nota": "lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saque temas",
+      "medido": "breakdown 42 compases, bajadas 27% del tema"
+    }
+  },
+  "160229080": {
+    "artist": "Dave Seaman",
+    "title": "Mirrorball Sleaze (12\" Club Mix)",
+    "nota": "lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saque temas",
+      "medido": "breakdown 33 compases, bajadas 17% del tema"
+    }
+  },
+  "133117372": {
+    "artist": "Beije",
+    "title": "Sigil (Emi Galvan Remix)",
+    "nota": "lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saque temas",
+      "medido": "breakdown 32 compases, bajadas 26% del tema"
+    }
+  },
+  "19474652": {
+    "artist": "ECHO DAFT, SHERRNX",
+    "title": "Power Surge (Claudio Cornejo (AR) Remix)",
+    "nota": "lo saco de la lista en Spotify",
+    "fuente": "edicion del DJ en Spotify, 2026-10-01",
+    "veto": {
+      "alcance": "el set 148",
+      "fecha": "2026-10-01",
+      "textual": "saque temas",
+      "medido": "breakdown 47 compases, bajadas 26% del tema"
     }
   }
 }
