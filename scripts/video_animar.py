@@ -85,8 +85,11 @@ def alfa_del_titulo(t: float, inicio: float) -> float:
 # El 2026-10-02 la NVIDIA se reinicio tres veces (nvlddmkm 153) y cada vez se llevo puesto al
 # codificador NVENC, y despues CUDA no encontraba la placa. En la CPU el video no depende del
 # driver: tarda mas, pero no se cae. NVENC queda para cuando la placa este estable.
+# "faster" y no "medium": con medium ffmpeg ocupaba 10 de los 12 hilos y el cuello era el, con la
+# GL esperando. YouTube recodifica igual; a crf 16 la diferencia de preset es tamano, no imagen.
+# Todos los tramos de un video van con el mismo preset, o el concat sin recodificar no los une.
 CODIFICADORES = {
-    "cpu": ["-c:v", "libx264", "-preset", "medium", "-crf", "16", "-profile:v", "high",
+    "cpu": ["-c:v", "libx264", "-preset", "faster", "-crf", "16", "-profile:v", "high",
             "-x264-params", "aq-mode=3"],
     "nvenc": ["-c:v", "hevc_nvenc", "-preset", "p7", "-tune", "hq", "-rc", "vbr", "-cq", "17",
               "-b:v", "0", "-profile:v", "main", "-tag:v", "hvc1"],
