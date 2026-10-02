@@ -27,6 +27,7 @@ import ctypes
 import json
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import numpy as np
@@ -35,6 +36,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 TRAMO_S = 600
 REINTENTOS = 3                  # un tramo que falla se rehace solo antes de rendirse
+ESPERA_REINTENTO_S = 90         # tras un reinicio de la NVIDIA, el driver tarda en volver
 ES_CONTINUOUS, ES_SYSTEM_REQUIRED, ES_DISPLAY_REQUIRED = 0x80000000, 0x00000001, 0x00000002
 
 
@@ -57,6 +59,7 @@ def main() -> None:
     ap.add_argument("--nombre", required=True)
     ap.add_argument("--master", required=True)
     ap.add_argument("--res", default="2560x1440")
+    ap.add_argument("--codificador", default="cpu")
     ap.add_argument("--salida", required=True)
     a = ap.parse_args()
 
@@ -78,10 +81,13 @@ def main() -> None:
             for intento in range(1, REINTENTOS + 1):
                 r = subprocess.run([sys.executable, "-u", str(RAIZ / "scripts" / "video_animar.py"), "--nombre",
                                     a.nombre, "--master", a.master, "--res", a.res, "--desde", f"{ini:.3f}",
-                                    "--segundos", f"{largo:.3f}", "--salida", str(tramo)], cwd=RAIZ)
+                                    "--segundos", f"{largo:.3f}", "--codificador", a.codificador,
+                                    "--salida", str(tramo)], cwd=RAIZ)
                 if r.returncode == 0 and abs(duracion(tramo) - largo) < 0.2:
                     break
                 print(f"tramo {k + 1} fallo (intento {intento}/{REINTENTOS}, codigo {r.returncode})", flush=True)
+                if intento < REINTENTOS:
+                    time.sleep(ESPERA_REINTENTO_S)
             if abs(duracion(tramo) - largo) >= 0.2:
                 sys.exit(f"el tramo {k} quedo de {duracion(tramo):.1f} s y tenia que durar {largo:.1f}")
         lista = carpeta / "lista.txt"

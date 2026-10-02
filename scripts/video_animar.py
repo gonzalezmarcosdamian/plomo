@@ -82,15 +82,26 @@ def alfa_del_titulo(t: float, inicio: float) -> float:
     return float(min(1.0, (t - a) / TITULO_FUNDIDO_S, (b - t) / TITULO_FUNDIDO_S))
 
 
-def ffmpeg_salida(salida: Path, w: int, h: int, fps: int, master: Path, desde: float, segundos: float) -> list[str]:
+# El 2026-10-02 la NVIDIA se reinicio tres veces (nvlddmkm 153) y cada vez se llevo puesto al
+# codificador NVENC, y despues CUDA no encontraba la placa. En la CPU el video no depende del
+# driver: tarda mas, pero no se cae. NVENC queda para cuando la placa este estable.
+CODIFICADORES = {
+    "cpu": ["-c:v", "libx264", "-preset", "medium", "-crf", "16", "-profile:v", "high",
+            "-x264-params", "aq-mode=3"],
+    "nvenc": ["-c:v", "hevc_nvenc", "-preset", "p7", "-tune", "hq", "-rc", "vbr", "-cq", "17",
+              "-b:v", "0", "-profile:v", "main", "-tag:v", "hvc1"],
+}
+
+
+def ffmpeg_salida(salida: Path, w: int, h: int, fps: int, master: Path, desde: float, segundos: float,
+                  codificador: str) -> list[str]:
     final = salida.suffix.lower() == ".mov"
     audio = ["-c:a", "pcm_s24le"] if final else ["-c:a", "aac", "-b:a", "320k"]
     return ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
             "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
             "-ss", f"{desde:.3f}", "-t", f"{segundos:.3f}", "-i", str(master),
             "-map", "0:v", "-map", "1:a",
-            "-c:v", "hevc_nvenc", "-preset", "p7", "-tune", "hq", "-rc", "vbr", "-cq", "17",
-            "-b:v", "0", "-profile:v", "main", "-pix_fmt", "yuv420p", "-tag:v", "hvc1",
+            *CODIFICADORES[codificador], "-pix_fmt", "yuv420p",
             "-colorspace", "bt709", "-color_primaries", "bt709", "-color_trc", "bt709",
             *audio, "-shortest", str(salida)]
 
@@ -105,10 +116,13 @@ def main() -> None:
     ap.add_argument("--res", default="3840x2160")
     ap.add_argument("--mostrar-titulo", action="store_true",
                     help="en un prototipo, muestra el cartel del tema que suena al principio del tramo")
+    ap.add_argument("--codificador", choices=sorted(CODIFICADORES), default="cpu")
     ap.add_argument("--salida", required=True)
     a = ap.parse_args()
 
-    r = np.load(RASGOS / f"{a.nombre}_rasgos.npz")
+    # dict(): un .npz abierto vuelve a leer el arreglo entero del zip en cada r["..."], y
+    # aca se piden ocho por cuadro (22 MB por cuadro en un set de 89 min)
+    r = dict(np.load(RASGOS / f"{a.nombre}_rasgos.npz"))
     caps = json.loads((RASGOS / f"{a.nombre}_capitulos.json").read_text(encoding="utf-8"))["capitulos"]
     fps = int(r["fps"])
     n_total = len(r["cuerpo"])
@@ -136,8 +150,8 @@ def main() -> None:
 
     salida = Path(a.salida)
     salida.parent.mkdir(parents=True, exist_ok=True)
-    proc = subprocess.Popen(ffmpeg_salida(salida, w, h, fps, Path(a.master), i0 / fps, (i1 - i0) / fps),
-                            stdin=subprocess.PIPE)
+    proc = subprocess.Popen(ffmpeg_salida(salida, w, h, fps, Path(a.master), i0 / fps, (i1 - i0) / fps,
+                                          a.codificador), stdin=subprocess.PIPE)
     t_arranque = time.time()
     for i in range(i0, i1):
         t = i / fps

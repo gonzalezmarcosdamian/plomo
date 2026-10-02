@@ -8,6 +8,25 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un archivo abierto no es un arreglo en memoria
+
+**Que paso.** El render de video iba a 12-17 cuadros/s y lo atribuiamos a la GPU:
+se forzo la NVIDIA, se codifico en NVENC, se discutio la integrada. El cuello era
+otro. `np.load` de un `.npz` devuelve un objeto que vuelve a leer y armar el arreglo
+ENTERO del zip en cada `r["clave"]`, y el bucle pedia ocho por cuadro: 22 MB por
+cuadro, mas de 300 MB/s de memoria tirada. Con `dict(np.load(...))` paso a 40
+cuadros/s, codificando en la CPU, que se suponia mas lenta.
+
+**Por que.** La sintaxis de un diccionario no dice si lo que hay atras es memoria
+o disco. Y la explicacion que se tenia a mano (la GPU) era coherente, asi que nadie
+midio.
+
+**Como se aplica.** Antes de cambiar de hardware o de codificador, medir donde se va
+el tiempo de UN cuadro. Todo lo que se lee adentro de un bucle caliente se carga
+una vez afuera, aunque la lectura se vea como un indice.
+
+---
+
 ## Un estirador de tiempo puede dejar el largo exacto y correr la grilla adentro
 
 **Que paso.** Rubber Band (via pedalboard `time_stretch`) en alta calidad estiro un
