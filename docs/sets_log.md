@@ -3173,22 +3173,22 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Choopie, Golan Zocher | Alush (Leon Lobato Remix)  | 120 | 7.0 |
-| 2 | Moritz | Echoes | 122 | 5.2 |
-| 3 | Dabeat, Kamilo Sanclemente | Seriously (Original Mix) | 122 | 7.2 |
-| 4 | Simos Tagias | Atom (Not Demure Remix) | 122 | 7.8 |
-| 5 | Hobin Rude | 33rd (Ric Niels & Dowden Remix) | 121 | 6.2 |
-| 6 | Andrés Moris | Rust (Rockka Remix) | 123 | 7.0 |
-| 7 | Ismail M & Redspace | Know Yourself | 120 | 6.3 |
-| 8 | Redspace, Al Park | Trends (Original Mix) | 122 | 6.4 |
-| 9 | NekliFF, Rafael Cerato | Marrakesh (Kasper Koman Remix) | 121 | 6.2 |
-| 10 | Digital Mess, Meeting Molly | Binauraler (Original Mix) | 120 | 6.8 |
-| 11 | Cendryma | Raven (Extended Mix) | 121 | 6.4 |
-| 12 | Abity, Ewan Rill | La Cumbre (Original Mix) | 123 | 6.2 |
-| 13 | STEREO MUNK, Mind Echoes | Field of Steel (Original Mix) | 122 | 6.5 |
-| 14 | Unusual Soul | Exhale  | 120 | 5.7 |
-| 15 | Malou, Ben Bohmer | Lost In Mind (Volen Sentir Extended Vision) | 124 | 5.4 |
-| 16 | Ric Niels | Morning Dew (Original Mix) | 120 | 5.0 |
-| 17 | D-Nox, Lonya, DJ Zombi, Amber Long | Red Light Stories (Original Mix)  | 122 | 6.6 |
-| 18 | Tripswitch | Dose (Hernan Cattaneo & Marcelo Vasami Remix) | 120 | 6.4 |
+| 1 | Niceshot | Earthrise (Original Mix)  | 121 | 7.4 |
+| 2 | Michael A | Conviction (Aman Anand Remix) | 122 | 6.3 |
+| 3 | Digital Mess | Outlands (Dowden & Andreas Bühler Remix) | 123 | 7.5 |
+| 4 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
+| 5 | Analog Jungs | Astral Beats | 120 | 7.0 |
+| 6 | Gaston Perez | Angelic Voice (Original Mix) | 120 | 7.6 |
+| 7 | Choopie, Golan Zocher | Alush (Leon Lobato Remix)  | 120 | 7.0 |
+| 8 | DIM KELLY | New World (Extended Mix) | 122 | 6.7 |
+| 9 | Ismail M & Redspace | Jackpot | 122 | 6.7 |
+| 10 | Jonas Saalbach, Yubik | Faint (Original Mix) | 121 | 6.7 |
+| 11 | Callecat & Paul Hazendonk | State of Mind (Noiyse Project Remix) | 122 | 6.9 |
+| 12 | Redspace | Life Without You (Original Mix) | 122 | 6.9 |
+| 13 | sc00ps | Play Right (Original Mix) | 123 | 7.3 |
+| 14 | Kamilo Sanclemente, Juan Pablo Torrez | Space Distortion (Original Mix) | 120 | 6.5 |
+| 15 | Shai T | Keep The Faith (Original Mix)  | 120 | 6.9 |
+| 16 | Julieta Kühnle | Blazer | 122 | 7.0 |
+| 17 | Tim Green | Cedar (Original Mix)  | 120 | 7.6 |
+| 18 | Abity, Luca Abayan | Afterimage (Original Mix) | 121 | 7.6 |
 
