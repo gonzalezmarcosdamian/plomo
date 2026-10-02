@@ -1,5 +1,5 @@
 {
-  "name": "152. Housero Nuevo · modelo Fogbows + From Here — 1h52 — 2026-10-02",
+  "name": "152. Housero Nuevo · curva del 150 — 2h03 — 2026-10-02",
   "duration_h": 2.0,
   "bpm_range": [
     120,
@@ -8,6 +8,61 @@
   "max_per_artist": 2,
   "keep_order": true,
   "tracks": [
+    {
+      "artist": "Choopie, Golan Zocher",
+      "title": "Alush (Leon Lobato Remix) ",
+      "content_id": "112694409"
+    },
+    {
+      "artist": "Moritz",
+      "title": "Echoes",
+      "content_id": "137878695"
+    },
+    {
+      "artist": "Dabeat, Kamilo Sanclemente",
+      "title": "Seriously (Original Mix)",
+      "content_id": "205943612"
+    },
+    {
+      "artist": "Simos Tagias",
+      "title": "Atom (Not Demure Remix)",
+      "content_id": "29453504"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "33rd (Ric Niels & Dowden Remix)",
+      "content_id": "15764819"
+    },
+    {
+      "artist": "Andrés Moris",
+      "title": "Rust (Rockka Remix)",
+      "content_id": "13912967"
+    },
+    {
+      "artist": "Ismail M & Redspace",
+      "title": "Know Yourself",
+      "content_id": "149305999"
+    },
+    {
+      "artist": "Redspace, Al Park",
+      "title": "Trends (Original Mix)",
+      "content_id": "139110395"
+    },
+    {
+      "artist": "NekliFF, Rafael Cerato",
+      "title": "Marrakesh (Kasper Koman Remix)",
+      "content_id": "172443914"
+    },
+    {
+      "artist": "Digital Mess, Meeting Molly",
+      "title": "Binauraler (Original Mix)",
+      "content_id": "67101040"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Raven (Extended Mix)",
+      "content_id": "123558844"
+    },
     {
       "artist": "Abity, Ewan Rill",
       "title": "La Cumbre (Original Mix)",
@@ -19,85 +74,30 @@
       "content_id": "112560082"
     },
     {
+      "artist": "Unusual Soul",
+      "title": "Exhale ",
+      "content_id": "245532524"
+    },
+    {
       "artist": "Malou, Ben Bohmer",
       "title": "Lost In Mind (Volen Sentir Extended Vision)",
       "content_id": "30365545"
     },
     {
-      "artist": "Colyn, Read the News",
-      "title": "Funk (Original Mix)",
-      "content_id": "101786424"
+      "artist": "Ric Niels",
+      "title": "Morning Dew (Original Mix)",
+      "content_id": "96351317"
     },
     {
-      "artist": "Redspace, Al Park",
-      "title": "Trends (Original Mix)",
-      "content_id": "139110395"
+      "artist": "D-Nox, Lonya, DJ Zombi, Amber Long",
+      "title": "Red Light Stories (Original Mix) ",
+      "content_id": "80680415"
     },
     {
-      "artist": "Noel Sanger",
-      "title": "Falling Upward (Jamie Stevens Remix)",
-      "content_id": "122746505"
-    },
-    {
-      "artist": "Tobi Amuchastegui",
-      "title": "Rish (Original Mix)",
-      "content_id": "83074531"
-    },
-    {
-      "artist": "Analog Jungs",
-      "title": "Futura (Dowden Remix)",
-      "content_id": "157882627"
-    },
-    {
-      "artist": "C-Jay, Yves Eaux, Sistersweet",
-      "title": "Retryx (Original Mix)",
-      "content_id": "204237213"
-    },
-    {
-      "artist": "Imran Khan",
-      "title": "Horizonz (Simos Tagias Remix)",
-      "content_id": "178842109"
-    },
-    {
-      "artist": "Jou Nielsen, Paul Ikky",
-      "title": "Sundance (Kebin Van Reeken Extended Remix)",
-      "content_id": "178625501"
-    },
-    {
-      "artist": "Mind Echoes",
-      "title": "14 Joys (Original Mix)",
-      "content_id": "28246644"
-    },
-    {
-      "artist": "Mayro",
-      "title": "The Search (Extended Mix)",
-      "content_id": "192876982"
-    },
-    {
-      "artist": "Sainte Vie, Colyn",
-      "title": "Desert Sunrise (Extended) ",
-      "content_id": "37442993"
-    },
-    {
-      "artist": "Simon Vuarambon & Tantum",
-      "title": "Lake Of Fire",
-      "content_id": "71085652"
-    },
-    {
-      "artist": "Redspace & Cafe De Anatolia",
-      "title": "Mirror",
-      "content_id": "7876361"
-    },
-    {
-      "artist": "Michael A",
-      "title": "Conviction (Aman Anand Remix)",
-      "content_id": "5338976"
-    },
-    {
-      "artist": "sc00ps",
-      "title": "Play Right (Original Mix)",
-      "content_id": "110864106"
+      "artist": "Tripswitch",
+      "title": "Dose (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "content_id": "92671668"
     }
   ],
-  "_nota": "2026-10-02: 'haceme un set estilo 150 con musica nueva 152, un poquito mas housero'. LOS 18 TEMAS SON NUEVOS: ninguno aparece en otro set target ni en djmdHistory. 'Housero' no salio de un promedio --el 148, el set que el DJ llamo housero, mide casi igual que el 150: graves +2.2 y nada mas-- sino de los DOS TEMAS QUE EL NOMBRO al pedirlo: Fogbows ('flowbols') y From Here ('from here es modelo, mete mas de este tipo'). Se ranquearon los 3125 temas por parecido de FORMA contra esos dos y contra el 150 entero, y se combino 0.55 housero + 0.45 estilo150, que es el 'un poquito'. CUATRO INTENTOS: con las 12 claves menores abiertas salian 3 y hasta 6 saltos de Camelot 2, porque al material nunca tocado le faltan las claves puente --3A tiene 2 temas, 10A tiene 3--. Acotado a nueve claves CONTIGUAS, 1A a 9A, como el 150 que corre de 11A a 3A. Quedaba un salto 5A->7A y se resolvio a mano: salio The Great Attractor (E5.4, el mas flojo) y entro Sundance (Kebin Van Reeken) en 6A, el puente que faltaba. Peor salto 1. LO QUE CUESTA PEDIR MATERIAL VIRGEN: la mediana de energia de lo nunca tocado es 5.5 contra la 6.9 del 150, y el techo es 7.8. El arco quedo mas plano que el del 150 --5.4 a 7.3 contra 5.2 a 8.0-- y con el pico al final en vez de al cuarto tema. Es un hecho del pool, no una eleccion: no hay con que pegar un 8.0 sin usar algo que el DJ ya toco."
+  "_nota": "2026-10-02: 'haceme un set estilo 150 con musica nueva 152, un poquito mas housero'. LOS 18 TEMAS SON NUEVOS: ninguno aparece en otro set target ni en djmdHistory. 'Housero' no salio de un promedio --el 148, el set que el DJ llamo housero, mide casi igual que el 150: graves +2.2 y nada mas-- sino de los DOS TEMAS QUE EL NOMBRO al pedirlo: Fogbows ('flowbols') y From Here ('from here es modelo, mete mas de este tipo'). Se ranquearon los 3125 temas por parecido de FORMA contra esos dos y contra el 150 entero, y se combino 0.55 housero + 0.45 estilo150, que es el 'un poquito'. CUATRO INTENTOS: con las 12 claves menores abiertas salian 3 y hasta 6 saltos de Camelot 2, porque al material nunca tocado le faltan las claves puente --3A tiene 2 temas, 10A tiene 3--. Acotado a nueve claves CONTIGUAS, 1A a 9A, como el 150 que corre de 11A a 3A. Quedaba un salto 5A->7A y se resolvio a mano: salio The Great Attractor (E5.4, el mas flojo) y entro Sundance (Kebin Van Reeken) en 6A, el puente que faltaba. Peor salto 1. LO QUE CUESTA PEDIR MATERIAL VIRGEN: la mediana de energia de lo nunca tocado es 5.5 contra la 6.9 del 150, y el techo es 7.8. El arco quedo mas plano que el del 150 --5.4 a 7.3 contra 5.2 a 8.0-- y con el pico al final en vez de al cuarto tema. Es un hecho del pool, no una eleccion: no hay con que pegar un 8.0 sin usar algo que el DJ ya toco. | 2026-10-02 (2): 'reanaliza el 150 para encontrar patrones y mejora el 152'. EL PATRON NO ERA LA RUEDA. El auditor marcaba al 152 por tener 53% de pasadas sin mover la rueda, 'mas quieto que el 90% de los pros', y resulta que EL 150 TIENE EL MISMO 53% y 0% de vueltas. Criticar eso era criticar el set que el DJ llamo perfecto. Lo que de verdad distingue al 150 es el SWING: salta 0.88 de energia entre tema y tema contra el 0.44 del 152, con rango 2.8 contra 1.9, y PICA AL 18% del set contra el 100%. LA MEJORA: se le transplanto al 152 la curva de energia del 150 tema por tema --para cada puesto se busco el tema nuevo cuya energia esta mas cerca de la que el 150 tiene en ESE puesto-- sobre un camino de claves que repite clave como el 150, 6A bajando a 1A y volviendo a 4A. Se probaron nueve caminos distintos. Queda: rango 2.8 EXACTO, pico 18% EXACTO, rueda quieta 53% EXACTO, vueltas 0% EXACTO, peor salto 1. El swing llega a 0.75 de los 0.88: es el techo del material nunca tocado, cuya mediana de energia es 5.5 contra la 6.9 del 150. Usa 6 claves contra las 9 del 150, que es la unica diferencia de forma que queda. El auditor marco TRES temas seguidos de Mango Alley (#8, #9, #10): se cambio el del medio, que corta las dos corridas de una, por NekliFF, Rafael Cerato - Marrakesh (Kasper Koman Remix) (MNL), misma clave y E6.2 contra 6.1, asi no se mueve la curva."
 }

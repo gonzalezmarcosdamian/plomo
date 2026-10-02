@@ -1908,3 +1908,26 @@ cuantos dias hace, cruzando por nombre normalizado porque los ContentID cambian.
 `mejorar_sets.py` lo imprime al lado de cada tema que entra. Al proponer un
 reemplazo se dice el numero y decide el. Dos pasadas hace dos años no es lo mismo
 que dos la semana pasada, y por eso el dato es la recencia y no el conteo solo.
+
+## El auditor se contradice con el set que el DJ llamo perfecto
+
+El `audit_sets.py` marcaba al set 152 por dos cosas: "el pico llega temprano
+(<55% del set)" y "53% sin mover la rueda, mas quieto que el 90% de los pros".
+Las dos las hace EL 150, que el DJ escucho entero y aprobo: pica al 18% y tiene
+el mismo 53% de rueda quieta, con 0% de vueltas.
+
+**Por que:** los umbrales del auditor salieron de los setlists de los pros, que
+es la referencia correcta para no caer en circularidad. Pero los pros medidos son
+seis y tocan en otro contexto --festival, 8 a 22 temas--, y el 150 es un set de
+2h de este DJ. Cuando la referencia externa y el oido del DJ se contradicen sobre
+el MISMO rasgo, el auditor no puede seguir hablando como si el DJ estuviera
+equivocado: lo que corresponde es que el aviso diga que el 150 hace lo mismo.
+
+**Como se aplica:** antes de corregir un set por un aviso del auditor, medir ese
+mismo rasgo en el 150. Si el 150 lo hace igual, el aviso no es un defecto del set
+--es un umbral que todavia no se gano el derecho a opinar--. Me paso en vivo: le
+ofreci al DJ "aflojar la monotonia" del 152 por el aviso de la rueda, y era una
+mejora que lo habria alejado de su propio set aprobado. Los numeros que SI
+distinguian al 150 eran otros: swing 0.88 contra 0.44 y pico al 18% contra el
+100%. No se cambiaron los umbrales --eso necesita backtest y aprobacion-- pero
+queda escrito cual es el chequeo.
