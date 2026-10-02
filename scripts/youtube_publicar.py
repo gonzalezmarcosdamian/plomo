@@ -34,6 +34,7 @@ import json
 import subprocess
 import sys
 import tempfile
+import time
 from pathlib import Path
 
 from googleapiclient.errors import HttpError
@@ -154,8 +155,13 @@ def cmd_borrar(yt, vid: str) -> None:
         sys.exit(f"{vid} no esta en el canal")
     print(f"borrando {vid}: {items[0]['snippet']['title']} ({items[0]['status']['privacyStatus']})")
     yt.videos().delete(id=vid).execute()
-    quedo = yt.videos().list(part="id", id=vid).execute()["items"]
-    print("borrado" if not quedo else f"{vid} SIGUE en el canal")
+    # la lectura inmediata suele devolverlo todavia: YouTube tarda unos segundos en reflejarlo
+    for _ in range(6):
+        if not yt.videos().list(part="id", id=vid).execute()["items"]:
+            print("borrado")
+            return
+        time.sleep(5)
+    print(f"{vid} SIGUE en el canal a los 30 s")
 
 
 def cmd_programar(yt, p: dict, cuando: str) -> None:
