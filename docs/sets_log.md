@@ -3164,3 +3164,31 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 44 | Maze 28 | Constant Daydream (TEELCO Remix) | 122 | 6.9 |
 | 45 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
 
+
+## Set 152. 152. Housero Nuevo · modelo Fogbows + From Here — 1h52 — 2026-10-02
+**Armado:** 2026-10-02  
+**Duracion:** 2.0h  
+**Tracks:** 18  
+**BPM range:** 120-126  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Abity, Ewan Rill | La Cumbre (Original Mix) | 123 | 6.2 |
+| 2 | STEREO MUNK, Mind Echoes | Field of Steel (Original Mix) | 122 | 6.5 |
+| 3 | Malou, Ben Bohmer | Lost In Mind (Volen Sentir Extended Vision) | 124 | 5.4 |
+| 4 | Colyn, Read the News | Funk (Original Mix) | 123 | 5.8 |
+| 5 | Redspace, Al Park | Trends (Original Mix) | 122 | 6.4 |
+| 6 | Noel Sanger | Falling Upward (Jamie Stevens Remix) | 123 | 5.5 |
+| 7 | Tobi Amuchastegui | Rish (Original Mix) | 122 | 6.0 |
+| 8 | Analog Jungs | Futura (Dowden Remix) | 122 | 6.2 |
+| 9 | C-Jay, Yves Eaux, Sistersweet | Retryx (Original Mix) | 122 | 6.1 |
+| 10 | Imran Khan | Horizonz (Simos Tagias Remix) | 122 | 6.2 |
+| 11 | Jou Nielsen, Paul Ikky | Sundance (Kebin Van Reeken Extended Remix) | 121 | 6.1 |
+| 12 | Mind Echoes | 14 Joys (Original Mix) | 120 | 6.0 |
+| 13 | Mayro | The Search (Extended Mix) | 123 | 5.7 |
+| 14 | Sainte Vie, Colyn | Desert Sunrise (Extended)  | 125 | 5.9 |
+| 15 | Simon Vuarambon & Tantum | Lake Of Fire | 122 | 6.8 |
+| 16 | Redspace & Cafe De Anatolia | Mirror | 123 | 6.2 |
+| 17 | Michael A | Conviction (Aman Anand Remix) | 122 | 6.3 |
+| 18 | sc00ps | Play Right (Original Mix) | 123 | 7.3 |
+

@@ -1,6 +1,7 @@
 """Audita los sets activos: arco de energia, saltos Camelot y BPM."""
 import re
 import sys
+from pathlib import Path
 
 # La ruta a src/ sale del ARCHIVO, no del directorio donde uno esta parado.
 # Decia sys.path.insert(0, 'src'), que solo funciona corriendo desde la raiz del
@@ -30,16 +31,15 @@ MAX_BPM = R.get("bpm.max_salto")
 # Sin esto el auditor marcaba como "bajon -1.9" la entrada de Sizer al pico del
 # set 139: medido 5.2 calculado, y el DJ lo escucha 7.7.
 import json as _json
-from pathlib import Path as _Path
-_PERC_F = _Path(__file__).resolve().parent.parent / "data" / "energia_percibida.json"
+_PERC_F = Path(__file__).resolve().parent.parent / "data" / "energia_percibida.json"
 def _rueda_pros() -> tuple[float, int, int]:
     """Cuanto se quedan quietos en la rueda los DJ de referencia, set por set
     (p90), y su escalera mas larga. Se mide en vivo: el aviso citaba un "14%"
     viejo cuando los pros, medidos, dan 29% de mediana."""
     import glob
     fr, esc = [], [1]
-    for f in glob.glob(str(_Path(__file__).resolve().parent.parent / "data" / "setlists" / "*.json")):
-        d = _json.loads(_Path(f).read_text(encoding="utf-8"))
+    for f in glob.glob(str(Path(__file__).resolve().parent.parent / "data" / "setlists" / "*.json")):
+        d = _json.loads(Path(f).read_text(encoding="utf-8"))
         if not d.get("orden_confiable", True):
             continue
         ts = [t for t in d["tracks"] if camelot(t.get("key") or "")]

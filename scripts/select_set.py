@@ -19,6 +19,18 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from plomo.camelot import distance as _cam_dist_canonico  # noqa: E402
 from plomo.rules import R  # noqa: E402
 
+# `solo_sin_tocar`: saca del pool todo lo que el DJ YA TOCO, segun djmdHistory.
+# Es OPT-IN POR SET y tiene que seguir siendo opt-in: medido contra el set 150,
+# que el DJ llamo perfecto, un filtro asi le habria sacado 8 de 18 temas --Amnesia
+# y The Silver Lily los habia tocado dos dias antes, y a The Silver Lily la pidio
+# EL por nombre--. Solo se prende cuando el DJ pide "musica nueva", que es cuando
+# el filtro dice lo que el quiere decir.
+try:
+    from plomo.tocados import toco as _toco  # noqa: E402
+except Exception:                            # noqa: BLE001
+    def _toco(_):
+        return None
+
 # Los numeros no viven aca: viven en rules/curaduria.json con su porque y su
 # evidencia, para que el agente analista pueda medirlos y discutirlos.
 BEAM = R.get("solver.beam")
@@ -914,6 +926,7 @@ def correr(cfg_ruta, escribir: bool = True, callado: bool = False) -> list:
             and (not e_pool or e_pool[0] <= t["energy"] <= e_pool[1])
             and (not generos or (t.get("genre", "") or "").lower() in generos)
             and (not spec.get("solo_sin_usar") or not t.get("usado"))
+            and (not spec.get("solo_sin_tocar") or not _toco(t["title"]))
             and (not spec.get("keys") or t["key"] in spec["keys"])
             and camelot(t["key"])
             and not (names(t["artist"], t["title"]) & taken)
