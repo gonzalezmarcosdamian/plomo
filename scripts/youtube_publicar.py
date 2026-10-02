@@ -45,6 +45,7 @@ from plomo.youtube import cliente  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 BLOQUE_SUBIDA = 64 * 1024 * 1024
+REINTENTOS_BLOQUE = 8
 
 
 def leer(paquete: Path) -> dict:
@@ -65,7 +66,8 @@ def subir_archivo(yt, archivo: Path, cuerpo: dict) -> str:
     pedido = yt.videos().insert(part="snippet,status", body=cuerpo, media_body=media)
     respuesta = None
     while respuesta is None:
-        estado, respuesta = pedido.next_chunk()
+        # un video de una hora y media son mas de cien bloques: un corte de red no puede tirar la subida
+        estado, respuesta = pedido.next_chunk(num_retries=REINTENTOS_BLOQUE)
         if estado:
             print(f"  subido {estado.progress() * 100:5.1f}%", flush=True)
     return respuesta["id"]
@@ -145,6 +147,17 @@ def cmd_publicar(yt, p: dict) -> None:
     print(f"PUBLICO: https://youtu.be/{vid}  (estado real: {estado_de(yt, vid)['status']['privacyStatus']})")
 
 
+def cmd_borrar(yt, vid: str) -> None:
+    """Borra un video del canal. No tiene vuelta atras: dice cual es antes de borrarlo."""
+    items = yt.videos().list(part="snippet,status", id=vid).execute()["items"]
+    if not items:
+        sys.exit(f"{vid} no esta en el canal")
+    print(f"borrando {vid}: {items[0]['snippet']['title']} ({items[0]['status']['privacyStatus']})")
+    yt.videos().delete(id=vid).execute()
+    quedo = yt.videos().list(part="id", id=vid).execute()["items"]
+    print("borrado" if not quedo else f"{vid} SIGUE en el canal")
+
+
 def cmd_programar(yt, p: dict, cuando: str) -> None:
     """Deja el video privado con fecha de publicacion: YouTube lo abre solo a esa hora."""
     from datetime import datetime, timezone
@@ -163,7 +176,7 @@ def cmd_programar(yt, p: dict, cuando: str) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("accion", choices=["prueba", "subir", "actualizar", "estado", "programar", "publicar"])
+    ap.add_argument("accion", choices=["prueba", "subir", "actualizar", "estado", "programar", "publicar", "borrar"])
     ap.add_argument("paquete", nargs="?")
     ap.add_argument("--id")
     ap.add_argument("--cuando", help="programar: fecha con zona, ej. 2026-09-28T19:00-03:00")
@@ -171,6 +184,10 @@ def main() -> None:
     yt = cliente()
     if a.accion == "prueba":
         return cmd_prueba(yt)
+    if a.accion == "borrar":
+        if not a.id:
+            sys.exit("borrar necesita --id")
+        return cmd_borrar(yt, a.id)
     if not a.paquete:
         sys.exit("falta el paquete: data/youtube/<nombre>.json")
     p = leer(RAIZ / a.paquete)
