@@ -47,13 +47,33 @@ CONFIG = RAIZ / "data" / "youtube" / "canal.json"
 MARCA_TIMING = {"type": "offsetFromEnd", "offsetMs": 15000, "durationMs": 15000}
 
 
+def cambiar_trailer(yt, video_id: str, c: dict) -> None:
+    """Cada Session nueva pasa a ser el destacado. brandingSettings se reemplaza entero al
+    actualizarlo, asi que se manda de vuelta lo que YouTube tiene (con lo que el DJ haya
+    tocado en Studio) cambiando solo el trailer."""
+    actual = yt.channels().list(part="brandingSettings", mine=True).execute()["items"][0]
+    branding = actual["brandingSettings"]
+    antes = branding.get("channel", {}).get("unsubscribedTrailer")
+    branding.setdefault("channel", {})["unsubscribedTrailer"] = video_id
+    yt.channels().update(part="brandingSettings", body={"id": actual["id"], "brandingSettings": branding}).execute()
+    leido = yt.channels().list(part="brandingSettings", mine=True).execute()["items"][0]["brandingSettings"]
+    quedo = leido.get("channel", {}).get("unsubscribedTrailer")
+    # la lectura inmediata suele devolver el valor viejo: YouTube tarda unos segundos en reflejarlo
+    print(f"trailer: {antes} -> {quedo}" + ("" if quedo == video_id else
+                                             f"  (todavia figura el viejo: releer en un minuto, pedido {video_id})"))
+    CONFIG.write_text(json.dumps({**c, "trailer": video_id}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--aplicar", action="store_true")
     ap.add_argument("--pisar", action="store_true", help="reemplazar una descripcion escrita a mano en Studio")
+    ap.add_argument("--trailer", metavar="ID", help="cambiar SOLO el video destacado, sin tocar nada mas")
     a = ap.parse_args()
     c = json.loads(CONFIG.read_text(encoding="utf-8"))
     yt = cliente()
+    if a.trailer:
+        return cambiar_trailer(yt, a.trailer, c)
     actual = yt.channels().list(part="snippet,brandingSettings", mine=True).execute()["items"][0]
     print(f"ahora:  {actual['snippet']['title']}  |  {actual['snippet'].get('description', '')!r}")
     print(f"queda:  {c['titulo']}  |  {c['descripcion']!r}  |  {', '.join(c['palabras_clave'])}  |  {c['pais']}")
