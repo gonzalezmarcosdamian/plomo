@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "duracion_s": 6233.433333333333,
+  "duracion_s": 6186.233333333334,
   "capitulos": [
     {
       "t": 0.0,
@@ -28,84 +28,84 @@
     },
     {
       "t": 1463.6,
-      "artista": "COQUEIT",
-      "titulo": "Dock (Original Mix)",
-      "tempo": 1.0
+      "artista": "Ruben Karapetyan",
+      "titulo": "Midnight Current (Original Mix)",
+      "tempo": 1.00826
     },
     {
-      "t": 1825.6,
+      "t": 1778.4,
       "artista": "Kostya Outta",
       "titulo": "Seguro (Paul James Nolan Remix)",
       "tempo": 1.0
     },
     {
-      "t": 2234.8,
+      "t": 2187.6,
       "artista": "Maze 28",
       "titulo": "Fogbows",
       "tempo": 1.0
     },
     {
-      "t": 2596.8,
+      "t": 2549.5,
       "artista": "Ilias Katelanos, Plecta, Anonimat",
       "titulo": "Coaster (Durante Remix)",
       "tempo": 0.98387
     },
     {
-      "t": 2895.8,
+      "t": 2848.6,
       "artista": "Cendryma",
       "titulo": "Pure Junction (Berdu Remix)",
       "tempo": 1.01667
     },
     {
-      "t": 3226.2,
+      "t": 3179.0,
       "artista": "Cendryma",
       "titulo": "Wakefeld (Original Mix)",
       "tempo": 1.0
     },
     {
-      "t": 3604.0,
+      "t": 3556.8,
       "artista": "Tom Pavicich",
       "titulo": "Olimpo (Ignacio Berardi Remix)",
       "tempo": 0.99187
     },
     {
-      "t": 3965.9,
+      "t": 3918.7,
       "artista": "Rockka",
       "titulo": "Amnesia (Fuenka Remix)",
       "tempo": 0.99187
     },
     {
-      "t": 4312.1,
+      "t": 4264.9,
       "artista": "Gonzalo Cotroneo",
       "titulo": "Thrill (Extended Mix)",
       "tempo": 1.0
     },
     {
-      "t": 4658.4,
+      "t": 4611.2,
       "artista": "Andre Moret",
       "titulo": "Aria (Gorkiz Remix)",
       "tempo": 0.976
     },
     {
-      "t": 4988.9,
+      "t": 4941.7,
       "artista": "Greg Ochman",
       "titulo": "The Silver Lily (Original Mix)",
       "tempo": 1.01667
     },
     {
-      "t": 5335.1,
+      "t": 5287.9,
       "artista": "Wailey",
       "titulo": "Droplets (Taylan Remix)",
       "tempo": 1.0
     },
     {
-      "t": 5586.9,
+      "t": 5539.7,
       "artista": "Wassu",
       "titulo": "From Here (feat. MØØNE) (Extended Mix)",
       "tempo": 0.98387
     },
     {
-      "t": 5885.9,
+      "t": 5838.7,
       "artista": "Marsh, Simon Doty",
       "titulo": "Touch The Sky (Extended Mix)",
       "tempo": 0.98387
