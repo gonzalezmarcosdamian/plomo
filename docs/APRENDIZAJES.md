@@ -1798,3 +1798,24 @@ distinto o no pide nada. Lo que viaja de un set a otro es el juicio sobre el tem
 **Como se aplica:** al mover un tema de un set a otro viaja su valoracion, no su
 indice. La ubicacion se vuelve a calcular, y si la rueda la contradice, manda la
 rueda y se dice por que.
+
+## La retencion por antiguedad no sirve cuando el churn es del mismo dia
+
+La regla de backups del proyecto dice: borrar los de mas de 60 dias si hay mas de
+10 acumulados. Al correrla sobre la carpeta real --275 archivos, 4.41 GB-- iba a
+liberar 0.01 GB. De las 46 copias de master.db, 31 son del 30 de septiembre y del
+1 de octubre: una sola jornada larga de trabajo, copias de 105 MB hechas con
+minutos de diferencia entre operacion y operacion.
+
+**Por que:** la regla fue escrita pensando en backups mensuales, uno por sesion.
+Con un pipeline que copia antes de cada escritura, el volumen no lo hace el paso
+del tiempo sino la cantidad de operaciones de un mismo dia, y por antiguedad esas
+copias son todas nuevas. El criterio medía la dimension equivocada.
+
+**Como se aplica:** la retencion tiene que mirar tambien el eje del dia. Lo que de
+verdad se querria conservar de una jornada es la PRIMERA copia --el estado con el
+que se arranco-- y la ULTIMA --el estado con el que se cerro--; las doce del medio
+solo tienen sentido mientras la jornada esta en curso. Y nunca se borra una
+`pre_gig_*` ni la ultima de cada motivo. No se cambio la regla todavia: borrar
+backups es destructivo y lo decide el DJ, pero `scripts/backup.py` ya reporta el
+numero cada vez que corre para que la decision no dependa de acordarse.
