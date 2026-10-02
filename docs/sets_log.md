@@ -3094,7 +3094,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 2 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
 | 3 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
 | 4 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 5 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 5 | Ruben Karapetyan | Midnight Current (Original Mix) | 121 | 6.2 |
 | 6 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 7.0 |
 | 7 | Maze 28 | Fogbows | 122 | 6.3 |
 | 8 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |

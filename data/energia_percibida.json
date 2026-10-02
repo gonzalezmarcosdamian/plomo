@@ -1050,8 +1050,10 @@
     "E_calc": 7.0,
     "favorito": true,
     "groove_ok": true,
-    "nota": "dock tecnoso bien, puede andar en esa ubicacion",
-    "fuente": "escucha del 150, 2026-10-01"
+    "nota": "dock tecnoso bien, puede andar en esa ubicacion | tenemos algun reemplazo a dock (escuchando el 150)",
+    "fuente": "escucha del 150, 2026-10-01",
+    "cambiado_en": "set 150",
+    "_no_es_veto": "pidio un REEMPLAZO y antes habia dicho 'dock tecnoso bien, puede andar en esa ubicacion'. No dijo nada de lo que el tema es. Sigue en el 151."
   },
   "44311136": {
     "artist": "Envotion",
@@ -1154,5 +1156,16 @@
     "nota": "cambiame pulse por the silver lily",
     "cambiado_en": "set 150",
     "_no_es_veto": "pidio CAMBIARLO, no lo rechazo: no dijo nada de lo que el tema ES. Sigue en el 151. Pedir cambiar un tema no es rechazarlo."
+  },
+  "77712466": {
+    "artist": "Kasper Koman",
+    "title": "Sinking Sky",
+    "favorito": true,
+    "nota": "me gusta la eleccion pero lo he tocado",
+    "gastado": {
+      "fecha": "2026-10-02",
+      "alcance": "esta fecha",
+      "_que_quiere_decir": "ESTA BIEN ELEGIDO y le gusta: el DJ dijo 'me gusta la eleccion'. Solo no entra en ESTA fecha porque ya lo toco --2 pasadas en djmdHistory--. Para otra fecha es candidato de primera."
+    }
   }
 }

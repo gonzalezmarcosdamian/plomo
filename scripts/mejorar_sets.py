@@ -111,6 +111,20 @@ def main() -> None:
 
     GAST = {k for k, v in P.items() if isinstance(v, dict) and v.get("gastado")}
 
+    # Lo que el DJ YA TOCO, de djmdHistory. NO filtra: informa.
+    # El 2026-10-02 le propuse Sinking Sky y contesto "me gusta la eleccion pero
+    # lo he tocado". El dato estaba en la DB y esto no lo miraba: solo miraba el
+    # campo `gastado`, que es lo que el dijo a mano. Descartar todo lo tocado
+    # seria peor: 8 de los 18 temas del set que llamo PERFECTO ya los habia
+    # tocado --Amnesia hace 2 dias, The Silver Lily hace 2 dias y esa la pidio
+    # el por nombre--, asi que un filtro duro rechazaba su propio set. El numero
+    # va al reporte para poder avisarselo y que decida el.
+    try:
+        from plomo.tocados import etiqueta as _toco
+    except Exception:                                        # noqa: BLE001
+        def _toco(_):
+            return "sin dato"
+
     def dato(c):
         v = P.get(c)
         return v if isinstance(v, dict) else {}
@@ -305,7 +319,7 @@ def main() -> None:
             print(f"      sale  {POOL[c]['artist'][:20]:20s} - {POOL[c]['title'][:30]}")
         for c in nuevos + nuevos_inyectados:
             print(f"      entra {POOL[c]['artist'][:20]:20s} - {POOL[c]['title'][:30]}"
-                  f"  (dens {dens(c):.1f}, col {COL.get(c, 0):.2f})")
+                  f"  (dens {dens(c):.1f}, col {COL.get(c, 0):.2f}, {_toco(POOL[c]['title'])})")
         if args.dry:
             continue
         doc["tracks"] = [{"artist": POOL[c]["artist"], "title": POOL[c]["title"], "content_id": c}

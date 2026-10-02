@@ -1882,3 +1882,29 @@ solo tienen sentido mientras la jornada esta en curso. Y nunca se borra una
 `pre_gig_*` ni la ultima de cada motivo. No se cambio la regla todavia: borrar
 backups es destructivo y lo decide el DJ, pero `scripts/backup.py` ya reporta el
 numero cada vez que corre para que la decision no dependa de acordarse.
+
+## "Ya lo toco" no es un filtro, es un dato que tiene que estar a la vista
+
+Le propuse Sinking Sky para el set 150 y contesto "me gusta la eleccion pero lo
+he tocado". El dato estaba en `djmdHistory` --2 pasadas-- y la busqueda no lo
+miraba: filtraba por el campo `gastado` de `energia_percibida.json`, que es lo que
+el DJ dijo A MANO, no lo que la base ya sabia. Proponerle algo que el mismo toco
+le gasta un turno.
+
+La correccion obvia era descartar todo lo tocado. Se midio contra el set que el
+llamo perfecto y lo refuta: **8 de los 18 temas del 150 ya los habia tocado**,
+Amnesia hace 2 dias y The Silver Lily hace 2 dias --y The Silver Lily la pidio EL
+por nombre, dos dias despues de tocarla--. Un filtro duro por "ya lo toco" habria
+rechazado su propio set.
+
+**Por que:** "lo he tocado" no describe al tema, describe lo que el DJ tiene ganas
+de tocar esta vez, y eso cambia tema por tema y fecha por fecha. Cuando el lo
+nombra, pisa cualquier conteo. Lo que fallaba no era la falta de un filtro: era
+que yo no tenia el numero cuando proponia, y por eso no podia decirle "ojo, este
+lo tocaste 2 veces".
+
+**Como se aplica:** `src/plomo/tocados.py` devuelve veces, fecha de la ultima y
+cuantos dias hace, cruzando por nombre normalizado porque los ContentID cambian.
+`mejorar_sets.py` lo imprime al lado de cada tema que entra. Al proponer un
+reemplazo se dice el numero y decide el. Dos pasadas hace dos años no es lo mismo
+que dos la semana pasada, y por eso el dato es la recencia y no el conteo solo.
