@@ -1,0 +1,102 @@
+{
+  "fps": 30,
+  "duracion_s": 5345.966666666666,
+  "capitulos": [
+    {
+      "t": 0.0,
+      "artista": "Aman Anand & Da Luka",
+      "titulo": "Mythical Creatures (Golan Zocher & Kamilo Sanclemente Remix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 407.5,
+      "artista": "Envotion",
+      "titulo": "Adrift (Sebastian Sellares Remix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 564.3,
+      "artista": "Paul Thomas, Maze 28",
+      "titulo": "Abundance (Original Mix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 893.4,
+      "artista": "COQUEIT",
+      "titulo": "Dock (Original Mix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 1253.9,
+      "artista": "Digital Mess, Astral Base",
+      "titulo": "Turbulence (Extended Mix)",
+      "tempo": 1.0124
+    },
+    {
+      "t": 1583.1,
+      "artista": "Maze 28",
+      "titulo": "Fogbows",
+      "tempo": 1.0041
+    },
+    {
+      "t": 1943.5,
+      "artista": "Rauschhaus",
+      "titulo": "Morning Walks",
+      "tempo": 1.0124
+    },
+    {
+      "t": 2225.7,
+      "artista": "MuscleDyke",
+      "titulo": "Dark White (Mind Echoes Remix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 2601.8,
+      "artista": "Gonzalo Cotroneo",
+      "titulo": "Thrill (Extended Mix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 2946.7,
+      "artista": "Wassu",
+      "titulo": "From Here (feat. MØØNE) (Extended Mix)",
+      "tempo": 0.9879
+    },
+    {
+      "t": 3244.4,
+      "artista": "Hernan Cattaneo, Khen",
+      "titulo": "Rogelito (Original Mix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 3589.3,
+      "artista": "Mindlancholic",
+      "titulo": "Mirages in Space",
+      "tempo": 0.99593
+    },
+    {
+      "t": 3981.1,
+      "artista": "Albuquerque, Anonimat",
+      "titulo": "Like First Time Flight (Extended Mix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 4357.3,
+      "artista": "Rabiee Ahmad, Hassan Tariq Khan",
+      "titulo": "Terminator (Original Mix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 4670.7,
+      "artista": "Ziger & Mind Conspiracy",
+      "titulo": "The Light (Original)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 4999.9,
+      "artista": "Marsh, Simon Doty",
+      "titulo": "Touch The Sky (Extended Mix)",
+      "tempo": 0.9879
+    }
+  ]
+}

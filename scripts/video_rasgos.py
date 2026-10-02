@@ -114,8 +114,14 @@ def pulso_de_bombo(mono: np.ndarray, sr: int, n_cuadros: int) -> tuple[np.ndarra
     db = db_fino(mono, sr, 40, 120)
     flujo = np.convolve(np.maximum(np.diff(db, prepend=db[0]), 0), np.ones(3), "same")
     flujo = np.maximum(flujo - median_filter(flujo, TASA_FINA + 1), 0)
+    # el tempo se estima sobre 4 minutos del medio y se le pasa al seguidor: dejarlo estimar
+    # sobre la envolvente entera arma un tempograma que en un mix de 90 min pide 26-30 GB
+    medio, largo = len(flujo) // 2, 240 * TASA_FINA
+    tempo = float(np.atleast_1d(librosa.feature.tempo(
+        onset_envelope=flujo[max(0, medio - largo // 2): medio + largo // 2], sr=sr,
+        hop_length=sr // TASA_FINA, start_bpm=120))[0])
     _, beats = librosa.beat.beat_track(onset_envelope=flujo, sr=sr, hop_length=sr // TASA_FINA,
-                                       start_bpm=120, tightness=400, units="frames")
+                                       bpm=tempo, tightness=400, units="frames")
     pico = np.array([db[max(0, f - 6): f + 12].max() for f in beats])            # -30..+60 ms
     valle = np.array([db[max(0, f - 40): max(1, f - 6)].min() for f in beats])   # -200..-30 ms
     subida = np.clip((pico - valle) / np.percentile(pico - valle, 90), 0, 1)
@@ -193,7 +199,7 @@ def levantar(rgb: np.ndarray, luz: float, sat_extra: float = 1.25) -> np.ndarray
     return np.array(colorsys.hsv_to_rgb(hh, min(1.0, s * sat_extra), luz), dtype=np.float32)
 
 
-def paleta(video: Path, n_cuadros: int, desfase_s: float) -> tuple[np.ndarray, np.ndarray]:
+def paleta(video: Path, n_cuadros: int, desfase_s: float, escala: float = 1.0) -> tuple[np.ndarray, np.ndarray]:
     """(n_cuadros, 4, 3) colores por cuadro del video final, y la luz del cielo medida (0..1)."""
     imgs = cuadros_del_telefono(video)
     crudas = [paleta_de_cuadro(im) for im in imgs]
@@ -212,7 +218,8 @@ def paleta(video: Path, n_cuadros: int, desfase_s: float) -> tuple[np.ndarray, n
     roles = uniform_filter1d(roles, k, axis=0, mode="nearest")
     luz = uniform_filter1d(luz, k, mode="nearest")
     t_tel = np.arange(len(imgs)) * PASO_TELEFONO_S
-    t_video = np.arange(n_cuadros) / FPS + desfase_s    # segundo del telefono para cada cuadro
+    # segundo del telefono para cada cuadro; con escala != 1 el arco del telefono se estira
+    t_video = np.arange(n_cuadros) / FPS * escala + desfase_s
     idx = np.clip(np.searchsorted(t_tel, t_video), 0, len(t_tel) - 1)
     por_muestra = {}
     for j in np.unique(idx):
@@ -252,6 +259,8 @@ def main() -> None:
     ap.add_argument("--telefono", required=True)
     ap.add_argument("--desfase-telefono", type=float, default=0.0,
                     help="segundos que la consola arranco ANTES que el telefono")
+    ap.add_argument("--arco", action="store_true",
+                    help="estira el atardecer entero del telefono a lo largo de todo el set")
     ap.add_argument("--noche", action="store_true",
                     help="paleta fija del final del video del telefono: para un set nocturno")
     ap.add_argument("--nombre", required=True)
@@ -278,7 +287,11 @@ def main() -> None:
     # segundo del telefono = segundo del master + recorte - desfase. Con --noche, todo cae
     # despues del final del video y la paleta queda fija en el ultimo cuadro: la noche.
     desfase = recorte - a.desfase_telefono + (10 ** 6 if a.noche else 0)
-    pal, luz = paleta(Path(a.telefono), n, desfase)
+    escala = 1.0
+    if a.arco:
+        # del primer al ultimo cuadro del telefono, repartido en todo el mix
+        escala, desfase = len(cuadros_del_telefono(Path(a.telefono))) * PASO_TELEFONO_S / (n / FPS), 0.0
+    pal, luz = paleta(Path(a.telefono), n, desfase, escala)
     pesos, capitulos = temas(alineacion, recorte, n)
 
     DEST.mkdir(parents=True, exist_ok=True)

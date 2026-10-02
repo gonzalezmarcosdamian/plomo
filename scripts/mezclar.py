@@ -79,6 +79,28 @@ def desfase_entre(a: tuple[np.ndarray, float], b: tuple[np.ndarray, float], desd
     return float(lags[int(np.argmax(corr))])
 
 
+def salto_de_nivel(tiempos: np.ndarray, curva: np.ndarray, plan, k: int) -> dict:
+    """Si un tema entra mas alto o mas bajo que el otro, o si el blend se va de nivel.
+
+    El nivel de cada tema es el de su parte FUERTE mientras suena SOLO: el percentil 70 del
+    loudness de 3 s entre que se fue el anterior y entra el siguiente. Dos definiciones
+    anteriores median otra cosa: ventanas sueltas (caian en fills del arreglo) y "los 90 s
+    antes de que entre el otro" (caian en el breakdown del saliente).
+    """
+    def solo(j: int) -> np.ndarray:
+        d = plan[j - 1].hasta + 3 if j > 0 else plan[j].desde + 20
+        h = plan[j + 1].desde - 3 if j + 1 < len(plan) else plan[j].hasta - 20
+        return curva[(tiempos > d) & (tiempos < h) & np.isfinite(curva)]
+    a, b = plan[k], plan[k + 1]
+    na, nb = solo(k), solo(k + 1)
+    en_blend = (tiempos > b.desde) & (tiempos < a.hasta) & np.isfinite(curva) & (np.abs(tiempos - b.cambio_in) > 3)
+    blend = curva[en_blend]
+    if not (len(na) and len(nb) and len(blend)):
+        return {"salto_db": float("nan"), "blend_db": float("nan")}
+    ca, cb, cl = np.percentile(na, 70), np.percentile(nb, 70), np.percentile(blend, 70)
+    return {"salto_db": round(float(abs(cb - ca)), 1), "blend_db": round(float(cl - (ca + cb) / 2), 1)}
+
+
 def pozo_de_grave(mix: np.ndarray, t0: float, x: float) -> tuple[float, float]:
     """El grave (< 90 Hz) alrededor del cambio, contra el cuerpo del entrante despues.
 
@@ -207,12 +229,9 @@ def main() -> None:
     informe_curva = [(round(float(x), 1), None if np.isnan(v) else round(float(v), 1)) for x, v in zip(tiempos, curva)]
     referencia = float(np.nanmedian(curva[lejos])) if np.any(lejos & np.isfinite(curva)) else float(np.nanmedian(curva))
     for ch, x in zip(chequeo, cambios):
-        # los 3 s del cambio de bajos quedan afuera: ahi el pozo es intencional y lo mide
-        # `pozo_de_grave`. Aca se buscan cambios SOSTENIDOS de nivel (un tema que entro bajo).
-        # En el 11->12 del 148 el "salto" de 2.5 dB era ese pozo: los cuerpos daban +0.2 y -0.2.
-        cerca = (np.abs(tiempos - x) <= 24) & (np.abs(tiempos - x) > 3) & np.isfinite(curva)
-        ch["salto_db"] = round(float(np.max(np.abs(curva[cerca] - referencia))), 1) if np.any(cerca) else float("nan")
-        ch["ok"] = ch["ok"] and ch["salto_db"] <= SALTO_MAX_DB
+        k = int(ch["cambio"].split("->")[0]) - 1
+        ch.update(salto_de_nivel(tiempos, curva, plan, k))
+        ch["ok"] = ch["ok"] and ch["salto_db"] <= SALTO_MAX_DB and abs(ch["blend_db"]) <= SALTO_MAX_DB
 
     # --- master: -14 LUFS, picos sueltos al limitador, true peak verificado. `masterizar`
     # levanta un error si no cumple, y el archivo se escribe DESPUES: el 2026-10-01 un master

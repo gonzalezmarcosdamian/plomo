@@ -1,0 +1,114 @@
+{
+  "fps": 30,
+  "duracion_s": 6113.966666666666,
+  "capitulos": [
+    {
+      "t": 0.0,
+      "artista": "Paul Thomas, Maze 28",
+      "titulo": "Abundance (Original Mix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 391.9,
+      "artista": "Agustin Pietrocola",
+      "titulo": "Sizer (Original Mix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 705.3,
+      "artista": "Rabiee Ahmad, Hassan Tariq Khan",
+      "titulo": "In Another Time (Original Mix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 1081.5,
+      "artista": "Hobin Rude",
+      "titulo": "Fading Silhouettes (Pierre Sebastiano Remix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 1457.7,
+      "artista": "COQUEIT",
+      "titulo": "Dock (Original Mix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 1818.2,
+      "artista": "Kamilo Sanclemente",
+      "titulo": "Fragma (GORKIZ Remix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 2131.6,
+      "artista": "Maze 28",
+      "titulo": "Fogbows",
+      "tempo": 1.0041
+    },
+    {
+      "t": 2492.1,
+      "artista": "Ilias Katelanos, Plecta, Anonimat",
+      "titulo": "Coaster (Durante Remix)",
+      "tempo": 0.9879
+    },
+    {
+      "t": 2789.9,
+      "artista": "Cendryma",
+      "titulo": "Pure Junction (Berdu Remix)",
+      "tempo": 1.02083
+    },
+    {
+      "t": 3119.0,
+      "artista": "Cendryma",
+      "titulo": "Wakefeld (Original Mix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 3495.2,
+      "artista": "Tom Pavicich",
+      "titulo": "Olimpo (Ignacio Berardi Remix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 3855.7,
+      "artista": "Rockka",
+      "titulo": "Amnesia (Fuenka Remix)",
+      "tempo": 0.99593
+    },
+    {
+      "t": 4200.5,
+      "artista": "Gonzalo Cotroneo",
+      "titulo": "Thrill (Extended Mix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 4545.3,
+      "artista": "Andre Moret",
+      "titulo": "Aria (Gorkiz Remix)",
+      "tempo": 0.98
+    },
+    {
+      "t": 4874.5,
+      "artista": "Greg Ochman",
+      "titulo": "The Silver Lily (Original Mix)",
+      "tempo": 1.02083
+    },
+    {
+      "t": 5219.3,
+      "artista": "Wailey",
+      "titulo": "Droplets (Taylan Remix)",
+      "tempo": 1.0041
+    },
+    {
+      "t": 5470.1,
+      "artista": "Wassu",
+      "titulo": "From Here (feat. MØØNE) (Extended Mix)",
+      "tempo": 0.9879
+    },
+    {
+      "t": 5767.9,
+      "artista": "Marsh, Simon Doty",
+      "titulo": "Touch The Sky (Extended Mix)",
+      "tempo": 0.9879
+    }
+  ]
+}
