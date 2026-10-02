@@ -9,6 +9,44 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-01/02 — el 148 mezclado por codigo, con la tecnica del DJ
+
+"Dale el 148, hacelo completo, fijate antes con research si hay algo resuelto en
+github o como lo hace spoty." `research`: nada en GitHub resuelve el 80%; Spotify
+publico su metodo en ISMIR 2017 (transiciones en downbeats, su falla principal fue
+que los beats no alineaban). Se construyo: `src/plomo/mezcla.py` (estructura medida
+compas por compas sobre la grilla de Rekordbox), `src/plomo/mezcla_motor.py`
+(estirado, EQ de tres bandas con la plantilla medida del DJ en su grabacion del
+23/09, master) y `scripts/mezclar.py` (plan, render y verificacion).
+
+**Los cues.** "Los cues no son 100% precisos." Medido contra la estructura: el
+Mix-OUT de Touch The Sky estaba 32 compases antes de que termine el bombo, el bajo
+de Dark White entra en el 32 y no en el 0, el drop de Turbulence y Morning Walks
+estaba 16 compases antes. `research` confirmo con el analisis de frases de
+Rekordbox (coincide con la medicion del drop en 12 de 16): el que falla es
+`cue_engine`, no la medicion. Los cues no se tocaron todavia.
+
+**Cinco vueltas para que los bombos coincidan**, cada una por medir mal algo:
+el grave del bombo en vez del golpe (los cuerpos difieren 7-20 ms por diseno);
+el estirador de Rubber Band en alta calidad, que deja el largo exacto pero corre
+la grilla hasta 109 ms (`research`); el retardo del mp3 (-24 ms casi siempre, 0 en
+Morning Walks, y -38 aparente en Adrift y Fogbows, donde el primer ataque no es el
+bombo); y un verificador que media con el mismo instrumento que corregia. Quedo:
+empujon de +-50 ms del entrante contra el saliente, como el DJ con el plato, y
+verificacion en tres ventanas que no se tocan.
+
+**El master piso el mix bueno.** El Limiter de pedalboard SUBE la ganancia
+(-umbral + 3.75 dB, medido con senoidales); el bucle bajo el umbral para limitar
+mas y dejo el mix en -2 LUFS con picos de +4.9, y se escribio sin verificar. Se
+re-renderizo; `masterizar` ahora renormaliza midiendo y levanta un error antes de
+escribir si no cumple.
+
+**Resultado:** 89:04, 16 temas a 122.5 BPM (estirados entre -1.2% y +1.2%), las 15
+transiciones con golpes a 0-3 ms, volumen a 0.4-1.9 dB, pozo de -4.8 a -8.8 dB
+(el del DJ: -3 a -10) y nunca dos bajos llenos. -14.0 LUFS, -1.0 dBTP, LRA 3.3
+(la grabacion en vivo del 23 da 4.2-4.6: el limitador aprieta un poco). Es un mix
+de estudio, no tocado: el DJ lo escucha antes de que se suba nada.
+
 ## 2026-09-28 — el arquetipo 1.0.0: lo que prometía, entregado
 
 "Ordená el arquetipo y versioná." Dos agentes: `analista` para coherencia (probó

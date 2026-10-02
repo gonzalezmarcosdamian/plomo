@@ -8,6 +8,50 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un estirador de tiempo puede dejar el largo exacto y correr la grilla adentro
+
+**Que paso.** Rubber Band (via pedalboard `time_stretch`) en alta calidad estiro un
+tema 1.2% y el largo total salio exacto, pero los bombos quedaron corridos de 0 a
++109 ms a lo largo de cuatro minutos. Con `high_quality=False` el error es 1.5 ms.
+
+**Por que.** El largo es lo que el algoritmo garantiza; la posicion de cada evento
+adentro no. Medir solo la duracion de la salida dice que esta bien.
+
+**Como se aplica.** Despues de estirar, medir donde caen los golpes contra la grilla
+esperada, no el largo. Un factor fijo por tema; el variable de Rubber Band aplica
+sus cambios cada 23 ms y suma un retardo propio.
+
+---
+
+## Dos cosas se alinean una contra la otra, no cada una contra su grilla
+
+**Que paso.** Corregir cada tema contra su grilla de Rekordbox dejaba tres temas
+corridos 12-27 ms: el retardo del mp3 casi siempre es -24 ms, pero en uno era 0 y
+en dos el primer ataque no era el bombo. Empujar el entrante contra el saliente en
+los compases donde suenan juntos —lo que hace un DJ con el plato— los dejo a 0-3 ms.
+
+**Por que.** Cada correccion individual arrastra su propio error de medicion; lo que
+se escucha es la diferencia entre los dos.
+
+**Como se aplica.** Cuando dos senales tienen que coincidir, medirlas una contra la
+otra. Y verificar en ventanas que NO se usaron para corregir: si el enganche es
+real, se sostiene antes, durante y despues.
+
+---
+
+## La ley de un componente se mide con una senal conocida antes de usarlo
+
+**Que paso.** El Limiter de pedalboard no recorta en el umbral: sube la senal en
+(-umbral + 3.75) dB y recorta en 0 dBFS. Un bucle que bajaba el umbral "para
+limitar mas" subio un mix de 89 minutos a -2 LUFS, y se escribio encima del bueno.
+
+**Por que.** Se uso el componente con la ley que su nombre sugiere. Dos senoidales
+de nivel conocido la hubieran mostrado en un segundo.
+
+**Como se aplica.** Antes de meter un componente de terceros en un bucle de ajuste,
+pasarle una senal conocida y medir que hace. Y el archivo bueno no se pisa: la
+salida nueva se verifica antes de escribirla.
+
 ## Lo rapido es elegir que se decodifica, no decodificar mas rapido
 
 **Que paso.** Un short de 20 segundos con 26 minutos de video 4K60 comprimidos
