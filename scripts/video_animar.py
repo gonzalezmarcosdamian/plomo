@@ -162,7 +162,12 @@ def main() -> None:
         prog["uAngulo"] = float(angulo)
         prog["uTextoAlfa"] = alfa
         vao.render(moderngl.TRIANGLE_STRIP)
-        proc.stdin.write(fbo.read(components=3))
+        try:
+            proc.stdin.write(fbo.read(components=3))
+        except OSError:
+            # ffmpeg se cerro: que quede escrito con que codigo, para saber si fue un error
+            # suyo, un crash o que alguien lo mato (2026-10-02 se cerro sin dejar nada)
+            sys.exit(f"ffmpeg se cerro en el cuadro {i - i0} con codigo {proc.wait()}")
         if (i - i0) % (fps * 30) == 0 and i > i0:
             hechos = i - i0
             ritmo = hechos / (time.time() - t_arranque)

@@ -144,6 +144,9 @@ def main() -> None:
     a = ap.parse_args()
 
     t_arranque = time.time()
+    # que Windows no suspenda mientras mezcla: el reposo moderno corto un render el 2026-10-02
+    import ctypes
+    ctypes.windll.kernel32.SetThreadExecutionState(0x80000000 | 0x00000001)
     temas = leer_set(a.set)
     print(f"{len(temas)} temas del {a.set}; midiendo la estructura...", flush=True)
     estructuras = [medir(t) for t in temas]

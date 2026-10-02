@@ -1,114 +1,114 @@
 {
   "fps": 30,
-  "duracion_s": 6113.966666666666,
+  "duracion_s": 6233.433333333333,
   "capitulos": [
     {
       "t": 0.0,
       "artista": "Paul Thomas, Maze 28",
       "titulo": "Abundance (Original Mix)",
-      "tempo": 0.99593
+      "tempo": 0.99187
     },
     {
-      "t": 391.9,
+      "t": 393.5,
       "artista": "Agustin Pietrocola",
       "titulo": "Sizer (Original Mix)",
-      "tempo": 0.99593
+      "tempo": 0.99187
     },
     {
-      "t": 705.3,
+      "t": 708.2,
       "artista": "Rabiee Ahmad, Hassan Tariq Khan",
       "titulo": "In Another Time (Original Mix)",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 1081.5,
+      "t": 1085.9,
       "artista": "Hobin Rude",
       "titulo": "Fading Silhouettes (Pierre Sebastiano Remix)",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 1457.7,
+      "t": 1463.6,
       "artista": "COQUEIT",
       "titulo": "Dock (Original Mix)",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 1818.2,
-      "artista": "Kamilo Sanclemente",
-      "titulo": "Fragma (GORKIZ Remix)",
-      "tempo": 0.99593
+      "t": 1825.6,
+      "artista": "Kostya Outta",
+      "titulo": "Seguro (Paul James Nolan Remix)",
+      "tempo": 1.0
     },
     {
-      "t": 2131.6,
+      "t": 2234.8,
       "artista": "Maze 28",
       "titulo": "Fogbows",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 2492.1,
+      "t": 2596.8,
       "artista": "Ilias Katelanos, Plecta, Anonimat",
       "titulo": "Coaster (Durante Remix)",
-      "tempo": 0.9879
+      "tempo": 0.98387
     },
     {
-      "t": 2789.9,
+      "t": 2895.8,
       "artista": "Cendryma",
       "titulo": "Pure Junction (Berdu Remix)",
-      "tempo": 1.02083
+      "tempo": 1.01667
     },
     {
-      "t": 3119.0,
+      "t": 3226.2,
       "artista": "Cendryma",
       "titulo": "Wakefeld (Original Mix)",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 3495.2,
+      "t": 3604.0,
       "artista": "Tom Pavicich",
       "titulo": "Olimpo (Ignacio Berardi Remix)",
-      "tempo": 0.99593
+      "tempo": 0.99187
     },
     {
-      "t": 3855.7,
+      "t": 3965.9,
       "artista": "Rockka",
       "titulo": "Amnesia (Fuenka Remix)",
-      "tempo": 0.99593
+      "tempo": 0.99187
     },
     {
-      "t": 4200.5,
+      "t": 4312.1,
       "artista": "Gonzalo Cotroneo",
       "titulo": "Thrill (Extended Mix)",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 4545.3,
+      "t": 4658.4,
       "artista": "Andre Moret",
       "titulo": "Aria (Gorkiz Remix)",
-      "tempo": 0.98
+      "tempo": 0.976
     },
     {
-      "t": 4874.5,
+      "t": 4988.9,
       "artista": "Greg Ochman",
       "titulo": "The Silver Lily (Original Mix)",
-      "tempo": 1.02083
+      "tempo": 1.01667
     },
     {
-      "t": 5219.3,
+      "t": 5335.1,
       "artista": "Wailey",
       "titulo": "Droplets (Taylan Remix)",
-      "tempo": 1.0041
+      "tempo": 1.0
     },
     {
-      "t": 5470.1,
+      "t": 5586.9,
       "artista": "Wassu",
       "titulo": "From Here (feat. MØØNE) (Extended Mix)",
-      "tempo": 0.9879
+      "tempo": 0.98387
     },
     {
-      "t": 5767.9,
+      "t": 5885.9,
       "artista": "Marsh, Simon Doty",
       "titulo": "Touch The Sky (Extended Mix)",
-      "tempo": 0.9879
+      "tempo": 0.98387
     }
   ]
 }
