@@ -32,6 +32,14 @@ de 12-17 a 40-60 cuadros/s; desde las 11:36 no hubo mas caidas de la placa.
 recortado al largo del video). A la Session 02 le falto el ultimo cuadro por un
 `int()` en el largo del ultimo tramo; corregido con `round()`.
 
+**Session 02 programada:** "ponela programada domingo 9 am, es el set que voy a tocar
+sabado a la noche". https://youtu.be/zGe5y_F5gyM, privada hasta el 2026-10-04 9:00. La
+tarea de Windows "plomo - Session 02 sale" (9:05) corre `session_salio.py`, que espera a
+que sea publica y recien ahi la destaca en el canal y la pone en la web (probado de punta
+a punta con la Session 01). La primera subida murio al 32% con un "^C" en el log: la
+consola que abre un proceso lanzado por WMI se puede cerrar. Se borro la entrada a medias
+y se subio de nuevo con `sin_ventana.py` (pythonw, sin consola).
+
 ---
 
 ## 2026-10-01/02 — el 148 mezclado por codigo, con la tecnica del DJ
