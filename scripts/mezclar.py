@@ -39,7 +39,7 @@ from scipy.signal import butter, sosfilt
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
 from plomo.mezcla import en_compases, leer_set, medir  # noqa: E402
-from plomo.mezcla_motor import SR, Plantilla, planificar, renderizar_tema  # noqa: E402
+from plomo.mezcla_motor import SR, Plantilla, masterizar, planificar, renderizar_tema  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 DEST = RAIZ / "postproduction" / "mixes"
@@ -207,17 +207,18 @@ def main() -> None:
     informe_curva = [(round(float(x), 1), None if np.isnan(v) else round(float(v), 1)) for x, v in zip(tiempos, curva)]
     referencia = float(np.nanmedian(curva[lejos])) if np.any(lejos & np.isfinite(curva)) else float(np.nanmedian(curva))
     for ch, x in zip(chequeo, cambios):
-        cerca = (np.abs(tiempos - x) <= 24) & np.isfinite(curva)
+        # los 3 s del cambio de bajos quedan afuera: ahi el pozo es intencional y lo mide
+        # `pozo_de_grave`. Aca se buscan cambios SOSTENIDOS de nivel (un tema que entro bajo).
+        # En el 11->12 del 148 el "salto" de 2.5 dB era ese pozo: los cuerpos daban +0.2 y -0.2.
+        cerca = (np.abs(tiempos - x) <= 24) & (np.abs(tiempos - x) > 3) & np.isfinite(curva)
         ch["salto_db"] = round(float(np.max(np.abs(curva[cerca] - referencia))), 1) if np.any(cerca) else float("nan")
         ch["ok"] = ch["ok"] and ch["salto_db"] <= SALTO_MAX_DB
 
-    # --- master: -14 LUFS y true peak
-    lufs = medidor.integrated_loudness(mix)
-    mix *= 10 ** ((LUFS_FINAL - lufs) / 20)
-    pico = float(np.abs(mix).max())
-    if 20 * np.log10(pico) > TECHO_DBTP:
-        mix *= 10 ** ((TECHO_DBTP - 0.3 - 20 * np.log10(pico)) / 20)
-        print(f"  pico a {20 * np.log10(pico):.1f} dBFS: se bajo a {TECHO_DBTP - 0.3} (queda por debajo de -14 LUFS)")
+    # --- master: -14 LUFS, picos sueltos al limitador, true peak verificado. `masterizar`
+    # levanta un error si no cumple, y el archivo se escribe DESPUES: el 2026-10-01 un master
+    # sin verificar piso el mix bueno con uno a -2 LUFS
+    mix, master = masterizar(mix, LUFS_FINAL, TECHO_DBTP)
+    print(f"  master: {master}")
 
     DEST.mkdir(parents=True, exist_ok=True)
     sufijo = f"_transicion_{a.transicion}" if a.transicion else ""
@@ -227,7 +228,7 @@ def main() -> None:
                "plan": [{"tema": f"{c.tema.artista} - {c.tema.titulo}", "desde": round(c.desde, 2),
                          "cambio_in": c.cambio_in and round(c.cambio_in, 2), "hasta": round(c.hasta, 2),
                          "factor": round(c.factor, 5)} for c in plan],
-               "desfase_grilla_ms": desfases, "transiciones": chequeo, "loudness_3s": informe_curva,
+               "desfase_grilla_ms": desfases, "empujones_ms": empujes, "master": master, "transiciones": chequeo, "loudness_3s": informe_curva,
                "estructura": informe_estructura(temas, estructuras)}
     salida.with_suffix(".json").write_text(json.dumps(informe, ensure_ascii=False, indent=2), encoding="utf-8")
 

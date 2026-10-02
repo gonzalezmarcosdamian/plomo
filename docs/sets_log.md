@@ -3083,7 +3083,7 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 
 
 ## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
-**Armado:** 2026-10-01  
+**Armado:** 2026-10-02  
 **Duracion:** 0h  
 **Tracks:** 18  
 **BPM range:** 100-140  
@@ -3091,13 +3091,13 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Paul Thomas, Maze 28 | Abundance (Original Mix) | 123 | 7.1 |
-| 2 | Jonas Saalbach | Keep Spirit High (Original Mix) | 123 | 7.7 |
-| 3 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
-| 4 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
-| 5 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
-| 6 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
-| 7 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
-| 8 | Maze 28 | Fogbows | 122 | 6.3 |
+| 2 | Agustin Pietrocola | Sizer (Original Mix) | 123 | 5.2 |
+| 3 | Rabiee Ahmad, Hassan Tariq Khan | In Another Time (Original Mix) | 122 | 7.5 |
+| 4 | Hobin Rude | Fading Silhouettes (Pierre Sebastiano Remix) | 122 | 8.0 |
+| 5 | COQUEIT | Dock (Original Mix) | 122 | 7.0 |
+| 6 | Kamilo Sanclemente | Fragma (GORKIZ Remix) | 123 | 7.5 |
+| 7 | Maze 28 | Fogbows | 122 | 6.3 |
+| 8 | Ilias Katelanos, Plecta, Anonimat | Coaster (Durante Remix) | 124 | 6.3 |
 | 9 | Cendryma | Pure Junction (Berdu Remix) | 120 | 5.9 |
 | 10 | Cendryma | Wakefeld (Original Mix) | 122 | 7.6 |
 | 11 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |

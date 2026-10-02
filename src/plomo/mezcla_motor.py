@@ -255,3 +255,39 @@ def renderizar_tema(c: Colocado, tempo: float, p: Plantilla,
     fuera = (t < c.desde) | (t > c.hasta)
     sale[fuera] = 0.0
     return int(round(t0_mix * SR)), sale.astype(np.float32), lag, (estirado * trim).astype(np.float32)
+
+
+def masterizar(mix: np.ndarray, lufs_objetivo: float = -14.0, techo_dbtp: float = -1.0) -> tuple[np.ndarray, dict]:
+    """-14 LUFS con los picos sueltos limitados, verificado con true peak a 4x.
+
+    Dos temas sumados en un blend pican arriba de 0 dBFS. Bajar todo el mix para que entren
+    lo dejaba en -17.8 LUFS, y YouTube no sube lo que viene bajo. A -14 los picos sobre -1
+    dBFS son transitorios sueltos (954 muestras en 89 minutos en el 148): eso es trabajo de
+    un limitador, no de bajar el volumen entero.
+
+    OJO: el Limiter de pedalboard (JUCE) no recorta en el umbral: sube la senal en
+    (-umbral + 3.75) dB —medido con senoidales— y recorta en 0 dBFS. Bajarle el umbral para
+    "limitar mas" subio el mix a -2 LUFS con picos de +4.9 (2026-10-01). Por eso, despues de
+    limitar, se vuelve a llevar a -14 MIDIENDO, sin depender de esa ley.
+    """
+    from pedalboard import Limiter
+    from scipy.signal import resample_poly
+    medidor = pyln.Meter(SR)
+    x = (mix * 10 ** ((lufs_objetivo - medidor.integrated_loudness(mix)) / 20)).astype(np.float32)
+    umbral, tp = 0.0, 99.0
+    for _ in range(8):
+        y = Limiter(threshold_db=umbral, release_ms=60)(np.ascontiguousarray(x.T), SR).T
+        y = (y * 10 ** ((lufs_objetivo - medidor.integrated_loudness(y)) / 20)).astype(np.float32)
+        pico = max(float(np.abs(resample_poly(y[i:i + 30 * SR], 4, 1, axis=0)).max())
+                   for i in range(0, len(y), 30 * SR))
+        tp = 20 * np.log10(pico)
+        if tp <= techo_dbtp:
+            break
+        umbral -= tp - techo_dbtp + 0.1
+    cambio = y - x
+    info = {"lufs": round(float(medidor.integrated_loudness(y)), 2), "true_peak_dbtp": round(tp, 2),
+            "umbral_limitador_db": round(umbral, 2),
+            "cambio_db_bajo_la_senal": round(float(10 * np.log10(np.mean(cambio ** 2) / np.mean(x ** 2))), 1)}
+    if abs(info["lufs"] - lufs_objetivo) > 0.3 or tp > techo_dbtp:
+        raise ValueError(f"el master no cumple: {info}")
+    return y, info

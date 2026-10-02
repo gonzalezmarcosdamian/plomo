@@ -1000,11 +1000,13 @@
     "artist": "Jonas Saalbach",
     "title": "Keep Spirit High (Original Mix)",
     "E_calc": 7.7,
-    "nota": "keep spirit high bien heroico puede andar ahi",
+    "nota": "keep spirit high bien heroico puede andar ahi | keep spirit high, cambialo por alguno del 149",
     "fuente": "escucha del 150, 2026-10-01",
     "favorito": true,
     "rol": "heroico",
-    "_correccion": "lo habia sacado yo por color p15, aplicando a los tres oscuros el criterio que el DJ dio sobre Amuja. El DJ lo escucho y dijo que ahi esta bien: el color bajo no lo molesta cuando el tema es heroico. Generalizar un veto a temas que el DJ no nombro fue de mas."
+    "_correccion": "lo habia sacado yo por color p15, aplicando a los tres oscuros el criterio que el DJ dio sobre Amuja. El DJ lo escucho y dijo que ahi esta bien: el color bajo no lo molesta cuando el tema es heroico. Generalizar un veto a temas que el DJ no nombro fue de mas.",
+    "cambiado_en": "set 150",
+    "_no_es_veto": "pidio CAMBIARLO, no lo rechazo, y antes habia dicho 'kepp spirit high bien heroico puede andar ahi'. Sigue en el 151. Pedir cambiar un tema no es rechazarlo."
   },
   "161573466": {
     "artist": "Rauschhaus",
