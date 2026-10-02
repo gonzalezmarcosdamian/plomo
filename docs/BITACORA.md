@@ -9,6 +9,31 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-02 — Session 01 publicada, Session 02 con look propio
+
+"Inventemos un session 1, session 2... elimina el que esta en el canal ahora."
+**Session 01** (el 148, look `atardecer`) publicada: https://youtu.be/YNydI-9GZLw,
+destacada del canal y en la web. El atardecer del 23/09 (cxPG09u-edM) se borro.
+**Session 02** (el 150) renderizada y subiendose; "dale diferentes estilos a los
+videos" -> look nuevo `marea`: el mar de noche, la luna sale naranja y sube plateada
+a lo largo del set.
+
+**El 150 cambio tres veces mientras el DJ lo escuchaba** (Keep Spirit High, Fragma
+por Seguro, Dock por Midnight Current) y se cerro a las 11:43. La mezcla se rehizo
+sobre el cerrado: 17 de 17 cambios ok, 103:05.
+
+**La NVIDIA se reinicio tres veces en la manana** (nvlddmkm 153, 09:15, 10:58, 11:27;
+el driver 617.14 no lo arreglo) y cada vez se llevo el codificador NVENC. El video
+paso a codificarse en la CPU (libx264). De paso aparecio el cuello real del render:
+`np.load` de un npz releia 22 MB por cuadro. Con eso arreglado y x264 en `faster`,
+de 12-17 a 40-60 cuadros/s; desde las 11:36 no hubo mas caidas de la placa.
+
+**Verificacion:** el audio de cada video es el mix muestra por muestra (md5 del PCM
+recortado al largo del video). A la Session 02 le falto el ultimo cuadro por un
+`int()` en el largo del ultimo tramo; corregido con `round()`.
+
+---
+
 ## 2026-10-01/02 — el 148 mezclado por codigo, con la tecnica del DJ
 
 "Dale el 148, hacelo completo, fijate antes con research si hay algo resuelto en

@@ -145,7 +145,8 @@ def main() -> None:
     fps = int(r["fps"])
     n_total = len(r["cuerpo"])
     i0 = int(a.desde * fps)
-    i1 = n_total if a.segundos is None else min(n_total, i0 + int(a.segundos * fps))
+    # round: 186.233 s * 30 da 5586.99..., y con int() el ultimo tramo perdia su ultimo cuadro
+    i1 = n_total if a.segundos is None else min(n_total, i0 + round(a.segundos * fps))
     w, h = (int(v) for v in a.res.split("x"))
 
     ctx = moderngl.create_standalone_context()
