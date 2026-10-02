@@ -8,6 +8,12 @@ Fuera de tiempo real: cada cuadro se dibuja con los rasgos de SU instante
 que se corre. El shader es el look; los rasgos son la musica; el master es el
 audio. Cambiar el look es cambiar un archivo .frag, no volver a medir.
 
+LOOKS
+-----
+Cada video de la serie tiene el suyo (`--shader`): `atardecer` es el cielo sobre la ciudad
+con la paleta del telefono (el sunset del 23/09, la Session 01); `marea` es el mar de noche
+con la luna saliendo naranja y subiendo plateada a lo largo del set (la Session 02).
+
 TEXTO
 -----
 El nombre de cada tema aparece abajo a la izquierda unos segundos despues de la
@@ -73,6 +79,15 @@ def texto_del_tema(w: int, h: int, n: int, total: int, artista: str, titulo: str
         d.text((x, y), texto, font=fuente, fill=color)
         y += int(fuente.size * 1.25)
     return img.tobytes()
+
+
+def poner(prog: moderngl.Program, nombre: str, valor: object) -> None:
+    """Cada look usa los rasgos que quiere: marea.frag no lee la paleta del telefono y
+    atardecer.frag no sabe en que parte del set esta. Un uniform que el shader no declara
+    (o que el compilador saco por no usarse) no existe en el programa, y se saltea."""
+    uniforme = prog.get(nombre, None)
+    if uniforme is not None:
+        uniforme.value = valor
 
 
 def alfa_del_titulo(t: float, inicio: float) -> float:
@@ -142,8 +157,8 @@ def main() -> None:
     fbo.use()
     tex = ctx.texture((w, h), 4)
     tex.use(0)
-    prog["uTexto"] = 0
-    prog["uRes"] = (w, h)
+    poner(prog, "uTexto", 0)
+    poner(prog, "uRes", (w, h))
     carteles = {k: texto_del_tema(w, h, k + 1, len(caps), c["artista"], c["titulo"]) for k, c in enumerate(caps)}
     inicios = [c["t"] for c in caps]
     if a.mostrar_titulo:
@@ -167,17 +182,16 @@ def main() -> None:
         if alfa > 0 and k != cartel_cargado:
             tex.write(carteles[k])
             cartel_cargado = k
-        prog["uTime"] = t
-        prog["uFondo"], prog["uCielo"], prog["uResplandor"], prog["uBrillo"] = (tuple(c) for c in pal)
-        prog["uBombo"] = float(r["bombo"][i])
-        prog["uBajo"] = float(r["bajo"][i])
-        prog["uCuerpo"] = float(r["cuerpo"][i])
-        prog["uAire"] = float(r["aire"][i])
-        prog["uChispa"] = float(r["brillo"][i])
-        prog["uNoche"] = float(1.0 - r["luz_cielo"][i])
-        prog["uDeriva"] = tuple(float(v) for v in deriva)
-        prog["uAngulo"] = float(angulo)
-        prog["uTextoAlfa"] = alfa
+        for nombre, valor in (
+                ("uTime", t), ("uProgreso", i / n_total),
+                ("uFondo", tuple(pal[0])), ("uCielo", tuple(pal[1])),
+                ("uResplandor", tuple(pal[2])), ("uBrillo", tuple(pal[3])),
+                ("uBombo", float(r["bombo"][i])), ("uBajo", float(r["bajo"][i])),
+                ("uCuerpo", float(r["cuerpo"][i])), ("uAire", float(r["aire"][i])),
+                ("uChispa", float(r["brillo"][i])), ("uNoche", float(1.0 - r["luz_cielo"][i])),
+                ("uDeriva", tuple(float(v) for v in deriva)), ("uAngulo", float(angulo)),
+                ("uTextoAlfa", alfa)):
+            poner(prog, nombre, valor)
         vao.render(moderngl.TRIANGLE_STRIP)
         try:
             proc.stdin.write(fbo.read(components=3))
