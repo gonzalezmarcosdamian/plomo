@@ -106,13 +106,15 @@
     "artist": "Kamilo Sanclemente",
     "title": "Fragma (GORKIZ Remix)",
     "E_calc": 7.5,
-    "nota": "tremendo tema, mi sonido totalmente",
+    "nota": "tremendo tema, mi sonido totalmente | cambiar fragma (escuchando el 150)",
     "favorito": true,
     "fuente": "escucha del set 139 v4, 2026-09-22",
     "momentos": [
       "pico",
       "cierre"
-    ]
+    ],
+    "cambiado_en": "set 150",
+    "_no_es_veto": "pidio CAMBIARLO escuchando, no dijo nada de lo que el tema es. Sigue en el 151."
   },
   "136780130": {
     "artist": "Simon Vuarambon",
