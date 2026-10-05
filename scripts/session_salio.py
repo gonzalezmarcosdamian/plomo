@@ -23,7 +23,7 @@ import shutil
 import subprocess
 import sys
 import time
-from datetime import date, datetime
+from datetime import datetime
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -65,7 +65,7 @@ def main() -> None:
 
     py = sys.executable.replace("pythonw.exe", "python.exe")
     correr([py, "scripts/youtube_canal.py", "--trailer", vid])
-    correr([py, "scripts/web_ultimo_set.py", paquete, "--id", vid, "--fecha", date.today().isoformat()])
+    correr([py, "scripts/web_sessions.py"])
     vercel = shutil.which("vercel") or str(Path.home() / "AppData" / "Roaming" / "npm" / "vercel.cmd")
     correr(["cmd", "/c", vercel, "deploy", "--prod", "--yes", "--scope", "gonzalezmarcosdamians-projects"],
            cwd=RAIZ / "web" / "plomo")

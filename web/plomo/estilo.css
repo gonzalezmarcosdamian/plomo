@@ -53,3 +53,6 @@ section { margin-bottom: 8px; }
 nav p { margin: 0 0 10px; font-size: 0.9rem; }
 .tracklist em { font-style: normal; color: var(--suave); font-size: 0.85em; margin-left: 6px; }
 .redes a { margin-right: 18px; }
+.session { margin: 0 0 40px; }
+.session .suave { margin: 10px 0 0; }
+.session summary { cursor: pointer; color: var(--acento); padding: 10px 0; }
