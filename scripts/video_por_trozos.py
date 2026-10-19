@@ -61,6 +61,7 @@ def main() -> None:
     ap.add_argument("--res", default="2560x1440")
     ap.add_argument("--codificador", default="cpu")
     ap.add_argument("--shader", default="atardecer", help="el look: un .frag de scripts/shaders")
+    ap.add_argument("--supermuestreo", default="1.0")
     ap.add_argument("--salida", required=True)
     a = ap.parse_args()
 
@@ -83,7 +84,7 @@ def main() -> None:
                 r = subprocess.run([sys.executable, "-u", str(RAIZ / "scripts" / "video_animar.py"), "--nombre",
                                     a.nombre, "--master", a.master, "--res", a.res, "--desde", f"{ini:.3f}",
                                     "--segundos", f"{largo:.3f}", "--codificador", a.codificador,
-                                    "--shader", a.shader,
+                                    "--shader", a.shader, "--supermuestreo", a.supermuestreo,
                                     "--salida", str(tramo)], cwd=RAIZ)
                 if r.returncode == 0 and abs(duracion(tramo) - largo) < 0.2:
                     break
