@@ -52,15 +52,17 @@ TITULO_DURA_S = 10.0
 TITULO_FUNDIDO_S = 1.5
 # el viento de cada tema: desplazamiento del dominio del ruido y direccion del flujo
 VIENTOS = [((0.0, 0.0), 0.10), ((1.2, 0.4), -0.18), ((0.5, 1.3), 0.28), ((1.6, 1.1), -0.05)]
-# vuelo.frag: (cielo alto, horizonte, acento) por tema, en orden; ciclan. Arranca en el naranja de la marca.
+# vuelo.frag: la hora del dia de cada tema, (cenit, horizonte, sol), en orden; ciclan.
+# Son cielos que existen: "mas realismo, no solo las arenas" (el DJ, 2026-10-19).
 PALETAS_VUELO = [
-    ((0.020, 0.025, 0.060), (1.00, 0.52, 0.22), (1.00, 0.64, 0.32)),
-    ((0.010, 0.030, 0.060), (0.30, 0.66, 0.90), (0.50, 0.85, 1.00)),
-    ((0.030, 0.015, 0.060), (0.92, 0.36, 0.55), (1.00, 0.56, 0.72)),
-    ((0.015, 0.035, 0.040), (0.36, 0.86, 0.66), (0.56, 1.00, 0.82)),
-    ((0.030, 0.020, 0.055), (0.74, 0.46, 1.00), (0.86, 0.66, 1.00)),
-    ((0.030, 0.025, 0.020), (1.00, 0.78, 0.45), (1.00, 0.86, 0.56)),
+    ((0.10, 0.16, 0.30), (1.00, 0.55, 0.25), (1.00, 0.72, 0.42)),   # hora dorada: el naranja de la marca
+    ((0.03, 0.06, 0.16), (0.55, 0.47, 0.72), (1.00, 0.66, 0.56)),   # hora azul
+    ((0.08, 0.08, 0.22), (0.95, 0.46, 0.50), (1.00, 0.70, 0.60)),   # atardecer rosado
+    ((0.01, 0.02, 0.05), (0.18, 0.26, 0.42), (0.75, 0.82, 1.00)),   # noche con luna
+    ((0.18, 0.24, 0.40), (1.00, 0.76, 0.46), (1.00, 0.86, 0.62)),   # amanecer
+    ((0.05, 0.03, 0.12), (0.70, 0.40, 0.80), (1.00, 0.62, 0.72)),   # violeta
 ]
+BIOMAS_VUELO = 4   # montanas, costa, dunas, mar de nubes: el tema k va al paisaje k % 4
 ADELANTO_DROP_S = 1.2    # la camara mira adelante: la picada empieza antes del drop y aterriza con el
 
 
@@ -87,8 +89,20 @@ def camara(r: dict, fps: int) -> dict[str, np.ndarray]:
         previo = max(float(s), previo * caida)
         impacto[i] = previo
     paletas = np.array([PALETAS_VUELO[k % len(PALETAS_VUELO)] for k in range(r["temas"].shape[1])])
-    return {"altura": 1 - suavizar(adelante, 0.8, fps), "distancia": np.cumsum(velocidad) / fps,
-            "impacto": impacto, "paleta": np.einsum("ft,tcd->fcd", r["temas"], paletas)}
+    # el paisaje: el de los dos temas que mas suenan; en el blend uno se funde en el otro.
+    # Cuando el dominante cambia, A y B se dan vuelta con la mezcla en 0.5: no hay salto.
+    # Cada tema vuela su propio paisaje desde que empieza a sonar: la distancia LOCAL queda
+    # chica (en float32, a la hora y media de set el ruido se volvia escalones).
+    distancia = np.cumsum(velocidad) / fps
+    origen = distancia[np.argmax(r["temas"] > 1e-3, axis=0)]
+    orden = np.argsort(-r["temas"], axis=1)[:, :2]
+    filas = np.arange(len(orden))
+    pa, pb = r["temas"][filas, orden[:, 0]], r["temas"][filas, orden[:, 1]]
+    return {"altura": 1 - suavizar(adelante, 0.8, fps), "distancia": distancia,
+            "impacto": impacto, "paleta": np.einsum("ft,tcd->fcd", r["temas"], paletas),
+            "tema_a": orden[:, 0], "tema_b": orden[:, 1],
+            "local_a": distancia - origen[orden[:, 0]], "local_b": distancia - origen[orden[:, 1]],
+            "mezcla": pb / np.maximum(pa + pb, 1e-6)}
 
 VERTEX = """
 #version 330
@@ -234,7 +248,12 @@ def main() -> None:
         if cam is not None:
             for nombre, valor in (("uAltura", float(cam["altura"][i])), ("uDistancia", float(cam["distancia"][i])),
                                   ("uImpacto", float(cam["impacto"][i])), ("uCieloAlto", tuple(cam["paleta"][i, 0])),
-                                  ("uHorizonte", tuple(cam["paleta"][i, 1])), ("uAcento", tuple(cam["paleta"][i, 2]))):
+                                  ("uHorizonte", tuple(cam["paleta"][i, 1])), ("uAcento", tuple(cam["paleta"][i, 2])),
+                                  ("uBiomaA", float(cam["tema_a"][i] % BIOMAS_VUELO)),
+                                  ("uBiomaB", float(cam["tema_b"][i] % BIOMAS_VUELO)),
+                                  ("uSemillaA", float(cam["tema_a"][i])), ("uSemillaB", float(cam["tema_b"][i])),
+                                  ("uLocalA", float(cam["local_a"][i])), ("uLocalB", float(cam["local_b"][i])),
+                                  ("uMezclaBioma", float(cam["mezcla"][i]))):
                 poner(prog, nombre, valor)
         vao.render(moderngl.TRIANGLE_STRIP)
         try:
