@@ -1,0 +1,103 @@
+{
+  "name": "157. Session 04 · Melódico Ascendente — 1h45 — 2026-10-19",
+  "duration_h": 0,
+  "bpm_range": [
+    100,
+    140
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "_nota": "2026-10-19: 'hace con esa lista de spoty mejoras y arma la lista siguiente, con modelo de 150, asi esa estrategia, y armemos la session 4 con eso'. Base: la lista de Spotify del DJ 'Progressive House Melodico Ascendente' (18). Se quedan 9: los que no tienen un problema medido. Salen: Remember Me (118 BPM, habia que estirarla 4%), Blazing Ice (9 secciones, drop 11%), You Got It y Feel It (11 secciones), Ghost Rider (graves 21 contra el piso de 43), Blaze y Luminor (Nicolas Viana tenia 6 y el tope es 4; esos dos miden peor), el Winged repetido y Sharks (no esta en la biblioteca ni en Muzpa). Entran 9 de la biblioteca que pasan los cuatro pisos del sonido del 150, se parecen en energia, densidad, graves y color a los que quedan, son de los mismos generos, nunca los toco y no salieron en las Sessions 01-03. Orden con ordenar_como_150.py, los 9 del DJ fijos: la rueda da la vuelta entera de 4A a 2A de a un paso. Ash & Ember tambien esta en el 154 (fecha del 23/10). Propuesta para escuchar, NO aprobada.",
+  "tracks": [
+    {
+      "artist": "Hafex, MAXTAGE",
+      "title": "Between Your Sighs  (Extended Mix)",
+      "content_id": "260703319"
+    },
+    {
+      "artist": "Tali Muss",
+      "title": "Reward (Extended Mix)",
+      "content_id": "204428086"
+    },
+    {
+      "artist": "Zuccasam",
+      "title": "Come Home (Dowden Remix)",
+      "content_id": "100626342"
+    },
+    {
+      "artist": "Habitatt",
+      "title": "Fly With Me (Extended Mix)",
+      "content_id": "141473984"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Fog Machine (Extended Mix)",
+      "content_id": "252350736"
+    },
+    {
+      "artist": "M.O.S.",
+      "title": "Nanda (Dilby Remix)",
+      "content_id": "208082265"
+    },
+    {
+      "artist": "Lee Burridge",
+      "title": "Fading Out (Extended Mix)",
+      "content_id": "126949236"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Coral (Extended Mix)",
+      "content_id": "196838047"
+    },
+    {
+      "artist": "Mind Echoes",
+      "title": "Visible World (Original Mix)",
+      "content_id": "33578155"
+    },
+    {
+      "artist": "Kyotto",
+      "title": "District (Original Mix)",
+      "content_id": "57011885"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Winged (Original Mix)",
+      "content_id": "237240379"
+    },
+    {
+      "artist": "Ramiro Drisdale",
+      "title": "Glade (Original Mix)",
+      "content_id": "34259905"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Kalira (Extended Mix)",
+      "content_id": "71128300"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Stamina (Extended Mix)",
+      "content_id": "26495433"
+    },
+    {
+      "artist": "Second Sine",
+      "title": "Motor City (Sebastian Haas Remix) ",
+      "content_id": "89092658"
+    },
+    {
+      "artist": "Rauschhaus, Greta Meier",
+      "title": "Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+      "content_id": "138963589"
+    },
+    {
+      "artist": "Danny Howells, Lloyd Barwood",
+      "title": "One More Sky (Original Mix)",
+      "content_id": "98237289"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Ash & Ember (Extended Mix)",
+      "content_id": "72637273"
+    }
+  ]
+}
