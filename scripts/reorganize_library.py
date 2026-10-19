@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 from plomo import config
 import sqlcipher3
 
-ROOT = Path(r"C:\Users\gonza\OneDrive\Documentos\Music\2026")
+ROOT = config.MUSIC_LIBRARY_ROOT / "2026"
 INBOX = ROOT / "Nuevos" / "Inbox"
 SETS_ARCHIVE = ROOT / "Archivo" / "Sets"
 DRY = "--dry" in sys.argv

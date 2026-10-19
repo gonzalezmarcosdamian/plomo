@@ -55,6 +55,30 @@ y `docs/SPOTIFY.md` para el procedimiento que quedó.
 
 ---
 
+## OneDrive — NO SE USA (2026-10-19)
+
+**REGLA:** Nada del proyecto ni de la PC vive en OneDrive, y no se escribe ahí.
+Ni música, ni proyectos, ni renders, ni el escritorio.
+
+- La biblioteca está en `C:\Users\gonza\Documents\Music`. Rekordbox apunta ahí.
+- Documentos, Escritorio e Imágenes de Windows son las carpetas locales
+  (`C:\Users\gonza\Documents`, `Desktop`, `Pictures`), no las de OneDrive.
+- Los renders y videos van a `C:\Users\gonza\Videos` o a `postproduction/`.
+- OneDrive no arranca con Windows. No volver a activarlo ni a hacer "copia de
+  seguridad de carpetas", aunque Windows lo ofrezca.
+- Lo frena el código: `config.py` corta si una ruta de música o de backup dice
+  OneDrive, y `scripts/hooks/guard_onedrive.py` bloquea cualquier escritura ahí.
+- Si un track roto apunta a la ruta vieja, `fix_missing_paths.py
+  --solo-mudanza` lo reenlaza por la misma ruta relativa.
+
+**Por qué:** la cuota se llenó el 2026-09-21 y desde ahí OneDrive no subió
+nada más, pero los archivos seguían viéndose como sincronizados. 62 GB, con
+la biblioteca entera, parecían respaldados y no lo estaban. Un respaldo que
+falla callado es peor que no tener respaldo. El código se respalda en GitHub;
+la música, en un disco externo.
+
+---
+
 ## Numeración de sets
 
 - Sets activos: `XX. Nombre — Duración — Fecha` (ej: `09. Progressive Dark — 3h — 2026-05-21`)

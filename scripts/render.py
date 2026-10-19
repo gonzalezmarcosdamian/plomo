@@ -51,7 +51,7 @@ sys.path.insert(0, str(RAIZ / "src"))
 
 from plomo.live import Live  # noqa: E402
 
-GRABACIONES = Path.home() / "OneDrive" / "Documentos" / "Ableton" / "Live Recordings"
+GRABACIONES = Path.home() / "Documents" / "Ableton" / "Live Recordings"
 SALIDA = RAIZ / "postproduction" / "render"
 PISTA_RENDER = 2          # "3-Audio": una de las vacias que trae el set nuevo
 BPM = 123.0
@@ -65,8 +65,8 @@ def _wav_nuevo(antes: set[Path]) -> Path | None:
     """El WAV que aparecio desde `antes`. Por diferencia de conjunto, no por fecha.
 
     La primera version comparaba `mtime` contra la hora de inicio y fallaba una
-    de cada tres veces: la carpeta vive en OneDrive y la fecha del archivo se
-    mueve mientras Live lo cierra y lo recorta. Que archivo es nuevo no depende
+    de cada tres veces: la carpeta vivia en OneDrive y la fecha del archivo se
+    movia mientras Live lo cierra y lo recorta. Que archivo es nuevo no depende
     de ningun reloj. Y se reintenta unos segundos porque Live termina de escribir
     despues de soltar el clip.
     """

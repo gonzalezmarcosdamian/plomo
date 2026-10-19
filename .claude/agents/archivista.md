@@ -24,8 +24,9 @@ espacio, no duplica nada, y se puede borrar y regenerar entero sin consecuencias
 Ahi es donde se explora la coleccion como uno quiera verla.
 
 Las Vistas viven **fuera de OneDrive** a proposito: OneDrive convierte archivos
-en placeholders en la nube y trata mal los hardlinks. El deposito sigue adentro
-de OneDrive porque ahi es donde ya esta y donde Rekordbox lo busca.
+en placeholders en la nube y trata mal los hardlinks. El deposito tambien salio:
+desde el 2026-10-19 vive en `C:\Users\gonza\Documents\Music` y OneDrive no se usa para
+nada (ver CLAUDE.md).
 
 ```bash
 ./.venv/Scripts/python.exe scripts/build_views.py --dry     # ver que haria

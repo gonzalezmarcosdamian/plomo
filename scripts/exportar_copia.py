@@ -204,11 +204,8 @@ def limpiar(destino: Path, dry: bool) -> None:
 
 
 def acceso_directo(destino: Path) -> None:
-    """Acceso directo en el escritorio, sin meter varios GB adentro de OneDrive."""
-    casa = Path(os.path.expanduser("~"))
-    escritorio = casa / "OneDrive" / "Escritorio"
-    if not escritorio.exists():
-        escritorio = casa / "Desktop"
+    """Acceso directo en el escritorio. El de OneDrive no: OneDrive no se usa."""
+    escritorio = Path(os.path.expanduser("~")) / "Desktop"
     lnk = escritorio / f"{destino.name}.lnk"
     ps = ("$s=(New-Object -ComObject WScript.Shell).CreateShortcut("
           f"'{lnk}');$s.TargetPath='{destino}';$s.Save()")

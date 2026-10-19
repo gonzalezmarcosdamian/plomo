@@ -1,6 +1,6 @@
 # Reglas del proyecto DJ IA
 
-> Sincronizado con `C:\Users\gonza\OneDrive\Documentos\Music\_Rekordbox\DJ_IA_PROJECT_REGLAS.md`
+> Sincronizado con `C:\Users\gonza\Documents\Music\_Rekordbox\DJ_IA_PROJECT_REGLAS.md`
 
 ## Reglas de oro (NUNCA romper)
 

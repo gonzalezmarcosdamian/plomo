@@ -28,7 +28,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 from plomo.midi import MAYOR, MENOR, tonica_de_camelot  # noqa: E402
 
 SR = 44100
-USER_LIBRARY = Path("C:/Users/gonza/OneDrive/Documentos/Ableton/User Library/Samples/plomo")
+USER_LIBRARY = Path("C:/Users/gonza/Documents/Ableton/User Library/Samples/plomo")
 
 
 def riser(segundos: float, desde_hz: float = 300.0, hasta_hz: float = 9000.0,

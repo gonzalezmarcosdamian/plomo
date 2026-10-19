@@ -41,7 +41,7 @@ from plomo import config  # noqa: E402
 
 # El borrado solo puede ocurrir debajo de estas raices.
 PERMITIDAS = (
-    Path(r"C:\Users\gonza\OneDrive\Documentos\Music"),
+    config.MUSIC_LIBRARY_ROOT,
     Path(r"C:\Users\gonza\Music"),
 )
 

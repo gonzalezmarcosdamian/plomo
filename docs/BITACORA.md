@@ -9,6 +9,46 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-19 — todo afuera de OneDrive: la biblioteca vive en Documents\Music
+
+"revisar y liberar espacio en one drive no usarlo, pone reglas", y después
+"deja todo fuera de one drive y no lo uses y liberalo". OneDrive tenía 62,6 GB
+y 530 mil archivos, casi todo en `Documentos`: la carpeta Documentos de Windows
+estaba redirigida ahí, igual que Escritorio e Imágenes. Lo que nadie sabía: la
+cuota estaba llena desde el 2026-09-21 (`QuotaWallTimestamp` en el registro) y
+desde ahí no subía nada, aunque los archivos se seguían viendo sincronizados.
+
+Lo que se hizo:
+
+- **Mover, no copiar.** En el mismo disco es un rename: no ocupa espacio. Antes
+  se probó con un archivo y una carpeta: al salir de OneDrive, Windows les saca
+  el reparse point y quedan como archivos normales, con el mismo hash.
+- 69 carpetas y archivos de Documentos, Escritorio e Imágenes pasaron a las
+  carpetas locales con el mismo nombre. Solo chocó `Documentos\plomo`, un `.git`
+  viejo suelto, que fue a `Documents\_de_onedrive\plomo_git_viejo`.
+- La biblioteca: 25.232 archivos y 50,38 GB a `C:\Users\gonza\Documents\Music`
+  en 26 s, con conteo y bytes idénticos. La primera vez que se quiso mover,
+  Rekordbox estaba abierto por la sesión del import, y se esperó a que lo cerrara.
+- Reenlace: `fix_missing_paths.py --solo-mudanza --si`, con 2934 FolderPath
+  corregidos, 0 fallos e integrity ok. Backup en
+  `master_pre_fixpaths_20261019_110806.db`. 198 tracks vivos ya no tenían
+  archivo desde antes y no se tocaron: la sesión del import los está reponiendo.
+- Escritorio, Documentos e Imágenes de Windows vuelven a ser las carpetas
+  locales, y OneDrive salió del inicio. Apuntan a lo nuevo: Ableton
+  (`Library.cfg`), `rekordbox3.settings` (AutoRelocateSearchPaths), `.env`,
+  `config.py`, seis scripts y 177 rutas en `data/`.
+- Las memorias de Claude de los 8 proyectos que vivían en OneDrive se
+  renombraron a la ruta nueva.
+- Reglas: la sección de CLAUDE.md, `~/.claude/rules/common/onedrive.md`,
+  `config.py` que corta si una ruta dice OneDrive, y
+  `scripts/hooks/guard_onedrive.py` que bloquea escrituras ahí.
+
+Queda pendiente: vaciar la papelera de OneDrive en la web, porque lo borrado
+sigue contando en la cuota. Además, `Claudio APP` no tiene remoto y el venv de
+`tradingbot` se rompió con la mudanza.
+
+---
+
 ## 2026-10-02 — Session 01 publicada, Session 02 con look propio
 
 "Inventemos un session 1, session 2... elimina el que esta en el canal ahora."

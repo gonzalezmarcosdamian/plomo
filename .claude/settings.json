@@ -11,6 +11,17 @@
             "statusMessage": "Verificando que Rekordbox este cerrado"
           }
         ]
+      },
+      {
+        "matcher": "Write|Edit|NotebookEdit|Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"C:\\Users\\gonza\\Documents\\plomo\\.venv\\Scripts\\python.exe\" \"C:\\Users\\gonza\\Documents\\plomo\\scripts\\hooks\\guard_onedrive.py\"",
+            "timeout": 10,
+            "statusMessage": "Verificando que no se escriba en OneDrive"
+          }
+        ]
       }
     ]
   }

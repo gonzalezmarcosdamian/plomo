@@ -8,6 +8,28 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un respaldo con la cuota llena falla callado
+
+**Que paso.** OneDrive tenia la carpeta Documentos de Windows, la biblioteca
+entera y los proyectos: 62 GB. La cuota se habia llenado un mes antes y desde
+ahi no subia nada. Aun asi, los archivos se veian sincronizados, y una nota de
+respaldo daba cosas por "ya en OneDrive". La unica senal estaba en el registro
+(`QuotaWallTimestamp`, `ItemCantFitInQuotaTimesShown`).
+
+**Por que.** Un sincronizador muestra el estado del archivo local, no si existe
+la copia remota. Cuando el destino se llena no se rompe nada local, entonces
+nadie lo nota hasta el dia en que hace falta la copia.
+
+**Como se aplica.** Un respaldo se verifica del lado del destino (la web, el
+remoto, el disco externo), nunca por el icono local. Si una carpeta
+sincronizada no entra en el plan, se saca: en el mismo disco, mover es un rename
+instantaneo, y Windows convierte los placeholders en archivos normales al
+salir. Antes de mover, buscar quien guarda la ruta absoluta: la base de la app
+(FolderPath de Rekordbox), los configs de otras apps (`Library.cfg` de Ableton),
+los datos versionados y el `.env`.
+
+---
+
 ## Un archivo abierto no es un arreglo en memoria
 
 **Que paso.** El render de video iba a 12-17 cuadros/s y lo atribuiamos a la GPU:

@@ -15,9 +15,9 @@ SQLCIPHER_KEY = os.getenv("SQLCIPHER_KEY",
 
 # Music library
 MUSIC_LIBRARY_ROOT = Path(os.getenv("MUSIC_LIBRARY_ROOT",
-    r"C:\Users\gonza\OneDrive\Documentos\Music"))
+    r"C:\Users\gonza\Documents\Music"))
 MUSIC_NEW_FOLDER = Path(os.getenv("MUSIC_NEW_FOLDER",
-    r"C:\Users\gonza\OneDrive\Documentos\Music\2026\Nuevos\Inbox"))
+    r"C:\Users\gonza\Documents\Music\2026\Nuevos\Inbox"))
 DOWNLOADS_FOLDER = Path(os.getenv("DOWNLOADS_FOLDER",
     r"C:\Users\gonza\Downloads"))
 
@@ -25,6 +25,17 @@ DOWNLOADS_FOLDER = Path(os.getenv("DOWNLOADS_FOLDER",
 BACKUP_FOLDER = Path(os.getenv("BACKUP_FOLDER",
     r"C:\Users\gonza\Music\plomo\outputs"))
 BACKUP_RETENTION = int(os.getenv("BACKUP_RETENTION", "10"))
+
+# OneDrive no se usa (2026-10-19, ver CLAUDE.md). Con la cuota llena dejo 62 GB
+# como placeholders que nunca subio, y un .env viejo volveria a llenarlo sin que
+# nadie lo note. Se corta aca, antes de que cualquier script escriba una ruta.
+for _nombre, _ruta in (("MUSIC_LIBRARY_ROOT", MUSIC_LIBRARY_ROOT),
+                       ("MUSIC_NEW_FOLDER", MUSIC_NEW_FOLDER),
+                       ("BACKUP_FOLDER", BACKUP_FOLDER)):
+    if "onedrive" in str(_ruta).lower():
+        raise RuntimeError(f"{_nombre} apunta adentro de OneDrive ({_ruta}). "
+                           "OneDrive no se usa: corregir el .env.")
+
 BACKUP_FOLDER.mkdir(parents=True, exist_ok=True)
 
 # Spotify

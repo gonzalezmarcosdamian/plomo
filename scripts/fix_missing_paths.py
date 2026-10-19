@@ -20,6 +20,11 @@ Tres cosas de esta version que no estaban antes, y las tres importan:
 Uso:
     python scripts/fix_missing_paths.py          # dry-run
     python scripts/fix_missing_paths.py --si
+    python scripts/fix_missing_paths.py --solo-mudanza [--si]
+
+`--solo-mudanza` relinkea unicamente lo que se mudo de una `RAICES_VIEJAS` y no
+busca por nombre: una mudanza no es la ocasion de "arreglar" de paso tracks que
+ya estaban rotos por otra causa.
 """
 from __future__ import annotations
 
@@ -39,6 +44,7 @@ import sqlcipher3  # noqa: E402
 from plomo import config  # noqa: E402
 
 EJECUTAR = "--si" in sys.argv
+SOLO_MUDANZA = "--solo-mudanza" in sys.argv
 
 RAIZ = config.MUSIC_LIBRARY_ROOT
 DEPOSITO = RAIZ / "Biblioteca"
@@ -48,6 +54,25 @@ SEARCH_ROOTS = [DEPOSITO, config.MUSIC_NEW_FOLDER]
 # Cuarentena y basura. Un track relinkeado aca queda fuera de la biblioteca
 # pero suena, asi que el error no se nota hasta que es tarde.
 PROHIBIDO = (RAIZ / "_Archivo",)
+# Raices donde vivio la biblioteca antes de mudarse entera. Un track que apunta
+# adentro de una tiene un candidato exacto: la misma ruta relativa bajo RAIZ.
+# Buscar por nombre ahi seria peor: con duplicados es ambiguo y con 3800 tracks
+# son 3800 recorridas del deposito. La de OneDrive se dejo el 2026-10-19.
+RAICES_VIEJAS = (Path(r"C:\Users\gonza\OneDrive\Documentos\Music"),)
+
+
+def mudado(fpath: str) -> Path | None:
+    """El mismo archivo bajo la raiz nueva, si la vieja se mudo entera."""
+    viejo = Path(fpath.replace("/", os.sep))
+    for raiz_vieja in RAICES_VIEJAS:
+        try:
+            relativo = viejo.relative_to(raiz_vieja)
+        except ValueError:
+            continue
+        nuevo = RAIZ / relativo
+        if nuevo.is_file():
+            return nuevo
+    return None
 
 
 def rekordbox_corriendo() -> bool:
@@ -86,6 +111,9 @@ def find_file(filename: str) -> Path | None:
 
 def main() -> None:
     print(f"Fix Missing Paths — {'REAL' if EJECUTAR else 'DRY-RUN (no cambia nada)'}")
+    print(f"  mudanza desde: {', '.join(str(r) for r in RAICES_VIEJAS)}")
+    if SOLO_MUDANZA:
+        print("  solo mudanza: no busca por nombre")
     print(f"  busca en: {', '.join(str(r) for r in SEARCH_ROOTS)}")
     print(f"  nunca en: {', '.join(str(r) for r in PROHIBIDO)}\n")
 
@@ -112,7 +140,9 @@ def main() -> None:
     plan = []
     sin_encontrar = 0
     for cid, artista, titulo, fpath in rotos:
-        found = find_file(Path(fpath.replace("/", os.sep)).name)
+        found = mudado(fpath)
+        if not found and not SOLO_MUDANZA:
+            found = find_file(Path(fpath.replace("/", os.sep)).name)
         if found:
             plan.append((cid, found.as_posix(), fpath))
             print(f"  FIX [{cid}] {artista or '?'} - {titulo}")

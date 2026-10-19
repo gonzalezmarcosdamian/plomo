@@ -30,7 +30,7 @@ sys.path.insert(0, str(RAIZ / "src"))
 
 from plomo.midi import MENOR, tonica_de_camelot  # noqa: E402
 
-USER_LIBRARY = Path("C:/Users/gonza/OneDrive/Documentos/Ableton/User Library/Samples/plomo")
+USER_LIBRARY = Path("C:/Users/gonza/Documents/Ableton/User Library/Samples/plomo")
 
 # Grados de la escala para cada tramo, en orden. Sube: i - III - v - octava.
 # Si hay mas tramos que grados se repite el ultimo, que deja la frase arriba.
