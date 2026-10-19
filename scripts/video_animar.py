@@ -105,7 +105,10 @@ def camara(r: dict, fps: int) -> dict[str, np.ndarray]:
     orden = np.argsort(-r["temas"], axis=1)[:, :2]
     filas = np.arange(len(orden))
     pa, pb = r["temas"][filas, orden[:, 0]], r["temas"][filas, orden[:, 1]]
+    # ascenso.frag: la altitud del cohete, 0 en la plataforma y 1 al final del set. Es la misma
+    # distancia normalizada: sube mas rapido en el groove y planea en el breakdown
     return {"altura": 1 - suavizar(adelante, 1.4, fps), "distancia": distancia, "origen": origen,
+            "altitud": distancia / distancia[-1],
             "impacto": impacto, "paleta": np.einsum("ft,tcd->fcd", r["temas"], paletas),
             "tema_a": orden[:, 0], "tema_b": orden[:, 1],
             "local_a": distancia - origen[orden[:, 0]], "local_b": distancia - origen[orden[:, 1]],
@@ -270,6 +273,7 @@ def main() -> None:
     cam, suelo = None, {}
     if prog.get("uAltura", None) is not None:
         cam = camara(r, fps)
+    if prog.get("uSueloA", None) is not None:
         margen = int(10 * fps)
         suelo_desde = max(0, i0 - margen)
         suelo = suelos(ctx, cam, suelo_desde, min(n_total, i1 + margen), fps)
@@ -315,9 +319,12 @@ def main() -> None:
                 ("uTextoAlfa", alfa)):
             poner(prog, nombre, valor)
         if cam is not None:
+            for nombre, valor in (("uAltitud", float(cam["altitud"][i])), ("uAltura", float(cam["altura"][i])),
+                                  ("uImpacto", float(cam["impacto"][i])), ("uDistancia", float(cam["distancia"][i]))):
+                poner(prog, nombre, valor)
+        if suelo:
             ka, kb = int(cam["tema_a"][i]), int(cam["tema_b"][i])
-            for nombre, valor in (("uAltura", float(cam["altura"][i])), ("uDistancia", float(cam["distancia"][i])),
-                                  ("uImpacto", float(cam["impacto"][i])), ("uCieloAlto", tuple(cam["paleta"][i, 0])),
+            for nombre, valor in (("uCieloAlto", tuple(cam["paleta"][i, 0])),
                                   ("uHorizonte", tuple(cam["paleta"][i, 1])), ("uAcento", tuple(cam["paleta"][i, 2])),
                                   ("uBiomaA", float(cam["tema_a"][i] % BIOMAS_VUELO)),
                                   ("uBiomaB", float(cam["tema_b"][i] % BIOMAS_VUELO)),
