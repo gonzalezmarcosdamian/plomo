@@ -257,6 +257,42 @@ def renderizar_tema(c: Colocado, tempo: float, p: Plantilla,
     return int(round(t0_mix * SR)), sale.astype(np.float32), lag, (estirado * trim).astype(np.float32)
 
 
+def lufs_integrado(x: np.ndarray, sr: int = SR) -> float:
+    """BS.1770 integrado, igual que pyln.Meter.integrated_loudness pero por partes.
+
+    pyloudnorm copia la senal entera a float64 y la filtra canal por canal: con un set de 100
+    minutos son 2 GB por canal, y el 2026-10-19 la mezcla de la Session 03 se quedo sin
+    memoria ahi, con los 17 temas ya renderizados. Mismos filtros (los de pyln.Meter), mismo
+    gating (bloques de 400 ms solapados al 75%, umbral absoluto -70 y relativo -10); el estado
+    de los filtros pasa de una parte a la siguiente."""
+    from scipy.signal import lfilter
+    filtros = list(pyln.Meter(sr)._filters.values())
+    paso = int(round(0.1 * sr))      # 100 ms: un bloque de 400 ms son cuatro pasos
+    parte = paso * 600               # 60 s
+    energias = []
+    for canal in range(x.shape[1]):
+        estados = [np.zeros(max(len(f.a), len(f.b)) - 1) for f in filtros]
+        e, resto = [], np.zeros(0)
+        for i in range(0, len(x), parte):
+            s = x[i:i + parte, canal].astype(np.float64)
+            for k, f in enumerate(filtros):
+                s, estados[k] = lfilter(f.b, f.a, s, zi=estados[k])
+                s = s * f.passband_gain
+            cuadrado = np.concatenate([resto, s * s])
+            n = len(cuadrado) // paso
+            e.extend(cuadrado[:n * paso].reshape(n, paso).sum(1))
+            resto = cuadrado[n * paso:]
+        energias.append(np.array(e))
+    e = np.array(energias)
+    z = (e[:, :-3] + e[:, 1:-2] + e[:, 2:-1] + e[:, 3:]) / (4 * paso)
+    peso = np.array([1.0, 1.0, 1.0, 1.41, 1.41])[:x.shape[1], None]
+    nivel = -0.691 + 10 * np.log10((peso * z).sum(0) + 1e-30)
+    absoluto = nivel >= -70.0
+    relativo = -0.691 + 10 * np.log10((peso[:, 0] * z[:, absoluto].mean(1)).sum()) - 10.0
+    dentro = (nivel > relativo) & absoluto
+    return float(-0.691 + 10 * np.log10((peso[:, 0] * np.nan_to_num(z[:, dentro].mean(1))).sum()))
+
+
 def masterizar(mix: np.ndarray, lufs_objetivo: float = -14.0, techo_dbtp: float = -1.0) -> tuple[np.ndarray, dict]:
     """-14 LUFS con los picos sueltos limitados, verificado con true peak a 4x.
 
@@ -272,22 +308,31 @@ def masterizar(mix: np.ndarray, lufs_objetivo: float = -14.0, techo_dbtp: float 
     """
     from pedalboard import Limiter
     from scipy.signal import resample_poly
-    medidor = pyln.Meter(SR)
-    x = (mix * 10 ** ((lufs_objetivo - medidor.integrated_loudness(mix)) / 20)).astype(np.float32)
-    umbral, tp = 0.0, 99.0
+    # Con 100 minutos cada copia del mix es 1 GB: la ganancia va sobre el mismo arreglo (el que
+    # llama reasigna el mix con lo que devuelve esto), y el pico y la diferencia se miden por partes
+    mix *= 10 ** ((lufs_objetivo - lufs_integrado(mix)) / 20)
+    xt = np.ascontiguousarray(mix.T)
+    tramo = 30 * SR
+    umbral, tp, yt = 0.0, 99.0, None
     for _ in range(8):
-        y = Limiter(threshold_db=umbral, release_ms=60)(np.ascontiguousarray(x.T), SR).T
-        y = (y * 10 ** ((lufs_objetivo - medidor.integrated_loudness(y)) / 20)).astype(np.float32)
-        pico = max(float(np.abs(resample_poly(y[i:i + 30 * SR], 4, 1, axis=0)).max())
-                   for i in range(0, len(y), 30 * SR))
+        yt = None
+        yt = Limiter(threshold_db=umbral, release_ms=60)(xt, SR)
+        yt *= np.float32(10 ** ((lufs_objetivo - lufs_integrado(yt.T)) / 20))
+        pico = max(float(np.abs(resample_poly(yt[:, i:i + tramo], 4, 1, axis=1)).max())
+                   for i in range(0, yt.shape[1], tramo))
         tp = 20 * np.log10(pico)
         if tp <= techo_dbtp:
             break
         umbral -= tp - techo_dbtp + 0.1
-    cambio = y - x
-    info = {"lufs": round(float(medidor.integrated_loudness(y)), 2), "true_peak_dbtp": round(tp, 2),
+    cambio = senal = 0.0
+    for i in range(0, yt.shape[1], tramo):
+        a, b = xt[:, i:i + tramo].astype(np.float64), yt[:, i:i + tramo].astype(np.float64)
+        cambio += float(((b - a) ** 2).sum())
+        senal += float((a ** 2).sum())
+    del xt
+    info = {"lufs": round(lufs_integrado(yt.T), 2), "true_peak_dbtp": round(tp, 2),
             "umbral_limitador_db": round(umbral, 2),
-            "cambio_db_bajo_la_senal": round(float(10 * np.log10(np.mean(cambio ** 2) / np.mean(x ** 2))), 1)}
+            "cambio_db_bajo_la_senal": round(10 * np.log10(cambio / senal), 1)}
     if abs(info["lufs"] - lufs_objetivo) > 0.3 or tp > techo_dbtp:
         raise ValueError(f"el master no cumple: {info}")
-    return y, info
+    return yt.T, info
