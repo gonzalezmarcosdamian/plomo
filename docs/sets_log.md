@@ -3232,3 +3232,111 @@ la levantan el groove y el color del 150 y entrega arriba, en 7.3, sin detonante
 da 53%, no se corrige. corr(BPM, energia) -0.53: los nativos van de ~123 en la primera mitad a ~121 en la segunda.
 **Duracion:** 127 min crudos; 1:51 con mezclas de 1 minuto. Sin escuchar todavia.
 
+
+## Set 155. 155. Progressive House Melódico Ascendente — 2h — 2026-10-19
+**Armado:** 2026-10-19  
+**Duracion:** 2.1h  
+**Tracks:** 18  
+**BPM range:** 118-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Cornucopia | Remember Me (Original Mix) | 118 | 5.9 |
+| 2 | Digital Mess, Astral Base | Updrafts (Extended Mix) | 120 | 4.7 |
+| 3 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
+| 4 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
+| 5 | Hafex, MAXTAGE | Between Your Sighs  (Extended Mix) | 123 | 4.8 |
+| 6 | Danny Howells, Lloyd Barwood | One More Sky (Original Mix) | 124 | 5.4 |
+| 7 | Nicolas Viana | Blaze (Original Mix) | 122 | 6.6 |
+| 8 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
+| 9 | Redspace, Dj Meoz | Feel It (Extended Mix) | 124 | 6.9 |
+| 10 | Nicolas Viana | Luminor (Original Mix) | 122 | 6.1 |
+| 11 | Matthew Sona | You Got It (Extended Mix)  | 123 | 6.5 |
+| 12 | Taylan | Ghost Rider (Original Mix) | 123 | 7.0 |
+| 13 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.8 |
+| 14 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
+| 15 | Amber Long, Hot Tuneik | Peace Within (Original Mix) | 122 | 7.3 |
+| 16 | Simon Vuarambon | Stamina (Extended Mix) | 121 | 5.9 |
+| 17 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
+| 18 | Maze 28 | Aer8 (Juan Pablo Torrez Remix) | 122 | 7.0 |
+
+**Origen:** la lista de Spotify del DJ "Progressive House Melódico Ascendente" (5UkDcqNmdhPc4X5d8R3TCE, 18 entradas,
+17 temas: Winged esta dos veces), convertida en set y mejorada el 2026-10-19. Config
+`data/set_configs/155_progressive_melodico_ascendente.json`, pool reducido `data/pool_155.json` (16 temas suyos como
+anclas + 45 candidatos de su vecindario). Lista nueva en Spotify, la original quedo como estaba.
+**Pedido:** "hay otra lista en spoty que hice, podes ver de hacerla en rekor y ademas mejorarla?" — ordenarla para
+mezclar, cambiar lo flojo por temas de su biblioteca con la misma onda, bajar lo que falta, set numerado.
+**Identidad:** la lista que armo alrededor de Nicolas Viana, contada como subida: abre en lo mas lento y tranquilo que
+eligio (Cornucopia a 118) y cierra arriba; Viana es el hilo, no el set.
+**De la lista:** 14 de 16. Salen dos Viana por el tope de 4 por artista (Kalira y Fog Machine) y Charli Lark - Sharks
+(no esta en Muzpa). Entran 4 puentes: Updrafts (Digital Mess, Astral Base; Univack), Beyond Us (Andre Moret; Univack),
+Peace Within (Amber Long, Hot Tuneik; Mango Alley) y Aer8 (Maze 28, JPT Remix; Mango Alley).
+**Arco:** subida por pedido (pico_en_pct 1.0, tolerancia 0.15 como las fechas de CONSTRUIR). Remember Me abre por
+ventana. 18 temas y no 17: con 17 el set cierra en Winged 6.4 despues de un 7.3; 8.8/h x 2h = 17.6.
+**Rueda:** 7A 7A 5A 6A 4A 2A 3A 2A 3B 5B 5A 5A 7A 8A 10A 11A 10B 10B — 8 pasos de 2, ninguno de 3+; 0 saltos de BPM > 2.
+**Audit:** 5.9 -> pico 7.3 (#15, 83%) -> 7.0, 0 transiciones flojas, 24% sin mover la rueda, corrida monotona max 2,
+corr(BPM, energia) +0.20, BPM 118-124. corr posicion-energia +0.53.
+**Contra reglas:** Ash & Ember tambien esta en el 154 (repetidos_entre_sets_consecutivos = 0): se deja por ser eleccion
+del DJ y porque el 154 es la fecha del 23/10 y este su lista sin fecha.
+**Duracion:** 135 min crudos; 1:58 con mezclas de 1 minuto (2:05 con el 0.93 del selector). Sin escuchar todavia.
+
+
+## Set 156. 156. Melodic Progressive House Vibes — 3h30 — 2026-10-19
+**Armado:** 2026-10-19  
+**Duracion:** 3.5h  
+**Tracks:** 30  
+**BPM range:** 120-127  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Josh Wink, Simon Vuarambon | Metro (Simon Vuarambon Rework) | 124 | 5.4 |
+| 2 | Nicolas Viana | Analog Dream (Extended Mix) | 124 | 5.7 |
+| 3 | Modd | Train to Toronto (Nick Warren & Nicolas Rada Extended Remix) | 122 | 5.8 |
+| 4 | Emi Galvan | Boomera (Original Mix) | 123 | 6.3 |
+| 5 | Toomy Disco | The Awakening (Dilby Remix) | 125 | 6.1 |
+| 6 | Nicolas Viana | Telephone (Extended Mix) | 124 | 4.8 |
+| 7 | Hermanez | Eight Years (Original Mix) | 122 | 1.4 |
+| 8 | Kamilo Sanclemente, Mauro Aguirre | Smoke Machine (Original Mix) | 123 | 5.8 |
+| 9 | Ruben Karapetyan | 1982 (Matthew Sona Extended Mix) | 121 | 7.1 |
+| 10 | Tonaco | Philomena (Abity & Juan Ibañez Remix) | 120 | 5.3 |
+| 11 | GMJ, Matter | Apex (Original Mix) | 121 | 6.2 |
+| 12 | Quivver | Illusions (Extended Mix) | 123 | 5.5 |
+| 13 | Dilby | Drift Through Space (Original Mix) | 125 | 5.7 |
+| 14 | Danny Howells | Stereodrama (Aubrey Fry & Nick Stoynoff Remix) | 122 | 4.6 |
+| 15 | Ewan Rill | Nature Vibes (Original Mix) | 122 | 6.7 |
+| 16 | Amonita | Wake Up  (Original Mix) | 122 | 6.3 |
+| 17 | JANAKEY | MGKTV (Extended Mix) | 121 | 7.3 |
+| 18 | Dilby | Remember Me (Extended Mix) | 124 | 1.4 |
+| 19 | Nick Warren | Waves (Paul James Nolan Remix) | 123 | 4.9 |
+| 20 | Somelee | Limba La (Extended Mix) | 122 | 5.3 |
+| 21 | Nicolas Viana | Wayfarer (Extended Mix) | 124 | 6.7 |
+| 22 | Hyunji-A | How It Be (Original Mix) | 127 | 5.8 |
+| 23 | D-Nox, Andre Moret | Control (Extended Mix)  | 125 | 5.1 |
+| 24 | Tali Muss | Interlocutor (Extended Mix) | 122 | 6.0 |
+| 25 | Sebastien Leger | Gaufrette (Original Mix) | 121 | 7.6 |
+| 26 | Kamilo Sanclemente | Our Last Day (Original Mix) | 124 | 6.3 |
+| 27 | Mike Griego | Back In Trance (Original Mix) | 126 | 7.3 |
+| 28 | Andre Moret | Kryon (Original Mix) | 123 | 6.0 |
+| 29 | Steve Lawler | Sass (Original Mix) | 124 | 7.3 |
+| 30 | Bandēs | The World Needs It (Extended Mix) | 127 | 7.3 |
+
+**Origen:** la lista de Spotify del DJ "Melodic Progressive House Vibes" (59eypihXEDktHZJGxbBFBc, 30 temas), convertida
+en set y mejorada el 2026-10-19. Config `data/set_configs/156_melodic_progressive_vibes.json`, pool reducido
+`data/pool_156.json` (27 temas suyos como anclas + 45 candidatos). Lista nueva en Spotify, la original quedo como estaba.
+**Identidad:** tres horas y media de su mano (Bedrock, Univack, Sudbeat, Viana, Dilby, Emi Galvan, Kamilo) en dos olas:
+la primera sube hasta MGKTV y respira; la segunda junta lo mas alto y lo mas rapido que eligio y entrega arriba.
+**De la lista:** 27 de 28, todos los que se consiguen. Salen Exquisite (Mats Westbroek) y Flashes (Stereo Underground &
+Sealine), que no estan en Muzpa, y Remember Me de Cornucopia, que esta en las dos listas y abre el 155. Entran 3:
+Interlocutor (Tali Muss; Univack), Our Last Day (Kamilo Sanclemente; Sudbeat) y Kryon (Andre Moret; Sudbeat).
+**Outliers de BPM:** Back In Trance (126), The World Needs It (127) y How It Be (127) quedan: se mezclan dentro de las
+reglas. El precio es un serrucho de tempo en el ultimo cuarto (124-127-125-122-121-124-126-123-124-127). Sacar How It
+Be o agruparlos al final da sets peores (medido, ver el config).
+**E:1.4:** Dilby - Remember Me y Hermanez - Eight Years tienen 1.4 en la DB por un fallo de calculo (bajo leido en 0.0 s
+y sin breakdown ni drop detectados; 145 temas de la biblioteca dan exactamente 1.4). El selector uso 5.3 y 5.8
+estimadas (ver `_nota_energia`); la DB no se toco.
+**Rueda:** 12A 12B 11A 10B 10B 9A 7A 6A 4A 4A 6A 4A 4A 5A 3A 5A 3A 1A 12A 11A 9A 8A 9A 7A 7A 6A 7A 7A 6A 4A — 14 pasos
+de 2, ninguno de 3+; 7 saltos de 3 BPM (el tope).
+**Audit:** 5.4 -> pico 7.6 (#25, Gaufrette, 83%) -> 7.3, 21% sin mover la rueda, corrida monotona max 2, corr(BPM,
+energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1.4 de la DB; con las estimadas son 0.
+**Duracion:** 227 min crudos; 3:18 con mezclas de 1 minuto (3:31 con el 0.93 del selector). Sin escuchar todavia.
+

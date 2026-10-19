@@ -1,0 +1,102 @@
+{
+  "name": "155. Progressive House Melódico Ascendente — 2h — 2026-10-19",
+  "duration_h": 2.1,
+  "bpm_range": [
+    118,
+    125
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Cornucopia",
+      "title": "Remember Me (Original Mix)",
+      "content_id": "54120109"
+    },
+    {
+      "artist": "Digital Mess, Astral Base",
+      "title": "Updrafts (Extended Mix)",
+      "content_id": "219864095"
+    },
+    {
+      "artist": "Sébastien Léger",
+      "title": "Blazing Ice",
+      "content_id": "198986596"
+    },
+    {
+      "artist": "M.O.S.",
+      "title": "Nanda (Dilby Remix)",
+      "content_id": "208082265"
+    },
+    {
+      "artist": "Hafex, MAXTAGE",
+      "title": "Between Your Sighs  (Extended Mix)",
+      "content_id": "260703319"
+    },
+    {
+      "artist": "Danny Howells, Lloyd Barwood",
+      "title": "One More Sky (Original Mix)",
+      "content_id": "98237289"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Blaze (Original Mix)",
+      "content_id": "262198258"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Ash & Ember (Extended Mix)",
+      "content_id": "72637273"
+    },
+    {
+      "artist": "Redspace, Dj Meoz",
+      "title": "Feel It (Extended Mix)",
+      "content_id": "78286363"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Luminor (Original Mix)",
+      "content_id": "149473172"
+    },
+    {
+      "artist": "Matthew Sona",
+      "title": "You Got It (Extended Mix) ",
+      "content_id": "111154879"
+    },
+    {
+      "artist": "Taylan",
+      "title": "Ghost Rider (Original Mix)",
+      "content_id": "3896579"
+    },
+    {
+      "artist": "Andre Moret",
+      "title": "Beyond Us (Extended Mix)",
+      "content_id": "22034915"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Coral (Extended Mix)",
+      "content_id": "196838047"
+    },
+    {
+      "artist": "Amber Long, Hot Tuneik",
+      "title": "Peace Within (Original Mix)",
+      "content_id": "73970961"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Stamina (Extended Mix)",
+      "content_id": "26495433"
+    },
+    {
+      "artist": "Nicolas Viana",
+      "title": "Winged (Original Mix)",
+      "content_id": "237240379"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Aer8 (Juan Pablo Torrez Remix)",
+      "content_id": "231052947"
+    }
+  ]
+}

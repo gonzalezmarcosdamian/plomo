@@ -1,0 +1,567 @@
+{
+ "Progressive House Melódico Ascendente": {
+  "spotify_id": "5UkDcqNmdhPc4X5d8R3TCE",
+  "temas": [
+   {
+    "pos_spotify": 1,
+    "spotify": "Danny Howells, Lloyd Barwood - One More Sky",
+    "en_biblioteca": {
+     "id": "98237289",
+     "artista": "Danny Howells, Lloyd Barwood",
+     "titulo": "One More Sky (Original Mix)",
+     "bpm": 124.0,
+     "key": "2A",
+     "commnt": "E:5.4 [build"
+    }
+   },
+   {
+    "pos_spotify": 2,
+    "spotify": "Cornucopia - Remember Me",
+    "en_biblioteca": {
+     "id": "54120109",
+     "artista": "Cornucopia",
+     "titulo": "Remember Me (Original Mix)",
+     "bpm": 118.0,
+     "key": "7A",
+     "commnt": "E:5.9"
+    }
+   },
+   {
+    "pos_spotify": 3,
+    "spotify": "Nicolas Viana - Coral",
+    "en_biblioteca": {
+     "id": "196838047",
+     "artista": "Nicolas Viana",
+     "titulo": "Coral (Extended Mix)",
+     "bpm": 122.0,
+     "key": "8A",
+     "commnt": "E:6.1"
+    }
+   },
+   {
+    "pos_spotify": 4,
+    "spotify": "Nicolas Viana - Kalira",
+    "en_biblioteca": {
+     "id": "71128300",
+     "artista": "Nicolas Viana",
+     "titulo": "Kalira (Extended Mix)",
+     "bpm": 122.0,
+     "key": "11A",
+     "commnt": "E:7.1"
+    }
+   },
+   {
+    "pos_spotify": 5,
+    "spotify": "Lee Burridge, Lost Desert - Ash & Ember",
+    "en_biblioteca": {
+     "id": "72637273",
+     "artista": "Lee Burridge, Lost Desert",
+     "titulo": "Ash & Ember (Extended Mix)",
+     "bpm": 123.0,
+     "key": "2A",
+     "commnt": "E:6.0 [mid] "
+    }
+   },
+   {
+    "pos_spotify": 6,
+    "spotify": "Nicolas Viana - Winged - Extended Mix",
+    "en_biblioteca": {
+     "id": "237240379",
+     "artista": "Nicolas Viana",
+     "titulo": "Winged (Original Mix)",
+     "bpm": 121.0,
+     "key": "10B",
+     "commnt": "E:6.4"
+    }
+   },
+   {
+    "pos_spotify": 7,
+    "spotify": "M.O.S., Dilby - Nanda - Dilby Remix",
+    "en_biblioteca": {
+     "id": "208082265",
+     "artista": "M.O.S.",
+     "titulo": "Nanda (Dilby Remix)",
+     "bpm": 123.0,
+     "key": "6A",
+     "commnt": "E:6.1"
+    }
+   },
+   {
+    "pos_spotify": 8,
+    "spotify": "Sébastien Léger - Blazing Ice",
+    "en_biblioteca": {
+     "id": "198986596",
+     "artista": "Sébastien Léger",
+     "titulo": "Blazing Ice",
+     "bpm": 122.0,
+     "key": "5A",
+     "commnt": "E:6.4"
+    }
+   },
+   {
+    "pos_spotify": 9,
+    "spotify": "Matthew Sona, HMWL - You Got It",
+    "en_biblioteca": {
+     "id": "111154879",
+     "artista": "Matthew Sona",
+     "titulo": "You Got It (Extended Mix) ",
+     "bpm": 123.0,
+     "key": "5A",
+     "commnt": "E:6.5"
+    }
+   },
+   {
+    "pos_spotify": 10,
+    "spotify": "Nicolas Viana - Blaze",
+    "en_biblioteca": {
+     "id": "262198258",
+     "artista": "Nicolas Viana",
+     "titulo": "Blaze (Original Mix)",
+     "bpm": 122.0,
+     "key": "3A",
+     "commnt": "E:6.6"
+    }
+   },
+   {
+    "pos_spotify": 11,
+    "spotify": "MAXTAGE, Hafex - Between Your Sighs",
+    "en_biblioteca": {
+     "id": "260703319",
+     "artista": "Hafex, MAXTAGE",
+     "titulo": "Between Your Sighs  (Extended Mix)",
+     "bpm": 123.0,
+     "key": "4A",
+     "commnt": "E:4.8"
+    }
+   },
+   {
+    "pos_spotify": 12,
+    "spotify": "Taylan - Ghost Rider",
+    "en_biblioteca": {
+     "id": "3896579",
+     "artista": "Taylan",
+     "titulo": "Ghost Rider (Original Mix)",
+     "bpm": 123.0,
+     "key": "5A",
+     "commnt": "E:7.0"
+    }
+   },
+   {
+    "pos_spotify": 13,
+    "spotify": "Nicolas Viana - Fog Machine",
+    "en_biblioteca": {
+     "id": "252350736",
+     "artista": "Nicolas Viana",
+     "titulo": "Fog Machine (Extended Mix)",
+     "bpm": 124.0,
+     "key": "6B",
+     "commnt": "E:5.8 [mid] "
+    }
+   },
+   {
+    "pos_spotify": 14,
+    "spotify": "Charli Lark - Sharks",
+    "en_biblioteca": null
+   },
+   {
+    "pos_spotify": 15,
+    "spotify": "Simon Vuarambon - Stamina",
+    "en_biblioteca": {
+     "id": "26495433",
+     "artista": "Simon Vuarambon",
+     "titulo": "Stamina (Extended Mix)",
+     "bpm": 121.0,
+     "key": "11A",
+     "commnt": "E:5.9 [mid] "
+    }
+   },
+   {
+    "pos_spotify": 16,
+    "spotify": "Nicolas Viana - Luminor",
+    "en_biblioteca": {
+     "id": "149473172",
+     "artista": "Nicolas Viana",
+     "titulo": "Luminor (Original Mix)",
+     "bpm": 122.0,
+     "key": "5B",
+     "commnt": "E:6.1"
+    }
+   },
+   {
+    "pos_spotify": 17,
+    "spotify": "Nicolas Viana - Winged",
+    "en_biblioteca": {
+     "id": "237240379",
+     "artista": "Nicolas Viana",
+     "titulo": "Winged (Original Mix)",
+     "bpm": 121.0,
+     "key": "10B",
+     "commnt": "E:6.4"
+    }
+   },
+   {
+    "pos_spotify": 18,
+    "spotify": "Redspace, Dj Meoz - Feel It",
+    "en_biblioteca": {
+     "id": "78286363",
+     "artista": "Redspace, Dj Meoz",
+     "titulo": "Feel It (Extended Mix)",
+     "bpm": 124.0,
+     "key": "3B",
+     "commnt": "E:6.9"
+    }
+   }
+  ]
+ },
+ "Melodic Progressive House Vibes": {
+  "spotify_id": "59eypihXEDktHZJGxbBFBc",
+  "temas": [
+   {
+    "pos_spotify": 1,
+    "spotify": "Sébastien Léger - Gaufrette",
+    "en_biblioteca": {
+     "id": "140988807",
+     "artista": "Sebastien Leger",
+     "titulo": "Gaufrette (Original Mix)",
+     "bpm": 121.0,
+     "key": "7A",
+     "commnt": "E:7.6"
+    }
+   },
+   {
+    "pos_spotify": 2,
+    "spotify": "D-Nox, André Moret - Control - Mixed",
+    "en_biblioteca": {
+     "id": "146440255",
+     "artista": "D-Nox, Andre Moret",
+     "titulo": "Control (Extended Mix) ",
+     "bpm": 125.0,
+     "key": "9A",
+     "commnt": "E:5.1"
+    }
+   },
+   {
+    "pos_spotify": 3,
+    "spotify": "Nicolas Viana - Analog Dream",
+    "en_biblioteca": {
+     "id": "51819177",
+     "artista": "Nicolas Viana",
+     "titulo": "Analog Dream (Extended Mix)",
+     "bpm": 124.0,
+     "key": "12B",
+     "commnt": "E:5.7"
+    }
+   },
+   {
+    "pos_spotify": 4,
+    "spotify": "Dilby - Drift Through Space - Original Mix",
+    "en_biblioteca": {
+     "id": "29819035",
+     "artista": "Dilby",
+     "titulo": "Drift Through Space (Original Mix)",
+     "bpm": 125.0,
+     "key": "4A",
+     "commnt": "E:5.7"
+    }
+   },
+   {
+    "pos_spotify": 5,
+    "spotify": "Emi Galvan - Boomera - Original Mix",
+    "en_biblioteca": {
+     "id": "192614193",
+     "artista": "Emi Galvan",
+     "titulo": "Boomera (Original Mix)",
+     "bpm": 123.0,
+     "key": "10B",
+     "commnt": "E:6.3 [mid] "
+    }
+   },
+   {
+    "pos_spotify": 6,
+    "spotify": "JANAKEY - MGKTV",
+    "en_biblioteca": {
+     "id": "136316903",
+     "artista": "JANAKEY",
+     "titulo": "MGKTV (Extended Mix)",
+     "bpm": 121.0,
+     "key": "3A",
+     "commnt": "E:7.3"
+    }
+   },
+   {
+    "pos_spotify": 7,
+    "spotify": "Tonaco, Abity, Juan Ibanez - Philomena - Abity & Juan Ibañez Remix",
+    "en_biblioteca": {
+     "id": "25603005",
+     "artista": "Tonaco",
+     "titulo": "Philomena (Abity & Juan Ibañez Remix)",
+     "bpm": 120.0,
+     "key": "4A",
+     "commnt": "E:5.3"
+    }
+   },
+   {
+    "pos_spotify": 8,
+    "spotify": "Kamilo Sanclemente, Mauro Aguirre - Smoke Machine",
+    "en_biblioteca": {
+     "id": "110116593",
+     "artista": "Kamilo Sanclemente, Mauro Aguirre",
+     "titulo": "Smoke Machine (Original Mix)",
+     "bpm": 123.0,
+     "key": "6A",
+     "commnt": "E:5.8"
+    }
+   },
+   {
+    "pos_spotify": 9,
+    "spotify": "Mike Griego - Back In Trance",
+    "en_biblioteca": {
+     "id": "161983964",
+     "artista": "Mike Griego",
+     "titulo": "Back In Trance (Original Mix)",
+     "bpm": 126.0,
+     "key": "7A",
+     "commnt": "E:7.3"
+    }
+   },
+   {
+    "pos_spotify": 10,
+    "spotify": "Ewan Rill - Nature Vibes",
+    "en_biblioteca": {
+     "id": "87643450",
+     "artista": "Ewan Rill",
+     "titulo": "Nature Vibes (Original Mix)",
+     "bpm": 122.0,
+     "key": "3A",
+     "commnt": "E:6.7"
+    }
+   },
+   {
+    "pos_spotify": 11,
+    "spotify": "Quivver - Illusions",
+    "en_biblioteca": {
+     "id": "18566477",
+     "artista": "Quivver",
+     "titulo": "Illusions (Extended Mix)",
+     "bpm": 123.0,
+     "key": "4A",
+     "commnt": "E:5.5"
+    }
+   },
+   {
+    "pos_spotify": 12,
+    "spotify": "Bandēs - The World Needs It",
+    "en_biblioteca": {
+     "id": "170869471",
+     "artista": "Bandēs",
+     "titulo": "The World Needs It (Extended Mix)",
+     "bpm": 127.0,
+     "key": "4A",
+     "commnt": "E:7.3"
+    }
+   },
+   {
+    "pos_spotify": 13,
+    "spotify": "Modd, Nick Warren, Nicolas Rada - Train to Toronto - Nick Warren & Nicolas Rada Remix",
+    "en_biblioteca": {
+     "id": "92188503",
+     "artista": "Modd",
+     "titulo": "Train to Toronto (Nick Warren & Nicolas Rada Extended Remix)",
+     "bpm": 122.0,
+     "key": "11A",
+     "commnt": "E:5.8"
+    }
+   },
+   {
+    "pos_spotify": 14,
+    "spotify": "Dilby - Remember Me - Extended Mix",
+    "en_biblioteca": {
+     "id": "93560439",
+     "artista": "Dilby",
+     "titulo": "Remember Me (Extended Mix)",
+     "bpm": 124.0,
+     "key": "1A",
+     "commnt": "E:1.4"
+    }
+   },
+   {
+    "pos_spotify": 15,
+    "spotify": "Nicolas Viana - Telephone - Extended Mix",
+    "en_biblioteca": {
+     "id": "232224467",
+     "artista": "Nicolas Viana",
+     "titulo": "Telephone (Extended Mix)",
+     "bpm": 124.0,
+     "key": "9A",
+     "commnt": "E:4.8"
+    }
+   },
+   {
+    "pos_spotify": 16,
+    "spotify": "Cornucopia - Remember Me",
+    "en_biblioteca": {
+     "id": "54120109",
+     "artista": "Cornucopia",
+     "titulo": "Remember Me (Original Mix)",
+     "bpm": 118.0,
+     "key": "7A",
+     "commnt": "E:5.9"
+    }
+   },
+   {
+    "pos_spotify": 17,
+    "spotify": "Josh Wink, Simon Vuarambon - Metro - Simon Vuarambon Rework",
+    "en_biblioteca": {
+     "id": "108314087",
+     "artista": "Josh Wink, Simon Vuarambon",
+     "titulo": "Metro (Simon Vuarambon Rework)",
+     "bpm": 124.0,
+     "key": "12A",
+     "commnt": "E:5.4"
+    }
+   },
+   {
+    "pos_spotify": 18,
+    "spotify": "Mats Westbroek - Exquisite",
+    "en_biblioteca": null
+   },
+   {
+    "pos_spotify": 19,
+    "spotify": "Hermanez - Eight Years",
+    "en_biblioteca": {
+     "id": "14601563",
+     "artista": "Hermanez",
+     "titulo": "Eight Years (Original Mix)",
+     "bpm": 122.0,
+     "key": "7A",
+     "commnt": "E:1.4 [ambie"
+    }
+   },
+   {
+    "pos_spotify": 20,
+    "spotify": "Nick Warren, Paul James Nolan - Waves - Paul James Nolan Remix",
+    "en_biblioteca": {
+     "id": "213430824",
+     "artista": "Nick Warren",
+     "titulo": "Waves (Paul James Nolan Remix)",
+     "bpm": 123.0,
+     "key": "12A",
+     "commnt": "E:4.9"
+    }
+   },
+   {
+    "pos_spotify": 21,
+    "spotify": "Stereo Underground, Sealine - Flashes (ULF045)",
+    "en_biblioteca": null
+   },
+   {
+    "pos_spotify": 22,
+    "spotify": "Steve Lawler - Sass",
+    "en_biblioteca": {
+     "id": "72947877",
+     "artista": "Steve Lawler",
+     "titulo": "Sass (Original Mix)",
+     "bpm": 124.0,
+     "key": "6A",
+     "commnt": "E:7.3"
+    }
+   },
+   {
+    "pos_spotify": 23,
+    "spotify": "Ruben Karapetyan, Matthew Sona - 1982 - Matthew Sona Remix",
+    "en_biblioteca": {
+     "id": "37932646",
+     "artista": "Ruben Karapetyan",
+     "titulo": "1982 (Matthew Sona Extended Mix)",
+     "bpm": 121.0,
+     "key": "4A",
+     "commnt": "E:7.1"
+    }
+   },
+   {
+    "pos_spotify": 24,
+    "spotify": "Danny Howells, Aubrey Fry, Nick Stoynoff - Stereodrama - Aubrey Fry & Nick Stoynoff Remix",
+    "en_biblioteca": {
+     "id": "77498828",
+     "artista": "Danny Howells",
+     "titulo": "Stereodrama (Aubrey Fry & Nick Stoynoff Remix)",
+     "bpm": 122.0,
+     "key": "5A",
+     "commnt": "E:4.6"
+    }
+   },
+   {
+    "pos_spotify": 25,
+    "spotify": "GMJ, Matter - Apex",
+    "en_biblioteca": {
+     "id": "111617421",
+     "artista": "GMJ, Matter",
+     "titulo": "Apex (Original Mix)",
+     "bpm": 121.0,
+     "key": "6A",
+     "commnt": "E:6.2"
+    }
+   },
+   {
+    "pos_spotify": 26,
+    "spotify": "Toomy Disco, Dilby - The Awakening - Dilby Remix",
+    "en_biblioteca": {
+     "id": "132189075",
+     "artista": "Toomy Disco",
+     "titulo": "The Awakening (Dilby Remix)",
+     "bpm": 125.0,
+     "key": "10B",
+     "commnt": "E:6.1"
+    }
+   },
+   {
+    "pos_spotify": 27,
+    "spotify": "Somelee - Limba La",
+    "en_biblioteca": {
+     "id": "109169615",
+     "artista": "Somelee",
+     "titulo": "Limba La (Extended Mix)",
+     "bpm": 122.0,
+     "key": "11A",
+     "commnt": "E:5.3"
+    }
+   },
+   {
+    "pos_spotify": 28,
+    "spotify": "Amonita - Wake Up",
+    "en_biblioteca": {
+     "id": "45287349",
+     "artista": "Amonita",
+     "titulo": "Wake Up  (Original Mix)",
+     "bpm": 122.0,
+     "key": "5A",
+     "commnt": "E:6.3"
+    }
+   },
+   {
+    "pos_spotify": 29,
+    "spotify": "Hyunji-A - How It Be",
+    "en_biblioteca": {
+     "id": "181456061",
+     "artista": "Hyunji-A",
+     "titulo": "How It Be (Original Mix)",
+     "bpm": 127.0,
+     "key": "8A",
+     "commnt": "E:5.8"
+    }
+   },
+   {
+    "pos_spotify": 30,
+    "spotify": "Nicolas Viana - Wayfarer - Extended Mix",
+    "en_biblioteca": {
+     "id": "10543890",
+     "artista": "Nicolas Viana",
+     "titulo": "Wayfarer (Extended Mix)",
+     "bpm": 124.0,
+     "key": "9A",
+     "commnt": "E:6.7"
+    }
+   }
+  ]
+ }
+}

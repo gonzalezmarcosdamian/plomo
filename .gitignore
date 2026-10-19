@@ -179,3 +179,7 @@ data/video/*.npy
 web/*/.vercel/
 data/sync_pendiente.log
 data/pool_cumple_del_20.json
+
+# Pools reducidos de los sets 155 y 156 (lista del DJ + candidatos), derivados de data/pool.json
+data/pool_155.json
+data/pool_156.json

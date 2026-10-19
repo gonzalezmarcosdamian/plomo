@@ -1,0 +1,127 @@
+{
+  "pool": "data/pool_155.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "permitir_repetir_entre_sets": true,
+  "_comentario": "Set 155: la lista de Spotify 'Progressive House Melódico Ascendente' que el DJ armo el 2026-10-19 (5UkDcqNmdhPc4X5d8R3TCE), convertida en set y mejorada. El pool es reducido a proposito: sus 16 temas en la biblioteca como anclas mas 30 candidatos de reemplazo de su mismo vecindario. data/pool_155.json (gitignoreado, como pool_cumple_del_20.json) es data/pool.json del 2026-10-19 (dump de las 15:05, con los 26 temas bajados hoy) filtrado a `anclas` + las claves de `_candidatos`; las energias que la DB tiene en 1.4 por fallo de calculo van estimadas y marcadas en el propio tema (energy_calc, energy_fuente). El ranking de `_candidatos` y el armado del pool salieron de dos scripts de analisis de scratch, no versionados: el criterio esta escrito en _nota_reemplazos.",
+  "sets": [
+    {
+      "num": 155,
+      "grupo": "Listas del DJ 2026-10-19",
+      "name": "155. Progressive House Melódico Ascendente — 2h — 2026-10-19",
+      "_identidad": "La lista que el DJ armo alrededor de Nicolas Viana, contada como una subida: arranca en lo mas tranquilo y lento que eligio (Cornucopia a 118, One More Sky, Between Your Sighs) y termina en lo mas alto (Kalira, Ghost Rider, Feel It) sin aflojar en el medio. Viana es el hilo y no el set: cuatro temas suyos separados, y alrededor el vecindario Univack / Mango Alley / Lost Miracle que el mismo eligio.",
+      "_contexto": "El DJ, 2026-10-19: 'hay otra lista en spoty que hice, podes ver de hacerla en rekor y ademas mejorarla?'. Eligio las cuatro mejoras: ordenarla para mezclar (key, BPM, arco), cambiar los temas flojos por temas de SU biblioteca con la misma onda, bajar los que faltan (hecho: 26 temas importados hoy) y convertirla en set numerado. El nombre dice 'Ascendente': el arco sube. Duracion: sus 18 temas de Spotify, unos 2h.",
+      "_nota_reemplazos": "Salen 2 de los 6 Nicolas Viana (repeticion.max_por_artista_en_set = 4; en Spotify figura 7 veces porque Winged esta dos, Extended y a secas, y es UN tema en la biblioteca) y Charli Lark - Sharks, que no esta en Muzpa. Los seis Viana son anclas y el selector elige cuales cuatro entran junto con key y energia; Winged lleva prefer (1.5) porque el DJ lo puso dos veces. Quedan Blaze, Luminor, Coral y Winged; salen Fog Machine (la de menos energia de las seis, 6B, sin vecino de rueda en el recorrido) y Kalira. Kalira es la de mas energia de la lista (7.1) y se probo cerrando el set con ella (cierre_fijo): para meterla hay que sacar a Winged --con prefer hasta 8.0 igual lo saca--, porque las dos viven en 10B/11A con Stamina y la separacion minima entre temas del mismo productor no deja tenerlas juntas al final. Entre Kalira y Winged gana Winged, que el DJ eligio dos veces. Los huecos los llena el selector desde _candidatos, rankeados con este puntaje: sello compartido con la lista (pesado por cuantos temas de la lista lo comparten), productor o remixer compartido, tocado pegado a un tema de la lista (data/vecinos_tocados.json) y parecido de forma a los temas de la lista (parecido_forma.py), menos la distancia en graves, densidad y color a la mediana de la lista. Fuera: Nicolas Viana (tope), los 17 del 154 (set consecutivo), los temas de la otra lista del DJ y cualquier otra version de un tema de las dos listas.",
+      "_nota_arco": "Arco de SUBIDA por pedido del DJ ('Ascendente'): pico_en_pct 1.0, caida 0.0 y tolerancia_arco_frac 0.15 en vez de la global 0.9. Es la herramienta de las fechas con arco obligatorio (CONSTRUIR, como el 154): con 0.9 la energia queda libre y con 0.3 Between Your Sighs (4.8) y One More Sky (5.4) caian a la mitad del set (corr posicion-energia +0.50 con 0.3 y beam 30000, Between Your Sighs en el 10). e_lo 5.0 / e_hi 7.1: el rango de la propia lista (4.8 a 7.1). Remember Me abre por ventana [0, 0.02]: es el tema mas lento que eligio (118) y el arranque natural de una subida; despues de el solo entra un puente de 120-121.",
+      "_nota_cornucopia": "Remember Me (Cornucopia) esta en las DOS listas del DJ. Va en este set y no en el 156: aca abre la subida (118 BPM, el tema mas lento que eligio) y en la otra lista es el unico tema debajo de 120. Entre 155 y 156 rige repeticion.repetidos_entre_sets_consecutivos = 0.",
+      "_nota_154": "Ash & Ember (Lee Burridge, Lost Desert) esta tambien en el 154, que es el set anterior por numero. Se deja a sabiendas, contra repetidos_entre_sets_consecutivos = 0: es eleccion del DJ hecha hoy, y el 154 es la apertura de la fecha del 23/10 mientras que este set es su lista personal, sin fecha. Si toca los dos en noches seguidas, el reemplazo natural es el primer candidato de su misma forma.",
+      "duration_h": 2.1,
+      "n": 18,
+      "bpm": [
+        118,
+        125
+      ],
+      "e_pool": [
+        4.5,
+        7.4
+      ],
+      "e_lo": 5.0,
+      "e_hi": 7.1,
+      "max_per_artist": 4,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Organic House",
+        "Organic House / Downtempo",
+        "Melodic House & Techno",
+        "Deep House",
+        "House"
+      ],
+      "arco": {
+        "pico_en_pct": 1.0,
+        "caida_post_pico_pct": 0.0,
+        "tolerancia_arco_frac": 0.15
+      },
+      "prefer_bonus": 1.5,
+      "beam": 30000,
+      "anclas_en": {
+        "54120109": [
+          0.0,
+          0.02
+        ]
+      },
+      "_nota_n": "duration_h 2.1 para que el selector pida 18 y no 17. Con 2.0 redondea 17.4 a 17, que con mezclas de 1 minuto (densidad.largo_con_mezclas) son 1h51 tocables; densidad.tracks_por_hora 8.8 x 2h = 17.6 -> 18, que son 1h58 con mezclas de 1 minuto (2h05 con el 0.93 que usa select_set). La lista del DJ en Spotify tiene 18 entradas. Probado con 17: entran los mismos 14 temas del DJ y el set termina en Winged 6.4 despues de un 7.3; con 18 entra un puente mas y cierra en 7.0.",
+      "_nota_beam": "beam 30000. Con 6000 el selector dejaba afuera a Remember Me: un ancla da su descuento (25) en el momento en que entra, asi que el beam premia meter anclas temprano y poda las ramas que necesitan un puente al principio, que es justo lo que pide abrir con un 118. Con 30000 y con 120000 da el mismo set.",
+      "anclas": [
+        "98237289",
+        "54120109",
+        "196838047",
+        "71128300",
+        "72637273",
+        "237240379",
+        "208082265",
+        "198986596",
+        "111154879",
+        "262198258",
+        "260703319",
+        "3896579",
+        "252350736",
+        "26495433",
+        "149473172",
+        "78286363"
+      ],
+      "prefer_ids": [
+        "237240379"
+      ],
+      "_candidatos": {
+        "219864095": "Digital Mess, Astral Base - Updrafts (Extended Mix) | sello Univack (3 en la lista); forma 0.49 ~ Ash & Ember (Extended ",
+        "100657729": "Kamilo Sanclemente - I House U (Original Mix) | sello Univack (3 en la lista); forma 0.44 ~ Blaze (Original Mix)",
+        "186594533": "Mayro - Harvest (Original Mix) | sello Univack (3 en la lista); forma 0.45 ~ Luminor (Original Mix)",
+        "130869533": "Andre Moret - One World (Extended Mix) | sello Univack (3 en la lista); forma 0.39 ~ Nanda (Dilby Remix)",
+        "263348196": "Redspace, Olven - Thread (Extended Mix) | sello Univack (3 en la lista); artista redspace; forma 0.34 ~ Winged (Original Mix)",
+        "106838152": "Jou Nielsen, Paul Ikky - Law Of One (Redspace, NIQLA Extended Remix) | sello Univack (3 en la lista); artista redspace; forma 0.25 ~ Ghost Rider (Original ",
+        "188612304": "Supacooks - Un Mundo En Paz (Extended Mix) | sello Univack (3 en la lista); forma 0.45 ~ Blaze (Original Mix)",
+        "51864410": "Kebin Van Reeken - Hypnotize (Extended Mix) | sello Univack (3 en la lista); forma 0.37 ~ Winged (Original Mix)",
+        "30509667": "Andre Moret - When Silence Wins (Extended Mix) | sello Univack (3 en la lista); forma 0.35 ~ Nanda (Dilby Remix)",
+        "231387448": "Kostya Outta, Liam Garcia - If I Win (Extended Mix) | sello Univack (3 en la lista); forma 0.35 ~ Winged (Original Mix)",
+        "28986214": "Roy Rosenfeld - Toco | sello Lost Miracle (1 en la lista); tocado pegado a Nanda (Dilby Remix); forma 0.34 ~ Coral (Extended Mix)",
+        "239831899": "KAZKO - Fading Control (Original Mix) | sello Univack (3 en la lista); forma 0.24 ~ Blaze (Original Mix)",
+        "15529976": "Max Wexem - Confined (Original Mix) | sello Mango Alley (2 en la lista); forma 0.42 ~ Blazing Ice",
+        "264835495": "Kamilo Sanclemente, M.O.S., Andre Moret - Perception (Original Mix) | sello Melody Of the Soul (1 en la lista); artista m.o.s.; forma 0.50 ~ Winged (Original Mix)",
+        "194114969": "Digital Mess, Astral Base - Turbulence (Extended Mix) | sello Univack (3 en la lista); forma 0.43 ~ Kalira (Extended Mix)",
+        "199367898": "Kamilo Sanclemente - Iceberg (HAFT Extended Remix) | sello Univack (3 en la lista); forma 0.40 ~ Winged (Original Mix)",
+        "7611765": "Praise (BR) - Eclipse (Extended Mix) | sello Univack (3 en la lista); forma 0.39 ~ Luminor (Original Mix)",
+        "154693456": "Claudio Cornejo (AR) - Xarion (Redspace & 4T6 Remix) | sello Mango Alley (2 en la lista); artista redspace; forma 0.26 ~ Remember Me (Original ",
+        "70531094": "Tali Muss - Interlocutor (Kebin Van Reeken Extended Remix) | sello Univack (3 en la lista); forma 0.35 ~ Nanda (Dilby Remix)",
+        "231052947": "Maze 28 - Aer8 (Juan Pablo Torrez Remix) | sello Mango Alley (2 en la lista); forma 0.46 ~ Blazing Ice",
+        "59350179": "Kamilo Sanclemente - No Regrets (Extended Mix) | sello Univack (3 en la lista); forma 0.40 ~ Nanda (Dilby Remix)",
+        "127791241": "Max Wexem - Override (Original Mix) | sello Mango Alley (2 en la lista); forma 0.34 ~ Blaze (Original Mix)",
+        "219733407": "Emi Galvan - Everlong (Original Mix) | sello Mango Alley (2 en la lista); forma 0.39 ~ Blazing Ice",
+        "89039390": "Kamilo Sanclemente, Mauro Aguirre - Looking For You (Extended Mix) | sello Univack (3 en la lista); forma 0.31 ~ Blaze (Original Mix)",
+        "191112049": "Kostya Outta, Frameloue - Altitude (Feat. Frameloue Extended Mix) | sello Univack (3 en la lista); forma 0.38 ~ Blazing Ice",
+        "41309264": "Rockka - Initiation | sello Mango Alley (2 en la lista); forma 0.42 ~ Ash & Ember (Extended ",
+        "77762561": "Emi Galvan - Lies (Original Mix) | sello Mango Alley (2 en la lista); forma 0.36 ~ Luminor (Original Mix)",
+        "147366659": "Digital Mess - Raspberry Porridge (Cosmonaut Extended Remix) | sello Univack (3 en la lista); forma 0.42 ~ Ash & Ember (Extended ",
+        "178625501": "Jou Nielsen, Paul Ikky - Sundance (Kebin Van Reeken Extended Remix) | sello Univack (3 en la lista); forma 0.39 ~ Fog Machine (Extended ",
+        "246737613": "Kamilo Sanclemente - Tribe (Original Mix) | sello Univack (3 en la lista); forma 0.41 ~ Nanda (Dilby Remix)",
+        "92905250": "84 Avenue, Jou Nielsen, Paul Ikky - Black Mirage (Durante Extended Remix) | sello Univack (3 en la lista); forma 0.30 ~ Nanda (Dilby Remix)",
+        "116847960": "Ewan Rill, Shayan Pasha - Hidden Path (Can Costa & Futura City Remix) | sello Mango Alley (2 en la lista); forma 0.39 ~ Kalira (Extended Mix)",
+        "83267074": "ECHO DAFT, SHERRNX - Power Surge (Fuenka Remix) | sello Mango Alley (2 en la lista); forma 0.45 ~ Blazing Ice",
+        "22034915": "Andre Moret - Beyond Us (Extended Mix) | sello Univack (3 en la lista); forma 0.32 ~ Remember Me (Original ",
+        "265727625": "Cristoph - Elements (Mike Rish Remix) | sello Mango Alley (2 en la lista); forma 0.37 ~ Blaze (Original Mix)",
+        "105189053": "Sudhaus & The Wash - Spectron (DJ Ruby Remix) | sello Mango Alley (2 en la lista); forma 0.52 ~ Winged (Original Mix)",
+        "234709728": "Kamilo Sanclemente - Distant Blips (Dowden Remix) | sello Univack (3 en la lista); forma 0.34 ~ Blaze (Original Mix)",
+        "100255710": "Kamilo Sanclemente - Anagram (Original Mix) | sello Univack (3 en la lista); forma 0.25 ~ Fog Machine (Extended ",
+        "58812138": "Cosmonaut, K Loveski - Jackelele (Extended Mix) | sello Univack (3 en la lista); forma 0.40 ~ Winged (Original Mix)",
+        "255545221": "Digital Mess - Diffused (Original Mix) | sello Mango Alley (2 en la lista); forma 0.36 ~ Ash & Ember (Extended ",
+        "56511668": "Kamilo Sanclemente - Anagram (Mayro Extended Remix) | sello Univack (3 en la lista); forma 0.37 ~ Luminor (Original Mix)",
+        "4930484": "Sam Scheme - Pantera (Original Mix) | sello Mango Alley (2 en la lista); forma 0.42 ~ Remember Me (Original ",
+        "73970961": "Amber Long, Hot Tuneik - Peace Within (Original Mix) | sello Mango Alley (2 en la lista); forma 0.44 ~ Winged (Original Mix)",
+        "99365010": "Ziger, Mind Conspiracy - Pink Cadillac (Original Mix) | sello Mango Alley (2 en la lista); forma 0.37 ~ Winged (Original Mix)",
+        "86959118": "Tali Muss - Interlocutor (Extended Mix) | sello Univack (3 en la lista); forma 0.38 ~ Feel It (Extended Mix)"
+      }
+    }
+  ]
+}
