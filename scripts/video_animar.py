@@ -160,8 +160,10 @@ def suelos(ctx: moderngl.Context, cam: dict, f0: int, f1: int, fps: int) -> dict
 def leer_shader(nombre: str) -> str:
     """El .frag con sus #include "x.glsl" pegados: vuelo.frag y vuelo_suelo.frag comparten el terreno."""
     texto = (SHADERS / f"{nombre}.frag").read_text(encoding="utf-8")
-    return re.sub(r'^#include "(.+)"$', lambda m: (SHADERS / m.group(1)).read_text(encoding="utf-8"),
-                  texto, flags=re.M)
+    incluir = re.compile(r'^#include "(.+)"$', flags=re.M)
+    while incluir.search(texto):   # un include puede tener otro: vuelo.frag -> cuerpo -> terreno
+        texto = incluir.sub(lambda m: (SHADERS / m.group(1)).read_text(encoding="utf-8"), texto)
+    return texto
 
 VERTEX = """
 #version 330
