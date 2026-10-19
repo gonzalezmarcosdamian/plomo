@@ -304,7 +304,15 @@ def build_one(set_num: int, dry: bool = False) -> None:
     playlist = find_playlist(con, set_num)
     new_playlist = False
 
-    if not playlist:
+    if playlist:
+        pl_id, pl_name = playlist
+    elif dry:
+        # El --dry creaba la lista vacia (en la DB y en el XML) antes de mirar
+        # el flag: medido con el 154 el 2026-10-19. Un dry no escribe.
+        pl_id, pl_name = None, target.get("name", f"{set_num}. Set")
+        destino = target.get("carpeta") or "Sets Armados"
+        print(f"  [dry] Playlist no encontrada — se crearia: {pl_name}  [en {destino}]")
+    else:
         pl_name = target.get("name", f"{set_num}. Set")
         parent_id = resolve_parent(con, target.get("carpeta"))
         destino = target.get("carpeta") or "Sets Armados"
@@ -314,8 +322,6 @@ def build_one(set_num: int, dry: bool = False) -> None:
             con.commit()
             db.add_node_to_xml(int(pl_id), int(parent_id))
         new_playlist = True
-    else:
-        pl_id, pl_name = playlist
 
     print(f"\n{'='*60}")
     print(f"BUILD SET {set_num}: {pl_name}")
@@ -387,6 +393,17 @@ def main() -> None:
         return
 
     dry = "--dry" in sys.argv
+
+    # Regla del proyecto: ningun script escribe master.db con Rekordbox abierto
+    # (la base queda bloqueada o se escribe contra un WAL que Rekordbox tiene
+    # en uso). Hasta ahora era una advertencia en la doc; aca se chequea. El
+    # dry-run solo lee, asi que ese si puede correr con Rekordbox abierto.
+    if not dry:
+        from plomo.rekordbox_app import esta_abierto
+        if esta_abierto():
+            print("ERROR: Rekordbox esta abierto. Cerralo y volve a correr "
+                  "(--dry si se puede con Rekordbox abierto).")
+            sys.exit(1)
 
     if sys.argv[1] == "--all":
         targets = sorted(TARGETS_DIR.glob("set_*.json"))
