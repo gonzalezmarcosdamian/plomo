@@ -3192,3 +3192,43 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 17 | Tim Green | Cedar (Original Mix)  | 120 | 7.6 |
 | 18 | Abity, Luca Abayan | Afterimage (Original Mix) | 121 | 7.6 |
 
+
+## Set 154. 154. Apertura · Lo nuevo de Simon, estilo 150 — 2h — 2026-10-23
+**Armado:** 2026-10-19  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 120-125  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Anthony Pappa, Fauxplay | Forever Seeking (Simon Vuarambon Dub Mix) | 123 | 5.1 |
+| 2 | Hobin Rude | Low Light Memory (Original Mix) | 121 | 5.5 |
+| 3 | Cendryma | Particular Movement (Original Mix) | 122 | 5.9 |
+| 4 | Josh Wink, Simon Vuarambon | Metro (Simon Vuarambon Rework) | 124 | 5.4 |
+| 5 | Durante, Emi Galvan | Lunar Circuit (Extended Mix) | 124 | 4.9 |
+| 6 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
+| 7 | Malou, Ben Bohmer | Lost In Mind (Volen Sentir Extended Vision) | 124 | 5.4 |
+| 8 | Simon Vuarambon | Grey Area (Original Mix) | 123 | 5.7 |
+| 9 | Analog Jungs & Oliver & Tom | Landscape (RIGOONI Remix) | 121 | 5.8 |
+| 10 | Dr. Mirzoyan | Destruction (Ruben Karapetyan Remix) | 122 | 7.0 |
+| 11 | Hernan Cattaneo & Soundexile | Astron (Davi Remix) | 122 | 7.0 |
+| 12 | Cendryma | Effective Loss (Original Mix) | 121 | 6.2 |
+| 13 | Mind Echoes | Answers (Original Mix) | 120 | 6.6 |
+| 14 | Gonzalo Cotroneo | Dark Rain (Extended Mix) | 121 | 7.3 |
+| 15 | Cendryma | Override (Original Mix) | 122 | 6.9 |
+| 16 | Florian Gasperini | Third Eye Awakening (Extended Mix) | 123 | 6.5 |
+| 17 | Sebastian Busto | December (Zankee Gulati Remix) | 122 | 7.3 |
+
+**Fecha:** viernes 2026-10-23, apertura, 2h. En `0 Fechas`. Config `data/set_configs/154_apertura_simon.json`.
+**Pedido:** "armame un set con lo nuevo de simon estilo el 150 para una nueva fecha" / "152 podes usar 150 NO".
+**Identidad:** la primera hora la abre la mano de Simon (sus tres temas nuevos, 11A a 3B, sin pasar de 6.0); la segunda
+la levantan el groove y el color del 150 y entrega arriba, en 7.3, sin detonantes.
+**Rueda:** 11A 11A 12A 12A 1A 2A 3A **3B** 3A 4A 5A 5A 6A 6A 7A 8A 8A — todos los pasos a distancia <= 1, como el 150.
+**Simon:** Forever Seeking (Dub) abre (0:00), Metro en el 4 (~0:19), Grey Area en el 8 (~0:44), entre dos 3A porque es
+3B (Db mayor), no 12A. Grey Area entra debajo de los pisos del 150 (graves 39.2, color 0.22) porque el DJ lo pidio.
+**Del 150:** ninguno, ni otras versiones de sus temas. **Del 152:** ninguno (10 de 18 sin color, 3 fuera de la rueda,
+2 detonantes; New World, Faint y Life Without You eran elegibles y no entraron).
+**Audit:** 0 transiciones flojas, pico 7.3 al 82%, cierra en 7.3. Aviso: 44% sin mover la rueda (p90 pros 40%); el 150
+da 53%, no se corrige. corr(BPM, energia) -0.53: los nativos van de ~123 en la primera mitad a ~121 en la segunda.
+**Duracion:** 127 min crudos; 1:51 con mezclas de 1 minuto. Sin escuchar todavia.
+

@@ -1,0 +1,98 @@
+{
+  "name": "154. Apertura · Lo nuevo de Simon, estilo 150 — 2h — 2026-10-23",
+  "carpeta": "0 Fechas",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    125
+  ],
+  "max_per_artist": 3,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Anthony Pappa, Fauxplay",
+      "title": "Forever Seeking (Simon Vuarambon Dub Mix)",
+      "content_id": "90042898"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Low Light Memory (Original Mix)",
+      "content_id": "141573693"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Particular Movement (Original Mix)",
+      "content_id": "128273253"
+    },
+    {
+      "artist": "Josh Wink, Simon Vuarambon",
+      "title": "Metro (Simon Vuarambon Rework)",
+      "content_id": "108314087"
+    },
+    {
+      "artist": "Durante, Emi Galvan",
+      "title": "Lunar Circuit (Extended Mix)",
+      "content_id": "74712366"
+    },
+    {
+      "artist": "Lee Burridge, Lost Desert",
+      "title": "Ash & Ember (Extended Mix)",
+      "content_id": "72637273"
+    },
+    {
+      "artist": "Malou, Ben Bohmer",
+      "title": "Lost In Mind (Volen Sentir Extended Vision)",
+      "content_id": "30365545"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Grey Area (Original Mix)",
+      "content_id": "237573926"
+    },
+    {
+      "artist": "Analog Jungs & Oliver & Tom",
+      "title": "Landscape (RIGOONI Remix)",
+      "content_id": "243625892"
+    },
+    {
+      "artist": "Dr. Mirzoyan",
+      "title": "Destruction (Ruben Karapetyan Remix)",
+      "content_id": "205246945"
+    },
+    {
+      "artist": "Hernan Cattaneo & Soundexile",
+      "title": "Astron (Davi Remix)",
+      "content_id": "65609882"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Effective Loss (Original Mix)",
+      "content_id": "168103371"
+    },
+    {
+      "artist": "Mind Echoes",
+      "title": "Answers (Original Mix)",
+      "content_id": "72003256"
+    },
+    {
+      "artist": "Gonzalo Cotroneo",
+      "title": "Dark Rain (Extended Mix)",
+      "content_id": "14113136"
+    },
+    {
+      "artist": "Cendryma",
+      "title": "Override (Original Mix)",
+      "content_id": "244252789"
+    },
+    {
+      "artist": "Florian Gasperini",
+      "title": "Third Eye Awakening (Extended Mix)",
+      "content_id": "258025028"
+    },
+    {
+      "artist": "Sebastian Busto",
+      "title": "December (Zankee Gulati Remix)",
+      "content_id": "234396932"
+    }
+  ]
+}
