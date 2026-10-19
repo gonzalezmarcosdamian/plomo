@@ -14,6 +14,7 @@ Solo lectura: la DB se abre con `mode=ro` y los ANLZ se parsean, no se escriben.
 """
 from __future__ import annotations
 
+import json
 import os
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -66,28 +67,45 @@ def _grilla(analysis_path: str) -> tuple[np.ndarray, np.ndarray]:
     return tag.get_times().astype(float), tag.get_beats().astype(int)
 
 
+TARGETS = Path(__file__).resolve().parents[2] / "data" / "set_targets"
+
+
 def leer_set(prefijo: str) -> list[Tema]:
-    """Los temas de la playlist `prefijo.` en el orden de Rekordbox, sin filas borradas."""
+    """Los temas del set `prefijo`, en orden: la playlist `prefijo.` de Rekordbox si existe, y si
+    no el target que arma el selector (data/set_targets/set_NNN.json).
+
+    El target existe para poder mezclar un set propuesto antes de escribirlo en Rekordbox: el
+    2026-10-19 la Session 03 estaba lista para mezclar y otra sesion tenia la base tomada."""
     con = _abrir_db()
     fila = con.execute("select ID from djmdPlaylist where Name like ? and rb_local_deleted = 0",
                        (f"{prefijo}.%",)).fetchone()
+    if fila:
+        ids = [cid for (cid,) in con.execute("select ContentID from djmdSongPlaylist where PlaylistID = ? "
+                                              "and rb_local_deleted = 0 order by TrackNo", (fila[0],))]
+    else:
+        objetivo = TARGETS / f"set_{prefijo}.json"
+        if not objetivo.exists():
+            raise SystemExit(f"no hay playlist {prefijo}. ni {objetivo.name}")
+        ids = [t["content_id"] for t in json.loads(objetivo.read_text(encoding="utf-8"))["tracks"]]
+    return [_tema(con, cid) for cid in ids]
+
+
+def _tema(con: sqlcipher3.Connection, cid: str) -> Tema:
+    fila = con.execute("""select c.ID, a.Name, c.Title, c.BPM, k.ScaleName, c.Length, c.FolderPath, c.AnalysisDataPath
+                          from djmdContent c left join djmdArtist a on a.ID = c.ArtistID
+                          left join djmdKey k on k.ID = c.KeyID
+                          where c.ID = ? and c.rb_local_deleted = 0""", (cid,)).fetchone()
     if not fila:
-        raise SystemExit(f"no hay playlist {prefijo}.")
-    temas = []
-    for cid, art, tit, bpm, key, ln, fp, anlz in con.execute(
-            """select c.ID, a.Name, c.Title, c.BPM, k.ScaleName, c.Length, c.FolderPath, c.AnalysisDataPath
-               from djmdSongPlaylist sp join djmdContent c on c.ID = sp.ContentID
-               left join djmdArtist a on a.ID = c.ArtistID left join djmdKey k on k.ID = c.KeyID
-               where sp.PlaylistID = ? and sp.rb_local_deleted = 0 order by sp.TrackNo""", (fila[0],)):
-        beats, numero = _grilla(anlz)
-        cues = {}
-        for kind, ms in con.execute("select Kind, InMsec from djmdCue where ContentID = ? and rb_local_deleted = 0 "
-                                    "and Kind > 0", (cid,)):
-            if kind in KIND_CUE:
-                cues[KIND_CUE[kind]] = ms / 1000
-        temas.append(Tema(str(cid), (art or "").strip(), (tit or "").strip(), Path(fp), bpm / 100, key or "",
-                          float(ln), beats, numero, cues))
-    return temas
+        raise SystemExit(f"el tema {cid} no esta en la biblioteca")
+    cid, art, tit, bpm, key, ln, fp, anlz = fila
+    beats, numero = _grilla(anlz)
+    cues = {}
+    for kind, ms in con.execute("select Kind, InMsec from djmdCue where ContentID = ? and rb_local_deleted = 0 "
+                                "and Kind > 0", (cid,)):
+        if kind in KIND_CUE:
+            cues[KIND_CUE[kind]] = ms / 1000
+    return Tema(str(cid), (art or "").strip(), (tit or "").strip(), Path(fp), bpm / 100, key or "",
+                float(ln), beats, numero, cues)
 
 
 @dataclass(frozen=True)
