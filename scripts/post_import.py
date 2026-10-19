@@ -68,11 +68,16 @@ def main():
     # todavia no paso por aca. Con --todo se fuerza el recalculo de lo que ya
     # tiene energia, que es lo que hacia siempre sin querer.
     solo_nuevos = "--todo" not in sys.argv
+    # Sin BPM no hay analisis de Rekordbox todavia: Rekordbox crea la fila al
+    # importar y la completa al analizar. Procesarla igual ponia la grilla de
+    # cues a 122 por defecto y la marcaba con `E:`, asi que nunca se corregia.
+    # Queda para la proxima corrida, cuando ya tenga BPM.
     new_tracks = con.execute("""
         SELECT c.ID, c.FileNameL, c.FolderPath, c.BPM
         FROM djmdContent c
         WHERE (c.FolderPath LIKE '%Nuevos%' OR c.FolderPath LIKE '%Inbox%')
           AND c.rb_local_deleted=0
+          AND COALESCE(c.BPM, 0) > 0
     """).fetchall()
     if solo_nuevos:
         con_energia = {str(r[0]) for r in con.execute(

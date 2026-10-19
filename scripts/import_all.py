@@ -10,14 +10,18 @@ Qué NO hace:
 - NO importa tracks a la DB (Rekordbox lo hace él mismo al abrirse)
 - NO aplica cues ni energy — eso es post_import.py
 
-Flujo correcto:
+Flujo correcto — desde 2026-10-19 lo corre entero `python scripts/importar.py`:
   1. python scripts/import_all.py     ← este script
-  2. Rekordbox: File → Import → Add Folder → el Inbox. RB6 NO auto-importa,
-     ni con la carpeta agregada como Monitor Folder. Despues analiza (BPM +
-     key + waveform) y hay que esperar a que termine.
-  3. Cerrar Rekordbox (System Tray → Quit)
+  2. Rekordbox importa el Inbox y lo analiza (BPM + key + waveform). Rekordbox
+     no tiene carpeta vigilada, ni la 6 ni la 7.2: importar.py abre Rekordbox y
+     hace el Ctrl+O por el DJ (ver src/plomo/rekordbox_app.py).
+  3. Cerrar Rekordbox (importar.py lo cierra ordenado y espera que salga)
   4. python scripts/post_import.py            ← cues v8 + energy + playlists
   5. python scripts/import_all.py --archive   ← vacia el Inbox
+
+Lo que ya esta en la biblioteca no entra al Inbox: con el import automatico,
+lo que entra se importa sin que nadie lo mire, y un tema bajado dos veces
+quedaria duplicado. Se deja en Descargas y se avisa.
 
 El paso 5 no es opcional: Rekordbox reescanea la carpeta monitoreada ENTERA en
 cada apertura, no solo lo nuevo. Si el Inbox crece sin limite, cada apertura
@@ -25,8 +29,11 @@ reprocesa todo, y cualquier archivo cuya fila se haya borrado vuelve a entrar
 como track nuevo -> duplicado. Vaciando el Inbox, Rekordbox solo ve lo que
 falta importar.
 """
+import os
 import sys
 import shutil
+import unicodedata
+from collections.abc import Callable, Mapping
 from datetime import datetime
 from pathlib import Path
 
@@ -40,11 +47,44 @@ import sqlcipher3
 
 DOWNLOADS = config.DOWNLOADS_FOLDER
 DEST = config.MUSIC_NEW_FOLDER
-DEST.mkdir(parents=True, exist_ok=True)
 
 
 def now_str() -> str:
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def clave_nombre(nombre: str) -> str:
+    """Nombre de archivo comparable: mismos acentos (NFC) y sin mayusculas."""
+    return unicodedata.normalize("NFC", nombre).casefold()
+
+
+def ya_en_biblioteca(nombre: str, rutas_por_nombre: Mapping[str, list[str]],
+                     existe: Callable[[str], bool] = os.path.exists) -> str | None:
+    """La ruta de la biblioteca si ese archivo ya esta importado y en disco.
+
+    Se compara por nombre de archivo y no por contenido: Rekordbox reescribe los
+    tags del que importo, asi que la descarga repetida tiene otro hash (medido con
+    Maze 28 - Constant Daydream, 2026-10-19). Si la fila existe pero su archivo se
+    perdio, la descarga es el reemplazo y entra. Con varias filas del mismo
+    nombre alcanza con que una tenga el archivo.
+    """
+    return next((r for r in rutas_por_nombre.get(clave_nombre(nombre), []) if existe(r)), None)
+
+
+def rutas_por_nombre() -> dict[str, list[str]]:
+    """clave_nombre(FileNameL) -> FolderPaths de las filas activas, en solo lectura."""
+    con = sqlcipher3.connect(f"file:{config.REKORDBOX_DB_PATH}?mode=ro", uri=True)
+    try:
+        con.execute(f"PRAGMA key = '{config.SQLCIPHER_KEY}'")
+        filas = con.execute(
+            "SELECT FileNameL, FolderPath FROM djmdContent "
+            "WHERE rb_local_deleted=0 AND FileNameL IS NOT NULL").fetchall()
+    finally:
+        con.close()
+    indice: dict[str, list[str]] = {}
+    for nombre, ruta in filas:
+        indice.setdefault(clave_nombre(nombre), []).append(ruta)
+    return indice
 
 
 def fix_existing_tracks(moved: list[Path]) -> None:
@@ -99,8 +139,11 @@ def archive_imported(con_path: Path) -> None:
     # ruta -> ID. Se actualiza por ID y no por "WHERE LOWER(FolderPath)=?":
     # el LOWER() de SQLite solo baja ASCII, asi que "RÜFÜS" nunca matchea
     # contra el .lower() de Python y la fila queda apuntando al archivo viejo.
+    # Solo lo analizado (BPM > 0): un tema que Rekordbox importo pero no termino
+    # de analizar se queda en el Inbox, a la vista, hasta que tenga BPM.
     known = {r[1].lower(): str(r[0]) for r in con.execute(
-        "SELECT ID, FolderPath FROM djmdContent WHERE rb_local_deleted=0 AND FolderPath IS NOT NULL")}
+        "SELECT ID, FolderPath FROM djmdContent WHERE rb_local_deleted=0 "
+        "AND FolderPath IS NOT NULL AND COALESCE(BPM, 0) > 0")}
 
     ts = now_str()
     moved = 0
@@ -159,11 +202,27 @@ def main() -> None:
         print("Nada que procesar.")
         return
 
+    DEST.mkdir(parents=True, exist_ok=True)
+    try:
+        en_biblioteca = rutas_por_nombre()
+    except Exception as e:  # noqa: BLE001 — sin base no se puede chequear: se corta
+        print(f"  No pude leer la base de Rekordbox ({e}). No muevo nada.")
+        sys.exit(1)
+
     moved: list[Path] = []
+    repetidos: list[tuple[str, str]] = []
 
     for i, src in enumerate(tracks, 1):
         dest_file = DEST / src.name
         print(f"[{i}/{len(tracks)}] {src.name}")
+
+        ya = ya_en_biblioteca(src.name, en_biblioteca)
+        if ya:
+            # No se borra: el archivo es distinto byte a byte y quien decide si
+            # sobra es el DJ. Se deja en Descargas, fuera del camino del import.
+            repetidos.append((src.name, ya))
+            print(f"  [ya esta] {ya}")
+            continue
 
         if dest_file.exists():
             # Archivo ya en destino — eliminar duplicado de Downloads
@@ -186,20 +245,21 @@ def main() -> None:
         print(f"  Advertencia: no se pudo conectar a la DB ({e})")
         print("  Rekordbox no debe estar corriendo — cerralo primero.")
 
+    if repetidos:
+        print(f"\n{len(repetidos)} ya estaban en la biblioteca y quedaron en Descargas "
+              "(borralos si sobran):")
+        for nombre, ruta in repetidos:
+            print(f"  {nombre}\n    -> {ruta}")
+
     print("\n=== LISTO ===")
     print(f"Tracks movidos a: {DEST}")
     print("")
-    # Rekordbox 6 NO importa solo. El "Add Monitor Folder" de Preferences hace
-    # que RB vea la carpeta, no que meta los archivos en la biblioteca: el
-    # import es manual siempre. Este mensaje decia lo contrario y costo una
-    # sesion entera esperando un analisis que nunca iba a arrancar.
-    print("Rekordbox 6 NO auto-importa. El import es SIEMPRE manual:")
-    print("  1. Abri Rekordbox")
-    print("  2. File > Import > Add Folder")
-    print(f"     Elegi: {DEST}")
-    print("  3. Espera a que termine de analizar (BPM + key + waveform)")
-    print("  4. Cerra RB (System Tray > Quit) -> corre post_import.py")
-    print("  5. Corre import_all.py --archive para vaciar el Inbox")
+    # Rekordbox no importa solo, ni la 6 ni la 7.2: no tiene carpeta vigilada.
+    # Este mensaje decia una vez lo contrario y costo una sesion entera
+    # esperando un analisis que nunca iba a arrancar. Ahora el resto lo hace
+    # importar.py, que corre este script como primer paso.
+    print("Rekordbox no importa solo. Para el resto del ciclo:")
+    print("  python scripts/importar.py   (abre Rekordbox, importa, analiza, cues, archiva)")
 
 
 if __name__ == "__main__":

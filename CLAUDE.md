@@ -117,15 +117,27 @@ que entró a la biblioteca por otro camino nunca recibe energía y queda invisib
 para `select_set.py`. Para eso está `backfill_energy.py`, que procesa por ESTADO.
 Correrlo cuando `dump_pool.py` reporte menos tracks de los esperados.
 
-## Pipeline de importación
+## Pipeline de importación (automático desde 2026-10-19)
 
 ```
-1. muzpa_download.py     → Downloads/
-2. import_all.py         → mueve a Nuevos/2026-05, fix metadata  
-3. Rekordbox             → File → Import → Add Folder → Nuevos/2026-05
-4. post_import.py        → cues v8 + energy + playlists
-5. Rekordbox Sync        → sync al pen
+python scripts/importar.py --batch data/batch_x.txt   # baja de Muzpa e importa
+python scripts/importar.py                            # importa lo que haya en Descargas
+python scripts/importar.py --dry                      # muestra qué haría
 ```
+
+Hace solo: cerrar Rekordbox → backup → `import_all.py` (Descargas → Inbox, sin
+repetidos) → abrir Rekordbox e importar el Inbox con Ctrl+O → esperar el análisis
+→ cerrarlo → `post_import.py` (cues v8 + energía) → `import_all.py --archive`
+(Inbox → Nuevos/AAAA-MM). Lo único manual que queda es el **sync al pen**.
+
+- **Rekordbox no tiene carpeta vigilada**, ni la 6 ni la 7.2 (manual 7.2.3 y
+  notas de versión hasta 7.2.19). Lo automático es apretar el botón por el DJ:
+  `src/plomo/rekordbox_app.py`. El import lo sigue haciendo Rekordbox mismo, que
+  es la condición para que el export al pen no dé error [2].
+- **El Inbox tiene solo lo que falta importar.** Si se llena de importados, se
+  vacía con `import_all.py --archive`.
+- Lanzar rekordbox.exe **sin `ELECTRON_RUN_AS_NODE`**: la terminal de VS Code lo
+  hereda y rekordboxAgent no arranca. `rekordbox_app.abrir()` ya lo limpia.
 
 ## Estructura de archivos
 

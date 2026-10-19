@@ -49,6 +49,86 @@ sigue contando en la cuota. Además, `Claudio APP` no tiene remoto y el venv de
 
 ---
 
+## 2026-10-19 — el import se hace solo: importar.py maneja Rekordbox
+
+"Como podemos acomodar la musica y rekor para que pueda ser automatico el
+import?" Rekordbox no tiene carpeta vigilada: lo dice el manual de la 7.2.3 y no
+aparece en las notas de version hasta la 7.2.19. La version en uso es la 7.2.14,
+no la 6 (`rekordbox3.settings`, Version 70214). Lo que si tiene es Ctrl+O =
+Import File, que abre el dialogo comun de Windows, y ese se maneja por
+UIAutomation. Probado en vivo con los dos de Simon: entraron importados por
+Rekordbox mismo (rb_file_id largo, DeliveryControl on), analizados en 25 s;
+WM_CLOSE lo cerro ordenado en 42 s; post_import les puso 10 cues y energia
+(Metro 5.4 build, Grey Area 5.7 mid).
+
+Ahora es un comando: `python scripts/importar.py [--batch lista.txt]`. Cierra
+Rekordbox, backup, import_all, abre Rekordbox, cierra los tres carteles del
+arranque (actualizador a 7.2.19, fin de la prueba gratis, novedades del agente),
+importa, espera el analisis leyendo la base en solo lectura, lo cierra,
+post_import y archiva el Inbox. Queda manual solo el sync al pen.
+
+Lo que aparecio en el camino:
+- Rekordbox lanzado desde la terminal de VS Code no arrancaba ("Communication
+  with rekordboxAgent failed"): heredaba `ELECTRON_RUN_AS_NODE=1`.
+- El Inbox tenia 312 temas ya importados: el `--archive` no se venia corriendo.
+  Archivados a Nuevos/2026-05..10 con su ruta al dia, 0 fallidos.
+- import_all ya no mete al Inbox lo que esta en la biblioteca: el Maze 28 TEELCO
+  sobraba en Descargas con otro hash que el importado. Queda ahi, avisado.
+- 198 temas de Biblioteca/2024-2026 figuran en Rekordbox sin archivo en disco,
+  desde antes de hoy. Sin tocar.
+- En paralelo otra sesion mudo la biblioteca fuera de OneDrive (ver su entrada).
+
+**Los 198 que el DJ borro de OneDrive, repuestos.** "Fijate que no se me rompan
+listas, volvelos a descargar." Estaban en 116 sets o pools (8 en el 01, 10 en el
+03, 7 en el 26) y en 82 listas automaticas. Se bajaron de Muzpa exigiendo la
+misma version y la misma duracion (+-2 s, contra djmdContent.Length) para que
+cues y grilla sigan cayendo donde estaban: 197 a la primera; el Kolsch Extended
+Remix de Remember Me no aparecia en la busqueda popular y si en "Remember Me
+Kolsch". Cada uno quedo en su ruta relativa original bajo Documents\Music y
+`fix_missing_paths.py --solo-mudanza` los reengancho: mismo ContentID, mismas
+listas. Antes y despues: 261 listas, 8394 entradas, 27849 cues; faltantes 198 -> 0.
+
+**QA de importar.py en Rekordbox 7**, con Forever Seeking (Simon Vuarambon Dub
+Mix). Tres corridas; las dos primeras encontraron bugs que el codigo sin abrir
+Rekordbox no mostraba:
+1. `Desktop().windows()` de pywinauto envuelve todas las ventanas del escritorio y
+   se cae entera si una de otra app se cierra en ese instante. Ahora EnumWindows
+   y se envuelve solo lo de Rekordbox.
+2. El dialogo Import Track aparece antes que sus controles: la caja File name se
+   espera, no se busca de una.
+3. Un WM_CLOSE mandado mientras Rekordbox arrancaba se perdia y el cierre
+   esperaba 240 s. Ahora se repite cada 30 s.
+En las dos que fallaron, el camino de error hizo lo que tenia que hacer: mostro
+la causa, cancelo el dialogo y cerro Rekordbox ordenado. La tercera paso entera:
+rb_file_id largo, DeliveryControl on, ANLZ en disco, 10 cues, E:5.1, archivado.
+El analisis tardo ~35 s (la primera vez 25).
+
+Una revision de codigo antes del QA encontro que post_import procesaba filas sin
+BPM con la grilla a 122 por defecto y las marcaba `E:`, asi que nunca se
+corregian. Ahora post_import y el --archive saltean lo que no tiene BPM.
+Quedan asi dos de Fran Garay (False Contact y Lufthansa, importados el 19/09):
+Rekordbox nunca los analizo y tienen cues a 122. No estan en ninguna lista.
+
+---
+
+## 2026-10-19 — radar de octubre, el EP de Simon, y Muzpa cambio la ruta de descarga
+
+"Revisa musica para descargar." El radar desde el 15/09 trajo 108 temas que no
+estan (`data/batch_nuevos_2026-09-15.txt`); los pendientes de septiembre ya
+habian entrado casi todos. "El nuevo de simon esta?": no — Grey Area y Metro
+(Simon Vuarambon Rework), Bedrock, 10/10. Bajados con `batch_simon_2026-10-19.txt`.
+
+La descarga dio 404 en los dos, y en todo: hasta Estigia, bajado en agosto. La
+busqueda andaba y la cuenta estaba activa, asi que era la ruta. El `app.js` de
+srv.muzpa.com usa `/a/ms/track/{id}/download/mp3`; `/dwnld/track/{id}.mp3` ya no
+existe. Corregido en `muzpa_download.py`, junto con el nombre del archivo: la ruta
+nueva manda un slug y un nombre UTF-8, y se toma el UTF-8.
+
+Sin conseguir en Muzpa: Sordid Affair (Gabriel Amato Remix) y Friendly Fire
+(Ezequiel Arias Remix), buscados por titulo y por artista+titulo.
+
+---
+
 ## 2026-10-02 — Session 01 publicada, Session 02 con look propio
 
 "Inventemos un session 1, session 2... elimina el que esta en el canal ahora."

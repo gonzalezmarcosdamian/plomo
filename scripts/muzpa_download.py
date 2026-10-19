@@ -181,7 +181,10 @@ def search_artist_title(s: requests.Session, artist: str, title: str) -> list[di
 
 def download_track(s: requests.Session, track_id: int, filename: str) -> tuple[Path, float] | None:
     """Download a track by ID. Returns (dest_path, size_mb) or None on failure."""
-    url = f"{MUZPA_API}/dwnld/track/{track_id}.mp3"
+    # La ruta vieja /dwnld/track/{id}.mp3 empezo a dar "404 page not found" para
+    # todo, hasta temas ya bajados (medido 2026-10-19). La actual sale del
+    # app.js de srv.muzpa.com: /a/ms/track/{id}/download/{formato}.
+    url = f"{MUZPA_API}/a/ms/track/{track_id}/download/mp3"
     try:
         r = s.get(url, timeout=60, stream=True)
     except requests.RequestException as e:
@@ -197,8 +200,13 @@ def download_track(s: requests.Session, track_id: int, filename: str) -> tuple[P
         return None
 
     # Nombre desde Content-Disposition o filename del track
+    # La ruta nueva manda dos nombres: filename="josh-wink-...-bedrock-records.mp3"
+    # (slug) y filename*=UTF-8''Josh Wink, ... [Bedrock Records].mp3. Va primero
+    # el UTF-8, que es el "Artista - Titulo [Sello]" con el que esta nombrada toda
+    # la biblioteca: con el slug, el mismo tema bajado dos veces no se reconoce.
     cd = r.headers.get("content-disposition", "")
-    fname_match = re.search(r"filename\*?=(?:UTF-8'[^']*')?([^;]+)", cd)
+    fname_match = (re.search(r"filename\*=UTF-8''([^;]+)", cd)
+                   or re.search(r"filename=([^;]+)", cd))
     if fname_match:
         fname = urllib.parse.unquote(fname_match.group(1).strip().strip('"'))
         fname = re.sub(r"^UTF-8''", "", fname)  # seguridad extra

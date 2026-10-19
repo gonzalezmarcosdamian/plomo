@@ -30,6 +30,63 @@ los datos versionados y el `.env`.
 
 ---
 
+## Un 404 en todo es una ruta que se movio, no un recurso que falta
+
+**Que paso.** Muzpa encontraba los temas pero la descarga daba 404, tambien para
+temas que ya se habian bajado antes. El cuerpo era `404 page not found`, 19
+bytes: el texto que devuelve el ruteador cuando no conoce la ruta, no el de un
+archivo inexistente (ese es `{"message": "Not found"}`). La web de Muzpa ya
+descargaba de `/a/ms/track/{id}/download/mp3`; `/dwnld/track/{id}.mp3` habia dejado
+de existir.
+
+**Por que.** Un error que le pasa a TODO, incluido lo que antes funcionaba, no
+habla del recurso: habla del camino. Y el cliente oficial siempre sabe cual es la
+ruta actual, porque la esta usando.
+
+**Como se aplica.** Antes de concluir "no esta" o "nos cortaron": probar con algo
+que seguro existe; si tambien falla, mirar la forma del error (el del ruteador o
+el de la aplicacion), y buscar la ruta en el JavaScript del cliente oficial. Es
+el mismo patron que el 403 de Spotify, mas abajo.
+
+---
+
+## Una app lanzada desde VS Code hereda el entorno de Electron
+
+**Que paso.** Rekordbox lanzado desde un script en la terminal de VS Code salia
+con "Communication with rekordboxAgent failed". Abierto a mano andaba. VS Code
+corre sobre Electron y exporta `ELECTRON_RUN_AS_NODE=1` a sus terminales; el hijo
+lo hereda, y rekordboxAgent, que es una app Electron, arranca como Node pelado.
+
+**Por que.** Un proceso hijo hereda el entorno entero del padre, incluidas las
+variables que el padre usa para si mismo. Electron lee esa variable al arrancar,
+venga de donde venga.
+
+**Como se aplica.** Para lanzar una app de escritorio desde un script, pasarle un
+entorno sin `ELECTRON_*` (`rekordbox_app.entorno_limpio`). Si una app arrancada
+por codigo falla y a mano no, comparar el entorno antes que cualquier otra cosa.
+
+---
+
+## Lo que una app no automatiza se automatiza por su dialogo de Windows
+
+**Que paso.** Rekordbox no tiene carpeta vigilada ni API de import, y dibuja su
+interfaz con JUCE, que no expone controles: no hay boton que apretar por codigo.
+Pero su atajo Ctrl+O abre el dialogo comun de Windows para abrir archivos, y ese
+dialogo si es accesible por UIAutomation: se escribe la carpeta, despues los
+nombres entre comillas, Enter. El import queda hecho por Rekordbox mismo, que era
+la condicion (si lo hace otro, el export al pen falla).
+
+**Por que.** Las apps con interfaz propia igual delegan en el sistema lo que no
+quieren reinventar: elegir archivos, imprimir, guardar. Esos dialogos son los
+mismos en todas y son manejables.
+
+**Como se aplica.** Cuando una app no tiene API, buscar primero un atajo de
+teclado que abra un dialogo del sistema (en los `.mappings` de la app suele
+estar la lista). Solo si no hay, clicks por coordenadas, y siempre con una
+verificacion afuera de la ventana (aca: la fila en la base con BPM y ANLZ).
+
+---
+
 ## Un archivo abierto no es un arreglo en memoria
 
 **Que paso.** El render de video iba a 12-17 cuadros/s y lo atribuiamos a la GPU:

@@ -38,6 +38,7 @@ plomo/
 
 | Script | Cuándo usarlo | Qué hace |
 |--------|---------------|----------|
+| `scripts/importar.py` | Siempre que entre música nueva | El ciclo entero: descarga opcional, backup, import_all, Rekordbox importa y analiza solo (Ctrl+O), post_import, archivo del Inbox. |
 | `scripts/import_all.py` | Fase 1 del pipeline | Mueve archivos de Downloads → Music/YYYY-MM. Para tracks ya en DB: fija FolderPath y DeliveryControl para export USB sin error [2]. NO importa a DB ni aplica cues. |
 | `scripts/post_import.py` | Fase 3 del pipeline (después de que RB analice) | Aplica cues v8, energy score, restaura playlists para tracks recién importados. |
 | `scripts/muzpa_download.py` | Cuando hay tracks nuevos en Muzpa | Descarga tracks desde la plataforma Muzpa. |
@@ -63,14 +64,21 @@ plomo/
 
 ### Flujo correcto del pipeline de importación
 
+Desde 2026-10-19 los pasos 1-5 los corre `python scripts/importar.py` (con
+`--batch` baja de Muzpa antes). Los pasos sueltos siguen sirviendo:
+
 ```
-1. python scripts/import_all.py         # Mueve archivos, fix metadata
-2. Abrir Rekordbox                       # RB detecta, analiza BPM/key/waveform
-3. Cerrar Rekordbox (System Tray → Quit)
+1. python scripts/import_all.py         # Descargas → Inbox, sin repetidos, fix metadata
+2. Rekordbox importa el Inbox            # importar.py: Ctrl+O + espera del análisis
+3. Cerrar Rekordbox                      # importar.py: WM_CLOSE, espera que salga
 4. python scripts/post_import.py        # Cues v8 + energy + playlists
-5. python scripts/db_audit.py --dry     # Verificar duplicados post-import
-6. Abrir Rekordbox → sync pen           # Export a USB
+5. python scripts/import_all.py --archive  # Inbox → Nuevos/AAAA-MM
+6. python scripts/db_audit.py --dry     # Verificar duplicados post-import
+7. Abrir Rekordbox → sync pen           # Export a USB (manual)
 ```
+
+Rekordbox no tiene carpeta vigilada: el paso 2 lo hace `plomo.rekordbox_app`
+manejando la ventana. Ver CLAUDE.md → "Pipeline de importación".
 
 ### Flujo para armar un set
 
