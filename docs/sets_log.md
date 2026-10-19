@@ -3340,3 +3340,30 @@ de 2, ninguno de 3+; 7 saltos de 3 BPM (el tope).
 energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1.4 de la DB; con las estimadas son 0.
 **Duracion:** 227 min crudos; 3:18 con mezclas de 1 minuto (3:31 con el 0.93 del selector). Sin escuchar todavia.
 
+
+## Set 153. 153. Session 03 · Cumple del 20 — 1h40 — 2026-10-19
+**Armado:** 2026-10-19  
+**Duracion:** 0h  
+**Tracks:** 17  
+**BPM range:** 100-140  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Julian Nates | Trigger (Original Mix) | 122 | 4.7 |
+| 2 | Benja Molina | Astrea (Original Mix) | 122 | 5.3 |
+| 3 | Paul Thomas, Dylhen | Cosmos (DJ Ruby Remix) | 123 | 5.1 |
+| 4 | Redspace | Split Personality (Original Mix) | 122 | 5.6 |
+| 5 | Benja Molina | Aura (Original Mix) | 123 | 1.4 |
+| 6 | Golan Zocher & Choopie | SAO (Hernan Cattaneo & Simply City Extended Remix) | 123 | 1.4 |
+| 7 | Solis [US] | Echosphere (Hernan Cattaneo & Simply City Extended Remix) | 122 | 5.5 |
+| 8 | Benja Molina | Feeling (Original Mix) | 122 | 5.9 |
+| 9 | djimboh | Be Brave (Extended Mix) | 122 | 6.0 |
+| 10 | Melarmony | Aurora (Extended Mix) | 122 | 6.5 |
+| 11 | Artic White | Linea Zero (Extended Mix) | 123 | 7.2 |
+| 12 | Artic White | Vivere (Extended Mix) | 123 | 7.3 |
+| 13 | Paul Thomas | Jumbo (Jamie Stevens Remix) | 124 | 6.1 |
+| 14 | Artic White | Flashback (Extended Mix) | 123 | 6.7 |
+| 15 | Ewan Rill | Nature Pentacles (Original Mix) | 122 | 6.4 |
+| 16 | Mariano Mellino & John Cosani | Zhen Kai | 121 | 5.8 |
+| 17 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.7 |
+
