@@ -52,6 +52,43 @@ TITULO_DURA_S = 10.0
 TITULO_FUNDIDO_S = 1.5
 # el viento de cada tema: desplazamiento del dominio del ruido y direccion del flujo
 VIENTOS = [((0.0, 0.0), 0.10), ((1.2, 0.4), -0.18), ((0.5, 1.3), 0.28), ((1.6, 1.1), -0.05)]
+# vuelo.frag: (cielo alto, horizonte, acento) por tema, en orden; ciclan. Arranca en el naranja de la marca.
+PALETAS_VUELO = [
+    ((0.020, 0.025, 0.060), (1.00, 0.52, 0.22), (1.00, 0.64, 0.32)),
+    ((0.010, 0.030, 0.060), (0.30, 0.66, 0.90), (0.50, 0.85, 1.00)),
+    ((0.030, 0.015, 0.060), (0.92, 0.36, 0.55), (1.00, 0.56, 0.72)),
+    ((0.015, 0.035, 0.040), (0.36, 0.86, 0.66), (0.56, 1.00, 0.82)),
+    ((0.030, 0.020, 0.055), (0.74, 0.46, 1.00), (0.86, 0.66, 1.00)),
+    ((0.030, 0.025, 0.020), (1.00, 0.78, 0.45), (1.00, 0.86, 0.56)),
+]
+ADELANTO_DROP_S = 1.2    # la camara mira adelante: la picada empieza antes del drop y aterriza con el
+
+
+def suavizar(x: np.ndarray, sigma_s: float, fps: int) -> np.ndarray:
+    n = max(1, int(sigma_s * fps))
+    k = np.exp(-0.5 * (np.arange(-3 * n, 3 * n + 1) / n) ** 2)
+    return np.convolve(np.pad(x, 3 * n, mode="edge"), k / k.sum(), mode="valid")
+
+
+def camara(r: dict, fps: int) -> dict[str, np.ndarray]:
+    """La forma de cada tema para vuelo.frag, cuadro por cuadro, mirando adelante.
+
+    El bombo no sirve para encontrar el drop: en Thrill entra 10 s despues que el bajo.
+    Lo que cae a cero en el breakdown y vuelve de golpe en el drop es bajo + cuerpo."""
+    seccion = np.clip(suavizar(np.clip((r["bajo"] + r["cuerpo"]) / 2, 0, 1), 1.0, fps) / 0.55, 0, 1)
+    k = int(ADELANTO_DROP_S * fps)
+    adelante = np.concatenate([seccion[k:], np.repeat(seccion[-1], k)])
+    velocidad = 0.35 + 1.4 * suavizar(adelante, 0.6, fps) + 0.25 * r["bombo"]
+    # el impacto es el salto de bajo+cuerpo en un segundo, que despues se apaga solo
+    salto = np.clip(seccion - np.concatenate([np.repeat(seccion[0], fps), seccion[:-fps]]), 0, 1)
+    impacto = np.empty_like(salto)
+    caida, previo = np.exp(-1 / (2.5 * fps)), 0.0
+    for i, s in enumerate(salto):
+        previo = max(float(s), previo * caida)
+        impacto[i] = previo
+    paletas = np.array([PALETAS_VUELO[k % len(PALETAS_VUELO)] for k in range(r["temas"].shape[1])])
+    return {"altura": 1 - suavizar(adelante, 0.8, fps), "distancia": np.cumsum(velocidad) / fps,
+            "impacto": impacto, "paleta": np.einsum("ft,tcd->fcd", r["temas"], paletas)}
 
 VERTEX = """
 #version 330
@@ -160,6 +197,7 @@ def main() -> None:
     tex.use(0)
     poner(prog, "uTexto", 0)
     poner(prog, "uRes", (w, h))
+    cam = camara(r, fps) if prog.get("uAltura", None) is not None else None
     carteles = {k: texto_del_tema(w, h, k + 1, len(caps), c["artista"], c["titulo"]) for k, c in enumerate(caps)}
     inicios = [c["t"] for c in caps]
     if a.mostrar_titulo:
@@ -193,6 +231,11 @@ def main() -> None:
                 ("uDeriva", tuple(float(v) for v in deriva)), ("uAngulo", float(angulo)),
                 ("uTextoAlfa", alfa)):
             poner(prog, nombre, valor)
+        if cam is not None:
+            for nombre, valor in (("uAltura", float(cam["altura"][i])), ("uDistancia", float(cam["distancia"][i])),
+                                  ("uImpacto", float(cam["impacto"][i])), ("uCieloAlto", tuple(cam["paleta"][i, 0])),
+                                  ("uHorizonte", tuple(cam["paleta"][i, 1])), ("uAcento", tuple(cam["paleta"][i, 2]))):
+                poner(prog, nombre, valor)
         vao.render(moderngl.TRIANGLE_STRIP)
         try:
             proc.stdin.write(fbo.read(components=3))
