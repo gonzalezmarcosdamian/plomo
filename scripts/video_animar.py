@@ -107,12 +107,41 @@ def camara(r: dict, fps: int) -> dict[str, np.ndarray]:
     pa, pb = r["temas"][filas, orden[:, 0]], r["temas"][filas, orden[:, 1]]
     # ascenso.frag: la altitud del cohete, 0 en la plataforma y 1 al final del set. Es la misma
     # distancia normalizada: sube mas rapido en el groove y planea en el breakdown
+    etapa_edad, etapa_donde = etapas(impacto, distancia / distancia[-1], fps)
     return {"altura": 1 - suavizar(adelante, 1.4, fps), "distancia": distancia, "origen": origen,
-            "altitud": distancia / distancia[-1],
+            "altitud": distancia / distancia[-1], "etapa_edad": etapa_edad, "etapa_donde": etapa_donde,
             "impacto": impacto, "paleta": np.einsum("ft,tcd->fcd", r["temas"], paletas),
             "tema_a": orden[:, 0], "tema_b": orden[:, 1],
             "local_a": distancia - origen[orden[:, 0]], "local_b": distancia - origen[orden[:, 1]],
             "mezcla": pb / np.maximum(pa + pb, 1e-6)}
+
+
+ETAPAS, ETAPA_SEPARACION_MIN, ETAPA_DURA_S, ETAPA_UMBRAL = 2, 15, 60, 0.35
+
+
+def etapas(impacto: np.ndarray, altitud: np.ndarray, fps: int) -> tuple[np.ndarray, np.ndarray]:
+    """Las separaciones de etapa de ascenso.frag: los ETAPAS drops mas grandes del set, a mas de
+    15 min entre si y lejos de las puntas. Devuelve, por cuadro, los segundos desde la ultima
+    separacion (-1 si no hay una en el ultimo minuto) y en que punto del arco fue.
+
+    "Dale mas animacion" (el DJ, 2026-10-19): un drop grande se marca como en un lanzamiento
+    real, con la pluma vieja quedando atras, no con un flash."""
+    n = len(impacto)
+    picos = [i for i in range(1, n - 1)
+             if impacto[i] > ETAPA_UMBRAL and impacto[i] >= impacto[i - 1] and impacto[i] > impacto[i + 1]]
+    borde, lejos = 5 * 60 * fps, ETAPA_SEPARACION_MIN * 60 * fps
+    elegidos: list[int] = []
+    for i in sorted(picos, key=lambda j: -impacto[j]):
+        if borde < i < n - borde and all(abs(i - j) > lejos for j in elegidos):
+            elegidos.append(i)
+        if len(elegidos) == ETAPAS:
+            break
+    edad, donde = np.full(n, -1.0), np.zeros(n)
+    for i in sorted(elegidos):
+        tramo = slice(i, min(n, i + ETAPA_DURA_S * fps))
+        largo = tramo.stop - tramo.start
+        edad[tramo], donde[tramo] = np.arange(largo) / fps, altitud[i]
+    return edad, donde
 
 
 def semilla(tema: int) -> tuple[float, float]:
@@ -320,7 +349,9 @@ def main() -> None:
             poner(prog, nombre, valor)
         if cam is not None:
             for nombre, valor in (("uAltitud", float(cam["altitud"][i])), ("uAltura", float(cam["altura"][i])),
-                                  ("uImpacto", float(cam["impacto"][i])), ("uDistancia", float(cam["distancia"][i]))):
+                                  ("uImpacto", float(cam["impacto"][i])), ("uDistancia", float(cam["distancia"][i])),
+                                  ("uEtapaEdad", float(cam["etapa_edad"][i])),
+                                  ("uEtapaA", float(cam["etapa_donde"][i]))):
                 poner(prog, nombre, valor)
         if suelo:
             ka, kb = int(cam["tema_a"][i]), int(cam["tema_b"][i])

@@ -24,6 +24,8 @@ uniform float uDistancia;  // hace fluir el escape fresco (via fluir(): en float
 uniform float uBajo;
 uniform float uCuerpo;
 uniform float uChispa;
+uniform float uEtapaEdad;  // segundos desde la ultima separacion de etapa (-1: ninguna en el ultimo minuto)
+uniform float uEtapaA;     // en que punto del arco fue
 uniform sampler2D uTexto;
 uniform float uTextoAlfa;
 
@@ -134,11 +136,12 @@ float estrellas(vec2 p) {
 // lo que esta arriba de la sombra de la Tierra, que sube a medida que cae la noche
 vec3 humo(vec3 col, vec2 p, float A, vec3 luz) {
     float lejos = smoothstep(0.0, 0.6, length(p - ruta(A)));
-    p.x += 0.05 * lejos * (fbm(vec2(p.y * 2.5, uTime * 0.004)) - 0.5);
+    p.x += 0.05 * lejos * (fbm(vec2(p.y * 2.5, uTime * 0.012)) - 0.5);
     vec2 e = aLaEstela(p, A);
     float edad = A - e.y, x = e.x / (0.002 + 0.06 * edad);
-    float tex = mix(fbm(vec2(e.y * 60.0, x * 0.8)), fluir(vec2(e.y * 60.0, x * 0.8 + 5.0), uDistancia * 2.0),
-                    exp(-edad * 40.0));   // solo fluye el escape fresco
+    // el escape fresco corre con el cohete; el humo viejo no se queda quieto: se arremolina
+    // despacio ("dale mas animacion")
+    float tex = fluir(vec2(e.y * 60.0, x * 0.8 + 5.0), uDistancia * 2.0 * exp(-edad * 40.0) + uTime * 0.12);
     float g = golpe(edad * length(vec2(1.70 * A, 0.60 - 0.16 * A)));
     float dens = exp(-x * x) * (0.55 + 0.45 * tex) * mix(0.9, 0.35, smoothstep(0.0, 0.8, edad)) * (1.0 + g);
     float sol = smoothstep(-0.04, 0.06, p.y - mix(-0.40, 0.05, uAltitud));
@@ -154,8 +157,10 @@ vec3 medusa(vec2 p, float A, vec3 luz) {
     float k = mix(0.10, 0.30, smoothstep(0.45, 1.0, A)) * (1.0 + 0.25 * uImpacto);
     float pared = k * sqrt(max(u + 0.004, 0.0));
     float borde = exp(-pow((abs(v) - pared) / (0.004 + 0.05 * max(u, 0.0)), 2.0));
+    // ondas que viajan hacia atras por la cascara, y filamentos que fluyen
+    borde *= 0.65 + 0.35 * sin(u * 45.0 - uTime * 2.2);
     float velo = exp(-pow(v / max(pared, 1e-3), 2.0)) * 0.25;
-    float tex = 0.6 + 0.4 * fluir(vec2(u * 8.0, v * 6.0), -uDistancia * 0.5);
+    float tex = 0.6 + 0.4 * fluir(vec2(u * 8.0, v * 6.0), -uDistancia * 0.5 - uTime * 0.3);
     float hay = smoothstep(0.45, 0.85, A) * smoothstep(-0.01, 0.01, u + 0.004);
     // brazos cortos: largos, la cascara se leia como un bumeran
     return luz * (0.45 * borde + velo) * exp(-max(u, 0.0) / mix(0.10, 0.26, A)) * tex * hay;
@@ -168,9 +173,61 @@ vec3 luzCohete(vec2 p, float A, vec3 luz, float motor) {
     float largo = 0.02 + 0.04 * uBajo * motor + 0.06 * uImpacto;
     float llama = exp(-abs(lat) / (0.0025 + 0.002 * motor)) * exp(-max(atras, 0.0) / largo)
                 * smoothstep(-0.002, 0.002, atras);
+    llama *= 0.9 + 0.1 * ruido(vec2(uTime * 9.0, 1.3));   // titila apenas, como un motor
+    // los nudos brillantes del escape (diamantes de choque): solo abajo, donde el aire es denso
+    float diamantes = 0.0;
+    for (int k = 1; k <= 4; k++) {
+        diamantes += exp(-pow((atras - float(k) * 0.006) / 0.0015, 2.0)) * exp(-float(k) * 0.35);
+    }
+    diamantes *= exp(-abs(lat) / 0.0018) * (1.0 - smoothstep(0.08, 0.35, A)) * motor;
     return vec3(1.0, 0.93, 0.80) * exp(-d / 0.003) * 1.8
          + vec3(1.0, 0.60, 0.28) * llama * motor * 1.2
+         + vec3(1.0, 0.85, 0.60) * diamantes * 0.9
          + luz * exp(-d / (0.07 + 0.03 * uBajo)) * 0.22 * (0.6 + 0.4 * motor);
+}
+
+// nubes altas que cruzan despacio: encendidas por el atardecer al principio, grises de noche
+vec3 nubes(vec3 col, vec2 p, float A) {
+    float alto = p.y - HY;
+    float n = fbm(vec2(p.x * 1.2 + uTime * 0.007, alto * 7.0) + vec2(0.0, 1.7));
+    float banda = smoothstep(0.04, 0.20, alto) * (1.0 - smoothstep(0.35, 0.65, alto));
+    float d = smoothstep(0.56, 0.80, n) * banda;
+    vec3 tono = mix(vec3(1.0, 0.58, 0.32) * 0.85, vec3(0.13, 0.16, 0.26), smoothstep(0.08, 0.55, A));
+    return mix(col, tono, d * 0.55);
+}
+
+// una estrella fugaz de vez en cuando, mas seguido en el breakdown; solo con el cielo oscuro
+vec3 fugaz(vec2 p) {
+    const float CICLO = 37.0, DURA = 0.9;
+    float n = floor(uTime / CICLO), fase = fract(uTime / CICLO) * CICLO;
+    if (fase > DURA || hash(vec2(n, 3.7)) > 0.25 + 0.45 * uAltura) return vec3(0.0);
+    vec2 inicio = vec2(mix(-0.8, 0.8, hash(vec2(n, 1.1))), mix(0.05, 0.42, hash(vec2(n, 2.2))));
+    vec2 dir = normalize(vec2(mix(-1.0, 1.0, hash(vec2(n, 5.5))), -0.6));
+    vec2 cabeza = inicio + dir * fase * 0.5, cola = cabeza - dir * 0.12;
+    vec2 ab = cabeza - cola, ap = p - cola;
+    float h = clamp(dot(ap, ab) / dot(ab, ab), 0.0, 1.0);
+    float brillo = exp(-length(ap - ab * h) / 0.0012) * h * h * sin(3.14159 * fase / DURA);
+    return vec3(0.9, 0.92, 1.0) * brillo * 0.9 * smoothstep(0.25, 0.6, uAltitud);
+}
+
+// la separacion de etapa: la pluma vieja se desprende y se va hacia atras por la estela y
+// hacia abajo, abriendose mientras se apaga; la primera etapa cae como una chispa. La primera
+// version era una burbuja que se inflaba donde fue la separacion, pero el cohete se mueve tan
+// despacio que en 35 s seguia ahi: quedaba un aro alrededor del cohete, el anillo de lente
+vec3 etapa(vec2 p, vec3 luz) {
+    if (uEtapaEdad < 0.0) return vec3(0.0);
+    float e = uEtapaEdad;
+    vec2 f = rumbo(uEtapaA);
+    vec2 c = ruta(uEtapaA) - f * (0.012 + 0.006 * e) - vec2(0.0, 0.0012 * e);
+    vec2 q = p - c;
+    float u = dot(q, f), v = dot(q, vec2(-f.y, f.x));
+    float largo = 0.03 + 0.006 * e, ancho = 0.012 + 0.003 * e;
+    float nube = exp(-(u * u) / (largo * largo) - (v * v) / (ancho * ancho));
+    float tex = 0.5 + 0.5 * fbm(vec2(u * 30.0 - e * 0.2, v * 30.0) + 3.0);
+    float sale = smoothstep(0.0, 1.5, e) * exp(-e / 14.0);
+    vec2 cae = ruta(uEtapaA) - f * 0.010 * e - vec2(0.0, 0.0010 * e * e);
+    float chispa = exp(-length(p - cae) / 0.0022) * exp(-e / 7.0) * 1.4;
+    return luz * nube * tex * sale * 0.9 + vec3(1.0, 0.70, 0.40) * chispa;
 }
 
 // el mar de marea: refleja al cohete como reflejaba a la luna
@@ -216,8 +273,11 @@ void main() {
         col = cielo(p, A);
         col += vec3(0.85, 0.9, 1.0) * estrellas(p) * smoothstep(0.25, 0.7, A)
              * smoothstep(0.05, 0.3, p.y - HY) * (0.5 + 0.5 * uAltura);
+        col += fugaz(p);
+        col = nubes(col, p, A);
         col = humo(col, p, A, mix(CREMA, PLATA, smoothstep(0.3, 0.9, A)));
         col += medusa(p, A, luz);
+        col += etapa(p, luz);
     } else {
         col = mar(vec2(p.x + 0.5 * W, 0.5 - p.y), vec2(c0.x + 0.5 * W, 0.5 - c0.y), 0.004, luz,
                   (0.35 + 0.65 * uCuerpo) * 0.6 * mix(1.0, 0.5, A));
