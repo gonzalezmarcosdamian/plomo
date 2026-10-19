@@ -9,6 +9,36 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-19 — Session 03 publicada: Cumple del 20, con un cohete
+
+**El set.** "Quiero hacer el master session 3 con la lista cumple del 20, revisala antes." La
+lista tenia 34 temas (4h05) en orden alfabetico, con 25 saltos de rueda, una radio edit y dos
+energias mal medidas (Aura y SAO en 1.4 con bombo en el 77 y el 84% de los compases). "El 150
+lo toque, es la session 2, tomalo como algo modelo" y "un tema por artista hace mucho que
+deprecamos esa regla". select_set con un pool de 27 armaba un arco que subia y bajaba;
+`ordenar_como_150.py` busca con el costo del 150 (bajar energia 12 por punto): 17 temas, rueda
+de a 1 en todos los pasos, Jumbo de pico al 76% y Boxer cerrando. Set 153, lista en Spotify.
+
+**El video, cuatro vueltas.** "Mas dinamico" -> `vuelo` (camara sobre paisajes que sube en el
+breakdown y pica al drop); "mas realismo y que no salte" -> paisajes con luz real y la camara
+calculada antes con el mismo terreno; "mas caricatura" -> `vuelo_caricatura`; "ni real ni estan
+buenas las caricaturas: como la luna, pero un cohete que va subiendo" -> `ascenso`. La primera
+version seguia al cohete con la camara y "esta raro": tres agentes (critica visual, como se ve
+un lanzamiento real, retencion en YouTube) coincidieron en la causa, y quedo con la gramatica de
+marea: plano fijo sobre el mismo mar, el cohete cruza el cuadro en el arco del giro por gravedad
+durante todo el set, humo que tapa, medusa arriba, separacion de etapas en los dos drops mas
+grandes. Las pruebas se borran despues de mirarlas y no se le abren videos sin que lo pida.
+
+**La mezcla se quedo sin memoria dos veces** (100 min): pyloudnorm copiaba la senal entera a
+float64. `lufs_integrado()` mide igual por partes. 99:39, -14.0 LUFS, 15 de 16 cambios ok. Se
+mezclo desde el target JSON porque otra sesion tenia la base tomada; la 153 se escribio en
+Rekordbox despues, con backup verificado.
+
+**Publicada:** https://youtu.be/mHRzfQ30VeQ ("publicalo ni bien termines"), destacada del canal y
+primera de las tres Sessions en la web.
+
+---
+
 ## 2026-10-19 — todo afuera de OneDrive: la biblioteca vive en Documents\Music
 
 "revisar y liberar espacio en one drive no usarlo, pone reglas", y después
