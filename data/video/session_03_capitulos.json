@@ -1,0 +1,108 @@
+{
+  "fps": 30,
+  "duracion_s": 5980.433333333333,
+  "capitulos": [
+    {
+      "t": 0.0,
+      "artista": "Julian Nates",
+      "titulo": "Trigger (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 409.3,
+      "artista": "Benja Molina",
+      "titulo": "Astrea (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 733.9,
+      "artista": "Paul Thomas, Dylhen",
+      "titulo": "Cosmos (DJ Ruby Remix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 1095.8,
+      "artista": "Redspace",
+      "titulo": "Split Personality (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 1379.1,
+      "artista": "Benja Molina",
+      "titulo": "Aura (Original Mix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 1741.1,
+      "artista": "Golan Zocher & Choopie",
+      "titulo": "SAO (Hernan Cattaneo & Simply City Extended Remix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 2197.5,
+      "artista": "Solis [US]",
+      "titulo": "Echosphere (Hernan Cattaneo & Simply City Extended Remix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 2653.9,
+      "artista": "Benja Molina",
+      "titulo": "Feeling (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 3015.8,
+      "artista": "djimboh",
+      "titulo": "Be Brave (Extended Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 3346.3,
+      "artista": "Melarmony",
+      "titulo": "Aurora (Extended Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 3629.6,
+      "artista": "Artic White",
+      "titulo": "Linea Zero (Extended Mix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 3960.1,
+      "artista": "Artic White",
+      "titulo": "Vivere (Extended Mix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 4385.0,
+      "artista": "Paul Thomas",
+      "titulo": "Jumbo (Jamie Stevens Remix)",
+      "tempo": 0.98387
+    },
+    {
+      "t": 4731.2,
+      "artista": "Artic White",
+      "titulo": "Flashback (Extended Mix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 5046.0,
+      "artista": "Ewan Rill",
+      "titulo": "Nature Pentacles (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 5313.5,
+      "artista": "Mariano Mellino & John Cosani",
+      "titulo": "Zhen Kai",
+      "tempo": 1.00826
+    },
+    {
+      "t": 5596.8,
+      "artista": "Boxer",
+      "titulo": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
+      "tempo": 0.99187
+    }
+  ]
+}
