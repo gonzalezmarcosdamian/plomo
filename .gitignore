@@ -178,3 +178,4 @@ data/video/*.npy
 # Enlace local del proyecto de Vercel (lo crea `vercel link`)
 web/*/.vercel/
 data/sync_pendiente.log
+data/pool_cumple_del_20.json

@@ -1,0 +1,35 @@
+{
+  "pool": "data/pool_cumple_del_20.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "permitir_repetir_entre_sets": true,
+  "_comentario": "2026-10-19: 'quiero hacer el master session 3, con la lista cumple del 20' y 'el 150 lo toque, es la session 2, tomalo como algo modelo'. El pool es SOLO la lista Cumple del 20 de Rekordbox (34 temas), menos 7 que no pasan el sonido del 150 o no se pueden mezclar: Hunting Flowers (radio edit de 2:50), Breakdown, Unknown Destination, Hope y Algorithm (graves 18-34 contra el piso de 43.1), Levantine (drop del 4%) y Human Hope (10 secciones). Boxer y Jumbo pasan aunque midan bajo: el DJ los marco heroicos (E 7.8) y lo que dijo pisa al numero. Aura y SAO tenian E 1.4 calculada con bombo en el 77% y 84% de los compases; van con 5.4 y 5.1 estimadas por bombo y bajo. Tope por artista 4, el de las reglas: 'un tema por artista hace mucho que deprecamos esa regla'.",
+  "sets": [
+    {
+      "num": 153,
+      "grupo": "Session 03",
+      "n": 16,
+      "name": "153. Session 03 · Cumple del 20 — 1h45 — 2026-10-19",
+      "_identidad": "La lista Cumple del 20 ordenada como la Session 02: sube de punta a punta sin desinflarse, pico con los dos heroicos que el DJ marco, rueda de a un paso donde se pueda.",
+      "duration_h": 1.75,
+      "bpm": [119, 126],
+      "e_pool": [0, 10],
+      "e_lo": 5.2,
+      "e_hi": 7.8,
+      "max_per_artist": 4,
+      "max_bpm_jump": 2.0,
+      "artists": ["*"],
+      "beam": 4000,
+      "anclas": ["6435521", "83535228"],
+      "anclas_en": {"6435521": [0.55, 0.95], "83535228": [0.55, 0.95]},
+      "prefer_ids": ["240643135", "167801376", "34532671", "57011885", "150569837", "212418278", "194212659", "218569494"],
+      "prefer_bonus": 3.0,
+      "arco": {
+        "pico_en_pct": 0.8,
+        "caida_post_pico_pct": 0.1,
+        "tolerancia_arco_frac": 0.35,
+        "penal_quedarse_en_la_rueda": 0.5
+      }
+    }
+  ]
+}

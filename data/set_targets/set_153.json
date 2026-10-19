@@ -1,0 +1,98 @@
+{
+  "name": "153. Session 03 · Cumple del 20 — 1h40 — 2026-10-19",
+  "duration_h": 0,
+  "bpm_range": [
+    100,
+    140
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "_nota": "2026-10-19: 'quiero hacer el master session 3, con la lista cumple del 20' / 'el 150 lo toque, es la session 2, tomalo como algo modelo' / 'un tema por artista hace mucho que deprecamos esa regla'. Pool: los 34 de Cumple del 20 menos 7 que no pasan el sonido del 150 o no se mezclan (ver data/set_configs/session_03_cumple.json). Orden con scripts/ordenar_como_150.py: bajar energia cuesta 12 por punto como en el 150, rueda de a 1 en todos los pasos, Jumbo y Boxer (heroicos marcados por el DJ) en el ultimo 30%. Boxer cierra: en esta lista solo se llega a su 1A desde un 2A, asi que la bajada antes de el es el respiro del cierre heroico. Propuesta para escuchar, NO aprobada todavia.",
+  "tracks": [
+    {
+      "artist": "Julian Nates",
+      "title": "Trigger (Original Mix)",
+      "content_id": "225449806"
+    },
+    {
+      "artist": "Benja Molina",
+      "title": "Astrea (Original Mix)",
+      "content_id": "240643135"
+    },
+    {
+      "artist": "Paul Thomas, Dylhen",
+      "title": "Cosmos (DJ Ruby Remix)",
+      "content_id": "58922837"
+    },
+    {
+      "artist": "Redspace",
+      "title": "Split Personality (Original Mix)",
+      "content_id": "218569494"
+    },
+    {
+      "artist": "Benja Molina",
+      "title": "Aura (Original Mix)",
+      "content_id": "167801376"
+    },
+    {
+      "artist": "Golan Zocher & Choopie",
+      "title": "SAO (Hernan Cattaneo & Simply City Extended Remix)",
+      "content_id": "165194326"
+    },
+    {
+      "artist": "Solis [US]",
+      "title": "Echosphere (Hernan Cattaneo & Simply City Extended Remix)",
+      "content_id": "103060278"
+    },
+    {
+      "artist": "Benja Molina",
+      "title": "Feeling (Original Mix)",
+      "content_id": "250555039"
+    },
+    {
+      "artist": "djimboh",
+      "title": "Be Brave (Extended Mix)",
+      "content_id": "151312213"
+    },
+    {
+      "artist": "Melarmony",
+      "title": "Aurora (Extended Mix)",
+      "content_id": "180136435"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Linea Zero (Extended Mix)",
+      "content_id": "100834281"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Vivere (Extended Mix)",
+      "content_id": "194212659"
+    },
+    {
+      "artist": "Paul Thomas",
+      "title": "Jumbo (Jamie Stevens Remix)",
+      "content_id": "83535228"
+    },
+    {
+      "artist": "Artic White",
+      "title": "Flashback (Extended Mix)",
+      "content_id": "231047567"
+    },
+    {
+      "artist": "Ewan Rill",
+      "title": "Nature Pentacles (Original Mix)",
+      "content_id": "232192413"
+    },
+    {
+      "artist": "Mariano Mellino & John Cosani",
+      "title": "Zhen Kai",
+      "content_id": "205292637"
+    },
+    {
+      "artist": "Boxer",
+      "title": "I'm Lighter With You (feat. GAALIA) (Extended Mix)",
+      "content_id": "6435521"
+    }
+  ]
+}
