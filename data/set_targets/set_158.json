@@ -1,0 +1,103 @@
+{
+  "name": "158. B2B · Grey Matter — 2h — 2026-10-20",
+  "carpeta": "0 Fechas",
+  "duration_h": 2.0,
+  "bpm_range": [
+    120,
+    124
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "tracks": [
+    {
+      "artist": "Leandro Murua, Martin Fredes",
+      "title": "Interference (Original Mix)",
+      "content_id": "236712792"
+    },
+    {
+      "artist": "Simon Vuarambon & Tantum",
+      "title": "Lake Of Fire",
+      "content_id": "71085652"
+    },
+    {
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot (Yonsh Remix)",
+      "content_id": "168290009"
+    },
+    {
+      "artist": "Kostya Outta",
+      "title": "Seguro (Paul James Nolan Remix)",
+      "content_id": "243274326"
+    },
+    {
+      "artist": "Gai Barone",
+      "title": "Fractals (HAFT Extended Remix)",
+      "content_id": "126065018"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Mandala",
+      "content_id": "185782457"
+    },
+    {
+      "artist": "Ruben Karapetyan",
+      "title": "Nostalgic Moments (Original Mix)",
+      "content_id": "97666808"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Beyond the Empty Air (Original Mix)",
+      "content_id": "64744960"
+    },
+    {
+      "artist": "Sirch",
+      "title": "Grey Matter (Original Mix)",
+      "content_id": "235479137"
+    },
+    {
+      "artist": "Ale Russo",
+      "title": "Wake Up (Original Mix)",
+      "content_id": "190246800"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
+      "content_id": "117129270"
+    },
+    {
+      "artist": "Cary Crank",
+      "title": "Echoes From Below (ISMAIL.M Remix)",
+      "content_id": "145319404"
+    },
+    {
+      "artist": "Lipa Tazzioli",
+      "title": "Complex Society (Original Mix)",
+      "content_id": "60013938"
+    },
+    {
+      "artist": "Tom Pavicich",
+      "title": "Olimpo (Ignacio Berardi Remix)",
+      "content_id": "34012266"
+    },
+    {
+      "artist": "Tonaco",
+      "title": "Hemp (Original Mix)",
+      "content_id": "266222162"
+    },
+    {
+      "artist": "Samuel (LK)",
+      "title": "Pulse (Casnik Remix)",
+      "content_id": "132154683"
+    },
+    {
+      "artist": "Melodiam",
+      "title": "No Way Out",
+      "content_id": "19814547"
+    },
+    {
+      "artist": "Analog Jungs",
+      "title": "Astral Beats",
+      "content_id": "224618284"
+    }
+  ]
+}

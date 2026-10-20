@@ -184,3 +184,6 @@ data/pool_cumple_del_20.json
 data/pool_155.json
 data/pool_156.json
 data/pool_session04.json
+
+# Pool reducido del set 158 (vecindario sonoro de Grey Matter), derivado de data/pool.json
+data/pool_158.json

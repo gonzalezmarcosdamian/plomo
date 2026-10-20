@@ -1,0 +1,546 @@
+{
+  "pool": "data/pool_158.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "permitir_repetir_entre_sets": true,
+  "_comentario": "Set 158: fecha B2B, prime time, 2h, una sola lista para los dos DJ. El hilo es Sirch - Grey Matter (235479137). El pool es reducido a proposito: data/pool_158.json (gitignoreado, como pool_155.json) es el vecindario sonoro de Grey Matter sacado de data/pool.json del 2026-10-20, con las E:1.4 estimadas por receta y marcadas en el propio tema (energy_calc, energy_fuente). Las listas largas de este config (prefer_ids, anclas_en, exclude_ids) salen de ese pool con scripts de analisis de scratch, no versionados: el criterio esta escrito en las notas. Las copias de groove_index.json y mundo_propio.json de antes de indexar Grey Matter quedaron en el scratchpad de la sesion del 2026-10-20.",
+  "sets": [
+    {
+      "num": 158,
+      "grupo": "Fecha B2B Grey Matter",
+      "name": "158. B2B · Grey Matter — 2h — 2026-10-20",
+      "carpeta": "0 Fechas",
+      "_identidad": "Dos horas que viven en el sonido de Grey Matter --sub pesado, oscuro, groove que no suelta-- y lo usan de bisagra: la primera hora orbita su tonalidad (9A-8A) sin bajar de prime time, Grey Matter cae a la hora como el punto mas pesado y oscuro del set, y la segunda hora sale de ahi por la rueda (7A-6A), toca el pico con un solo detonante y entrega subiendo. Es una lista de los dos: el que agarra la hora recibe Grey Matter.",
+      "_contexto": "El DJ, 2026-10-20: 'tengo que hacer para una fecha b2b una lista de 2 horas sobre este tema. Nuestro hilo conductor es la cancion gray matter'. Respuestas: el tema es Sirch - Grey Matter (Original Mix) [Sirch], 122 BPM, 8A, 5:22; 'El sonido del tema manda' (todo el set en su vecindario sonoro y Grey Matter en el momento clave, a decidir); 'La lista es de los dos' (una sola lista de 2h, sin repartir bloques); PRIME TIME, energia media-alta sostenida, modelo el 150. Sin fecha todavia: el nombre lleva 2026-10-20 y se renombra cuando la diga (build_set.py no renombra una playlist que ya existe: renombrar a mano).",
+      "_nota_vecindario": "Distancia euclidea a Grey Matter sobre rasgos z-normalizados de data/recetas/lib (2742 recetas, 30 indexadas el 2026-10-20 en 119-125 BPM): sonido (sub, densidad media, medio, aire, rango dinamico, LUFS) y forma (largo del breakdown principal, posicion y largo del drop final, cantidad de secciones). Grey Matter mide sub 78.9 (percentil 1.00 de la biblioteca), color p0.04, LUFS -8.3, rango 3.5 dB, tres secciones (groove 73 compases, breakdown de 7, drop de 73). Pool: 120-124 BPM, rueda a <= 2 de 8A, generos del config, sin vetos; nucleo = los 120 mas cercanos (dist <= 3.88) + 33 intensos (E >= 6.6, dist <= 4.56) para que el pico tenga combustible. prefer_ids: los 40 mas cercanos sin contar los excluidos (dist 2.12 a 3.41), prefer_bonus 1.5 (el tope de una fecha). Mediana de distancia del set elegido 3.46.",
+      "_nota_grey_matter": "VA EN EL GIRO, a la hora (ventana [0.50, 0.65] del tiempo: cae en el tema 9, a la 1:00). Medido con este mismo config moviendo SOLO esa ventana (beam 8000): A abre [0, 0.05]: costo -55.9, arranca en 5.2, corr posicion-energia +0.34, 2 saltos de rueda de 2, cierra en 6.6, distancia mediana a Grey Matter 3.72 | D libre (el selector lo pone tercero, a los 0:14): costo -58.6, corr +0.32, 2 saltos de 2 (sale de Grey Matter 8A-6A), cierra en 6.6 | B1 [0.40, 0.55] tema 8 a los 0:52: costo -55.4, corr +0.31, 1 salto de 2 PERO es la entrada a Grey Matter (6A-8A), cierra en 6.8 | B2 [0.50, 0.65] tema 9 a la 1:00: costo -54.9, corr +0.27, 1 salto de 2 (en el tema 2, lejos de Grey Matter), entra y sale 8A-8A-7A, cierra subiendo 6.3-6.8-6.9-7.0, distancia 3.46 | C pico [0.70, 0.85] tema 12 a la 1:24: costo -53.0, corr +0.24, 2 saltos de 2 (entra a Grey Matter 10A-8A), Grey Matter a 12 minutos del detonante, cierra en 6.8 | E cierre [0.88, 1.0] tema 15 a la 1:45: costo -55.2, corr +0.28, cierra en 6.6. El 150, modelo de prime time: arranca 7.1, valle a la 1:00 (Pure Junction 5.9), segundo pico a la 1:07-1:15 (Wakefeld 7.6, Olimpo 7.9), cierra 7.0-7.5; corr -0.33, 0 saltos de 2, 53% quieto en la rueda. B2 es el que repite esa forma: el valle a la hora es Grey Matter, el pico llega a la 1:32 y el cierre sube. Por que no el pico: la E de Grey Matter es 5.2 estimada (IQR 4.8-5.8); en la ventana del pico es un pozo de 5.2 entre dos 7.x, justo donde detonantes.ventana_pct pone el tema que rompe. Por que no la apertura: es el extremo del vecindario en graves y en oscuridad, y abrir con el deja al resto del set solo para aclararse. Que el selector libre lo mande al principio (D, el costo mas bajo) no es criterio: el costo lee su E estimada, baja, y la pone donde el arco esta mas bajo. En la bisagra es el momento mas pesado y mas oscuro del set: Beyond the Empty Air (graves 60.0, color 0.19) -> Grey Matter (78.9, 0.04) -> Wake Up (72.7, 0.19), en 8A-8A-7A. Si en la escucha el DJ lo siente de pico, C esta medido arriba: es cambiar la ventana de 235479137 en anclas_en.",
+      "_nota_arco": "Arco de fecha PRIME TIME, sostener y entregar: e_lo 6.4, e_hi 7.2, pico_en_pct 0.75, caida 0.3, e_pool 5.0-8.0. tolerancia_arco_frac 0.5, ARRIBA del 0.3 que se usa en una fecha: con 0.3 y todo lo demas igual salen 3 saltos de rueda de 2 (uno entrando a Grey Matter, 6A-8A) y 24% de pasos quietos en la rueda, con la misma correlacion posicion-energia (+0.28 contra +0.27); con 0.5, 1 salto y 41% quieto (150: 0 y 53%; pros: 15% de saltos de 2 y 29% quieto). key_hogar 8A (la de Grey Matter) con peso_hogar 0.6: con 0.3 y todo lo demas igual el set entra y sale de Grey Matter con dos saltos de 2 (6A-8A-6A), suma 3 en total y cierra en 6.6.",
+      "_nota_ventanas": "anclas_en, generado desde pool_158: (1) Grey Matter [0.50, 0.65]. (2) Nada debajo de 6.4 despues del 88% (la fecha entrega arriba; mismo recurso que el 154). (3) El primer tema no baja de 6.2, y nada debajo de 6.0 antes del 25% (prime time recibe la pista hecha: el 150 no baja de 6.2 en sus primeros 45 minutos; en las pruebas sin este piso arrancaba en 5.8 o metia un 5.4 a los 7 minutos). (4) Los detonantes (E >= 7.5) solo en [0.70, 0.85], que es detonantes.ventana_pct: el selector no lo aplica solo. Entra uno (Olimpo 7.9 a la 1:32), dentro de detonantes.cantidad_por_set_2h [1, 2]. Las fracciones son del tiempo objetivo (2h), no del largo crudo del archivo.",
+      "_nota_energia": "Dos E estimadas por receta (la DB dice 1.4 por el fallo del cue engine): Grey Matter 5.2 (IQR 4.8-5.8; con el bajo en el compas 1 tomado como conocido da 6.7, porque la formula lo cuenta como desconocido) y Cosmic Dot (Yonsh Remix) 6.0. La formula mide estructura, no presion: Grey Matter no tiene intro, su breakdown dura 14 s y suena a -8.3 LUFS con 3.5 dB de rango. Despues de la escucha, la energia percibida del DJ va a data/energia_percibida.json y pisa estas.",
+      "_nota_exclusiones": "Fuera Mind Echoes - Visible World (33578155), que esta en el 157 (set consecutivo: repeticion.repetidos_entre_sets_consecutivos = 0). Fuera las otras versiones de temas que ya tienen una en el pool, porque se escuchan como el mismo tema: Cary Crank - Echoes From Below (Extended Mix) 257221487 y (Weird Sounding Dude Remix) 191933243 (queda ISMAIL.M Remix), y Ruben Karapetyan, Maze 28 - Cosmic Dot (The Wash Remix) 123844472 (queda Yonsh Remix). Los seis que estaban en el 154-156 ya habian salido al armar el pool (cruce por artista+titulo).",
+      "_nota_tocado": "Lo tocado se informa, no se filtra (plomo.tocados). Tocados el 2026-10-19, un dia antes de armar esto: Olimpo (3 veces en total), Seguro (2) y Astronauts Nightmares (1). Olimpo y Seguro ademas estan en el 150, que es la Session 02 publicada. Nostalgic Moments: 1 vez, 2026-06-12. Los otros 14 no figuran en djmdHistory. Medido con este config excluyendo esos tres: cambian 7 temas (salen tambien Mandala, Wake Up, Hemp y No Way Out; entran Dock, Machu Picchu, Osmio, Strawberry Cake, Dimension Of Space, Shrouded Glint y Sinking Sky), el pico baja a 7.6 (Strawberry Cake), Grey Matter se entra con salto de 2 (Machu Picchu 6A-8A), la distancia mediana a Grey Matter sube de 3.46 a 3.70 y el costo empeora de -54.9 a -52.5.",
+      "_nota_repetidos": "0 temas del 154, 155, 156 y 157, cruzando por ContentID, por artista+titulo y por titulo sin parentesis (el unico cruce por titulo es Ale Russo - Wake Up contra Amonita - Wake Up del 156: otro tema). Del 150 entran Olimpo y Seguro; del 151, Olimpo y Pulse (Casnik Remix); del 152, Beyond the Empty Air y Astral Beats. Ninguno es consecutivo.",
+      "_nota_numero": "158: libre en djmdPlaylist (consultado en modo solo lectura) y en data/set_targets el 2026-10-20. El mas alto en la DB es 157.",
+      "_nota_beam": "16000. Con 8000 sale el mismo set tema por tema. Una variante anterior (peso_hogar 0.3, sin el piso del 25%, detonantes hasta 0.88) dio el mismo set con 8000, 16000 y 30000: el resultado no depende del ancho de la busqueda.",
+      "_nota_n": "duration_h 2.0: el selector calcula 18 temas desde la mediana del pool (densidad.tracks_por_hora 8.8 x 2h = 17.6). Crudo 132 min, 1h55 tocable con mezclas de 1 minuto (densidad.largo_con_mezclas).",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        124
+      ],
+      "e_pool": [
+        5.0,
+        8.0
+      ],
+      "e_lo": 6.4,
+      "e_hi": 7.2,
+      "max_per_artist": 4,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Melodic House & Techno",
+        "Organic House",
+        "Deep House",
+        "House",
+        "Melodic House"
+      ],
+      "arco": {
+        "pico_en_pct": 0.75,
+        "caida_post_pico_pct": 0.3,
+        "tolerancia_arco_frac": 0.5,
+        "key_hogar": "8A",
+        "peso_hogar": 0.6
+      },
+      "anclas": [
+        "235479137"
+      ],
+      "prefer_ids": [
+        "205860895",
+        "250977018",
+        "190246800",
+        "233872134",
+        "222300451",
+        "47137834",
+        "142777408",
+        "19702825",
+        "184689400",
+        "196344086",
+        "66961608",
+        "27652637",
+        "254829790",
+        "241151867",
+        "155585888",
+        "126363",
+        "48269763",
+        "100304329",
+        "67065528",
+        "261629930",
+        "60013938",
+        "102923995",
+        "145319404",
+        "82572381",
+        "168290009",
+        "219787494",
+        "4055822",
+        "148486898",
+        "133668172",
+        "196041740",
+        "185782457",
+        "63761198",
+        "126065018",
+        "51091876",
+        "224618284",
+        "51564987",
+        "130040480",
+        "249841040",
+        "259909618",
+        "27462322"
+      ],
+      "prefer_bonus": 1.5,
+      "beam": 16000,
+      "exclude_ids": [
+        "33578155",
+        "257221487",
+        "191933243",
+        "123844472"
+      ],
+      "anclas_en": {
+        "100126023": [
+          0.25,
+          0.88
+        ],
+        "100304329": [
+          0.25,
+          0.88
+        ],
+        "102923995": [
+          0.25,
+          0.88
+        ],
+        "105409768": [
+          0.0,
+          0.88
+        ],
+        "110600604": [
+          0.25,
+          0.88
+        ],
+        "116298462": [
+          0.0,
+          0.88
+        ],
+        "11695901": [
+          0.25,
+          0.88
+        ],
+        "12042556": [
+          0.7,
+          0.85
+        ],
+        "126065018": [
+          0.25,
+          0.88
+        ],
+        "126363": [
+          0.25,
+          0.88
+        ],
+        "126721568": [
+          0.0,
+          0.88
+        ],
+        "126926843": [
+          0.0,
+          0.88
+        ],
+        "130040480": [
+          0.25,
+          0.88
+        ],
+        "133668172": [
+          0.25,
+          0.88
+        ],
+        "138979807": [
+          0.25,
+          0.88
+        ],
+        "14005975": [
+          0.25,
+          0.88
+        ],
+        "142777408": [
+          0.25,
+          0.88
+        ],
+        "147366659": [
+          0.25,
+          0.88
+        ],
+        "148486898": [
+          0.25,
+          0.88
+        ],
+        "150569837": [
+          0.25,
+          0.88
+        ],
+        "155585888": [
+          0.25,
+          0.88
+        ],
+        "160813267": [
+          0.25,
+          0.88
+        ],
+        "16467566": [
+          0.25,
+          0.88
+        ],
+        "164770699": [
+          0.25,
+          0.88
+        ],
+        "165686657": [
+          0.25,
+          0.88
+        ],
+        "168290009": [
+          0.04,
+          0.88
+        ],
+        "168586216": [
+          0.7,
+          0.85
+        ],
+        "171553279": [
+          0.25,
+          0.88
+        ],
+        "177548389": [
+          0.25,
+          0.88
+        ],
+        "179295197": [
+          0.0,
+          0.88
+        ],
+        "182281408": [
+          0.0,
+          0.88
+        ],
+        "184689400": [
+          0.25,
+          0.88
+        ],
+        "185782457": [
+          0.25,
+          0.88
+        ],
+        "186084845": [
+          0.25,
+          0.88
+        ],
+        "187915469": [
+          0.25,
+          0.88
+        ],
+        "188192990": [
+          0.25,
+          0.88
+        ],
+        "196344086": [
+          0.25,
+          0.88
+        ],
+        "196609253": [
+          0.25,
+          0.88
+        ],
+        "196839835": [
+          0.25,
+          0.88
+        ],
+        "19702825": [
+          0.25,
+          0.88
+        ],
+        "198968914": [
+          0.25,
+          0.88
+        ],
+        "199362354": [
+          0.25,
+          0.88
+        ],
+        "199367898": [
+          0.25,
+          0.88
+        ],
+        "205860895": [
+          0.25,
+          0.88
+        ],
+        "207638313": [
+          0.25,
+          0.88
+        ],
+        "213790542": [
+          0.0,
+          0.88
+        ],
+        "217024777": [
+          0.25,
+          0.88
+        ],
+        "217170656": [
+          0.25,
+          0.88
+        ],
+        "219649438": [
+          0.0,
+          0.88
+        ],
+        "219787494": [
+          0.0,
+          0.88
+        ],
+        "221636509": [
+          0.7,
+          0.85
+        ],
+        "222300451": [
+          0.25,
+          0.88
+        ],
+        "231295892": [
+          0.25,
+          0.88
+        ],
+        "233872134": [
+          0.25,
+          0.88
+        ],
+        "235124646": [
+          0.25,
+          0.88
+        ],
+        "237440936": [
+          0.25,
+          0.88
+        ],
+        "240770437": [
+          0.25,
+          0.88
+        ],
+        "241151867": [
+          0.25,
+          0.88
+        ],
+        "245978587": [
+          0.25,
+          0.88
+        ],
+        "249841040": [
+          0.25,
+          0.88
+        ],
+        "250977018": [
+          0.25,
+          0.88
+        ],
+        "254829790": [
+          0.25,
+          0.88
+        ],
+        "255135448": [
+          0.0,
+          0.88
+        ],
+        "259909618": [
+          0.25,
+          0.88
+        ],
+        "261128220": [
+          0.25,
+          0.88
+        ],
+        "261629930": [
+          0.25,
+          0.88
+        ],
+        "261633312": [
+          0.25,
+          0.88
+        ],
+        "263301644": [
+          0.25,
+          0.88
+        ],
+        "263348196": [
+          0.25,
+          0.88
+        ],
+        "265721170": [
+          0.25,
+          0.88
+        ],
+        "266222162": [
+          0.0,
+          0.88
+        ],
+        "268083018": [
+          0.25,
+          0.88
+        ],
+        "27462322": [
+          0.04,
+          0.88
+        ],
+        "27652637": [
+          0.25,
+          0.88
+        ],
+        "27992395": [
+          0.25,
+          0.88
+        ],
+        "33815411": [
+          0.25,
+          0.88
+        ],
+        "34012266": [
+          0.7,
+          0.85
+        ],
+        "36374480": [
+          0.25,
+          0.88
+        ],
+        "38395622": [
+          0.25,
+          0.88
+        ],
+        "40504915": [
+          0.7,
+          0.85
+        ],
+        "4055822": [
+          0.25,
+          0.88
+        ],
+        "43960039": [
+          0.25,
+          0.88
+        ],
+        "46529143": [
+          0.25,
+          0.88
+        ],
+        "47137834": [
+          0.25,
+          0.88
+        ],
+        "48269763": [
+          0.04,
+          0.88
+        ],
+        "51564987": [
+          0.25,
+          0.88
+        ],
+        "53315809": [
+          0.25,
+          0.88
+        ],
+        "5442525": [
+          0.04,
+          0.88
+        ],
+        "54585434": [
+          0.25,
+          0.88
+        ],
+        "60013938": [
+          0.25,
+          0.88
+        ],
+        "63761198": [
+          0.25,
+          0.88
+        ],
+        "65300948": [
+          0.25,
+          0.88
+        ],
+        "66766781": [
+          0.7,
+          0.85
+        ],
+        "66961608": [
+          0.04,
+          0.88
+        ],
+        "69232687": [
+          0.0,
+          0.88
+        ],
+        "69716644": [
+          0.25,
+          0.88
+        ],
+        "72311255": [
+          0.25,
+          0.88
+        ],
+        "78502363": [
+          0.25,
+          0.88
+        ],
+        "79158920": [
+          0.25,
+          0.88
+        ],
+        "8218025": [
+          0.25,
+          0.88
+        ],
+        "82572381": [
+          0.25,
+          0.88
+        ],
+        "84247083": [
+          0.0,
+          0.88
+        ],
+        "91006655": [
+          0.04,
+          0.88
+        ],
+        "94329225": [
+          0.25,
+          0.88
+        ],
+        "94334109": [
+          0.25,
+          0.88
+        ],
+        "98116821": [
+          0.0,
+          0.88
+        ],
+        "98126339": [
+          0.25,
+          0.88
+        ],
+        "235479137": [
+          0.5,
+          0.65
+        ]
+      }
+    }
+  ]
+}

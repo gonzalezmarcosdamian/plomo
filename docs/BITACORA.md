@@ -9,6 +9,30 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-20 — set 158, una fecha B2B con Grey Matter de hilo conductor
+
+"tengo que hacer para una fecha b2b una lista de 2 horas sobre este tema. Nuestro hilo
+conductor es la cancion gray matter". Es Sirch – Grey Matter (122, 8A), bajado de Muzpa e
+importado con `importar.py`. Contestó: el sonido del tema manda, una sola lista para los dos,
+prime time. Fecha todavia sin dar: el nombre lleva la de hoy.
+
+**El vecindario.** Grey Matter es lo mas pesado en graves de la biblioteca (sub percentil 1.00)
+y de lo mas oscuro (color 0.04). `data/pool_158.json` junta los 153 temas mas cercanos por
+distancia sobre sonido y forma de 2742 recetas (se indexaron 30 que faltaban). Su E:1.4 es el
+bug conocido: estimada por receta en 5.2 y no escrita en la base.
+
+**Donde cae.** Se probaron seis ventanas con el mismo config. Va en el giro (#9, minuto 60):
+es la que repite la forma del 150, con el valle a la hora, Olimpo de pico a la 1:32 y un cierre
+que sube a 7.0. El selector libre lo ponia primero porque lee la E estimada baja, no por
+criterio. Tres temas se tocaron el 19 (Olimpo, Seguro, Astronauts Nightmares): se informan,
+no se filtran, y sacarlos da peor set.
+
+**Escrito** con backup verificado (`antes_set_158`), 18/18 en Spotify y validado.
+`audit_sets` marca 4 transiciones flojas que son las dos E:1.4 de la base, y 41% de pasos
+quietos en la rueda (el 150 tiene 53%).
+
+---
+
 ## 2026-10-19 — Session 03 publicada: Cumple del 20, con un cohete
 
 **El set.** "Quiero hacer el master session 3 con la lista cumple del 20, revisala antes." La
