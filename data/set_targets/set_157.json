@@ -7,7 +7,7 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": "2026-10-19: 'hace con esa lista de spoty mejoras y arma la lista siguiente, con modelo de 150, asi esa estrategia, y armemos la session 4 con eso'. Base: la lista de Spotify del DJ 'Progressive House Melodico Ascendente' (18). Se quedan 9: los que no tienen un problema medido. Salen: Remember Me (118 BPM, habia que estirarla 4%), Blazing Ice (9 secciones, drop 11%), You Got It y Feel It (11 secciones), Ghost Rider (graves 21 contra el piso de 43), Blaze y Luminor (Nicolas Viana tenia 6 y el tope es 4; esos dos miden peor), el Winged repetido y Sharks (no esta en la biblioteca ni en Muzpa). Entran 9 de la biblioteca que pasan los cuatro pisos del sonido del 150, se parecen en energia, densidad, graves y color a los que quedan, son de los mismos generos, nunca los toco y no salieron en las Sessions 01-03. Orden con ordenar_como_150.py, los 9 del DJ fijos: la rueda da la vuelta entera de 4A a 2A de a un paso. Ash & Ember tambien esta en el 154 (fecha del 23/10). Propuesta para escuchar; el 2026-10-20 el DJ la hizo Session 04: 'haceme la session 4 en privado en youtube de este set'. Mezcla 106.8 min. 2026-10-20: sale Habitatt - Fly With Me, que era de los 9 que sume yo: 'El tema fly for me algo asi no va', 'Sacalo y rehace'. Sin reemplazo: Zuccasam (5A) pasa directo a Fog Machine (6B). Sale tambien Kyotto - District (57011885), otro de los mios: 'district tampoco va'. Sin reemplazo: Mind Echoes (9A) pasa directo a Winged (10B). Mezcla de 16: 96.4 min.",
+  "_nota": "2026-10-19: 'hace con esa lista de spoty mejoras y arma la lista siguiente, con modelo de 150, asi esa estrategia, y armemos la session 4 con eso'. Base: la lista de Spotify del DJ 'Progressive House Melodico Ascendente' (18). Se quedan 9: los que no tienen un problema medido. Salen: Remember Me (118 BPM, habia que estirarla 4%), Blazing Ice (9 secciones, drop 11%), You Got It y Feel It (11 secciones), Ghost Rider (graves 21 contra el piso de 43), Blaze y Luminor (Nicolas Viana tenia 6 y el tope es 4; esos dos miden peor), el Winged repetido y Sharks (no esta en la biblioteca ni en Muzpa). Entran 9 de la biblioteca que pasan los cuatro pisos del sonido del 150, se parecen en energia, densidad, graves y color a los que quedan, son de los mismos generos, nunca los toco y no salieron en las Sessions 01-03. Orden con ordenar_como_150.py, los 9 del DJ fijos: la rueda da la vuelta entera de 4A a 2A de a un paso. Ash & Ember tambien esta en el 154 (fecha del 23/10). Propuesta para escuchar; el 2026-10-20 el DJ la hizo Session 04: 'haceme la session 4 en privado en youtube de este set'. Mezcla 106.8 min. 2026-10-20: sale Habitatt - Fly With Me, que era de los 9 que sume yo: 'El tema fly for me algo asi no va', 'Sacalo y rehace'. Sin reemplazo: Zuccasam (5A) pasa directo a Fog Machine (6B). Sale tambien Kyotto - District (57011885), otro de los mios: 'district tampoco va'. Sin reemplazo: Mind Echoes (9A) pasa directo a Winged (10B). Mezcla de 16: 96.4 min. Cambia Lee Burridge - Fading Out (lugar 6): 'cambia fading out tambien', reemplazarlo por otro (cambio de lugar, no veto). Entra Guy J - Worlds Apart: el 2 de 60 en parecido con los del DJ, de su mundo, sin tocar; Nanda (6A) -> Worlds Apart (8A) es rueda a 2. reemplazar.py proponia Cary Crank - Inner Atlas (Kyotto Remix), que mira solo los vecinos.",
   "tracks": [
     {
       "artist": "Hafex, MAXTAGE",
@@ -35,9 +35,9 @@
       "content_id": "208082265"
     },
     {
-      "artist": "Lee Burridge",
-      "title": "Fading Out (Extended Mix)",
-      "content_id": "126949236"
+      "artist": "Guy J",
+      "title": "Worlds Apart (Original Mix)",
+      "content_id": "194919017"
     },
     {
       "artist": "Nicolas Viana",

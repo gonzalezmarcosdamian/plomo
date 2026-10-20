@@ -3381,7 +3381,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 3 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
 | 4 | Nicolas Viana | Fog Machine (Extended Mix) | 124 | 5.8 |
 | 5 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
-| 6 | Lee Burridge | Fading Out (Extended Mix) | 122 | 6.8 |
+| 6 | Guy J | Worlds Apart (Original Mix) | 122 | 5.9 |
 | 7 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
 | 8 | Mind Echoes | Visible World (Original Mix) | 121 | 5.9 |
 | 9 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |

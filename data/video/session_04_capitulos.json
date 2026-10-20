@@ -1,6 +1,6 @@
 {
   "fps": 30,
-  "duracion_s": 5785.866666666667,
+  "duracion_s": 5770.166666666667,
   "capitulos": [
     {
       "t": 0.0,
@@ -34,66 +34,66 @@
     },
     {
       "t": 1677.1,
-      "artista": "Lee Burridge",
-      "titulo": "Fading Out (Extended Mix)",
+      "artista": "Guy J",
+      "titulo": "Worlds Apart (Original Mix)",
       "tempo": 1.0041
     },
     {
-      "t": 2100.3,
+      "t": 2084.6,
       "artista": "Nicolas Viana",
       "titulo": "Coral (Extended Mix)",
       "tempo": 1.0041
     },
     {
-      "t": 2398.1,
+      "t": 2382.4,
       "artista": "Mind Echoes",
       "titulo": "Visible World (Original Mix)",
       "tempo": 1.0124
     },
     {
-      "t": 2774.2,
+      "t": 2758.6,
       "artista": "Nicolas Viana",
       "titulo": "Winged (Original Mix)",
       "tempo": 1.0124
     },
     {
-      "t": 3134.7,
+      "t": 3119.1,
       "artista": "Ramiro Drisdale",
       "titulo": "Glade (Original Mix)",
       "tempo": 1.0041
     },
     {
-      "t": 3636.3,
+      "t": 3620.6,
       "artista": "Nicolas Viana",
       "titulo": "Kalira (Extended Mix)",
       "tempo": 1.0041
     },
     {
-      "t": 3965.4,
+      "t": 3949.7,
       "artista": "Simon Vuarambon",
       "titulo": "Stamina (Extended Mix)",
       "tempo": 1.0124
     },
     {
-      "t": 4278.9,
+      "t": 4263.2,
       "artista": "Second Sine",
       "titulo": "Motor City (Sebastian Haas Remix)",
       "tempo": 0.99593
     },
     {
-      "t": 4623.7,
+      "t": 4608.0,
       "artista": "Rauschhaus, Greta Meier",
       "titulo": "Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
       "tempo": 0.9879
     },
     {
-      "t": 4999.9,
+      "t": 4984.2,
       "artista": "Danny Howells, Lloyd Barwood",
       "titulo": "One More Sky (Original Mix)",
       "tempo": 0.9879
     },
     {
-      "t": 5344.7,
+      "t": 5329.0,
       "artista": "Lee Burridge, Lost Desert",
       "titulo": "Ash & Ember (Extended Mix)",
       "tempo": 0.99593

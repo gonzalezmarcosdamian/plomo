@@ -36,8 +36,14 @@ rechazado de esta vez no era ajeno.
 - Lo que el DJ elige se respeta aunque sea ajeno (la apertura del 157 lo es). Lo ajeno que
   agrega el buscador sale del pool: `ordenar_como_150.py` lo saca por defecto, y con
   `--con-ajenos` lo deja, marcado.
-- Todavia no hay un corte de distancia: en la misma franja de 0.50 a 0.54 quedaron otros tres
-  temas que el DJ no comento. Con dos casos no alcanza para escribir uno.
+- Todavia no hay un corte de distancia, pero la franja habla. Despues el DJ pidio cambiar un
+  tercero, tambien de la franja lejana (el 30, distancia 0.54): de los 5 que sume desde 0.50
+  para abajo salieron 3, y de los 4 mas cercanos (0.14 a 0.41), ninguno. Quedan dos de esa
+  franja sin comentar. Es poco para escribir un numero, y alcanza para no volver a llenar
+  huecos desde ahi.
+- El reemplazo de un lugar se elige igual: `reemplazar.py` mira solo los vecinos y propuso un
+  remix de Kyotto (el artista de uno de los rechazados). Entro el mas parecido a lo del DJ que
+  cabia, el 2 de 60, aunque la rueda saltara a 2.
 
 ---
 
