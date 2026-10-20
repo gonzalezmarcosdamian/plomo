@@ -9,6 +9,7 @@ Debe correrse DESPUES de:
 Uso:
   python scripts/build_set.py 16          # construye set 16
   python scripts/build_set.py 16 --dry    # muestra el orden sin escribir
+  python scripts/build_set.py 16 --renombrar  # ademas le pone a la playlist el nombre de la receta
   python scripts/build_set.py --all       # construye todos los sets con target JSON
 """
 import re
@@ -88,6 +89,12 @@ def create_playlist(con, name: str, parent_id: str = SETS_ARMADOS_PARENT) -> str
         VALUES (?,0,?,NULL,0,?,NULL,?,0,0,0,0,NULL,?,?,?)""",
         (pl_id, name, parent_id, str(uuid_lib.uuid4()), max_usn + 1, ts, ts))
     return pl_id
+
+
+def rename_playlist(con, pl_id: str, name: str, ts: str) -> None:
+    max_usn = con.execute("SELECT MAX(rb_local_usn) FROM djmdPlaylist").fetchone()[0] or 0
+    con.execute("UPDATE djmdPlaylist SET Name=?, rb_local_synced=0, rb_local_usn=?, updated_at=?"
+                " WHERE ID=?", (name, max_usn + 1, ts, pl_id))
 
 
 def resolve_parent(con, nombre: str | None) -> str:
@@ -294,7 +301,7 @@ def update_sets_log(set_num: int, name: str, tracks: list[dict], target: dict) -
     print(f"\nsets_log.md actualizado: Set {set_num:02d}")
 
 
-def build_one(set_num: int, dry: bool = False) -> None:
+def build_one(set_num: int, dry: bool = False, rename: bool = False) -> None:
     target = load_target(set_num)
     if not target:
         print(f"ERROR: No existe data/set_targets/set_{set_num:02d}.json")
@@ -372,12 +379,26 @@ def build_one(set_num: int, dry: bool = False) -> None:
 
     print_tracklist(tracks, pl_name)
 
+    # La playlist se encuentra por numero, asi que al cambiarle el nombre a la receta (la
+    # duracion real, despues de mezclar) Rekordbox se quedaba con el viejo: el 157 decia 1h47
+    # con 96 minutos de mezcla (2026-10-20). Solo con --renombrar: en 14 de 120 recetas el
+    # nombre bueno es el de Rekordbox (el 150 lleva ahi el que aprobo el DJ y en la receta uno
+    # viejo), y renombrar siempre los pisaba.
+    nuevo_nombre = target.get("name")
+    renombrar = bool(rename and playlist and nuevo_nombre and nuevo_nombre != pl_name)
+
     if dry:
+        if renombrar:
+            print(f"\n  [dry] se renombraria: {pl_name!r} -> {nuevo_nombre!r}")
         print("\n[DRY RUN] No se escribio nada en la DB")
         con.close()
         return
 
     ts = now_str()
+    if renombrar:
+        rename_playlist(con, pl_id, nuevo_nombre, ts)
+        print(f"  renombrada: {pl_name!r} -> {nuevo_nombre!r}")
+        pl_name = nuevo_nombre
     n = rebuild_playlist(con, pl_id, tracks, ts)
     con.commit()
     con.close()
@@ -421,7 +442,7 @@ def main() -> None:
         print(f"ERROR: '{sys.argv[1]}' no es un numero de set valido")
         return
 
-    build_one(set_num, dry=dry)
+    build_one(set_num, dry=dry, rename="--renombrar" in sys.argv)
 
 
 if __name__ == "__main__":

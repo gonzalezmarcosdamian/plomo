@@ -3368,7 +3368,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 17 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.7 |
 
 
-## Set 157. 157. Session 04 · Melódico Ascendente — 1h47 — 2026-10-20
+## Set 157. 157. Session 04 · Melódico Ascendente — 1h36 — 2026-10-20
 **Armado:** 2026-10-20  
 **Duracion:** 0h  
 **Tracks:** 16  
