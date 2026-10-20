@@ -3394,30 +3394,29 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 16 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
 
 
-## Set 158. 158. B2B · Grey Matter — 2h — 2026-10-20
+## Set 158. 158. B2B · Gray Matter — 2h — 2026-10-20
 **Armado:** 2026-10-20  
 **Duracion:** 2.0h  
-**Tracks:** 18  
+**Tracks:** 17  
 **BPM range:** 120-124  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Leandro Murua, Martin Fredes | Interference (Original Mix) | 122 | 6.4 |
-| 2 | Simon Vuarambon & Tantum | Lake Of Fire | 122 | 6.8 |
-| 3 | Ruben Karapetyan, Maze 28 | Cosmic Dot (Yonsh Remix) | 121 | 1.4 |
-| 4 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 7.0 |
-| 5 | Gai Barone | Fractals (HAFT Extended Remix) | 122 | 5.9 |
-| 6 | Maze 28 | Mandala | 124 | 5.9 |
-| 7 | Ruben Karapetyan | Nostalgic Moments (Original Mix) | 121 | 7.4 |
-| 8 | Hobin Rude | Beyond the Empty Air (Original Mix) | 122 | 6.9 |
-| 9 | Sirch | Grey Matter (Original Mix) | 122 | 1.4 |
-| 10 | Ale Russo | Wake Up (Original Mix) | 121 | 6.5 |
-| 11 | Kamilo Sanclemente | Astronauts Nightmares (DJ Ruby Extended Remix) | 123 | 7.4 |
-| 12 | Cary Crank | Echoes From Below (ISMAIL.M Remix) | 121 | 6.9 |
-| 13 | Lipa Tazzioli | Complex Society (Original Mix) | 122 | 5.9 |
-| 14 | Tom Pavicich | Olimpo (Ignacio Berardi Remix) | 123 | 7.9 |
-| 15 | Tonaco | Hemp (Original Mix) | 121 | 6.3 |
-| 16 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
-| 17 | Melodiam | No Way Out | 122 | 6.9 |
-| 18 | Analog Jungs | Astral Beats | 120 | 7.0 |
+| 1 | Double Touch | Come With Me (Original Mix) | 122 | 6.8 |
+| 2 | KYOTTO | Knock Knock | 121 | 6.1 |
+| 3 | Kasper Koman | The Observer | 121 | 6.1 |
+| 4 | Kabi (AR), Ric Niels | Mutant | 121 | 7.2 |
+| 5 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
+| 6 | Kamilo Sanclemente | Auriga Moon (Original Mix) | 122 | 5.9 |
+| 7 | Alex O'Rion, Antrim | Imagine (Original Mix)  | 120 | 6.6 |
+| 8 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 7.0 |
+| 9 | Gai Barone | Fractals (Nicolas Viana Extended Remix) | 121 | 6.0 |
+| 10 | Erdem Yetim feat. Erman Danisment | Gray Matter (Original Mix) | 120 | 4.2 |
+| 11 | Maxi Degrassi | The Love Goes First (Original Mix)  | 120 | 6.4 |
+| 12 | Cary Crank | Deep Forest (Extended Mix) | 122 | 7.9 |
+| 13 | Double Touch | Gran Amigo (Original Mix) | 122 | 7.0 |
+| 14 | Dimas Mixon, Cendryma | Minicube (Original Mix) | 120 | 6.0 |
+| 15 | Alan Cerra | Blackout (Melodiam AR Remix) | 120 | 7.1 |
+| 16 | Gorkiz, Mind Echoes | Your Trust (Paul Hamilton Remix) | 122 | 6.6 |
+| 17 | Kamilo Sanclemente, M.O.S., Andre Moret | Perception (Original Mix) | 122 | 6.8 |
 

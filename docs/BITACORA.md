@@ -47,6 +47,30 @@ masterPlaylists6.xml queda en la fecha de creacion. Pendiente.
 
 ---
 
+## 2026-10-20 — el 158 cambia de Grey Matter: era el de Erdem Yetim
+
+"ese no creo que sea el grey matter es muy oscuro fijate cuales serian los mas coloridos o
+con brillo de los demas", y "editala". Sirch – Grey Matter estaba en el percentil 4 de color.
+Se midieron 14 versiones de Grey/Gray Matter de Muzpa con el mismo color de la biblioteca
+(medios por campana de aire, sobre la receta), bajadas a una carpeta de prueba y no a
+Descargas. La de mas color dentro del sonido: Erdem Yetim feat. Erman Danisment – Gray Matter
+(Jeahmon!, 120, 7A, percentil 84). El DJ la eligio.
+
+El 158 se rehizo alrededor de ese tema: 17 temas, color mediano 0.84 contra 0.26 del primero,
+Gray Matter en el giro a la 1:00 tocable, que es la unica ventana con la correlacion de los
+pros y sin saltos de rueda ni de BPM. Su E 4.2 es real: la intro mas larga de la biblioteca.
+0 repetidos con 154-157. Escrito con `--renombrar` (Grey -> Gray) y la misma lista de Spotify,
+17/17: Spotify no lo encontraba por el "feat." y se agrego a mano el single de 2020 (357 s
+contra 356 s del archivo; los otros dos son cortes de compilados mezclados).
+
+**El pen no esta al dia.** El Sync Manager de Rekordbox 7 no actualiza una lista que ya existe
+en el pen: el 157 quedo con Fading Out y "1h47" despues de tres syncs, aun con el arreglo de
+usn de `build_set` (cd498cb). El 158 nuevo va a tener el mismo problema. Pista sin probar: el
+`Timestamp` de cada lista en `masterPlaylists6.xml` es el de creacion y los scripts no lo tocan.
+Pendiente: Export Playlist del 157 y del 158 desde Rekordbox, o probar esa pista.
+
+---
+
 ## 2026-10-20 — set 158, una fecha B2B con Grey Matter de hilo conductor
 
 "tengo que hacer para una fecha b2b una lista de 2 horas sobre este tema. Nuestro hilo

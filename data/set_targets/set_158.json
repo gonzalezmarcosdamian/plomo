@@ -1,5 +1,5 @@
 {
-  "name": "158. B2B · Grey Matter — 2h — 2026-10-20",
+  "name": "158. B2B · Gray Matter — 2h — 2026-10-20",
   "carpeta": "0 Fechas",
   "duration_h": 2.0,
   "bpm_range": [
@@ -10,19 +10,39 @@
   "keep_order": true,
   "tracks": [
     {
-      "artist": "Leandro Murua, Martin Fredes",
-      "title": "Interference (Original Mix)",
-      "content_id": "236712792"
+      "artist": "Double Touch",
+      "title": "Come With Me (Original Mix)",
+      "content_id": "212068224"
     },
     {
-      "artist": "Simon Vuarambon & Tantum",
-      "title": "Lake Of Fire",
-      "content_id": "71085652"
+      "artist": "KYOTTO",
+      "title": "Knock Knock",
+      "content_id": "160507685"
     },
     {
-      "artist": "Ruben Karapetyan, Maze 28",
-      "title": "Cosmic Dot (Yonsh Remix)",
-      "content_id": "168290009"
+      "artist": "Kasper Koman",
+      "title": "The Observer",
+      "content_id": "156983367"
+    },
+    {
+      "artist": "Kabi (AR), Ric Niels",
+      "title": "Mutant",
+      "content_id": "165429937"
+    },
+    {
+      "artist": "Samuel (LK)",
+      "title": "Pulse (Casnik Remix)",
+      "content_id": "132154683"
+    },
+    {
+      "artist": "Kamilo Sanclemente",
+      "title": "Auriga Moon (Original Mix)",
+      "content_id": "160611663"
+    },
+    {
+      "artist": "Alex O'Rion, Antrim",
+      "title": "Imagine (Original Mix) ",
+      "content_id": "134503503"
     },
     {
       "artist": "Kostya Outta",
@@ -31,73 +51,48 @@
     },
     {
       "artist": "Gai Barone",
-      "title": "Fractals (HAFT Extended Remix)",
-      "content_id": "126065018"
+      "title": "Fractals (Nicolas Viana Extended Remix)",
+      "content_id": "52625039"
     },
     {
-      "artist": "Maze 28",
-      "title": "Mandala",
-      "content_id": "185782457"
+      "artist": "Erdem Yetim feat. Erman Danisment",
+      "title": "Gray Matter (Original Mix)",
+      "content_id": "53433970"
     },
     {
-      "artist": "Ruben Karapetyan",
-      "title": "Nostalgic Moments (Original Mix)",
-      "content_id": "97666808"
-    },
-    {
-      "artist": "Hobin Rude",
-      "title": "Beyond the Empty Air (Original Mix)",
-      "content_id": "64744960"
-    },
-    {
-      "artist": "Sirch",
-      "title": "Grey Matter (Original Mix)",
-      "content_id": "235479137"
-    },
-    {
-      "artist": "Ale Russo",
-      "title": "Wake Up (Original Mix)",
-      "content_id": "190246800"
-    },
-    {
-      "artist": "Kamilo Sanclemente",
-      "title": "Astronauts Nightmares (DJ Ruby Extended Remix)",
-      "content_id": "117129270"
+      "artist": "Maxi Degrassi",
+      "title": "The Love Goes First (Original Mix) ",
+      "content_id": "193972519"
     },
     {
       "artist": "Cary Crank",
-      "title": "Echoes From Below (ISMAIL.M Remix)",
-      "content_id": "145319404"
+      "title": "Deep Forest (Extended Mix)",
+      "content_id": "243440478"
     },
     {
-      "artist": "Lipa Tazzioli",
-      "title": "Complex Society (Original Mix)",
-      "content_id": "60013938"
+      "artist": "Double Touch",
+      "title": "Gran Amigo (Original Mix)",
+      "content_id": "138173268"
     },
     {
-      "artist": "Tom Pavicich",
-      "title": "Olimpo (Ignacio Berardi Remix)",
-      "content_id": "34012266"
+      "artist": "Dimas Mixon, Cendryma",
+      "title": "Minicube (Original Mix)",
+      "content_id": "160319896"
     },
     {
-      "artist": "Tonaco",
-      "title": "Hemp (Original Mix)",
-      "content_id": "266222162"
+      "artist": "Alan Cerra",
+      "title": "Blackout (Melodiam AR Remix)",
+      "content_id": "80851383"
     },
     {
-      "artist": "Samuel (LK)",
-      "title": "Pulse (Casnik Remix)",
-      "content_id": "132154683"
+      "artist": "Gorkiz, Mind Echoes",
+      "title": "Your Trust (Paul Hamilton Remix)",
+      "content_id": "73906508"
     },
     {
-      "artist": "Melodiam",
-      "title": "No Way Out",
-      "content_id": "19814547"
-    },
-    {
-      "artist": "Analog Jungs",
-      "title": "Astral Beats",
-      "content_id": "224618284"
+      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
+      "title": "Perception (Original Mix)",
+      "content_id": "264835495"
     }
   ]
 }

@@ -1,0 +1,513 @@
+{
+  "pool": "data/pool_158.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "permitir_repetir_entre_sets": true,
+  "_comentario": "Set 158 v2: fecha B2B, prime time, 2h, una sola lista para los dos DJ. El hilo es Erdem Yetim feat. Erman Danisment - Gray Matter (Original Mix) [JEAHMON!] (53433970). La v1 (este mismo config con otro nombre, 158_b2b_grey_matter.json) se armo con Sirch - Grey Matter y el DJ la rechazo por oscura: ver _nota_cambio_de_hilo. El pool es reducido a proposito: data/pool_158.json (gitignoreado, como pool_155.json) es el vecindario sonoro y colorido de Gray Matter sacado de data/pool.json del 2026-10-20 (dump posterior a importar el tema), con las E:1.4 estimadas por receta y marcadas en el propio tema (energy_calc, energy_fuente). Las listas largas de este config (prefer_ids, anclas_en) salen de ese pool con scripts de analisis de scratch, no versionados: el criterio esta escrito en las notas. Las copias de groove_index.json, mundo_propio.json, pool.json y del pool_158 de la v1 de antes de indexar Gray Matter quedaron en el scratchpad de la sesion del 2026-10-20 (v2/).",
+  "sets": [
+    {
+      "num": 158,
+      "grupo": "Fecha B2B Gray Matter",
+      "name": "158. B2B · Gray Matter — 2h — 2026-10-20",
+      "carpeta": "0 Fechas",
+      "_identidad": "Dos horas de prime time adentro del sonido de Gray Matter: medios llenos con el aire en su punto, progressive y organic con color y groove melodico, nada oscuro. Gray Matter es el giro de la hora --el unico respiro hondo del set, a 120 y en 7A, el mismo lugar y el mismo tempo que Pure Junction en el 150-- y de ahi el set sube al pico en quince minutos y entrega sostenido, sin bajar de donde arranco (6.8); es la lista de los dos, y el que agarra la hora lo recibe.",
+      "_contexto": "El DJ, 2026-10-20: 'tengo que hacer para una fecha b2b una lista de 2 horas sobre este tema. Nuestro hilo conductor es la cancion gray matter'. Respuestas de la manana: 'El sonido del tema manda' (todo el set en su vecindario sonoro y el tema en el momento clave, a decidir); 'La lista es de los dos' (una sola lista de 2h, sin repartir bloques); PRIME TIME, energia media-alta sostenida, modelo el 150. Sin fecha todavia: el nombre lleva 2026-10-20 y se renombra cuando la diga. Despues de escuchar la v1: 'ese no creo que sea el grey matter es muy oscuro fijate cuales serian los mas coloridos o con brillo de los demas' y 'editala'. Eligio Erdem Yetim, que Erdem escribe con 'a': Gray Matter.",
+      "_nota_cambio_de_hilo": "v1: Sirch - Grey Matter (235479137), 122 BPM 8A, color_pct 0.04 y graves p1.00, el extremo oscuro de la biblioteca; el set heredo eso y salio con color mediano 0.26 (media 0.32). Se midio el color de 13 versiones bajadas de Muzpa con la formula del proyecto (medio x campana del aire sobre la receta de reverse_engineer.py, percentil contra data/recetas/lib): Erdem Yetim 0.84, Solanu & Echo Nomad 0.84, SVLL 0.84, Future Feelings 0.81, Franck Roger 0.68, F3LIX A. 0.58, Third Son (Kris Davis) 0.41, James Curd 0.35, Arbeat 0.35, Jelly For The Babies 0.15, Third Son 0.06, Sirch 0.04, Teiko Yume 0.01. El DJ eligio Erdem. No se retoco la v1: se cambio el hilo y se rehizo el vecindario, porque el de un tema en p0.04 y el de uno en p0.84 casi no se tocan. De los 18 temas de la v1 solo 4 entran al pool nuevo (Seguro, Astronauts Nightmares, Olimpo, Pulse) y quedan 2 en el set (Seguro y Pulse), por distancia y no por inercia. Color mediano del set: 0.26 en la v1, 0.84 en la v2 (el 150 da 0.71).",
+      "_nota_vecindario": "Distancia euclidea a Gray Matter sobre rasgos z-normalizados de data/recetas/lib (2743 recetas; Gray Matter indexada el 2026-10-20 con la llamada de indexar_forma.py, y el color de los temas viejos se movio a lo sumo 0.001 al regenerar groove_index.json), la misma de la v1: sonido (sub, densidad media, medio, aire, rango dinamico, LUFS) y forma (breakdown principal, posicion y largo del drop final, secciones). Lo nuevo es el COLOR como rasgo propio y de un solo lado: color_pct con peso 2, cobrando solo lo que un tema esta por DEBAJO de Gray Matter (0.84); ser mas colorido no aleja. Con peso 0 el nucleo daba color mediano 0.56 (p10 0.24); con 1, 0.68; con 2, 0.76 y minimo 0.51; con 3, 0.81, estirando la distancia de sonido y forma de 2.26 a 2.46 (peso 2) y 2.59 (peso 3). Gray Matter mide medios 13.9 (p82), graves 54.6 (p78), aire 3.9 (p48), LUFS -10.3 (p14), densidad 12.8, intro de 48 compases, un breakdown de 18 y un drop final de 73 sin outro. Pool: 120-124 BPM, rueda a <= 2 de 7A, generos del config (se suma Indie Dance, que es el genero de Gray Matter y de ningun otro tema del pool), sin vetos, piso de color 0.35 (el minimo del 150 es 0.37) y E >= 5.0 (el e_pool de la v1; Gray Matter es la unica excepcion, por eso e_pool arranca en 4.2); nucleo = los 120 mas cercanos (dist <= 2.97) + 71 intensos (E >= 6.6, dist <= 3.95) para que el pico tenga combustible: 184 temas, color mediano 0.75. prefer_ids: los 40 mas cercanos (dist 1.32 a 2.50), prefer_bonus 1.5 (el tope de una fecha).",
+      "_nota_gray_matter": "VA EN EL GIRO DE LA HORA, ventana [0.50, 0.65] del tiempo objetivo: tema 10, a la 1:09 de reloj crudo y a la 1:00 tocable con mezclas de 1 minuto. Medido con este mismo config moviendo SOLO esa ventana (beam 8000, color_peso 3.0; costo, corr posicion-energia, saltos de rueda de 2, pasos quietos en la rueda, saltos de BPM > 2, color mediano): A abre [0, 0.05]: -94.1, +0.40, 0, 38%, 1, 0.84 | D libre (el selector lo pone tercero, a los 0:13): -99.2, +0.39, 1, 31%, 3, 0.77 | B1 [0.40, 0.55] (0:49): -95.5, +0.24, 0, 25%, 1, 0.87 | B_hora [0.45, 0.55] (1:01): -94.7, +0.16, 1, 19%, 2, 0.80 | B2 [0.50, 0.65] (1:09): -94.6, +0.11, 0, 31%, 0, 0.84 | B3 [0.60, 0.72] (1:17): -94.1, +0.06, 0, 38%, 2, 0.81 | C pico [0.70, 0.85] (1:31): -93.7, -0.07, 2, 19%, 2, 0.79, pico de solo 7.4 | E tarde [0.88, 1.0] (1:48): -96.9, -0.13, 2, 25%, 0, 0.86. Referencias: los pros dan corr +0.11 de mediana (IQR 0.00 a 0.19), 29% quieto y 15% de saltos de 2; el 150 da -0.33, 53% y 0. B2 es el unico con corr en la mediana de los pros, 0 saltos de rueda, 0 de BPM y pasos quietos en la tasa de los pros, y repite el gesto del 150: Pure Junction (120, 7A, E5.9) a la 1:00 y Olimpo (7.9) a la 1:15; aca Gray Matter (120, 7A, E4.2) a la 1:09 y Deep Forest (7.9) a la 1:24. Por que no abrir: arranca el prime time en el minimo de energia y de tempo del set (4.2 y 120; el 150 abre en 7.1 y 123) y todo lo que sigue es rampa (+0.40). Por que no el libre: el costo mas bajo es la formula leyendo una E baja y poniendola donde el arco esta mas bajo, no un criterio, y da rampa (+0.39). Por que no el pico: es un pozo de 4.2 en la ventana de detonantes.ventana_pct. Por que no tarde: cae en la zona de entrega, donde todo lo demas esta >= 6.4, despues de dos bajadas seguidas desde el detonante (7.9 -> 6.3 -> 4.2), con dos saltos de rueda. La curva contra el 150 (MAE sobre el reloj, 0.78 a 1.04 en todas) no separa: depende de que tema cae donde, no del lugar de Gray Matter. Por que el giro le queda al tema: es el piso de tempo y de energia del set, su intro de 1:36 de bateria deja salir al tema anterior sin corte, y su drop llega al final sin outro, asi que entrega con el groove arriba, que es justo lo que pide salir de un valle. En todas las ventanas entra igual: Fractals (8A, 121, E6.0) -> Gray Matter -> The Love Goes First (6A, 120, E6.4), en el borde de los topes duros (retroceso 1.8 antes del pico, escalon 2.3).",
+      "_nota_color": "color_peso 3.0, el DOBLE de estilo.colorido.color_peso (1.5). Regla aflojada a proposito, con medicion: adentro de un pool que ya es colorido, 1.5 no mueve la seleccion (en B2 el set sale identico con 0 y con 1.5: color mediano 0.72, minimo 0.44, y abre con el tema mas oscuro del set, Gux Jimenez & Kurt Caesar - Voryn, c0.44). Con 3.0: color mediano 0.84 y minimo 0.58, y el arco y la armonia no pierden nada (saltos de rueda de 2 1 -> 0, saltos de BPM > 2 1 -> 0, quieto 38% -> 31%, corr +0.13 -> +0.11, salto de groove mediano 0.73 -> 0.74 contra 1.25 de los pros). Lo que se pierde: el unico tema en mayor (Voryn, 7B); el set queda 100% menor, como el 150 (sonido_propio.pct_zona_menor) y debajo de armonia.modo_mayor_objetivo 0.11, que es un costo y no una restriccion. El porque de la regla advierte no subirlo a 5.0 persiguiendo la cuota de mayores del 25%, que ya no existe: aca se sube por el color y no por el modo. El DJ rechazo la v1 por oscura; si con 0.84 escucha temas oscuros, el numero no esta midiendo lo que el oye y hay que decirlo.",
+      "_nota_arco": "Arco de fecha PRIME TIME, sostener y entregar, el de la v1 sin cambios: e_lo 6.4, e_hi 7.2, pico_en_pct 0.75, caida 0.3, tolerancia_arco_frac 0.5, key_hogar 7A (la de Gray Matter; en la v1 era 8A) con peso_hogar 0.6. Verificado de nuevo con este pool sobre B2: tolerancia 0.3 da 1 salto de rueda, 3 de BPM y arranca en 6.3; peso_hogar 0.3 da 44% de pasos quietos y 3 saltos de groove; caida 0.0 da 3 saltos de BPM. Subir la banda tampoco paga: 6.6-7.4 lleva la mediana de 6.6 a 6.8 (la de la v1) pero mete 2 saltos de rueda de 2 y 4 de BPM, con un zigzag 123-120-123 en el cierre; 6.8-7.6 deja la mediana en 6.8, baja el color a 0.78 y da 44% quieto. El vecindario de Gray Matter vive en energia media: la mediana del pool es 6.6. La del 150 es 7.1 con la energia que el DJ escucho (Sizer 7.7 con 5.2 de formula); esta es de formula.",
+      "_nota_ventanas": "anclas_en, generado desde pool_158 para todo menos Gray Matter: (1) Gray Matter [0.50, 0.65]. (2) Nada debajo de 6.4 despues del 88% (la fecha entrega arriba). (3) Nada debajo de 6.2 en el primer tema, y nada debajo de 6.0 antes del 25% (prime time recibe la pista hecha). (4) Los detonantes (E >= 7.5) solo en [0.70, 0.85], que es detonantes.ventana_pct: entra uno, Cary Crank - Deep Forest (7.9) a la 1:24, dentro de detonantes.cantidad_por_set_2h [1, 2]. Las fracciones son del tiempo objetivo (2h), no del largo crudo.",
+      "_nota_energia": "Gray Matter queda con la E de la DB, 4.2, sin estimar. No es el fallo del cue engine (la firma es 1.4): sale de cues reales --bajo a los 80 s (0.67 de intro), breakdown de 18 s (0.38), drop (1.0), 110 s hasta el Mix-OUT (0.92), por 10/7--. La via de la receta no la contradice: la formula sobre la segmentacion de data/recetas/lib da 4.8 (ve el breakdown entero, 36 s, que el cue engine marca a la mitad) y calibrada contra la DB, como para Grey Matter y Dilby, da 4.65 (IQR 4.1-5.4, 26 temas con la misma receta literal y el bajo fuera de 0). Lo que la baja es estructura real: 80-96 s de intro, la mas larga de la biblioteca. Que eso suene bajo arriba del escenario no se puede medir aca: ninguna medida de presion separa las bandas de E (energia del drop 0.34 y LUFS -9.2 a -9.6 en todas), y solo 6 temas tienen energia percibida y calculada, ninguno con intro larga. En el set la intro va mezclada con el tema anterior, asi que el valle se va a escuchar menos hondo que 4.2; despues de la escucha, la E del DJ va a data/energia_percibida.json y pisa esta. Tres E:1.4 del pool estan estimadas por receta y marcadas (Sunchain - The Final Lap 6.0, Marcelo Vasami & John Cosani - Modern Boxes 6.0, Trikk - Sagrado 4.5, que queda fuera por E < 5.0); ninguna entra al set.",
+      "_nota_exclusiones": "Fuera del pool por estar en el 154-157 (cruce por ContentID, por artista+titulo, y por titulo sin parentesis con un artista en comun): Digital Mess & Astral Base - Updrafts, Florian Gasperini - Third Eye Awakening, Nicolas Viana - Coral, Fog Machine y Wayfarer, Zuccasam - Come Home, Mind Echoes - Visible World y Answers, Cendryma - Effective Loss, M.O.S. - Nanda (Dilby Remix), Amonita - Wake Up, Andre Moret - Kryon, Danny Howells - Stereodrama, Tali Muss - Interlocutor, Hernan Cattaneo & Soundexile - Astron, Matthew Sona - You Got It, Sebastian Busto - December, Gonzalo Cotroneo - Dark Rain. El 157 se leyo de data/set_targets/set_157.json, ya con Guy J - Worlds Apart en lugar de Fading Out. Fuera por ser otra version de un tema que ya esta en el pool (queda la mas cercana): Hold On (Denney Remix), Legacy (Dub), Neuroleptic (Agustin Pietrocola Remix), Elements (Mike Rish Remix), Alush (Alberto Hernandez & Dulus Remix). exclude_ids queda vacio: todo eso ya no esta en el pool.",
+      "_nota_tocado": "Lo tocado se informa, no se filtra (plomo.tocados). Tocados: Kostya Outta - Seguro (2 veces, la ultima el 2026-10-19, y esta en el 150, que es la Session 02 publicada), Kamilo Sanclemente - Auriga Moon (3, la ultima hace 32 dias), Dimas Mixon & Cendryma - Minicube (5, hace 46 dias), Gai Barone - Fractals (Nicolas Viana Extended Remix) (1, hace 20 dias) y Cary Crank - Deep Forest (1, hace 126 dias). Los otros 12, incluido Gray Matter, no figuran en djmdHistory.",
+      "_nota_repetidos": "0 temas del 154, 155, 156 y 157, cruzando por ContentID, por artista+titulo y por titulo sin parentesis. Del 150 entra Seguro; del 151, Pulse (Casnik Remix); de la v1 del 158, Seguro y Pulse. Ninguno es consecutivo.",
+      "_nota_numero": "158: el mismo numero de la v1, unico en djmdPlaylist (consultado en modo solo lectura el 2026-10-20). La playlist existe como '158. B2B · Grey Matter — 2h — 2026-10-20': build_set.py la encuentra por numero y SOLO le cambia el nombre con --renombrar.",
+      "_nota_beam": "8000, a proposito y no 16000. Con color_peso 3.0 el optimo es plano: tres beams dan tres sets distintos a 0.11 de costo. 8000: -94.61, este. 16000: -94.67, Gray Matter tema 9 a la 1:00 de reloj crudo (0:52 tocable), un salto de rueda (8B-9A), un tema en mayor, cuatro de All Day I Dream (el tope de repeticion.max_por_sello_en_set) y de pico Aalam Waahid, tocado el 2026-10-19. 30000: -94.72, el mismo set que la ventana [0.45, 0.55]: 2 saltos de BPM, 4 saltos de groove, 19% quieto y tres temas del 150, dos tocados el 2026-10-19. La funcion de costo no los separa (0.1%), asi que se elige por lo que no ve: 0 saltos de rueda y de BPM, el valle a la hora tocable y el pico a quince minutos como en el 150, tres temas por sello y un detonante que no se toca hace cuatro meses. Con color_peso 1.5, 8000 y 16000 daban el mismo set. Subir el beam cambia el set: no es un error, es este empate.",
+      "_nota_n": "duration_h 2.0: el selector calcula 17 temas desde la mediana del pool (7.5 min; densidad.tracks_por_hora 8.8 x 2h = 17.6). Crudo 131 min, 1h55 tocable con mezclas de 1 minuto (densidad.largo_con_mezclas).",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        124
+      ],
+      "e_pool": [
+        4.2,
+        8.0
+      ],
+      "e_lo": 6.4,
+      "e_hi": 7.2,
+      "max_per_artist": 4,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Melodic House & Techno",
+        "Organic House",
+        "Deep House",
+        "House",
+        "Melodic House",
+        "Indie Dance"
+      ],
+      "arco": {
+        "pico_en_pct": 0.75,
+        "caida_post_pico_pct": 0.3,
+        "tolerancia_arco_frac": 0.5,
+        "key_hogar": "7A",
+        "peso_hogar": 0.6
+      },
+      "anclas": [
+        "53433970"
+      ],
+      "prefer_ids": [
+        "157561207",
+        "128348541",
+        "193972519",
+        "243274326",
+        "119026181",
+        "156328653",
+        "134503503",
+        "105189053",
+        "264835495",
+        "233850863",
+        "26535182",
+        "138173268",
+        "156983367",
+        "132154683",
+        "85191708",
+        "23735492",
+        "110909127",
+        "134284103",
+        "194114969",
+        "73906508",
+        "81414705",
+        "165429937",
+        "163262590",
+        "234709728",
+        "102336067",
+        "154166188",
+        "152876237",
+        "188192990",
+        "199367898",
+        "94804901",
+        "160507685",
+        "131081366",
+        "27749886",
+        "52625039",
+        "160319896",
+        "245120404",
+        "88277931",
+        "126449550",
+        "117129270",
+        "160611663"
+      ],
+      "prefer_bonus": 1.5,
+      "color_peso": 3.0,
+      "beam": 8000,
+      "exclude_ids": [],
+      "anclas_en": {
+        "102336067": [
+          0.25,
+          0.88
+        ],
+        "104227319": [
+          0.25,
+          0.88
+        ],
+        "104234166": [
+          0.7,
+          0.85
+        ],
+        "105189053": [
+          0.25,
+          0.88
+        ],
+        "105304162": [
+          0.25,
+          0.88
+        ],
+        "106041324": [
+          0.7,
+          0.85
+        ],
+        "109238144": [
+          0.25,
+          0.88
+        ],
+        "110259434": [
+          0.7,
+          0.85
+        ],
+        "110909127": [
+          0.04,
+          0.88
+        ],
+        "111568983": [
+          0.7,
+          0.85
+        ],
+        "11412787": [
+          0.25,
+          0.88
+        ],
+        "114182110": [
+          0.7,
+          0.85
+        ],
+        "116847960": [
+          0.25,
+          0.88
+        ],
+        "119026181": [
+          0.25,
+          0.88
+        ],
+        "120528093": [
+          0.04,
+          0.88
+        ],
+        "126449550": [
+          0.25,
+          0.88
+        ],
+        "127040310": [
+          0.7,
+          0.85
+        ],
+        "128348541": [
+          0.0,
+          0.88
+        ],
+        "131081366": [
+          0.25,
+          0.88
+        ],
+        "134284103": [
+          0.25,
+          0.88
+        ],
+        "137408628": [
+          0.25,
+          0.88
+        ],
+        "137878695": [
+          0.25,
+          0.88
+        ],
+        "138530727": [
+          0.25,
+          0.88
+        ],
+        "138596520": [
+          0.0,
+          0.88
+        ],
+        "139245364": [
+          0.7,
+          0.85
+        ],
+        "14636373": [
+          0.04,
+          0.88
+        ],
+        "154166188": [
+          0.25,
+          0.88
+        ],
+        "156328653": [
+          0.25,
+          0.88
+        ],
+        "156983367": [
+          0.04,
+          0.88
+        ],
+        "157561207": [
+          0.25,
+          0.88
+        ],
+        "160319896": [
+          0.04,
+          0.88
+        ],
+        "160507685": [
+          0.04,
+          0.88
+        ],
+        "160611663": [
+          0.25,
+          0.88
+        ],
+        "160613012": [
+          0.04,
+          0.88
+        ],
+        "163262590": [
+          0.25,
+          0.88
+        ],
+        "163317399": [
+          0.0,
+          0.88
+        ],
+        "165735808": [
+          0.25,
+          0.88
+        ],
+        "177299920": [
+          0.25,
+          0.88
+        ],
+        "177710413": [
+          0.25,
+          0.88
+        ],
+        "183857549": [
+          0.25,
+          0.88
+        ],
+        "188192990": [
+          0.25,
+          0.88
+        ],
+        "193182386": [
+          0.04,
+          0.88
+        ],
+        "194114969": [
+          0.0,
+          0.88
+        ],
+        "199367898": [
+          0.25,
+          0.88
+        ],
+        "20664983": [
+          0.25,
+          0.88
+        ],
+        "20837835": [
+          0.25,
+          0.88
+        ],
+        "208446880": [
+          0.25,
+          0.88
+        ],
+        "219235985": [
+          0.25,
+          0.88
+        ],
+        "21966134": [
+          0.0,
+          0.88
+        ],
+        "22351229": [
+          0.7,
+          0.85
+        ],
+        "225695184": [
+          0.25,
+          0.88
+        ],
+        "226809369": [
+          0.0,
+          0.88
+        ],
+        "228357353": [
+          0.7,
+          0.85
+        ],
+        "233850863": [
+          0.25,
+          0.88
+        ],
+        "234709728": [
+          0.25,
+          0.88
+        ],
+        "23735492": [
+          0.25,
+          0.88
+        ],
+        "241036257": [
+          0.25,
+          0.88
+        ],
+        "243440478": [
+          0.7,
+          0.85
+        ],
+        "245120404": [
+          0.25,
+          0.88
+        ],
+        "245978587": [
+          0.25,
+          0.88
+        ],
+        "252145304": [
+          0.7,
+          0.85
+        ],
+        "265046171": [
+          0.25,
+          0.88
+        ],
+        "26535182": [
+          0.25,
+          0.88
+        ],
+        "27749886": [
+          0.25,
+          0.88
+        ],
+        "29068811": [
+          0.25,
+          0.88
+        ],
+        "29877865": [
+          0.25,
+          0.88
+        ],
+        "3084709": [
+          0.25,
+          0.88
+        ],
+        "32580614": [
+          0.25,
+          0.88
+        ],
+        "34012266": [
+          0.7,
+          0.85
+        ],
+        "34169690": [
+          0.25,
+          0.88
+        ],
+        "37598389": [
+          0.25,
+          0.88
+        ],
+        "38408410": [
+          0.25,
+          0.88
+        ],
+        "39943002": [
+          0.0,
+          0.88
+        ],
+        "43416483": [
+          0.25,
+          0.88
+        ],
+        "45297975": [
+          0.04,
+          0.88
+        ],
+        "46907160": [
+          0.7,
+          0.85
+        ],
+        "52339613": [
+          0.25,
+          0.88
+        ],
+        "52625039": [
+          0.04,
+          0.88
+        ],
+        "53721787": [
+          0.7,
+          0.85
+        ],
+        "5512663": [
+          0.7,
+          0.85
+        ],
+        "63672925": [
+          0.0,
+          0.88
+        ],
+        "6459862": [
+          0.25,
+          0.88
+        ],
+        "69309836": [
+          0.0,
+          0.88
+        ],
+        "72517847": [
+          0.25,
+          0.88
+        ],
+        "74206852": [
+          0.04,
+          0.88
+        ],
+        "74604190": [
+          0.25,
+          0.88
+        ],
+        "75106655": [
+          0.7,
+          0.85
+        ],
+        "7611765": [
+          0.25,
+          0.88
+        ],
+        "78190291": [
+          0.7,
+          0.85
+        ],
+        "7965423": [
+          0.25,
+          0.88
+        ],
+        "80536228": [
+          0.25,
+          0.88
+        ],
+        "81414705": [
+          0.25,
+          0.88
+        ],
+        "8218025": [
+          0.25,
+          0.88
+        ],
+        "84247083": [
+          0.0,
+          0.88
+        ],
+        "85191708": [
+          0.25,
+          0.88
+        ],
+        "87620719": [
+          0.7,
+          0.85
+        ],
+        "88277931": [
+          0.04,
+          0.88
+        ],
+        "94329225": [
+          0.25,
+          0.88
+        ],
+        "96926709": [
+          0.25,
+          0.88
+        ],
+        "53433970": [
+          0.5,
+          0.65
+        ]
+      }
+    }
+  ]
+}
