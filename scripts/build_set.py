@@ -78,23 +78,39 @@ def find_playlist(con, set_num: int) -> tuple[str, str] | None:
     return (rows[0][0], rows[0][1])
 
 
+def next_usn(con, n: int = 1) -> int:
+    """El primero de `n` numeros de cambio nuevos; deja el contador de Rekordbox al dia.
+
+    Rekordbox numera cada cambio con agentRegistry.localUpdateCount, y la fila cambiada guarda
+    ese numero en rb_local_usn (asi lo hace pyrekordbox: increment_local_usn). El sync al pen
+    lleva lo que esta por encima del ultimo sync. Antes se tomaba el MAX(rb_local_usn) de la
+    tabla: el 2026-10-20 el 157 quedo en 102485-102500 con el contador en 105981, y dos syncs
+    seguidos dejaron el pen con la version vieja (las listas NUEVAS si entraban). Se arranca
+    tambien arriba de lo que ya hay en las tablas, que algun script dejo por encima del
+    contador (djmdContent llegaba a 108134).
+    """
+    contador = con.execute("SELECT int_1 FROM agentRegistry WHERE registry_id='localUpdateCount'").fetchone()[0]
+    techo = max([contador or 0] + [con.execute(f"SELECT MAX(rb_local_usn) FROM {t}").fetchone()[0] or 0
+                                   for t in ("djmdPlaylist", "djmdSongPlaylist", "djmdContent")])
+    con.execute("UPDATE agentRegistry SET int_1=? WHERE registry_id='localUpdateCount'", (techo + n,))
+    return techo + 1
+
+
 def create_playlist(con, name: str, parent_id: str = SETS_ARMADOS_PARENT) -> str:
     pl_id = safe_id()
-    max_usn = con.execute("SELECT MAX(rb_local_usn) FROM djmdPlaylist").fetchone()[0] or 0
     ts = now_str()
     con.execute("""INSERT INTO djmdPlaylist
         (ID, Seq, Name, ImagePath, Attribute, ParentID, SmartList, UUID,
          rb_data_status, rb_local_data_status, rb_local_deleted, rb_local_synced,
          usn, rb_local_usn, created_at, updated_at)
         VALUES (?,0,?,NULL,0,?,NULL,?,0,0,0,0,NULL,?,?,?)""",
-        (pl_id, name, parent_id, str(uuid_lib.uuid4()), max_usn + 1, ts, ts))
+        (pl_id, name, parent_id, str(uuid_lib.uuid4()), next_usn(con), ts, ts))
     return pl_id
 
 
 def rename_playlist(con, pl_id: str, name: str, ts: str) -> None:
-    max_usn = con.execute("SELECT MAX(rb_local_usn) FROM djmdPlaylist").fetchone()[0] or 0
     con.execute("UPDATE djmdPlaylist SET Name=?, rb_local_synced=0, rb_local_usn=?, updated_at=?"
-                " WHERE ID=?", (name, max_usn + 1, ts, pl_id))
+                " WHERE ID=?", (name, next_usn(con), ts, pl_id))
 
 
 def resolve_parent(con, nombre: str | None) -> str:
@@ -220,14 +236,19 @@ def resolve_tracks(con, target: dict) -> list[dict]:
 
 
 def rebuild_playlist(con, playlist_id: str, tracks: list[dict], ts: str) -> int:
-    max_usn = con.execute("SELECT MAX(rb_local_usn) FROM djmdSongPlaylist").fetchone()[0] or 0
+    viejas = con.execute(
+        "SELECT ID FROM djmdSongPlaylist WHERE PlaylistID=? AND rb_local_deleted=0",
+        (playlist_id,),
+    ).fetchall()
+    # uno por fila que se borra, uno por fila nueva y uno para la playlist, que tambien cambio
+    max_usn = next_usn(con, len(viejas) + len(tracks) + 1) - 1
+    max_usn += 1
+    con.execute("UPDATE djmdPlaylist SET rb_local_synced=0, rb_local_usn=?, updated_at=? WHERE ID=?",
+                (max_usn, ts, playlist_id))
     # Soft delete, no DELETE fisico: el sync por USN del pen necesita el
     # tombstone para enterarse de que la fila se fue. Sin esto el pen acumula
     # las entradas viejas y aparecen duplicados en las playlists exportadas.
-    for (row_id,) in con.execute(
-        "SELECT ID FROM djmdSongPlaylist WHERE PlaylistID=? AND rb_local_deleted=0",
-        (playlist_id,),
-    ).fetchall():
+    for (row_id,) in viejas:
         max_usn += 1
         con.execute(
             "UPDATE djmdSongPlaylist SET rb_local_deleted=1, rb_local_synced=0,"
