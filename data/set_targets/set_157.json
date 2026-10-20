@@ -1,5 +1,5 @@
 {
-  "name": "157. Session 04 · Melódico Ascendente — 1h45 — 2026-10-19",
+  "name": "157. Session 04 · Melódico Ascendente — 1h47 — 2026-10-20",
   "duration_h": 0,
   "bpm_range": [
     100,
@@ -7,7 +7,7 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
-  "_nota": "2026-10-19: 'hace con esa lista de spoty mejoras y arma la lista siguiente, con modelo de 150, asi esa estrategia, y armemos la session 4 con eso'. Base: la lista de Spotify del DJ 'Progressive House Melodico Ascendente' (18). Se quedan 9: los que no tienen un problema medido. Salen: Remember Me (118 BPM, habia que estirarla 4%), Blazing Ice (9 secciones, drop 11%), You Got It y Feel It (11 secciones), Ghost Rider (graves 21 contra el piso de 43), Blaze y Luminor (Nicolas Viana tenia 6 y el tope es 4; esos dos miden peor), el Winged repetido y Sharks (no esta en la biblioteca ni en Muzpa). Entran 9 de la biblioteca que pasan los cuatro pisos del sonido del 150, se parecen en energia, densidad, graves y color a los que quedan, son de los mismos generos, nunca los toco y no salieron en las Sessions 01-03. Orden con ordenar_como_150.py, los 9 del DJ fijos: la rueda da la vuelta entera de 4A a 2A de a un paso. Ash & Ember tambien esta en el 154 (fecha del 23/10). Propuesta para escuchar, NO aprobada.",
+  "_nota": "2026-10-19: 'hace con esa lista de spoty mejoras y arma la lista siguiente, con modelo de 150, asi esa estrategia, y armemos la session 4 con eso'. Base: la lista de Spotify del DJ 'Progressive House Melodico Ascendente' (18). Se quedan 9: los que no tienen un problema medido. Salen: Remember Me (118 BPM, habia que estirarla 4%), Blazing Ice (9 secciones, drop 11%), You Got It y Feel It (11 secciones), Ghost Rider (graves 21 contra el piso de 43), Blaze y Luminor (Nicolas Viana tenia 6 y el tope es 4; esos dos miden peor), el Winged repetido y Sharks (no esta en la biblioteca ni en Muzpa). Entran 9 de la biblioteca que pasan los cuatro pisos del sonido del 150, se parecen en energia, densidad, graves y color a los que quedan, son de los mismos generos, nunca los toco y no salieron en las Sessions 01-03. Orden con ordenar_como_150.py, los 9 del DJ fijos: la rueda da la vuelta entera de 4A a 2A de a un paso. Ash & Ember tambien esta en el 154 (fecha del 23/10). Propuesta para escuchar; el 2026-10-20 el DJ la hizo Session 04: 'haceme la session 4 en privado en youtube de este set'. Mezcla 106.8 min.",
   "tracks": [
     {
       "artist": "Hafex, MAXTAGE",

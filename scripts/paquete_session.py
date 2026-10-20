@@ -75,8 +75,9 @@ def main() -> None:
     por_tema = sellos()
     lineas, artistas, labels = [], [], []
     for k, c in enumerate(mix["plan"]):
-        artista, _, titulo = c["tema"].partition(" - ")
-        sello = por_tema.get((_clave(artista), _clave(titulo)), "")
+        # los tags de la biblioteca traen espacios de mas ("Sighs  (Extended Mix)", "[All Day I Dream ]")
+        artista, _, titulo = (" ".join(c["tema"].split())).partition(" - ")
+        sello = por_tema.get((_clave(artista), _clave(titulo)), "").strip()
         t = 0.0 if k == 0 else c["cambio_in"]
         lineas.append(f"{mmss(t)} {artista} - {titulo}" + (f" [{sello}]" if sello else ""))
         artistas += [x.strip() for x in re.split(r",|&| x ", artista) if x.strip()]

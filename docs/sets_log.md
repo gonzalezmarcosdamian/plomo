@@ -3367,3 +3367,31 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 16 | Mariano Mellino & John Cosani | Zhen Kai | 121 | 5.8 |
 | 17 | Boxer | I'm Lighter With You (feat. GAALIA) (Extended Mix) | 123 | 5.7 |
 
+
+## Set 157. 157. Session 04 · Melódico Ascendente — 1h47 — 2026-10-20
+**Armado:** 2026-10-20  
+**Duracion:** 0h  
+**Tracks:** 18  
+**BPM range:** 100-140  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Hafex, MAXTAGE | Between Your Sighs  (Extended Mix) | 123 | 4.8 |
+| 2 | Tali Muss | Reward (Extended Mix) | 123 | 5.7 |
+| 3 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
+| 4 | Habitatt | Fly With Me (Extended Mix) | 122 | 5.9 |
+| 5 | Nicolas Viana | Fog Machine (Extended Mix) | 124 | 5.8 |
+| 6 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
+| 7 | Lee Burridge | Fading Out (Extended Mix) | 122 | 6.8 |
+| 8 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
+| 9 | Mind Echoes | Visible World (Original Mix) | 121 | 5.9 |
+| 10 | Kyotto | District (Original Mix) | 122 | 5.8 |
+| 11 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
+| 12 | Ramiro Drisdale | Glade (Original Mix) | 122 | 6.9 |
+| 13 | Nicolas Viana | Kalira (Extended Mix) | 122 | 7.1 |
+| 14 | Simon Vuarambon | Stamina (Extended Mix) | 121 | 5.9 |
+| 15 | Second Sine | Motor City (Sebastian Haas Remix)  | 123 | 6.1 |
+| 16 | Rauschhaus, Greta Meier | Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix) | 124 | 6.1 |
+| 17 | Danny Howells, Lloyd Barwood | One More Sky (Original Mix) | 124 | 5.4 |
+| 18 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
+

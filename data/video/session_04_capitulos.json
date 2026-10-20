@@ -1,0 +1,114 @@
+{
+  "fps": 30,
+  "duracion_s": 6407.6,
+  "capitulos": [
+    {
+      "t": 0.0,
+      "artista": "Hafex, MAXTAGE",
+      "titulo": "Between Your Sighs  (Extended Mix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 236.1,
+      "artista": "Tali Muss",
+      "titulo": "Reward (Extended Mix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 566.6,
+      "artista": "Zuccasam",
+      "titulo": "Come Home (Dowden Remix)",
+      "tempo": 1.00826
+    },
+    {
+      "t": 960.0,
+      "artista": "Habitatt",
+      "titulo": "Fly With Me (Extended Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 1243.3,
+      "artista": "Nicolas Viana",
+      "titulo": "Fog Machine (Extended Mix)",
+      "tempo": 0.98387
+    },
+    {
+      "t": 1589.5,
+      "artista": "M.O.S.",
+      "titulo": "Nanda (Dilby Remix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 1967.2,
+      "artista": "Lee Burridge",
+      "titulo": "Fading Out (Extended Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 2392.2,
+      "artista": "Nicolas Viana",
+      "titulo": "Coral (Extended Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 2691.2,
+      "artista": "Mind Echoes",
+      "titulo": "Visible World (Original Mix)",
+      "tempo": 1.00826
+    },
+    {
+      "t": 3068.9,
+      "artista": "Kyotto",
+      "titulo": "District (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 3383.6,
+      "artista": "Nicolas Viana",
+      "titulo": "Winged (Original Mix)",
+      "tempo": 1.00826
+    },
+    {
+      "t": 3745.6,
+      "artista": "Ramiro Drisdale",
+      "titulo": "Glade (Original Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 4249.2,
+      "artista": "Nicolas Viana",
+      "titulo": "Kalira (Extended Mix)",
+      "tempo": 1.0
+    },
+    {
+      "t": 4579.7,
+      "artista": "Simon Vuarambon",
+      "titulo": "Stamina (Extended Mix)",
+      "tempo": 1.00826
+    },
+    {
+      "t": 4894.4,
+      "artista": "Second Sine",
+      "titulo": "Motor City (Sebastian Haas Remix)",
+      "tempo": 0.99187
+    },
+    {
+      "t": 5240.7,
+      "artista": "Rauschhaus, Greta Meier",
+      "titulo": "Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+      "tempo": 0.98387
+    },
+    {
+      "t": 5618.4,
+      "artista": "Danny Howells, Lloyd Barwood",
+      "titulo": "One More Sky (Original Mix)",
+      "tempo": 0.98387
+    },
+    {
+      "t": 5964.6,
+      "artista": "Lee Burridge, Lost Desert",
+      "titulo": "Ash & Ember (Extended Mix)",
+      "tempo": 0.99187
+    }
+  ]
+}

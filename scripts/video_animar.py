@@ -64,6 +64,9 @@ PALETAS_VUELO = [
     ((0.05, 0.03, 0.12), (0.70, 0.40, 0.80), (1.00, 0.62, 0.72)),   # violeta
 ]
 BIOMAS_VUELO = 4   # montanas, costa, dunas, canon: el tema k va al paisaje k % 4
+# fiesta.frag: el color de las luces de la cabina, uno por tema, en orden; ciclan
+LUCES_FIESTA = [(1.00, 0.35, 0.75), (0.30, 0.80, 1.00), (1.00, 0.70, 0.30),
+                (0.65, 0.40, 1.00), (0.30, 1.00, 0.70), (0.40, 0.55, 1.00)]
 ADELANTO_DROP_S = 1.6    # la camara mira adelante: la picada empieza antes del drop y aterriza con el
 # El suelo bajo la camara de vuelo.frag se mide ANTES de la render (suelos) y se suaviza en el
 # tiempo: buscandolo cuadro por cuadro, la camara saltaba cada vez que aparecia un pico adelante.
@@ -108,8 +111,18 @@ def camara(r: dict, fps: int) -> dict[str, np.ndarray]:
     # ascenso.frag: la altitud del cohete, 0 en la plataforma y 1 al final del set. Es la misma
     # distancia normalizada: sube mas rapido en el groove y planea en el breakdown
     etapa_edad, etapa_donde = etapas(impacto, distancia / distancia[-1], fps)
+    # fiesta.frag: en que parte del beat cae cada cuadro, para que la gente se mueva a tiempo
+    golpes = r["beats"][0]
+    t = np.arange(len(r["cuerpo"])) / fps
+    ultimo = np.clip(np.searchsorted(golpes, t, side="right") - 1, 0, len(golpes) - 2)
+    fase = np.clip((t - golpes[ultimo]) / np.maximum(golpes[ultimo + 1] - golpes[ultimo], 1e-3), 0.0, 1.0)
+    luces = np.einsum("ft,tc->fc", r["temas"],
+                      np.array([LUCES_FIESTA[j % len(LUCES_FIESTA)] for j in range(r["temas"].shape[1])]))
+    # los brazos arriba: el groove los sube de a poco y el drop de golpe, y bajan despacio
+    euforia = np.clip(suavizar(np.clip(0.55 * seccion + 1.6 * impacto, 0, 1), 2.0, fps), 0, 1)
     return {"altura": 1 - suavizar(adelante, 1.4, fps), "distancia": distancia, "origen": origen,
             "altitud": distancia / distancia[-1], "etapa_edad": etapa_edad, "etapa_donde": etapa_donde,
+            "fase": fase, "luces": luces, "euforia": euforia,
             "impacto": impacto, "paleta": np.einsum("ft,tcd->fcd", r["temas"], paletas),
             "tema_a": orden[:, 0], "tema_b": orden[:, 1],
             "local_a": distancia - origen[orden[:, 0]], "local_b": distancia - origen[orden[:, 1]],
@@ -351,7 +364,9 @@ def main() -> None:
             for nombre, valor in (("uAltitud", float(cam["altitud"][i])), ("uAltura", float(cam["altura"][i])),
                                   ("uImpacto", float(cam["impacto"][i])), ("uDistancia", float(cam["distancia"][i])),
                                   ("uEtapaEdad", float(cam["etapa_edad"][i])),
-                                  ("uEtapaA", float(cam["etapa_donde"][i]))):
+                                  ("uEtapaA", float(cam["etapa_donde"][i])),
+                                  ("uFase", float(cam["fase"][i])), ("uLuces", tuple(cam["luces"][i])),
+                                  ("uEuforia", float(cam["euforia"][i]))):
                 poner(prog, nombre, valor)
         if suelo:
             ka, kb = int(cam["tema_a"][i]), int(cam["tema_b"][i])
