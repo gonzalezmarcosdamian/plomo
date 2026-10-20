@@ -1,0 +1,1050 @@
+{
+ "_que_es": "Los clips de Pixabay de las Sessions, por fase del set (atardecer, anochecer, noche) y funcion (calma en los breaks, gente en el groove, drop en el impacto). Pixabay Content License: se editan dentro del video, sin atribucion; no se venden sueltos. 'pagina' y 'autor' quedan para rastrear la licencia de cada uno.",
+ "fuente": "scripts/stock_pixabay.py, elegidos mirando las miniaturas el 2026-10-20",
+ "clips": [
+  {
+   "id": 135658,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 9,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-135658/",
+   "autor": "Natures_Embrace"
+  },
+  {
+   "id": 206272,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 35,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-206272/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 218714,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 59,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-218714/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 49053,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 60,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-49053/",
+   "autor": "dlabiebrzy"
+  },
+  {
+   "id": 138588,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 29,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-138588/",
+   "autor": "Natures_Embrace"
+  },
+  {
+   "id": 201308,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 59,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-201308/",
+   "autor": "SerajKaram"
+  },
+  {
+   "id": 186070,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 25,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-186070/",
+   "autor": "Mario_Krimer"
+  },
+  {
+   "id": 275633,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 54,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-275633/",
+   "autor": "Mario_Krimer"
+  },
+  {
+   "id": 62249,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 46,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-62249/",
+   "autor": "ChristianBodhi"
+  },
+  {
+   "id": 87252,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 16,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-87252/",
+   "autor": "10933357"
+  },
+  {
+   "id": 264940,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 50,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-264940/",
+   "autor": "conghuynh8"
+  },
+  {
+   "id": 53121,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 35,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-53121/",
+   "autor": "dlabiebrzy"
+  },
+  {
+   "id": 134921,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 30,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-134921/",
+   "autor": "bruno19"
+  },
+  {
+   "id": 8010,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 20,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-8010/",
+   "autor": "inventomusical"
+  },
+  {
+   "id": 140111,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 20,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-140111/",
+   "autor": "Natures_Embrace"
+  },
+  {
+   "id": 365737,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 59,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-365737/",
+   "autor": "Mario_Krimer"
+  },
+  {
+   "id": 302098,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 28,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-302098/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 282421,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 42,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-282421/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 216548,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-216548/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 19608,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 33,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-19608/",
+   "autor": "ChristianBodhi"
+  },
+  {
+   "id": 223459,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 25,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-223459/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 129736,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 41,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-129736/",
+   "autor": "Winstonrha"
+  },
+  {
+   "id": 53127,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 27,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-53127/",
+   "autor": "dlabiebrzy"
+  },
+  {
+   "id": 204276,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 30,
+   "alto": 1440,
+   "pagina": "https://pixabay.com/videos/id-204276/",
+   "autor": "pandachan2go"
+  },
+  {
+   "id": 88166,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 36,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-88166/",
+   "autor": "ChristianBodhi"
+  },
+  {
+   "id": 132932,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 17,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-132932/",
+   "autor": "u_zwlh4zbli2"
+  },
+  {
+   "id": 199001,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 54,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-199001/",
+   "autor": "Matthias_Groeneveld"
+  },
+  {
+   "id": 142399,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 60,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-142399/",
+   "autor": "Nils_Vega"
+  },
+  {
+   "id": 284892,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 6,
+   "alto": 3840,
+   "pagina": "https://pixabay.com/videos/id-284892/",
+   "autor": "haithamsardi"
+  },
+  {
+   "id": 48087,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 10,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-48087/",
+   "autor": "Peggy_Marco"
+  },
+  {
+   "id": 266869,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 30,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-266869/",
+   "autor": "GIUSEPPE-DE-BERGOLIS"
+  },
+  {
+   "id": 225846,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 36,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-225846/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 255544,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 42,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-255544/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 224732,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-224732/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 326707,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 37,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-326707/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 304381,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-304381/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 208039,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-208039/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 283159,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-283159/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 290945,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 28,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-290945/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 270764,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-270764/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 282609,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 49,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-282609/",
+   "autor": "TonyDias7"
+  },
+  {
+   "id": 132143,
+   "fase": "atardecer",
+   "rol": "calma",
+   "duracion": 60,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-132143/",
+   "autor": "PashtunPress"
+  },
+  {
+   "id": 117096,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 25,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-117096/",
+   "autor": "u_ti9zy4gcrc"
+  },
+  {
+   "id": 12332,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 13,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-12332/",
+   "autor": "klimkin"
+  },
+  {
+   "id": 131625,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 22,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-131625/",
+   "autor": "PNA7"
+  },
+  {
+   "id": 148597,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 26,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-148597/",
+   "autor": "Domka_1611"
+  },
+  {
+   "id": 20454,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 28,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-20454/",
+   "autor": "ChristianBodhi"
+  },
+  {
+   "id": 264945,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 25,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-264945/",
+   "autor": "conghuynh8"
+  },
+  {
+   "id": 229695,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 13,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-229695/",
+   "autor": "Edwars08"
+  },
+  {
+   "id": 42189,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 10,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-42189/",
+   "autor": "JSteeve"
+  },
+  {
+   "id": 124228,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 13,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-124228/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 60457,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 18,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-60457/",
+   "autor": "DavidEnglund"
+  },
+  {
+   "id": 119532,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 6,
+   "alto": 2159,
+   "pagina": "https://pixabay.com/videos/id-119532/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 124227,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 10,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-124227/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 119534,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 8,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-119534/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 38909,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 29,
+   "alto": 1440,
+   "pagina": "https://pixabay.com/videos/id-38909/",
+   "autor": "ZAIDoopro"
+  },
+  {
+   "id": 192667,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 8,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-192667/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 50362,
+   "fase": "atardecer",
+   "rol": "gente",
+   "duracion": 28,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-50362/",
+   "autor": "8151429"
+  },
+  {
+   "id": 6128,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 8,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-6128/",
+   "autor": "videomoon"
+  },
+  {
+   "id": 41008,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 24,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-41008/",
+   "autor": "JSteeve"
+  },
+  {
+   "id": 57159,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 60,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-57159/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 44461,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 15,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-44461/",
+   "autor": "moshehar"
+  },
+  {
+   "id": 43606,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 11,
+   "alto": 1440,
+   "pagina": "https://pixabay.com/videos/id-43606/",
+   "autor": "ZAIDoopro"
+  },
+  {
+   "id": 12333,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 15,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-12333/",
+   "autor": "klimkin"
+  },
+  {
+   "id": 170258,
+   "fase": "atardecer",
+   "rol": "drop",
+   "duracion": 37,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-170258/",
+   "autor": "SAN444"
+  },
+  {
+   "id": 264939,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 50,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-264939/",
+   "autor": "conghuynh8"
+  },
+  {
+   "id": 23838,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 59,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-23838/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 153976,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 21,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-153976/",
+   "autor": "adege"
+  },
+  {
+   "id": 12127,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 7,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-12127/",
+   "autor": "badzhoo"
+  },
+  {
+   "id": 225661,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 37,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-225661/",
+   "autor": "Kanenori"
+  },
+  {
+   "id": 278877,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 13,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-278877/",
+   "autor": "SiarheiDalivelia"
+  },
+  {
+   "id": 265515,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 59,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-265515/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 10339,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 13,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-10339/",
+   "autor": "5239640"
+  },
+  {
+   "id": 180894,
+   "fase": "anochecer",
+   "rol": "calma",
+   "duracion": 7,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-180894/",
+   "autor": "xat-ch"
+  },
+  {
+   "id": 257593,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 14,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-257593/",
+   "autor": "JoshuaWoroniecki"
+  },
+  {
+   "id": 12205,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 30,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-12205/",
+   "autor": "Joshua_Willson"
+  },
+  {
+   "id": 2336,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 61,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-2336/",
+   "autor": "Life-Of-Vids"
+  },
+  {
+   "id": 1808,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 30,
+   "alto": 1440,
+   "pagina": "https://pixabay.com/videos/id-1808/",
+   "autor": "flexeye"
+  },
+  {
+   "id": 123072,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 60,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-123072/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 8643,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 44,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-8643/",
+   "autor": "Sephelonor"
+  },
+  {
+   "id": 368458,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 22,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-368458/",
+   "autor": "Kanenori"
+  },
+  {
+   "id": 110364,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 24,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-110364/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 24452,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 11,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-24452/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 41942,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 21,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-41942/",
+   "autor": "15219570"
+  },
+  {
+   "id": 7212,
+   "fase": "noche",
+   "rol": "calma",
+   "duracion": 21,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-7212/",
+   "autor": "Luiz-Jorge-Artista"
+  },
+  {
+   "id": 32317,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 23,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-32317/",
+   "autor": "CagnoDiMediaProduction"
+  },
+  {
+   "id": 41823,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 13,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-41823/",
+   "autor": "Dukefilmmaker"
+  },
+  {
+   "id": 16046,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 20,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-16046/",
+   "autor": "StefWithAnF"
+  },
+  {
+   "id": 16045,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 6,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-16045/",
+   "autor": "StefWithAnF"
+  },
+  {
+   "id": 15802,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 6,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-15802/",
+   "autor": "StefWithAnF"
+  },
+  {
+   "id": 15936,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 6,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-15936/",
+   "autor": "StefWithAnF"
+  },
+  {
+   "id": 268221,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 26,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-268221/",
+   "autor": "isuruzampa"
+  },
+  {
+   "id": 50474,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 59,
+   "alto": 1440,
+   "pagina": "https://pixabay.com/videos/id-50474/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 86256,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 32,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-86256/",
+   "autor": "lumosajans"
+  },
+  {
+   "id": 24490,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 26,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-24490/",
+   "autor": "Engin_Akyurt"
+  },
+  {
+   "id": 135068,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 19,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-135068/",
+   "autor": "Heidi_Engineer"
+  },
+  {
+   "id": 4128,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 4,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-4128/",
+   "autor": "Alessandro89"
+  },
+  {
+   "id": 285138,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 18,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-285138/",
+   "autor": "arturbobin23"
+  },
+  {
+   "id": 34411,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 17,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-34411/",
+   "autor": "martinbravo79"
+  },
+  {
+   "id": 172,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 17,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-172/",
+   "autor": "Republica"
+  },
+  {
+   "id": 29313,
+   "fase": "noche",
+   "rol": "gente",
+   "duracion": 21,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-29313/",
+   "autor": "Buzzimilian"
+  },
+  {
+   "id": 1630,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 15,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-1630/",
+   "autor": "Coverr-Free-Footage"
+  },
+  {
+   "id": 29322,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 5,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-29322/",
+   "autor": "BestEdmontonMall"
+  },
+  {
+   "id": 36706,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 12,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-36706/",
+   "autor": "Lolo_btl"
+  },
+  {
+   "id": 221132,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 8,
+   "alto": 1440,
+   "pagina": "https://pixabay.com/videos/id-221132/",
+   "autor": "SiarheiDalivelia"
+  },
+  {
+   "id": 11720,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 11,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-11720/",
+   "autor": "Iconikmg"
+  },
+  {
+   "id": 49792,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 8,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-49792/",
+   "autor": "Bairyna"
+  },
+  {
+   "id": 5713,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 28,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-5713/",
+   "autor": "tmeier1964"
+  },
+  {
+   "id": 134018,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 16,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-134018/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 134015,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 10,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-134015/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 134017,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 28,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-134017/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 134014,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 21,
+   "alto": 2160,
+   "pagina": "https://pixabay.com/videos/id-134014/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 292813,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 21,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-292813/",
+   "autor": "RainMeditateHub"
+  },
+  {
+   "id": 133783,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 6,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-133783/",
+   "autor": "Kmeel_com"
+  },
+  {
+   "id": 13522,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 19,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-13522/",
+   "autor": "Tomasz_Mikolajczyk"
+  },
+  {
+   "id": 5269,
+   "fase": "noche",
+   "rol": "drop",
+   "duracion": 133,
+   "alto": 1080,
+   "pagina": "https://pixabay.com/videos/id-5269/",
+   "autor": "Alessandro89"
+  }
+ ]
+}
