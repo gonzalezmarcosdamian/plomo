@@ -9,6 +9,20 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-20 — Session 04 subida en privado; el pen tomo el 157 exportando a mano
+
+https://youtu.be/1F-JSOza0T4, privado, con miniatura. La primera subida murio al 51% porque la
+PC se reinicio desde el menu Inicio a las 12:04; `youtube_publicar.py` no guarda la sesion
+resumible, asi que se volvio a subir entera. Sin contenido con licencia al terminar de subir;
+YouTube todavia procesando.
+
+El pendiente del pen de la entrada de abajo: la otra sesion lo resolvio con Export Playlist a
+mano en vez del Sync Manager, y el 157 quedo bien (Worlds Apart, 1h36), aunque aparece dos veces
+en el pen, en la raiz y en Sets Armados. Por que el Sync Manager no tomo los cambios sigue sin
+saberse.
+
+---
+
 ## 2026-10-20 — Session 04: fiesta en la playa, y tres temas mios que no iban
 
 **El pedido.** "Haceme la session 4 en privado en youtube de este set, busca mejores ideas de
