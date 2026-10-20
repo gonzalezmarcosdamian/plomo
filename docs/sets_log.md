@@ -3371,7 +3371,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 ## Set 157. 157. Session 04 · Melódico Ascendente — 1h47 — 2026-10-20
 **Armado:** 2026-10-20  
 **Duracion:** 0h  
-**Tracks:** 18  
+**Tracks:** 16  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
@@ -3379,21 +3379,19 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 1 | Hafex, MAXTAGE | Between Your Sighs  (Extended Mix) | 123 | 4.8 |
 | 2 | Tali Muss | Reward (Extended Mix) | 123 | 5.7 |
 | 3 | Zuccasam | Come Home (Dowden Remix) | 121 | 5.9 |
-| 4 | Habitatt | Fly With Me (Extended Mix) | 122 | 5.9 |
-| 5 | Nicolas Viana | Fog Machine (Extended Mix) | 124 | 5.8 |
-| 6 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
-| 7 | Lee Burridge | Fading Out (Extended Mix) | 122 | 6.8 |
-| 8 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
-| 9 | Mind Echoes | Visible World (Original Mix) | 121 | 5.9 |
-| 10 | Kyotto | District (Original Mix) | 122 | 5.8 |
-| 11 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
-| 12 | Ramiro Drisdale | Glade (Original Mix) | 122 | 6.9 |
-| 13 | Nicolas Viana | Kalira (Extended Mix) | 122 | 7.1 |
-| 14 | Simon Vuarambon | Stamina (Extended Mix) | 121 | 5.9 |
-| 15 | Second Sine | Motor City (Sebastian Haas Remix)  | 123 | 6.1 |
-| 16 | Rauschhaus, Greta Meier | Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix) | 124 | 6.1 |
-| 17 | Danny Howells, Lloyd Barwood | One More Sky (Original Mix) | 124 | 5.4 |
-| 18 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
+| 4 | Nicolas Viana | Fog Machine (Extended Mix) | 124 | 5.8 |
+| 5 | M.O.S. | Nanda (Dilby Remix) | 123 | 6.1 |
+| 6 | Lee Burridge | Fading Out (Extended Mix) | 122 | 6.8 |
+| 7 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
+| 8 | Mind Echoes | Visible World (Original Mix) | 121 | 5.9 |
+| 9 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
+| 10 | Ramiro Drisdale | Glade (Original Mix) | 122 | 6.9 |
+| 11 | Nicolas Viana | Kalira (Extended Mix) | 122 | 7.1 |
+| 12 | Simon Vuarambon | Stamina (Extended Mix) | 121 | 5.9 |
+| 13 | Second Sine | Motor City (Sebastian Haas Remix)  | 123 | 6.1 |
+| 14 | Rauschhaus, Greta Meier | Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix) | 124 | 6.1 |
+| 15 | Danny Howells, Lloyd Barwood | One More Sky (Original Mix) | 124 | 5.4 |
+| 16 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
 
 
 ## Set 158. 158. B2B · Grey Matter — 2h — 2026-10-20

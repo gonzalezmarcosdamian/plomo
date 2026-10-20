@@ -1167,5 +1167,21 @@
       "alcance": "esta fecha",
       "_que_quiere_decir": "ESTA BIEN ELEGIDO y le gusta: el DJ dijo 'me gusta la eleccion'. Solo no entra en ESTA fecha porque ya lo toco --2 pasadas en djmdHistory--. Para otra fecha es candidato de primera."
     }
+  },
+  "141473984": {
+    "artist": "Habitatt",
+    "title": "Fly With Me (Extended Mix)",
+    "E_calc": 5.9,
+    "nota": "'El tema fly for me algo asi no va' / 'Sacalo y rehace' / 'Aprende por que lo pusiste mal'",
+    "fuente": "escucha del set 157 (Session 04), 2026-10-20",
+    "veto": true
+  },
+  "57011885": {
+    "artist": "Kyotto",
+    "title": "District (Original Mix)",
+    "E_calc": 5.8,
+    "nota": "'district tampoco va'",
+    "fuente": "escucha del set 157 (Session 04), 2026-10-20",
+    "veto": true
   }
 }

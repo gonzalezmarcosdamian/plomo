@@ -19,6 +19,16 @@ COSTO (por paso)
   tema en `preferir` -3 (los que pasan el sonido del 150)
 Las `anclas` tienen que estar, y en la parte del set que dice `anclas_desde`.
 
+LO AJENO NO ENTRA SOLO
+----------------------
+Un tema cuyo artista Y sello no aparecen nunca en lo que el DJ toco (data/mundo_propio.json)
+sale del pool, salvo que sea ancla o `preferir`: lo que el DJ eligio se respeta aunque sea
+ajeno, lo que agrega el buscador no. "El tema fly for me algo asi no va... aprende por que lo
+pusiste mal" (2026-10-20): en el 157, Habitatt - Fly With Me (sello Experts Only) era el unico
+ajeno de los 9 temas que sume yo, el 21 de 25 en parecido, y entro porque daba el 6A que la
+rueda pedia entre 5A y 6B. Cobrarlo con el 2.0 de sonido_propio.peso_ajeno no alcanzaba: un
+salto de rueda cuesta 15. `--con-ajenos` los deja, marcados.
+
 USO
 ---
     python scripts/ordenar_como_150.py data/pool_cumple_del_20.json --n 18
@@ -29,6 +39,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -56,6 +67,22 @@ def paso(a: dict, b: dict) -> float | None:
     costo = COSTO_RUEDA_2 if rueda == 2 else 0.0
     costo += COSTO_BAJAR * -d if d < 0 else COSTO_SUBIR_DE_MAS * max(0.0, d - ESCALON)
     return costo
+
+
+def _norm(s: str | None) -> str:
+    # los tags de la biblioteca traen espacios de mas ("All Day I Dream ")
+    return " ".join((s or "").split()).lower()
+
+
+def mundo() -> tuple[set[str], set[str]]:
+    """Los artistas y sellos de lo que el DJ toco o marco como favorito."""
+    mp = json.loads((RAIZ / "data" / "mundo_propio.json").read_text(encoding="utf-8"))
+    return {_norm(a) for a in mp["artistas"]}, {_norm(s) for s in mp["sellos"]}
+
+
+def es_ajeno(t: dict, artistas: set[str], sellos: set[str]) -> bool:
+    nombres = {_norm(x) for x in re.split(r",|&| x | feat\.? ", t["artist"]) if x.strip()}
+    return not (nombres & artistas) and _norm(t.get("label")) not in sellos
 
 
 def buscar(pool: list[dict], n: int, anclas: set[str], preferir: set[str], anclas_desde: float) -> tuple[float, list[int]]:
@@ -96,19 +123,28 @@ def main() -> None:
     ap.add_argument("--anclas", nargs="*", default=[])
     ap.add_argument("--anclas-desde", type=float, default=0.55, help="fraccion del set desde donde van las anclas")
     ap.add_argument("--preferir", nargs="*", default=[])
+    ap.add_argument("--con-ajenos", action="store_true", help="no saca los ajenos que no son ancla ni preferir")
     ap.add_argument("--nombre", required=True)
     ap.add_argument("--nota", default="")
     ap.add_argument("--salida")
     a = ap.parse_args()
 
     pool = json.loads((RAIZ / a.pool).read_text(encoding="utf-8"))
+    artistas, sellos = mundo()
+    elegidos = set(a.anclas) | set(a.preferir)
+    ajenos = {t["id"] for t in pool if t["id"] not in elegidos and es_ajeno(t, artistas, sellos)}
+    if ajenos and not a.con_ajenos:
+        print(f"fuera del pool por ajenos ({len(ajenos)}): "
+              + "; ".join(f"{t['artist']} - {t['title']}" for t in pool if t["id"] in ajenos))
+        pool = [t for t in pool if t["id"] not in ajenos]
     costo, seq = buscar(pool, a.n, set(a.anclas), set(a.preferir), a.anclas_desde)
     temas = [pool[i] for i in seq]
     print(f"{a.nombre}  (costo {costo:.1f})")
     for k, t in enumerate(temas):
         r = distance(temas[k - 1]["key"], t["key"]) if k else 0
         print(f"{k + 1:3d}. E{t['energy']:.1f} {t['bpm']:5.1f} {t['key']:>4}{'  <-- rueda 2' if r == 2 else ''}"
-              f"{'  *' if t['id'] in a.preferir else ''}{'  ANCLA' if t['id'] in a.anclas else ''}   {t['artist']} - {t['title']}")
+              f"{'  *' if t['id'] in a.preferir else ''}{'  ANCLA' if t['id'] in a.anclas else ''}"
+              f"{'  AJENO' if t['id'] in ajenos else ''}   {t['artist']} - {t['title']}")
     bajadas = [round(temas[k - 1]["energy"] - temas[k]["energy"], 1) for k in range(1, len(temas))
                if temas[k]["energy"] < temas[k - 1]["energy"]]
     print(f"duracion de los archivos {sum(t['dur_seg'] for t in temas) / 60:.0f} min; bajadas de energia: {bajadas or 'ninguna'}")

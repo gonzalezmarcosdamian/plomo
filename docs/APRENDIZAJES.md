@@ -8,6 +8,39 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un tema que entra para llenar un paso de la rueda, desde lo menos parecido, no va
+
+**Que paso.** Para completar una lista del DJ se sumaron 9 temas de la biblioteca que pasaban
+los pisos de sonido, se parecian en energia, densidad, graves y color, eran del mismo genero y
+nunca los habia tocado. Despues un buscador eligio cuales entraban y en que orden, cobrando
+solo los saltos de energia, de rueda y de BPM. El DJ saco dos al escuchar: "algo asi no va" y
+"tampoco va". Los dos venian de la mitad de abajo en parecido con lo que el eligio (el 21 y el
+27 de los candidatos, distancia 0.51 y 0.54, contra 0.14 a 0.41 de los cuatro de arriba), y los
+dos entraron a llenar un paso de la rueda: un 6A entre un 5A y un 6B, un 9B entre un 9A y un
+10B. Sin ellos el paso era a 2, y eso costaba 15. Uno de los dos era ademas el unico ajeno de
+los 9: ni el artista ni el sello aparecen nunca en lo que toco. El otro no: a ese artista lo
+toco.
+
+**Por que.** Un buscador que solo cobra la rueda llena el hueco de tonalidad con el candidato
+que haya, por lejos que este en sonido. El pool que se le dio ya era la seleccion: los 25
+primeros que pasaban los filtros llegaban hasta una distancia de 0.54. Lo ajeno es una senal
+aparte, y fuerte: el 2026-09-23 los 4 temas que el DJ rechazo escuchando eran los 4 ajenos, y
+por forma de onda eran indistinguibles del resto. Pero no lo explica todo: el segundo
+rechazado de esta vez no era ajeno.
+
+**Como se aplica.**
+- Al buscador se le da solo lo que esta cerca de lo que el DJ eligio, no los primeros N que
+  pasan los filtros.
+- Si un tema entra solo para que la rueda vaya de a uno y viene de la mitad lejana, se
+  prefiere el salto de 2: bien mezclado, se escucha menos que un tema que no va.
+- Lo que el DJ elige se respeta aunque sea ajeno (la apertura del 157 lo es). Lo ajeno que
+  agrega el buscador sale del pool: `ordenar_como_150.py` lo saca por defecto, y con
+  `--con-ajenos` lo deja, marcado.
+- Todavia no hay un corte de distancia: en la misma franja de 0.50 a 0.54 quedaron otros tres
+  temas que el DJ no comento. Con dos casos no alcanza para escribir uno.
+
+---
+
 ## Un respaldo con la cuota llena falla callado
 
 **Que paso.** OneDrive tenia la carpeta Documentos de Windows, la biblioteca
