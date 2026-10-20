@@ -9,6 +9,44 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-20 — Session 04: fiesta en la playa, y tres temas mios que no iban
+
+**El pedido.** "Haceme la session 4 en privado en youtube de este set, busca mejores ideas de
+visuales, podes hacer como que fuera una fiesta? que es lo que mas reproducciones tiene? revisa
+en youtube." El set es el 157, la propuesta del 19 desde su lista de Spotify "Melodico
+Ascendente". En vidIQ, los mixes largos mas vistos del genero son sets filmados en un lugar
+lindo al atardecer y con gente: Miss Monique en Ibiza (26.7M), RUFUS en el Mayan Warrior
+(22.1M), Maldo en Punta del Este (17.7M), YOUNA en el desierto (8.9M). De ahi `fiesta.frag`:
+la playa del atardecer a la noche, la cabina a contraluz, la gente moviendose con la fase del
+beat, un color de luces por tema y los brazos arriba en los drops.
+
+**Tres cambios mientras escuchaba.** "El tema fly for me algo asi no va" / "Sacalo y rehace" /
+"Aprende por que lo pusiste mal"; despues "district tampoco va"; y desde otra sesion "cambia
+fading out tambien", reemplazarlo. Los tres eran de los 9 que sume yo, no de su lista, y los
+tres de la mitad de abajo en parecido con lo que el eligio (puestos 21, 27 y 30 de los
+candidatos). Fly With Me y District entraron a llenar un paso de la rueda. Fly With Me era
+ademas el unico ajeno. Los dos primeros salieron sin reemplazo y quedaron como veto de ESE set;
+Fading Out es cambio de lugar y entro Guy J - Worlds Apart, el 2 de 60 en parecido, aunque la
+rueda salte a 2 (`reemplazar.py` proponia un remix de Kyotto). La leccion va en APRENDIZAJES;
+`ordenar_como_150.py` ya no suma ajenos por su cuenta.
+
+**Cada cambio corto un render.** El de 18 temas murio en el tramo 6, el de 16 en el 1. Los
+tramos viejos se apartaron antes de relanzar, porque `video_por_trozos.py` retoma los tramos que
+ya existen y habria pegado audio viejo; despues se borraron ("dale").
+
+**Lo que quedo.** 16 temas, 96:09, -14.0 LUFS, -1.1 dBTP, 15 de 15 cambios ok. El video:
+2560x1440, 96.2 min, audio identico a la mezcla muestra por muestra. Subido en privado. El 157
+esta igual en Rekordbox (renombrado a 1h36 con el nuevo `build_set.py --renombrar`) y en
+Spotify.
+
+**El pen no tomo los cambios del 157.** Tres syncs seguidos de la otra sesion dejaron la version
+vieja (1h47, con Fading Out). `build_set.py` numeraba los cambios con el maximo de cada tabla y
+no con el contador de Rekordbox (102485 contra 105981): ahora usa el contador, pero el sync
+siguiente tampoco lo tomo. La otra pista, sin probar: el Timestamp del NODE en
+masterPlaylists6.xml queda en la fecha de creacion. Pendiente.
+
+---
+
 ## 2026-10-20 — set 158, una fecha B2B con Grey Matter de hilo conductor
 
 "tengo que hacer para una fecha b2b una lista de 2 horas sobre este tema. Nuestro hilo
