@@ -45,6 +45,7 @@ que ya costaron caro, y lo que tiene prohibido hacer.
 | `musico` | Melodia, armonia, forma y tension. Escribe y critica ideas musicales, no mide senal. |
 | `productor` | analisis de produccion | opinar de oido en vez de medir |
 | `video` | YouTube | publicar por su cuenta |
+| `editor` | edicion y color de las piezas de video, tomas reales del DJ | recortarlo del fondo, mostrar algo sin revisarlo |
 | `redes` | IG/TikTok, marca, metricas | publicar por su cuenta |
 
 ---
