@@ -3394,29 +3394,29 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 16 | Lee Burridge, Lost Desert | Ash & Ember (Extended Mix) | 123 | 6.0 |
 
 
-## Set 158. 158. B2B · Gray Matter — 2h — 2026-10-20
-**Armado:** 2026-10-20  
+## Set 158. 158. B2B · Grey Area — 2h — 2026-10-21
+**Armado:** 2026-10-21  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 120-124  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Double Touch | Come With Me (Original Mix) | 122 | 6.8 |
-| 2 | KYOTTO | Knock Knock | 121 | 6.1 |
-| 3 | Kasper Koman | The Observer | 121 | 6.1 |
-| 4 | Kabi (AR), Ric Niels | Mutant | 121 | 7.2 |
-| 5 | Samuel (LK) | Pulse (Casnik Remix) | 123 | 6.8 |
-| 6 | Kamilo Sanclemente | Auriga Moon (Original Mix) | 122 | 5.9 |
-| 7 | Alex O'Rion, Antrim | Imagine (Original Mix)  | 120 | 6.6 |
-| 8 | Kostya Outta | Seguro (Paul James Nolan Remix) | 122 | 7.0 |
-| 9 | Gai Barone | Fractals (Nicolas Viana Extended Remix) | 121 | 6.0 |
-| 10 | Erdem Yetim feat. Erman Danisment | Gray Matter (Original Mix) | 120 | 4.2 |
-| 11 | Maxi Degrassi | The Love Goes First (Original Mix)  | 120 | 6.4 |
-| 12 | Cary Crank | Deep Forest (Extended Mix) | 122 | 7.9 |
-| 13 | Double Touch | Gran Amigo (Original Mix) | 122 | 7.0 |
-| 14 | Dimas Mixon, Cendryma | Minicube (Original Mix) | 120 | 6.0 |
-| 15 | Alan Cerra | Blackout (Melodiam AR Remix) | 120 | 7.1 |
-| 16 | Gorkiz, Mind Echoes | Your Trust (Paul Hamilton Remix) | 122 | 6.6 |
-| 17 | Kamilo Sanclemente, M.O.S., Andre Moret | Perception (Original Mix) | 122 | 6.8 |
+| 1 | Tonaco | Avalon (Original Mix)  | 122 | 6.2 |
+| 2 | Gorje Hewek, ETNE | Children (Extended Mix) | 124 | 7.2 |
+| 3 | Tim Green | Minds (Original Mix) | 122 | 6.5 |
+| 4 | Dowden | Gavia (Original Mix) | 122 | 6.0 |
+| 5 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
+| 6 | Maze 28 | Personal Space (Extended Mix) | 122 | 5.8 |
+| 7 | Max Wexem | Confined (Original Mix) | 120 | 6.5 |
+| 8 | Mind Echoes | Unsafe Numbers (Original Mix) | 121 | 7.2 |
+| 9 | Supacooks | Un Mundo En Paz (Extended Mix) | 122 | 7.1 |
+| 10 | Simon Vuarambon | Grey Area (Original Mix) | 123 | 5.7 |
+| 11 | Guy J | Rise (Original Mix) | 122 | 7.1 |
+| 12 | Sebastien Leger, Lost Miracle | Mistily (Extended Mix) | 121 | 7.6 |
+| 13 | Artic White | Jungla Safari (Extended Mix) | 122 | 6.0 |
+| 14 | Tim Green | Body Stars (Original Mix) | 123 | 7.5 |
+| 15 | Maezbi, Nicolas Viana | Smooth (Original Mix) | 123 | 6.8 |
+| 16 | Matthew Sona | Prismatik (Original Mix) | 122 | 5.2 |
+| 17 | Hraach, Armen Miran | Menq (Nick Warren & Nicolas Rada Remix) | 122 | 6.8 |
 

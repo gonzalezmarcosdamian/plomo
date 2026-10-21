@@ -9,6 +9,29 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-21 — el 158 era con Grey Area de Simon, y suma Prismatik
+
+"estaba mal el b2b era con el tema nuevo de simon grey, rehacelo": el hilo conductor era
+Simon Vuarambon – Grey Area (Bedrock, 123, 3B), no ninguno de los Grey Matter. Y despues:
+"prismatik de matthew sona ponelo, esta en la radio de spoty esta muy bueno" (All That Is.,
+122, 6A), bajado e importado con `importar.py`, anotado como favorito con esas palabras.
+
+v3 del 158: 17 temas en el vecindario de Grey Area, zona 3A/4A con 3B como cara mayor, color
+mediano 0.79. Grey Area en el giro de la hora (1:00 tocable), entrando desde Un Mundo En Paz,
+su vecino mas cercano de toda la biblioteca; Prismatik anteultimo, que en las tres lecturas de
+su energia es el lugar mas barato y entrega con un drop final de 2:08. Grey Area tambien esta
+en el 154 (a proposito); 0 repetidos con 155-157.
+
+El revisor bloqueo por un aviso, no por la lista: Un Mundo En Paz se toco hace dos dias en
+otra version (Serious Dancers Remix) y `plomo.tocados` no la ve porque cruza por el titulo
+completo con el nombre de la mezcla. Mistily es el unico tema fuera del vecindario: el
+detonante con mas brillo. Escrito con `--renombrar` y la misma lista de Spotify, 17/17.
+
+De paso, a pedido ("alinea spoty y rekor"): 150, 151 y 152 tenian en Rekordbox el nombre
+viejo; quedaron con el de la receta y Spotify (7072c0d). Del 150 al 158 coinciden los tres.
+
+---
+
 ## 2026-10-20 — Session 04 publicada, con clips reales: las Sessions se hacen asi
 
 "El video el concepto esta bueno pero podes usar imagenes reales? clips?" Le ofreci cinco

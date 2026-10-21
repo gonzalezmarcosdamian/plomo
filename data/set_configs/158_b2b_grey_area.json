@@ -1,0 +1,432 @@
+{
+  "pool": "data/pool_158.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "permitir_repetir_entre_sets": true,
+  "_comentario": "Set 158 v3: fecha B2B, prime time, 2h, una sola lista para los dos DJ. El hilo es Simon Vuarambon - Grey Area (Original Mix) [Bedrock Records] (237573926), y el DJ sumo una segunda ancla obligatoria, Matthew Sona - Prismatik (Original Mix) [All That Is.] (53801929). Es la tercera version con el mismo numero: v1 (tag set158-v1) con Sirch - Grey Matter, v2 (tag set158-v2) con Erdem Yetim - Gray Matter, y esta, despues de que el DJ aclarara que el tema era el nuevo de Simon: ver _nota_cambio_de_hilo. Este archivo es el config de la v2 renombrado con git mv (158_b2b_gray_matter.json -> 158_b2b_grey_area.json) y reescrito entero. El pool es reducido a proposito: data/pool_158.json (gitignoreado, como pool_155.json) es el vecindario sonoro de Grey Area sacado de data/pool.json del 2026-10-21, que se regenero con dump_pool.py (conexion en solo lectura) despues de importar Prismatik y solo suma ese tema; las E:1.4 del pool estan estimadas por receta y marcadas en el propio tema (energy_calc, energy_fuente). Prismatik se indexo el 2026-10-21 con la misma llamada de indexar_forma.py (reverse_engineer.py -> data/recetas/lib/53801929.json) y data/groove_index.json se regenero con perfilar_gusto.groove_index() sin tocar mundo_propio.json: suma Prismatik y el color de los demas se mueve a lo sumo 0.001 (corrimiento del percentil). Las listas largas de este config (prefer_ids, anclas_en) salen de ese pool con scripts de analisis de scratch, no versionados: el criterio esta escrito en las notas. El pool_158 de la v2, el groove_index y el pool.json de antes, los scripts y todas las corridas quedaron en el scratchpad de la sesion del 2026-10-20 (v3/).",
+  "sets": [
+    {
+      "num": 158,
+      "grupo": "Fecha B2B Grey Area",
+      "name": "158. B2B · Grey Area — 2h — 2026-10-21",
+      "carpeta": "0 Fechas",
+      "_identidad": "Dos horas de prime time adentro del sonido de Grey Area: progressive denso desde el primer compas, con mucho aire arriba y un solo respiro largo por tema, que vive en la zona 3 de la rueda --3A de casa, 4A al lado y 3B, la tonalidad del hilo, como cara mayor-- y en la ultima media hora baja a 5A/6A a buscar a Prismatik, con color y sin nada mas oscuro que el propio Grey Area. Grey Area es el giro de la hora (1:00 tocable), entrando desde Un Mundo En Paz, su vecino mas cercano; de ahi el set va a los dos detonantes de la 1:24 y la 1:39, y Prismatik, el que el DJ trajo de la radio, es la entrega: anteultimo, con su drop final de dos minutos hasta el ultimo compas.",
+      "_contexto": "El DJ, 2026-10-20: 'tengo que hacer para una fecha b2b una lista de 2 horas sobre este tema. Nuestro hilo conductor es la cancion gray matter'. Respuestas de esa manana: 'El sonido del tema manda' (todo el set en su vecindario sonoro y el tema en el momento clave, a decidir); 'La lista es de los dos' (una sola lista de 2h, sin repartir bloques); PRIME TIME, energia media-alta sostenida, modelo el 150. Sin fecha todavia. Despues de la v1: 'ese no creo que sea el grey matter es muy oscuro fijate cuales serian los mas coloridos o con brillo de los demas'. 2026-10-21: 'estaba mal el b2b era con el tema nuevo de simon grey, rehacelo'. El nombre lleva 2026-10-21, el dia en que se rearmo; la fecha de la b2b sigue sin darse y se renombra cuando la diga. Mismo dia, despues del rearmado: 'prismatik de matthew sona ponelo, esta en la radio de spoty esta muy bueno' -- ancla obligatoria, como Grey Area. Importado por el coordinador el 2026-10-21 (ContentID 53801929); su nota va a data/energia_percibida.json como favorito y sin E: eso lo anoto el coordinador, no este config.",
+      "_nota_cambio_de_hilo": "v1 (set158-v1): Sirch - Grey Matter (235479137), 122 BPM 8A, color_pct 0.04; el DJ: 'es muy oscuro'. v2 (set158-v2, commit c7d7f37): Erdem Yetim feat. Erman Danisment - Gray Matter (53433970), 120 BPM 7A, color_pct 0.84, elegido por el DJ entre 13 versiones medidas. v3: el tema nunca fue un Gray/Grey Matter. Es Simon Vuarambon - Grey Area (Original Mix) [Bedrock Records], salido el 2026-10-10: 123 BPM, 3B, E5.7, 7:11, Progressive House. No se retoco la v2: se rehizo el vecindario, porque la zona de key paso de 5A-9A a 1A-5A/2B-4B y los dos vecindarios casi no se tocan. De los 17 temas de la v2 uno solo entra al pool nuevo (Double Touch - Gran Amigo, a 3.48) y ninguno al set; de los 18 de la v1, ninguno. Grey Area tambien esta en el 154 (lugar 8; apertura del 2026-10-23, 'lo nuevo de Simon'): repetido a proposito, porque es el hilo.",
+      "_nota_prismatik": "Matthew Sona - Prismatik (Original Mix) [All That Is.], 53801929: 122 BPM, 6A, E5.2, 6:24, Progressive House, salido el 2026-10-09, sin tocar. Receta: groove desde el compas 1 (72 compases, 2:22 sin pausa), un respiro de 7, otro groove de 27, UN breakdown de 24 compases (47 s) y un drop final de 65 compases (2:08) hasta el ultimo compas, sin outro; 5 secciones. Es el tema mas comprimido de la biblioteca (rango dinamico 1.9 dB, percentil 0 sobre 2455), LUFS -8.4 (p85), medio 10.4, aire 7.6, sub 44.6, color_pct 0.579. Esta a 3.09 de Grey Area en sonido y forma (puesto 240 de 2455): adentro del radio del nucleo (3.55). Pertenece al vecindario; lo que lo dejaba afuera era la key, 6A, a 3 de casa. Entra al pool como ancla, sin pasar el filtro de rueda, y en el set lo rodean 5A (Smooth antes, Menq despues), a 1 paso. LUGAR: ENTREGA, ventana [0.88, 1.0]: tema 16, a la 1:55 de reloj crudo (1:40 tocable), y cierra Menq (5A, 6.8). Ver _nota_grey_area para la grilla conjunta.",
+      "_nota_key": "Rekordbox dice 3B (Db mayor) y Muzpa Dbm (12A). Verificado sobre el audio (chroma CQT de la parte armonica, librosa, el tema entero): Krumhansl-Kessler da 3B (r 0.62), con 12A segunda (0.46) y 3A tercera (0.36); Temperley da 3B. La tonica Db no esta en duda: la dan las dos fuentes y C# es la nota mas fuerte del perfil (0.151). El modo si: la tercera esta debil en las dos lecturas (F 0.063 para mayor, E 0.043 para menor). Calibrado sobre 24 temas de la biblioteca (12 mayores, 12 menores), el metodo coincide con la key de Rekordbox en 14 (K-S) y 15 (Temperley): es un desempate debil, no una prueba, y desempata a favor de Rekordbox. Se usa 3B. Si el DJ lo escucha en Dbm, sus dos vecinos en el set (Confined 4A y Un Mundo En Paz 3B) quedan a 4 lugares de la rueda. (La prueba por coleccion de notas, que separaria 3B de 12A sin depender del modo, acerto 8 de 24 en la calibracion y se descarto.)",
+      "_nota_zona": "El set vive en la zona 3 de la rueda con 3A de casa (key_hogar 3A, peso_hogar 0.6). Pool: rueda a <= 2 de 3A, o sea 1A-5A en menor y 2B-4B en mayor, mas Prismatik (6A) como ancla. Por que 3A y no 3B: 3A (Bb menor) es la relativa de Grey Area, las mismas siete notas que Db mayor, y Grey Area queda a 1 de casa. Centrado en 3B el pool sale 41% en 4A y 29% en mayor (1B-5B), mas lejos de Grey Area en sonido y forma (radio del nucleo 3.83 contra 3.55, mediana 3.44 contra 3.23) y con la mitad de detonantes (10 contra 18); centrado en 3A sale 12% en mayor, como la biblioteca. Con key_hogar 3B los pasos quietos suben a 44% (pros 29%). Por que 4A y no 4B al lado: 4B tiene 2 temas en la zona y su relativa 4A tiene 46; 4A -> 3B es distancia 2 pero comparten seis de siete notas (solo cambia G por Gb). El set no queda todo en menor por inercia: 4 de 17 en mayor, los cuatro en 3B (Avalon, Gavia, Un Mundo En Paz y Grey Area), mas que armonia.modo_mayor_objetivo (0.11, un costo y no una restriccion) y en el rango de los pros (p75 20%; Ezequiel Arias 25%). No se forzo: la cuota quedo en su valor y aun asi entran porque estan cerca de Grey Area; Un Mundo En Paz es el segundo tema de la biblioteca mas parecido a Grey Area (1.81) y es el que entra a el. Recorrido: 3B 4A 3A 3B 4A 3A 4A 4A 3B 3B 4A 3A 4A 5A 5A 6A 5A. La primera hora y media orbita 3A/3B/4A; la ultima media hora baja a 5A y 6A a buscar a Prismatik y cierra en 5A. 4 pasos de 2 en la rueda (pros 15%), 25% de pasos quietos (pros 29%), 0 saltos de BPM mayores a 2.",
+      "_nota_vecindario": "La misma distancia de la v1 y la v2: euclidea a Grey Area sobre rasgos z-normalizados de data/recetas/lib (2454 recetas confiables con secciones; Grey Area ya estaba indexada), sonido (sub, densidad media, medio, aire, rango dinamico, LUFS) y forma (breakdown principal, posicion y largo del drop final, secciones). Color de un solo lado, la regla de la v2: color_pct con peso 2, cobrando solo lo que un tema esta por DEBAJO de Grey Area (0.219); ser mas colorido no aleja. Grey Area es un caso extremo de la biblioteca: aire 8.9 (p97) y densidad 15.6 (p93), con sub 39.2 (p24), medio 9.5 (p49), rango 7.2 dB (p79), LUFS -9.5 (p36), 8 secciones, breakdown de 30 compases (p52) y drop final al 67% con 68 compases. No tiene intro: el groove arranca en el compas 1. Por eso las distancias son mas largas que en la v2 (radio del nucleo 3.55 contra 2.97). Pool: 120-124 BPM, rueda a <= 2 de 3A, generos del config (sale Indie Dance, que estaba por Gray Matter), sin vetos, piso de color 0.35 (el minimo del 150 es 0.37) y E >= 5.0, con la energia percibida pisando a la formula como en el selector. Nucleo: los 120 mas cercanos (dist <= 3.55). Intensos: 53 con E >= 6.6 hasta 1.33 veces ese radio (4.73), la proporcion de la v2 (3.95 / 2.97); sin ese tope, con el filtro de key la lista se termina antes del puesto 400 y el anillo llegaba a distancia 13. Total: 166 temas mas Prismatik como ancla fuera del filtro de rueda = 167, color mediano 0.69, 18 detonantes. Las distancias se recalcularon despues de indexar Prismatik: la receta nueva mueve los desvios y ninguna distancia cambia mas de 0.002. prefer_ids: los 40 mas cercanos (dist 1.59 a 3.06), prefer_bonus 1.5 (el tope de una fecha).",
+      "_nota_color": "Grey Area da color_pct 0.219 por el AIRE, no por falta de medios: medio 9.5 (p49) con aire 8.9 (p97), lejos de la campana de 5.5 de estilo.color. El piso 0.35 deja a Grey Area como el unico tema del set debajo de 0.45: el set no se hunde por debajo del hilo. Con el piso en 0.22 (el color de Grey Area) el set no gana color (0.83 igual) y pierde estructura: 5 saltos de groove, 38% de pasos quietos y 2 saltos de BPM. color_peso 1.5, el de la regla (estilo.colorido). En la v2 se subio a 3.0 porque 1.5 no movia la seleccion; aca 3.0 no compra color de forma pareja (Grey Area en B1: 0.79 con 3.0 y 0.83 con 1.5; libre: 0.79 y 0.79; en B2: 0.83 y 0.79), asi que vuelve a su valor y no se afloja. Color mediano del set 0.79, minimo 0.22 (Grey Area) y despues 0.56 (Avalon) (v1 0.26, v2 0.84, 150 0.71). La otra lectura de 'oscuro', medio/aire (estilo.oscuro_del_dj, refutada como filtro), da 1.84 de mediana, con 12 de 17 temas debajo de 2.2 (v1 2.13, v2 2.51, 150 2.28, 154 1.81). No separa la v1 rechazada del 150 aprobado y esta refutada como filtro, asi que no decide; pero es el riesgo principal de la escucha: es la medida que vio 'muy oscuros' a Emerge y Circle Of Lights (1.9) con color_pct alto, y el vecindario de Grey Area es aireado porque Grey Area lo es (aire p97, medio/aire 1.07). Si el DJ lo escucha oscuro, es por aca y no por color_pct.",
+      "_nota_grey_area": "DONDE VAN LAS DOS ANCLAS. Grey Area en el GIRO DE LA HORA, ventana [0.50, 0.65]: tema 10, 1:09 de reloj crudo, 1:00 tocable con mezclas de 1 minuto. Prismatik en la ENTREGA, ventana [0.88, 1.0]: tema 16, 1:55 crudo, 1:40 tocable. PRIMERO SIN PRISMATIK (beam 8000, color_peso 1.5; costo | corr posicion-energia | saltos de rueda de 2 | pasos quietos | saltos de BPM > 2 | saltos de groove > 1.25 | MAE contra la curva del 150 | color mediano): A abre (0:00) -88.55 | +0.29 | 2 | 44% | 1 | 1 | 0.85 | 0.79. F segundo y libre (0:08) -89.38 | +0.29 | 3 | 38% | 2 | 1 | 0.85 | 0.79. B1 [0.40, 0.55] y B_hora (0:54) -88.53 | +0.29 | 4 | 25% | 1 | 2 | 0.81 | 0.83; a 16000 y 30000 converge en -88.80. B2 [0.50, 0.65] (1:09) -88.03 | +0.24 | 4 | 31% | 1 | 2 | 0.98 | 0.79. B3 antepico (1:17) -88.56 | +0.35 | 3 | 31% | 1 | 4 | 0.86 | 0.79. C pico (1:32) -88.06 | +0.26 | 3 | 38% | 2 | 5 | 0.91 | 0.79. E cierre (1:55) -88.06 | +0.04 | 5 | 38% | 1 | 1 | 0.96 | 0.79. Sin Prismatik ganaba B1. CON PRISMATIK, grilla conjunta (Grey Area fija en B1, Prismatik movido; costo | corr | rueda | quieto | BPM | groove | MAE | color): Prismatik abre (0:05) -105.07 | +0.24 | 4 | 25% | 1 | 1 | 0.84 | 0.79. Segundo/libre (0:14) -107.32 | +0.30 | 5 | 31% | 2 | 2 | 0.87 | 0.73. Temprano [0.10, 0.30] (0:22) -107.42 | +0.38 | 4 | 25% | 1 | 3 | 0.84 | 0.75. Giro B2 (1:11) -104.50. Antepico (1:22) -105.13. Pico (1:34) -104.76, 44% quieto. Entrega [0.80, 0.95] (1:49) -106.11 | +0.14 | 5 | 31% | 1 | 0 | 0.87 | 0.79. Cierre [0.88, 1.0] (1:57) -107.63 | +0.13 | 4 | 38% | 2 | 2 | 0.86 | 0.79. Con Prismatik en el cierre, Grey Area movida: segundo (0:08) -108.77; B1 (0:56) -107.63; B_hora igual a B1; B2 (1:09) -107.87 | +0.02 | 4 | 25% | 0 | 2 | 1.03 | 0.79; B3 (1:17) -107.47 con 5 saltos de groove. B1 + cierre y B2 + cierre dan el mismo set a 8000, 16000 y 30000. POR QUE PRISMATIK AL FINAL: con ventanas fijas es la mas barata en las tres lecturas de su energia (5.2: -107.63 contra -107.32 temprano; 6.6: -108.48 contra -108.10; 7.7: -109.21 contra -108.17). El 'libre' lo pone tercero (0:14) con cualquier energia, pero no es un criterio: el bonus del ancla se cobra cuando se la coloca, asi que las ramas que la ponen temprano dominan la poda del beam y las que la guardan para el final se descartan antes de llegar (a 16000 el libre da -107.42, peor que dos ventanas fijas). Por oido: entra con el groove armado y su drop final de 2:08 llega hasta el ultimo compas, asi que entrega con la pista arriba; si suena como Sizer, es el ultimo pico del set. El riesgo: si suena como su formula (5.2), es un bajon antes del final; el set termina en Menq (6.8), arriba de donde empezo (6.2). Contra el 150, que tiene a Sizer segundo: el costo prefiere el final en las tres energias, y en el 150 Sizer lo ubico el DJ, no el selector. POR QUE GREY AREA EN LA HORA, con Prismatik en la entrega: es el costo mas bajo entre los lugares que no se descartan por criterio (segundo es la formula poniendo la E mas baja donde el arco esta mas bajo, y deja el prime time arrancando en un valle); 0 saltos de BPM contra 2 de B1, 25% de pasos quietos (pros 29%) contra 38%, corr +0.02, dentro del IQR de los pros (0.00 a 0.19); y entra a Grey Area desde Un Mundo En Paz (3B, 122), su vecino mas cercano, en vez de un 4A a 120 con +3 BPM, que era lo que daba B1. Cede contra el 150 (MAE 1.03 contra 0.86), que la v2 ya habia medido como no discriminante (0.78 a 1.04 en todas). Es ademas el gesto del 150: Pure Junction (120, 7A, E5.9) a la hora y el pico despues; aca Grey Area a la 1:00 tocable, Mistily (7.6) 15 minutos despues y Body Stars (7.5) a la 1:39 crudo. Grey Area no tiene intro y su drop final dura 2:13, asi que sale del giro con el groove arriba. Referencias de los pros: corr +0.11 de mediana (IQR 0.00 a 0.19), 29% quieto, 15% de pasos de 2 en la rueda y 28% de saltos de BPM mayores a 2.",
+      "_nota_arco": "Arco de fecha PRIME TIME, sostener y entregar, el de la v1 y la v2 sin cambios: e_lo 6.4, e_hi 7.2, pico_en_pct 0.75, caida 0.3, tolerancia_arco_frac 0.5. La tolerancia de una fecha es 0.3; medida aca (con Grey Area en B1, antes de sumar Prismatik) da 5 saltos de rueda y 2 de BPM contra 4 y 1, asi que queda en 0.5, como en las dos versiones anteriores. key_hogar 3A (en la v2 era 7A y en la v1 8A), peso_hogar 0.6. El vecindario de Grey Area vive en energia media: la mediana del pool es 6.6, la del set 6.8 y la del 150 7.1 con la energia que el DJ escucho.",
+      "_nota_ventanas": "anclas_en, generado desde pool_158 para todo menos las dos anclas: (1) Grey Area [0.50, 0.65] y Prismatik [0.88, 1.0]. (2) Nada debajo de 6.4 despues del 88% (la fecha entrega arriba). (3) Nada debajo de 6.2 en el primer tema, y nada debajo de 6.0 antes del 25% (prime time recibe la pista hecha). (4) Los detonantes (E >= 7.5) solo en [0.70, 0.85], que es detonantes.ventana_pct: entran dos, Sebastien Leger & Lost Miracle - Mistily (7.6) a la 1:24 y Tim Green - Body Stars (7.5) a la 1:39, no seguidos, dentro de detonantes.cantidad_por_set_2h [1, 2]. Las fracciones son del tiempo objetivo (2h), no del largo crudo. Arreglo respecto de la v2: el script de scratch armaba estas ventanas con la E de formula del pool, y el selector usa la percibida; aca se arman con la percibida. Cambia a Paul Thomas - Jumbo (Jamie Stevens Remix) y Boxer - I'm Lighter With You (formula 6.1 y 5.7, percibida 7.8), que ahora solo pueden caer en la ventana de detonantes. Ninguno entra al set.",
+      "_nota_energia": "Las dos anclas quedan con la E de la DB, 5.7 (Grey Area) y 5.2 (Prismatik). Ninguna es el fallo del cue engine (esa firma es 1.4): salen de cues reales, que coinciden con la receta por 2-4 segundos, con el Bass IN en 0 ms, que plomo.energy lee como bajo desconocido (1.0 neutral en vez de 2.0). Con el bajo como conocido --la receta muestra groove pleno desde el compas 1 en las dos-- darian 7.1 y 6.6; la via de la receta da 7.6 y 5.8 literales. No se tocan porque el sesgo es de toda la escala: 2092 de 3163 temas (66%) tienen el Bass IN en 0-100 ms y reciben el mismo neutral, asi que 5.7 y 5.2 son comparables con la E de sus vecinos. Prismatik tiene ademas lo que la formula no ve: presion. Es el tema mas comprimido de la biblioteca, y los dos unicos temas comprimidos (rango < 3 dB) con energia escuchada van en direcciones opuestas: Sizer (2.3 dB, 5.2 de formula) el DJ lo escucho en 7.7 y Guy J - Airborne (2.8 dB, 5.5) en 4.0, 'baja toda la energia totalmente'. Prismatik se parece mas a Sizer --drop final largo (33% del tema contra 31%; Airborne 19%), 5 secciones, el breakdown conserva el 62% de la energia (Sizer 57%)-- pero con dos casos es una pista, no una regla. Los lugares aguantan la duda: con Grey Area en 7.1, su lugar no cambia; con Prismatik en 6.6 o 7.7, la entrega sigue siendo la ventana mas barata (ver _nota_grey_area). Despues de la escucha, la E que diga el DJ va a data/energia_percibida.json y pisa estas. Dos E:1.4 del pool estan estimadas por receta y marcadas (Sunchain - The Final Lap 6.0, Dilby & DE SAINT. - Give It Up Again 6.2); ninguna entra al set.",
+      "_nota_exclusiones": "Fuera del pool por estar en el 154-157, salvo Grey Area (cruce por ContentID, por artista+titulo, y por titulo sin parentesis con un artista en comun). Del 154: Lee Burridge & Lost Desert - Ash & Ember (tambien en el 155 y el 157), Dr. Mirzoyan - Destruction (Ruben Karapetyan Remix), Analog Jungs & Oliver & Tom - Landscape (RIGOONI Remix), Durante & Emi Galvan - Lunar Circuit, Malou & Ben Bohmer - Lost In Mind, Hernan Cattaneo & Soundexile - Astron (Davi Remix), Cendryma - Effective Loss, y Anthony Pappa & Fauxplay - Forever Seeking (Simon Vuarambon Remix), otra version del Dub Mix del 154. El 154 choca en sonido mas que en key: 15 de sus otros 16 temas estan en el vecindario de Grey Area, pero 8 quedan fuera de la zona 3 (11A, 12A y 6A-8A); de los 8 que caen adentro, 4 habrian entrado al pool (Ash & Ember, Destruction, Landscape, Astron) y los otros 4 quedaban afuera igual por energia. Del 155: Nicolas Viana - Blaze, Matthew Sona - You Got It, Redspace & Dj Meoz - Feel It, Taylan - Ghost Rider, Hafex & MAXTAGE - Between Your Sighs (tambien en el 157). Del 156: Ruben Karapetyan - 1982 (Matthew Sona Extended Mix), Tonaco - Philomena, Quivver - Illusions, Ewan Rill - Nature Vibes, Danny Howells - Stereodrama, Amonita - Wake Up, JANAKEY - MGKTV, Dilby - Remember Me. Del 157: Zuccasam - Come Home, Tali Muss - Reward, Rauschhaus & Greta Meier - Painting in the Sky (las dos versiones). Fuera por ser otra version de un tema que ya esta en el pool (queda la mas cercana): Power Surge (Fuenka Remix), Un Mundo En Paz (Serious Dancers Remix), No Regrets, Phantom Sun (Sebastian Valencia), Marrakesh, Unsafe Numbers (Tonaco & Tomas Garcia), Deep Voltage (NOIYSE PROJECT), Cry of the Deserts (Molac & Nicolas Viana), SpaceTime, Right to Love, Closer (Vitaly Shturm), Coil, Afterhours (Morttagua). exclude_ids queda vacio: todo eso ya no esta en el pool.",
+      "_nota_tocado": "Lo tocado se informa, no se filtra (plomo.tocados). Tocados: Simon Vuarambon - Grey Area (1 vez, el 2026-10-19, en 'HISTORY 2026-10-19 (2)'), Wassu - From Here (1 vez, el 2026-10-19; esta en el 150, que es la Session 02 publicada, y en el 151, y el DJ lo marco como modelo: 'from here es modelo') y Maze 28 - Personal Space (1 vez, hace 76 dias). Los otros 14, Prismatik incluido, no figuran en djmdHistory.",
+      "_nota_repetidos": "0 temas del 154, 155, 156 y 157 salvo Grey Area, que es el hilo y esta en el 154 (lugar 8), cruzando por ContentID, por artista+titulo y por titulo sin parentesis. Prismatik no esta en ningun set. Del 150 y del 151 entra Wassu - From Here (no son consecutivos). De la v1 y la v2 del 158, ninguno.",
+      "_nota_numero": "158: el mismo numero de la v1 y la v2, unico en djmdPlaylist (consultado en modo solo lectura el 2026-10-21). La playlist existe como '158. B2B · Gray Matter — 2h — 2026-10-20' (ID 2336096924): build_set.py la encuentra por numero y SOLO le cambia el nombre con --renombrar.",
+      "_nota_beam": "16000. Con color_peso 1.5 el optimo de esta combinacion de ventanas converge: 8000, 16000 y 30000 dan el mismo set (-107.87). En la v2 el optimo era plano con color_peso 3.0 y se eligio a mano entre tres beams; aca no hace falta. Lo que si es plano es la eleccion de las ventanas: las mejores combinaciones estan a 0.3% de costo y se eligieron por lo que el costo no ve (ver _nota_grey_area).",
+      "_nota_n": "duration_h 2.0: el selector calcula 17 temas desde la mediana del pool (7.4 min; densidad.tracks_por_hora 8.8 x 2h = 17.6). Crudo 131 min, 1h55 tocable con mezclas de 1 minuto (densidad.largo_con_mezclas).",
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        120,
+        124
+      ],
+      "e_pool": [
+        5.0,
+        8.0
+      ],
+      "e_lo": 6.4,
+      "e_hi": 7.2,
+      "max_per_artist": 4,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Progressive House",
+        "Melodic House & Techno",
+        "Organic House",
+        "Deep House",
+        "House",
+        "Melodic House"
+      ],
+      "arco": {
+        "pico_en_pct": 0.75,
+        "caida_post_pico_pct": 0.3,
+        "tolerancia_arco_frac": 0.5,
+        "key_hogar": "3A",
+        "peso_hogar": 0.6
+      },
+      "anclas": [
+        "237573926",
+        "53801929"
+      ],
+      "prefer_ids": [
+        "118999373",
+        "188612304",
+        "46907160",
+        "235017915",
+        "58422404",
+        "46614292",
+        "103956355",
+        "253247111",
+        "222018440",
+        "57848805",
+        "147377199",
+        "163317399",
+        "58922837",
+        "15529976",
+        "55579160",
+        "180747924",
+        "244094498",
+        "205292637",
+        "158318781",
+        "40338185",
+        "211548822",
+        "255582355",
+        "59638375",
+        "150493441",
+        "113586500",
+        "8612131",
+        "165683705",
+        "13812808",
+        "70575391",
+        "157882627",
+        "54818175",
+        "176346213",
+        "218581493",
+        "80536228",
+        "251360492",
+        "23002335",
+        "22480286",
+        "16726129",
+        "169431664",
+        "236238103"
+      ],
+      "prefer_bonus": 1.5,
+      "color_peso": 1.5,
+      "beam": 16000,
+      "exclude_ids": [],
+      "anclas_en": {
+        "100657729": [
+          0.25,
+          0.88
+        ],
+        "106041324": [
+          0.7,
+          0.85
+        ],
+        "110259434": [
+          0.7,
+          0.85
+        ],
+        "110909127": [
+          0.04,
+          0.88
+        ],
+        "112197003": [
+          0.7,
+          0.85
+        ],
+        "113586500": [
+          0.25,
+          0.88
+        ],
+        "118999373": [
+          0.25,
+          0.88
+        ],
+        "125422752": [
+          0.7,
+          0.85
+        ],
+        "127950263": [
+          0.04,
+          0.88
+        ],
+        "128348541": [
+          0.0,
+          0.88
+        ],
+        "131036053": [
+          0.0,
+          0.88
+        ],
+        "13142015": [
+          0.7,
+          0.85
+        ],
+        "13361161": [
+          0.0,
+          0.88
+        ],
+        "133983297": [
+          0.7,
+          0.85
+        ],
+        "13812808": [
+          0.25,
+          0.88
+        ],
+        "140659377": [
+          0.04,
+          0.88
+        ],
+        "150493441": [
+          0.25,
+          0.88
+        ],
+        "156487391": [
+          0.0,
+          0.88
+        ],
+        "157882627": [
+          0.0,
+          0.88
+        ],
+        "158318781": [
+          0.7,
+          0.85
+        ],
+        "162068832": [
+          0.0,
+          0.88
+        ],
+        "162735134": [
+          0.7,
+          0.85
+        ],
+        "163317399": [
+          0.0,
+          0.88
+        ],
+        "165683705": [
+          0.0,
+          0.88
+        ],
+        "16726129": [
+          0.0,
+          0.88
+        ],
+        "169087144": [
+          0.25,
+          0.88
+        ],
+        "169431664": [
+          0.04,
+          0.88
+        ],
+        "172946191": [
+          0.7,
+          0.85
+        ],
+        "175806155": [
+          0.7,
+          0.85
+        ],
+        "176346213": [
+          0.0,
+          0.88
+        ],
+        "180747924": [
+          0.25,
+          0.88
+        ],
+        "191578274": [
+          0.25,
+          0.88
+        ],
+        "200063944": [
+          0.04,
+          0.88
+        ],
+        "204966439": [
+          0.25,
+          0.88
+        ],
+        "205292637": [
+          0.25,
+          0.88
+        ],
+        "211548822": [
+          0.25,
+          0.88
+        ],
+        "222018440": [
+          0.25,
+          0.88
+        ],
+        "22351229": [
+          0.7,
+          0.85
+        ],
+        "223618708": [
+          0.0,
+          0.88
+        ],
+        "224504691": [
+          0.25,
+          0.88
+        ],
+        "225020816": [
+          0.25,
+          0.88
+        ],
+        "225904219": [
+          0.7,
+          0.85
+        ],
+        "226809369": [
+          0.0,
+          0.88
+        ],
+        "235017915": [
+          0.04,
+          0.88
+        ],
+        "240643135": [
+          0.25,
+          0.88
+        ],
+        "243768609": [
+          0.25,
+          0.88
+        ],
+        "244094498": [
+          0.25,
+          0.88
+        ],
+        "249658850": [
+          0.25,
+          0.88
+        ],
+        "251360492": [
+          0.04,
+          0.88
+        ],
+        "252821912": [
+          0.7,
+          0.85
+        ],
+        "253247111": [
+          0.7,
+          0.85
+        ],
+        "255582355": [
+          0.04,
+          0.88
+        ],
+        "261905051": [
+          0.25,
+          0.88
+        ],
+        "28418420": [
+          0.25,
+          0.88
+        ],
+        "29577697": [
+          0.25,
+          0.88
+        ],
+        "30079652": [
+          0.04,
+          0.88
+        ],
+        "40338185": [
+          0.25,
+          0.88
+        ],
+        "41896244": [
+          0.25,
+          0.88
+        ],
+        "44785517": [
+          0.25,
+          0.88
+        ],
+        "45297975": [
+          0.04,
+          0.88
+        ],
+        "46614292": [
+          0.0,
+          0.88
+        ],
+        "46907160": [
+          0.7,
+          0.85
+        ],
+        "50541099": [
+          0.0,
+          0.88
+        ],
+        "51864410": [
+          0.25,
+          0.88
+        ],
+        "57269616": [
+          0.25,
+          0.88
+        ],
+        "58409973": [
+          0.0,
+          0.88
+        ],
+        "58922837": [
+          0.25,
+          0.88
+        ],
+        "6435521": [
+          0.7,
+          0.85
+        ],
+        "67153890": [
+          0.25,
+          0.88
+        ],
+        "67483888": [
+          0.25,
+          0.88
+        ],
+        "70560823": [
+          0.0,
+          0.88
+        ],
+        "74206852": [
+          0.04,
+          0.88
+        ],
+        "74604190": [
+          0.25,
+          0.88
+        ],
+        "80536228": [
+          0.25,
+          0.88
+        ],
+        "83535228": [
+          0.7,
+          0.85
+        ],
+        "8715927": [
+          0.25,
+          0.88
+        ],
+        "87620719": [
+          0.7,
+          0.85
+        ],
+        "237573926": [
+          0.5,
+          0.65
+        ],
+        "53801929": [
+          0.88,
+          1.0
+        ]
+      }
+    }
+  ]
+}
