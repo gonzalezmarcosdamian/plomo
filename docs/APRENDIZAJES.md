@@ -8,6 +8,33 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un video armado por piezas se verifica contra la fuente, no a ojo
+
+**Que paso.** El video de la Session 04 con clips se armo con 1387 piezas: un ffmpeg por plano
+y uno por fundido, unidas sin recodificar con el audio de la mezcla. Los cuadros revisados se
+veian bien y la duracion parecia correcta. Pero el md5 del audio no daba igual que el de la
+mezcla, y sobraban 29 cuadros. Aparecieron tres errores, ninguno visible a ojo:
+- el primer plano arrancaba en el primer beat (0.03 s) y no en el cero, asi que la union
+  recortaba el audio desde ahi;
+- un fundido mas largo que el plano anterior superponia dos piezas;
+- con `-avoid_negative_ts make_zero`, el `-t` del audio cortaba los ultimos 32 ms.
+
+**Por que.** Un error de un cuadro no se ve en un cuadro suelto ni se oye en un minuto: corre
+todo 33 ms, o solo afecta los bordes. Las pruebas cortas tambien lo esconden. Cortar en 60 s, o
+unir 40 piezas, daba audio identico. En el video entero, el corrimiento si estaba.
+
+**Como se aplica.** Al armar una linea de tiempo por piezas:
+- la primera pieza empieza en el cuadro 0 y la ultima termina en el total;
+- se suman los cuadros de todas y se comparan contra el total;
+- se buscan huecos y superposiciones entre piezas seguidas;
+- el audio final se compara con la fuente muestra por muestra, y no "suena bien".
+
+Si el md5 no da, antes de tocar nada se busca el desfase con una correlacion en varios puntos
+del set. Si es constante, el error esta al principio. Si crece, se pierden muestras en el medio.
+Si falta solo el final, es un recorte.
+
+---
+
 ## Un tema que entra para llenar un paso de la rueda, desde lo menos parecido, no va
 
 **Que paso.** Para completar una lista del DJ se sumaron 9 temas de la biblioteca que pasaban
