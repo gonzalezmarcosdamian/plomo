@@ -9,6 +9,41 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-20 — Session 04 publicada, con clips reales: las Sessions se hacen asi
+
+"El video el concepto esta bueno pero podes usar imagenes reales? clips?" Le ofreci cinco
+formas y eligio la 2, clips de fiestas reales de un banco gratis.
+- Pexels pauso las claves nuevas de su API y Mixkit gratis llega a 720p (el 1080p es pago),
+  asi que la fuente es Pixabay: con su clave en .env, `stock_pixabay.py` busca y baja.
+- La prueba de 1 minuto sobre el drop de Fog Machine (18:02) tenia dos errores que encontre
+  mirando cuadros: el clip de "manos arriba" era otro (en la hoja de miniaturas el numero va
+  arriba de la imagen) y unas siluetas eran fotografos con tripode.
+- Con eso arreglado: "me encanto saca el session 4 que esta, y cambialo por este tipo de video,
+  de ahora en mas los hacemos asi". La version dibujada se borro de YouTube y del disco.
+
+**El video.** 116 clips por fase (atardecer, anochecer, noche) y funcion (calma, gente, drop),
+con pagina y autor de cada uno. `video_clips.py` arma la edicion desde la mezcla: 16 drops, 743
+planos, 114 clips usados, del atardecer al fogon del final.
+
+La verificacion del audio contra la mezcla agarro tres errores que a ojo no se veian (ver
+APRENDIZAJES):
+- el primer plano no arrancaba en el cero;
+- dos piezas se superponian en los empalmes de tema;
+- un `-t` cortaba los ultimos 32 ms.
+
+Quedo en 173105 cuadros y con el audio identico a la mezcla entera. La miniatura son las manos
+arriba contra el sol, un cuadro del video.
+
+**Dos Sessions 04 en el canal.** "Fijate que no se este subiendo dos veces": en la PC habia una
+sola subida, pero en YouTube estaba ademas el primer intento de la manana, cortado al 51% por el
+reinicio. YouTube crea el video al empezar la subida, y no al terminar como yo habia dicho.
+Estaba privado, en 0 s y trabado en processing. Se borro.
+
+**Publicada:** https://youtu.be/z-GGaH4TQcA, "subilo publico". HD, sin contenido con licencia y
+sin restriccion por region. Destacada del canal y en la web.
+
+---
+
 ## 2026-10-20 — Session 04 subida en privado; el pen tomo el 157 exportando a mano
 
 https://youtu.be/1F-JSOza0T4, privado, con miniatura. La primera subida murio al 51% porque la
