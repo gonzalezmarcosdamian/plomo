@@ -3082,8 +3082,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 19 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 
 
-## Set 150. 150. Housero + Colorido · lo mejor de los dos — 2h — 2026-10-01
-**Armado:** 2026-10-02  
+## Set 150. 150. Sostenido · modelo Abundance — 18 temas — 2026-10-01
+**Armado:** 2026-10-21  
 **Duracion:** 0h  
 **Tracks:** 18  
 **BPM range:** 100-140  
@@ -3110,8 +3110,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 18 | Marsh, Simon Doty | Touch The Sky (Extended Mix) | 124 | 6.8 |
 
 
-## Set 151. 151. Catalogo del DJ · 3h — 2026-10-01
-**Armado:** 2026-10-01  
+## Set 151. 151. Los tres sets · 4h49 — 2026-10-01
+**Armado:** 2026-10-21  
 **Duracion:** 0h  
 **Tracks:** 45  
 **BPM range:** 100-140  
@@ -3165,8 +3165,8 @@ Einmusik Centaurio (E:7.3), D-Nox Shine (E:7.4), Sasha Phaxon (E:7.0), Nicolas R
 | 45 | Cristoph, Franky Wah, Artche | The World You See (Original Mix)  | 126 | 7.8 |
 
 
-## Set 152. 152. Housero Nuevo · modelo Fogbows + From Here — 1h52 — 2026-10-02
-**Armado:** 2026-10-02  
+## Set 152. 152. Housero Nuevo · arriba — 2h06 — 2026-10-02
+**Armado:** 2026-10-21  
 **Duracion:** 2.0h  
 **Tracks:** 18  
 **BPM range:** 120-126  
