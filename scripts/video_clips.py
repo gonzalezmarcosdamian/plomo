@@ -249,6 +249,9 @@ def planificar(barras: np.ndarray, inicio_tema: list[int], drops: set[int], brea
         planos.append({"t0": round(t0, 3), "t1": round(t1, 3), "fase": fase, "rol": rol, "clip": clip,
                        "desde": desde, "lento": lento, "entra": entra, "fundido": round(fundido, 3)})
         b = z
+    # el primer plano arranca en el cero, no en el primer beat (0.03 s): si no, faltaba el cuadro 0
+    # y la union cortaba el audio desde ahi, 1455 muestras corrido
+    planos[0]["t0"] = 0.0
     planos[-1]["t1"] = round(total_s, 3)
     return planos
 
@@ -256,13 +259,19 @@ def planificar(barras: np.ndarray, inicio_tema: list[int], drops: set[int], brea
 # ---------------------------------------------------------------- piezas y render
 
 def piezas(planos: list[dict]) -> list[dict]:
-    """Cada plano solo y cada fundido, en cuadros de la grilla global."""
+    """Cada plano solo y cada fundido, en cuadros de la grilla global.
+
+    Un fundido no dura mas que el plano que lo precede: en los empalmes de tema queda a veces un
+    compas cortado mas corto que el fundido que viene, y la pieza del fundido arrancaba antes que
+    la anterior. En la Session 04 eso sumo 29 cuadros de mas (Glade 51:58, Ash & Ember 88:48)."""
+    cuadros = [(round(p["t0"] * FPS), round(p["t1"] * FPS)) for p in planos]
+    fundido = [0] + [min(round(planos[i]["fundido"] * FPS), cuadros[i - 1][1] - cuadros[i - 1][0])
+                     for i in range(1, len(planos))]
     out = []
     for i, pl in enumerate(planos):
-        f0, f1 = round(pl["t0"] * FPS), round(pl["t1"] * FPS)
-        sig = planos[i + 1] if i + 1 < len(planos) else None
-        d_sig = round(sig["fundido"] * FPS) if sig else 0
-        aparece = f0 - round(pl["fundido"] * FPS)       # el cuadro donde el plano empieza a verse
+        f0, f1 = cuadros[i]
+        d_sig = fundido[i + 1] if i + 1 < len(planos) else 0
+        aparece = f0 - fundido[i]                       # el cuadro donde el plano empieza a verse
         if f1 - d_sig > f0:
             out.append({"tipo": "solo", "f0": f0, "f1": f1 - d_sig, "a": i, "aparece_a": aparece})
         if d_sig:
@@ -405,18 +414,34 @@ def main() -> None:
                           RAIZ / "postproduction" / "video" / f"{a.nombre}_piezas")
 
     salida = Path(a.salida) if a.salida else RAIZ / "postproduction" / "video" / f"{a.nombre}.mov"
+    completo = lista[0][1]["f0"] == 0 and lista[-1][1]["f1"] == total_f
+    unir(archivos, salida, RAIZ / a.master, lista[0][1]["f0"] / FPS, (lista[-1][1]["f1"] - lista[0][1]["f0"]) / FPS,
+         completo)
+
+
+def unir(archivos: list[Path], salida: Path, master: Path, t_ini: float, dur: float, completo: bool) -> None:
+    """En dos pasos: primero las piezas en un solo video, despues el audio.
+
+    El video unido arranca con DTS negativo (los B-frames de x264, -66 ms); con make_zero los dos
+    flujos corren juntos y el audio queda entero: verificado con el md5 de la mezcla completa. El
+    video entero lleva la mezcla sin -ss/-t: con el corrimiento de make_zero, el -t cortaba los
+    ultimos 32 ms. El recorte queda para los tramos de prueba."""
     indice = salida.with_suffix(".piezas.txt")
     indice.write_text("".join(f"file '{f.as_posix()}'\n" for f in archivos), encoding="utf-8")
-    t_ini = lista[0][1]["f0"] / FPS
-    dur = (lista[-1][1]["f1"] - lista[0][1]["f0"]) / FPS
-    cmd = ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(indice),
-           "-ss", f"{t_ini:.3f}", "-t", f"{dur:.3f}", "-i", str(RAIZ / a.master),
-           "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "pcm_s24le", str(salida)]
-    if salida.suffix == ".mp4":
-        cmd[-2:-1] = ["aac", "-b:a", "320k"]
-    rr = subprocess.run(cmd, capture_output=True, text=True)
-    if rr.returncode:
-        sys.exit(rr.stderr[-2000:])
+    solo_video = salida.with_name(salida.stem + "_solo_video.mp4")
+    pasos = [
+        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(indice),
+         "-c", "copy", str(solo_video)],
+        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(solo_video),
+         *([] if completo else ["-ss", f"{t_ini:.3f}", "-t", f"{dur:.3f}"]), "-i", str(master), "-map", "0:v", "-map", "1:a",
+         "-c:v", "copy"] + (["-c:a", "aac", "-b:a", "320k"] if salida.suffix == ".mp4" else ["-c:a", "pcm_s24le"])
+        + ["-avoid_negative_ts", "make_zero", str(salida)],
+    ]
+    for cmd in pasos:
+        rr = subprocess.run(cmd, capture_output=True, text=True)
+        if rr.returncode:
+            sys.exit(rr.stderr[-2000:])
+    solo_video.unlink()
     print(f"-> {salida}  ({dur / 60:.1f} min, {salida.stat().st_size / 1e9:.2f} GB)", flush=True)
 
 
