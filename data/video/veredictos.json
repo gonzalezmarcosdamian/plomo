@@ -1,0 +1,37 @@
+{
+ "_que_es": "Cada pieza de video que el DJ vio, con lo que dijo TEXTUAL. Lo leen el editor y el revisor antes de proponer: lo que ya rechazo no vuelve con otra ropa. Como data/energia_percibida.json, pero de video. Lo nuevo va al final; no se reescribe lo viejo.",
+ "_campos": {
+  "veredicto": "si | no | cambio. 'Si' es solo cuando el DJ dijo que le gusta; 'cambio' es cuando pidio cambiar algo sin rechazar la idea.",
+  "textual": "sus palabras, sin interpretar",
+  "que_se_aprende": "la regla que sale, solo si sus palabras la sostienen"
+ },
+ "piezas": [
+  {"fecha": "2026-10-02", "pieza": "Session 01", "look": "atardecer (shader)", "veredicto": "si",
+   "textual": "hace esos dos y publicaclos", "que_se_aprende": "aprobo publicar las dos primeras Sessions"},
+  {"fecha": "2026-10-19", "pieza": "Session 03, pruebas", "look": "vuelo realista (shader)", "veredicto": "no",
+   "textual": "mas realismo y que no salte... no es real", "que_se_aprende": "lo realista dibujado no le llega"},
+  {"fecha": "2026-10-19", "pieza": "Session 03, pruebas", "look": "vuelo caricatura (shader)", "veredicto": "no",
+   "textual": "ni real ni estan buenas las caricaturas", "que_se_aprende": "nada de caricatura"},
+  {"fecha": "2026-10-19", "pieza": "Session 03", "look": "ascenso: cohete sobre el mar (shader)", "veredicto": "si",
+   "textual": "me gusta dale mas animacion pero el concepto esta bien",
+   "que_se_aprende": "una sola cosa que se mueve casi sin que se note, con la gramatica de marea"},
+  {"fecha": "2026-10-20", "pieza": "Session 04", "look": "fiesta en la playa dibujada (shader)", "veredicto": "cambio",
+   "textual": "el concepto esta bueno pero podes usar imagenes reales? clips?",
+   "que_se_aprende": "el concepto fiesta al atardecer sirve; lo quiere con imagenes reales"},
+  {"fecha": "2026-10-20", "pieza": "prueba de 1 minuto, drop de Fog Machine", "look": "clips reales de Pixabay, playa al atardecer, siluetas, manos al sol", "veredicto": "si",
+   "textual": "me encanto saca el session 4 que esta, y cambialo por este tipo de video, de ahora en mas los hacemos asi",
+   "que_se_aprende": "un lugar y una luz: playa al atardecer, contraluz, calido; 10 clips elegidos a mano"},
+  {"fecha": "2026-10-20", "pieza": "Session 04 completa (96 min)", "look": "clips reales de Pixabay del atardecer a la noche", "veredicto": "no",
+   "textual": "no me gusto para nada, bajalo y revisalo con un agente / es horrible mal, fuera de contexto mil cosas",
+   "que_se_aprende": "la noche con boliches, bandas, otros DJs, ciudades y velas rompio el lugar y la luz; carrusel de repeticiones; corte cada 8 s durante 96 min"},
+  {"fecha": "2026-10-21", "pieza": "su clip IMG_2209, seis opciones", "look": "1 real vertical; 2 recortado frente a su horizonte animado; 3 recortado sobre atardecer real (color y silueta); 4 mixto con stock; 5 luces de escenario agregadas; 6 rotoscopia", "veredicto": "no",
+   "textual": "hace opcion 1 en horizontal, las otras descarta todas, MALISIMAS",
+   "que_se_aprende": "sus tomas, reales: nada de recortes, fondos, siluetas, luces agregadas ni animacion"},
+  {"fecha": "2026-10-21", "pieza": "su clip IMG_2209, opcion 1", "look": "real, color calido de marca, MARCOS DAMIAN / SESSION 04 y el tema en pantalla", "veredicto": "cambio",
+   "textual": "no pongas texto, solo el de los temas / filtros para verme mejor pero que no se note",
+   "que_se_aprende": "texto solo con el nombre de los temas; correccion de color invisible, sin looks marcados"},
+  {"fecha": "2026-10-21", "pieza": "lo hecho hasta ese momento con su clip", "look": "-", "veredicto": "no",
+   "textual": "es muy malo lo que hiciste / arma un agente piola",
+   "que_se_aprende": "las piezas pasan por el agente editor y por el revisor antes de llegarle"}
+ ]
+}

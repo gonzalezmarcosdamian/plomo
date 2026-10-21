@@ -45,6 +45,28 @@ distinto, y si vas a contradecirlo, decilo con el motivo.
    energia, no a ojo: los picos y los dos o tres compases posteriores al drop.
    `scripts/analyze_set.py` y los cues del track dan las posiciones.
 
+## Las Sessions, como son hoy (2026-10-21)
+
+Esto pisa lo de arriba donde no coincida: el formato de la serie cambio con la practica.
+- **La imagen.** Primero fueron shaders (atardecer, marea, ascenso). Despues la prueba con clips
+  reales de playa al atardecer, que le encanto ("de ahora en mas los hacemos asi"). El video
+  entero de stock fallo ("horrible mal, fuera de contexto mil cosas"), y despues pidio sus tomas
+  reales, mejoradas sin que se note.
+  - Las piezas las arma el agente `editor` y las aprueba el `revisor` antes de llegarle.
+  - Sus veredictos estan en `data/video/veredictos.json`.
+- **El texto sobre la imagen**, solo el de los temas: "no pongas texto, solo el de los temas".
+  El nombre del DJ y el SESSION NN van en la miniatura.
+- **El titulo.** El formato real es `<4 artistas> | Progressive House Mix · Session NN`, y lo arma
+  `scripts/paquete_session.py`.
+- **Antes de subir**, el audio del video tiene que ser identico a la mezcla (md5) y los cuadros
+  tienen que sumar el total.
+- **Subidas.** `youtube_publicar.py subir` deja el video privado. Publicar va solo con el OK
+  textual del DJ, y despues corre `session_salio.py` (destacado y web).
+  - Una subida cortada deja un video roto en el canal: privado, de 0 s y "processing". Se lista el
+    canal y se borra.
+  - Para bajar un video publicado se lo pasa a privado, se vuelve a destacar el anterior y se
+    regenera la web.
+
 ## De donde sale el material
 
 El set lo arma el `curador` con el flujo normal. Los diez de la serie ya estan

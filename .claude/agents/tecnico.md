@@ -50,6 +50,22 @@ mano. El protocolo de recuperacion es fresh library mas restore por FolderPath.
   1000 tracks y Rekordbox avisa que algunos CDJ no la muestran entera: es
   inofensivo, esa playlist es para copiar, no para navegar.
 
+## La base compartida entre sesiones y el pen (2026-10-20)
+
+- **Varias sesiones de Claude usan la misma master.db.** Antes de escribir (build_set, importar,
+  armar_pen) se avisa a las otras con SendMessage y se espera el "dale". Al terminar se avisa que
+  la base quedo libre. Leer con sqlcipher3 `mode=ro` no molesta a nadie. Si otra sesion pide la
+  base, se le contesta corto: "dale" o "espera, escribo X".
+- **Los numeros de cambio salen del contador de Rekordbox**, `agentRegistry.localUpdateCount`, y
+  el contador se sube (`build_set.next_usn`, igual que pyrekordbox `increment_local_usn`). Con
+  `MAX(rb_local_usn)` de la tabla, el 157 quedo en 102485 con el contador en 105981.
+- **Un cambio a una lista que ya esta en el pen puede no llegar.** Con el 157 fallaron tres Sync
+  Manager seguidos: seguia con el nombre viejo y con Fading Out. Funciono exportar esa lista a
+  mano (clic derecho > Export Playlist > D:USB), pero quedo duplicada en el pen. La causa no esta
+  confirmada; la pista es el Timestamp del NODE en masterPlaylists6.xml.
+- **`build_set.py NNN --renombrar`** le pone a la playlist el nombre de la receta. Sin el flag no
+  la renombra: en 14 de 120 recetas el nombre bueno es el de Rekordbox.
+
 ## El pipeline de importacion
 
 ```

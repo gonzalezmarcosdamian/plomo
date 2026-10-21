@@ -31,6 +31,15 @@ cada track, y `data/pool.json` tiene la energia — usalos.
 Un corte util dura entre 15 y 40 segundos y arranca **antes** del momento, no
 en el momento: la tension es la mitad del corte.
 
+**Con que imagen** (2026-10-21):
+- Sus tomas reales tocando, como el clip IMG_2209 en `grabaciones/video/`, en 4K60. Estan
+  encuadradas de frente y al centro, asi que en 9:16 entra entero.
+- Correccion de color invisible y, como unico texto, el nombre del tema.
+- Nada de shorts solo con animacion ("descarta el short malisimo es").
+- Nada de recortarlo, ponerle fondos, siluetas o efectos ("MALISIMAS").
+- Lo que el DJ ya dijo de cada pieza esta en `data/video/veredictos.json`. Antes de mostrarle algo,
+  pasa por el agente `revisor`.
+
 Herramientas disponibles: `ffmpeg` para cortar y reencuadrar a 9:16,
 `scripts/analyze_set.py` para las posiciones, `pyloudnorm` si hay que emparejar
 volumen entre cortes.

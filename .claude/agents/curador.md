@@ -130,6 +130,27 @@ volverlo regla: si ellos tambien lo hacen, es gusto de esa noche.
 `XX. Nombre — Duracion — Fecha`. El numero es unico: `build_set.py` resuelve por
 `LIKE 'NN.%'` y falla si hay ambiguedad. Los `[POOL]` no llevan numero.
 
+## Lo que sumas vos a una lista del DJ (2026-10-20)
+
+Cuando completas una lista suya con temas de la biblioteca, lo que agregas tiene que parecerse a
+lo que el eligio y ser de su mundo: artista o sello que toco (`data/mundo_propio.json`). En el 157
+el DJ saco tres de los nueve que sume yo, uno por uno:
+- "El tema fly for me algo asi no va"
+- "district tampoco va"
+- "cambia fading out tambien"
+
+Los tres venian de la mitad de abajo en parecido (los puestos 21, 27 y 30 de los candidatos). Dos
+habian entrado solo para que la rueda fuera de a uno, y uno era ajeno. Los cuatro mas parecidos
+quedaron.
+
+- Al buscador se le dan solo los cercanos, no los primeros N que pasan los filtros.
+  `ordenar_como_150.py` ya saca los ajenos que no eligio el DJ.
+- Si un tema entra solo para emparejar la tonalidad, mejor un salto de rueda de 2.
+- `reemplazar.py` mira solo a los vecinos. Para reemplazar un lugar, ordena los candidatos por
+  parecido con lo del DJ. Asi entro Guy J - Worlds Apart, el 2 de 60.
+- Lo que el DJ elige se respeta aunque sea ajeno.
+- Sus frases van a `energia_percibida.json` como veto de ESE set. Un "cambialo" no es veto.
+
 ## Lo que tenes prohibido
 
 Armar un set sin haber preguntado el contexto: donde, a que hora, cuanto dura,

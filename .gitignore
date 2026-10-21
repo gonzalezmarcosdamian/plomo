@@ -187,3 +187,7 @@ data/pool_session04.json
 
 # Pool reducido del set 158 (vecindario sonoro de Grey Matter), derivado de data/pool.json
 data/pool_158.json
+
+# Lo que corre en esta maquina (plomo.en_curso): estado local, no del proyecto
+data/en_curso.json
+data/en_curso.*.tmp
