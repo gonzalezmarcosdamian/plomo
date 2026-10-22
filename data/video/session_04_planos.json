@@ -1,0 +1,1637 @@
+{
+ "fps": 30,
+ "compas_s": 1.95918,
+ "fundido_compases": 4,
+ "planos": [
+  {
+   "n": 1,
+   "etapa": 1,
+   "entra": 0.0,
+   "lleno": 0.0,
+   "sale": 31.4,
+   "que": "inicio",
+   "tema": "Hafex, MAXTAGE - Between Your Sighs  (Extended Mix)",
+   "segundos_de_clip": 31.4
+  },
+  {
+   "n": 2,
+   "etapa": 1,
+   "entra": 23.563,
+   "lleno": 31.4,
+   "sale": 62.747,
+   "que": "frase",
+   "tema": "Hafex, MAXTAGE - Between Your Sighs  (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 3,
+   "etapa": 1,
+   "entra": 54.91,
+   "lleno": 62.747,
+   "sale": 94.094,
+   "que": "frase",
+   "tema": "Hafex, MAXTAGE - Between Your Sighs  (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 4,
+   "etapa": 1,
+   "entra": 86.257,
+   "lleno": 94.094,
+   "sale": 141.114,
+   "que": "frase",
+   "tema": "Hafex, MAXTAGE - Between Your Sighs  (Extended Mix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 5,
+   "etapa": 1,
+   "entra": 133.277,
+   "lleno": 141.114,
+   "sale": 203.808,
+   "que": "breakdown",
+   "tema": "Hafex, MAXTAGE - Between Your Sighs  (Extended Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 6,
+   "etapa": 1,
+   "entra": 195.971,
+   "lleno": 203.808,
+   "sale": 235.163,
+   "que": "drop",
+   "tema": "Hafex, MAXTAGE - Between Your Sighs  (Extended Mix)",
+   "segundos_de_clip": 39.19
+  },
+  {
+   "n": 7,
+   "etapa": 1,
+   "entra": 227.326,
+   "lleno": 235.163,
+   "sale": 266.51,
+   "que": "tema",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 8,
+   "etapa": 1,
+   "entra": 258.673,
+   "lleno": 266.51,
+   "sale": 297.857,
+   "que": "frase",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 9,
+   "etapa": 1,
+   "entra": 290.02,
+   "lleno": 297.857,
+   "sale": 329.204,
+   "que": "frase",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 10,
+   "etapa": 1,
+   "entra": 321.367,
+   "lleno": 329.204,
+   "sale": 360.551,
+   "que": "frase",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 11,
+   "etapa": 1,
+   "entra": 352.714,
+   "lleno": 360.551,
+   "sale": 391.898,
+   "que": "frase",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 12,
+   "etapa": 1,
+   "entra": 384.061,
+   "lleno": 391.898,
+   "sale": 438.918,
+   "que": "breakdown",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 13,
+   "etapa": 1,
+   "entra": 431.081,
+   "lleno": 438.918,
+   "sale": 485.939,
+   "que": "drop",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 14,
+   "etapa": 1,
+   "entra": 478.102,
+   "lleno": 485.939,
+   "sale": 517.286,
+   "que": "frase",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 15,
+   "etapa": 1,
+   "entra": 509.449,
+   "lleno": 517.286,
+   "sale": 564.293,
+   "que": "frase",
+   "tema": "Tali Muss - Reward (Extended Mix)",
+   "segundos_de_clip": 54.84
+  },
+  {
+   "n": 16,
+   "etapa": 1,
+   "entra": 556.456,
+   "lleno": 564.293,
+   "sale": 595.64,
+   "que": "tema",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 17,
+   "etapa": 1,
+   "entra": 587.803,
+   "lleno": 595.64,
+   "sale": 626.987,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 18,
+   "etapa": 1,
+   "entra": 619.15,
+   "lleno": 626.987,
+   "sale": 658.334,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 19,
+   "etapa": 1,
+   "entra": 650.497,
+   "lleno": 658.334,
+   "sale": 689.681,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 20,
+   "etapa": 1,
+   "entra": 681.844,
+   "lleno": 689.681,
+   "sale": 721.028,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 21,
+   "etapa": 1,
+   "entra": 713.191,
+   "lleno": 721.028,
+   "sale": 815.068,
+   "que": "breakdown",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 101.88
+  },
+  {
+   "n": 22,
+   "etapa": 1,
+   "entra": 807.231,
+   "lleno": 815.068,
+   "sale": 846.415,
+   "que": "drop",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 23,
+   "etapa": 1,
+   "entra": 838.578,
+   "lleno": 846.415,
+   "sale": 877.762,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 24,
+   "etapa": 1,
+   "entra": 869.925,
+   "lleno": 877.762,
+   "sale": 909.109,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 25,
+   "etapa": 1,
+   "entra": 901.272,
+   "lleno": 909.109,
+   "sale": 956.146,
+   "que": "frase",
+   "tema": "Zuccasam - Come Home (Dowden Remix)",
+   "segundos_de_clip": 54.87
+  },
+  {
+   "n": 26,
+   "etapa": 2,
+   "entra": 948.309,
+   "lleno": 956.146,
+   "sale": 987.493,
+   "que": "tema",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 27,
+   "etapa": 2,
+   "entra": 979.656,
+   "lleno": 987.493,
+   "sale": 1018.84,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 28,
+   "etapa": 2,
+   "entra": 1011.003,
+   "lleno": 1018.84,
+   "sale": 1050.187,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 29,
+   "etapa": 2,
+   "entra": 1042.35,
+   "lleno": 1050.187,
+   "sale": 1081.534,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 30,
+   "etapa": 2,
+   "entra": 1073.697,
+   "lleno": 1081.534,
+   "sale": 1112.881,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 31,
+   "etapa": 2,
+   "entra": 1105.044,
+   "lleno": 1112.881,
+   "sale": 1144.228,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 32,
+   "etapa": 2,
+   "entra": 1136.391,
+   "lleno": 1144.228,
+   "sale": 1206.922,
+   "que": "breakdown",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 33,
+   "etapa": 2,
+   "entra": 1199.085,
+   "lleno": 1206.922,
+   "sale": 1238.269,
+   "que": "drop",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 34,
+   "etapa": 2,
+   "entra": 1230.432,
+   "lleno": 1238.269,
+   "sale": 1269.616,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 35,
+   "etapa": 2,
+   "entra": 1261.779,
+   "lleno": 1269.616,
+   "sale": 1300.969,
+   "que": "frase",
+   "tema": "Nicolas Viana - Fog Machine (Extended Mix)",
+   "segundos_de_clip": 39.19
+  },
+  {
+   "n": 36,
+   "etapa": 2,
+   "entra": 1293.132,
+   "lleno": 1300.969,
+   "sale": 1332.316,
+   "que": "tema",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 37,
+   "etapa": 2,
+   "entra": 1324.479,
+   "lleno": 1332.316,
+   "sale": 1363.663,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 38,
+   "etapa": 2,
+   "entra": 1355.826,
+   "lleno": 1363.663,
+   "sale": 1395.009,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 39,
+   "etapa": 2,
+   "entra": 1387.172,
+   "lleno": 1395.009,
+   "sale": 1426.356,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 40,
+   "etapa": 2,
+   "entra": 1418.519,
+   "lleno": 1426.356,
+   "sale": 1473.377,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 41,
+   "etapa": 2,
+   "entra": 1465.54,
+   "lleno": 1473.377,
+   "sale": 1520.397,
+   "que": "breakdown",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 42,
+   "etapa": 2,
+   "entra": 1512.56,
+   "lleno": 1520.397,
+   "sale": 1551.744,
+   "que": "drop",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 43,
+   "etapa": 2,
+   "entra": 1543.907,
+   "lleno": 1551.744,
+   "sale": 1583.091,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 44,
+   "etapa": 2,
+   "entra": 1575.254,
+   "lleno": 1583.091,
+   "sale": 1614.438,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 45,
+   "etapa": 2,
+   "entra": 1606.601,
+   "lleno": 1614.438,
+   "sale": 1645.785,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 46,
+   "etapa": 2,
+   "entra": 1637.948,
+   "lleno": 1645.785,
+   "sale": 1677.137,
+   "que": "frase",
+   "tema": "M.O.S. - Nanda (Dilby Remix)",
+   "segundos_de_clip": 39.19
+  },
+  {
+   "n": 47,
+   "etapa": 3,
+   "entra": 1669.3,
+   "lleno": 1677.137,
+   "sale": 1708.484,
+   "que": "tema",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 48,
+   "etapa": 3,
+   "entra": 1700.647,
+   "lleno": 1708.484,
+   "sale": 1739.831,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 49,
+   "etapa": 3,
+   "entra": 1731.994,
+   "lleno": 1739.831,
+   "sale": 1771.178,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 50,
+   "etapa": 3,
+   "entra": 1763.341,
+   "lleno": 1771.178,
+   "sale": 1802.525,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 51,
+   "etapa": 3,
+   "entra": 1794.688,
+   "lleno": 1802.525,
+   "sale": 1833.871,
+   "que": "breakdown",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 52,
+   "etapa": 3,
+   "entra": 1826.034,
+   "lleno": 1833.871,
+   "sale": 1865.218,
+   "que": "drop",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 53,
+   "etapa": 3,
+   "entra": 1857.381,
+   "lleno": 1865.218,
+   "sale": 1896.565,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 54,
+   "etapa": 3,
+   "entra": 1888.728,
+   "lleno": 1896.565,
+   "sale": 1927.912,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 55,
+   "etapa": 3,
+   "entra": 1920.075,
+   "lleno": 1927.912,
+   "sale": 1959.259,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 56,
+   "etapa": 3,
+   "entra": 1951.422,
+   "lleno": 1959.259,
+   "sale": 1990.606,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 57,
+   "etapa": 3,
+   "entra": 1982.769,
+   "lleno": 1990.606,
+   "sale": 2021.953,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 58,
+   "etapa": 3,
+   "entra": 2014.116,
+   "lleno": 2021.953,
+   "sale": 2053.3,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 59,
+   "etapa": 3,
+   "entra": 2045.463,
+   "lleno": 2053.3,
+   "sale": 2084.647,
+   "que": "frase",
+   "tema": "Guy J - Worlds Apart (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 60,
+   "etapa": 3,
+   "entra": 2076.81,
+   "lleno": 2084.647,
+   "sale": 2115.994,
+   "que": "tema",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 61,
+   "etapa": 3,
+   "entra": 2108.157,
+   "lleno": 2115.994,
+   "sale": 2147.341,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 62,
+   "etapa": 3,
+   "entra": 2139.504,
+   "lleno": 2147.341,
+   "sale": 2178.688,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 63,
+   "etapa": 3,
+   "entra": 2170.851,
+   "lleno": 2178.688,
+   "sale": 2210.035,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 64,
+   "etapa": 3,
+   "entra": 2202.198,
+   "lleno": 2210.035,
+   "sale": 2272.729,
+   "que": "breakdown",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 65,
+   "etapa": 3,
+   "entra": 2264.892,
+   "lleno": 2272.729,
+   "sale": 2304.076,
+   "que": "drop",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 66,
+   "etapa": 3,
+   "entra": 2296.239,
+   "lleno": 2304.076,
+   "sale": 2335.423,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 67,
+   "etapa": 3,
+   "entra": 2327.586,
+   "lleno": 2335.423,
+   "sale": 2382.398,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 54.81
+  },
+  {
+   "n": 68,
+   "etapa": 3,
+   "entra": 2374.561,
+   "lleno": 2382.398,
+   "sale": 2413.744,
+   "que": "tema",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 69,
+   "etapa": 3,
+   "entra": 2405.907,
+   "lleno": 2413.744,
+   "sale": 2445.091,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 70,
+   "etapa": 3,
+   "entra": 2437.254,
+   "lleno": 2445.091,
+   "sale": 2476.438,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 71,
+   "etapa": 3,
+   "entra": 2468.601,
+   "lleno": 2476.438,
+   "sale": 2507.785,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 72,
+   "etapa": 3,
+   "entra": 2499.948,
+   "lleno": 2507.785,
+   "sale": 2539.132,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 73,
+   "etapa": 3,
+   "entra": 2531.295,
+   "lleno": 2539.132,
+   "sale": 2601.826,
+   "que": "breakdown",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 74,
+   "etapa": 3,
+   "entra": 2593.989,
+   "lleno": 2601.826,
+   "sale": 2633.173,
+   "que": "drop",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 75,
+   "etapa": 3,
+   "entra": 2625.336,
+   "lleno": 2633.173,
+   "sale": 2664.52,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 76,
+   "etapa": 3,
+   "entra": 2656.683,
+   "lleno": 2664.52,
+   "sale": 2695.867,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 77,
+   "etapa": 3,
+   "entra": 2688.03,
+   "lleno": 2695.867,
+   "sale": 2727.214,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 78,
+   "etapa": 3,
+   "entra": 2719.377,
+   "lleno": 2727.214,
+   "sale": 2758.612,
+   "que": "frase",
+   "tema": "Mind Echoes - Visible World (Original Mix)",
+   "segundos_de_clip": 39.24
+  },
+  {
+   "n": 79,
+   "etapa": 4,
+   "entra": 2750.775,
+   "lleno": 2758.612,
+   "sale": 2789.959,
+   "que": "tema",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 80,
+   "etapa": 4,
+   "entra": 2782.122,
+   "lleno": 2789.959,
+   "sale": 2821.306,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 81,
+   "etapa": 4,
+   "entra": 2813.469,
+   "lleno": 2821.306,
+   "sale": 2852.653,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 82,
+   "etapa": 4,
+   "entra": 2844.816,
+   "lleno": 2852.653,
+   "sale": 2884.0,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 83,
+   "etapa": 4,
+   "entra": 2876.163,
+   "lleno": 2884.0,
+   "sale": 2915.347,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 84,
+   "etapa": 4,
+   "entra": 2907.51,
+   "lleno": 2915.347,
+   "sale": 2946.694,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 85,
+   "etapa": 4,
+   "entra": 2938.857,
+   "lleno": 2946.694,
+   "sale": 3009.388,
+   "que": "breakdown",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 86,
+   "etapa": 4,
+   "entra": 3001.551,
+   "lleno": 3009.388,
+   "sale": 3040.735,
+   "que": "drop",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 87,
+   "etapa": 4,
+   "entra": 3032.898,
+   "lleno": 3040.735,
+   "sale": 3072.081,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 88,
+   "etapa": 4,
+   "entra": 3064.244,
+   "lleno": 3072.081,
+   "sale": 3119.085,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 54.84
+  },
+  {
+   "n": 89,
+   "etapa": 4,
+   "entra": 3111.248,
+   "lleno": 3119.085,
+   "sale": 3150.432,
+   "que": "tema",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 90,
+   "etapa": 4,
+   "entra": 3142.595,
+   "lleno": 3150.432,
+   "sale": 3181.779,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 91,
+   "etapa": 4,
+   "entra": 3173.942,
+   "lleno": 3181.779,
+   "sale": 3213.126,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 92,
+   "etapa": 4,
+   "entra": 3205.289,
+   "lleno": 3213.126,
+   "sale": 3244.472,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 93,
+   "etapa": 4,
+   "entra": 3236.635,
+   "lleno": 3244.472,
+   "sale": 3275.819,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 94,
+   "etapa": 4,
+   "entra": 3267.982,
+   "lleno": 3275.819,
+   "sale": 3307.166,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 95,
+   "etapa": 4,
+   "entra": 3299.329,
+   "lleno": 3307.166,
+   "sale": 3338.513,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 96,
+   "etapa": 4,
+   "entra": 3330.676,
+   "lleno": 3338.513,
+   "sale": 3369.86,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 97,
+   "etapa": 4,
+   "entra": 3362.023,
+   "lleno": 3369.86,
+   "sale": 3432.554,
+   "que": "breakdown",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 98,
+   "etapa": 4,
+   "entra": 3424.717,
+   "lleno": 3432.554,
+   "sale": 3463.901,
+   "que": "drop",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 99,
+   "etapa": 4,
+   "entra": 3456.064,
+   "lleno": 3463.901,
+   "sale": 3495.248,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 100,
+   "etapa": 4,
+   "entra": 3487.411,
+   "lleno": 3495.248,
+   "sale": 3526.595,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 101,
+   "etapa": 4,
+   "entra": 3518.758,
+   "lleno": 3526.595,
+   "sale": 3557.942,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 102,
+   "etapa": 4,
+   "entra": 3550.105,
+   "lleno": 3557.942,
+   "sale": 3589.289,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 103,
+   "etapa": 4,
+   "entra": 3581.452,
+   "lleno": 3589.289,
+   "sale": 3620.654,
+   "que": "frase",
+   "tema": "Ramiro Drisdale - Glade (Original Mix)",
+   "segundos_de_clip": 39.2
+  },
+  {
+   "n": 104,
+   "etapa": 4,
+   "entra": 3612.817,
+   "lleno": 3620.654,
+   "sale": 3652.001,
+   "que": "tema",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 105,
+   "etapa": 4,
+   "entra": 3644.164,
+   "lleno": 3652.001,
+   "sale": 3683.348,
+   "que": "frase",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 106,
+   "etapa": 4,
+   "entra": 3675.511,
+   "lleno": 3683.348,
+   "sale": 3714.695,
+   "que": "frase",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 107,
+   "etapa": 4,
+   "entra": 3706.858,
+   "lleno": 3714.695,
+   "sale": 3746.042,
+   "que": "frase",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 108,
+   "etapa": 4,
+   "entra": 3738.205,
+   "lleno": 3746.042,
+   "sale": 3777.388,
+   "que": "frase",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 109,
+   "etapa": 4,
+   "entra": 3769.551,
+   "lleno": 3777.388,
+   "sale": 3840.082,
+   "que": "breakdown",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 110,
+   "etapa": 4,
+   "entra": 3832.245,
+   "lleno": 3840.082,
+   "sale": 3871.429,
+   "que": "drop",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 111,
+   "etapa": 4,
+   "entra": 3863.592,
+   "lleno": 3871.429,
+   "sale": 3902.776,
+   "que": "frase",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 112,
+   "etapa": 4,
+   "entra": 3894.939,
+   "lleno": 3902.776,
+   "sale": 3949.795,
+   "que": "frase",
+   "tema": "Nicolas Viana - Kalira (Extended Mix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 113,
+   "etapa": 5,
+   "entra": 3941.958,
+   "lleno": 3949.795,
+   "sale": 3981.142,
+   "que": "tema",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 114,
+   "etapa": 5,
+   "entra": 3973.305,
+   "lleno": 3981.142,
+   "sale": 4012.489,
+   "que": "frase",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 115,
+   "etapa": 5,
+   "entra": 4004.652,
+   "lleno": 4012.489,
+   "sale": 4043.836,
+   "que": "frase",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 116,
+   "etapa": 5,
+   "entra": 4035.999,
+   "lleno": 4043.836,
+   "sale": 4090.856,
+   "que": "frase",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 117,
+   "etapa": 5,
+   "entra": 4083.019,
+   "lleno": 4090.856,
+   "sale": 4153.55,
+   "que": "breakdown",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 118,
+   "etapa": 5,
+   "entra": 4145.713,
+   "lleno": 4153.55,
+   "sale": 4200.571,
+   "que": "drop",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 119,
+   "etapa": 5,
+   "entra": 4192.734,
+   "lleno": 4200.571,
+   "sale": 4231.918,
+   "que": "frase",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 120,
+   "etapa": 5,
+   "entra": 4224.081,
+   "lleno": 4231.918,
+   "sale": 4263.254,
+   "que": "frase",
+   "tema": "Simon Vuarambon - Stamina (Extended Mix)",
+   "segundos_de_clip": 39.17
+  },
+  {
+   "n": 121,
+   "etapa": 5,
+   "entra": 4255.417,
+   "lleno": 4263.254,
+   "sale": 4294.601,
+   "que": "tema",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 122,
+   "etapa": 5,
+   "entra": 4286.764,
+   "lleno": 4294.601,
+   "sale": 4325.948,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 123,
+   "etapa": 5,
+   "entra": 4318.111,
+   "lleno": 4325.948,
+   "sale": 4357.295,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 124,
+   "etapa": 5,
+   "entra": 4349.458,
+   "lleno": 4357.295,
+   "sale": 4404.315,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 125,
+   "etapa": 5,
+   "entra": 4396.478,
+   "lleno": 4404.315,
+   "sale": 4451.335,
+   "que": "breakdown",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 126,
+   "etapa": 5,
+   "entra": 4443.498,
+   "lleno": 4451.335,
+   "sale": 4482.682,
+   "que": "drop",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 127,
+   "etapa": 5,
+   "entra": 4474.845,
+   "lleno": 4482.682,
+   "sale": 4514.029,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 128,
+   "etapa": 5,
+   "entra": 4506.192,
+   "lleno": 4514.029,
+   "sale": 4545.376,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 129,
+   "etapa": 5,
+   "entra": 4537.539,
+   "lleno": 4545.376,
+   "sale": 4576.723,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 130,
+   "etapa": 5,
+   "entra": 4568.886,
+   "lleno": 4576.723,
+   "sale": 4608.04,
+   "que": "frase",
+   "tema": "Second Sine - Motor City (Sebastian Haas Remix)",
+   "segundos_de_clip": 39.15
+  },
+  {
+   "n": 131,
+   "etapa": 5,
+   "entra": 4600.203,
+   "lleno": 4608.04,
+   "sale": 4639.387,
+   "que": "tema",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 132,
+   "etapa": 5,
+   "entra": 4631.55,
+   "lleno": 4639.387,
+   "sale": 4670.734,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 133,
+   "etapa": 5,
+   "entra": 4662.897,
+   "lleno": 4670.734,
+   "sale": 4702.08,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 134,
+   "etapa": 5,
+   "entra": 4694.243,
+   "lleno": 4702.08,
+   "sale": 4733.427,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 135,
+   "etapa": 5,
+   "entra": 4725.59,
+   "lleno": 4733.427,
+   "sale": 4780.448,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 136,
+   "etapa": 5,
+   "entra": 4772.611,
+   "lleno": 4780.448,
+   "sale": 4843.142,
+   "que": "breakdown",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 137,
+   "etapa": 5,
+   "entra": 4835.305,
+   "lleno": 4843.142,
+   "sale": 4890.162,
+   "que": "drop",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 54.86
+  },
+  {
+   "n": 138,
+   "etapa": 5,
+   "entra": 4882.325,
+   "lleno": 4890.162,
+   "sale": 4921.509,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 139,
+   "etapa": 5,
+   "entra": 4913.672,
+   "lleno": 4921.509,
+   "sale": 4952.856,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 140,
+   "etapa": 5,
+   "entra": 4945.019,
+   "lleno": 4952.856,
+   "sale": 4984.23,
+   "que": "frase",
+   "tema": "Rauschhaus, Greta Meier - Painting in the Sky (Kamilo Sanclemente & Jossem Extended Remix)",
+   "segundos_de_clip": 39.21
+  },
+  {
+   "n": 141,
+   "etapa": 6,
+   "entra": 4976.393,
+   "lleno": 4984.23,
+   "sale": 5046.924,
+   "que": "tema",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 142,
+   "etapa": 6,
+   "entra": 5039.087,
+   "lleno": 5046.924,
+   "sale": 5078.271,
+   "que": "drop",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 143,
+   "etapa": 6,
+   "entra": 5070.434,
+   "lleno": 5078.271,
+   "sale": 5109.618,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 144,
+   "etapa": 6,
+   "entra": 5101.781,
+   "lleno": 5109.618,
+   "sale": 5140.965,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 145,
+   "etapa": 6,
+   "entra": 5133.128,
+   "lleno": 5140.965,
+   "sale": 5172.312,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 146,
+   "etapa": 6,
+   "entra": 5164.475,
+   "lleno": 5172.312,
+   "sale": 5203.659,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 147,
+   "etapa": 6,
+   "entra": 5195.822,
+   "lleno": 5203.659,
+   "sale": 5235.006,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 148,
+   "etapa": 6,
+   "entra": 5227.169,
+   "lleno": 5235.006,
+   "sale": 5266.353,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 149,
+   "etapa": 6,
+   "entra": 5258.516,
+   "lleno": 5266.353,
+   "sale": 5297.7,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 150,
+   "etapa": 6,
+   "entra": 5289.863,
+   "lleno": 5297.7,
+   "sale": 5329.007,
+   "que": "frase",
+   "tema": "Danny Howells, Lloyd Barwood - One More Sky (Original Mix)",
+   "segundos_de_clip": 39.14
+  },
+  {
+   "n": 151,
+   "etapa": 6,
+   "entra": 5321.17,
+   "lleno": 5329.007,
+   "sale": 5360.354,
+   "que": "tema",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 152,
+   "etapa": 6,
+   "entra": 5352.517,
+   "lleno": 5360.354,
+   "sale": 5391.701,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 153,
+   "etapa": 6,
+   "entra": 5383.864,
+   "lleno": 5391.701,
+   "sale": 5423.048,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 154,
+   "etapa": 6,
+   "entra": 5415.211,
+   "lleno": 5423.048,
+   "sale": 5454.395,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 155,
+   "etapa": 6,
+   "entra": 5446.558,
+   "lleno": 5454.395,
+   "sale": 5485.742,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 156,
+   "etapa": 6,
+   "entra": 5477.905,
+   "lleno": 5485.742,
+   "sale": 5517.089,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 157,
+   "etapa": 6,
+   "entra": 5509.252,
+   "lleno": 5517.089,
+   "sale": 5548.436,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 158,
+   "etapa": 6,
+   "entra": 5540.599,
+   "lleno": 5548.436,
+   "sale": 5611.13,
+   "que": "breakdown",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 70.53
+  },
+  {
+   "n": 159,
+   "etapa": 6,
+   "entra": 5603.293,
+   "lleno": 5611.13,
+   "sale": 5642.477,
+   "que": "drop",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 160,
+   "etapa": 6,
+   "entra": 5634.64,
+   "lleno": 5642.477,
+   "sale": 5673.824,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 161,
+   "etapa": 6,
+   "entra": 5665.987,
+   "lleno": 5673.824,
+   "sale": 5705.171,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 162,
+   "etapa": 6,
+   "entra": 5697.334,
+   "lleno": 5705.171,
+   "sale": 5736.518,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 39.18
+  },
+  {
+   "n": 163,
+   "etapa": 6,
+   "entra": 5728.681,
+   "lleno": 5736.518,
+   "sale": 5770.2,
+   "que": "frase",
+   "tema": "Lee Burridge, Lost Desert - Ash & Ember (Extended Mix)",
+   "segundos_de_clip": 41.52
+  }
+ ]
+}
