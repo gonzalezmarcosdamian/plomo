@@ -9,6 +9,25 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-22 — sale Un Mundo En Paz, research del 158 y backlog
+
+"nu mondo en paz es malisimo, sacalo": vetado con esas palabras, solo la Extended Mix. El 158
+quedo en 16 temas y 1h47 tocable, con Unsafe Numbers entrando directo a Grey Area (6d9cb95,
+set158-v4).
+
+"corre agente de research para ver si podemos aprender algo y armar backlog". Research cargo
+16 setlists nuevos, 10 de ellos b2b, y encontro donde sonaron las anclas. Digweed y Karotte
+encadenaron Grey Area con Metro, la otra cara del mismo lanzamiento, que el DJ ya tiene y que
+quedo afuera del pool por la key (12A contra 3B, misma tonica). Los pros ponen Grey Area cerca
+del final y Prismatik en el medio, al reves que el 158. Un b2b mide igual que un set solo en
+rueda, BPM y modo (12 b2b contra 44 sets). El modo mayor o menor depende del detector:
+Rekordbox 13% contra Beatport 60% sobre los mismos 391 temas.
+
+Todo quedo en [BACKLOG.md](BACKLOG.md), archivo nuevo para lo pendiente de sets, musica, reglas
+y sistema. El aprendizaje de buscar primero lo parecido en la biblioteca quedo en APRENDIZAJES.
+
+---
+
 ## 2026-10-21 — el 158 era con Grey Area de Simon, y suma Prismatik
 
 "estaba mal el b2b era con el tema nuevo de simon grey, rehacelo": el hilo conductor era

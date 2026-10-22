@@ -8,6 +8,27 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un tema pedido por nombre se busca primero entre lo parecido de la biblioteca
+
+**Que paso.** El DJ pidio una b2b con "la cancion gray matter" de hilo conductor. Se busco
+"Gray/Grey Matter" afuera y se armaron dos sets: uno con el de Sirch, que rechazo por oscuro, y
+otro con el de Erdem Yetim. Era "el tema nuevo de simon grey": Simon Vuarambon – Grey Area, que
+estaba en la biblioteca desde el dia anterior.
+
+**Por que.** Un nombre dicho de memoria es una pista, no una clave exacta. "Gray matter" y
+"Grey Area" comparten la palabra que el DJ recordaba, y lo que acaba de bajar es lo que tiene
+en la cabeza. Buscar el titulo exacto afuera encuentra muchos temas con ese nombre y ninguno
+es el suyo.
+
+**Como se aplica.** Cuando el DJ nombra un tema:
+- buscar primero en la biblioteca por cada palabra del titulo, sin exigir el titulo entero;
+- poner arriba lo importado en las ultimas dos semanas;
+- mostrar esos candidatos con su artista antes de los de Muzpa o Spotify;
+- preguntar el artista si hay mas de uno: una pregunta cuesta menos que un set armado sobre
+  el tema equivocado.
+
+---
+
 ## Un video armado por piezas se verifica contra la fuente, no a ojo
 
 **Que paso.** El video de la Session 04 con clips se armo con 1387 piezas: un ffmpeg por plano
