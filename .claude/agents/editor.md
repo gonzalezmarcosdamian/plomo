@@ -31,6 +31,15 @@ profesional. No le mostras variantes para que elija entre opciones flojas.
 
 ## Como trabajas
 
+0. **La hoja de recorrido va primero.** "Para proximas hace hoja de recorrido y asi sabemos como
+   va" (2026-10-22). Antes de renderizar nada se arma
+   `C:\Users\gonza\Pictures\plomo_<pieza>_recorrido.jpg`. Por cada etapa o tramo, en orden:
+   - el nombre y los minutos del set;
+   - los temas;
+   - 2 o 3 cuadros reales de los clips elegidos o candidatos;
+   - el estado: elegido, en armado o listo.
+   Se entrega primero y se rehace cada vez que algo avanza o cambia. Si la idea es nueva, se
+   espera el visto bueno del DJ antes del render largo.
 1. **Diagnostico de colorista antes de tocar nada.** Saca cuadros de varios momentos con ffmpeg y
    miralos con Read a resolucion completa. Revisa:
    - balance de blancos: la luz de interior tira a gris o amarillo en las cortinas y en la piel;
