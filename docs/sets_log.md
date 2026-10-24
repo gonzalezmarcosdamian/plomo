@@ -3397,25 +3397,27 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 ## Set 158. 158. B2B · Grey Area — 2h — 2026-10-21
 **Armado:** 2026-10-22  
 **Duracion:** 2.0h  
-**Tracks:** 16  
+**Tracks:** 18  
 **BPM range:** 120-124  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Tonaco | Avalon (Original Mix)  | 122 | 6.2 |
-| 2 | Gorje Hewek, ETNE | Children (Extended Mix) | 124 | 7.2 |
-| 3 | Tim Green | Minds (Original Mix) | 122 | 6.5 |
-| 4 | Dowden | Gavia (Original Mix) | 122 | 6.0 |
-| 5 | Wassu | From Here (feat. MØØNE) (Extended Mix) | 124 | 7.0 |
-| 6 | Maze 28 | Personal Space (Extended Mix) | 122 | 5.8 |
-| 7 | Max Wexem | Confined (Original Mix) | 120 | 6.5 |
-| 8 | Mind Echoes | Unsafe Numbers (Original Mix) | 121 | 7.2 |
-| 9 | Simon Vuarambon | Grey Area (Original Mix) | 123 | 5.7 |
-| 10 | Guy J | Rise (Original Mix) | 122 | 7.1 |
-| 11 | Sebastien Leger, Lost Miracle | Mistily (Extended Mix) | 121 | 7.6 |
-| 12 | Artic White | Jungla Safari (Extended Mix) | 122 | 6.0 |
-| 13 | Tim Green | Body Stars (Original Mix) | 123 | 7.5 |
-| 14 | Maezbi, Nicolas Viana | Smooth (Original Mix) | 123 | 6.8 |
-| 15 | Matthew Sona | Prismatik (Original Mix) | 122 | 5.2 |
-| 16 | Hraach, Armen Miran | Menq (Nick Warren & Nicolas Rada Remix) | 122 | 6.8 |
+| 1 | Artic White | Jungla Safari (Extended Mix) | 122 | 6.0 |
+| 2 | Sunchain | The Final Lap (Original Mix) | 122 | 1.4 |
+| 3 | Dilby, DÉ SAINT. | Give It Up Again (Original Mix) | 123 | 1.4 |
+| 4 | Makebo | Galaxy (Original Mix) | 123 | 6.4 |
+| 5 | Simon Doty | The Beacon | 124 | 6.5 |
+| 6 | Nick Warren, Martin Fredes | Wanderlust (Original Mix) | 123 | 6.5 |
+| 7 | Maezbi, Nicolas Viana | Smooth (Original Mix) | 123 | 6.8 |
+| 8 | Hraach, Armen Miran | Menq (Nick Warren & Nicolas Rada Remix) | 122 | 6.8 |
+| 9 | Maze 28 | Cry of the Deserts (Aman Anand Remix) | 121 | 6.8 |
+| 10 | Matthew Sona | Prismatik (Original Mix) | 122 | 5.2 |
+| 11 | Nick Warren, Martin Fredes | Kairos (Original Mix) | 120 | 6.3 |
+| 12 | Max Wexem | Confined (Original Mix) | 120 | 6.5 |
+| 13 | Tim Green | Minds (Original Mix) | 122 | 6.5 |
+| 14 | Simon Vuarambon | Grey Area (Original Mix) | 123 | 5.7 |
+| 15 | Dowden | Gavia (Original Mix) | 122 | 6.0 |
+| 16 | Tonaco | Avalon (Original Mix)  | 122 | 6.2 |
+| 17 | Alex O'Rion | Lucida (Original Mix) | 120 | 7.5 |
+| 18 | Sebastien Leger, Lost Miracle | Mistily (Extended Mix) | 121 | 7.6 |
 

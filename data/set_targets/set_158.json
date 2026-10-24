@@ -8,71 +8,37 @@
   ],
   "max_per_artist": 4,
   "keep_order": true,
+  "_nota": "v5 (corregida tras la revision), 2026-10-22: 'iteralo con el 150 como modelo' / 'al b2b'. sonido_del_150 como FILTRO de candidatos: entran las dos anclas, los temas de la v4 que el DJ escucho sin vetar (aunque no pasen los pisos) y, entre los demas, solo los del nucleo de Grey Area (dist_ga <= 3.55) que pasan los cuatro pisos, con E >= 6.0 y de su mundo. Sin --preferir. Orden con el costo de ordenar_como_150.py (bajar 12 por punto, rueda a 2 cuesta 15 y a 3 prohibida, BPM a no mas de 2) y busqueda por grupos de anclas. Prismatik 10 (0:58 tocable), Grey Area 14 (1:24), cierre en Lucida (7.5) y Mistily (7.6). 18 temas, 1h57 tocable; 10 de 18 pasan los pisos, y los 8 que no son Grey Area y siete escuchados. Ver _nota_v5 en data/set_configs/158_b2b_grey_area.json. Propuesta para escuchar.",
   "tracks": [
-    {
-      "artist": "Tonaco",
-      "title": "Avalon (Original Mix) ",
-      "content_id": "176346213"
-    },
-    {
-      "artist": "Gorje Hewek, ETNE",
-      "title": "Children (Extended Mix)",
-      "content_id": "59638375"
-    },
-    {
-      "artist": "Tim Green",
-      "title": "Minds (Original Mix)",
-      "content_id": "218581493"
-    },
-    {
-      "artist": "Dowden",
-      "title": "Gavia (Original Mix)",
-      "content_id": "169431664"
-    },
-    {
-      "artist": "Wassu",
-      "title": "From Here (feat. MØØNE) (Extended Mix)",
-      "content_id": "54818175"
-    },
-    {
-      "artist": "Maze 28",
-      "title": "Personal Space (Extended Mix)",
-      "content_id": "13812808"
-    },
-    {
-      "artist": "Max Wexem",
-      "title": "Confined (Original Mix)",
-      "content_id": "15529976"
-    },
-    {
-      "artist": "Mind Echoes",
-      "title": "Unsafe Numbers (Original Mix)",
-      "content_id": "236238103"
-    },
-    {
-      "artist": "Simon Vuarambon",
-      "title": "Grey Area (Original Mix)",
-      "content_id": "237573926"
-    },
-    {
-      "artist": "Guy J",
-      "title": "Rise (Original Mix)",
-      "content_id": "123555344"
-    },
-    {
-      "artist": "Sebastien Leger, Lost Miracle",
-      "title": "Mistily (Extended Mix)",
-      "content_id": "133983297"
-    },
     {
       "artist": "Artic White",
       "title": "Jungla Safari (Extended Mix)",
       "content_id": "235017915"
     },
     {
-      "artist": "Tim Green",
-      "title": "Body Stars (Original Mix)",
-      "content_id": "46907160"
+      "artist": "Sunchain",
+      "title": "The Final Lap (Original Mix)",
+      "content_id": "74206852"
+    },
+    {
+      "artist": "Dilby, DÉ SAINT.",
+      "title": "Give It Up Again (Original Mix)",
+      "content_id": "162068832"
+    },
+    {
+      "artist": "Makebo",
+      "title": "Galaxy (Original Mix)",
+      "content_id": "37751000"
+    },
+    {
+      "artist": "Simon Doty",
+      "title": "The Beacon",
+      "content_id": "55579160"
+    },
+    {
+      "artist": "Nick Warren, Martin Fredes",
+      "title": "Wanderlust (Original Mix)",
+      "content_id": "38809884"
     },
     {
       "artist": "Maezbi, Nicolas Viana",
@@ -80,14 +46,59 @@
       "content_id": "58422404"
     },
     {
+      "artist": "Hraach, Armen Miran",
+      "title": "Menq (Nick Warren & Nicolas Rada Remix)",
+      "content_id": "70575391"
+    },
+    {
+      "artist": "Maze 28",
+      "title": "Cry of the Deserts (Aman Anand Remix)",
+      "content_id": "77073459"
+    },
+    {
       "artist": "Matthew Sona",
       "title": "Prismatik (Original Mix)",
       "content_id": "53801929"
     },
     {
-      "artist": "Hraach, Armen Miran",
-      "title": "Menq (Nick Warren & Nicolas Rada Remix)",
-      "content_id": "70575391"
+      "artist": "Nick Warren, Martin Fredes",
+      "title": "Kairos (Original Mix)",
+      "content_id": "128348541"
+    },
+    {
+      "artist": "Max Wexem",
+      "title": "Confined (Original Mix)",
+      "content_id": "15529976"
+    },
+    {
+      "artist": "Tim Green",
+      "title": "Minds (Original Mix)",
+      "content_id": "218581493"
+    },
+    {
+      "artist": "Simon Vuarambon",
+      "title": "Grey Area (Original Mix)",
+      "content_id": "237573926"
+    },
+    {
+      "artist": "Dowden",
+      "title": "Gavia (Original Mix)",
+      "content_id": "169431664"
+    },
+    {
+      "artist": "Tonaco",
+      "title": "Avalon (Original Mix) ",
+      "content_id": "176346213"
+    },
+    {
+      "artist": "Alex O'Rion",
+      "title": "Lucida (Original Mix)",
+      "content_id": "158318781"
+    },
+    {
+      "artist": "Sebastien Leger, Lost Miracle",
+      "title": "Mistily (Extended Mix)",
+      "content_id": "133983297"
     }
   ]
 }
