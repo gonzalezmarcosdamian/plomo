@@ -20,7 +20,7 @@
       "_identidad": "Dos horas de house organico luminoso para trabajar: groove calido, percusion viva y melodias que abren sin pedir atencion. Contesta si el material organico de la biblioteca --All Day I Dream, Melody Of the Soul, Lost Miracle, Univack-- sostiene una meseta media sin un solo pico, sin voces al frente y sin un breakdown que te saque de lo que estas haciendo.",
       "_contexto": "Pedido literal del DJ (via el coordinador, 2026-10-25): 'haceme una lista de 2 horas tipo para trabajar work de organic con brillo, en spoty y rekor y la vamos a iterar'. Para escuchar mientras trabaja, no para una pista; 2 horas; Spotify y Rekordbox. Sin escucha del DJ todavia.",
       "_escucha": {
-        "_que_es": "Lo que el DJ dijo escuchando ESTE set, textual, y lo que eso decide aca: 'aprobados' es la familia contra la que se eligen los reemplazos (scripts/archive/familia_159.py); 'cambiados' son temas que pidio cambiar, que no vuelven a este set pero NO son vetos (no van a energia_percibida.json: feedback_veto_vs_cambio). Los temas que todavia no escucho no figuran: no se infiere nada de ellos.",
+        "_que_es": "Lo que el DJ dijo escuchando ESTE set, textual, y lo que eso decide aca: 'aprobados' es la familia contra la que se eligen los reemplazos (scripts/archive/familia_159.py); 'cambiados' son temas que pidio cambiar, que no vuelven a este set pero NO son vetos (no van a energia_percibida.json: feedback_veto_vs_cambio). Los temas que todavia no escucho no figuran: no se infiere nada de ellos. 'oscuros' son los que el DJ llamo oscuros EN ESTE SET: familia_159.py aprende de ellos que es oscuro aca.",
         "rondas": [
           {
             "fecha": "2026-10-25",
@@ -54,21 +54,56 @@
             "aprueba": [],
             "sin_escuchar": "del #7 al #17 (The Observer, #6 de la v2, todavia sin veredicto)",
             "familia_del_reemplazo": "solo los aprobados (#2 a #5)"
+          },
+          {
+            "fecha": "2026-10-25",
+            "version": "v4",
+            "textual": [
+              "The observer también muy oscuro para este set aprende cambia",
+              "Hymnotize lo mismo y cambia. Revisa",
+              "ouverture khen remix, spring embers sumalos a los que estan bien"
+            ],
+            "cambia": [
+              "156983367",
+              "51864410"
+            ],
+            "motivo": "muy oscuro para este set (The Observer textual; Hypnotize 'lo mismo')",
+            "ambiguedad": "'tambien' no nombra a nadie mas: puede querer decir 'tambien hay que cambiarlo' o 'tambien es oscuro, como otro'. No se le asigna 'oscuro' a Fading Control, Naked ni Atenea, que cambio sin decir por que.",
+            "aprueba": [
+              "56831615",
+              "245930317"
+            ],
+            "sin_escuchar": "del #9 al #17",
+            "familia_del_reemplazo": "los 6 aprobados (#2 a #5, #7 y #8)",
+            "entran": {
+              "1": "211548822 Paul Hazendonk, Return To Saturn - You Can Have It All (Peter Makto & Matthew Sona Remix)",
+              "6": "7611765 Praise (BR) - Eclipse (Extended Mix)"
+            },
+            "por_patron": "ninguno: del #9 al #17 nadie cae en la zona oscura (capa melodica < 400 Hz o 1-4 kHz < 0.035). En riesgo leve: #11 Yellow y #14 My Pure Soul (una medida apenas debajo de los aprobados).",
+            "aprendido": "oscuro en este set = melodia en registro grave (capa melodica: aprobados 533-765 Hz y 0.078-0.212 en 1-4 kHz; oscuros 303-379 Hz y 0.022-0.028). Fuera del 159: 3/8 oscuros y 3/40 aprobados en la zona. Ver familia_159.py y docs/sets_log.md v4."
           }
         ],
         "aprobados": [
           "173790116",
           "130869533",
           "184188342",
-          "64669607"
+          "64669607",
+          "56831615",
+          "245930317"
         ],
         "cambiados": [
           "239831899",
           "14636373",
-          "223098104"
+          "223098104",
+          "156983367",
+          "51864410"
+        ],
+        "oscuros": [
+          "156983367",
+          "51864410"
         ]
       },
-      "_version": "v2 (2026-10-25): desde que el DJ escucha, el set ya NO sale de select_set: es data/set_targets/set_159.json editado lugar por lugar con scripts/archive/familia_159.py (#1 Atenea, #6 The Observer). Correr select_set.py con este config REARMA la v1 y pisa lo aprobado: no hacerlo salvo que el DJ pida rehacer el set entero.",
+      "_version": "v2 en adelante (2026-10-25): desde que el DJ escucha, el set ya NO sale de select_set: es data/set_targets/set_159.json editado lugar por lugar con scripts/archive/familia_159.py (v2 #1 Atenea y #6 The Observer; v3 #1 Hypnotize; v4 #1 You Can Have It All y #6 Eclipse). Correr select_set.py con este config REARMA la v1 y pisa lo aprobado: no hacerlo salvo que el DJ pida rehacer el set entero.",
       "_traduccion": {
         "organic": "Pool: genero organic (314 temas en la biblioteca) + su orbita, o sea temas de genero vecino de sellos y artistas que son mayormente organic o que nombro el pedido (ver _pool). La cuota mezcla_objetivo / peso_mezcla 4.0 sostiene el genero organic arriba (12 de 17).",
         "brillo": "Tres capas. a) Piso duro en el pool: color_pct >= 0.35 (el minimo del 150 es 0.37; saca 111 temas) y medio >= 5, aire >= 2 (la escucha del DJ: sin medios 'oscuro', sin aire 'tecnoso'). b) color_peso 2.0 (regla estilo.colorido 1.5): premio al color en el costo. c) modo_mayor_objetivo 0.3 (regla armonia 0.11; los pros p75 20%, Ezequiel Arias 25%): 5 de 17 en mayor. Ademas los vetos 'muy oscuro' de energia_percibida quedan fuera por select_set.",

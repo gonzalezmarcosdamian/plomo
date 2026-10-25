@@ -754,6 +754,70 @@
       "peso": 0.002,
       "etiqueta": "instrumental",
       "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "20664983": {
+      "artist": "ECHO DAFT, Barberio",
+      "title": "Tide (Original Mix)",
+      "presencia": 0.53,
+      "peso": 0.212,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "231295892": {
+      "artist": "Cosmonaut, K Loveski",
+      "title": "Bailarina (Original Mix) ",
+      "presencia": 0.166,
+      "peso": 0.031,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "37598389": {
+      "artist": "Roy Rosenfeld, Gorje Hewek, Dulus",
+      "title": "Vida (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "58183652": {
+      "artist": "Kamilo Sanclemente",
+      "title": "A Lonely Pink Cloud (Original Mix)",
+      "presencia": 0.025,
+      "peso": 0.005,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "201563029": {
+      "artist": "Choopie, Golan Zocher",
+      "title": "Alush (Balad Remix) ",
+      "presencia": 0.495,
+      "peso": 0.156,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "217151442": {
+      "artist": "Juan Yarin",
+      "title": "Never Met (Durante Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "253296461": {
+      "artist": "Armen Miran & Felix Raphael",
+      "title": "Ghost",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "250268880": {
+      "artist": "Eli Nissan",
+      "title": "Karnaval (Roy Rosenfeld Remix) ",
+      "presencia": 0.053,
+      "peso": 0.007,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."

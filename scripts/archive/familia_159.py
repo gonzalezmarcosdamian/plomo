@@ -30,7 +30,27 @@ DURO (sin esto no entra)
   - energia dentro de e_pool; el que abre no pasa al segundo, los demas a +-1.0 del
     promedio de sus vecinos
   - topes de 4 por artista (contando remixer) y 4 por sello, sin el tema que sale
-  - voz: data/voces.json. 'cantado' no entra; 'sin medir' se mide con --medir.
+  - voz: data/voces.json. 'cantado' no entra, ni presencia de voz > 45% (VOZ_MAX); 'sin medir'
+    se mide con --medir.
+
+LEJOS DE LO OSCURO (v4, 2026-10-25: "The observer tambien muy oscuro para este set aprende
+cambia" / "Hymnotize lo mismo y cambia")
+  Lo que se aprendio, medido sobre la capa melodica (stem `other` de Demucs, 30 s al 45% del
+  tema, el mismo fragmento que la voz; data/capa_melodica.json):
+    centroide   de la capa melodica, en Hz
+    medio_1_4k  fraccion de su energia entre 1 y 4 kHz
+  En el 159: los 6 aprobados dan centroide 533-765 Hz y 1-4 kHz 0.078-0.212; los dos que el
+  DJ llamo oscuros, 303 y 379 Hz y 0.022 y 0.028. Fuera del 159, la ZONA OSCURA (centroide
+  < 400 Hz o 1-4 kHz < 0.035) la tienen 3 de los 8 temas que el DJ llamo oscuros en otros sets
+  (Low Era, Shades Of Blue, Emerge) y 3 de los 40 que aprobo (el 150 y sus favoritos). O sea:
+  es UN tipo de oscuro --la melodia abajo--, no todos; los otros 5 oscuros son otra cosa.
+  Descartado al medir: 'bajo' del balance y medio/aire (estilo.oscuro_del_dj) separaban a los
+  2 oscuros de los aprobados del 159 pero no fuera (P(oscuro<aprobado) 0.45 y 0.53 sobre 8
+  contra 40), y la densidad dejo de separar en cuanto se sumaron Ouverture y Spring Embers.
+  Como se usa:
+    zona oscura (centroide < 400 o 1-4k < 0.035)             -> no entra
+    debajo de los aprobados (centroide o 1-4k < su minimo)    -> +2 por medida
+  'SIN CAPA' = falta medir: --medir mide voz y capa del mismo stem.
 
 Uso:
     python scripts/archive/familia_159.py --posiciones 1              # ranking
@@ -62,6 +82,12 @@ from select_set import VETO_TRACKS, _minus, names  # noqa: E402
 D = RAIZ / "data"
 CFG_F = D / "set_configs" / "159_work_organic_brillo.json"
 TARGET_F = D / "set_targets" / "set_159.json"
+CAPA_F = D / "capa_melodica.json"
+# "sin voz" en este set: el coordinador descarto Whale Voices en la v3 por 'algo de voz' al 53%;
+# el aprobado con mas voz es Rogelito, 30%
+VOZ_MAX = 0.45
+ZONA_CENTROIDE = 400.0   # Hz: los dos oscuros del 159 dan 303 y 379; el aprobado mas bajo, 533
+ZONA_1_4K = 0.035        # los dos oscuros 0.022 y 0.028; el aprobado mas bajo, 0.078
 TOPE_ART = R.get("repeticion.max_por_artista_en_set")
 TOPE_SELLO = R.get("repeticion.max_por_sello_en_set")
 
@@ -93,6 +119,7 @@ def cargar() -> dict:
             "forma": forma, "desv": desv, "voz": _j(D / "voces.json")["tracks"],
             "mundo": (set(mundo["artistas"]), set(mundo["sellos"])),
             "set": [t["content_id"] for t in _j(TARGET_F)["tracks"]],
+            "capa": _j(CAPA_F)["tracks"] if CAPA_F.exists() else {},
             "s158": {t["content_id"] for t in _j(t158)["tracks"]} if t158.exists() else set()}
 
 
@@ -127,6 +154,34 @@ def puntaje(c: str, fam: list[str], X: dict) -> dict:
             "color": round(col.get(c, 0.5), 2), "sello": b_sello, "gente": b_gente, "ajeno": ajeno}
 
 
+def _medidas_oscuro(i: str, X: dict) -> dict | None:
+    c = X["capa"].get(i)
+    f = D / "recetas" / "lib" / f"{i}.json"
+    if not c or not f.exists():
+        return None
+    return {"centroide": c["centroide"], "medio_1_4k": c["medio_1_4k"]}
+
+
+def lado_oscuro(i: str, X: dict) -> list[str] | None:
+    """Que medidas de `i` pasan el borde de los aprobados hacia los oscuros de este set."""
+    osc = [m for m in (_medidas_oscuro(o, X) for o in X["esc"].get("oscuros", [])) if m]
+    apr = [m for m in (_medidas_oscuro(a, X) for a in X["esc"].get("aprobados", [])) if m]
+    yo = _medidas_oscuro(i, X)
+    if not osc or not apr or yo is None:
+        return None
+    fuera = []
+    for k in ("centroide", "medio_1_4k"):
+        if yo[k] < min(m[k] for m in apr):
+            fuera.append(k)
+    return fuera
+
+
+def zona_oscura(i: str, X: dict) -> bool:
+    """Melodia en registro grave: 2/2 oscuros del 159, 3/8 oscuros de otros sets, 3/40 aprobados."""
+    m = _medidas_oscuro(i, X)
+    return bool(m) and (m["centroide"] < ZONA_CENTROIDE or m["medio_1_4k"] < ZONA_1_4K)
+
+
 def candidatos(pos: int, X: dict) -> list[tuple[str, dict]]:
     """pos es 1-based. Devuelve [(id, puntaje)] ordenado, solo los que pasan lo duro."""
     spec, pool, s = X["spec"], X["pool"], X["set"]
@@ -145,7 +200,8 @@ def candidatos(pos: int, X: dict) -> list[tuple[str, dict]]:
     for c, t in pool.items():
         if c in fuera or not (spec["bpm"][0] <= t["bpm"] <= spec["bpm"][1]):
             continue
-        if X["voz"].get(c, {}).get("etiqueta") == "cantado":
+        v = X["voz"].get(c, {})
+        if v.get("etiqueta") == "cantado" or v.get("presencia", 0) > VOZ_MAX:
             continue
         if any(distance(t["key"], pool[v]["key"]) > max_cam or abs(t["bpm"] - pool[v]["bpm"]) > max_bpm
                for v in vec):
@@ -161,8 +217,35 @@ def candidatos(pos: int, X: dict) -> list[tuple[str, dict]]:
             continue
         if _sello(t) and sel[_sello(t)] >= TOPE_SELLO:
             continue
-        out.append((c, puntaje(c, fam, X)))
+        if zona_oscura(c, X):
+            continue
+        p = puntaje(c, fam, X)
+        lo = lado_oscuro(c, X)
+        p["oscuro"] = lo
+        if lo:
+            p["total"] = round(p["total"] + 2.0 * len(lo), 2)
+        out.append((c, p))
     return sorted(out, key=lambda x: x[1]["total"])
+
+
+def guardar_capa(i: str, carpeta: Path, t: dict) -> None:
+    """Centroide y 1-4 kHz de la capa melodica (stem `other`), en data/capa_melodica.json."""
+    import librosa
+    import numpy as np
+    y, sr = librosa.load(carpeta / "other.wav", sr=22050, mono=True)
+    S = np.abs(librosa.stft(y, n_fft=4096, hop_length=1024)) ** 2
+    fr = librosa.fft_frequencies(sr=sr, n_fft=4096)
+    tot = S.sum() + 1e-12
+    doc = _j(CAPA_F) if CAPA_F.exists() else {
+        "_que_es": ("La capa melodica de cada tema: el stem `other` de Demucs sobre 30 s al 45% del tema "
+                    "(el mismo fragmento que data/voces.json). centroide = centroide espectral en Hz; "
+                    "medio_1_4k = fraccion de su energia entre 1 y 4 kHz. Mide en que registro esta la "
+                    "melodia: los dos temas que el DJ llamo 'muy oscuros' en el set 159 la tienen abajo."),
+        "tracks": {}}
+    doc["tracks"][i] = {"artist": t["artist"], "title": t["title"],
+                        "centroide": round(float((fr[:, None] * S).sum() / tot), 1),
+                        "medio_1_4k": round(float(S[(fr >= 1000) & (fr < 4000)].sum() / tot), 3)}
+    CAPA_F.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def medir(ids: list[str], X: dict) -> None:
@@ -191,11 +274,17 @@ def medir(ids: list[str], X: dict) -> None:
         et = ("cantado" if r["presencia"] > 0.60 and r["peso"] > 0.08
               else "algo de voz" if r["presencia"] > 0.30 else "instrumental")
         t = X["pool"][i]
+        if i in doc["tracks"]:            # la voz ya estaba: solo faltaba la capa
+            guardar_capa(i, stems["other"].parent, t)
+            X["capa"][i] = _j(CAPA_F)["tracks"][i]
+            continue
         doc["tracks"][i] = {"artist": t["artist"], "title": t["title"],
                             "presencia": round(r["presencia"], 3), "peso": round(r["peso"], 3),
                             "etiqueta": et, "medido": "familia_159.py, voces.separar + voces._voz"}
         X["voz"][i] = doc["tracks"][i]
         vf.write_text(json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
+        guardar_capa(i, stems["other"].parent, t)
+        X["capa"][i] = _j(CAPA_F)["tracks"][i]
 
 
 def mostrar(pos: int, X: dict, top: int) -> None:
@@ -204,9 +293,11 @@ def mostrar(pos: int, X: dict, top: int) -> None:
     for c, p in candidatos(pos, X)[:top]:
         t, v = pool[c], X["voz"].get(c)
         voz = f"{v['etiqueta']} {v['presencia']:.0%}" if v else "SIN MEDIR"
+        lo = p.get("oscuro")
+        osc = "SIN CAPA" if lo is None else ("claro" if not lo else "OSCURO:" + "+".join(lo))
         print(f"  {p['total']:5.2f} | f{p['forma']:.2f} g{p['groove']:.2f} c{p['color']:.2f} "
               f"s{p['sello']:+.1f} a{p['gente']:+.1f}{' AJENO' if p['ajeno'] else ''} | "
-              f"E{t['energy']:.1f} {t['bpm']:.0f} {t['key']:>3} | {voz:16} | {c} {t['artist'][:24]} - "
+              f"E{t['energy']:.1f} {t['bpm']:.0f} {t['key']:>3} | {voz:16} | {osc:24} | {c} {t['artist'][:24]} - "
               f"{t['title'][:40]} [{t['label'][:14]}] [{etiqueta(t['title'])}]")
 
 
@@ -224,7 +315,8 @@ def main() -> None:
     X["extra"] = a.familia_extra
     for pos in a.posiciones:
         if a.medir:
-            falta = [c for c, _ in candidatos(pos, X) if c not in X["voz"]][: a.medir]
+            falta = [c for c, _ in candidatos(pos, X)
+                     if c not in X["voz"] or c not in X["capa"]][: a.medir]
             medir(falta, X)
         mostrar(pos, X, a.top)
     if a.poner:

@@ -8,6 +8,32 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Un tipo de "oscuro" es la melodia en registro grave, y se mide en el stem melodico
+
+**Que paso.** En el 159 (organic con brillo para trabajar) el DJ saco The Observer
+("muy oscuro para este set") e Hypnotize ("lo mismo"). El color del proyecto no los
+separaba de los seis que aprobo (0.86 y 0.72, dentro del rango). Lo que si los separa
+es donde vive la melodia: medida sobre el stem `other` de Demucs, los aprobados tienen
+el centroide entre 533 y 765 Hz y 0.078-0.212 de su energia entre 1 y 4 kHz; The
+Observer 379 Hz / 0.028, Hypnotize 303 Hz / 0.022.
+
+**Por que.** El color y el tilt miden la mezcla entera, y en el organic el brillo de
+la percusion y los pads los empuja arriba aunque la linea que uno sigue este abajo.
+El oido sigue la melodia, y si la melodia esta grave el tema suena oscuro con
+platillos brillantes encima. Por eso en el 143 lo que el DJ llamo oscuro media MAS
+brillante: se media la mezcla, no la melodia.
+
+**Como se aplica.**
+- Para "brillo" en un set, mirar la capa melodica (centroide y 1-4 kHz del stem
+  `other`), no `color_pct`. Las mediciones quedan en `data/capa_melodica.json`.
+- Es UN tipo de oscuro, no todos. Fuera del 159 la zona grave la tienen 3 de los 8
+  temas que el DJ llamo oscuros y 3 de los 40 que aprobo. Los otros cinco oscuros
+  tienen la melodia arriba y son oscuros por otra cosa que todavia no se midio.
+- Con 2 casos de un set es una pista, no una regla: va como penalizacion del set
+  (`familia_159.py`) y se confirma o se cae con cada nueva escucha.
+
+---
+
 ## El criterio del revisor se le da al editor antes, y medible
 
 **Que paso.** La Session 04 de paisajes paso cuatro veces por el revisor. Cada vuelta costaba

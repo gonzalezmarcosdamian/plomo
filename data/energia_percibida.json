@@ -198,7 +198,9 @@
       0.0,
       0.45
     ],
-    "fuente": "escucha del set 140 v3 (warm), 2026-09-22"
+    "fuente": "escucha del set 140 v3 (warm), 2026-09-22",
+    "nota_159": "The observer también muy oscuro para este set aprende cambia",
+    "fuente_159": "escucha del set 159, 2026-10-25. Cambio de ESTE set, no veto"
   },
   "12611861": {
     "artist": "Freedo Mosho, JUNIOR (SL), Futura City",
@@ -1200,5 +1202,11 @@
     "fuente": "escucha del set 158 v3 (b2b Grey Area), 2026-10-22",
     "veto": true,
     "_alcance": "solo esta version: el Serious Dancers Remix (64018165) lo toco el 2026-10-19 y de ese no dijo nada"
+  },
+  "51864410": {
+    "artist": "Kebin Van Reeken",
+    "title": "Hypnotize (Extended Mix)",
+    "nota_159": "Hymnotize lo mismo y cambia. Revisa",
+    "fuente_159": "escucha del set 159, 2026-10-25, justo despues de 'The observer tambien muy oscuro para este set': 'lo mismo' = muy oscuro para este set. Cambio de ESTE set, no veto"
   }
 }

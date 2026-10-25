@@ -1,0 +1,227 @@
+{
+  "_que_es": "La capa melodica de cada tema: el stem `other` de Demucs sobre 30 s al 45% del tema (el mismo fragmento que data/voces.json). centroide = centroide espectral en Hz; medio_1_4k = fraccion de su energia entre 1 y 4 kHz. Mide en que registro esta la melodia: los dos temas que el DJ llamo 'muy oscuros' en el set 159 la tienen abajo. Lo escribe scripts/archive/familia_159.py --medir.",
+  "tracks": {
+    "130869533": {
+      "artist": "Andre Moret",
+      "title": "One World (Extended Mix)",
+      "centroide": 764.5,
+      "medio_1_4k": 0.178
+    },
+    "14636373": {
+      "artist": "Eli Nissan",
+      "title": "Naked ",
+      "centroide": 517.6,
+      "medio_1_4k": 0.051
+    },
+    "156983367": {
+      "artist": "Kasper Koman",
+      "title": "The Observer",
+      "centroide": 378.8,
+      "medio_1_4k": 0.028
+    },
+    "173790116": {
+      "artist": "Hernan Cattaneo, Khen",
+      "title": "Rogelito (Original Mix)",
+      "centroide": 729.2,
+      "medio_1_4k": 0.212
+    },
+    "184188342": {
+      "artist": "Jordi Ruz, Artic White",
+      "title": "Aura (Original Mix)",
+      "centroide": 532.9,
+      "medio_1_4k": 0.092
+    },
+    "223098104": {
+      "artist": "Kamilo Sanclemente, Andre Moret, Mariusso",
+      "title": "Atenea (HAFT Remix)",
+      "centroide": 456.1,
+      "medio_1_4k": 0.068
+    },
+    "239831899": {
+      "artist": "KAZKO",
+      "title": "Fading Control (Original Mix)",
+      "centroide": 472.7,
+      "medio_1_4k": 0.051
+    },
+    "51864410": {
+      "artist": "Kebin Van Reeken",
+      "title": "Hypnotize (Extended Mix)",
+      "centroide": 302.9,
+      "medio_1_4k": 0.022
+    },
+    "64669607": {
+      "artist": "Gorje Hewek",
+      "title": "Forest Song in the Morning (Original Mix",
+      "centroide": 685.4,
+      "medio_1_4k": 0.078
+    },
+    "245930317": {
+      "artist": "Nora En Pure",
+      "title": "Spring Embers (Extended Mix)",
+      "centroide": 647.0,
+      "medio_1_4k": 0.144
+    },
+    "56831615": {
+      "artist": "Capoon, Amand",
+      "title": "Ouverture (Khen Remix)",
+      "centroide": 592.0,
+      "medio_1_4k": 0.117
+    },
+    "125153100": {
+      "artist": "Khen",
+      "title": "Yellow (Original Mix)",
+      "centroide": 535.2,
+      "medio_1_4k": 0.066
+    },
+    "175484827": {
+      "artist": "Kamilo Sanclemente, Giovanny Aparicio",
+      "title": "Redemtion (Original Mix)",
+      "centroide": 751.1,
+      "medio_1_4k": 0.188
+    },
+    "194339407": {
+      "artist": "Shai T & Tamir Regev",
+      "title": "The Captain",
+      "centroide": 642.3,
+      "medio_1_4k": 0.13
+    },
+    "196838047": {
+      "artist": "Nicolas Viana",
+      "title": "Coral (Extended Mix)",
+      "centroide": 701.0,
+      "medio_1_4k": 0.139
+    },
+    "2009006": {
+      "artist": "Gorje Hewek, Dulus",
+      "title": "Earth (Original Mix)",
+      "centroide": 919.5,
+      "medio_1_4k": 0.267
+    },
+    "22034915": {
+      "artist": "Andre Moret",
+      "title": "Beyond Us (Extended Mix)",
+      "centroide": 592.2,
+      "medio_1_4k": 0.097
+    },
+    "233850863": {
+      "artist": "Khen",
+      "title": "My Pure Soul (Original Mix)",
+      "centroide": 522.2,
+      "medio_1_4k": 0.11
+    },
+    "237240379": {
+      "artist": "Nicolas Viana",
+      "title": "Winged (Original Mix)",
+      "centroide": 621.3,
+      "medio_1_4k": 0.109
+    },
+    "241869933": {
+      "artist": "Sebastien Leger",
+      "title": "Lava (Original Mix)",
+      "centroide": 929.8,
+      "medio_1_4k": 0.269
+    },
+    "38262851": {
+      "artist": "Sebastien Leger",
+      "title": "Firefly (Original Mix)",
+      "centroide": 408.1,
+      "medio_1_4k": 0.057
+    },
+    "32348316": {
+      "artist": "Kasper Koman, Shai T",
+      "title": "Good People ",
+      "centroide": 594.3,
+      "medio_1_4k": 0.114
+    },
+    "211548822": {
+      "artist": "Paul Hazendonk, Return To Saturn",
+      "title": "You Can Have It All (Peter Makto & Matthew Sona Remix)",
+      "centroide": 727.5,
+      "medio_1_4k": 0.122
+    },
+    "166576540": {
+      "artist": "Shai T",
+      "title": "Oriki (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "centroide": 584.0,
+      "medio_1_4k": 0.138
+    },
+    "7611765": {
+      "artist": "Praise (BR)",
+      "title": "Eclipse (Extended Mix)",
+      "centroide": 596.4,
+      "medio_1_4k": 0.1
+    },
+    "234709728": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Distant Blips (Dowden Remix)",
+      "centroide": 532.5,
+      "medio_1_4k": 0.13
+    },
+    "178625501": {
+      "artist": "Jou Nielsen, Paul Ikky",
+      "title": "Sundance (Kebin Van Reeken Extended Remix)",
+      "centroide": 543.9,
+      "medio_1_4k": 0.132
+    },
+    "103060278": {
+      "artist": "Solis [US]",
+      "title": "Echosphere (Hernan Cattaneo & Simply City Extended Remix)",
+      "centroide": 574.9,
+      "medio_1_4k": 0.107
+    },
+    "203560138": {
+      "artist": "Tim Green",
+      "title": "Battle Illusion ",
+      "centroide": 630.7,
+      "medio_1_4k": 0.167
+    },
+    "20664983": {
+      "artist": "ECHO DAFT, Barberio",
+      "title": "Tide (Original Mix)",
+      "centroide": 772.1,
+      "medio_1_4k": 0.192
+    },
+    "231295892": {
+      "artist": "Cosmonaut, K Loveski",
+      "title": "Bailarina (Original Mix) ",
+      "centroide": 730.7,
+      "medio_1_4k": 0.181
+    },
+    "37598389": {
+      "artist": "Roy Rosenfeld, Gorje Hewek, Dulus",
+      "title": "Vida (Original Mix)",
+      "centroide": 373.2,
+      "medio_1_4k": 0.04
+    },
+    "58183652": {
+      "artist": "Kamilo Sanclemente",
+      "title": "A Lonely Pink Cloud (Original Mix)",
+      "centroide": 325.9,
+      "medio_1_4k": 0.01
+    },
+    "201563029": {
+      "artist": "Choopie, Golan Zocher",
+      "title": "Alush (Balad Remix) ",
+      "centroide": 827.4,
+      "medio_1_4k": 0.171
+    },
+    "217151442": {
+      "artist": "Juan Yarin",
+      "title": "Never Met (Durante Remix)",
+      "centroide": 928.5,
+      "medio_1_4k": 0.298
+    },
+    "253296461": {
+      "artist": "Armen Miran & Felix Raphael",
+      "title": "Ghost",
+      "centroide": 525.2,
+      "medio_1_4k": 0.138
+    },
+    "250268880": {
+      "artist": "Eli Nissan",
+      "title": "Karnaval (Roy Rosenfeld Remix) ",
+      "centroide": 711.9,
+      "medio_1_4k": 0.156
+    }
+  }
+}

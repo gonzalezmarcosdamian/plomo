@@ -3430,12 +3430,12 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Kebin Van Reeken | Hypnotize (Extended Mix) | 122 | 5.4 |
+| 1 | Paul Hazendonk, Return To Saturn | You Can Have It All (Peter Makto & Matthew Sona Remix) | 121 | 5.5 |
 | 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
 | 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
 | 5 | Gorje Hewek | Forest Song in the Morning (Original Mix | 120 | 1.4 |
-| 6 | Kasper Koman | The Observer | 121 | 6.1 |
+| 6 | Praise (BR) | Eclipse (Extended Mix) | 122 | 5.2 |
 | 7 | Capoon, Amand | Ouverture (Khen Remix) | 123 | 5.7 |
 | 8 | Nora En Pure | Spring Embers (Extended Mix) | 122 | 6.7 |
 | 9 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
@@ -3510,3 +3510,43 @@ v2, con los dos cambios.
   `_escucha` del config. La voz medida queda en `data/voces.json` (85 temas, 57 de este set), asi que no se vuelve a medir.
 
 **v3 (2026-10-25), textual:** "Atenea cámbialo". La tabla de arriba es la v3. Sale #1 Atenea (HAFT Remix), cambio y no veto. Entra Kebin Van Reeken - Hypnotize (Extended Mix), Univack, 122, 4A como Rogelito, E5.4 para abrir debajo, instrumental (voz 0%), segundo del ranking de familia_159.py contra los aprobados #2-#5. El primero era Kamilo Sanclemente - Whale Voices (3.02 contra 3.34), descartado por 'algo de voz' (53%) en una lista para trabajar; queda como alternativa.
+
+**v4 (2026-10-25), textual:** "The observer también muy oscuro para este set aprende cambia" / "Hymnotize lo mismo y
+cambia. Revisa" / "ouverture khen remix, spring embers sumalos a los que estan bien". La tabla de arriba es la v4.
+- **Cambios dichos por el DJ** (cambios de este set, no vetos; quedan como `nota_159` en energia_percibida.json, sin
+  `veto`): sale #6 Kasper Koman - The Observer ("muy oscuro para este set") y sale #1 Kebin Van Reeken - Hypnotize ("lo
+  mismo"). "Tambien" no nombra a nadie mas: no se le asigna "oscuro" a Fading Control, Naked ni Atenea.
+- **Aprobados:** suman #7 Ouverture (Khen Remix) y #8 Spring Embers. La familia son 6: #2 a #5, #7 y #8. Sin escuchar:
+  #9 a #17.
+- **Lo aprendido de "oscuro".** Medido en la capa melodica (stem `other` de Demucs, 30 s al 45% del tema; queda en
+  `data/capa_melodica.json`): los 6 aprobados tienen la melodia en centroide 533-765 Hz y 0.078-0.212 de su energia
+  entre 1 y 4 kHz; The Observer y Hypnotize, 379 y 303 Hz, 0.028 y 0.022. La melodia esta abajo. Fuera del 159 esa zona
+  (centroide < 400 Hz o 1-4 kHz < 0.035) la tienen 3 de los 8 que el DJ llamo oscuros en otros sets (Low Era, Shades Of
+  Blue, Emerge) y 3 de los 40 que aprobo (el 150 y sus favoritos): es UN tipo de oscuro, no todos. Los otros 5 oscuros
+  de otros sets tienen la melodia arriba y son oscuros por otra cosa. Descartado al medir: color_pct no separa (los
+  oscuros del 159 dan 0.86 y 0.72); 'bajo' del balance y medio/aire separaban a los 2 oscuros de los aprobados del 159
+  pero no fuera (P(oscuro < aprobado) 0.45 y 0.53 sobre 8 contra 40); la densidad dejo de separar al sumar Ouverture
+  (11.7). Dato extra: los tres cambiados sin motivo dicho (Fading Control 473 Hz / 0.051, Naked 518 / 0.051, Atenea 456
+  / 0.068) quedan debajo de los 6 aprobados en las dos medidas, igual que los dos oscuros, y ningun aprobado lo esta. Es
+  coherente pero el DJ no dijo por que los cambio: no se toma como prueba. Muestra chica (2 oscuros dichos aca, 8 afuera).
+- **Como queda en familia_159.py:** zona oscura (centroide < 400 o 1-4 kHz < 0.035) no entra; debajo del minimo de los
+  aprobados, +2 por medida. Voz: fuera lo cantado y toda presencia > 45% (la v3 saco Whale Voices por 53%).
+- **Entra #1** Paul Hazendonk, Return To Saturn - You Can Have It All (Peter Makto & Matthew Sona Remix) [Zenebona,
+  uno de los sellos del pedido], Progressive House, 121, 5A (a 1 de Rogelito, 2 BPM abajo), E5.5 (debajo de Rogelito
+  6.2), color 0.89, voz 12% (instrumental), capa 727 Hz / 0.122. Primero del ranking contra los 6: forma 3.21, groove a
+  0.57 de su mediana. Figura ajeno en mundo_propio.json (artista y sello), pero el remixer Matthew Sona es el de
+  Prismatik, que el DJ marco favorito el 2026-10-21. Estuvo en el 129; sin tocar.
+- **Alternativas #1:** Kasper Koman, Shai T - Good People [Lost Miracle], 4A 122, E6.2 (igual a Rogelito), color 0.54,
+  voz 16%, capa clara (594 Hz); Shai T - Oriki (Hernan Cattaneo & Marcelo Vasami Remix) [Warung], 4A 122, E5.1, color
+  0.47, voz 0%, capa clara (584 Hz), lejos en forma.
+- **Entra #6** Praise (BR) - Eclipse (Extended Mix) [Univack], Progressive House, 122, 6A (Forest Song 6A +2 BPM,
+  Ouverture 7A +1), E5.2, color 0.76, voz 0%, capa 596 Hz / 0.100. Primero del ranking contra los 6. Sin usar en ningun
+  set; sin tocar.
+- **Alternativas #6:** Jou Nielsen, Paul Ikky - Sundance (Kebin Van Reeken Extended Remix) [Univack], 6A 121, E6.1,
+  color 0.62, voz 9%, capa 544 Hz / 0.132; Solis [US] - Echosphere (Hernan Cattaneo & Simply City Extended Remix)
+  [Univack], 6A 122, E5.5, voz 6%, capa 575 Hz. Distant Blips ya no: su capa queda en 532 Hz, debajo de los aprobados.
+- **"Revisa", del #9 al #17 (sin escuchar):** ninguno cae en la zona oscura, asi que no se cambio ninguno por patron.
+  En riesgo leve, una medida apenas debajo de los aprobados: #11 Khen - Yellow (1-4 kHz 0.066 contra 0.078 de minimo;
+  centroide 535) y #14 Khen - My Pure Soul (centroide 522 contra 533). Los demas, dentro del rango de los aprobados.
+- **Audit v4:** 5.5 -> pico 6.8 (#13, 76%) -> 6.3, 38% sin mover la rueda (p90 de los pros 40%), 0 saltos de BPM > 2;
+  las 2 transiciones flojas son las de Forest Song con el 1.4 de la DB.
