@@ -7,10 +7,10 @@
    "artista": "Sébastien Léger",
    "titulo": "Blazing Ice",
    "estado": "nuevo",
-   "content_id": null,
+   "content_id": "198986596",
    "muzpa_id": 6474765,
    "muzpa_nombre": "Sebastien Leger - Blazing Ice ",
-   "bpm": 122,
+   "bpm": 122.0,
    "key": "5A",
    "genero": "Organic House / Downtempo",
    "duracion": "10:06"
@@ -90,17 +90,15 @@
    "duracion": "4:40"
   },
   {
-   "spotify_id": "67mzFiitjGx4Swa0fplG8E",
-   "artista": "Nicolas Viana",
-   "titulo": "Luminor",
+   "spotify_id": "5mTroNmrikbdTEn16TibD6",
+   "artista": "Juan Yarin",
+   "titulo": "Never Met (Durante Remix)",
    "estado": "nuevo",
-   "content_id": null,
-   "muzpa_id": 8107727,
-   "muzpa_nombre": "Nicolas Viana - Luminor (Original Mix)",
-   "bpm": 122,
-   "key": "6A",
-   "genero": "Progressive",
-   "duracion": "7:36"
+   "content_id": "217151442",
+   "bpm": 122.0,
+   "key": "7A",
+   "genero": "Organic House",
+   "sello": "Closure"
   },
   {
    "spotify_id": "3PNeoQuGLfAtPcamhqukdk",
@@ -178,22 +176,15 @@
    "duracion": "5:46"
   },
   {
-   "spotify_id": "1aMx7DSnmskWd55cIYcca5",
-   "artista": "Khen",
-   "titulo": "Yellow",
-   "album_id": "2Zgan56SVIfs5spqVImR19",
-   "artistas_ids": [
-    "7M7DUxK3f7hR03EwfwldZQ"
-   ],
-   "ms": 227292,
-   "content_id": "125153100",
-   "estado": "sin_escuchar",
-   "muzpa_id": 8011023,
-   "muzpa_nombre": "Khen - Yellow (Extended Mix)",
-   "bpm": 122.0,
-   "key": "9B",
-   "genero": "Organic House / Downtempo",
-   "duracion": "8:26"
+   "spotify_id": "2tlWbgNUKy9NNUOQGWWL7l",
+   "artista": "Fernando Olaya, Kamilo Sanclemente",
+   "titulo": "Renascence (Original Mix)",
+   "estado": "nuevo",
+   "content_id": "162314364",
+   "bpm": 123.0,
+   "key": "10A",
+   "genero": "Organic House",
+   "sello": "Balance Music"
   },
   {
    "spotify_id": "3vASLiep3SIW2vd0YZOM17",
@@ -224,7 +215,7 @@
    ],
    "ms": 425480,
    "content_id": "194339407",
-   "estado": "sin_escuchar",
+   "estado": "aprobado",
    "muzpa_id": 6413878,
    "muzpa_nombre": "Shai T & Tamir Regev - The Captain",
    "bpm": 122.0,
@@ -242,7 +233,7 @@
    ],
    "ms": 458517,
    "content_id": "233850863",
-   "estado": "sin_escuchar",
+   "estado": "aprobado",
    "muzpa_id": 7893149,
    "muzpa_nombre": "Khen - My Pure Soul (Original Mix)",
    "bpm": 122.0,
@@ -261,7 +252,7 @@
    ],
    "ms": 572027,
    "content_id": "175484827",
-   "estado": "sin_escuchar",
+   "estado": "aprobado",
    "muzpa_id": 7085636,
    "muzpa_nombre": "Kamilo Sanclemente & Giovanny Aparicio - Redemtion",
    "bpm": 121.0,
@@ -279,7 +270,7 @@
    ],
    "ms": 409672,
    "content_id": "22034915",
-   "estado": "sin_escuchar",
+   "estado": "aprobado",
    "muzpa_id": 9150710,
    "muzpa_nombre": "Andre Moret - Beyond Us (Extended Mix)",
    "bpm": 122.0,
@@ -297,7 +288,7 @@
    ],
    "ms": 504590,
    "content_id": "241869933",
-   "estado": "sin_escuchar",
+   "estado": "aprobado",
    "muzpa_id": 5277896,
    "muzpa_nombre": "Sebastien Leger - Lava (Original Mix)",
    "bpm": 122.0,
@@ -355,6 +346,22 @@
    "titulo": "Eclipse - Extended Mix",
    "content_id": "7611765",
    "textual": "Eclipse y you can have it los dos cambiados vovelos a cambiar"
+  },
+  {
+   "spotify_id": "67mzFiitjGx4Swa0fplG8E",
+   "artista": "Nicolas Viana",
+   "titulo": "Luminor",
+   "content_id": null,
+   "textual": "(sin escucha: correccion del coordinador)",
+   "motivo": "Luminor en Rekordbox es 5B, no 6A como dice Muzpa: no mezcla con Forest Song 6A ni con Ouverture 7A"
+  },
+  {
+   "spotify_id": "1aMx7DSnmskWd55cIYcca5",
+   "artista": "Khen",
+   "titulo": "Yellow",
+   "content_id": "125153100",
+   "textual": "Yellow a cambiar",
+   "motivo": "cambio pedido por el DJ, sin motivo dicho"
   }
  ],
  "rondas": [
@@ -378,6 +385,30 @@
    "aprueba": [
     "#12: Winged - Extended Mix"
    ]
+  },
+  {
+   "textual": "The captain aprobado",
+   "aprueba": [
+    "#13: The Captain"
+   ]
+  },
+  {
+   "textual": "Los demás todos aprobados",
+   "aprueba": [
+    "#11: Yellow",
+    "#14: My Pure Soul",
+    "#15: Redemtion",
+    "#16: Beyond Us - Extended Mix",
+    "#17: Lava"
+   ]
+  },
+  {
+   "textual": "Los demás todos aprobados / Yellow a cambiar",
+   "cambios": [
+    "#6: Nicolas Viana - Luminor -> Juan Yarin - Never Met (Durante Remix)",
+    "#11: Khen - Yellow -> Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)"
+   ],
+   "nota": "Never Met y Renascence medidos con Demucs: instrumentales, melodia arriba (928 y 670 Hz). Tears y Summer O'clock quedaron afuera por el tope de 4 de All Day I Dream; Eolomea por zona oscura (306 Hz)."
   }
  ],
  "_que_es": "Borrador de la lista mientras se itera en Spotify (spotify_borrador.py). Al cerrarla: lo que no tiene content_id se baja de Muzpa e importa.",
