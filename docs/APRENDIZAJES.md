@@ -8,6 +8,54 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## Dos analizadores dan keys distintas: para mezclar manda el del que mezcla
+
+**Que paso.** En el 159 elegi Luminor para un hueco entre 6A y 7A porque Muzpa lo
+daba 6A. Rekordbox lo analiza 5B: a 2 y 3 pasos de sus vecinos. Coral: 9A en Muzpa,
+8A en Rekordbox. Los dos casos son tonalidades vecinas o relativas.
+
+**Por que.** Cada analizador estima la tonalidad con su metodo, y las relativas
+(5B/5A) y las vecinas comparten casi todas las notas: ahi es donde mas difieren. El
+DJ mezcla con lo que exporta Rekordbox al CDJ, no con lo que dice la tienda.
+
+**Como se aplica.** Para decidir si dos temas mezclan, la key sale del mismo
+analizador que usa el DJ en la cabina. La de la tienda vale para filtrar lo que
+todavia no se bajo, y se revisa de nuevo despues de importar.
+
+---
+
+## Un hardlink es una copia: antes de volver a bajar lo borrado, buscarlo en los otros enlaces
+
+**Que paso.** El DJ borro 198 temas de la biblioteca y se volvieron a bajar de Muzpa.
+Despues, midiendo el disco, aparecieron vivos en `Music\Vistas`: el arbol de
+hardlinks los mantenia. Se podrian haber recuperado de ahi en vez de bajarlos.
+
+**Por que.** Un hardlink no es un acceso directo: es otro nombre del mismo archivo.
+Borrar un nombre no borra los datos mientras quede otro.
+
+**Como se aplica.** Cuando falta un archivo, buscar primero por nombre en los arboles
+de hardlinks (Vistas) antes de volver a bajarlo. Y al regenerar ese arbol, saber que
+se liberan los ultimos enlaces de lo que ya no esta en la biblioteca.
+
+---
+
+## La cuota de una API se gasta explorando: cachear por dia y no confundir "sin cuota" con "no existe"
+
+**Que paso.** Buscar parecidos en todo Spotify (76 playlists, catalogos de sellos,
+discografias) dos veces seguidas agoto la cuota diaria de la app: 429 con Retry-After
+de 85569 s. El script lo informaba como "no existe en Spotify".
+
+**Por que.** La exploracion son cientos de llamadas y casi todas devuelven lo mismo
+de una vuelta a la otra; lo caro es repetirla, no hacerla una vez. Y un 429 dice
+"no te contesto", no "no hay nada".
+
+**Como se aplica.** Lo que se explora se guarda por dia y se reusa. El 429 corta con
+su tiempo de espera. Las escrituras quedan pendientes en un borrador local para
+publicarse cuando vuelve la cuota. Tener una segunda via con otra cuota (el conector
+de Spotify) para lo que es solo lectura.
+
+---
+
 ## Un tipo de "oscuro" es la melodia en registro grave, y se mide en el stem melodico
 
 **Que paso.** En el 159 (organic con brillo para trabajar) el DJ saco The Observer

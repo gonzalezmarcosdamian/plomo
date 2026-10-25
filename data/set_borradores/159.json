@@ -6,7 +6,7 @@
    "spotify_id": "1ot1wAHv913SUVgXT9bMA4",
    "artista": "Sébastien Léger",
    "titulo": "Blazing Ice",
-   "estado": "nuevo",
+   "estado": "aprobado",
    "content_id": "198986596",
    "muzpa_id": 6474765,
    "muzpa_nombre": "Sebastien Leger - Blazing Ice ",
@@ -93,7 +93,7 @@
    "spotify_id": "5mTroNmrikbdTEn16TibD6",
    "artista": "Juan Yarin",
    "titulo": "Never Met (Durante Remix)",
-   "estado": "nuevo",
+   "estado": "aprobado",
    "content_id": "217151442",
    "bpm": 122.0,
    "key": "7A",
@@ -179,7 +179,7 @@
    "spotify_id": "2tlWbgNUKy9NNUOQGWWL7l",
    "artista": "Fernando Olaya, Kamilo Sanclemente",
    "titulo": "Renascence (Original Mix)",
-   "estado": "nuevo",
+   "estado": "aprobado",
    "content_id": "162314364",
    "bpm": 123.0,
    "key": "10A",
@@ -409,6 +409,14 @@
     "#11: Khen - Yellow -> Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)"
    ],
    "nota": "Never Met y Renascence medidos con Demucs: instrumentales, melodia arriba (928 y 670 Hz). Tears y Summer O'clock quedaron afuera por el tope de 4 de All Day I Dream; Eolomea por zona oscura (306 Hz)."
+  },
+  {
+   "textual": "Los 3 están bien solo a las 22 revisa el orden y hace la parte de rekor",
+   "aprueba": [
+    "#1: Blazing Ice",
+    "#6: Never Met (Durante Remix)",
+    "#11: Renascence (Original Mix)"
+   ]
   }
  ],
  "_que_es": "Borrador de la lista mientras se itera en Spotify (spotify_borrador.py). Al cerrarla: lo que no tiene content_id se baja de Muzpa e importa.",

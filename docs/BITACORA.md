@@ -9,6 +9,28 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-25 — el 159, una lista para trabajar, iterada en Spotify hasta cerrar
+
+"Haceme una lista de 2 horas tipo para trabajar work de organic con brillo, en
+spoty y rekor y la vamos a iterar." v1 del curador: 17 temas, organic + orbita,
+energia 5.0-6.8 sin detonantes, voz medida con Demucs. Las vueltas siguientes fueron
+por escucha, de a uno ("cambialo", "aprobado", "hasta ahi los demas bien"):
+- v2-v3: Fading Control, Naked y Atenea salen; los reemplazos se miden contra la
+  familia de los aprobados (scripts/archive/familia_159.py), no solo contra los vecinos.
+- v4: "The observer tambien muy oscuro para este set aprende cambia", "Hymnotize lo
+  mismo". Lo que los separaba de los aprobados era la melodia grave (stem `other`:
+  303-379 Hz contra 533-765). Ver APRENDIZAJES.
+- Desde ahi, "continuemos solo Spotify ... usa todo Spotify": scripts/spotify_borrador.py
+  (borrador en data/set_borradores/159.json). Spotify ya no da recomendaciones,
+  audio-features ni top-tracks; la busqueda de parecidos salio de playlists, sellos y
+  discografias, con BPM/key de Muzpa. La primera busqueda agoto la cuota diaria (24 h).
+- Yellow, el que el patron de oscuro marcaba en riesgo leve, el DJ lo cambio. Luminor
+  lo cambie yo: Rekordbox lo analiza 5B, Muzpa decia 6A.
+- Cerrada: 17 aprobados, todos ya en la biblioteca. Rekordbox queda para las 22 ("solo
+  a las 22 revisa el orden y hace la parte de rekor") y Spotify para cuando vuelva la cuota.
+
+---
+
 ## 2026-10-22 — sale Un Mundo En Paz, research del 158 y backlog
 
 "nu mondo en paz es malisimo, sacalo": vetado con esas palabras, solo la Extended Mix. El 158
