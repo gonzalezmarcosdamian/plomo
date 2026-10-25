@@ -1,0 +1,241 @@
+{
+ "etapas": [
+  4
+ ],
+ "planos": [
+  {
+   "n": 79,
+   "id": 219068,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.04/0.035 0.81/0.86 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1'",
+   "nota": "cascada entre pinos, toma quieta, luz de dia; entra desde el bosque de la etapa 3. Blancos del agua de 0.81 a 0.86"
+  },
+  {
+   "n": 80,
+   "archivo": "postproduction/stock/estirados/s04_080_246856.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.04/0.035 0.96/0.965 1/1':r='0/0 0.5/0.500 1/1':b='0/0 0.5/0.500 1/1'",
+   "nota": "cascada alta con arcoiris sobre musgo al sol, toma quieta; x1.33 con RIFE (30 s -> 39.4 s)"
+  },
+  {
+   "n": 81,
+   "archivo": "postproduction/stock/estirados/s04_081_312535.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1'",
+   "nota": "rocio de una cascada entre abetos altos con el sol entre los troncos, toma quieta; x1.42 con RIFE"
+  },
+  {
+   "n": 82,
+   "id": 122895,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.064/0.045 0.96/0.965 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1',colorchannelmixer=rr=0.9685:rg=0.02861:rb=0.00289:gr=0.0085:gg=0.98861:gb=0.00289:br=0.0085:bg=0.02861:bb=0.96289",
+   "nota": "cascada alta en un barranco verde y sombreado, toma quieta; negros un poco mas firmes y el verde apenas abajo"
+  },
+  {
+   "n": 83,
+   "id": 69786,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.042 0.2/0.225 0.96/0.965 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1'",
+   "nota": "cascada en escalones con musgo y sol de costado; medios levantados (estaba oscura)"
+  },
+  {
+   "n": 84,
+   "archivo": "postproduction/stock/estirados/s04_084_236928.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.82/0.865 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1'",
+   "nota": "cortina de cascadas sobre un rio verde, toma quieta; 60 fps estirado a x2.2 (cuadros reales mas RIFE)"
+  },
+  {
+   "n": 85,
+   "archivo": "postproduction/stock/estirados/s04_085_356398.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.085/0.06 0.9/0.92 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "break: poza turquesa con hojas que flotan y la cascada al fondo, toma quieta; x1.19 con RIFE; saturacion abajo (venia pasada)"
+  },
+  {
+   "n": 86,
+   "id": 108599,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.02/0.025 0.9/0.92 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "drop: cascadas que caen en una poza turquesa entre ramas y juncos, toma quieta; negros apenas levantados (venian cerrados) y saturacion abajo"
+  },
+  {
+   "n": 87,
+   "archivo": "postproduction/stock/estirados/s04_087_86956.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1'",
+   "nota": "dron que baja por una garganta con el agua blanca entre la roca y el musgo; 25 fps llevado a 30 con RIFE"
+  },
+  {
+   "n": 88,
+   "id": 238393,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0.012 0.82/0.86 1/1':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.498 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "cortina de cascadas con musgo colgante, arcoiris en la bruma y el rio que corre al pie, sol de tarde de costado, toma quieta; negros apenas abiertos (venian cerrados), blancos del agua de 0.82 a 0.86"
+  },
+  {
+   "n": 89,
+   "archivo": "postproduction/stock/estirados/s04_089_71648.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.504 1/1':b='0/0 0.5/0.496 1/1'",
+   "nota": "cascada desde abajo que sube hacia un cielo con nubes: de la cascada al cielo abierto; x1.07 con RIFE"
+  },
+  {
+   "n": 90,
+   "archivo": "postproduction/stock/estirados/s04_090_358693.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.03/0.03 0.53/0.51 0.96/0.96 1/1':r='0/0 0.5/0.504 1/1':b='0/0 0.5/0.496 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "cascada ancha en escalones entre roca y verde, toma quieta; x1.14 con RIFE; medios y verde un poco abajo"
+  },
+  {
+   "n": 91,
+   "archivo": "postproduction/stock/estirados/s04_091_65068.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.504 1/1':b='0/0 0.5/0.496 1/1'",
+   "nota": "rio turquesa sobre piedras al pie de una pared de roca con bosque; x1.27 con RIFE"
+  },
+  {
+   "n": 92,
+   "id": 121910,
+   "desde": 0.5,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.068/0.05 0.96/0.96 1/1':r='0/0 0.5/0.504 1/1':b='0/0 0.5/0.496 1/1'",
+   "nota": "rio de montana que baja en rapidos por una garganta de roca y verde, con un tronco caido, toma quieta; negros un poco mas firmes"
+  },
+  {
+   "n": 93,
+   "archivo": "postproduction/stock/estirados/s04_093_47872.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1'",
+   "nota": "rio ancho y quieto en un valle de paredes altas con bosque; x1.25 con RIFE"
+  },
+  {
+   "n": 94,
+   "archivo": "postproduction/stock/estirados/s04_094_87158.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.088/0.065 0.89/0.91 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "pradera alpina en las lomas con las sombras de las nubes que corren, toma quieta; 25 fps llevado a 30 con RIFE (x1.32)"
+  },
+  {
+   "n": 95,
+   "archivo": "postproduction/stock/estirados/s04_095_345050.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.03/0.025 0.96/0.96 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1',colorchannelmixer=rr=0.88976:rg=0.10013:rb=0.01011:gr=0.02976:gg=0.96013:gb=0.01011:br=0.02976:bg=0.10013:bb=0.87011",
+   "nota": "arroyo entre flores y abetos con la cordillera al fondo; 60 fps a x2 con cuadros reales; saturacion abajo (venia pasada)"
+  },
+  {
+   "n": 96,
+   "id": 187068,
+   "desde": 0.5,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.097/0.065 0.8/0.79 1/0.975':r='0/0 0.5/0.506 1/1':b='0/0 0.5/0.494 1/1',colorchannelmixer=rr=1.06299:rg=-0.05722:rb=-0.00578:gr=-0.01701:gg=1.02278:gb=-0.00578:br=-0.01701:bg=-0.05722:bb=1.07422",
+   "nota": "dron sobre un rio que serpentea en un canon de roca clara; negros bajados, un poco de color y el blanco de las nubes con hombro a 0.975"
+  },
+  {
+   "n": 97,
+   "archivo": "postproduction/stock/estirados/s04_097_326299.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.1/0.075 0.67/0.8 1/1':r='0/0 0.5/0.516 1/1':b='0/0 0.5/0.484 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "break: el dron sube por una ladera nevada hasta un circo de cumbres de roca, a la sombra con el cielo azul; x1.06 con RIFE; nieve llevada de 0.67 a 0.80 y el azul de la sombra un poco abajo"
+  },
+  {
+   "n": 98,
+   "archivo": "postproduction/stock/estirados/s04_098_220945.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.1/0.07 0.96/0.96 1/1':r='0/0 0.5/0.510 1/1':b='0/0 0.5/0.490 1/1'",
+   "nota": "drop: el dron pasa junto a una cumbre de roca y nieve con el sol detras; 50 fps a x1.67 con cuadros reales"
+  },
+  {
+   "n": 102,
+   "archivo": "postproduction/stock/estirados/s04_102_232069.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.063/0.048 0.86/0.89 1/1':r='0/0 0.5/0.514 1/1':b='0/0 0.5/0.486 1/1'",
+   "nota": "volcan nevado sobre un bosque, dron lento; x1.3 con RIFE; menos azul"
+  },
+  {
+   "n": 103,
+   "id": 28745,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "crop=3840:2160:128:0,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1'",
+   "nota": "laguna de montana que refleja las nubes, pinos y pasto seco, dron que se desliza; recortado de 4096 a 16:9"
+  },
+  {
+   "n": 104,
+   "archivo": "postproduction/stock/estirados/s04_104_188595.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.027/0.025 0.78/0.82 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1'",
+   "nota": "lago quieto con bosque de otono y cumbres de roca que se encienden con el sol; 60 fps a x2 con cuadros reales"
+  },
+  {
+   "n": 105,
+   "archivo": "postproduction/stock/estirados/s04_105_313938.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.05/0.04 0.96/0.965 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1'",
+   "nota": "valle de otono reflejado en un lago, toma quieta; 25 fps llevado a 30 con RIFE (x1.17)"
+  },
+  {
+   "n": 107,
+   "archivo": "postproduction/stock/estirados/s04_107_191181.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.124/0.085 0.97/0.97 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1'",
+   "nota": "nubes entre crestas de roca naranja; 60 fps a x2.2 con RIFE; negros bajados"
+  },
+  {
+   "n": 108,
+   "archivo": "postproduction/stock/estirados/s04_108_72900.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.137/0.09 0.88/0.9 1/1':r='0/0 0.5/0.518 1/1':b='0/0 0.5/0.482 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "el sol bajo sobre una loma nevada y cordones de montanas; x1.32 con RIFE; menos azul y menos saturado"
+  }
+ ]
+}

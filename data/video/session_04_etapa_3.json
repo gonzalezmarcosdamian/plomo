@@ -1,0 +1,295 @@
+{
+ "etapas": [
+  3
+ ],
+ "planos": [
+  {
+   "n": 47,
+   "id": 177223,
+   "desde": 0.5,
+   "paso": 1,
+   "encuadre": "scale=-2:1440:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.86/0.845 1/0.975':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "lago quieto al amanecer con niebla y reflejo, entra desde el agua dorada de la costa; termina sobre el pastizal con el sol bajo. Altas apenas bajadas para que el cielo no quede blanco"
+  },
+  {
+   "n": 48,
+   "id": 136025,
+   "desde": 2.0,
+   "paso": 2,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.05 0.5/0.5 0.92/0.93 1/1':r='0/0 0.5/0.512 1/1':g='0/0 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1,colorchannelmixer=rr=1.04724:rg=-0.04291:rb=-0.00433:gr=-0.01276:gg=1.01709:gb=-0.00433:br=-0.01276:bg=-0.04291:bb=1.05567",
+   "nota": "aereo de un rio ancho entre pinos con niebla de la manana. Venia gris y frio: un poco mas calido y con algo de contraste, para quedar entre el lago rosado y el bosque"
+  },
+  {
+   "n": 49,
+   "id": 185727,
+   "desde": 3.0,
+   "paso": 2,
+   "encuadre": "scale=-2:1440:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "musgo y pinos con el sol bajo entre los troncos, camara al ras"
+  },
+  {
+   "n": 50,
+   "id": 222000,
+   "desde": 8.0,
+   "paso": 1,
+   "encuadre": "crop=3072:1728:384:0,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.15:colors=g+y:strength=1,colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "pinar con abedules y luz de manana, deslizamiento lento. Recorte de arriba que saca un papel blanco tirado en el suelo (y~1860 del 4K, fijo). Venia muy saturado: verdes y amarillos abajo"
+  },
+  {
+   "n": 51,
+   "id": 73563,
+   "desde": 8.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "hayedo de primavera, luz pareja, camara que avanza (breakdown)"
+  },
+  {
+   "n": 52,
+   "id": 76937,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "aereo sobre selva cerrada con un rio con rapidos (drop)"
+  },
+  {
+   "n": 53,
+   "id": 90029,
+   "desde": 6.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.14:colors=g+y:strength=1,colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "cenital: rio marron entre las copas; el verde lima, apenas abajo"
+  },
+  {
+   "n": 54,
+   "id": 215374,
+   "desde": 4.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.14:colors=g+y:strength=1,colorchannelmixer=rr=0.92126:rg=0.07152:rb=0.00722:gr=0.02126:gg=0.97152:gb=0.00722:br=0.02126:bg=0.07152:bb=0.90722",
+   "nota": "60 fps con paso 1 a proposito: camara lenta x2 con cuadros reales. aereo bajo sobre un rio quieto en la selva, el cielo reflejado; saturacion abajo"
+  },
+  {
+   "n": 55,
+   "id": 213970,
+   "desde": 6.0,
+   "paso": 1,
+   "encuadre": "crop=3072:1728:768:432,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "aereo de un rio en meandros por un canon de bosque. Recorte que saca una casa de techo rojo en el prado de arriba a la izquierda (siempre en x<720, y<200 del 4K)"
+  },
+  {
+   "n": 56,
+   "id": 218942,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "pinar con pasto y sol filtrado, toma quieta"
+  },
+  {
+   "n": 57,
+   "id": 291006,
+   "desde": 4.0,
+   "paso": 2,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.12:colors=g+y:strength=1,colorchannelmixer=rr=0.92126:rg=0.07152:rb=0.00722:gr=0.02126:gg=0.97152:gb=0.00722:br=0.02126:bg=0.07152:bb=0.90722",
+   "nota": "helechos y un tronco caido, toma quieta"
+  },
+  {
+   "n": 58,
+   "id": 134385,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.04 0.25/0.29 0.5/0.56 0.94/0.94 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "arroyo en sombra bajo arboles inclinados; venia oscuro (Y 0.18): medios levantados para empalmar"
+  },
+  {
+   "n": 59,
+   "id": 36002,
+   "desde": 4.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "arroyo de piedras en el bosque, hojas caidas"
+  },
+  {
+   "n": 60,
+   "id": 356983,
+   "desde": 0.4,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "arroyo con musgo y sol entre los arboles"
+  },
+  {
+   "n": 61,
+   "id": 218961,
+   "desde": 4.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 0.5/0.485 1/1':g='0/0 1/1':b='0/0 0.5/0.515 1/1',huesaturation=saturation=-0.12:colors=g+y:strength=1,colorchannelmixer=rr=0.84252:rg=0.14304:rb=0.01444:gr=0.04252:gg=0.94304:gb=0.01444:br=0.04252:bg=0.14304:bb=0.81444",
+   "nota": "arroyo bajito de fondo ambar a pleno sol, camara al ras del agua; sigue al agua marron del 60. Venia muy calido y saturado: un poco mas neutro"
+  },
+  {
+   "n": 62,
+   "id": 223134,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "hilo de agua bajo una rama, primer plano, toma quieta"
+  },
+  {
+   "n": 63,
+   "id": 216058,
+   "desde": 3.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.045 0.5/0.5 0.88/0.86 1/0.96':r='0/0 0.5/0.525 1/1':g='0/0 1/1':b='0/0 0.5/0.47 1/1',huesaturation=saturation=-0.04:colors=g+y:strength=1,colorchannelmixer=rr=0.70079:rg=0.27178:rb=0.02744:gr=0.08079:gg=0.89178:gb=0.02744:br=0.08079:bg=0.27178:bb=0.64744",
+   "nota": "60 fps con paso 1 a proposito: camara lenta x2 con cuadros reales. aereo de un lago con niebla baja pegada al bosque, abre el plano antes del agua azul del 64-66. Venia con el cielo cian y el agua azul electrico: saturacion bien abajo y mas calido, para que sea un dia normal"
+  },
+  {
+   "n": 64,
+   "id": 200876,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.04 0.25/0.3 0.5/0.57 0.94/0.94 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "60 fps con paso 1 a proposito: camara lenta x2 con cuadros reales. agua del rio pasando junto a los juncos (breakdown de 70 s); venia oscuro: medios arriba"
+  },
+  {
+   "n": 65,
+   "id": 237755,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "rio azul entre arboles con sol, toma quieta"
+  },
+  {
+   "n": 66,
+   "id": 224186,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1,colorchannelmixer=rr=0.88189:rg=0.10728:rb=0.01083:gr=0.03189:gg=0.95728:gb=0.01083:br=0.03189:bg=0.10728:bb=0.86083",
+   "nota": "lago turquesa visto entre los troncos"
+  },
+  {
+   "n": 67,
+   "id": 223120,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "remanso quieto con reflejos y juncos (55 s)"
+  },
+  {
+   "n": 68,
+   "id": 213027,
+   "desde": 1.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.49 0.86/0.84 1/0.97':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.2:colors=g+y:strength=1,colorchannelmixer=rr=0.84252:rg=0.14304:rb=0.01444:gr=0.04252:gg=0.94304:gb=0.01444:br=0.04252:bg=0.14304:bb=0.81444",
+   "nota": "rio ancho entre arboles a pleno dia, colinas de bosque al fondo. Venia con el verde lima y el cielo al limite: saturacion y altas abajo"
+  },
+  {
+   "n": 69,
+   "id": 264824,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.53 0.75/0.82 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "tronco en arco sobre agua verde; venia apagado (p98 0.56): altas arriba"
+  },
+  {
+   "n": 70,
+   "id": 120254,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 0.5/0.52 1/1':g='0/0 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1,colorchannelmixer=rr=0.81102:rg=0.17165:rb=0.01733:gr=0.05102:gg=0.93165:gb=0.01733:br=0.05102:bg=0.17165:bb=0.77733",
+   "nota": "rio turquesa con rapidos entre arbustos; el turquesa venia fuerte: saturacion abajo y un poco mas calido"
+  },
+  {
+   "n": 71,
+   "id": 263874,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "cascadita entre piedras con musgo"
+  },
+  {
+   "n": 72,
+   "id": 223125,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.04 0.25/0.3 0.5/0.57 0.94/0.94 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "agua sobre musgo, primer plano; medios arriba"
+  },
+  {
+   "n": 73,
+   "id": 285882,
+   "desde": 8.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.04 0.25/0.3 0.5/0.56 0.94/0.94 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1,colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "60 fps con paso 1 a proposito: camara lenta x2 con cuadros reales. arroyo de fondo rojizo bajo el bosque (breakdown de 70 s); medios arriba y algo menos de saturacion"
+  },
+  {
+   "n": 74,
+   "id": 119041,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "rapidos blancos detras de hojas"
+  },
+  {
+   "n": 75,
+   "id": 120246,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "rapidos del rio"
+  },
+  {
+   "n": 76,
+   "id": 120256,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "crop=3072:1728:384:432,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.94/0.93 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "salto de agua en el rio. Recorte de arriba: saca dos mangueras negras que cruzan las piedras del fondo (y<330 del 4K)"
+  },
+  {
+   "n": 77,
+   "id": 119044,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.86/0.84 1/0.97':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "agua turquesa y espuma entre musgo; la espuma al sol, apenas abajo"
+  },
+  {
+   "n": 78,
+   "id": 105584,
+   "desde": 10.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.05/0.04 0.25/0.29 0.5/0.55 0.94/0.94 1/1':r='0/0 1/1':g='0/0 1/1':b='0/0 1/1',huesaturation=saturation=-0.1:colors=g+y:strength=1",
+   "nota": "aereo que baja por un desfiladero de roca y pinos con agua blanca: abre a la cascada entre pinos del 79. Medios un poco arriba para empalmar con la etapa 4"
+  }
+ ]
+}

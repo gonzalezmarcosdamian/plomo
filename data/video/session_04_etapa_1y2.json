@@ -1,0 +1,428 @@
+{
+ "etapas": [
+  1,
+  2
+ ],
+ "planos": [
+  {
+   "n": 1,
+   "id": 52866,
+   "desde": 4.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.52 0.67/0.72 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "Mar abierto en la hora azul, cielo violeta con nubes rosas bajas. Toma quieta. Sale de negro. Grado: base y un poco de aire en las luces (el clip llega solo a 67 %)."
+  },
+  {
+   "n": 2,
+   "archivo": "postproduction/stock/lentos/141426_0.1.mp4",
+   "id_origen": 141426,
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Orilla con olas largas, cielo todavia azul con la banda naranja del alba y la luna chica. Toma quieta. 1080p con unsharp suave. RIFE x1.33 (el clip tiene 30 s), ya en 2560x1440."
+  },
+  {
+   "n": 3,
+   "id": 264939,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "Mar quieto como un espejo, cielo rosa y celeste, sierra en silueta al fondo. Toma quieta."
+  },
+  {
+   "n": 4,
+   "id": 280497,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.08/0.04 0.17/0.12 0.5/0.48 1/1':r='0/0 0.5/0.49 1/1':b='0/0 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "Olas finas sobre la arena con el cielo rosa del alba. Toma quieta. 1080p. Grado: negros bajados (venian lechosos) y menos rojo."
+  },
+  {
+   "n": 5,
+   "archivo": "postproduction/stock/lentos/59877_0.1.mp4",
+   "id_origen": 59877,
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0.04/0 0.15/0.11 0.5/0.49 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.97638:rg=0.02146:rb=0.00217:gr=0.00638:gg=0.99146:gb=0.00217:br=0.00638:bg=0.02146:bb=0.97217",
+   "nota": "Break: mar en calma, nubes rosas sobre el horizonte. Toma quieta. 23.976 fps: RIFE lo pasa a 30 y lo estira x1.6 (calculado a 1920x1080 y subido a 1440: nubes y agua lisas, no pierde nada visible)."
+  },
+  {
+   "n": 6,
+   "id": 62249,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Drop: el cielo se abre en nubes violetas y doradas sobre la rompiente. Toma quieta. 1080p."
+  },
+  {
+   "n": 7,
+   "id": 261473,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "Entra Reward: mar abierto rosa y naranja, olas largas que pasan. Toma quieta."
+  },
+  {
+   "n": 8,
+   "id": 102709,
+   "desde": 2.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0.03/0 0.12/0.10 0.5/0.5 1/1':r='0/0 0.5/0.485 1/1':b='0/0 1/1',colorchannelmixer=rr=0.88976:rg=0.10013:rb=0.01011:gr=0.02976:gg=0.96013:gb=0.01011:br=0.02976:bg=0.10013:bb=0.87011",
+   "nota": "El cielo prendido de rojo y naranja sobre las olas, antes del sol. Toma quieta. Grado: menos rojo y saturacion, venia pasado."
+  },
+  {
+   "n": 9,
+   "id": 142399,
+   "desde": 0.5,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.495 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Pastos de duna en contraluz contra el cielo naranja del alba. Toma quieta. Grado: un toque de calor, el cielo tiraba a verde. Es de 25 fps y va con paso 1: corre 1.2 veces mas rapido que la realidad. Lee 47.0 s de clip."
+  },
+  {
+   "n": 10,
+   "id": 128015,
+   "desde": 12.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0.02/0 0.1/0.085 0.5/0.5 1/1':r='0/0 0.5/0.49 1/1':b='0/0 1/1',colorchannelmixer=rr=0.88976:rg=0.10013:rb=0.01011:gr=0.02976:gg=0.96013:gb=0.01011:br=0.02976:bg=0.10013:bb=0.87011",
+   "nota": "El cielo encendido reflejado en el agua quieta de una laguna costera. Arranca en el segundo 12: antes se ven dos balizas en el agua. 1080p. Grado: menos rojo y saturacion. Es de 25 fps y va con paso 1: corre 1.2 veces mas rapido que la realidad. Lee 47.0 s de clip."
+  },
+  {
+   "n": 11,
+   "archivo": "postproduction/stock/lentos/87658_1_rev.mp4",
+   "id_origen": 87658,
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.85827:rg=0.12874:rb=0.013:gr=0.03827:gg=0.94874:gb=0.013:br=0.03827:bg=0.12874:bb=0.833",
+   "nota": "El sol asoma sobre el horizonte entre nubes rosas, la sierra a la izquierda. Toma quieta. VA AL REVES: el clip es un atardecer, y al reves el sol sale del mar. No se nota: visto desde lo alto, el agua casi no se mueve (flujo optico medido, 0.5 px cada 0.1 s), no hay olas rompiendo ni espuma ni aves, y las nubes van lentas. Recortado 14 % desde arriba a la derecha para sacar unos bloques de escollera del angulo inferior izquierdo. Grado: saturacion bajada, el clip viene muy fuerte."
+  },
+  {
+   "n": 12,
+   "id": 325882,
+   "desde": 0.1,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Break: rocas de la orilla y el agua quieta con la primera luz dorada, desenfoque suave. Toma quieta. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 68.6 s de clip."
+  },
+  {
+   "n": 13,
+   "id": 324617,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "Drop: el camino del sol sobre el agua, de cerca, las olas que llegan. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 68.6 s de clip."
+  },
+  {
+   "n": 14,
+   "id": 86456,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.88189:rg=0.10728:rb=0.01083:gr=0.03189:gg=0.95728:gb=0.01083:br=0.03189:bg=0.10728:bb=0.86083",
+   "nota": "El sol recien salido sobre el horizonte, los acantilados en silueta, reflejo en el agua. Hacia adelante: el sol baja 5 px de 540 en 38 s, no se percibe. (Probado al reves y descartado: el agua se mueve parejo y al reves se podria notar.) Grado: saturacion bajada."
+  },
+  {
+   "n": 15,
+   "id": 122450,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "La ola entra entre las rocas, el sol ya alto y una isla en el horizonte. Toma quieta."
+  },
+  {
+   "n": 16,
+   "id": 140919,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.05 0.4/0.44 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "Entra Come Home: el sol arriba de los cerros y los pinos, rayos en la bruma. Toma quieta, hacia adelante (el sol baja 8 px de 540 en 38 s, no se percibe). Grado: medios levantados (venia oscuro)."
+  },
+  {
+   "n": 17,
+   "id": 154274,
+   "desde": 0.5,
+   "paso": 1,
+   "encuadre": "crop=2240:1260:456:0,scale=2560:1440:flags=lanczos,unsharp=5:5:0.25:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "El sol sobre el mar con su camino de luz y dos islotes. Toma quieta. RECORTE: abajo al centro hay una persona sentada en las rocas durante todo el clip (desde y=1340 del 4K, la marco el detector); se usa solo la franja de arriba, 2240x1260 desde y=0, subida a 1440 con unsharp suave. Revisado a resolucion completa en t=1, 20 y 38."
+  },
+  {
+   "n": 18,
+   "id": 192871,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Rocas en la rompiente con el sol bajo detras, salpicaduras al contraluz. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 19,
+   "id": 217848,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.485 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Olas de cerca con el destello del sol de la manana. 1080p. Grado: un toque de calor, venia frio entre dorados. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 20,
+   "id": 365737,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "La ola que entra en la orilla con el sol sobre el horizonte y un destello natural de lente. 1080p. Grado: un toque de calor. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 21,
+   "archivo": "postproduction/stock/lentos/288972_0.1.mp4",
+   "id_origen": 288972,
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Break largo (102 s): el sol sobre el mar picado, roca en primer plano. 1080p 24 fps: RIFE lo pasa a 30 y lo estira x1.73 (calculado a 1920x1080 y subido a 1440 con unsharp suave). En Pixabay no hay clips de mar con sol de mas de 80 s."
+  },
+  {
+   "n": 22,
+   "id": 139359,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Drop: el sol alto en la bruma sobre las rocas y la espuma. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 23,
+   "id": 275633,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Agua entre dos rocas con el brillo del sol. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 24,
+   "id": 183961,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "Brillo del sol sobre la arena mojada, la ola que entra y se va. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 25,
+   "archivo": "postproduction/stock/lentos/199001_0_spot.mp4",
+   "id_origen": 199001,
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.15/0.075 0.56/0.535 0.98/0.975 1/1':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=1.0315:rg=-0.02861:rb=-0.00289:gr=-0.0085:gg=1.01139:gb=-0.00289:br=-0.0085:bg=-0.02861:bb=1.03711",
+   "nota": "FIJO de la prueba (mismo recorte y grado, ya aplicado el recorte). El sol sobre el mar y la arena mojada. El clip tiene 1639 cuadros y el hueco pide 1646: van todos los reales desde el segundo 0 y 7 cuadros intermedios de RIFE repartidos, uno cada 6.8 s (no se ve un salto)."
+  },
+  {
+   "n": 26,
+   "id": 155551,
+   "desde": 4.0,
+   "paso": 2,
+   "encuadre": "crop=3072:1728:768:215,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.09/0.065 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "FIJO de la prueba. Dron sobre las olas hacia la playa, sol bajo detras del cabo. Recorte de la prueba (sin las casas y la escalera del pie del acantilado). 60 fps, paso 2."
+  },
+  {
+   "n": 27,
+   "id": 95523,
+   "desde": 12.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.05 0.25/0.30 0.69/0.80 1/1':r='0/0 0.5/0.49 1/1':b='0/0 0.5/0.51 1/1',colorchannelmixer=rr=0.9685:rg=0.02861:rb=0.00289:gr=0.0085:gg=0.98861:gb=0.00289:br=0.0085:bg=0.02861:bb=0.96289",
+   "nota": "FIJO de la prueba. Olas doradas en la orilla, de cerca. 1080p con unsharp suave."
+  },
+  {
+   "n": 28,
+   "id": 28262,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "crop=2720:1530:1120:300,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 1/1':r='0/0 0.5/0.527 1/1':b='0/0 0.5/0.468 1/1'",
+   "nota": "FIJO de la prueba. Costa de Oregon desde el aire. Recorte de la prueba (sin el sendero con baranda ni el destello del borde)."
+  },
+  {
+   "n": 29,
+   "id": 202292,
+   "desde": 5.0,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0.008 0.04/0.045 0.22/0.29 0.94/0.95 1/1':r='0/0 0.5/0.49 1/1':b='0/0 0.5/0.5 1/1',curves=g='0/0 0.1/0.118 0.3/0.312 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "FIJO de la prueba. Agua sobre la arena con el sol encima, a velocidad real como en la prueba (medido contra el mp4 aprobado)."
+  },
+  {
+   "n": 30,
+   "archivo": "postproduction/stock/lentos/89766_0.mp4",
+   "id_origen": 89766,
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.22/0.15 0.54/0.52 0.67/0.73 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "FIJO de la prueba. Pasto de duna con el mar al fondo, al sol de la manana. 25 fps: RIFE lo pasa a 30 y lo estira x1.43 (el clip tiene 28 s)."
+  },
+  {
+   "n": 31,
+   "id": 281304,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Canto rodado de la orilla con el camino del sol en el agua. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 32,
+   "id": 245375,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Break: el pasto alto de la duna mecido por el viento, luz dorada. Toma quieta. Es de 60 fps y va con paso 1, cuadro por cuadro: camara lenta x2 con cuadros reales. Lee 35.3 s de clip."
+  },
+  {
+   "n": 33,
+   "id": 156263,
+   "desde": 0.2,
+   "paso": 2,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Drop: dron cenital sobre la rompiente y la arena dorada. 60 fps, paso 2 (velocidad real)."
+  },
+  {
+   "n": 34,
+   "id": 281302,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.06 0.4/0.46 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "El sol desenfocado detras de una roca mojada, gotas que brillan. 1080p. Grado: medios levantados, venia apagado. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 35,
+   "id": 309402,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Olas que rompen sobre las rocas con la luz tibia de la manana. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 36,
+   "id": 275641,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "Entra Nanda: la ola rompe contra la roca a contraluz, gotas al sol. 1080p. Es de 24 fps y va con paso 1, cuadro por cuadro: corre 1.25 veces mas rapido que la realidad (con agua lenta casi no se nota). Lee 49.0 s de clip."
+  },
+  {
+   "n": 37,
+   "id": 128885,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "La ola que sube a la arena con el brillo del sol, de cerca. Toma quieta."
+  },
+  {
+   "n": 38,
+   "id": 275166,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Dron muy lento sobre una planicie de marea, el mar quieto y una costa baja al fondo. Es de 60 fps y va con paso 1, cuadro por cuadro: camara lenta x2 con cuadros reales. Lee 19.6 s de clip."
+  },
+  {
+   "n": 39,
+   "id": 40701,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Agua clara sobre la arena, olas chicas de la manana. Toma quieta. 1080p."
+  },
+  {
+   "n": 40,
+   "id": 114962,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "Mar abierto azul, olas que pasan: ya es de dia. Toma quieta. 1080p."
+  },
+  {
+   "n": 41,
+   "id": 239428,
+   "desde": 0.5,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.88976:rg=0.10013:rb=0.01011:gr=0.02976:gg=0.96013:gb=0.01011:br=0.02976:bg=0.10013:bb=0.87011",
+   "nota": "Break: pastos y flores amarillas de duna con el mar azul detras. Toma quieta. Grado: saturacion bajada y un toque menos de azul (el cielo venia muy cargado)."
+  },
+  {
+   "n": 42,
+   "id": 152274,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.92126:rg=0.07152:rb=0.00722:gr=0.02126:gg=0.97152:gb=0.00722:br=0.02126:bg=0.07152:bb=0.90722",
+   "nota": "Drop: dron cenital sobre una playa blanca y el agua turquesa entre las rocas."
+  },
+  {
+   "n": 43,
+   "id": 382099,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "Orilla de canto rodado y una roca grande, el agua que entra y sale. Toma quieta. 1080p. Es de 60 fps y va con paso 1, cuadro por cuadro: camara lenta x2 con cuadros reales. Lee 19.6 s de clip."
+  },
+  {
+   "n": 44,
+   "id": 59569,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.06 0.5/0.5 0.9/0.86 1/0.96':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.92126:rg=0.07152:rb=0.00722:gr=0.02126:gg=0.97152:gb=0.00722:br=0.02126:bg=0.07152:bb=0.90722",
+   "nota": "Dron alto sobre dunas blancas y pinares hasta el mar. Se ven huellas finas en la arena, ningun camino armado. Grado: luces apenas bajadas para que la arena blanca no se queme."
+  },
+  {
+   "n": 45,
+   "id": 273456,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "Dron que sigue una costa de rocas y playa chica con la selva encima, agua turquesa."
+  },
+  {
+   "n": 46,
+   "id": 274733,
+   "desde": 0.3,
+   "paso": 1,
+   "encuadre": "scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "Dron sobre una cala con el bosque hasta la arena: cierra la costa y abre el bosque de la etapa 3."
+  }
+ ]
+}

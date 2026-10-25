@@ -1,0 +1,79 @@
+{
+ "etapas": [
+  4
+ ],
+ "planos": [
+  {
+   "n": 99,
+   "archivo": "postproduction/stock/estirados/s04_099_307130.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.09/0.07 0.375/0.375 0.74/0.8 1/1':r='0/0 0.5/0.504 1/1':b='0/0 0.5/0.494 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "307130 (4K 29.97): dron lento sobre las tierras altas verdes de Islandia, un glaciar bajo una banda de nubes y el cielo azul de la tarde. Sale de la cumbre con el sol detras del 98 a la luz plena. RIFE x2.25 (0.2-17.8 s). Mirado a 1:1 en los cuatro cuartos y con el detector: nada armado (el 'avion' del 17 s es el borde de una nube; las lineas oscuras del pie son canaletas de lava). Negros un poco mas firmes y el blanco de las nubes de 0.74 a 0.80."
+  },
+  {
+   "n": 100,
+   "archivo": "postproduction/stock/estirados/s04_100_364730.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.05/0.045 0.5/0.5 0.9/0.885 1/0.98':r='0/0 0.5/0.502 1/1':b='0/0 0.5/0.494 1/1',colorchannelmixer=rr=0.88976:rg=0.10013:rb=0.01011:gr=0.02976:gg=0.96013:gb=0.01011:br=0.02976:bg=0.10013:bb=0.87011",
+   "nota": "364730 (4K 25): el glaciar Aletsch que baja en curva entre laderas de otono, con nubes que se arman sobre las cumbres nevadas. Timelapse, RIFE x1.33 (0.2-35.7 s). Mirado a 1:1: la 'persona' y el 'oso' del detector son nubes y piedras; en la ladera de la izquierda hay una huella fina de sendero sobre la morena, ningun camino armado (el mismo criterio que el 44). Venia con look HDR: saturacion a 0.86 y el blanco de las nubes con hombro."
+  },
+  {
+   "n": 101,
+   "archivo": "postproduction/stock/estirados/s04_101_311440.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.11/0.085 0.5/0.495 0.95/0.95 1/0.985':b='0/0 0.5/0.498 1/1'",
+   "nota": "311440 (4K 25): una montana de roca con alerces y abedules de otono, y las nubes que pasan por la cresta. Recorte 3456x1944 desde x=192 (baja a 1440): saca dos estacas de alambrado del pie (x~170 y~2020, x~680 y~2080 del 4K). RIFE x1.25 (0.2-38.1 s). Mirado a 1:1: el hilo blanco de la derecha es un arroyo. Negros un poco mas firmes; lleva al volcan sobre el bosque del 102."
+  },
+  {
+   "n": 106,
+   "archivo": "postproduction/stock/estirados/s04_106_311442.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.03/0.035 0.5/0.5 0.95/0.955 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "311442 (4K 25): un alerce dorado a contraluz con el sol entre las ramas y un pico nevado al fondo, toma quieta. Rehecho entero: el estirado que habia llegaba al 43 s de la toma, donde entran dos caminantes por la derecha (desde el 42.4 s), y en la ladera de la derecha hay una ruta con un muro de contencion (x~2800-3060 y~1060 del 4K). Ahora usa 0.2-38.1 s con recorte 2784x1566 desde (0,300), que deja la ruta afuera, y RIFE x1.25. Sobre la cresta lejana, a la derecha del arbol, habia una torre de 2x20 px (x~1990 y~875-897 del cuadro final): tapada con inpaint sobre el cielo, mascara fija (toma quieta). Venia muy saturado (0.53 contra 0.32 del 105): saturacion a 0.88 y negros apenas abiertos."
+  },
+  {
+   "n": 109,
+   "archivo": "postproduction/stock/estirados/s04_109_258980.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.3/0.28 0.5/0.495 0.96/0.955 1/0.985':g='0/0 0.5/0.495 1/1',colorchannelmixer=rr=0.94488:rg=0.05006:rb=0.00505:gr=0.01488:gg=0.98006:gb=0.00505:br=0.01488:bg=0.05006:bb=0.93505",
+   "nota": "BREAKDOWN de Kalira. 258980 (4K 25): el sol baja entre la bruma hasta tocar la cresta de unas lomas con bosque, y la niebla corre por el valle. Timelapse, 0.3-29.9 s con RIFE x2.875 (la niebla queda lenta); termina con el sol en la cresta, antes de que la toma se vaya al azul. Recorte 3072x1728 desde (768,0): con el contraste estirado aparecen unas lineas claras en la loma de la izquierda (x 180-750 del 4K) que pueden ser una huella; quedan afuera. Venia naranja neon: saturacion a 0.93, el verde de los medios apenas abajo para que no se vaya al amarillo, y el blanco con hombro. Bajarla mas la lavaba a beige."
+  },
+  {
+   "n": 110,
+   "archivo": "postproduction/stock/estirados/s04_110_307398.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.5/0.5 0.9/0.89 1/0.975':r='0/0 0.5/0.506 1/1':b='0/0 0.5/0.494 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "DROP de Kalira. 307398 (1080p 30): la cumbre del Ama Dablam encendida de dorado por el sol bajo, con nubes que suben del valle. Usa 0.6-11.3 s: en el 11.37 la toma tiene un corte (la nube salta) y los primeros 18 cuadros van a los tirones. Concesion doble: 1080p subido a 1440 con lanczos (como el 122 y el 143) y RIFE x3.75 sobre ese timelapse (el 123 va a x3.5, el 141 a x4); la montana no se deforma y las nubes quedan lentas. Detector: nada (un 'tv' en la roca). La nieve con hombro (venia con 3% recortado) y saturacion a 0.94."
+  },
+  {
+   "n": 111,
+   "archivo": "postproduction/stock/estirados/s04_111_260661.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.1/0.075 0.42/0.42 0.85/0.9 1/1':b='0/0 0.5/0.502 1/1'",
+   "nota": "260661 (4K 30): el dron avanza sobre lomas de selva con bruma dorada y un mar de niebla en el valle, el sol bajo de frente. Casi cuadros reales: RIFE x1.07 (0.2-37.2 s). Mirado a 1:1 al principio, al medio y al final: nada armado; lo que marca el detector son nubes. Venia lavada (no pasaba de 0.86): blanco llevado de 0.85 a 0.90 y negros un poco mas firmes."
+  },
+  {
+   "n": 112,
+   "archivo": "postproduction/stock/estirados/s04_112_93611.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=interp=pchip:master='0/0 0.03/0.04 0.37/0.375 0.86/0.9 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "93611 (4K 29.97): el dron sale de una loma de pinos en sombra sobre un mar de nubes, con el sol en el horizonte que las enciende de rosa; lleva a las cumbres sobre el mar de nubes del 113. 0.2-33.3 s con RIFE x1.67: desde el 35 s asoma una torre de alta tension en la niebla, abajo a la derecha (vista con el contraste estirado), y en el 41.2 la toma corta. Revisado el final del estirado con el contraste estirado: sin la torre. Sombras apenas levantadas (venian en 0.01) y saturacion a 0.92."
+  }
+ ]
+}
