@@ -738,6 +738,22 @@
       "peso": 0.01,
       "etiqueta": "instrumental",
       "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "38262851": {
+      "artist": "Sebastien Leger",
+      "title": "Firefly (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "166576540": {
+      "artist": "Shai T",
+      "title": "Oriki (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."

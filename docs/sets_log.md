@@ -3430,7 +3430,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Kamilo Sanclemente, Andre Moret, Mariusso | Atenea (HAFT Remix) | 122 | 5.0 |
+| 1 | Kebin Van Reeken | Hypnotize (Extended Mix) | 122 | 5.4 |
 | 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
 | 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
@@ -3508,3 +3508,5 @@ v2, con los dos cambios.
 - **Para las proximas:** `python scripts/archive/familia_159.py --posiciones N --medir 6`, despues `--poner N=<id>`,
   `build_set.py 159`, `spotify_sync.py 159`, `spotify_validar.py 159`. Cada aprobacion o cambio va primero a
   `_escucha` del config. La voz medida queda en `data/voces.json` (85 temas, 57 de este set), asi que no se vuelve a medir.
+
+**v3 (2026-10-25), textual:** "Atenea cámbialo". La tabla de arriba es la v3. Sale #1 Atenea (HAFT Remix), cambio y no veto. Entra Kebin Van Reeken - Hypnotize (Extended Mix), Univack, 122, 4A como Rogelito, E5.4 para abrir debajo, instrumental (voz 0%), segundo del ranking de familia_159.py contra los aprobados #2-#5. El primero era Kamilo Sanclemente - Whale Voices (3.02 contra 3.34), descartado por 'algo de voz' (53%) en una lista para trabajar; queda como alternativa.

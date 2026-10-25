@@ -41,6 +41,19 @@
             ],
             "sin_escuchar": "del #7 al #17",
             "familia_del_reemplazo": "los aprobados (#2 a #5) mas Atenea, el #1 nuevo, que el DJ todavia no escucho: lo sumo el coordinador para el #6. Atenea NO esta en aprobados."
+          },
+          {
+            "fecha": "2026-10-25",
+            "version": "v3",
+            "textual": [
+              "Atenea cámbialo"
+            ],
+            "cambia": [
+              "223098104"
+            ],
+            "aprueba": [],
+            "sin_escuchar": "del #7 al #17 (The Observer, #6 de la v2, todavia sin veredicto)",
+            "familia_del_reemplazo": "solo los aprobados (#2 a #5)"
           }
         ],
         "aprobados": [
@@ -51,7 +64,8 @@
         ],
         "cambiados": [
           "239831899",
-          "14636373"
+          "14636373",
+          "223098104"
         ]
       },
       "_version": "v2 (2026-10-25): desde que el DJ escucha, el set ya NO sale de select_set: es data/set_targets/set_159.json editado lugar por lugar con scripts/archive/familia_159.py (#1 Atenea, #6 The Observer). Correr select_set.py con este config REARMA la v1 y pisa lo aprobado: no hacerlo salvo que el DJ pida rehacer el set entero.",
