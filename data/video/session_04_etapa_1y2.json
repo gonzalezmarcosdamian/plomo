@@ -19,9 +19,9 @@
    "id_origen": 141426,
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
-   "nota": "Orilla con olas largas, cielo todavia azul con la banda naranja del alba y la luna chica. Toma quieta. 1080p con unsharp suave. RIFE x1.33 (el clip tiene 30 s), ya en 2560x1440."
+   "encuadre": "crop=2346:1320:107:120,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.497 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
+   "nota": "Orilla con olas largas, cielo todavia azul con la banda naranja del alba. Toma quieta. 1080p con unsharp suave. RIFE x1.33 (el clip tiene 30 s), ya en 2560x1440. Recorte 2346x1320 desde (107,120) (sube 1.09x): deja afuera una luna creciente chica arriba al centro (x~1400-1465 y~64-89 en todo el plano), de otra fase que las lunas llenas de la noche. Medios bajados un pelo (0.497) para que la luz quede igual que la aprobada (medida: +-0.3)."
   },
   {
    "n": 3,

@@ -10,8 +10,8 @@
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 0.5/0.506 1/1':b='0/0 0.5/0.494 1/1'",
-   "nota": "319751 (4K 60 fps): una cumbre con luz baja de costado y el mar de nubes que corre por el valle; entra desde las montanas de la tarde. Cuadros reales de 60 a 30 y RIFE x1.2 (x2.4 mas lento que la toma), desde 0.8 s. El detector marco el borde del bosque en la niebla y nubes: nada."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.56 0.96/0.962 1/1':r='0/0 0.5/0.506 1/1':b='0/0 0.5/0.494 1/1'",
+   "nota": "[A] 319751 (4K 60 fps): una cumbre con luz baja de costado y el mar de nubes que corre por el valle; entra desde las montanas de la tarde. Cuadros reales de 60 a 30 y RIFE x1.2 (x2.4 mas lento que la toma), desde 0.8 s. El detector marco el borde del bosque en la niebla y nubes: nada. Tarde: el sol fuera de cuadro, cielo azul."
   },
   {
    "n": 114,
@@ -20,277 +20,277 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "59291 (4K 29.97): el sol sobre un mar de niebla y bosque, con rayos entre los arboles. RIFE x2.2 desde 0.3 s."
+   "nota": "[A] 59291 (4K 29.97): el sol sobre un mar de niebla y bosque, con rayos entre los arboles. RIFE x2.2 desde 0.3 s. Tarde: el sol blanco, todavia alto."
   },
   {
    "n": 115,
-   "archivo": "postproduction/stock/estirados/s04_115_204006.mp4",
+   "grado": "curves=master='0/0 0.06/0.03059 0.5/0.3325 0.96/0.6397 1/0.665':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] 44278 (4K 25): el Teide sobre un mar de nubes, el cielo azul con nubes altas que se tinen de rosa con la luz baja; el sol fuera de cuadro; entre los 26 y los 36 s pasa una nube por delante. Recorte 2048x1152 de arriba desde x=1792 (sube 1.25x): deja afuera el valle de abajo, que tiene un pueblo, y unas antenas en la loma de la izquierda. RIFE x1.14: cruzan cuatro bichos chicos (insectos o pajaros, a 1.0, 6.4, 15.4 y 34.1 s), reales y sin deformar. La luz se sostiene con una rampa de exposicion horneada (1.01 > 0.97 > 0.98 > 0.79 > 0.86).",
+   "archivo": "postproduction/stock/estirados/s04_115_44278_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.47 0.96/0.94 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "204006 (4K 30): nubes doradas desde arriba con el sol. Recorte 3200x1800 desde arriba a la izquierda: saca un puntito de luz (tierra entre las nubes) en x~3470 y~1580 del 4K. RIFE x2.25 desde 0.3 s; el clip original se apaga en el 18.4, el plano usa hasta el 18.1. Medios bajados un poco para empalmar con el 114, mas oscuro."
+   "encuadre": "null"
   },
   {
    "n": 116,
-   "archivo": "postproduction/stock/estirados/s04_116_322480.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.62 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] 19409 (4K 30): el sol blanco y bajo en la bruma sobre capas de montanas y bosque, con destellos, que de a poco tapan las nubes. Usa los primeros 55 s del estirado (RIFE x2.25 desde 0.3 s, sin pajaros). Entre los 31 y los 43 s brillaba un reflejo chico del sol en la loma lejana (x~413 y~1183, una ventana o un techo): se tapo en esos cuadros con lo que lo rodea. La luz se sostiene con una rampa de exposicion horneada (1.00 > 0.97 > 1.00 > 1.08 > 1.14).",
+   "archivo": "postproduction/stock/estirados/s04_116_19409_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.42 0.96/0.94 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "322480 (4K 25): el mar de nubes con los Alpes y el cielo dorado, el sol fuera de cuadro. Va AL REVES (la luz baja). RIFE x4; usa los primeros 55 s."
+   "encuadre": "null"
   },
   {
    "n": 117,
-   "archivo": "postproduction/stock/estirados/s04_117_19409.mp4",
+   "grado": "curves=master='0/0 0.06/0.02806 0.5/0.244 0.96/0.5734 1/0.61':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] BREAKDOWN de Stamina. 322480 (4K 25): el mar de nubes con los Alpes bajo una franja dorada, el sol fuera de cuadro. Va AL REVES (la luz baja). RIFE x4 (nubes, sin pajaros). La luz se sostiene con una rampa de exposicion horneada (1.01 > 1.08 > 1.14 > 1.21 > 1.34).",
+   "archivo": "postproduction/stock/estirados/s04_117_322480_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.62 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "BREAKDOWN de Stamina. 19409 (4K 30): el sol blanco con destello en la bruma sobre capas de montanas y bosque, que se nubla y deja la franja naranja (lo tapan nubes, no se pone). El estirado de antes (RIFE x2.25 desde 0.3 s)."
+   "encuadre": "null"
   },
   {
    "n": 118,
-   "archivo": "postproduction/stock/estirados/s04_118_370881.mp4",
-   "desde": 0.0,
+   "id": 264472,
+   "desde": 0.3,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.46 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "DROP de Stamina. 370881 (4K 25): el sol blanco y brumoso, alto, que baja hacia una loma con bosque sin tocarla. Usa 0.0-20.0 s de la toma. RIFE x2.75."
+   "encuadre": "crop=2960:1665:880:0,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] DROP de Stamina. 264472 (4K 30, cuadros reales, sin RIFE): un mar de niebla dorado que corre alrededor de una loma con bosque, con los Alpes en el horizonte; el sol fuera de cuadro. Recorte 2960x1665 desde x=880: deja afuera una torre de alta tension y un camino en la loma de la izquierda."
   },
   {
    "n": 119,
+   "archivo": "postproduction/stock/estirados/s04_119_197435.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] 197435 (4K 23.976): el sol blanco y dorado entre nubes sueltas, con rayos, que baja hasta esconderse en un banco de nubes. Usa 0-17.8 s de la toma (despues el sol sale por debajo del banco con un reflejo de lente). RIFE x2.8 (timelapse de nubes)."
+  },
+  {
+   "n": 120,
+   "archivo": "postproduction/stock/estirados/s04_120_204006.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.3 0.96/0.94 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] 204006 (4K 30): nubes doradas desde arriba con el sol. Recorte 3200x1800 desde arriba a la izquierda: saca un puntito de luz (tierra entre las nubes) en x~3470 y~1580 del 4K. RIFE x2.25 desde 0.3 s; el clip original se apaga en el 18.4, el plano usa hasta el 18.1. El sol dorado detras de nubes finas, cerca del borde del mar de nubes."
+  },
+  {
+   "n": 121,
+   "grado": "curves=master='0/0 0.06/0.03307 0.5/0.3595 0.96/0.6917 1/0.719':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] Entra Motor City. 48899 (4K 30): nubes con los bordes encendidos de dorado y rayos del sol tapado que bajan por el cielo. Usa 0.0-38.7 s de la toma, antes de que entre un pajaro por la esquina de abajo (38.8 s). RIFE x1.025 (casi cuadros reales). La luz se sostiene con una rampa de exposicion horneada (1.00 > 1.03 > 1.05 > 1.08 > 1.09).",
+   "archivo": "postproduction/stock/estirados/s04_121_48899_luz.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null"
+  },
+  {
+   "n": 122,
+   "grado": "curves=master='0/0 0.06/0.03905 0.5/0.4245 0.96/0.8167 1/0.849':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[B] 325636 (4K 25): el mar de nubes con los Alpes bajo nubes bajas encendidas de dorado, sin sol a la vista. Va AL REVES (la luz baja). RIFE x3.2 (nubes). La luz se sostiene con una rampa de exposicion horneada (1.00 > 1.03 > 1.07 > 1.12 > 1.17).",
+   "archivo": "postproduction/stock/estirados/s04_122_325636_luz.mp4",
+   "desde": 0.0,
+   "paso": 1,
+   "encuadre": "null"
+  },
+  {
+   "n": 123,
    "id": 152529,
    "desde": 3.0,
    "paso": 1,
    "encuadre": "crop=1832:1030:88:0,scale=2560:1440:flags=lanczos,unsharp=5:5:0.3:5:5:0",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.46 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "152529 (1080p 30, 60 s, sin estirar): el mar de nubes naranja que se derrama entre dos cumbres, sin sol a la vista. Recorte 1832x1030 desde x=88 para sacar una torre de antena."
-  },
-  {
-   "n": 120,
-   "archivo": "postproduction/stock/estirados/s04_120_260397.mp4",
-   "desde": 0.0,
-   "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "260397 (4K 25): el sol con destello, ya bajo, sobre el mar de nubes, con arboles escarchados adelante. Usa 0-15 s de la toma: el sol no llega al horizonte. RIFE x3.14."
-  },
-  {
-   "n": 121,
-   "archivo": "postproduction/stock/estirados/s04_121_174324.mp4",
-   "desde": 0.0,
-   "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "Entra Motor City. 174324 (4K 60): el Fuji sobre un mar de nubes, cielo rosado, el sol fuera de cuadro. La toma es un amanecer: va AL REVES. RIFE x1.17 sobre 60 fps (camara lenta)."
-  },
-  {
-   "n": 122,
-   "archivo": "postproduction/stock/estirados/s04_122_88207.mp4",
-   "desde": 0.0,
-   "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.88 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "88207 (4096x2160 29.97): el resplandor rosado en unas cumbres de roca nevada, con nubes que pasan; el sol fuera de cuadro. Recorte al 16:9 del centro. RIFE x3.5. Medios y luces bajados para que el cielo azul no quede de mediodia."
-  },
-  {
-   "n": 123,
-   "archivo": "postproduction/stock/estirados/s04_123_304748.mp4",
-   "desde": 0.0,
-   "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.6 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "304748 (4K 25): nubes rosadas con cortinas de lluvia lejana (virga) detras de una ladera oscura, que se apagan; el sol tapado. RIFE x2.5."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.53 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[C] 152529 (1080p 30, 60 s, cuadros reales, sin RIFE): el mar de nubes naranja que se derrama entre dos cumbres, con la luz baja de costado; el sol fuera de cuadro. Usa 3.0-42.2 s. Recorte 1832x1030 desde x=88 (saca una torre de antena)."
   },
   {
    "n": 124,
-   "archivo": "postproduction/stock/estirados/s04_124_34623.mp4",
+   "grado": "curves=interp=pchip:master='0/0 0.3/0.28 0.5/0.42 0.96/0.955 1/0.985':g='0/0 0.5/0.495 1/1',colorchannelmixer=rr=0.94488:rg=0.05006:rb=0.00505:gr=0.01488:gg=0.98006:gb=0.00505:br=0.01488:bg=0.05006:bb=0.93505",
+   "nota": "[C] 258980 (4K 25): lomas con bosque y niebla en el valle bajo la bruma dorada; el sol entra por arriba del cuadro a los 15 s y baja hasta quedar a un diametro de la cresta, sin tocarla. Usa los primeros 55 s del estirado (timelapse, RIFE x2.875, sin pajaros). La luz se sostiene con una rampa de punto medio horneada (0.49 > 0.49 > 0.49 > 0.42 > 0.42).",
+   "archivo": "postproduction/stock/estirados/s04_124_258980_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.64 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "34623 (4K 23.976): el sol naranja y brumoso bajando hacia una loma con bosque, cerca pero sin tocarla. Usa 0.1-16.3 s. RIFE x4.25."
+   "encuadre": "null"
   },
   {
    "n": 125,
-   "archivo": "postproduction/stock/estirados/s04_125_347076.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.42 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[C] BREAKDOWN de Motor City. 326007 (4K 30): el sol grande y dorado sobre la cresta de los Alpes, por encima del mar de nubes; baja sin tocarla. La toma es un amanecer: va AL REVES (23.0 a 10.7 s). La luz se sostiene con una rampa de punto medio horneada (0.46 > 0.45 > 0.42 > 0.42 > 0.42).",
+   "archivo": "postproduction/stock/estirados/s04_125_326007_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.62 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "BREAKDOWN de Motor City. 347076 (4K 25): atardecer naranja detras de nubes sobre filas de montanas oscuras. RIFE x2.75: las nubes casi quietas para el break."
+   "encuadre": "null"
   },
   {
    "n": 126,
-   "archivo": "postproduction/stock/estirados/s04_126_197435.mp4",
+   "archivo": "postproduction/stock/estirados/s04_126_280486.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.53 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "DROP de Motor City. 197435 (4K 23.976): el sol naranja detras de un banco de nubes, con rayos. Usa 0-17.8 s. RIFE x2.8."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.42 0.96/0.88 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[C] DROP de Motor City. 280486 (4K 23.976): dron lento sobre el mar de nubes hacia el sol, que esta en el horizonte entre dos cumbres oscuras. RIFE x2.33."
   },
   {
    "n": 127,
-   "archivo": "postproduction/stock/estirados/s04_127_53381.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[C] 328740 (4K 25): el mar de nubes con los Alpes y el cielo naranja y rosado; el sol tapado por nubes en el horizonte, que al final asoma chico sobre la cresta. RIFE x1.2. La luz se sostiene con una rampa de punto medio horneada (0.50 > 0.48 > 0.50 > 0.51 > 0.46).",
+   "archivo": "postproduction/stock/estirados/s04_127_328740_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.55 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
-   "nota": "53381 (1080p 30): el sol naranja entre franjas de nubes, bajando. Usa 8.0-30.7 s: el cuadro del 7.5 s de la toma salta +9.6 de luz y vuelve (era el parpadeo de las 72:35). RIFE x1.75. Saturacion 0.92."
+   "encuadre": "null"
   },
   {
    "n": 128,
-   "archivo": "postproduction/stock/estirados/s04_128_88560.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
+   "nota": "[C] 53381 (1080p 30): el sol naranja entre franjas de nubes, que baja hasta quedar justo arriba de la tierra, sin tocarla. Usa 8.0-30.7 s de la toma (el cuadro del 7.5 s salta de luz). RIFE x1.75. Saturacion 0.92. La luz se sostiene con una rampa de punto medio horneada (0.53 > 0.45 > 0.51 > 0.52 > 0.49).",
+   "archivo": "postproduction/stock/estirados/s04_128_53381_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "crop=2048:1152:0:0,scale=2560:1440:flags=lanczos",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "88560 (4K 30): el sol que baja hacia una loma de bosque quemado, con rayos y el valle en bruma; al final apoya el resplandor en la loma. La toma es un amanecer: va AL REVES (19.4 a 10.0 s). Recorte 2304x1296 desde (0,600) y encima 2048x1152 de arriba a la izquierda (sube 1.25x): deja afuera un pueblo y un camino en el valle de la derecha, un cartel y un auto abajo a la derecha, troncos y un riel abajo a la izquierda, y un reflejo de lente en el cielo. RIFE x4.2."
+   "encuadre": "null"
   },
   {
    "n": 129,
-   "archivo": "postproduction/stock/estirados/s04_129_30850.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.7 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[C] 34623 (4K 23.976): el sol naranja y brumoso sobre una loma con bosque, que se hunde en la bruma. Usa 0.1-14.2 s. Recorte 3264x1836 desde arriba (sube 1.27x): deja afuera una torre reticulada en la loma lejana (x~2670 y~1880 del 4K). RIFE x3.5 (sin pajaros). La luz se sostiene con una rampa de punto medio horneada (0.49 > 0.50 > 0.50 > 0.46 > 0.45).",
+   "archivo": "postproduction/stock/estirados/s04_129_34623_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.44 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "30850 (4K 23.976): el sol con destello que baja hasta tocar el horizonte del mar de nubes. La toma es un amanecer: va AL REVES (33.4 a 19.2 s). RIFE x3.5."
+   "encuadre": "null"
   },
   {
    "n": 130,
-   "archivo": "postproduction/stock/estirados/s04_130_253472.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[D] LA PUESTA, la unica del video. 220121 (4K 25): el sol apoyado en una sierra en silueta se pone y queda el resplandor naranja. Tiempo real (RIFE x1.2 = de 25 a 30 fps), 0.3-39.6 s: la toma tiene pajaros chicos y asi no se deforman. La luz se sostiene con una rampa de punto medio horneada (0.36 > 0.38 > 0.42 > 0.48 > 0.50).",
+   "archivo": "postproduction/stock/estirados/s04_130_220121_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.38 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "253472 (4K 25): la niebla que cae como cascada sobre una loma con bosque, el cielo naranja. Recorte 2590x1456 desde x=1250: saca dos torres de alta tension de la niebla. RIFE x2.33."
+   "encuadre": "null"
   },
   {
    "n": 131,
-   "archivo": "postproduction/stock/estirados/s04_131_204657.mp4",
+   "archivo": "postproduction/stock/estirados/s04_131_370742.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "Entra Painting in the Sky. 204657 (4K 25): el sol en la linea de las montanas nevadas bajo un techo de nubes, que se esconde. RIFE x3.2."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.52 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.92126:rg=0.07152:rb=0.00722:gr=0.02126:gg=0.97152:gb=0.00722:br=0.02126:bg=0.07152:bb=0.90722",
+   "nota": "[E] Entra Painting in the Sky. 370742 (4K 29.97): capas de nubes encendidas de rojo y naranja sobre un campo con pastos en silueta, el sol ya puesto; toma quieta. Usa los 30 s de la toma con RIFE x1.33 (nubes casi quietas); en los ultimos 3 s, ya en el fundido, cruza un pajaro chico real. Saturacion 0.9 (el rojo de la toma es muy intenso)."
   },
   {
    "n": 132,
-   "archivo": "postproduction/stock/estirados/s04_132_325636.mp4",
+   "grado": "curves=master='0/0 0.06/0.027 0.5/0.2348 0.96/0.5647 1/0.587':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 92093 (4K 30): la franja naranja del horizonte bajo el cielo azul, con nubecitas oscuras, sobre lomas en silueta; el sol ya puesto. Usa 12.5-37.2 s de la toma (el sol se pone a los 12 s; desde el 37.3 la toma funde a negro). RIFE x1.6. A los 24.2-24.6 s de la toma cruza muy lejos un puntito blanco (un avion con sol): se saco de esos 35 cuadros copiando el cielo liso de alrededor. La luz se sostiene con una rampa de exposicion horneada (1.01 > 1.08 > 1.14 > 1.22 > 1.37).",
+   "archivo": "postproduction/stock/estirados/s04_132_92093_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.42 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "325636 (4K 25): el mar de nubes con los Alpes bajo nubes bajas encendidas, sin sol a la vista. Va AL REVES (la luz baja). RIFE x3.2."
+   "encuadre": "null"
   },
   {
    "n": 133,
-   "archivo": "postproduction/stock/estirados/s04_133_328740.mp4",
+   "grado": "curves=master='0/0 0.06/0.03004 0.5/0.2612 0.96/0.6282 1/0.653':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 284787 (4K 29.97): un cielo aborregado rosado y dorado sobre el azul. Recorte 2176x1224 de arriba (sube 1.18x): deja afuera el pie del cuadro, donde al principio asoma el sol bajo las nubes. RIFE x2. La luz se sostiene con una rampa de exposicion horneada (1.01 > 1.03 > 1.06 > 1.07 > 1.05).",
+   "archivo": "postproduction/stock/estirados/s04_133_284787_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.46 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "328740 (4K 25): el mar de nubes con los Alpes y el cielo rosado; el sol, chico, toca el horizonte detras de las nubes. RIFE x1.2."
+   "encuadre": "null"
   },
   {
    "n": 134,
-   "archivo": "postproduction/stock/estirados/s04_134_280486.mp4",
+   "grado": "curves=master='0/0 0.06/0.02751 0.5/0.2392 0.96/0.5753 1/0.598':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 89490 (4K 30): cumulos rosados contra el cielo lila del anochecer, solo cielo. Usa los 27 s de la toma con RIFE x1.5. Desde los 21 s de la toma planea una gaviota real (RIFE no la deforma). Un vencejo que cruzaba rapido a los 11.6 s (RIFE lo hacia parpadear) se saco de esos 31 cuadros copiando el cielo liso de alrededor. La luz se sostiene con una rampa de exposicion horneada (1.01 > 1.03 > 1.06 > 1.10 > 1.14).",
+   "archivo": "postproduction/stock/estirados/s04_134_89490_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.36 0.96/0.88 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "280486 (4K 23.976): dron lento sobre el mar de nubes hacia el sol, que esta en el horizonte entre dos cumbres oscuras. RIFE x2.33."
+   "encuadre": "null"
   },
   {
    "n": 135,
-   "archivo": "postproduction/stock/estirados/s04_135_220121.mp4",
+   "archivo": "postproduction/stock/estirados/s04_135_320769.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.39 0.96/0.9 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "220121 (4K 25): el sol se pone detras de una sierra en silueta y queda el resplandor naranja. RIFE x2.67 desde 0.3 s, hasta el resplandor (sin llegar al azul del final de la toma). Medios bajados para empalmar con los nubarrones del 134. Es la unica puesta del sol de la etapa."
+   "grado": "curves=master='0/0 0.06/0.04016 0.5/0.3492 0.96/0.8398 1/0.873':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 320769 (4K 25): nubes encendidas de naranja por abajo sobre una sierra en silueta, sin sol a la vista. RIFE x2.5 (sin pajaros)."
   },
   {
    "n": 136,
-   "archivo": "postproduction/stock/estirados/s04_136_204968.mp4",
+   "grado": "curves=master='0/0 0.06/0.03464 0.5/0.3012 0.96/0.7244 1/0.753':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "[E] BREAKDOWN de Painting in the Sky. 204968 (4K 30): el arrebol, el cielo aborregado prendido de rojo y naranja sobre montanas nevadas, ya sin sol. Recorte 2560x1440 de arriba desde x=640 (1:1 del 4K): saca el camino de ripio de abajo a la derecha, los postes de la loma de la derecha y las yucas. Usa 1-24.7 s. RIFE x3. Encima, recorte 2452x1380 desde arriba (sube 1.04x): saca la punta de una vara seca de yuca que asomaba en el borde de abajo (x~880). La luz se sostiene con una rampa de exposicion horneada (1.01 > 1.01 > 0.96 > 0.96 > 0.91).",
+   "archivo": "postproduction/stock/estirados/s04_136_204968_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "crop=2452:1380:54:0,scale=2560:1440:flags=lanczos",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.46 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
-   "nota": "BREAKDOWN de Painting in the Sky. 204968 (4K 30): el arrebol, el cielo aborregado prendido de rojo y naranja sobre montanas nevadas, ya sin sol. Recorte 2560x1440 de arriba desde x=640 (1:1 del 4K): saca el camino de ripio de abajo a la derecha, los postes de la loma de la derecha y las yucas. Usa 1-24.7 s. RIFE x3. Encima, recorte 2452x1380 desde arriba (sube 1.04x): saca la punta de una vara seca de yuca que asomaba en el borde de abajo (x~880)."
+   "encuadre": "null"
   },
   {
    "n": 137,
-   "archivo": "postproduction/stock/estirados/s04_137_320769.mp4",
+   "grado": "curves=master='0/0 0.06/0.02162 0.5/0.188 0.96/0.4521 1/0.47':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] DROP de Painting in the Sky. 253472 (4K 25): la niebla que cae como cascada sobre una loma con bosque, ya en sombra, bajo el cielo amarillo y rosado de despues de la puesta. Recorte 2590x1456 desde x=1250 (saca dos torres de alta tension). RIFE x3.25 (niebla, sin pajaros). La luz se sostiene con una rampa de exposicion horneada (1.02 > 1.08 > 1.13 > 1.18 > 1.23).",
+   "archivo": "postproduction/stock/estirados/s04_137_253472_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.55 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "DROP de Painting in the Sky. 320769 (4K 25): las ultimas nubes encendidas de rojo y naranja sobre capas de montanas oscuras, ya sin sol. Recorte 2400x1350 desde x=1440 (sube 1.07x): saca una antena en la loma de la izquierda y una casita abajo a la derecha. Usa 0.2-39.2 s. RIFE x1.7."
+   "encuadre": "null"
   },
   {
    "n": 138,
-   "archivo": "postproduction/stock/estirados/s04_138_284787.mp4",
+   "archivo": "postproduction/stock/estirados/s04_138_26107.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.405 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "284787 (4K 29.97): un cielo aborregado rosado sobre el azul, despues de la puesta. Solo cielo. RIFE x2."
+   "grado": "curves=master='0/0 0.06/0.02696 0.5/0.2344 0.96/0.5637 1/0.586':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 26107 (4K 30): un lago quieto con islas de pinos y juncos en silueta, el horizonte rosado y naranja y el cielo celeste; el sol ya puesto. Sobre el agua vuelan mosquitos chicos, reales (RIFE x1.33, sin deformar)."
   },
   {
    "n": 139,
-   "archivo": "postproduction/stock/estirados/s04_139_140194.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 304748 (4K 25): nubes rojas y rosadas con cortinas de lluvia lejana (virga) detras de una ladera oscura con bosque, que se apagan. RIFE x2.5 (sin pajaros). La luz se sostiene con una rampa de exposicion horneada (0.99 > 1.08 > 1.12 > 1.12 > 1.18).",
+   "archivo": "postproduction/stock/estirados/s04_139_304748_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96850:rg=0.02861:rb=0.00289:gr=0.00850:gg=0.98861:gb=0.00289:br=0.00850:bg=0.02861:bb=0.96289",
-   "nota": "140194 (1080p 50): la hora azul sobre un lago quieto, nubes que reflejan el ultimo claro. Cuadros reales a 30 (camara lenta 0.6x), sin inventar nada; 1080 subido a 1440 con lanczos."
+   "encuadre": "null"
   },
   {
    "n": 140,
-   "archivo": "postproduction/stock/estirados/s04_140_226572.mp4",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.7 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[E] 320766 (4K 25): nubarrones oscuros con el borde naranja sobre capas de sierras azules; la ultima franja naranja del horizonte. RIFE x2.4 (sin pajaros). La luz se sostiene con una rampa de exposicion horneada (1.01 > 1.00 > 1.00 > 1.01 > 1.00).",
+   "archivo": "postproduction/stock/estirados/s04_140_320766_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.355 0.96/0.88 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "226572 (4K 25): el resplandor detras de una sierra lejana que se apaga hasta el azul. Usa 29.9-40.3 s. Recorte 3456x1944 desde x=192: saca un poste y un cable del pie, palmeras y una casita. RIFE x4.6."
+   "encuadre": "null"
   },
   {
    "n": 141,
-   "archivo": "postproduction/stock/estirados/s04_141_22555.mp4",
+   "grado": "curves=master='0/0 0.05/0.0226 0.5/0.2152 1/0.538':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "[F] Entra One More Sky. 140194 (1080p 50): la hora azul sobre un lago quieto, nubes que reflejan el ultimo claro; pasan unas gaviotas reales. RIFE x1.2 sobre 50 fps (camara lenta 0.7x), asi las gaviotas no se deforman. 1080 subido a 1440 con lanczos. La luz se sostiene con una rampa de exposicion horneada (1.02 > 1.00 > 0.98 > 0.98 > 0.96).",
+   "archivo": "postproduction/stock/estirados/s04_141_140194_luz.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.37 0.96/0.91 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "Entra One More Sky. 22555 (2560x1440 24): un pico de roca con nieve en la hora azul, que oscurece y deja ver las estrellas. Usa 0.3-10.2 s, antes del resplandor de la luna. RIFE x9 (estrellas lentas)."
+   "encuadre": "null"
   },
   {
    "n": 142,
-   "archivo": "postproduction/stock/estirados/s04_142_38378.mp4",
+   "archivo": "postproduction/stock/estirados/s04_142_262223.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.042 0.5/0.415 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.88189:rg=0.10728:rb=0.01083:gr=0.03189:gg=0.95728:gb=0.01083:br=0.03189:bg=0.10728:bb=0.86083",
-   "nota": "DROP de One More Sky. 38378 (4K 25): la luna llena subiendo en el azul profundo del crepusculo, con ramas en silueta. Cuadros reales a 30 (1.2x), desde 0.3 s. Saturacion a 0.85: el azul venia electrico."
+   "grado": "curves=master='0/0 0.06/0.01923 0.5/0.1672 0.96/0.4021 1/0.418':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[F] DROP de One More Sky. 262223 (4K 25): dron lento sobre un lago quieto con la orilla de arboles, el cielo palido de la hora azul; adelante, ramitas que asoman del agua con su reflejo. RIFE x2 (hay patos chicos en el agua: no mas de x2). Usa 0.3-23.8 s."
   },
   {
    "n": 143,
-   "archivo": "postproduction/stock/estirados/s04_143_257240.mp4",
+   "archivo": "postproduction/stock/estirados/s04_143_38378.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.37 0.96/0.92 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "257240 (4K 25): el ultimo resplandor sobre un bosque de pinos en silueta, el sol ya puesto. Usa 10.8-23.8 s (el sol se esconde a los 6 s de la toma). RIFE x3.67."
+   "grado": "curves=master='0/0 0.06/0.042 0.5/0.4 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.88189:rg=0.10728:rb=0.01083:gr=0.03189:gg=0.95728:gb=0.01083:br=0.03189:bg=0.10728:bb=0.86083",
+   "nota": "[F] 38378 (4K 25): la luna llena subiendo en el azul profundo del crepusculo, con ramas en silueta; una nube la tapa entre los 5 y los 20 s del plano. Cuadros reales a 30 (1.2x). La primera de las tres lunas, todas llenas."
   },
   {
    "n": 144,
    "archivo": "postproduction/stock/estirados/s04_144_46936.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.415 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "46936 (1080p 30): las cumbres nevadas del Caucaso con la franja naranja que se apaga y las estrellas. La toma es un amanecer: va AL REVES (9.0 a 2.0 s). RIFE x5.67."
+   "encuadre": "crop=2240:1260:0:180,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[F] 46936 (1080p 30): las cumbres nevadas del Caucaso con la franja naranja que se apaga y las estrellas. La toma es un amanecer: va AL REVES (9.0 a 2.0 s). RIFE x5.67. Recorte 2240x1260 desde (0,180) (sube 1.14x): deja afuera un astro muy brillante que entra por la esquina de arriba a la derecha (x~2460-2560 y~60-170)."
   },
   {
    "n": 145,
@@ -298,17 +298,17 @@
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.42 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "18104 (1080p 29.97): el violeta que se apaga sobre arboles en silueta. Usa 5-14 s. RIFE x4.4."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[F] 18104 (1080p 29.97): el violeta que se apaga sobre arboles en silueta. Usa 5-14 s. RIFE x4.4."
   },
   {
    "n": 146,
    "archivo": "postproduction/stock/estirados/s04_146_119213.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "119213 (1080p 24): la via lactea sobre una sierra baja en silueta. RIFE x4."
+   "encuadre": "crop=2304:1296:0:0,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.0345 0.5/0.285 0.96/0.7215 1/0.75':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "[G] Entra la noche. 119213 (1080p 24): la via lactea sobre una sierra baja en silueta. RIFE x4. Recorte 2304x1296 de arriba (sube 1.11x): saca una luz que se mueve sobre la loma del horizonte (x~1990 y~1380, un auto o una casa)."
   },
   {
    "n": 147,
@@ -317,7 +317,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "137617 (4K 29.97): cielo azul lleno de estrellas sobre lomas bajas. Recorte 3456x1944 desde arriba: saca una lucecita blanca en el pie del horizonte (y~2120). Usa 0.3-13.6 s, antes de que el cielo se aclare. RIFE x3."
+   "nota": "[G] 137617 (4K 29.97): cielo azul lleno de estrellas sobre lomas bajas. Recorte 3456x1944 desde arriba: saca una lucecita blanca en el pie del horizonte (y~2120). Usa 0.3-13.6 s, antes de que el cielo se aclare. RIFE x3."
   },
   {
    "n": 148,
@@ -326,7 +326,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "33358 (1080p 29.97): estelas de estrellas en un cielo azul profundo, con una rama y la ladera del bosque en silueta. RIFE x1.4."
+   "nota": "[G] 33358 (1080p 29.97): estelas de estrellas en un cielo azul profundo, con una rama y la ladera del bosque en silueta. RIFE x1.4."
   },
   {
    "n": 149,
@@ -335,7 +335,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "225587 (2560x1440 29.97): un arbol grande en silueta bajo el cielo azul estrellado. Recorte 2048x1152 desde arriba a la izquierda: saca una luz en la loma de la derecha (x~2210 y~1200) y otra abajo. Usa 10.2-26.6 s, despues de un salto de luz de la toma en el 10.1. RIFE x2.4."
+   "nota": "[G] 225587 (2560x1440 29.97): un arbol grande en silueta bajo el cielo azul estrellado. Recorte 2048x1152 desde arriba a la izquierda: saca una luz en la loma de la derecha (x~2210 y~1200) y otra abajo. Usa 10.2-26.6 s, despues de un salto de luz de la toma en el 10.1. RIFE x2.4."
   },
   {
    "n": 150,
@@ -344,7 +344,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "372885 (1080p 25): las estrellas girando alrededor del polo sobre copas de arboles en silueta. El trazo rojo del 13.0 s dura un solo cuadro: es un meteoro, no un avion. RIFE x1.75."
+   "nota": "[G] 372885 (1080p 25): las estrellas girando alrededor del polo sobre copas de arboles en silueta. El trazo rojo del 13.0 s dura un solo cuadro: es un meteoro, no un avion. RIFE x1.75."
   },
   {
    "n": 151,
@@ -353,7 +353,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "Entra Ash & Ember. 14955 (4K 24): el macizo del Schlern en los Dolomitas bajo un cielo estrellado, con nubes que pasan. RIFE x3."
+   "nota": "[G] Entra Ash & Ember. 14955 (4K 24): el macizo del Schlern en los Dolomitas bajo un cielo estrellado, con nubes que pasan. RIFE x3."
   },
   {
    "n": 152,
@@ -362,7 +362,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "49827 (4K 25): solo cielo, la via lactea tenue cruzando un azul profundo. RIFE x5."
+   "nota": "[G] 49827 (4K 25): solo cielo, la via lactea tenue cruzando un azul profundo. RIFE x5."
   },
   {
    "n": 153,
@@ -371,7 +371,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "7215 (1080p 25): la luna llena con nubes iluminadas que la rodean y pasan. RIFE x1.25."
+   "nota": "[G] 7215 (1080p 25): la luna llena con nubes iluminadas que la rodean y pasan. RIFE x1.25."
   },
   {
    "n": 154,
@@ -380,7 +380,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.06/0.046 0.5/0.3 0.96/0.76 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "368458 (4K 60): el mar de nubes a la luz de la luna sobre lomas verdes, un pino a la izquierda, estrellas. Recorte 2400x1350 de abajo a la izquierda: saca unas luces en la loma lejana de la derecha (x~2440-2560 y~1150). Cuadros reales a 30 (camara lenta 0.5x). Medios bajados: es de noche."
+   "nota": "[G] 368458 (4K 60): el mar de nubes a la luz de la luna sobre lomas verdes, un pino a la izquierda, estrellas. Recorte 2400x1350 de abajo a la izquierda: saca unas luces en la loma lejana de la derecha (x~2440-2560 y~1150). Cuadros reales a 30 (camara lenta 0.5x). Medios bajados: es de noche."
   },
   {
    "n": 155,
@@ -389,7 +389,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "174190 (1080p 60): la via lactea sobre una cresta de montana en silueta, el horizonte con resplandor. RIFE x1.75 sobre 60 fps."
+   "nota": "[G] 174190 (1080p 60): la via lactea sobre una cresta de montana en silueta, el horizonte con resplandor. RIFE x1.75 sobre 60 fps."
   },
   {
    "n": 156,
@@ -398,7 +398,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.04/0.075 0.2/0.27 0.5/0.6 1/1':r='0/0 0.5/0.49 1/1':b='0/0 0.5/0.52 1/1'",
-   "nota": "135425 (4K 23.976): solo cielo, estrellas y la via lactea tenue que gira. Recorte 2400x1350 de arriba a la izquierda (sube 1.07x): deja afuera la loma de abajo, que tiene casas con luces y postes. Usa 0.1-8.3 s, antes de que el cielo se aclare. RIFE x6.1 (estrellas lentas). Sin luna. Venia casi negro y marron: sombras levantadas con la curva y un toque menos de rojo."
+   "nota": "[G] 135425 (4K 23.976): solo cielo, estrellas y la via lactea tenue que gira. Recorte 2400x1350 de arriba a la izquierda (sube 1.07x): deja afuera la loma de abajo, que tiene casas con luces y postes. Usa 0.1-8.3 s, antes de que el cielo se aclare. RIFE x6.1 (estrellas lentas). Sin luna. Venia casi negro y marron: sombras levantadas con la curva y un toque menos de rojo."
   },
   {
    "n": 157,
@@ -407,7 +407,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0.014 0.03/0.06 0.15/0.23 1/1':r='0/0 1/1':b='0/0 0.1/0.108 1/1',curves=g='0/0 0.1/0.094 1/1'",
-   "nota": "191102 (4K 25): un cielo muy estrellado sobre una sierra en silueta, sin luna. RIFE x4. Venia casi negro (luma 0.01) y verdoso: sombras levantadas a un azul noche y el verde corrido."
+   "nota": "[G] 191102 (4K 25): un cielo muy estrellado sobre una sierra en silueta, sin luna. RIFE x4. Venia casi negro (luma 0.01) y verdoso: sombras levantadas a un azul noche y el verde corrido."
   },
   {
    "n": 158,
@@ -416,7 +416,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.04/0.045 0.2/0.26 0.6/0.66 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "BREAKDOWN de Ash & Ember. 209231 (1080p 50, 60 s): la luna que asoma y se esconde entre nubes oscuras. Cuadros reales a 30 (0.6x), sin inventar nada, 0.3-42.9 s. Sombras levantadas con la curva: venia casi negro (luma media 0.07)."
+   "nota": "[G] BREAKDOWN de Ash & Ember. 209231 (1080p 50, 60 s): la luna que asoma y se esconde entre nubes oscuras. Cuadros reales a 30 (0.6x), sin inventar nada, 0.3-42.9 s. Sombras levantadas con la curva: venia casi negro (luma media 0.07)."
   },
   {
    "n": 159,
@@ -425,7 +425,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "DROP de Ash & Ember. 234080 (4K 50): la via lactea plena sobre las agujas de roca de un desierto, con la arena en primer plano. RIFE x1.67 sobre 50 fps. Sin luces en el horizonte (mirado en la suma de cuadros)."
+   "nota": "[G] DROP de Ash & Ember. 234080 (4K 50): la via lactea plena sobre las agujas de roca de un desierto, con la arena en primer plano. RIFE x1.67 sobre 50 fps. Sin luces en el horizonte (mirado en la suma de cuadros)."
   },
   {
    "n": 160,
@@ -434,16 +434,16 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "215733 (1080p 24): la via lactea entera mirando para arriba, enmarcada por copas de arboles. RIFE x3.2."
+   "nota": "[G] 215733 (1080p 24): la via lactea entera mirando para arriba, enmarcada por copas de arboles. RIFE x3.2."
   },
   {
    "n": 161,
-   "archivo": "postproduction/stock/estirados/s04_161_61871.mp4",
+   "archivo": "postproduction/stock/estirados/s04_161_232408.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "61871 (4K 24): estrellas sobre una laguna quieta con arboles en silueta y el resplandor naranja del horizonte. RIFE x3.33. Reemplaza a 234077, que tenia trazos rojos de aviones."
+   "nota": "[G] 232408 (4K 60): la via lactea entera sobre el resplandor del horizonte, solo cielo. Recorte 2133x1200 desde (1100,0) (sube 1.2x): deja afuera la cumbre, que tiene una lucecita naranja fija (un refugio). Sin luna. RIFE x1.5 sobre 60 fps. Reemplaza a 61871, que tenia la luna, un resplandor de pueblo y aviones."
   },
   {
    "n": 162,
@@ -452,7 +452,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0.024 0.04/0.07 0.2/0.27 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "201891 (4K 24): solo cielo; las estrellas empiezan quietas y van dejando estelas largas. RIFE x2.2. Sombras levantadas con la curva (venia casi negro, luma 0.01-0.08) hasta un azul noche, sin lavar."
+   "nota": "[G] 201891 (4K 24): solo cielo; las estrellas empiezan quietas y van dejando estelas largas. RIFE x2.2. Sombras levantadas con la curva (venia casi negro, luma 0.01-0.08) hasta un azul noche, sin lavar."
   },
   {
    "n": 163,
@@ -461,7 +461,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.05/0.042 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "El final. 222637 (4K 30): la via lactea que sube sobre una cadena de montanas nevadas. RIFE x3.2. Termina en el fundido a negro de 3 s que pone el render."
+   "nota": "[G] El final. 222637 (4K 30): la via lactea que sube sobre una cadena de montanas nevadas. RIFE x3.2. Termina en el fundido a negro de 3 s que pone el render."
   }
  ]
 }
