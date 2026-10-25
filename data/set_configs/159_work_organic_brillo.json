@@ -1,0 +1,131 @@
+{
+  "pool": "data/pool_159.json",
+  "targets_dir": "data/set_targets",
+  "exclude_artists": [],
+  "permitir_repetir_entre_sets": true,
+  "_comentario": "Set 159 v1, 2026-10-25. Lista para TRABAJAR, no para pista: se escucha de fondo en Spotify y queda en Rekordbox por si la quiere mezclar. Es la primera version de algo que el DJ va a iterar. Pool reducido a proposito: data/pool_159.json (gitignoreado, como pool_155/156/158) sale de data/pool.json del 2026-10-25 (dump_pool, 3157 temas) con scripts/archive/pool_159_2026-10-25.py, que no toca la DB; el criterio esta en _pool. Correr de nuevo ese script si entra material nuevo. Las voces se midieron con Demucs (voces.py) en scripts de scratch no versionados; las mediciones que decidieron algo quedan en _porque_exclude_ids.",
+  "_perillas": {
+    "_como": "Cambiar el numero, correr select_set.py con este archivo, y medir la voz de lo que entre nuevo (python scripts/voces.py --patron \"<titulo>\"): select_set NO ve la voz ni el tope de sello, asi que despues de mover una perilla hay que mirar esas dos cosas a mano. Despues build_set.py 159 y spotify_sync.py 159: la lista de Spotify conserva el link.",
+    "MAS BRILLO": "1) modo_mayor_objetivo 0.3 -> 0.4: mas claves mayores (B); hoy da 5 de 17. 2) piso de color del pool: python scripts/archive/pool_159_2026-10-25.py --color 0.5 (hoy 0.35; saca los temas de color medio, como Rogelito 0.72 o The Captain 0.67). color_peso casi no mueve nada: el pool ya es colorido (el set da mediana 0.88). En la primera corrida (piso de breakdown 0.25, sin sacar voces) 3.0 dio el mismo set que 2.0, y 1.5 cambio 4 temas sin ganar color.",
+    "MAS ORGANICO": "peso_mezcla 4.0 -> 6.0 o subir Organic House en mezcla_objetivo (hoy 0.55 + 0.20 de Organic House / Downtempo). Hoy 12 de 17 son de genero organic y los 5 restantes son Progressive de la orbita (Univack, Closure, Lost & Found, Plaisirs Sonores). Mas drastico: sacar 'Progressive House' de genres. En una corrida previa (pool con piso de breakdown 0.25), con peso_mezcla 1.5 (la regla) entraban 11 de 17 y abria con cuatro Univack progressive en los primeros seis.",
+    "MAS ENERGIA": "e_pool [5.0, 6.8] -> [5.6, 7.2] y e_lo/e_hi 5.4/6.3 -> 6.0/6.8. El techo tiene que quedar debajo de 7.5 (detonantes.umbral_energia) o vuelve a entrar un pico.",
+    "MENOS ENERGIA": "e_pool [4.6, 6.3] y e_lo/e_hi 5.0/5.8.",
+    "MAS PAREJO (meseta)": "arco.umbral_paso_plano: hoy hereda 0.35 (energia.umbral_paso_plano), que castiga los pasos chicos para que un set de PISTA oscile como los pros. Para trabajar quizas sobra: el unico bache del set es The Captain 6.8 -> My Pure Soul 5.4 -> Redemtion 6.7 (1:18 a 1:32), un serrucho que ese castigo empuja. Bajarlo a 0.15 solo en este set es la proxima prueba; no se midio en la v1, se corto por tiempo de maquina.",
+    "OTRA KEY": "max_camelot 1 es la rueda de a 1 que pide una escucha seguida; con 2 el set tiene un paso de 2 y empeora el color minimo."
+  },
+  "sets": [
+    {
+      "num": 159,
+      "name": "159. Work · Organic con brillo — 2h — 2026-10-25",
+      "_identidad": "Dos horas de house organico luminoso para trabajar: groove calido, percusion viva y melodias que abren sin pedir atencion. Contesta si el material organico de la biblioteca --All Day I Dream, Melody Of the Soul, Lost Miracle, Univack-- sostiene una meseta media sin un solo pico, sin voces al frente y sin un breakdown que te saque de lo que estas haciendo.",
+      "_contexto": "Pedido literal del DJ (via el coordinador, 2026-10-25): 'haceme una lista de 2 horas tipo para trabajar work de organic con brillo, en spoty y rekor y la vamos a iterar'. Para escuchar mientras trabaja, no para una pista; 2 horas; Spotify y Rekordbox. Sin escucha del DJ todavia.",
+      "_traduccion": {
+        "organic": "Pool: genero organic (314 temas en la biblioteca) + su orbita, o sea temas de genero vecino de sellos y artistas que son mayormente organic o que nombro el pedido (ver _pool). La cuota mezcla_objetivo / peso_mezcla 4.0 sostiene el genero organic arriba (12 de 17).",
+        "brillo": "Tres capas. a) Piso duro en el pool: color_pct >= 0.35 (el minimo del 150 es 0.37; saca 111 temas) y medio >= 5, aire >= 2 (la escucha del DJ: sin medios 'oscuro', sin aire 'tecnoso'). b) color_peso 2.0 (regla estilo.colorido 1.5): premio al color en el costo. c) modo_mayor_objetivo 0.3 (regla armonia 0.11; los pros p75 20%, Ezequiel Arias 25%): 5 de 17 en mayor. Ademas los vetos 'muy oscuro' de energia_percibida quedan fuera por select_set.",
+        "para trabajar": "Energia media y estable: e_pool [5.0, 6.8] (techo debajo de detonantes.umbral_energia 7.5: ningun detonante), arco suave e_lo 5.4 / e_hi 6.3 con el pico al 50% y la caida a la mitad, o sea una ola chica y no un arco. Rueda de a 1 (max_camelot 1) y BPM de a 2 (max_bpm_jump 2.0). Voces: se midio la voz (Demucs) de todo lo que el selector eligio y salio todo tema cantado (presencia > 60% y peso > 8%). Drops: el pool exige breakdowns que conserven >= 30% de la energia del groove (Inertia, 'se cae fortisimo', conserva 26%).",
+        "2 horas": "duration_h 2.0: select_set calcula 17 temas con la mediana del pool (7.4 min, 93% sonando). 1h55 con mezclas; 2h04 enteros en Spotify."
+      },
+      "_pool": "data/pool_159.json, 323 temas. ENTRA: genero Organic House u Organic House / Downtempo; o genero Deep / Progressive / Melodic H&T / House / Downtempo / Electronica de un sello con >= 40% de su material en organic (y >= 2 temas organic: All Day I Dream, Lost Miracle, Melody Of the Soul, Hoomidaas, Kiksuya, Closure, Ruvenzori y otros chicos) o de un artista con >= 40% organic (y >= 3: Gorje Hewek, Lee Burridge, Lost Desert, Tim Green, Sebastien Leger, Artic White, Eli Nissan, Shai T, Nicolas Viana y otros), mas los nombrados en el pedido: Univack, Sol Selectas, Zenebona, Bedouin. Zenebona y Bedouin casi no tienen material (2 y 9 temas en la biblioteca). FILTRA: color_pct < 0.35 (111), medio < 5 o aire < 2 (3), breakdown que conserva < 30% del groove (31), sin receta o sin color (12). E:1.4 estimadas y marcadas en el tema (8 en el pool, ver _nota_energia).",
+      "_nota_energia": "Una sola E del set es estimada: Gorje Hewek - Forest Song in the Morning (64669607) tiene E:1.4 en la DB, el fallo del cue engine (bajo leido en 0 s, sin breakdown ni drop). Por la via de la receta (plomo.energy sobre la segmentacion de data/recetas/lib) da 4.9; calibrada contra la DB con la mediana de los temas de la misma E de receta y el mismo caso de bajo queda 5.5, que es la que uso el selector (energy_fuente en data/pool_159.json). La DB no se toco: audit_sets y build_set la muestran en 1.4. Las demas E son de la formula (sin escucha del DJ): tienen el error de siempre, ~1.3 de media contra lo que el escucha.",
+      "_nota_reglas": "Lo que este set hace distinto de rules/curaduria.json, dicho: 1) detonantes.cantidad_por_set_2h pide 1 o 2 detonantes (E >= 7.5) en un set de 2h: este tiene CERO a proposito, porque el pedido es una lista para trabajar sin pico. 2) repeticion.max_por_sello_en_set (4) select_set NO lo cobra: se cumplio a mano sacando, del sello que se pasaba, el tema mas distractor (mas voz + breakdown mas hondo); All Day I Dream quedo en 4. 3) Mas estricto que la regla, por la escucha seguida: rueda de a 1 (regla 2) y BPM de a 2 (regla 3). 4) Pesos por set: modo_mayor_objetivo 0.3 (regla 0.11), color_peso 2.0 (regla 1.5), peso_mezcla 4.0 (regla 1.5). 5) repetidos_entre_sets_consecutivos = 0: los 18 del 158 en exclude_ids. Con otros sets si comparte (no consecutivos): Coral y Winged estan en el 155 y el 157; Beyond Us en el 155; One World en el 143, 149 y 151; Rogelito en el 148; Lava en el 147; Spring Embers en el 126 y el 142; Earth en el 40 y el 126. Seis de 17 no estan en ningun set.",
+      "_nota_vetos": "select_set saca TODO tema con veto en energia_percibida.json, aunque el veto sea de otro set (vetos.alcance = set). Del pool del 159 quedan afuera asi cuatro FAVORITOS que el DJ veto solo para el 150: Kostya Outta, Liam Garcia - If I Win (Cosmonaut Extended Remix) 12B, 'temazo total, mi musica'; Simon Vuarambon - Lazos 8A; Grance & Soulmac - Happy Incident (Ale Russo Remix) 6A; Sebastien Leger, Lost Miracle - Dodonpachi 9A. Los cuatro encajan en organic con brillo. Meterlos requiere que select_set respete el alcance del veto; no se toco el codigo para la v1.",
+      "_nota_beam": "beam 8000 (minimo 4000, CLAUDE.md). Sin prueba de convergencia sobre el pool final: en el pool anterior (con Fog Machine, que entraba por redondear el breakdown) 8000 y 16000 diferian en 2 temas. La corrida de 16000 sobre este pool se corto por tiempo de maquina (CPU compartida con un render): para la v1 alcanza.",
+      "_voz_del_set": {
+        "_que_es": "Voz medida de los 17 de la v1 con voces.py (Demucs, 30 s al 45% del tema): presencia / peso -> etiqueta. Ninguno es 'cantado'. Si una iteracion trae temas nuevos, medirlos antes de publicar.",
+        "239831899": "KAZKO - Fading Control (Original Mix): 0% / 0.2% -> instrumental",
+        "173790116": "Hernan Cattaneo, Khen - Rogelito (Original Mix): 30% / 4.4% -> algo de voz",
+        "130869533": "Andre Moret - One World (Extended Mix): 6% / 1.4% -> instrumental",
+        "184188342": "Jordi Ruz, Artic White - Aura (Original Mix): 6% / 0.8% -> instrumental",
+        "64669607": "Gorje Hewek - Forest Song in the Morning (Original Mix: 3% / 0.6% -> instrumental",
+        "14636373": "Eli Nissan - Naked: 10% / 2.7% -> instrumental",
+        "56831615": "Capoon, Amand - Ouverture (Khen Remix): 17% / 1.7% -> instrumental",
+        "245930317": "Nora En Pure - Spring Embers (Extended Mix): 18% / 2.7% -> instrumental",
+        "196838047": "Nicolas Viana - Coral (Extended Mix): 34% / 4.0% -> algo de voz",
+        "2009006": "Gorje Hewek, Dulus - Earth (Original Mix): 0% / 0.1% -> instrumental",
+        "125153100": "Khen - Yellow (Original Mix): 16% / 3.0% -> instrumental",
+        "237240379": "Nicolas Viana - Winged (Original Mix): 0% / 0.1% -> instrumental",
+        "194339407": "Shai T & Tamir Regev - The Captain: 12% / 1.6% -> instrumental",
+        "233850863": "Khen - My Pure Soul (Original Mix): 0% / 0.1% -> instrumental",
+        "175484827": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix): 26% / 2.1% -> instrumental",
+        "22034915": "Andre Moret - Beyond Us (Extended Mix): 0% / 0.1% -> instrumental",
+        "241869933": "Sebastien Leger - Lava (Original Mix): 0% / 0.2% -> instrumental"
+      },
+      "duration_h": 2.0,
+      "n": 18,
+      "bpm": [
+        119,
+        124
+      ],
+      "max_bpm_jump": 2.0,
+      "max_camelot": 1,
+      "e_pool": [
+        5.0,
+        6.8
+      ],
+      "e_lo": 5.4,
+      "e_hi": 6.3,
+      "arco": {
+        "pico_en_pct": 0.5,
+        "caida_post_pico_pct": 0.5
+      },
+      "max_per_artist": 4,
+      "artists": [
+        "*"
+      ],
+      "genres": [
+        "Organic House",
+        "Organic House / Downtempo",
+        "Progressive House",
+        "Deep House",
+        "Melodic House & Techno",
+        "House",
+        "Downtempo",
+        "Electronica",
+        "Electronic",
+        "Electronica / Downtempo"
+      ],
+      "mezcla_objetivo": {
+        "Organic House": 0.55,
+        "Organic House / Downtempo": 0.2
+      },
+      "peso_mezcla": 4.0,
+      "modo_mayor_objetivo": 0.3,
+      "peso_modo": 2.0,
+      "color_peso": 2.0,
+      "beam": 8000,
+      "_porque_exclude_ids": "Los 18 primeros son el set 158 (repetidos_entre_sets_consecutivos = 0). Los otros 12 salieron del loop selector -> voz medida -> tope de sello. VOZ CANTADA (voces.py sobre el stem vocals de Demucs, 30 s al 45% del tema; cantado = presencia > 60% y peso > 8%): Luminor (Nicolas Viana) 77%/13.6%; Full of Wonder (Gorje Hewek) 60%/21.6%; AfrikaBurn (Izhevski) 99%/36.1%; Where The Heart Is (Shai T) 64%/13.5%; Quand Je Serai Seul (Sebastien Leger) 85%/32.5%; Blue and White (Aldous) 91%/37.3%; On The Strings Of Love (M.O.S.) 100%/17.0%; Jackelele (Cosmonaut, K Loveski) 74%/37.6%; Whispers In The Sand (Andy Woldman) 88%/33.3%; Desire (Double Touch) 74%/33.2%. TOPE DE SELLO (All Day I Dream llegaba a 5, dos veces): Come With Me (Double Touch, voz 34%, breakdown 0.30) y Summer O'clock (Shai T, voz 0%, breakdown 0.34), los mas distractores de su sello en esa vuelta. No son vetos: son de ESTE set, para trabajar.",
+      "exclude_ids": [
+        "235017915",
+        "74206852",
+        "162068832",
+        "37751000",
+        "55579160",
+        "38809884",
+        "58422404",
+        "70575391",
+        "77073459",
+        "53801929",
+        "128348541",
+        "15529976",
+        "218581493",
+        "237573926",
+        "169431664",
+        "176346213",
+        "158318781",
+        "133983297",
+        "149473172",
+        "235494120",
+        "20837835",
+        "178572778",
+        "187641315",
+        "212068224",
+        "85302885",
+        "157561207",
+        "46457686",
+        "58812138",
+        "133335711",
+        "228969850"
+      ]
+    }
+  ]
+}

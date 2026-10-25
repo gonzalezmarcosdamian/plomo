@@ -3421,3 +3421,56 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 17 | Alex O'Rion | Lucida (Original Mix) | 120 | 7.5 |
 | 18 | Sebastien Leger, Lost Miracle | Mistily (Extended Mix) | 121 | 7.6 |
 
+
+## Set 159. 159. Work · Organic con brillo — 2h — 2026-10-25
+**Armado:** 2026-10-25  
+**Duracion:** 2.0h  
+**Tracks:** 17  
+**BPM range:** 119-124  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | KAZKO | Fading Control (Original Mix) | 122 | 6.1 |
+| 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
+| 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
+| 5 | Gorje Hewek | Forest Song in the Morning (Original Mix | 120 | 1.4 |
+| 6 | Eli Nissan | Naked  | 122 | 6.1 |
+| 7 | Capoon, Amand | Ouverture (Khen Remix) | 123 | 5.7 |
+| 8 | Nora En Pure | Spring Embers (Extended Mix) | 122 | 6.7 |
+| 9 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
+| 10 | Gorje Hewek, Dulus | Earth (Original Mix) | 123 | 6.5 |
+| 11 | Khen | Yellow (Original Mix) | 122 | 5.9 |
+| 12 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
+| 13 | Shai T & Tamir Regev | The Captain | 122 | 6.8 |
+| 14 | Khen | My Pure Soul (Original Mix) | 122 | 5.4 |
+| 15 | Kamilo Sanclemente, Giovanny Aparicio | Redemtion (Original Mix) | 121 | 6.7 |
+| 16 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.8 |
+| 17 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
+
+
+**Pedido:** "haceme una lista de 2 horas tipo para trabajar work de organic con brillo, en spoty y rekor y la vamos a
+iterar" (2026-10-25). Para escuchar mientras trabaja, no para pista. Primera version; sin escucha del DJ todavia.
+**Identidad:** dos horas de house organico luminoso para trabajar: groove calido, percusion viva y melodias que abren
+sin pedir atencion, en una meseta media sin un solo pico, sin voces al frente y sin breakdowns que te saquen.
+Config `data/set_configs/159_work_organic_brillo.json` (con `_perillas` para iterar), pool `data/pool_159.json`
+(gitignoreado) armado con `scripts/archive/pool_159_2026-10-25.py`: genero organic + su orbita por sello y artista,
+323 temas.
+**Traduccion:** organic = genero organic + orbita, cuota de genero con peso 4.0 (12 de 17 organic). Brillo = piso de
+color_pct 0.35 y medio >= 5 / aire >= 2 en el pool, color_peso 2.0, modo_mayor_objetivo 0.3 (5 de 17 en mayor; color
+mediano 0.88, minimo 0.67). Trabajar = e_pool [5.0, 6.8] (cero detonantes, contra detonantes.cantidad_por_set_2h: a
+proposito), arco chico 5.4 -> 6.3 al 50%, rueda de a 1, BPM de a 2, voz medida con Demucs (salieron 10 temas
+cantados) y breakdowns que conservan >= 30% del groove (Inertia, "se cae fortisimo", 26%).
+**Contra reglas:** repeticion.max_por_sello_en_set (4) no lo cobra select_set: se cumplio sacando a mano el tema mas
+distractor del sello que se pasaba (All Day I Dream: Come With Me y Summer O'clock). Khen esta 4 veces contando su
+remix y su colaboracion con Cattaneo: en el tope. 0 repetidos con el 158.
+**E:1.4:** Forest Song in the Morning (Gorje Hewek) tiene 1.4 en la DB por el fallo del cue engine; el selector uso 5.5
+estimada por la via de la receta (ver `_nota_energia`). La DB no se toco.
+**Audit:** 6.1 -> 6.8 (#13, The Captain, 76%) -> 6.3. Las 2 transiciones flojas son las dos de Forest Song con su 1.4
+de la DB; con la estimada son 0. 44% sin mover el numero de la rueda (p90 de los pros 40%): con la rueda de a 1 los
+cambios de modo (9A->9B, 7A->7B) cuentan como quietos. 0 saltos de BPM > 2, BPM 120-123.
+**Spotify:** https://open.spotify.com/playlist/27nYkmcm8xtBBHuIBkuq7F, 17/17, validada. Coral y Yellow solo estan en
+edit (4:03 y 3:47 contra 6:57 y 8:25). Dos matches corregidos a mano en `data/spotify_matches.json`: Aura habia
+enganchado el edit de 3:35 y existe la Extended Mix (6:51, la del archivo); Forest Song in the Morning el sync la daba
+como ausente porque el titulo de la DB no cierra el parentesis, y esta (misma ISRC en sus cuatro ediciones).
+**Duracion:** 2h04 enteros en Spotify; 1h55 con mezclas.
