@@ -36,6 +36,18 @@ falta era mirar antes.
 - Cuadros cada pocos minutos, mirados con Read. Mira sobre todo los drops, los cambios de tema y el
   ultimo tercio, que es donde se rompio la Session 04.
 - Contexto: un solo lugar y una luz. Nada de boliches, bandas, otros DJs, ciudades ni efectos.
+- Paisajes (`naturaleza.py`): todo naturaleza y la luz de UN dia. Se mira el cielo y el pie a
+  1:1. Bloquea:
+  - lo hecho por el hombre: gente, casas, ciudad, caminos, alambrados, torres, barcos, aviones y
+    estelas, y luces fijas de noche;
+  - lunas de mas o de otra fase;
+  - una fase del dia que vuelve atras: la nota de cada plano la trae entre corchetes, de [A]
+    tarde a [G] noche.
+  No bloquea lo que la naturaleza tiene de verdad (pajaros, bichos, satelites) si no se lee como
+  otra cosa. Despues de una correccion, mira los planos cambiados y sus fundidos a fondo, y el
+  resto con un barrido.
+- Antes de subir: se sube con tu APROBADO, no en paralelo (ver APRENDIZAJES, "Lo caro va despues
+  del APROBADO").
 - Repeticiones de clips y de secuencias.
 - Texto: solo el nombre de los temas.
 - Sus tomas: reales, sin recortes ni fondos falsos, con una correccion que no se note.

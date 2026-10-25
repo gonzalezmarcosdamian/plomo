@@ -8,6 +8,74 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## El criterio del revisor se le da al editor antes, y medible
+
+**Que paso.** La Session 04 de paisajes paso cuatro veces por el revisor. Cada vuelta costaba
+de 4 a 6 horas entre editor, render y revision. El editor se revisaba solo con el detector de
+objetos y cuadros sueltos cada 2 o 3 s, en hojas reducidas. El revisor, a 1:1, encontro:
+- gente en la playa, barcos, un camino de ripio, una ciudad en el valle, una antena;
+- aviones, cinco lunas de dos fases, luces de pueblo de noche;
+- un dia que anochecia y volvia a la tarde dos veces.
+
+Ademas, para arreglar un salto de luz el editor reordeno la etapa entera: 29 clips nuevos y 29
+riesgos nuevos. Las vueltas tocaron 43, 52 y 5 planos.
+
+**Por que.** "Todo naturaleza, con un sentido" se lee distinto si no se dice como se mide. Lo
+que un detector no marca (un pueblo a 20 px, una estela, la luz de una ciudad en las nubes) solo
+aparece a resolucion completa. Y "que la luz no vuelva atras" no se cumple midiendo la luz media,
+que sube con la nieve o con el disco del sol: se cumple con la hora del dia.
+
+**Como se aplica.** Desde el primer encargo al editor:
+- cada plano lleva su fase del dia en la nota ([A] tarde ... [G] noche), y la fase nunca vuelve
+  a una anterior;
+- cada clip se mira a 1:1, un cuadro por segundo, en el cuadro entero. Se busca: gente,
+  construcciones, caminos, cables, torres, barcos, aviones y estelas, lunas, y luces fijas de
+  noche;
+- se cambia lo minimo: un plano roto se arregla en su lugar, sin reordenar la etapa.
+
+El revisor recibe las mismas reglas y la lista de lo que el editor dejo a sabiendas.
+
+---
+
+## Lo caro va despues del APROBADO: subir, y renderizar todo
+
+**Que paso.** Tres subidas de la Session 04 se cortaron a la mitad porque el revisor bloqueo la
+version que estaba subiendo en paralelo. Cada una era hora y media de subida, y cada corte dejo
+en el canal un video privado de 0 s trabado en "processing", que hubo que buscar y borrar.
+Antes, dos tramos de un render de 2 horas fallaron por filtros mal escritos: un clip 4K sin
+escalar y una curva con dos puntos en el mismo x. El error aparecio recien al final, porque
+los tramos se esperaban en orden.
+
+**Por que.** Una pieza que todavia no paso el revisor tiene mas chances de volver que de salir,
+asi que subirla en paralelo casi nunca ahorra. Un filtro roto se ve en un segundo con dos cuadros,
+pero el render lo descubre cuando llega a su tramo.
+
+**Como se aplica.**
+- Se sube recien con el APROBADO del revisor.
+- `naturaleza.py render` valida el filtro de cada plano antes de empezar (`naturaleza.py
+  validar` lo hace solo) y avisa cada tramo que falla en el momento.
+- Si una subida se corta, se listan las subidas del canal y se borra la rota.
+
+---
+
+## Una correccion de un video por piezas rehace solo los tramos que cambian
+
+**Que paso.** Despues de cada bloqueo hacia falta el video entero otra vez, y los tramos ya se
+habian borrado para hacer lugar en el disco. Rehacerlo todo eran dos horas y media por vuelta.
+Se partio el video verificado en sus tramos sin recodificar y se rehicieron solo los que tocaban
+los planos cambiados: 10 de 27, una hora.
+
+**Por que.** Cada tramo es un archivo de x264 que arranca en un cuadro clave, asi que el
+segmentador de ffmpeg corta exactamente ahi. Lo de afuera no cambia ni un bit. Unir tramos,
+video sin audio y final a la vez ocupa tres veces el video (40 GB con un disco al 94%). Borrando
+los tramos apenas el video unido tiene todos sus cuadros, ocupa dos.
+
+**Como se aplica.** `naturaleza.py partir` el video verificado, borrar los tramos que tocan los
+planos cambiados, `render --tramos` esos y `render` sin --tramos para unir. La union cuenta los
+cuadros de cada tramo y compara el audio del final con la mezcla por md5.
+
+---
+
 ## Un tema pedido por nombre se busca primero entre lo parecido de la biblioteca
 
 **Que paso.** El DJ pidio una b2b con "la cancion gray matter" de hilo conductor. Se busco

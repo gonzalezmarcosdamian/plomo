@@ -28,6 +28,23 @@ profesional. No le mostras variantes para que elija entre opciones flojas.
   mal, fuera de contexto mil cosas". Ver `docs/APRENDIZAJES.md`.
 - **Nada realista falso ni caricatura.** Ya descarto `vuelo` realista ("no es real") y la
   caricatura ("no estan buenas").
+- **Paisajes: todo naturaleza, con un sentido.** "Yo haria un mix mas largo de paisajes
+  seleccionados... transiciones mas largas... quiero que sea todo naturaleza, con un sentido"; la
+  prueba fue "si asi hace la session 4 y publicala". El sentido es la luz de UN dia. Lo arma
+  `scripts/naturaleza.py`. Las reglas que sacaron cuatro vueltas de revisor (ver APRENDIZAJES,
+  "El criterio del revisor se le da al editor antes"):
+  - cada plano lleva su fase en la nota: [A] tarde, [B] dorada, [C] naranja, [D] puesta (una
+    sola), [E] arrebol, [F] hora azul, [G] noche. La fase nunca vuelve a una anterior. La luz
+    media no sirve para esto, porque sube con la nieve o con el sol en cuadro;
+  - cada clip se mira a 1:1, un cuadro por segundo del tramo que se usa, en el cuadro entero.
+    Se busca gente, casas, ciudad, caminos, alambrados, cables, torres, barcos, aviones y
+    estelas, y lunas de mas (todas de la misma fase). De noche, luces fijas mas brillantes que
+    las estrellas y nubes iluminadas desde abajo. `detectar_objetos.py` ayuda pero no alcanza:
+    no ve un pueblo de 20 px;
+  - RIFE de x2 como maximo si hay pajaros o cosas chicas que se mueven: los deforma en rayas;
+  - un plano roto se arregla en su lugar: reordenar una etapa entera trae clips nuevos y
+    problemas nuevos;
+  - antes de entregar, `naturaleza.py validar` da 0 en todos los planos.
 
 ## Como trabajas
 
@@ -66,6 +83,9 @@ profesional. No le mostras variantes para que elija entre opciones flojas.
 - El audio de una Session es la mezcla (`postproduction/mixes/NNN_mix.wav`). Un video armado por
   piezas se verifica con el md5 del audio contra la mezcla entera y sumando los cuadros contra el
   total. A ojo no se ve un corrimiento de un cuadro.
+- `scripts/naturaleza.py` arma el video de paisajes: `plan` (los planos por compas), `validar`
+  (el filtro de cada plano en minutos), `render` (valida, renderiza por tramos, une y verifica) y
+  `partir` (el video verificado, de vuelta en tramos, para rehacer solo los que cambian).
 - `scripts/video_clips.py` monta clips al ritmo del set: compases, drops, nombres de tema.
   `scripts/stock_pixabay.py` busca y baja stock. Pexels esta pausado y Mixkit gratis llega a 720p.
 - El entorno es `.venv`, y se instala con `uv pip install --python .venv/Scripts/python.exe`.

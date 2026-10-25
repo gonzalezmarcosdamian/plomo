@@ -23,6 +23,12 @@ USO
 ---
     python scripts/naturaleza.py plan --mix postproduction/mixes/157_mix.json --nombre session_04
         -> data/video/session_04_planos.json (los huecos: cuando entra, cuando llena, cuando sale)
+    python scripts/naturaleza.py validar ... [--planos 9 33]    # el filtro de cada plano, en minutos
+    python scripts/naturaleza.py render ... [--tramos 1 5]       # valida, renderiza, une y verifica
+    python scripts/naturaleza.py partir ... --salida <video>     # el video entero, de vuelta en tramos
+
+Una vuelta de correcciones: `partir` el video verificado, borrar los tramos que tocan los planos
+cambiados, `render --tramos` esos, y `render` sin --tramos une todo y verifica el audio.
 """
 from __future__ import annotations
 
@@ -271,7 +277,7 @@ def contar(ruta: Path) -> int:
 
 
 def render(nombre: str, mix: dict, master: Path, salida: Path, solo: list[int] | None, trabajos: int) -> None:
-    from concurrent.futures import ThreadPoolExecutor
+    from concurrent.futures import ThreadPoolExecutor, as_completed
     import shutil
     import time
     planos = json.loads((RAIZ / "data" / "video" / f"{nombre}_planos.json").read_text(encoding="utf-8"))["planos"]
@@ -300,50 +306,126 @@ def render(nombre: str, mix: dict, master: Path, salida: Path, solo: list[int] |
         (carpeta / f"titulo_{k:02d}.txt").write_text(tm["titulo"], encoding="utf-8")
         (carpeta / f"artista_{k:02d}.txt").write_text(tm["artista"], encoding="utf-8")
     total = round(planos[-1]["sale"] * FPS)
-    elegir =[j for j in range(len(lista)) if solo is None or j in solo]
+    elegir = [j for j in range(len(lista)) if solo is None or j in solo]
+    # un filtro mal escrito tiraba abajo su tramo entero y se sabia a las dos horas (2026-10-24)
+    malos = validar(elegidos, [p["n"] for p in necesarios])
+    if malos:
+        sys.exit("planos con el filtro roto, no se renderiza:\n" + "\n".join(malos))
     print(f"{len(planos)} planos en {len(lista)} tramos, {total} cuadros", flush=True)
-    cache, inicio, hechos = {}, time.time(), 0
+    cache, inicio, hechos, fallados = {}, time.time(), 0, []
     with ThreadPoolExecutor(trabajos) as ex:
         futs = {ex.submit(render_tramo, j, *lista[j], planos, elegidos, temas, total, carpeta, cache): j for j in elegir}
-        for fu in futs:
-            fu.result()
+        # el que falla se avisa cuando falla: esperandolos en orden, un error del tramo 4 aparecia al final
+        for fu in as_completed(futs):
+            j = futs[fu]
+            try:
+                fu.result()
+            except Exception as e:  # noqa: BLE001 - se reporta y siguen los demas tramos
+                fallados.append(j)
+                print(f"  tramo {j} FALLO: {str(e)[-600:]}", flush=True)
+                continue
             hechos += 1
-            print(f"  tramo {futs[fu] + 1}/{len(lista)} listo, faltan {(time.time() - inicio) / hechos * (len(elegir) - hechos) / 60:.0f} min",
-                  flush=True)
+            print(f"  tramo {j} listo ({hechos}/{len(elegir)}), "
+                  f"faltan {(time.time() - inicio) / hechos * (len(elegir) - hechos - len(fallados)) / 60:.0f} min", flush=True)
+    if fallados:
+        sys.exit(f"fallaron los tramos {sorted(fallados)}")
     if solo is not None:
         return
-    # union en dos pasos y la mezcla entera sin recortar (ver APRENDIZAJES: el video armado por piezas)
+    unir(carpeta, lista, total, master, salida)
+
+
+def validar(elegidos: dict, numeros: list[int]) -> list[str]:
+    """Arma el filtro de cada plano (encuadre + grado) con 2 cuadros y chequea que salga a W x H.
+
+    Encuentra en minutos lo que en el render aparece a las horas: un clip 4K sin escalar, una
+    curva con dos puntos en el mismo x, un clip que no existe o no alcanza."""
+    malos, cache = [], {}
+    for n in numeros:
+        try:
+            args, filtro = entrada({"n": n}, elegidos[n], 0, 2, cache)
+        except (ValueError, KeyError, OSError) as e:
+            malos.append(f"{n:3d}: {e}")
+            continue
+        r = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "info", "-y", *args, "-filter_complex",
+                            f"[0:v]{filtro},trim=end_frame=2,showinfo", "-frames:v", "2", "-f", "null", "-"],
+                           capture_output=True, text=True)
+        if r.returncode or f"s:{W}x{H}" not in r.stderr:
+            err = [x for x in r.stderr.splitlines() if "rror" in x or "nvalid" in x or "too close" in x][:2]
+            malos.append(f"{n:3d}: {'sale de otro tamano ' if not r.returncode else ''}{' | '.join(err)[:300]}")
+    return malos
+
+
+def unir(carpeta: Path, lista: list[tuple[int, int]], total: int, master: Path, salida: Path) -> None:
+    """Tramos -> video entero con la mezcla sin recortar, verificado (ver APRENDIZAJES: el video
+    armado por piezas). Los tramos se borran apenas el video unido tiene todos sus cuadros: tramos,
+    video sin audio y final juntos son tres veces el video, y el disco no da. `partir` los recupera."""
+    assert lista[0][0] == 0 and lista[-1][1] == total and all(a[1] == b[0] for a, b in zip(lista, lista[1:]))
+    for j, (c0, c1) in enumerate(lista):
+        n = contar(carpeta / f"tramo_{j:03d}.mp4") if (carpeta / f"tramo_{j:03d}.mp4").exists() else 0
+        if n != c1 - c0:
+            sys.exit(f"tramo {j}: {n} cuadros, se esperaban {c1 - c0}")
     indice = carpeta / "tramos.txt"
     indice.write_text("".join(f"file '{(carpeta / f'tramo_{j:03d}.mp4').as_posix()}'\n" for j in range(len(lista))),
                       encoding="utf-8")
     solo_video = carpeta / "solo_video.mp4"
-    for cmd in (["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "concat", "-safe", "0", "-i", str(indice),
-                 "-c", "copy", str(solo_video)],
-                ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(solo_video), "-i", str(master),
-                 "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "pcm_s24le", "-avoid_negative_ts", "make_zero",
-                 str(salida)]):
-        r = subprocess.run(cmd, capture_output=True, text=True)
-        if r.returncode:
-            sys.exit(r.stderr[-2000:])
+    ffmpeg = lambda *args: subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", *args], check=True)
+    ffmpeg("-f", "concat", "-safe", "0", "-i", str(indice), "-c", "copy", str(solo_video))
+    if contar(solo_video) != total:
+        sys.exit(f"el video unido no tiene {total} cuadros; los tramos quedan")
+    for j in range(len(lista)):
+        (carpeta / f"tramo_{j:03d}.mp4").unlink()
+    ffmpeg("-i", str(solo_video), "-i", str(master), "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "pcm_s24le",
+           "-avoid_negative_ts", "make_zero", str(salida))
+    md5 = lambda ruta: subprocess.run(["ffmpeg", "-v", "error", "-i", str(ruta), "-map", "0:a", "-c:a", "pcm_s24le",
+                                       "-f", "md5", "-"], capture_output=True, text=True, check=True).stdout.strip()
+    if contar(salida) != total or md5(salida) != md5(master):
+        sys.exit(f"{salida.name}: los cuadros o el audio no coinciden con la mezcla; solo_video queda")
     solo_video.unlink()
-    print(f"-> {salida}  ({contar(salida)} cuadros de {total}, {salida.stat().st_size / 1e9:.1f} GB)", flush=True)
+    print(f"-> {salida}  ({total} cuadros, {salida.stat().st_size / 1e9:.1f} GB, audio identico a la mezcla)", flush=True)
+
+
+def partir(nombre: str, video: Path) -> None:
+    """El video entero, de vuelta en sus tramos, sin recodificar: para rehacer solo los que cambian.
+
+    Cada tramo arranca en un cuadro clave (es un archivo propio de x264), asi que el segmentador
+    corta justo ahi. Una vuelta de correcciones de 10 tramos cuesta una hora en vez de dos y media."""
+    planos = json.loads((RAIZ / "data" / "video" / f"{nombre}_planos.json").read_text(encoding="utf-8"))["planos"]
+    lista = tramos(planos)
+    carpeta = RAIZ / "postproduction" / "video" / f"{nombre}_tramos_naturaleza"
+    carpeta.mkdir(parents=True, exist_ok=True)
+    subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(video), "-map", "0:v", "-c", "copy",
+                    "-f", "segment", "-segment_frames", ",".join(str(c0) for c0, _ in lista[1:]), "-reset_timestamps", "1",
+                    "-segment_format_options", "video_track_timescale=30000", str(carpeta / "tramo_%03d.mp4")], check=True)
+    mal = [j for j, (c0, c1) in enumerate(lista) if contar(carpeta / f"tramo_{j:03d}.mp4") != c1 - c0]
+    if mal:
+        sys.exit(f"tramos con otra cantidad de cuadros: {mal}")
+    print(f"{len(lista)} tramos en {carpeta}, todos con sus cuadros; {video.name} ya se puede borrar", flush=True)
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("accion", choices=["plan", "render"])
+    ap.add_argument("accion", choices=["plan", "validar", "render", "partir"])
     ap.add_argument("--mix", required=True)
     ap.add_argument("--nombre", required=True)
-    ap.add_argument("--salida")
-    ap.add_argument("--tramos", type=int, nargs="*", help="render: solo estos tramos, para probar")
+    ap.add_argument("--salida", help="render y partir: el video entero (por defecto postproduction/video/<nombre>.mov)")
+    ap.add_argument("--tramos", type=int, nargs="*", help="render: solo estos tramos")
+    ap.add_argument("--planos", type=int, nargs="*", help="validar: solo estos planos (por defecto, todos)")
     ap.add_argument("--trabajos", type=int, default=2)
     a = ap.parse_args()
     mix = json.loads((RAIZ / a.mix).read_text(encoding="utf-8"))
     master = (RAIZ / a.mix).with_suffix(".wav")
+    salida = Path(a.salida) if a.salida else RAIZ / "postproduction" / "video" / f"{a.nombre}.mov"
     if a.accion == "render":
-        salida = Path(a.salida) if a.salida else RAIZ / "postproduction" / "video" / f"{a.nombre}.mov"
         render(a.nombre, mix, master, salida, a.tramos, a.trabajos)
         return
+    if a.accion == "partir":
+        partir(a.nombre, salida)
+        return
+    if a.accion == "validar":
+        elegidos = eleccion(a.nombre)
+        malos = validar(elegidos, a.planos or sorted(elegidos))
+        print("\n".join(malos) + f"\n{len(a.planos or elegidos)} planos revisados, {len(malos)} con problemas")
+        sys.exit(1 if malos else 0)
     planos = plan(mix, master)
     salida = RAIZ / "data" / "video" / f"{a.nombre}_planos.json"
     salida.write_text(json.dumps({"fps": FPS, "compas_s": round(4 * 60 / mix["tempo"], 5), "fundido_compases": FUNDIDO,
