@@ -74,7 +74,7 @@
    "paso": 1,
    "encuadre": "null",
    "grado": "curves=master='0/0 0.06/0.046 0.5/0.3 0.96/0.94 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "[B] 204006 (4K 30): nubes doradas desde arriba con el sol. Recorte 3200x1800 desde arriba a la izquierda: saca un puntito de luz (tierra entre las nubes) en x~3470 y~1580 del 4K. RIFE x2.25 desde 0.3 s; el clip original se apaga en el 18.4, el plano usa hasta el 18.1. El sol dorado detras de nubes finas, cerca del borde del mar de nubes."
+   "nota": "[B] 204006 (4K 30): nubes doradas desde arriba con el sol. Recorte 3200x1800 desde arriba a la izquierda: saca un puntito de luz (tierra entre las nubes) en x~3470 y~1580 del 4K. RIFE x2.25 desde 0.3 s; el clip original se apaga en el 18.4, el plano usa hasta el 18.1. El sol dorado detras de nubes finas, cerca del borde del mar de nubes. Por el hueco entre las nubes cruzaba un avion lejano con estela (x~2520 a 1900, y~410-436, del 1 al 34 s del estirado): se saco en esos cuadros, rellenando el trazo con el cielo que lo rodea."
   },
   {
    "n": 121,
@@ -375,21 +375,21 @@
   },
   {
    "n": 154,
-   "archivo": "postproduction/stock/estirados/s04_154_368458.mp4",
+   "archivo": "postproduction/stock/estirados/s04_154_104598.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.3 0.96/0.76 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "[G] 368458 (4K 60): el mar de nubes a la luz de la luna sobre lomas verdes, un pino a la izquierda, estrellas. Recorte 2400x1350 de abajo a la izquierda: saca unas luces en la loma lejana de la derecha (x~2440-2560 y~1150). Cuadros reales a 30 (camara lenta 0.5x). Medios bajados: es de noche."
+   "grado": "curves=master='0/0 0.06/0.05 0.5/0.56 0.96/0.962 1/1':r='0/0 0.5/0.52 1/1':b='0/0 0.5/0.48 1/1',colorchannelmixer=rr=0.92126:rg=0.07152:rb=0.00722:gr=0.02126:gg=0.97152:gb=0.00722:br=0.02126:bg=0.07152:bb=0.90722",
+   "nota": "[G] 104598 (4K 29.97): la via lactea cruzando el cielo azul de la noche, solo cielo y estrellas, sin luna. Recorte 2133x1200 de arriba (sube 1.2x): deja afuera el horizonte, que tiene una antena con luces rojas y un resplandor naranja. Usa 0-8.9 s de la toma, AL REVES (el cielo se oscurece en vez de aclarar). Esa noche cruzaban muchos meteoros y satelites (rayas de 1 o 2 cuadros): se sacaron cuadro por cuadro antes de estirar, comparando cada cuadro con sus vecinos alineados con el cielo. Un pixel caliente del sensor (un punto fijo en x~1414 y~656 que no giraba con el cielo) se tapo en todo el plano. RIFE x4.5 (solo estrellas que giran juntas). Saturacion 0.9 y el azul un poco abajo."
   },
   {
    "n": 155,
-   "archivo": "postproduction/stock/estirados/s04_155_174190.mp4",
+   "archivo": "postproduction/stock/estirados/s04_155_201890.mp4",
    "desde": 0.0,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
-   "nota": "[G] 174190 (1080p 60): la via lactea sobre una cresta de montana en silueta, el horizonte con resplandor. RIFE x1.75 sobre 60 fps."
+   "encuadre": "crop=2176:1224:192:108,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0.045 0.01/0.09 0.05/0.21 1/1':r='0/0 0.1/0.095 1/1':b='0/0 0.1/0.115 1/1'",
+   "nota": "[G] 201890 (4K 24): solo cielo, un campo de estrellas muy denso que gira despacio; sin luna, sin horizonte. Recorte 2176x1224 del centro (sube 1.18x): deja afuera el borde oscuro de la lente. Sin satelites ni puntos fijos (revisado cuadro por cuadro alineando con el cielo, y con la mediana del clip). Antes de estirar se sacaron 455 cuadros con rayas de 1 cuadro (meteoros chicos). RIFE x2.14. Venia casi negro (luma 0.003): el fondo se suavizo sin tocar las estrellas y la curva lo levanta a un azul noche."
   },
   {
    "n": 156,

@@ -176,12 +176,12 @@
   },
   {
    "n": 98,
-   "archivo": "postproduction/stock/estirados/s04_098_220945.mp4",
-   "desde": 0.0,
+   "desde": 0.1,
    "paso": 1,
-   "encuadre": "null",
-   "grado": "curves=master='0/0 0.1/0.07 0.96/0.96 1/1':r='0/0 0.5/0.510 1/1':b='0/0 0.5/0.490 1/1'",
-   "nota": "drop: el dron pasa junto a una cumbre de roca y nieve con el sol detras; 50 fps a x1.67 con cuadros reales"
+   "encuadre": "crop=1920:1080:0:600,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.5 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "drop: 171110 (4K 59.94): crestas nevadas con roca oscura y nubes que suben y pasan entre las cumbres, cielo de tarde; el sol fuera de cuadro. Cuadros reales a 30 (camara lenta 0.5x, sin RIFE). Recorte 1920x1080 de la mitad izquierda desde y=600 (sube 1.33x): deja afuera la cumbre de la derecha, que tiene un sendero en zigzag, y las rocas del pie. Reemplaza a 220945 (el Cervino), que tenia un refugio, cuerdas fijas en la arista y la cruz de la cumbre.",
+   "id": 171110
   },
   {
    "n": 102,
