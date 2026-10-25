@@ -3430,12 +3430,12 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | KAZKO | Fading Control (Original Mix) | 122 | 6.1 |
+| 1 | Kamilo Sanclemente, Andre Moret, Mariusso | Atenea (HAFT Remix) | 122 | 5.0 |
 | 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
 | 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
 | 5 | Gorje Hewek | Forest Song in the Morning (Original Mix | 120 | 1.4 |
-| 6 | Eli Nissan | Naked  | 122 | 6.1 |
+| 6 | Kasper Koman | The Observer | 121 | 6.1 |
 | 7 | Capoon, Amand | Ouverture (Khen Remix) | 123 | 5.7 |
 | 8 | Nora En Pure | Spring Embers (Extended Mix) | 122 | 6.7 |
 | 9 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
@@ -3474,3 +3474,37 @@ edit (4:03 y 3:47 contra 6:57 y 8:25). Dos matches corregidos a mano en `data/sp
 enganchado el edit de 3:35 y existe la Extended Mix (6:51, la del archivo); Forest Song in the Morning el sync la daba
 como ausente porque el titulo de la DB no cierra el parentesis, y esta (misma ISRC en sus cuatro ediciones).
 **Duracion:** 2h04 enteros en Spotify; 1h55 con mezclas.
+
+**v2 (2026-10-25), primera escucha del DJ, textual:** "Fading control cambialo. Luego voy escuchando hasta forest song
+hasta ahi los demas bien cambia el primero por algun parecidos a estos. Para adelante te voy a ir indicando cambios y
+reemplazas por la familia de los que van quedando". Y despues, siguiendo: "Naked cambiarlo". La tabla de arriba es la
+v2, con los dos cambios.
+- **Salen** #1 KAZKO - Fading Control y #6 Eli Nissan - Naked: son CAMBIOS, no vetos (no van a energia_percibida.json).
+- **Aprobados para este set:** #2 a #5, Rogelito, One World, Aura y Forest Song in the Morning. Quedan en
+  `_escucha.aprobados` del config: son la familia de la que salen los reemplazos. Del #7 al #17 no escucho todavia.
+- **Entra** #1 Kamilo Sanclemente, Andre Moret, Mariusso - Atenea (HAFT Remix) [The Purr], Organic House / Downtempo,
+  122, 4A, E5.0, color 0.80, voz medida 12% / 2.3% (instrumental). Primero del ranking de
+  `scripts/archive/familia_159.py`: forma media 2.74 contra los cuatro aprobados, groove a 0.29 de su mediana, color
+  0.80 contra 0.91 de mediana, y comparte productor con One World (Andre Moret, que queda en 3 de 4). Mismo 4A que
+  Rogelito y 1 BPM abajo; abre en 5.0, debajo de Rogelito (6.2). Estuvo en el 74 y el 82; sin tocar.
+- **Alternativas:** Kebin Van Reeken - Hypnotize (Extended Mix) [Univack], 4A 122 E5.4, color 0.72, voz 0%;
+  Kamilo Sanclemente - Whale Voices (Original Mix) [Univack], 4A 122 E6.0, color 0.77, voz 53% / 7.4% ("algo de voz":
+  no llega a cantado; probablemente los cantos de ballena del titulo).
+- **Descartado:** el que proponia reemplazar.py, Hernan Cattaneo, Lonya - Confession (HOSH & Tone Depth Remix): 125 BPM
+  y 3A, genero Techno en la DB y sin receta ni color medidos: no entra a pool_159 ni como organic ni como orbita.
+- **Entra** #6 Kasper Koman - The Observer [Lost Miracle], Organic House, 121, 6A, E6.1, color 0.86, voz medida 24% /
+  8.6% (instrumental). Familia: los cuatro aprobados mas Atenea (la sumo el coordinador; el DJ todavia no la escucho).
+  Es el mas cercano en sonido: forma 2.52 (la mejor), groove a 0.31 de la mediana, breakdown que conserva 0.52 del
+  groove. Mezcla con Forest Song (6A, 120, +1 BPM) y con Ouverture (7A, 123, +2). Ojo: quedan tres 6A seguidos (Aura,
+  Forest Song, The Observer), que armonia.penal_misma_key_desde (2) cobra como costo blando. En energia_percibida el
+  DJ dijo de este tema, escuchando el 150: "flojo para esa altura: iria antes en el set"; aca esta a la media hora.
+  Estuvo en el 60; sin tocar.
+- **Alternativas para el #6:** Kamilo Sanclemente - Distant Blips (Dowden Remix) [Univack], 7A 122 E5.8, color 0.70, voz
+  12% (evita los tres 6A; mas progressive y breakdown mas hondo, 0.31); Praise (BR) - Eclipse (Extended Mix) [Univack],
+  6A 122 E5.2, color 0.76, voz 0%.
+- **Criterio ajustado:** en familia_159.py el sello y el artista compartidos pasaron de -1 a -0.5. Con -1, el #6 lo
+  ganaba Distant Blips solo por nombre. Ahora manda el sonido y el nombre desempata; el #1 da Atenea igual.
+- **Audit v2:** 5.0 -> pico 6.8 (#13, 76%) -> 6.3; las 2 flojas siguen siendo las de Forest Song con el 1.4 de la DB.
+- **Para las proximas:** `python scripts/archive/familia_159.py --posiciones N --medir 6`, despues `--poner N=<id>`,
+  `build_set.py 159`, `spotify_sync.py 159`, `spotify_validar.py 159`. Cada aprobacion o cambio va primero a
+  `_escucha` del config. La voz medida queda en `data/voces.json` (85 temas, 57 de este set), asi que no se vuelve a medir.

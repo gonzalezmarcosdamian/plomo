@@ -5,7 +5,7 @@
   "permitir_repetir_entre_sets": true,
   "_comentario": "Set 159 v1, 2026-10-25. Lista para TRABAJAR, no para pista: se escucha de fondo en Spotify y queda en Rekordbox por si la quiere mezclar. Es la primera version de algo que el DJ va a iterar. Pool reducido a proposito: data/pool_159.json (gitignoreado, como pool_155/156/158) sale de data/pool.json del 2026-10-25 (dump_pool, 3157 temas) con scripts/archive/pool_159_2026-10-25.py, que no toca la DB; el criterio esta en _pool. Correr de nuevo ese script si entra material nuevo. Las voces se midieron con Demucs (voces.py) en scripts de scratch no versionados; las mediciones que decidieron algo quedan en _porque_exclude_ids.",
   "_perillas": {
-    "_como": "Cambiar el numero, correr select_set.py con este archivo, y medir la voz de lo que entre nuevo (python scripts/voces.py --patron \"<titulo>\"): select_set NO ve la voz ni el tope de sello, asi que despues de mover una perilla hay que mirar esas dos cosas a mano. Despues build_set.py 159 y spotify_sync.py 159: la lista de Spotify conserva el link.",
+    "_como": "Las perillas son para REHACER el set entero (select_set.py con este archivo). Para cambiar un tema que el DJ nombra, usar scripts/archive/familia_159.py (ver _version y _escucha). Cambiar el numero, correr select_set.py con este archivo, y medir la voz de lo que entre nuevo (python scripts/voces.py --patron \"<titulo>\"): select_set NO ve la voz ni el tope de sello, asi que despues de mover una perilla hay que mirar esas dos cosas a mano. Despues build_set.py 159 y spotify_sync.py 159: la lista de Spotify conserva el link.",
     "MAS BRILLO": "1) modo_mayor_objetivo 0.3 -> 0.4: mas claves mayores (B); hoy da 5 de 17. 2) piso de color del pool: python scripts/archive/pool_159_2026-10-25.py --color 0.5 (hoy 0.35; saca los temas de color medio, como Rogelito 0.72 o The Captain 0.67). color_peso casi no mueve nada: el pool ya es colorido (el set da mediana 0.88). En la primera corrida (piso de breakdown 0.25, sin sacar voces) 3.0 dio el mismo set que 2.0, y 1.5 cambio 4 temas sin ganar color.",
     "MAS ORGANICO": "peso_mezcla 4.0 -> 6.0 o subir Organic House en mezcla_objetivo (hoy 0.55 + 0.20 de Organic House / Downtempo). Hoy 12 de 17 son de genero organic y los 5 restantes son Progressive de la orbita (Univack, Closure, Lost & Found, Plaisirs Sonores). Mas drastico: sacar 'Progressive House' de genres. En una corrida previa (pool con piso de breakdown 0.25), con peso_mezcla 1.5 (la regla) entraban 11 de 17 y abria con cuatro Univack progressive en los primeros seis.",
     "MAS ENERGIA": "e_pool [5.0, 6.8] -> [5.6, 7.2] y e_lo/e_hi 5.4/6.3 -> 6.0/6.8. El techo tiene que quedar debajo de 7.5 (detonantes.umbral_energia) o vuelve a entrar un pico.",
@@ -19,6 +19,42 @@
       "name": "159. Work · Organic con brillo — 2h — 2026-10-25",
       "_identidad": "Dos horas de house organico luminoso para trabajar: groove calido, percusion viva y melodias que abren sin pedir atencion. Contesta si el material organico de la biblioteca --All Day I Dream, Melody Of the Soul, Lost Miracle, Univack-- sostiene una meseta media sin un solo pico, sin voces al frente y sin un breakdown que te saque de lo que estas haciendo.",
       "_contexto": "Pedido literal del DJ (via el coordinador, 2026-10-25): 'haceme una lista de 2 horas tipo para trabajar work de organic con brillo, en spoty y rekor y la vamos a iterar'. Para escuchar mientras trabaja, no para una pista; 2 horas; Spotify y Rekordbox. Sin escucha del DJ todavia.",
+      "_escucha": {
+        "_que_es": "Lo que el DJ dijo escuchando ESTE set, textual, y lo que eso decide aca: 'aprobados' es la familia contra la que se eligen los reemplazos (scripts/archive/familia_159.py); 'cambiados' son temas que pidio cambiar, que no vuelven a este set pero NO son vetos (no van a energia_percibida.json: feedback_veto_vs_cambio). Los temas que todavia no escucho no figuran: no se infiere nada de ellos.",
+        "rondas": [
+          {
+            "fecha": "2026-10-25",
+            "version": "v2",
+            "textual": [
+              "Fading control cambialo. Luego voy escuchando hasta forest song hasta ahi los demas bien cambia el primero por algun parecidos a estos. Para adelante te voy a ir indicando cambios y reemplazas por la familia de los que van quedando",
+              "Naked cambiarlo"
+            ],
+            "cambia": [
+              "239831899",
+              "14636373"
+            ],
+            "aprueba": [
+              "173790116",
+              "130869533",
+              "184188342",
+              "64669607"
+            ],
+            "sin_escuchar": "del #7 al #17",
+            "familia_del_reemplazo": "los aprobados (#2 a #5) mas Atenea, el #1 nuevo, que el DJ todavia no escucho: lo sumo el coordinador para el #6. Atenea NO esta en aprobados."
+          }
+        ],
+        "aprobados": [
+          "173790116",
+          "130869533",
+          "184188342",
+          "64669607"
+        ],
+        "cambiados": [
+          "239831899",
+          "14636373"
+        ]
+      },
+      "_version": "v2 (2026-10-25): desde que el DJ escucha, el set ya NO sale de select_set: es data/set_targets/set_159.json editado lugar por lugar con scripts/archive/familia_159.py (#1 Atenea, #6 The Observer). Correr select_set.py con este config REARMA la v1 y pisa lo aprobado: no hacerlo salvo que el DJ pida rehacer el set entero.",
       "_traduccion": {
         "organic": "Pool: genero organic (314 temas en la biblioteca) + su orbita, o sea temas de genero vecino de sellos y artistas que son mayormente organic o que nombro el pedido (ver _pool). La cuota mezcla_objetivo / peso_mezcla 4.0 sostiene el genero organic arriba (12 de 17).",
         "brillo": "Tres capas. a) Piso duro en el pool: color_pct >= 0.35 (el minimo del 150 es 0.37; saca 111 temas) y medio >= 5, aire >= 2 (la escucha del DJ: sin medios 'oscuro', sin aire 'tecnoso'). b) color_peso 2.0 (regla estilo.colorido 1.5): premio al color en el costo. c) modo_mayor_objetivo 0.3 (regla armonia 0.11; los pros p75 20%, Ezequiel Arias 25%): 5 de 17 en mayor. Ademas los vetos 'muy oscuro' de energia_percibida quedan fuera por select_set.",

@@ -210,6 +210,534 @@
       "peso": 0.198,
       "etiqueta": "algo de voz",
       "medido": "2026-10-01, con el bug arreglado"
+    },
+    "124362503": {
+      "artist": "Shai T",
+      "title": "Oriki",
+      "presencia": 0.2,
+      "peso": 0.046,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "130869533": {
+      "artist": "Andre Moret",
+      "title": "One World (Extended Mix)",
+      "presencia": 0.059,
+      "peso": 0.014,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "14636373": {
+      "artist": "Eli Nissan",
+      "title": "Naked ",
+      "presencia": 0.097,
+      "peso": 0.027,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "149473172": {
+      "artist": "Nicolas Viana",
+      "title": "Luminor (Original Mix)",
+      "presencia": 0.767,
+      "peso": 0.136,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "175484827": {
+      "artist": "Kamilo Sanclemente, Giovanny Aparicio",
+      "title": "Redemtion (Original Mix)",
+      "presencia": 0.261,
+      "peso": 0.021,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "178572778": {
+      "artist": "Shai T",
+      "title": "Where The Heart Is (Original Mix)",
+      "presencia": 0.635,
+      "peso": 0.135,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "184188342": {
+      "artist": "Jordi Ruz, Artic White",
+      "title": "Aura (Original Mix)",
+      "presencia": 0.06,
+      "peso": 0.008,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "186594533": {
+      "artist": "Mayro",
+      "title": "Harvest (Original Mix)",
+      "presencia": 0.296,
+      "peso": 0.079,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "196838047": {
+      "artist": "Nicolas Viana",
+      "title": "Coral (Extended Mix)",
+      "presencia": 0.345,
+      "peso": 0.04,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "20837835": {
+      "artist": "Izhevski, Talemates",
+      "title": "AfrikaBurn (Extended Mix)",
+      "presencia": 0.993,
+      "peso": 0.361,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "212068224": {
+      "artist": "Double Touch",
+      "title": "Come With Me (Original Mix)",
+      "presencia": 0.345,
+      "peso": 0.075,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "233850863": {
+      "artist": "Khen",
+      "title": "My Pure Soul (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "235494120": {
+      "artist": "Gorje Hewek",
+      "title": "Full of Wonder feat. Volen Sentir (Original Mix)",
+      "presencia": 0.601,
+      "peso": 0.216,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "245930317": {
+      "artist": "Nora En Pure",
+      "title": "Spring Embers (Extended Mix)",
+      "presencia": 0.178,
+      "peso": 0.027,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "46457686": {
+      "artist": "Shai T",
+      "title": "Summer Oclock (Original Mix) ",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "56831615": {
+      "artist": "Capoon, Amand",
+      "title": "Ouverture (Khen Remix)",
+      "presencia": 0.17,
+      "peso": 0.017,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "64669607": {
+      "artist": "Gorje Hewek",
+      "title": "Forest Song in the Morning (Original Mix",
+      "presencia": 0.026,
+      "peso": 0.006,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "109530162": {
+      "artist": "Lost Desert, Reigan, Amand",
+      "title": "Open Form feat. Reigan (Original Mix)",
+      "presencia": 0.725,
+      "peso": 0.189,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "157561207": {
+      "artist": "M.O.S., Leonid Sivelkin, Krasa Rosa",
+      "title": "On The Strings Of Love (Original Mix)",
+      "presencia": 1.0,
+      "peso": 0.17,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "198986596": {
+      "artist": "Sébastien Léger",
+      "title": "Blazing Ice",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "252350736": {
+      "artist": "Nicolas Viana",
+      "title": "Fog Machine (Extended Mix)",
+      "presencia": 0.08,
+      "peso": 0.009,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "264835495": {
+      "artist": "Kamilo Sanclemente, M.O.S., Andre Moret",
+      "title": "Perception (Original Mix)",
+      "presencia": 0.165,
+      "peso": 0.016,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "60880167": {
+      "artist": "Lee Burridge",
+      "title": "Reaching Stars  (Original Mix)",
+      "presencia": 0.962,
+      "peso": 0.645,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "156983367": {
+      "artist": "Kasper Koman",
+      "title": "The Observer",
+      "presencia": 0.241,
+      "peso": 0.086,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "228969850": {
+      "artist": "Double Touch",
+      "title": "Desire (Original Mix)",
+      "presencia": 0.741,
+      "peso": 0.332,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "244737150": {
+      "artist": "Eli Nissan",
+      "title": "Bambook",
+      "presencia": 0.02,
+      "peso": 0.005,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "85302885": {
+      "artist": "Aldous",
+      "title": "Blue and White (Original Mix) ",
+      "presencia": 0.907,
+      "peso": 0.373,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "125153100": {
+      "artist": "Khen",
+      "title": "Yellow (Original Mix)",
+      "presencia": 0.161,
+      "peso": 0.03,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "2009006": {
+      "artist": "Gorje Hewek, Dulus",
+      "title": "Earth (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "237240379": {
+      "artist": "Nicolas Viana",
+      "title": "Winged (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "239831899": {
+      "artist": "KAZKO",
+      "title": "Fading Control (Original Mix)",
+      "presencia": 0.005,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "51864410": {
+      "artist": "Kebin Van Reeken",
+      "title": "Hypnotize (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "187641315": {
+      "artist": "Sebastien Leger",
+      "title": "Quand Je Serai Seul",
+      "presencia": 0.851,
+      "peso": 0.325,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "26535182": {
+      "artist": "Khen",
+      "title": "Out Of A Dream (Original Mix)",
+      "presencia": 0.01,
+      "peso": 0.004,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "203560138": {
+      "artist": "Tim Green",
+      "title": "Battle Illusion ",
+      "presencia": 0.275,
+      "peso": 0.063,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "241869933": {
+      "artist": "Sebastien Leger",
+      "title": "Lava (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "42459205": {
+      "artist": "D-Nox, Two Of A Kind, Gai Barone",
+      "title": "Vida (DJ Zombi Remix)",
+      "presencia": 0.182,
+      "peso": 0.047,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "1940753": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Sunset Love",
+      "presencia": 0.952,
+      "peso": 0.237,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "226809369": {
+      "artist": "Sebastien Leger, Roy Rosenfeld, Lost Miracle",
+      "title": "Guarana (Extended Mix)",
+      "presencia": 0.179,
+      "peso": 0.038,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "258025028": {
+      "artist": "Florian Gasperini",
+      "title": "Third Eye Awakening (Extended Mix)",
+      "presencia": 0.014,
+      "peso": 0.008,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "140659377": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Whale Voices (Original Mix)",
+      "presencia": 0.526,
+      "peso": 0.074,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "38408410": {
+      "artist": "Different Ray",
+      "title": "Aurum (Original Mix) ",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "256389942": {
+      "artist": "Strange Malcolm",
+      "title": "Elysian (Original Mix) ",
+      "presencia": 0.887,
+      "peso": 0.371,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "64964073": {
+      "artist": "Eli Nissan",
+      "title": "Lyla (Original Mix)",
+      "presencia": 0.45,
+      "peso": 0.079,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "120528093": {
+      "artist": "Abel, Cameron Jack",
+      "title": "Sixth Sense (Original Mix)",
+      "presencia": 0.202,
+      "peso": 0.048,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "126949236": {
+      "artist": "Lee Burridge",
+      "title": "Fading Out (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "133335711": {
+      "artist": "Andy Woldman",
+      "title": "Whispers In The Sand (Extended Mix)",
+      "presencia": 0.885,
+      "peso": 0.333,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "234709728": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Distant Blips (Dowden Remix)",
+      "presencia": 0.115,
+      "peso": 0.011,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "80536228": {
+      "artist": "Greg Ochman",
+      "title": "The Silver Lily (Original Mix)",
+      "presencia": 0.045,
+      "peso": 0.011,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "27749886": {
+      "artist": "Jamie Stevens, Zankee Gulati",
+      "title": "Ruthless (Original Mix)",
+      "presencia": 0.483,
+      "peso": 0.089,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "231387448": {
+      "artist": "Kostya Outta, Liam Garcia",
+      "title": "If I Win (Extended Mix)",
+      "presencia": 0.461,
+      "peso": 0.059,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "58812138": {
+      "artist": "Cosmonaut, K Loveski",
+      "title": "Jackelele (Extended Mix)",
+      "presencia": 0.745,
+      "peso": 0.376,
+      "etiqueta": "cantado",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "70531094": {
+      "artist": "Tali Muss",
+      "title": "Interlocutor (Kebin Van Reeken Extended Remix)",
+      "presencia": 0.273,
+      "peso": 0.116,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "194339407": {
+      "artist": "Shai T & Tamir Regev",
+      "title": "The Captain",
+      "presencia": 0.122,
+      "peso": 0.016,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "173790116": {
+      "artist": "Hernan Cattaneo, Khen",
+      "title": "Rogelito (Original Mix)",
+      "presencia": 0.301,
+      "peso": 0.044,
+      "etiqueta": "algo de voz",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "22034915": {
+      "artist": "Andre Moret",
+      "title": "Beyond Us (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "52625039": {
+      "artist": "Gai Barone",
+      "title": "Fractals (Nicolas Viana Extended Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "2026-10-25, set 159 (voces.separar + voces._voz sobre el archivo de la DB)"
+    },
+    "223098104": {
+      "artist": "Kamilo Sanclemente, Andre Moret, Mariusso",
+      "title": "Atenea (HAFT Remix)",
+      "presencia": 0.125,
+      "peso": 0.023,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "100657729": {
+      "artist": "Kamilo Sanclemente",
+      "title": "I House U (Original Mix)",
+      "presencia": 0.486,
+      "peso": 0.127,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "59350179": {
+      "artist": "Kamilo Sanclemente",
+      "title": "No Regrets (Extended Mix)",
+      "presencia": 0.563,
+      "peso": 0.074,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "204428086": {
+      "artist": "Tali Muss",
+      "title": "Reward (Extended Mix)",
+      "presencia": 0.786,
+      "peso": 0.067,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "211548822": {
+      "artist": "Paul Hazendonk, Return To Saturn",
+      "title": "You Can Have It All (Peter Makto & Matthew Sona Remix)",
+      "presencia": 0.119,
+      "peso": 0.03,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "32348316": {
+      "artist": "Kasper Koman, Shai T",
+      "title": "Good People ",
+      "presencia": 0.165,
+      "peso": 0.046,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "7611765": {
+      "artist": "Praise (BR)",
+      "title": "Eclipse (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.003,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "103060278": {
+      "artist": "Solis [US]",
+      "title": "Echosphere (Hernan Cattaneo & Simply City Extended Remix)",
+      "presencia": 0.062,
+      "peso": 0.007,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "178625501": {
+      "artist": "Jou Nielsen, Paul Ikky",
+      "title": "Sundance (Kebin Van Reeken Extended Remix)",
+      "presencia": 0.092,
+      "peso": 0.01,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."
