@@ -1,0 +1,385 @@
+{
+ "num": 159,
+ "playlist": "27nYkmcm8xtBBHuIBkuq7F",
+ "temas": [
+  {
+   "spotify_id": "1ot1wAHv913SUVgXT9bMA4",
+   "artista": "Sébastien Léger",
+   "titulo": "Blazing Ice",
+   "estado": "nuevo",
+   "content_id": null,
+   "muzpa_id": 6474765,
+   "muzpa_nombre": "Sebastien Leger - Blazing Ice ",
+   "bpm": 122,
+   "key": "5A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "10:06"
+  },
+  {
+   "spotify_id": "05stHksSltQdhBwBEGynPT",
+   "artista": "Hernan Cattaneo, Khen",
+   "titulo": "Rogelito",
+   "album_id": "5gXCfjH7geLgx9Iv5cZjUn",
+   "artistas_ids": [
+    "4mpJaw5y17CIN08qqe8EfB",
+    "7M7DUxK3f7hR03EwfwldZQ"
+   ],
+   "ms": 441094,
+   "content_id": "173790116",
+   "estado": "aprobado",
+   "muzpa_id": 9081036,
+   "muzpa_nombre": "Hernan Cattaneo, Khen - Rogelito (Original Mix)",
+   "bpm": 123.0,
+   "key": "4A",
+   "genero": "Progressive",
+   "duracion": "7:21"
+  },
+  {
+   "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
+   "artista": "André Moret",
+   "titulo": "One World - Extended Mix",
+   "album_id": "6NFfYFlYiUIGlyrircmQCQ",
+   "artistas_ids": [
+    "77TawwjtLlpegPo23bblci"
+   ],
+   "ms": 402295,
+   "content_id": "130869533",
+   "estado": "aprobado",
+   "muzpa_id": 9150711,
+   "muzpa_nombre": "Andre Moret - One World (Extended Mix)",
+   "bpm": 122.0,
+   "key": "5A",
+   "genero": "Progressive",
+   "duracion": "6:42"
+  },
+  {
+   "spotify_id": "3msaLbuxxFlvh0sHExRfdM",
+   "artista": "Artic White, Jordi Ruz",
+   "titulo": "Aura - Extended Mix",
+   "album_id": "3kf5KLxKthtMhjBE6NPmcl",
+   "artistas_ids": [
+    "4vN5NYPFHPWKKturIC0mVi",
+    "1E5pcmHpGRq3epnNRbFAyC"
+   ],
+   "ms": 411147,
+   "content_id": "184188342",
+   "estado": "aprobado",
+   "muzpa_id": 8605423,
+   "muzpa_nombre": "Jordi Ruz, Artic White - Aura (Original Mix)",
+   "bpm": 122.0,
+   "key": "6A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "6:51"
+  },
+  {
+   "spotify_id": "3Cm4qOK8f943enO2ALivB1",
+   "artista": "Gorje Hewek",
+   "titulo": "Forest Song in the Morning",
+   "album_id": "6PB2bE7ks8rfJqk1WqsU9d",
+   "artistas_ids": [
+    "0HBaoUIo3fXlnWz1dc4mro"
+   ],
+   "ms": 279984,
+   "content_id": "64669607",
+   "estado": "aprobado",
+   "muzpa_id": 4915126,
+   "muzpa_nombre": "Gorje Hewek - Forest Song in the Morning",
+   "bpm": 120.0,
+   "key": "6A",
+   "genero": "House",
+   "duracion": "4:40"
+  },
+  {
+   "spotify_id": "67mzFiitjGx4Swa0fplG8E",
+   "artista": "Nicolas Viana",
+   "titulo": "Luminor",
+   "estado": "nuevo",
+   "content_id": null,
+   "muzpa_id": 8107727,
+   "muzpa_nombre": "Nicolas Viana - Luminor (Original Mix)",
+   "bpm": 122,
+   "key": "6A",
+   "genero": "Progressive",
+   "duracion": "7:36"
+  },
+  {
+   "spotify_id": "3PNeoQuGLfAtPcamhqukdk",
+   "artista": "Amand, Capoon, Khen",
+   "titulo": "Ouverture - Khen Remix",
+   "album_id": "1rQyfii7gMMKVRnKfxBlgl",
+   "artistas_ids": [
+    "0UUea6njrQr7jcvTmER2pw",
+    "6aO0WPJPV318xBCEVSJ5td",
+    "7M7DUxK3f7hR03EwfwldZQ"
+   ],
+   "ms": 455150,
+   "content_id": "56831615",
+   "estado": "aprobado",
+   "muzpa_id": 8395038,
+   "muzpa_nombre": "Capoon, Amand - Ouverture (Khen Remix)",
+   "bpm": 123.0,
+   "key": "7A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "7:35"
+  },
+  {
+   "spotify_id": "51QiJQYLMEvMtfiQzVLpkE",
+   "artista": "Nora En Pure",
+   "titulo": "Spring Embers - Extended Mix",
+   "album_id": "13GMW4eLsmDiDr0BJihOxU",
+   "artistas_ids": [
+    "24DO0PijjITGIEWsO8XaPs"
+   ],
+   "ms": 364057,
+   "content_id": "245930317",
+   "estado": "aprobado",
+   "muzpa_id": 6444756,
+   "muzpa_nombre": "Nora En Pure - Spring Embers (Extended Mix)",
+   "bpm": 122.0,
+   "key": "8A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "6:04"
+  },
+  {
+   "spotify_id": "4iugqvphVlh9P6BNBMoN2p",
+   "artista": "Nicolas Viana",
+   "titulo": "Coral",
+   "album_id": "7ygp6f71IpoPI3i4vFcDuc",
+   "artistas_ids": [
+    "2pkVAPXEde5YytNqZGGyWb"
+   ],
+   "ms": 243934,
+   "content_id": "196838047",
+   "estado": "aprobado",
+   "muzpa_id": 8260312,
+   "muzpa_nombre": "Nicolas Viana - Coral (Extended Mix)",
+   "bpm": 122.0,
+   "key": "8A",
+   "genero": "Progressive",
+   "duracion": "6:57"
+  },
+  {
+   "spotify_id": "4AR0To4HJSTLWWtFPWXPux",
+   "artista": "Gorje Hewek, Dulus",
+   "titulo": "Earth",
+   "album_id": "2eTrUSmul9A6boA39WQlBH",
+   "artistas_ids": [
+    "0HBaoUIo3fXlnWz1dc4mro",
+    "6HqASwlS6PmHBYU3avHe15"
+   ],
+   "ms": 346224,
+   "content_id": "2009006",
+   "estado": "aprobado",
+   "muzpa_id": 6320705,
+   "muzpa_nombre": "Gorje Hewek, Dulus - Earth (Original Mix)",
+   "bpm": 123.0,
+   "key": "9A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "5:46"
+  },
+  {
+   "spotify_id": "1aMx7DSnmskWd55cIYcca5",
+   "artista": "Khen",
+   "titulo": "Yellow",
+   "album_id": "2Zgan56SVIfs5spqVImR19",
+   "artistas_ids": [
+    "7M7DUxK3f7hR03EwfwldZQ"
+   ],
+   "ms": 227292,
+   "content_id": "125153100",
+   "estado": "sin_escuchar",
+   "muzpa_id": 8011023,
+   "muzpa_nombre": "Khen - Yellow (Extended Mix)",
+   "bpm": 122.0,
+   "key": "9B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "8:26"
+  },
+  {
+   "spotify_id": "3vASLiep3SIW2vd0YZOM17",
+   "artista": "Nicolas Viana",
+   "titulo": "Winged - Extended Mix",
+   "album_id": "1DTRLpMIsmKZsnAu5t27EF",
+   "artistas_ids": [
+    "2pkVAPXEde5YytNqZGGyWb"
+   ],
+   "ms": 480000,
+   "content_id": "237240379",
+   "estado": "aprobado",
+   "muzpa_id": 7944195,
+   "muzpa_nombre": "Nicolas Viana - Winged (Original Mix)",
+   "bpm": 121.0,
+   "key": "10B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "8:00"
+  },
+  {
+   "spotify_id": "3eDFlABBtjdOaIxlMYWebB",
+   "artista": "Shai T, Tamir Regev",
+   "titulo": "The Captain",
+   "album_id": "38tn6K79IqptlxYpV7CW8Q",
+   "artistas_ids": [
+    "3peEllG3urQKzvyoZf4UgN",
+    "0lIHXlaWHdfApCcSdz2mNk"
+   ],
+   "ms": 425480,
+   "content_id": "194339407",
+   "estado": "sin_escuchar",
+   "muzpa_id": 6413878,
+   "muzpa_nombre": "Shai T & Tamir Regev - The Captain",
+   "bpm": 122.0,
+   "key": "9B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "7:06"
+  },
+  {
+   "spotify_id": "6zIXKdIG7aHSg6sbgALaS2",
+   "artista": "Khen",
+   "titulo": "My Pure Soul",
+   "album_id": "2AUDTriJVz2RDyKSweOyem",
+   "artistas_ids": [
+    "7M7DUxK3f7hR03EwfwldZQ"
+   ],
+   "ms": 458517,
+   "content_id": "233850863",
+   "estado": "sin_escuchar",
+   "muzpa_id": 7893149,
+   "muzpa_nombre": "Khen - My Pure Soul (Original Mix)",
+   "bpm": 122.0,
+   "key": "9A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "7:39"
+  },
+  {
+   "spotify_id": "3YBIGUYAa1WlNzosBjMmp0",
+   "artista": "Kamilo Sanclemente, Giovanny Aparicio",
+   "titulo": "Redemtion",
+   "album_id": "2D0pXfOqVKQqUkWCK5EUPh",
+   "artistas_ids": [
+    "2AYLgq9P1arichVXbNbjVy",
+    "4HTvTnFhpoX49HQueCY5x1"
+   ],
+   "ms": 572027,
+   "content_id": "175484827",
+   "estado": "sin_escuchar",
+   "muzpa_id": 7085636,
+   "muzpa_nombre": "Kamilo Sanclemente & Giovanny Aparicio - Redemtion",
+   "bpm": 121.0,
+   "key": "8A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "9:32"
+  },
+  {
+   "spotify_id": "7en2KrT3Kxyx0O0qfvgrYN",
+   "artista": "André Moret",
+   "titulo": "Beyond Us - Extended Mix",
+   "album_id": "6NFfYFlYiUIGlyrircmQCQ",
+   "artistas_ids": [
+    "77TawwjtLlpegPo23bblci"
+   ],
+   "ms": 409672,
+   "content_id": "22034915",
+   "estado": "sin_escuchar",
+   "muzpa_id": 9150710,
+   "muzpa_nombre": "Andre Moret - Beyond Us (Extended Mix)",
+   "bpm": 122.0,
+   "key": "7A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "6:50"
+  },
+  {
+   "spotify_id": "0Ka3riNQtwZWy7KnZSglop",
+   "artista": "Sébastien Léger",
+   "titulo": "Lava",
+   "album_id": "1VElJF1Yn3sJJJIgosyk2z",
+   "artistas_ids": [
+    "17j0kFtqn9Fss3D916jSlp"
+   ],
+   "ms": 504590,
+   "content_id": "241869933",
+   "estado": "sin_escuchar",
+   "muzpa_id": 5277896,
+   "muzpa_nombre": "Sebastien Leger - Lava (Original Mix)",
+   "bpm": 122.0,
+   "key": "7B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "8:25"
+  }
+ ],
+ "cambiados": [
+  {
+   "spotify_id": null,
+   "content_id": "239831899",
+   "artista": "KAZKO",
+   "titulo": "Fading Control (Original Mix)",
+   "textual": "(vuelta anterior, ver _escucha del config)"
+  },
+  {
+   "spotify_id": null,
+   "content_id": "14636373",
+   "artista": "Eli Nissan",
+   "titulo": "Naked ",
+   "textual": "(vuelta anterior, ver _escucha del config)"
+  },
+  {
+   "spotify_id": null,
+   "content_id": "223098104",
+   "artista": "Kamilo Sanclemente, Andre Moret, Mariusso",
+   "titulo": "Atenea (HAFT Remix)",
+   "textual": "(vuelta anterior, ver _escucha del config)"
+  },
+  {
+   "spotify_id": null,
+   "content_id": "156983367",
+   "artista": "Kasper Koman",
+   "titulo": "The Observer",
+   "textual": "(vuelta anterior, ver _escucha del config)"
+  },
+  {
+   "spotify_id": null,
+   "content_id": "51864410",
+   "artista": "Kebin Van Reeken",
+   "titulo": "Hypnotize (Extended Mix)",
+   "textual": "(vuelta anterior, ver _escucha del config)"
+  },
+  {
+   "spotify_id": "4n8RVjWeI9AsJwo3AMMwK1",
+   "artista": "Paul Hazendonk, Return To Saturn, Peter Makto, Matthew Sona",
+   "titulo": "You Can Have It All - Peter Makto & Matthew Sona Remix",
+   "content_id": "211548822",
+   "textual": "Eclipse y you can have it los dos cambiados vovelos a cambiar"
+  },
+  {
+   "spotify_id": "5189IBInZEq2EXmpnnD6Ex",
+   "artista": "Praise (BR)",
+   "titulo": "Eclipse - Extended Mix",
+   "content_id": "7611765",
+   "textual": "Eclipse y you can have it los dos cambiados vovelos a cambiar"
+  }
+ ],
+ "rondas": [
+  {
+   "textual": "Coral está bien aprobado / Earth aprobado",
+   "aprueba": [
+    "#9: Coral",
+    "#10: Earth"
+   ]
+  },
+  {
+   "textual": "Eclipse y you can have it los dos cambiados vovelos a cambiar",
+   "cambios": [
+    "#1: Paul Hazendonk, Return To Saturn, Peter Makto, Matthew Sona - You Can Have It All - Peter Makto & Matthew Sona Remix -> Sébastien Léger - Blazing Ice",
+    "#6: Praise (BR) - Eclipse - Extended Mix -> Nicolas Viana - Luminor"
+   ],
+   "nota": "cargado sin API de Spotify (cuota agotada); ids confirmados con el conector de Spotify de claude.ai"
+  },
+  {
+   "textual": "Windget aprobado / Windged",
+   "aprueba": [
+    "#12: Winged - Extended Mix"
+   ]
+  }
+ ],
+ "_que_es": "Borrador de la lista mientras se itera en Spotify (spotify_borrador.py). Al cerrarla: lo que no tiene content_id se baja de Muzpa e importa.",
+ "pendiente_publicar": true
+}
