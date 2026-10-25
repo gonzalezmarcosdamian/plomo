@@ -80,12 +80,12 @@
   },
   {
    "n": 9,
-   "id": 142399,
-   "desde": 0.5,
+   "archivo": "postproduction/stock/estirados/s04_009_216128.mp4",
+   "desde": 0.0,
    "paso": 1,
-   "encuadre": "scale=2560:1440:flags=lanczos",
-   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 1/1':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.495 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
-   "nota": "Pastos de duna en contraluz contra el cielo naranja del alba. Toma quieta. Grado: un toque de calor, el cielo tiraba a verde. Es de 25 fps y va con paso 1: corre 1.2 veces mas rapido que la realidad. Lee 47.0 s de clip."
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.43 0.96/0.95 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "216128 (4K 29.97): el cielo de la manana prendido de rosa y naranja sobre el mar abierto, nubes bajas, el horizonte limpio. Recorte 3640x2048 desde (200,56): saca dos manchas del agua de la izquierda. RIFE x1.33. Reemplaza a 142399, que tenia tres o cuatro barcos en el horizonte."
   },
   {
    "n": 10,
@@ -294,18 +294,18 @@
    "id": 245375,
    "desde": 0.3,
    "paso": 1,
-   "encuadre": "scale=2560:1440:flags=lanczos",
+   "encuadre": "crop=2880:1620:960:0,scale=2560:1440:flags=lanczos",
    "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
-   "nota": "Break: el pasto alto de la duna mecido por el viento, luz dorada. Toma quieta. Es de 60 fps y va con paso 1, cuadro por cuadro: camara lenta x2 con cuadros reales. Lee 35.3 s de clip."
+   "nota": "Break: el pasto alto de la duna mecido por el viento, luz dorada. Toma quieta. Es de 60 fps y va con paso 1, cuadro por cuadro: camara lenta x2 con cuadros reales. Lee 35.3 s de clip. Recorte 2880x1620 desde x=960 (sube 1.125x): entre el 31.4 y el 35.6 s de la toma (19:58.6-20:06.9 del video) una persona con capucha camina por arriba a la izquierda y nunca pasa de x~750 del 4K; el recorte la deja afuera."
   },
   {
    "n": 33,
    "id": 156263,
    "desde": 0.2,
    "paso": 2,
-   "encuadre": "scale=2560:1440:flags=lanczos",
+   "encuadre": "crop=2134:1200:853:0,scale=2560:1440:flags=lanczos,unsharp=5:5:0.3:5:5:0",
    "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.95276:rg=0.04291:rb=0.00433:gr=0.01276:gg=0.98291:gb=0.00433:br=0.01276:bg=0.04291:bb=0.94433",
-   "nota": "Drop: dron cenital sobre la rompiente y la arena dorada. 60 fps, paso 2 (velocidad real)."
+   "nota": "Drop: dron cenital sobre la rompiente. Mismo clip 156263 (60 fps, paso 2, velocidad real), recortado a la franja de arriba (2134x1200 desde x=853, sube 1.2x): queda solo agua y espuma. Abajo, en la arena, caminaba gente desde el 20:13 (un caminante con su sombra, sombrero blanco, remera azul); el recorte los deja afuera."
   },
   {
    "n": 34,
@@ -390,12 +390,12 @@
   },
   {
    "n": 43,
-   "id": 382099,
-   "desde": 0.3,
+   "archivo": "postproduction/stock/estirados/s04_043_70794.mp4",
+   "desde": 0.0,
    "paso": 1,
-   "encuadre": "scale=2560:1440:flags=lanczos,unsharp=5:5:0.35:5:5:0",
-   "grado": "curves=master='0/0 0.07/0.055 0.5/0.5 1/1':r='0/0 1/1':b='0/0 0.5/0.49 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
-   "nota": "Orilla de canto rodado y una roca grande, el agua que entra y sale. Toma quieta. 1080p. Es de 60 fps y va con paso 1, cuadro por cuadro: camara lenta x2 con cuadros reales. Lee 19.6 s de clip."
+   "encuadre": "null",
+   "grado": "curves=master='0/0 0.06/0.055 0.5/0.5 0.96/0.95 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.96063:rg=0.03576:rb=0.00361:gr=0.01063:gg=0.98576:gb=0.00361:br=0.01063:bg=0.03576:bb=0.95361",
+   "nota": "70794 (4K 29.97): olas turquesa que rompen contra rocas de la costa, a pleno sol. Mirado a 1:1 el horizonte: limpio. RIFE x1.07. Reemplaza a 382099, que tenia una forma rojiza junto a la roca."
   },
   {
    "n": 44,

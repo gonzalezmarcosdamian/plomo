@@ -41,12 +41,12 @@
   },
   {
    "n": 109,
-   "archivo": "postproduction/stock/estirados/s04_109_258980.mp4",
+   "archivo": "postproduction/stock/estirados/s04_109_324105.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=interp=pchip:master='0/0 0.3/0.28 0.5/0.495 0.96/0.955 1/0.985':g='0/0 0.5/0.495 1/1',colorchannelmixer=rr=0.94488:rg=0.05006:rb=0.00505:gr=0.01488:gg=0.98006:gb=0.00505:br=0.01488:bg=0.05006:bb=0.93505",
-   "nota": "BREAKDOWN de Kalira. 258980 (4K 25): el sol baja entre la bruma hasta tocar la cresta de unas lomas con bosque, y la niebla corre por el valle. Timelapse, 0.3-29.9 s con RIFE x2.875 (la niebla queda lenta); termina con el sol en la cresta, antes de que la toma se vaya al azul. Recorte 3072x1728 desde (768,0): con el contraste estirado aparecen unas lineas claras en la loma de la izquierda (x 180-750 del 4K) que pueden ser una huella; quedan afuera. Venia naranja neon: saturacion a 0.93, el verde de los medios apenas abajo para que no se vaya al amarillo, y el blanco con hombro. Bajarla mas la lavaba a beige."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.43 0.96/0.9 1/1':r='0/0 1/1':b='0/0 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
+   "nota": "BREAKDOWN de Kalira. 324105 (4K 59.94): un mar de nubes que corre lento frente a una cadena de montanas, con el sol alto arriba del cuadro. Mirado a 1:1 donde el detector marco 'airplane' (x~1440 y~480-720, 11-12 s): son nubes. RIFE x1.8 sobre 60 fps (camara lenta). Reemplaza a 258980, donde el sol bajaba hasta tocar la cresta."
   },
   {
    "n": 110,
@@ -68,12 +68,12 @@
   },
   {
    "n": 112,
-   "archivo": "postproduction/stock/estirados/s04_112_93611.mp4",
-   "desde": 0.0,
+   "archivo": "postproduction/stock/estirados/s04_112_95113.mp4",
+   "desde": 0.2,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=interp=pchip:master='0/0 0.03/0.04 0.37/0.375 0.86/0.9 1/1',colorchannelmixer=rr=0.93701:rg=0.05722:rb=0.00578:gr=0.01701:gg=0.97722:gb=0.00578:br=0.01701:bg=0.05722:bb=0.92578",
-   "nota": "93611 (4K 29.97): el dron sale de una loma de pinos en sombra sobre un mar de nubes, con el sol en el horizonte que las enciende de rosa; lleva a las cumbres sobre el mar de nubes del 113. 0.2-33.3 s con RIFE x1.67: desde el 35 s asoma una torre de alta tension en la niebla, abajo a la derecha (vista con el contraste estirado), y en el 41.2 la toma corta. Revisado el final del estirado con el contraste estirado: sin la torre. Sombras apenas levantadas (venian en 0.01) y saturacion a 0.92."
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.41 0.96/0.89 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "95113 (4K 29.97): la aguja de roca del Segla sobre un mar de nubes que se derrama entre cumbres nevadas, de dia, cielo azul. Recorte 3072x1728 desde arriba a la izquierda (sube 1.2x): deja afuera una manchita oscura quieta en el fiordo de la derecha (x~3155 y~1450 del 4K) que podia ser un bote. RIFE x3.2. Reemplaza a 93611, que tenia el sol en el horizonte."
   }
  ]
 }

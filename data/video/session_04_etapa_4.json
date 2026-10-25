@@ -230,12 +230,12 @@
   },
   {
    "n": 108,
-   "archivo": "postproduction/stock/estirados/s04_108_72900.mp4",
+   "archivo": "postproduction/stock/estirados/s04_108_168787.mp4",
    "desde": 0.0,
    "paso": 1,
    "encuadre": "null",
-   "grado": "curves=master='0/0 0.137/0.09 0.88/0.9 1/1':r='0/0 0.5/0.518 1/1':b='0/0 0.5/0.482 1/1',colorchannelmixer=rr=0.90551:rg=0.08582:rb=0.00866:gr=0.02551:gg=0.96582:gb=0.00866:br=0.02551:bg=0.08582:bb=0.88866",
-   "nota": "el sol bajo sobre una loma nevada y cordones de montanas; x1.32 con RIFE; menos azul y menos saturado"
+   "grado": "curves=master='0/0 0.06/0.046 0.5/0.61 0.96/0.962 1/1':r='0/0 1/1':b='0/0 1/1'",
+   "nota": "168787 (4K 29.97): el macizo nevado del Durmitor sobre un bosque de pinos, con cumulos; el sol alto, fuera de cuadro. Dron que avanza despacio; abajo a la derecha, al final, asoma un lago en sombra. Usa 0.2-33.2 s. RIFE x1.2. Reemplaza a 72900, que tenia el sol apoyado en la cresta nevada."
   }
  ]
 }
