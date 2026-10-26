@@ -1,0 +1,12 @@
+{
+  "_que_es": "Lo que va en la carpeta 'Sessions' de Rekordbox (Sets Armados / Sessions), que arma scripts/armar_sessions.py. Cada lista es una COPIA del set: el set original queda donde esta. Las Sessions 01-04 coinciden tema por tema y en orden con sus videos (data/video/session_NN_capitulos.json), verificado el 2026-10-26.",
+  "carpeta": "Sessions",
+  "padre": "Sets Armados",
+  "listas": [
+    {"etiqueta": "Session 01", "set": 148, "youtube": "data/youtube/session_01.json"},
+    {"etiqueta": "Session 02", "set": 150, "youtube": "data/youtube/session_02.json"},
+    {"etiqueta": "Session 03", "set": 153, "youtube": "data/youtube/session_03.json"},
+    {"etiqueta": "Session 04", "set": 157, "youtube": "data/youtube/session_04.json"},
+    {"etiqueta": "Sunset", "set": 159, "textual": "este 159 va a ser sunset me gustó para eso (el DJ, 2026-10-26)"}
+  ]
+}
