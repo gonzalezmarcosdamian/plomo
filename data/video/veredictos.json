@@ -137,10 +137,10 @@
   {
    "fecha": "2026-10-26",
    "pieza": "flyer de la Session 04 (plomo_historia_session_04_portada/tracklist.png)",
-   "look": "foto real suya (IMG_2209 a 224 s) abajo, sin efectos; arriba oscuro con Ya esta en YouTube / SESSION 04 / MARCOS DAMIAN, como las otras",
-   "veredicto": "pendiente",
-   "textual": "-",
-   "que_se_aprende": "-"
+   "look": "foto real suya sin efectos, con el brazo arriba del drop (IMG_2209 a 372 s), desde y=420, oscurecida 0.5 detras del texto como el tracklist; Ya esta en YouTube / SESSION 04 / MARCOS DAMIAN",
+   "veredicto": "si",
+   "textual": "la portada poneme mas de fondo y la parte donde levanto el brazo, simi la de tracklist / me gusto",
+   "que_se_aprende": "el flyer con su imagen va simple: foto real con un gesto (el brazo arriba), grande y oscurecida detras del texto de la serie. historia_session.py --toma ... --t 372 --foto-desde 420 --oscurecer 0.5"
   }
  ]
 }
