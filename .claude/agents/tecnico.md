@@ -63,6 +63,10 @@ mano. El protocolo de recuperacion es fresh library mas restore por FolderPath.
   Manager seguidos: seguia con el nombre viejo y con Fading Out. Funciono exportar esa lista a
   mano (clic derecho > Export Playlist > D:USB), pero quedo duplicada en el pen. La causa no esta
   confirmada; la pista es el Timestamp del NODE en masterPlaylists6.xml.
+- **El pen guarda dos bibliotecas, Device Library y OneLibrary**, y un duplicado se borra en las
+  dos: el 2026-10-26 borrar en una no lo saco de la otra. Export Folder y Export Playlist pueden
+  dejar una copia en la RAIZ del pen (paso con Sets Armados y con el 157). Procedimiento y verificacion (`scripts/read_pen_playlists.py`, con Rekordbox
+  cerrado): docs/ARCHITECTURE.md -> "El pen".
 - **`build_set.py NNN --renombrar`** le pone a la playlist el nombre de la receta. Sin el flag no
   la renombra: en 14 de 120 recetas el nombre bueno es el de Rekordbox.
 

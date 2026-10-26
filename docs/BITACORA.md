@@ -9,6 +9,37 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-26 — el pen igual que la PC: Sessions en la raiz y sin duplicados
+
+"Hace todo y documenta." El pen tenia dos copias de mas en la raiz, en las DOS
+bibliotecas que guarda (Device Library y OneLibrary): una "Sets Armados" vieja, con
+Sessions adentro, que dejo mi Export Folder de la mañana, y un "157. Session 04" suelto
+de un Export Playlist anterior. Las borre en Devices -> D:USB, primero en la Device
+Library y despues en la OneLibrary: borrar en una no las saco de la otra, aunque el
+cartel diga "se borra de todos los dispositivos sincronizados". La base de la PC no
+cambio (157 y Session 04 seguian vivas despues de cada borrado).
+
+Despues, click derecho en Sessions (la de la raiz) -> Export Folder -> D:USB: solo
+salio el aviso "DJ equipment", sin copiar nada porque los temas ya estaban. Rekordbox
+escribio export.pdb al cerrarse (10:18) y el pen quedo, leido de ese archivo con
+`scripts/read_pen_playlists.py`: Sessions (01 16, 02 18, 03 17, 04 16, Sunset 17,
+igual que en la PC), Pro DJ Library con un solo Sets Armados y un solo 157, MI SONIDO.
+master.db: quick_check ok, 273 listas. Backup del pen antes de tocarlo en
+`outputs/pen_PIONEER_rekordbox_20261026_antes_limpiar_sessions`.
+
+`read_pen_playlists.py` y `check_pen.py` estaban rotos desde siempre: el primero
+importaba un `pyrekordbox.pdb` que no existe y el segundo abria la OneLibrary cifrada
+como SQLite. `read_pen_playlists.py` ahora es el lector de DeviceSQL que vivia en
+scratchpads, con tests; `check_pen.py`, que era un one-off para buscar el set Pocho,
+paso a `scripts/archive/`. El procedimiento del pen quedo en ARCHITECTURE -> "El pen".
+
+Queda una diferencia que no es de hoy: "PEN — Todo" tiene 1654 temas en el pen y 1660
+en la PC. Los seis que faltan (FILTH, Worlds Apart, No Regrets de Emi Galvan, Hometown,
+Mount Zion, Stereodrama) estan en el pen, en otras listas y en All Tracks; falta que la
+lista los nombre, porque el Sync Manager no actualiza una lista que ya existe en el pen.
+
+---
+
 ## 2026-10-26 — el arbol de Rekordbox ordenado, y Sessions en la raiz
 
 "Mejorame el orden de las carpetas ademas haceme una carpeta sessions, en mis playlist,

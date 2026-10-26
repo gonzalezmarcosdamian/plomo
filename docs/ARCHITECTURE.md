@@ -92,7 +92,32 @@ Rekordbox tiene que estar CERRADO en los pasos 2 y 4.
 5. python scripts/build_set.py <num> --dry   # Revisar antes de escribir
 6. python scripts/build_set.py <num>         # Escribe la playlist en la DB
 7. python scripts/audit_sets.py <num>        # Verificar arco y transiciones
+8. python scripts/ordenar_playlists.py       # El set nuevo a su lugar (los nuevos arriba)
+9. python scripts/armar_sessions.py          # Solo si el set es una Session (data/sessions.json)
 ```
+
+### El pen
+
+El pen tiene que verse igual que la PC: en la raiz **Sessions, Pro DJ Library y
+MI SONIDO**. Guarda dos bibliotecas con el mismo arbol: la Device Library
+(`export.pdb`, CDJ viejos) y la OneLibrary (`exportLibrary.db`, cifrada, CDJ-3000X y
+compañia). Rekordbox escribe las dos recien al cerrarse.
+
+- **Pro DJ Library y MI SONIDO** los lleva el Sync Manager, que Rekordbox 7 abre solo
+  al enchufar el pen; el DJ aprieta SYNC. Crea en su carpeta las listas que faltan,
+  pero NO actualiza una que ya esta en el pen: para cambiar un set ya sincronizado,
+  borrar esa lista del pen y sincronizar de nuevo.
+- **Sessions** no esta en el Sync Manager: va con click derecho en Sessions ->
+  Export Folder -> D:USB, que la crea en la raiz del pen. Para sumar una Session,
+  borrar Sessions del pen y exportarla de nuevo.
+- **Export Folder / Export Playlist pueden dejar una copia en la RAIZ del pen.** Paso
+  con Sets Armados (Export Folder, 2026-10-26) y con el 157 (Export Playlist,
+  2026-10-20); con PEN — Todo no. No exportar a mano lo que ya lleva el Sync Manager.
+- **Borrar en el pen**: Devices -> D:USB -> cada biblioteca -> click derecho -> Delete.
+  Hay que hacerlo en la Device Library Y en la OneLibrary: borrar en una no borra en la
+  otra.
+- **Verificar** con Rekordbox cerrado: `python scripts/read_pen_playlists.py` muestra el
+  arbol del pen con los temas de cada lista (`... Session Sunset` lista los temas).
 
 ---
 
