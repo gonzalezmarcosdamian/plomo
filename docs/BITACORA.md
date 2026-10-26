@@ -9,6 +9,34 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-26 — la Session 05 arranca con el 159 y se corta por los tokens
+
+"Planifica una session con este set, que videos harias? revisa que esta viral en youtube
+antes de ofrecer ideas." Con vidIQ (quedaron 20 créditos hasta el 5/11) se encontraron dos
+formatos que rinden en canales chicos:
+- un DJ tocando en un lugar real al atardecer, como "Sunset Beach Mix in Costa Rica" (655 mil
+  vistas en un canal de 5.900 suscriptores);
+- "música para trabajar" sin cara, como "deep house music for the 1% building something"
+  (652 mil vistas con 1.900 suscriptores).
+
+El DJ: "no voy a filmar". Se fue por paisajes como la 04, pero contando "una tarde": del bosque
+a la última luz, sin noche, con planos de 32 compases.
+
+Lo hecho:
+- `mezclar.py 159`: 95:38, con el cambio 10->11 en REVISAR (3,3 dB de dos bajos).
+- `naturaleza.py` lee la receta de cada Session de `data/video/<nombre>_recorrido.json`.
+- Receta de la 05: cinco etapas y 79 planos. La puesta pasó de The Captain a Redemtion, porque
+  con 95 minutos quedaban 27 de luz que se va, en un set donde el DJ sacó lo oscuro.
+- El editor juntó 20 candidatos e hizo la hoja v1. El revisor la BLOQUEÓ: estela de avión en
+  116206, tres puestas en la etapa 4 y 4 clips para los 10 planos de la etapa 5.
+- `stock_pixabay.py` ya no se cae con una búsqueda vacía.
+
+Ahí el DJ cortó: "corta el video aca, estas comiendo todos los tokens". Una vuelta del editor
+cuesta unos 380 mil tokens y la del revisor unos 230 mil. La semana que viene arranca por la
+eficiencia (BACKLOG, sección 0) y después se retoma la 05 (sección 0b).
+
+---
+
 ## 2026-10-26 — el pen igual que la PC: Sessions en la raiz y sin duplicados
 
 "Hace todo y documenta." El pen tenia dos copias de mas en la raiz, en las DOS

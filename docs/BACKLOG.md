@@ -15,6 +15,39 @@ Fuentes de esta tanda (2026-10-22):
 
 ---
 
+## 0. PRIMERO, la semana del 2026-11-02: eficiencia
+
+"Corta el video aca, estas comiendo todos los tokens" (el DJ, 2026-10-26). Antes de seguir
+con la Session 05 se baja el costo de trabajar con video. Lo medido ese día:
+
+- el editor, en una vuelta de la hoja de recorrido: unos 380 mil tokens y 368 herramientas,
+  con 66 clips bajados y mirados cuadro por cuadro;
+- el revisor, sobre esa hoja: unos 230 mil tokens. Bloqueó por una estela de avión y por tres
+  puestas de sol.
+
+| # | Prio | Qué | Por qué | Quién |
+|---|---|---|---|---|
+| 0.1 | A | **Avisar el costo antes de lanzar un agente de video** y esperar el OK. | El DJ no lo veía venir. Ya está en la memoria (`feedback_tokens_video`). | yo |
+| 0.2 | A | **Que las revisiones a 1:1 las haga un script, no el agente mirando.** Estelas y aviones (líneas rectas finas en el cielo), sol tocando el horizonte (el punto más brillante contra la línea), gente y construcciones. El agente mira solo lo que el script marca. | Casi todo el gasto es mirar cuadros. El revisor encontró a 1:1 una estela que el editor no vio. | tecnico + editor |
+| 0.3 | A | **Encargos chicos y con tope**: elegir con hojas de miniaturas, bajar y mirar a 1:1 solo los 4 que van a la hoja, una vuelta por encargo. | 46 de los 66 clips bajados se descartaron. | yo |
+| 0.4 | B | **Modelo por tarea**: buscar y bajar clips no necesita el modelo más caro (el editor corre en opus). El criterio sí. | Separar la tarea mecánica del juicio. | yo |
+| 0.5 | B | **Imágenes más chicas para mirar**: las hojas de 3000 px se leen enteras; recortar por etapa o achicar. | Cada lectura de imagen grande pesa. | editor |
+
+## 0b. La Session 05 (el 159 en paisajes, "una tarde"): parada, se retoma después de 0
+
+| # | Prio | Qué | Estado |
+|---|---|---|---|
+| 0b.1 | A | **Etapa 4, rearmarla**: planos 56-66 con el sol bajo que NO toca el horizonte (169565 sirve), una sola puesta en el plano 67 (178710, la única donde el sol entra de verdad), 68-69 sin sol a la vista (18503). Sacar 116206 (estela de avión). | lo dijo el revisor el 26/10, sin hacer |
+| 0b.2 | A | **Etapa 5: faltan clips.** Hay 4 para 10 planos, y el final tira a oscuro. Buscar la última luz clara: cielos pastel, agua quieta que los refleja. | sin hacer |
+| 0b.3 | B | Cambiar 221999 (se ve procesada) y revisar 230409 (la niebla puede leerse como mañana). | sin hacer |
+| 0b.4 | A | **Disco para el render**: la 04 ocupó 13,2 GB terminada y casi el doble mientras se armaba. Hay 21,9 GB libres. Decide el DJ qué se libera: los .mov de las Sessions ya publicadas (31 GB en `postproduction/video`) o los clips estirados de la 04 (13 GB). | decide el DJ |
+| 0b.5 | B | **Escuchar el 53:40 de la mezcla** (Earth → Renascence): el control de dos bajos dio 3,3 dB contra un límite de 3. | el DJ, antes de publicar |
+
+Todo lo hecho está en la BITACORA del 2026-10-26. La hoja v1, bloqueada, está en
+`C:\Users\gonza\Pictures\plomo_session_05_recorrido.jpg`.
+
+---
+
 ## 1. El 158 (b2b Grey Area): decide el DJ
 
 | # | Prio | Qué | Evidencia | Quién |
