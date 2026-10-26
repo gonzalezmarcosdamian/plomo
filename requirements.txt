@@ -20,3 +20,4 @@ pyloudnorm>=0.1       # pulir_master.py: LUFS
 soundfile>=0.12
 google-api-python-client>=2.100   # youtube_publicar.py
 google-auth-oauthlib>=1.2         # youtube_auth.py
+httpx>=0.28                       # stock_pixabay.py

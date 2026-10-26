@@ -100,10 +100,14 @@ def buscar(busquedas: list[str]) -> None:
             items = [resumen(h, q) for h in r.json()["hits"]]
             for it in items:
                 cand.setdefault(str(it["id"]), it)
-            hoja(cli, items, DEST / f"hoja_{q.replace(' ', '_')}.jpg")
+            # una busqueda vacia ("heathland", 2026-10-26) no lleva hoja: PIL no crea un lienzo de
+            # alto 0 y el error cortaba la llamada perdiendo lo ya buscado. Por eso tambien se
+            # guarda despues de cada busqueda y no solo al final.
+            if items:
+                hoja(cli, items, DEST / f"hoja_{q.replace(' ', '_')}.jpg")
+            CANDIDATOS.write_text(json.dumps(cand, ensure_ascii=False, indent=1), encoding="utf-8")
             print(f"{q!r}: {len(items)} clips")
             time.sleep(PAUSA_S)
-    CANDIDATOS.write_text(json.dumps(cand, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(cand)} candidatos -> {CANDIDATOS}")
 
 
