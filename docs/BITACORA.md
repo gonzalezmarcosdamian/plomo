@@ -31,6 +31,41 @@ por escucha, de a uno ("cambialo", "aprobado", "hasta ahi los demas bien"):
 
 ---
 
+## 2026-10-24 al 26 — Session 04 de paisajes publicada, después de cinco revisiones
+
+https://youtu.be/GNs71yWyabY, publica desde el 26/10 a las 2:09, HD, sin contenido con licencia.
+Es la destacada del canal y está en la web con las otras tres. La privada de stock (z-GGaH4TQcA)
+se borró: "acordate de sacar el privado de youtube y reemplazarlo por este".
+
+**El video.** 96:10 del 157, del mar a las estrellas, con 163 planos de naturaleza:
+- seis etapas que siguen la luz de un día, desde el amanecer en el mar hasta la vía láctea;
+- un plano cada 16 compases y fundidos de 4 compases;
+- solo el nombre de los temas sobre la imagen;
+- la miniatura es la vía láctea sobre agujas de roca (plano 159).
+Lo armó `naturaleza.py`, con los planos elegidos por editores, como lo había pedido el DJ: "si así
+hace la session 4 y publicala".
+
+**Cinco revisiones.** El revisor bloqueó cuatro veces:
+1. gente en la playa, barcos, un camino de ripio, y una luz que anochecía y volvía al día;
+2. después de reordenar la etapa 5 entera: una ciudad en el valle, una antena, aviones, lunas de
+   más y otra vuelta a la tarde;
+3. luces de pueblo y una estela en la noche, un avión, un refugio en el Cervino;
+4. un segundo avión en el plano 111.
+
+El DJ pidió corregir también lo que no bloqueaba ("si corregí"). Cambiaron 43, 52, 5 y 1 planos.
+
+**Lo que costó y lo que quedó.** Tres subidas en paralelo se cortaron a la mitad y hubo que borrar
+sus videos rotos del canal. Un render se cayó a las dos horas por dos filtros mal escritos. Las
+lecciones quedaron en APRENDIZAJES, y las herramientas en el proyecto:
+- `naturaleza.py validar`, `partir` y una unión que verifica el audio;
+- `estirar_mixto.py`;
+- las reglas de paisajes en las definiciones del editor y del revisor.
+
+Para liberar disco se borraron los tramos de las Sessions 01 a 03 y el video de stock de la 04.
+Los finales de la 01 a la 03 siguen en disco.
+
+---
+
 ## 2026-10-22 — sale Un Mundo En Paz, research del 158 y backlog
 
 "nu mondo en paz es malisimo, sacalo": vetado con esas palabras, solo la Extended Mix. El 158

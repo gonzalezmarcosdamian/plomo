@@ -28,6 +28,8 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(RAIZ / "src"))
+# la salida de vercel trae caracteres que la consola cp1252 no tiene: se cortaba despues del deploy
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 from plomo.youtube import cliente  # noqa: E402
 
 ESPERA_MAX_S = 3 * 3600
