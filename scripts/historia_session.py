@@ -36,6 +36,8 @@ FUENTE = Path(r"C:\Windows\Fonts\bahnschrift.ttf")
 CREMA, NARANJA, SUAVE = (243, 235, 221), (232, 150, 74), (201, 193, 180)
 ANCHO, ALTO = 1080, 1920
 MARGEN = 88
+FONDO_OSCURO = (8, 11, 15)
+FOTO_DESDE, FOTO_FUNDIDO = 640, 320   # con --toma: donde arranca la foto y cuanto se funde hacia arriba
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
@@ -63,6 +65,29 @@ def fondo(nombre: str, mix: str, shader: str, t: float) -> Image.Image:
     return cuadro.crop((x0, 0, x0 + ancho, h)).resize((ANCHO, ALTO), Image.LANCZOS)
 
 
+def fondo_toma(video: str, t: float) -> Image.Image:
+    """Una foto real del DJ (un cuadro de su toma), sin efectos: abajo, y arriba oscuro para el texto.
+
+    "Haceme un flayer como para las otras sessions con mi imagen, se mas simple" (el DJ,
+    2026-10-26, despues de que el Reel en doble exposicion fuera "malisimo"). Su cara no va debajo
+    del SESSION NN: la foto arranca a la altura de MARCOS DAMIAN y se funde hacia arriba."""
+    with tempfile.TemporaryDirectory() as tmp:
+        png = Path(tmp) / "t.png"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.2f}", "-i", str(RAIZ / video), "-frames:v", "1",
+                        str(png)], check=True)
+        cuadro = Image.open(png).convert("RGB")
+    w, h = cuadro.size
+    alto_foto = ALTO - FOTO_DESDE
+    ancho = round(h * ANCHO / alto_foto)
+    x0 = (w - ancho) // 2
+    foto = cuadro.crop((x0, 0, x0 + ancho, h)).resize((ANCHO, alto_foto), Image.LANCZOS)
+    base = Image.new("RGB", (ANCHO, ALTO), FONDO_OSCURO)
+    rampa = np.clip(np.arange(alto_foto) / FOTO_FUNDIDO, 0, 1) ** 1.5
+    mascara = Image.fromarray((np.repeat(rampa[:, None], ANCHO, axis=1) * 255).astype(np.uint8))
+    base.paste(foto, (0, FOTO_DESDE), mascara)
+    return base
+
+
 def con_sombra(img: Image.Image, dibujar) -> Image.Image:
     """Texto con una sombra suave abajo, para que se lea sobre el agua y el cielo."""
     capa = Image.new("RGBA", img.size, (0, 0, 0, 0))
@@ -73,7 +98,7 @@ def con_sombra(img: Image.Image, dibujar) -> Image.Image:
     return Image.alpha_composite(Image.alpha_composite(img.convert("RGBA"), sombra), letras)
 
 
-def portada(base: Image.Image, numero: int) -> Image.Image:
+def portada(base: Image.Image, numero: int, con_foto: bool = False) -> Image.Image:
     grande, chica, linea = fuente(210, "Bold Condensed"), fuente(56, "SemiBold Condensed"), fuente(50, "SemiBold")
 
     def dibujar(d: ImageDraw.ImageDraw, sombra, corrido) -> None:
@@ -82,7 +107,10 @@ def portada(base: Image.Image, numero: int) -> Image.Image:
         d.text((MARGEN + dx, 280 + dy), "SESSION", font=grande, fill=col(CREMA))
         d.text((MARGEN + dx, 470 + dy), f"{numero:02d}", font=grande, fill=col(NARANJA))
         d.text((MARGEN + 6 + dx, 700 + dy), "MARCOS DAMIAN", font=chica, fill=col(CREMA))
-        d.text((ANCHO // 2 + dx, 1290 + dy), "Ya está en YouTube", font=linea, fill=col(CREMA), anchor="mm")
+        if con_foto:   # abajo esta el DJ: la linea va arriba del SESSION, no sobre su pecho
+            d.text((MARGEN + 6 + dx, 200 + dy), "Ya está en YouTube", font=linea, fill=col(NARANJA))
+        else:
+            d.text((ANCHO // 2 + dx, 1290 + dy), "Ya está en YouTube", font=linea, fill=col(CREMA), anchor="mm")
 
     return con_sombra(base, dibujar).convert("RGB")
 
@@ -125,17 +153,19 @@ def tracklist(base: Image.Image, numero: int, descripcion: str) -> Image.Image:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--paquete", required=True)
-    ap.add_argument("--mix", required=True)
-    ap.add_argument("--shader", required=True)
-    ap.add_argument("--t", type=float, required=True, help="el segundo del video que va de fondo")
+    ap.add_argument("--mix", help="con --shader: la mezcla de la Session")
+    ap.add_argument("--shader", help="el look animado de fondo (Sessions 01 a 03)")
+    ap.add_argument("--toma", help="en vez del shader: una toma real del DJ, por ejemplo grabaciones/video/IMG_2209.MOV")
+    ap.add_argument("--t", type=float, required=True, help="el segundo del video (o de la toma) que va de fondo")
     ap.add_argument("--salida", default=str(Path.home() / "Pictures"))
     a = ap.parse_args()
     p = json.loads((RAIZ / a.paquete).read_text(encoding="utf-8"))
     numero = int(p["nombre"].split("_")[-1])
-    base = fondo(p["nombre"], a.mix, a.shader, a.t)
+    base = fondo_toma(a.toma, a.t) if a.toma else fondo(p["nombre"], a.mix, a.shader, a.t)
     destino = Path(a.salida)
     destino.mkdir(parents=True, exist_ok=True)
-    for cual, img in (("portada", portada(base, numero)), ("tracklist", tracklist(base, numero, p["descripcion"]))):
+    for cual, img in (("portada", portada(base, numero, bool(a.toma))),
+                      ("tracklist", tracklist(base, numero, p["descripcion"]))):
         archivo = destino / f"plomo_historia_{p['nombre']}_{cual}.png"
         img.save(archivo)
         print(f"-> {archivo}")
