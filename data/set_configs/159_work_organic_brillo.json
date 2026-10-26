@@ -81,29 +81,85 @@
             },
             "por_patron": "ninguno: del #9 al #17 nadie cae en la zona oscura (capa melodica < 400 Hz o 1-4 kHz < 0.035). En riesgo leve: #11 Yellow y #14 My Pure Soul (una medida apenas debajo de los aprobados).",
             "aprendido": "oscuro en este set = melodia en registro grave (capa melodica: aprobados 533-765 Hz y 0.078-0.212 en 1-4 kHz; oscuros 303-379 Hz y 0.022-0.028). Fuera del 159: 3/8 oscuros y 3/40 aprobados en la zona. Ver familia_159.py y docs/sets_log.md v4."
+          },
+          {
+            "fecha": "2026-10-25",
+            "version": "v5",
+            "textual": [
+              "Continuemos solo Spotify y luego pasamos a descargas y rekor una vez cerrado Spotify y no te cierres a mi musica usa todo Spotify",
+              "Eclipse y you can have it los dos cambiados vovelos a cambiar",
+              "ouverture khen remix, spring embers sumalos a los que estan bien",
+              "Coral está bien aprobado",
+              "Earth aprobado",
+              "Windget aprobado",
+              "The captain aprobado",
+              "Los demás todos aprobados",
+              "Yellow a cambiar",
+              "Los 3 están bien solo a las 22 revisa el orden y hace la parte de rekor"
+            ],
+            "cambia": [
+              "211548822",
+              "7611765",
+              "125153100"
+            ],
+            "aprueba": [
+              "198986596",
+              "173790116",
+              "130869533",
+              "184188342",
+              "64669607",
+              "217151442",
+              "56831615",
+              "245930317",
+              "196838047",
+              "2009006",
+              "162314364",
+              "237240379",
+              "194339407",
+              "233850863",
+              "175484827",
+              "22034915",
+              "241869933"
+            ],
+            "nota": "Iterado en Spotify con scripts/spotify_borrador.py (borrador data/set_borradores/159.json). Luminor (149473172) lo saco el coordinador sin escucha: en Rekordbox es 5B y no mezclaba. Orden revisado a las 22 y sin cambios: rueda <=1 y BPM <=2 en todos los pasos.",
+            "sin_escuchar": "ninguno: la lista quedo cerrada con los 17 aprobados"
           }
         ],
         "aprobados": [
+          "198986596",
           "173790116",
           "130869533",
           "184188342",
           "64669607",
+          "217151442",
           "56831615",
-          "245930317"
+          "245930317",
+          "196838047",
+          "2009006",
+          "162314364",
+          "237240379",
+          "194339407",
+          "233850863",
+          "175484827",
+          "22034915",
+          "241869933"
         ],
         "cambiados": [
           "239831899",
           "14636373",
           "223098104",
           "156983367",
-          "51864410"
+          "51864410",
+          "211548822",
+          "7611765",
+          "125153100"
         ],
         "oscuros": [
           "156983367",
           "51864410"
         ]
       },
-      "_version": "v2 en adelante (2026-10-25): desde que el DJ escucha, el set ya NO sale de select_set: es data/set_targets/set_159.json editado lugar por lugar con scripts/archive/familia_159.py (v2 #1 Atenea y #6 The Observer; v3 #1 Hypnotize; v4 #1 You Can Have It All y #6 Eclipse). Correr select_set.py con este config REARMA la v1 y pisa lo aprobado: no hacerlo salvo que el DJ pida rehacer el set entero.",
+      "_version": "v5 (2026-10-25): cerrada. 17 aprobados por escucha. El target data/set_targets/set_159.json es el orden final; correr select_set.py con este config REARMA la v1 y pisa lo aprobado.",
       "_traduccion": {
         "organic": "Pool: genero organic (314 temas en la biblioteca) + su orbita, o sea temas de genero vecino de sellos y artistas que son mayormente organic o que nombro el pedido (ver _pool). La cuota mezcla_objetivo / peso_mezcla 4.0 sostiene el genero organic arriba (12 de 17).",
         "brillo": "Tres capas. a) Piso duro en el pool: color_pct >= 0.35 (el minimo del 150 es 0.37; saca 111 temas) y medio >= 5, aire >= 2 (la escucha del DJ: sin medios 'oscuro', sin aire 'tecnoso'). b) color_peso 2.0 (regla estilo.colorido 1.5): premio al color en el costo. c) modo_mayor_objetivo 0.3 (regla armonia 0.11; los pros p75 20%, Ezequiel Arias 25%): 5 de 17 en mayor. Ademas los vetos 'muy oscuro' de energia_percibida quedan fuera por select_set.",

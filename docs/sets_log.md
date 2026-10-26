@@ -3430,17 +3430,17 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Paul Hazendonk, Return To Saturn | You Can Have It All (Peter Makto & Matthew Sona Remix) | 121 | 5.5 |
+| 1 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
 | 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
 | 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
 | 5 | Gorje Hewek | Forest Song in the Morning (Original Mix | 120 | 1.4 |
-| 6 | Praise (BR) | Eclipse (Extended Mix) | 122 | 5.2 |
+| 6 | Juan Yarin | Never Met (Durante Remix) | 122 | 6.5 |
 | 7 | Capoon, Amand | Ouverture (Khen Remix) | 123 | 5.7 |
 | 8 | Nora En Pure | Spring Embers (Extended Mix) | 122 | 6.7 |
 | 9 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
 | 10 | Gorje Hewek, Dulus | Earth (Original Mix) | 123 | 6.5 |
-| 11 | Khen | Yellow (Original Mix) | 122 | 5.9 |
+| 11 | Fernando Olaya, Kamilo Sanclemente | Renascence (Original Mix) | 123 | 5.6 |
 | 12 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
 | 13 | Shai T & Tamir Regev | The Captain | 122 | 6.8 |
 | 14 | Khen | My Pure Soul (Original Mix) | 122 | 5.4 |
@@ -3550,3 +3550,23 @@ cambia. Revisa" / "ouverture khen remix, spring embers sumalos a los que estan b
   centroide 535) y #14 Khen - My Pure Soul (centroide 522 contra 533). Los demas, dentro del rango de los aprobados.
 - **Audit v4:** 5.5 -> pico 6.8 (#13, 76%) -> 6.3, 38% sin mover la rueda (p90 de los pros 40%), 0 saltos de BPM > 2;
   las 2 transiciones flojas son las de Forest Song con el 1.4 de la DB.
+
+**Fase Spotify (2026-10-25), textual:** "Continuemos solo Spotify y luego pasamos a descargas y rekor una vez
+cerrado Spotify y no te cierres a mi musica usa todo Spotify". La lista se itero en Spotify con
+`scripts/spotify_borrador.py` (borrador `data/set_borradores/159.json`), candidatos de todo el catalogo.
+- "Eclipse y you can have it los dos cambiados vovelos a cambiar": #1 -> Sebastien Leger - Blazing Ice,
+  #6 -> Nicolas Viana - Luminor.
+- "ouverture khen remix, spring embers sumalos a los que estan bien", "Coral esta bien aprobado", "Earth
+  aprobado", "Windget aprobado", "The captain aprobado", "Los demas todos aprobados", "Yellow a cambiar":
+  #11 Yellow -> Fernando Olaya, Kamilo Sanclemente - Renascence (10A, instrumental, melodia a 670 Hz;
+  Yellow era el de riesgo leve de oscuro).
+- #6 Luminor -> Juan Yarin - Never Met (Durante Remix): correccion propia, sin escucha. Rekordbox analiza
+  Luminor 5B (Muzpa decia 6A) y no mezclaba con Forest Song 6A ni Ouverture 7A.
+- "Los 3 estan bien solo a las 22 revisa el orden y hace la parte de rekor".
+
+**v5 (2026-10-25, 22 h): la tabla de arriba.** 17 aprobados por el DJ, todos en la biblioteca: no hubo que
+bajar nada. Revision del orden: rueda <= 1 y BPM <= 2 en los 16 pasos, energia 5.0-6.8. No se reordeno:
+Blazing Ice abre 0.2 por encima de Rogelito (dentro del ruido de la formula, y aprobado para abrir), y el
+bache The Captain 6.8 -> My Pure Soul 5.4 -> Redemtion 6.7 no tiene arreglo sin romper la caminata de la
+rueda 10B-9B-9A-8A-7A-7B, que ademas el DJ escucho y aprobo en ese orden. Spotify se publica cuando vuelva
+la cuota de la app (26/10 ~11:40) desde el borrador, mismo orden.
