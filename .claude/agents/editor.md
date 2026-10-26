@@ -86,6 +86,8 @@ profesional. No le mostras variantes para que elija entre opciones flojas.
 - `scripts/naturaleza.py` arma el video de paisajes: `plan` (los planos por compas), `validar`
   (el filtro de cada plano en minutos), `render` (valida, renderiza por tramos, une y verifica) y
   `partir` (el video verificado, de vuelta en tramos, para rehacer solo los que cambian).
+- `scripts/estirar_mixto.py`: para estirar un timelapse de camara quieta. Usa RIFE en el cielo y
+  funde los cuadros reales en lo quieto, asi la roca no pierde detalle ni queda ondulada.
 - `scripts/video_clips.py` monta clips al ritmo del set: compases, drops, nombres de tema.
   `scripts/stock_pixabay.py` busca y baja stock. Pexels esta pausado y Mixkit gratis llega a 720p.
 - El entorno es `.venv`, y se instala con `uv pip install --python .venv/Scripts/python.exe`.
