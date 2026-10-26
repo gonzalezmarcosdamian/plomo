@@ -37,7 +37,7 @@ CREMA, NARANJA, SUAVE = (243, 235, 221), (232, 150, 74), (201, 193, 180)
 ANCHO, ALTO = 1080, 1920
 MARGEN = 88
 FONDO_OSCURO = (8, 11, 15)
-FOTO_DESDE, FOTO_FUNDIDO = 640, 320   # con --toma: donde arranca la foto y cuanto se funde hacia arriba
+FOTO_FUNDIDO = 320   # con --toma: cuanto se funde la foto hacia arriba
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 
@@ -65,7 +65,7 @@ def fondo(nombre: str, mix: str, shader: str, t: float) -> Image.Image:
     return cuadro.crop((x0, 0, x0 + ancho, h)).resize((ANCHO, ALTO), Image.LANCZOS)
 
 
-def fondo_toma(video: str, t: float) -> Image.Image:
+def fondo_toma(video: str, t: float, desde: int = 640) -> Image.Image:
     """Una foto real del DJ (un cuadro de su toma), sin efectos: abajo, y arriba oscuro para el texto.
 
     "Haceme un flayer como para las otras sessions con mi imagen, se mas simple" (el DJ,
@@ -77,14 +77,14 @@ def fondo_toma(video: str, t: float) -> Image.Image:
                         str(png)], check=True)
         cuadro = Image.open(png).convert("RGB")
     w, h = cuadro.size
-    alto_foto = ALTO - FOTO_DESDE
+    alto_foto = ALTO - desde
     ancho = round(h * ANCHO / alto_foto)
     x0 = (w - ancho) // 2
     foto = cuadro.crop((x0, 0, x0 + ancho, h)).resize((ANCHO, alto_foto), Image.LANCZOS)
     base = Image.new("RGB", (ANCHO, ALTO), FONDO_OSCURO)
     rampa = np.clip(np.arange(alto_foto) / FOTO_FUNDIDO, 0, 1) ** 1.5
     mascara = Image.fromarray((np.repeat(rampa[:, None], ANCHO, axis=1) * 255).astype(np.uint8))
-    base.paste(foto, (0, FOTO_DESDE), mascara)
+    base.paste(foto, (0, desde), mascara)
     return base
 
 
@@ -157,14 +157,18 @@ def main() -> None:
     ap.add_argument("--shader", help="el look animado de fondo (Sessions 01 a 03)")
     ap.add_argument("--toma", help="en vez del shader: una toma real del DJ, por ejemplo grabaciones/video/IMG_2209.MOV")
     ap.add_argument("--t", type=float, required=True, help="el segundo del video (o de la toma) que va de fondo")
+    ap.add_argument("--foto-desde", type=int, default=640, help="con --toma: a que altura arranca la foto")
+    # "la portada poneme mas de fondo ... simil la de tracklist" (2026-10-26): la foto oscurecida detras del texto
+    ap.add_argument("--oscurecer", type=float, default=0.0, help="con --toma: cuanto se oscurece la foto de la portada")
     ap.add_argument("--salida", default=str(Path.home() / "Pictures"))
     a = ap.parse_args()
     p = json.loads((RAIZ / a.paquete).read_text(encoding="utf-8"))
     numero = int(p["nombre"].split("_")[-1])
-    base = fondo_toma(a.toma, a.t) if a.toma else fondo(p["nombre"], a.mix, a.shader, a.t)
+    base = fondo_toma(a.toma, a.t, a.foto_desde) if a.toma else fondo(p["nombre"], a.mix, a.shader, a.t)
+    base_portada = Image.blend(base, Image.new("RGB", base.size, FONDO_OSCURO), a.oscurecer) if a.toma else base
     destino = Path(a.salida)
     destino.mkdir(parents=True, exist_ok=True)
-    for cual, img in (("portada", portada(base, numero, bool(a.toma))),
+    for cual, img in (("portada", portada(base_portada, numero, bool(a.toma))),
                       ("tracklist", tracklist(base, numero, p["descripcion"]))):
         archivo = destino / f"plomo_historia_{p['nombre']}_{cual}.png"
         img.save(archivo)
