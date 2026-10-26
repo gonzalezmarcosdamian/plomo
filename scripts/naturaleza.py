@@ -60,6 +60,25 @@ ETAPAS = [  # (nombre, temas por indice del plan, la luz)
 ]
 
 
+def receta(nombre: str) -> dict:
+    """Frase, plano minimo y etapas de una Session: data/video/<nombre>_recorrido.json, o los de la 04.
+
+    La 04 se armo con FRASE, MIN_PLANO y ETAPAS de arriba; la 05 (el 159, para trabajar) pide planos
+    de 32 compases y otra luz, y cada Session trae su receta en vez de pisar las constantes."""
+    f = RAIZ / "data" / "video" / f"{nombre}_recorrido.json"
+    r = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    etapas = [(e["nombre"], tuple(e["temas"]), e["luz"]) for e in r["etapas"]] if "etapas" in r else ETAPAS
+    return {"frase": int(r.get("frase", FRASE)), "min_plano": int(r.get("min_plano", MIN_PLANO)), "etapas": etapas}
+
+
+def etapa_de(k: int, etapas: list[tuple]) -> int:
+    """La etapa (desde 1) del tema `k`; un tema sin etapa es un error de la receta, no un plano suelto."""
+    for e, (_, temas, _) in enumerate(etapas):
+        if k in temas:
+            return e + 1
+    raise SystemExit(f"el tema {k} no esta en ninguna etapa de la receta")
+
+
 def ataque_del_bombo(master: Path, desde: float, hasta: float, base: float, beat: float) -> float:
     """Cuanto despues de la grilla nominal cae el bombo real, en segundos (mediana de los golpes fuertes)."""
     info = sf.info(str(master))
@@ -90,8 +109,9 @@ def ataque_del_bombo(master: Path, desde: float, hasta: float, base: float, beat
     return float(np.median(desfases[fuertes])) - SUBIDA_A_ARRANQUE if fuertes.any() else 0.0
 
 
-def plan(mix: dict, master: Path) -> list[dict]:
+def plan(mix: dict, master: Path, rec: dict) -> list[dict]:
     compas = 4 * 60 / mix["tempo"]
+    frase, min_plano = rec["frase"], rec["min_plano"]
     temas = mix["plan"]
     entra = [0.0] + [t["cambio_in"] for t in temas[1:]]
     fronteras = []          # (segundo, que pasa, tema)
@@ -108,35 +128,35 @@ def plan(mix: dict, master: Path) -> list[dict]:
         while uno(c) < r1 - 0.5:
             if uno(c) > r0 - 0.5:
                 propias.append((c, "frase"))
-            c += FRASE
+            c += frase
         if k > 0:
             propias = [(round((r0 - t["desde"]) / compas), "tema")] + [p for p in propias if abs(uno(p[0]) - r0) > 1]
         if b0 is not None and b1 is not None:
             propias = [p for p in propias if not (b0 < p[0] < b1)]          # el breakdown es un solo plano
             for cb, que in ((b0, "breakdown"), (drop or b1, "drop")):
                 if r0 + 1 < uno(cb) < r1 - 1:
-                    propias = [p for p in propias if abs(p[0] - cb) >= MIN_PLANO] + [(cb, que)]
+                    propias = [p for p in propias if abs(p[0] - cb) >= min_plano] + [(cb, que)]
         for c, que in sorted(propias):
             fronteras.append((round(uno(c), 3), que, k))
         print(f"{k:2d} {t['tema'][:44]:44} bombo {off * 1000:+5.0f} ms, {len(propias)} fronteras", flush=True)
     fronteras.sort()
-    # un plano no dura menos de MIN_PLANO compases: se borra la frontera de "frase" que lo achica
+    # un plano no dura menos de min_plano compases: se borra la frontera de "frase" que lo achica
     limpias = [fronteras[0]]
     for f in fronteras[1:]:
-        if f[0] - limpias[-1][0] < MIN_PLANO * compas:
+        if f[0] - limpias[-1][0] < min_plano * compas:
             if f[1] == "frase":
                 continue
             if limpias[-1][1] == "frase":
                 limpias.pop()
         limpias.append(f)
     # el ultimo plano tampoco: si queda corto contra el final, el anterior llega hasta el cierre
-    if mix["duracion_s"] - limpias[-1][0] < MIN_PLANO * compas and len(limpias) > 1:
+    if mix["duracion_s"] - limpias[-1][0] < min_plano * compas and len(limpias) > 1:
         limpias.pop()
     planos = []
     for i, (t0, que, k) in enumerate(limpias):
         t1 = limpias[i + 1][0] if i + 1 < len(limpias) else mix["duracion_s"]
         entra_desde = 0.0 if i == 0 else round(t0 - FUNDIDO * compas, 3)
-        etapa = next(e for e, (_, ts, _) in enumerate(ETAPAS) if k in ts) + 1
+        etapa = etapa_de(k, rec["etapas"])
         planos.append({"n": i + 1, "etapa": etapa, "entra": entra_desde, "lleno": t0 if i else 0.0,
                        "sale": round(t1, 3), "que": "inicio" if i == 0 else que, "tema": temas[k]["tema"],
                        "segundos_de_clip": round(t1 - entra_desde, 2)})
@@ -426,7 +446,7 @@ def main() -> None:
         malos = validar(elegidos, a.planos or sorted(elegidos))
         print("\n".join(malos) + f"\n{len(a.planos or elegidos)} planos revisados, {len(malos)} con problemas")
         sys.exit(1 if malos else 0)
-    planos = plan(mix, master)
+    planos = plan(mix, master, receta(a.nombre))
     salida = RAIZ / "data" / "video" / f"{a.nombre}_planos.json"
     salida.write_text(json.dumps({"fps": FPS, "compas_s": round(4 * 60 / mix["tempo"], 5), "fundido_compases": FUNDIDO,
                                   "planos": planos}, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -1,0 +1,797 @@
+{
+ "fps": 30,
+ "compas_s": 1.96721,
+ "fundido_compases": 4,
+ "planos": [
+  {
+   "n": 1,
+   "etapa": 1,
+   "entra": 0.0,
+   "lleno": 0.0,
+   "sale": 62.994,
+   "que": "inicio",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 62.99
+  },
+  {
+   "n": 2,
+   "etapa": 1,
+   "entra": 55.125,
+   "lleno": 62.994,
+   "sale": 125.945,
+   "que": "frase",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 3,
+   "etapa": 1,
+   "entra": 118.076,
+   "lleno": 125.945,
+   "sale": 188.896,
+   "que": "frase",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 4,
+   "etapa": 1,
+   "entra": 181.027,
+   "lleno": 188.896,
+   "sale": 299.06,
+   "que": "frase",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 118.03
+  },
+  {
+   "n": 5,
+   "etapa": 1,
+   "entra": 291.191,
+   "lleno": 299.06,
+   "sale": 346.273,
+   "que": "breakdown",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 55.08
+  },
+  {
+   "n": 6,
+   "etapa": 1,
+   "entra": 338.404,
+   "lleno": 346.273,
+   "sale": 440.699,
+   "que": "drop",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 102.3
+  },
+  {
+   "n": 7,
+   "etapa": 1,
+   "entra": 432.83,
+   "lleno": 440.699,
+   "sale": 535.109,
+   "que": "frase",
+   "tema": "Sébastien Léger - Blazing Ice",
+   "segundos_de_clip": 102.28
+  },
+  {
+   "n": 8,
+   "etapa": 1,
+   "entra": 527.24,
+   "lleno": 535.109,
+   "sale": 598.06,
+   "que": "tema",
+   "tema": "Hernan Cattaneo, Khen - Rogelito (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 9,
+   "etapa": 1,
+   "entra": 590.191,
+   "lleno": 598.06,
+   "sale": 692.486,
+   "que": "frase",
+   "tema": "Hernan Cattaneo, Khen - Rogelito (Original Mix)",
+   "segundos_de_clip": 102.29
+  },
+  {
+   "n": 10,
+   "etapa": 1,
+   "entra": 684.617,
+   "lleno": 692.486,
+   "sale": 755.437,
+   "que": "breakdown",
+   "tema": "Hernan Cattaneo, Khen - Rogelito (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 11,
+   "etapa": 1,
+   "entra": 747.568,
+   "lleno": 755.437,
+   "sale": 881.381,
+   "que": "drop",
+   "tema": "Hernan Cattaneo, Khen - Rogelito (Original Mix)",
+   "segundos_de_clip": 133.81
+  },
+  {
+   "n": 12,
+   "etapa": 1,
+   "entra": 873.512,
+   "lleno": 881.381,
+   "sale": 944.332,
+   "que": "tema",
+   "tema": "Andre Moret - One World (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 13,
+   "etapa": 1,
+   "entra": 936.463,
+   "lleno": 944.332,
+   "sale": 1007.283,
+   "que": "frase",
+   "tema": "Andre Moret - One World (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 14,
+   "etapa": 1,
+   "entra": 999.414,
+   "lleno": 1007.283,
+   "sale": 1054.496,
+   "que": "breakdown",
+   "tema": "Andre Moret - One World (Extended Mix)",
+   "segundos_de_clip": 55.08
+  },
+  {
+   "n": 15,
+   "etapa": 1,
+   "entra": 1046.627,
+   "lleno": 1054.496,
+   "sale": 1180.356,
+   "que": "drop",
+   "tema": "Andre Moret - One World (Extended Mix)",
+   "segundos_de_clip": 133.73
+  },
+  {
+   "n": 16,
+   "etapa": 1,
+   "entra": 1172.487,
+   "lleno": 1180.356,
+   "sale": 1321.995,
+   "que": "tema",
+   "tema": "Jordi Ruz, Artic White - Aura (Original Mix)",
+   "segundos_de_clip": 149.51
+  },
+  {
+   "n": 17,
+   "etapa": 1,
+   "entra": 1314.126,
+   "lleno": 1321.995,
+   "sale": 1447.897,
+   "que": "breakdown",
+   "tema": "Jordi Ruz, Artic White - Aura (Original Mix)",
+   "segundos_de_clip": 133.77
+  },
+  {
+   "n": 18,
+   "etapa": 1,
+   "entra": 1440.028,
+   "lleno": 1447.897,
+   "sale": 1542.382,
+   "que": "drop",
+   "tema": "Jordi Ruz, Artic White - Aura (Original Mix)",
+   "segundos_de_clip": 102.35
+  },
+  {
+   "n": 19,
+   "etapa": 1,
+   "entra": 1534.513,
+   "lleno": 1542.382,
+   "sale": 1621.07,
+   "que": "tema",
+   "tema": "Gorje Hewek - Forest Song in the Morning (Original Mix",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 20,
+   "etapa": 1,
+   "entra": 1613.201,
+   "lleno": 1621.07,
+   "sale": 1683.967,
+   "que": "drop",
+   "tema": "Gorje Hewek - Forest Song in the Morning (Original Mix",
+   "segundos_de_clip": 70.77
+  },
+  {
+   "n": 21,
+   "etapa": 2,
+   "entra": 1676.098,
+   "lleno": 1683.967,
+   "sale": 1746.918,
+   "que": "tema",
+   "tema": "Juan Yarin - Never Met (Durante Remix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 22,
+   "etapa": 2,
+   "entra": 1739.049,
+   "lleno": 1746.918,
+   "sale": 1809.869,
+   "que": "frase",
+   "tema": "Juan Yarin - Never Met (Durante Remix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 23,
+   "etapa": 2,
+   "entra": 1802.0,
+   "lleno": 1809.869,
+   "sale": 1872.82,
+   "que": "breakdown",
+   "tema": "Juan Yarin - Never Met (Durante Remix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 24,
+   "etapa": 2,
+   "entra": 1864.951,
+   "lleno": 1872.82,
+   "sale": 1935.771,
+   "que": "drop",
+   "tema": "Juan Yarin - Never Met (Durante Remix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 25,
+   "etapa": 2,
+   "entra": 1927.902,
+   "lleno": 1935.771,
+   "sale": 2008.543,
+   "que": "frase",
+   "tema": "Juan Yarin - Never Met (Durante Remix)",
+   "segundos_de_clip": 80.64
+  },
+  {
+   "n": 26,
+   "etapa": 2,
+   "entra": 2000.674,
+   "lleno": 2008.543,
+   "sale": 2102.969,
+   "que": "tema",
+   "tema": "Capoon, Amand - Ouverture (Khen Remix)",
+   "segundos_de_clip": 102.3
+  },
+  {
+   "n": 27,
+   "etapa": 2,
+   "entra": 2095.1,
+   "lleno": 2102.969,
+   "sale": 2165.92,
+   "que": "frase",
+   "tema": "Capoon, Amand - Ouverture (Khen Remix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 28,
+   "etapa": 2,
+   "entra": 2158.051,
+   "lleno": 2165.92,
+   "sale": 2244.608,
+   "que": "frase",
+   "tema": "Capoon, Amand - Ouverture (Khen Remix)",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 29,
+   "etapa": 2,
+   "entra": 2236.739,
+   "lleno": 2244.608,
+   "sale": 2354.772,
+   "que": "drop",
+   "tema": "Capoon, Amand - Ouverture (Khen Remix)",
+   "segundos_de_clip": 118.03
+  },
+  {
+   "n": 30,
+   "etapa": 2,
+   "entra": 2346.903,
+   "lleno": 2354.772,
+   "sale": 2401.988,
+   "que": "frase",
+   "tema": "Capoon, Amand - Ouverture (Khen Remix)",
+   "segundos_de_clip": 55.09
+  },
+  {
+   "n": 31,
+   "etapa": 2,
+   "entra": 2394.119,
+   "lleno": 2401.988,
+   "sale": 2480.677,
+   "que": "tema",
+   "tema": "Nora En Pure - Spring Embers (Extended Mix)",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 32,
+   "etapa": 2,
+   "entra": 2472.808,
+   "lleno": 2480.677,
+   "sale": 2543.628,
+   "que": "frase",
+   "tema": "Nora En Pure - Spring Embers (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 33,
+   "etapa": 2,
+   "entra": 2535.759,
+   "lleno": 2543.628,
+   "sale": 2606.579,
+   "que": "breakdown",
+   "tema": "Nora En Pure - Spring Embers (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 34,
+   "etapa": 2,
+   "entra": 2598.71,
+   "lleno": 2606.579,
+   "sale": 2669.589,
+   "que": "drop",
+   "tema": "Nora En Pure - Spring Embers (Extended Mix)",
+   "segundos_de_clip": 70.88
+  },
+  {
+   "n": 35,
+   "etapa": 3,
+   "entra": 2661.72,
+   "lleno": 2669.589,
+   "sale": 2732.54,
+   "que": "tema",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 36,
+   "etapa": 3,
+   "entra": 2724.671,
+   "lleno": 2732.54,
+   "sale": 2795.491,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 37,
+   "etapa": 3,
+   "entra": 2787.622,
+   "lleno": 2795.491,
+   "sale": 2858.442,
+   "que": "breakdown",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 38,
+   "etapa": 3,
+   "entra": 2850.573,
+   "lleno": 2858.442,
+   "sale": 2921.392,
+   "que": "drop",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 39,
+   "etapa": 3,
+   "entra": 2913.523,
+   "lleno": 2921.392,
+   "sale": 3000.04,
+   "que": "frase",
+   "tema": "Nicolas Viana - Coral (Extended Mix)",
+   "segundos_de_clip": 86.52
+  },
+  {
+   "n": 40,
+   "etapa": 3,
+   "entra": 2992.171,
+   "lleno": 3000.04,
+   "sale": 3062.991,
+   "que": "breakdown",
+   "tema": "Gorje Hewek, Dulus - Earth (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 41,
+   "etapa": 3,
+   "entra": 3055.122,
+   "lleno": 3062.991,
+   "sale": 3157.417,
+   "que": "drop",
+   "tema": "Gorje Hewek, Dulus - Earth (Original Mix)",
+   "segundos_de_clip": 102.3
+  },
+  {
+   "n": 42,
+   "etapa": 3,
+   "entra": 3149.548,
+   "lleno": 3157.417,
+   "sale": 3220.388,
+   "que": "frase",
+   "tema": "Gorje Hewek, Dulus - Earth (Original Mix)",
+   "segundos_de_clip": 70.84
+  },
+  {
+   "n": 43,
+   "etapa": 3,
+   "entra": 3212.519,
+   "lleno": 3220.388,
+   "sale": 3283.339,
+   "que": "tema",
+   "tema": "Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 44,
+   "etapa": 3,
+   "entra": 3275.47,
+   "lleno": 3283.339,
+   "sale": 3362.028,
+   "que": "frase",
+   "tema": "Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 45,
+   "etapa": 3,
+   "entra": 3354.159,
+   "lleno": 3362.028,
+   "sale": 3409.241,
+   "que": "breakdown",
+   "tema": "Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)",
+   "segundos_de_clip": 55.08
+  },
+  {
+   "n": 46,
+   "etapa": 3,
+   "entra": 3401.372,
+   "lleno": 3409.241,
+   "sale": 3472.192,
+   "que": "drop",
+   "tema": "Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 47,
+   "etapa": 3,
+   "entra": 3464.323,
+   "lleno": 3472.192,
+   "sale": 3566.644,
+   "que": "frase",
+   "tema": "Fernando Olaya, Kamilo Sanclemente - Renascence (Original Mix)",
+   "segundos_de_clip": 102.32
+  },
+  {
+   "n": 48,
+   "etapa": 3,
+   "entra": 3558.775,
+   "lleno": 3566.644,
+   "sale": 3629.595,
+   "que": "tema",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 49,
+   "etapa": 3,
+   "entra": 3621.726,
+   "lleno": 3629.595,
+   "sale": 3692.546,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 50,
+   "etapa": 3,
+   "entra": 3684.677,
+   "lleno": 3692.546,
+   "sale": 3755.497,
+   "que": "frase",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 51,
+   "etapa": 3,
+   "entra": 3747.628,
+   "lleno": 3755.497,
+   "sale": 3818.448,
+   "que": "breakdown",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 52,
+   "etapa": 3,
+   "entra": 3810.579,
+   "lleno": 3818.448,
+   "sale": 3928.543,
+   "que": "drop",
+   "tema": "Nicolas Viana - Winged (Original Mix)",
+   "segundos_de_clip": 117.96
+  },
+  {
+   "n": 53,
+   "etapa": 3,
+   "entra": 3920.674,
+   "lleno": 3928.543,
+   "sale": 3991.493,
+   "que": "tema",
+   "tema": "Shai T & Tamir Regev - The Captain",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 54,
+   "etapa": 3,
+   "entra": 3983.624,
+   "lleno": 3991.493,
+   "sale": 4085.92,
+   "que": "frase",
+   "tema": "Shai T & Tamir Regev - The Captain",
+   "segundos_de_clip": 102.3
+  },
+  {
+   "n": 55,
+   "etapa": 3,
+   "entra": 4078.051,
+   "lleno": 4085.92,
+   "sale": 4148.887,
+   "que": "breakdown",
+   "tema": "Shai T & Tamir Regev - The Captain",
+   "segundos_de_clip": 70.84
+  },
+  {
+   "n": 56,
+   "etapa": 4,
+   "entra": 4141.018,
+   "lleno": 4148.887,
+   "sale": 4227.575,
+   "que": "tema",
+   "tema": "Khen - My Pure Soul (Original Mix)",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 57,
+   "etapa": 4,
+   "entra": 4219.706,
+   "lleno": 4227.575,
+   "sale": 4290.526,
+   "que": "frase",
+   "tema": "Khen - My Pure Soul (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 58,
+   "etapa": 4,
+   "entra": 4282.657,
+   "lleno": 4290.526,
+   "sale": 4353.477,
+   "que": "frase",
+   "tema": "Khen - My Pure Soul (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 59,
+   "etapa": 4,
+   "entra": 4345.608,
+   "lleno": 4353.477,
+   "sale": 4416.428,
+   "que": "breakdown",
+   "tema": "Khen - My Pure Soul (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 60,
+   "etapa": 4,
+   "entra": 4408.559,
+   "lleno": 4416.428,
+   "sale": 4479.378,
+   "que": "drop",
+   "tema": "Khen - My Pure Soul (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 61,
+   "etapa": 4,
+   "entra": 4471.509,
+   "lleno": 4479.378,
+   "sale": 4526.645,
+   "que": "frase",
+   "tema": "Khen - My Pure Soul (Original Mix)",
+   "segundos_de_clip": 55.14
+  },
+  {
+   "n": 62,
+   "etapa": 4,
+   "entra": 4518.776,
+   "lleno": 4526.645,
+   "sale": 4589.595,
+   "que": "tema",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 63,
+   "etapa": 4,
+   "entra": 4581.726,
+   "lleno": 4589.595,
+   "sale": 4652.546,
+   "que": "frase",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 64,
+   "etapa": 4,
+   "entra": 4644.677,
+   "lleno": 4652.546,
+   "sale": 4715.497,
+   "que": "frase",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 65,
+   "etapa": 4,
+   "entra": 4707.628,
+   "lleno": 4715.497,
+   "sale": 4778.448,
+   "que": "frase",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 66,
+   "etapa": 4,
+   "entra": 4770.579,
+   "lleno": 4778.448,
+   "sale": 4841.399,
+   "que": "breakdown",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 67,
+   "etapa": 4,
+   "entra": 4833.53,
+   "lleno": 4841.399,
+   "sale": 4904.349,
+   "que": "drop",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 68,
+   "etapa": 4,
+   "entra": 4896.48,
+   "lleno": 4904.349,
+   "sale": 4967.3,
+   "que": "frase",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 69,
+   "etapa": 4,
+   "entra": 4959.431,
+   "lleno": 4967.3,
+   "sale": 5061.697,
+   "que": "frase",
+   "tema": "Kamilo Sanclemente, Giovanny Aparicio - Redemtion (Original Mix)",
+   "segundos_de_clip": 102.27
+  },
+  {
+   "n": 70,
+   "etapa": 5,
+   "entra": 5053.828,
+   "lleno": 5061.697,
+   "sale": 5124.647,
+   "que": "drop",
+   "tema": "Andre Moret - Beyond Us (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 71,
+   "etapa": 5,
+   "entra": 5116.778,
+   "lleno": 5124.647,
+   "sale": 5187.598,
+   "que": "frase",
+   "tema": "Andre Moret - Beyond Us (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 72,
+   "etapa": 5,
+   "entra": 5179.729,
+   "lleno": 5187.598,
+   "sale": 5250.549,
+   "que": "frase",
+   "tema": "Andre Moret - Beyond Us (Extended Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 73,
+   "etapa": 5,
+   "entra": 5242.68,
+   "lleno": 5250.549,
+   "sale": 5313.479,
+   "que": "frase",
+   "tema": "Andre Moret - Beyond Us (Extended Mix)",
+   "segundos_de_clip": 70.8
+  },
+  {
+   "n": 74,
+   "etapa": 5,
+   "entra": 5305.61,
+   "lleno": 5313.479,
+   "sale": 5376.43,
+   "que": "tema",
+   "tema": "Sebastien Leger - Lava (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 75,
+   "etapa": 5,
+   "entra": 5368.561,
+   "lleno": 5376.43,
+   "sale": 5439.38,
+   "que": "frase",
+   "tema": "Sebastien Leger - Lava (Original Mix)",
+   "segundos_de_clip": 70.82
+  },
+  {
+   "n": 76,
+   "etapa": 5,
+   "entra": 5431.511,
+   "lleno": 5439.38,
+   "sale": 5533.807,
+   "que": "frase",
+   "tema": "Sebastien Leger - Lava (Original Mix)",
+   "segundos_de_clip": 102.3
+  },
+  {
+   "n": 77,
+   "etapa": 5,
+   "entra": 5525.938,
+   "lleno": 5533.807,
+   "sale": 5612.495,
+   "que": "breakdown",
+   "tema": "Sebastien Leger - Lava (Original Mix)",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 78,
+   "etapa": 5,
+   "entra": 5604.626,
+   "lleno": 5612.495,
+   "sale": 5691.184,
+   "que": "drop",
+   "tema": "Sebastien Leger - Lava (Original Mix)",
+   "segundos_de_clip": 86.56
+  },
+  {
+   "n": 79,
+   "etapa": 5,
+   "entra": 5683.315,
+   "lleno": 5691.184,
+   "sale": 5739.8,
+   "que": "frase",
+   "tema": "Sebastien Leger - Lava (Original Mix)",
+   "segundos_de_clip": 56.49
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "_que_es": "La receta del video de la Session 05 (el set 159, Work · Organic con brillo) para scripts/naturaleza.py: cada cuantos compases cambia el plano, el plano minimo y que temas van en cada etapa (indices del plan de la mezcla, desde 0). Sin este archivo naturaleza.py usa la receta de la 04.",
+ "textual": "no voy a filmar / dale (el DJ, 2026-10-26, eligiendo la opcion de paisajes: una sola tarde que baja hasta despues de la puesta)",
+ "frase": 32,
+ "min_plano": 24,
+ "etapas": [
+  {"nombre": "Bosque con sol entre los arboles", "temas": [0, 1, 2, 3, 4],
+   "luz": "[A] tarde: sol alto entre los troncos, hojas encendidas, todo verde"},
+  {"nombre": "Agua con destellos", "temas": [5, 6, 7],
+   "luz": "[A] a [B]: arroyos, rios y lagos con el sol rebotando en el agua"},
+  {"nombre": "Hora dorada en el campo", "temas": [8, 9, 10, 11, 12],
+   "luz": "[B] a [C]: pastizales y campos dorados, polen en el aire, luz rasante"},
+  {"nombre": "El sol toca el horizonte", "temas": [13, 14],
+   "luz": "[C] a [E]: el sol bajando y una sola puesta [D], en el drop de Redemtion"},
+  {"nombre": "Despues de la puesta", "temas": [15, 16],
+   "luz": "[E] a [F]: arrebol y hora azul, siluetas de arboles, la ultima luz; sin estrellas ni noche"}
+ ],
+ "_por_que_la_puesta_en_redemtion": "Se le propuso al DJ en The Captain con un set estimado en 2 h. La mezcla real dura 95:38 y la puesta en The Captain (65:28) dejaba 27 minutos de luz que se va; en este set el DJ cambio los temas 'muy oscuros', asi que el final no puede ser largo y oscuro. The Captain queda en la hora dorada y la puesta cae en Redemtion (75:26-83:18)."
+}
