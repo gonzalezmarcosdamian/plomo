@@ -420,5 +420,5 @@
   }
  ],
  "_que_es": "Borrador de la lista mientras se itera en Spotify (spotify_borrador.py). Al cerrarla: lo que no tiene content_id se baja de Muzpa e importa.",
- "pendiente_publicar": true
+ "pendiente_publicar": false
 }
