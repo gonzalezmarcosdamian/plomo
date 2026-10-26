@@ -3,8 +3,9 @@
 
 "Haceme un apartado en rekord de las session y sync pen de todo, este 159 va a ser
 sunset me gusto para eso" (2026-10-26). Las Sessions estaban sueltas entre los 150
-sets de 'Sets Armados'. Esto las junta en Sets Armados / Sessions, que viaja al pen
-con el mismo export de 'Sets Armados'.
+sets de 'Sets Armados'. Esto las junta en la carpeta Sessions, en la raiz de las playlists (desde el
+2026-10-26: "haceme una carpeta sessions en mis playlist"; al pen va con su propio
+Export Folder).
 
 Son COPIAS, no los sets movidos: el set original sigue donde esta, con su numero
 (build_set.py, Spotify y los videos lo buscan por numero). Correrlo de nuevo rehace
@@ -63,8 +64,9 @@ def main() -> None:
 
     con = db_connect()
     vivas = "COALESCE(rb_local_deleted,0)=0"
-    padre = con.execute(f"SELECT ID FROM djmdPlaylist WHERE Name=? AND Attribute=1 AND {vivas}",
-                        (mapa["padre"],)).fetchone()
+    # "root" es la raiz de las playlists (asi la llama la base); si no, una carpeta por nombre.
+    padre = ("root",) if mapa["padre"] == "root" else con.execute(
+        f"SELECT ID FROM djmdPlaylist WHERE Name=? AND Attribute=1 AND {vivas}", (mapa["padre"],)).fetchone()
     if not padre:
         raise SystemExit(f"no existe la carpeta '{mapa['padre']}'")
     carpeta = con.execute(f"SELECT ID FROM djmdPlaylist WHERE Name=? AND Attribute=1 AND ParentID=? AND {vivas}",
@@ -74,8 +76,8 @@ def main() -> None:
             print(f"  [dry] se crearia la carpeta {mapa['padre']} / {mapa['carpeta']}")
         else:
             con.close()
-            subprocess.run([sys.executable, str(RAIZ / "scripts/create_folder.py"), mapa["carpeta"],
-                            "--parent", mapa["padre"]], check=True)
+            extra = [] if mapa["padre"] == "root" else ["--parent", mapa["padre"]]
+            subprocess.run([sys.executable, str(RAIZ / "scripts/create_folder.py"), mapa["carpeta"], *extra], check=True)
             con = db_connect()
             carpeta = con.execute(f"SELECT ID FROM djmdPlaylist WHERE Name=? AND Attribute=1 AND ParentID=? AND {vivas}",
                                   (mapa["carpeta"], padre[0])).fetchone()

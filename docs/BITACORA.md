@@ -9,6 +9,26 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-26 — el arbol de Rekordbox ordenado, y Sessions en la raiz
+
+"Mejorame el orden de las carpetas ademas haceme una carpeta sessions, en mis playlist,
+hace un plan y ejecutalo." Casi todas las listas tenian Seq 0 o NULL y Rekordbox las
+mostraba como cayeron (148, 149, 150, 151, 152, 155, 156, 153, 157...).
+`scripts/ordenar_playlists.py` deja las reglas escritas y se puede volver a correr:
+- Raiz: Sessions, Pro DJ Library, MI SONIDO, CUE Analysis Playlist. Sessions sale de
+  Sets Armados (ParentID en la base y ParentId del NODE en masterPlaylists6.xml).
+- Sessions: 01, 02, 03, 04, Sunset.
+- Pro DJ Library por uso: Sets Armados, PEN - Todo, PEN - Activos, las vistas,
+  Curaduria Original al final.
+- Sets Armados: 0 Fechas, los sets del mas nuevo al mas viejo, [POOL] al final.
+- Por Key Camelot en orden musical (1A, 1B, 2A... 12B), no alfabetico.
+- Se borro la carpeta vacia "Por Posición de Set" (con tilde), duplicado de la que
+  tiene las listas.
+55 filas, quick_check ok, y verificado abriendo Rekordbox: el arbol se ve en ese orden.
+El pen todavia tiene la estructura vieja (Sessions dentro de Sets Armados).
+
+---
+
 ## 2026-10-26 — carpeta Sessions en Rekordbox, el 159 es el sunset, y el pen al dia
 
 "Haceme un apartado en rekord de las session y sync pen de todo, este 159 va a ser
