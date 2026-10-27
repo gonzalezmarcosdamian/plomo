@@ -141,6 +141,14 @@
    "veredicto": "si",
    "textual": "la portada poneme mas de fondo y la parte donde levanto el brazo, simi la de tracklist / me gusto",
    "que_se_aprende": "el flyer con su imagen va simple: foto real con un gesto (el brazo arriba), grande y oscurecida detras del texto de la serie. historia_session.py --toma ... --t 372 --foto-desde 420 --oscurecer 0.5"
+  },
+  {
+   "fecha": "2026-10-27",
+   "pieza": "maqueta de 1 minuto de las almas, rehecha por el director (scripts/almas.py, almas.frag)",
+   "look": "cielo con nubes en capas: dos almas, calida y fria, ocho momentos de 4 compases, la cura donde vuelve el bombo",
+   "veredicto": "si",
+   "textual": "me encanto, hay mas oportunidad con alguna iteracion mas?",
+   "que_se_aprende": "la historia abstracta con almas de luz va; la primera version (dos puntos con raya recta, todo el mismo gesto) fue la idea esta pero esta mal lograda"
   }
  ]
 }
