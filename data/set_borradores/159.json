@@ -16,23 +16,22 @@
    "duracion": "10:06"
   },
   {
-   "spotify_id": "2hFEYoT9We4tqbCTiJi3xb",
-   "artista": "K Loveski, Cosmonaut",
-   "titulo": "Bailarina",
-   "album_id": "0mmRBUNzzGCj3wWC6sqz6r",
+   "spotify_id": "2OYf3P5p6MIy9lbirwiFRW",
+   "artista": "Greg Ochman",
+   "titulo": "The Silver Lily",
+   "album_id": "2Lop3HIZz1ictfQx39nXyN",
    "artistas_ids": [
-    "28AJ0UNBFr7AIQ4a17HVMw",
-    "3lUnr1VmmxwlAOqfcePsAb"
+    "66A1FnrzYT86ouNwwqvUEp"
    ],
-   "ms": 480000,
+   "ms": 470986,
    "estado": "nuevo",
-   "content_id": "231295892",
-   "muzpa_id": 6040111,
-   "muzpa_nombre": "Cosmonaut, K Loveski - Bailarina (Domingo + Loveclub Remix)",
+   "content_id": "80536228",
+   "muzpa_id": 8724213,
+   "muzpa_nombre": "Greg Ochman - The Silver Lily (Original Mix)",
    "bpm": 120,
-   "key": "6A",
+   "key": "5A",
    "genero": "Organic House / Downtempo",
-   "duracion": "6:56"
+   "duracion": "7:51"
   },
   {
    "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
@@ -72,42 +71,43 @@
    "duracion": "6:51"
   },
   {
-   "spotify_id": "5KYdRygDWQcWoFeo6dOBRY",
-   "artista": "Tim Green",
-   "titulo": "Tears",
-   "album_id": "3BwTQp1wRmL4B7WkXkwvzd",
+   "spotify_id": "3g0TLqCHaakP0iy9AuJ6E7",
+   "artista": "Cameron Jack, ABEL",
+   "titulo": "Sixth Sense",
+   "album_id": "18zxi32wR1AbXBra2jxlKX",
    "artistas_ids": [
-    "68vO4fkFxLbWPxTSHosxsB"
+    "3ZziXomLvLKvBpTDzxcypH",
+    "2EsYY7ZHoWaQgPFwWgbyMe"
    ],
-   "ms": 527618,
+   "ms": 409758,
    "estado": "nuevo",
-   "content_id": "229889002",
-   "muzpa_id": 6448043,
-   "muzpa_nombre": "Tim Green - Tears (Original Mix)",
-   "bpm": 121,
+   "content_id": "120528093",
+   "muzpa_id": 8310135,
+   "muzpa_nombre": "Abel, Cameron Jack - Sixth Sense (Original Mix)",
+   "bpm": 123,
    "key": "6A",
    "genero": "Organic House / Downtempo",
-   "duracion": "8:48"
+   "duracion": "6:50"
   },
   {
-   "spotify_id": "4WUiO69LrOzizNvB0Ght7n",
-   "artista": "M.O.S., Kamilo Sanclemente, André Moret",
-   "titulo": "Perception",
-   "album_id": "70zjNkWuqDfH1DyRMxErLv",
+   "spotify_id": "70PJTUcqWujO8b0tOvJHhm",
+   "artista": "Jou Nielsen, Paul Ikky, Kebin van Reeken",
+   "titulo": "Sundance - Kebin Van Reeken Extended Remix",
+   "album_id": "3uLUMLymuP5fCk7U2Wgx7J",
    "artistas_ids": [
-    "14S8eJJkmkNw4SaiXI8fwR",
-    "2AYLgq9P1arichVXbNbjVy",
-    "77TawwjtLlpegPo23bblci"
+    "1eQv5FCUB4sDHyY6fsCb26",
+    "76bjw6dvZcBvltGDnMhfU0",
+    "0DKMuvkne3vAJapaws0SJe"
    ],
-   "ms": 235082,
+   "ms": 485853,
    "estado": "nuevo",
-   "content_id": "264835495",
-   "muzpa_id": 8790420,
-   "muzpa_nombre": "Kamilo Sanclemente, M.O.S., Andre Moret - Perception (Original Mix)",
-   "bpm": 122,
+   "content_id": "178625501",
+   "muzpa_id": 9184454,
+   "muzpa_nombre": "Jou Nielsen, Paul Ikky - Sundance (Kebin Van Reeken Extended Remix)",
+   "bpm": 121,
    "key": "6A",
    "genero": "Progressive",
-   "duracion": "7:13"
+   "duracion": "8:06"
   },
   {
    "spotify_id": "07cdgNfp7GsG3zNccgxUeU",
@@ -431,6 +431,27 @@
    "titulo": "Theia",
    "content_id": "28418420",
    "textual": "muy oscuro (Theia)"
+  },
+  {
+   "spotify_id": "2hFEYoT9We4tqbCTiJi3xb",
+   "artista": "K Loveski, Cosmonaut",
+   "titulo": "Bailarina",
+   "content_id": "231295892",
+   "textual": "mala (Bailarina), mas parecidos a aura don don pachi busca / tears tambien cambialo / perception tambien muy pasado"
+  },
+  {
+   "spotify_id": "5KYdRygDWQcWoFeo6dOBRY",
+   "artista": "Tim Green",
+   "titulo": "Tears",
+   "content_id": "229889002",
+   "textual": "mala (Bailarina), mas parecidos a aura don don pachi busca / tears tambien cambialo / perception tambien muy pasado"
+  },
+  {
+   "spotify_id": "4WUiO69LrOzizNvB0Ght7n",
+   "artista": "M.O.S., Kamilo Sanclemente, André Moret",
+   "titulo": "Perception",
+   "content_id": "264835495",
+   "textual": "mala (Bailarina), mas parecidos a aura don don pachi busca / tears tambien cambialo / perception tambien muy pasado"
   }
  ],
  "rondas": [
@@ -512,6 +533,14 @@
    "textual": "muy oscuro (Theia)",
    "cambios": [
     "#2: Kamilo Sanclemente - Theia -> K Loveski, Cosmonaut - Bailarina"
+   ]
+  },
+  {
+   "textual": "mala (Bailarina), mas parecidos a aura don don pachi busca / tears tambien cambialo / perception tambien muy pasado",
+   "cambios": [
+    "#2: K Loveski, Cosmonaut - Bailarina -> Greg Ochman - The Silver Lily",
+    "#5: Tim Green - Tears -> Cameron Jack, ABEL - Sixth Sense",
+    "#6: M.O.S., Kamilo Sanclemente, André Moret - Perception -> Jou Nielsen, Paul Ikky, Kebin van Reeken - Sundance - Kebin Van Reeken Extended Remix"
    ]
   }
  ],

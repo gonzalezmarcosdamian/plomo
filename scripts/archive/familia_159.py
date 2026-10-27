@@ -186,8 +186,10 @@ def candidatos(pos: int, X: dict) -> list[tuple[str, dict]]:
     """pos es 1-based. Devuelve [(id, puntaje)] ordenado, solo los que pasan lo duro."""
     spec, pool, s = X["spec"], X["pool"], X["set"]
     sale = s[pos - 1]
-    resto = [i for i in s if i != sale]
-    fam = [a for a in X["esc"].get("aprobados", []) + X.get("extra", []) if a in pool]
+    resto = [i for i in s if i != sale and i in pool]      # los que entraron desde Spotify no estan en el pool
+    # --familia-solo: "mas parecidos a aura don don pachi" (2026-10-27): la familia son solo los nombrados
+    base = [] if X.get("solo") else X["esc"].get("aprobados", [])
+    fam = [a for a in base + X.get("extra", []) if a in pool]
     if not fam:
         sys.exit("no hay aprobados en _escucha del config: la familia no existe todavia")
     vec = [s[k] for k in (pos - 2, pos) if 0 <= k < len(s)]
@@ -289,7 +291,8 @@ def medir(ids: list[str], X: dict) -> None:
 
 def mostrar(pos: int, X: dict, top: int) -> None:
     pool, s = X["pool"], X["set"]
-    print(f"\n#{pos}: sale {pool[s[pos - 1]]['artist']} - {pool[s[pos - 1]]['title']}")
+    sale = pool.get(s[pos - 1], {"artist": "(entro desde Spotify)", "title": s[pos - 1]})
+    print(f"\n#{pos}: sale {sale['artist']} - {sale['title']}")
     for c, p in candidatos(pos, X)[:top]:
         t, v = pool[c], X["voz"].get(c)
         voz = f"{v['etiqueta']} {v['presencia']:.0%}" if v else "SIN MEDIR"
@@ -310,9 +313,12 @@ def main() -> None:
     ap.add_argument("--familia-extra", nargs="*", default=[],
                     help="ids que suman a la familia SOLO en esta corrida (p. ej. un reemplazo que el DJ "
                          "todavia no escucho); no los marca como aprobados")
+    ap.add_argument("--familia-solo", action="store_true",
+                    help="la familia son SOLO los de --familia-extra, sin los aprobados del config")
     a = ap.parse_args()
     X = cargar()
     X["extra"] = a.familia_extra
+    X["solo"] = a.familia_solo
     for pos in a.posiciones:
         if a.medir:
             falta = [c for c, _ in candidatos(pos, X)
