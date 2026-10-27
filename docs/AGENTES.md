@@ -46,6 +46,7 @@ que ya costaron caro, y lo que tiene prohibido hacer.
 | `productor` | analisis de produccion | opinar de oido en vez de medir |
 | `video` | YouTube | publicar por su cuenta |
 | `editor` | edicion y color de las piezas de video, tomas reales del DJ | recortarlo del fondo, mostrar algo sin revisarlo |
+| `director` | direccion de lo animado por codigo: historia, cuadro, movimiento, luz, ritmo con la musica | stock, texto que no sea un tema, renders de mas |
 | `revisor` | ultima compuerta antes del DJ: contra `data/video/veredictos.json`, `energia_percibida.json` y la memoria | construir o arreglar; responde APROBADO o BLOQUEADO |
 
 Los trabajos largos lanzados con `scripts/sin_ventana.py` quedan anotados en `data/en_curso.json`
