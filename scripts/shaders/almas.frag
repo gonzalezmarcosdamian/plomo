@@ -3,13 +3,17 @@
 // separan, una se apaga y se aleja, vuelve y la otra la cura, vuelan otra vez, se alejan, y al
 // final se separan brillando las dos.
 //
-// 2a version (tras "la idea esta pero esta mal lograda"). La coreografia la hace scripts/almas.py;
-// aca se dibuja, con tres ideas:
-//  - el alma es una luz con cuerpo: nucleo, halo que respira con borde vivo, y aura que tine el aire;
-//  - la luz es la emocion: cada alma enciende las nubes que tiene cerca, el cielo pierde el color
-//    cuando una se apaga (uFrio) y lo recupera con la onda de la cura;
-//  - la estela queda en el cielo (puntos de la trayectoria, no una raya recta): juntas trenzan dos
-//    hilos, separadas dibujan dos caminos.
+// La coreografia la hace scripts/almas.py; aca se dibuja, con cuatro ideas:
+//  - el alma es una luz con cuerpo y vida adentro: nucleo, halo que respira con borde vivo, aura,
+//    y un brillo que se mueve por dentro (la calida: corrientes lentas; la fria: destellos finos);
+//  - la luz es la emocion: cada alma tine las nubes hasta lejos, el cielo pierde el color cuando una
+//    se apaga (uFrio) y lo recupera con la onda de la cura, que se abre y las deja en el centro;
+//  - la estela queda en el cielo: juntas trenzan dos hilos, separadas dibujan dos caminos;
+//  - el cielo es azul de noche en tres capas con paralaje, la del medio con relieve (borde de
+//    arriba claro, de abajo en sombra). Todo es suave por construccion: anda igual en 4K.
+// "me encanto" (el DJ, 2026-10-27, sobre la 2a version); esta es la vuelta de pulido. Y "es una
+// historia de amor representada": sin simbolos, se cuenta con como se mueven, como se miran
+// (uMira) y que le hace la luz de una a la otra.
 
 #define NT 40
 
@@ -25,6 +29,10 @@ uniform float uTamA;          // escala por profundidad: chica = lejos
 uniform float uTamB;
 uniform float uRespA;         // respiracion, -1 a 1
 uniform float uRespB;
+uniform float uVidaA;         // el brillo de adentro; en la apagada, sus intentos de encenderse
+uniform float uVidaB;
+uniform float uMiraA;         // cuanto se inclina cada una hacia la otra: se miran
+uniform float uMiraB;
 uniform float uCalorB;        // cuanto de la luz calida de A lleva B
 uniform float uGolpe;         // el bombo, 0 a 1, ya atenuado por la historia
 uniform float uFondo;         // el grave lento: el cielo respira con la musica
@@ -40,6 +48,7 @@ out vec4 fragColor;
 
 const vec3 CALIDA = vec3(1.00, 0.52, 0.18);   // el naranja de la marca
 const vec3 FRIA = vec3(0.62, 0.80, 1.00);
+const vec3 FRIA_LUZ = vec3(0.40, 0.64, 1.00); // lo que la fria le tine a las nubes: azul, no gris
 const vec3 GRIS = vec3(0.50, 0.53, 0.60);
 
 float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
@@ -64,50 +73,63 @@ float nube(vec2 q, float cobertura) {
 
 vec3 colorB() { return mix(FRIA, CALIDA, uCalorB); }
 
-// la luz que cada alma le tira al entorno en el punto p (inversa del cuadrado, ablandada)
-vec3 luzEntorno(vec2 p, float blando) {
+// la luz que cada alma le tira al entorno: llega lejos y cerca no quema
+vec3 luzEntorno(vec2 p, float caida) {
     vec2 da = p - uPosA, db = p - uPosB;
-    float la = uLuzA * uTamA * uTamA / (dot(da, da) * 20.0 + blando);
-    float lb = uLuzB * uTamB * uTamB / (dot(db, db) * 20.0 + blando);
-    return CALIDA * la + mix(GRIS * 0.4, colorB(), smoothstep(0.05, 0.6, uLuzB)) * lb;
+    float la = uLuzA * uTamA * uTamA / (dot(da, da) * caida + 0.5);
+    float lb = uLuzB * uTamB * uTamB / (dot(db, db) * caida + 0.5);
+    vec3 cb = mix(GRIS * 0.4, mix(FRIA_LUZ, CALIDA, uCalorB), smoothstep(0.05, 0.6, uLuzB));
+    return CALIDA * la + cb * lb;
 }
 
-// la onda de la cura: un anillo que sale de las dos y enciende las nubes que cruza
+// una onda que se abre desde las dos: nace sin fogonazo y enciende solo lo que va cruzando
 float onda(vec2 p, vec3 o, float velocidad, float vida) {
     if (o.z < 0.0) return 0.0;
-    float r = o.z * velocidad;
-    float ancho = 0.04 + 0.10 * o.z;
+    float r = 0.06 + o.z * velocidad;
+    float ancho = 0.03 + 0.07 * o.z;
     float d = (length(p - o.xy) - r) / ancho;
-    return exp(-d * d) * exp(-o.z / vida);
+    return exp(-d * d) * exp(-o.z / vida) * smoothstep(0.0, 0.25, o.z);
+}
+
+// recien abierta la onda, adentro la luz de las nubes baja: la onda se lleva el brillo hacia afuera
+// y las deja a ellas dos solas en el centro, sin fogonazo
+float hueco(vec2 p) {
+    if (uOnda.z < 0.0) return 0.0;
+    float r = 0.06 + uOnda.z * 0.70;
+    return smoothstep(r, r * 0.4, length(p - uOnda.xy)) * exp(-uOnda.z / 1.2);
 }
 
 vec3 cielo(vec2 p) {
     // el aire: azul de noche, mas claro abajo
-    vec3 c = mix(vec3(0.036, 0.046, 0.096), vec3(0.008, 0.012, 0.032), smoothstep(-0.55, 0.55, p.y));
-    // estrellas, lejos: casi no se mueven
-    vec2 qe = p / mix(1.0, uZoom, 0.1) + uCam * 0.06;
-    vec2 g = floor(qe * 210.0);
+    vec3 c = mix(vec3(0.030, 0.050, 0.125), vec3(0.006, 0.011, 0.038), smoothstep(-0.55, 0.55, p.y));
+    // estrellas, lejos: puntos blandos en su celda (en 4K los cuadraditos se veian)
+    vec2 qe = (p / mix(1.0, uZoom, 0.1) + uCam * 0.06) * 210.0;
+    vec2 g = floor(qe);
+    vec2 de = qe - g - 0.25 - 0.5 * vec2(hash(g + 7.0), hash(g + 13.0));
     float est = step(0.9972, hash(g)) * (0.55 + 0.45 * sin(uTime * 0.9 + hash(g + 3.0) * 6.28));
-    c += vec3(0.75, 0.8, 1.0) * est * 0.32 * smoothstep(-0.3, 0.2, p.y);
+    c += vec3(0.75, 0.82, 1.0) * est * exp(-dot(de, de) * 25.0) * 0.45 * smoothstep(-0.3, 0.2, p.y);
 
-    vec3 luzLejos = luzEntorno(p, 0.60) * 0.12;
-    vec3 luzCerca = luzEntorno(p, 0.25) * 0.30;
-    float o = onda(p, uOnda, 0.55, 2.2);
+    float queda = 1.0 - 0.75 * hueco(p);
+    vec3 luzLejos = luzEntorno(p, 3.0) * 0.10 * queda;
+    vec3 luzCerca = luzEntorno(p, 8.0) * 0.30 * queda;
+    float o = onda(p, uOnda, 0.70, 1.6);
     float t = onda(p, uToque, 0.30, 0.9) * 0.45;
-    vec3 luzOnda = mix(CALIDA, FRIA, 0.45) * (o + t);
+    vec3 luzOnda = mix(CALIDA, FRIA_LUZ, 0.4) * (o + t);
 
     // tres capas de nubes, cada una con su paralaje: lejos, a la altura de las almas, y delante
     float zl = mix(1.0, uZoom, 0.35), zm = uZoom, zc = mix(1.0, uZoom, 1.4);
     float lejos = nube((p / zl + uCam * 0.30) * vec2(1.8, 2.6) + vec2(uTime * 0.008, 0.0), 0.42);
     vec2 qm = (p / zm + uCam) * vec2(2.2, 3.4) + vec2(uTime * 0.015, 4.0);
     float medio = nube(qm, 0.45);
-    float arriba = medio - nube(qm + vec2(0.0, 0.10), 0.45);   // el borde de arriba, mas claro
+    float relieve = medio - nube(qm + vec2(0.0, 0.10), 0.45);   // > 0 borde de arriba, < 0 de abajo
     float cerca = nube((p / zc + uCam * 1.7) * vec2(1.1, 2.4) + vec2(uTime * 0.02, 11.0), 0.55);
 
-    vec3 base = vec3(0.060, 0.075, 0.130) * uFondo;
-    c = mix(c, base * 0.7 + luzLejos + luzOnda * 0.35, lejos * 0.60);
-    c = mix(c, base * (0.85 + 0.6 * max(arriba, 0.0)) + luzCerca * (1.0 + max(arriba, 0.0)) + luzOnda * 0.75, medio * 0.85);
-    c = mix(c, vec3(0.014, 0.018, 0.036) + luzCerca * 0.25, cerca * 0.50);
+    vec3 azul = vec3(0.045, 0.070, 0.160) * uFondo;              // nube de noche: azul, no gris
+    // lejos: mas clara, mas azul y sin contraste, como con aire de por medio
+    c = mix(c, vec3(0.050, 0.078, 0.170) * 0.85 * uFondo + luzLejos + luzOnda * 0.35, lejos * 0.55);
+    float sombra = 0.85 + 0.7 * max(relieve, 0.0) - 0.45 * max(-relieve, 0.0);
+    c = mix(c, azul * sombra + luzCerca * (0.6 + 0.9 * max(relieve, 0.0)) + luzOnda * 0.9, medio * 0.85);
+    c = mix(c, vec3(0.010, 0.016, 0.040) + luzCerca * 0.40, cerca * 0.50);
     c += luzOnda * 0.08;                                    // el anillo, apenas, en el aire
 
     // el alba del final: el horizonte naranja de la marca, abajo del cuadro
@@ -149,21 +171,45 @@ vec3 puente(vec2 p) {
          + CALIDA * exp(-d * d / (16.0 * ancho * ancho)) * uPuente * 0.12;
 }
 
-vec3 alma(vec2 p, vec2 c, vec3 col, float luz, float tam, float resp, float semilla) {
+// adentro: un brillo que se mueve. giro = vueltas y sentido, grano = tamano de las corrientes,
+// titila = cuanto parpadea la chispa (la fria titila, la calida no)
+vec3 adentro(vec2 d, float r, vec3 col, float vida, float giro, float grano, float titila, float semilla) {
+    if (r > 0.07 || vida <= 0.01) return vec3(0.0);
+    float a = uTime * giro;
+    vec2 q = mat2(cos(a), -sin(a), sin(a), cos(a)) * d / 0.032;
+    float f = fbm(q * grano + vec2(semilla, -uTime * 0.7 * abs(giro)));
+    float corriente = smoothstep(0.48, 0.85, f) * exp(-r * r / (0.030 * 0.030));
+    vec2 c1 = 0.014 * vec2(cos(uTime * giro * 1.7 + semilla), sin(uTime * giro * 1.3 + semilla * 2.0));
+    float chispa = exp(-dot(d - c1, d - c1) * 9000.0) * (1.0 - titila + titila * (0.5 + 0.5 * sin(uTime * 7.0 + semilla)));
+    return (mix(col, vec3(1.0), 0.4) * corriente * 0.9 + vec3(1.0) * chispa * 0.55) * vida;
+}
+
+// otra, colOtra, luzOtra: la otra alma. mira: cuanto se inclina hacia ella (0 a 1); su halo se corre
+// y su aura se estira de ese lado. Y la luz de la otra le tine el borde que la enfrenta, mas cuanto
+// mas cerca estan: es lo que una le hace a la otra (en la cura, la calida entibia a la apagada)
+vec3 alma(vec2 p, vec2 c, vec3 col, float luz, float tam, float resp, float vida,
+          float giro, float grano, float titila, float semilla,
+          vec2 otra, vec3 colOtra, float luzOtra, float mira) {
+    vec2 hacia = otra - c;
+    float dist = length(hacia);
+    hacia /= max(dist, 1e-4);
     vec2 d = (p - c) / tam;
     float r = length(d);
+    float frente = max(dot(d / max(r, 1e-4), hacia), 0.0);
     float s = 1.0 + 0.10 * resp + 0.06 * uGolpe;
     // el borde del halo se mueve, apenas: esta vivo
     float borde = 1.0 + 0.22 * (ruido(d / max(r, 1e-4) * 1.4 + vec2(uTime * 0.35, semilla)) - 0.5);
-    float rh = r / (s * borde);
-    float nucleo = exp(-r * r * 7000.0 / (s * s));
+    float rh = length(d - hacia * 0.010 * mira) / (s * borde * (1.0 + 0.12 * mira * frente));
+    float nucleo = exp(-r * r * 12000.0 / (s * s));
     float halo = exp(-rh * rh * 500.0);
-    float aura = 0.0028 / (r + 0.014);
-    float viva = smoothstep(0.04, 0.6, luz);
-    vec3 tinte = mix(GRIS, col, viva);
+    float aura = 0.0028 / (r + 0.014) * (1.0 + 0.6 * mira * frente);
+    float toca = luzOtra / (1.0 + dist * dist * 25.0) * frente;
+    vec3 tinte = mix(GRIS, col, smoothstep(0.04, 0.6, luz));
     return vec3(1.0, 0.97, 0.94) * nucleo * mix(0.45, 1.7, luz)
          + tinte * halo * mix(0.16, 0.95, luz)
-         + tinte * aura * luz * 0.55;
+         + tinte * aura * luz * 0.55
+         + colOtra * toca * exp(-r * r * 300.0) * 0.6
+         + adentro(d, r, col, vida, giro, grano, titila, semilla);   // su color, aunque este gris
 }
 
 void main() {
@@ -171,7 +217,8 @@ void main() {
     vec3 c = cielo(p);
     c += estela(p, 0, CALIDA, uTamA) + estela(p, 1, mix(GRIS, colorB(), smoothstep(0.05, 0.6, uLuzB)), uTamB);
     c += puente(p);
-    c += alma(p, uPosA, CALIDA, uLuzA, uTamA, uRespA, 0.0) + alma(p, uPosB, colorB(), uLuzB, uTamB, uRespB, 17.0);
+    c += alma(p, uPosA, CALIDA, uLuzA, uTamA, uRespA, uVidaA, -0.35, 1.6, 0.0, 0.0, uPosB, colorB(), uLuzB, uMiraA)
+       + alma(p, uPosB, colorB(), uLuzB, uTamB, uRespB, uVidaB, 0.9, 3.0, 1.0, 17.0, uPosA, CALIDA, uLuzA, uMiraB);
     c = 1.0 - exp(-c * 1.5);                       // sin quemar: las luces llegan a blanco suave
     c *= 1.0 - 0.38 * dot(p * 0.9, p * 0.9);       // vineta: el ojo va al centro
     c += (hash(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) / 255.0;   // sin escalones en el negro

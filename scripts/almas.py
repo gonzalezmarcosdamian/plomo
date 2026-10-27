@@ -11,15 +11,22 @@ donde vuelve el bombo despues del hueco, que se mide en el audio (en el 159: un 
 Las almas se mueven en coordenadas del cielo, con un resorte que les da inercia y frenada; la
 camara las sigue aparte, y las estelas quedan en el cielo: juntas trenzan dos hilos.
 
+Pulido tras "me encanto": vida adentro de cada alma (la apagada intenta encenderse y no puede:
+intentos()), la cura como una onda que se abre y las deja en el centro, el cielo mas azul, el
+nombre del tema cuando entra (textos(), como en las Sessions) y el render final en 4K.
+
 Uso:
-    python scripts/almas.py --salida C:/Users/gonza/Videos/plomo_prueba_almas.mp4 --hoja hoja.jpg
+    python scripts/almas.py --salida C:/Users/gonza/Videos/plomo_prueba_almas.mp4 --res 3840x2160 --hoja hoja.jpg
     python scripts/almas.py --salida prueba.mp4 --res 960x540 --desde 26 --hasta 40   # un tramo
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
+import shutil
 import subprocess
+import tempfile
 from pathlib import Path
 
 import moderngl
@@ -37,6 +44,7 @@ FPS, LARGO, DROP_EN = 30, 60.0, 36.0     # el drop de The Captain en el segundo 
 TEMA_DROP, DROP_COMPAS = "The Captain", 144
 NT, PASO_ESTELA = 40, 2                  # 40 puntos cada 2 cuadros: 2.7 s de camino en el cielo
 SUB = 4                                  # pasos del resorte por cuadro
+FUENTE, CREMA = Path("C:/Windows/Fonts/bahnschrift.ttf"), "0xF3EBDD"   # como en las Sessions
 HOJA_EN = (2.5, 7.5, 11.6, 16.5, 23.0, 27.5, 31.5, 36.8, 38.4, 41.5, 49.0, 58.0)
 
 # La hoja de recorrido hecha dato. Tiempo en compases desde el drop ("I+s" = s segundos desde que
@@ -58,25 +66,25 @@ CLAVES = {
           (-4, (2.14, 0.42)), (-3.25, (2.10, 0.47)), (-2.8, (2.30, 0.38)), (-2.5, (2.42, 0.20)),
           (-2, (2.47, 0.05)),
           ("I", (2.47, 0.06)), (2, (2.85, 0.30)), (4, (3.75, 0.62)), (6, (4.45, 0.86)),
-          (8, (5.00, 1.02)), (10, (4.78, 1.22)), (12.2, (4.55, 1.35))],
+          (8, (5.00, 1.02)), (9.5, (4.86, 1.15)), (10.5, (4.82, 1.19)), (12.2, (4.55, 1.35))],
     "b": [(-18.3, (0.66, 0.14)), (-16, (0.46, 0.11)), (-15, (0.47, 0.13)), (-14, (0.19, 0.08)),
           (-13, (0.10, 0.07)), (-12.5, (0.02, 0.065)), (-12, (0.0, 0.07)), (-10, (0.55, 0.20)),
           (-8, (1.50, 0.34)), (-7, (2.02, 0.30)), (-6, (2.38, 0.10)), (-5, (2.56, -0.04)),
           (-4, (2.62, -0.10)), (-3.25, (2.58, -0.05)), (-2.5, (2.50, 0.03)), (-2, (2.47, 0.05)),
           ("I", (2.47, 0.06)), (2, (2.85, 0.30)), (4, (3.75, 0.62)), (6, (4.62, 0.62)),
-          (8, (5.28, 0.66)), (10, (5.80, 0.82)), (12.2, (6.15, 0.95))],
+          (8, (5.28, 0.66)), (9.5, (5.66, 0.78)), (10.5, (5.72, 0.80)), (12.2, (6.15, 0.95))],
     "cam": [(-18.3, (0.0, 0.06)), (-12, (0.0, 0.07)), (-10, (0.45, 0.18)), (-8, (1.40, 0.32)),
             (-6, (2.15, 0.30)), (-4, (2.32, 0.22)), (-2, (2.45, 0.10)), ("I", (2.47, 0.07)),
             (2, (2.80, 0.27)), (4, (3.65, 0.58)), (6, (4.40, 0.75)), (8, (5.05, 0.85)),
             (10, (5.25, 0.90)), (12.2, (5.30, 0.92))],
     "zoom": [(-18.3, 1.0), (-2.5, 1.0), (-1.5, 1.18), ("I", 1.18), ("I+1.6", 1.0), (8, 1.0), (12.2, 0.62)],
     "luz_a": [(-18.3, 0.7), (-16, 0.85), (-15, 1.0), (-7, 1.0), (-5, 0.8), (-3.25, 0.85), (-2.5, 1.0),
-              (-0.5, 1.0), ("I-0.05", 0.72), ("I+0.25", 1.15), ("I+2.5", 1.0), (12.2, 1.05)],
+              (-0.5, 1.0), ("I-0.05", 0.72), ("I+0.25", 1.08), ("I+2.5", 1.0), (12.2, 1.05)],
     "luz_b": [(-18.3, 0.6), (-16, 0.8), (-15, 1.0), (-7.5, 1.0), (-6, 0.5), (-5, 0.22), (-4, 0.16),
-              (-2, 0.18), (-0.5, 0.26), ("I-0.05", 0.42), ("I+0.25", 1.35), ("I+2.5", 1.0), (12.2, 1.05)],
-    "tam_a": [(-18.3, 1.0), (-0.5, 1.0), ("I-0.1", 0.78), ("I+0.3", 1.12), ("I+2", 1.0), (12.2, 1.0)],
+              (-2, 0.18), (-0.5, 0.26), ("I-0.05", 0.42), ("I+0.25", 1.2), ("I+2.5", 1.0), (12.2, 1.05)],
+    "tam_a": [(-18.3, 1.0), (-0.5, 1.0), ("I-0.1", 0.78), ("I+0.3", 1.06), ("I+2", 1.0), (12.2, 1.0)],
     "tam_b": [(-18.3, 0.6), (-16, 0.75), (-14, 0.95), (-12.5, 1.0), (-7, 1.0), (-6, 0.78), (-5, 0.62),
-              (-4, 0.58), (-2.5, 0.62), (-2, 0.68), (-0.5, 0.72), ("I-0.1", 0.7), ("I+0.3", 1.12),
+              (-4, 0.58), (-2.5, 0.62), (-2, 0.68), (-0.5, 0.72), ("I-0.1", 0.7), ("I+0.3", 1.06),
               ("I+2", 1.0), (12.2, 1.0)],
     "calor_b": [(-18.3, 0.0), (-2, 0.0), (-0.5, 0.15), ("I-0.05", 0.35), ("I+1.5", 0.15), (12.2, 0.15)],
     "puente": [(-18.3, 0.0), (-1, 0.0), (0, 0.5), ("I-0.05", 1.0), ("I+0.4", 0.0), (12.2, 0.0)],
@@ -87,10 +95,19 @@ CLAVES = {
     "giro": [(-18.3, 0.0), (-12.5, 0.0), (-11.5, 0.055), (-8.5, 0.06), (-7, 0.0), ("I", 0.0),
              ("I+1", 0.065), (4, 0.07), (5.5, 0.0), (12.2, 0.0)],
     "abrazo": [(-18.3, 0.0), (-2.5, 0.0), (-2, 0.09), (0, 0.08), ("I", 0.085), ("I+0.8", 0.0), (12.2, 0.0)],
-    "vueltas": [(-18.3, 0.0), (-12.5, 0.0), (-11.5, 1.0), (-7, 1.0), (-6, 0.0), (-2.5, 0.0), (-2, 1.0),
-                (-0.25, 1.5), (0, 0.15), ("I", 0.0), ("I+0.3", 1.2), (4, 1.0), (5.5, 0.3), (12.2, 0.0)],
+    "vueltas": [(-18.3, 0.0), (-12.5, 0.0), (-11.5, 1.0), (-7, 1.0), (-6, 0.0), (-2.5, 0.0), (-2, 0.8),
+                (-0.25, 0.45), (0, 0.15), ("I", 0.0), ("I+0.3", 1.2), (4, 1.0), (5.5, 0.3), (12.2, 0.0)],
     # alejandose todavia se buscan: un vaiven en espejo, una sube cuando la otra baja (radio)
     "vaiven": [(-18.3, 0.0), (4, 0.0), (5, 0.035), (8, 0.035), (10, 0.02), (12.2, 0.012)],
+    # cuanto se mira cada una con la otra. "Es una historia de amor representada" (el DJ): se
+    # miran al conocerse; en el vuelo, complices, apenas; A no le saca los ojos a B cuando se va, y B
+    # perdida no mira a nadie hasta que vuelve; en la cura las dos; y al final se miran mientras se
+    # alejan, con una pausa (9.5 a 10.5 en "a" y "b") para mirarse una ultima vez
+    "mira_a": [(-18.3, 0.0), (-16, 0.0), (-15, 1.0), (-12.5, 1.0), (-11.5, 0.4), (-8, 0.4), (-7, 1.0),
+               ("I", 1.0), ("I+2", 0.4), (4, 0.4), (5, 0.8), (9.5, 1.0), (10.5, 1.0), (12.2, 0.8)],
+    "mira_b": [(-18.3, 0.0), (-16, 0.0), (-15, 1.0), (-12.5, 1.0), (-11.5, 0.4), (-8, 0.4), (-7, 0.5),
+               (-6, 0.0), (-4, 0.0), (-3.25, 0.5), (-2, 1.0), ("I", 1.0), ("I+2", 0.4), (4, 0.4), (5, 0.8),
+               (9.5, 1.0), (10.5, 1.0), (12.2, 0.8)],
     # cuanto respiran juntas (1 = al mismo tiempo)
     "sincro": [(-18.3, 0.0), (-13, 0.0), (-12, 1.0), (-7, 1.0), (-6, 0.0), (-2, 0.0), (-1, 1.0), (12.2, 1.0)],
 }
@@ -160,6 +177,18 @@ def medir_impacto(audio: np.ndarray, sr: int, compas: float) -> float:
     return DROP_EN + min(vuelta if vuelta is not None else 4, 5) * tiempo
 
 
+def intentos(t: np.ndarray, semilla: int = 159) -> np.ndarray:
+    """La apagada intenta encenderse y no puede: pulsos que suben rapido y se caen."""
+    rng = np.random.default_rng(semilla)
+    out, s = np.zeros_like(t), 0.0
+    while s < t[-1]:
+        s += rng.uniform(1.0, 2.2)
+        x = t - s
+        sube = np.sin(np.clip(x / 0.25, 0, 1) * np.pi / 2) ** 2
+        out = np.maximum(out, rng.uniform(0.5, 1.0) * (x >= 0) * sube * np.exp(-np.clip(x - 0.25, 0, None) / 0.45))
+    return out
+
+
 def coreografia(t: np.ndarray, compas: float, impacto: float, dt: float) -> dict:
     """Todo lo que se mueve, por paso de tiempo, en coordenadas del cielo."""
     p = {k: pista(k, t, compas, impacto) for k in CLAVES}
@@ -176,17 +205,23 @@ def coreografia(t: np.ndarray, compas: float, impacto: float, dt: float) -> dict
     prof = 0.15 * np.sin(th)                               # arriba de la elipse = mas lejos
     tam_a = p["tam_a"] * (1 - prof * (p["giro"] + p["abrazo"]) / 0.07)
     tam_b = p["tam_b"] * (1 + prof * p["giro"] / 0.07)
-    # que respiren: un vaiven chico; B apagada tiembla y su luz falla
+    # que respiren: un vaiven chico. B apagada intenta encenderse: en cada intento le sube la luz de
+    # adentro, el halo y un temblor, y se cae; los intentos crecen cuando A llega a ayudarla
     apagada = np.clip(1 - p["luz_b"] / 0.4, 0, 1)
+    ayuda = np.clip((t - segundo(-4, compas, impacto)) / (4 * compas), 0, 1)
+    intento = apagada * intentos(t) * (0.6 + 0.4 * ayuda)
+    temblor = np.stack([np.sin(37.0 * t), np.cos(41.0 * t)], 1)
     a = a + 0.006 * np.stack([np.sin(0.7 * t), np.sin(0.9 * t + 1.0)], 1)
     b = b + (0.006 + 0.012 * apagada)[:, None] * np.stack([np.sin(0.8 * t + 2.0), np.sin(0.6 * t + 0.5)], 1)
-    falla = np.clip(np.sin(7.3 * t) * np.sin(3.1 * t + 1.0) * np.sin(1.7 * t + 2.0), 0, 1)
-    luz_b = p["luz_b"] * (1 - 0.45 * apagada * falla)
+    b = b + 0.004 * intento[:, None] * temblor
+    luz_b = p["luz_b"] + 0.10 * intento
+    vida_b = p["luz_b"] * (1 - apagada) + 1.2 * intento
     resp_a = np.sin(2 * np.pi * t / (2 * compas))
     resp_b = (1 - 0.5 * apagada) * np.sin(2 * np.pi * t / (3.1 + 2.0 * apagada))
     resp_b = resp_b + (resp_a - resp_b) * p["sincro"]
     return {"a": a, "b": b, "cam": cam, "zoom": p["zoom"], "luz_a": p["luz_a"], "luz_b": luz_b,
-            "tam_a": tam_a, "tam_b": tam_b, "resp_a": resp_a, "resp_b": resp_b,
+            "tam_a": tam_a, "tam_b": tam_b, "resp_a": resp_a, "resp_b": resp_b, "vida_a": p["luz_a"], "vida_b": vida_b,
+            "mira_a": p["mira_a"], "mira_b": p["mira_b"],
             "calor_b": p["calor_b"], "frio": p["frio"], "alba": p["alba"], "puente": p["puente"]}
 
 
@@ -206,12 +241,39 @@ def uniformes(f: int, c: dict, golpe: np.ndarray, fondo: np.ndarray, eventos: di
         u[f"uLuz{k}"] = float(c[f"luz_{s}"][f])
         u[f"uTam{k}"] = float(c[f"tam_{s}"][f] * zoom ** 0.5)
         u[f"uResp{k}"] = float(c[f"resp_{s}"][f])
+        u[f"uVida{k}"] = float(c[f"vida_{s}"][f])
+        u[f"uMira{k}"] = float(c[f"mira_{s}"][f])
         pts = en_pantalla(c[s][idx], cam, zoom)
         u[f"uEstela{k}"] = [(float(x), float(y), float(lz)) for (x, y), lz in zip(pts, c[f"luz_{s}"][idx])]
     for nombre, (cuando, donde) in eventos.items():
         xy = en_pantalla(donde, cam, zoom)
         u["uOnda" if nombre == "cura" else "uToque"] = (float(xy[0]), float(xy[1]), t - cuando)
     return u
+
+
+def textos(mix: dict, inicio: float, desde: float, alto: int, carpeta: Path) -> str:
+    """El nombre del tema cuando entra, como en las Sessions (naturaleza.textos): titulo arriba,
+    artista abajo, a la izquierda, chico, en crema; entra 1.5 s despues del cambio y dura 8 s.
+    Las medidas de las Sessions son para 1440 de alto y aca se escalan."""
+    shutil.copyfile(FUENTE, carpeta / "fuente.ttf")
+    limpio = lambda s: re.sub(r"\s*\((Extended|Original)( Mix)?\)\s*$", "", " ".join(s.split()), flags=re.I)
+    e = alto / 1440
+    filtros = []
+    for k, tema in enumerate(mix["plan"]):
+        a = (tema.get("cambio_in") or tema["desde"]) - inicio + 1.5
+        z = a + 8.0
+        if a < 0 or a > LARGO:
+            continue
+        artista, _, titulo = tema["tema"].partition(" - ")
+        (carpeta / f"titulo_{k:02d}.txt").write_text(limpio(titulo or artista), encoding="utf-8")
+        (carpeta / f"artista_{k:02d}.txt").write_text(artista if titulo else "", encoding="utf-8")
+        T = f"(t+{desde:.3f})"
+        alfa = f"if(lt({T},{a:.3f}),0,if(lt({T},{a + 1:.3f}),{T}-{a:.3f},if(lt({T},{z - 1.5:.3f}),1,max(0,({z:.3f}-{T})/1.5))))"
+        comun = (f"fontfile=fuente.ttf:fontcolor={CREMA}:x={round(104 * e)}:shadowcolor=black@0.45:"
+                 f"shadowx={round(2 * e)}:shadowy={round(2 * e)}")
+        filtros.append(f"drawtext={comun}:textfile=titulo_{k:02d}.txt:fontsize={round(42 * e)}:y=h-{round(164 * e)}:alpha='0.94*{alfa}'")
+        filtros.append(f"drawtext={comun}:textfile=artista_{k:02d}.txt:fontsize={round(30 * e)}:y=h-{round(112 * e)}:alpha='0.78*{alfa}'")
+    return ("," + ",".join(filtros)) if filtros else ""
 
 
 def main() -> None:
@@ -252,12 +314,14 @@ def main() -> None:
     f0, f1 = int(a.desde * FPS), int(min(a.hasta, LARGO) * FPS)
     largo = (f1 - f0) / FPS
     fundidos = f"fade=in:0:45,fade=out:{n - 60}:60" if f0 == 0 and f1 == n else "null"
+    tmp = tempfile.TemporaryDirectory()
+    letras = textos(mix, inicio, a.desde, alto, Path(tmp.name))
     ff = subprocess.Popen(
         ["ffmpeg", "-y", "-v", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{ancho}x{alto}", "-r", str(FPS),
          "-i", "-", "-ss", f"{inicio + a.desde:.3f}", "-t", f"{largo:.3f}", "-i", str(MIX.with_suffix(".wav")),
-         "-vf", f"vflip,{fundidos}", "-af", f"afade=in:d=1.5,afade=out:st={largo - 2:.3f}:d=2",
-         "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-shortest", a.salida],
-        stdin=subprocess.PIPE)
+         "-vf", f"vflip,{fundidos}{letras}", "-af", f"afade=in:d=1.5,afade=out:st={max(largo - 2, 0):.3f}:d=2",
+         "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "320k", "-shortest", str(Path(a.salida).resolve())],
+        stdin=subprocess.PIPE, cwd=tmp.name)
     muestras = {int(s * FPS) for s in HOJA_EN}
     hoja = []
     for f in range(f0, f1):
@@ -271,6 +335,9 @@ def main() -> None:
             hoja.append(Image.frombytes("RGB", (ancho, alto), crudo).transpose(Image.FLIP_TOP_BOTTOM).resize((240, 135)))
     ff.stdin.close()
     ff.wait()
+    tmp.cleanup()
+    if ff.returncode:
+        raise SystemExit(f"ffmpeg termino con error {ff.returncode}")
     if a.hoja and hoja:
         lienzo = Image.new("RGB", (960, 135 * ((len(hoja) + 3) // 4)))
         for i, im in enumerate(hoja):
