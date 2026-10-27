@@ -3423,7 +3423,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 
 ## Set 159. 159. Work · Organic con brillo — 2h — 2026-10-25
-**Armado:** 2026-10-25  
+**Armado:** 2026-10-27  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-124  
@@ -3434,10 +3434,10 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
 | 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
 | 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
-| 5 | Gorje Hewek | Forest Song in the Morning (Original Mix | 120 | 1.4 |
-| 6 | Juan Yarin | Never Met (Durante Remix) | 122 | 6.5 |
-| 7 | Capoon, Amand | Ouverture (Khen Remix) | 123 | 5.7 |
-| 8 | Nora En Pure | Spring Embers (Extended Mix) | 122 | 6.7 |
+| 5 | Tim Green | Tears (Original Mix)  | 121 | 6.7 |
+| 6 | Kamilo Sanclemente, M.O.S., Andre Moret | Perception (Original Mix) | 122 | 6.8 |
+| 7 | Cid Inc. | Forgotten | 123 | 6.7 |
+| 8 | Guy Mantzur, Tamir Regev | Mystica (Original Mix) | 122 | 6.5 |
 | 9 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
 | 10 | Gorje Hewek, Dulus | Earth (Original Mix) | 123 | 6.5 |
 | 11 | Fernando Olaya, Kamilo Sanclemente | Renascence (Original Mix) | 123 | 5.6 |
@@ -3448,6 +3448,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 16 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.8 |
 | 17 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
 
+**v6 (2026-10-27):** "entre aura y coral se cae la energia cambialos" / "Los 4 del medio". Salen Forest Song in the Morning, Never Met (Durante Remix), Ouverture (Khen Remix) y Spring Embers; entran Tears, Perception, Forgotten y Mystica (6A-6A-7A-8A, E 6.5-6.8, instrumentales). Spotify manda: el orden sale de la lista de Spotify y baja a Rekordbox.
 
 **Pedido:** "haceme una lista de 2 horas tipo para trabajar work de organic con brillo, en spoty y rekor y la vamos a
 iterar" (2026-10-25). Para escuchar mientras trabaja, no para pista. Primera version; sin escucha del DJ todavia.
