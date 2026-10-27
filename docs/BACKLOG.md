@@ -32,6 +32,7 @@ con la Session 05 se baja el costo de trabajar con video. Lo medido ese día:
 | 0.3 | A | **Encargos chicos y con tope**: elegir con hojas de miniaturas, bajar y mirar a 1:1 solo los 4 que van a la hoja, una vuelta por encargo. | 46 de los 66 clips bajados se descartaron. | yo |
 | 0.4 | B | **Modelo por tarea**: buscar y bajar clips no necesita el modelo más caro (el editor corre en opus). El criterio sí. | Separar la tarea mecánica del juicio. | yo |
 | 0.5 | B | **Imágenes más chicas para mirar**: las hojas de 3000 px se leen enteras; recortar por etapa o achicar. | Cada lectura de imagen grande pesa. | editor |
+| 0.6 | A | **No retomar un agente largo con SendMessage para otra vuelta**: arrancar uno nuevo con un resumen corto. | La tercera vuelta del director sobre las almas (2026-10-27) se estimó en 75 mil tokens y el contador dio 243 mil: el agente retomado vuelve a cargar todo lo anterior. | yo |
 
 ## 0b. La Session 05 (el 159 en paisajes, "una tarde"): parada, se retoma después de 0
 
