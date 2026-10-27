@@ -16,24 +16,22 @@
    "duracion": "10:06"
   },
   {
-   "spotify_id": "7G4Kpf5bSBd61lKwoLmRbm",
-   "artista": "Shai T, Hernan Cattaneo, Marcelo Vasami",
-   "titulo": "Oriki - Hernan Cattaneo & Marcelo Vasami Remix",
-   "album_id": "0Ezu5YyMoy9SDPts8strXc",
+   "spotify_id": "6hZJq5Q1hW9S0Ft0aQ7cni",
+   "artista": "Kamilo Sanclemente",
+   "titulo": "Theia",
+   "album_id": "2D0pXfOqVKQqUkWCK5EUPh",
    "artistas_ids": [
-    "3peEllG3urQKzvyoZf4UgN",
-    "4mpJaw5y17CIN08qqe8EfB",
-    "4bsJBOidwLc1UbwPoKbF44"
+    "2AYLgq9P1arichVXbNbjVy"
    ],
-   "ms": 458113,
+   "ms": 425554,
    "estado": "nuevo",
-   "content_id": "166576540",
-   "muzpa_id": 5899544,
-   "muzpa_nombre": "Shai T - Oriki (Hernan Cattaneo & Marcelo Vasami Remix)",
+   "content_id": "28418420",
+   "muzpa_id": 7085639,
+   "muzpa_nombre": "Kamilo Sanclemente - Theia",
    "bpm": 122,
-   "key": "7B",
-   "genero": "Organic House / Downtempo",
-   "duracion": "7:38"
+   "key": "5A",
+   "genero": "Progressive",
+   "duracion": "7:06"
   },
   {
    "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
@@ -418,6 +416,13 @@
    "titulo": "Rogelito",
    "content_id": "173790116",
    "textual": "rogelito blazing ice lo siento mas emocional lo pondria diferente o rogelito lo cambiaria / Cambiar Rogelito"
+  },
+  {
+   "spotify_id": "7G4Kpf5bSBd61lKwoLmRbm",
+   "artista": "Shai T, Hernan Cattaneo, Marcelo Vasami",
+   "titulo": "Oriki - Hernan Cattaneo & Marcelo Vasami Remix",
+   "content_id": "166576540",
+   "textual": "se queda un poco oriki"
   }
  ],
  "rondas": [
@@ -487,6 +492,12 @@
    "textual": "rogelito blazing ice lo siento mas emocional lo pondria diferente o rogelito lo cambiaria / Cambiar Rogelito",
    "cambios": [
     "#2: Hernan Cattaneo, Khen - Rogelito -> Shai T, Hernan Cattaneo, Marcelo Vasami - Oriki - Hernan Cattaneo & Marcelo Vasami Remix"
+   ]
+  },
+  {
+   "textual": "se queda un poco oriki",
+   "cambios": [
+    "#2: Shai T, Hernan Cattaneo, Marcelo Vasami - Oriki - Hernan Cattaneo & Marcelo Vasami Remix -> Kamilo Sanclemente - Theia"
    ]
   }
  ],
