@@ -15,6 +15,11 @@ Pulido tras "me encanto": vida adentro de cada alma (la apagada intenta encender
 intentos()), la cura como una onda que se abre y las deja en el centro, el cielo mas azul, el
 nombre del tema cuando entra (textos(), como en las Sessions) y el render final en 4K.
 
+Con las referencias (docs/ALMAS_REFERENCIAS.md, "las 5 cosas"): la respiracion acoplada cuenta la
+relacion (respiracion()), la que sigue va con retardo y quien lleva cambia en la cura (retardo_a/b),
+la cura en dos tiempos con un intento que no prende, y B se esconde detras de un banco de nubes
+(detras_b, armar_eventos). Las nubes iluminadas desde cada alma viven en el shader.
+
 Uso:
     python scripts/almas.py --salida C:/Users/gonza/Videos/plomo_prueba_almas.mp4 --res 3840x2160 --hoja hoja.jpg
     python scripts/almas.py --salida prueba.mp4 --res 960x540 --desde 26 --hasta 40   # un tramo
@@ -60,15 +65,15 @@ HOJA_EN = (2.5, 7.5, 11.6, 16.5, 23.0, 27.5, 31.5, 36.8, 38.4, 41.5, 49.0, 58.0)
 #  4 a 8        se alejan: vuelan a la par, cada vez mas lejos
 #  8 al final   se separan: cada una para su lado, las dos brillando; el cielo se abre y amanece
 CLAVES = {
-    "a": [(-18.3, (-0.62, 0.00)), (-16, (-0.40, 0.02)), (-15, (-0.43, 0.01)), (-14, (-0.17, 0.05)),
-          (-13, (-0.09, 0.06)), (-12.5, (-0.02, 0.065)), (-12, (0.0, 0.07)), (-10, (0.55, 0.20)),
+    "a": [(-18.3, (-0.62, 0.00)), (-16, (-0.40, 0.02)), (-15, (-0.43, 0.01)), (-14, (-0.11, 0.06)),
+          (-13.5, (-0.14, 0.055)), (-13, (-0.10, 0.06)), (-12.5, (-0.02, 0.065)), (-12, (0.0, 0.07)), (-10, (0.55, 0.20)),
           (-8, (1.50, 0.34)), (-7, (1.86, 0.42)), (-6, (2.06, 0.45)), (-5, (2.12, 0.44)),
           (-4, (2.14, 0.42)), (-3.25, (2.10, 0.47)), (-2.8, (2.30, 0.38)), (-2.5, (2.42, 0.20)),
           (-2, (2.47, 0.05)),
           ("I", (2.47, 0.06)), (2, (2.85, 0.30)), (4, (3.75, 0.62)), (6, (4.45, 0.86)),
           (8, (5.00, 1.02)), (9.5, (4.86, 1.15)), (10.5, (4.82, 1.19)), (12.2, (4.55, 1.35))],
-    "b": [(-18.3, (0.66, 0.14)), (-16, (0.46, 0.11)), (-15, (0.47, 0.13)), (-14, (0.19, 0.08)),
-          (-13, (0.10, 0.07)), (-12.5, (0.02, 0.065)), (-12, (0.0, 0.07)), (-10, (0.55, 0.20)),
+    "b": [(-18.3, (0.66, 0.14)), (-16, (0.46, 0.11)), (-15, (0.47, 0.13)), (-14, (0.11, 0.07)),
+          (-13.5, (0.14, 0.075)), (-13, (0.10, 0.07)), (-12.5, (0.02, 0.065)), (-12, (0.0, 0.07)), (-10, (0.55, 0.20)),
           (-8, (1.50, 0.34)), (-7, (2.02, 0.30)), (-6, (2.38, 0.10)), (-5, (2.56, -0.04)),
           (-4, (2.62, -0.10)), (-3.25, (2.58, -0.05)), (-2.5, (2.50, 0.03)), (-2, (2.47, 0.05)),
           ("I", (2.47, 0.06)), (2, (2.85, 0.30)), (4, (3.75, 0.62)), (6, (4.62, 0.62)),
@@ -79,16 +84,17 @@ CLAVES = {
             (10, (5.25, 0.90)), (12.2, (5.30, 0.92))],
     "zoom": [(-18.3, 1.0), (-2.5, 1.0), (-1.5, 1.18), ("I", 1.18), ("I+1.6", 1.0), (8, 1.0), (12.2, 0.62)],
     "luz_a": [(-18.3, 0.7), (-16, 0.85), (-15, 1.0), (-7, 1.0), (-5, 0.8), (-3.25, 0.85), (-2.5, 1.0),
-              (-0.5, 1.0), ("I-0.05", 0.72), ("I+0.25", 1.08), ("I+2.5", 1.0), (12.2, 1.05)],
+              (-0.6, 1.05), (-0.43, 0.9), (-0.05, 0.85), ("I-0.05", 0.72), ("I+0.25", 1.08), ("I+2.5", 1.0), (12.2, 1.05)],
     "luz_b": [(-18.3, 0.6), (-16, 0.8), (-15, 1.0), (-7.5, 1.0), (-6, 0.5), (-5, 0.22), (-4, 0.16),
-              (-2, 0.18), (-0.5, 0.26), ("I-0.05", 0.42), ("I+0.25", 1.2), ("I+2.5", 1.0), (12.2, 1.05)],
-    "tam_a": [(-18.3, 1.0), (-0.5, 1.0), ("I-0.1", 0.78), ("I+0.3", 1.06), ("I+2", 1.0), (12.2, 1.0)],
+              (-2, 0.18), (-0.55, 0.26), (-0.43, 0.68), (-0.3, 0.5), (-0.05, 0.17),
+              ("I-0.05", 0.42), ("I+0.25", 1.2), ("I+2.5", 1.0), (12.2, 1.05)],
+    "tam_a": [(-18.3, 1.0), (-0.65, 1.0), (-0.55, 0.9), (-0.43, 1.03), (-0.05, 0.95), ("I-0.1", 0.78), ("I+0.3", 1.06), ("I+2", 1.0), (12.2, 1.0)],
     "tam_b": [(-18.3, 0.6), (-16, 0.75), (-14, 0.95), (-12.5, 1.0), (-7, 1.0), (-6, 0.78), (-5, 0.62),
-              (-4, 0.58), (-2.5, 0.62), (-2, 0.68), (-0.5, 0.72), ("I-0.1", 0.7), ("I+0.3", 1.06),
+              (-4, 0.58), (-2.5, 0.62), (-2, 0.68), (-0.55, 0.72), (-0.43, 0.84), (-0.05, 0.68), ("I-0.1", 0.7), ("I+0.3", 1.06),
               ("I+2", 1.0), (12.2, 1.0)],
     "calor_b": [(-18.3, 0.0), (-2, 0.0), (-0.5, 0.15), ("I-0.05", 0.35), ("I+1.5", 0.15), (12.2, 0.15)],
-    "puente": [(-18.3, 0.0), (-1, 0.0), (0, 0.5), ("I-0.05", 1.0), ("I+0.4", 0.0), (12.2, 0.0)],
-    "frio": [(-18.3, 0.15), (-15, 0.0), (-7, 0.0), (-4, 1.0), ("I", 1.0), ("I+1.2", 0.0), (12.2, 0.0)],
+    "puente": [(-18.3, 0.0), (-1, 0.0), (-0.55, 0.3), (-0.45, 1.0), (-0.3, 0.35), (-0.05, 0.45), ("I-0.05", 1.0), ("I+0.4", 0.0), (12.2, 0.0)],
+    "frio": [(-18.3, 0.15), (-15, 0.0), (-7, 0.0), (-4, 1.0), (-0.55, 1.0), (-0.43, 0.85), (-0.05, 1.0), ("I", 1.0), ("I+1.2", 0.0), (12.2, 0.0)],
     "alba": [(-18.3, 0.0), (8, 0.0), (12.2, 1.0)],
     # el giro de las dos juntas (radio), el abrazo de A alrededor de B (radio) y la velocidad del
     # giro en vueltas por compas
@@ -109,7 +115,16 @@ CLAVES = {
                (-6, 0.0), (-4, 0.0), (-3.25, 0.5), (-2, 1.0), ("I", 1.0), ("I+2", 0.4), (4, 0.4), (5, 0.8),
                (9.5, 1.0), (10.5, 1.0), (12.2, 0.8)],
     # cuanto respiran juntas (1 = al mismo tiempo)
-    "sincro": [(-18.3, 0.0), (-13, 0.0), (-12, 1.0), (-7, 1.0), (-6, 0.0), (-2, 0.0), (-1, 1.0), (12.2, 1.0)],
+    "sincro": [(-18.3, 0.0), (-14, 0.0), (-12.5, 1.0), (-7, 1.0), (-6, 0.0), (-2, 0.0), (0, 0.3), ("I", 0.3),
+               ("I+0.5", 1.0), (12.2, 1.0)],
+    # quien lleva (Heider y Simmel): la que sigue repite el camino de la otra con retardo, en
+    # segundos. Antes de la cura lleva A (B contesta al conocerse y la sigue en el vuelo); separadas,
+    # cada una por su lado; despues de la cura lleva B; al final, ninguna
+    "retardo_b": [(-18.3, 0.0), (-16, 0.0), (-15, 0.5), (-12.5, 0.45), (-11, 0.25), (-8, 0.25), (-7, 0.0),
+                  (12.2, 0.0)],
+    "retardo_a": [(-18.3, 0.0), ("I", 0.0), ("I+1", 0.25), (4, 0.25), (6, 0.35), (8, 0.35), (9.5, 0.0), (12.2, 0.0)],
+    # B esta detras de la capa de nubes cercana: la que se aleja se esconde, y despues asoma
+    "detras_b": [(-18.3, 0.0), (-7, 0.0), (-6.5, 1.0), (-3.4, 1.0), (-2.8, 0.0), (12.2, 0.0)],
 }
 
 
@@ -189,9 +204,32 @@ def intentos(t: np.ndarray, semilla: int = 159) -> np.ndarray:
     return out
 
 
+def respiracion(t: np.ndarray, dt: float, compas: float, impacto: float, sincro: np.ndarray,
+                apagada: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """La respiracion cuenta la relacion (luciernagas sincronicas). Cada una tiene su frecuencia
+    (A cada 2 compases, B cada 3.1 s) y un acople que las pone en fase cuando estan juntas. La
+    apagada respira irregular y se sale de fase; la cura la vuelve a meter, y al final siguen en
+    fase aunque esten lejos. La que lleva arrastra mas: antes de la cura A, despues B."""
+    rng = np.random.default_rng(7)
+    nudos = np.arange(0, t[-1] + 1.0, 0.7)
+    irregular = np.interp(t, nudos, rng.uniform(-1, 1, len(nudos)))
+    w_a = 2 * np.pi / (2 * compas)
+    w_b = 2 * np.pi / 3.1 * (1 + 0.6 * apagada * irregular)
+    acople = 3.0 * sincro
+    fa, fb = np.empty_like(t), np.empty_like(t)
+    x, y = 0.0, 2.2                                       # se conocen fuera de fase
+    for i in range(len(t)):
+        ka, kb = (0.15, 1.0) if t[i] < impacto else (1.0, 0.15)
+        x, y = x + (w_a + acople[i] * ka * np.sin(y - x)) * dt, y + (w_b[i] + acople[i] * kb * np.sin(x - y)) * dt
+        fa[i], fb[i] = x, y
+    return fa, fb
+
+
 def coreografia(t: np.ndarray, compas: float, impacto: float, dt: float) -> dict:
     """Todo lo que se mueve, por paso de tiempo, en coordenadas del cielo."""
     p = {k: pista(k, t, compas, impacto) for k in CLAVES}
+    p["a"] = pista("a", t - p["retardo_a"], compas, impacto)    # la que sigue va atras en el tiempo
+    p["b"] = pista("b", t - p["retardo_b"], compas, impacto)
     # el resorte: A decidida, B mas liviana; apagada, B pesa y tarda
     a = resorte(p["a"], dt, np.full(len(t), 7.0), 0.55)
     b = resorte(p["b"], dt, 6.0 - 3.2 * np.clip(1 - p["luz_b"] / 0.4, 0, 1), 0.6)
@@ -216,13 +254,29 @@ def coreografia(t: np.ndarray, compas: float, impacto: float, dt: float) -> dict
     b = b + 0.004 * intento[:, None] * temblor
     luz_b = p["luz_b"] + 0.10 * intento
     vida_b = p["luz_b"] * (1 - apagada) + 1.2 * intento
-    resp_a = np.sin(2 * np.pi * t / (2 * compas))
-    resp_b = (1 - 0.5 * apagada) * np.sin(2 * np.pi * t / (3.1 + 2.0 * apagada))
-    resp_b = resp_b + (resp_a - resp_b) * p["sincro"]
-    return {"a": a, "b": b, "cam": cam, "zoom": p["zoom"], "luz_a": p["luz_a"], "luz_b": luz_b,
+    fa, fb = respiracion(t, dt, compas, impacto, p["sincro"], apagada)
+    resp_a, resp_b = np.sin(fa), (1 - 0.5 * apagada) * np.sin(fb)
+    luz_a = p["luz_a"] * (1 + 0.04 * resp_a)
+    luz_b = luz_b * (1 + 0.04 * resp_b)
+    return {"a": a, "b": b, "cam": cam, "zoom": p["zoom"], "luz_a": luz_a, "luz_b": luz_b, "detras_b": p["detras_b"],
             "tam_a": tam_a, "tam_b": tam_b, "resp_a": resp_a, "resp_b": resp_b, "vida_a": p["luz_a"], "vida_b": vida_b,
             "mira_a": p["mira_a"], "mira_b": p["mira_b"],
             "calor_b": p["calor_b"], "frio": p["frio"], "alba": p["alba"], "puente": p["puente"]}
+
+
+def armar_eventos(c: dict, compas: float, impacto: float) -> dict:
+    """Donde y cuando: el primer toque (cuando de verdad se tocan, con el retardo de B), el
+    intento que no prende, la cura, y el banco de nubes donde B se esconde (fijo en la capa
+    cercana, centrado donde B esta a mitad de camino)."""
+    cuadro = lambda s: int(segundo(s, compas, impacto) * FPS)
+    f0, f1 = cuadro(-13), cuadro(-11.5)
+    toque = f0 + int(np.argmin(np.linalg.norm(c["a"][f0:f1] - c["b"][f0:f1], axis=1)))
+    intento = cuadro(-0.43)
+    fb = cuadro(-4.5)
+    zc = 1 + (c["zoom"][fb] - 1) * 1.4
+    banco = en_pantalla(c["b"][fb], c["cam"][fb], c["zoom"][fb]) / zc + c["cam"][fb] * 1.7
+    return {"toques": [(toque / FPS, (c["a"][toque] + c["b"][toque]) / 2), (intento / FPS, c["b"][intento])],
+            "cura": (impacto, c["b"][int(impacto * FPS)]), "banco": banco}
 
 
 def en_pantalla(xy: np.ndarray, cam: np.ndarray, zoom: float) -> np.ndarray:
@@ -245,9 +299,13 @@ def uniformes(f: int, c: dict, golpe: np.ndarray, fondo: np.ndarray, eventos: di
         u[f"uMira{k}"] = float(c[f"mira_{s}"][f])
         pts = en_pantalla(c[s][idx], cam, zoom)
         u[f"uEstela{k}"] = [(float(x), float(y), float(lz)) for (x, y), lz in zip(pts, c[f"luz_{s}"][idx])]
-    for nombre, (cuando, donde) in eventos.items():
+    u["uDetrasB"] = float(c["detras_b"][f])
+    zc = 1 + (zoom - 1) * 1.4
+    u["uBanco"] = tuple(float(v) for v in (*((eventos["banco"] - cam * 1.7) * zc), 0.35 * zc))
+    toques = [e for e in eventos["toques"] if e[0] <= t] or eventos["toques"][:1]
+    for nombre, (cuando, donde) in (("uOnda", eventos["cura"]), ("uToque", toques[-1])):
         xy = en_pantalla(donde, cam, zoom)
-        u["uOnda" if nombre == "cura" else "uToque"] = (float(xy[0]), float(xy[1]), t - cuando)
+        u[nombre] = (float(xy[0]), float(xy[1]), t - cuando)
     return u
 
 
@@ -300,9 +358,7 @@ def main() -> None:
     dt = 1 / (FPS * SUB)
     c = coreografia(np.arange(n * SUB) * dt, compas, impacto, dt)
     c = {kk: v[::SUB] for kk, v in c.items()}
-    toque = segundo(-12.5, compas, impacto)
-    eventos = {"toque": (toque, (c["a"][int(toque * FPS)] + c["b"][int(toque * FPS)]) / 2),
-               "cura": (impacto, c["b"][int(impacto * FPS)])}
+    eventos = armar_eventos(c, compas, impacto)
 
     ctx = moderngl.create_standalone_context()
     prog = ctx.program(vertex_shader=VERTICES, fragment_shader=SHADER.read_text(encoding="utf-8"))

@@ -40,6 +40,8 @@ uniform float uFrio;          // el cielo pierde el color cuando una se apaga
 uniform float uAlba;          // el horizonte naranja del final
 uniform vec3 uOnda;           // la cura: xy centro en pantalla, z segundos desde (negativo = todavia no)
 uniform vec3 uToque;          // el primer encuentro: idem
+uniform float uDetrasB;       // B esta detras de la capa cercana (0 a 1): la tapa y le enciende el borde
+uniform vec3 uBanco;          // el banco de nubes donde B se esconde: centro en pantalla y radio
 uniform float uPuente;        // la luz que A le pasa a B en el hueco del drop, 0 a 1
 uniform vec3 uEstelaA[NT];    // xy en pantalla, z la luz que tenia; [0] es el presente
 uniform vec3 uEstelaB[NT];
@@ -73,13 +75,29 @@ float nube(vec2 q, float cobertura) {
 
 vec3 colorB() { return mix(FRIA, CALIDA, uCalorB); }
 
-// la luz que cada alma le tira al entorno: llega lejos y cerca no quema
-vec3 luzEntorno(vec2 p, float caida) {
+// cuanto llega a p la luz de cada alma (x: A, y: B): llega lejos y cerca no quema
+vec2 alcance(vec2 p, float caida) {
     vec2 da = p - uPosA, db = p - uPosB;
-    float la = uLuzA * uTamA * uTamA / (dot(da, da) * caida + 0.5);
-    float lb = uLuzB * uTamB * uTamB / (dot(db, db) * caida + 0.5);
-    vec3 cb = mix(GRIS * 0.4, mix(FRIA_LUZ, CALIDA, uCalorB), smoothstep(0.05, 0.6, uLuzB));
-    return CALIDA * la + cb * lb;
+    return vec2(uLuzA * uTamA * uTamA / (dot(da, da) * caida + 0.5),
+                uLuzB * uTamB * uTamB / (dot(db, db) * caida + 0.5));
+}
+
+vec3 colorLuzB() { return mix(GRIS * 0.4, mix(FRIA_LUZ, CALIDA, uCalorB), smoothstep(0.05, 0.6, uLuzB)); }
+
+vec3 luzEntorno(vec2 p, float caida) {
+    vec2 l = alcance(p, caida);
+    return CALIDA * l.x + colorLuzB() * l.y;
+}
+
+// la capa de nubes de adelante (x: densidad, y: cuanto tapa). Lleva el banco donde se esconde B,
+// fijo en esta capa: pasa con su paralaje como cualquier nube
+vec2 capaCerca(vec2 p) {
+    float zc = mix(1.0, uZoom, 1.4);
+    vec2 w = p / zc + uCam * 1.7;
+    // el banco no es una forma aparte: es la misma nube, mas espesa alrededor de ese lugar
+    float banco = smoothstep(1.0, 0.2, length((p - uBanco.xy) / uBanco.z * vec2(0.8, 1.6)));
+    float n = nube(w * vec2(1.1, 2.4) + vec2(uTime * 0.02, 11.0), 0.55 - 0.30 * banco);
+    return vec2(n, n * mix(0.5, 0.8, banco));
 }
 
 // una onda que se abre desde las dos: nace sin fogonazo y enciende solo lo que va cruzando
@@ -99,7 +117,7 @@ float hueco(vec2 p) {
     return smoothstep(r, r * 0.4, length(p - uOnda.xy)) * exp(-uOnda.z / 1.2);
 }
 
-vec3 cielo(vec2 p) {
+vec3 cielo(vec2 p, vec2 capa) {
     // el aire: azul de noche, mas claro abajo
     vec3 c = mix(vec3(0.030, 0.050, 0.125), vec3(0.006, 0.011, 0.038), smoothstep(-0.55, 0.55, p.y));
     // estrellas, lejos: puntos blandos en su celda (en 4K los cuadraditos se veian)
@@ -117,19 +135,25 @@ vec3 cielo(vec2 p) {
     vec3 luzOnda = mix(CALIDA, FRIA_LUZ, 0.4) * (o + t);
 
     // tres capas de nubes, cada una con su paralaje: lejos, a la altura de las almas, y delante
-    float zl = mix(1.0, uZoom, 0.35), zm = uZoom, zc = mix(1.0, uZoom, 1.4);
+    float zl = mix(1.0, uZoom, 0.35), zm = uZoom;
     float lejos = nube((p / zl + uCam * 0.30) * vec2(1.8, 2.6) + vec2(uTime * 0.008, 0.0), 0.42);
     vec2 qm = (p / zm + uCam) * vec2(2.2, 3.4) + vec2(uTime * 0.015, 4.0);
     float medio = nube(qm, 0.45);
-    float relieve = medio - nube(qm + vec2(0.0, 0.10), 0.45);   // > 0 borde de arriba, < 0 de abajo
-    float cerca = nube((p / zc + uCam * 1.7) * vec2(1.1, 2.4) + vec2(uTime * 0.02, 11.0), 0.55);
+    // la luz desde cada alma (Quilez, derivada direccional): la densidad aca contra la de un paso
+    // hacia el alma. Si hacia ella hay menos nube, este borde la mira y se enciende; el borde
+    // encendido gira cuando el alma pasa
+    vec2 escala = vec2(2.2, 3.4) / zm;
+    float difA = clamp((medio - nube(qm + normalize(uPosA - p + 1e-4) * 0.05 * escala, 0.45)) * 3.0, 0.0, 1.0);
+    float difB = clamp((medio - nube(qm + normalize(uPosB - p + 1e-4) * 0.05 * escala, 0.45)) * 3.0, 0.0, 1.0);
+    vec2 llega = alcance(p, 8.0) * 0.30 * queda;
+    vec3 luzMedio = CALIDA * llega.x * (0.35 + 1.5 * difA) + colorLuzB() * llega.y * (0.35 + 1.5 * difB);
 
     vec3 azul = vec3(0.045, 0.070, 0.160) * uFondo;              // nube de noche: azul, no gris
     // lejos: mas clara, mas azul y sin contraste, como con aire de por medio
     c = mix(c, vec3(0.050, 0.078, 0.170) * 0.85 * uFondo + luzLejos + luzOnda * 0.35, lejos * 0.55);
-    float sombra = 0.85 + 0.7 * max(relieve, 0.0) - 0.45 * max(-relieve, 0.0);
-    c = mix(c, azul * sombra + luzCerca * (0.6 + 0.9 * max(relieve, 0.0)) + luzOnda * 0.9, medio * 0.85);
-    c = mix(c, vec3(0.010, 0.016, 0.040) + luzCerca * 0.40, cerca * 0.50);
+    float masa = mix(1.05, 0.70, smoothstep(0.5, 1.0, medio));   // el centro denso, mas oscuro
+    c = mix(c, azul * masa + luzMedio + luzOnda * 0.9, medio * 0.85);
+    c = mix(c, vec3(0.010, 0.016, 0.040) + luzCerca * 0.40, capa.y);
     c += luzOnda * 0.08;                                    // el anillo, apenas, en el aire
 
     // el alba del final: el horizonte naranja de la marca, abajo del cuadro
@@ -139,6 +163,17 @@ vec3 cielo(vec2 p) {
     // cuando una se apaga el cielo pierde el color y baja
     float gris = dot(c, vec3(0.30, 0.55, 0.15));
     return mix(c, vec3(gris) * vec3(0.80, 0.86, 1.0) * 0.80, uFrio * 0.9);
+}
+
+// el borde plateado: con la luz detras, lo fino de la nube se enciende (como Henyey-Greenstein
+// hacia adelante). Solo alrededor de B, cuando esta detras de la capa cercana
+vec3 plateado(vec2 p, float n) {
+    if (uDetrasB <= 0.0) return vec3(0.0);
+    vec2 d = (p - uPosB) / max(uTamB, 0.3);
+    float junto = exp(-dot(d, d) * 30.0);
+    float fino = smoothstep(0.05, 0.30, n) * (1.0 - smoothstep(0.35, 0.85, n));
+    vec3 col = mix(GRIS, colorB(), smoothstep(0.05, 0.6, uLuzB));
+    return col * uLuzB * uDetrasB * junto * fino * 2.5;
 }
 
 // la estela: el camino que hizo en los ultimos segundos, fino y vivo cerca, ancho y tenue lejos
@@ -214,11 +249,15 @@ vec3 alma(vec2 p, vec2 c, vec3 col, float luz, float tam, float resp, float vida
 
 void main() {
     vec2 p = (gl_FragCoord.xy - 0.5 * uRes) / uRes.y;
-    vec3 c = cielo(p);
-    c += estela(p, 0, CALIDA, uTamA) + estela(p, 1, mix(GRIS, colorB(), smoothstep(0.05, 0.6, uLuzB)), uTamB);
-    c += puente(p);
-    c += alma(p, uPosA, CALIDA, uLuzA, uTamA, uRespA, uVidaA, -0.35, 1.6, 0.0, 0.0, uPosB, colorB(), uLuzB, uMiraA)
-       + alma(p, uPosB, colorB(), uLuzB, uTamB, uRespB, uVidaB, 0.9, 3.0, 1.0, 17.0, uPosA, CALIDA, uLuzA, uMiraB);
+    vec2 capa = capaCerca(p);
+    vec3 c = cielo(p, capa);
+    // B detras de la capa cercana: la nube la tapa (Beer) y le enciende el borde
+    float pasa = mix(1.0, exp(-3.0 * capa.x), uDetrasB);
+    vec3 a = estela(p, 0, CALIDA, uTamA)
+           + alma(p, uPosA, CALIDA, uLuzA, uTamA, uRespA, uVidaA, -0.35, 1.6, 0.0, 0.0, uPosB, colorB(), uLuzB, uMiraA);
+    vec3 b = estela(p, 1, mix(GRIS, colorB(), smoothstep(0.05, 0.6, uLuzB)), uTamB)
+           + alma(p, uPosB, colorB(), uLuzB, uTamB, uRespB, uVidaB, 0.9, 3.0, 1.0, 17.0, uPosA, CALIDA, uLuzA, uMiraB);
+    c += a + b * pasa + puente(p) + plateado(p, capa.x);
     c = 1.0 - exp(-c * 1.5);                       // sin quemar: las luces llegan a blanco suave
     c *= 1.0 - 0.38 * dot(p * 0.9, p * 0.9);       // vineta: el ojo va al centro
     c += (hash(gl_FragCoord.xy + fract(uTime) * 91.0) - 0.5) / 255.0;   // sin escalones en el negro
