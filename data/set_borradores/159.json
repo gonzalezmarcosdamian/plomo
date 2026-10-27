@@ -16,23 +16,24 @@
    "duracion": "10:06"
   },
   {
-   "spotify_id": "05stHksSltQdhBwBEGynPT",
-   "artista": "Hernan Cattaneo, Khen",
-   "titulo": "Rogelito",
-   "album_id": "5gXCfjH7geLgx9Iv5cZjUn",
+   "spotify_id": "7G4Kpf5bSBd61lKwoLmRbm",
+   "artista": "Shai T, Hernan Cattaneo, Marcelo Vasami",
+   "titulo": "Oriki - Hernan Cattaneo & Marcelo Vasami Remix",
+   "album_id": "0Ezu5YyMoy9SDPts8strXc",
    "artistas_ids": [
+    "3peEllG3urQKzvyoZf4UgN",
     "4mpJaw5y17CIN08qqe8EfB",
-    "7M7DUxK3f7hR03EwfwldZQ"
+    "4bsJBOidwLc1UbwPoKbF44"
    ],
-   "ms": 441094,
-   "content_id": "173790116",
-   "estado": "aprobado",
-   "muzpa_id": 9081036,
-   "muzpa_nombre": "Hernan Cattaneo, Khen - Rogelito (Original Mix)",
-   "bpm": 123.0,
-   "key": "4A",
-   "genero": "Progressive",
-   "duracion": "7:21"
+   "ms": 458113,
+   "estado": "nuevo",
+   "content_id": "166576540",
+   "muzpa_id": 5899544,
+   "muzpa_nombre": "Shai T - Oriki (Hernan Cattaneo & Marcelo Vasami Remix)",
+   "bpm": 122,
+   "key": "7B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "7:38"
   },
   {
    "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
@@ -163,6 +164,18 @@
    "key": "8A",
    "genero": "Progressive",
    "duracion": "6:57"
+  },
+  {
+   "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
+   "artista": "Sébastien Léger, Lost Miracle",
+   "titulo": "Dodonpachi",
+   "estado": "nuevo",
+   "content_id": "124748921",
+   "bpm": 122.0,
+   "key": "9A",
+   "genero": "Progressive House",
+   "sello": "Lost Miracle",
+   "textual": "dondon pachi no entra en este set ? / Sumarlo despues de Coral"
   },
   {
    "spotify_id": "4AR0To4HJSTLWWtFPWXPux",
@@ -398,6 +411,13 @@
    "titulo": "Spring Embers - Extended Mix",
    "content_id": "245930317",
    "textual": "entre aura y coral se cae la energia cambialos / Los 4 del medio"
+  },
+  {
+   "spotify_id": "05stHksSltQdhBwBEGynPT",
+   "artista": "Hernan Cattaneo, Khen",
+   "titulo": "Rogelito",
+   "content_id": "173790116",
+   "textual": "rogelito blazing ice lo siento mas emocional lo pondria diferente o rogelito lo cambiaria / Cambiar Rogelito"
   }
  ],
  "rondas": [
@@ -461,6 +481,12 @@
     "#6: Juan Yarin - Never Met (Durante Remix) -> M.O.S., Kamilo Sanclemente, André Moret - Perception",
     "#7: Amand, Capoon, Khen - Ouverture - Khen Remix -> Cid Inc. - Forgotten",
     "#8: Nora En Pure - Spring Embers - Extended Mix -> Guy Mantzur, Tamir Regev - Mystica"
+   ]
+  },
+  {
+   "textual": "rogelito blazing ice lo siento mas emocional lo pondria diferente o rogelito lo cambiaria / Cambiar Rogelito",
+   "cambios": [
+    "#2: Hernan Cattaneo, Khen - Rogelito -> Shai T, Hernan Cattaneo, Marcelo Vasami - Oriki - Hernan Cattaneo & Marcelo Vasami Remix"
    ]
   }
  ],
