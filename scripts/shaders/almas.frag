@@ -14,6 +14,7 @@ uniform vec2 uVelA;   // hacia donde vuela: la estela sale para el otro lado
 uniform vec2 uVelB;
 uniform float uLuzA;  // 0 apagada, 1 plena
 uniform float uLuzB;
+uniform vec2 uCam;    // cuanto se corrio el cielo: las almas quedan en cuadro y el fondo pasa
 
 out vec4 fragColor;
 
@@ -82,8 +83,8 @@ vec3 look_mar(vec2 p) {
 }
 
 vec3 look_cielo(vec2 p) {
-    vec3 c = cielo_noche(p + vec2(0.0, 0.3)) * 0.8;
-    float nube = smoothstep(0.42, 0.85, fbm(p * 2.4 + vec2(uTime * 0.01, 0.0)));
+    vec3 c = cielo_noche(p + uCam * 0.35 + vec2(0.0, 0.3)) * 0.8;      // las estrellas, lejos, pasan lento
+    float nube = smoothstep(0.42, 0.85, fbm((p + uCam) * 2.4 + vec2(uTime * 0.01, 0.0)));
     // las nubes se encienden con la luz de las almas que pasan cerca
     vec3 ilum = CALIDA * uLuzA * exp(-length(p - uPosA) * 3.5) + FRIA * uLuzB * exp(-length(p - uPosB) * 3.5);
     c = mix(c, vec3(0.05, 0.06, 0.10) + ilum * 0.9, nube * 0.85);
