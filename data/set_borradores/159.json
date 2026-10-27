@@ -16,22 +16,23 @@
    "duracion": "10:06"
   },
   {
-   "spotify_id": "6hZJq5Q1hW9S0Ft0aQ7cni",
-   "artista": "Kamilo Sanclemente",
-   "titulo": "Theia",
-   "album_id": "2D0pXfOqVKQqUkWCK5EUPh",
+   "spotify_id": "2hFEYoT9We4tqbCTiJi3xb",
+   "artista": "K Loveski, Cosmonaut",
+   "titulo": "Bailarina",
+   "album_id": "0mmRBUNzzGCj3wWC6sqz6r",
    "artistas_ids": [
-    "2AYLgq9P1arichVXbNbjVy"
+    "28AJ0UNBFr7AIQ4a17HVMw",
+    "3lUnr1VmmxwlAOqfcePsAb"
    ],
-   "ms": 425554,
+   "ms": 480000,
    "estado": "nuevo",
-   "content_id": "28418420",
-   "muzpa_id": 7085639,
-   "muzpa_nombre": "Kamilo Sanclemente - Theia",
-   "bpm": 122,
-   "key": "5A",
-   "genero": "Progressive",
-   "duracion": "7:06"
+   "content_id": "231295892",
+   "muzpa_id": 6040111,
+   "muzpa_nombre": "Cosmonaut, K Loveski - Bailarina (Domingo + Loveclub Remix)",
+   "bpm": 120,
+   "key": "6A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "6:56"
   },
   {
    "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
@@ -423,6 +424,13 @@
    "titulo": "Oriki - Hernan Cattaneo & Marcelo Vasami Remix",
    "content_id": "166576540",
    "textual": "se queda un poco oriki"
+  },
+  {
+   "spotify_id": "6hZJq5Q1hW9S0Ft0aQ7cni",
+   "artista": "Kamilo Sanclemente",
+   "titulo": "Theia",
+   "content_id": "28418420",
+   "textual": "muy oscuro (Theia)"
   }
  ],
  "rondas": [
@@ -498,6 +506,12 @@
    "textual": "se queda un poco oriki",
    "cambios": [
     "#2: Shai T, Hernan Cattaneo, Marcelo Vasami - Oriki - Hernan Cattaneo & Marcelo Vasami Remix -> Kamilo Sanclemente - Theia"
+   ]
+  },
+  {
+   "textual": "muy oscuro (Theia)",
+   "cambios": [
+    "#2: Kamilo Sanclemente - Theia -> K Loveski, Cosmonaut - Bailarina"
    ]
   }
  ],
