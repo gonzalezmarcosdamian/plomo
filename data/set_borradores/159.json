@@ -16,24 +16,6 @@
    "duracion": "10:06"
   },
   {
-   "spotify_id": "2OYf3P5p6MIy9lbirwiFRW",
-   "artista": "Greg Ochman",
-   "titulo": "The Silver Lily",
-   "album_id": "2Lop3HIZz1ictfQx39nXyN",
-   "artistas_ids": [
-    "66A1FnrzYT86ouNwwqvUEp"
-   ],
-   "ms": 470986,
-   "estado": "nuevo",
-   "content_id": "80536228",
-   "muzpa_id": 8724213,
-   "muzpa_nombre": "Greg Ochman - The Silver Lily (Original Mix)",
-   "bpm": 120,
-   "key": "5A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "7:51"
-  },
-  {
    "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
    "artista": "André Moret",
    "titulo": "One World - Extended Mix",
@@ -50,6 +32,14 @@
    "key": "5A",
    "genero": "Progressive",
    "duracion": "6:42"
+  },
+  {
+   "spotify_id": "2AXiTHgHijAAT2TSsJcsmH",
+   "artista": "Matthew Sona",
+   "titulo": "Prismatik",
+   "estado": "aprobado",
+   "content_id": "53801929",
+   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
   },
   {
    "spotify_id": "3msaLbuxxFlvh0sHExRfdM",
@@ -71,80 +61,22 @@
    "duracion": "6:51"
   },
   {
-   "spotify_id": "3g0TLqCHaakP0iy9AuJ6E7",
-   "artista": "Cameron Jack, ABEL",
-   "titulo": "Sixth Sense",
-   "album_id": "18zxi32wR1AbXBra2jxlKX",
+   "spotify_id": "7en2KrT3Kxyx0O0qfvgrYN",
+   "artista": "André Moret",
+   "titulo": "Beyond Us - Extended Mix",
+   "album_id": "6NFfYFlYiUIGlyrircmQCQ",
    "artistas_ids": [
-    "3ZziXomLvLKvBpTDzxcypH",
-    "2EsYY7ZHoWaQgPFwWgbyMe"
+    "77TawwjtLlpegPo23bblci"
    ],
-   "ms": 409758,
-   "estado": "nuevo",
-   "content_id": "120528093",
-   "muzpa_id": 8310135,
-   "muzpa_nombre": "Abel, Cameron Jack - Sixth Sense (Original Mix)",
-   "bpm": 123,
-   "key": "6A",
+   "ms": 409672,
+   "content_id": "22034915",
+   "estado": "aprobado",
+   "muzpa_id": 9150710,
+   "muzpa_nombre": "Andre Moret - Beyond Us (Extended Mix)",
+   "bpm": 122.0,
+   "key": "7A",
    "genero": "Organic House / Downtempo",
    "duracion": "6:50"
-  },
-  {
-   "spotify_id": "70PJTUcqWujO8b0tOvJHhm",
-   "artista": "Jou Nielsen, Paul Ikky, Kebin van Reeken",
-   "titulo": "Sundance - Kebin Van Reeken Extended Remix",
-   "album_id": "3uLUMLymuP5fCk7U2Wgx7J",
-   "artistas_ids": [
-    "1eQv5FCUB4sDHyY6fsCb26",
-    "76bjw6dvZcBvltGDnMhfU0",
-    "0DKMuvkne3vAJapaws0SJe"
-   ],
-   "ms": 485853,
-   "estado": "nuevo",
-   "content_id": "178625501",
-   "muzpa_id": 9184454,
-   "muzpa_nombre": "Jou Nielsen, Paul Ikky - Sundance (Kebin Van Reeken Extended Remix)",
-   "bpm": 121,
-   "key": "6A",
-   "genero": "Progressive",
-   "duracion": "8:06"
-  },
-  {
-   "spotify_id": "07cdgNfp7GsG3zNccgxUeU",
-   "artista": "Cid Inc.",
-   "titulo": "Forgotten",
-   "album_id": "5SnS5ApOhE4fxXugAy0OiV",
-   "artistas_ids": [
-    "6pWibdpstk7c1dp0NVi9xJ"
-   ],
-   "ms": 460487,
-   "estado": "nuevo",
-   "content_id": "72351175",
-   "muzpa_id": 3755953,
-   "muzpa_nombre": "Cid Inc. - Forgotten",
-   "bpm": 123,
-   "key": "7A",
-   "genero": "Progressive",
-   "duracion": "7:40"
-  },
-  {
-   "spotify_id": "0Xl4gBpUy55JeBpq26tnoc",
-   "artista": "Guy Mantzur, Tamir Regev",
-   "titulo": "Mystica",
-   "album_id": "0oQPuQThGrAxrVMPd7TrCz",
-   "artistas_ids": [
-    "2DUa456repGwOOrcDKzcRP",
-    "0lIHXlaWHdfApCcSdz2mNk"
-   ],
-   "ms": 443909,
-   "estado": "nuevo",
-   "content_id": "48847382",
-   "muzpa_id": 8571928,
-   "muzpa_nombre": "Guy Mantzur, Tamir Regev - Mystica (Original Mix)",
-   "bpm": 122,
-   "key": "11B",
-   "genero": "Progressive",
-   "duracion": "7:24"
   },
   {
    "spotify_id": "4iugqvphVlh9P6BNBMoN2p",
@@ -165,35 +97,22 @@
    "duracion": "6:57"
   },
   {
-   "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
-   "artista": "Sébastien Léger, Lost Miracle",
-   "titulo": "Dodonpachi",
-   "estado": "nuevo",
-   "content_id": "124748921",
+   "spotify_id": "6zIXKdIG7aHSg6sbgALaS2",
+   "artista": "Khen",
+   "titulo": "My Pure Soul",
+   "album_id": "2AUDTriJVz2RDyKSweOyem",
+   "artistas_ids": [
+    "7M7DUxK3f7hR03EwfwldZQ"
+   ],
+   "ms": 458517,
+   "content_id": "233850863",
+   "estado": "aprobado",
+   "muzpa_id": 7893149,
+   "muzpa_nombre": "Khen - My Pure Soul (Original Mix)",
    "bpm": 122.0,
    "key": "9A",
-   "genero": "Progressive House",
-   "sello": "Lost Miracle",
-   "textual": "dondon pachi no entra en este set ? / Sumarlo despues de Coral"
-  },
-  {
-   "spotify_id": "4AR0To4HJSTLWWtFPWXPux",
-   "artista": "Gorje Hewek, Dulus",
-   "titulo": "Earth",
-   "album_id": "2eTrUSmul9A6boA39WQlBH",
-   "artistas_ids": [
-    "0HBaoUIo3fXlnWz1dc4mro",
-    "6HqASwlS6PmHBYU3avHe15"
-   ],
-   "ms": 346224,
-   "content_id": "2009006",
-   "estado": "aprobado",
-   "muzpa_id": 6320705,
-   "muzpa_nombre": "Gorje Hewek, Dulus - Earth (Original Mix)",
-   "bpm": 123.0,
-   "key": "9A",
    "genero": "Organic House / Downtempo",
-   "duracion": "5:46"
+   "duracion": "7:39"
   },
   {
    "spotify_id": "2tlWbgNUKy9NNUOQGWWL7l",
@@ -225,6 +144,33 @@
    "duracion": "8:00"
   },
   {
+   "spotify_id": "4H7LbbNvCWX6T3m6NFDdxA",
+   "artista": "André Moret",
+   "titulo": "Drift Whispers",
+   "estado": "aprobado",
+   "content_id": "550467",
+   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
+  },
+  {
+   "spotify_id": "4AR0To4HJSTLWWtFPWXPux",
+   "artista": "Gorje Hewek, Dulus",
+   "titulo": "Earth",
+   "album_id": "2eTrUSmul9A6boA39WQlBH",
+   "artistas_ids": [
+    "0HBaoUIo3fXlnWz1dc4mro",
+    "6HqASwlS6PmHBYU3avHe15"
+   ],
+   "ms": 346224,
+   "content_id": "2009006",
+   "estado": "aprobado",
+   "muzpa_id": 6320705,
+   "muzpa_nombre": "Gorje Hewek, Dulus - Earth (Original Mix)",
+   "bpm": 123.0,
+   "key": "9A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "5:46"
+  },
+  {
    "spotify_id": "3eDFlABBtjdOaIxlMYWebB",
    "artista": "Shai T, Tamir Regev",
    "titulo": "The Captain",
@@ -244,22 +190,16 @@
    "duracion": "7:06"
   },
   {
-   "spotify_id": "6zIXKdIG7aHSg6sbgALaS2",
-   "artista": "Khen",
-   "titulo": "My Pure Soul",
-   "album_id": "2AUDTriJVz2RDyKSweOyem",
-   "artistas_ids": [
-    "7M7DUxK3f7hR03EwfwldZQ"
-   ],
-   "ms": 458517,
-   "content_id": "233850863",
-   "estado": "aprobado",
-   "muzpa_id": 7893149,
-   "muzpa_nombre": "Khen - My Pure Soul (Original Mix)",
+   "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
+   "artista": "Sébastien Léger, Lost Miracle",
+   "titulo": "Dodonpachi",
+   "estado": "nuevo",
+   "content_id": "124748921",
    "bpm": 122.0,
    "key": "9A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "7:39"
+   "genero": "Progressive House",
+   "sello": "Lost Miracle",
+   "textual": "dondon pachi no entra en este set ? / Sumarlo despues de Coral"
   },
   {
    "spotify_id": "3YBIGUYAa1WlNzosBjMmp0",
@@ -281,22 +221,49 @@
    "duracion": "9:32"
   },
   {
-   "spotify_id": "7en2KrT3Kxyx0O0qfvgrYN",
-   "artista": "André Moret",
-   "titulo": "Beyond Us - Extended Mix",
-   "album_id": "6NFfYFlYiUIGlyrircmQCQ",
+   "spotify_id": "0Xl4gBpUy55JeBpq26tnoc",
+   "artista": "Guy Mantzur, Tamir Regev",
+   "titulo": "Mystica",
+   "album_id": "0oQPuQThGrAxrVMPd7TrCz",
    "artistas_ids": [
-    "77TawwjtLlpegPo23bblci"
+    "2DUa456repGwOOrcDKzcRP",
+    "0lIHXlaWHdfApCcSdz2mNk"
    ],
-   "ms": 409672,
-   "content_id": "22034915",
+   "ms": 443909,
+   "estado": "nuevo",
+   "content_id": "48847382",
+   "muzpa_id": 8571928,
+   "muzpa_nombre": "Guy Mantzur, Tamir Regev - Mystica (Original Mix)",
+   "bpm": 122,
+   "key": "11B",
+   "genero": "Progressive",
+   "duracion": "7:24"
+  },
+  {
+   "spotify_id": "5CvdxhcNCf5QNQQI7hLF7T",
+   "artista": "Sébastien Léger",
+   "titulo": "Omira",
    "estado": "aprobado",
-   "muzpa_id": 9150710,
-   "muzpa_nombre": "Andre Moret - Beyond Us (Extended Mix)",
-   "bpm": 122.0,
+   "content_id": "31596198",
+   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
+  },
+  {
+   "spotify_id": "07cdgNfp7GsG3zNccgxUeU",
+   "artista": "Cid Inc.",
+   "titulo": "Forgotten",
+   "album_id": "5SnS5ApOhE4fxXugAy0OiV",
+   "artistas_ids": [
+    "6pWibdpstk7c1dp0NVi9xJ"
+   ],
+   "ms": 460487,
+   "estado": "nuevo",
+   "content_id": "72351175",
+   "muzpa_id": 3755953,
+   "muzpa_nombre": "Cid Inc. - Forgotten",
+   "bpm": 123,
    "key": "7A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "6:50"
+   "genero": "Progressive",
+   "duracion": "7:40"
   },
   {
    "spotify_id": "0Ka3riNQtwZWy7KnZSglop",
@@ -315,6 +282,14 @@
    "key": "7B",
    "genero": "Organic House / Downtempo",
    "duracion": "8:25"
+  },
+  {
+   "spotify_id": "5DE2Py5mK59TWOehc8sC5I",
+   "artista": "Mariano Mellino, Violeta Reynal",
+   "titulo": "I Had a Dream",
+   "estado": "aprobado",
+   "content_id": null,
+   "textual": "lo sume en Spotify (el DJ, 2026-10-28); no esta en Muzpa: falta en Rekordbox"
   }
  ],
  "cambiados": [
@@ -452,6 +427,24 @@
    "titulo": "Perception",
    "content_id": "264835495",
    "textual": "mala (Bailarina), mas parecidos a aura don don pachi busca / tears tambien cambialo / perception tambien muy pasado"
+  },
+  {
+   "artista": "Greg Ochman",
+   "titulo": "The Silver Lily",
+   "spotify_id": "2OYf3P5p6MIy9lbirwiFRW",
+   "textual": "lo saco en Spotify (el DJ, 2026-10-28)"
+  },
+  {
+   "artista": "Cameron Jack, ABEL",
+   "titulo": "Sixth Sense",
+   "spotify_id": "3g0TLqCHaakP0iy9AuJ6E7",
+   "textual": "lo saco en Spotify (el DJ, 2026-10-28)"
+  },
+  {
+   "artista": "Jou Nielsen, Paul Ikky, Kebin van Reeken",
+   "titulo": "Sundance - Kebin Van Reeken Extended Remix",
+   "spotify_id": "70PJTUcqWujO8b0tOvJHhm",
+   "textual": "lo saco en Spotify (el DJ, 2026-10-28)"
   }
  ],
  "rondas": [

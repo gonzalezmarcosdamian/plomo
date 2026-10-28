@@ -3423,7 +3423,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 
 ## Set 159. 159. Work · Organic con brillo — 2h — 2026-10-25
-**Armado:** 2026-10-27  
+**Armado:** 2026-10-28  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-124  
@@ -3431,22 +3431,25 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
-| 2 | Hernan Cattaneo, Khen | Rogelito (Original Mix) | 123 | 6.2 |
-| 3 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 2 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
+| 3 | Matthew Sona | Prismatik (Original Mix) | 122 | 5.2 |
 | 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
-| 5 | Tim Green | Tears (Original Mix)  | 121 | 6.7 |
-| 6 | Kamilo Sanclemente, M.O.S., Andre Moret | Perception (Original Mix) | 122 | 6.8 |
-| 7 | Cid Inc. | Forgotten | 123 | 6.7 |
-| 8 | Guy Mantzur, Tamir Regev | Mystica (Original Mix) | 122 | 6.5 |
-| 9 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
-| 10 | Gorje Hewek, Dulus | Earth (Original Mix) | 123 | 6.5 |
-| 11 | Fernando Olaya, Kamilo Sanclemente | Renascence (Original Mix) | 123 | 5.6 |
-| 12 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
-| 13 | Shai T & Tamir Regev | The Captain | 122 | 6.8 |
-| 14 | Khen | My Pure Soul (Original Mix) | 122 | 5.4 |
-| 15 | Kamilo Sanclemente, Giovanny Aparicio | Redemtion (Original Mix) | 121 | 6.7 |
-| 16 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.8 |
-| 17 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
+| 5 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.8 |
+| 6 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
+| 7 | Khen | My Pure Soul (Original Mix) | 122 | 5.4 |
+| 8 | Fernando Olaya, Kamilo Sanclemente | Renascence (Original Mix) | 123 | 5.6 |
+| 9 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
+| 10 | Andre Moret | Drift Whispers (Original Mix) | 123 | 6.4 |
+| 11 | Gorje Hewek, Dulus | Earth (Original Mix) | 123 | 6.5 |
+| 12 | Shai T & Tamir Regev | The Captain | 122 | 6.8 |
+| 13 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 14 | Kamilo Sanclemente, Giovanny Aparicio | Redemtion (Original Mix) | 121 | 6.7 |
+| 15 | Guy Mantzur, Tamir Regev | Mystica (Original Mix) | 122 | 6.5 |
+| 16 | Sebastien Leger | Omira (Original Mix) | 122 | 7.4 |
+| 17 | Cid Inc. | Forgotten | 123 | 6.7 |
+| 18 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
+
+**v7 (2026-10-28):** el DJ cambio temas en Spotify (salen The Silver Lily, Sixth Sense y Sundance; entran Omira, Drift Whispers, Prismatik y I Had a Dream) y pidio reordenar. Orden por rueda de a 1 (un solo salto de 2: Mystica 8A -> Omira 6A), BPM de a 2, sin pozos de energia, curva 5.8 -> 6.7 al 75% -> 6.3. I Had a Dream (Mariano Mellino, Violeta Reynal) no esta en Muzpa: va en Spotify y falta en Rekordbox.
 
 **v6 (2026-10-27):** "entre aura y coral se cae la energia cambialos" / "Los 4 del medio". Salen Forest Song in the Morning, Never Met (Durante Remix), Ouverture (Khen Remix) y Spring Embers; entran Tears, Perception, Forgotten y Mystica (6A-6A-7A-8A, E 6.5-6.8, instrumentales). Spotify manda: el orden sale de la lista de Spotify y baja a Rekordbox.
 
