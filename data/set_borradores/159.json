@@ -22,11 +22,22 @@
    "duracion": "6:51"
   },
   {
-   "spotify_id": "1TyR9fBcKooIKiSjIjzrPf",
-   "content_id": "127791241",
-   "artista": "Max Wexem",
-   "titulo": "Override (Original Mix)",
-   "estado": "nuevo"
+   "spotify_id": "2twiSeqzCFglFZJaZcethH",
+   "artista": "Eli Nissan",
+   "titulo": "Bambook",
+   "album_id": "4Bd0pERcnnDWbbaB16kNet",
+   "artistas_ids": [
+    "4DddGKByDEAyhlxgjeYLHe"
+   ],
+   "ms": 400526,
+   "estado": "nuevo",
+   "content_id": "244737150",
+   "muzpa_id": 6493269,
+   "muzpa_nombre": "Eli Nissan - Bambook",
+   "bpm": 120,
+   "key": "6B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "6:41"
   },
   {
    "spotify_id": "40fmsJNO5MSN9H6FJS2zOZ",
@@ -418,6 +429,13 @@
    "titulo": "La Joda (Original Mix)",
    "content_id": "104993158",
    "textual": "La joda no me gusta"
+  },
+  {
+   "spotify_id": "1TyR9fBcKooIKiSjIjzrPf",
+   "artista": "Max Wexem",
+   "titulo": "Override (Original Mix)",
+   "content_id": "127791241",
+   "textual": "Hay algunos muy oscuros como ovwrride"
   }
  ],
  "rondas": [
@@ -513,6 +531,12 @@
    "textual": "La joda no me gusta",
    "cambios": [
     "#5: Tim Green, Josefina Silveyra - La Joda (Original Mix) -> Taylan, André Moret - Earthbound - Andre Moret Remix"
+   ]
+  },
+  {
+   "textual": "Hay algunos muy oscuros como ovwrride",
+   "cambios": [
+    "#2: Max Wexem - Override (Original Mix) -> Eli Nissan - Bambook"
    ]
   }
  ],
