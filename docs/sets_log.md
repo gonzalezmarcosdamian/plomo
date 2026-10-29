@@ -3434,7 +3434,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 2 | Max Wexem | Override (Original Mix) | 121 | 5.1 |
 | 3 | Kostya Outta | Perseus (Original Mix) | 122 | 5.6 |
 | 4 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
-| 5 | Tim Green, Josefina Silveyra | La Joda (Original Mix) | 123 | 6.9 |
+| 5 | Taylan | Earthbound (Andre Moret Remix) | 120 | 6.7 |
 | 6 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 7.0 |
 | 7 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.6 |
 | 8 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
@@ -3447,6 +3447,8 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 15 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
 | 16 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 6.8 |
 | 17 | Sebastien Leger | Omira (Original Mix) | 122 | 7.4 |
+
+**v8b (2026-10-29):** "La joda no me gusta": entra Earthbound (Taylan, Andre Moret Remix), 6A, E6.7, del mismo pool medido.
 
 **v8 (2026-10-29):** "aura don don pachi, omira, ese estilo creo que ensucie un poco, limpia spoty y rekor con una nueva version girando en esos soniditos". Familia = Aura, Dodonpachi y Omira (parecido_forma + sello y artista); 30 candidatos con voz y melodia medidas (10 afuera por voz o melodia grave); elegido y ordenado junto con ordenar_como_150.py: anclas Aura, Dodonpachi, Omira, Blazing Ice y Lava; sube de 5.0 (Aura) a 7.4 (Omira), un solo salto de rueda de 2 (Dodonpachi 9A -> Inner Atlas 7A). Queda Winged; salen los demas de la v7.
 

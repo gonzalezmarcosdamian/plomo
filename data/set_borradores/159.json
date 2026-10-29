@@ -49,11 +49,23 @@
    "duracion": "10:06"
   },
   {
-   "spotify_id": "6XNxrYHULv9Gayq36Cv8zB",
-   "content_id": "104993158",
-   "artista": "Tim Green, Josefina Silveyra",
-   "titulo": "La Joda (Original Mix)",
-   "estado": "nuevo"
+   "spotify_id": "17obtMWmeHAMOAsYezbZRB",
+   "artista": "Taylan, André Moret",
+   "titulo": "Earthbound - Andre Moret Remix",
+   "album_id": "5SxmBOMUTJZZ3eDgfjodIR",
+   "artistas_ids": [
+    "155MbJrn0MCmFAgt8giNv9",
+    "77TawwjtLlpegPo23bblci"
+   ],
+   "ms": 504000,
+   "estado": "nuevo",
+   "content_id": "39057490",
+   "muzpa_id": 6668368,
+   "muzpa_nombre": "Taylan - Earthbound (Andre Moret Remix)",
+   "bpm": 120,
+   "key": "6A",
+   "genero": "Progressive",
+   "duracion": "8:24"
   },
   {
    "spotify_id": "10o2fSP8XU28ZePXg9HhAg",
@@ -399,6 +411,13 @@
    "titulo": "I Had a Dream",
    "spotify_id": "5DE2Py5mK59TWOehc8sC5I",
    "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "spotify_id": "6XNxrYHULv9Gayq36Cv8zB",
+   "artista": "Tim Green, Josefina Silveyra",
+   "titulo": "La Joda (Original Mix)",
+   "content_id": "104993158",
+   "textual": "La joda no me gusta"
   }
  ],
  "rondas": [
@@ -488,6 +507,12 @@
     "#2: K Loveski, Cosmonaut - Bailarina -> Greg Ochman - The Silver Lily",
     "#5: Tim Green - Tears -> Cameron Jack, ABEL - Sixth Sense",
     "#6: M.O.S., Kamilo Sanclemente, André Moret - Perception -> Jou Nielsen, Paul Ikky, Kebin van Reeken - Sundance - Kebin Van Reeken Extended Remix"
+   ]
+  },
+  {
+   "textual": "La joda no me gusta",
+   "cambios": [
+    "#5: Tim Green, Josefina Silveyra - La Joda (Original Mix) -> Taylan, André Moret - Earthbound - Andre Moret Remix"
    ]
   }
  ],
