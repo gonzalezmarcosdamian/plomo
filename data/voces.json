@@ -1234,6 +1234,46 @@
       "peso": 0.001,
       "etiqueta": "instrumental",
       "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "233732660": {
+      "artist": "Simos Tagias, Tonaco",
+      "title": "Alnilam (Original Mix)",
+      "presencia": 0.522,
+      "peso": 0.095,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "229380236": {
+      "artist": "Simos Tagias",
+      "title": "Reality",
+      "presencia": 0.013,
+      "peso": 0.004,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "245494571": {
+      "artist": "Sebastien Leger, Tim Green",
+      "title": "Embre (Original Mix) ",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "105189053": {
+      "artist": "Sudhaus & The Wash",
+      "title": "Spectron (DJ Ruby Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "160319896": {
+      "artist": "Dimas Mixon, Cendryma",
+      "title": "Minicube (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.003,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."

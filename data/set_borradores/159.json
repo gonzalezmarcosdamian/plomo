@@ -40,11 +40,23 @@
    "duracion": "6:41"
   },
   {
-   "spotify_id": "40fmsJNO5MSN9H6FJS2zOZ",
-   "content_id": "96138341",
-   "artista": "Kostya Outta",
-   "titulo": "Perseus (Original Mix)",
-   "estado": "nuevo"
+   "spotify_id": "5RCoVOxUf9O9C7StORacb0",
+   "artista": "Eli Nissan, Roy Rosenfeld",
+   "titulo": "Karnaval - Roy Rosenfeld Remix",
+   "album_id": "0HS8jOCerL2UQ6L2Nhmybm",
+   "artistas_ids": [
+    "4DddGKByDEAyhlxgjeYLHe",
+    "4YklksA8yDtpluCCh945Sk"
+   ],
+   "ms": 521674,
+   "estado": "nuevo",
+   "content_id": "250268880",
+   "muzpa_id": 4581267,
+   "muzpa_nombre": "Eli Nissan - Karnaval (Roy Rosenfeld Remix)",
+   "bpm": 122,
+   "key": "9B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "8:42"
   },
   {
    "spotify_id": "1ot1wAHv913SUVgXT9bMA4",
@@ -436,6 +448,13 @@
    "titulo": "Override (Original Mix)",
    "content_id": "127791241",
    "textual": "Hay algunos muy oscuros como ovwrride"
+  },
+  {
+   "spotify_id": "40fmsJNO5MSN9H6FJS2zOZ",
+   "artista": "Kostya Outta",
+   "titulo": "Perseus (Original Mix)",
+   "content_id": "96138341",
+   "textual": "Perseus mal"
   }
  ],
  "rondas": [
@@ -537,6 +556,12 @@
    "textual": "Hay algunos muy oscuros como ovwrride",
    "cambios": [
     "#2: Max Wexem - Override (Original Mix) -> Eli Nissan - Bambook"
+   ]
+  },
+  {
+   "textual": "Perseus mal",
+   "cambios": [
+    "#3: Kostya Outta - Perseus (Original Mix) -> Eli Nissan, Roy Rosenfeld - Karnaval - Roy Rosenfeld Remix"
    ]
   }
  ],
