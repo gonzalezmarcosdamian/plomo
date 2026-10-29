@@ -169,23 +169,23 @@
    "estado": "nuevo"
   },
   {
-   "spotify_id": "6H32eTbIyK4WtfZwl1Ge8S",
+   "spotify_id": "79ScWBleHvND221Ha4Ja53",
    "artista": "Michael A, Aman Anand",
-   "titulo": "Conviction - Aman Anand Remix - Mixed",
-   "album_id": "51FRw6ytOXCJ9dG15DRWdx",
+   "titulo": "Conviction - Aman Anand Remix",
+   "album_id": "3kBYBPO1gMtaCcSby4yWUQ",
    "artistas_ids": [
     "3EHolmMj8aPKVOd3tXnCjb",
     "2TEs1tc4RUEyc2FOVj2Cbp"
    ],
-   "ms": 341694,
+   "ms": 489836,
    "estado": "nuevo",
    "content_id": "5338976",
-   "muzpa_id": 7278758,
-   "muzpa_nombre": "Michael A - Conviction",
-   "bpm": 121,
+   "muzpa_id": 7278755,
+   "muzpa_nombre": "Michael A - Conviction (Aman Anand Remix)",
+   "bpm": 122,
    "key": "9A",
    "genero": "Progressive",
-   "duracion": "6:41"
+   "duracion": "8:10"
   },
   {
    "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
@@ -493,6 +493,13 @@
    "titulo": "Inner Atlas (Kyotto Remix)",
    "content_id": "112359333",
    "textual": "Nana bien pero no me gusta / Innet atlas mal tambien"
+  },
+  {
+   "spotify_id": "6H32eTbIyK4WtfZwl1Ge8S",
+   "artista": "Michael A, Aman Anand",
+   "titulo": "Conviction - Aman Anand Remix - Mixed",
+   "content_id": "5338976",
+   "textual": "version entera, no el corte Mixed"
   }
  ],
  "rondas": [
@@ -607,6 +614,12 @@
    "cambios": [
     "#14: Roy Rosenfeld - Nana (Original Mix) -> Michael A, Aman Anand - Conviction - Aman Anand Remix - Mixed",
     "#16: Cary Crank - Inner Atlas (Kyotto Remix) -> Kabi (AR), Ric Niels - Mutant"
+   ]
+  },
+  {
+   "textual": "version entera, no el corte Mixed",
+   "cambios": [
+    "#14: Michael A, Aman Anand - Conviction - Aman Anand Remix - Mixed -> Michael A, Aman Anand - Conviction - Aman Anand Remix"
    ]
   }
  ],
