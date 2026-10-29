@@ -654,6 +654,66 @@
       "title": "Minicube (Original Mix)",
       "centroide": 492.1,
       "medio_1_4k": 0.052
+    },
+    "231231813": {
+      "artist": "mredrollo",
+      "title": "Funkinmusic (Original Mix)",
+      "centroide": 450.2,
+      "medio_1_4k": 0.061
+    },
+    "165429937": {
+      "artist": "Kabi (AR), Ric Niels",
+      "title": "Mutant",
+      "centroide": 753.2,
+      "medio_1_4k": 0.219
+    },
+    "216766461": {
+      "artist": "Rockka",
+      "title": "Amnesia (Fuenka Remix)",
+      "centroide": 793.0,
+      "medio_1_4k": 0.196
+    },
+    "66290210": {
+      "artist": "Cid Inc.",
+      "title": "Citadel (Original Mix)",
+      "centroide": 483.6,
+      "medio_1_4k": 0.076
+    },
+    "97553620": {
+      "artist": "Ruben Karapetyan, Maze 28",
+      "title": "Cosmic Dot",
+      "centroide": 913.0,
+      "medio_1_4k": 0.227
+    },
+    "5904472": {
+      "artist": "Makebo",
+      "title": "Save Me (Original Mix)",
+      "centroide": 533.6,
+      "medio_1_4k": 0.102
+    },
+    "5338976": {
+      "artist": "Michael A",
+      "title": "Conviction (Aman Anand Remix)",
+      "centroide": 704.3,
+      "medio_1_4k": 0.15
+    },
+    "131359684": {
+      "artist": "Gai Barone",
+      "title": "In the Blink of an Eye (Original Mix)",
+      "centroide": 733.5,
+      "medio_1_4k": 0.164
+    },
+    "142030767": {
+      "artist": "Max Dumont",
+      "title": "Maht Hild (Stereo Munk & Dublew Remix)",
+      "centroide": 595.4,
+      "medio_1_4k": 0.152
+    },
+    "63672925": {
+      "artist": "Sebastian Busto",
+      "title": "Diatoms",
+      "centroide": 400.0,
+      "medio_1_4k": 0.049
     }
   }
 }

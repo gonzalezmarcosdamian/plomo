@@ -169,11 +169,23 @@
    "estado": "nuevo"
   },
   {
-   "spotify_id": "3iOYxCYAzyehI5fdSqyqO1",
-   "content_id": "111356554",
-   "artista": "Roy Rosenfeld",
-   "titulo": "Nana (Original Mix)",
-   "estado": "nuevo"
+   "spotify_id": "6H32eTbIyK4WtfZwl1Ge8S",
+   "artista": "Michael A, Aman Anand",
+   "titulo": "Conviction - Aman Anand Remix - Mixed",
+   "album_id": "51FRw6ytOXCJ9dG15DRWdx",
+   "artistas_ids": [
+    "3EHolmMj8aPKVOd3tXnCjb",
+    "2TEs1tc4RUEyc2FOVj2Cbp"
+   ],
+   "ms": 341694,
+   "estado": "nuevo",
+   "content_id": "5338976",
+   "muzpa_id": 7278758,
+   "muzpa_nombre": "Michael A - Conviction",
+   "bpm": 121,
+   "key": "9A",
+   "genero": "Progressive",
+   "duracion": "6:41"
   },
   {
    "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
@@ -188,11 +200,23 @@
    "textual": "dondon pachi no entra en este set ? / Sumarlo despues de Coral"
   },
   {
-   "spotify_id": "3roZNg5YyAYnEYPNsgxhkc",
-   "content_id": "112359333",
-   "artista": "Cary Crank",
-   "titulo": "Inner Atlas (Kyotto Remix)",
-   "estado": "nuevo"
+   "spotify_id": "48W8ytEuNuxNglRSePgGTO",
+   "artista": "Kabi (AR), Ric Niels",
+   "titulo": "Mutant",
+   "album_id": "4UvXtc2kclJZUtyELHjAzU",
+   "artistas_ids": [
+    "5T7NqJBwbKQHEOosAPfuSL",
+    "4kE2Nlbscws944mlfgnCaZ"
+   ],
+   "ms": 423966,
+   "estado": "nuevo",
+   "content_id": "165429937",
+   "muzpa_id": 6158648,
+   "muzpa_nombre": "Kabi (AR), Ric Niels - Mutant ",
+   "bpm": 121,
+   "key": "7A",
+   "genero": "Progressive",
+   "duracion": "7:04"
   },
   {
    "spotify_id": "5CvdxhcNCf5QNQQI7hLF7T",
@@ -455,6 +479,20 @@
    "titulo": "Perseus (Original Mix)",
    "content_id": "96138341",
    "textual": "Perseus mal"
+  },
+  {
+   "spotify_id": "3iOYxCYAzyehI5fdSqyqO1",
+   "artista": "Roy Rosenfeld",
+   "titulo": "Nana (Original Mix)",
+   "content_id": "111356554",
+   "textual": "Nana bien pero no me gusta / Innet atlas mal tambien"
+  },
+  {
+   "spotify_id": "3roZNg5YyAYnEYPNsgxhkc",
+   "artista": "Cary Crank",
+   "titulo": "Inner Atlas (Kyotto Remix)",
+   "content_id": "112359333",
+   "textual": "Nana bien pero no me gusta / Innet atlas mal tambien"
   }
  ],
  "rondas": [
@@ -562,6 +600,13 @@
    "textual": "Perseus mal",
    "cambios": [
     "#3: Kostya Outta - Perseus (Original Mix) -> Eli Nissan, Roy Rosenfeld - Karnaval - Roy Rosenfeld Remix"
+   ]
+  },
+  {
+   "textual": "Nana bien pero no me gusta / Innet atlas mal tambien",
+   "cambios": [
+    "#14: Roy Rosenfeld - Nana (Original Mix) -> Michael A, Aman Anand - Conviction - Aman Anand Remix - Mixed",
+    "#16: Cary Crank - Inner Atlas (Kyotto Remix) -> Kabi (AR), Ric Niels - Mutant"
    ]
   }
  ],
