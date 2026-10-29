@@ -3423,31 +3423,32 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 
 ## Set 159. 159. Work · Organic con brillo — 2h — 2026-10-25
-**Armado:** 2026-10-28  
+**Armado:** 2026-10-29  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-124  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
-| 2 | Andre Moret | One World (Extended Mix) | 122 | 5.6 |
-| 3 | Matthew Sona | Prismatik (Original Mix) | 122 | 5.2 |
-| 4 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
-| 5 | Andre Moret | Beyond Us (Extended Mix) | 122 | 5.8 |
-| 6 | Nicolas Viana | Coral (Extended Mix) | 122 | 6.1 |
-| 7 | Khen | My Pure Soul (Original Mix) | 122 | 5.4 |
-| 8 | Fernando Olaya, Kamilo Sanclemente | Renascence (Original Mix) | 123 | 5.6 |
-| 9 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
-| 10 | Andre Moret | Drift Whispers (Original Mix) | 123 | 6.4 |
-| 11 | Gorje Hewek, Dulus | Earth (Original Mix) | 123 | 6.5 |
-| 12 | Shai T & Tamir Regev | The Captain | 122 | 6.8 |
-| 13 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
-| 14 | Kamilo Sanclemente, Giovanny Aparicio | Redemtion (Original Mix) | 121 | 6.7 |
-| 15 | Guy Mantzur, Tamir Regev | Mystica (Original Mix) | 122 | 6.5 |
-| 16 | Sebastien Leger | Omira (Original Mix) | 122 | 7.4 |
-| 17 | Cid Inc. | Forgotten | 123 | 6.7 |
-| 18 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
+| 1 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
+| 2 | Max Wexem | Override (Original Mix) | 121 | 5.1 |
+| 3 | Kostya Outta | Perseus (Original Mix) | 122 | 5.6 |
+| 4 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
+| 5 | Tim Green, Josefina Silveyra | La Joda (Original Mix) | 123 | 6.9 |
+| 6 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 7.0 |
+| 7 | Guy Mantzur, Kamilo Sanclemente | The Future is in the Past (Original Mix) | 124 | 6.6 |
+| 8 | Sebastien Leger | Lava (Original Mix) | 122 | 6.3 |
+| 9 | Kamilo Sanclemente, Sebastian Valencia (COL) | Balaphonia (Original Mix) | 123 | 6.2 |
+| 10 | Shai T | Summer Oclock (Original Mix)  | 123 | 6.3 |
+| 11 | Kamilo Sanclemente, Andre Moret | Dichotomy (Original Mix) | 122 | 6.3 |
+| 12 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
+| 13 | Ruben Karapetyan | State of Progression (Original Mix) | 122 | 5.8 |
+| 14 | Roy Rosenfeld | Nana (Original Mix) | 121 | 6.5 |
+| 15 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
+| 16 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 6.8 |
+| 17 | Sebastien Leger | Omira (Original Mix) | 122 | 7.4 |
+
+**v8 (2026-10-29):** "aura don don pachi, omira, ese estilo creo que ensucie un poco, limpia spoty y rekor con una nueva version girando en esos soniditos". Familia = Aura, Dodonpachi y Omira (parecido_forma + sello y artista); 30 candidatos con voz y melodia medidas (10 afuera por voz o melodia grave); elegido y ordenado junto con ordenar_como_150.py: anclas Aura, Dodonpachi, Omira, Blazing Ice y Lava; sube de 5.0 (Aura) a 7.4 (Omira), un solo salto de rueda de 2 (Dodonpachi 9A -> Inner Atlas 7A). Queda Winged; salen los demas de la v7.
 
 **v7 (2026-10-28):** el DJ cambio temas en Spotify (salen The Silver Lily, Sixth Sense y Sundance; entran Omira, Drift Whispers, Prismatik y I Had a Dream) y pidio reordenar. Orden por rueda de a 1 (un solo salto de 2: Mystica 8A -> Omira 6A), BPM de a 2, sin pozos de energia, curva 5.8 -> 6.7 al 75% -> 6.3. I Had a Dream (Mariano Mellino, Violeta Reynal) no esta en Muzpa: va en Spotify y falta en Rekordbox.
 

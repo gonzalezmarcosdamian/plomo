@@ -3,45 +3,6 @@
  "playlist": "27nYkmcm8xtBBHuIBkuq7F",
  "temas": [
   {
-   "spotify_id": "1ot1wAHv913SUVgXT9bMA4",
-   "artista": "Sébastien Léger",
-   "titulo": "Blazing Ice",
-   "estado": "aprobado",
-   "content_id": "198986596",
-   "muzpa_id": 6474765,
-   "muzpa_nombre": "Sebastien Leger - Blazing Ice ",
-   "bpm": 122.0,
-   "key": "5A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "10:06"
-  },
-  {
-   "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
-   "artista": "André Moret",
-   "titulo": "One World - Extended Mix",
-   "album_id": "6NFfYFlYiUIGlyrircmQCQ",
-   "artistas_ids": [
-    "77TawwjtLlpegPo23bblci"
-   ],
-   "ms": 402295,
-   "content_id": "130869533",
-   "estado": "aprobado",
-   "muzpa_id": 9150711,
-   "muzpa_nombre": "Andre Moret - One World (Extended Mix)",
-   "bpm": 122.0,
-   "key": "5A",
-   "genero": "Progressive",
-   "duracion": "6:42"
-  },
-  {
-   "spotify_id": "2AXiTHgHijAAT2TSsJcsmH",
-   "artista": "Matthew Sona",
-   "titulo": "Prismatik",
-   "estado": "aprobado",
-   "content_id": "53801929",
-   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
-  },
-  {
    "spotify_id": "3msaLbuxxFlvh0sHExRfdM",
    "artista": "Artic White, Jordi Ruz",
    "titulo": "Aura - Extended Mix",
@@ -61,209 +22,52 @@
    "duracion": "6:51"
   },
   {
-   "spotify_id": "7en2KrT3Kxyx0O0qfvgrYN",
-   "artista": "André Moret",
-   "titulo": "Beyond Us - Extended Mix",
-   "album_id": "6NFfYFlYiUIGlyrircmQCQ",
-   "artistas_ids": [
-    "77TawwjtLlpegPo23bblci"
-   ],
-   "ms": 409672,
-   "content_id": "22034915",
-   "estado": "aprobado",
-   "muzpa_id": 9150710,
-   "muzpa_nombre": "Andre Moret - Beyond Us (Extended Mix)",
-   "bpm": 122.0,
-   "key": "7A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "6:50"
+   "spotify_id": "1TyR9fBcKooIKiSjIjzrPf",
+   "content_id": "127791241",
+   "artista": "Max Wexem",
+   "titulo": "Override (Original Mix)",
+   "estado": "nuevo"
   },
   {
-   "spotify_id": "4iugqvphVlh9P6BNBMoN2p",
-   "artista": "Nicolas Viana",
-   "titulo": "Coral",
-   "album_id": "7ygp6f71IpoPI3i4vFcDuc",
-   "artistas_ids": [
-    "2pkVAPXEde5YytNqZGGyWb"
-   ],
-   "ms": 243934,
-   "content_id": "196838047",
-   "estado": "aprobado",
-   "muzpa_id": 8260312,
-   "muzpa_nombre": "Nicolas Viana - Coral (Extended Mix)",
-   "bpm": 122.0,
-   "key": "8A",
-   "genero": "Progressive",
-   "duracion": "6:57"
+   "spotify_id": "40fmsJNO5MSN9H6FJS2zOZ",
+   "content_id": "96138341",
+   "artista": "Kostya Outta",
+   "titulo": "Perseus (Original Mix)",
+   "estado": "nuevo"
   },
   {
-   "spotify_id": "6zIXKdIG7aHSg6sbgALaS2",
-   "artista": "Khen",
-   "titulo": "My Pure Soul",
-   "album_id": "2AUDTriJVz2RDyKSweOyem",
-   "artistas_ids": [
-    "7M7DUxK3f7hR03EwfwldZQ"
-   ],
-   "ms": 458517,
-   "content_id": "233850863",
-   "estado": "aprobado",
-   "muzpa_id": 7893149,
-   "muzpa_nombre": "Khen - My Pure Soul (Original Mix)",
-   "bpm": 122.0,
-   "key": "9A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "7:39"
-  },
-  {
-   "spotify_id": "2tlWbgNUKy9NNUOQGWWL7l",
-   "artista": "Fernando Olaya, Kamilo Sanclemente",
-   "titulo": "Renascence (Original Mix)",
-   "estado": "aprobado",
-   "content_id": "162314364",
-   "bpm": 123.0,
-   "key": "10A",
-   "genero": "Organic House",
-   "sello": "Balance Music"
-  },
-  {
-   "spotify_id": "3vASLiep3SIW2vd0YZOM17",
-   "artista": "Nicolas Viana",
-   "titulo": "Winged - Extended Mix",
-   "album_id": "1DTRLpMIsmKZsnAu5t27EF",
-   "artistas_ids": [
-    "2pkVAPXEde5YytNqZGGyWb"
-   ],
-   "ms": 480000,
-   "content_id": "237240379",
-   "estado": "aprobado",
-   "muzpa_id": 7944195,
-   "muzpa_nombre": "Nicolas Viana - Winged (Original Mix)",
-   "bpm": 121.0,
-   "key": "10B",
-   "genero": "Organic House / Downtempo",
-   "duracion": "8:00"
-  },
-  {
-   "spotify_id": "4H7LbbNvCWX6T3m6NFDdxA",
-   "artista": "André Moret",
-   "titulo": "Drift Whispers",
-   "estado": "aprobado",
-   "content_id": "550467",
-   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
-  },
-  {
-   "spotify_id": "4AR0To4HJSTLWWtFPWXPux",
-   "artista": "Gorje Hewek, Dulus",
-   "titulo": "Earth",
-   "album_id": "2eTrUSmul9A6boA39WQlBH",
-   "artistas_ids": [
-    "0HBaoUIo3fXlnWz1dc4mro",
-    "6HqASwlS6PmHBYU3avHe15"
-   ],
-   "ms": 346224,
-   "content_id": "2009006",
-   "estado": "aprobado",
-   "muzpa_id": 6320705,
-   "muzpa_nombre": "Gorje Hewek, Dulus - Earth (Original Mix)",
-   "bpm": 123.0,
-   "key": "9A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "5:46"
-  },
-  {
-   "spotify_id": "3eDFlABBtjdOaIxlMYWebB",
-   "artista": "Shai T, Tamir Regev",
-   "titulo": "The Captain",
-   "album_id": "38tn6K79IqptlxYpV7CW8Q",
-   "artistas_ids": [
-    "3peEllG3urQKzvyoZf4UgN",
-    "0lIHXlaWHdfApCcSdz2mNk"
-   ],
-   "ms": 425480,
-   "content_id": "194339407",
-   "estado": "aprobado",
-   "muzpa_id": 6413878,
-   "muzpa_nombre": "Shai T & Tamir Regev - The Captain",
-   "bpm": 122.0,
-   "key": "9B",
-   "genero": "Organic House / Downtempo",
-   "duracion": "7:06"
-  },
-  {
-   "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
-   "artista": "Sébastien Léger, Lost Miracle",
-   "titulo": "Dodonpachi",
-   "estado": "nuevo",
-   "content_id": "124748921",
-   "bpm": 122.0,
-   "key": "9A",
-   "genero": "Progressive House",
-   "sello": "Lost Miracle",
-   "textual": "dondon pachi no entra en este set ? / Sumarlo despues de Coral"
-  },
-  {
-   "spotify_id": "3YBIGUYAa1WlNzosBjMmp0",
-   "artista": "Kamilo Sanclemente, Giovanny Aparicio",
-   "titulo": "Redemtion",
-   "album_id": "2D0pXfOqVKQqUkWCK5EUPh",
-   "artistas_ids": [
-    "2AYLgq9P1arichVXbNbjVy",
-    "4HTvTnFhpoX49HQueCY5x1"
-   ],
-   "ms": 572027,
-   "content_id": "175484827",
-   "estado": "aprobado",
-   "muzpa_id": 7085636,
-   "muzpa_nombre": "Kamilo Sanclemente & Giovanny Aparicio - Redemtion",
-   "bpm": 121.0,
-   "key": "8A",
-   "genero": "Organic House / Downtempo",
-   "duracion": "9:32"
-  },
-  {
-   "spotify_id": "0Xl4gBpUy55JeBpq26tnoc",
-   "artista": "Guy Mantzur, Tamir Regev",
-   "titulo": "Mystica",
-   "album_id": "0oQPuQThGrAxrVMPd7TrCz",
-   "artistas_ids": [
-    "2DUa456repGwOOrcDKzcRP",
-    "0lIHXlaWHdfApCcSdz2mNk"
-   ],
-   "ms": 443909,
-   "estado": "nuevo",
-   "content_id": "48847382",
-   "muzpa_id": 8571928,
-   "muzpa_nombre": "Guy Mantzur, Tamir Regev - Mystica (Original Mix)",
-   "bpm": 122,
-   "key": "11B",
-   "genero": "Progressive",
-   "duracion": "7:24"
-  },
-  {
-   "spotify_id": "5CvdxhcNCf5QNQQI7hLF7T",
+   "spotify_id": "1ot1wAHv913SUVgXT9bMA4",
    "artista": "Sébastien Léger",
-   "titulo": "Omira",
+   "titulo": "Blazing Ice",
    "estado": "aprobado",
-   "content_id": "31596198",
-   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
+   "content_id": "198986596",
+   "muzpa_id": 6474765,
+   "muzpa_nombre": "Sebastien Leger - Blazing Ice ",
+   "bpm": 122.0,
+   "key": "5A",
+   "genero": "Organic House / Downtempo",
+   "duracion": "10:06"
   },
   {
-   "spotify_id": "07cdgNfp7GsG3zNccgxUeU",
-   "artista": "Cid Inc.",
-   "titulo": "Forgotten",
-   "album_id": "5SnS5ApOhE4fxXugAy0OiV",
-   "artistas_ids": [
-    "6pWibdpstk7c1dp0NVi9xJ"
-   ],
-   "ms": 460487,
-   "estado": "nuevo",
-   "content_id": "72351175",
-   "muzpa_id": 3755953,
-   "muzpa_nombre": "Cid Inc. - Forgotten",
-   "bpm": 123,
-   "key": "7A",
-   "genero": "Progressive",
-   "duracion": "7:40"
+   "spotify_id": "6XNxrYHULv9Gayq36Cv8zB",
+   "content_id": "104993158",
+   "artista": "Tim Green, Josefina Silveyra",
+   "titulo": "La Joda (Original Mix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "10o2fSP8XU28ZePXg9HhAg",
+   "content_id": "216332867",
+   "artista": "Dmitry Molosh",
+   "titulo": "The Moon Lights the Way (Original Mix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "6Dd80VewUkogBgKk9gqMTo",
+   "content_id": "35383160",
+   "artista": "Guy Mantzur, Kamilo Sanclemente",
+   "titulo": "The Future is in the Past (Original Mix)",
+   "estado": "nuevo"
   },
   {
    "spotify_id": "0Ka3riNQtwZWy7KnZSglop",
@@ -284,12 +88,84 @@
    "duracion": "8:25"
   },
   {
-   "spotify_id": "5DE2Py5mK59TWOehc8sC5I",
-   "artista": "Mariano Mellino, Violeta Reynal",
-   "titulo": "I Had a Dream",
+   "spotify_id": "21oW6SP53td0POcEaSMsXS",
+   "content_id": "55023300",
+   "artista": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+   "titulo": "Balaphonia (Original Mix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "3zUWlC0U44tP3TIrAPTpLJ",
+   "content_id": "46457686",
+   "artista": "Shai T",
+   "titulo": "Summer Oclock (Original Mix) ",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "1ajtyLQlCuSmwqRooAj91G",
+   "content_id": "103940544",
+   "artista": "Kamilo Sanclemente, Andre Moret",
+   "titulo": "Dichotomy (Original Mix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "3vASLiep3SIW2vd0YZOM17",
+   "artista": "Nicolas Viana",
+   "titulo": "Winged - Extended Mix",
+   "album_id": "1DTRLpMIsmKZsnAu5t27EF",
+   "artistas_ids": [
+    "2pkVAPXEde5YytNqZGGyWb"
+   ],
+   "ms": 480000,
+   "content_id": "237240379",
    "estado": "aprobado",
-   "content_id": null,
-   "textual": "lo sume en Spotify (el DJ, 2026-10-28); no esta en Muzpa: falta en Rekordbox"
+   "muzpa_id": 7944195,
+   "muzpa_nombre": "Nicolas Viana - Winged (Original Mix)",
+   "bpm": 121.0,
+   "key": "10B",
+   "genero": "Organic House / Downtempo",
+   "duracion": "8:00"
+  },
+  {
+   "spotify_id": "7akZjjuqZWhF7hOfbqRjp2",
+   "content_id": "130625045",
+   "artista": "Ruben Karapetyan",
+   "titulo": "State of Progression (Original Mix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "3iOYxCYAzyehI5fdSqyqO1",
+   "content_id": "111356554",
+   "artista": "Roy Rosenfeld",
+   "titulo": "Nana (Original Mix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "7LKqmwZFJ964ZjqKZtvSnN",
+   "artista": "Sébastien Léger, Lost Miracle",
+   "titulo": "Dodonpachi",
+   "estado": "nuevo",
+   "content_id": "124748921",
+   "bpm": 122.0,
+   "key": "9A",
+   "genero": "Progressive House",
+   "sello": "Lost Miracle",
+   "textual": "dondon pachi no entra en este set ? / Sumarlo despues de Coral"
+  },
+  {
+   "spotify_id": "3roZNg5YyAYnEYPNsgxhkc",
+   "content_id": "112359333",
+   "artista": "Cary Crank",
+   "titulo": "Inner Atlas (Kyotto Remix)",
+   "estado": "nuevo"
+  },
+  {
+   "spotify_id": "5CvdxhcNCf5QNQQI7hLF7T",
+   "artista": "Sébastien Léger",
+   "titulo": "Omira",
+   "estado": "aprobado",
+   "content_id": "31596198",
+   "textual": "lo sume en Spotify (el DJ, 2026-10-28)"
   }
  ],
  "cambiados": [
@@ -445,6 +321,84 @@
    "titulo": "Sundance - Kebin Van Reeken Extended Remix",
    "spotify_id": "70PJTUcqWujO8b0tOvJHhm",
    "textual": "lo saco en Spotify (el DJ, 2026-10-28)"
+  },
+  {
+   "artista": "André Moret",
+   "titulo": "One World - Extended Mix",
+   "spotify_id": "3mofyruXlQ1FSxkEcpZo89",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Matthew Sona",
+   "titulo": "Prismatik",
+   "spotify_id": "2AXiTHgHijAAT2TSsJcsmH",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "André Moret",
+   "titulo": "Beyond Us - Extended Mix",
+   "spotify_id": "7en2KrT3Kxyx0O0qfvgrYN",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Nicolas Viana",
+   "titulo": "Coral",
+   "spotify_id": "4iugqvphVlh9P6BNBMoN2p",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Khen",
+   "titulo": "My Pure Soul",
+   "spotify_id": "6zIXKdIG7aHSg6sbgALaS2",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Fernando Olaya, Kamilo Sanclemente",
+   "titulo": "Renascence (Original Mix)",
+   "spotify_id": "2tlWbgNUKy9NNUOQGWWL7l",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "André Moret",
+   "titulo": "Drift Whispers",
+   "spotify_id": "4H7LbbNvCWX6T3m6NFDdxA",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Gorje Hewek, Dulus",
+   "titulo": "Earth",
+   "spotify_id": "4AR0To4HJSTLWWtFPWXPux",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Shai T, Tamir Regev",
+   "titulo": "The Captain",
+   "spotify_id": "3eDFlABBtjdOaIxlMYWebB",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Kamilo Sanclemente, Giovanny Aparicio",
+   "titulo": "Redemtion",
+   "spotify_id": "3YBIGUYAa1WlNzosBjMmp0",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Guy Mantzur, Tamir Regev",
+   "titulo": "Mystica",
+   "spotify_id": "0Xl4gBpUy55JeBpq26tnoc",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Cid Inc.",
+   "titulo": "Forgotten",
+   "spotify_id": "07cdgNfp7GsG3zNccgxUeU",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
+  },
+  {
+   "artista": "Mariano Mellino, Violeta Reynal",
+   "titulo": "I Had a Dream",
+   "spotify_id": "5DE2Py5mK59TWOehc8sC5I",
+   "textual": "aura don don pachi , omira, ese estilo creo que ensucie un poco , limpia spoty y rekor con una nueva version girando en esos soniditos (sale en la v8, 2026-10-29)"
   }
  ],
  "rondas": [

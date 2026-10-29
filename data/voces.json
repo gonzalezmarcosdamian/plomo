@@ -850,6 +850,390 @@
       "peso": 0.002,
       "etiqueta": "instrumental",
       "medido": "coordinador 2026-10-25, voces.separar + voces._voz"
+    },
+    "131036053": {
+      "artist": "Raw Main",
+      "title": "Theory of Love (Extended Mix) ",
+      "presencia": 0.029,
+      "peso": 0.005,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "74773976": {
+      "artist": "Shai T",
+      "title": "The Song Of Dolores (Original Mix) ",
+      "presencia": 0.195,
+      "peso": 0.043,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "134368127": {
+      "artist": "Khen",
+      "title": "Uchi Mata (Original Mix)",
+      "presencia": 0.26,
+      "peso": 0.032,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "6558348": {
+      "artist": "Kasper Koman",
+      "title": "Fruit",
+      "presencia": 0.35,
+      "peso": 0.083,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "44785517": {
+      "artist": "Double Touch",
+      "title": "Amour (Original Mix)",
+      "presencia": 0.83,
+      "peso": 0.458,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "231047567": {
+      "artist": "Artic White",
+      "title": "Flashback (Extended Mix)",
+      "presencia": 0.012,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "199367898": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Iceberg (HAFT Extended Remix)",
+      "presencia": 0.466,
+      "peso": 0.083,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "45297975": {
+      "artist": "Ric Niels & Mango",
+      "title": "Trip To South (Djimboh Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "124748921": {
+      "artist": "Sébastien Léger, Lost Miracle",
+      "title": "Dodonpachi (Original Mix)",
+      "presencia": 0.01,
+      "peso": 0.003,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "31596198": {
+      "artist": "Sebastien Leger",
+      "title": "Omira (Original Mix)",
+      "presencia": 1.0,
+      "peso": 0.689,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "36999671": {
+      "artist": "Sebastien Leger",
+      "title": "Pakpak (Extended Mix)",
+      "presencia": 0.017,
+      "peso": 0.007,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "11622300": {
+      "artist": "Sebastien Leger",
+      "title": "Ariana",
+      "presencia": 0.092,
+      "peso": 0.013,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "171619083": {
+      "artist": "Artic White",
+      "title": "Paradigm (Extended Mix)",
+      "presencia": 0.002,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "103940544": {
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Dichotomy (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "120979277": {
+      "artist": "Artic White",
+      "title": "Whisper Of Angels (Original Mix)",
+      "presencia": 0.423,
+      "peso": 0.092,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "55023300": {
+      "artist": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+      "title": "Balaphonia (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "216332867": {
+      "artist": "Dmitry Molosh",
+      "title": "The Moon Lights the Way (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "100834281": {
+      "artist": "Artic White",
+      "title": "Linea Zero (Extended Mix)",
+      "presencia": 0.011,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "121190158": {
+      "artist": "Khen",
+      "title": "Ango (Club Mix)",
+      "presencia": 0.009,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "2760575": {
+      "artist": "Artic White",
+      "title": "Spazio 77 (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "85406074": {
+      "artist": "Artic White",
+      "title": "Rosea (Original Mix)",
+      "presencia": 0.031,
+      "peso": 0.007,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "237883588": {
+      "artist": "Paul Hazendonk",
+      "title": "One Plus One (Jack Lazarus Club Mix)",
+      "presencia": 0.666,
+      "peso": 0.153,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "154495324": {
+      "artist": "Nicolas Rada, Antrim",
+      "title": "Daydream (Original Mix)",
+      "presencia": 0.447,
+      "peso": 0.081,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "246569089": {
+      "artist": "Cendryma",
+      "title": "Evasive (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "145386445": {
+      "artist": "Pissi",
+      "title": "Bailar (Original Mix)",
+      "presencia": 0.66,
+      "peso": 0.309,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "212383896": {
+      "artist": "Gai Barone",
+      "title": "Hemels (Original Mix)",
+      "presencia": 0.002,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "194123706": {
+      "artist": "Kasper Koman",
+      "title": "Rocking Boat",
+      "presencia": 0.011,
+      "peso": 0.003,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "205464452": {
+      "artist": "Kamilo Sanclemente & Jossem",
+      "title": "Inner Motion (Original Mix)",
+      "presencia": 0.369,
+      "peso": 0.064,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "17713969": {
+      "artist": "Kamilo Sanclemente",
+      "title": "Orb (Original Mix)",
+      "presencia": 0.408,
+      "peso": 0.297,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "264382119": {
+      "artist": "Tripswitch",
+      "title": "Box Fresh (Emi Galvan Remix)",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "18864049": {
+      "artist": "Dee Montero & Newman I Love",
+      "title": "Shadows",
+      "presencia": 0.634,
+      "peso": 0.318,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "111356554": {
+      "artist": "Roy Rosenfeld",
+      "title": "Nana (Original Mix)",
+      "presencia": 0.024,
+      "peso": 0.006,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "127791241": {
+      "artist": "Max Wexem",
+      "title": "Override (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "112359333": {
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "presencia": 0.045,
+      "peso": 0.007,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "40168032": {
+      "artist": "Sebastian Sellares",
+      "title": "Abaddon (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "82276459": {
+      "artist": "Artic White",
+      "title": "Rosea (D-Nox, Kamilo Sanclemente Extended Remix)",
+      "presencia": 0.029,
+      "peso": 0.008,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "130625045": {
+      "artist": "Ruben Karapetyan",
+      "title": "State of Progression (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "92188503": {
+      "artist": "Modd",
+      "title": "Train to Toronto (Nick Warren & Nicolas Rada Extended Remix)",
+      "presencia": 0.817,
+      "peso": 0.093,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "157884382": {
+      "artist": "Lane 8, Sultan + Shepard",
+      "title": "The Little Mushroom That Got Away (Extended Mix)",
+      "presencia": 0.325,
+      "peso": 0.089,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "198748289": {
+      "artist": "K3V (SL) & Jayy Vibes",
+      "title": "Kingdom of Dreams (Juan Ibanez Remix)",
+      "presencia": 1.0,
+      "peso": 0.542,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "96138341": {
+      "artist": "Kostya Outta",
+      "title": "Perseus (Original Mix)",
+      "presencia": 0.032,
+      "peso": 0.005,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "35383160": {
+      "artist": "Guy Mantzur, Kamilo Sanclemente",
+      "title": "The Future is in the Past (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "114502536": {
+      "artist": "This Guy Ben",
+      "title": "The Drip (Original Mix)",
+      "presencia": 0.473,
+      "peso": 0.081,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "225904219": {
+      "artist": "Tim Green",
+      "title": "Vacation to Life (Original Mix) ",
+      "presencia": 0.522,
+      "peso": 0.148,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "231586811": {
+      "artist": "Tali Muss, Vakabular",
+      "title": "Solar Focus (Extended Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "104993158": {
+      "artist": "Tim Green, Josefina Silveyra",
+      "title": "La Joda (Original Mix)",
+      "presencia": 0.024,
+      "peso": 0.01,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "234818553": {
+      "artist": "Abity",
+      "title": "Roots (Gai Barone Remix)",
+      "presencia": 0.987,
+      "peso": 0.525,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "39057490": {
+      "artist": "Taylan",
+      "title": "Earthbound (Andre Moret Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."

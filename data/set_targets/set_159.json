@@ -9,94 +9,89 @@
   "keep_order": true,
   "tracks": [
     {
+      "artist": "Jordi Ruz, Artic White",
+      "title": "Aura (Original Mix)",
+      "content_id": "184188342"
+    },
+    {
+      "artist": "Max Wexem",
+      "title": "Override (Original Mix)",
+      "content_id": "127791241"
+    },
+    {
+      "artist": "Kostya Outta",
+      "title": "Perseus (Original Mix)",
+      "content_id": "96138341"
+    },
+    {
       "artist": "Sébastien Léger",
       "title": "Blazing Ice",
       "content_id": "198986596"
     },
     {
-      "artist": "André Moret",
-      "title": "One World - Extended Mix",
-      "content_id": "130869533"
+      "artist": "Tim Green, Josefina Silveyra",
+      "title": "La Joda (Original Mix)",
+      "content_id": "104993158"
     },
     {
-      "artist": "Matthew Sona",
-      "title": "Prismatik",
-      "content_id": "53801929"
+      "artist": "Dmitry Molosh",
+      "title": "The Moon Lights the Way (Original Mix)",
+      "content_id": "216332867"
     },
     {
-      "artist": "Artic White, Jordi Ruz",
-      "title": "Aura - Extended Mix",
-      "content_id": "184188342"
+      "artist": "Guy Mantzur, Kamilo Sanclemente",
+      "title": "The Future is in the Past (Original Mix)",
+      "content_id": "35383160"
     },
     {
-      "artist": "André Moret",
-      "title": "Beyond Us - Extended Mix",
-      "content_id": "22034915"
+      "artist": "Sebastien Leger",
+      "title": "Lava (Original Mix)",
+      "content_id": "241869933"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+      "title": "Balaphonia (Original Mix)",
+      "content_id": "55023300"
+    },
+    {
+      "artist": "Shai T",
+      "title": "Summer Oclock (Original Mix) ",
+      "content_id": "46457686"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Andre Moret",
+      "title": "Dichotomy (Original Mix)",
+      "content_id": "103940544"
     },
     {
       "artist": "Nicolas Viana",
-      "title": "Coral",
-      "content_id": "196838047"
-    },
-    {
-      "artist": "Khen",
-      "title": "My Pure Soul",
-      "content_id": "233850863"
-    },
-    {
-      "artist": "Fernando Olaya, Kamilo Sanclemente",
-      "title": "Renascence (Original Mix)",
-      "content_id": "162314364"
-    },
-    {
-      "artist": "Nicolas Viana",
-      "title": "Winged - Extended Mix",
+      "title": "Winged (Original Mix)",
       "content_id": "237240379"
     },
     {
-      "artist": "André Moret",
-      "title": "Drift Whispers",
-      "content_id": "550467"
+      "artist": "Ruben Karapetyan",
+      "title": "State of Progression (Original Mix)",
+      "content_id": "130625045"
     },
     {
-      "artist": "Gorje Hewek, Dulus",
-      "title": "Earth",
-      "content_id": "2009006"
-    },
-    {
-      "artist": "Shai T, Tamir Regev",
-      "title": "The Captain",
-      "content_id": "194339407"
+      "artist": "Roy Rosenfeld",
+      "title": "Nana (Original Mix)",
+      "content_id": "111356554"
     },
     {
       "artist": "Sébastien Léger, Lost Miracle",
-      "title": "Dodonpachi",
+      "title": "Dodonpachi (Original Mix)",
       "content_id": "124748921"
     },
     {
-      "artist": "Kamilo Sanclemente, Giovanny Aparicio",
-      "title": "Redemtion",
-      "content_id": "175484827"
+      "artist": "Cary Crank",
+      "title": "Inner Atlas (Kyotto Remix)",
+      "content_id": "112359333"
     },
     {
-      "artist": "Guy Mantzur, Tamir Regev",
-      "title": "Mystica",
-      "content_id": "48847382"
-    },
-    {
-      "artist": "Sébastien Léger",
-      "title": "Omira",
+      "artist": "Sebastien Leger",
+      "title": "Omira (Original Mix)",
       "content_id": "31596198"
-    },
-    {
-      "artist": "Cid Inc.",
-      "title": "Forgotten",
-      "content_id": "72351175"
-    },
-    {
-      "artist": "Sébastien Léger",
-      "title": "Lava",
-      "content_id": "241869933"
     }
   ]
 }
