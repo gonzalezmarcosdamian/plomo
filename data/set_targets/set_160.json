@@ -1,5 +1,5 @@
 {
-  "name": "160. Sostenido II · todo sin usar — 2h — 2026-10-31",
+  "name": "160. Sostenido II · todo sin usar — 2h50 — 2026-10-31",
   "duration_h": 0,
   "bpm_range": [
     100,
@@ -15,9 +15,49 @@
       "content_id": "205833469"
     },
     {
+      "artist": "Brian Creao",
+      "title": "Temperance (Juan Ibañez Remix)",
+      "content_id": "74604190"
+    },
+    {
       "artist": "Nick Warren",
       "title": "Stupa (Original Mix)",
       "content_id": "51265153"
+    },
+    {
+      "artist": "Guy J",
+      "title": "Evo (Original Mix)",
+      "content_id": "56389471"
+    },
+    {
+      "artist": "D-Nox",
+      "title": "Your Love (Extended Mix)",
+      "content_id": "208007595"
+    },
+    {
+      "artist": "Nordfold",
+      "title": "Soul Seek (Extended Mix)",
+      "content_id": "14272909"
+    },
+    {
+      "artist": "C-Jay, Yves Eaux, Sistersweet",
+      "title": "Retryx (Original Mix)",
+      "content_id": "204237213"
+    },
+    {
+      "artist": "Redspace, Dj Meoz",
+      "title": "Where Is My Wheel (Original Mix)",
+      "content_id": "91006655"
+    },
+    {
+      "artist": "Hobin Rude",
+      "title": "Evasive (Original Mix)",
+      "content_id": "187945702"
+    },
+    {
+      "artist": "Imran Khan",
+      "title": "Horizonz (Simos Tagias Remix)",
+      "content_id": "178842109"
     },
     {
       "artist": "Hobin Rude",
@@ -40,14 +80,14 @@
       "content_id": "131036053"
     },
     {
-      "artist": "Imran Khan",
-      "title": "Horizonz (Simos Tagias Remix)",
-      "content_id": "178842109"
+      "artist": "Maga",
+      "title": "Trust Me Sometime (Nick Warren & Nicolas Rada Remix)",
+      "content_id": "64579088"
     },
     {
-      "artist": "Hobin Rude",
-      "title": "Evasive (Original Mix)",
-      "content_id": "187945702"
+      "artist": "Gorkiz, Mind Echoes",
+      "title": "Your Trust (Paul Hamilton Remix)",
+      "content_id": "73906508"
     },
     {
       "artist": "Kamilo Sanclemente, Zalvador",
@@ -90,9 +130,9 @@
       "content_id": "242789993"
     },
     {
-      "artist": "K Loveski",
-      "title": "Amuja (Unusual Soul Remix)",
-      "content_id": "115510727"
+      "artist": "Wassu, HAUMS",
+      "title": "Star Safari (Extended Mix)",
+      "content_id": "130097514"
     }
   ]
 }

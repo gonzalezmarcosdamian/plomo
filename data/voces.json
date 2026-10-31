@@ -1474,6 +1474,254 @@
       "peso": 0.085,
       "etiqueta": "algo de voz",
       "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "15764819": {
+      "artist": "Hobin Rude",
+      "title": "33rd (Ric Niels & Dowden Remix)",
+      "presencia": 0.018,
+      "peso": 0.007,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "98597578": {
+      "artist": "Non Citizens, Lucas Blumen",
+      "title": "Somebody (Just Like You) (Original Mix)",
+      "presencia": 0.079,
+      "peso": 0.018,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "178842109": {
+      "artist": "Imran Khan",
+      "title": "Horizonz (Simos Tagias Remix)",
+      "presencia": 0.021,
+      "peso": 0.005,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "107307995": {
+      "artist": "Kamilo Sanclemente, Zalvador",
+      "title": "Elyseum (Weird Sounding Dude Extended Remix)",
+      "presencia": 0.976,
+      "peso": 0.415,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "13912967": {
+      "artist": "Andrés Moris",
+      "title": "Rust (Rockka Remix)",
+      "presencia": 0.005,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "22865135": {
+      "artist": "Jiminy Hop",
+      "title": "A Tour (Simos Tagias Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "205943612": {
+      "artist": "Dabeat, Kamilo Sanclemente",
+      "title": "Seriously (Original Mix)",
+      "presencia": 0.892,
+      "peso": 0.195,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "14062148": {
+      "artist": "Gorje Hewek",
+      "title": "Tool 6666 (Original Mix)",
+      "presencia": 0.199,
+      "peso": 0.112,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "4138919": {
+      "artist": "Navar & Dmitry Molosh",
+      "title": "Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "presencia": 0.575,
+      "peso": 0.101,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "242789993": {
+      "artist": "Tim Green",
+      "title": "We've Been Here Before",
+      "presencia": 0.264,
+      "peso": 0.091,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "125422752": {
+      "artist": "Juan Deminicis",
+      "title": "Solar Reign (Original Mix)",
+      "presencia": 0.376,
+      "peso": 0.038,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "62730714": {
+      "artist": "Ale Russo",
+      "title": "Maybe This Time",
+      "presencia": 0.103,
+      "peso": 0.053,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "255595969": {
+      "artist": "Carl Jurgens & Niso",
+      "title": "Skyscrapers (Alex O'Rion Remix) ",
+      "presencia": 0.341,
+      "peso": 0.207,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "177548389": {
+      "artist": "Mattias Herrera",
+      "title": "Lumara (Extended Mix)",
+      "presencia": 0.99,
+      "peso": 0.289,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "91006655": {
+      "artist": "Redspace, Dj Meoz",
+      "title": "Where Is My Wheel (Original Mix)",
+      "presencia": 0.047,
+      "peso": 0.008,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "204237213": {
+      "artist": "C-Jay, Yves Eaux, Sistersweet",
+      "title": "Retryx (Original Mix)",
+      "presencia": 0.018,
+      "peso": 0.006,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "64579088": {
+      "artist": "Maga",
+      "title": "Trust Me Sometime (Nick Warren & Nicolas Rada Remix)",
+      "presencia": 0.036,
+      "peso": 0.008,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "73906508": {
+      "artist": "Gorkiz, Mind Echoes",
+      "title": "Your Trust (Paul Hamilton Remix)",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "77361825": {
+      "artist": "Alex O'Rion, Zankee Gulati",
+      "title": "Sabata (Original Mix)",
+      "presencia": 0.447,
+      "peso": 0.188,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "19702825": {
+      "artist": "Paul Thomas",
+      "title": "Hippias (Agustin Pietrocola Remix)",
+      "presencia": 0.276,
+      "peso": 0.028,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "56389471": {
+      "artist": "Guy J",
+      "title": "Evo (Original Mix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "208007595": {
+      "artist": "D-Nox",
+      "title": "Your Love (Extended Mix)",
+      "presencia": 0.019,
+      "peso": 0.009,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "110600604": {
+      "artist": "Gonzalo Cotroneo",
+      "title": "Power (Extended Mix)",
+      "presencia": 0.009,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "222300451": {
+      "artist": "Melodiam (AR)",
+      "title": "Trippin",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "196041740": {
+      "artist": "Supacooks, KAZKO",
+      "title": "Machu Picchu (Original Mix)",
+      "presencia": 0.176,
+      "peso": 0.028,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "193972519": {
+      "artist": "Maxi Degrassi",
+      "title": "The Love Goes First (Original Mix) ",
+      "presencia": 0.389,
+      "peso": 0.121,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "69309836": {
+      "artist": "Julian Nates, Julieta Kühnle, Cendryma",
+      "title": "For Another Storm (Cendryma Extended Mix)",
+      "presencia": 0.002,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "43073345": {
+      "artist": "Das Pharaoh & JES",
+      "title": "Right To Love (Extended Mix) ",
+      "presencia": 0.0,
+      "peso": 0.002,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "74604190": {
+      "artist": "Brian Creao",
+      "title": "Temperance (Juan Ibañez Remix)",
+      "presencia": 0.146,
+      "peso": 0.022,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "139110395": {
+      "artist": "Redspace, Al Park",
+      "title": "Trends (Original Mix)",
+      "presencia": 0.228,
+      "peso": 0.029,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "260178362": {
+      "artist": "Albuquerque, CANCCI",
+      "title": "Mazes (Original Mix)",
+      "presencia": 0.075,
+      "peso": 0.014,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."
