@@ -4,16 +4,53 @@
  "frase": 32,
  "min_plano": 24,
  "etapas": [
-  {"nombre": "Bosque con sol entre los arboles", "temas": [0, 1, 2, 3, 4],
-   "luz": "[A] tarde: sol alto entre los troncos, hojas encendidas, todo verde"},
-  {"nombre": "Agua con destellos", "temas": [5, 6, 7],
-   "luz": "[A] a [B]: arroyos, rios y lagos con el sol rebotando en el agua"},
-  {"nombre": "Hora dorada en el campo", "temas": [8, 9, 10, 11, 12],
-   "luz": "[B] a [C]: pastizales y campos dorados, polen en el aire, luz rasante"},
-  {"nombre": "El sol toca el horizonte", "temas": [13, 14],
-   "luz": "[C] a [E]: el sol bajando y una sola puesta [D], en el drop de Redemtion"},
-  {"nombre": "Despues de la puesta", "temas": [15, 16],
-   "luz": "[E] a [F]: arrebol y hora azul, siluetas de arboles, la ultima luz; sin estrellas ni noche"}
+  {
+   "nombre": "Bosque con sol entre los arboles",
+   "temas": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "luz": "[A] tarde: sol alto entre los troncos, hojas encendidas, todo verde"
+  },
+  {
+   "nombre": "Agua con destellos",
+   "temas": [
+    4,
+    5,
+    6
+   ],
+   "luz": "[A] a [B]: arroyos, rios y lagos con el sol rebotando en el agua"
+  },
+  {
+   "nombre": "Hora dorada en el campo",
+   "temas": [
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "luz": "[B] a [C]: pastizales y campos dorados, polen en el aire, luz rasante"
+  },
+  {
+   "nombre": "El sol toca el horizonte",
+   "temas": [
+    12,
+    13,
+    14
+   ],
+   "luz": "[C] a [E]: el sol bajando y una sola puesta [D], en el drop de Dodonpachi"
+  },
+  {
+   "nombre": "Despues de la puesta",
+   "temas": [
+    15,
+    16
+   ],
+   "luz": "[E] a [F]: arrebol y hora azul, siluetas de arboles, la ultima luz; sin estrellas ni noche"
+  }
  ],
- "_por_que_la_puesta_en_redemtion": "Se le propuso al DJ en The Captain con un set estimado en 2 h. La mezcla real dura 95:38 y la puesta en The Captain (65:28) dejaba 27 minutos de luz que se va; en este set el DJ cambio los temas 'muy oscuros', asi que el final no puede ser largo y oscuro. The Captain queda en la hora dorada y la puesta cae en Redemtion (75:26-83:18)."
+ "_por_que_la_puesta_en_dodonpachi": "2026-10-31, propuesta que espera el OK del DJ. El 159 v8c dura 105:13 en la mezcla y sube hasta el final (Dodonpachi 7.0, Mutant 7.2, Omira 7.4). La puesta en el drop de Dodonpachi (92:03, el 87% del set) deja 13 minutos despues, como la regla del 26/10 de no cerrar largo y oscuro, y el arrebol, el cielo mas encendido del dia, cae con el pico del set. Antes estaba en Redemtion, que ya no esta en el set."
 }

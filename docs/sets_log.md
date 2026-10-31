@@ -3423,7 +3423,7 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 
 
 ## Set 159. 159. Work · Organic con brillo — 2h — 2026-10-25
-**Armado:** 2026-10-29  
+**Armado:** 2026-10-31  
 **Duracion:** 2.0h  
 **Tracks:** 17  
 **BPM range:** 119-124  
@@ -3431,8 +3431,8 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
 | 1 | Jordi Ruz, Artic White | Aura (Original Mix) | 122 | 5.0 |
-| 2 | Max Wexem | Override (Original Mix) | 121 | 5.1 |
-| 3 | Kostya Outta | Perseus (Original Mix) | 122 | 5.6 |
+| 2 | Eli Nissan | Bambook | 120 | 5.9 |
+| 3 | Eli Nissan | Karnaval (Roy Rosenfeld Remix)  | 122 | 6.4 |
 | 4 | Sébastien Léger | Blazing Ice | 122 | 6.4 |
 | 5 | Taylan | Earthbound (Andre Moret Remix) | 120 | 6.7 |
 | 6 | Dmitry Molosh | The Moon Lights the Way (Original Mix) | 122 | 7.0 |
@@ -3443,10 +3443,12 @@ energia) +0.04, BPM 120-127. Marca 4 transiciones flojas y las 4 son los dos E:1
 | 11 | Kamilo Sanclemente, Andre Moret | Dichotomy (Original Mix) | 122 | 6.3 |
 | 12 | Nicolas Viana | Winged (Original Mix) | 121 | 6.4 |
 | 13 | Ruben Karapetyan | State of Progression (Original Mix) | 122 | 5.8 |
-| 14 | Roy Rosenfeld | Nana (Original Mix) | 121 | 6.5 |
+| 14 | Michael A | Conviction (Aman Anand Remix) | 122 | 6.3 |
 | 15 | Sébastien Léger, Lost Miracle | Dodonpachi (Original Mix) | 122 | 7.0 |
-| 16 | Cary Crank | Inner Atlas (Kyotto Remix) | 122 | 6.8 |
+| 16 | Kabi (AR), Ric Niels | Mutant | 121 | 7.2 |
 | 17 | Sebastien Leger | Omira (Original Mix) | 122 | 7.4 |
+
+**v8c (2026-10-29 en Spotify, 2026-10-31 en Rekordbox):** cuatro cambios del DJ escuchando en Spotify, textuales: "Hay algunos muy oscuros como ovwrride" -> #2 Bambook (Eli Nissan) por Override; "Perseus mal" -> #3 Karnaval (Eli Nissan, Roy Rosenfeld Remix) por Perseus; "Nana bien pero no me gusta" -> #14 Conviction (Michael A, Aman Anand Remix, version entera de 489 s) por Nana; "Innet atlas mal tambien" -> #16 Mutant (Kabi (AR), Ric Niels) por Inner Atlas. Los cuatro ya estaban en la biblioteca con cues y energia. Spotify manda: el 31/10 se bajo a Rekordbox (build_set 159) y a la copia Sunset (armar_sessions). La subida sigue: 5.0 (Aura) a 7.4 (Omira), con Mutant 7.2 antes del cierre.
 
 **v8b (2026-10-29):** "La joda no me gusta": entra Earthbound (Taylan, Andre Moret Remix), 6A, E6.7, del mismo pool medido.
 

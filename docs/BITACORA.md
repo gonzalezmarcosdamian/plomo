@@ -9,6 +9,28 @@ es aprendizaje. Si solo explica una fecha, es bitácora.
 
 ---
 
+## 2026-10-31 — el 159 baja de Spotify a Rekordbox, y el plan de la Session 05
+
+"Fijate como esta el set 159 en spoty empata rekor y hace sync y hace el plan para video
+eficiente." Leída la lista real de Spotify: 17 temas, igual al borrador y a la receta. Rekordbox
+estaba atrasado en los cuatro cambios del 29/10 (Bambook, Karnaval, Conviction y Mutant en lugar
+de Override, Perseus, Nana e Inner Atlas). Los cuatro ya estaban en la biblioteca, con cues y
+energía.
+
+- Se avisó a la otra sesión de plomo antes de escribir master.db. `backup.py set159-v8c`,
+  `build_set.py 159` y `armar_sessions.py`; integridad ok.
+- Leído de nuevo master.db: el 159 y Sunset quedaron 17/17 en el orden de Spotify.
+- Las notas del 159 en sets_log, que build_set pisa, volvieron, con la entrada v8c.
+- `mezclar.py 159`: 105:13, y las 16 transiciones dan ok. La del 26/10 era de otro set.
+- La receta de la Session 05 pasó al set nuevo: la puesta va en el drop de Dodonpachi (propuesta)
+  y salen 76 planos.
+- El plan, con tope de tokens y lo que decide el DJ, está en
+  [sets/159_session_05.md](sets/159_session_05.md). No se lanzó ningún agente de video.
+- El pen queda para el DJ: borrar el 159 y Sunset del pen en las dos bibliotecas y después
+  sincronizar.
+
+---
+
 ## 2026-10-26 — la Session 05 arranca con el 159 y se corta por los tokens
 
 "Planifica una session con este set, que videos harias? revisa que esta viral en youtube

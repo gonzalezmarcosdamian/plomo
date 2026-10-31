@@ -47,6 +47,11 @@ con la Session 05 se baja el costo de trabajar con video. Lo medido ese día:
 Todo lo hecho está en la BITACORA del 2026-10-26. La hoja v1, bloqueada, está en
 `C:\Users\gonza\Pictures\plomo_session_05_recorrido.jpg`.
 
+**2026-10-31: el 159 cambió** (v8c, 13 de 17 temas distintos de la v5 sobre la que se armó la hoja v1)
+y la mezcla se rehizo. 0b.1, 0b.2 y 0b.5 quedan viejos: los planos y el 53:40 eran de la mezcla
+anterior. El plan nuevo, con fases, tope de tokens y lo que decide el DJ, está en
+[sets/159_session_05.md](sets/159_session_05.md). 0b.3 (221999 y 230409) y 0b.4 (disco) siguen.
+
 ---
 
 ## 1. El 158 (b2b Grey Area): decide el DJ
