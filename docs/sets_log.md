@@ -3590,14 +3590,14 @@ la cuota de la app (26/10 ~11:40) desde el borrador, mismo orden.
 |---|--------|-------|-----|---|
 | 1 | Hobin Rude | 33rd (Ric Niels & Dowden Remix) | 121 | 6.2 |
 | 2 | Imran Khan | Horizonz (Simos Tagias Remix) | 122 | 6.2 |
-| 3 | Budakid | Promised (Original Mix)  | 123 | 6.3 |
+| 3 | Non Citizens, Lucas Blumen | Somebody (Just Like You) (Original Mix) | 122 | 6.2 |
 | 4 | Raw Main | Theory of Love (Extended Mix)  | 122 | 6.3 |
 | 5 | Redspace, Al Park | Trends (Original Mix) | 122 | 6.4 |
-| 6 | D-Nox, Lonya, DJ Zombi, Amber Long | Red Light Stories (Original Mix)  | 122 | 6.6 |
-| 7 | Cioz & Corpino | Kari Lampi | 123 | 6.7 |
+| 6 | Kasper Koman, Shai T | Good People  | 122 | 6.2 |
+| 7 | D-Nox, Lonya, DJ Zombi, Amber Long | Red Light Stories (Original Mix)  | 122 | 6.6 |
 | 8 | Kamilo Sanclemente, Zalvador | Elyseum (Weird Sounding Dude Extended Remix) | 124 | 6.8 |
 | 9 | Andrés Moris | Rust (Rockka Remix) | 123 | 7.0 |
-| 10 | Double Touch | Gran Amigo (Original Mix) | 122 | 7.0 |
+| 10 | Jiminy Hop | A Tour (Simos Tagias Remix) | 121 | 7.1 |
 | 11 | Az Denar | This Way (Original Mix) | 121 | 7.1 |
 | 12 | Dabeat, Kamilo Sanclemente | Seriously (Original Mix) | 122 | 7.2 |
 | 13 | Gorje Hewek | Tool 6666 (Original Mix) | 124 | 7.2 |

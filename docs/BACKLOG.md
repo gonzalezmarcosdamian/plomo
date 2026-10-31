@@ -54,6 +54,16 @@ anterior. El plan nuevo, con fases, tope de tokens y lo que decide el DJ, está 
 
 ---
 
+## 0c. Arreglos que dejo el set 160 (2026-10-31)
+
+| # | Prio | Qué | Evidencia | Quién |
+|---|---|---|---|---|
+| 0c.1 | A | **ordenar_como_150.py y select_set.py no cobran el tope por sello** (`repeticion.max_por_sello_en_set`), y en data/pool.json hay sellos con espacios al final ("All Day I Dream "). | El 160 salio con 6 de All Day I Dream contra un tope de 4; lo encontro digweed en la vuelta 1. | tecnico |
+| 0c.2 | A | **El campo `usado` de pool.json va por ContentID**: para "sin usar" hay que cruzar por nombre del tema. | Dejaba pasar 140 de 331 temas ya usados (Thrill, del 150, entre ellos). | tecnico |
+| 0c.3 | B | **Anotar la energia percibida del 160** en data/energia_percibida.json. | Digweed: la subida de a 0.1 del 160 es por formula; el error formula-oido es de 0.7 a 2.5. Lo verifica la escucha. | DJ |
+
+---
+
 ## 1. El 158 (b2b Grey Area): decide el DJ
 
 | # | Prio | Qué | Evidencia | Quién |
