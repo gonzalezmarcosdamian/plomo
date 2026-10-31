@@ -41,7 +41,7 @@ con la Session 05 se baja el costo de trabajar con video. Lo medido ese día:
 | 0b.1 | A | **Etapa 4, rearmarla**: planos 56-66 con el sol bajo que NO toca el horizonte (169565 sirve), una sola puesta en el plano 67 (178710, la única donde el sol entra de verdad), 68-69 sin sol a la vista (18503). Sacar 116206 (estela de avión). | lo dijo el revisor el 26/10, sin hacer |
 | 0b.2 | A | **Etapa 5: faltan clips.** Hay 4 para 10 planos, y el final tira a oscuro. Buscar la última luz clara: cielos pastel, agua quieta que los refleja. | sin hacer |
 | 0b.3 | B | Cambiar 221999 (se ve procesada) y revisar 230409 (la niebla puede leerse como mañana). | sin hacer |
-| 0b.4 | A | **Disco para el render**: la 04 ocupó 13,2 GB terminada y casi el doble mientras se armaba. Hay 21,9 GB libres. Decide el DJ qué se libera: los .mov de las Sessions ya publicadas (31 GB en `postproduction/video`) o los clips estirados de la 04 (13 GB). | decide el DJ |
+| 0b.4 | A | **Disco para el render**: la 04 ocupó 13,2 GB terminada y casi el doble mientras se armaba. Hay 21,9 GB libres. Decide el DJ qué se libera: los .mov de las Sessions ya publicadas (31 GB en `postproduction/video`) o los clips estirados de la 04 (13 GB). | ~~decide el DJ~~ hecho el 2026-10-31 ("hace limpieza antes"): 16 GB de intermedios, quedan 38 GB libres; los .mov finales siguen |
 | 0b.5 | B | **Escuchar el 53:40 de la mezcla** (Earth → Renascence): el control de dos bajos dio 3,3 dB contra un límite de 3. | el DJ, antes de publicar |
 
 Todo lo hecho está en la BITACORA del 2026-10-26. La hoja v1, bloqueada, está en
@@ -50,7 +50,7 @@ Todo lo hecho está en la BITACORA del 2026-10-26. La hoja v1, bloqueada, está 
 **2026-10-31: el 159 cambió** (v8c, 13 de 17 temas distintos de la v5 sobre la que se armó la hoja v1)
 y la mezcla se rehizo. 0b.1, 0b.2 y 0b.5 quedan viejos: los planos y el 53:40 eran de la mezcla
 anterior. El plan nuevo, con fases, tope de tokens y lo que decide el DJ, está en
-[sets/159_session_05.md](sets/159_session_05.md). 0b.3 (221999 y 230409) y 0b.4 (disco) siguen.
+[sets/159_session_05.md](sets/159_session_05.md). 0b.3 (221999 y 230409) sigue; 0b.4 (disco) quedó resuelto el mismo día.
 
 ---
 

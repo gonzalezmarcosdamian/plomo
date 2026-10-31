@@ -104,9 +104,15 @@ segundo.
 
 1. **El plan y el tope de ~300 mil.**
 2. **La puesta en el drop de Dodonpachi (92:03)**, o dónde la quiere.
-3. **Disco**: el render de la 04 ocupó 13,2 GB terminado y casi el doble mientras se armaba. Hoy
-   hay 22 GB libres. Para liberar, una de dos:
-   - los .mov de las Sessions ya publicadas, 31 GB en `postproduction/video`;
-   - los clips estirados de la 04, en `postproduction/stock` (42 GB en total).
+3. ~~**Disco**~~: resuelto el 2026-10-31 ("hace limpieza antes"). El render de la 04 ocupó
+   13,2 GB terminado y casi el doble mientras se armaba. Se liberaron 16 GB de intermedios y
+   quedaron 38 GB libres:
+   - los estirados y lentos de la 04;
+   - las piezas del Reel en doble exposición;
+   - 15 clips de Pixabay que no usa ninguna Session, entre ellos 116206;
+   - la prueba de las almas.
+
+   Los .mov finales, las mezclas y los stems siguen. Para volver a renderizar la 04 hay que
+   regenerar antes sus estirados con `estirar_mixto.py`.
 4. **Escuchar la mezcla entera antes del render.** El video se ata a esta mezcla: si después
    cambia un tema, se rehacen los planos de esa etapa.

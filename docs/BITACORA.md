@@ -28,6 +28,17 @@ energía.
   [sets/159_session_05.md](sets/159_session_05.md). No se lanzó ningún agente de video.
 - El pen queda para el DJ: borrar el 159 y Sunset del pen en las dos bibliotecas y después
   sincronizar.
+- "Hace limpieza antes." Se liberaron 16 GB y el disco pasó de 22 a 38 GB libres. Solo se borró
+  lo que se puede regenerar:
+  - `postproduction/stock/estirados` (13 GB, 188 clips de la 04) y `lentos` (0,9 GB);
+  - `postproduction/video/reel_session04_piezas` (1,3 GB, el Reel en doble exposición, el
+    "malisimo");
+  - 15 clips de `stock/pixabay` que ningún archivo de `data/video` nombra, más 116206, el de la
+    estela (1,5 GB);
+  - `Videos/plomo_prueba_almas.mp4`.
+
+  Se quedaron los .mov finales de las Sessions 01-04 (28 GB) y el del atardecer del 23/9 (2,5 GB), las mezclas, los stems de Demucs
+  (11 GB, que se regeneran con la GPU que cuelga la PC) y los clips que usan la 04 y la 05.
 
 ---
 
