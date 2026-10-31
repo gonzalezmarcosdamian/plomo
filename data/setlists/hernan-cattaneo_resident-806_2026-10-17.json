@@ -1,0 +1,129 @@
+{
+  "dj": "Hernan Cattaneo",
+  "evento": "Resident 806",
+  "fecha": "2026-10-17",
+  "fuente": "https://podcast.hernancattaneo.com/e/resident-episode-806-october-17-2026/",
+  "orden_confiable": true,
+  "n": 10,
+  "n_identificados": 10,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.0,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Dreamteller",
+      "title": "Guardian of Music",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "Dreamteller",
+      "title": "Always By Your Side",
+      "es_id": false,
+      "key": "Fm",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Saib - Always By Your Side",
+      "label": "Noire & Blanche",
+      "fuente_label": "muzpa"
+    },
+    {
+      "pos": 3,
+      "artist": "Uccelli",
+      "title": "Undertone",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 4,
+      "artist": "Sentre",
+      "title": "Bosh",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Sentre - Bosh (Extended Mix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Agustin Pietrocola",
+      "title": "Profound Concept (Iovino Remix)",
+      "es_id": false,
+      "key": "Em",
+      "bpm": 123.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Agustin Pietrocola - Profound Concept (Iovino Remix)",
+      "label": "Armoony Records",
+      "fuente_label": "muzpa"
+    },
+    {
+      "pos": 6,
+      "artist": "Around Us & Gai Barone",
+      "title": "Digital Dream",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 7,
+      "artist": "Gowzer",
+      "title": "Deception",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Gorkiz & Tavaresgui",
+      "title": "Solar Wind",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 125.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Gorkiz, Tavaresgui - Solar Wind (Original Mix)",
+      "label": "Spiritual Enhancer",
+      "fuente_label": "muzpa"
+    },
+    {
+      "pos": 9,
+      "artist": "Agoostina",
+      "title": "ID",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 10,
+      "artist": "André Moret",
+      "title": "Now Is Just A Dream",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    }
+  ],
+  "orden_campos_revisado": true,
+  "cobertura_key": 0.4,
+  "cobertura_bpm": 0.4,
+  "fuente_tracklist": "tracklist oficial del feed del podcast Resident (podcast.hernancattaneo.com/feed.xml). Desde 2024 el programa dura ~1 h y trae 10 temas. Key/BPM: biblioteca y, si no, Muzpa.",
+  "es_b2b": false,
+  "cargado": "2026-10-31, agente research (patrones de Hernan)"
+}

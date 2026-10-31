@@ -47,6 +47,7 @@ que ya costaron caro, y lo que tiene prohibido hacer.
 | `video` | YouTube | publicar por su cuenta |
 | `editor` | edicion y color de las piezas de video, tomas reales del DJ | recortarlo del fondo, mostrar algo sin revisarlo |
 | `director` | direccion de lo animado por codigo: historia, cuadro, movimiento, luz, ritmo con la musica | stock, texto que no sea un tema, renders de mas |
+| `hernan` | la lente de Hernán Cattaneo sobre un set, medida en 10 sets reales y 120 Resident (docs/HERNAN_PATRONES.md) | reemplazar las decisiones del DJ, inventar patrones sin dato |
 | `revisor` | ultima compuerta antes del DJ: contra `data/video/veredictos.json`, `energia_percibida.json` y la memoria | construir o arreglar; responde APROBADO o BLOQUEADO |
 
 Los trabajos largos lanzados con `scripts/sin_ventana.py` quedan anotados en `data/en_curso.json`

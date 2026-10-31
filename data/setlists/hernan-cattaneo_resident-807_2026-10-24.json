@@ -1,0 +1,130 @@
+{
+  "dj": "Hernan Cattaneo",
+  "evento": "Resident 807",
+  "fecha": "2026-10-24",
+  "fuente": "https://podcast.hernancattaneo.com/e/resident-episode-807-october-24-2026/",
+  "orden_confiable": true,
+  "n": 10,
+  "n_identificados": 10,
+  "n_huecos_id": 0,
+  "cobertura_datos": 0.1,
+  "tracks": [
+    {
+      "pos": 1,
+      "artist": "Eelke Kleijn",
+      "title": "Ondine (Tato Seco Rework)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 2,
+      "artist": "EMPHI",
+      "title": "Sion",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 3,
+      "artist": "Will DeKeizer",
+      "title": "North Pole",
+      "es_id": false,
+      "key": "C",
+      "bpm": 140.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Hiroyuki Arakawa - North Pole (Original Mix)",
+      "label": "Hydrozoa",
+      "fuente_label": "muzpa"
+    },
+    {
+      "pos": 4,
+      "artist": "Claudio Cornejo (AR)",
+      "title": "Overtake",
+      "es_id": false,
+      "key": "Am",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Federico Guttadauro - Overtake (Original Mix)"
+    },
+    {
+      "pos": 5,
+      "artist": "Bereznitsky",
+      "title": "Escape (Katrin Souza Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 6,
+      "artist": "Abity & Luca Abayan",
+      "title": "Afterimage (Cortona Remix)",
+      "es_id": false,
+      "key": "11A",
+      "bpm": 121.0,
+      "energy": 6.2,
+      "label": "Mango Alley",
+      "fuente_datos": "biblioteca"
+    },
+    {
+      "pos": 7,
+      "artist": "Artic White",
+      "title": "The Signal (Nicolas Viana Remix)",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 8,
+      "artist": "Kostya Outta & Frameloue",
+      "title": "Altitude",
+      "es_id": false,
+      "key": null,
+      "bpm": null,
+      "energy": null,
+      "fuente_datos": null
+    },
+    {
+      "pos": 9,
+      "artist": "Dosem",
+      "title": "Ornamentz",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 127.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Dosem - Ornamentz (Extended Mix)",
+      "label": "Anjunadeep",
+      "fuente_label": "muzpa"
+    },
+    {
+      "pos": 10,
+      "artist": "André Moret",
+      "title": "Presence",
+      "es_id": false,
+      "key": "F#m",
+      "bpm": 122.0,
+      "energy": null,
+      "fuente_datos": "muzpa",
+      "muzpa_fullname": "Stan Kolev, Matan Caspi - Presence (Original Mix)",
+      "label": "Outta Limits",
+      "fuente_label": "muzpa"
+    }
+  ],
+  "orden_campos_revisado": true,
+  "cobertura_key": 0.5,
+  "cobertura_bpm": 0.5,
+  "fuente_tracklist": "tracklist oficial del feed del podcast Resident (podcast.hernancattaneo.com/feed.xml). Desde 2024 el programa dura ~1 h y trae 10 temas. Key/BPM: biblioteca y, si no, Muzpa.",
+  "es_b2b": false,
+  "cargado": "2026-10-31, agente research (patrones de Hernan)"
+}
