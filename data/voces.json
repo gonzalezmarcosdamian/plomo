@@ -1354,6 +1354,126 @@
       "peso": 0.081,
       "etiqueta": "algo de voz",
       "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "151217863": {
+      "artist": "Andre Moret",
+      "title": "MoV (Extended Mix)",
+      "presencia": 0.158,
+      "peso": 0.013,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "205833469": {
+      "artist": "Andre Moret",
+      "title": "Sephira (Extended Mix)",
+      "presencia": 0.383,
+      "peso": 0.119,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "8137810": {
+      "artist": "David Calo",
+      "title": "Deep Answer (Sean Harvey Remix)",
+      "presencia": 0.002,
+      "peso": 0.004,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "187945702": {
+      "artist": "Hobin Rude",
+      "title": "Evasive (Original Mix)",
+      "presencia": 0.168,
+      "peso": 0.022,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "30559768": {
+      "artist": "Kamilo Sanclemente",
+      "title": "The Background (Original Mix)",
+      "presencia": 0.488,
+      "peso": 0.212,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "51265153": {
+      "artist": "Nick Warren",
+      "title": "Stupa (Original Mix)",
+      "presencia": 0.599,
+      "peso": 0.209,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "42153879": {
+      "artist": "Redspace, Dj Meoz",
+      "title": "Breathe (Martin Fredes Extended Remix)",
+      "presencia": 0.0,
+      "peso": 0.001,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "73550757": {
+      "artist": "Ruben Karapetyan",
+      "title": "Monteverde (Extended Mix)",
+      "presencia": 0.358,
+      "peso": 0.026,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "40865220": {
+      "artist": "Ismaehl",
+      "title": "Iyáari (Still-Life Extended Remix) ",
+      "presencia": 0.354,
+      "peso": 0.153,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "115510727": {
+      "artist": "K Loveski",
+      "title": "Amuja (Unusual Soul Remix)",
+      "presencia": 0.062,
+      "peso": 0.025,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "59638375": {
+      "artist": "Gorje Hewek, ETNE",
+      "title": "Children (Extended Mix)",
+      "presencia": 0.364,
+      "peso": 0.063,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "204225656": {
+      "artist": "about : river",
+      "title": "Never Forget (Rockka Remix)",
+      "presencia": 0.009,
+      "peso": 0.005,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "110259434": {
+      "artist": "Raw Main",
+      "title": "Kashmir (Extended Mix) ",
+      "presencia": 0.077,
+      "peso": 0.011,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "130097514": {
+      "artist": "Wassu, HAUMS",
+      "title": "Star Safari (Extended Mix)",
+      "presencia": 0.203,
+      "peso": 0.094,
+      "etiqueta": "instrumental",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "83074531": {
+      "artist": "Tobi Amuchastegui",
+      "title": "Rish (Original Mix)",
+      "presencia": 0.412,
+      "peso": 0.085,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."

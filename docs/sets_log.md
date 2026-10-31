@@ -3583,27 +3583,26 @@ la cuota de la app (26/10 ~11:40) desde el borrador, mismo orden.
 ## Set 160. 160. Sostenido II · todo sin usar — 2h — 2026-10-31
 **Armado:** 2026-10-31  
 **Duracion:** 0h  
-**Tracks:** 18  
+**Tracks:** 17  
 **BPM range:** 100-140  
 
 | # | Artist | Title | BPM | E |
 |---|--------|-------|-----|---|
-| 1 | Hobin Rude | 33rd (Ric Niels & Dowden Remix) | 121 | 6.2 |
-| 2 | Imran Khan | Horizonz (Simos Tagias Remix) | 122 | 6.2 |
-| 3 | Non Citizens, Lucas Blumen | Somebody (Just Like You) (Original Mix) | 122 | 6.2 |
-| 4 | Raw Main | Theory of Love (Extended Mix)  | 122 | 6.3 |
-| 5 | Redspace, Al Park | Trends (Original Mix) | 122 | 6.4 |
-| 6 | Kasper Koman, Shai T | Good People  | 122 | 6.2 |
-| 7 | D-Nox, Lonya, DJ Zombi, Amber Long | Red Light Stories (Original Mix)  | 122 | 6.6 |
-| 8 | Kamilo Sanclemente, Zalvador | Elyseum (Weird Sounding Dude Extended Remix) | 124 | 6.8 |
-| 9 | Andrés Moris | Rust (Rockka Remix) | 123 | 7.0 |
-| 10 | Jiminy Hop | A Tour (Simos Tagias Remix) | 121 | 7.1 |
-| 11 | Az Denar | This Way (Original Mix) | 121 | 7.1 |
+| 1 | Andre Moret | Sephira (Extended Mix) | 123 | 5.6 |
+| 2 | Nick Warren | Stupa (Original Mix) | 123 | 5.7 |
+| 3 | Hobin Rude | 33rd (Ric Niels & Dowden Remix) | 121 | 6.2 |
+| 4 | Non Citizens, Lucas Blumen | Somebody (Just Like You) (Original Mix) | 122 | 6.2 |
+| 5 | Kasper Koman, Shai T | Good People  | 122 | 6.2 |
+| 6 | Raw Main | Theory of Love (Extended Mix)  | 122 | 6.3 |
+| 7 | Imran Khan | Horizonz (Simos Tagias Remix) | 122 | 6.2 |
+| 8 | Hobin Rude | Evasive (Original Mix) | 122 | 6.1 |
+| 9 | Kamilo Sanclemente, Zalvador | Elyseum (Weird Sounding Dude Extended Remix) | 124 | 6.8 |
+| 10 | Andrés Moris | Rust (Rockka Remix) | 123 | 7.0 |
+| 11 | Jiminy Hop | A Tour (Simos Tagias Remix) | 121 | 7.1 |
 | 12 | Dabeat, Kamilo Sanclemente | Seriously (Original Mix) | 122 | 7.2 |
 | 13 | Gorje Hewek | Tool 6666 (Original Mix) | 124 | 7.2 |
 | 14 | Navar & Dmitry Molosh | Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 7.3 |
-| 15 | Still-Life | The Sound Of Herself (Original Mix) | 123 | 7.4 |
+| 15 | about : river | Never Forget (Rockka Remix) | 122 | 7.3 |
 | 16 | Tim Green | We've Been Here Before | 121 | 7.5 |
-| 17 | Stylo, Lonya | Faisal (Original Mix)  | 123 | 7.5 |
-| 18 | Simos Tagias | Atom (Not Demure Remix) | 122 | 7.8 |
+| 17 | K Loveski | Amuja (Unusual Soul Remix) | 122 | 7.7 |
 

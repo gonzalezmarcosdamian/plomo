@@ -714,6 +714,96 @@
       "title": "Diatoms",
       "centroide": 400.0,
       "medio_1_4k": 0.049
+    },
+    "151217863": {
+      "artist": "Andre Moret",
+      "title": "MoV (Extended Mix)",
+      "centroide": 650.9,
+      "medio_1_4k": 0.144
+    },
+    "205833469": {
+      "artist": "Andre Moret",
+      "title": "Sephira (Extended Mix)",
+      "centroide": 914.5,
+      "medio_1_4k": 0.253
+    },
+    "8137810": {
+      "artist": "David Calo",
+      "title": "Deep Answer (Sean Harvey Remix)",
+      "centroide": 713.6,
+      "medio_1_4k": 0.208
+    },
+    "187945702": {
+      "artist": "Hobin Rude",
+      "title": "Evasive (Original Mix)",
+      "centroide": 700.4,
+      "medio_1_4k": 0.177
+    },
+    "30559768": {
+      "artist": "Kamilo Sanclemente",
+      "title": "The Background (Original Mix)",
+      "centroide": 493.1,
+      "medio_1_4k": 0.086
+    },
+    "51265153": {
+      "artist": "Nick Warren",
+      "title": "Stupa (Original Mix)",
+      "centroide": 485.4,
+      "medio_1_4k": 0.063
+    },
+    "42153879": {
+      "artist": "Redspace, Dj Meoz",
+      "title": "Breathe (Martin Fredes Extended Remix)",
+      "centroide": 537.4,
+      "medio_1_4k": 0.127
+    },
+    "73550757": {
+      "artist": "Ruben Karapetyan",
+      "title": "Monteverde (Extended Mix)",
+      "centroide": 727.3,
+      "medio_1_4k": 0.232
+    },
+    "40865220": {
+      "artist": "Ismaehl",
+      "title": "Iyáari (Still-Life Extended Remix) ",
+      "centroide": 592.7,
+      "medio_1_4k": 0.104
+    },
+    "115510727": {
+      "artist": "K Loveski",
+      "title": "Amuja (Unusual Soul Remix)",
+      "centroide": 785.1,
+      "medio_1_4k": 0.243
+    },
+    "59638375": {
+      "artist": "Gorje Hewek, ETNE",
+      "title": "Children (Extended Mix)",
+      "centroide": 727.2,
+      "medio_1_4k": 0.157
+    },
+    "204225656": {
+      "artist": "about : river",
+      "title": "Never Forget (Rockka Remix)",
+      "centroide": 962.1,
+      "medio_1_4k": 0.323
+    },
+    "110259434": {
+      "artist": "Raw Main",
+      "title": "Kashmir (Extended Mix) ",
+      "centroide": 602.9,
+      "medio_1_4k": 0.162
+    },
+    "130097514": {
+      "artist": "Wassu, HAUMS",
+      "title": "Star Safari (Extended Mix)",
+      "centroide": 1043.7,
+      "medio_1_4k": 0.245
+    },
+    "83074531": {
+      "artist": "Tobi Amuchastegui",
+      "title": "Rish (Original Mix)",
+      "centroide": 433.4,
+      "medio_1_4k": 0.082
     }
   }
 }

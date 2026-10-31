@@ -69,6 +69,36 @@ X", y si la muestra no alcanza para sostener una recomendación, decilo.
    `energia.baja_minima_al_cierre` fuerzan una forma en TODOS los sets. Si un
    set se siente igual que otro, sospechá de una regla antes que del material.
 
+## Lo que el DJ escuchó y vos no viste (set 160, 2026-10-31)
+
+Le dijiste "CONVERGE" al 160 y en la escucha de esa noche el DJ sacó seis temas:
+"kari lampi no me gustó", "this way no va, se muere la energía", "the sound of
+herself mucha voz cambialo", "faisal y el último muy oscuros", "y atom el groove
+muy oscuro". El problema fue que dijiste "no puedo chequear lo oscuro, solo 1 de
+18 tiene la melodía medida" y convergiste igual. **Sin medir no es OK.** Antes de
+converger:
+
+1. **Voz.** Cada tema tiene que tener su entrada en `data/voces.json`. Si falta,
+   medila: `familia_159.medir([id], X)` en `scripts/archive/familia_159.py`
+   (Demucs, ~1 min por tema). "Algo de voz" arriba de 0.30 se avisa, y en un tema
+   largo se avisa siempre.
+2. **Oscuro.** Hay dos tipos medidos:
+   - la melodía grave: `data/capa_melodica.json`, con el centroide por debajo de
+     unos 530 Hz o 1-4 kHz por debajo de 0.078. Se mide en la misma corrida que la voz;
+   - el groove oscuro: el `balance` de `data/recetas/lib/<id>.json`. Faisal dio
+     sub 64.4 y aire 1.6, Atom sub 63.0 y aire 1.8, y los que le gustan esa noche
+     dieron sub de 46 a 61 y aire de 2.4 a 4.8. Son dos ejemplos: es una pista, no
+     una regla. Sub de 62 o más con aire de 2.0 o menos se avisa.
+3. **La energía calculada no es lo que oye.** This Way daba 7.1 y "se muere la
+   energía". Donde la única prueba de que no cae es la fórmula, nombrá el tema
+   como punto a escuchar. No lo des por bueno.
+4. **Lo que el DJ ya dijo.** Antes de proponer, leé `data/energia_percibida.json`
+   (notas y favoritos) y los cambiados del set.
+5. **Los topes de sello, con el sello normalizado:** en pool.json hay espacios
+   de más ("All Day I Dream ").
+
+Si algo de esto falta, la respuesta no es "CONVERGE" sino "falta medir X".
+
 ## Cómo respondés
 
 Con números al lado de cada afirmación, y separando lo medido de lo interpretado.
