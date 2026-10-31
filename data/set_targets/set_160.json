@@ -1,0 +1,103 @@
+{
+  "name": "160. Sostenido II · todo sin usar — 2h — 2026-10-31",
+  "duration_h": 0,
+  "bpm_range": [
+    100,
+    140
+  ],
+  "max_per_artist": 4,
+  "keep_order": true,
+  "_nota": "Mismo estilo y duracion que el 150, con musica que el DJ nunca uso en un set (cruzado por nombre del tema, sin remix).",
+  "tracks": [
+    {
+      "artist": "Hobin Rude",
+      "title": "33rd (Ric Niels & Dowden Remix)",
+      "content_id": "15764819"
+    },
+    {
+      "artist": "Imran Khan",
+      "title": "Horizonz (Simos Tagias Remix)",
+      "content_id": "178842109"
+    },
+    {
+      "artist": "Budakid",
+      "title": "Promised (Original Mix) ",
+      "content_id": "187391780"
+    },
+    {
+      "artist": "Raw Main",
+      "title": "Theory of Love (Extended Mix) ",
+      "content_id": "131036053"
+    },
+    {
+      "artist": "Redspace, Al Park",
+      "title": "Trends (Original Mix)",
+      "content_id": "139110395"
+    },
+    {
+      "artist": "D-Nox, Lonya, DJ Zombi, Amber Long",
+      "title": "Red Light Stories (Original Mix) ",
+      "content_id": "80680415"
+    },
+    {
+      "artist": "Cioz & Corpino",
+      "title": "Kari Lampi",
+      "content_id": "62610640"
+    },
+    {
+      "artist": "Kamilo Sanclemente, Zalvador",
+      "title": "Elyseum (Weird Sounding Dude Extended Remix)",
+      "content_id": "107307995"
+    },
+    {
+      "artist": "Andrés Moris",
+      "title": "Rust (Rockka Remix)",
+      "content_id": "13912967"
+    },
+    {
+      "artist": "Double Touch",
+      "title": "Gran Amigo (Original Mix)",
+      "content_id": "138173268"
+    },
+    {
+      "artist": "Az Denar",
+      "title": "This Way (Original Mix)",
+      "content_id": "159236296"
+    },
+    {
+      "artist": "Dabeat, Kamilo Sanclemente",
+      "title": "Seriously (Original Mix)",
+      "content_id": "205943612"
+    },
+    {
+      "artist": "Gorje Hewek",
+      "title": "Tool 6666 (Original Mix)",
+      "content_id": "14062148"
+    },
+    {
+      "artist": "Navar & Dmitry Molosh",
+      "title": "Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix)",
+      "content_id": "4138919"
+    },
+    {
+      "artist": "Still-Life",
+      "title": "The Sound Of Herself (Original Mix)",
+      "content_id": "57865615"
+    },
+    {
+      "artist": "Tim Green",
+      "title": "We've Been Here Before",
+      "content_id": "242789993"
+    },
+    {
+      "artist": "Stylo, Lonya",
+      "title": "Faisal (Original Mix) ",
+      "content_id": "189942084"
+    },
+    {
+      "artist": "Simos Tagias",
+      "title": "Atom (Not Demure Remix)",
+      "content_id": "29453504"
+    }
+  ]
+}

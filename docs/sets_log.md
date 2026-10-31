@@ -3579,3 +3579,31 @@ Blazing Ice abre 0.2 por encima de Rogelito (dentro del ruido de la formula, y a
 bache The Captain 6.8 -> My Pure Soul 5.4 -> Redemtion 6.7 no tiene arreglo sin romper la caminata de la
 rueda 10B-9B-9A-8A-7A-7B, que ademas el DJ escucho y aprobo en ese orden. Spotify se publica cuando vuelva
 la cuota de la app (26/10 ~11:40) desde el borrador, mismo orden.
+
+## Set 160. 160. Sostenido II · todo sin usar — 2h — 2026-10-31
+**Armado:** 2026-10-31  
+**Duracion:** 0h  
+**Tracks:** 18  
+**BPM range:** 100-140  
+
+| # | Artist | Title | BPM | E |
+|---|--------|-------|-----|---|
+| 1 | Hobin Rude | 33rd (Ric Niels & Dowden Remix) | 121 | 6.2 |
+| 2 | Imran Khan | Horizonz (Simos Tagias Remix) | 122 | 6.2 |
+| 3 | Budakid | Promised (Original Mix)  | 123 | 6.3 |
+| 4 | Raw Main | Theory of Love (Extended Mix)  | 122 | 6.3 |
+| 5 | Redspace, Al Park | Trends (Original Mix) | 122 | 6.4 |
+| 6 | D-Nox, Lonya, DJ Zombi, Amber Long | Red Light Stories (Original Mix)  | 122 | 6.6 |
+| 7 | Cioz & Corpino | Kari Lampi | 123 | 6.7 |
+| 8 | Kamilo Sanclemente, Zalvador | Elyseum (Weird Sounding Dude Extended Remix) | 124 | 6.8 |
+| 9 | Andrés Moris | Rust (Rockka Remix) | 123 | 7.0 |
+| 10 | Double Touch | Gran Amigo (Original Mix) | 122 | 7.0 |
+| 11 | Az Denar | This Way (Original Mix) | 121 | 7.1 |
+| 12 | Dabeat, Kamilo Sanclemente | Seriously (Original Mix) | 122 | 7.2 |
+| 13 | Gorje Hewek | Tool 6666 (Original Mix) | 124 | 7.2 |
+| 14 | Navar & Dmitry Molosh | Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 7.3 |
+| 15 | Still-Life | The Sound Of Herself (Original Mix) | 123 | 7.4 |
+| 16 | Tim Green | We've Been Here Before | 121 | 7.5 |
+| 17 | Stylo, Lonya | Faisal (Original Mix)  | 123 | 7.5 |
+| 18 | Simos Tagias | Atom (Not Demure Remix) | 122 | 7.8 |
+
