@@ -3611,6 +3611,6 @@ la cuota de la app (26/10 ~11:40) desde el borrador, mismo orden.
 | 21 | Gorje Hewek | Tool 6666 (Original Mix) | 124 | 7.2 |
 | 22 | Navar & Dmitry Molosh | Small Wonders (Hernan Cattaneo & Marcelo Vasami Remix) | 122 | 7.3 |
 | 23 | about : river | Never Forget (Rockka Remix) | 122 | 7.3 |
-| 24 | Tim Green | We've Been Here Before | 121 | 7.5 |
-| 25 | Wassu, HAUMS | Star Safari (Extended Mix) | 122 | 7.5 |
+| 24 | Wassu, HAUMS | Star Safari (Extended Mix) | 122 | 7.5 |
+| 25 | Hernan Cattaneo, Soda Stereo, Verlk | En la Ciudad de la Furia (Hernan Cattaneo & Verlk Club Remix) (Original Mix) | 127 | 1.1 |
 

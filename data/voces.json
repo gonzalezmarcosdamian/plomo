@@ -1722,6 +1722,38 @@
       "peso": 0.014,
       "etiqueta": "instrumental",
       "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "176997517": {
+      "artist": "Sawless",
+      "title": "Purple Rain (Alex Connors & Hardy Heller Paisley Park Extended Edit)",
+      "presencia": 0.666,
+      "peso": 0.626,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "20481863": {
+      "artist": "Hernan Cattaneo, Soda Stereo, Verlk",
+      "title": "En la Ciudad de la Furia (Hernan Cattaneo & Verlk Club Remix) (Original Mix)",
+      "presencia": 0.462,
+      "peso": 0.102,
+      "etiqueta": "algo de voz",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "187496904": {
+      "artist": "Deep Dish",
+      "title": "Flashdance (Shai T Extended Remix)",
+      "presencia": 0.708,
+      "peso": 0.519,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
+    },
+    "57865615": {
+      "artist": "Still-Life",
+      "title": "The Sound Of Herself (Original Mix)",
+      "presencia": 0.665,
+      "peso": 0.612,
+      "etiqueta": "cantado",
+      "medido": "familia_159.py, voces.separar + voces._voz"
     }
   },
   "_aviso_pesos_viejos": "Los valores medidos el 2026-09-30 comparaban el stem de voz --del 45% del tema-- contra el archivo original cargado desde los primeros 5 segundos, o sea el estribillo contra la intro. Satori llego a dar 343.9% de peso, que es imposible. Desde el 2026-10-01 se compara contra la SUMA DE LOS CUATRO STEMS, que son del mismo fragmento. Los pesos viejos estan inflados; las etiquetas 'cantado' e 'instrumental' se sostuvieron en los cinco que se remidieron, pero los numeros no son comparables."
