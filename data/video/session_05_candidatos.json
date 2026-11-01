@@ -1,4 +1,5 @@
 {
+ "estado_nuevos": "bajados por miniatura, sin revisar a 1:1",
  "_que_es": "Candidatos de Pixabay para la Session 05 (set 159, Work · Organic con brillo): 'una tarde', de las 4 hasta la ultima luz despues de la puesta, sin noche. Cuatro por etapa, ordenados por la hora del dia dentro de la etapa. Es la primera entrega para que el DJ apruebe la direccion: todavia no estan elegidos los 79 planos.",
  "fecha": "2026-10-26",
  "estado": "candidatos — espera tu OK",
@@ -9,140 +10,902 @@
  },
  "etapas": [
   {
-   "n": 1, "nombre": "Bosque con sol entre los arboles", "minutos": "0:00 – 28:03", "planos": "1–20", "luz": "[A]",
+   "n": 1,
+   "nombre": "Bosque con sol entre los arboles",
+   "minutos": "0:00 – 28:03",
+   "planos": "1–20",
+   "luz": "[A]",
    "candidatos": [
-    {"id": 295782, "duracion": 59.7, "resolucion": "3840x2160", "fps": 29.97, "camara": "casi quieta", "fase": "[A]",
+    {
+     "id": 295782,
+     "duracion": 59.7,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "casi quieta",
+     "fase": "[A]",
      "nota": "Hojas al sol contra el cielo claro desenfocado: luz de dia plena, todavia sin el sol en cuadro.",
-     "alcanza": true, "como": "x1 para los planos de 60 s, RIFE x2 para los de 70 s o mas",
-     "cuadro_s": 30, "autor": "Engin_Akyurt", "pagina": "https://pixabay.com/videos/id-295782/"},
-    {"id": 168620, "duracion": 58.0, "resolucion": "4096x2160", "fps": 29.97, "camara": "quieta, mirando arriba", "fase": "[A]",
+     "alcanza": true,
+     "como": "x1 para los planos de 60 s, RIFE x2 para los de 70 s o mas",
+     "cuadro_s": 30,
+     "autor": "Engin_Akyurt",
+     "pagina": "https://pixabay.com/videos/id-295782/"
+    },
+    {
+     "id": 168620,
+     "duracion": 58.0,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "quieta, mirando arriba",
+     "fase": "[A]",
      "nota": "La copa de un roble desde abajo con el sol alto entre las hojas.",
-     "alcanza": true, "como": "RIFE x2 (116 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (116 s)",
      "riesgo": "A 1:1 hay un hilo fino y brillante entre dos ramas, a la derecha (x≈3100-3240, y≈2000). Parece tela de arana, no cable; el revisor tiene que mirarlo.",
-     "cuadro_s": 29, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-168620/"},
-    {"id": 340938, "duracion": 60.7, "resolucion": "3840x2160", "fps": 25, "camara": "movimiento lento", "fase": "[A]",
+     "cuadro_s": 29,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-168620/"
+    },
+    {
+     "id": 340938,
+     "duracion": 60.7,
+     "resolucion": "3840x2160",
+     "fps": 25,
+     "camara": "movimiento lento",
+     "fase": "[A]",
      "nota": "Hojas de roble encendidas por el sol de costado, con el bosque en sombra detras.",
-     "alcanza": true, "como": "RIFE x2 (121 s)",
-     "cuadro_s": 30, "autor": "Nils_Vega", "pagina": "https://pixabay.com/videos/id-340938/"},
-    {"id": 230409, "duracion": 32.6, "resolucion": "3840x2160", "fps": 29.97, "camara": "travelling lento entre troncos", "fase": "[A]",
+     "alcanza": true,
+     "como": "RIFE x2 (121 s)",
+     "cuadro_s": 30,
+     "autor": "Nils_Vega",
+     "pagina": "https://pixabay.com/videos/id-340938/"
+    },
+    {
+     "id": 230409,
+     "duracion": 32.6,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "travelling lento entre troncos",
+     "fase": "[A]",
      "nota": "El sol ya mas bajo entre los troncos y sombras largas sobre el pasto: la tarde que avanza.",
-     "alcanza": false, "como": "RIFE x2 = 65 s: alcanza para los planos de 63 s, no para los de 70 s o mas",
+     "alcanza": false,
+     "como": "RIFE x2 = 65 s: alcanza para los planos de 63 s, no para los de 70 s o mas",
      "riesgo": "A 1:1 se ven claros palidos entre los troncos del fondo (x≈1200, y≈1050). Es el campo al sol detras del bosque, no una construccion.",
-     "cuadro_s": 29, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-230409/"}
+     "cuadro_s": 29,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-230409/"
+    }
+   ],
+   "nuevos": [
+    {
+     "id": 340939,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Bosque verde con lirios del valle y sol entre los troncos",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 340940,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Igual que 340939, otro tramo del mismo bosque verde",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 168614,
+     "duracion": 54,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Copa de roble desde abajo con el sol entre hojas (mismo lugar que 168620)",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 122802,
+     "duracion": 43,
+     "resolucion": "3840x2160",
+     "fps": 24.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Helechos y troncos con luz filtrada, verde",
+     "alcanza": "con x2",
+     "autor": "Kaufdex"
+    },
+    {
+     "id": 103195,
+     "duracion": 38,
+     "resolucion": "3840x2160",
+     "fps": 30.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Bosque oscuro con rayos de sol entre pinos, corto",
+     "alcanza": "con x2",
+     "autor": "ChristianBodhi"
+    },
+    {
+     "id": 178711,
+     "duracion": 51,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Bosque con luz de sol entre troncos, sombras largas",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 117745,
+     "duracion": 48,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Arbol grande en pradera con el sol alto entre ramas",
+     "alcanza": "con x2",
+     "autor": "D-GM"
+    },
+    {
+     "id": 230417,
+     "duracion": 48,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Troncos de bosque abierto con luz suave",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 327220,
+     "duracion": 58,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Eucaliptos desde abajo contra cielo claro",
+     "alcanza": "con x2",
+     "autor": "Engin_Akyurt"
+    },
+    {
+     "id": 215884,
+     "duracion": 41,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Claro de bosque con pasto alto y troncos",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    }
    ]
   },
   {
-   "n": 2, "nombre": "Agua con destellos", "minutos": "28:03 – 44:29", "planos": "21–34", "luz": "[A] a [B]",
+   "n": 2,
+   "nombre": "Agua con destellos",
+   "minutos": "28:03 – 44:29",
+   "planos": "21–34",
+   "luz": "[A] a [B]",
    "candidatos": [
-    {"id": 210173, "duracion": 40.0, "resolucion": "3840x2160", "fps": 29.97, "camara": "quieta", "fase": "[A]",
+    {
+     "id": 210173,
+     "duracion": 40.0,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "quieta",
+     "fase": "[A]",
      "nota": "Rio turquesa bajo arboles con las hojas encendidas, con el sol alto.",
-     "alcanza": true, "como": "RIFE x2 (80 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (80 s)",
      "riesgo": "Los verdes vienen muy saturados de origen y hay que bajarlos en el grado.",
-     "cuadro_s": 20, "autor": "McPix22", "pagina": "https://pixabay.com/videos/id-210173/"},
-    {"id": 221999, "duracion": 60.1, "resolucion": "3840x2160", "fps": 30, "camara": "quieta", "fase": "[A]",
+     "cuadro_s": 20,
+     "autor": "McPix22",
+     "pagina": "https://pixabay.com/videos/id-210173/"
+    },
+    {
+     "id": 221999,
+     "duracion": 60.1,
+     "resolucion": "3840x2160",
+     "fps": 30,
+     "camara": "quieta",
+     "fase": "[A]",
      "nota": "Laguna de bosque con plantas de agua y un cielo de verano con cumulos.",
-     "alcanza": true, "como": "x1 o RIFE x2",
+     "alcanza": true,
+     "como": "x1 o RIFE x2",
      "riesgo": "No tiene destellos: es el respiro de la etapa. A 1:1 se ve sobreenfocada de origen, pero la orilla esta limpia.",
-     "cuadro_s": 30, "autor": "Nils_Vega", "pagina": "https://pixabay.com/videos/id-221999/"},
-    {"id": 176935, "duracion": 41.0, "resolucion": "1920x1080", "fps": 23.976, "camara": "quieta, ya en camara lenta", "fase": "[A]→[B]",
+     "cuadro_s": 30,
+     "autor": "Nils_Vega",
+     "pagina": "https://pixabay.com/videos/id-221999/"
+    },
+    {
+     "id": 176935,
+     "duracion": 41.0,
+     "resolucion": "1920x1080",
+     "fps": 23.976,
+     "camara": "quieta, ya en camara lenta",
+     "fase": "[A]→[B]",
      "nota": "Destellos del sol sobre el agua de un lago, a contraluz.",
-     "alcanza": false, "como": "41 s tal cual. Con RIFE x2 llega a 82 s, pero hay que probarlo antes",
+     "alcanza": false,
+     "como": "41 s tal cual. Con RIFE x2 llega a 82 s, pero hay que probarlo antes",
      "riesgo": "Los destellos son puntos chicos que se mueven, justo lo que RIFE deforma en rayas. Ademas es 1080p.",
-     "cuadro_s": 20, "autor": "NickyPe", "pagina": "https://pixabay.com/videos/id-176935/"},
-    {"id": 272431, "duracion": 33.0, "resolucion": "3840x2160", "fps": 29.97, "camara": "quieta", "fase": "[B]",
+     "cuadro_s": 20,
+     "autor": "NickyPe",
+     "pagina": "https://pixabay.com/videos/id-176935/"
+    },
+    {
+     "id": 272431,
+     "duracion": 33.0,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "quieta",
+     "fase": "[B]",
      "nota": "Ondas del rio con el reflejo dorado de la tarde.",
-     "alcanza": false, "como": "RIFE x2 = 66 s: alcanza justo para los planos de 63 s",
-     "cuadro_s": 17, "autor": "McPix22", "pagina": "https://pixabay.com/videos/id-272431/"}
+     "alcanza": false,
+     "como": "RIFE x2 = 66 s: alcanza justo para los planos de 63 s",
+     "cuadro_s": 17,
+     "autor": "McPix22",
+     "pagina": "https://pixabay.com/videos/id-272431/"
+    }
+   ],
+   "nuevos": [
+    {
+     "id": 206997,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 23.98,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Arroyo de bosque con piedras y verde",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 206998,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 23.98,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Arroyo de bosque, otro tramo",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 218961,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Arroyo de aguas ocres bajo arboles",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 285882,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 59.94,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Arroyo ocre en bosque verde",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 291385,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 24.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Arroyo calido con hojas, luz de tarde",
+     "alcanza": true,
+     "autor": "Nils_Vega"
+    },
+    {
+     "id": 91392,
+     "duracion": 62,
+     "resolucion": "2560x1440",
+     "fps": 24.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Laguna con juncos y cielo, plano largo",
+     "alcanza": true,
+     "autor": "KIMDAEJEUNG"
+    },
+    {
+     "id": 356398,
+     "duracion": 59,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Poza turquesa entre arboles",
+     "alcanza": "con x2",
+     "autor": "Engin_Akyurt"
+    },
+    {
+     "id": 133179,
+     "duracion": 44,
+     "resolucion": "2560x1440",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A",
+     "nota": "Rocas con musgo y agua en bosque, corto de archivo",
+     "alcanza": "con x2",
+     "autor": "LandofBeauty"
+    }
    ]
   },
   {
-   "n": 3, "nombre": "Hora dorada en el campo", "minutos": "44:29 – 69:08", "planos": "35–55", "luz": "[B] a [C]",
+   "n": 3,
+   "nombre": "Hora dorada en el campo",
+   "minutos": "44:29 – 69:08",
+   "planos": "35–55",
+   "luz": "[B] a [C]",
    "candidatos": [
-    {"id": 152739, "duracion": 50.2, "resolucion": "1920x1080", "fps": 23.976, "camara": "quieta", "fase": "[B]",
+    {
+     "id": 152739,
+     "duracion": 50.2,
+     "resolucion": "1920x1080",
+     "fps": 23.976,
+     "camara": "quieta",
+     "fase": "[B]",
      "nota": "Espigas de pasto al viento con luz calida de tarde.",
-     "alcanza": true, "como": "RIFE x2 (100 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (100 s)",
      "riesgo": "Es 1080p y las espigas son finas y se mueven: hay que probar RIFE en 5 s antes de usarlo.",
-     "cuadro_s": 25, "autor": "dangtran_official", "pagina": "https://pixabay.com/videos/id-152739/"},
-    {"id": 178700, "duracion": 52.2, "resolucion": "4096x2160", "fps": 29.97, "camara": "travelling lento", "fase": "[B]",
+     "cuadro_s": 25,
+     "autor": "dangtran_official",
+     "pagina": "https://pixabay.com/videos/id-152739/"
+    },
+    {
+     "id": 178700,
+     "duracion": 52.2,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "travelling lento",
+     "fase": "[B]",
      "nota": "Pasto a contraluz en el borde de un pinar, con el sol bajando entre los troncos.",
-     "alcanza": true, "como": "RIFE x2 (104 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (104 s)",
      "riesgo": "El detector marco 'zebra' y 'person' en el pasto. A 1:1 son matas y pastos.",
-     "cuadro_s": 26, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-178700/"},
-    {"id": 119784, "duracion": 77.3, "resolucion": "3840x2160", "fps": 23.976, "camara": "travelling lento", "fase": "[C]",
+     "cuadro_s": 26,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-178700/"
+    },
+    {
+     "id": 119784,
+     "duracion": 77.3,
+     "resolucion": "3840x2160",
+     "fps": 23.976,
+     "camara": "travelling lento",
+     "fase": "[C]",
      "nota": "Turbera de algodoncillo encendida a contraluz, con el sol bajo sobre el bosque.",
-     "alcanza": true, "como": "x1 (77 s)",
+     "alcanza": true,
+     "como": "x1 (77 s)",
      "riesgo": "El detector marco 'cow' sobre la linea del bosque. A 1:1 son matas y arbolitos.",
-     "cuadro_s": 39, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-119784/"},
-    {"id": 117503, "duracion": 68.7, "resolucion": "3840x2160", "fps": 23.976, "camara": "casi quieta", "fase": "[C]",
+     "cuadro_s": 39,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-119784/"
+    },
+    {
+     "id": 117503,
+     "duracion": 68.7,
+     "resolucion": "3840x2160",
+     "fps": 23.976,
+     "camara": "casi quieta",
+     "fase": "[C]",
      "nota": "Algodoncillo de cerca, con el sol bajo detras de nubes finas.",
-     "alcanza": true, "como": "x1 (69 s)",
-     "cuadro_s": 34, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-117503/"}
+     "alcanza": true,
+     "como": "x1 (69 s)",
+     "cuadro_s": 34,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-117503/"
+    }
+   ],
+   "nuevos": [
+    {
+     "id": 217947,
+     "duracion": 72,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Pasto verde cerca, al viento",
+     "alcanza": true,
+     "autor": "YanaHD"
+    },
+    {
+     "id": 197946,
+     "duracion": 55,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B",
+     "nota": "Pasto seco dorado, detalle",
+     "alcanza": "con x2",
+     "autor": "Engin_Akyurt"
+    },
+    {
+     "id": 91388,
+     "duracion": 54,
+     "resolucion": "3840x2160",
+     "fps": 24.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B",
+     "nota": "Algodoncillo blanco en pastizal, luz suave",
+     "alcanza": "con x2",
+     "autor": "KIMDAEJEUNG"
+    },
+    {
+     "id": 146586,
+     "duracion": 42,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Pasto verde con rocio, detalle",
+     "alcanza": "con x2",
+     "autor": "mariya_m"
+    },
+    {
+     "id": 275876,
+     "duracion": 59,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Campo verde con cielo de cumulos",
+     "alcanza": "con x2",
+     "autor": "MustaKor"
+    },
+    {
+     "id": 154639,
+     "duracion": 46,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B",
+     "nota": "Juncal seco, tono calido",
+     "alcanza": "con x2",
+     "autor": "Engin_Akyurt"
+    },
+    {
+     "id": 137113,
+     "duracion": 48,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B/C",
+     "nota": "Juncos rosados a contraluz sobre fondo oscuro",
+     "alcanza": "con x2",
+     "autor": "KIMDAEJEUNG"
+    },
+    {
+     "id": 323231,
+     "duracion": 59,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B",
+     "nota": "Plumeros (cortaderas) con cielo azul, riesgo de mediodia",
+     "alcanza": "con x2",
+     "autor": "Engin_Akyurt"
+    },
+    {
+     "id": 230414,
+     "duracion": 58,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B/C",
+     "nota": "Brezo florecido con el sol bajo entre arboles",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 119781,
+     "duracion": 77,
+     "resolucion": "3840x2160",
+     "fps": 23.98,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Turbera con luz de sol bajo en la bruma (parecido a 119784)",
+     "alcanza": true,
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 128220,
+     "duracion": 38,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Campo al atardecer con luz rasante",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 301800,
+     "duracion": 46,
+     "resolucion": "2160x3840",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B/C",
+     "nota": "Loma con cielo de atardecer",
+     "alcanza": "con x2",
+     "autor": "LynX_BGW"
+    },
+    {
+     "id": 154643,
+     "duracion": 41,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "B",
+     "nota": "Pasto seco dorado, detalle",
+     "alcanza": "con x2",
+     "autor": "Engin_Akyurt"
+    },
+    {
+     "id": 66817,
+     "duracion": 38,
+     "resolucion": "3840x2160",
+     "fps": 24.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "A/B",
+     "nota": "Pasto con flor a contraluz, corto de archivo",
+     "alcanza": "con x2",
+     "autor": "JustYøu"
+    }
    ]
   },
   {
-   "n": 4, "nombre": "El sol toca el horizonte", "minutos": "69:08 – 84:21", "planos": "56–69", "luz": "[C] a [E]; la unica [D] en el plano 67",
+   "n": 4,
+   "nombre": "El sol toca el horizonte",
+   "minutos": "69:08 – 84:21",
+   "planos": "56–69",
+   "luz": "[C] a [E]; la unica [D] en el plano 67",
    "candidatos": [
-    {"id": 178707, "duracion": 57.0, "resolucion": "4096x2160", "fps": 29.97, "camara": "travelling lento", "fase": "[C]",
+    {
+     "id": 178707,
+     "duracion": 57.0,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "travelling lento",
+     "fase": "[C]",
      "nota": "Brezal con robles y el sol naranja bajo detras de los arboles.",
-     "alcanza": true, "como": "RIFE x2 (114 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (114 s)",
      "riesgo": "Hay polen e insectos en la luz: RIFE x2 como maximo, y mirarlo. El detector marco 'cow' en las matas de brezo y no habia nada.",
-     "cuadro_s": 28, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-178707/"},
-    {"id": 178710, "duracion": 53.7, "resolucion": "4096x2160", "fps": 29.97, "camara": "travelling lento", "fase": "[C]",
+     "cuadro_s": 28,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-178707/"
+    },
+    {
+     "id": 178710,
+     "duracion": 53.7,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "travelling lento",
+     "fase": "[C]",
      "nota": "El mismo brezal, con el sol ya sobre la linea de arboles y asomando entre las ramas.",
-     "alcanza": true, "como": "RIFE x2 (107 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (107 s)",
      "riesgo": "No usarlo como puesta: el sol sigue arriba de los arboles.",
-     "cuadro_s": 10, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-178710/"},
-    {"id": 169565, "duracion": 77.7, "resolucion": "4096x2160", "fps": 29.97, "camara": "casi quieta", "fase": "[D]",
+     "cuadro_s": 10,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-178710/"
+    },
+    {
+     "id": 169565,
+     "duracion": 77.7,
+     "resolucion": "4096x2160",
+     "fps": 29.97,
+     "camara": "casi quieta",
+     "fase": "[D]",
      "nota": "LA PUESTA: el disco del sol bajando en la bruma, entre pastos. Va en el plano 67, en el drop de Redemtion.",
-     "alcanza": true, "como": "x1 (78 s), sin RIFE",
+     "alcanza": true,
+     "como": "x1 (78 s), sin RIFE",
      "riesgo": "En el clip el disco no llega a tocar el horizonte: queda bajo y entra en la bruma. Se lee como puesta, pero no se lo ve desaparecer.",
-     "cuadro_s": 39, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-169565/"},
-    {"id": 116206, "duracion": 56.6, "resolucion": "3840x2160", "fps": 23.976, "camara": "quieta", "fase": "[E]",
+     "cuadro_s": 39,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-169565/"
+    },
+    {
+     "id": 116206,
+     "duracion": 56.6,
+     "resolucion": "3840x2160",
+     "fps": 23.976,
+     "camara": "quieta",
+     "fase": "[E]",
      "nota": "Laguna con pinos y el cielo rosado reflejado, con el sol ya detras de la orilla y juncos delante.",
-     "alcanza": true, "como": "RIFE x2 (113 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (113 s)",
      "riesgo": "Queda un resplandor detras de un pino. Si se lee como otra puesta, en su lugar va 18503. Tiene un reflejo de lente redondo (x≈2580, y≈1350), que es optico pero se ve.",
-     "cuadro_s": 28, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-116206/"}
+     "cuadro_s": 28,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-116206/"
+    }
+   ],
+   "nuevos": [
+    {
+     "id": 119242,
+     "duracion": 60,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Sol sobre lago y montanas: ojo, puede tocar la cresta",
+     "alcanza": true,
+     "autor": "nadlasi"
+    },
+    {
+     "id": 128295,
+     "duracion": 58,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Sol bajo en neblina sobre un lago, quieto",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 128296,
+     "duracion": 44,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Sol bajo en la llanura, luz naranja",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 128298,
+     "duracion": 49,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Llanura con halo del sol bajo",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 273806,
+     "duracion": 49,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "C",
+     "nota": "Ramas de sauce en silueta con sol naranja bajo",
+     "alcanza": "con x2",
+     "autor": "TonyDias7"
+    }
    ]
   },
   {
-   "n": 5, "nombre": "Despues de la puesta", "minutos": "84:21 – 95:39", "planos": "70–79", "luz": "[E] a [F], sin estrellas ni noche",
+   "n": 5,
+   "nombre": "Despues de la puesta",
+   "minutos": "84:21 – 95:39",
+   "planos": "70–79",
+   "luz": "[E] a [F], sin estrellas ni noche",
    "candidatos": [
-    {"id": 18503, "duracion": 43.2, "resolucion": "1920x1080", "fps": 29.97, "camara": "quieta, solo cielo", "fase": "[E]",
+    {
+     "id": 18503,
+     "duracion": 43.2,
+     "resolucion": "1920x1080",
+     "fps": 29.97,
+     "camara": "quieta, solo cielo",
+     "fase": "[E]",
      "nota": "Todo el cielo con nubes rosadas y naranjas: el arrebol.",
-     "alcanza": true, "como": "RIFE x2 (86 s), solo nubes",
-     "cuadro_s": 4, "autor": "wisconsinpictures", "pagina": "https://pixabay.com/videos/id-18503/"},
-    {"id": 210790, "duracion": 56.2, "resolucion": "3840x2160", "fps": 29.97, "camara": "quieta", "fase": "[E]",
+     "alcanza": true,
+     "como": "RIFE x2 (86 s), solo nubes",
+     "cuadro_s": 4,
+     "autor": "wisconsinpictures",
+     "pagina": "https://pixabay.com/videos/id-18503/"
+    },
+    {
+     "id": 210790,
+     "duracion": 56.2,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "quieta",
+     "fase": "[E]",
      "nota": "Nubes rosadas sobre el bosque, con el cielo que ya pasa a azul.",
-     "alcanza": true, "como": "RIFE x2 (112 s)",
+     "alcanza": true,
+     "como": "RIFE x2 (112 s)",
      "riesgo": "Los troncos secos en silueta pueden leerse tristes. El detector marco 'airplane' y 'person' en las nubes: a 1:1 no hay nada.",
-     "cuadro_s": 28, "autor": "Matthias_Groeneveld", "pagina": "https://pixabay.com/videos/id-210790/"},
-    {"id": 80265, "duracion": 24.0, "resolucion": "1920x1080", "fps": 23.976, "camara": "quieta (timelapse)", "fase": "[E]→[F]",
+     "cuadro_s": 28,
+     "autor": "Matthias_Groeneveld",
+     "pagina": "https://pixabay.com/videos/id-210790/"
+    },
+    {
+     "id": 80265,
+     "duracion": 24.0,
+     "resolucion": "1920x1080",
+     "fps": 23.976,
+     "camara": "quieta (timelapse)",
+     "fase": "[E]→[F]",
      "nota": "Nubes violetas y rosas sobre la silueta del monte.",
-     "alcanza": false, "como": "RIFE x2 = 48 s, no alcanza. Con estirar_mixto.py x3 (RIFE en el cielo y cuadros reales en el monte) son 72 s",
-     "cuadro_s": 12, "autor": "daniloriba", "pagina": "https://pixabay.com/videos/id-80265/"},
-    {"id": 19732, "duracion": 21.8, "resolucion": "1920x1080", "fps": 29.97, "camara": "timelapse, solo cielo", "fase": "[F]",
+     "alcanza": false,
+     "como": "RIFE x2 = 48 s, no alcanza. Con estirar_mixto.py x3 (RIFE en el cielo y cuadros reales en el monte) son 72 s",
+     "cuadro_s": 12,
+     "autor": "daniloriba",
+     "pagina": "https://pixabay.com/videos/id-80265/"
+    },
+    {
+     "id": 19732,
+     "duracion": 21.8,
+     "resolucion": "1920x1080",
+     "fps": 29.97,
+     "camara": "timelapse, solo cielo",
+     "fase": "[F]",
      "nota": "Hora azul: nubes oscuras y el ultimo rosa abajo.",
-     "alcanza": false, "como": "RIFE x2 = 44 s, no alcanza. Como es solo cielo, x3 da 65 s, pero hay que probarlo",
-     "cuadro_s": 11, "autor": "ChristianBodhi", "pagina": "https://pixabay.com/videos/id-19732/"}
+     "alcanza": false,
+     "como": "RIFE x2 = 44 s, no alcanza. Como es solo cielo, x3 da 65 s, pero hay que probarlo",
+     "cuadro_s": 11,
+     "autor": "ChristianBodhi",
+     "pagina": "https://pixabay.com/videos/id-19732/"
+    }
+   ],
+   "nuevos": [
+    {
+     "id": 116205,
+     "duracion": 57,
+     "resolucion": "3840x2160",
+     "fps": 23.98,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Pinos en silueta y laguna con cielo rosado",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 221728,
+     "duracion": 56,
+     "resolucion": "3840x2160",
+     "fps": 50.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Laguna que refleja un cielo rosado, ojo con la barca",
+     "alcanza": "con x2",
+     "autor": "Glamzy_lk"
+    },
+    {
+     "id": 292703,
+     "duracion": 47,
+     "resolucion": "3840x2160",
+     "fps": 25.0,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Arbol en silueta contra cielo rosa",
+     "alcanza": "con x2",
+     "autor": "TonyDias7"
+    },
+    {
+     "id": 200121,
+     "duracion": 46,
+     "resolucion": "3840x2160",
+     "fps": 23.98,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Nubes rojas y naranjas sobre horizonte oscuro, cielo encendido",
+     "alcanza": "con x2",
+     "autor": "DancingSky"
+    },
+    {
+     "id": 203676,
+     "duracion": 41,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Pantano que refleja el cielo anaranjado, quieto",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 146169,
+     "duracion": 56,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Nubes suaves rosadas",
+     "alcanza": "con x2",
+     "autor": "Matthias_Groeneveld"
+    },
+    {
+     "id": 134382,
+     "duracion": 45,
+     "resolucion": "3840x2160",
+     "fps": 29.97,
+     "camara": "sin verificar (elegido por miniatura)",
+     "fase": "E",
+     "nota": "Laguna al ocaso en naranja, ojo con el sol cerca del borde",
+     "alcanza": "con x2",
+     "autor": "OneGod_TheFather"
+    }
    ]
   }
  ],
  "descartados": [
-  {"id": 297043, "por": "Rio con el sol sobre la loma: luz fria e invernal, bruma, destello verde de lente. 30 s."},
-  {"id": 383795, "por": "Arroyo al sol: a 1:1 hay una losa blanca y plana entre las piedras que parece hecha por el hombre."},
-  {"id": 128303, "por": "Robles a contraluz: a 1:1 hay un cartel de transito redondo, postes y dos animales al fondo."},
-  {"id": 368712, "por": "Penachos a contraluz: a 1:1 tiene compresion fuerte y se ve como acuarela, no esta a nivel."},
-  {"id": 90748, "por": "Cortaderas al viento: luz de mediodia, algo blanco con un cuadrado oscuro arriba a la derecha (parece una construccion), y bloques de compresion."},
-  {"id": 11785, "por": "Bosque desde el suelo: es de camara de consumo, con flare y formas blancas al fondo."},
-  {"id": 98659, "por": "Bosque caminando: a 1:1 se ve blando y con bloques, y la camara se mueve rapido."},
-  {"id": 267861, "por": "Sol sobre el horizonte con un arbol: es un arbol pelado de invierno y tiene una estela corta fija en el cielo (x≈720, y≈920)."},
-  {"id": 41862, "por": "Laguna en la hora azul: hay luces de casas en la orilla de enfrente y un palo en el agua."},
-  {"id": 134647, "por": "Nubes sobre arboles: abajo, en el centro, hay un rectangulo blanco que es un cartel o un techo."},
-  {"id": 100465, "por": "Lago rosado: se ve procesado y hay una luz de pueblo en la orilla."},
-  {"id": 99314, "por": "Cielo de tarde: pasa a gris y despues a negro."},
-  {"id": 19700, "por": "Cielo rosado con pinos: a los 20 s ya es casi negro (es noche), y tiene un pajaro en el centro."},
-  {"id": 185726, "por": "Es el mismo lugar y la misma toma que 185727, que esta en la Session 04."},
-  {"id": 382584, "por": "Rayos de sol en un bosque con niebla: se lee como manana, no como tarde."},
-  {"id": 169568, "por": "Pinos y laguna rosada: el sol aparece en el horizonte, y seria una segunda puesta."}
+  {
+   "id": 297043,
+   "por": "Rio con el sol sobre la loma: luz fria e invernal, bruma, destello verde de lente. 30 s."
+  },
+  {
+   "id": 383795,
+   "por": "Arroyo al sol: a 1:1 hay una losa blanca y plana entre las piedras que parece hecha por el hombre."
+  },
+  {
+   "id": 128303,
+   "por": "Robles a contraluz: a 1:1 hay un cartel de transito redondo, postes y dos animales al fondo."
+  },
+  {
+   "id": 368712,
+   "por": "Penachos a contraluz: a 1:1 tiene compresion fuerte y se ve como acuarela, no esta a nivel."
+  },
+  {
+   "id": 90748,
+   "por": "Cortaderas al viento: luz de mediodia, algo blanco con un cuadrado oscuro arriba a la derecha (parece una construccion), y bloques de compresion."
+  },
+  {
+   "id": 11785,
+   "por": "Bosque desde el suelo: es de camara de consumo, con flare y formas blancas al fondo."
+  },
+  {
+   "id": 98659,
+   "por": "Bosque caminando: a 1:1 se ve blando y con bloques, y la camara se mueve rapido."
+  },
+  {
+   "id": 267861,
+   "por": "Sol sobre el horizonte con un arbol: es un arbol pelado de invierno y tiene una estela corta fija en el cielo (x≈720, y≈920)."
+  },
+  {
+   "id": 41862,
+   "por": "Laguna en la hora azul: hay luces de casas en la orilla de enfrente y un palo en el agua."
+  },
+  {
+   "id": 134647,
+   "por": "Nubes sobre arboles: abajo, en el centro, hay un rectangulo blanco que es un cartel o un techo."
+  },
+  {
+   "id": 100465,
+   "por": "Lago rosado: se ve procesado y hay una luz de pueblo en la orilla."
+  },
+  {
+   "id": 99314,
+   "por": "Cielo de tarde: pasa a gris y despues a negro."
+  },
+  {
+   "id": 19700,
+   "por": "Cielo rosado con pinos: a los 20 s ya es casi negro (es noche), y tiene un pajaro en el centro."
+  },
+  {
+   "id": 185726,
+   "por": "Es el mismo lugar y la misma toma que 185727, que esta en la Session 04."
+  },
+  {
+   "id": 382584,
+   "por": "Rayos de sol en un bosque con niebla: se lee como manana, no como tarde."
+  },
+  {
+   "id": 169568,
+   "por": "Pinos y laguna rosada: el sol aparece en el horizonte, y seria una segunda puesta."
+  }
  ]
 }

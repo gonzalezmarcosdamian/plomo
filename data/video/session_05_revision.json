@@ -1,0 +1,3361 @@
+[
+ {
+  "id": 295782,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.46,
+    "segundos": [
+     8.0,
+     18.0,
+     20.0,
+     26.0,
+     30.0,
+     38.0,
+     44.0,
+     50.0,
+     54.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 59.7,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 23.2
+ },
+ {
+  "id": 168620,
+  "cuadros": 29,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.43,
+    "segundos": [
+     2.0,
+     34.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.9,
+    "segundos": [
+     4.0,
+     14.0,
+     16.0,
+     44.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 58.0,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 41.5
+ },
+ {
+  "id": 340938,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.44,
+    "segundos": [
+     30.0,
+     52.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.66,
+    "segundos": [
+     0.0,
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0,
+     12.0,
+     14.0,
+     16.0,
+     18.0,
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     36.0,
+     38.0,
+     40.0,
+     42.0,
+     44.0,
+     46.0,
+     48.0,
+     50.0,
+     52.0,
+     54.0,
+     56.0,
+     58.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.7,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 21.5
+ },
+ {
+  "id": 230409,
+  "cuadros": 16,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.44,
+    "segundos": [
+     16.0,
+     22.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "FFFFDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 32.6,
+   "fps": 29.97,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 27.4
+ },
+ {
+  "id": 340939,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.3,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 30.3
+ },
+ {
+  "id": 340940,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.48,
+    "segundos": [
+     12.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.0,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 28.3
+ },
+ {
+  "id": 168614,
+  "cuadros": 27,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.46,
+    "segundos": [
+     38.0,
+     42.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAFAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 54.6,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 37.0
+ },
+ {
+  "id": 122802,
+  "cuadros": 22,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.48,
+    "segundos": [
+     4.0,
+     38.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 43.4,
+   "fps": 24.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 18.9
+ },
+ {
+  "id": 103195,
+  "cuadros": 19,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.6,
+    "segundos": [
+     0.0,
+     8.0,
+     26.0,
+     34.0,
+     36.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.85,
+    "segundos": [
+     10.0,
+     18.0,
+     22.0,
+     24.0,
+     32.0,
+     36.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 37.9,
+   "fps": 30.0,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 19.2
+ },
+ {
+  "id": 178711,
+  "cuadros": 26,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.49,
+    "segundos": [
+     20.0,
+     34.0,
+     36.0,
+     42.0,
+     48.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 52.0,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 34.5
+ },
+ {
+  "id": 117745,
+  "cuadros": 24,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 1.0,
+    "segundos": [
+     2.0,
+     4.0,
+     12.0,
+     14.0,
+     24.0,
+     32.0,
+     42.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "DDAAAAAAAAAAAAAAAAAAAAAG"
+  },
+  "largo": {
+   "duracion_s": 47.5,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 16.7
+ },
+ {
+  "id": 230417,
+  "cuadros": 24,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.78,
+    "segundos": [
+     2.0,
+     34.0,
+     36.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "GGFFFFGGFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 48.7,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 34.3
+ },
+ {
+  "id": 327220,
+  "cuadros": 29,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.52,
+    "segundos": [
+     26.0,
+     50.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.66,
+    "segundos": [
+     10.0,
+     20.0,
+     30.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 58.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 42.5
+ },
+ {
+  "id": 215884,
+  "cuadros": 21,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.43,
+    "segundos": [
+     14.0,
+     34.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAFF"
+  },
+  "largo": {
+   "duracion_s": 41.4,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 36.2
+ },
+ {
+  "id": 210173,
+  "cuadros": 20,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.43,
+    "segundos": [
+     4.0,
+     16.0,
+     28.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 40.0,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 28.2
+ },
+ {
+  "id": 221999,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.4,
+    "segundos": [
+     58.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 60.1,
+   "fps": 30.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 29.3
+ },
+ {
+  "id": 176935,
+  "cuadros": 20,
+  "ancho_origen": 1920,
+  "alto_origen": 1080,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.43,
+    "segundos": [
+     14.0,
+     26.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 1.0,
+    "segundos": [
+     4.0,
+     22.0,
+     24.0,
+     28.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 40.9,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 7.0
+ },
+ {
+  "id": 272431,
+  "cuadros": 17,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "C",
+   "por_cuadro": "CCCCCCCCCCCCCCCCC"
+  },
+  "largo": {
+   "duracion_s": 33.0,
+   "fps": 29.97,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 27.8
+ },
+ {
+  "id": 206997,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.57,
+    "segundos": [
+     18.0,
+     20.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.8,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 33.5
+ },
+ {
+  "id": 206998,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.44,
+    "segundos": [
+     0.0,
+     42.0,
+     50.0,
+     54.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.6,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 35.0
+ },
+ {
+  "id": 218961,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.87,
+    "segundos": [
+     0.0,
+     2.0,
+     4.0,
+     14.0,
+     16.0,
+     26.0,
+     38.0,
+     40.0,
+     42.0,
+     48.0,
+     54.0,
+     56.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.3,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 2,
+  "segundos_de_analisis": 40.9
+ },
+ {
+  "id": 285882,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.7,
+    "segundos": [
+     0.0,
+     4.0,
+     6.0,
+     8.0,
+     14.0,
+     22.0,
+     36.0,
+     38.0,
+     48.0,
+     50.0,
+     52.0,
+     56.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.8,
+   "fps": 59.94,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 2,
+  "segundos_de_analisis": 44.8
+ },
+ {
+  "id": 291385,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.1,
+   "fps": 24.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 30.8
+ },
+ {
+  "id": 91392,
+  "cuadros": 31,
+  "ancho_origen": 2560,
+  "alto_origen": 1440,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.62,
+    "segundos": [
+     2.0,
+     4.0,
+     8.0,
+     14.0,
+     24.0,
+     40.0,
+     44.0,
+     48.0,
+     50.0,
+     58.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 62.0,
+   "fps": 24.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 15.4
+ },
+ {
+  "id": 356398,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.53,
+    "segundos": [
+     2.0,
+     6.0,
+     18.0,
+     30.0,
+     50.0,
+     58.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 59.9,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 33.3
+ },
+ {
+  "id": 133179,
+  "cuadros": 22,
+  "ancho_origen": 2560,
+  "alto_origen": 1440,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "CCCCDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 44.5,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 9.9
+ },
+ {
+  "id": 152739,
+  "cuadros": 25,
+  "ancho_origen": 1920,
+  "alto_origen": 1080,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.67,
+    "segundos": [
+     10.0,
+     12.0,
+     16.0,
+     24.0,
+     28.0,
+     30.0,
+     34.0,
+     40.0,
+     44.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 50.1,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 6.7
+ },
+ {
+  "id": 178700,
+  "cuadros": 26,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.45,
+    "segundos": [
+     2.0,
+     16.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.41,
+    "segundos": [
+     50.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 52.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 35.3
+ },
+ {
+  "id": 119784,
+  "cuadros": 39,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 1.0,
+    "segundos": [
+     0.0,
+     14.0,
+     18.0,
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     28.0,
+     36.0,
+     38.0,
+     42.0,
+     44.0,
+     56.0,
+     68.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 77.3,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 25.4
+ },
+ {
+  "id": 117503,
+  "cuadros": 34,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.61,
+    "segundos": [
+     2.0,
+     6.0,
+     20.0,
+     24.0,
+     26.0,
+     32.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 68.7,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 19.8
+ },
+ {
+  "id": 217947,
+  "cuadros": 36,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.65,
+    "segundos": [
+     12.0,
+     20.0,
+     40.0,
+     44.0,
+     50.0,
+     58.0,
+     60.0,
+     62.0,
+     68.0,
+     70.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 72.1,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 30.4
+ },
+ {
+  "id": 197946,
+  "cuadros": 28,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.59,
+    "segundos": [
+     2.0,
+     6.0,
+     10.0,
+     20.0,
+     22.0,
+     38.0,
+     40.0,
+     42.0,
+     44.0,
+     50.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 55.4,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 21.6
+ },
+ {
+  "id": 91388,
+  "cuadros": 27,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.58,
+    "segundos": [
+     0.0,
+     6.0,
+     12.0,
+     18.0,
+     34.0,
+     46.0,
+     48.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 53.5,
+   "fps": 24.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 20.8
+ },
+ {
+  "id": 146586,
+  "cuadros": 21,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": true,
+    "puntaje": 0.5,
+    "segundos": [
+     26.0
+    ]
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 42.5,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 19.4
+ },
+ {
+  "id": 275876,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 59.9,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 32.4
+ },
+ {
+  "id": 154639,
+  "cuadros": 23,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.44,
+    "segundos": [
+     38.0,
+     44.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": true,
+    "puntaje": 0.88,
+    "segundos": [
+     0.0,
+     6.0,
+     8.0,
+     16.0,
+     20.0,
+     22.0,
+     24.0,
+     32.0,
+     34.0,
+     36.0,
+     40.0,
+     44.0
+    ]
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 46.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 24.7
+ },
+ {
+  "id": 137113,
+  "cuadros": 24,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "G",
+   "por_cuadro": "GGGGGGGGGGGGGGGGGGGGGGGG"
+  },
+  "largo": {
+   "duracion_s": 48.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 19.5
+ },
+ {
+  "id": 323231,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 59.7,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 27.1
+ },
+ {
+  "id": 230414,
+  "cuadros": 29,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.69,
+    "segundos": [
+     18.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 58.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 23.6
+ },
+ {
+  "id": 119781,
+  "cuadros": 39,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 1.0,
+    "segundos": [
+     6.0,
+     10.0,
+     12.0,
+     16.0,
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     36.0,
+     40.0,
+     72.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "C",
+   "por_cuadro": "BCCCCBBBCBBBCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+  },
+  "largo": {
+   "duracion_s": 77.3,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 29.9
+ },
+ {
+  "id": 128220,
+  "cuadros": 19,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "C",
+   "por_cuadro": "CCCCCCCCCCCCCCCCCCC"
+  },
+  "largo": {
+   "duracion_s": 38.7,
+   "fps": 29.97,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 13.6
+ },
+ {
+  "id": 301800,
+  "cuadros": 23,
+  "ancho_origen": 2160,
+  "alto_origen": 3840,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 46.9,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 21.6
+ },
+ {
+  "id": 154643,
+  "cuadros": 21,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.42,
+    "segundos": [
+     14.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 41.8,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 22.9
+ },
+ {
+  "id": 66817,
+  "cuadros": 19,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 37.5,
+   "fps": 24.0,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 12.7
+ },
+ {
+  "id": 178707,
+  "cuadros": 28,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.55,
+    "segundos": [
+     4.0,
+     16.0,
+     18.0,
+     20.0,
+     22.0,
+     24.0,
+     30.0,
+     36.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "GGGDDDDDDDDDDDDDDDDDDDDDDDDG"
+  },
+  "largo": {
+   "duracion_s": 56.9,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 34.1
+ },
+ {
+  "id": 178710,
+  "cuadros": 27,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.52,
+    "segundos": [
+     6.0,
+     14.0,
+     24.0,
+     28.0,
+     40.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.57,
+    "segundos": [
+     16.0,
+     18.0,
+     20.0,
+     26.0,
+     28.0,
+     32.0,
+     36.0,
+     38.0,
+     40.0,
+     42.0,
+     44.0,
+     46.0,
+     48.0,
+     50.0,
+     52.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDFDDFFDFFDFDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 53.7,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 32.9
+ },
+ {
+  "id": 169565,
+  "cuadros": 39,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "C",
+   "por_cuadro": "CBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+  },
+  "largo": {
+   "duracion_s": 77.6,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 37.7
+ },
+ {
+  "id": 116206,
+  "cuadros": 28,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.56,
+    "segundos": [
+     8.0,
+     10.0,
+     14.0,
+     16.0,
+     18.0,
+     20.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     38.0,
+     40.0,
+     44.0,
+     52.0,
+     54.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "CCCBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 56.6,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 4,
+  "segundos_de_analisis": 22.8
+ },
+ {
+  "id": 119242,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.46,
+    "segundos": [
+     2.0,
+     12.0,
+     22.0,
+     30.0,
+     38.0,
+     40.0,
+     42.0,
+     46.0,
+     48.0,
+     50.0,
+     52.0,
+     54.0,
+     58.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "C",
+   "por_cuadro": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+  },
+  "largo": {
+   "duracion_s": 60.5,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 4,
+  "segundos_de_analisis": 17.5
+ },
+ {
+  "id": 128295,
+  "cuadros": 29,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 1.0,
+    "segundos": [
+     10.0,
+     14.0,
+     20.0,
+     24.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 58.3,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 12.8
+ },
+ {
+  "id": 128296,
+  "cuadros": 22,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "BBBDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 44.2,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 14.5
+ },
+ {
+  "id": 128298,
+  "cuadros": 25,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 49.1,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 15.6
+ },
+ {
+  "id": 273806,
+  "cuadros": 25,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.49,
+    "segundos": [
+     14.0,
+     16.0,
+     26.0,
+     34.0,
+     38.0,
+     46.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.75,
+    "segundos": [
+     6.0,
+     8.0,
+     12.0,
+     16.0,
+     22.0,
+     24.0,
+     34.0,
+     46.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 49.8,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 41.0
+ },
+ {
+  "id": 18503,
+  "cuadros": 22,
+  "ancho_origen": 1920,
+  "alto_origen": 1080,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": true,
+    "puntaje": 1.0,
+    "segundos": [
+     2.0,
+     18.0,
+     24.0,
+     26.0,
+     30.0,
+     34.0,
+     36.0,
+     38.0,
+     40.0,
+     42.0
+    ]
+   }
+  },
+  "fase": {
+   "letra": "E",
+   "por_cuadro": "DDDDDEEEEEEEEEEEEEEEEE"
+  },
+  "largo": {
+   "duracion_s": 43.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 5,
+  "segundos_de_analisis": 5.9
+ },
+ {
+  "id": 210790,
+  "cuadros": 28,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "E",
+   "por_cuadro": "EEEEEEEEEEEEEEEEEEEEEAAAEEEE"
+  },
+  "largo": {
+   "duracion_s": 56.2,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 19.9
+ },
+ {
+  "id": 80265,
+  "cuadros": 12,
+  "ancho_origen": 1920,
+  "alto_origen": 1080,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "E",
+   "por_cuadro": "EEEEEEEEEEEE"
+  },
+  "largo": {
+   "duracion_s": 23.9,
+   "fps": 23.98,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 1.6
+ },
+ {
+  "id": 19732,
+  "cuadros": 11,
+  "ancho_origen": 1920,
+  "alto_origen": 1080,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 21.8,
+   "fps": 29.97,
+   "alcance": "corto"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 2.1
+ },
+ {
+  "id": 116205,
+  "cuadros": 29,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.5,
+    "segundos": [
+     10.0,
+     12.0,
+     16.0,
+     18.0,
+     20.0,
+     22.0,
+     32.0,
+     36.0,
+     42.0,
+     54.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 57.2,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 18.1
+ },
+ {
+  "id": 221728,
+  "cuadros": 28,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 1.0,
+    "segundos": [
+     6.0,
+     8.0,
+     16.0,
+     18.0,
+     22.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     36.0,
+     38.0,
+     42.0,
+     44.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 56.6,
+   "fps": 50.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 5,
+  "segundos_de_analisis": 33.5
+ },
+ {
+  "id": 292703,
+  "cuadros": 24,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.97,
+    "segundos": [
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     12.0,
+     18.0,
+     26.0,
+     32.0,
+     34.0,
+     36.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 47.1,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 34.4
+ },
+ {
+  "id": 200121,
+  "cuadros": 23,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.97,
+    "segundos": [
+     0.0,
+     2.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "EAAAAAAAAAAAAAFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 47.0,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 15.1
+ },
+ {
+  "id": 203676,
+  "cuadros": 21,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 41.9,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 17.6
+ },
+ {
+  "id": 146169,
+  "cuadros": 28,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.85,
+    "segundos": [
+     36.0,
+     38.0,
+     40.0,
+     42.0,
+     44.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAABABBBAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 56.3,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 19.9
+ },
+ {
+  "id": 134382,
+  "cuadros": 23,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 45.1,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 15.5
+ }
+]
