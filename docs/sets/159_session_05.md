@@ -120,7 +120,34 @@ Se paró antes de lanzar otra vuelta para preguntarle al DJ.
 - [A] de sol alto para P20, y agua [A] para sacar 221999.
 
 Después, el editor cambia SOLO esos planos (su script en archive se puede volver a correr), y el
-revisor mira solo esos. Estimado: 250 a 350 mil tokens más, y después las horas de máquina:
+revisor mira solo esos.
+
+### Vuelta 2: BLOQUEADA otra vez, ahora solo por el final (2026-11-01)
+
+El DJ eligió "una vuelta más, completa". Se hizo esto:
+- se bajaron 18 clips dirigidos;
+- el editor cambió 25 planos: las etapas 4 y 5 rehechas, la 4 con cada clip una sola vez;
+- `validar` da 0 errores y el factor máximo es x2.90;
+- el revisor aprobó P16, P20 y P33.
+
+Bloqueó:
+1. **P75 (9153) y P76 (292383)**, marcados [F]: son cielos de día oscurecidos (cúmulos blancos
+   con sol). El video cierra volviendo a la tarde.
+2. **P72 y P74**: la etapa 5 repite su terna (juncos 137113, el del medio y el campo rosa 18503) a
+   7 minutos. Además P74 vuelve al rosa después de P73, que ya pasaba a azul.
+3. **P50 (301800)**: a 1:1 parece haber techos en el valle de la izquierda.
+
+**El cuello de botella es el material del final.** Después de la puesta hay 8 planos y en
+Pixabay casi no hay clips largos de arrebol ni de hora azul. La búsqueda dirigida trajo:
+- 4 de arrebol: 3 con el sol en el horizonte (serían otra puesta) y 19409, que el editor descartó
+  porque el sol se ve en la mitad del clip;
+- 2 de "hora azul" que son día.
+
+Quedan 4 clips limpios para 8 planos. Pasa pero se nota: P65 parece una puesta 4 minutos antes,
+y P59/P61 repiten a P54/P55.
+
+**Tokens: unos 860 mil.** La vuelta 2 llevó unos 340 mil: búsqueda 107, editor 157 y revisor
+~80. Estimado: 250 a 350 mil tokens más, y después las horas de máquina:
 RIFE 5-6 h, render ~4 h y la subida.
 
 ### Encargos B y C
