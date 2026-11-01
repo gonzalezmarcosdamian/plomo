@@ -8,6 +8,33 @@ peor que ninguno, porque se aplica con confianza.
 
 ---
 
+## El largo del plano se decide contra el largo del material
+
+**Qué pasó.** La Session 05 se planeó con planos de 32 compases, de 63 a 134 s con los fundidos,
+para que fuera más calma que la 04. Recién con 64 clips bajados y medidos se vio lo que cubren:
+de 20 a 78 s, con una mediana de 49. Ningún plano entraba a velocidad real.
+- Hubo que estirar todos con RIFE, x1.3 a x2.8.
+- Con 57 clips limpios para 76 planos, cada uno fue dos veces: el mismo clip entero, espejado.
+- El revisor lo bloqueó como carrusel de repeticiones.
+
+Para llegar a eso se gastaron unos 520 mil tokens.
+
+**Por qué.** El banco de stock da sobre todo clips de 10 a 60 s. Un plano largo no pide un clip,
+pide un clip largo, y esos son pocos. El largo del plano era una decisión de estilo que se tomó
+sin mirar el material.
+
+**Cómo se aplica.** Antes de fijar `frase` y `min_plano` en la receta de un video con material
+de stock:
+1. medir el largo que cubren los candidatos (`revisar_clips.py`, campo `largo`);
+2. elegir el plano para que la mediana de los clips llegue sin estirar más de x1.5;
+3. contar clips distintos contra planos: si no alcanzan para que cada clip vaya una vez por
+   etapa, bajar más antes de asignar, no después.
+
+Un plano largo se puede hacer con un timelapse de cielo, que aguanta el estiramiento; con agua
+o con pasto al viento, no.
+
+---
+
 ## Dos analizadores dan keys distintas: para mezclar manda el del que mezcla
 
 **Que paso.** En el 159 elegi Luminor para un hueco entre 6A y 7A porque Muzpa lo

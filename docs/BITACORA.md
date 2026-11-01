@@ -45,6 +45,15 @@ energía.
   minutos el DJ dijo "paralo y documenta para seguir en otra sesion". Se cortaron los dos sin
   resultado; solo se volvió a bajar 116206. Cómo seguir: [sets/159_session_05.md](sets/159_session_05.md),
   "Para seguir".
+- "Ahora si continua" (madrugada del 1/11):
+  - `revisar_clips.py` quedó andando: marca la estela de 116206 y casi nada más.
+  - Se bajaron 44 clips nuevos.
+  - Se escribió `estirar_planos.py`: con planos de 32 compases ningún clip entra a velocidad
+    real.
+  - El editor asignó los 76 planos y el revisor BLOQUEÓ la hoja: un camino, una estela con el sol
+    después de la puesta, dos lugares donde la luz vuelve atrás, y el carrusel de repeticiones
+    del último tercio.
+  - Van unos 520 mil tokens contra un tope de 300 mil: se paró a preguntar antes de otra vuelta.
 
 ---
 

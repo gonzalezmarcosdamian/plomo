@@ -1,0 +1,103 @@
+{
+ "etapas": [
+  4
+ ],
+ "planos": [
+  {
+   "n": 57,
+   "id": 230414,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] brezo florecido con el sol bajo entre los arboles; segunda vez, espejado"
+  },
+  {
+   "n": 58,
+   "id": 119781,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] turbera con algodoncillo y el sol bajo en la bruma; segunda vez, espejado"
+  },
+  {
+   "n": 59,
+   "id": 117503,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] algodoncillo de cerca con el sol bajo detras de nubes finas; segunda vez, espejado"
+  },
+  {
+   "n": 60,
+   "id": 273806,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] ramas de sauce en silueta con el sol naranja bajo"
+  },
+  {
+   "n": 61,
+   "id": 292703,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] arbol en silueta con el sol rojo bajo detras de las ramas"
+  },
+  {
+   "n": 62,
+   "id": 137113,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] juncos rosados a contraluz sobre fondo oscuro"
+  },
+  {
+   "n": 63,
+   "id": 273806,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] ramas de sauce en silueta con el sol naranja bajo; segunda vez, espejado"
+  },
+  {
+   "n": 64,
+   "id": 169565,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] el disco del sol bajo en la bruma entre pastos, sin tocar el horizonte"
+  },
+  {
+   "n": 65,
+   "id": 292703,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] arbol en silueta con el sol rojo bajo detras de las ramas; segunda vez, espejado"
+  },
+  {
+   "n": 66,
+   "id": 137113,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] juncos rosados a contraluz sobre fondo oscuro; segunda vez, espejado"
+  },
+  {
+   "n": 67,
+   "id": 169565,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[C] el disco del sol bajo en la bruma entre pastos, sin tocar el horizonte; segunda vez, espejado"
+  },
+  {
+   "n": 68,
+   "id": 178710,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.5 0.9/0.88 1/0.96':r='0/0 0.5/0.51 1/1':b='0/0 0.5/0.49 1/1',huesaturation=saturation=-0.05:colors=r+y:strength=1",
+   "nota": "[D] LA PUESTA: el brezal con robles y el sol tocando la linea de arboles"
+  }
+ ]
+}

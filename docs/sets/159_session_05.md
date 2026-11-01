@@ -61,6 +61,68 @@ puesta y el título los decidí yo (ver abajo).
    - `youtube_publicar.py subir` (privado), esperar el HD, `publicar`;
    - `session_salio.py`: el destacado del canal y la web.
 
+### Estado al 2026-11-01, madrugada (retomado con "ahora si continua")
+
+- B y C, hechos:
+  - `revisar_clips.py` marca la estela de 116206 y casi nada más;
+  - 44 clips nuevos, revisados los 64.
+  - Marcados por estela: 116206, 119242, 218961, 285882 y 221728.
+- **Ningún plano entra a velocidad real.** Los planos de 32 compases piden de 63 a 134 s y los
+  clips cubren de 20 a 78. Se estira casi todo, x1.3 a x2.5, con `estirar_planos.py` (RIFE).
+  RIFE a 1440p en la RTX 4050 hace unos 16 cuadros por segundo: 5 a 6 horas para los 76 planos.
+- **Disco: el orden importa.** Hay 28 GB libres. Los estirados ocupan unos 15 GB, los tramos del
+  render unos 14,5 y el video final otros 14,5. El orden:
+  1. `estirar_planos.py --nombre session_05`;
+  2. borrar los originales de Pixabay de los clips que solo usa la 05 (se vuelven a bajar por
+     id);
+  3. `naturaleza.py render ... --tramos` con todos los tramos, que no une;
+  4. borrar `postproduction/stock/estirados` (cada plano guarda en `fuente` cómo rehacerlo);
+  5. unir llamando a `naturaleza.unir(...)` directo, porque `render` sin `--tramos` valida y pide
+     los estirados.
+- El editor, a cargo de D, asigna los planos en `session_05_etapa_<n>.json` y arma la hoja v2.
+
+### Hoja v2: BLOQUEADA (2026-11-01, madrugada). Parado antes del RIFE
+
+Lo que hizo el editor:
+- asignó los 76 planos: `validar` da 0 errores y el factor máximo es x2.84;
+- la puesta única quedó en P68, con 178710;
+- las hojas están en `C:\Users\gonza\Pictures\plomo_session_05_recorrido_etapa_<n>.jpg`;
+- el script que eligió está en `scripts/archive/elegir_session_05.py`.
+
+El revisor bloqueó:
+1. **P16 (103195)**: un camino de tierra en el pie, y se ve procesado.
+2. **P69 y P72 (203676)**: hay una estela, y el sol se ve en la bruma después de la puesta.
+   Sale el clip entero.
+3. **P33 y P50 (119784)**: es sol en el horizonte, [C], marcado [B]. La luz vuelve atrás.
+4. **P20 (230417)**: la nota dice sol bajo y sombras largas, y después P21-32 vuelven a sol alto.
+5. **Carrusel en el último tercio**: 12 clips, cada uno dos veces, intercalados (P54-59, P61-66,
+   P69-73). Cada plano usa el clip entero estirado, así que la segunda vez es el mismo clip
+   espejado, no "otro tramo". Es la lección de la 04.
+
+No bloquea, pero hay que cuidarlo:
+- 221999 tiene un halo magenta en P31;
+- en 169565 (P64 y P67) el disco blanco puede leerse como luna: calentarlo en el grado;
+- en P60-67 la luz va y viene;
+- la etapa 5 termina en [E], sin [F].
+
+**Tokens hasta acá: unos 520 mil**, contra un tope de 300 mil. Por agente:
+- revisar_clips, 84 mil;
+- la búsqueda, 134 mil (el tope era de 90);
+- el editor, 206 mil (estimado: 80-110 mil, junto con el revisor);
+- el revisor, 93 mil.
+
+Se paró antes de lanzar otra vuelta para preguntarle al DJ.
+
+**Lo que falta para destrabar:** 15 a 20 clips nuevos:
+- [C], sol bajo que no toca el horizonte, para P54-67;
+- [E] arrebol y [F] hora azul, para P69-76, ordenados por luz: 200121, después 18503, después
+  210790, después lo nuevo;
+- [A] de sol alto para P20, y agua [A] para sacar 221999.
+
+Después, el editor cambia SOLO esos planos (su script en archive se puede volver a correr), y el
+revisor mira solo esos. Estimado: 250 a 350 mil tokens más, y después las horas de máquina:
+RIFE 5-6 h, render ~4 h y la subida.
+
 ### Encargos B y C
 
 Los dos: nuevos, sonnet, máximo 40 herramientas, sin commitear, sin master.db ni Rekordbox, sin

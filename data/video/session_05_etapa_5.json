@@ -1,0 +1,71 @@
+{
+ "etapas": [
+  5
+ ],
+ "planos": [
+  {
+   "n": 69,
+   "id": 203676,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] pantano que refleja el cielo anaranjado, sin sol a la vista"
+  },
+  {
+   "n": 70,
+   "id": 18503,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] todo el cielo con nubes rosadas y naranjas: el arrebol"
+  },
+  {
+   "n": 71,
+   "id": 200121,
+   "desde": 0.0,
+   "encuadre": "crop=2400:1350:0:0,scale=2560:1440:flags=lanczos",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] nubes rojas y naranjas del arrebol, recortado al cielo"
+  },
+  {
+   "n": 72,
+   "id": 203676,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] pantano que refleja el cielo anaranjado, sin sol a la vista; segunda vez, espejado"
+  },
+  {
+   "n": 73,
+   "id": 18503,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] todo el cielo con nubes rosadas y naranjas: el arrebol; segunda vez, espejado"
+  },
+  {
+   "n": 74,
+   "id": 210790,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] nubes rosadas sobre el bosque en silueta, el cielo pasando a azul"
+  },
+  {
+   "n": 75,
+   "id": 200121,
+   "desde": 0.0,
+   "encuadre": "crop=2400:1350:0:0,scale=2560:1440:flags=lanczos,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] nubes rojas y naranjas del arrebol, recortado al cielo; segunda vez, espejado"
+  },
+  {
+   "n": 76,
+   "id": 210790,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.06/0.045 0.5/0.49 0.92/0.9 1/0.97',huesaturation=saturation=-0.08:colors=r+y+m:strength=1",
+   "nota": "[E] nubes rosadas sobre el bosque en silueta, el cielo pasando a azul; segunda vez, espejado"
+  }
+ ]
+}

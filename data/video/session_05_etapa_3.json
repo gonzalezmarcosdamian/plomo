@@ -1,0 +1,191 @@
+{
+ "etapas": [
+  3
+ ],
+ "planos": [
+  {
+   "n": 34,
+   "id": 323231,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] plumeros de cortadera con luz de costado contra el cielo azul"
+  },
+  {
+   "n": 35,
+   "id": 146586,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] pasto verde a contraluz, de cerca"
+  },
+  {
+   "n": 36,
+   "id": 291385,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] arroyo de agua calida con hojas, luz de tarde"
+  },
+  {
+   "n": 37,
+   "id": 91388,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] algodoncillo blanco en el pastizal junto al agua"
+  },
+  {
+   "n": 38,
+   "id": 323231,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] plumeros de cortadera con luz de costado contra el cielo azul; segunda vez, espejado"
+  },
+  {
+   "n": 39,
+   "id": 152739,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] espigas de pasto al viento con luz calida"
+  },
+  {
+   "n": 40,
+   "id": 146586,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] pasto verde a contraluz, de cerca; segunda vez, espejado"
+  },
+  {
+   "n": 41,
+   "id": 154639,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] juncal seco sobre el agua quieta"
+  },
+  {
+   "n": 42,
+   "id": 197946,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] juncos secos dorados de cerca"
+  },
+  {
+   "n": 43,
+   "id": 217947,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] pasto verde alto al viento, el bosque desenfocado detras"
+  },
+  {
+   "n": 44,
+   "id": 272431,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] ondas del rio con el reflejo dorado de la tarde"
+  },
+  {
+   "n": 45,
+   "id": 152739,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] espigas de pasto al viento con luz calida; segunda vez, espejado"
+  },
+  {
+   "n": 46,
+   "id": 291385,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] arroyo de agua calida con hojas, luz de tarde; segunda vez, espejado"
+  },
+  {
+   "n": 47,
+   "id": 91388,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] algodoncillo blanco en el pastizal junto al agua; segunda vez, espejado"
+  },
+  {
+   "n": 48,
+   "id": 154639,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] juncal seco sobre el agua quieta; segunda vez, espejado"
+  },
+  {
+   "n": 49,
+   "id": 217947,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] pasto verde alto al viento, el bosque desenfocado detras; segunda vez, espejado"
+  },
+  {
+   "n": 50,
+   "id": 119784,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] turbera con algodoncillo y charcos, el sol bajo en la bruma sobre el bosque; segunda vez, espejado"
+  },
+  {
+   "n": 51,
+   "id": 197946,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] juncos secos dorados de cerca; segunda vez, espejado"
+  },
+  {
+   "n": 52,
+   "id": 272431,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] ondas del rio con el reflejo dorado de la tarde; segunda vez, espejado"
+  },
+  {
+   "n": 53,
+   "id": 230417,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[B] troncos de bosque abierto con el sol mas bajo y sombras largas: la tarde avanza; segunda vez, espejado"
+  },
+  {
+   "n": 54,
+   "id": 230414,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[C] brezo florecido con el sol bajo entre los arboles"
+  },
+  {
+   "n": 55,
+   "id": 117503,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[C] algodoncillo de cerca con el sol bajo detras de nubes finas"
+  },
+  {
+   "n": 56,
+   "id": 119781,
+   "desde": 0.0,
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
+   "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
+   "nota": "[C] turbera con algodoncillo y el sol bajo en la bruma"
+  }
+ ]
+}
