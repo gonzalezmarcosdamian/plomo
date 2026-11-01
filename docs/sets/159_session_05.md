@@ -1,5 +1,20 @@
 # Session 05 — el 159 en paisajes, plan eficiente
 
+> **2026-11-01: la Session 05 NO es paisajes, es el video de las almas.** "No si era hacer el
+> video de las almas" (el DJ). El 27/10 la maqueta de las almas quedó aprobada "como base para el
+> video largo del 159" (`data/video/veredictos.json`), y este plan de paisajes siguió por error.
+> Lo de abajo queda como registro y como receta, si algún día se hace un video de paisajes del
+> 159:
+> - la asignación de los 76 planos, bloqueada por el final;
+> - los scripts `revisar_clips.py` y `estirar_planos.py`, que sirven para cualquier Session de
+>   paisajes;
+> - unos 11 GB de clips bajados.
+>
+> El video de las almas: la historia pasa una vez por el set (se conocen en Aura y Bambook, vuelan
+> juntas hasta Summer O'clock, se separan en Dichotomy, una se apaga en State of Progression, el
+> primer intento en Conviction, la cura en el drop de Dodonpachi, vuelan en Mutant, se separan
+> brillando en Omira). La hace el director con `almas.py`.
+
 "Fijate como esta el set 159 en spoty empata rekor y hace sync y hace el plan para video
 eficiente" (el DJ, 2026-10-31). El video sale del 159 tal como está en Spotify (v8c, 17 temas) y
 con la receta de "una tarde" del 26/10. Este plan es para no repetir lo de ese día: una vuelta

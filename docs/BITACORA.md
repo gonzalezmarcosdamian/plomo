@@ -54,6 +54,17 @@ energía.
     después de la puesta, dos lugares donde la luz vuelve atrás, y el carrusel de repeticiones
     del último tercio.
   - Van unos 520 mil tokens contra un tope de 300 mil: se paró a preguntar antes de otra vuelta.
+  - "Una vuelta más, completa":
+    - se bajaron 18 clips dirigidos y el editor cambió 25 planos;
+    - el revisor volvió a bloquear, ahora por el final: no hay en Pixabay arrebol ni hora azul
+      largos;
+    - el DJ eligió mirarla él.
+  - **"No si era hacer el video de las almas."** El 27/10 la maqueta de las almas había quedado
+    como base del video largo del 159 (`veredictos.json`), y BACKLOG 0b y la memoria seguían
+    diciendo paisajes. Se gastaron unos 860 mil tokens en la pieza equivocada. Paisajes queda
+    parado.
+  - El DJ aprobó la historia de las almas repartida por el set. El director la extiende a los
+    105 minutos y arma la hoja de recorrido.
 
 ---
 

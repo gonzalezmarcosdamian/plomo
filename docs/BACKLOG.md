@@ -55,6 +55,10 @@ El DJ dio el OK ("hace todo y publicalo en youtube") y después la paró: **se r
 "Para seguir" de ese archivo**, que tiene los pasos en orden y los encargos B y C listos para
 lanzar.
 
+**2026-11-01: todo 0b quedó viejo.** La Session 05 es el video de las almas: la maqueta se aprobó
+el 27/10 como base del video largo del 159 ("no si era hacer el video de las almas"). Lo de
+paisajes queda parado; ver el aviso al principio de [sets/159_session_05.md](sets/159_session_05.md).
+
 ---
 
 ## 0c. Arreglos que dejo el set 160 (2026-10-31)
