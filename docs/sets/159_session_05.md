@@ -9,6 +9,88 @@ del editor costó ~380 mil tokens, la del revisor ~230 mil, y la hoja quedó blo
 que costó una sola vuelta de la hoja el 26/10. Cada número de abajo es una estimación. Antes de
 lanzar cada agente le aviso al DJ el costo y espero el OK.
 
+## Para seguir (parado el 2026-10-31 a las 21 h)
+
+"Hace todo y publicalo en youtube", y un rato después: "paralo y documenta para seguir en otra
+sesion" (el DJ, 2026-10-31). Con lo primero el DJ dio el OK al plan y a publicar en YouTube; la
+puesta y el título los decidí yo (ver abajo).
+
+**Hecho:**
+- A: la receta y los 76 planos.
+- La mezcla: 105:13, las 16 transiciones ok.
+- Los capítulos, en `data/video/session_05_capitulos.json`. Los nombres quedaron prolijos para
+  el texto en pantalla: Sébastien Léger, André Moret, Summer O'clock.
+- Disco: 34 GB libres; el render necesita ~26.
+
+**Cortado a los pocos minutos, sin resultado:**
+- B, `revisar_clips.py`: no llegó a escribir nada. Solo volvió a bajar 116206, el de la estela,
+  que se borró en la limpieza y hace falta para probar el script.
+- C, buscar los ~35 clips que faltan: no corrió ninguna búsqueda ni bajó nada.
+- `session_05_candidatos.json` sigue como el 26/10.
+
+**Decidido sin preguntar, porque dijo "hace todo"** (se puede cambiar):
+- la puesta en el drop de Dodonpachi (92:03);
+- el título: "Sébastien Léger, Kamilo Sanclemente, Guy Mantzur, Roy Rosenfeld | Organic House
+  Mix · Session 05". `paquete_session.py` escribe "Progressive House Mix" fijo, así que hay que
+  cambiarlo en el paquete;
+- no se esperó a que el DJ escuche la mezcla.
+
+**Cómo seguir, en orden:**
+1. Lanzar B y C en paralelo, nuevos, con `model: sonnet` y un tope de 40 herramientas cada uno.
+   Los encargos están abajo, en "Encargos B y C".
+2. Correr `revisar_clips.py --etapas data/video/session_05_candidatos.json` sobre todos los clips.
+3. Lanzar al editor, nuevo y con tope de 30 herramientas:
+   - asigna los 76 planos en `data/video/session_05_etapa_<n>.json`, con el formato de
+     `session_04_etapa_3.json` (`n`, `id` o `archivo`, `desde`, `paso`, `encuadre`, `grado`,
+     `nota`);
+   - mira solo las hojas de `revisar_clips`;
+   - arma la hoja de recorrido v2 en `C:\Users\gonza\Pictures\plomo_session_05_recorrido.jpg`,
+     una imagen por etapa de hasta 1600 px.
+4. Lanzar al revisor, nuevo y con tope de 15. Si bloquea, un editor nuevo arregla solo lo
+   marcado, una vez.
+5. `naturaleza.py validar` y después `render`:
+   - por WMI, uno solo, con `--codificador cpu` si lo pide (ver la memoria
+     `feedback_procesos_largos`);
+   - avisarle antes a las otras sesiones de plomo: no mezclar.py ni otros renders mientras tanto.
+6. Verificar que el audio sea igual a la mezcla (md5).
+7. El revisor mira el video, nuevo y con tope de 15.
+8. Paquete y subida:
+   - `paquete_session.py --mix postproduction/mixes/159_mix.json --numero 5 --artistas "..."
+     --video postproduction/video/session_05_naturaleza.mov --cuadro <cuadro de la puesta>`;
+   - corregir el título en el paquete y que el revisor mire los textos;
+   - `youtube_publicar.py subir` (privado), esperar el HD, `publicar`;
+   - `session_salio.py`: el destacado del canal y la web.
+
+### Encargos B y C
+
+Los dos: nuevos, sonnet, máximo 40 herramientas, sin commitear, sin master.db ni Rekordbox, sin
+GPU.
+
+**B (agente `tecnico`)**: escribir `scripts/revisar_clips.py` y `tests/test_revisar_clips.py`
+según "B: qué marca revisar_clips.py".
+- Cómo mira: 1 cuadro cada 2 s, achicado a ~960 px.
+- Qué entra: ids, o `--etapas` con `candidatos` y `nuevos`.
+- Qué sale:
+  - `data/video/session_05_revision.json`;
+  - una hoja por etapa con recortes de ~400 px de lo marcado, en
+    `postproduction/stock/revision/hoja_etapa_<n>.jpg`, de hasta 1600 px.
+- Validación:
+  - TIENE que marcar la estela de 116206;
+  - contar las marcas en los otros 19 candidatos;
+  - mirar como mucho 3 recortes.
+
+**C (agente `general-purpose`)**: buscar y bajar, eligiendo por miniatura, unos 45 clips:
+- cuántos por etapa: 1 ~13, 2 ~8, 3 ~15, 4 ~6, 5 ~4;
+- etapa 4: sol bajo que no toca el horizonte;
+- etapa 5: arrebol y hora azul, sin estrellas ni luna;
+- cómo: `stock_pixabay.py buscar` con varias consultas en una llamada; achicar las hojas a
+  1600 px antes de mirarlas; un solo `bajar`; tope de 8 GB;
+- dónde se anota: en una lista `nuevos` por etapa de `session_05_candidatos.json`, sin tocar lo
+  que ya está;
+- sin revisar a 1:1.
+
+---
+
 **De dónde salía el gasto.** El 26/10 fueron 368 herramientas para 66 clips: más de cinco por
 clip, cada una cargando todo lo anterior. Lo que se baja acá es la cantidad de llamadas. Cada
 llamada tiene que tratar una etapa entera, no un clip.

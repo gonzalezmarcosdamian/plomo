@@ -37,8 +37,14 @@ energía.
     estela (1,5 GB);
   - `Videos/plomo_prueba_almas.mp4`.
 
-  Se quedaron los .mov finales de las Sessions 01-04 (28 GB) y el del atardecer del 23/9 (2,5 GB), las mezclas, los stems de Demucs
-  (11 GB, que se regeneran con la GPU que cuelga la PC) y los clips que usan la 04 y la 05.
+  Se quedaron los .mov finales de las Sessions 01-04 (28 GB) y el del atardecer del 23/9
+  (2,5 GB), las mezclas, los stems de Demucs (11 GB, que se regeneran con la GPU que cuelga la
+  PC) y los clips que usan la 04 y la 05.
+- "Hace todo y publicalo en youtube": se escribieron los capítulos (`session_05_capitulos.json`)
+  y se lanzaron B (`revisar_clips.py`) y C (buscar clips), en paralelo, con sonnet. A los pocos
+  minutos el DJ dijo "paralo y documenta para seguir en otra sesion". Se cortaron los dos sin
+  resultado; solo se volvió a bajar 116206. Cómo seguir: [sets/159_session_05.md](sets/159_session_05.md),
+  "Para seguir".
 
 ---
 

@@ -1,0 +1,108 @@
+{
+ "fps": 30,
+ "duracion_s": 6313.2,
+ "capitulos": [
+  {
+   "t": 0.0,
+   "artista": "Jordi Ruz, Artic White",
+   "titulo": "Aura (Original Mix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 377.7,
+   "artista": "Eli Nissan",
+   "titulo": "Bambook",
+   "tempo": 1.01667
+  },
+  {
+   "t": 676.8,
+   "artista": "Eli Nissan",
+   "titulo": "Karnaval (Roy Rosenfeld Remix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 1070.2,
+   "artista": "Sébastien Léger",
+   "titulo": "Blazing Ice",
+   "tempo": 1.0
+  },
+  {
+   "t": 1510.8,
+   "artista": "Taylan",
+   "titulo": "Earthbound (André Moret Remix)",
+   "tempo": 1.01667
+  },
+  {
+   "t": 1904.3,
+   "artista": "Dmitry Molosh",
+   "titulo": "The Moon Lights the Way (Original Mix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 2313.5,
+   "artista": "Guy Mantzur, Kamilo Sanclemente",
+   "titulo": "The Future is in the Past (Original Mix)",
+   "tempo": 0.98387
+  },
+  {
+   "t": 2675.4,
+   "artista": "Sébastien Léger",
+   "titulo": "Lava (Original Mix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 3068.9,
+   "artista": "Kamilo Sanclemente, Sebastian Valencia (COL)",
+   "titulo": "Balaphonia (Original Mix)",
+   "tempo": 0.99187
+  },
+  {
+   "t": 3478.1,
+   "artista": "Shai T",
+   "titulo": "Summer O'clock (Original Mix)",
+   "tempo": 0.99187
+  },
+  {
+   "t": 3871.5,
+   "artista": "Kamilo Sanclemente, André Moret",
+   "titulo": "Dichotomy (Original Mix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 4170.5,
+   "artista": "Nicolas Viana",
+   "titulo": "Winged (Original Mix)",
+   "tempo": 1.00826
+  },
+  {
+   "t": 4532.5,
+   "artista": "Ruben Karapetyan",
+   "titulo": "State of Progression (Original Mix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 4863.0,
+   "artista": "Michael A",
+   "titulo": "Conviction (Aman Anand Remix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 5256.4,
+   "artista": "Sébastien Léger, Lost Miracle",
+   "titulo": "Dodonpachi (Original Mix)",
+   "tempo": 1.0
+  },
+  {
+   "t": 5618.4,
+   "artista": "Kabi (AR), Ric Niels",
+   "titulo": "Mutant",
+   "tempo": 1.00826
+  },
+  {
+   "t": 5933.1,
+   "artista": "Sébastien Léger",
+   "titulo": "Omira (Original Mix)",
+   "tempo": 1.0
+  }
+ ]
+}

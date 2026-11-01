@@ -51,6 +51,9 @@ Todo lo hecho está en la BITACORA del 2026-10-26. La hoja v1, bloqueada, está 
 y la mezcla se rehizo. 0b.1, 0b.2 y 0b.5 quedan viejos: los planos y el 53:40 eran de la mezcla
 anterior. El plan nuevo, con fases, tope de tokens y lo que decide el DJ, está en
 [sets/159_session_05.md](sets/159_session_05.md). 0b.3 (221999 y 230409) sigue; 0b.4 (disco) quedó resuelto el mismo día.
+El DJ dio el OK ("hace todo y publicalo en youtube") y después la paró: **se retoma por la sección
+"Para seguir" de ese archivo**, que tiene los pasos en orden y los encargos B y C listos para
+lanzar.
 
 ---
 
