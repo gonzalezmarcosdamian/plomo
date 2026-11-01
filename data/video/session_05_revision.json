@@ -3357,5 +3357,1029 @@
   "limpio": true,
   "etapa": 5,
   "segundos_de_analisis": 15.5
+ },
+ {
+  "id": 128222,
+  "cuadros": 32,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "B",
+   "por_cuadro": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+  },
+  "largo": {
+   "duracion_s": 64.4,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 22.7,
+  "vuelta": 2
+ },
+ {
+  "id": 204990,
+  "cuadros": 27,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.82,
+    "segundos": [
+     0.0,
+     4.0,
+     12.0,
+     16.0,
+     22.0,
+     38.0,
+     40.0,
+     42.0,
+     46.0,
+     48.0,
+     50.0,
+     52.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "C",
+   "por_cuadro": "CCCCCCCCCCCCCCCCCCCCCCCCCCC"
+  },
+  "largo": {
+   "duracion_s": 54.8,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 4,
+  "segundos_de_analisis": 14.0,
+  "vuelta": 2
+ },
+ {
+  "id": 133185,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.44,
+    "segundos": [
+     2.0,
+     26.0,
+     28.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "DDDDDDEEEEEEEEFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 60.0,
+   "fps": 29.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 13.1,
+  "vuelta": 2
+ },
+ {
+  "id": 197435,
+  "cuadros": 25,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 1.0,
+    "segundos": [
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     36.0,
+     38.0,
+     40.0,
+     46.0,
+     48.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 49.0,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 13.1,
+  "vuelta": 2
+ },
+ {
+  "id": 48899,
+  "cuadros": 23,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 46.3,
+   "fps": 30.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 12.6,
+  "vuelta": 2
+ },
+ {
+  "id": 264472,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 1.0,
+    "segundos": [
+     48.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.0,
+   "fps": 30.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 13.1,
+  "vuelta": 2
+ },
+ {
+  "id": 91942,
+  "cuadros": 29,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "G",
+   "por_cuadro": "GGGGGGFFFFFFFFFFFFGGGGGGGGGGG"
+  },
+  "largo": {
+   "duracion_s": 58.9,
+   "fps": 30.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 4,
+  "segundos_de_analisis": 8.9,
+  "vuelta": 2
+ },
+ {
+  "id": 269567,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.46,
+    "segundos": [
+     48.0,
+     50.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.94,
+    "segundos": [
+     10.0,
+     12.0,
+     14.0,
+     16.0,
+     18.0,
+     20.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.0,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 22.9,
+  "vuelta": 2
+ },
+ {
+  "id": 267172,
+  "cuadros": 25,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.48,
+    "segundos": [
+     48.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.32,
+    "segundos": [
+     4.0,
+     8.0,
+     10.0,
+     12.0,
+     14.0,
+     16.0,
+     18.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 50.0,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 15.3,
+  "vuelta": 2
+ },
+ {
+  "id": 30218,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.69,
+    "segundos": [
+     24.0,
+     26.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.91,
+    "segundos": [
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     36.0,
+     38.0,
+     40.0,
+     42.0,
+     44.0,
+     46.0,
+     48.0,
+     50.0,
+     52.0,
+     54.0,
+     56.0,
+     58.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 59.9,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 18.9,
+  "vuelta": 2
+ },
+ {
+  "id": 19409,
+  "cuadros": 25,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.45,
+    "segundos": [
+     34.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": true,
+    "puntaje": 0.41,
+    "segundos": [
+     20.0
+    ]
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFDFDFFFFFFFFFFFFFFGG"
+  },
+  "largo": {
+   "duracion_s": 50.0,
+   "fps": 30.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 16.1,
+  "vuelta": 2
+ },
+ {
+  "id": 292383,
+  "cuadros": 25,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": [],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFFFFFAAAAAAAFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 49.9,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 14.4,
+  "vuelta": 2
+ },
+ {
+  "id": 9153,
+  "cuadros": 23,
+  "ancho_origen": 4096,
+  "alto_origen": 2048,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.42,
+    "segundos": [
+     22.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "F",
+   "por_cuadro": "FFFFFAAFFFFAFFFFFFFFFFF"
+  },
+  "largo": {
+   "duracion_s": 45.1,
+   "fps": 23.98,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 5,
+  "segundos_de_analisis": 14.0,
+  "vuelta": 2
+ },
+ {
+  "id": 318222,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.67,
+    "segundos": [
+     2.0,
+     14.0,
+     16.0,
+     22.0,
+     30.0,
+     48.0,
+     50.0,
+     56.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 60.0,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 2,
+  "segundos_de_analisis": 29.8,
+  "vuelta": 2
+ },
+ {
+  "id": 378038,
+  "cuadros": 30,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.76,
+    "segundos": [
+     0.0,
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0,
+     12.0,
+     16.0,
+     18.0,
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     28.0,
+     30.0,
+     34.0,
+     36.0,
+     38.0,
+     40.0,
+     42.0,
+     46.0,
+     48.0,
+     50.0,
+     54.0,
+     56.0,
+     58.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "D",
+   "por_cuadro": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+  },
+  "largo": {
+   "duracion_s": 59.8,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 2,
+  "segundos_de_analisis": 24.8,
+  "vuelta": 2
+ },
+ {
+  "id": 168612,
+  "cuadros": 32,
+  "ancho_origen": 4096,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.47,
+    "segundos": [
+     8.0,
+     18.0,
+     36.0,
+     46.0,
+     48.0,
+     50.0,
+     52.0,
+     58.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 63.0,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 1,
+  "segundos_de_analisis": 39.8,
+  "vuelta": 2
+ },
+ {
+  "id": 41093,
+  "cuadros": 30,
+  "ancho_origen": 2560,
+  "alto_origen": 1440,
+  "marcas": {
+   "estelas": {
+    "marca": true,
+    "puntaje": 0.76,
+    "segundos": [
+     0.0,
+     2.0,
+     4.0,
+     6.0,
+     8.0,
+     10.0,
+     14.0,
+     16.0,
+     18.0,
+     20.0,
+     22.0,
+     24.0,
+     26.0,
+     32.0,
+     34.0,
+     36.0,
+     38.0,
+     40.0,
+     44.0,
+     48.0,
+     52.0
+    ],
+    "duda": false
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+  },
+  "largo": {
+   "duracion_s": 60.0,
+   "fps": 29.97,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": false,
+  "etapa": 3,
+  "segundos_de_analisis": 16.0,
+  "vuelta": 2
+ },
+ {
+  "id": 132720,
+  "cuadros": 27,
+  "ancho_origen": 3840,
+  "alto_origen": 2160,
+  "marcas": {
+   "estelas": {
+    "marca": false,
+    "puntaje": 0.91,
+    "segundos": [
+     12.0,
+     26.0,
+     28.0,
+     30.0,
+     32.0,
+     34.0,
+     36.0,
+     38.0,
+     50.0,
+     52.0
+    ],
+    "duda": true
+   },
+   "sol": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   },
+   "hombre": {
+    "marca": true,
+    "puntaje": 0.88,
+    "segundos": [
+     14.0,
+     30.0,
+     32.0,
+     42.0
+    ]
+   },
+   "compresion": {
+    "marca": false,
+    "puntaje": 0.0,
+    "segundos": []
+   }
+  },
+  "fase": {
+   "letra": "A",
+   "por_cuadro": "AAAAAAAAAAAAAAAAAAAAAAAAAAF"
+  },
+  "largo": {
+   "duracion_s": 54.0,
+   "fps": 25.0,
+   "alcance": "rife_x2"
+  },
+  "sin_calibrar": [
+   "sol",
+   "hombre",
+   "fase"
+  ],
+  "limpio": true,
+  "etapa": 3,
+  "segundos_de_analisis": 16.5,
+  "vuelta": 2
  }
 ]

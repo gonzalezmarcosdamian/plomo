@@ -133,11 +133,11 @@
   },
   {
    "n": 50,
-   "id": 119784,
+   "id": 301800,
    "desde": 0.0,
-   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
+   "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
    "grado": "curves=master='0/0 0.05/0.038 0.5/0.5 0.93/0.92 1/0.98':r='0/0 0.5/0.512 1/1':b='0/0 0.5/0.488 1/1',huesaturation=saturation=-0.06:colors=g:strength=1",
-   "nota": "[B] turbera con algodoncillo y charcos, el sol bajo en la bruma sobre el bosque; segunda vez, espejado"
+   "nota": "[B] lomas de brezal con luz calida y rasante bajo un cielo de altocumulos"
   },
   {
    "n": 51,

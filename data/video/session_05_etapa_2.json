@@ -61,11 +61,11 @@
   },
   {
    "n": 28,
-   "id": 221999,
+   "id": 318222,
    "desde": 0.0,
    "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
    "grado": "curves=master='0/0 0.05/0.04 0.5/0.5 0.92/0.91 1/0.98':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1',huesaturation=saturation=-0.08:colors=g+y:strength=1",
-   "nota": "[A] laguna de bosque con plantas de agua y cumulos de verano"
+   "nota": "[A] rapidos de agua clara entre rocas al sol"
   },
   {
    "n": 29,
@@ -85,11 +85,11 @@
   },
   {
    "n": 31,
-   "id": 221999,
-   "desde": 0.0,
+   "id": 318222,
+   "desde": 20.0,
    "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440,hflip",
    "grado": "curves=master='0/0 0.05/0.04 0.5/0.5 0.92/0.91 1/0.98':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1',huesaturation=saturation=-0.08:colors=g+y:strength=1",
-   "nota": "[A] laguna de bosque con plantas de agua y cumulos de verano; segunda vez, espejado"
+   "nota": "[A] rapidos de agua clara entre rocas al sol; segunda vez, espejado"
   },
   {
    "n": 32,
@@ -101,11 +101,11 @@
   },
   {
    "n": 33,
-   "id": 119784,
+   "id": 230417,
    "desde": 0.0,
    "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
    "grado": "curves=master='0/0 0.05/0.04 0.5/0.5 0.92/0.91 1/0.98':r='0/0 0.5/0.508 1/1':b='0/0 0.5/0.492 1/1',huesaturation=saturation=-0.08:colors=g+y:strength=1",
-   "nota": "[B] turbera con algodoncillo y charcos, el sol bajo en la bruma sobre el bosque"
+   "nota": "[B] troncos de bosque abierto con el sol mas bajo y sombras largas: la tarde avanza"
   }
  ]
 }

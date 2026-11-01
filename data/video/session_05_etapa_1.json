@@ -125,11 +125,11 @@
   },
   {
    "n": 16,
-   "id": 103195,
+   "id": 66817,
    "desde": 0.0,
    "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
    "grado": "curves=master='0/0 0.05/0.04 0.5/0.5 0.92/0.91 1/0.98':r='0/0 0.5/0.506 1/1':b='0/0 0.5/0.494 1/1',huesaturation=saturation=-0.08:colors=g+y:strength=1",
-   "nota": "[A] rayos de sol entre los arboles del bosque"
+   "nota": "[A] flor amarilla entre el pasto, de cerca, con el dia claro desenfocado detras"
   },
   {
    "n": 17,
@@ -157,11 +157,11 @@
   },
   {
    "n": 20,
-   "id": 230417,
+   "id": 275876,
    "desde": 0.0,
    "encuadre": "scale=2560:1440:force_original_aspect_ratio=increase:flags=lanczos,crop=2560:1440",
    "grado": "curves=master='0/0 0.05/0.04 0.5/0.5 0.92/0.91 1/0.98':r='0/0 0.5/0.506 1/1':b='0/0 0.5/0.494 1/1',huesaturation=saturation=-0.08:colors=g+y:strength=1",
-   "nota": "[A] troncos de bosque abierto con el sol mas bajo y sombras largas: la tarde avanza"
+   "nota": "[A] trigal verde al viento bajo cumulos, sol alto"
   }
  ]
 }
