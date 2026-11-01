@@ -135,12 +135,16 @@ def segundo(clave: float | str, compas: float, impacto: float) -> float:
 
 
 def pista(nombre: str, t: np.ndarray, compas: float, impacto: float) -> np.ndarray:
-    """Interpola una pista: suave entre claves (sale y llega frenando), las posiciones con
-    Catmull-Rom para que el vuelo no se detenga en cada clave."""
+    """Interpola una pista de CLAVES (ver interpolar)."""
     ts = np.array([segundo(c, compas, impacto) for c, _ in CLAVES[nombre]])
     if np.any(np.diff(ts) <= 0):
         raise ValueError(f"las claves de '{nombre}' no van en orden: {np.round(ts, 2).tolist()}")
-    vs = np.array([np.atleast_1d(v) for _, v in CLAVES[nombre]], float)
+    return interpolar(ts, np.array([np.atleast_1d(v) for _, v in CLAVES[nombre]], float), t)
+
+
+def interpolar(ts: np.ndarray, vs: np.ndarray, t: np.ndarray) -> np.ndarray:
+    """Suave entre claves (sale y llega frenando); las posiciones (vs de 2 columnas) con
+    Catmull-Rom para que el vuelo no se detenga en cada clave. Tambien la usa almas_largo.py."""
     i = np.clip(np.searchsorted(ts, t, side="right") - 1, 0, len(ts) - 2)
     u = np.clip((t - ts[i]) / (ts[i + 1] - ts[i]), 0, 1)[:, None]
     if vs.shape[1] == 1:
@@ -167,11 +171,15 @@ def bandas(audio: np.ndarray, sr: int, n: int) -> tuple[np.ndarray, np.ndarray]:
     """Por cuadro: el golpe del bombo (0 a 1) y el grave lento (0 a 1)."""
     lo = sosfilt(butter(4, [40, 100], "bandpass", fs=sr, output="sos"), audio.mean(1))
     por = len(lo) // n
-    e = np.sqrt(np.mean(lo[: por * n].reshape(n, por) ** 2, axis=1))
+    return golpe_y_fondo(np.sqrt(np.mean(lo[: por * n].reshape(n, por) ** 2, axis=1)))
+
+
+def golpe_y_fondo(e: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
+    """De la energia del grave por cuadro: el golpe del bombo (0 a 1) y el grave lento (0 a 1)."""
     lento = uniform_filter1d(e, int(2 * FPS))
     golpe = np.clip(e - uniform_filter1d(e, int(0.5 * FPS)), 0, None)
     golpe = np.clip(golpe / (np.percentile(golpe, 97) + 1e-9), 0, 1)
-    for k in range(1, n):                                  # cae despacio, como una cuerda
+    for k in range(1, len(golpe)):                         # cae despacio, como una cuerda
         golpe[k] = max(golpe[k], golpe[k - 1] * 0.82)
     return golpe, lento / (np.percentile(lento, 95) + 1e-9)
 
@@ -309,7 +317,7 @@ def uniformes(f: int, c: dict, golpe: np.ndarray, fondo: np.ndarray, eventos: di
     return u
 
 
-def textos(mix: dict, inicio: float, desde: float, alto: int, carpeta: Path) -> str:
+def textos(mix: dict, inicio: float, desde: float, alto: int, carpeta: Path, largo: float = LARGO) -> str:
     """El nombre del tema cuando entra, como en las Sessions (naturaleza.textos): titulo arriba,
     artista abajo, a la izquierda, chico, en crema; entra 1.5 s despues del cambio y dura 8 s.
     Las medidas de las Sessions son para 1440 de alto y aca se escalan."""
@@ -320,7 +328,7 @@ def textos(mix: dict, inicio: float, desde: float, alto: int, carpeta: Path) -> 
     for k, tema in enumerate(mix["plan"]):
         a = (tema.get("cambio_in") or tema["desde"]) - inicio + 1.5
         z = a + 8.0
-        if a < 0 or a > LARGO:
+        if a < 0 or a > largo:
             continue
         artista, _, titulo = tema["tema"].partition(" - ")
         (carpeta / f"titulo_{k:02d}.txt").write_text(limpio(titulo or artista), encoding="utf-8")

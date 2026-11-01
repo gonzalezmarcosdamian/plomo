@@ -53,7 +53,15 @@ const vec3 FRIA = vec3(0.62, 0.80, 1.00);
 const vec3 FRIA_LUZ = vec3(0.40, 0.64, 1.00); // lo que la fria le tine a las nubes: azul, no gris
 const vec3 GRIS = vec3(0.50, 0.53, 0.60);
 
-float hash(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+uniform vec3 uTinte;          // el color de la noche, corrido por tema (0 = el de la maqueta)
+
+// sin seno (Hoskins): el de seno se rompe en la GPU con coordenadas grandes, y en el video largo
+// el cielo viaja 105 minutos
+float hash(vec2 p) {
+    vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+    p3 += dot(p3, p3.yzx + 33.33);
+    return fract((p3.x + p3.y) * p3.z);
+}
 
 float ruido(vec2 p) {
     vec2 i = floor(p), f = fract(p);
@@ -161,6 +169,7 @@ vec3 cielo(vec2 p, vec2 capa) {
     c += uAlba * (CALIDA * 0.38 * exp(-max(h, 0.0) * 5.5) + vec3(0.10, 0.06, 0.10) * exp(-max(h, 0.0) * 2.0) * 0.5);
 
     // cuando una se apaga el cielo pierde el color y baja
+    c *= 1.0 + uTinte;
     float gris = dot(c, vec3(0.30, 0.55, 0.15));
     return mix(c, vec3(gris) * vec3(0.80, 0.86, 1.0) * 0.80, uFrio * 0.9);
 }
