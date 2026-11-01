@@ -17,6 +17,7 @@ USO
     python scripts/historia_session.py --paquete data/youtube/session_03.json --mix postproduction/mixes/153_mix.wav
         --shader ascenso --t 4944.8
     -> C:/Users/gonza/Pictures/plomo_historia_session_03_portada.png  y  ..._tracklist.png
+    python scripts/historia_session.py --paquete data/youtube/session_05.json --almas --t 5527
 """
 from __future__ import annotations
 
@@ -56,12 +57,33 @@ def fondo(nombre: str, mix: str, shader: str, t: float) -> Image.Image:
                         "--supermuestreo", "1.5", "--salida", str(clip)], check=True, capture_output=True, cwd=RAIZ)
         subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(clip), "-frames:v", "1", str(png)], check=True)
         cuadro = Image.open(png).convert("RGB")
+    return vertical(cuadro)
+
+
+def fondo_almas(t: float) -> Image.Image:
+    """Un cuadro en 4K de las almas (Session 05) en el segundo t del set, recortado como los shaders.
+
+    La historia de las almas no es un look de video_animar: la coreografia la calcula
+    almas_largo.py para el set entero, asi que el cuadro se pide ahi."""
+    with tempfile.TemporaryDirectory() as tmp:
+        clip, png = Path(tmp) / "c.mp4", Path(tmp) / "c.png"
+        subprocess.run([sys.executable, str(RAIZ / "scripts" / "almas_largo.py"), "--salida", str(clip),
+                        "--desde", f"{t:.2f}", "--hasta", f"{t + 0.2:.2f}", "--res", "3840x2160", "--mudo"],
+                       check=True, capture_output=True, cwd=RAIZ)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(clip), "-frames:v", "1", str(png)], check=True)
+        cuadro = Image.open(png).convert("RGB")
+    # lo mas brillante es el alma blanca; la naranja va a su derecha y al 70% quedaba cortada
+    return vertical(cuadro, en=0.35)
+
+
+def vertical(cuadro: Image.Image, en: float = 0.70) -> Image.Image:
+    """La franja vertical de la historia, con lo mas brillante del cielo al `en` del ancho."""
     w, h = cuadro.size
     cielo = np.asarray(cuadro.convert("L"), dtype=np.float32)[: int(h * 0.7)]
     cx = int(np.unravel_index(np.argmax(cielo), cielo.shape)[1])
     ancho = round(h * ANCHO / ALTO)
     # lo brillante al 70% del ancho: centrado quedaba detras del "03" de la portada
-    x0 = min(max(cx - int(ancho * 0.70), 0), w - ancho)
+    x0 = min(max(cx - int(ancho * en), 0), w - ancho)
     return cuadro.crop((x0, 0, x0 + ancho, h)).resize((ANCHO, ALTO), Image.LANCZOS)
 
 
@@ -155,6 +177,7 @@ def main() -> None:
     ap.add_argument("--paquete", required=True)
     ap.add_argument("--mix", help="con --shader: la mezcla de la Session")
     ap.add_argument("--shader", help="el look animado de fondo (Sessions 01 a 03)")
+    ap.add_argument("--almas", action="store_true", help="el fondo es un cuadro de las almas (Session 05)")
     ap.add_argument("--toma", help="en vez del shader: una toma real del DJ, por ejemplo grabaciones/video/IMG_2209.MOV")
     ap.add_argument("--t", type=float, required=True, help="el segundo del video (o de la toma) que va de fondo")
     ap.add_argument("--foto-desde", type=int, default=640, help="con --toma: a que altura arranca la foto")
@@ -164,7 +187,10 @@ def main() -> None:
     a = ap.parse_args()
     p = json.loads((RAIZ / a.paquete).read_text(encoding="utf-8"))
     numero = int(p["nombre"].split("_")[-1])
-    base = fondo_toma(a.toma, a.t, a.foto_desde) if a.toma else fondo(p["nombre"], a.mix, a.shader, a.t)
+    if a.almas:
+        base = fondo_almas(a.t)
+    else:
+        base = fondo_toma(a.toma, a.t, a.foto_desde) if a.toma else fondo(p["nombre"], a.mix, a.shader, a.t)
     base_portada = Image.blend(base, Image.new("RGB", base.size, FONDO_OSCURO), a.oscurecer) if a.toma else base
     destino = Path(a.salida)
     destino.mkdir(parents=True, exist_ok=True)

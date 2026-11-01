@@ -24,9 +24,10 @@
       "youtube": "data/youtube/session_04.json"
     },
     {
-      "etiqueta": "Sunset",
+      "etiqueta": "Session 05",
       "set": 159,
-      "textual": "este 159 va a ser sunset me gustó para eso (el DJ, 2026-10-26)"
+      "textual": "este 159 va a ser sunset me gustó para eso (el DJ, 2026-10-26) / Session 05 publicada con las almas el 2026-11-01; la copia paso de Sunset a Session 05 ('si', el DJ)",
+      "youtube": "data/youtube/session_05.json"
     }
   ]
 }
