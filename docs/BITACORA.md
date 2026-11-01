@@ -65,6 +65,15 @@ energía.
     parado.
   - El DJ aprobó la historia de las almas repartida por el set. El director la extiende a los
     105 minutos y arma la hoja de recorrido.
+  - **Session 05 PUBLICADA (1/11): https://youtu.be/7VCdy-4meLU**, destacada del canal y en la web.
+    - `almas_largo.py` (director, 167 mil tokens) tiene la historia anclada a los drops de la mezcla.
+    - El DJ vio la hoja de recorrido de 17 cuadros y dijo "si ok".
+    - Render en 11 tramos de 10 minutos con pausa para la NVIDIA: 1:35 h y 4,1 GB. El audio es
+      idéntico a la mezcla (md5).
+    - El revisor dio APROBADO (64 mil tokens). Anotó: 53 minutos de vuelo parejo, la onda de la
+      cura tímida y el título que pasó a "Organic House Mix".
+    - En YouTube quedó en HD, sin contenido con licencia y sin bloqueos por región.
+    - Tokens de la sesión: unos 1,09 millones, unos 860 mil de ellos en paisajes.
 
 ---
 

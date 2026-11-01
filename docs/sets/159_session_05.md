@@ -1,5 +1,7 @@
 # Session 05 — el 159 en paisajes, plan eficiente
 
+> **Publicada el 2026-11-01 con las almas: https://youtu.be/7VCdy-4meLU.**
+>
 > **2026-11-01: la Session 05 NO es paisajes, es el video de las almas.** "No si era hacer el
 > video de las almas" (el DJ). El 27/10 la maqueta de las almas quedó aprobada "como base para el
 > video largo del 159" (`data/video/veredictos.json`), y este plan de paisajes siguió por error.
